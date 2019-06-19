@@ -16,23 +16,27 @@ PODS:
     - AFNetworking/NSURLSession
   - IQKeyboardManager (6.2.1)
   - Masonry (1.1.0)
+  - MJRefresh (3.1.16)
 
 DEPENDENCIES:
   - AFNetworking
   - IQKeyboardManager
   - Masonry
+  - MJRefresh
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
     - IQKeyboardManager
     - Masonry
+    - MJRefresh
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   IQKeyboardManager: 964638372b4a61892cc74fdfa6fd26de8c9464a2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: 7798e16e53a5ef7f332dd05b27664db4e29530fd
 
-PODFILE CHECKSUM: 4eac8ddd8a53f474e3ade5f5899f9a8addd04081
+PODFILE CHECKSUM: 5e7c5a499652a1d4eb5e0d8e777c4c9de912de41
 
 COCOAPODS: 1.6.1

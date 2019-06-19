@@ -9,5 +9,6 @@ target 'automobileBeautyService' do
     pod 'IQKeyboardManager'
     pod 'AFNetworking'
     pod 'Masonry'
+    pod 'MJRefresh'
 
 end
