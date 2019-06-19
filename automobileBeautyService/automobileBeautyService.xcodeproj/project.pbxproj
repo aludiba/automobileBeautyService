@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A84AA4F2C333640DF83ED304 /* libPods-automobileBeautyService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F12A2E9A0BBA48DBA35983 /* libPods-automobileBeautyService.a */; };
 		AE16BCDE22BA2B8A00B82824 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE16BCDD22BA2B8A00B82824 /* AppDelegate.m */; };
 		AE16BCE122BA2B8A00B82824 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE16BCE022BA2B8A00B82824 /* ViewController.m */; };
 		AE16BCE422BA2B8A00B82824 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE16BCE222BA2B8A00B82824 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62F12A2E9A0BBA48DBA35983 /* libPods-automobileBeautyService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-automobileBeautyService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77419ACE4F062A8623C7CA16 /* Pods-automobileBeautyService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-automobileBeautyService.debug.xcconfig"; path = "Target Support Files/Pods-automobileBeautyService/Pods-automobileBeautyService.debug.xcconfig"; sourceTree = "<group>"; };
 		AE16BCD922BA2B8A00B82824 /* automobileBeautyService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = automobileBeautyService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE16BCDC22BA2B8A00B82824 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE16BCDD22BA2B8A00B82824 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		AE16BCEB22BA2B8B00B82824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE16BCED22BA2B8B00B82824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE16BCEE22BA2B8B00B82824 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F4682552D5A3C47ECC15966A /* Pods-automobileBeautyService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-automobileBeautyService.release.xcconfig"; path = "Target Support Files/Pods-automobileBeautyService/Pods-automobileBeautyService.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A84AA4F2C333640DF83ED304 /* libPods-automobileBeautyService.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BA869CE5BEEF2D2D87F671C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62F12A2E9A0BBA48DBA35983 /* libPods-automobileBeautyService.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88A0391FF6F545EB27E11EA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77419ACE4F062A8623C7CA16 /* Pods-automobileBeautyService.debug.xcconfig */,
+				F4682552D5A3C47ECC15966A /* Pods-automobileBeautyService.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AE16BCD022BA2B8A00B82824 = {
 			isa = PBXGroup;
 			children = (
 				AE16BCDB22BA2B8A00B82824 /* automobileBeautyService */,
 				AE16BCDA22BA2B8A00B82824 /* Products */,
+				88A0391FF6F545EB27E11EA5 /* Pods */,
+				4BA869CE5BEEF2D2D87F671C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE16BCF222BA2B8B00B82824 /* Build configuration list for PBXNativeTarget "automobileBeautyService" */;
 			buildPhases = (
+				A5FB3FD303B8838094F6EB26 /* [CP] Check Pods Manifest.lock */,
 				AE16BCD522BA2B8A00B82824 /* Sources */,
 				AE16BCD622BA2B8A00B82824 /* Frameworks */,
 				AE16BCD722BA2B8A00B82824 /* Resources */,
+				FCDBE3AD996A511BEBC2462F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,6 +165,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5FB3FD303B8838094F6EB26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-automobileBeautyService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCDBE3AD996A511BEBC2462F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-automobileBeautyService/Pods-automobileBeautyService-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-automobileBeautyService/Pods-automobileBeautyService-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE16BCD522BA2B8A00B82824 /* Sources */ = {
@@ -287,6 +361,7 @@
 		};
 		AE16BCF322BA2B8B00B82824 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77419ACE4F062A8623C7CA16 /* Pods-automobileBeautyService.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,6 +380,7 @@
 		};
 		AE16BCF422BA2B8B00B82824 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4682552D5A3C47ECC15966A /* Pods-automobileBeautyService.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
