@@ -15,6 +15,11 @@
 		AE16BCE922BA2B8B00B82824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE16BCE822BA2B8B00B82824 /* Assets.xcassets */; };
 		AE16BCEC22BA2B8B00B82824 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE16BCEA22BA2B8B00B82824 /* LaunchScreen.storyboard */; };
 		AE16BCEF22BA2B8B00B82824 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE16BCEE22BA2B8B00B82824 /* main.m */; };
+		AE16BD0322BA34DC00B82824 /* autoBeuBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE16BD0122BA34DC00B82824 /* autoBeuBaseViewController.m */; };
+		AE16BD0622BA354900B82824 /* autoBeuHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE16BD0422BA354900B82824 /* autoBeuHomeViewController.m */; };
+		AE16BD0922BA389000B82824 /* autoBeuAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE16BD0822BA389000B82824 /* autoBeuAddViewController.m */; };
+		AE16BD0C22BA38A700B82824 /* autoBeuSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE16BD0B22BA38A700B82824 /* autoBeuSearchViewController.m */; };
+		AE16BD0F22BA393E00B82824 /* autoBeuTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE16BD0E22BA393E00B82824 /* autoBeuTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,18 @@
 		AE16BCEB22BA2B8B00B82824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE16BCED22BA2B8B00B82824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE16BCEE22BA2B8B00B82824 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE16BCF822BA303B00B82824 /* autoBeu_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = autoBeu_PrefixHeader.pch; sourceTree = "<group>"; };
+		AE16BD0022BA315700B82824 /* autoBeuGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = autoBeuGlobal.h; sourceTree = "<group>"; };
+		AE16BD0122BA34DC00B82824 /* autoBeuBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autoBeuBaseViewController.m; sourceTree = "<group>"; };
+		AE16BD0222BA34DC00B82824 /* autoBeuBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoBeuBaseViewController.h; sourceTree = "<group>"; };
+		AE16BD0422BA354900B82824 /* autoBeuHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autoBeuHomeViewController.m; sourceTree = "<group>"; };
+		AE16BD0522BA354900B82824 /* autoBeuHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoBeuHomeViewController.h; sourceTree = "<group>"; };
+		AE16BD0722BA389000B82824 /* autoBeuAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = autoBeuAddViewController.h; sourceTree = "<group>"; };
+		AE16BD0822BA389000B82824 /* autoBeuAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = autoBeuAddViewController.m; sourceTree = "<group>"; };
+		AE16BD0A22BA38A700B82824 /* autoBeuSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = autoBeuSearchViewController.h; sourceTree = "<group>"; };
+		AE16BD0B22BA38A700B82824 /* autoBeuSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = autoBeuSearchViewController.m; sourceTree = "<group>"; };
+		AE16BD0D22BA393E00B82824 /* autoBeuTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = autoBeuTabBarController.h; sourceTree = "<group>"; };
+		AE16BD0E22BA393E00B82824 /* autoBeuTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = autoBeuTabBarController.m; sourceTree = "<group>"; };
 		F4682552D5A3C47ECC15966A /* Pods-automobileBeautyService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-automobileBeautyService.release.xcconfig"; path = "Target Support Files/Pods-automobileBeautyService/Pods-automobileBeautyService.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +77,6 @@
 				77419ACE4F062A8623C7CA16 /* Pods-automobileBeautyService.debug.xcconfig */,
 				F4682552D5A3C47ECC15966A /* Pods-automobileBeautyService.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +101,11 @@
 		AE16BCDB22BA2B8A00B82824 /* automobileBeautyService */ = {
 			isa = PBXGroup;
 			children = (
+				AE16BCFF22BA313C00B82824 /* autoBeuCommon */,
+				AE16BCFC22BA313C00B82824 /* autoBeuControllers */,
+				AE16BCFE22BA313C00B82824 /* autoBeuModels */,
+				AE16BCFD22BA313C00B82824 /* autoBeuResources */,
+				AE16BCFB22BA313C00B82824 /* autoBeuViews */,
 				AE16BCDC22BA2B8A00B82824 /* AppDelegate.h */,
 				AE16BCDD22BA2B8A00B82824 /* AppDelegate.m */,
 				AE16BCDF22BA2B8A00B82824 /* ViewController.h */,
@@ -93,10 +114,57 @@
 				AE16BCE822BA2B8B00B82824 /* Assets.xcassets */,
 				AE16BCEA22BA2B8B00B82824 /* LaunchScreen.storyboard */,
 				AE16BCED22BA2B8B00B82824 /* Info.plist */,
+				AE16BCF822BA303B00B82824 /* autoBeu_PrefixHeader.pch */,
 				AE16BCEE22BA2B8B00B82824 /* main.m */,
 				AE16BCE522BA2B8A00B82824 /* automobileBeautyService.xcdatamodeld */,
 			);
 			path = automobileBeautyService;
+			sourceTree = "<group>";
+		};
+		AE16BCFB22BA313C00B82824 /* autoBeuViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = autoBeuViews;
+			sourceTree = "<group>";
+		};
+		AE16BCFC22BA313C00B82824 /* autoBeuControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE16BD0D22BA393E00B82824 /* autoBeuTabBarController.h */,
+				AE16BD0E22BA393E00B82824 /* autoBeuTabBarController.m */,
+				AE16BD0222BA34DC00B82824 /* autoBeuBaseViewController.h */,
+				AE16BD0122BA34DC00B82824 /* autoBeuBaseViewController.m */,
+				AE16BD0522BA354900B82824 /* autoBeuHomeViewController.h */,
+				AE16BD0422BA354900B82824 /* autoBeuHomeViewController.m */,
+				AE16BD0722BA389000B82824 /* autoBeuAddViewController.h */,
+				AE16BD0822BA389000B82824 /* autoBeuAddViewController.m */,
+				AE16BD0A22BA38A700B82824 /* autoBeuSearchViewController.h */,
+				AE16BD0B22BA38A700B82824 /* autoBeuSearchViewController.m */,
+			);
+			path = autoBeuControllers;
+			sourceTree = "<group>";
+		};
+		AE16BCFD22BA313C00B82824 /* autoBeuResources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = autoBeuResources;
+			sourceTree = "<group>";
+		};
+		AE16BCFE22BA313C00B82824 /* autoBeuModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = autoBeuModels;
+			sourceTree = "<group>";
+		};
+		AE16BCFF22BA313C00B82824 /* autoBeuCommon */ = {
+			isa = PBXGroup;
+			children = (
+				AE16BD0022BA315700B82824 /* autoBeuGlobal.h */,
+			);
+			path = autoBeuCommon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,10 +288,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE16BD0322BA34DC00B82824 /* autoBeuBaseViewController.m in Sources */,
+				AE16BD0922BA389000B82824 /* autoBeuAddViewController.m in Sources */,
+				AE16BD0C22BA38A700B82824 /* autoBeuSearchViewController.m in Sources */,
+				AE16BD0622BA354900B82824 /* autoBeuHomeViewController.m in Sources */,
 				AE16BCE122BA2B8A00B82824 /* ViewController.m in Sources */,
 				AE16BCE722BA2B8A00B82824 /* automobileBeautyService.xcdatamodeld in Sources */,
 				AE16BCEF22BA2B8B00B82824 /* main.m in Sources */,
 				AE16BCDE22BA2B8A00B82824 /* AppDelegate.m in Sources */,
+				AE16BD0F22BA393E00B82824 /* autoBeuTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +441,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/automobileBeautyService/autoBeu_PrefixHeader.pch";
 				INFOPLIST_FILE = automobileBeautyService/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -387,6 +461,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/automobileBeautyService/autoBeu_PrefixHeader.pch";
 				INFOPLIST_FILE = automobileBeautyService/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
