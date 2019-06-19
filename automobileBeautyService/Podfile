@@ -8,5 +8,6 @@ target 'automobileBeautyService' do
   # Pods for automobileBeautyService
     pod 'IQKeyboardManager'
     pod 'AFNetworking'
+    pod 'Masonry'
 
 end
