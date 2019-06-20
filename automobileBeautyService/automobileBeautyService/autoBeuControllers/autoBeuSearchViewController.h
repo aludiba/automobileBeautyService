@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface autoBeuSearchViewController : autoBeuBaseViewController
+@property(nonatomic, strong)NSArray *autoBeusourceArray;
 
 @end
 

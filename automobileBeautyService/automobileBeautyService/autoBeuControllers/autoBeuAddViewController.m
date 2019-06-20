@@ -215,7 +215,243 @@
         
         [self.autoBeumainTable reloadData];
     }else if (self.currentType == autoBeuAddViewControllerTypeDetail){
+        autoBeuAddViewModel *nameModel = [[autoBeuAddViewModel alloc] init];
+        nameModel.currentType = autoBeuAddCellDefault;
+        nameModel.title = @"name";
+        if (self.model.name.length) {
+            nameModel.content = self.model.name;
+        }else{
+            nameModel.content = @"-";
+        }
+        nameModel.isDetail = YES;
+        nameModel.placeholder = @"Please fill in name";
+        [self.autoBeuviewDataArray addObject:nameModel];
         
+        autoBeuAddViewModel *carmodelModel = [[autoBeuAddViewModel alloc] init];
+        carmodelModel.currentType = autoBeuAddCellDefault;
+        carmodelModel.title = @"carmodel";
+        if (self.model.carModel.length) {
+            carmodelModel.content = self.model.carModel;
+        }else{
+            carmodelModel.content = @"-";
+        }
+        carmodelModel.isDetail = YES;
+        carmodelModel.placeholder = @"Please fill in carModel";
+        [self.autoBeuviewDataArray addObject:carmodelModel];
+        
+        autoBeuAddViewModel *licensePlateModel = [[autoBeuAddViewModel alloc] init];
+        licensePlateModel.currentType = autoBeuAddCellDefault;
+        licensePlateModel.title = @"licensePlate";
+        if (self.model.licensePlate.length) {
+            licensePlateModel.content = self.model.licensePlate;
+        }else{
+            licensePlateModel.content = @"-";
+        }
+        licensePlateModel.isDetail = YES;
+        licensePlateModel.placeholder = @"Please fill in licensePlate";
+        [self.autoBeuviewDataArray addObject:licensePlateModel];
+        
+        autoBeuAddViewModel *phoneNumberModel = [[autoBeuAddViewModel alloc] init];
+        phoneNumberModel.currentType = autoBeuAddCellDefault;
+        phoneNumberModel.title = @"phoneNumber";
+        phoneNumberModel.title = @"phoneNumber";
+        if (self.model.phoneNumber.length) {
+            phoneNumberModel.content = self.model.phoneNumber;
+        }else{
+            phoneNumberModel.content = @"-";
+        }
+        phoneNumberModel.isDetail  = YES;
+        phoneNumberModel.placeholder = @"Please fill in phoneNumber";
+        [self.autoBeuviewDataArray addObject:phoneNumberModel];
+        
+        autoBeuAddViewModel *lineModel = [[autoBeuAddViewModel alloc] init];
+        lineModel.currentType = autoBeuAddCellLine;
+        [self.autoBeuviewDataArray addObject:lineModel];
+        
+        autoBeuAddViewModel *autoBeuPaintModel = [[autoBeuAddViewModel alloc] init];
+        autoBeuPaintModel.currentType = autoBeuAddCellMore;
+        autoBeuPaintModel.title = @"Paint";
+        if (self.model.autoBeuPaint.note.length) {
+            autoBeuPaintModel.content = self.model.autoBeuPaint.note;
+        }else{
+            autoBeuPaintModel.content = @"-";
+        }
+        autoBeuPaintModel.isDetail = YES;
+        autoBeuPaintModel.isSelect = self.model.autoBeuPaint.isSelect;
+        autoBeuPaintModel.placeholder = @"Please fill in remarks";
+        autoBeuPaintModel.switchTitlesArray = [[NSMutableArray alloc] init];
+        NSMutableDictionary *dic0 = [[NSMutableDictionary alloc] init];
+        [dic0 setObject:@"oxideRemoval" forKey:@"name"];
+        [dic0 setObject:[NSNumber numberWithBool:self.model.autoBeuPaint.isOxideRemoval] forKey:@"switch"];
+        [autoBeuPaintModel.switchTitlesArray addObject:dic0];
+        NSMutableDictionary *dic1 = [[NSMutableDictionary alloc] init];
+        [dic1 setObject:@"wax" forKey:@"name"];
+        [dic1 setObject:[NSNumber numberWithBool:self.model.autoBeuPaint.isWax] forKey:@"switch"];
+        [autoBeuPaintModel.switchTitlesArray addObject:dic1];
+        NSMutableDictionary *dic2 = [[NSMutableDictionary alloc] init];
+        [dic2 setObject:@"nickProcess" forKey:@"name"];
+        [dic2 setObject:[NSNumber numberWithBool:self.model.autoBeuPaint.isNickProcess] forKey:@"switch"];
+        [autoBeuPaintModel.switchTitlesArray addObject:dic2];
+        NSMutableDictionary *dic3 = [[NSMutableDictionary alloc] init];
+        [dic3 setObject:@"orangePeelProcess" forKey:@"name"];
+        [dic3 setObject:[NSNumber numberWithBool:self.model.autoBeuPaint.isOrangePeelProcess] forKey:@"switch"];
+        [autoBeuPaintModel.switchTitlesArray addObject:dic3];
+        NSMutableDictionary *dic4 = [[NSMutableDictionary alloc] init];
+        [dic4 setObject:@"lossLightProcess" forKey:@"name"];
+        [dic4 setObject:[NSNumber numberWithBool:self.model.autoBeuPaint.isLossLightProcess] forKey:@"switch"];
+        [autoBeuPaintModel.switchTitlesArray addObject:dic4];
+        NSMutableDictionary *dic5 = [[NSMutableDictionary alloc] init];
+        [dic5 setObject:@"sealingGlair" forKey:@"name"];
+        [dic5 setObject:[NSNumber numberWithBool:self.model.autoBeuPaint.isSealingGlair] forKey:@"switch"];
+        [autoBeuPaintModel.switchTitlesArray addObject:dic5];
+        NSMutableDictionary *dic6 = [[NSMutableDictionary alloc] init];
+        [dic6 setObject:@"coating" forKey:@"name"];
+        [dic6 setObject:[NSNumber numberWithBool:self.model.autoBeuPaint.isCoating] forKey:@"switch"];
+        [autoBeuPaintModel.switchTitlesArray addObject:dic6];
+        NSMutableDictionary *dic7 = [[NSMutableDictionary alloc] init];
+        [dic7 setObject:@"platingCrystal" forKey:@"name"];
+        [dic7 setObject:[NSNumber numberWithBool:self.model.autoBeuPaint.isPlatingCrystal] forKey:@"switch"];
+        [autoBeuPaintModel.switchTitlesArray addObject:dic7];
+        NSMutableDictionary *dic8 = [[NSMutableDictionary alloc] init];
+        [dic8 setObject:@"pianoPaintRestoration" forKey:@"name"];
+        [dic8 setObject:[NSNumber numberWithBool:self.model.autoBeuPaint.isPianoPaintRestoration] forKey:@"switch"];
+        [autoBeuPaintModel.switchTitlesArray addObject:dic8];
+        [self.autoBeuviewDataArray addObject:autoBeuPaintModel];
+        
+        autoBeuAddViewModel *autoBeuInteriorModel = [[autoBeuAddViewModel alloc] init];
+        autoBeuInteriorModel.currentType = autoBeuAddCellMore;
+        autoBeuInteriorModel.title = @"Interior";
+        if (self.model.autoBeuInterior.note.length) {
+            autoBeuInteriorModel.content = self.model.autoBeuInterior.note;
+        }else{
+            autoBeuInteriorModel.content = @"-";
+        }
+        autoBeuInteriorModel.isDetail = YES;
+        autoBeuInteriorModel.isSelect = self.model.autoBeuInterior.isSelect;
+        autoBeuInteriorModel.placeholder = @"Please fill in remarks";
+        autoBeuInteriorModel.switchTitlesArray = [[NSMutableArray alloc] init];
+        NSMutableDictionary *dic10 = [[NSMutableDictionary alloc] init];
+        [dic10 setObject:@"cleaning" forKey:@"name"];
+        [dic10 setObject:[NSNumber numberWithBool:self.model.autoBeuInterior.isCleaning] forKey:@"switch"];
+        [autoBeuInteriorModel.switchTitlesArray addObject:dic10];
+        NSMutableDictionary *dic11 = [[NSMutableDictionary alloc] init];
+        [dic11 setObject:@"leatherCare" forKey:@"name"];
+        [dic11 setObject:[NSNumber numberWithBool:self.model.autoBeuInterior.isLeatherCare] forKey:@"switch"];
+        [autoBeuInteriorModel.switchTitlesArray addObject:dic11];
+        NSMutableDictionary *dic12 = [[NSMutableDictionary alloc] init];
+        [dic12 setObject:@"doorPlankCoating" forKey:@"name"];
+        [dic12 setObject:[NSNumber numberWithBool:self.model.autoBeuInterior.isDoorPlankCoating] forKey:@"switch"];
+        [autoBeuInteriorModel.switchTitlesArray addObject:dic12];
+        NSMutableDictionary *dic13 = [[NSMutableDictionary alloc] init];
+        [dic13 setObject:@"sprayDisinfection" forKey:@"name"];
+        [dic13 setObject:[NSNumber numberWithBool:self.model.autoBeuInterior.isSprayDisinfection] forKey:@"switch"];
+        [autoBeuInteriorModel.switchTitlesArray addObject:dic13];
+        NSMutableDictionary *dic14 = [[NSMutableDictionary alloc] init];
+        [dic14 setObject:@"sprayDisinfection" forKey:@"name"];
+        [dic14 setObject:[NSNumber numberWithBool:self.model.autoBeuInterior.isSprayDisinfection] forKey:@"switch"];
+        [autoBeuInteriorModel.switchTitlesArray addObject:dic14];
+        NSMutableDictionary *dic15 = [[NSMutableDictionary alloc] init];
+        [dic15 setObject:@"fabricCoating" forKey:@"name"];
+        [dic15 setObject:[NSNumber numberWithBool:self.model.autoBeuInterior.isFabricCoating] forKey:@"switch"];
+        [autoBeuInteriorModel.switchTitlesArray addObject:dic15];
+        [self.autoBeuviewDataArray addObject:autoBeuInteriorModel];
+        
+        autoBeuAddViewModel *autoBeuNacelleModel = [[autoBeuAddViewModel alloc] init];
+        autoBeuNacelleModel.currentType = autoBeuAddCellMore;
+        autoBeuNacelleModel.title = @"Nacelle";
+        if (self.model.autoBeuNacelle.note.length) {
+            autoBeuNacelleModel.content = self.model.autoBeuNacelle.note;
+        }else{
+            autoBeuNacelleModel.content = @"-";
+        }
+        autoBeuNacelleModel.isDetail = YES;
+        autoBeuNacelleModel.isSelect = self.model.autoBeuNacelle.isSelect;
+        autoBeuNacelleModel.placeholder = @"Please fill in remarks";
+        autoBeuNacelleModel.switchTitlesArray = [[NSMutableArray alloc] init];
+        NSMutableDictionary *dic20 = [[NSMutableDictionary alloc] init];
+        [dic20 setObject:@"engineRoomClean" forKey:@"name"];
+        [dic20 setObject:[NSNumber numberWithBool:self.model.autoBeuNacelle.isEngineRoomClean] forKey:@"switch"];
+        [autoBeuNacelleModel.switchTitlesArray addObject:dic20];
+        NSMutableDictionary *dic21 = [[NSMutableDictionary alloc] init];
+        [dic21 setObject:@"cabinCoating" forKey:@"name"];
+        [dic21 setObject:[NSNumber numberWithBool:self.model.autoBeuNacelle.isCabinCoating] forKey:@"switch"];
+        [autoBeuNacelleModel.switchTitlesArray addObject:dic21];
+        [self.autoBeuviewDataArray addObject:autoBeuNacelleModel];
+        
+        autoBeuAddViewModel *autoBeuGlassModel = [[autoBeuAddViewModel alloc] init];
+        autoBeuGlassModel.currentType = autoBeuAddCellMore;
+        autoBeuGlassModel.title = @"Glass";
+        if (self.model.autoBeuGlass.note.length) {
+            autoBeuGlassModel.content = self.model.autoBeuGlass.note;
+        }else{
+            autoBeuGlassModel.content = @"-";
+        }
+        autoBeuGlassModel.isDetail = YES;
+        autoBeuGlassModel.isSelect = self.model.autoBeuGlass.isSelect;
+        autoBeuGlassModel.placeholder = @"Please fill in remarks";
+        autoBeuGlassModel.switchTitlesArray = [[NSMutableArray alloc] init];
+        NSMutableDictionary *dic30 = [[NSMutableDictionary alloc] init];
+        [dic30 setObject:@"glassOilFilmRemoval" forKey:@"name"];
+        [dic30 setObject:[NSNumber numberWithBool:self.model.autoBeuGlass.isGlassOilFilmRemoval] forKey:@"switch"];
+        [autoBeuPaintModel.switchTitlesArray addObject:dic30];
+        NSMutableDictionary *dic31 = [[NSMutableDictionary alloc] init];
+        [dic31 setObject:@"platingGlassCrystal" forKey:@"name"];
+        [dic31 setObject:[NSNumber numberWithBool:self.model.autoBeuGlass.isPlatingGlassCrystal] forKey:@"switch"];
+        [autoBeuGlassModel.switchTitlesArray addObject:dic31];
+        [self.autoBeuviewDataArray addObject:autoBeuGlassModel];
+        
+        autoBeuAddViewModel *autoBeuTiresAndHubsModel = [[autoBeuAddViewModel alloc] init];
+        autoBeuTiresAndHubsModel.currentType = autoBeuAddCellMore;
+        autoBeuTiresAndHubsModel.title = @"TiresAndHubs";
+        if (self.model.autoBeuTiresAndHubs.note.length) {
+            autoBeuTiresAndHubsModel.content = self.model.autoBeuTiresAndHubs.note;
+        }else{
+            autoBeuTiresAndHubsModel.content = @"-";
+        }
+        autoBeuTiresAndHubsModel.isDetail = YES;
+        autoBeuTiresAndHubsModel.isSelect = self.model.autoBeuTiresAndHubs.isSelect;
+        autoBeuTiresAndHubsModel.placeholder = @"Please fill in remarks";
+        autoBeuTiresAndHubsModel.switchTitlesArray = [[NSMutableArray alloc] init];
+        NSMutableDictionary *dic40 = [[NSMutableDictionary alloc] init];
+        [dic40 setObject:@"tireCleaningAndCoating" forKey:@"name"];
+        [dic40 setObject:[NSNumber numberWithBool:self.model.autoBeuTiresAndHubs.isTireCleaningAndCoating] forKey:@"switch"];
+        [autoBeuTiresAndHubsModel.switchTitlesArray addObject:dic40];
+        NSMutableDictionary *dic41 = [[NSMutableDictionary alloc] init];
+        [dic41 setObject:@"wheelHubCleaningAndCrystalPlating" forKey:@"name"];
+        [dic41 setObject:[NSNumber numberWithBool:self.model.autoBeuTiresAndHubs.isWheelHubCleaningAndCrystalPlating] forKey:@"switch"];
+        [autoBeuTiresAndHubsModel.switchTitlesArray addObject:dic41];
+        [self.autoBeuviewDataArray addObject:autoBeuTiresAndHubsModel];
+        
+        autoBeuAddViewModel *autoBeuHeadlightModel = [[autoBeuAddViewModel alloc] init];
+        autoBeuHeadlightModel.currentType = autoBeuAddCellMore;
+        autoBeuHeadlightModel.title = @"Headlight";
+        if (self.model.autoBeuHeadlight.note.length) {
+            autoBeuHeadlightModel.content = self.model.autoBeuHeadlight.note;
+        }else{
+            autoBeuHeadlightModel.content = @"-";
+        }
+        autoBeuHeadlightModel.isDetail = YES;
+        autoBeuHeadlightModel.isSelect = self.model.autoBeuHeadlight.isSelect;
+        autoBeuHeadlightModel.placeholder = @"Please fill in remarks";
+        autoBeuHeadlightModel.switchTitlesArray = [[NSMutableArray alloc] init];
+        NSMutableDictionary *dic50 = [[NSMutableDictionary alloc] init];
+        [dic50 setObject:@"oxidation" forKey:@"name"];
+        [dic50 setObject:[NSNumber numberWithBool:self.model.autoBeuHeadlight.isOxidation] forKey:@"switch"];
+        [autoBeuHeadlightModel.switchTitlesArray addObject:dic50];
+        NSMutableDictionary *dic51 = [[NSMutableDictionary alloc] init];
+        [dic51 setObject:@"renovation" forKey:@"name"];
+        [dic51 setObject:[NSNumber numberWithBool:self.model.autoBeuHeadlight.isRenovation] forKey:@"switch"];
+        [autoBeuHeadlightModel.switchTitlesArray addObject:dic51];
+        [self.autoBeuviewDataArray addObject:autoBeuHeadlightModel];
+        
+        [self.autoBeumainTable reloadData];
+        [self.autoBeusaveButton setTitle:@"Save" forState:UIControlStateNormal];
+        self.autoBeusaveButton.hidden = YES;
+        [self.autoBeumainTable mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.bottom.equalTo(self.mas_bottomLayoutGuideTop).offset(-5);
+        }];
+        [self.autoBeumainTable layoutIfNeeded];
+        [self.view layoutSubviews];
     }
 }
 #pragma mark - 添加或保存
@@ -375,12 +611,33 @@
     [documentData addObject:dict];
     [documentData writeToFile:documentPath atomically:YES];
     [MBProgressHUD autoBeushowReminderText:@"Save success!"];
-    
+    if (self.currentType == autoBeuAddViewControllerTypeAdd) {
     self.navigationController.tabBarController.selectedIndex = 0;
+    }else if (self.currentType == autoBeuAddViewControllerTypeEditAgain){
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 #pragma mark - 再次编辑
 - (void)autoBeueditor{
-    
+    self.currentType = autoBeuAddViewControllerTypeEditAgain;
+    self.title = @"Edit";
+    for (int i = 0; i < self.autoBeuviewDataArray.count; i++) {
+        autoBeuAddViewModel *vModel = self.autoBeuviewDataArray[i];
+        if (vModel.isDetail) {
+            vModel.isDetail = NO;
+        }
+        if ([vModel.content isEqualToString:@"-"]) {
+            vModel.content = @"";
+        }
+    }
+    self.autoBeueditButton.hidden = YES;
+    self.autoBeusaveButton.hidden = NO;
+    [self.autoBeumainTable reloadData];
+    [self.autoBeumainTable mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self.mas_bottomLayoutGuideTop).offset(-104);
+    }];
+    [self.autoBeumainTable layoutIfNeeded];
+    [self.view layoutSubviews];
 }
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{

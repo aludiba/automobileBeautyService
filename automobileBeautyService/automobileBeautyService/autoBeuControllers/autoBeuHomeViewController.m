@@ -64,6 +64,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     autoBeuDataModel *model = self.autoBeudataArray[indexPath.row - 1];
     autoBeuAddViewController *vc = [[autoBeuAddViewController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
     vc.currentType = autoBeuAddViewControllerTypeDetail;
     vc.model = model;
     [self.navigationController pushViewController:vc animated:YES];
