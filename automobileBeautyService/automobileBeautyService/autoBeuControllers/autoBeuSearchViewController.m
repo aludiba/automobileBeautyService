@@ -11,6 +11,10 @@
 @implementation autoBeuSearchViewController
 - (void)viewDidLoad{
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor greenColor];
+    CGFloat aRedValue = arc4random() % 255;
+    CGFloat aGreenValue = arc4random() % 255;
+    CGFloat aBlueValue = arc4random() % 255;
+    self.view.backgroundColor = [UIColor colorWithRed:aRedValue/256.0 green:aGreenValue/256.0 blue:aBlueValue/256.0 alpha:1.0];
+    self.title = @"Search";
 }
 @end

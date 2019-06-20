@@ -9,9 +9,15 @@
 #import "autoBeuBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class autoBeuDataModel;
+typedef NS_ENUM(NSInteger,autoBeuAddViewControllerType) {
+    autoBeuAddViewControllerTypeAdd,
+    autoBeuAddViewControllerTypeDetail,
+    autoBeuAddViewControllerTypeEditAgain,
+};
 @interface autoBeuAddViewController : autoBeuBaseViewController
-
+@property(nonatomic, assign)autoBeuAddViewControllerType currentType;
+@property(nonatomic, strong)autoBeuDataModel *model;
 @end
 
 NS_ASSUME_NONNULL_END

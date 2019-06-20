@@ -47,7 +47,7 @@
     [super viewWillAppear:animated];
     self.extendedLayoutIncludesOpaqueBars = YES;
 }
-- (void)auto4sbackButtonAction{
+- (void)autoBeubackButtonAction{
     [self.navigationController popViewControllerAnimated:YES];
 }
 - (void)setTitle:(NSString *)title {
@@ -66,7 +66,7 @@
         _autoBeubackButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
         [_autoBeubackButton setImage:[UIImage imageNamed:@"autoBeubtn_back"] forState:UIControlStateNormal];
         _autoBeubackButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-        [_autoBeubackButton addTarget:self action:@selector(auto4sbackButtonAction) forControlEvents:UIControlEventTouchUpInside];
+        [_autoBeubackButton addTarget:self action:@selector(autoBeubackButtonAction) forControlEvents:UIControlEventTouchUpInside];
         UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:_autoBeubackButton];
         self.navigationItem.leftBarButtonItem = backItem;
     }
