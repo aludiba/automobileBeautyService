@@ -21,15 +21,15 @@
 @implementation autoBeuSearchViewController
 - (void)viewDidLoad{
     [super viewDidLoad];
-    CGFloat aRedValue = arc4random() % 255;
-    CGFloat aGreenValue = arc4random() % 255;
-    CGFloat aBlueValue = arc4random() % 255;
-    self.view.backgroundColor = [UIColor colorWithRed:aRedValue/256.0 green:aGreenValue/256.0 blue:aBlueValue/256.0 alpha:1.0];
+//    CGFloat aRedValue = arc4random() % 255;
+//    CGFloat aGreenValue = arc4random() % 255;
+//    CGFloat aBlueValue = arc4random() % 255;
+//    self.view.backgroundColor = [UIColor colorWithRed:aRedValue/256.0 green:aGreenValue/256.0 blue:aBlueValue/256.0 alpha:1.0];
+    self.view.backgroundColor = auto4sH_Color(242, 242, 242, 1);
     self.title = @"Search";
 }
 - (void)autoBeu_setupNavigationItems {
     [super autoBeu_setupNavigationItems];
-    
 }
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
@@ -176,8 +176,9 @@
             make.size.mas_equalTo(CGSizeMake(15, 15));
         }];
         
-        _autoBeusearchTextField = [[autoBeuCustomContentTextField alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width - 119, 30)];
+        _autoBeusearchTextField = [[autoBeuCustomContentTextField alloc] initWithFrame:CGRectMake(0, auto4sHeightNavBar, auto4sWIDTH, 30)];
         _autoBeusearchTextField.backgroundColor = [UIColor colorWithRed:0.94 green:0.94 blue:0.94 alpha:1.00];
+        _autoBeusearchTextField.backgroundColor = [UIColor blackColor];
         _autoBeusearchTextField.delegate = self;
         _autoBeusearchTextField.layer.cornerRadius = 4;
         _autoBeusearchTextField.layer.masksToBounds = YES;
