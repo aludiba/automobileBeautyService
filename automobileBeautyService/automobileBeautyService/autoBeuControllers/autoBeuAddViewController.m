@@ -603,9 +603,10 @@
     NSMutableArray *documentData = [[NSMutableArray alloc] initWithContentsOfFile:documentPath];
     NSDictionary *dic = (NSDictionary *)[self.model yy_modelToJSONObject];
     NSDictionary *dict = @{@"id":self.model.name,@"data":dic};
-    for (NSDictionary *dictd in documentData) {
+    for (NSMutableDictionary *dictd in documentData) {
         if ([dictd[@"id"] isEqualToString:self.model.name]) {
             [documentData removeObject:dictd];
+            break;
         }
     }
     [documentData addObject:dict];
