@@ -448,7 +448,7 @@
         [self.autoBeusaveButton setTitle:@"Save" forState:UIControlStateNormal];
         self.autoBeusaveButton.hidden = YES;
         [self.autoBeumainTable mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.bottom.equalTo(self.mas_bottomLayoutGuideTop).offset(-5);
+            make.bottom.equalTo(self.mas_bottomLayoutGuideTop);
         }];
         [self.autoBeumainTable layoutIfNeeded];
         [self.view layoutSubviews];
@@ -634,7 +634,7 @@
     self.autoBeusaveButton.hidden = NO;
     [self.autoBeumainTable reloadData];
     [self.autoBeumainTable mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(self.mas_bottomLayoutGuideTop).offset(-104);
+        make.bottom.equalTo(self.mas_bottomLayoutGuideTop).offset(-64);
     }];
     [self.autoBeumainTable layoutIfNeeded];
     [self.view layoutSubviews];
@@ -748,7 +748,7 @@
         [self.autoBeusaveButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.view).offset(16);
             make.trailing.equalTo(self.view).offset(-16);
-            make.bottom.equalTo(self.mas_bottomLayoutGuideTop).offset(-30);
+            make.bottom.equalTo(self.mas_bottomLayoutGuideTop).offset(-10);
             make.height.mas_equalTo(44);
         }];
         [self.view addSubview:_autoBeumainTable];
@@ -756,7 +756,7 @@
             make.leading.equalTo(self.view);
             make.trailing.equalTo(self.view);
             make.top.equalTo(self.mas_topLayoutGuideBottom);
-            make.bottom.equalTo(self.mas_bottomLayoutGuideTop).offset(-104);
+            make.bottom.equalTo(self.mas_bottomLayoutGuideTop).offset(-64);
         }];
     }
     return _autoBeumainTable;

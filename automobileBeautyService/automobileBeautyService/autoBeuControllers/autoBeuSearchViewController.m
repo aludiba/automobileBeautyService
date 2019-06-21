@@ -12,7 +12,7 @@
 #import "autoBeuRecordTableViewCell.h"
 #import "autoBeuAddViewController.h"
 @interface autoBeuSearchViewController ()<UITextFieldDelegate,UITableViewDelegate,UITableViewDataSource>
-@property (nonatomic, strong) autoBeuCustomContentTextField *autoBeusearchTextField;
+@property (nonatomic, strong) UITextField *autoBeusearchTextField;
 @property (nonatomic, strong) UIButton *autoBeucancelButton;
 @property (nonatomic, strong) UITableView *autoBeutableView;
 @property (nonatomic, strong) NSMutableArray *autoBeudatas;
@@ -21,18 +21,18 @@
 @implementation autoBeuSearchViewController
 - (void)viewDidLoad{
     [super viewDidLoad];
-//    CGFloat aRedValue = arc4random() % 255;
-//    CGFloat aGreenValue = arc4random() % 255;
-//    CGFloat aBlueValue = arc4random() % 255;
-//    self.view.backgroundColor = [UIColor colorWithRed:aRedValue/256.0 green:aGreenValue/256.0 blue:aBlueValue/256.0 alpha:1.0];
-    self.view.backgroundColor = auto4sH_Color(242, 242, 242, 1);
+    CGFloat aRedValue = arc4random() % 255;
+    CGFloat aGreenValue = arc4random() % 255;
+    CGFloat aBlueValue = arc4random() % 255;
+    self.view.backgroundColor = [UIColor colorWithRed:aRedValue/256.0 green:aGreenValue/256.0 blue:aBlueValue/256.0 alpha:1.0];
     self.title = @"Search";
+    [self setSearchText];
 }
 - (void)autoBeu_setupNavigationItems {
     [super autoBeu_setupNavigationItems];
 }
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     NSString *documentPath = [autoBeuHBTool getDocumentPath:@"autoBeuData.plist"];
     NSMutableArray *documentData = [[NSMutableArray alloc] initWithContentsOfFile:documentPath];
     if (documentData.count) {
@@ -50,6 +50,49 @@
         [self.autoBeusearchTextField becomeFirstResponder];
         self.autoBeufirstEnter = NO;
     }
+}
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+}
+- (void)setSearchText{
+    self.autoBeusearchTextField = [[UITextField alloc] init];
+    self.autoBeusearchTextField.backgroundColor = auto4sH_Color(242, 242, 242, 1);
+    [self.view addSubview:self.autoBeusearchTextField];
+    [self.autoBeusearchTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.mas_topLayoutGuideBottom).offset(5);
+        make.leading.equalTo(self.view).offset(12);
+        make.width.mas_equalTo(auto4sWIDTH - 24);
+        make.height.mas_equalTo(30);
+    }];
+    self.autoBeusearchTextField.font = [UIFont fontWithName:@"PingFangSC-Regular" size:13];
+    self.autoBeusearchTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    self.autoBeusearchTextField.leftViewMode = UITextFieldViewModeWhileEditing;
+    //设置圆角
+    self.autoBeusearchTextField.layer.cornerRadius = 4;
+    //将多余的部分切掉
+    UIView *searchTextLeftView = [[UIView alloc] init];
+    [self.autoBeusearchTextField addSubview:searchTextLeftView];
+    [searchTextLeftView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.autoBeusearchTextField);
+        make.leading.equalTo(self.autoBeusearchTextField);
+        make.width.mas_equalTo(39);
+        make.height.mas_equalTo(30);
+    }];
+    [self.autoBeusearchTextField setLeftView:searchTextLeftView];
+    searchTextLeftView.backgroundColor = auto4sH_Color(242, 242, 242, 1);
+    UIImageView *searchTextLeftImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"autoBeubtn_search_new"]];
+    [searchTextLeftView addSubview:searchTextLeftImgView];
+    [searchTextLeftImgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(searchTextLeftView);
+        make.centerY.equalTo(searchTextLeftView);
+        make.width.mas_equalTo(15);
+        make.height.mas_equalTo(15);
+    }];
+    self.autoBeusearchTextField.placeholder = @"Search for customer name";
+    self.autoBeusearchTextField.leftViewMode = UITextFieldViewModeAlways;
+    self.autoBeusearchTextField.delegate = self;
+    self.autoBeusearchTextField.returnKeyType = UIReturnKeySearch;
 }
 - (void)autoBeuloadData{
     NSString *keywords = [self.autoBeusearchTextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
@@ -93,7 +136,6 @@
     }
     [self.autoBeutableView reloadData];
     [self.view endEditing:YES];
-    [self autoBeu_configureNavigationItems];
 }
 #pragma mark - UITextFieldDelegate
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
@@ -130,13 +172,8 @@
     autoBeuAddViewController *vc = [[autoBeuAddViewController alloc] init];
     vc.currentType = autoBeuAddViewControllerTypeDetail;
     vc.model = model;
+    vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
-}
-- (void)autoBeu_configureNavigationItems {
-//    UIBarButtonItem *cancelItem = [[UIBarButtonItem alloc] initWithCustomView:self.autoBeucancelButton];
-//    self.navigationItem.leftBarButtonItem = cancelItem;
-//    self.navigationItem.titleView = self.autoBeusearchTextField;
-    [self.view addSubview:self.autoBeusearchTextField];
 }
 - (void)autoBeucancelButtonAction {
     [self.navigationController popViewControllerAnimated:YES];
@@ -157,45 +194,59 @@
         [self.view addSubview:_autoBeutableView];
         
         [_autoBeutableView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.mas_equalTo(UIEdgeInsetsZero);
+        make.top.equalTo(self.autoBeusearchTextField.mas_bottom).offset(5);
+            make.leading.equalTo(self.view);
+            make.trailing.equalTo(self.view);
+            make.bottom.equalTo(self.view);
         }];
         
         [_autoBeutableView registerClass:[autoBeuRecordTableViewCell class] forCellReuseIdentifier:@"autoBeuRecordTableViewCell"];
     }
     return _autoBeutableView;
 }
-- (autoBeuCustomContentTextField *)auto4BeusearchTextField {
-    if (!_autoBeusearchTextField) {
-        UIView *searchIconView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 36, 30)];
-        searchIconView.backgroundColor = [UIColor clearColor];
-        UIImageView *searchIconImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"autoBeubtn_search_new"]];
-        [searchIconView addSubview:searchIconImage];
-        
-        [searchIconImage mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.center.equalTo(searchIconView);
-            make.size.mas_equalTo(CGSizeMake(15, 15));
-        }];
-        
-        _autoBeusearchTextField = [[autoBeuCustomContentTextField alloc] initWithFrame:CGRectMake(0, auto4sHeightNavBar, auto4sWIDTH, 30)];
-        _autoBeusearchTextField.backgroundColor = [UIColor colorWithRed:0.94 green:0.94 blue:0.94 alpha:1.00];
-        _autoBeusearchTextField.backgroundColor = [UIColor blackColor];
-        _autoBeusearchTextField.delegate = self;
-        _autoBeusearchTextField.layer.cornerRadius = 4;
-        _autoBeusearchTextField.layer.masksToBounds = YES;
-        _autoBeusearchTextField.autocorrectionType = UITextAutocorrectionTypeNo;
-        _autoBeusearchTextField.autocapitalizationType = UITextAutocapitalizationTypeNone;
-        _autoBeusearchTextField.font = [UIFont systemFontOfSize:13.0];
-        _autoBeusearchTextField.textColor = [UIColor colorWithRed:0.22 green:0.26 blue:0.35 alpha:1.00];
-        _autoBeusearchTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _autoBeusearchTextField.returnKeyType = UIReturnKeySearch;
-        _autoBeusearchTextField.enablesReturnKeyAutomatically = YES;
-        _autoBeusearchTextField.placeholder = @"Search";
-        _autoBeusearchTextField.leftView = searchIconView;
-        _autoBeusearchTextField.leftViewMode = UITextFieldViewModeAlways;
-    }
-    return _autoBeusearchTextField;
-}
-
+//- (UITextField *)auto4BeusearchTextField {
+//    if (_autoBeusearchTextField == nil) {
+//        _autoBeusearchTextField = [[UITextField alloc] init];
+//        _autoBeusearchTextField.backgroundColor = auto4sH_Color(242, 242, 242, 1);
+//        [self.view addSubview:_autoBeusearchTextField];
+//        [_autoBeusearchTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.top.equalTo(self.view).offset(auto4sHeightNavBar);
+//            make.leading.equalTo(self.view).offset(12);
+//            make.width.mas_equalTo(auto4sWIDTH - 24);
+//            make.height.mas_equalTo(30);
+//        }];
+//        _autoBeusearchTextField.font = [UIFont fontWithName:@"PingFangSC-Regular" size:13];
+//        _autoBeusearchTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+//        _autoBeusearchTextField.leftViewMode = UITextFieldViewModeWhileEditing;
+//        //设置圆角
+//        _autoBeusearchTextField.layer.cornerRadius = 4;
+//        //将多余的部分切掉
+//        _autoBeusearchTextField.layer.masksToBounds = YES;
+//        UIView *searchTextLeftView = [[UIView alloc] init];
+//        [_autoBeusearchTextField addSubview:searchTextLeftView];
+//        [searchTextLeftView mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.top.equalTo(self->_autoBeusearchTextField);
+//            make.leading.equalTo(self->_autoBeusearchTextField);
+//            make.width.mas_equalTo(39);
+//            make.height.mas_equalTo(30);
+//        }];
+//        [_autoBeusearchTextField setLeftView:searchTextLeftView];
+//        searchTextLeftView.backgroundColor = auto4sH_Color(242, 242, 242, 1);
+//        UIImageView *searchTextLeftImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"autoBeubtn_search_new"]];
+//        [searchTextLeftView addSubview:searchTextLeftImgView];
+//        [searchTextLeftImgView mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.centerX.equalTo(searchTextLeftView);
+//            make.centerY.equalTo(searchTextLeftView);
+//            make.width.mas_equalTo(15);
+//            make.height.mas_equalTo(15);
+//        }];
+//        _autoBeusearchTextField.placeholder = @"Search for customer name";
+//        _autoBeusearchTextField.leftViewMode = UITextFieldViewModeAlways;
+//        _autoBeusearchTextField.delegate = self;
+//        _autoBeusearchTextField.returnKeyType = UIReturnKeySearch;
+//    }
+//    return _autoBeusearchTextField;
+//}
 - (UIButton *)autoBeucancelButton {
     if (!_autoBeucancelButton) {
         _autoBeucancelButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
