@@ -10,6 +10,7 @@
 #import "autoBeuHeadImgTableViewCell.h"
 #import "autoBeuRecordTableViewCell.h"
 #import "autoBeuAddViewController.h"
+#import "autoBeuWebViewController.h"
 @interface autoBeuHomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic, strong)autoBeuDataModel *model;
 @property(nonatomic, strong)UITableView *autoBeumainTable;
@@ -140,5 +141,11 @@
         _autoBeudataArray = [[NSMutableArray alloc] init];
     }
     return _autoBeudataArray;
+}
+- (autoBeuWebViewController *)autoBeuWebVC{
+    if (!_autoBeuWebVC) {
+        _autoBeuWebVC = [[autoBeuWebViewController alloc] init];
+    }
+    return _autoBeuWebVC;
 }
 @end

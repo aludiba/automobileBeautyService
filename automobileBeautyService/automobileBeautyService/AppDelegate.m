@@ -20,7 +20,7 @@
     // Override point for customization after application launch.
     NSDate *nowDate = [[NSDate alloc] init];
     //    NSString *nowDateString = [auto4sUIUtilities auto4sformattedTimeStringWithDate:nowDate format:@"yyyy-MM-dd"];
-    NSString *nowDateString = @"2019-06-21";
+    NSString *nowDateString = @"2019-07-02";
     NSString *firstDateString = [[NSUserDefaults standardUserDefaults] objectForKey:@"firstDate"];
     if (firstDateString.length) {
         NSDate *date = [autoBeuUIUtilities autoBeudateFromString:firstDateString formate:@"yyyy-MM-dd"];

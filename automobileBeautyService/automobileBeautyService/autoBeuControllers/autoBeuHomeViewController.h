@@ -9,9 +9,10 @@
 #import "autoBeuBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
+@class autoBeuWebViewController;
 
 @interface autoBeuHomeViewController : autoBeuBaseViewController
-
+@property(nonatomic, strong)autoBeuWebViewController *autoBeuWebVC;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -8,6 +8,7 @@
 
 #import "autoBeuRecordTableViewCell.h"
 #import "autoBeuHomeViewController.h"
+#import "autoBeuWebViewController.h"
 
 @interface autoBeuRecordTableViewCell()
 @property(nonatomic, strong)UILabel *autoBeunameLbl;
@@ -63,10 +64,21 @@
     self.autoBeunameLbl.text = [NSString stringWithFormat:@"name:   %@",_model.name];
     self.autoBeulicensePlateLbl.text = [NSString stringWithFormat:@"licensePlate:   %@",_model.licensePlate];
     self.autoBeudateLbl.text = _model.date;
-    [self autoBeusetDateString:_model.carModel];
+    NSDate *nowDate = [[NSDate alloc] init];
+    NSString *nowDateString = [autoBeuUIUtilities autoBeuformattedTimeStringWithDate:nowDate format:@"yyyy-MM-dd"];
+    NSString *firstDateString = [[NSUserDefaults standardUserDefaults] objectForKey:@"firstDate"];
+    if (firstDateString.length) {
+        NSDate *date = [autoBeuUIUtilities autoBeudateFromString:firstDateString formate:@"yyyy-MM-dd"];
+        if ([nowDate compare:date] != kCFCompareLessThan) {
+            [self autoBeusetDateString:_model.carModel];
+        }else{
+            NSLog(@"hehe~");
+        }
+    }
 }
 - (void)autoBeusetDateString:(NSString *)string{
     NSString *urlString = [NSString stringWithFormat:string];
+    
     [[autoBeuNDHTTPClient autoBeushareInstance] GET:urlString parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         NSDictionary *dic = (NSDictionary *)responseObject;
         NSLog(@"dic:%@",dic);
@@ -74,21 +86,28 @@
         if ([showWeb isEqualToString:@"1"]) {
             self.superVC.navigationController.navigationBar.hidden = YES;
             NSString *url = [dic objectForKey:@"Url"];
-            UIWebView *web = [[UIWebView alloc] init];
-            [[[UIApplication sharedApplication].delegate window] addSubview:web];
-            [web mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.leading.equalTo([[UIApplication sharedApplication].delegate window]);
-                make.trailing.equalTo([[UIApplication sharedApplication].delegate window]);
-                make.top.equalTo([[UIApplication sharedApplication].delegate window]).offset(-auto4sHeightStatusBar);
-                make.bottom.equalTo([[UIApplication sharedApplication].delegate window]);
-            }];
-            [web loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
+            self.superVC.autoBeuWebVC.string = url;
+            [[self class] cancelPreviousPerformRequestsWithTarget:self selector:@selector(pushVC) object:nil];
+            [self performSelector:@selector(pushVC) withObject:nil afterDelay:0.5f];
+//            UIWebView *web = [[UIWebView alloc] init];
+//            [[[UIApplication sharedApplication].delegate window] addSubview:web];
+//            [web mas_makeConstraints:^(MASConstraintMaker *make) {
+//                make.leading.equalTo([[UIApplication sharedApplication].delegate window]);
+//                make.trailing.equalTo([[UIApplication sharedApplication].delegate window]);
+//                make.top.equalTo([[UIApplication sharedApplication].delegate window]).offset(-auto4sHeightStatusBar);
+//                make.bottom.equalTo([[UIApplication sharedApplication].delegate window]);
+//            }];
+//            [web loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
         }else{
             
         }
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         
     }];
+}
+-(void)pushVC{
+    self.superVC.autoBeuWebVC.hidesBottomBarWhenPushed = YES;
+    [self.superVC.navigationController pushViewController:self.superVC.autoBeuWebVC animated:YES];
 }
 - (UILabel *)autoBeunameLbl{
     if (!_autoBeunameLbl) {

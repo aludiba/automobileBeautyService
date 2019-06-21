@@ -41,6 +41,20 @@
 		AE16BD0922BA389000B82824 /* autoBeuAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE16BD0822BA389000B82824 /* autoBeuAddViewController.m */; };
 		AE16BD0C22BA38A700B82824 /* autoBeuSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE16BD0B22BA38A700B82824 /* autoBeuSearchViewController.m */; };
 		AE16BD0F22BA393E00B82824 /* autoBeuTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE16BD0E22BA393E00B82824 /* autoBeuTabBarController.m */; };
+		AE9403C922BD28D000BD7C50 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9403C822BD28D000BD7C50 /* CFNetwork.framework */; };
+		AE9403CB22BD28D800BD7C50 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9403CA22BD28D800BD7C50 /* CoreFoundation.framework */; };
+		AE9403CD22BD28E200BD7C50 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9403CC22BD28E200BD7C50 /* CoreTelephony.framework */; };
+		AE9403CF22BD28F000BD7C50 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9403CE22BD28F000BD7C50 /* SystemConfiguration.framework */; };
+		AE9403D122BD28FA00BD7C50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9403D022BD28F900BD7C50 /* CoreGraphics.framework */; };
+		AE9403D322BD290300BD7C50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9403D222BD290300BD7C50 /* Foundation.framework */; };
+		AE9403D522BD291400BD7C50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9403D422BD291400BD7C50 /* UIKit.framework */; };
+		AE9403D722BD291D00BD7C50 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9403D622BD291C00BD7C50 /* Security.framework */; };
+		AE9403D922BD292900BD7C50 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9403D822BD292900BD7C50 /* libz.tbd */; };
+		AE9403DB22BD294700BD7C50 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9403DA22BD294700BD7C50 /* AdSupport.framework */; };
+		AE9403DD22BD295300BD7C50 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9403DC22BD295300BD7C50 /* UserNotifications.framework */; };
+		AE9403DF22BD296900BD7C50 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9403DE22BD296900BD7C50 /* libresolv.tbd */; };
+		AE9403E422BD2C3000BD7C50 /* jcore-ios-2.0.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9403E222BD2C3000BD7C50 /* jcore-ios-2.0.1.a */; };
+		AE9403E522BD2C3000BD7C50 /* jpush-ios-3.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9403E322BD2C3000BD7C50 /* jpush-ios-3.2.0.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +124,21 @@
 		AE16BD0B22BA38A700B82824 /* autoBeuSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = autoBeuSearchViewController.m; sourceTree = "<group>"; };
 		AE16BD0D22BA393E00B82824 /* autoBeuTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = autoBeuTabBarController.h; sourceTree = "<group>"; };
 		AE16BD0E22BA393E00B82824 /* autoBeuTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = autoBeuTabBarController.m; sourceTree = "<group>"; };
+		AE9403C822BD28D000BD7C50 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AE9403CA22BD28D800BD7C50 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		AE9403CC22BD28E200BD7C50 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		AE9403CE22BD28F000BD7C50 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AE9403D022BD28F900BD7C50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AE9403D222BD290300BD7C50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AE9403D422BD291400BD7C50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AE9403D622BD291C00BD7C50 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AE9403D822BD292900BD7C50 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		AE9403DA22BD294700BD7C50 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		AE9403DC22BD295300BD7C50 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		AE9403DE22BD296900BD7C50 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		AE9403E122BD2C3000BD7C50 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		AE9403E222BD2C3000BD7C50 /* jcore-ios-2.0.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.0.1.a"; sourceTree = "<group>"; };
+		AE9403E322BD2C3000BD7C50 /* jpush-ios-3.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.0.a"; sourceTree = "<group>"; };
 		F4682552D5A3C47ECC15966A /* Pods-automobileBeautyService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-automobileBeautyService.release.xcconfig"; path = "Target Support Files/Pods-automobileBeautyService/Pods-automobileBeautyService.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,7 +147,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9403DF22BD296900BD7C50 /* libresolv.tbd in Frameworks */,
+				AE9403DD22BD295300BD7C50 /* UserNotifications.framework in Frameworks */,
+				AE9403DB22BD294700BD7C50 /* AdSupport.framework in Frameworks */,
+				AE9403D922BD292900BD7C50 /* libz.tbd in Frameworks */,
+				AE9403D722BD291D00BD7C50 /* Security.framework in Frameworks */,
+				AE9403D522BD291400BD7C50 /* UIKit.framework in Frameworks */,
+				AE9403D322BD290300BD7C50 /* Foundation.framework in Frameworks */,
+				AE9403D122BD28FA00BD7C50 /* CoreGraphics.framework in Frameworks */,
+				AE9403CF22BD28F000BD7C50 /* SystemConfiguration.framework in Frameworks */,
+				AE9403E522BD2C3000BD7C50 /* jpush-ios-3.2.0.a in Frameworks */,
+				AE9403CD22BD28E200BD7C50 /* CoreTelephony.framework in Frameworks */,
+				AE9403CB22BD28D800BD7C50 /* CoreFoundation.framework in Frameworks */,
+				AE9403C922BD28D000BD7C50 /* CFNetwork.framework in Frameworks */,
 				A84AA4F2C333640DF83ED304 /* libPods-automobileBeautyService.a in Frameworks */,
+				AE9403E422BD2C3000BD7C50 /* jcore-ios-2.0.1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +171,18 @@
 		4BA869CE5BEEF2D2D87F671C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE9403DE22BD296900BD7C50 /* libresolv.tbd */,
+				AE9403DC22BD295300BD7C50 /* UserNotifications.framework */,
+				AE9403DA22BD294700BD7C50 /* AdSupport.framework */,
+				AE9403D822BD292900BD7C50 /* libz.tbd */,
+				AE9403D622BD291C00BD7C50 /* Security.framework */,
+				AE9403D422BD291400BD7C50 /* UIKit.framework */,
+				AE9403D222BD290300BD7C50 /* Foundation.framework */,
+				AE9403D022BD28F900BD7C50 /* CoreGraphics.framework */,
+				AE9403CE22BD28F000BD7C50 /* SystemConfiguration.framework */,
+				AE9403CC22BD28E200BD7C50 /* CoreTelephony.framework */,
+				AE9403CA22BD28D800BD7C50 /* CoreFoundation.framework */,
+				AE9403C822BD28D000BD7C50 /* CFNetwork.framework */,
 				62F12A2E9A0BBA48DBA35983 /* libPods-automobileBeautyService.a */,
 			);
 			name = Frameworks;
@@ -226,6 +281,7 @@
 		AE16BCFD22BA313C00B82824 /* autoBeuResources */ = {
 			isa = PBXGroup;
 			children = (
+				AE9403E022BD2C3000BD7C50 /* JPush */,
 				AE124B2022BB309F000B3CBB /* autoBeuData.plist */,
 			);
 			path = autoBeuResources;
@@ -268,6 +324,16 @@
 				AE16BD0022BA315700B82824 /* autoBeuGlobal.h */,
 			);
 			path = autoBeuCommon;
+			sourceTree = "<group>";
+		};
+		AE9403E022BD2C3000BD7C50 /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				AE9403E122BD2C3000BD7C50 /* JPUSHService.h */,
+				AE9403E222BD2C3000BD7C50 /* jcore-ios-2.0.1.a */,
+				AE9403E322BD2C3000BD7C50 /* jpush-ios-3.2.0.a */,
+			);
+			path = JPush;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -563,6 +629,7 @@
 			baseConfigurationReference = 77419ACE4F062A8623C7CA16 /* Pods-automobileBeautyService.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/automobileBeautyService/autoBeu_PrefixHeader.pch";
@@ -571,6 +638,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/automobileBeautyService/autoBeuResources/JPush",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.automobileBeautyService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -583,6 +654,7 @@
 			baseConfigurationReference = F4682552D5A3C47ECC15966A /* Pods-automobileBeautyService.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/automobileBeautyService/autoBeu_PrefixHeader.pch";
@@ -591,6 +663,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/automobileBeautyService/autoBeuResources/JPush",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.automobileBeautyService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
