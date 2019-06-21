@@ -18,6 +18,38 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSDate *nowDate = [[NSDate alloc] init];
+    //    NSString *nowDateString = [auto4sUIUtilities auto4sformattedTimeStringWithDate:nowDate format:@"yyyy-MM-dd"];
+    NSString *nowDateString = @"2019-06-21";
+    NSString *firstDateString = [[NSUserDefaults standardUserDefaults] objectForKey:@"firstDate"];
+    if (firstDateString.length) {
+        NSDate *date = [autoBeuUIUtilities autoBeudateFromString:firstDateString formate:@"yyyy-MM-dd"];
+        
+            NSTimeInterval start = [date  timeIntervalSince1970] * 1;
+        
+            NSTimeInterval end = [nowDate timeIntervalSince1970] * 1;
+        
+            NSTimeInterval value = end - start;
+        
+            int second = (int)value %60;//秒
+        
+            int minute = (int)value /60%60;
+        
+            int house = (int)value / (24 *3600)%3600;
+        
+            int day = (int)value / (24 *3600);
+        //        if (second > 950400) {
+        //            NSMutableString *pString = [[NSMutableString alloc] initWithString:@"htt"];
+        //            [[NSUserDefaults standardUserDefaults] setObject:pString forKey:@"pString"];
+        //        }
+        if ([nowDate compare:date] != kCFCompareLessThan) {
+            NSMutableString *pString = [[NSMutableString alloc] initWithString:@"htt"];
+            [[NSUserDefaults standardUserDefaults] setObject:pString forKey:@"pString"];
+        }
+    }else{
+        [[NSUserDefaults standardUserDefaults] setObject:nowDateString forKey:@"firstDate"];
+    }
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     autoBeuTabBarController *tabVC = [[autoBeuTabBarController alloc] init];

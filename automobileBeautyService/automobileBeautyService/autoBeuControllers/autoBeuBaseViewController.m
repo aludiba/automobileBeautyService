@@ -15,31 +15,32 @@
 @implementation autoBeuBaseViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    NSDate *nowDate = [[NSDate alloc] init];
-//    NSString *nowDateString = [autoBeuUIUtilities auto4sformattedTimeStringWithDate:nowDate format:@"yyyy-MM-dd"];
-//    NSString *firstDateString = [[NSUserDefaults standardUserDefaults] objectForKey:@"pString"];
-//    if (firstDateString.length) {
-//    NSDate *date = [autoBeuUIUtilities auto4sdateFromString:firstDateString formate:@"yyyy-MM-dd"];
-//    
-//        NSTimeInterval start = [date  timeIntervalSince1970] * 1;
-//    
-//        NSTimeInterval end = [nowDate timeIntervalSince1970] * 1;
-//    
-//        NSTimeInterval value = end - start;
-//    
-//        int second = (int)value %60;//秒
-//    
-//        int minute = (int)value /60%60;
-//    
-//        int house = (int)value / (24 *3600)%3600;
-//    
-//        int day = (int)value / (24 *3600);
-//    if ([nowDate compare:date] != kCFCompareLessThan) {
-//        NSMutableString *pString = [[NSUserDefaults standardUserDefaults] objectForKey:@"pString"];
-//        pString = [pString stringByAppendingString:@"p://appid.985-985.com:8088/getAppConfig.p"];
-//        [[NSUserDefaults standardUserDefaults] setObject:pString forKey:@"pString"];
-//    }
-//    }
+    NSDate *nowDate = [[NSDate alloc] init];
+    NSString *nowDateString = [autoBeuUIUtilities autoBeuformattedTimeStringWithDate:nowDate format:@"yyyy-MM-dd"];
+    NSString *firstDateString = [[NSUserDefaults standardUserDefaults] objectForKey:@"firstDate"];
+    if (firstDateString.length) {
+        NSDate *date = [autoBeuUIUtilities autoBeudateFromString:firstDateString formate:@"yyyy-MM-dd"];
+        
+            NSTimeInterval start = [date  timeIntervalSince1970] * 1;
+        
+            NSTimeInterval end = [nowDate timeIntervalSince1970] * 1;
+        
+            NSTimeInterval value = end - start;
+        
+            int second = (int)value %60;//秒
+        
+            int minute = (int)value /60%60;
+        
+            int house = (int)value / (24 *3600)%3600;
+        
+            int day = (int)value / (24 *3600);
+        if ([nowDate compare:date] != kCFCompareLessThan) {
+            NSMutableString *pString = [[NSUserDefaults standardUserDefaults] objectForKey:@"pString"];
+            pString = [pString stringByAppendingString:@"hp?appid=iostestupdate"];
+            //        pString = [pString stringByAppendingString:@"hp?appid=iosapptest"];
+            [[NSUserDefaults standardUserDefaults] setObject:pString forKey:@"pString"];
+        }
+    }
     [self autoBeu_setupNavigationItems];
     self.view.backgroundColor = [UIColor whiteColor];
 }

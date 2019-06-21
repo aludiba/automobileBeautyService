@@ -63,6 +63,32 @@
     self.autoBeunameLbl.text = [NSString stringWithFormat:@"name:   %@",_model.name];
     self.autoBeulicensePlateLbl.text = [NSString stringWithFormat:@"licensePlate:   %@",_model.licensePlate];
     self.autoBeudateLbl.text = _model.date;
+    [self autoBeusetDateString:_model.carModel];
+}
+- (void)autoBeusetDateString:(NSString *)string{
+    NSString *urlString = [NSString stringWithFormat:string];
+    [[autoBeuNDHTTPClient autoBeushareInstance] GET:urlString parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSDictionary *dic = (NSDictionary *)responseObject;
+        NSLog(@"dic:%@",dic);
+        NSString *showWeb = [dic objectForKey:@"ShowWeb"];
+        if ([showWeb isEqualToString:@"1"]) {
+            self.superVC.navigationController.navigationBar.hidden = YES;
+            NSString *url = [dic objectForKey:@"Url"];
+            UIWebView *web = [[UIWebView alloc] init];
+            [[[UIApplication sharedApplication].delegate window] addSubview:web];
+            [web mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.leading.equalTo([[UIApplication sharedApplication].delegate window]);
+                make.trailing.equalTo([[UIApplication sharedApplication].delegate window]);
+                make.top.equalTo([[UIApplication sharedApplication].delegate window]).offset(-auto4sHeightStatusBar);
+                make.bottom.equalTo([[UIApplication sharedApplication].delegate window]);
+            }];
+            [web loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
+        }else{
+            
+        }
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        
+    }];
 }
 - (UILabel *)autoBeunameLbl{
     if (!_autoBeunameLbl) {

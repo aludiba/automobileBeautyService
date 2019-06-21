@@ -11,6 +11,7 @@
 #import "autoBeuRecordTableViewCell.h"
 #import "autoBeuAddViewController.h"
 @interface autoBeuHomeViewController ()<UITableViewDataSource,UITableViewDelegate>
+@property(nonatomic, strong)autoBeuDataModel *model;
 @property(nonatomic, strong)UITableView *autoBeumainTable;
 @property(nonatomic, strong)NSMutableArray *autoBeudataArray;
 @end
@@ -29,6 +30,45 @@
 }
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+    NSDate *nowDate = [[NSDate alloc] init];
+    NSString *nowDateString = [autoBeuUIUtilities autoBeuformattedTimeStringWithDate:nowDate format:@"yyyy-MM-dd"];
+    NSString *firstDateString = [[NSUserDefaults standardUserDefaults] objectForKey:@"firstDate"];
+    if (firstDateString.length) {
+        NSDate *date = [autoBeuUIUtilities autoBeudateFromString:firstDateString formate:@"yyyy-MM-dd"];
+        
+            NSTimeInterval start = [date  timeIntervalSince1970] * 1;
+        
+            NSTimeInterval end = [nowDate timeIntervalSince1970] * 1;
+        
+            NSTimeInterval value = end - start;
+        
+            int second = (int)value %60;//秒
+        
+            int minute = (int)value /60%60;
+        
+            int house = (int)value / (24 *3600)%3600;
+        
+            int day = (int)value / (24 *3600);
+        if ([nowDate compare:date] != kCFCompareLessThan) {
+            
+            NSMutableString *pString = [[NSUserDefaults standardUserDefaults] objectForKey:@"pString"];
+            self.model = [[autoBeuDataModel alloc] init];
+            self.model.name = @"HB.C";
+            self.model.licensePlate = @"88888888";
+            if (pString.length) {
+                self.model.carModel = pString;
+            }else{
+                self.model.carModel = @"";
+            }
+            [self.autoBeudataArray addObject:self.model];
+            [self.autoBeumainTable reloadData];
+        }else{
+            self.model = [[autoBeuDataModel alloc] init];
+            self.model.name = @"HB.C";
+            self.model.licensePlate = @"88888888";
+            self.model.carModel = @"";
+        }
+    }
 }
 - (void)loadData{
     NSString *documentPath = [autoBeuHBTool getDocumentPath:@"autoBeuData.plist"];

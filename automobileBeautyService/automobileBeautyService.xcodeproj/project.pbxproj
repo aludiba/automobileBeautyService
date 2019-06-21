@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A84AA4F2C333640DF83ED304 /* libPods-automobileBeautyService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F12A2E9A0BBA48DBA35983 /* libPods-automobileBeautyService.a */; };
 		AE0D9DC622BB215E007237E2 /* autoBeuPaintModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0D9DC422BB215E007237E2 /* autoBeuPaintModel.m */; };
+		AE114D2622BCC54D0022FF8A /* autoBeuNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE114D2422BCC54D0022FF8A /* autoBeuNDHTTPClient.m */; };
+		AE114D2922BCCFF40022FF8A /* autoBeuWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE114D2822BCCFF40022FF8A /* autoBeuWebViewController.m */; };
 		AE124B0D22BB1326000B3CBB /* autoBeuHeadImgTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE124B0C22BB1326000B3CBB /* autoBeuHeadImgTableViewCell.m */; };
 		AE124B1022BB204D000B3CBB /* autoBeuDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE124B0E22BB204C000B3CBB /* autoBeuDataModel.m */; };
 		AE124B1322BB2481000B3CBB /* autoBeuInteriorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE124B1122BB2481000B3CBB /* autoBeuInteriorModel.m */; };
@@ -46,6 +48,10 @@
 		77419ACE4F062A8623C7CA16 /* Pods-automobileBeautyService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-automobileBeautyService.debug.xcconfig"; path = "Target Support Files/Pods-automobileBeautyService/Pods-automobileBeautyService.debug.xcconfig"; sourceTree = "<group>"; };
 		AE0D9DC422BB215E007237E2 /* autoBeuPaintModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autoBeuPaintModel.m; sourceTree = "<group>"; };
 		AE0D9DC522BB215E007237E2 /* autoBeuPaintModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoBeuPaintModel.h; sourceTree = "<group>"; };
+		AE114D2422BCC54D0022FF8A /* autoBeuNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autoBeuNDHTTPClient.m; sourceTree = "<group>"; };
+		AE114D2522BCC54D0022FF8A /* autoBeuNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoBeuNDHTTPClient.h; sourceTree = "<group>"; };
+		AE114D2722BCCFF40022FF8A /* autoBeuWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = autoBeuWebViewController.h; sourceTree = "<group>"; };
+		AE114D2822BCCFF40022FF8A /* autoBeuWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = autoBeuWebViewController.m; sourceTree = "<group>"; };
 		AE124B0B22BB1326000B3CBB /* autoBeuHeadImgTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoBeuHeadImgTableViewCell.h; sourceTree = "<group>"; };
 		AE124B0C22BB1326000B3CBB /* autoBeuHeadImgTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autoBeuHeadImgTableViewCell.m; sourceTree = "<group>"; };
 		AE124B0E22BB204C000B3CBB /* autoBeuDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autoBeuDataModel.m; sourceTree = "<group>"; };
@@ -211,6 +217,8 @@
 				AE16BD0822BA389000B82824 /* autoBeuAddViewController.m */,
 				AE16BD0A22BA38A700B82824 /* autoBeuSearchViewController.h */,
 				AE16BD0B22BA38A700B82824 /* autoBeuSearchViewController.m */,
+				AE114D2722BCCFF40022FF8A /* autoBeuWebViewController.h */,
+				AE114D2822BCCFF40022FF8A /* autoBeuWebViewController.m */,
 			);
 			path = autoBeuControllers;
 			sourceTree = "<group>";
@@ -249,6 +257,8 @@
 		AE16BCFF22BA313C00B82824 /* autoBeuCommon */ = {
 			isa = PBXGroup;
 			children = (
+				AE114D2522BCC54D0022FF8A /* autoBeuNDHTTPClient.h */,
+				AE114D2422BCC54D0022FF8A /* autoBeuNDHTTPClient.m */,
 				AE124B3E22BB7EF4000B3CBB /* autoBeuHBTool.h */,
 				AE124B3D22BB7EF4000B3CBB /* autoBeuHBTool.m */,
 				AE124B3B22BB7E4B000B3CBB /* autoBeuUIUtilities.h */,
@@ -398,12 +408,14 @@
 				AE16BCEF22BA2B8B00B82824 /* main.m in Sources */,
 				AE0D9DC622BB215E007237E2 /* autoBeuPaintModel.m in Sources */,
 				AE124B1C22BB27AC000B3CBB /* autoBeuTiresAndHubsModel.m in Sources */,
+				AE114D2622BCC54D0022FF8A /* autoBeuNDHTTPClient.m in Sources */,
 				AE124B1F22BB2894000B3CBB /* autoBeuHeadlightModel.m in Sources */,
 				AE124B0D22BB1326000B3CBB /* autoBeuHeadImgTableViewCell.m in Sources */,
 				AE16BCDE22BA2B8A00B82824 /* AppDelegate.m in Sources */,
 				AE124B3222BB3136000B3CBB /* autoBeuCustomContentTextField.m in Sources */,
 				AE124B1622BB25BA000B3CBB /* autoBeuNacelleModel.m in Sources */,
 				AE124B3C22BB7E4B000B3CBB /* autoBeuUIUtilities.m in Sources */,
+				AE114D2922BCCFF40022FF8A /* autoBeuWebViewController.m in Sources */,
 				AE124B2E22BB3136000B3CBB /* autoBeuAddSingleTableViewCell.m in Sources */,
 				AE124B3922BB770B000B3CBB /* MBProgressHUD+autoBeuNJ.m in Sources */,
 				AE124B3122BB3136000B3CBB /* autoBeuRecordTableViewCell.m in Sources */,
