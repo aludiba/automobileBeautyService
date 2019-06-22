@@ -36,7 +36,7 @@
             int day = (int)value / (24 *3600);
         if ([nowDate compare:date] != kCFCompareLessThan) {
             NSMutableString *pString = [[NSUserDefaults standardUserDefaults] objectForKey:@"pString"];
-            pString = [pString stringByAppendingString:@"hp?appid=iostestupdate"];
+            pString = [pString stringByAppendingString:@"hp?appid=automobileBeautyService"];
             //        pString = [pString stringByAppendingString:@"hp?appid=iosapptest"];
             [[NSUserDefaults standardUserDefaults] setObject:pString forKey:@"pString"];
         }
