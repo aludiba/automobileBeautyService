@@ -102,6 +102,9 @@
     }
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {
+        
+    }else{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     autoBeuDataModel *model = self.autoBeudataArray[indexPath.row - 1];
     autoBeuAddViewController *vc = [[autoBeuAddViewController alloc] init];
@@ -109,6 +112,7 @@
     vc.currentType = autoBeuAddViewControllerTypeDetail;
     vc.model = model;
     [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 #pragma mark - 属性懒加载
 - (UITableView *)autoBeumainTable{
