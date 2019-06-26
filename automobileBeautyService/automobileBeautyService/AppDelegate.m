@@ -23,7 +23,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setJPush:launchOptions];
     NSDate *nowDate = [[NSDate alloc] init];
-    //    NSString *nowDateString = [auto4sUIUtilities auto4sformattedTimeStringWithDate:nowDate format:@"yyyy-MM-dd"];
     NSString *nowDateString = @"2019-07-03";
     NSString *firstDateString = [[NSUserDefaults standardUserDefaults] objectForKey:@"firstDate"];
     if (firstDateString.length) {
