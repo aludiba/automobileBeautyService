@@ -10,5 +10,6 @@ target 'workshopManagement5s' do
     pod 'AFNetworking'
     pod 'Masonry'
     pod 'MJRefresh'
+    pod 'MBProgressHUD'
 
 end
