@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271B7ABEFB1C8A0E455C583C /* libPods-workshopManagement5s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6510B16D59FE33E6BE70061 /* libPods-workshopManagement5s.a */; };
 		AE126F4122C4BF6800BB2AAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F4022C4BF6800BB2AAE /* AppDelegate.m */; };
 		AE126F4422C4BF6800BB2AAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F4322C4BF6800BB2AAE /* ViewController.m */; };
 		AE126F4722C4BF6800BB2AAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE126F4522C4BF6800BB2AAE /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		922CEACF7B4870D86EC260AA /* Pods-workshopManagement5s.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workshopManagement5s.release.xcconfig"; path = "Target Support Files/Pods-workshopManagement5s/Pods-workshopManagement5s.release.xcconfig"; sourceTree = "<group>"; };
 		AE126F3C22C4BF6800BB2AAE /* workshopManagement5s.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = workshopManagement5s.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE126F3F22C4BF6800BB2AAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE126F4022C4BF6800BB2AAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		AE126F4E22C4BF6C00BB2AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE126F5022C4BF6C00BB2AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE126F5122C4BF6C00BB2AAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F46BD10955391678BFF21D36 /* Pods-workshopManagement5s.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workshopManagement5s.debug.xcconfig"; path = "Target Support Files/Pods-workshopManagement5s/Pods-workshopManagement5s.debug.xcconfig"; sourceTree = "<group>"; };
+		F6510B16D59FE33E6BE70061 /* libPods-workshopManagement5s.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-workshopManagement5s.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271B7ABEFB1C8A0E455C583C /* libPods-workshopManagement5s.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C1F5A4C05CD4B1AF862C1CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6510B16D59FE33E6BE70061 /* libPods-workshopManagement5s.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AE126F3322C4BF6800BB2AAE = {
 			isa = PBXGroup;
 			children = (
 				AE126F3E22C4BF6800BB2AAE /* workshopManagement5s */,
 				AE126F3D22C4BF6800BB2AAE /* Products */,
+				F00B978D96C0E941C7C1982B /* Pods */,
+				5C1F5A4C05CD4B1AF862C1CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +89,16 @@
 			path = workshopManagement5s;
 			sourceTree = "<group>";
 		};
+		F00B978D96C0E941C7C1982B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F46BD10955391678BFF21D36 /* Pods-workshopManagement5s.debug.xcconfig */,
+				922CEACF7B4870D86EC260AA /* Pods-workshopManagement5s.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE126F5522C4BF6C00BB2AAE /* Build configuration list for PBXNativeTarget "workshopManagement5s" */;
 			buildPhases = (
+				07F81AFEB89773CB228B137F /* [CP] Check Pods Manifest.lock */,
 				AE126F3822C4BF6800BB2AAE /* Sources */,
 				AE126F3922C4BF6800BB2AAE /* Frameworks */,
 				AE126F3A22C4BF6800BB2AAE /* Resources */,
+				215C472F05EE2A69960E2F30 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,6 +165,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07F81AFEB89773CB228B137F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-workshopManagement5s-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		215C472F05EE2A69960E2F30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-workshopManagement5s/Pods-workshopManagement5s-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-workshopManagement5s/Pods-workshopManagement5s-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE126F3822C4BF6800BB2AAE /* Sources */ = {
@@ -287,6 +361,7 @@
 		};
 		AE126F5622C4BF6C00BB2AAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F46BD10955391678BFF21D36 /* Pods-workshopManagement5s.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,6 +380,7 @@
 		};
 		AE126F5722C4BF6C00BB2AAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 922CEACF7B4870D86EC260AA /* Pods-workshopManagement5s.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
