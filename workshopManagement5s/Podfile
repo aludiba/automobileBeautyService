@@ -8,5 +8,6 @@ target 'workshopManagement5s' do
   # Pods for workshopManagement5s
     pod 'IQKeyboardManager'
     pod 'AFNetworking'
+    pod 'Masonry'
 
 end
