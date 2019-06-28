@@ -23,12 +23,12 @@
 		AE124B2F22BB3136000B3CBB /* autoBeuAddMoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE124B2622BB3134000B3CBB /* autoBeuAddMoreTableViewCell.m */; };
 		AE124B3022BB3136000B3CBB /* autoBeuEditorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE124B2822BB3134000B3CBB /* autoBeuEditorTableViewCell.m */; };
 		AE124B3122BB3136000B3CBB /* autoBeuRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE124B2922BB3134000B3CBB /* autoBeuRecordTableViewCell.m */; };
-		AE124B3222BB3136000B3CBB /* autoBeuCustomContentTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AE124B2A22BB3134000B3CBB /* autoBeuCustomContentTextField.m */; };
 		AE124B3322BB3136000B3CBB /* autoBeuSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE124B2B22BB3135000B3CBB /* autoBeuSwitchView.m */; };
 		AE124B3622BB321D000B3CBB /* autoBeuAddViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE124B3522BB321D000B3CBB /* autoBeuAddViewModel.m */; };
 		AE124B3922BB770B000B3CBB /* MBProgressHUD+autoBeuNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE124B3822BB770B000B3CBB /* MBProgressHUD+autoBeuNJ.m */; };
 		AE124B3C22BB7E4B000B3CBB /* autoBeuUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE124B3A22BB7E4B000B3CBB /* autoBeuUIUtilities.m */; };
 		AE124B3F22BB7EF4000B3CBB /* autoBeuHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE124B3D22BB7EF4000B3CBB /* autoBeuHBTool.m */; };
+		AE126F8622C5B3E800BB2AAE /* autoBeuCustomContentTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F8522C5B3E800BB2AAE /* autoBeuCustomContentTextField.m */; };
 		AE16BCDE22BA2B8A00B82824 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE16BCDD22BA2B8A00B82824 /* AppDelegate.m */; };
 		AE16BCE122BA2B8A00B82824 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE16BCE022BA2B8A00B82824 /* ViewController.m */; };
 		AE16BCE422BA2B8A00B82824 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE16BCE222BA2B8A00B82824 /* Main.storyboard */; };
@@ -83,13 +83,11 @@
 		AE124B2022BB309F000B3CBB /* autoBeuData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = autoBeuData.plist; sourceTree = "<group>"; };
 		AE124B2222BB3133000B3CBB /* autoBeuRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoBeuRecordTableViewCell.h; sourceTree = "<group>"; };
 		AE124B2322BB3133000B3CBB /* autoBeuAddMoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoBeuAddMoreTableViewCell.h; sourceTree = "<group>"; };
-		AE124B2422BB3134000B3CBB /* autoBeuCustomContentTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoBeuCustomContentTextField.h; sourceTree = "<group>"; };
 		AE124B2522BB3134000B3CBB /* autoBeuAddSingleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autoBeuAddSingleTableViewCell.m; sourceTree = "<group>"; };
 		AE124B2622BB3134000B3CBB /* autoBeuAddMoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autoBeuAddMoreTableViewCell.m; sourceTree = "<group>"; };
 		AE124B2722BB3134000B3CBB /* autoBeuEditorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoBeuEditorTableViewCell.h; sourceTree = "<group>"; };
 		AE124B2822BB3134000B3CBB /* autoBeuEditorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autoBeuEditorTableViewCell.m; sourceTree = "<group>"; };
 		AE124B2922BB3134000B3CBB /* autoBeuRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autoBeuRecordTableViewCell.m; sourceTree = "<group>"; };
-		AE124B2A22BB3134000B3CBB /* autoBeuCustomContentTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autoBeuCustomContentTextField.m; sourceTree = "<group>"; };
 		AE124B2B22BB3135000B3CBB /* autoBeuSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autoBeuSwitchView.m; sourceTree = "<group>"; };
 		AE124B2C22BB3135000B3CBB /* autoBeuSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoBeuSwitchView.h; sourceTree = "<group>"; };
 		AE124B2D22BB3136000B3CBB /* autoBeuAddSingleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoBeuAddSingleTableViewCell.h; sourceTree = "<group>"; };
@@ -101,6 +99,8 @@
 		AE124B3B22BB7E4B000B3CBB /* autoBeuUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoBeuUIUtilities.h; sourceTree = "<group>"; };
 		AE124B3D22BB7EF4000B3CBB /* autoBeuHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autoBeuHBTool.m; sourceTree = "<group>"; };
 		AE124B3E22BB7EF4000B3CBB /* autoBeuHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoBeuHBTool.h; sourceTree = "<group>"; };
+		AE126F8422C5B3E800BB2AAE /* autoBeuCustomContentTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoBeuCustomContentTextField.h; sourceTree = "<group>"; };
+		AE126F8522C5B3E800BB2AAE /* autoBeuCustomContentTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autoBeuCustomContentTextField.m; sourceTree = "<group>"; };
 		AE16BCD922BA2B8A00B82824 /* automobileBeautyService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = automobileBeautyService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE16BCDC22BA2B8A00B82824 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE16BCDD22BA2B8A00B82824 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -249,8 +249,8 @@
 				AE124B2622BB3134000B3CBB /* autoBeuAddMoreTableViewCell.m */,
 				AE124B2D22BB3136000B3CBB /* autoBeuAddSingleTableViewCell.h */,
 				AE124B2522BB3134000B3CBB /* autoBeuAddSingleTableViewCell.m */,
-				AE124B2422BB3134000B3CBB /* autoBeuCustomContentTextField.h */,
-				AE124B2A22BB3134000B3CBB /* autoBeuCustomContentTextField.m */,
+				AE126F8422C5B3E800BB2AAE /* autoBeuCustomContentTextField.h */,
+				AE126F8522C5B3E800BB2AAE /* autoBeuCustomContentTextField.m */,
 				AE124B2722BB3134000B3CBB /* autoBeuEditorTableViewCell.h */,
 				AE124B2822BB3134000B3CBB /* autoBeuEditorTableViewCell.m */,
 				AE124B2222BB3133000B3CBB /* autoBeuRecordTableViewCell.h */,
@@ -483,9 +483,9 @@
 				AE124B1C22BB27AC000B3CBB /* autoBeuTiresAndHubsModel.m in Sources */,
 				AE114D2622BCC54D0022FF8A /* autoBeuNDHTTPClient.m in Sources */,
 				AE124B1F22BB2894000B3CBB /* autoBeuHeadlightModel.m in Sources */,
+				AE126F8622C5B3E800BB2AAE /* autoBeuCustomContentTextField.m in Sources */,
 				AE124B0D22BB1326000B3CBB /* autoBeuHeadImgTableViewCell.m in Sources */,
 				AE16BCDE22BA2B8A00B82824 /* AppDelegate.m in Sources */,
-				AE124B3222BB3136000B3CBB /* autoBeuCustomContentTextField.m in Sources */,
 				AE124B1622BB25BA000B3CBB /* autoBeuNacelleModel.m in Sources */,
 				AE124B3C22BB7E4B000B3CBB /* autoBeuUIUtilities.m in Sources */,
 				AE114D2922BCCFF40022FF8A /* autoBeuWebViewController.m in Sources */,
