@@ -13,4 +13,5 @@ target 'workshopManagement5s' do
     pod 'MBProgressHUD'
     pod 'YYModel'
     pod 'FMDB'
+    pod 'OpenSSL-Universal'
 end
