@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		271B7ABEFB1C8A0E455C583C /* libPods-workshopManagement5s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6510B16D59FE33E6BE70061 /* libPods-workshopManagement5s.a */; };
+		7228748E22C8B2E100149BE1 /* mag5sData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7228748D22C8B2E100149BE1 /* mag5sData.plist */; };
+		7228749422C8BEFE00149BE1 /* mag5sRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7228749322C8BEFE00149BE1 /* mag5sRecordTableViewCell.m */; };
+		7228749A22C8D14700149BE1 /* mag5sTimeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7228749922C8D14700149BE1 /* mag5sTimeButton.m */; };
+		7228749D22C8D24700149BE1 /* mag5sChildrenTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7228749C22C8D24700149BE1 /* mag5sChildrenTimeView.m */; };
+		722874A022C8D39300149BE1 /* mag5sTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7228749F22C8D39300149BE1 /* mag5sTimeView.m */; };
+		722874A322C8D57F00149BE1 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 722874A122C8D57F00149BE1 /* CalendarTool.m */; };
+		722874A622C8E74B00149BE1 /* mag5sHadDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 722874A522C8E74B00149BE1 /* mag5sHadDataTableViewCell.m */; };
 		AE126F4122C4BF6800BB2AAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F4022C4BF6800BB2AAE /* AppDelegate.m */; };
 		AE126F4422C4BF6800BB2AAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F4322C4BF6800BB2AAE /* ViewController.m */; };
 		AE126F4722C4BF6800BB2AAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE126F4522C4BF6800BB2AAE /* Main.storyboard */; };
@@ -36,6 +43,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7228748D22C8B2E100149BE1 /* mag5sData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mag5sData.plist; sourceTree = "<group>"; };
+		7228749222C8BEFE00149BE1 /* mag5sRecordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sRecordTableViewCell.h; sourceTree = "<group>"; };
+		7228749322C8BEFE00149BE1 /* mag5sRecordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sRecordTableViewCell.m; sourceTree = "<group>"; };
+		7228749822C8D14700149BE1 /* mag5sTimeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sTimeButton.h; sourceTree = "<group>"; };
+		7228749922C8D14700149BE1 /* mag5sTimeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sTimeButton.m; sourceTree = "<group>"; };
+		7228749B22C8D24700149BE1 /* mag5sChildrenTimeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sChildrenTimeView.h; sourceTree = "<group>"; };
+		7228749C22C8D24700149BE1 /* mag5sChildrenTimeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sChildrenTimeView.m; sourceTree = "<group>"; };
+		7228749E22C8D39300149BE1 /* mag5sTimeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sTimeView.h; sourceTree = "<group>"; };
+		7228749F22C8D39300149BE1 /* mag5sTimeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sTimeView.m; sourceTree = "<group>"; };
+		722874A122C8D57F00149BE1 /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
+		722874A222C8D57F00149BE1 /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
+		722874A422C8E74B00149BE1 /* mag5sHadDataTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sHadDataTableViewCell.h; sourceTree = "<group>"; };
+		722874A522C8E74B00149BE1 /* mag5sHadDataTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sHadDataTableViewCell.m; sourceTree = "<group>"; };
 		922CEACF7B4870D86EC260AA /* Pods-workshopManagement5s.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workshopManagement5s.release.xcconfig"; path = "Target Support Files/Pods-workshopManagement5s/Pods-workshopManagement5s.release.xcconfig"; sourceTree = "<group>"; };
 		AE126F3C22C4BF6800BB2AAE /* workshopManagement5s.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = workshopManagement5s.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE126F3F22C4BF6800BB2AAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -172,10 +192,20 @@
 			children = (
 				AE126F8722C5B43700BB2AAE /* mag5sCustomContentTextField.h */,
 				AE126F8822C5B43700BB2AAE /* mag5sCustomContentTextField.m */,
+				7228749222C8BEFE00149BE1 /* mag5sRecordTableViewCell.h */,
+				7228749322C8BEFE00149BE1 /* mag5sRecordTableViewCell.m */,
 				AE126F8B22C5B4E700BB2AAE /* mag5sEditorTableViewCell.h */,
 				AE126F8A22C5B4E700BB2AAE /* mag5sEditorTableViewCell.m */,
 				AE126F8D22C5B56D00BB2AAE /* mag5sAddSingleTableViewCell.h */,
 				AE126F8E22C5B56D00BB2AAE /* mag5sAddSingleTableViewCell.m */,
+				7228749822C8D14700149BE1 /* mag5sTimeButton.h */,
+				7228749922C8D14700149BE1 /* mag5sTimeButton.m */,
+				7228749B22C8D24700149BE1 /* mag5sChildrenTimeView.h */,
+				7228749C22C8D24700149BE1 /* mag5sChildrenTimeView.m */,
+				7228749E22C8D39300149BE1 /* mag5sTimeView.h */,
+				7228749F22C8D39300149BE1 /* mag5sTimeView.m */,
+				722874A422C8E74B00149BE1 /* mag5sHadDataTableViewCell.h */,
+				722874A522C8E74B00149BE1 /* mag5sHadDataTableViewCell.m */,
 			);
 			path = mag5sViews;
 			sourceTree = "<group>";
@@ -204,6 +234,8 @@
 		AE126F5B22C59FB500BB2AAE /* mag5sCommon */ = {
 			isa = PBXGroup;
 			children = (
+				722874A222C8D57F00149BE1 /* CalendarTool.h */,
+				722874A122C8D57F00149BE1 /* CalendarTool.m */,
 				AE126F9422C5B97900BB2AAE /* mag5sGlobal.h */,
 				AE126F9122C5B97900BB2AAE /* mag5sHBTool.h */,
 				AE126F9522C5B97900BB2AAE /* mag5sHBTool.m */,
@@ -218,6 +250,7 @@
 		AE126F5C22C5A03200BB2AAE /* mag5sResources */ = {
 			isa = PBXGroup;
 			children = (
+				7228748D22C8B2E100149BE1 /* mag5sData.plist */,
 				AE126F9A22C5BC2100BB2AAE /* mag5sPrefixHeader.pch */,
 			);
 			path = mag5sResources;
@@ -291,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7228748E22C8B2E100149BE1 /* mag5sData.plist in Resources */,
 				AE126F4F22C4BF6C00BB2AAE /* LaunchScreen.storyboard in Resources */,
 				AE126F4C22C4BF6C00BB2AAE /* Assets.xcassets in Resources */,
 				AE126F4722C4BF6800BB2AAE /* Main.storyboard in Resources */,
@@ -367,12 +401,18 @@
 				AE126F9922C5B97900BB2AAE /* MBProgressHUD+mag5sNJ.m in Sources */,
 				AE126F5222C4BF6C00BB2AAE /* main.m in Sources */,
 				AE126F8922C5B43700BB2AAE /* mag5sCustomContentTextField.m in Sources */,
+				7228749422C8BEFE00149BE1 /* mag5sRecordTableViewCell.m in Sources */,
 				AE126F7D22C5AE5000BB2AAE /* mag5sSeiketsuModel.m in Sources */,
 				AE126F8F22C5B56E00BB2AAE /* mag5sAddSingleTableViewCell.m in Sources */,
+				722874A022C8D39300149BE1 /* mag5sTimeView.m in Sources */,
 				AE126F8C22C5B4E700BB2AAE /* mag5sEditorTableViewCell.m in Sources */,
+				722874A322C8D57F00149BE1 /* CalendarTool.m in Sources */,
 				AE126F4A22C4BF6800BB2AAE /* workshopManagement5s.xcdatamodeld in Sources */,
+				7228749D22C8D24700149BE1 /* mag5sChildrenTimeView.m in Sources */,
 				AE126F7722C5ADD200BB2AAE /* mag5sSeitonModel.m in Sources */,
+				7228749A22C8D14700149BE1 /* mag5sTimeButton.m in Sources */,
 				AE126F8022C5AE7F00BB2AAE /* mag5sShitsukeModel.m in Sources */,
+				722874A622C8E74B00149BE1 /* mag5sHadDataTableViewCell.m in Sources */,
 				AE126F5F22C5A2AC00BB2AAE /* mag5sTabBarViewController.m in Sources */,
 				AE126F6522C5A38300BB2AAE /* mag5sHomeViewController.m in Sources */,
 			);
@@ -518,8 +558,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LQ9FAVACVZ;
-				GCC_PREFIX_HEADER = /Users/bykj/automobileBeautyService/workshopManagement5s/workshopManagement5s/mag5sResources/mag5sPrefixHeader.pch;
+				DEVELOPMENT_TEAM = 44V2JFTR7R;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/workshopManagement5s/mag5sResources/mag5sPrefixHeader.pch";
 				INFOPLIST_FILE = workshopManagement5s/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -540,8 +580,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LQ9FAVACVZ;
-				GCC_PREFIX_HEADER = /Users/bykj/automobileBeautyService/workshopManagement5s/workshopManagement5s/mag5sResources/mag5sPrefixHeader.pch;
+				DEVELOPMENT_TEAM = 44V2JFTR7R;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/workshopManagement5s/mag5sResources/mag5sPrefixHeader.pch";
 				INFOPLIST_FILE = workshopManagement5s/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

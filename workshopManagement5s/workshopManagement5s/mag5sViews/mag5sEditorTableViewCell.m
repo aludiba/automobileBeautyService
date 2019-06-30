@@ -54,6 +54,11 @@
 - (void)setModel:(mag5sAddViewModel *)model{
     _model = model;
     self.titleLbl.text = _model.title;
+    if ([_model.title isEqualToString:@"score"]) {
+        self.contentField.keyboardType = UIKeyboardTypeNumberPad;
+    }else{
+        self.contentField.keyboardType = UIKeyboardTypeDefault;
+    }
     self.placeLbl.text = _model.placeholder;
     if (_model.content.length) {
         self.contentField.text = model.content;

@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface mag5sBaseViewController : UIViewController
-
+@property(nonatomic, strong)UIButton *mag5sbackButton;
+- (void)mag5s_setupNavigationItems;
 @end
 
 NS_ASSUME_NONNULL_END

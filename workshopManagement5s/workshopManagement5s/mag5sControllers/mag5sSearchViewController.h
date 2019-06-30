@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface mag5sSearchViewController : mag5sBaseViewController
+@property(nonatomic, strong)NSArray *mag5sSourceArray;
 
 @end
 

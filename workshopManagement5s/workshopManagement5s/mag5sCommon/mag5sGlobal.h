@@ -18,6 +18,7 @@
 #import "MBProgressHUD+mag5sNJ.h"
 #import "mag5sUIUtilities.h"
 #import "mag5sHBTool.h"
+#import "CalendarTool.h"
 /**颜色*/
 #define mag5sH_Color(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
 #define mag5sKeyWindow [UIApplication sharedApplication].keyWindow

@@ -16,17 +16,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self mag5s_setupNavigationItems];
+    self.view.backgroundColor = [UIColor whiteColor];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.extendedLayoutIncludesOpaqueBars = YES;
 }
-*/
-
+- (void)mag5sbackButtonAction{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+- (void)setTitle:(NSString *)title {
+    self.navigationItem.title = @"";
+    UILabel *titleLabel = [[UILabel alloc] init];
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.font = [UIFont systemFontOfSize:18.0];
+    titleLabel.textColor = [UIColor grayColor];
+    titleLabel.text = title;
+    [titleLabel sizeToFit];
+    self.navigationItem.titleView = titleLabel;
+}
+- (void)mag5s_setupNavigationItems{
+    if (self.navigationController && self.navigationController.viewControllers.count > 1) {
+        self.navigationItem.hidesBackButton = YES;
+        _mag5sbackButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+        [_mag5sbackButton setImage:[UIImage imageNamed:@"mag5sbtn_back.imageset"] forState:UIControlStateNormal];
+        _mag5sbackButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+        [_mag5sbackButton addTarget:self action:@selector(mag5sbackButtonAction) forControlEvents:UIControlEventTouchUpInside];
+        UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:_mag5sbackButton];
+        self.navigationItem.leftBarButtonItem = backItem;
+    }
+}
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleDefault;
+}
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait;
+}
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    return UIInterfaceOrientationPortrait;
+}
 @end
