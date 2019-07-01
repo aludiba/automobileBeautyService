@@ -1,16 +1,20 @@
 PODS:
   - IQKeyboardManager (6.2.1)
+  - Masonry (1.1.0)
 
 DEPENDENCIES:
   - IQKeyboardManager
+  - Masonry
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - IQKeyboardManager
+    - Masonry
 
 SPEC CHECKSUMS:
   IQKeyboardManager: 964638372b4a61892cc74fdfa6fd26de8c9464a2
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: e546f5bb1c1c664acb5e8eccd78d79f19d02c97b
+PODFILE CHECKSUM: 752ffa2254259a47781b05944ba9ab13917f69b7
 
 COCOAPODS: 1.6.1
