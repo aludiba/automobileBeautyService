@@ -9,5 +9,6 @@ target 'smallTeamBuildingActivities' do
     pod 'IQKeyboardManager'
     pod 'Masonry'
     pod 'AFNetworking'
+    pod 'MJRefresh'
 
 end
