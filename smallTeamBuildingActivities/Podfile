@@ -10,5 +10,6 @@ target 'smallTeamBuildingActivities' do
     pod 'Masonry'
     pod 'AFNetworking'
     pod 'MJRefresh'
+    pod 'MBProgressHUD'
 
 end
