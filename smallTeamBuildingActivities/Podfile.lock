@@ -1,20 +1,38 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - IQKeyboardManager (6.2.1)
   - Masonry (1.1.0)
 
 DEPENDENCIES:
+  - AFNetworking
   - IQKeyboardManager
   - Masonry
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworking
     - IQKeyboardManager
     - Masonry
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   IQKeyboardManager: 964638372b4a61892cc74fdfa6fd26de8c9464a2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: 752ffa2254259a47781b05944ba9ab13917f69b7
+PODFILE CHECKSUM: a5faf11832cd97c7d0720c19c429ad7d193b91a8
 
 COCOAPODS: 1.6.1

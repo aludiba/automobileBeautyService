@@ -8,5 +8,6 @@ target 'smallTeamBuildingActivities' do
   # Pods for smallTeamBuildingActivities
     pod 'IQKeyboardManager'
     pod 'Masonry'
+    pod 'AFNetworking'
 
 end
