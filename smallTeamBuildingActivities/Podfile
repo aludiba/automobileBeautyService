@@ -13,5 +13,4 @@ target 'smallTeamBuildingActivities' do
     pod 'MBProgressHUD'
     pod 'YYModel'
     pod 'FMDB'
-
 end
