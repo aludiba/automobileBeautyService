@@ -557,8 +557,10 @@
 			baseConfigurationReference = F46BD10955391678BFF21D36 /* Pods-workshopManagement5s.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 44V2JFTR7R;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LQ9FAVACVZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/workshopManagement5s/mag5sResources/mag5sPrefixHeader.pch";
 				INFOPLIST_FILE = workshopManagement5s/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -570,6 +572,7 @@
 				NEW_SETTING1 = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.workshopManagement5s;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = pro_dis_workshopManagement5s_2019.07.01;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -579,8 +582,10 @@
 			baseConfigurationReference = 922CEACF7B4870D86EC260AA /* Pods-workshopManagement5s.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 44V2JFTR7R;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LQ9FAVACVZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/workshopManagement5s/mag5sResources/mag5sPrefixHeader.pch";
 				INFOPLIST_FILE = workshopManagement5s/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -592,6 +597,7 @@
 				NEW_SETTING1 = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.workshopManagement5s;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = pro_dis_workshopManagement5s_2019.07.01;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

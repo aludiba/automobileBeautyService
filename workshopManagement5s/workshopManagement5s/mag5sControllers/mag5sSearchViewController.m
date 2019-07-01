@@ -26,6 +26,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setSearchText];
+}
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     NSString *documentPath = [mag5sHBTool getDocumentPath:@"mag5sData.plist"];
     NSMutableArray *documentData = [[NSMutableArray alloc] initWithContentsOfFile:documentPath];
     if (documentData.count) {
@@ -43,9 +46,6 @@
         [self.mag5sSearchTextField becomeFirstResponder];
         self.mag5sFirstEnter = NO;
     }
-}
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
 }
 - (void)setSearchText{
     self.mag5sSearchTextField = [[UITextField alloc] init];
@@ -73,7 +73,7 @@
     }];
     [self.mag5sSearchTextField setLeftView:searchTextLeftView];
     searchTextLeftView.backgroundColor = mag5sH_Color(242, 242, 242, 1);
-    UIImageView *searchTextLeftImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"autoBeubtn_search_new"]];
+    UIImageView *searchTextLeftImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"btn_search_new"]];
     [searchTextLeftView addSubview:searchTextLeftImgView];
     [searchTextLeftImgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(searchTextLeftView);
