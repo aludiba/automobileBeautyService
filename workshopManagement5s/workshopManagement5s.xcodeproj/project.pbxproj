@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		271B7ABEFB1C8A0E455C583C /* libPods-workshopManagement5s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6510B16D59FE33E6BE70061 /* libPods-workshopManagement5s.a */; };
-		7228748E22C8B2E100149BE1 /* mag5sData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7228748D22C8B2E100149BE1 /* mag5sData.plist */; };
-		7228749422C8BEFE00149BE1 /* mag5sRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7228749322C8BEFE00149BE1 /* mag5sRecordTableViewCell.m */; };
-		7228749A22C8D14700149BE1 /* mag5sTimeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7228749922C8D14700149BE1 /* mag5sTimeButton.m */; };
-		7228749D22C8D24700149BE1 /* mag5sChildrenTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7228749C22C8D24700149BE1 /* mag5sChildrenTimeView.m */; };
-		722874A022C8D39300149BE1 /* mag5sTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7228749F22C8D39300149BE1 /* mag5sTimeView.m */; };
+		7228748E22C8B2E100149BE1 /* magData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7228748D22C8B2E100149BE1 /* magData.plist */; };
+		7228749422C8BEFE00149BE1 /* magRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7228749322C8BEFE00149BE1 /* magRecordTableViewCell.m */; };
+		7228749A22C8D14700149BE1 /* magTimeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7228749922C8D14700149BE1 /* magTimeButton.m */; };
+		7228749D22C8D24700149BE1 /* magChildrenTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7228749C22C8D24700149BE1 /* magChildrenTimeView.m */; };
+		722874A022C8D39300149BE1 /* magTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7228749F22C8D39300149BE1 /* magTimeView.m */; };
 		722874A322C8D57F00149BE1 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 722874A122C8D57F00149BE1 /* CalendarTool.m */; };
-		722874A622C8E74B00149BE1 /* mag5sHadDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 722874A522C8E74B00149BE1 /* mag5sHadDataTableViewCell.m */; };
+		722874A622C8E74B00149BE1 /* magHadDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 722874A522C8E74B00149BE1 /* magHadDataTableViewCell.m */; };
 		AE126F4122C4BF6800BB2AAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F4022C4BF6800BB2AAE /* AppDelegate.m */; };
 		AE126F4422C4BF6800BB2AAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F4322C4BF6800BB2AAE /* ViewController.m */; };
 		AE126F4722C4BF6800BB2AAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE126F4522C4BF6800BB2AAE /* Main.storyboard */; };
@@ -22,40 +22,40 @@
 		AE126F4C22C4BF6C00BB2AAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE126F4B22C4BF6C00BB2AAE /* Assets.xcassets */; };
 		AE126F4F22C4BF6C00BB2AAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE126F4D22C4BF6C00BB2AAE /* LaunchScreen.storyboard */; };
 		AE126F5222C4BF6C00BB2AAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F5122C4BF6C00BB2AAE /* main.m */; };
-		AE126F5F22C5A2AC00BB2AAE /* mag5sTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F5E22C5A2AC00BB2AAE /* mag5sTabBarViewController.m */; };
-		AE126F6222C5A36200BB2AAE /* mag5sBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F6122C5A36200BB2AAE /* mag5sBaseViewController.m */; };
-		AE126F6522C5A38300BB2AAE /* mag5sHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F6422C5A38300BB2AAE /* mag5sHomeViewController.m */; };
-		AE126F6822C5A52300BB2AAE /* mag5sAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F6722C5A52300BB2AAE /* mag5sAddViewController.m */; };
-		AE126F6B22C5A58E00BB2AAE /* mag5sSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F6A22C5A58E00BB2AAE /* mag5sSearchViewController.m */; };
-		AE126F6E22C5AAEF00BB2AAE /* mag5sAddViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F6D22C5AAEF00BB2AAE /* mag5sAddViewModel.m */; };
-		AE126F7122C5AC6A00BB2AAE /* mag5sDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F7022C5AC6A00BB2AAE /* mag5sDataModel.m */; };
-		AE126F7422C5AD6C00BB2AAE /* mag5sSeirModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F7322C5AD6C00BB2AAE /* mag5sSeirModel.m */; };
-		AE126F7722C5ADD200BB2AAE /* mag5sSeitonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F7622C5ADD200BB2AAE /* mag5sSeitonModel.m */; };
-		AE126F7A22C5AE2800BB2AAE /* mag5sSeisoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F7922C5AE2800BB2AAE /* mag5sSeisoModel.m */; };
-		AE126F7D22C5AE5000BB2AAE /* mag5sSeiketsuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F7C22C5AE5000BB2AAE /* mag5sSeiketsuModel.m */; };
-		AE126F8022C5AE7F00BB2AAE /* mag5sShitsukeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F7F22C5AE7F00BB2AAE /* mag5sShitsukeModel.m */; };
-		AE126F8922C5B43700BB2AAE /* mag5sCustomContentTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F8822C5B43700BB2AAE /* mag5sCustomContentTextField.m */; };
-		AE126F8C22C5B4E700BB2AAE /* mag5sEditorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F8A22C5B4E700BB2AAE /* mag5sEditorTableViewCell.m */; };
-		AE126F8F22C5B56E00BB2AAE /* mag5sAddSingleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F8E22C5B56D00BB2AAE /* mag5sAddSingleTableViewCell.m */; };
-		AE126F9722C5B97900BB2AAE /* mag5sUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F9022C5B97900BB2AAE /* mag5sUIUtilities.m */; };
-		AE126F9822C5B97900BB2AAE /* mag5sHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F9522C5B97900BB2AAE /* mag5sHBTool.m */; };
-		AE126F9922C5B97900BB2AAE /* MBProgressHUD+mag5sNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F9622C5B97900BB2AAE /* MBProgressHUD+mag5sNJ.m */; };
+		AE126F5F22C5A2AC00BB2AAE /* magTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F5E22C5A2AC00BB2AAE /* magTabBarViewController.m */; };
+		AE126F6222C5A36200BB2AAE /* magBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F6122C5A36200BB2AAE /* magBaseViewController.m */; };
+		AE126F6522C5A38300BB2AAE /* magHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F6422C5A38300BB2AAE /* magHomeViewController.m */; };
+		AE126F6822C5A52300BB2AAE /* magAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F6722C5A52300BB2AAE /* magAddViewController.m */; };
+		AE126F6B22C5A58E00BB2AAE /* magSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F6A22C5A58E00BB2AAE /* magSearchViewController.m */; };
+		AE126F6E22C5AAEF00BB2AAE /* magAddViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F6D22C5AAEF00BB2AAE /* magAddViewModel.m */; };
+		AE126F7122C5AC6A00BB2AAE /* magDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F7022C5AC6A00BB2AAE /* magDataModel.m */; };
+		AE126F7422C5AD6C00BB2AAE /* magSeirModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F7322C5AD6C00BB2AAE /* magSeirModel.m */; };
+		AE126F7722C5ADD200BB2AAE /* magSeitonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F7622C5ADD200BB2AAE /* magSeitonModel.m */; };
+		AE126F7A22C5AE2800BB2AAE /* magSeisoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F7922C5AE2800BB2AAE /* magSeisoModel.m */; };
+		AE126F7D22C5AE5000BB2AAE /* magSeiketsuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F7C22C5AE5000BB2AAE /* magSeiketsuModel.m */; };
+		AE126F8022C5AE7F00BB2AAE /* magShitsukeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F7F22C5AE7F00BB2AAE /* magShitsukeModel.m */; };
+		AE126F8922C5B43700BB2AAE /* magCustomContentTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F8822C5B43700BB2AAE /* magCustomContentTextField.m */; };
+		AE126F8C22C5B4E700BB2AAE /* magEditorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F8A22C5B4E700BB2AAE /* magEditorTableViewCell.m */; };
+		AE126F8F22C5B56E00BB2AAE /* magAddSingleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F8E22C5B56D00BB2AAE /* magAddSingleTableViewCell.m */; };
+		AE126F9722C5B97900BB2AAE /* magUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F9022C5B97900BB2AAE /* magUIUtilities.m */; };
+		AE126F9822C5B97900BB2AAE /* magHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F9522C5B97900BB2AAE /* magHBTool.m */; };
+		AE126F9922C5B97900BB2AAE /* MBProgressHUD+magNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F9622C5B97900BB2AAE /* MBProgressHUD+magNJ.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7228748D22C8B2E100149BE1 /* mag5sData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mag5sData.plist; sourceTree = "<group>"; };
-		7228749222C8BEFE00149BE1 /* mag5sRecordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sRecordTableViewCell.h; sourceTree = "<group>"; };
-		7228749322C8BEFE00149BE1 /* mag5sRecordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sRecordTableViewCell.m; sourceTree = "<group>"; };
-		7228749822C8D14700149BE1 /* mag5sTimeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sTimeButton.h; sourceTree = "<group>"; };
-		7228749922C8D14700149BE1 /* mag5sTimeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sTimeButton.m; sourceTree = "<group>"; };
-		7228749B22C8D24700149BE1 /* mag5sChildrenTimeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sChildrenTimeView.h; sourceTree = "<group>"; };
-		7228749C22C8D24700149BE1 /* mag5sChildrenTimeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sChildrenTimeView.m; sourceTree = "<group>"; };
-		7228749E22C8D39300149BE1 /* mag5sTimeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sTimeView.h; sourceTree = "<group>"; };
-		7228749F22C8D39300149BE1 /* mag5sTimeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sTimeView.m; sourceTree = "<group>"; };
+		7228748D22C8B2E100149BE1 /* magData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = magData.plist; sourceTree = "<group>"; };
+		7228749222C8BEFE00149BE1 /* magRecordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magRecordTableViewCell.h; sourceTree = "<group>"; };
+		7228749322C8BEFE00149BE1 /* magRecordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = magRecordTableViewCell.m; sourceTree = "<group>"; };
+		7228749822C8D14700149BE1 /* magTimeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magTimeButton.h; sourceTree = "<group>"; };
+		7228749922C8D14700149BE1 /* magTimeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = magTimeButton.m; sourceTree = "<group>"; };
+		7228749B22C8D24700149BE1 /* magChildrenTimeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magChildrenTimeView.h; sourceTree = "<group>"; };
+		7228749C22C8D24700149BE1 /* magChildrenTimeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = magChildrenTimeView.m; sourceTree = "<group>"; };
+		7228749E22C8D39300149BE1 /* magTimeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magTimeView.h; sourceTree = "<group>"; };
+		7228749F22C8D39300149BE1 /* magTimeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = magTimeView.m; sourceTree = "<group>"; };
 		722874A122C8D57F00149BE1 /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
 		722874A222C8D57F00149BE1 /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
-		722874A422C8E74B00149BE1 /* mag5sHadDataTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sHadDataTableViewCell.h; sourceTree = "<group>"; };
-		722874A522C8E74B00149BE1 /* mag5sHadDataTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sHadDataTableViewCell.m; sourceTree = "<group>"; };
+		722874A422C8E74B00149BE1 /* magHadDataTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magHadDataTableViewCell.h; sourceTree = "<group>"; };
+		722874A522C8E74B00149BE1 /* magHadDataTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = magHadDataTableViewCell.m; sourceTree = "<group>"; };
 		922CEACF7B4870D86EC260AA /* Pods-workshopManagement5s.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workshopManagement5s.release.xcconfig"; path = "Target Support Files/Pods-workshopManagement5s/Pods-workshopManagement5s.release.xcconfig"; sourceTree = "<group>"; };
 		AE126F3C22C4BF6800BB2AAE /* workshopManagement5s.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = workshopManagement5s.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE126F3F22C4BF6800BB2AAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,44 +68,44 @@
 		AE126F4E22C4BF6C00BB2AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE126F5022C4BF6C00BB2AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE126F5122C4BF6C00BB2AAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AE126F5D22C5A2AC00BB2AAE /* mag5sTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sTabBarViewController.h; sourceTree = "<group>"; };
-		AE126F5E22C5A2AC00BB2AAE /* mag5sTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sTabBarViewController.m; sourceTree = "<group>"; };
-		AE126F6022C5A36200BB2AAE /* mag5sBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sBaseViewController.h; sourceTree = "<group>"; };
-		AE126F6122C5A36200BB2AAE /* mag5sBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sBaseViewController.m; sourceTree = "<group>"; };
-		AE126F6322C5A38300BB2AAE /* mag5sHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sHomeViewController.h; sourceTree = "<group>"; };
-		AE126F6422C5A38300BB2AAE /* mag5sHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sHomeViewController.m; sourceTree = "<group>"; };
-		AE126F6622C5A52300BB2AAE /* mag5sAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sAddViewController.h; sourceTree = "<group>"; };
-		AE126F6722C5A52300BB2AAE /* mag5sAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sAddViewController.m; sourceTree = "<group>"; };
-		AE126F6922C5A58E00BB2AAE /* mag5sSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sSearchViewController.h; sourceTree = "<group>"; };
-		AE126F6A22C5A58E00BB2AAE /* mag5sSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sSearchViewController.m; sourceTree = "<group>"; };
-		AE126F6C22C5AAEF00BB2AAE /* mag5sAddViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sAddViewModel.h; sourceTree = "<group>"; };
-		AE126F6D22C5AAEF00BB2AAE /* mag5sAddViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sAddViewModel.m; sourceTree = "<group>"; };
-		AE126F6F22C5AC6A00BB2AAE /* mag5sDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sDataModel.h; sourceTree = "<group>"; };
-		AE126F7022C5AC6A00BB2AAE /* mag5sDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sDataModel.m; sourceTree = "<group>"; };
-		AE126F7222C5AD6C00BB2AAE /* mag5sSeirModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sSeirModel.h; sourceTree = "<group>"; };
-		AE126F7322C5AD6C00BB2AAE /* mag5sSeirModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sSeirModel.m; sourceTree = "<group>"; };
-		AE126F7522C5ADD200BB2AAE /* mag5sSeitonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sSeitonModel.h; sourceTree = "<group>"; };
-		AE126F7622C5ADD200BB2AAE /* mag5sSeitonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sSeitonModel.m; sourceTree = "<group>"; };
-		AE126F7822C5AE2800BB2AAE /* mag5sSeisoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sSeisoModel.h; sourceTree = "<group>"; };
-		AE126F7922C5AE2800BB2AAE /* mag5sSeisoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sSeisoModel.m; sourceTree = "<group>"; };
-		AE126F7B22C5AE5000BB2AAE /* mag5sSeiketsuModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sSeiketsuModel.h; sourceTree = "<group>"; };
-		AE126F7C22C5AE5000BB2AAE /* mag5sSeiketsuModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sSeiketsuModel.m; sourceTree = "<group>"; };
-		AE126F7E22C5AE7F00BB2AAE /* mag5sShitsukeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sShitsukeModel.h; sourceTree = "<group>"; };
-		AE126F7F22C5AE7F00BB2AAE /* mag5sShitsukeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mag5sShitsukeModel.m; sourceTree = "<group>"; };
-		AE126F8722C5B43700BB2AAE /* mag5sCustomContentTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mag5sCustomContentTextField.h; sourceTree = "<group>"; };
-		AE126F8822C5B43700BB2AAE /* mag5sCustomContentTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mag5sCustomContentTextField.m; sourceTree = "<group>"; };
-		AE126F8A22C5B4E700BB2AAE /* mag5sEditorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mag5sEditorTableViewCell.m; sourceTree = "<group>"; };
-		AE126F8B22C5B4E700BB2AAE /* mag5sEditorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mag5sEditorTableViewCell.h; sourceTree = "<group>"; };
-		AE126F8D22C5B56D00BB2AAE /* mag5sAddSingleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mag5sAddSingleTableViewCell.h; sourceTree = "<group>"; };
-		AE126F8E22C5B56D00BB2AAE /* mag5sAddSingleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mag5sAddSingleTableViewCell.m; sourceTree = "<group>"; };
-		AE126F9022C5B97900BB2AAE /* mag5sUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mag5sUIUtilities.m; sourceTree = "<group>"; };
-		AE126F9122C5B97900BB2AAE /* mag5sHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mag5sHBTool.h; sourceTree = "<group>"; };
-		AE126F9222C5B97900BB2AAE /* mag5sUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mag5sUIUtilities.h; sourceTree = "<group>"; };
-		AE126F9322C5B97900BB2AAE /* MBProgressHUD+mag5sNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+mag5sNJ.h"; sourceTree = "<group>"; };
-		AE126F9422C5B97900BB2AAE /* mag5sGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mag5sGlobal.h; sourceTree = "<group>"; };
-		AE126F9522C5B97900BB2AAE /* mag5sHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mag5sHBTool.m; sourceTree = "<group>"; };
-		AE126F9622C5B97900BB2AAE /* MBProgressHUD+mag5sNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+mag5sNJ.m"; sourceTree = "<group>"; };
-		AE126F9A22C5BC2100BB2AAE /* mag5sPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mag5sPrefixHeader.pch; sourceTree = "<group>"; };
+		AE126F5D22C5A2AC00BB2AAE /* magTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magTabBarViewController.h; sourceTree = "<group>"; };
+		AE126F5E22C5A2AC00BB2AAE /* magTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = magTabBarViewController.m; sourceTree = "<group>"; };
+		AE126F6022C5A36200BB2AAE /* magBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magBaseViewController.h; sourceTree = "<group>"; };
+		AE126F6122C5A36200BB2AAE /* magBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = magBaseViewController.m; sourceTree = "<group>"; };
+		AE126F6322C5A38300BB2AAE /* magHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magHomeViewController.h; sourceTree = "<group>"; };
+		AE126F6422C5A38300BB2AAE /* magHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = magHomeViewController.m; sourceTree = "<group>"; };
+		AE126F6622C5A52300BB2AAE /* magAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magAddViewController.h; sourceTree = "<group>"; };
+		AE126F6722C5A52300BB2AAE /* magAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = magAddViewController.m; sourceTree = "<group>"; };
+		AE126F6922C5A58E00BB2AAE /* magSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magSearchViewController.h; sourceTree = "<group>"; };
+		AE126F6A22C5A58E00BB2AAE /* magSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = magSearchViewController.m; sourceTree = "<group>"; };
+		AE126F6C22C5AAEF00BB2AAE /* magAddViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magAddViewModel.h; sourceTree = "<group>"; };
+		AE126F6D22C5AAEF00BB2AAE /* magAddViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = magAddViewModel.m; sourceTree = "<group>"; };
+		AE126F6F22C5AC6A00BB2AAE /* magDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magDataModel.h; sourceTree = "<group>"; };
+		AE126F7022C5AC6A00BB2AAE /* magDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = magDataModel.m; sourceTree = "<group>"; };
+		AE126F7222C5AD6C00BB2AAE /* magSeirModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magSeirModel.h; sourceTree = "<group>"; };
+		AE126F7322C5AD6C00BB2AAE /* magSeirModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = magSeirModel.m; sourceTree = "<group>"; };
+		AE126F7522C5ADD200BB2AAE /* magSeitonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magSeitonModel.h; sourceTree = "<group>"; };
+		AE126F7622C5ADD200BB2AAE /* magSeitonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = magSeitonModel.m; sourceTree = "<group>"; };
+		AE126F7822C5AE2800BB2AAE /* magSeisoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magSeisoModel.h; sourceTree = "<group>"; };
+		AE126F7922C5AE2800BB2AAE /* magSeisoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = magSeisoModel.m; sourceTree = "<group>"; };
+		AE126F7B22C5AE5000BB2AAE /* magSeiketsuModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magSeiketsuModel.h; sourceTree = "<group>"; };
+		AE126F7C22C5AE5000BB2AAE /* magSeiketsuModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = magSeiketsuModel.m; sourceTree = "<group>"; };
+		AE126F7E22C5AE7F00BB2AAE /* magShitsukeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magShitsukeModel.h; sourceTree = "<group>"; };
+		AE126F7F22C5AE7F00BB2AAE /* magShitsukeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = magShitsukeModel.m; sourceTree = "<group>"; };
+		AE126F8722C5B43700BB2AAE /* magCustomContentTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = magCustomContentTextField.h; sourceTree = "<group>"; };
+		AE126F8822C5B43700BB2AAE /* magCustomContentTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = magCustomContentTextField.m; sourceTree = "<group>"; };
+		AE126F8A22C5B4E700BB2AAE /* magEditorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = magEditorTableViewCell.m; sourceTree = "<group>"; };
+		AE126F8B22C5B4E700BB2AAE /* magEditorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = magEditorTableViewCell.h; sourceTree = "<group>"; };
+		AE126F8D22C5B56D00BB2AAE /* magAddSingleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = magAddSingleTableViewCell.h; sourceTree = "<group>"; };
+		AE126F8E22C5B56D00BB2AAE /* magAddSingleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = magAddSingleTableViewCell.m; sourceTree = "<group>"; };
+		AE126F9022C5B97900BB2AAE /* magUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = magUIUtilities.m; sourceTree = "<group>"; };
+		AE126F9122C5B97900BB2AAE /* magHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = magHBTool.h; sourceTree = "<group>"; };
+		AE126F9222C5B97900BB2AAE /* magUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = magUIUtilities.h; sourceTree = "<group>"; };
+		AE126F9322C5B97900BB2AAE /* MBProgressHUD+magNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+magNJ.h"; sourceTree = "<group>"; };
+		AE126F9422C5B97900BB2AAE /* magGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = magGlobal.h; sourceTree = "<group>"; };
+		AE126F9522C5B97900BB2AAE /* magHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = magHBTool.m; sourceTree = "<group>"; };
+		AE126F9622C5B97900BB2AAE /* MBProgressHUD+magNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+magNJ.m"; sourceTree = "<group>"; };
+		AE126F9A22C5BC2100BB2AAE /* magPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magPrefixHeader.pch; sourceTree = "<group>"; };
 		F46BD10955391678BFF21D36 /* Pods-workshopManagement5s.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workshopManagement5s.debug.xcconfig"; path = "Target Support Files/Pods-workshopManagement5s/Pods-workshopManagement5s.debug.xcconfig"; sourceTree = "<group>"; };
 		F6510B16D59FE33E6BE70061 /* libPods-workshopManagement5s.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-workshopManagement5s.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -151,11 +151,11 @@
 		AE126F3E22C4BF6800BB2AAE /* workshopManagement5s */ = {
 			isa = PBXGroup;
 			children = (
-				AE126F5C22C5A03200BB2AAE /* mag5sResources */,
-				AE126F5B22C59FB500BB2AAE /* mag5sCommon */,
-				AE126F5822C59F8F00BB2AAE /* mag5sControllers */,
-				AE126F5A22C59F8F00BB2AAE /* mag5sModels */,
-				AE126F5922C59F8F00BB2AAE /* mag5sViews */,
+				AE126F5C22C5A03200BB2AAE /* magResources */,
+				AE126F5B22C59FB500BB2AAE /* magCommon */,
+				AE126F5822C59F8F00BB2AAE /* magControllers */,
+				AE126F5A22C59F8F00BB2AAE /* magModels */,
+				AE126F5922C59F8F00BB2AAE /* magViews */,
 				AE126F3F22C4BF6800BB2AAE /* AppDelegate.h */,
 				AE126F4022C4BF6800BB2AAE /* AppDelegate.m */,
 				AE126F4222C4BF6800BB2AAE /* ViewController.h */,
@@ -170,90 +170,90 @@
 			path = workshopManagement5s;
 			sourceTree = "<group>";
 		};
-		AE126F5822C59F8F00BB2AAE /* mag5sControllers */ = {
+		AE126F5822C59F8F00BB2AAE /* magControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE126F5D22C5A2AC00BB2AAE /* mag5sTabBarViewController.h */,
-				AE126F5E22C5A2AC00BB2AAE /* mag5sTabBarViewController.m */,
-				AE126F6022C5A36200BB2AAE /* mag5sBaseViewController.h */,
-				AE126F6122C5A36200BB2AAE /* mag5sBaseViewController.m */,
-				AE126F6322C5A38300BB2AAE /* mag5sHomeViewController.h */,
-				AE126F6422C5A38300BB2AAE /* mag5sHomeViewController.m */,
-				AE126F6622C5A52300BB2AAE /* mag5sAddViewController.h */,
-				AE126F6722C5A52300BB2AAE /* mag5sAddViewController.m */,
-				AE126F6922C5A58E00BB2AAE /* mag5sSearchViewController.h */,
-				AE126F6A22C5A58E00BB2AAE /* mag5sSearchViewController.m */,
+				AE126F5D22C5A2AC00BB2AAE /* magTabBarViewController.h */,
+				AE126F5E22C5A2AC00BB2AAE /* magTabBarViewController.m */,
+				AE126F6022C5A36200BB2AAE /* magBaseViewController.h */,
+				AE126F6122C5A36200BB2AAE /* magBaseViewController.m */,
+				AE126F6322C5A38300BB2AAE /* magHomeViewController.h */,
+				AE126F6422C5A38300BB2AAE /* magHomeViewController.m */,
+				AE126F6622C5A52300BB2AAE /* magAddViewController.h */,
+				AE126F6722C5A52300BB2AAE /* magAddViewController.m */,
+				AE126F6922C5A58E00BB2AAE /* magSearchViewController.h */,
+				AE126F6A22C5A58E00BB2AAE /* magSearchViewController.m */,
 			);
-			path = mag5sControllers;
+			path = magControllers;
 			sourceTree = "<group>";
 		};
-		AE126F5922C59F8F00BB2AAE /* mag5sViews */ = {
+		AE126F5922C59F8F00BB2AAE /* magViews */ = {
 			isa = PBXGroup;
 			children = (
-				AE126F8722C5B43700BB2AAE /* mag5sCustomContentTextField.h */,
-				AE126F8822C5B43700BB2AAE /* mag5sCustomContentTextField.m */,
-				7228749222C8BEFE00149BE1 /* mag5sRecordTableViewCell.h */,
-				7228749322C8BEFE00149BE1 /* mag5sRecordTableViewCell.m */,
-				AE126F8B22C5B4E700BB2AAE /* mag5sEditorTableViewCell.h */,
-				AE126F8A22C5B4E700BB2AAE /* mag5sEditorTableViewCell.m */,
-				AE126F8D22C5B56D00BB2AAE /* mag5sAddSingleTableViewCell.h */,
-				AE126F8E22C5B56D00BB2AAE /* mag5sAddSingleTableViewCell.m */,
-				7228749822C8D14700149BE1 /* mag5sTimeButton.h */,
-				7228749922C8D14700149BE1 /* mag5sTimeButton.m */,
-				7228749B22C8D24700149BE1 /* mag5sChildrenTimeView.h */,
-				7228749C22C8D24700149BE1 /* mag5sChildrenTimeView.m */,
-				7228749E22C8D39300149BE1 /* mag5sTimeView.h */,
-				7228749F22C8D39300149BE1 /* mag5sTimeView.m */,
-				722874A422C8E74B00149BE1 /* mag5sHadDataTableViewCell.h */,
-				722874A522C8E74B00149BE1 /* mag5sHadDataTableViewCell.m */,
+				AE126F8722C5B43700BB2AAE /* magCustomContentTextField.h */,
+				AE126F8822C5B43700BB2AAE /* magCustomContentTextField.m */,
+				7228749222C8BEFE00149BE1 /* magRecordTableViewCell.h */,
+				7228749322C8BEFE00149BE1 /* magRecordTableViewCell.m */,
+				AE126F8B22C5B4E700BB2AAE /* magEditorTableViewCell.h */,
+				AE126F8A22C5B4E700BB2AAE /* magEditorTableViewCell.m */,
+				AE126F8D22C5B56D00BB2AAE /* magAddSingleTableViewCell.h */,
+				AE126F8E22C5B56D00BB2AAE /* magAddSingleTableViewCell.m */,
+				7228749822C8D14700149BE1 /* magTimeButton.h */,
+				7228749922C8D14700149BE1 /* magTimeButton.m */,
+				7228749B22C8D24700149BE1 /* magChildrenTimeView.h */,
+				7228749C22C8D24700149BE1 /* magChildrenTimeView.m */,
+				7228749E22C8D39300149BE1 /* magTimeView.h */,
+				7228749F22C8D39300149BE1 /* magTimeView.m */,
+				722874A422C8E74B00149BE1 /* magHadDataTableViewCell.h */,
+				722874A522C8E74B00149BE1 /* magHadDataTableViewCell.m */,
 			);
-			path = mag5sViews;
+			path = magViews;
 			sourceTree = "<group>";
 		};
-		AE126F5A22C59F8F00BB2AAE /* mag5sModels */ = {
+		AE126F5A22C59F8F00BB2AAE /* magModels */ = {
 			isa = PBXGroup;
 			children = (
-				AE126F6C22C5AAEF00BB2AAE /* mag5sAddViewModel.h */,
-				AE126F6D22C5AAEF00BB2AAE /* mag5sAddViewModel.m */,
-				AE126F6F22C5AC6A00BB2AAE /* mag5sDataModel.h */,
-				AE126F7022C5AC6A00BB2AAE /* mag5sDataModel.m */,
-				AE126F7222C5AD6C00BB2AAE /* mag5sSeirModel.h */,
-				AE126F7322C5AD6C00BB2AAE /* mag5sSeirModel.m */,
-				AE126F7522C5ADD200BB2AAE /* mag5sSeitonModel.h */,
-				AE126F7622C5ADD200BB2AAE /* mag5sSeitonModel.m */,
-				AE126F7822C5AE2800BB2AAE /* mag5sSeisoModel.h */,
-				AE126F7922C5AE2800BB2AAE /* mag5sSeisoModel.m */,
-				AE126F7B22C5AE5000BB2AAE /* mag5sSeiketsuModel.h */,
-				AE126F7C22C5AE5000BB2AAE /* mag5sSeiketsuModel.m */,
-				AE126F7E22C5AE7F00BB2AAE /* mag5sShitsukeModel.h */,
-				AE126F7F22C5AE7F00BB2AAE /* mag5sShitsukeModel.m */,
+				AE126F6C22C5AAEF00BB2AAE /* magAddViewModel.h */,
+				AE126F6D22C5AAEF00BB2AAE /* magAddViewModel.m */,
+				AE126F6F22C5AC6A00BB2AAE /* magDataModel.h */,
+				AE126F7022C5AC6A00BB2AAE /* magDataModel.m */,
+				AE126F7222C5AD6C00BB2AAE /* magSeirModel.h */,
+				AE126F7322C5AD6C00BB2AAE /* magSeirModel.m */,
+				AE126F7522C5ADD200BB2AAE /* magSeitonModel.h */,
+				AE126F7622C5ADD200BB2AAE /* magSeitonModel.m */,
+				AE126F7822C5AE2800BB2AAE /* magSeisoModel.h */,
+				AE126F7922C5AE2800BB2AAE /* magSeisoModel.m */,
+				AE126F7B22C5AE5000BB2AAE /* magSeiketsuModel.h */,
+				AE126F7C22C5AE5000BB2AAE /* magSeiketsuModel.m */,
+				AE126F7E22C5AE7F00BB2AAE /* magShitsukeModel.h */,
+				AE126F7F22C5AE7F00BB2AAE /* magShitsukeModel.m */,
 			);
-			path = mag5sModels;
+			path = magModels;
 			sourceTree = "<group>";
 		};
-		AE126F5B22C59FB500BB2AAE /* mag5sCommon */ = {
+		AE126F5B22C59FB500BB2AAE /* magCommon */ = {
 			isa = PBXGroup;
 			children = (
 				722874A222C8D57F00149BE1 /* CalendarTool.h */,
 				722874A122C8D57F00149BE1 /* CalendarTool.m */,
-				AE126F9422C5B97900BB2AAE /* mag5sGlobal.h */,
-				AE126F9122C5B97900BB2AAE /* mag5sHBTool.h */,
-				AE126F9522C5B97900BB2AAE /* mag5sHBTool.m */,
-				AE126F9222C5B97900BB2AAE /* mag5sUIUtilities.h */,
-				AE126F9022C5B97900BB2AAE /* mag5sUIUtilities.m */,
-				AE126F9322C5B97900BB2AAE /* MBProgressHUD+mag5sNJ.h */,
-				AE126F9622C5B97900BB2AAE /* MBProgressHUD+mag5sNJ.m */,
+				AE126F9422C5B97900BB2AAE /* magGlobal.h */,
+				AE126F9122C5B97900BB2AAE /* magHBTool.h */,
+				AE126F9522C5B97900BB2AAE /* magHBTool.m */,
+				AE126F9222C5B97900BB2AAE /* magUIUtilities.h */,
+				AE126F9022C5B97900BB2AAE /* magUIUtilities.m */,
+				AE126F9322C5B97900BB2AAE /* MBProgressHUD+magNJ.h */,
+				AE126F9622C5B97900BB2AAE /* MBProgressHUD+magNJ.m */,
 			);
-			path = mag5sCommon;
+			path = magCommon;
 			sourceTree = "<group>";
 		};
-		AE126F5C22C5A03200BB2AAE /* mag5sResources */ = {
+		AE126F5C22C5A03200BB2AAE /* magResources */ = {
 			isa = PBXGroup;
 			children = (
-				7228748D22C8B2E100149BE1 /* mag5sData.plist */,
-				AE126F9A22C5BC2100BB2AAE /* mag5sPrefixHeader.pch */,
+				7228748D22C8B2E100149BE1 /* magData.plist */,
+				AE126F9A22C5BC2100BB2AAE /* magPrefixHeader.pch */,
 			);
-			path = mag5sResources;
+			path = magResources;
 			sourceTree = "<group>";
 		};
 		F00B978D96C0E941C7C1982B /* Pods */ = {
@@ -324,7 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7228748E22C8B2E100149BE1 /* mag5sData.plist in Resources */,
+				7228748E22C8B2E100149BE1 /* magData.plist in Resources */,
 				AE126F4F22C4BF6C00BB2AAE /* LaunchScreen.storyboard in Resources */,
 				AE126F4C22C4BF6C00BB2AAE /* Assets.xcassets in Resources */,
 				AE126F4722C4BF6800BB2AAE /* Main.storyboard in Resources */,
@@ -387,34 +387,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE126F7422C5AD6C00BB2AAE /* mag5sSeirModel.m in Sources */,
-				AE126F6E22C5AAEF00BB2AAE /* mag5sAddViewModel.m in Sources */,
-				AE126F9722C5B97900BB2AAE /* mag5sUIUtilities.m in Sources */,
-				AE126F6822C5A52300BB2AAE /* mag5sAddViewController.m in Sources */,
+				AE126F7422C5AD6C00BB2AAE /* magSeirModel.m in Sources */,
+				AE126F6E22C5AAEF00BB2AAE /* magAddViewModel.m in Sources */,
+				AE126F9722C5B97900BB2AAE /* magUIUtilities.m in Sources */,
+				AE126F6822C5A52300BB2AAE /* magAddViewController.m in Sources */,
 				AE126F4422C4BF6800BB2AAE /* ViewController.m in Sources */,
-				AE126F6222C5A36200BB2AAE /* mag5sBaseViewController.m in Sources */,
-				AE126F6B22C5A58E00BB2AAE /* mag5sSearchViewController.m in Sources */,
-				AE126F9822C5B97900BB2AAE /* mag5sHBTool.m in Sources */,
+				AE126F6222C5A36200BB2AAE /* magBaseViewController.m in Sources */,
+				AE126F6B22C5A58E00BB2AAE /* magSearchViewController.m in Sources */,
+				AE126F9822C5B97900BB2AAE /* magHBTool.m in Sources */,
 				AE126F4122C4BF6800BB2AAE /* AppDelegate.m in Sources */,
-				AE126F7A22C5AE2800BB2AAE /* mag5sSeisoModel.m in Sources */,
-				AE126F7122C5AC6A00BB2AAE /* mag5sDataModel.m in Sources */,
-				AE126F9922C5B97900BB2AAE /* MBProgressHUD+mag5sNJ.m in Sources */,
+				AE126F7A22C5AE2800BB2AAE /* magSeisoModel.m in Sources */,
+				AE126F7122C5AC6A00BB2AAE /* magDataModel.m in Sources */,
+				AE126F9922C5B97900BB2AAE /* MBProgressHUD+magNJ.m in Sources */,
 				AE126F5222C4BF6C00BB2AAE /* main.m in Sources */,
-				AE126F8922C5B43700BB2AAE /* mag5sCustomContentTextField.m in Sources */,
-				7228749422C8BEFE00149BE1 /* mag5sRecordTableViewCell.m in Sources */,
-				AE126F7D22C5AE5000BB2AAE /* mag5sSeiketsuModel.m in Sources */,
-				AE126F8F22C5B56E00BB2AAE /* mag5sAddSingleTableViewCell.m in Sources */,
-				722874A022C8D39300149BE1 /* mag5sTimeView.m in Sources */,
-				AE126F8C22C5B4E700BB2AAE /* mag5sEditorTableViewCell.m in Sources */,
+				AE126F8922C5B43700BB2AAE /* magCustomContentTextField.m in Sources */,
+				7228749422C8BEFE00149BE1 /* magRecordTableViewCell.m in Sources */,
+				AE126F7D22C5AE5000BB2AAE /* magSeiketsuModel.m in Sources */,
+				AE126F8F22C5B56E00BB2AAE /* magAddSingleTableViewCell.m in Sources */,
+				722874A022C8D39300149BE1 /* magTimeView.m in Sources */,
+				AE126F8C22C5B4E700BB2AAE /* magEditorTableViewCell.m in Sources */,
 				722874A322C8D57F00149BE1 /* CalendarTool.m in Sources */,
 				AE126F4A22C4BF6800BB2AAE /* workshopManagement5s.xcdatamodeld in Sources */,
-				7228749D22C8D24700149BE1 /* mag5sChildrenTimeView.m in Sources */,
-				AE126F7722C5ADD200BB2AAE /* mag5sSeitonModel.m in Sources */,
-				7228749A22C8D14700149BE1 /* mag5sTimeButton.m in Sources */,
-				AE126F8022C5AE7F00BB2AAE /* mag5sShitsukeModel.m in Sources */,
-				722874A622C8E74B00149BE1 /* mag5sHadDataTableViewCell.m in Sources */,
-				AE126F5F22C5A2AC00BB2AAE /* mag5sTabBarViewController.m in Sources */,
-				AE126F6522C5A38300BB2AAE /* mag5sHomeViewController.m in Sources */,
+				7228749D22C8D24700149BE1 /* magChildrenTimeView.m in Sources */,
+				AE126F7722C5ADD200BB2AAE /* magSeitonModel.m in Sources */,
+				7228749A22C8D14700149BE1 /* magTimeButton.m in Sources */,
+				AE126F8022C5AE7F00BB2AAE /* magShitsukeModel.m in Sources */,
+				722874A622C8E74B00149BE1 /* magHadDataTableViewCell.m in Sources */,
+				AE126F5F22C5A2AC00BB2AAE /* magTabBarViewController.m in Sources */,
+				AE126F6522C5A38300BB2AAE /* magHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,10 +558,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/workshopManagement5s/mag5sResources/mag5sPrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/workshopManagement5s/magResources/magPrefixHeader.pch";
 				INFOPLIST_FILE = workshopManagement5s/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -570,9 +570,9 @@
 				);
 				NEW_SETTING = "";
 				NEW_SETTING1 = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.workshopManagement5s;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.field5sManagement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = pro_dis_workshopManagement5s_2019.07.01;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -583,10 +583,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/workshopManagement5s/mag5sResources/mag5sPrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/workshopManagement5s/magResources/magPrefixHeader.pch";
 				INFOPLIST_FILE = workshopManagement5s/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -595,9 +595,9 @@
 				);
 				NEW_SETTING = "";
 				NEW_SETTING1 = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.workshopManagement5s;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.field5sManagement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = pro_dis_workshopManagement5s_2019.07.01;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
