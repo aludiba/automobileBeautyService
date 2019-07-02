@@ -73,9 +73,12 @@
     if (_model.isDetail) {
         self.userInteractionEnabled = NO;
         self.magtitleLbl.textColor =  [UIColor colorWithRed:168/255.0 green:172/255.0 blue:182/255.0 alpha:1/1.0];
+        self.magcontentField.text = @"-";
+        self.magplaceholderLbl.hidden = YES;
     }else{
         self.userInteractionEnabled = YES;
         self.magtitleLbl.textColor = [UIColor colorWithRed:57/255.0 green:66/255.0 blue:89/255.0 alpha:1/1.0];
+        self.magplaceholderLbl.hidden = NO;
     }
     if (_model.isSelect) {
         [self.magselectBtn setImage:[UIImage imageNamed:@"magbtn_default_active2"] forState:UIControlStateNormal];

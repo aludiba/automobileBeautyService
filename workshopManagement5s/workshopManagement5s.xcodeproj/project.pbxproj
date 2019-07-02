@@ -40,6 +40,7 @@
 		AE126F9722C5B97900BB2AAE /* magUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F9022C5B97900BB2AAE /* magUIUtilities.m */; };
 		AE126F9822C5B97900BB2AAE /* magHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F9522C5B97900BB2AAE /* magHBTool.m */; };
 		AE126F9922C5B97900BB2AAE /* MBProgressHUD+magNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F9622C5B97900BB2AAE /* MBProgressHUD+magNJ.m */; };
+		AE14D36A22CB5C230087DCE8 /* NDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE14D36922CB5C230087DCE8 /* NDHTTPClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +107,8 @@
 		AE126F9522C5B97900BB2AAE /* magHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = magHBTool.m; sourceTree = "<group>"; };
 		AE126F9622C5B97900BB2AAE /* MBProgressHUD+magNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+magNJ.m"; sourceTree = "<group>"; };
 		AE126F9A22C5BC2100BB2AAE /* magPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magPrefixHeader.pch; sourceTree = "<group>"; };
+		AE14D36822CB5C230087DCE8 /* NDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDHTTPClient.h; sourceTree = "<group>"; };
+		AE14D36922CB5C230087DCE8 /* NDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDHTTPClient.m; sourceTree = "<group>"; };
 		F46BD10955391678BFF21D36 /* Pods-workshopManagement5s.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workshopManagement5s.debug.xcconfig"; path = "Target Support Files/Pods-workshopManagement5s/Pods-workshopManagement5s.debug.xcconfig"; sourceTree = "<group>"; };
 		F6510B16D59FE33E6BE70061 /* libPods-workshopManagement5s.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-workshopManagement5s.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -234,6 +237,8 @@
 		AE126F5B22C59FB500BB2AAE /* magCommon */ = {
 			isa = PBXGroup;
 			children = (
+				AE14D36822CB5C230087DCE8 /* NDHTTPClient.h */,
+				AE14D36922CB5C230087DCE8 /* NDHTTPClient.m */,
 				722874A222C8D57F00149BE1 /* CalendarTool.h */,
 				722874A122C8D57F00149BE1 /* CalendarTool.m */,
 				AE126F9422C5B97900BB2AAE /* magGlobal.h */,
@@ -388,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE126F7422C5AD6C00BB2AAE /* magSeirModel.m in Sources */,
+				AE14D36A22CB5C230087DCE8 /* NDHTTPClient.m in Sources */,
 				AE126F6E22C5AAEF00BB2AAE /* magAddViewModel.m in Sources */,
 				AE126F9722C5B97900BB2AAE /* magUIUtilities.m in Sources */,
 				AE126F6822C5A52300BB2AAE /* magAddViewController.m in Sources */,

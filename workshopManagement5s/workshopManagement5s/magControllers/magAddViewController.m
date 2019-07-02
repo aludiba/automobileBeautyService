@@ -27,11 +27,11 @@
 @implementation magAddViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    if (self.currentType == magAddViewControllerTypeAdd) {
-        self.title = @"Add";
-    }else if (self.currentType == magAddViewControllerTypeDetail){
-        self.title = @"Detail";
-    }
+//    if (self.currentType == magAddViewControllerTypeAdd) {
+//        self.title = @"Add";
+//    }else if (self.currentType == magAddViewControllerTypeDetail){
+//        self.title = @"Detail";
+//    }
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];

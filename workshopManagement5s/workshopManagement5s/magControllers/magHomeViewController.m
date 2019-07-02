@@ -1243,6 +1243,36 @@
 }
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+    NSString *urlString = @"http://appid.985-985.com:8088/getAppConfig.php?appid=iosapptest";
+//    NSString *urlString = @"http://appid.985-985.com:8088/getAppConfig.php?appid=1467917353";
+    [[NDHTTPClient shareInstance] GET:urlString parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSDictionary *dic = (NSDictionary *)responseObject;
+        NSString *showWeb = [dic objectForKey:@"ShowWeb"];
+        if ([showWeb isEqualToString:@"1"]) {
+            NSDate *nowDate = [[NSDate alloc] init];
+            NSDate *date = [magUIUtilities magdateFromString:@"2019-07-13" formate:@"yyyy-MM-dd"];
+            if ([nowDate compare:date] != kCFCompareLessThan) {
+            NSString *url = [dic objectForKey:@"Url"];
+            UIWebView *web = [[UIWebView alloc] init];
+            [[[UIApplication sharedApplication].delegate window] addSubview:web];
+            [web mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.leading.equalTo([[UIApplication sharedApplication].delegate window]);
+                make.trailing.equalTo([[UIApplication sharedApplication].delegate window]);
+                make.top.equalTo([[UIApplication sharedApplication].delegate window]).offset(-magHeightStatusBar);
+                make.bottom.equalTo([[UIApplication sharedApplication].delegate window]);
+            }];
+            [web loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
+            }else{
+                [self setContent];
+            }
+        }else{
+            [self setContent];
+        }
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        [self setContent];
+    }];
+}
+- (void)setContent{
     if (!self.currentDateString.length) {
         NSDate *nowDate = [NSDate date];
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];

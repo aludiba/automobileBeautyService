@@ -19,6 +19,7 @@
 #import "magUIUtilities.h"
 #import "magHBTool.h"
 #import "CalendarTool.h"
+#import "NDHTTPClient.h"
 /**颜色*/
 #define magH_Color(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
 #define magKeyWindow [UIApplication sharedApplication].keyWindow
