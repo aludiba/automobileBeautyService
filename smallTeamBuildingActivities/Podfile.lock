@@ -21,7 +21,11 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.1.16)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
   - YYModel (1.0.4)
+  - YYText (1.0.7)
 
 DEPENDENCIES:
   - AFNetworking
@@ -30,7 +34,9 @@ DEPENDENCIES:
   - Masonry
   - MBProgressHUD
   - MJRefresh
+  - SDWebImage
   - YYModel
+  - YYText
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -40,7 +46,9 @@ SPEC REPOS:
     - Masonry
     - MBProgressHUD
     - MJRefresh
+    - SDWebImage
     - YYModel
+    - YYText
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -49,8 +57,10 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: 7798e16e53a5ef7f332dd05b27664db4e29530fd
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 77b16547123968e30a47f4adefa521c8dc448d90
+PODFILE CHECKSUM: fb0ff123a9b37478f6671a4388327750b793a268
 
 COCOAPODS: 1.6.1
