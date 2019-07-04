@@ -15,6 +15,14 @@
 		AE8C83D522C9F9060073EEDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE8C83D422C9F9060073EEDC /* Assets.xcassets */; };
 		AE8C83D822C9F9060073EEDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE8C83D622C9F9060073EEDC /* LaunchScreen.storyboard */; };
 		AE8C83DB22C9F9060073EEDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8C83DA22C9F9060073EEDC /* main.m */; };
+		AEFCBEE922CD90D000DBC053 /* stbaNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCBEE722CD90D000DBC053 /* stbaNDHTTPClient.m */; };
+		AEFCBEEC22CD925200DBC053 /* stbaHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCBEEA22CD925200DBC053 /* stbaHBTool.m */; };
+		AEFCBEEF22CD92B700DBC053 /* stbaUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCBEED22CD92B700DBC053 /* stbaUIUtilities.m */; };
+		AEFCBEF222CD937900DBC053 /* MBProgressHUD+stbaNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCBEF022CD937900DBC053 /* MBProgressHUD+stbaNJ.m */; };
+		AEFCBEF622CDAAAA00DBC053 /* stbaBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCBEF522CDAAAA00DBC053 /* stbaBaseViewController.m */; };
+		AEFCBEF922CDAF8300DBC053 /* stbaHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCBEF822CDAF8300DBC053 /* stbaHomeViewController.m */; };
+		AEFCBEFC22CDAFCB00DBC053 /* stbaAddActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCBEFB22CDAFCB00DBC053 /* stbaAddActivitiesViewController.m */; };
+		AEFCBEFF22CDAFF400DBC053 /* stbaAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCBEFE22CDAFF400DBC053 /* stbaAddressBookViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,24 @@
 		AE8C83D722C9F9060073EEDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE8C83D922C9F9060073EEDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE8C83DA22C9F9060073EEDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AEFCBEE622CD8F6C00DBC053 /* stba_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stba_PrefixHeader.pch; sourceTree = "<group>"; };
+		AEFCBEE722CD90D000DBC053 /* stbaNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = stbaNDHTTPClient.m; sourceTree = "<group>"; };
+		AEFCBEE822CD90D000DBC053 /* stbaNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbaNDHTTPClient.h; sourceTree = "<group>"; };
+		AEFCBEEA22CD925200DBC053 /* stbaHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = stbaHBTool.m; sourceTree = "<group>"; };
+		AEFCBEEB22CD925200DBC053 /* stbaHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbaHBTool.h; sourceTree = "<group>"; };
+		AEFCBEED22CD92B700DBC053 /* stbaUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = stbaUIUtilities.m; sourceTree = "<group>"; };
+		AEFCBEEE22CD92B700DBC053 /* stbaUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbaUIUtilities.h; sourceTree = "<group>"; };
+		AEFCBEF022CD937900DBC053 /* MBProgressHUD+stbaNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+stbaNJ.m"; sourceTree = "<group>"; };
+		AEFCBEF122CD937900DBC053 /* MBProgressHUD+stbaNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+stbaNJ.h"; sourceTree = "<group>"; };
+		AEFCBEF322CD93D800DBC053 /* stbaGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbaGlobal.h; sourceTree = "<group>"; };
+		AEFCBEF422CDAAAA00DBC053 /* stbaBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbaBaseViewController.h; sourceTree = "<group>"; };
+		AEFCBEF522CDAAAA00DBC053 /* stbaBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = stbaBaseViewController.m; sourceTree = "<group>"; };
+		AEFCBEF722CDAF8300DBC053 /* stbaHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbaHomeViewController.h; sourceTree = "<group>"; };
+		AEFCBEF822CDAF8300DBC053 /* stbaHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stbaHomeViewController.m; sourceTree = "<group>"; };
+		AEFCBEFA22CDAFCB00DBC053 /* stbaAddActivitiesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbaAddActivitiesViewController.h; sourceTree = "<group>"; };
+		AEFCBEFB22CDAFCB00DBC053 /* stbaAddActivitiesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stbaAddActivitiesViewController.m; sourceTree = "<group>"; };
+		AEFCBEFD22CDAFF400DBC053 /* stbaAddressBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbaAddressBookViewController.h; sourceTree = "<group>"; };
+		AEFCBEFE22CDAFF400DBC053 /* stbaAddressBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stbaAddressBookViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +129,14 @@
 		AEFCBEE322CD8B6F00DBC053 /* stbaControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AEFCBEF422CDAAAA00DBC053 /* stbaBaseViewController.h */,
+				AEFCBEF522CDAAAA00DBC053 /* stbaBaseViewController.m */,
+				AEFCBEF722CDAF8300DBC053 /* stbaHomeViewController.h */,
+				AEFCBEF822CDAF8300DBC053 /* stbaHomeViewController.m */,
+				AEFCBEFA22CDAFCB00DBC053 /* stbaAddActivitiesViewController.h */,
+				AEFCBEFB22CDAFCB00DBC053 /* stbaAddActivitiesViewController.m */,
+				AEFCBEFD22CDAFF400DBC053 /* stbaAddressBookViewController.h */,
+				AEFCBEFE22CDAFF400DBC053 /* stbaAddressBookViewController.m */,
 			);
 			path = stbaControllers;
 			sourceTree = "<group>";
@@ -110,6 +144,16 @@
 		AEFCBEE422CD8B6F00DBC053 /* stbaCommon */ = {
 			isa = PBXGroup;
 			children = (
+				AEFCBEF122CD937900DBC053 /* MBProgressHUD+stbaNJ.h */,
+				AEFCBEF022CD937900DBC053 /* MBProgressHUD+stbaNJ.m */,
+				AEFCBEEE22CD92B700DBC053 /* stbaUIUtilities.h */,
+				AEFCBEED22CD92B700DBC053 /* stbaUIUtilities.m */,
+				AEFCBEEB22CD925200DBC053 /* stbaHBTool.h */,
+				AEFCBEEA22CD925200DBC053 /* stbaHBTool.m */,
+				AEFCBEE822CD90D000DBC053 /* stbaNDHTTPClient.h */,
+				AEFCBEE722CD90D000DBC053 /* stbaNDHTTPClient.m */,
+				AEFCBEF322CD93D800DBC053 /* stbaGlobal.h */,
+				AEFCBEE622CD8F6C00DBC053 /* stba_PrefixHeader.pch */,
 			);
 			path = stbaCommon;
 			sourceTree = "<group>";
@@ -251,10 +295,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEFCBEFF22CDAFF400DBC053 /* stbaAddressBookViewController.m in Sources */,
+				AEFCBEF622CDAAAA00DBC053 /* stbaBaseViewController.m in Sources */,
+				AEFCBEF922CDAF8300DBC053 /* stbaHomeViewController.m in Sources */,
+				AEFCBEEF22CD92B700DBC053 /* stbaUIUtilities.m in Sources */,
+				AEFCBEF222CD937900DBC053 /* MBProgressHUD+stbaNJ.m in Sources */,
 				AE8C83CD22C9F9030073EEDC /* ViewController.m in Sources */,
+				AEFCBEFC22CDAFCB00DBC053 /* stbaAddActivitiesViewController.m in Sources */,
+				AEFCBEEC22CD925200DBC053 /* stbaHBTool.m in Sources */,
 				AE8C83CA22C9F9030073EEDC /* AppDelegate.m in Sources */,
 				AE8C83DB22C9F9060073EEDC /* main.m in Sources */,
 				AE8C83D322C9F9030073EEDC /* smallTeamBuildingActivities.xcdatamodeld in Sources */,
+				AEFCBEE922CD90D000DBC053 /* stbaNDHTTPClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +451,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/smallTeamBuildingActivities/stbaCommon/stba_PrefixHeader.pch";
 				INFOPLIST_FILE = smallTeamBuildingActivities/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -418,6 +471,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/smallTeamBuildingActivities/stbaCommon/stba_PrefixHeader.pch";
 				INFOPLIST_FILE = smallTeamBuildingActivities/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
