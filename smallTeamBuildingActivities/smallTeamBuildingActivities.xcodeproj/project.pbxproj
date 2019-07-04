@@ -23,6 +23,7 @@
 		AEFCBEF922CDAF8300DBC053 /* stbaHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCBEF822CDAF8300DBC053 /* stbaHomeViewController.m */; };
 		AEFCBEFC22CDAFCB00DBC053 /* stbaAddActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCBEFB22CDAFCB00DBC053 /* stbaAddActivitiesViewController.m */; };
 		AEFCBEFF22CDAFF400DBC053 /* stbaAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCBEFE22CDAFF400DBC053 /* stbaAddressBookViewController.m */; };
+		AEFCBF0222CDF1C800DBC053 /* stbaTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCBF0022CDF1C800DBC053 /* stbaTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,8 @@
 		AEFCBEFB22CDAFCB00DBC053 /* stbaAddActivitiesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stbaAddActivitiesViewController.m; sourceTree = "<group>"; };
 		AEFCBEFD22CDAFF400DBC053 /* stbaAddressBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbaAddressBookViewController.h; sourceTree = "<group>"; };
 		AEFCBEFE22CDAFF400DBC053 /* stbaAddressBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stbaAddressBookViewController.m; sourceTree = "<group>"; };
+		AEFCBF0022CDF1C800DBC053 /* stbaTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = stbaTabBarController.m; sourceTree = "<group>"; };
+		AEFCBF0122CDF1C800DBC053 /* stbaTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbaTabBarController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 		AEFCBEE322CD8B6F00DBC053 /* stbaControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AEFCBF0122CDF1C800DBC053 /* stbaTabBarController.h */,
+				AEFCBF0022CDF1C800DBC053 /* stbaTabBarController.m */,
 				AEFCBEF422CDAAAA00DBC053 /* stbaBaseViewController.h */,
 				AEFCBEF522CDAAAA00DBC053 /* stbaBaseViewController.m */,
 				AEFCBEF722CDAF8300DBC053 /* stbaHomeViewController.h */,
@@ -305,6 +310,7 @@
 				AEFCBEEC22CD925200DBC053 /* stbaHBTool.m in Sources */,
 				AE8C83CA22C9F9030073EEDC /* AppDelegate.m in Sources */,
 				AE8C83DB22C9F9060073EEDC /* main.m in Sources */,
+				AEFCBF0222CDF1C800DBC053 /* stbaTabBarController.m in Sources */,
 				AE8C83D322C9F9030073EEDC /* smallTeamBuildingActivities.xcdatamodeld in Sources */,
 				AEFCBEE922CD90D000DBC053 /* stbaNDHTTPClient.m in Sources */,
 			);
