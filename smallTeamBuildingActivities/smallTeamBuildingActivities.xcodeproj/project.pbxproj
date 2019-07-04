@@ -75,6 +75,10 @@
 		AE8C83C722C9F9030073EEDC /* smallTeamBuildingActivities */ = {
 			isa = PBXGroup;
 			children = (
+				AEFCBEE422CD8B6F00DBC053 /* stbaCommon */,
+				AEFCBEE322CD8B6F00DBC053 /* stbaControllers */,
+				AEFCBEE222CD8B6F00DBC053 /* stbaResources */,
+				AEFCBEE522CD8B7000DBC053 /* stbaViews */,
 				AE8C83C822C9F9030073EEDC /* AppDelegate.h */,
 				AE8C83C922C9F9030073EEDC /* AppDelegate.m */,
 				AE8C83CB22C9F9030073EEDC /* ViewController.h */,
@@ -89,13 +93,40 @@
 			path = smallTeamBuildingActivities;
 			sourceTree = "<group>";
 		};
+		AEFCBEE222CD8B6F00DBC053 /* stbaResources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = stbaResources;
+			sourceTree = "<group>";
+		};
+		AEFCBEE322CD8B6F00DBC053 /* stbaControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = stbaControllers;
+			sourceTree = "<group>";
+		};
+		AEFCBEE422CD8B6F00DBC053 /* stbaCommon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = stbaCommon;
+			sourceTree = "<group>";
+		};
+		AEFCBEE522CD8B7000DBC053 /* stbaViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = stbaViews;
+			sourceTree = "<group>";
+		};
 		EB5F193593EC44C8D01011D4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				9A2B492FE348B1A3773EB2D0 /* Pods-smallTeamBuildingActivities.debug.xcconfig */,
 				0815BC8ADD949DE8686B3265 /* Pods-smallTeamBuildingActivities.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
