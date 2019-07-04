@@ -24,6 +24,10 @@
 		AEFCBEFC22CDAFCB00DBC053 /* stbaAddActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCBEFB22CDAFCB00DBC053 /* stbaAddActivitiesViewController.m */; };
 		AEFCBEFF22CDAFF400DBC053 /* stbaAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCBEFE22CDAFF400DBC053 /* stbaAddressBookViewController.m */; };
 		AEFCBF0222CDF1C800DBC053 /* stbaTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCBF0022CDF1C800DBC053 /* stbaTabBarController.m */; };
+		AEFCBF0522CDF90200DBC053 /* stbaAddressBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCBF0422CDF90200DBC053 /* stbaAddressBookTableViewCell.m */; };
+		AEFCBF0922CDF9A700DBC053 /* stbaAddressBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCBF0822CDF9A700DBC053 /* stbaAddressBookModel.m */; };
+		AEFCBF0C22CDFB6C00DBC053 /* stbaAddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCBF0B22CDFB6C00DBC053 /* stbaAddContactViewController.m */; };
+		AEFCBF0F22CDFE4600DBC053 /* stbaCustomContentTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFCBF0E22CDFE4600DBC053 /* stbaCustomContentTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +65,14 @@
 		AEFCBEFE22CDAFF400DBC053 /* stbaAddressBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stbaAddressBookViewController.m; sourceTree = "<group>"; };
 		AEFCBF0022CDF1C800DBC053 /* stbaTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = stbaTabBarController.m; sourceTree = "<group>"; };
 		AEFCBF0122CDF1C800DBC053 /* stbaTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbaTabBarController.h; sourceTree = "<group>"; };
+		AEFCBF0322CDF90200DBC053 /* stbaAddressBookTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbaAddressBookTableViewCell.h; sourceTree = "<group>"; };
+		AEFCBF0422CDF90200DBC053 /* stbaAddressBookTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stbaAddressBookTableViewCell.m; sourceTree = "<group>"; };
+		AEFCBF0722CDF9A700DBC053 /* stbaAddressBookModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbaAddressBookModel.h; sourceTree = "<group>"; };
+		AEFCBF0822CDF9A700DBC053 /* stbaAddressBookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stbaAddressBookModel.m; sourceTree = "<group>"; };
+		AEFCBF0A22CDFB6C00DBC053 /* stbaAddContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbaAddContactViewController.h; sourceTree = "<group>"; };
+		AEFCBF0B22CDFB6C00DBC053 /* stbaAddContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stbaAddContactViewController.m; sourceTree = "<group>"; };
+		AEFCBF0D22CDFE4600DBC053 /* stbaCustomContentTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbaCustomContentTextField.h; sourceTree = "<group>"; };
+		AEFCBF0E22CDFE4600DBC053 /* stbaCustomContentTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = stbaCustomContentTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +116,11 @@
 		AE8C83C722C9F9030073EEDC /* smallTeamBuildingActivities */ = {
 			isa = PBXGroup;
 			children = (
+				AEFCBF0622CDF96000DBC053 /* stbaModels */,
 				AEFCBEE422CD8B6F00DBC053 /* stbaCommon */,
 				AEFCBEE322CD8B6F00DBC053 /* stbaControllers */,
-				AEFCBEE222CD8B6F00DBC053 /* stbaResources */,
 				AEFCBEE522CD8B7000DBC053 /* stbaViews */,
+				AEFCBEE222CD8B6F00DBC053 /* stbaResources */,
 				AE8C83C822C9F9030073EEDC /* AppDelegate.h */,
 				AE8C83C922C9F9030073EEDC /* AppDelegate.m */,
 				AE8C83CB22C9F9030073EEDC /* ViewController.h */,
@@ -142,6 +155,8 @@
 				AEFCBEFB22CDAFCB00DBC053 /* stbaAddActivitiesViewController.m */,
 				AEFCBEFD22CDAFF400DBC053 /* stbaAddressBookViewController.h */,
 				AEFCBEFE22CDAFF400DBC053 /* stbaAddressBookViewController.m */,
+				AEFCBF0A22CDFB6C00DBC053 /* stbaAddContactViewController.h */,
+				AEFCBF0B22CDFB6C00DBC053 /* stbaAddContactViewController.m */,
 			);
 			path = stbaControllers;
 			sourceTree = "<group>";
@@ -166,9 +181,23 @@
 		AEFCBEE522CD8B7000DBC053 /* stbaViews */ = {
 			isa = PBXGroup;
 			children = (
+				AEFCBF0D22CDFE4600DBC053 /* stbaCustomContentTextField.h */,
+				AEFCBF0E22CDFE4600DBC053 /* stbaCustomContentTextField.m */,
+				AEFCBF0322CDF90200DBC053 /* stbaAddressBookTableViewCell.h */,
+				AEFCBF0422CDF90200DBC053 /* stbaAddressBookTableViewCell.m */,
 			);
 			path = stbaViews;
 			sourceTree = "<group>";
+		};
+		AEFCBF0622CDF96000DBC053 /* stbaModels */ = {
+			isa = PBXGroup;
+			children = (
+				AEFCBF0722CDF9A700DBC053 /* stbaAddressBookModel.h */,
+				AEFCBF0822CDF9A700DBC053 /* stbaAddressBookModel.m */,
+			);
+			name = stbaModels;
+			path = smallTeamBuildingActivities/stbaModels;
+			sourceTree = SOURCE_ROOT;
 		};
 		EB5F193593EC44C8D01011D4 /* Pods */ = {
 			isa = PBXGroup;
@@ -301,16 +330,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEFCBEFF22CDAFF400DBC053 /* stbaAddressBookViewController.m in Sources */,
+				AEFCBF0522CDF90200DBC053 /* stbaAddressBookTableViewCell.m in Sources */,
 				AEFCBEF622CDAAAA00DBC053 /* stbaBaseViewController.m in Sources */,
 				AEFCBEF922CDAF8300DBC053 /* stbaHomeViewController.m in Sources */,
 				AEFCBEEF22CD92B700DBC053 /* stbaUIUtilities.m in Sources */,
 				AEFCBEF222CD937900DBC053 /* MBProgressHUD+stbaNJ.m in Sources */,
 				AE8C83CD22C9F9030073EEDC /* ViewController.m in Sources */,
+				AEFCBF0C22CDFB6C00DBC053 /* stbaAddContactViewController.m in Sources */,
 				AEFCBEFC22CDAFCB00DBC053 /* stbaAddActivitiesViewController.m in Sources */,
 				AEFCBEEC22CD925200DBC053 /* stbaHBTool.m in Sources */,
 				AE8C83CA22C9F9030073EEDC /* AppDelegate.m in Sources */,
 				AE8C83DB22C9F9060073EEDC /* main.m in Sources */,
+				AEFCBF0922CDF9A700DBC053 /* stbaAddressBookModel.m in Sources */,
 				AEFCBF0222CDF1C800DBC053 /* stbaTabBarController.m in Sources */,
+				AEFCBF0F22CDFE4600DBC053 /* stbaCustomContentTextField.m in Sources */,
 				AE8C83D322C9F9030073EEDC /* smallTeamBuildingActivities.xcdatamodeld in Sources */,
 				AEFCBEE922CD90D000DBC053 /* stbaNDHTTPClient.m in Sources */,
 			);

@@ -31,7 +31,7 @@
     
     self.stbaAddVC = [[stbaAddActivitiesViewController alloc] init];
     UINavigationController *service = [[UINavigationController alloc] initWithRootViewController:self.stbaAddVC];
-    self.stbaAddVC.tabBarItem.title = @"Message";
+    self.stbaAddVC.tabBarItem.title = @"AddActivity";
     self.stbaAddVC.tabBarItem.image = [[UIImage imageNamed:@"tabmessage_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.stbaAddVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabmessage_active"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [self.stbaAddVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor blackColor]} forState:UIControlStateSelected];
@@ -39,7 +39,7 @@
     
     self.stbaAddressBookVC = [[stbaAddressBookViewController alloc] init];
     UINavigationController *customer = [[UINavigationController alloc] initWithRootViewController:self.stbaAddressBookVC];
-    self.stbaAddressBookVC.tabBarItem.title = @"History";
+    self.stbaAddressBookVC.tabBarItem.title = @"AddressBook";
     self.stbaAddressBookVC.tabBarItem.image = [[UIImage imageNamed:@"tabhistory_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.stbaAddressBookVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabhistory_active"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [self.stbaAddressBookVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor blackColor]} forState:UIControlStateSelected];
