@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, copy)NSString *name;
 @property(nonatomic, copy)NSString *gender;
 @property(nonatomic, copy)NSString *phoneNumber;
+@property(nonatomic, copy)NSString *email;
 @end
 
 NS_ASSUME_NONNULL_END

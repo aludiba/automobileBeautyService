@@ -10,7 +10,9 @@
 #import "stbaCustomContentTextField.h"
 #import "stbaAddressBookTableViewCell.h"
 #import "stbaAddressBookModel.h"
+#import "stbaAddContactViewController.h"
 @interface stbaAddressBookViewController ()<UITextFieldDelegate,UITableViewDelegate,UITableViewDataSource>
+@property(nonatomic, strong)UIButton *stbaAddContactButton;
 @property (nonatomic, strong) UITextField *stbaSearchTextField;
 @property(nonatomic, strong)NSMutableArray *dataArray;
 @property(nonatomic, strong)UITableView *mainTable;
@@ -20,7 +22,14 @@
     [super viewDidLoad];
     self.title = @"Address Book";
     [self setSearchText];
+    [self.mainTable reloadData];
 }
+- (void)stba_setupNavigationItems{
+    [super stba_setupNavigationItems];
+    UIBarButtonItem *rightbaritem = [[UIBarButtonItem alloc] initWithCustomView:self.stbaAddContactButton];
+    self.navigationItem.rightBarButtonItem = rightbaritem;
+}
+#pragma mark - 设置搜索
 - (void)setSearchText{
     self.stbaSearchTextField = [[UITextField alloc] init];
     self.stbaSearchTextField.backgroundColor = stbaH_Color(242, 242, 242, 1);
@@ -47,7 +56,7 @@
     }];
     [self.stbaSearchTextField setLeftView:searchTextLeftView];
     searchTextLeftView.backgroundColor = stbaH_Color(242, 242, 242, 1);
-    UIImageView *searchTextLeftImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"autoBeubtn_search_new"]];
+    UIImageView *searchTextLeftImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"search"]];
     [searchTextLeftView addSubview:searchTextLeftImgView];
     [searchTextLeftImgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(searchTextLeftView);
@@ -64,14 +73,43 @@
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     [self.view endEditing:YES];
 }
+- (void)closeKeyboard:(UITapGestureRecognizer *)recognizer {
+    [self.view endEditing:YES];
+}
+#pragma mark - 添加新联系人
+-(void)addContact{
+    stbaAddContactViewController *stbaAddContactVC = [[stbaAddContactViewController alloc] init];
+    stbaAddContactVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:stbaAddContactVC animated:YES];
+}
 #pragma mark - UITableViewDelegate
-
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.dataArray.count;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    stbaAddressBookModel *model = self.dataArray[indexPath.row];
+    stbaAddressBookTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"stbaAddressBookTableViewCell" forIndexPath:indexPath];
+    cell.model = model;
+    return cell;
+}
 #pragma mark - 属性懒加载
 - (NSMutableArray *)dataArray{
     if (!_dataArray) {
         _dataArray = [[NSMutableArray alloc] init];
     }
     return _dataArray;
+}
+- (UIButton *)stbaAddContactButton{
+    if (!_stbaAddContactButton) {
+        _stbaAddContactButton = [[UIButton alloc] init];
+        [_stbaAddContactButton setImage:[UIImage imageNamed:@"add"] forState:UIControlStateNormal];
+        [_stbaAddContactButton addTarget:self action:@selector(addContact) forControlEvents:UIControlEventTouchUpInside];
+        [_stbaAddContactButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.mas_equalTo(22);
+            make.height.mas_equalTo(22);
+        }];
+    }
+    return _stbaAddContactButton;
 }
 - (UITableView *)mainTable{
     if (!_mainTable) {
@@ -80,9 +118,8 @@
         _mainTable.delegate = self;
         _mainTable.dataSource = self;
         _mainTable.rowHeight = UITableViewAutomaticDimension;
-        _mainTable.estimatedRowHeight = 89.0f;
-        _mainTable.separatorColor = [UIColor colorWithRed:0.92 green:0.92 blue:0.92 alpha:1.00];
-        _mainTable.separatorInset = UIEdgeInsetsMake(0, 16, 0, 16);
+        _mainTable.estimatedRowHeight = 136.5f;
+        _mainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
         _mainTable.tableHeaderView = [[UIView alloc] init];
         _mainTable.tableFooterView = [[UIView alloc] init];
         [self.view addSubview:_mainTable];
@@ -92,6 +129,14 @@
             make.trailing.equalTo(self.view);
             make.bottom.equalTo(self.view);
         }];
+        [_mainTable registerClass:[stbaAddressBookTableViewCell class] forCellReuseIdentifier:@"stbaAddressBookTableViewCell"];
+        UITapGestureRecognizer *singleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeKeyboard:)];
+        singleTapGesture.numberOfTapsRequired = 1;
+        singleTapGesture.cancelsTouchesInView = NO;
+        [_mainTable addGestureRecognizer:singleTapGesture];
+        [self.view addGestureRecognizer:singleTapGesture];
+        UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(closeKeyboard:)];
+        [self.view addGestureRecognizer:panGesture];
     }
     return _mainTable;
 }

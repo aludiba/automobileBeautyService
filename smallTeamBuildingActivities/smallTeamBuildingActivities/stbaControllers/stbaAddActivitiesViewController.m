@@ -13,6 +13,6 @@
 @implementation stbaAddActivitiesViewController
 - (void)viewDidLoad{
     [super viewDidLoad];
-    self.title = @"Add";
+    self.title = @"Activity";
 }
 @end
