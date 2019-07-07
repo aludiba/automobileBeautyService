@@ -9,10 +9,12 @@
 #import "stbaAddContactViewController.h"
 #import "stbaAddContactTableViewCell.h"
 #import "stbaAddContactSaveTableViewCell.h"
+#import "stbaAddressBookModel.h"
 #import "stbaAddContactViewModel.h"
 @interface stbaAddContactViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UITableView *mainTable;
 @property(nonatomic, strong)NSMutableArray *viewDataArray;
+@property(nonatomic, strong)stbaAddressBookModel *model;
 @end
 
 @implementation stbaAddContactViewController
@@ -83,8 +85,19 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     stbaAddContactViewModel *model = self.viewDataArray[indexPath.row];
     if (model.currentType == stbaAddContactCellDefault) {
-        stbaAddContactTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"stbaAddContactTableViewCell" forIndexPath:indexPath];
+        NSString *KMyCellID = @"stbaAddContactTableViewCell";
+        NSString *cellID = [NSString stringWithFormat:@"%@%zd",KMyCellID, indexPath.row];
+        stbaAddContactTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+        if (!cell) {
+            cell = [[stbaAddContactTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+        }
         cell.model = model;
+        __weak typeof(self) weakSelf = self;
+        cell.editblock = ^(stbaAddContactTableViewCell * _Nonnull cell) {
+            [weakSelf.mainTable beginUpdates];
+            [weakSelf.mainTable endUpdates];
+        };
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }else if (model.currentType == stbaAddContactCellSave) {
         stbaAddContactSaveTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"stbaAddContactSaveTableViewCell" forIndexPath:indexPath];
@@ -93,6 +106,7 @@
     }else{
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
         cell.contentView.backgroundColor = stbaH_Color(242, 242, 242, 1);
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
 }
@@ -102,11 +116,66 @@
         
     }else if (model.currentType == stbaAddContactCellSave) {
         NSLog(@"Complete~");
+        stbaAddContactViewModel *nameModel = self.viewDataArray[0];
+        if (!nameModel.content.length) {
+            [MBProgressHUD stbashowReminderText:@"Please fill in name"];
+        }
+        self.model.name = nameModel.content;
+        stbaAddContactViewModel *genderModel = self.viewDataArray[2];
+        if (!genderModel.content.length) {
+            [MBProgressHUD stbashowReminderText:@"Please fill in gender"];
+        }
+        self.model.gender = genderModel.content;
+        stbaAddContactViewModel *mobilePhoneModel = self.viewDataArray[4];
+        if (!mobilePhoneModel.content.length) {
+            [MBProgressHUD stbashowReminderText:@"Please fill in mobile phone"];
+        }
+        self.model.phoneNumber = mobilePhoneModel.content;
+        stbaAddContactViewModel *emailModel = self.viewDataArray[6];
+        if (!emailModel.content.length) {
+            [MBProgressHUD stbashowReminderText:@"Please fill in email"];
+        }
+        self.model.email = emailModel.content;
+        NSString *documentPath = [stbaHBTool getDocumentPath:@"stbaData.plist"];
+        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"stbaData" ofType:@"plist"];
+        NSFileManager *manager = [NSFileManager defaultManager];
+        NSError *error;
+        if ([manager fileExistsAtPath:documentPath]) {
+            NSLog(@"file is exists");
+            
+        }else{
+            if ([manager copyItemAtPath:plistPath toPath:documentPath error:&error]) {
+                NSLog(@"file is not exists, copy success!");
+                
+            }else{
+                NSLog(@"error = %@",error);
+                return;
+            }
+        }
+        NSMutableArray *documentData = [[NSMutableArray alloc] initWithContentsOfFile:documentPath];
+        NSDictionary *dic = (NSDictionary *)[self.model yy_modelToJSONObject];
+        NSDictionary *dict = @{@"id":self.model.name,@"data":dic};
+        for (NSMutableDictionary *dictd in documentData) {
+            if ([dictd[@"id"] isEqualToString:self.model.name]) {
+                [documentData removeObject:dictd];
+                break;
+            }
+        }
+        [documentData addObject:dict];
+        [documentData writeToFile:documentPath atomically:YES];
+        [MBProgressHUD stbashowReminderText:@"Save success!"];
+        [self.navigationController popViewControllerAnimated:YES];
     }else{
        
     }
 }
 #pragma mark - 属性懒加载
+- (stbaAddressBookModel *)model{
+    if (!_model) {
+        _model = [[stbaAddressBookModel alloc] init];
+    }
+    return _model;
+}
 - (NSMutableArray *)viewDataArray{
     if (!_viewDataArray) {
         _viewDataArray = [[NSMutableArray alloc] init];
@@ -131,7 +200,6 @@
             make.trailing.equalTo(self.view);
             make.bottom.equalTo(self.mas_bottomLayoutGuideBottom);
         }];
-        [_mainTable registerClass:[stbaAddContactTableViewCell class] forCellReuseIdentifier:@"stbaAddContactTableViewCell"];
         [_mainTable registerClass:[stbaAddContactSaveTableViewCell class] forCellReuseIdentifier:@"stbaAddContactSaveTableViewCell"];
         [_mainTable registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
     }

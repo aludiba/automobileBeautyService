@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		53CF02FF8C02C0B2A0D93596 /* libPods-smallTeamBuildingActivities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B27CF5D0DB5AA2C3744ADC /* libPods-smallTeamBuildingActivities.a */; };
+		72FECEBE22D1EE6A00C4F862 /* stbaData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72FECEBD22D1EE6A00C4F862 /* stbaData.plist */; };
 		AE13BD9A22CF175D00049EAD /* stbaAddContactViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE13BD9922CF175D00049EAD /* stbaAddContactViewModel.m */; };
 		AE13BD9D22CF350700049EAD /* stbaAddContactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE13BD9C22CF350700049EAD /* stbaAddContactTableViewCell.m */; };
 		AE13BDA022CF520A00049EAD /* stbaAddContactSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE13BD9F22CF520A00049EAD /* stbaAddContactSaveTableViewCell.m */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		0815BC8ADD949DE8686B3265 /* Pods-smallTeamBuildingActivities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smallTeamBuildingActivities.release.xcconfig"; path = "Target Support Files/Pods-smallTeamBuildingActivities/Pods-smallTeamBuildingActivities.release.xcconfig"; sourceTree = "<group>"; };
 		67B27CF5D0DB5AA2C3744ADC /* libPods-smallTeamBuildingActivities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-smallTeamBuildingActivities.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72FECEBD22D1EE6A00C4F862 /* stbaData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = stbaData.plist; sourceTree = "<group>"; };
 		9A2B492FE348B1A3773EB2D0 /* Pods-smallTeamBuildingActivities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smallTeamBuildingActivities.debug.xcconfig"; path = "Target Support Files/Pods-smallTeamBuildingActivities/Pods-smallTeamBuildingActivities.debug.xcconfig"; sourceTree = "<group>"; };
 		AE13BD9822CF175C00049EAD /* stbaAddContactViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbaAddContactViewModel.h; sourceTree = "<group>"; };
 		AE13BD9922CF175D00049EAD /* stbaAddContactViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stbaAddContactViewModel.m; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72FECEBC22D1EE4F00C4F862 /* stbaResources */ = {
+			isa = PBXGroup;
+			children = (
+				72FECEBD22D1EE6A00C4F862 /* stbaData.plist */,
+			);
+			path = stbaResources;
+			sourceTree = "<group>";
+		};
 		890F017659ABCCCF8F53EBB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,11 +135,11 @@
 		AE8C83C722C9F9030073EEDC /* smallTeamBuildingActivities */ = {
 			isa = PBXGroup;
 			children = (
+				72FECEBC22D1EE4F00C4F862 /* stbaResources */,
 				AEFCBF0622CDF96000DBC053 /* stbaModels */,
 				AEFCBEE422CD8B6F00DBC053 /* stbaCommon */,
 				AEFCBEE322CD8B6F00DBC053 /* stbaControllers */,
 				AEFCBEE522CD8B7000DBC053 /* stbaViews */,
-				AEFCBEE222CD8B6F00DBC053 /* stbaResources */,
 				AE8C83C822C9F9030073EEDC /* AppDelegate.h */,
 				AE8C83C922C9F9030073EEDC /* AppDelegate.m */,
 				AE8C83CB22C9F9030073EEDC /* ViewController.h */,
@@ -142,13 +152,6 @@
 				AE8C83D122C9F9030073EEDC /* smallTeamBuildingActivities.xcdatamodeld */,
 			);
 			path = smallTeamBuildingActivities;
-			sourceTree = "<group>";
-		};
-		AEFCBEE222CD8B6F00DBC053 /* stbaResources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = stbaResources;
 			sourceTree = "<group>";
 		};
 		AEFCBEE322CD8B6F00DBC053 /* stbaControllers */ = {
@@ -282,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72FECEBE22D1EE6A00C4F862 /* stbaData.plist in Resources */,
 				AE8C83D822C9F9060073EEDC /* LaunchScreen.storyboard in Resources */,
 				AE8C83D522C9F9060073EEDC /* Assets.xcassets in Resources */,
 				AE8C83D022C9F9030073EEDC /* Main.storyboard in Resources */,
@@ -507,7 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				DEVELOPMENT_TEAM = 44V2JFTR7R;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/smallTeamBuildingActivities/stbaCommon/stba_PrefixHeader.pch";
 				INFOPLIST_FILE = smallTeamBuildingActivities/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -527,7 +531,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				DEVELOPMENT_TEAM = 44V2JFTR7R;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/smallTeamBuildingActivities/stbaCommon/stba_PrefixHeader.pch";
 				INFOPLIST_FILE = smallTeamBuildingActivities/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
