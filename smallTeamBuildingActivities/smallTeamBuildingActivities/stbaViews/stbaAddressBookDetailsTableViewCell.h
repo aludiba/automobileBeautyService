@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @class stbaAddressBookModel;
 @interface stbaAddressBookDetailsTableViewCell : UITableViewCell
-
+@property(nonatomic, strong)stbaAddressBookModel *model;
 @end
 
 NS_ASSUME_NONNULL_END
