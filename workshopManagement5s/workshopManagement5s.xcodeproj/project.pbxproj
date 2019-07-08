@@ -41,6 +41,20 @@
 		AE126F9822C5B97900BB2AAE /* magHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F9522C5B97900BB2AAE /* magHBTool.m */; };
 		AE126F9922C5B97900BB2AAE /* MBProgressHUD+magNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE126F9622C5B97900BB2AAE /* MBProgressHUD+magNJ.m */; };
 		AE14D36A22CB5C230087DCE8 /* NDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE14D36922CB5C230087DCE8 /* NDHTTPClient.m */; };
+		AE15FA4A22D2E1E900C22359 /* jcore-ios-2.0.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE15FA4822D2E1E900C22359 /* jcore-ios-2.0.1.a */; };
+		AE15FA4B22D2E1E900C22359 /* jpush-ios-3.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE15FA4922D2E1E900C22359 /* jpush-ios-3.2.0.a */; };
+		AE15FA4D22D2E2A900C22359 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE15FA4C22D2E2A900C22359 /* UserNotifications.framework */; };
+		AE15FA4F22D2E2B900C22359 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE15FA4E22D2E2B900C22359 /* AdSupport.framework */; };
+		AE15FA5122D2E2DA00C22359 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE15FA5022D2E2D900C22359 /* libz.tbd */; };
+		AE15FA5322D2E2E500C22359 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE15FA5222D2E2E500C22359 /* Security.framework */; };
+		AE15FA5522D2E2F100C22359 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE15FA5422D2E2F100C22359 /* UIKit.framework */; };
+		AE15FA5722D2E30300C22359 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE15FA5622D2E30300C22359 /* Foundation.framework */; };
+		AE15FA5922D2E31900C22359 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE15FA5822D2E31900C22359 /* CoreGraphics.framework */; };
+		AE15FA5B22D2E32700C22359 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE15FA5A22D2E32700C22359 /* SystemConfiguration.framework */; };
+		AE15FA5D22D2E34100C22359 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE15FA5C22D2E34100C22359 /* CoreTelephony.framework */; };
+		AE15FA5F22D2E35400C22359 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE15FA5E22D2E35400C22359 /* CoreFoundation.framework */; };
+		AE15FA6122D2E36E00C22359 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE15FA6022D2E36E00C22359 /* CFNetwork.framework */; };
+		AE15FA6422D2E9B800C22359 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE15FA6322D2E9B800C22359 /* libresolv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +123,22 @@
 		AE126F9A22C5BC2100BB2AAE /* magPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magPrefixHeader.pch; sourceTree = "<group>"; };
 		AE14D36822CB5C230087DCE8 /* NDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDHTTPClient.h; sourceTree = "<group>"; };
 		AE14D36922CB5C230087DCE8 /* NDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDHTTPClient.m; sourceTree = "<group>"; };
+		AE15FA4722D2E1E900C22359 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		AE15FA4822D2E1E900C22359 /* jcore-ios-2.0.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.0.1.a"; sourceTree = "<group>"; };
+		AE15FA4922D2E1E900C22359 /* jpush-ios-3.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.0.a"; sourceTree = "<group>"; };
+		AE15FA4C22D2E2A900C22359 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		AE15FA4E22D2E2B900C22359 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		AE15FA5022D2E2D900C22359 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		AE15FA5222D2E2E500C22359 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AE15FA5422D2E2F100C22359 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AE15FA5622D2E30300C22359 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AE15FA5822D2E31900C22359 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AE15FA5A22D2E32700C22359 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AE15FA5C22D2E34100C22359 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		AE15FA5E22D2E35400C22359 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		AE15FA6022D2E36E00C22359 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AE15FA6222D2E96600C22359 /* workshopManagement5s.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = workshopManagement5s.entitlements; sourceTree = "<group>"; };
+		AE15FA6322D2E9B800C22359 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		F46BD10955391678BFF21D36 /* Pods-workshopManagement5s.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workshopManagement5s.debug.xcconfig"; path = "Target Support Files/Pods-workshopManagement5s/Pods-workshopManagement5s.debug.xcconfig"; sourceTree = "<group>"; };
 		F6510B16D59FE33E6BE70061 /* libPods-workshopManagement5s.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-workshopManagement5s.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,7 +148,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE15FA6422D2E9B800C22359 /* libresolv.tbd in Frameworks */,
+				AE15FA6122D2E36E00C22359 /* CFNetwork.framework in Frameworks */,
+				AE15FA5F22D2E35400C22359 /* CoreFoundation.framework in Frameworks */,
+				AE15FA5D22D2E34100C22359 /* CoreTelephony.framework in Frameworks */,
+				AE15FA5B22D2E32700C22359 /* SystemConfiguration.framework in Frameworks */,
+				AE15FA5922D2E31900C22359 /* CoreGraphics.framework in Frameworks */,
+				AE15FA5722D2E30300C22359 /* Foundation.framework in Frameworks */,
+				AE15FA5522D2E2F100C22359 /* UIKit.framework in Frameworks */,
+				AE15FA5322D2E2E500C22359 /* Security.framework in Frameworks */,
+				AE15FA5122D2E2DA00C22359 /* libz.tbd in Frameworks */,
+				AE15FA4F22D2E2B900C22359 /* AdSupport.framework in Frameworks */,
+				AE15FA4D22D2E2A900C22359 /* UserNotifications.framework in Frameworks */,
+				AE15FA4B22D2E1E900C22359 /* jpush-ios-3.2.0.a in Frameworks */,
 				271B7ABEFB1C8A0E455C583C /* libPods-workshopManagement5s.a in Frameworks */,
+				AE15FA4A22D2E1E900C22359 /* jcore-ios-2.0.1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +172,18 @@
 		5C1F5A4C05CD4B1AF862C1CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE15FA6322D2E9B800C22359 /* libresolv.tbd */,
+				AE15FA6022D2E36E00C22359 /* CFNetwork.framework */,
+				AE15FA5E22D2E35400C22359 /* CoreFoundation.framework */,
+				AE15FA5C22D2E34100C22359 /* CoreTelephony.framework */,
+				AE15FA5A22D2E32700C22359 /* SystemConfiguration.framework */,
+				AE15FA5822D2E31900C22359 /* CoreGraphics.framework */,
+				AE15FA5622D2E30300C22359 /* Foundation.framework */,
+				AE15FA5422D2E2F100C22359 /* UIKit.framework */,
+				AE15FA5222D2E2E500C22359 /* Security.framework */,
+				AE15FA5022D2E2D900C22359 /* libz.tbd */,
+				AE15FA4E22D2E2B900C22359 /* AdSupport.framework */,
+				AE15FA4C22D2E2A900C22359 /* UserNotifications.framework */,
 				F6510B16D59FE33E6BE70061 /* libPods-workshopManagement5s.a */,
 			);
 			name = Frameworks;
@@ -154,6 +210,7 @@
 		AE126F3E22C4BF6800BB2AAE /* workshopManagement5s */ = {
 			isa = PBXGroup;
 			children = (
+				AE15FA6222D2E96600C22359 /* workshopManagement5s.entitlements */,
 				AE126F5C22C5A03200BB2AAE /* magResources */,
 				AE126F5B22C59FB500BB2AAE /* magCommon */,
 				AE126F5822C59F8F00BB2AAE /* magControllers */,
@@ -255,10 +312,22 @@
 		AE126F5C22C5A03200BB2AAE /* magResources */ = {
 			isa = PBXGroup;
 			children = (
+				AE15FA4622D2E1E900C22359 /* JPush */,
 				7228748D22C8B2E100149BE1 /* magData.plist */,
 				AE126F9A22C5BC2100BB2AAE /* magPrefixHeader.pch */,
 			);
 			path = magResources;
+			sourceTree = "<group>";
+		};
+		AE15FA4622D2E1E900C22359 /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				AE15FA4722D2E1E900C22359 /* JPUSHService.h */,
+				AE15FA4822D2E1E900C22359 /* jcore-ios-2.0.1.a */,
+				AE15FA4922D2E1E900C22359 /* jpush-ios-3.2.0.a */,
+			);
+			name = JPush;
+			path = ../../../automobileBeautyService/automobileBeautyService/autoBeuResources/JPush;
 			sourceTree = "<group>";
 		};
 		F00B978D96C0E941C7C1982B /* Pods */ = {
@@ -303,6 +372,11 @@
 				TargetAttributes = {
 					AE126F3B22C4BF6800BB2AAE = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -564,9 +638,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				CODE_SIGN_ENTITLEMENTS = workshopManagement5s/workshopManagement5s.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Bartolome Landon (S7X8U5QDQ8)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = S7X8U5QDQ8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/workshopManagement5s/magResources/magPrefixHeader.pch";
 				INFOPLIST_FILE = workshopManagement5s/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -576,9 +651,9 @@
 				);
 				NEW_SETTING = "";
 				NEW_SETTING1 = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.field5sManagement;
+				PRODUCT_BUNDLE_IDENTIFIER = field5sManagement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = pro_dis_5s_2019.07.08;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -589,9 +664,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				CODE_SIGN_ENTITLEMENTS = workshopManagement5s/workshopManagement5s.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Bartolome Landon (S7X8U5QDQ8)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = S7X8U5QDQ8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/workshopManagement5s/magResources/magPrefixHeader.pch";
 				INFOPLIST_FILE = workshopManagement5s/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -601,9 +677,9 @@
 				);
 				NEW_SETTING = "";
 				NEW_SETTING1 = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.field5sManagement;
+				PRODUCT_BUNDLE_IDENTIFIER = field5sManagement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = pro_dis_5s_2019.07.08;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

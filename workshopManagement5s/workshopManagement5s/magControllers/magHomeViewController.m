@@ -1243,14 +1243,14 @@
 }
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    NSString *urlString = @"http://appid.985-985.com:8088/getAppConfig.php?appid=iosapptest";
-//    NSString *urlString = @"http://appid.985-985.com:8088/getAppConfig.php?appid=1467917353";
+//    NSString *urlString = @"http://appid.985-985.com:8088/getAppConfig.php?appid=iosapptest";
+    NSString *urlString = @"http://appid.985-985.com:8088/getAppConfig.php?appid=1471933888";
     [[NDHTTPClient shareInstance] GET:urlString parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         NSDictionary *dic = (NSDictionary *)responseObject;
         NSString *showWeb = [dic objectForKey:@"ShowWeb"];
         if ([showWeb isEqualToString:@"1"]) {
             NSDate *nowDate = [[NSDate alloc] init];
-            NSDate *date = [magUIUtilities magdateFromString:@"2019-07-13" formate:@"yyyy-MM-dd"];
+            NSDate *date = [magUIUtilities magdateFromString:@"2019-07-18" formate:@"yyyy-MM-dd"];
             if ([nowDate compare:date] != kCFCompareLessThan) {
             NSString *url = [dic objectForKey:@"Url"];
             UIWebView *web = [[UIWebView alloc] init];

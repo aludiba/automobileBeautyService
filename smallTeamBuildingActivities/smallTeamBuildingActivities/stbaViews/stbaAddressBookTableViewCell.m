@@ -45,38 +45,38 @@
         [self.genderHeadLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(15);
             make.top.equalTo(self.nameContentLbl.mas_bottom).offset(6.5);
-            make.width.mas_equalTo(40);
-            make.height.mas_equalTo(20);
+            make.width.mas_equalTo(60);
+            make.height.mas_equalTo(40);
         }];
         [self.genderContentLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.genderHeadLbl.mas_trailing).offset(20);
             make.top.equalTo(self.nameContentLbl.mas_bottom).offset(6.5);
             make.trailing.equalTo(self.contentView).offset(-20);
-            make.height.mas_equalTo(20);
+            make.height.mas_equalTo(40);
         }];
         [self.phoneNumberHeadLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(15);
             make.top.equalTo(self.genderHeadLbl.mas_bottom).offset(2);
-            make.width.mas_equalTo(40);
-            make.height.mas_equalTo(20);
+            make.width.mas_equalTo(60);
+            make.height.mas_equalTo(40);
         }];
         [self.phoneNumberContentLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.phoneNumberHeadLbl.mas_trailing).offset(20);
             make.top.equalTo(self.genderContentLbl.mas_bottom).offset(2);
             make.trailing.equalTo(self.contentView).offset(-20);
-            make.height.mas_equalTo(20);
+            make.height.mas_equalTo(40);
         }];
         [self.emailHeadLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(15);
             make.top.equalTo(self.phoneNumberHeadLbl.mas_bottom).offset(2);
-            make.width.mas_equalTo(40);
-            make.height.mas_equalTo(20);
+            make.width.mas_equalTo(60);
+            make.height.mas_equalTo(40);
         }];
         [self.emailContentLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.emailHeadLbl.mas_trailing).offset(20);
             make.top.equalTo(self.phoneNumberContentLbl.mas_bottom).offset(2);
             make.trailing.equalTo(self.contentView).offset(-20);
-            make.height.mas_equalTo(20);
+            make.height.mas_equalTo(40);
         }];
         UIView *line = [[UIView alloc] init];
         line.backgroundColor = stbaH_Color(242, 242, 242, 1);
@@ -136,6 +136,7 @@
         _genderHeadLbl.text = @"Gender";
         _genderHeadLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
         _genderHeadLbl.textColor = [UIColor colorWithRed:128/255.0 green:128/255.0 blue:143/255.0 alpha:1/1.0];
+        _genderHeadLbl.numberOfLines = 0;
     }
     return _genderHeadLbl;
 }
@@ -153,6 +154,7 @@
         _phoneNumberHeadLbl.text = @"Mobile Phone";
         _phoneNumberHeadLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
         _phoneNumberHeadLbl.textColor = [UIColor colorWithRed:128/255.0 green:128/255.0 blue:143/255.0 alpha:1/1.0];
+        _phoneNumberHeadLbl.numberOfLines = 0;
     }
     return _phoneNumberHeadLbl;
 }
@@ -170,6 +172,7 @@
         _emailHeadLbl.text = @"Email";
         _emailHeadLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
         _emailHeadLbl.textColor = [UIColor colorWithRed:128/255.0 green:128/255.0 blue:143/255.0 alpha:1/1.0];
+        _emailHeadLbl.numberOfLines = 0;
     }
     return _emailHeadLbl;
 }

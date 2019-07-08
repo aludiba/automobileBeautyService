@@ -11,8 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSUInteger, stbaAddContactCellType) {
     stbaAddContactCellDefault,
-    stbaAddContactCellLine,
+    stbaAddContactCellGender,
     stbaAddContactCellSave,
+    stbaAddContactCellLine,
 };
 @interface stbaAddContactViewModel : NSObject
 @property(nonatomic, copy)NSString *title;//标题

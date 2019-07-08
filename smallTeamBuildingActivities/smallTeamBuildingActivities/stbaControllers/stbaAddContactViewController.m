@@ -8,6 +8,7 @@
 
 #import "stbaAddContactViewController.h"
 #import "stbaAddContactTableViewCell.h"
+#import "stbaAddContactGenderTableViewCell.h"
 #import "stbaAddContactSaveTableViewCell.h"
 #import "stbaAddressBookModel.h"
 #import "stbaAddContactViewModel.h"
@@ -36,9 +37,9 @@
     [self.viewDataArray addObject:lineModel0];
     
     stbaAddContactViewModel *genderModel = [[stbaAddContactViewModel alloc] init];
-    genderModel.currentType = stbaAddContactCellDefault;
+    genderModel.currentType = stbaAddContactCellGender;
     genderModel.title = @"Gender";
-    genderModel.placeholder = @"Please fill in gender";
+    genderModel.placeholder = @"Please select gender";
     [self.viewDataArray addObject:genderModel];
     
     stbaAddContactViewModel *lineModel1 = [[stbaAddContactViewModel alloc] init];
@@ -70,6 +71,13 @@
     [self.viewDataArray addObject:completeModel];
     [self.mainTable reloadData];
 }
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    [self.view endEditing:YES];
+}
+- (void)closeKeyboard:(UITapGestureRecognizer *)recognizer {
+    [self.view endEditing:YES];
+}
 #pragma mark - UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.viewDataArray.count;
@@ -99,6 +107,11 @@
         };
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
+    }else if (model.currentType == stbaAddContactCellGender) {
+        stbaAddContactGenderTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"stbaAddContactGenderTableViewCell" forIndexPath:indexPath];
+        cell.model = model;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cell;
     }else if (model.currentType == stbaAddContactCellSave) {
         stbaAddContactSaveTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"stbaAddContactSaveTableViewCell" forIndexPath:indexPath];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -114,8 +127,9 @@
     stbaAddContactViewModel *model = self.viewDataArray[indexPath.row];
     if (model.currentType == stbaAddContactCellDefault) {
         
+    }else if (model.currentType == stbaAddContactCellGender) {
+        [self presentActionSheetWithIndexPath:indexPath];
     }else if (model.currentType == stbaAddContactCellSave) {
-        NSLog(@"Complete~");
         stbaAddContactViewModel *nameModel = self.viewDataArray[0];
         if (!nameModel.content.length) {
             [MBProgressHUD stbashowReminderText:@"Please fill in name"];
@@ -169,6 +183,31 @@
        
     }
 }
+- (void)presentActionSheetWithIndexPath:(NSIndexPath *)indexPath {
+    NSArray *itemTypesArray = @[@"Male",@"Female"];
+    if (itemTypesArray.count > 0) {
+        [self presentActionSheetWithItems:itemTypesArray atIndexPath:indexPath];
+        return;
+    }
+}
+- (void)presentActionSheetWithItems:(NSArray *)items atIndexPath:(NSIndexPath *)indexPath{
+    if (items.count == 0) {
+        return;
+    }
+    UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    for (NSString *objString in items) {
+        __weak typeof(self) weakSelf = self;
+        UIAlertAction *itemTypeMenuAction = [UIAlertAction actionWithTitle:objString style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            stbaAddContactViewModel *model = weakSelf.viewDataArray[indexPath.row];
+            model.content = objString;
+            [weakSelf.mainTable reloadData];
+        }];
+        [actionSheet addAction:itemTypeMenuAction];
+    }
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    [actionSheet addAction:cancelAction];
+    [self presentViewController:actionSheet animated:YES completion:nil];
+}
 #pragma mark - 属性懒加载
 - (stbaAddressBookModel *)model{
     if (!_model) {
@@ -200,8 +239,16 @@
             make.trailing.equalTo(self.view);
             make.bottom.equalTo(self.mas_bottomLayoutGuideBottom);
         }];
+        [_mainTable registerClass:[stbaAddContactGenderTableViewCell class] forCellReuseIdentifier:@"stbaAddContactGenderTableViewCell"];
         [_mainTable registerClass:[stbaAddContactSaveTableViewCell class] forCellReuseIdentifier:@"stbaAddContactSaveTableViewCell"];
         [_mainTable registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+        UITapGestureRecognizer *singleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeKeyboard:)];
+        singleTapGesture.numberOfTapsRequired = 1;
+        singleTapGesture.cancelsTouchesInView = NO;
+        [_mainTable addGestureRecognizer:singleTapGesture];
+        [self.view addGestureRecognizer:singleTapGesture];
+        UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(closeKeyboard:)];
+        [self.view addGestureRecognizer:panGesture];
     }
     return _mainTable;
 }

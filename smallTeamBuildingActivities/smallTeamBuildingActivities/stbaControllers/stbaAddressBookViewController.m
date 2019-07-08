@@ -22,7 +22,10 @@
     [super viewDidLoad];
     self.title = @"Address Book";
     [self setSearchText];
-    [self.mainTable reloadData];
+}
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self loadData];
 }
 - (void)stba_setupNavigationItems{
     [super stba_setupNavigationItems];
@@ -68,6 +71,21 @@
     self.stbaSearchTextField.leftViewMode = UITextFieldViewModeAlways;
     self.stbaSearchTextField.delegate = self;
     self.stbaSearchTextField.returnKeyType = UIReturnKeySearch;
+}
+- (void)loadData{
+    NSString *documentPath = [stbaHBTool getDocumentPath:@"stbaData.plist"];
+    NSMutableArray *documentData = [[NSMutableArray alloc] initWithContentsOfFile:documentPath];
+    if (documentData.count) {
+        [self.dataArray removeAllObjects];
+        for (int i = 0; i < documentData.count; i++) {
+            NSDictionary *dict = documentData[i];
+            NSDictionary *dic = dict[@"data"];
+            stbaAddressBookModel *model = [stbaAddressBookModel yy_modelWithDictionary:dic];
+            [self.dataArray addObject:model];
+        }
+    }
+    [self.mainTable.mj_header endRefreshing];
+    [self.mainTable reloadData];
 }
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
@@ -137,6 +155,7 @@
         [self.view addGestureRecognizer:singleTapGesture];
         UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(closeKeyboard:)];
         [self.view addGestureRecognizer:panGesture];
+        _mainTable.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadData)];
     }
     return _mainTable;
 }
