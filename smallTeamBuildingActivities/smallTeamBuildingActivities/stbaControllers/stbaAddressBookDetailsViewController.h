@@ -7,10 +7,12 @@
 //
 
 #import "stbaBaseViewController.h"
+@class stbaAddressBookModel;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface stbaAddressBookDetailsViewController : stbaBaseViewController
+@property(nonatomic, strong)stbaAddressBookModel *model;
 
 @end
 

@@ -11,6 +11,7 @@
 #import "stbaAddressBookTableViewCell.h"
 #import "stbaAddressBookModel.h"
 #import "stbaAddContactViewController.h"
+#import "stbaAddressBookDetailsViewController.h"
 @interface stbaAddressBookViewController ()<UITextFieldDelegate,UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UIButton *stbaAddContactButton;
 @property (nonatomic, strong) UITextField *stbaSearchTextField;
@@ -109,6 +110,13 @@
     stbaAddressBookTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"stbaAddressBookTableViewCell" forIndexPath:indexPath];
     cell.model = model;
     return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    stbaAddressBookModel *model = self.dataArray[indexPath.row];
+    stbaAddressBookDetailsViewController *vc = [[stbaAddressBookDetailsViewController alloc] init];
+    vc.model = model;
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark - 属性懒加载
 - (NSMutableArray *)dataArray{
