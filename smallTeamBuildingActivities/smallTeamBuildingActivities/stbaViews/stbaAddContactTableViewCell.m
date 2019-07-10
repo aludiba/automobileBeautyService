@@ -91,7 +91,6 @@
     textView.bounds = bounds;
     self.contentHeight = size.height;
     self.contentString = textView.text;
-    self.model.content = textView.text;
     if (self.editblock) {
         self.editblock(self);
     }

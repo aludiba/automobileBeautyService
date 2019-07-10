@@ -102,6 +102,17 @@
         cell.model = model;
         __weak typeof(self) weakSelf = self;
         cell.editblock = ^(stbaAddContactTableViewCell * _Nonnull cell) {
+            if ([model.title isEqualToString:@"Email"]) {
+            if (cell.contentHeight > model.editorContentHeight) {
+                [UIView animateWithDuration:0.2 animations:^{
+                    CGRect frame = self.view.frame;
+                    frame.origin.y = frame.origin.y - 48;
+                    self.view.frame = frame;
+                }];
+            }
+            }
+            model.editorContentHeight = cell.contentHeight;
+            model.content = cell.contentString;
             [weakSelf.mainTable beginUpdates];
             [weakSelf.mainTable endUpdates];
         };

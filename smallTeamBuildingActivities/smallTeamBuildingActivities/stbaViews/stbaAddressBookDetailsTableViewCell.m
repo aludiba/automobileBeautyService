@@ -152,6 +152,7 @@
         _genderContentLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:16];
         _genderContentLbl.textColor = [UIColor grayColor];
         _genderContentLbl.textAlignment = NSTextAlignmentRight;
+        _genderContentLbl.numberOfLines = 0;
     }
     return _genderContentLbl;
 }
@@ -189,6 +190,7 @@
         _emailContentLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:16];
         _emailContentLbl.textColor = [UIColor grayColor];
         _emailContentLbl.textAlignment = NSTextAlignmentRight;
+        _emailContentLbl.numberOfLines = 0;
     }
     return _emailContentLbl;
 }

@@ -127,6 +127,7 @@
         _nameContentLbl = [[UILabel alloc] init];
         _nameContentLbl.font = [UIFont fontWithName:@"PingFangSC-Semibold" size:16];
         _nameContentLbl.textColor = [UIColor colorWithRed:57/255.0 green:66/255.0 blue:89/255.0 alpha:1/1.0];
+        _nameContentLbl.numberOfLines = 0;
     }
     return _nameContentLbl;
 }
@@ -145,6 +146,7 @@
         _genderContentLbl = [[UILabel alloc] init];
         _genderContentLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
         _genderContentLbl.textColor = [UIColor colorWithRed:128/255.0 green:128/255.0 blue:143/255.0 alpha:1/1.0];
+        _genderContentLbl.numberOfLines = 0;
     }
     return _genderContentLbl;
 }
@@ -163,6 +165,7 @@
         _phoneNumberContentLbl = [[UILabel alloc] init];
         _phoneNumberContentLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
         [_phoneNumberContentLbl setTextColor:[UIColor colorWithRed:128/255.0 green:128/255.0 blue:143/255.0 alpha:1/1.0]];
+        _phoneNumberContentLbl.numberOfLines = 0;
     }
     return _phoneNumberContentLbl;
 }
@@ -181,6 +184,7 @@
         _emailContentLbl = [[UILabel alloc] init];
         _emailContentLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
         _emailContentLbl.textColor = [UIColor colorWithRed:128/255.0 green:128/255.0 blue:143/255.0 alpha:1/1.0];
+        _emailContentLbl.numberOfLines = 0;
     }
     return _emailContentLbl;
 }
