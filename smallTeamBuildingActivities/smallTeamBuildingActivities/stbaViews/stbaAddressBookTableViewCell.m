@@ -104,9 +104,9 @@
         self.genderContentLbl.text = @"-";
     }
     if (_model.phoneNumber.length) {
-        self.phoneNumberContentLbl.text = _model.phoneNumber;
+        [self.phoneNumberContentLbl setText:_model.phoneNumber];
     }else{
-        self.phoneNumberContentLbl.text = @"-";
+        [self.phoneNumberContentLbl setText:@"-"];
     }
     if (_model.email.length) {
         self.emailContentLbl.text = _model.email;
@@ -162,7 +162,7 @@
     if (!_phoneNumberContentLbl) {
         _phoneNumberContentLbl = [[UILabel alloc] init];
         _phoneNumberContentLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
-        _phoneNumberContentLbl.textColor = [UIColor colorWithRed:128/255.0 green:128/255.0 blue:143/255.0 alpha:1/1.0];
+        [_phoneNumberContentLbl setTextColor:[UIColor colorWithRed:128/255.0 green:128/255.0 blue:143/255.0 alpha:1/1.0]];
     }
     return _phoneNumberContentLbl;
 }

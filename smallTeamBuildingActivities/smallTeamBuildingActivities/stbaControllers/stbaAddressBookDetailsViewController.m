@@ -26,6 +26,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     stbaAddressBookDetailsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"stbaAddressBookDetailsTableViewCell" forIndexPath:indexPath];
     cell.model = self.model;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 #pragma mark - 属性懒加载

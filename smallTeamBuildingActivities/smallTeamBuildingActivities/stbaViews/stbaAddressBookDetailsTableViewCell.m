@@ -14,7 +14,7 @@
 @property(nonatomic, strong)UILabel *genderHeadLbl;
 @property(nonatomic, strong)UILabel *genderContentLbl;
 @property(nonatomic, strong)UILabel *phoneNumberHeadLbl;
-@property(nonatomic, strong)UILabel *phoneNumberContentLbl;
+@property(nonatomic, strong)UIButton *phoneNumberContentLbl;
 @property(nonatomic, strong)UILabel *emailHeadLbl;
 @property(nonatomic, strong)UILabel *emailContentLbl;
 @end
@@ -70,9 +70,9 @@
             make.height.mas_equalTo(20);
         }];
         [self.phoneNumberContentLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.trailing.equalTo(self.contentView).offset(-15);
-            make.top.equalTo(self.genderHeadLbl.mas_bottom).offset(20);
-            make.leading.mas_equalTo(self.phoneNumberHeadLbl.mas_trailing).offset(10);
+            make.trailing.equalTo(self.genderContentLbl);
+            make.top.equalTo(self.genderContentLbl.mas_bottom).offset(20);
+            make.width.mas_equalTo(100);
             make.height.mas_equalTo(20);
         }];
         [self.emailHeadLbl mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -95,9 +95,30 @@
 - (void)setModel:(stbaAddressBookModel *)model{
     _model = model;
     self.nameLbl.text = _model.name;
-    self.genderContentLbl.text = _model.gender;
-    self.phoneNumberContentLbl.text = _model.phoneNumber;
-    self.emailContentLbl.text = _model.email;
+    if (_model.gender.length) {
+        self.genderContentLbl.text = _model.gender;
+    }else{
+        self.genderContentLbl.text = @"-";
+    }
+    if (_model.phoneNumber.length) {
+        [self.phoneNumberContentLbl setTitle:_model.phoneNumber forState:UIControlStateNormal];
+    }else{
+        [self.phoneNumberContentLbl setTitle:@"-" forState:UIControlStateNormal];
+    }
+    if (_model.email.length) {
+        self.emailContentLbl.text = _model.email;
+    }else{
+        self.emailContentLbl.text = @"-";
+    }
+}
+#pragma mark - 打电话
+-(void)makePhoneCall{
+    if (self.phoneNumberContentLbl.titleLabel.text.length && ![self.phoneNumberContentLbl.titleLabel.text isEqualToString:@"-"]) {
+        NSMutableString* str=[[NSMutableString alloc] initWithFormat:@"tel:%@",self.phoneNumberContentLbl.titleLabel.text];
+        UIWebView * callWebview = [[UIWebView alloc] init];
+        [callWebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:str]]];
+        [self.contentView addSubview:callWebview];
+    }
 }
 #pragma mark - 属性懒加载
 - (UIImageView *)headImgView{
@@ -143,12 +164,13 @@
     }
     return _phoneNumberHeadLbl;
 }
-- (UILabel *)phoneNumberContentLbl{
+- (UIButton *)phoneNumberContentLbl{
     if (!_phoneNumberContentLbl) {
-        _phoneNumberContentLbl = [[UILabel alloc] init];
-        _phoneNumberContentLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:16];
-        _phoneNumberContentLbl.textColor = [UIColor blueColor];
-        _phoneNumberContentLbl.textAlignment = NSTextAlignmentRight;
+        _phoneNumberContentLbl = [[UIButton alloc] init];
+        _phoneNumberContentLbl.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:16];
+        [_phoneNumberContentLbl setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+        [_phoneNumberContentLbl addTarget:self action:@selector(makePhoneCall) forControlEvents:UIControlEventTouchUpInside];
+        [_phoneNumberContentLbl.titleLabel setTextAlignment:NSTextAlignmentRight];
     }
     return _phoneNumberContentLbl;
 }
