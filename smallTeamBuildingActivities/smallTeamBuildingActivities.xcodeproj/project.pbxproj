@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		53CF02FF8C02C0B2A0D93596 /* libPods-smallTeamBuildingActivities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B27CF5D0DB5AA2C3744ADC /* libPods-smallTeamBuildingActivities.a */; };
+		7223C0E822D62917008AA14F /* stbaSearchAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7223C0E722D62917008AA14F /* stbaSearchAddressBookViewController.m */; };
+		7223C0EB22D62B2F008AA14F /* stbaSearchAddressBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7223C0EA22D62B2F008AA14F /* stbaSearchAddressBookTableViewCell.m */; };
 		72FECEBE22D1EE6A00C4F862 /* stbaData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72FECEBD22D1EE6A00C4F862 /* stbaData.plist */; };
 		AE13BD9A22CF175D00049EAD /* stbaAddContactViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE13BD9922CF175D00049EAD /* stbaAddContactViewModel.m */; };
 		AE13BD9D22CF350700049EAD /* stbaAddContactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE13BD9C22CF350700049EAD /* stbaAddContactTableViewCell.m */; };
@@ -40,6 +42,10 @@
 /* Begin PBXFileReference section */
 		0815BC8ADD949DE8686B3265 /* Pods-smallTeamBuildingActivities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smallTeamBuildingActivities.release.xcconfig"; path = "Target Support Files/Pods-smallTeamBuildingActivities/Pods-smallTeamBuildingActivities.release.xcconfig"; sourceTree = "<group>"; };
 		67B27CF5D0DB5AA2C3744ADC /* libPods-smallTeamBuildingActivities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-smallTeamBuildingActivities.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7223C0E622D62917008AA14F /* stbaSearchAddressBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbaSearchAddressBookViewController.h; sourceTree = "<group>"; };
+		7223C0E722D62917008AA14F /* stbaSearchAddressBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stbaSearchAddressBookViewController.m; sourceTree = "<group>"; };
+		7223C0E922D62B2F008AA14F /* stbaSearchAddressBookTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbaSearchAddressBookTableViewCell.h; sourceTree = "<group>"; };
+		7223C0EA22D62B2F008AA14F /* stbaSearchAddressBookTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stbaSearchAddressBookTableViewCell.m; sourceTree = "<group>"; };
 		72FECEBD22D1EE6A00C4F862 /* stbaData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = stbaData.plist; sourceTree = "<group>"; };
 		9A2B492FE348B1A3773EB2D0 /* Pods-smallTeamBuildingActivities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smallTeamBuildingActivities.debug.xcconfig"; path = "Target Support Files/Pods-smallTeamBuildingActivities/Pods-smallTeamBuildingActivities.debug.xcconfig"; sourceTree = "<group>"; };
 		AE13BD9822CF175C00049EAD /* stbaAddContactViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbaAddContactViewModel.h; sourceTree = "<group>"; };
@@ -176,6 +182,8 @@
 				AEFCBEFB22CDAFCB00DBC053 /* stbaAddActivitiesViewController.m */,
 				AEFCBEFD22CDAFF400DBC053 /* stbaAddressBookViewController.h */,
 				AEFCBEFE22CDAFF400DBC053 /* stbaAddressBookViewController.m */,
+				7223C0E622D62917008AA14F /* stbaSearchAddressBookViewController.h */,
+				7223C0E722D62917008AA14F /* stbaSearchAddressBookViewController.m */,
 				AE15FA6822D337DB00C22359 /* stbaAddressBookDetailsViewController.h */,
 				AE15FA6922D337DB00C22359 /* stbaAddressBookDetailsViewController.m */,
 				AEFCBF0A22CDFB6C00DBC053 /* stbaAddContactViewController.h */,
@@ -216,6 +224,8 @@
 				AE13BD9F22CF520A00049EAD /* stbaAddContactSaveTableViewCell.m */,
 				AE15FA6B22D3384200C22359 /* stbaAddressBookDetailsTableViewCell.h */,
 				AE15FA6C22D3384200C22359 /* stbaAddressBookDetailsTableViewCell.m */,
+				7223C0E922D62B2F008AA14F /* stbaSearchAddressBookTableViewCell.h */,
+				7223C0EA22D62B2F008AA14F /* stbaSearchAddressBookTableViewCell.m */,
 			);
 			path = stbaViews;
 			sourceTree = "<group>";
@@ -371,9 +381,11 @@
 				AEFCBEF922CDAF8300DBC053 /* stbaHomeViewController.m in Sources */,
 				AEFCBEEF22CD92B700DBC053 /* stbaUIUtilities.m in Sources */,
 				AEFCBEF222CD937900DBC053 /* MBProgressHUD+stbaNJ.m in Sources */,
+				7223C0E822D62917008AA14F /* stbaSearchAddressBookViewController.m in Sources */,
 				AE13BDA022CF520A00049EAD /* stbaAddContactSaveTableViewCell.m in Sources */,
 				AE8C83CD22C9F9030073EEDC /* ViewController.m in Sources */,
 				AE15FA6722D31EA300C22359 /* stbaAddContactGenderTableViewCell.m in Sources */,
+				7223C0EB22D62B2F008AA14F /* stbaSearchAddressBookTableViewCell.m in Sources */,
 				AE13BD9A22CF175D00049EAD /* stbaAddContactViewModel.m in Sources */,
 				AEFCBF0C22CDFB6C00DBC053 /* stbaAddContactViewController.m in Sources */,
 				AEFCBEFC22CDAFCB00DBC053 /* stbaAddActivitiesViewController.m in Sources */,
