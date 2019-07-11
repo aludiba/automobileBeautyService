@@ -143,7 +143,6 @@
     [self.autoBeutableView reloadData];
     return YES;
 }
-
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     NSString *keywords = [textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     if ([keywords isEqualToString:@""]) {

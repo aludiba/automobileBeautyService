@@ -15,6 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, copy)NSString *gender;
 @property(nonatomic, copy)NSString *phoneNumber;
 @property(nonatomic, copy)NSString *email;
+//昵称的pinyin 获取的时候就应该转为拼音了
+@property (nonatomic, copy) NSString *namePinYin;
+//昵称的拼音转小写
+@property (nonatomic, copy) NSString *nameLowerCase;
+@property (nonatomic, assign) BOOL isSlect;//是否被选中
 @end
 
 NS_ASSUME_NONNULL_END

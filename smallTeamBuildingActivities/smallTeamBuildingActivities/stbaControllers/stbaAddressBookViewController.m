@@ -16,6 +16,7 @@
 @property(nonatomic, strong)UIButton *stbaAddContactButton;
 @property (nonatomic, strong) UITextField *stbaSearchTextField;
 @property(nonatomic, strong)NSMutableArray *dataArray;
+@property(nonatomic, strong)NSMutableArray *stbaSourceArray;
 @property(nonatomic, strong)UITableView *mainTable;
 @end
 @implementation stbaAddressBookViewController
@@ -85,8 +86,72 @@
             [self.dataArray addObject:model];
         }
     }
+    if (self.dataArray.count && !self.stbaSourceArray.count) {
+        [self.stbaSourceArray addObjectsFromArray:self.dataArray];
+    }
     [self.mainTable.mj_header endRefreshing];
     [self.mainTable reloadData];
+    [self.view endEditing:YES];
+}
+- (void)loadSearchData{
+    NSString *keywords = [self.stbaSearchTextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    if ([keywords isEqualToString:@""]) {
+        [self.mainTable.mj_header endRefreshing];
+        return;
+    }
+    [self.dataArray removeAllObjects];
+    NSString *keywordString = [self.stbaSearchTextField.text stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLPathAllowedCharacterSet]];
+    keywordString = keywordString.lowercaseString;
+    NSMutableArray * tempArr = [NSMutableArray array];
+    if (![keywordString isEqualToString:@""] && ![keywordString isEqual:[NSNull null]]) {
+        [self.stbaSourceArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            stbaAddressBookModel *model = self.stbaSourceArray[idx];
+            NSString *name = model.name.lowercaseString;
+            NSString *namePinyin = model.namePinYin.lowercaseString;
+            NSString *namePinyinLetter = model.nameLowerCase.lowercaseString;
+            NSRange rang1 = [name rangeOfString:keywordString];
+            if (rang1.length > 0) {
+                [tempArr addObject:model];
+            }else{
+                if ([namePinyinLetter containsString:keywordString]) {
+                    [tempArr addObject:model];
+                } else {
+                    if ([namePinyinLetter containsString:[keywordString substringToIndex:1]]) {
+                        if ([namePinyin containsString:keywordString]) {
+                            [tempArr addObject:model];
+                        }
+                    }
+                }
+            }
+        }];
+        [tempArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            if (![self.dataArray containsObject:tempArr[idx]]) {
+                [self.dataArray addObject:tempArr[idx]];
+            }
+        }];
+    }
+    [self.mainTable reloadData];
+    [self.view endEditing:YES];
+}
+#pragma mark - UITextFieldDelegate
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    [self.dataArray removeAllObjects];
+    [self.mainTable reloadData];
+    return YES;
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    NSString *keywords = [textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    if ([keywords isEqualToString:@""]) {
+        //没有输入搜索关键字
+        return NO;
+    }
+    [textField resignFirstResponder];
+    [self loadSearchData];
+    return YES;
+}
+- (BOOL)textFieldShouldClear:(UITextField *)textField{
+    [self.mainTable.mj_header beginRefreshing];
+    return YES;
 }
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
@@ -124,6 +189,12 @@
         _dataArray = [[NSMutableArray alloc] init];
     }
     return _dataArray;
+}
+- (NSMutableArray *)stbaSourceArray{
+    if (!_stbaSourceArray) {
+        _stbaSourceArray = [[NSMutableArray alloc] init];
+    }
+    return _stbaSourceArray;
 }
 - (UIButton *)stbaAddContactButton{
     if (!_stbaAddContactButton) {

@@ -25,7 +25,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *namePinYin;
 //昵称的拼音转小写
 @property (nonatomic, copy) NSString *nameLowerCase;
-
 @property(nonatomic, strong)autoBeuPaintModel *autoBeuPaint;//漆面
 @property(nonatomic, strong)autoBeuInteriorModel *autoBeuInterior;//内饰项目
 @property(nonatomic, strong)autoBeuNacelleModel *autoBeuNacelle;//发动机舱

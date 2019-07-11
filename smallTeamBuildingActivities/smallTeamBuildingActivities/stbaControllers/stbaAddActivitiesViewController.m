@@ -7,7 +7,10 @@
 //
 
 #import "stbaAddActivitiesViewController.h"
-@interface stbaAddActivitiesViewController()
+#import "stbaAddActivitiesViewModel.h"
+#import "stbaAddActivitiesEditorTableViewCell.h"
+#import "stbaAddActivitiesSelectAddTableViewCell.h"
+@interface stbaAddActivitiesViewController()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 @implementation stbaAddActivitiesViewController
