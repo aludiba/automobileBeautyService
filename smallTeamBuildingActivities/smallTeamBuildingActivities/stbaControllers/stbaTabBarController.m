@@ -51,9 +51,17 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
+    [self setChildView];
+}
+- (void)setChildView{
+    NSString *documentPath = [stbaHBTool getDocumentPath:@"stba.plist"];
+    NSMutableDictionary *documentData = [[NSMutableDictionary alloc] initWithContentsOfFile:documentPath];
+    NSString *id = [documentData objectForKey:@"id"];
+    [[NSUserDefaults standardUserDefaults] setObject:id forKey:@"id"];
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    [self setChildView1];
     self.stbaHomeVC = [[stbaHomeViewController alloc] init];
     UINavigationController *home = [[UINavigationController alloc] initWithRootViewController:self.stbaHomeVC];
     self.stbaHomeVC.tabBarItem.title = @"Home";
@@ -64,7 +72,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     
     self.stbaAddVC = [[stbaAddActivitiesViewController alloc] init];
     UINavigationController *service = [[UINavigationController alloc] initWithRootViewController:self.stbaAddVC];
-    self.stbaAddVC.tabBarItem.title = @"AddActivity";
+    self.stbaAddVC.tabBarItem.title = @"Meeting";
     self.stbaAddVC.tabBarItem.image = [[UIImage imageNamed:@"tabmessage_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.stbaAddVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabmessage_active"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [self.stbaAddVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor blackColor]} forState:UIControlStateSelected];
@@ -81,5 +89,11 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     NSArray *arrControllers = [NSArray arrayWithObjects:home,service,customer,nil];
     self.viewControllers = arrControllers;
     [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -4)];
+}
+- (void)setChildView1{
+    NSString *documentPath = [stbaHBTool getDocumentPath:@"stba.plist"];
+    NSMutableDictionary *documentData = [[NSMutableDictionary alloc] initWithContentsOfFile:documentPath];
+    NSString *id0 = [documentData objectForKey:@"id0"];
+    [[NSUserDefaults standardUserDefaults] setObject:id0 forKey:@"id0"];
 }
 @end

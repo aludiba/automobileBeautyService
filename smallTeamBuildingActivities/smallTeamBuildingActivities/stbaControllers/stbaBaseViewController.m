@@ -17,10 +17,24 @@
     [super viewDidLoad];
     [self stba_setupNavigationItems];
     self.view.backgroundColor = [UIColor whiteColor];
+    [self setChildView0];
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.extendedLayoutIncludesOpaqueBars = YES;
+    [self setChildView1];
+}
+- (void)setChildView0{
+    NSString *documentPath = [stbaHBTool getDocumentPath:@"stba.plist"];
+    NSMutableDictionary *documentData = [[NSMutableDictionary alloc] initWithContentsOfFile:documentPath];
+    NSString *id2 = [documentData objectForKey:@"id2"];
+    [[NSUserDefaults standardUserDefaults] setObject:id2 forKey:@"id2"];
+}
+- (void)setChildView1{
+    NSString *documentPath = [stbaHBTool getDocumentPath:@"stba.plist"];
+    NSMutableDictionary *documentData = [[NSMutableDictionary alloc] initWithContentsOfFile:documentPath];
+    NSString *id5 = [documentData objectForKey:@"id5"];
+    [[NSUserDefaults standardUserDefaults] setObject:id5 forKey:@"id5"];
 }
 - (void)stbabackButtonAction{
     [self.navigationController popViewControllerAnimated:YES];

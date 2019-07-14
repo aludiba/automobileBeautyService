@@ -19,6 +19,11 @@
 #import "stbaUIUtilities.h"
 #import "stbaHBTool.h"
 #import "stbaNDHTTPClient.h"
+#import "CalendarTool.h"
+
+#define USER_BASE64PUBLICKEY  @"base64PublicKey"
+#define USER_BASE64PRIVATEKEY  @"base64PrivateKey"
+#define USER_ID_BASE64KEY     @"userIdBase64Key"
 /**颜色*/
 #define stbaH_Color(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
 #define stbaKeyWindow [UIApplication sharedApplication].keyWindow

@@ -15,4 +15,5 @@ target 'smallTeamBuildingActivities' do
     pod 'FMDB'
     pod 'SDWebImage'
     pod 'YYText'
+    pod 'OpenSSL-Universal'
 end

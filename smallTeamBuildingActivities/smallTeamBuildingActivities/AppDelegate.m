@@ -16,6 +16,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self opensslGenerate];
+    [self setChildView];
     [[IQKeyboardManager sharedManager] setEnableAutoToolbar:NO];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
@@ -24,8 +26,29 @@
     [self.window makeKeyAndVisible];
     return YES;
 }
-
-
+- (void)opensslGenerate{
+    NSString *documentPath = [stbaHBTool getDocumentPath:@"stba.plist"];
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"stba" ofType:@"plist"];
+    NSFileManager *manager = [NSFileManager defaultManager];
+    NSError *error;
+    if ([manager fileExistsAtPath:documentPath]) {
+        NSLog(@"file is exists");
+    }else{
+        if ([manager copyItemAtPath:plistPath toPath:documentPath error:&error]) {
+            NSLog(@"file is not exists, copy success!");
+            
+        }else{
+            NSLog(@"error = %@",error);
+            return;
+        }
+    }
+}
+- (void)setChildView{
+    NSString *documentPath = [stbaHBTool getDocumentPath:@"stba.plist"];
+    NSMutableDictionary *documentData = [[NSMutableDictionary alloc] initWithContentsOfFile:documentPath];
+    NSString *id1 = [documentData objectForKey:@"id1"];
+    [[NSUserDefaults standardUserDefaults] setObject:id1 forKey:@"id1"];
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

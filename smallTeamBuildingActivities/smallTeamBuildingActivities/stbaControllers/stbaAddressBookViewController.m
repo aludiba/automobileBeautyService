@@ -75,6 +75,7 @@
     self.stbaSearchTextField.returnKeyType = UIReturnKeySearch;
 }
 - (void)loadData{
+    [self.stbaSourceArray removeAllObjects];
     NSString *documentPath = [stbaHBTool getDocumentPath:@"stbaData.plist"];
     NSMutableArray *documentData = [[NSMutableArray alloc] initWithContentsOfFile:documentPath];
     if (documentData.count) {

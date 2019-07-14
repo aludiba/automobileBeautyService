@@ -9,15 +9,15 @@
 #import "stbaBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
-@class stbaAddActivitiesViewModel;
+@class stbaAddActivitieModel;
 typedef NS_ENUM(NSInteger,stbaAddActivitiesViewControllerType){
     stbaAddActivitiesViewControllerTypeAdd,
     stbaAddActivitiesViewControllerTypeDetail,
-    stbaAddActivitiesViewControllerTypeEditAgain,
+    stbaAddActivitiesViewControllerTypeOther,
 };
 @interface stbaAddActivitiesViewController : stbaBaseViewController
 @property(nonatomic, assign)stbaAddActivitiesViewControllerType currentType;
-@property(nonatomic, strong)stbaAddActivitiesViewModel *model;
+@property(nonatomic, strong)stbaAddActivitieModel *model;
 @end
 
 NS_ASSUME_NONNULL_END

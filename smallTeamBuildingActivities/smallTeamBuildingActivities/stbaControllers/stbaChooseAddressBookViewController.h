@@ -10,8 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @class stbaChooseAddressBookViewController;
+@class stbaAddActivitiesViewController;
 @interface stbaChooseAddressBookViewController : stbaBaseViewController
 @property (nonatomic, copy, nullable) void(^finishSelectBlock)(stbaChooseAddressBookViewController *selectVC);
+@property(nonatomic, strong)stbaAddActivitiesViewController *superVC;
 @property(nonatomic, strong)NSMutableArray *selectArray;
 @end
 

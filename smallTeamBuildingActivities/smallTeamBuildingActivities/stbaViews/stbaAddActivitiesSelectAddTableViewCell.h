@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class stbaAddActivitiesViewModel;
 @interface stbaAddActivitiesSelectAddTableViewCell : UITableViewCell
 @property(nonatomic, strong)stbaAddActivitiesViewModel *model;
+@property(nonatomic, strong)UITextField *timeTextField;
 @end
 
 NS_ASSUME_NONNULL_END

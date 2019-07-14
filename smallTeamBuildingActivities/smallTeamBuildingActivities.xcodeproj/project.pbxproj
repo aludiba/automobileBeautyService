@@ -10,6 +10,16 @@
 		53CF02FF8C02C0B2A0D93596 /* libPods-smallTeamBuildingActivities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B27CF5D0DB5AA2C3744ADC /* libPods-smallTeamBuildingActivities.a */; };
 		7223C0E822D62917008AA14F /* stbaChooseAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7223C0E722D62917008AA14F /* stbaChooseAddressBookViewController.m */; };
 		7223C0EB22D62B2F008AA14F /* stbaChooseAddressBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7223C0EA22D62B2F008AA14F /* stbaChooseAddressBookTableViewCell.m */; };
+		72F5410422DAF58D000DAB73 /* stbaActivityData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72F5410322DAF58D000DAB73 /* stbaActivityData.plist */; };
+		72F5410722DAF5C0000DAB73 /* stbaAddActivitieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F5410622DAF5C0000DAB73 /* stbaAddActivitieModel.m */; };
+		72F5410A22DB2004000DAB73 /* searchStbaChooseAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F5410922DB2004000DAB73 /* searchStbaChooseAddressBookViewController.m */; };
+		72F5410D22DB2669000DAB73 /* stbaHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F5410C22DB2669000DAB73 /* stbaHomeTableViewCell.m */; };
+		72F5411022DB2C8A000DAB73 /* stbaHadDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F5410F22DB2C8A000DAB73 /* stbaHadDataTableViewCell.m */; };
+		72F5411722DB2EA6000DAB73 /* magTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F5411322DB2EA6000DAB73 /* magTimeView.m */; };
+		72F5411822DB2EA6000DAB73 /* magTimeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F5411522DB2EA6000DAB73 /* magTimeButton.m */; };
+		72F5411922DB2EA6000DAB73 /* magChildrenTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F5411622DB2EA6000DAB73 /* magChildrenTimeView.m */; };
+		72F5411C22DB2F22000DAB73 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F5411B22DB2F22000DAB73 /* CalendarTool.m */; };
+		72F5417122DB404F000DAB73 /* stba.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72F5417022DB404F000DAB73 /* stba.plist */; };
 		72FECEBE22D1EE6A00C4F862 /* stbaData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72FECEBD22D1EE6A00C4F862 /* stbaData.plist */; };
 		AE13BD9A22CF175D00049EAD /* stbaAddContactViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE13BD9922CF175D00049EAD /* stbaAddContactViewModel.m */; };
 		AE13BD9D22CF350700049EAD /* stbaAddContactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE13BD9C22CF350700049EAD /* stbaAddContactTableViewCell.m */; };
@@ -50,6 +60,24 @@
 		7223C0E722D62917008AA14F /* stbaChooseAddressBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stbaChooseAddressBookViewController.m; sourceTree = "<group>"; };
 		7223C0E922D62B2F008AA14F /* stbaChooseAddressBookTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbaChooseAddressBookTableViewCell.h; sourceTree = "<group>"; };
 		7223C0EA22D62B2F008AA14F /* stbaChooseAddressBookTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stbaChooseAddressBookTableViewCell.m; sourceTree = "<group>"; };
+		72F5410322DAF58D000DAB73 /* stbaActivityData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = stbaActivityData.plist; sourceTree = "<group>"; };
+		72F5410522DAF5C0000DAB73 /* stbaAddActivitieModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbaAddActivitieModel.h; sourceTree = "<group>"; };
+		72F5410622DAF5C0000DAB73 /* stbaAddActivitieModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stbaAddActivitieModel.m; sourceTree = "<group>"; };
+		72F5410822DB2004000DAB73 /* searchStbaChooseAddressBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = searchStbaChooseAddressBookViewController.h; sourceTree = "<group>"; };
+		72F5410922DB2004000DAB73 /* searchStbaChooseAddressBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = searchStbaChooseAddressBookViewController.m; sourceTree = "<group>"; };
+		72F5410B22DB2669000DAB73 /* stbaHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbaHomeTableViewCell.h; sourceTree = "<group>"; };
+		72F5410C22DB2669000DAB73 /* stbaHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stbaHomeTableViewCell.m; sourceTree = "<group>"; };
+		72F5410E22DB2C8A000DAB73 /* stbaHadDataTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbaHadDataTableViewCell.h; sourceTree = "<group>"; };
+		72F5410F22DB2C8A000DAB73 /* stbaHadDataTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stbaHadDataTableViewCell.m; sourceTree = "<group>"; };
+		72F5411122DB2EA6000DAB73 /* magTimeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = magTimeButton.h; sourceTree = "<group>"; };
+		72F5411222DB2EA6000DAB73 /* magTimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = magTimeView.h; sourceTree = "<group>"; };
+		72F5411322DB2EA6000DAB73 /* magTimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = magTimeView.m; sourceTree = "<group>"; };
+		72F5411422DB2EA6000DAB73 /* magChildrenTimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = magChildrenTimeView.h; sourceTree = "<group>"; };
+		72F5411522DB2EA6000DAB73 /* magTimeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = magTimeButton.m; sourceTree = "<group>"; };
+		72F5411622DB2EA6000DAB73 /* magChildrenTimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = magChildrenTimeView.m; sourceTree = "<group>"; };
+		72F5411A22DB2F21000DAB73 /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
+		72F5411B22DB2F22000DAB73 /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
+		72F5417022DB404F000DAB73 /* stba.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = stba.plist; sourceTree = "<group>"; };
 		72FECEBD22D1EE6A00C4F862 /* stbaData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = stbaData.plist; sourceTree = "<group>"; };
 		9A2B492FE348B1A3773EB2D0 /* Pods-smallTeamBuildingActivities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smallTeamBuildingActivities.debug.xcconfig"; path = "Target Support Files/Pods-smallTeamBuildingActivities/Pods-smallTeamBuildingActivities.debug.xcconfig"; sourceTree = "<group>"; };
 		AE13BD9822CF175C00049EAD /* stbaAddContactViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbaAddContactViewModel.h; sourceTree = "<group>"; };
@@ -129,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				72FECEBD22D1EE6A00C4F862 /* stbaData.plist */,
+				72F5410322DAF58D000DAB73 /* stbaActivityData.plist */,
+				72F5417022DB404F000DAB73 /* stba.plist */,
 			);
 			path = stbaResources;
 			sourceTree = "<group>";
@@ -196,6 +226,8 @@
 				AEFCBEFE22CDAFF400DBC053 /* stbaAddressBookViewController.m */,
 				7223C0E622D62917008AA14F /* stbaChooseAddressBookViewController.h */,
 				7223C0E722D62917008AA14F /* stbaChooseAddressBookViewController.m */,
+				72F5410822DB2004000DAB73 /* searchStbaChooseAddressBookViewController.h */,
+				72F5410922DB2004000DAB73 /* searchStbaChooseAddressBookViewController.m */,
 				AE15FA6822D337DB00C22359 /* stbaAddressBookDetailsViewController.h */,
 				AE15FA6922D337DB00C22359 /* stbaAddressBookDetailsViewController.m */,
 				AEFCBF0A22CDFB6C00DBC053 /* stbaAddContactViewController.h */,
@@ -211,6 +243,8 @@
 				AEFCBEF022CD937900DBC053 /* MBProgressHUD+stbaNJ.m */,
 				AEFCBEEE22CD92B700DBC053 /* stbaUIUtilities.h */,
 				AEFCBEED22CD92B700DBC053 /* stbaUIUtilities.m */,
+				72F5411A22DB2F21000DAB73 /* CalendarTool.h */,
+				72F5411B22DB2F22000DAB73 /* CalendarTool.m */,
 				AEFCBEEB22CD925200DBC053 /* stbaHBTool.h */,
 				AEFCBEEA22CD925200DBC053 /* stbaHBTool.m */,
 				AEFCBEE822CD90D000DBC053 /* stbaNDHTTPClient.h */,
@@ -226,6 +260,16 @@
 			children = (
 				AEFCBF0D22CDFE4600DBC053 /* stbaCustomContentTextField.h */,
 				AEFCBF0E22CDFE4600DBC053 /* stbaCustomContentTextField.m */,
+				72F5410B22DB2669000DAB73 /* stbaHomeTableViewCell.h */,
+				72F5410C22DB2669000DAB73 /* stbaHomeTableViewCell.m */,
+				72F5410E22DB2C8A000DAB73 /* stbaHadDataTableViewCell.h */,
+				72F5410F22DB2C8A000DAB73 /* stbaHadDataTableViewCell.m */,
+				72F5411422DB2EA6000DAB73 /* magChildrenTimeView.h */,
+				72F5411622DB2EA6000DAB73 /* magChildrenTimeView.m */,
+				72F5411122DB2EA6000DAB73 /* magTimeButton.h */,
+				72F5411522DB2EA6000DAB73 /* magTimeButton.m */,
+				72F5411222DB2EA6000DAB73 /* magTimeView.h */,
+				72F5411322DB2EA6000DAB73 /* magTimeView.m */,
 				AEFCBF0322CDF90200DBC053 /* stbaAddressBookTableViewCell.h */,
 				AEFCBF0422CDF90200DBC053 /* stbaAddressBookTableViewCell.m */,
 				AE13BD9B22CF350700049EAD /* stbaAddContactTableViewCell.h */,
@@ -255,6 +299,8 @@
 				AEFCBF0822CDF9A700DBC053 /* stbaAddressBookModel.m */,
 				AE13BD9822CF175C00049EAD /* stbaAddContactViewModel.h */,
 				AE13BD9922CF175D00049EAD /* stbaAddContactViewModel.m */,
+				72F5410522DAF5C0000DAB73 /* stbaAddActivitieModel.h */,
+				72F5410622DAF5C0000DAB73 /* stbaAddActivitieModel.m */,
 				AE151C8222D6DE1100108B90 /* stbaAddActivitiesViewModel.h */,
 				AE151C8322D6DE1100108B90 /* stbaAddActivitiesViewModel.m */,
 			);
@@ -334,6 +380,8 @@
 				AE8C83D822C9F9060073EEDC /* LaunchScreen.storyboard in Resources */,
 				AE8C83D522C9F9060073EEDC /* Assets.xcassets in Resources */,
 				AE8C83D022C9F9030073EEDC /* Main.storyboard in Resources */,
+				72F5417122DB404F000DAB73 /* stba.plist in Resources */,
+				72F5410422DAF58D000DAB73 /* stbaActivityData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,12 +442,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE13BD9D22CF350700049EAD /* stbaAddContactTableViewCell.m in Sources */,
+				72F5411022DB2C8A000DAB73 /* stbaHadDataTableViewCell.m in Sources */,
+				72F5411822DB2EA6000DAB73 /* magTimeButton.m in Sources */,
 				AEFCBEFF22CDAFF400DBC053 /* stbaAddressBookViewController.m in Sources */,
 				AEFCBF0522CDF90200DBC053 /* stbaAddressBookTableViewCell.m in Sources */,
 				AE15FA6D22D3384200C22359 /* stbaAddressBookDetailsTableViewCell.m in Sources */,
 				AEFCBEF622CDAAAA00DBC053 /* stbaBaseViewController.m in Sources */,
 				AEFCBEF922CDAF8300DBC053 /* stbaHomeViewController.m in Sources */,
+				72F5410722DAF5C0000DAB73 /* stbaAddActivitieModel.m in Sources */,
 				AEFCBEEF22CD92B700DBC053 /* stbaUIUtilities.m in Sources */,
+				72F5411722DB2EA6000DAB73 /* magTimeView.m in Sources */,
+				72F5410D22DB2669000DAB73 /* stbaHomeTableViewCell.m in Sources */,
 				AE151C8422D6DE1100108B90 /* stbaAddActivitiesViewModel.m in Sources */,
 				AEFCBEF222CD937900DBC053 /* MBProgressHUD+stbaNJ.m in Sources */,
 				7223C0E822D62917008AA14F /* stbaChooseAddressBookViewController.m in Sources */,
@@ -412,6 +465,8 @@
 				AEFCBF0C22CDFB6C00DBC053 /* stbaAddContactViewController.m in Sources */,
 				AEFCBEFC22CDAFCB00DBC053 /* stbaAddActivitiesViewController.m in Sources */,
 				AEFCBEEC22CD925200DBC053 /* stbaHBTool.m in Sources */,
+				72F5411922DB2EA6000DAB73 /* magChildrenTimeView.m in Sources */,
+				72F5410A22DB2004000DAB73 /* searchStbaChooseAddressBookViewController.m in Sources */,
 				AE8C83CA22C9F9030073EEDC /* AppDelegate.m in Sources */,
 				AE8C83DB22C9F9060073EEDC /* main.m in Sources */,
 				AEFCBF0922CDF9A700DBC053 /* stbaAddressBookModel.m in Sources */,
@@ -421,6 +476,7 @@
 				AE8C83D322C9F9030073EEDC /* smallTeamBuildingActivities.xcdatamodeld in Sources */,
 				AE151C8122D6CF7800108B90 /* stbaSearchBox.m in Sources */,
 				AEFCBEE922CD90D000DBC053 /* stbaNDHTTPClient.m in Sources */,
+				72F5411C22DB2F22000DAB73 /* CalendarTool.m in Sources */,
 				AE15FA6A22D337DB00C22359 /* stbaAddressBookDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,7 +629,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.smallTeamBuildingActivities;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/smallTeamBuildingActivities/stbaResources/OpenSSL/lib-ios",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.SmallGroupMeeting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -593,7 +653,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.smallTeamBuildingActivities;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/smallTeamBuildingActivities/stbaResources/OpenSSL/lib-ios",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.SmallGroupMeeting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
