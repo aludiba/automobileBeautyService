@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, copy)NSString *content;
 @property(nonatomic, copy)NSString *note;
 @property(nonatomic, copy)NSString *date;
-@property(nonatomic, copy)NSString *contacts;
+@property(nonatomic, copy)NSString *participants;
 @end
 
 NS_ASSUME_NONNULL_END

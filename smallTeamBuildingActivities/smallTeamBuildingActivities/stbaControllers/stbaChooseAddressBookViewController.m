@@ -30,7 +30,7 @@
     [self loadData];
 }
 - (void)setContentView{
-    self.title = @"Select contacts";
+    self.title = @"Select participants";
     [self setSearchText];
 }
 - (void)stba_setupNavigationItems{

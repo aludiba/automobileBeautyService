@@ -77,13 +77,13 @@
         dateModel.placeholder = @"Please select the time";
         [self.viewDataArray addObject:dateModel];
         
-        stbaAddActivitiesViewModel * contactsModel = [[stbaAddActivitiesViewModel alloc] init];
-        contactsModel.currentType = stbaAddActivitiesCellChoose;
-        contactsModel.contactsArray = [[NSMutableArray alloc] init];
-        contactsModel.title = @"contacts";
-        contactsModel.placeholder = @"Please select contact person";
-        contactsModel.contactsArray = [[NSMutableArray alloc] init];
-        [self.viewDataArray addObject:contactsModel];
+        stbaAddActivitiesViewModel * participantsModel = [[stbaAddActivitiesViewModel alloc] init];
+        participantsModel.currentType = stbaAddActivitiesCellChoose;
+        participantsModel.participantsArray = [[NSMutableArray alloc] init];
+        participantsModel.title = @"participants";
+        participantsModel.placeholder = @"Please select attendees";
+        participantsModel.participantsArray = [[NSMutableArray alloc] init];
+        [self.viewDataArray addObject:participantsModel];
         [self.mainTable reloadData];
     }else if(self.currentType == stbaAddActivitiesViewControllerTypeDetail){
         [self.viewDataArray removeAllObjects];
@@ -139,19 +139,19 @@
         dateModel.isDetail = YES;
         [self.viewDataArray addObject:dateModel];
         
-        stbaAddActivitiesViewModel * contactsModel = [[stbaAddActivitiesViewModel alloc] init];
-        contactsModel.currentType = stbaAddActivitiesCellChoose;
-        contactsModel.contactsArray = [[NSMutableArray alloc] init];
-        contactsModel.title = @"contacts";
-        contactsModel.placeholder = @"Please select contact person";
-        if (self.model.contacts.length) {
-            contactsModel.content = self.model.contacts;
+        stbaAddActivitiesViewModel *participantsModel = [[stbaAddActivitiesViewModel alloc] init];
+        participantsModel.currentType = stbaAddActivitiesCellChoose;
+        participantsModel.participantsArray = [[NSMutableArray alloc] init];
+        participantsModel.title = @"participants";
+        participantsModel.placeholder = @"Please select attendees";
+        if (self.model.participants.length) {
+            participantsModel.content = self.model.participants;
         }else{
-            contactsModel.content = @"-";
+            participantsModel.content = @"-";
         }
-        contactsModel.isDetail = YES;
-        contactsModel.contactsArray = [[NSMutableArray alloc] init];
-        [self.viewDataArray addObject:contactsModel];
+        participantsModel.isDetail = YES;
+        participantsModel.participantsArray = [[NSMutableArray alloc] init];
+        [self.viewDataArray addObject:participantsModel];
         self.stbaSaveButton.hidden = YES;
         [self.mainTable reloadData];
     }
@@ -196,7 +196,7 @@
         [MBProgressHUD stbashowReminderText:@"Please select contact person"];
         return;
     }
-    self.activityModel.contacts = viewModel4.content;
+    self.activityModel.participants = viewModel4.content;
     NSString *documentPath = [stbaHBTool getDocumentPath:@"stbaActivityData.plist"];
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"stbaActivityData" ofType:@"plist"];
     NSFileManager *manager = [NSFileManager defaultManager];
@@ -298,15 +298,15 @@
     }else{
         if (model.currentType == stbaAddActivitiesCellChoose) {
             stbaChooseAddressBookViewController *VC = [[stbaChooseAddressBookViewController alloc] init];
-            if (model.contactsArray.count) {
-                VC.selectArray = [model.contactsArray mutableCopy];
+            if (model.participantsArray.count) {
+                VC.selectArray = [model.participantsArray mutableCopy];
             }
             VC.superVC = self;
             VC.hidesBottomBarWhenPushed = YES;
             __weak typeof(self) weakSelf = self;
             VC.finishSelectBlock = ^(stbaChooseAddressBookViewController * _Nonnull selectVC) {
-                model.contactsArray = [selectVC.selectArray copy];
-                NSArray *tempArray = [model.contactsArray valueForKey:@"name"];
+                model.participantsArray = [selectVC.selectArray copy];
+                NSArray *tempArray = [model.participantsArray valueForKey:@"name"];
                 model.content = [tempArray componentsJoinedByString:@","];
                 [weakSelf.mainTable reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
             };
@@ -395,7 +395,7 @@
         //给工具条添加按钮
         UIBarButtonItem *item0 = [[UIBarButtonItem alloc]initWithTitle:@"cancel" style:UIBarButtonItemStylePlain target:self action:@selector(dateResult:)];
         item0.tag = 101;
-        UIBarButtonItem *item1 = [[UIBarButtonItem alloc]initWithTitle:@"                                                 " style:UIBarButtonItemStyleDone target:self action:@selector(dateResult:)];
+        UIBarButtonItem *item1 = [[UIBarButtonItem alloc]initWithTitle:@"                                            " style:UIBarButtonItemStyleDone target:self action:@selector(dateResult:)];
         UIBarButtonItem *item2 = [[UIBarButtonItem alloc]initWithTitle:@"complete" style:UIBarButtonItemStylePlain target:self action:@selector(dateResult:)];
         item2.tag = 100;
         toolbar.items = @[item0, item1, item2];

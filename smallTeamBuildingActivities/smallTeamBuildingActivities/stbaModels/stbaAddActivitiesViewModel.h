@@ -22,7 +22,7 @@ typedef NS_ENUM(NSUInteger, stbaAddActivitiesCellType) {
 @property(nonatomic, assign)Boolean isDetail;//是否详情
 @property(nonatomic, assign)CGFloat editorContentHeight;//可编辑时行高
 @property(nonatomic, assign)stbaAddActivitiesCellType currentType;//该行数据类型
-@property(nonatomic, strong)NSMutableArray *contactsArray;//联系人数组
+@property(nonatomic, strong)NSMutableArray *participantsArray;//联系人数组
 @end
 
 NS_ASSUME_NONNULL_END

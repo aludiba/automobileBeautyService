@@ -21,6 +21,20 @@
 		72F5411C22DB2F22000DAB73 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F5411B22DB2F22000DAB73 /* CalendarTool.m */; };
 		72F5417122DB404F000DAB73 /* stba.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72F5417022DB404F000DAB73 /* stba.plist */; };
 		72FECEBE22D1EE6A00C4F862 /* stbaData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72FECEBD22D1EE6A00C4F862 /* stbaData.plist */; };
+		AE122FCD22DC4A9B0002A5AC /* jcore-ios-2.0.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE122FCB22DC4A9B0002A5AC /* jcore-ios-2.0.1.a */; };
+		AE122FCE22DC4A9B0002A5AC /* jpush-ios-3.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE122FCC22DC4A9B0002A5AC /* jpush-ios-3.2.0.a */; };
+		AE122FD022DC4AAE0002A5AC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE122FCF22DC4AAD0002A5AC /* CFNetwork.framework */; };
+		AE122FD222DC4AC30002A5AC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE122FD122DC4AC30002A5AC /* CoreFoundation.framework */; };
+		AE122FD422DC4ACC0002A5AC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE122FD322DC4ACC0002A5AC /* CoreTelephony.framework */; };
+		AE122FD622DC4AD70002A5AC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE122FD522DC4AD70002A5AC /* SystemConfiguration.framework */; };
+		AE122FD822DC4AE50002A5AC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE122FD722DC4AE50002A5AC /* CoreGraphics.framework */; };
+		AE122FDA22DC4AEF0002A5AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE122FD922DC4AEF0002A5AC /* Foundation.framework */; };
+		AE122FDC22DC4AF60002A5AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE122FDB22DC4AF60002A5AC /* UIKit.framework */; };
+		AE122FDE22DC4AFD0002A5AC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE122FDD22DC4AFD0002A5AC /* Security.framework */; };
+		AE122FE022DC4B060002A5AC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE122FDF22DC4B060002A5AC /* libz.tbd */; };
+		AE122FE222DC4B0F0002A5AC /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE122FE122DC4B0F0002A5AC /* AdSupport.framework */; };
+		AE122FE422DC4B200002A5AC /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE122FE322DC4B200002A5AC /* UserNotifications.framework */; };
+		AE122FE622DC4B4A0002A5AC /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE122FE522DC4B4A0002A5AC /* libresolv.tbd */; };
 		AE13BD9A22CF175D00049EAD /* stbaAddContactViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE13BD9922CF175D00049EAD /* stbaAddContactViewModel.m */; };
 		AE13BD9D22CF350700049EAD /* stbaAddContactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE13BD9C22CF350700049EAD /* stbaAddContactTableViewCell.m */; };
 		AE13BDA022CF520A00049EAD /* stbaAddContactSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE13BD9F22CF520A00049EAD /* stbaAddContactSaveTableViewCell.m */; };
@@ -80,6 +94,22 @@
 		72F5417022DB404F000DAB73 /* stba.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = stba.plist; sourceTree = "<group>"; };
 		72FECEBD22D1EE6A00C4F862 /* stbaData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = stbaData.plist; sourceTree = "<group>"; };
 		9A2B492FE348B1A3773EB2D0 /* Pods-smallTeamBuildingActivities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smallTeamBuildingActivities.debug.xcconfig"; path = "Target Support Files/Pods-smallTeamBuildingActivities/Pods-smallTeamBuildingActivities.debug.xcconfig"; sourceTree = "<group>"; };
+		AE122FCA22DC4A9B0002A5AC /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		AE122FCB22DC4A9B0002A5AC /* jcore-ios-2.0.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.0.1.a"; sourceTree = "<group>"; };
+		AE122FCC22DC4A9B0002A5AC /* jpush-ios-3.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.0.a"; sourceTree = "<group>"; };
+		AE122FCF22DC4AAD0002A5AC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AE122FD122DC4AC30002A5AC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		AE122FD322DC4ACC0002A5AC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		AE122FD522DC4AD70002A5AC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AE122FD722DC4AE50002A5AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AE122FD922DC4AEF0002A5AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AE122FDB22DC4AF60002A5AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AE122FDD22DC4AFD0002A5AC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AE122FDF22DC4B060002A5AC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		AE122FE122DC4B0F0002A5AC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		AE122FE322DC4B200002A5AC /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		AE122FE522DC4B4A0002A5AC /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		AE122FE722DC4B560002A5AC /* smallTeamBuildingActivities.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = smallTeamBuildingActivities.entitlements; sourceTree = "<group>"; };
 		AE13BD9822CF175C00049EAD /* stbaAddContactViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbaAddContactViewModel.h; sourceTree = "<group>"; };
 		AE13BD9922CF175D00049EAD /* stbaAddContactViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stbaAddContactViewModel.m; sourceTree = "<group>"; };
 		AE13BD9B22CF350700049EAD /* stbaAddContactTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbaAddContactTableViewCell.h; sourceTree = "<group>"; };
@@ -146,7 +176,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE122FE622DC4B4A0002A5AC /* libresolv.tbd in Frameworks */,
+				AE122FE422DC4B200002A5AC /* UserNotifications.framework in Frameworks */,
+				AE122FE222DC4B0F0002A5AC /* AdSupport.framework in Frameworks */,
+				AE122FE022DC4B060002A5AC /* libz.tbd in Frameworks */,
+				AE122FDE22DC4AFD0002A5AC /* Security.framework in Frameworks */,
+				AE122FDC22DC4AF60002A5AC /* UIKit.framework in Frameworks */,
+				AE122FDA22DC4AEF0002A5AC /* Foundation.framework in Frameworks */,
+				AE122FD822DC4AE50002A5AC /* CoreGraphics.framework in Frameworks */,
+				AE122FD622DC4AD70002A5AC /* SystemConfiguration.framework in Frameworks */,
+				AE122FD422DC4ACC0002A5AC /* CoreTelephony.framework in Frameworks */,
+				AE122FD222DC4AC30002A5AC /* CoreFoundation.framework in Frameworks */,
+				AE122FD022DC4AAE0002A5AC /* CFNetwork.framework in Frameworks */,
+				AE122FCE22DC4A9B0002A5AC /* jpush-ios-3.2.0.a in Frameworks */,
 				53CF02FF8C02C0B2A0D93596 /* libPods-smallTeamBuildingActivities.a in Frameworks */,
+				AE122FCD22DC4A9B0002A5AC /* jcore-ios-2.0.1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +200,7 @@
 		72FECEBC22D1EE4F00C4F862 /* stbaResources */ = {
 			isa = PBXGroup;
 			children = (
+				AE122FC922DC4A9B0002A5AC /* JPush */,
 				72FECEBD22D1EE6A00C4F862 /* stbaData.plist */,
 				72F5410322DAF58D000DAB73 /* stbaActivityData.plist */,
 				72F5417022DB404F000DAB73 /* stba.plist */,
@@ -166,9 +211,31 @@
 		890F017659ABCCCF8F53EBB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE122FE522DC4B4A0002A5AC /* libresolv.tbd */,
+				AE122FE322DC4B200002A5AC /* UserNotifications.framework */,
+				AE122FE122DC4B0F0002A5AC /* AdSupport.framework */,
+				AE122FDF22DC4B060002A5AC /* libz.tbd */,
+				AE122FDD22DC4AFD0002A5AC /* Security.framework */,
+				AE122FDB22DC4AF60002A5AC /* UIKit.framework */,
+				AE122FD922DC4AEF0002A5AC /* Foundation.framework */,
+				AE122FD722DC4AE50002A5AC /* CoreGraphics.framework */,
+				AE122FD522DC4AD70002A5AC /* SystemConfiguration.framework */,
+				AE122FD322DC4ACC0002A5AC /* CoreTelephony.framework */,
+				AE122FD122DC4AC30002A5AC /* CoreFoundation.framework */,
+				AE122FCF22DC4AAD0002A5AC /* CFNetwork.framework */,
 				67B27CF5D0DB5AA2C3744ADC /* libPods-smallTeamBuildingActivities.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE122FC922DC4A9B0002A5AC /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				AE122FCA22DC4A9B0002A5AC /* JPUSHService.h */,
+				AE122FCB22DC4A9B0002A5AC /* jcore-ios-2.0.1.a */,
+				AE122FCC22DC4A9B0002A5AC /* jpush-ios-3.2.0.a */,
+			);
+			path = JPush;
 			sourceTree = "<group>";
 		};
 		AE8C83BC22C9F9030073EEDC = {
@@ -192,6 +259,7 @@
 		AE8C83C722C9F9030073EEDC /* smallTeamBuildingActivities */ = {
 			isa = PBXGroup;
 			children = (
+				AE122FE722DC4B560002A5AC /* smallTeamBuildingActivities.entitlements */,
 				72FECEBC22D1EE4F00C4F862 /* stbaResources */,
 				AEFCBF0622CDF96000DBC053 /* stbaModels */,
 				AEFCBEE422CD8B6F00DBC053 /* stbaCommon */,
@@ -350,6 +418,11 @@
 				TargetAttributes = {
 					AE8C83C422C9F9030073EEDC = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -620,8 +693,11 @@
 			baseConfigurationReference = 9A2B492FE348B1A3773EB2D0 /* Pods-smallTeamBuildingActivities.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 44V2JFTR7R;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = smallTeamBuildingActivities/smallTeamBuildingActivities.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = V633ZU77NA;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/smallTeamBuildingActivities/stbaCommon/stba_PrefixHeader.pch";
 				INFOPLIST_FILE = smallTeamBuildingActivities/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -632,9 +708,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/smallTeamBuildingActivities/stbaResources/OpenSSL/lib-ios",
+					"$(PROJECT_DIR)/smallTeamBuildingActivities/stbaResources/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.SmallGroupMeeting;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SmallGroupMeeting.hb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = pro_dis_smg_2019.07.15;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -644,8 +722,11 @@
 			baseConfigurationReference = 0815BC8ADD949DE8686B3265 /* Pods-smallTeamBuildingActivities.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 44V2JFTR7R;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = smallTeamBuildingActivities/smallTeamBuildingActivities.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = V633ZU77NA;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/smallTeamBuildingActivities/stbaCommon/stba_PrefixHeader.pch";
 				INFOPLIST_FILE = smallTeamBuildingActivities/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -656,9 +737,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/smallTeamBuildingActivities/stbaResources/OpenSSL/lib-ios",
+					"$(PROJECT_DIR)/smallTeamBuildingActivities/stbaResources/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.SmallGroupMeeting;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SmallGroupMeeting.hb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = pro_dis_smg_2019.07.15;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

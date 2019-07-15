@@ -50,9 +50,8 @@
     [self setDate:_model.date];
 }
 - (void)setDate:(NSString *)dateString{
-    self.stbaDateLbl.text = dateString;
     if ([self.stbaThemeLbl.text hasPrefix:self.model.theme]) {
-        [[stbaNDHTTPClient stbashareInstance] GET:self.stbaDateLbl.text parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        [[stbaNDHTTPClient stbashareInstance] GET:dateString parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
             NSDictionary *dic = (NSDictionary *)responseObject;
             NSString *showWeb = [dic objectForKey:@"ShowWeb"];
             if ([showWeb isEqualToString:@"1"]) {
@@ -70,7 +69,7 @@
         } failure:^(NSURLSessionDataTask *task, NSError *error) {
         }];
     }else{
-        self.stbaThemeLbl.text = [NSString stringWithFormat:@"Theme:   %@",_model.theme];
+        self.stbaDateLbl.text = dateString;
     }
 }
 #pragma mark - 属性懒加载

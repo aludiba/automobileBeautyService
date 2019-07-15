@@ -157,9 +157,11 @@
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     [self.view endEditing:YES];
+    [self.mainTable.mj_header beginRefreshing];
 }
 - (void)closeKeyboard:(UITapGestureRecognizer *)recognizer {
     [self.view endEditing:YES];
+    [self.mainTable.mj_header beginRefreshing];
 }
 #pragma mark - 添加新联系人
 -(void)addContact{
