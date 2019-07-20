@@ -13,4 +13,5 @@ target 'Simple Diary' do
     pod 'YYModel'
     pod 'SDWebImage'
     pod 'YYText'
+    pod 'FMDB'
 end
