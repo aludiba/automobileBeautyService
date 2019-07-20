@@ -20,6 +20,7 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.1.16)
+  - OpenSSL-Universal (1.0.2.13)
   - SDWebImage (4.4.6):
     - SDWebImage/Core (= 4.4.6)
   - SDWebImage/Core (4.4.6)
@@ -32,6 +33,7 @@ DEPENDENCIES:
   - Masonry
   - MBProgressHUD
   - MJRefresh
+  - OpenSSL-Universal
   - SDWebImage
   - YYModel
   - YYText
@@ -43,6 +45,7 @@ SPEC REPOS:
     - Masonry
     - MBProgressHUD
     - MJRefresh
+    - OpenSSL-Universal
     - SDWebImage
     - YYModel
     - YYText
@@ -53,10 +56,11 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: 7798e16e53a5ef7f332dd05b27664db4e29530fd
+  OpenSSL-Universal: 401888162f11c33ebbd46f782d9229da35c61327
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 12c1ba07465ccb85b3812741ccebfb8d1cfed2c8
+PODFILE CHECKSUM: b7c0d7473f60260e446b1f5d2a63da6a6d92f30a
 
 COCOAPODS: 1.6.1
