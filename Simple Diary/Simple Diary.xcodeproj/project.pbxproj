@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A5B3B3F1E1F1721A84B7C230 /* libPods-Simple Diary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F50E075A98AAD62455C4831 /* libPods-Simple Diary.a */; };
+		AE8E5B3222E2FCF400818AA0 /* SDWriteDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8E5B3122E2FCF400818AA0 /* SDWriteDiaryViewController.m */; };
+		AE8E5B3D22E305EB00818AA0 /* SDSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8E5B3C22E305EB00818AA0 /* SDSearchViewController.m */; };
+		AE8E5B4022E3060E00818AA0 /* SDCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8E5B3F22E3060E00818AA0 /* SDCalendarViewController.m */; };
 		AE92DEB222E2AB550013618C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE92DEB122E2AB550013618C /* AppDelegate.m */; };
 		AE92DEB522E2AB550013618C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE92DEB422E2AB550013618C /* ViewController.m */; };
 		AE92DEB822E2AB550013618C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE92DEB622E2AB550013618C /* Main.storyboard */; };
@@ -21,12 +24,22 @@
 		AE92DEE022E2BEBF0013618C /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE92DEDF22E2BEBF0013618C /* CalendarTool.m */; };
 		AE92DEE322E2BEF00013618C /* SDHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE92DEE222E2BEF00013618C /* SDHBTool.m */; };
 		AE92DEE622E2C1300013618C /* SDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE92DEE522E2C1300013618C /* SDTabBarController.m */; };
+		AE92DEE922E2CB4C0013618C /* SDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE92DEE822E2CB4C0013618C /* SDBaseViewController.m */; };
+		AE92DEEC22E2CD9E0013618C /* SDDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE92DEEB22E2CD9E0013618C /* SDDiaryViewController.m */; };
+		AE92DEEF22E2CE3A0013618C /* SDMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE92DEEE22E2CE3A0013618C /* SDMineViewController.m */; };
+		AE92DEF222E2E56D0013618C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE92DEF422E2E56D0013618C /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D0C4DC3640E89F6F44F0A36 /* Pods-Simple Diary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Diary.release.xcconfig"; path = "Target Support Files/Pods-Simple Diary/Pods-Simple Diary.release.xcconfig"; sourceTree = "<group>"; };
 		4F50E075A98AAD62455C4831 /* libPods-Simple Diary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Simple Diary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B86FBFB8CF34FD7A2D44CC1 /* Pods-Simple Diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Diary.debug.xcconfig"; path = "Target Support Files/Pods-Simple Diary/Pods-Simple Diary.debug.xcconfig"; sourceTree = "<group>"; };
+		AE8E5B3022E2FCF400818AA0 /* SDWriteDiaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWriteDiaryViewController.h; sourceTree = "<group>"; };
+		AE8E5B3122E2FCF400818AA0 /* SDWriteDiaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWriteDiaryViewController.m; sourceTree = "<group>"; };
+		AE8E5B3B22E305EB00818AA0 /* SDSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDSearchViewController.h; sourceTree = "<group>"; };
+		AE8E5B3C22E305EB00818AA0 /* SDSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDSearchViewController.m; sourceTree = "<group>"; };
+		AE8E5B3E22E3060E00818AA0 /* SDCalendarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDCalendarViewController.h; sourceTree = "<group>"; };
+		AE8E5B3F22E3060E00818AA0 /* SDCalendarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDCalendarViewController.m; sourceTree = "<group>"; };
 		AE92DEAD22E2AB550013618C /* Simple Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE92DEB022E2AB550013618C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE92DEB122E2AB550013618C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,6 +65,25 @@
 		AE92DEE222E2BEF00013618C /* SDHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDHBTool.m; sourceTree = "<group>"; };
 		AE92DEE422E2C1300013618C /* SDTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDTabBarController.h; sourceTree = "<group>"; };
 		AE92DEE522E2C1300013618C /* SDTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDTabBarController.m; sourceTree = "<group>"; };
+		AE92DEE722E2CB4C0013618C /* SDBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDBaseViewController.h; sourceTree = "<group>"; };
+		AE92DEE822E2CB4C0013618C /* SDBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDBaseViewController.m; sourceTree = "<group>"; };
+		AE92DEEA22E2CD9E0013618C /* SDDiaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDDiaryViewController.h; sourceTree = "<group>"; };
+		AE92DEEB22E2CD9E0013618C /* SDDiaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDDiaryViewController.m; sourceTree = "<group>"; };
+		AE92DEED22E2CE3A0013618C /* SDMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDMineViewController.h; sourceTree = "<group>"; };
+		AE92DEEE22E2CE3A0013618C /* SDMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDMineViewController.m; sourceTree = "<group>"; };
+		AE92DEF322E2E56D0013618C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE92DEF522E2E5C70013618C /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		AE92DEF622E2E5C80013618C /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		AE92DEF722E2E5C80013618C /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE92DEF822E2E5D10013618C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		AE92DEF922E2E5D20013618C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		AE92DEFA22E2E5D20013618C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AE92DF0122E2E7490013618C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		AE92DF0222E2E74A0013618C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		AE92DF0322E2E74A0013618C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE92DF0422E2E7500013618C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		AE92DF0522E2E7500013618C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		AE92DF0622E2E7500013618C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +113,105 @@
 				4F50E075A98AAD62455C4831 /* libPods-Simple Diary.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE8E5B2C22E2FCC200818AA0 /* WriteDiary */ = {
+			isa = PBXGroup;
+			children = (
+				AE8E5B2D22E2FCC200818AA0 /* Models */,
+				AE8E5B2F22E2FCC200818AA0 /* Views */,
+				AE8E5B2E22E2FCC200818AA0 /* Controllers */,
+			);
+			path = WriteDiary;
+			sourceTree = "<group>";
+		};
+		AE8E5B2D22E2FCC200818AA0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE8E5B2E22E2FCC200818AA0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE8E5B3022E2FCF400818AA0 /* SDWriteDiaryViewController.h */,
+				AE8E5B3122E2FCF400818AA0 /* SDWriteDiaryViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE8E5B2F22E2FCC200818AA0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE8E5B3322E3058200818AA0 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AE8E5B3422E3058200818AA0 /* Models */,
+				AE8E5B3622E3058200818AA0 /* Views */,
+				AE8E5B3522E3058200818AA0 /* Controllers */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		AE8E5B3422E3058200818AA0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE8E5B3522E3058200818AA0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE8E5B3B22E305EB00818AA0 /* SDSearchViewController.h */,
+				AE8E5B3C22E305EB00818AA0 /* SDSearchViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE8E5B3622E3058200818AA0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE8E5B3722E305C400818AA0 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				AE8E5B3822E305C400818AA0 /* Models */,
+				AE8E5B3A22E305C400818AA0 /* Views */,
+				AE8E5B3922E305C400818AA0 /* Controllers */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		AE8E5B3822E305C400818AA0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE8E5B3922E305C400818AA0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE8E5B3E22E3060E00818AA0 /* SDCalendarViewController.h */,
+				AE8E5B3F22E3060E00818AA0 /* SDCalendarViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE8E5B3A22E305C400818AA0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		AE92DEA422E2AB550013618C = {
@@ -125,6 +256,7 @@
 		AE92DEC922E2AD0A0013618C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AE92DEF422E2E56D0013618C /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -146,6 +278,8 @@
 				AE92DED422E2B00B0013618C /* SD_PrefixHeader.pch */,
 				AE92DEE422E2C1300013618C /* SDTabBarController.h */,
 				AE92DEE522E2C1300013618C /* SDTabBarController.m */,
+				AE92DEE722E2CB4C0013618C /* SDBaseViewController.h */,
+				AE92DEE822E2CB4C0013618C /* SDBaseViewController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -154,8 +288,8 @@
 			isa = PBXGroup;
 			children = (
 				AE92DECC22E2AD2C0013618C /* Models */,
-				AE92DECD22E2AD2C0013618C /* Controllers */,
 				AE92DECE22E2AD2C0013618C /* Views */,
+				AE92DECD22E2AD2C0013618C /* Controllers */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -170,6 +304,8 @@
 		AE92DECD22E2AD2C0013618C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AE92DEED22E2CE3A0013618C /* SDMineViewController.h */,
+				AE92DEEE22E2CE3A0013618C /* SDMineViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -184,9 +320,12 @@
 		AE92DECF22E2AD2C0013618C /* Diary */ = {
 			isa = PBXGroup;
 			children = (
+				AE8E5B3722E305C400818AA0 /* Calendar */,
+				AE8E5B3322E3058200818AA0 /* Search */,
+				AE8E5B2C22E2FCC200818AA0 /* WriteDiary */,
 				AE92DED022E2AD2C0013618C /* Models */,
-				AE92DED122E2AD2C0013618C /* Controllers */,
 				AE92DED222E2AD2C0013618C /* Views */,
+				AE92DED122E2AD2C0013618C /* Controllers */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -201,6 +340,8 @@
 		AE92DED122E2AD2C0013618C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AE92DEEA22E2CD9E0013618C /* SDDiaryViewController.h */,
+				AE92DEEB22E2CD9E0013618C /* SDDiaryViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -255,6 +396,10 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
+				"zh-Hans",
+				fr,
+				ja,
 			);
 			mainGroup = AE92DEA422E2AB550013618C;
 			productRefGroup = AE92DEAE22E2AB550013618C /* Products */;
@@ -272,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE92DEC022E2AB580013618C /* LaunchScreen.storyboard in Resources */,
+				AE92DEF222E2E56D0013618C /* Localizable.strings in Resources */,
 				AE92DEBD22E2AB580013618C /* Assets.xcassets in Resources */,
 				AE92DEB822E2AB550013618C /* Main.storyboard in Resources */,
 			);
@@ -336,10 +482,16 @@
 				AE92DEDA22E2BD500013618C /* MBProgressHUD+SDNJ.m in Sources */,
 				AE92DEB222E2AB550013618C /* AppDelegate.m in Sources */,
 				AE92DEC322E2AB580013618C /* main.m in Sources */,
+				AE8E5B4022E3060E00818AA0 /* SDCalendarViewController.m in Sources */,
 				AE92DED722E2BC320013618C /* SDNDHTTPClient.m in Sources */,
 				AE92DEE622E2C1300013618C /* SDTabBarController.m in Sources */,
+				AE8E5B3222E2FCF400818AA0 /* SDWriteDiaryViewController.m in Sources */,
 				AE92DEBB22E2AB550013618C /* Simple_Diary.xcdatamodeld in Sources */,
+				AE8E5B3D22E305EB00818AA0 /* SDSearchViewController.m in Sources */,
+				AE92DEE922E2CB4C0013618C /* SDBaseViewController.m in Sources */,
+				AE92DEEC22E2CD9E0013618C /* SDDiaryViewController.m in Sources */,
 				AE92DEE322E2BEF00013618C /* SDHBTool.m in Sources */,
+				AE92DEEF22E2CE3A0013618C /* SDMineViewController.m in Sources */,
 				AE92DEDD22E2BD9B0013618C /* SDUIUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +503,10 @@
 			isa = PBXVariantGroup;
 			children = (
 				AE92DEB722E2AB550013618C /* Base */,
+				AE92DEF522E2E5C70013618C /* ko */,
+				AE92DEF822E2E5D10013618C /* zh-Hans */,
+				AE92DF0122E2E7490013618C /* fr */,
+				AE92DF0422E2E7500013618C /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -359,8 +515,24 @@
 			isa = PBXVariantGroup;
 			children = (
 				AE92DEBF22E2AB580013618C /* Base */,
+				AE92DEF622E2E5C80013618C /* ko */,
+				AE92DEF922E2E5D20013618C /* zh-Hans */,
+				AE92DF0222E2E74A0013618C /* fr */,
+				AE92DF0522E2E7500013618C /* ja */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AE92DEF422E2E56D0013618C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE92DEF322E2E56D0013618C /* en */,
+				AE92DEF722E2E5C80013618C /* ko */,
+				AE92DEFA22E2E5D20013618C /* zh-Hans */,
+				AE92DF0322E2E74A0013618C /* fr */,
+				AE92DF0622E2E7500013618C /* ja */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -370,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -429,6 +602,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -492,7 +666,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hgg.hb.Simple-Diary";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hgg.hb.Convenient-Diary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -512,7 +686,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hgg.hb.Simple-Diary";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hgg.hb.Convenient-Diary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

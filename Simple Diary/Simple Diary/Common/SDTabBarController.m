@@ -7,6 +7,9 @@
 //
 
 #import "SDTabBarController.h"
+#import "SDDiaryViewController.h"
+#import "SDMineViewController.h"
+
 @interface SDTabBarController ()<UITabBarDelegate>
 
 @end
@@ -44,12 +47,41 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
         }
     });
 }
++ (SDTabBarController *)shareInstance{
+    static SDTabBarController *client;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        client = [[SDTabBarController allocWithZone:NULL] init];
+    });
+    return client;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    [self setContentView];
+}
+- (void)setContentView{
+    self.SDDiaryVC = [[SDDiaryViewController alloc] init];
+    UINavigationController *diary = [[UINavigationController alloc] initWithRootViewController:self.SDDiaryVC];
+    self.SDDiaryVC.tabBarItem.title = NSLocalizedString(@"日记", nil);
+    self.SDDiaryVC.tabBarItem.image = [[UIImage imageNamed:@"tab_diary_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.SDDiaryVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"tab_diary_active"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    [self.SDDiaryVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor blackColor]} forState:UIControlStateSelected];
+    [self.SDDiaryVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor grayColor]} forState:UIControlStateNormal];
+
+    self.SDMineVC = [[SDMineViewController alloc] init];
+    UINavigationController *mine = [[UINavigationController alloc] initWithRootViewController:self.SDMineVC];
+    self.SDMineVC.tabBarItem.title = NSLocalizedString(@"我的", nil);
+    self.SDMineVC.tabBarItem.image = [[UIImage imageNamed:@"tab_mine_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.SDMineVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"tab_mine_active"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    [self.SDMineVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor blackColor]} forState:UIControlStateSelected];
+    [self.SDMineVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor grayColor]} forState:UIControlStateNormal];
     
+    NSArray *arrControllers = [NSArray arrayWithObjects:diary,mine,nil];
+    self.viewControllers = arrControllers;
+    [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -4)];
 }
 @end

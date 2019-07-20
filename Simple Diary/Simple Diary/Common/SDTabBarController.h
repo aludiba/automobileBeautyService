@@ -9,9 +9,13 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class SDTabBarController;
+@class SDDiaryViewController;
+@class SDMineViewController;
 @interface SDTabBarController : UITabBarController
-
+@property(nonatomic, strong)SDDiaryViewController *SDDiaryVC;
+@property(nonatomic, strong)SDMineViewController *SDMineVC;
++ (SDTabBarController *)shareInstance;
 @end
 
 NS_ASSUME_NONNULL_END

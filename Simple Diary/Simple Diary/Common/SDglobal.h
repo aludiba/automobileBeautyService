@@ -20,6 +20,8 @@
 #import "CalendarTool.h"
 #import "SDUIUtilities.h"
 
+//多语言调用
+#define NSLocalizedString(key, comment) [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
 /**颜色*/
 #define SDH_Color(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
 #define SDKeyWindow [UIApplication sharedApplication].keyWindow

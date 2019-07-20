@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Simple Diary
+
+  Created by bykj on 2019/7/20.
+  Copyright © 2019 hgg. All rights reserved.
+*/
+"日记" = "일기";
+"我的" = "나 의";
+"写日记" = "일기를 쓰다";
+"日历" = "달력";
+"搜索" = "검색";
+
+
