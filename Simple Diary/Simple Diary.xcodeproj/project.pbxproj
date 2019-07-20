@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE92DEB222E2AB550013618C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE92DEB122E2AB550013618C /* AppDelegate.m */; };
+		AE92DEB522E2AB550013618C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE92DEB422E2AB550013618C /* ViewController.m */; };
+		AE92DEB822E2AB550013618C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE92DEB622E2AB550013618C /* Main.storyboard */; };
+		AE92DEBB22E2AB550013618C /* Simple_Diary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE92DEB922E2AB550013618C /* Simple_Diary.xcdatamodeld */; };
+		AE92DEBD22E2AB580013618C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE92DEBC22E2AB580013618C /* Assets.xcassets */; };
+		AE92DEC022E2AB580013618C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE92DEBE22E2AB580013618C /* LaunchScreen.storyboard */; };
+		AE92DEC322E2AB580013618C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE92DEC222E2AB580013618C /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE92DEAD22E2AB550013618C /* Simple Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE92DEB022E2AB550013618C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE92DEB122E2AB550013618C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE92DEB322E2AB550013618C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AE92DEB422E2AB550013618C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AE92DEB722E2AB550013618C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE92DEBA22E2AB550013618C /* Simple_Diary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Simple_Diary.xcdatamodel; sourceTree = "<group>"; };
+		AE92DEBC22E2AB580013618C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE92DEBF22E2AB580013618C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE92DEC122E2AB580013618C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE92DEC222E2AB580013618C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE92DEAA22E2AB550013618C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE92DEA422E2AB550013618C = {
+			isa = PBXGroup;
+			children = (
+				AE92DEAF22E2AB550013618C /* Simple Diary */,
+				AE92DEAE22E2AB550013618C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE92DEAE22E2AB550013618C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE92DEAD22E2AB550013618C /* Simple Diary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE92DEAF22E2AB550013618C /* Simple Diary */ = {
+			isa = PBXGroup;
+			children = (
+				AE92DECA22E2AD0A0013618C /* Common */,
+				AE92DEC922E2AD0A0013618C /* Resources */,
+				AE92DECF22E2AD2C0013618C /* Diary */,
+				AE92DECB22E2AD2C0013618C /* Mine */,
+				AE92DEB022E2AB550013618C /* AppDelegate.h */,
+				AE92DEB122E2AB550013618C /* AppDelegate.m */,
+				AE92DEB322E2AB550013618C /* ViewController.h */,
+				AE92DEB422E2AB550013618C /* ViewController.m */,
+				AE92DEB622E2AB550013618C /* Main.storyboard */,
+				AE92DEBC22E2AB580013618C /* Assets.xcassets */,
+				AE92DEBE22E2AB580013618C /* LaunchScreen.storyboard */,
+				AE92DEC122E2AB580013618C /* Info.plist */,
+				AE92DEC222E2AB580013618C /* main.m */,
+				AE92DEB922E2AB550013618C /* Simple_Diary.xcdatamodeld */,
+			);
+			path = "Simple Diary";
+			sourceTree = "<group>";
+		};
+		AE92DEC922E2AD0A0013618C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE92DECA22E2AD0A0013618C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AE92DECB22E2AD2C0013618C /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				AE92DECC22E2AD2C0013618C /* Models */,
+				AE92DECD22E2AD2C0013618C /* Controllers */,
+				AE92DECE22E2AD2C0013618C /* Views */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		AE92DECC22E2AD2C0013618C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE92DECD22E2AD2C0013618C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE92DECE22E2AD2C0013618C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE92DECF22E2AD2C0013618C /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				AE92DED022E2AD2C0013618C /* Models */,
+				AE92DED122E2AD2C0013618C /* Controllers */,
+				AE92DED222E2AD2C0013618C /* Views */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		AE92DED022E2AD2C0013618C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE92DED122E2AD2C0013618C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE92DED222E2AD2C0013618C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE92DEAC22E2AB550013618C /* Simple Diary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE92DEC622E2AB580013618C /* Build configuration list for PBXNativeTarget "Simple Diary" */;
+			buildPhases = (
+				AE92DEA922E2AB550013618C /* Sources */,
+				AE92DEAA22E2AB550013618C /* Frameworks */,
+				AE92DEAB22E2AB550013618C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Simple Diary";
+			productName = "Simple Diary";
+			productReference = AE92DEAD22E2AB550013618C /* Simple Diary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE92DEA522E2AB550013618C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = hgg;
+				TargetAttributes = {
+					AE92DEAC22E2AB550013618C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = AE92DEA822E2AB550013618C /* Build configuration list for PBXProject "Simple Diary" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE92DEA422E2AB550013618C;
+			productRefGroup = AE92DEAE22E2AB550013618C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE92DEAC22E2AB550013618C /* Simple Diary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE92DEAB22E2AB550013618C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE92DEC022E2AB580013618C /* LaunchScreen.storyboard in Resources */,
+				AE92DEBD22E2AB580013618C /* Assets.xcassets in Resources */,
+				AE92DEB822E2AB550013618C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE92DEA922E2AB550013618C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE92DEB522E2AB550013618C /* ViewController.m in Sources */,
+				AE92DEB222E2AB550013618C /* AppDelegate.m in Sources */,
+				AE92DEC322E2AB580013618C /* main.m in Sources */,
+				AE92DEBB22E2AB550013618C /* Simple_Diary.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE92DEB622E2AB550013618C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE92DEB722E2AB550013618C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE92DEBE22E2AB580013618C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE92DEBF22E2AB580013618C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE92DEC422E2AB580013618C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE92DEC522E2AB580013618C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE92DEC722E2AB580013618C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				INFOPLIST_FILE = "Simple Diary/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hgg.hb.Simple-Diary";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE92DEC822E2AB580013618C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				INFOPLIST_FILE = "Simple Diary/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hgg.hb.Simple-Diary";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE92DEA822E2AB550013618C /* Build configuration list for PBXProject "Simple Diary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE92DEC422E2AB580013618C /* Debug */,
+				AE92DEC522E2AB580013618C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE92DEC622E2AB580013618C /* Build configuration list for PBXNativeTarget "Simple Diary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE92DEC722E2AB580013618C /* Debug */,
+				AE92DEC822E2AB580013618C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AE92DEB922E2AB550013618C /* Simple_Diary.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AE92DEBA22E2AB550013618C /* Simple_Diary.xcdatamodel */,
+			);
+			currentVersion = AE92DEBA22E2AB550013618C /* Simple_Diary.xcdatamodel */;
+			path = Simple_Diary.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AE92DEA522E2AB550013618C /* Project object */;
+}
