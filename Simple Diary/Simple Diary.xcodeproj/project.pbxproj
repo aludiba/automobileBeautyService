@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5B3B3F1E1F1721A84B7C230 /* libPods-Simple Diary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F50E075A98AAD62455C4831 /* libPods-Simple Diary.a */; };
 		AE92DEB222E2AB550013618C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE92DEB122E2AB550013618C /* AppDelegate.m */; };
 		AE92DEB522E2AB550013618C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE92DEB422E2AB550013618C /* ViewController.m */; };
 		AE92DEB822E2AB550013618C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE92DEB622E2AB550013618C /* Main.storyboard */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D0C4DC3640E89F6F44F0A36 /* Pods-Simple Diary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Diary.release.xcconfig"; path = "Target Support Files/Pods-Simple Diary/Pods-Simple Diary.release.xcconfig"; sourceTree = "<group>"; };
+		4F50E075A98AAD62455C4831 /* libPods-Simple Diary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Simple Diary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B86FBFB8CF34FD7A2D44CC1 /* Pods-Simple Diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Diary.debug.xcconfig"; path = "Target Support Files/Pods-Simple Diary/Pods-Simple Diary.debug.xcconfig"; sourceTree = "<group>"; };
 		AE92DEAD22E2AB550013618C /* Simple Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE92DEB022E2AB550013618C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE92DEB122E2AB550013618C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,6 +32,8 @@
 		AE92DEBF22E2AB580013618C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE92DEC122E2AB580013618C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE92DEC222E2AB580013618C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE92DED322E2AF7E0013618C /* SDglobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDglobal.h; sourceTree = "<group>"; };
+		AE92DED422E2B00B0013618C /* SD_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SD_PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5B3B3F1E1F1721A84B7C230 /* libPods-Simple Diary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CFEFCEE7416FB1D719EE45C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B86FBFB8CF34FD7A2D44CC1 /* Pods-Simple Diary.debug.xcconfig */,
+				2D0C4DC3640E89F6F44F0A36 /* Pods-Simple Diary.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5DA24292002BEB7D267E43D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F50E075A98AAD62455C4831 /* libPods-Simple Diary.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AE92DEA422E2AB550013618C = {
 			isa = PBXGroup;
 			children = (
 				AE92DEAF22E2AB550013618C /* Simple Diary */,
 				AE92DEAE22E2AB550013618C /* Products */,
+				5CFEFCEE7416FB1D719EE45C /* Pods */,
+				5DA24292002BEB7D267E43D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +115,8 @@
 		AE92DECA22E2AD0A0013618C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AE92DED322E2AF7E0013618C /* SDglobal.h */,
+				AE92DED422E2B00B0013618C /* SD_PrefixHeader.pch */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -161,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE92DEC622E2AB580013618C /* Build configuration list for PBXNativeTarget "Simple Diary" */;
 			buildPhases = (
+				240B3EEBF03C51FC58D9E657 /* [CP] Check Pods Manifest.lock */,
 				AE92DEA922E2AB550013618C /* Sources */,
 				AE92DEAA22E2AB550013618C /* Frameworks */,
 				AE92DEAB22E2AB550013618C /* Resources */,
+				DDE3D69E9933B7D52954E845 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,6 +249,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		240B3EEBF03C51FC58D9E657 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Simple Diary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDE3D69E9933B7D52954E845 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Simple Diary/Pods-Simple Diary-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Simple Diary/Pods-Simple Diary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE92DEA922E2AB550013618C /* Sources */ = {
@@ -367,35 +445,41 @@
 		};
 		AE92DEC722E2AB580013618C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B86FBFB8CF34FD7A2D44CC1 /* Pods-Simple Diary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Simple Diary/Common/SD_PrefixHeader.pch";
 				INFOPLIST_FILE = "Simple Diary/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hgg.hb.Simple-Diary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		AE92DEC822E2AB580013618C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D0C4DC3640E89F6F44F0A36 /* Pods-Simple Diary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Simple Diary/Common/SD_PrefixHeader.pch";
 				INFOPLIST_FILE = "Simple Diary/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hgg.hb.Simple-Diary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
