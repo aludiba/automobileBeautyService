@@ -8,6 +8,17 @@
 
 #ifndef SDglobal_h
 #define SDglobal_h
+#import <AFNetworking/AFNetworking.h>
+#import <Masonry/Masonry.h>
+#import <MJRefresh/MJRefresh.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <YYModel/YYModel.h>
+#import <fmdb/FMDB.h>
+#import "SDNDHTTPClient.h"
+#import "MBProgressHUD+SDNJ.h"
+#import "SDHBTool.h"
+#import "CalendarTool.h"
+#import "SDUIUtilities.h"
 
 /**颜色*/
 #define SDH_Color(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
