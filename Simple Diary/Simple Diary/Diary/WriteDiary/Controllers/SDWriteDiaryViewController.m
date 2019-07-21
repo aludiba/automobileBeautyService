@@ -7,9 +7,11 @@
 //
 
 #import "SDWriteDiaryViewController.h"
-
-@interface SDWriteDiaryViewController ()
+#import "SDJournalEditingToolbar.h"
+@interface SDWriteDiaryViewController()<UITextViewDelegate>
 @property(nonatomic, strong)UIButton *completeButton;
+@property(nonatomic, strong)SDJournalEditingToolbar *editingToolbar;
+@property(nonatomic, strong)UITextView *textView;
 @end
 
 @implementation SDWriteDiaryViewController
@@ -17,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = NSLocalizedString(@"写日记", nil);
+    [self setContentView];
+    [self setGestureRecognizer];
+    [self.textView becomeFirstResponder];
 }
 - (void)SD_setupNavigationItems{
     [super SD_setupNavigationItems];
@@ -26,9 +31,54 @@
     UIBarButtonItem *completeItem = [[UIBarButtonItem alloc] initWithCustomView:self.completeButton];
     self.navigationItem.rightBarButtonItem = completeItem;
 }
+- (void)setContentView{
+    [self.view addSubview:self.editingToolbar];
+    [self.view addSubview:self.textView];
+    [self.editingToolbar mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.view);
+        make.trailing.equalTo(self.view);
+        make.top.equalTo(self.mas_topLayoutGuideBottom);
+        make.height.mas_equalTo(4 * 90);
+    }];
+    [self.textView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.mas_topLayoutGuideBottom).offset(90);
+        make.leading.equalTo(self.view);
+        make.trailing.equalTo(self.view);
+        make.bottom.equalTo(self.mas_bottomLayoutGuideBottom);
+    }];
+}
+- (void)setGestureRecognizer{
+    UISwipeGestureRecognizer *rightRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeFrom:)];
+    [rightRecognizer setDirection:(UISwipeGestureRecognizerDirectionRight)];
+    [self.view addGestureRecognizer:rightRecognizer];
+    UISwipeGestureRecognizer *leftRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeFrom:)];
+    [leftRecognizer setDirection:(UISwipeGestureRecognizerDirectionLeft)];
+    [self.view addGestureRecognizer:leftRecognizer];
+    UISwipeGestureRecognizer *upRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeFrom:)];
+    [upRecognizer setDirection:(UISwipeGestureRecognizerDirectionUp)];
+    [self.view addGestureRecognizer:upRecognizer];
+    UISwipeGestureRecognizer *downRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeFrom:)];
+    [downRecognizer setDirection:(UISwipeGestureRecognizerDirectionDown)];
+    [self.view addGestureRecognizer:downRecognizer];
+}
 #pragma mark - actions
 - (void)btnClick:(UIButton *)sender{
     NSLog(@"写日记完成~~~");
+}
+- (void)handleSwipeFrom:(UISwipeGestureRecognizer*)recognizer{
+    if(recognizer.direction == UISwipeGestureRecognizerDirectionDown) {
+        NSLog(@"swipe down");
+    }
+    if(recognizer.direction ==UISwipeGestureRecognizerDirectionUp) {
+        NSLog(@"swipe up");
+    }
+    if(recognizer.direction ==UISwipeGestureRecognizerDirectionLeft) {
+        NSLog(@"swipe left");
+    }
+    if(recognizer.direction ==UISwipeGestureRecognizerDirectionRight) {
+        NSLog(@"swipe right");
+    }
+    [self.view endEditing:YES];
 }
 #pragma mark - getters
 - (UIButton *)completeButton{
@@ -38,5 +88,32 @@
         [_completeButton setImage:[UIImage imageNamed:@"SD_complete"] forState:UIControlStateNormal];
     }
     return _completeButton;
+}
+- (SDJournalEditingToolbar *)editingToolbar{
+    if (!_editingToolbar) {
+        _editingToolbar = [[SDJournalEditingToolbar alloc] init];
+        __weak typeof(self) weakSelf = self;
+        _editingToolbar.editingToolbarBlock = ^(SDJournalEditingToolbar * _Nonnull editingToolbar) {
+            if (editingToolbar.completetype == editingToolbarCompleteTypeLift) {
+                if (editingToolbar.isExpand) {
+                    editingToolbar.contentView.hidden = NO;
+                    weakSelf.textView.hidden = YES;
+                }else{
+                    editingToolbar.contentView.hidden = YES;
+                    weakSelf.textView.hidden = NO;
+                }
+            }
+        };
+    }
+    return _editingToolbar;
+}
+- (UITextView *)textView{
+    if (!_textView) {
+        _textView = [[UITextView alloc] init];
+        _textView.delegate = self;
+        [_textView setFont:[UIFont systemFontOfSize:17]];
+        [_textView setTextColor:[UIColor blackColor]];
+    }
+    return _textView;
 }
 @end
