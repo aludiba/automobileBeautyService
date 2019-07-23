@@ -187,7 +187,6 @@
 - (SDTextSetView *)textSetView{
     if (!_textSetView) {
         _textSetView = [[SDTextSetView alloc] init];
-        
     }
     return _textSetView;
 }
