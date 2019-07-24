@@ -66,10 +66,11 @@
         make.width.mas_equalTo(16);
         make.height.mas_equalTo(16);
     }];
+    CGSize size = [self.textColorLabel sizeThatFits:CGSizeMake(MAXFLOAT, 16)];
     [self.textColorLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.slider.mas_bottom).offset(10);
         make.leading.equalTo(self).offset(16);
-        make.width.mas_equalTo(50);
+        make.width.mas_equalTo(size.width);
         make.height.mas_equalTo(16);
     }];
     [self.colorTipsView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -90,20 +91,61 @@
     }];
 }
 - (void)setContentColorsButton{
-    
+    CGFloat width = 44.0f;
+    CGFloat height = 44.0f;
+    CGFloat margin = (SDWIDTH - 32 - width * 7) / 8;
+    for (int i = 0; i < self.colorsArray.count; i++) {
+        UIColor *color = self.colorsArray[i];
+        SDTextColorButton *colorButton = [[SDTextColorButton alloc] init];
+        [colorButton addTarget:self action:@selector(colorBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+        colorButton.tag = 100 + i;
+        [colorButton setCurrentColor:color];
+        [self.colorsButtonArray addObject:colorButton];
+        [self.colorsContentView addSubview:colorButton];
+        NSInteger line = i / 7;
+        NSInteger column = i % 7;
+        [colorButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.colorsContentView).offset(margin * (column + 1) + width * column);
+            make.top.equalTo(self.colorsContentView).offset(margin * (line + 1) + width * line);
+            make.width.mas_equalTo(width);
+            make.height.mas_equalTo(height);
+        }];
+        if (i == 0) {
+            [colorButton setIsSelect:YES];
+        }
+        if (i == self.colorsArray.count -1) {
+            [self.colorsContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.bottom.equalTo(colorButton.mas_bottom).offset(margin);
+            }];
+        }
+    }
+}
+- (void)colorBtnClick:(SDTextColorButton *)colorButton{
+    NSInteger tag = colorButton.tag;
+    for (int i = 0; i < self.colorsButtonArray.count; i++) {
+        SDTextColorButton *colorButton = self.colorsButtonArray[i];
+        if (tag == colorButton.tag) {
+            [colorButton setIsSelect:YES];
+            self.colorTipsView.backgroundColor = colorButton.currentColor;
+            self.fontColor = colorButton.currentColor;
+        }else{
+            [colorButton setIsSelect:NO];
+        }
+    }
 }
 #pragma mark - actions
 #pragma mark - 字体大小调节实现
 -(void)sliderValueChanged:(UISlider *)slider{
-    
+    self.fontSize = slider.value;
+    self.textFontLabel.text = [NSString stringWithFormat:@"%@   :   %.lf",NSLocalizedString(@"字体大小", nil),slider.value];
 }
 #pragma mark - getters
 - (UILabel *)textFontLabel{
     if (!_textFontLabel) {
         _textFontLabel = [[UILabel alloc] init];
         _textFontLabel.textColor = [UIColor blackColor];
-        [_textFontLabel setFont:[UIFont systemFontOfSize:12]];
-        _textFontLabel.text = [NSString stringWithFormat:@"%@:17",NSLocalizedString(@"字体大小", nil)];
+        [_textFontLabel setFont:[UIFont systemFontOfSize:14]];
+        _textFontLabel.text = [NSString stringWithFormat:@"%@   :   17",NSLocalizedString(@"字体大小", nil)];
     }
     return _textFontLabel;
 }
@@ -119,9 +161,10 @@
 - (UISlider *)slider{
     if (!_slider) {
         _slider = [[UISlider alloc] init];
-        _slider.minimumValue = 0.0;
-        _slider.maximumValue = 100.0;
-        _slider.value = (7/30) * 100;
+        _slider.minimumValue = 10.0;
+        _slider.maximumValue = 40.0;
+        _slider.value = 17;
+        self.fontSize = 17;
         [_slider setContinuous:YES];
         [_slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
     }
@@ -140,7 +183,7 @@
     if (!_textColorLabel) {
         _textColorLabel = [[UILabel alloc] init];
         _textColorLabel.textColor = [UIColor blackColor];
-        [_textColorLabel setFont:[UIFont systemFontOfSize:12]];
+        [_textColorLabel setFont:[UIFont systemFontOfSize:14]];
         _textColorLabel.text = NSLocalizedString(@"字体颜色", nil);
     }
     return _textColorLabel;
@@ -148,7 +191,7 @@
 - (UIView *)colorTipsView{
     if (!_colorTipsView) {
         _colorTipsView = [[UIView alloc] init];
-        _colorTipsView.backgroundColor = [UIColor whiteColor];
+        _colorTipsView.backgroundColor = [UIColor blackColor];
     }
     return _colorTipsView;
 }

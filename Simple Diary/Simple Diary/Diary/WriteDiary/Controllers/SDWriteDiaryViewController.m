@@ -8,6 +8,8 @@
 
 #import "SDWriteDiaryViewController.h"
 #import "SDJournalEditingToolbar.h"
+#import "SDTextSetView.h"
+
 @interface SDWriteDiaryViewController()<UITextViewDelegate>
 @property(nonatomic, strong)UIButton *completeButton;
 @property(nonatomic, strong)SDJournalEditingToolbar *editingToolbar;
@@ -101,6 +103,8 @@
                 }else{
                     editingToolbar.contentView.hidden = YES;
                     weakSelf.textView.hidden = NO;
+                    weakSelf.textView.font = [UIFont systemFontOfSize:editingToolbar.textSetView.fontSize];
+                    weakSelf.textView.textColor = editingToolbar.textSetView.fontColor;
                 }
             }
         };

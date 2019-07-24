@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SDTextSetView : UIView
-
+@property(nonatomic, assign)CGFloat fontSize;
+@property(nonatomic, strong)UIColor *fontColor;
 @end
 
 NS_ASSUME_NONNULL_END

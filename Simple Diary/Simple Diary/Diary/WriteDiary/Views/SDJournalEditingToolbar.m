@@ -38,6 +38,7 @@
     [self.toolBar addSubview:self.editLiftButton];
     [self.toolBar addSubview:self.lineView];
     [self addSubview:self.contentView];
+    [self.contentView addSubview:self.textSetView];
 }
 - (void)setLayoutView{
     CGFloat width = 60.0f;
@@ -91,6 +92,12 @@
         make.trailing.equalTo(self.toolBar);
         make.top.equalTo(self.toolBar.mas_bottom);
         make.bottom.equalTo(self);
+    }];
+    [self.textSetView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.contentView);
+        make.trailing.equalTo(self.contentView);
+        make.top.equalTo(self.contentView);
+        make.bottom.equalTo(self.contentView);
     }];
 }
 #pragma mark - actions
