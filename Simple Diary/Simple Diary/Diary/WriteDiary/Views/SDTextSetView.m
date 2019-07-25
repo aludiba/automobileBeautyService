@@ -8,6 +8,8 @@
 
 #import "SDTextSetView.h"
 #import "SDTextColorButton.h"
+#import "SDJournalEditingToolbar.h"
+
 @interface SDTextSetView()<UIScrollViewDelegate>
 @property(nonatomic, strong)UILabel *textFontLabel;//字体大小标题及提示
 @property(nonatomic, strong)UILabel *sliderMinLabel;//字体最小值提示
@@ -132,12 +134,18 @@
             [colorButton setIsSelect:NO];
         }
     }
+//    if (self.superView.editingToolbarBlock) {
+//        self.superView.editingToolbarBlock(self.superView);
+//    }
 }
 #pragma mark - actions
 #pragma mark - 字体大小调节实现
 -(void)sliderValueChanged:(UISlider *)slider{
     self.fontSize = slider.value;
     self.textFontLabel.text = [NSString stringWithFormat:@"%@   :   %.lf",NSLocalizedString(@"字体大小", nil),slider.value];
+//    if (self.superView.editingToolbarBlock) {
+//        self.superView.editingToolbarBlock(self.superView);
+//    }
 }
 #pragma mark - getters
 - (UILabel *)textFontLabel{

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A5B3B3F1E1F1721A84B7C230 /* libPods-Simple Diary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F50E075A98AAD62455C4831 /* libPods-Simple Diary.a */; };
+		AE138CD022E9A3AB005367DB /* SDTextThemeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE138CCF22E9A3AB005367DB /* SDTextThemeView.m */; };
 		AE779E8122E3F99C00C3A98E /* SDJournalEditingToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = AE779E8022E3F99C00C3A98E /* SDJournalEditingToolbar.m */; };
 		AE779E8422E4329700C3A98E /* SDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AE779E8322E4329700C3A98E /* SDButton.m */; };
 		AE779E8722E4528000C3A98E /* SDTextSetView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE779E8622E4528000C3A98E /* SDTextSetView.m */; };
@@ -35,6 +36,8 @@
 		2D0C4DC3640E89F6F44F0A36 /* Pods-Simple Diary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Diary.release.xcconfig"; path = "Target Support Files/Pods-Simple Diary/Pods-Simple Diary.release.xcconfig"; sourceTree = "<group>"; };
 		4F50E075A98AAD62455C4831 /* libPods-Simple Diary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Simple Diary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B86FBFB8CF34FD7A2D44CC1 /* Pods-Simple Diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Diary.debug.xcconfig"; path = "Target Support Files/Pods-Simple Diary/Pods-Simple Diary.debug.xcconfig"; sourceTree = "<group>"; };
+		AE138CCE22E9A3AB005367DB /* SDTextThemeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDTextThemeView.h; sourceTree = "<group>"; };
+		AE138CCF22E9A3AB005367DB /* SDTextThemeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDTextThemeView.m; sourceTree = "<group>"; };
 		AE779E7F22E3F99C00C3A98E /* SDJournalEditingToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDJournalEditingToolbar.h; sourceTree = "<group>"; };
 		AE779E8022E3F99C00C3A98E /* SDJournalEditingToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDJournalEditingToolbar.m; sourceTree = "<group>"; };
 		AE779E8222E4329700C3A98E /* SDButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDButton.h; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 				AE779E8022E3F99C00C3A98E /* SDJournalEditingToolbar.m */,
 				AE779E8522E4528000C3A98E /* SDTextSetView.h */,
 				AE779E8622E4528000C3A98E /* SDTextSetView.m */,
+				AE138CCE22E9A3AB005367DB /* SDTextThemeView.h */,
+				AE138CCF22E9A3AB005367DB /* SDTextThemeView.m */,
 				AE7EEFC322E7EF48007CEBC9 /* SDTextColorButton.h */,
 				AE7EEFC422E7EF48007CEBC9 /* SDTextColorButton.m */,
 			);
@@ -490,6 +495,7 @@
 				AE8E5B3222E2FCF400818AA0 /* SDWriteDiaryViewController.m in Sources */,
 				AE92DEBB22E2AB550013618C /* Simple_Diary.xcdatamodeld in Sources */,
 				AE8E5B3D22E305EB00818AA0 /* SDSearchViewController.m in Sources */,
+				AE138CD022E9A3AB005367DB /* SDTextThemeView.m in Sources */,
 				AE92DEE922E2CB4C0013618C /* SDBaseViewController.m in Sources */,
 				AE92DEEC22E2CD9E0013618C /* SDDiaryViewController.m in Sources */,
 				AE92DEE322E2BEF00013618C /* SDHBTool.m in Sources */,

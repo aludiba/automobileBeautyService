@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class SDJournalEditingToolbar;
 @interface SDTextSetView : UIView
+@property(nonatomic, strong)SDJournalEditingToolbar *superView;
 @property(nonatomic, assign)CGFloat fontSize;
 @property(nonatomic, strong)UIColor *fontColor;
 @end

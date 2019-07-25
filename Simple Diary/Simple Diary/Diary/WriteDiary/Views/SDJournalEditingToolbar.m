@@ -194,6 +194,7 @@
 - (SDTextSetView *)textSetView{
     if (!_textSetView) {
         _textSetView = [[SDTextSetView alloc] init];
+        _textSetView.superView = self;
     }
     return _textSetView;
 }
