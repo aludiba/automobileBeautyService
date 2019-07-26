@@ -8,6 +8,10 @@
 
 #import "SDJournalEditingToolbar.h"
 #import "SDTextSetView.h"
+#import "SDTextThemeView.h"
+#import "SDTextPictureView.h"
+#import "SDWriteDiaryViewController.h"
+
 @interface SDJournalEditingToolbar()
 @property(nonatomic, strong)UIView *toolBar;
 @property(nonatomic, strong)SDButton *editTextButton;
@@ -39,6 +43,8 @@
     [self.toolBar addSubview:self.lineView];
     [self addSubview:self.contentView];
     [self.contentView addSubview:self.textSetView];
+    [self.contentView addSubview:self.textThemeView];
+    [self.contentView addSubview:self.textPictureView];
 }
 - (void)setLayoutView{
     CGFloat width = 60.0f;
@@ -99,18 +105,38 @@
         make.top.equalTo(self.contentView);
         make.bottom.equalTo(self.contentView);
     }];
+    [self.textThemeView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.contentView);
+        make.trailing.equalTo(self.contentView);
+        make.top.equalTo(self.contentView);
+        make.bottom.equalTo(self.contentView);
+    }];
+    self.textThemeView.hidden = YES;
+    [self.textPictureView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.contentView);
+        make.trailing.equalTo(self.contentView);
+        make.top.equalTo(self.contentView);
+        make.bottom.equalTo(self.contentView);
+    }];
+    self.textPictureView.hidden = YES;
 }
 #pragma mark - actions
 - (void)btnClick:(SDButton *)sender{
     if (sender.tag == 100) {
         NSLog(@"编辑字体~~~");
-        
+        self.textSetView.hidden = NO;
+        self.textThemeView.hidden = YES;
+        self.textPictureView.hidden = YES;
     }else if(sender.tag == 101){
-        NSLog(@"编辑样式~~~");
-
+        NSLog(@"编辑主题样式~~~");
+        self.textSetView.hidden = YES;
+        self.textThemeView.hidden = NO;
+        self.textPictureView.hidden = YES;
     }else if(sender.tag == 102){
         NSLog(@"编辑图片~~~");
-
+        self.textSetView.hidden = YES;
+        self.textThemeView.hidden = YES;
+        self.textPictureView.hidden = NO;
     }else if(sender.tag == 103){
         NSLog(@"编辑天气~~~");
 
@@ -118,6 +144,11 @@
         NSLog(@"收起来~~~");
         self.completetype = editingToolbarCompleteTypeLift;
         self.isExpand = !self.isExpand;
+        if (self.isExpand) {
+            [self.superVC.textView resignFirstResponder];
+        }else{
+            [self.superVC.textView becomeFirstResponder];
+        }
         if (self.editingToolbarBlock) {
             self.editingToolbarBlock(self);
         }
@@ -197,5 +228,18 @@
         _textSetView.superView = self;
     }
     return _textSetView;
+}
+- (SDTextThemeView *)textThemeView{
+    if (!_textThemeView) {
+        _textThemeView = [[SDTextThemeView alloc] init];
+    }
+    return _textThemeView;
+}
+- (SDTextPictureView *)textPictureView{
+    if (!_textPictureView) {
+        _textPictureView = [[SDTextPictureView alloc] init];
+        _textPictureView.superVC = self.superVC;
+    }
+    return _textPictureView;
 }
 @end

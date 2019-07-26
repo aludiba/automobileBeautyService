@@ -1,24 +1,23 @@
 //
-//  SDTextColorButton.m
+//  SDTextThemeButton.m
 //  Simple Diary
 //
-//  Created by bykj on 2019/7/24.
+//  Created by bykj on 2019/7/26.
 //  Copyright © 2019 hgg. All rights reserved.
 //
 
-#import "SDTextColorButton.h"
-@interface SDTextColorButton()
+#import "SDTextThemeButton.h"
+@interface SDTextThemeButton()
 @property(nonatomic, strong)UIImageView *selectImgView;
 @end
-
-@implementation SDTextColorButton
+@implementation SDTextThemeButton
 - (instancetype)init{
     self = [super init];
     if (self) {
         [self addSubview:self.selectImgView];
         [self.selectImgView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.equalTo(self);
-            make.centerY.equalTo(self);
+            make.trailing.equalTo(self);
+            make.bottom.equalTo(self);
             make.width.mas_equalTo(44);
             make.height.mas_equalTo(44);
         }];

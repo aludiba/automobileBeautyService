@@ -9,9 +9,10 @@
 #import "SDBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class SDWriteDiaryViewController;
 @interface SDWriteDiaryViewController : SDBaseViewController
-
+@property(nonatomic, strong)UITextView *textView;
++ (SDWriteDiaryViewController *)shareInstance;
 @end
 
 NS_ASSUME_NONNULL_END

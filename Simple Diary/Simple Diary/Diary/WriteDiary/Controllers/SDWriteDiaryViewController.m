@@ -9,21 +9,33 @@
 #import "SDWriteDiaryViewController.h"
 #import "SDJournalEditingToolbar.h"
 #import "SDTextSetView.h"
+#import "SDTextThemeView.h"
+#import "SDTextPictureView.h"
 
 @interface SDWriteDiaryViewController()<UITextViewDelegate>
 @property(nonatomic, strong)UIButton *completeButton;
 @property(nonatomic, strong)SDJournalEditingToolbar *editingToolbar;
-@property(nonatomic, strong)UITextView *textView;
+@property(nonatomic, strong)NSMutableArray<ImageModel *> *selectImagesArray;
 @end
 
 @implementation SDWriteDiaryViewController
-
++ (SDWriteDiaryViewController *)shareInstance{
+    static SDWriteDiaryViewController *client;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        client = [[SDWriteDiaryViewController allocWithZone:NULL] init];
+    });
+    return client;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = NSLocalizedString(@"写日记", nil);
     [self setContentView];
     [self setGestureRecognizer];
     [self.textView becomeFirstResponder];
+}
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
 }
 - (void)SD_setupNavigationItems{
     [super SD_setupNavigationItems];
@@ -91,9 +103,16 @@
     }
     return _completeButton;
 }
+- (NSMutableArray<ImageModel *> *)selectImagesArray{
+    if (!_selectImagesArray) {
+        _selectImagesArray = [[NSMutableArray alloc] init];
+    }
+    return _selectImagesArray;
+}
 - (SDJournalEditingToolbar *)editingToolbar{
     if (!_editingToolbar) {
         _editingToolbar = [[SDJournalEditingToolbar alloc] init];
+        _editingToolbar.superVC = self;
         __weak typeof(self) weakSelf = self;
         _editingToolbar.editingToolbarBlock = ^(SDJournalEditingToolbar * _Nonnull editingToolbar) {
             if (editingToolbar.completetype == editingToolbarCompleteTypeLift) {
@@ -105,6 +124,11 @@
                     weakSelf.textView.hidden = NO;
                     weakSelf.textView.font = [UIFont systemFontOfSize:editingToolbar.textSetView.fontSize];
                     weakSelf.textView.textColor = editingToolbar.textSetView.fontColor;
+                    weakSelf.textView.backgroundColor = editingToolbar.textThemeView.themeColor;
+                    if (weakSelf.selectImagesArray.count) {
+                        [weakSelf.selectImagesArray removeAllObjects];
+                    }
+                    [weakSelf.selectImagesArray addObjectsFromArray:editingToolbar.textPictureView.selectArray];
                 }
             }
         };
@@ -117,6 +141,7 @@
         _textView.delegate = self;
         [_textView setFont:[UIFont systemFontOfSize:17]];
         [_textView setTextColor:[UIColor blackColor]];
+        [_textView setBackgroundColor:SDH_Color(225, 225, 225, 1)];
     }
     return _textView;
 }

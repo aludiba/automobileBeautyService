@@ -44,9 +44,9 @@
         sVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:sVC animated:YES];
     }else if (sender.tag == 102){
-        SDWriteDiaryViewController *wdVC = [[SDWriteDiaryViewController alloc] init];
-        wdVC.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:wdVC animated:YES];
+        self.wdVC = [[SDWriteDiaryViewController  alloc] init];
+        self.wdVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:self.wdVC animated:YES];
     }
 }
 #pragma mark - getters

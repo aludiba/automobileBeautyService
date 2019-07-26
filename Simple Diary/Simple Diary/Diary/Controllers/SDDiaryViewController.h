@@ -9,9 +9,9 @@
 #import "SDBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class SDWriteDiaryViewController;
 @interface SDDiaryViewController : SDBaseViewController
-
+@property(nonatomic, strong)SDWriteDiaryViewController *wdVC;
 @end
 
 NS_ASSUME_NONNULL_END

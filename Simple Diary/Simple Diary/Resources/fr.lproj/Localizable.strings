@@ -12,6 +12,24 @@
 "搜索" = "recherche";
 "字体大小" = "Taille des caractères";
 "字体颜色" = "Couleur des caractères";
+"照相机" = "caméras";
+"本地相簿" = "Albums de photos locaux";
+"最多只能选择6张图片" = "Un maximum de 6 images peuvent être sélectionnées";
+"取消" = "La suppression des";
+@"相册" = "l’album";
+@"您未打开照片权限" = "Vous n’ouvrez pas le droit de photographie";
+@"相机胶卷" = "Rouleaux pour caméras";
+@"返回" = "Le retour";
+@"确定" = "déterminer";
+
+
+
+
+
+
+
+
+
 
 
 

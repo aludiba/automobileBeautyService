@@ -17,10 +17,11 @@
 #import "SDNDHTTPClient.h"
 #import "MBProgressHUD+SDNJ.h"
 #import "SDHBTool.h"
+#import "MLPhotoImageHelper.h"
 #import "CalendarTool.h"
 #import "SDUIUtilities.h"
 #import "SDButton.h"
-
+#import "SDTabBarController.h"
 //多语言调用
 #define NSLocalizedString(key, comment) [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
 /**颜色*/

@@ -7,6 +7,7 @@
 //
 
 #import "SDTextThemeView.h"
+#import "SDTextThemeButton.h"
 @interface SDTextThemeView()<UIScrollViewDelegate>
 @property(nonatomic, strong)UIScrollView *colorsScrollView;//字体颜色可选滚动区域
 @property(nonatomic, strong)UIView *colorsContentView;//字体颜色可选区域
@@ -18,11 +19,68 @@
 {
     self = [super init];
     if (self) {
-        
+        [self setContentView];
+        [self setLayoutContentView];
+        [self setContentColorsButton];
     }
     return self;
 }
-
+- (void)setContentView{
+    [self addSubview:self.colorsScrollView];
+    [self.colorsScrollView addSubview:self.colorsContentView];
+}
+- (void)setLayoutContentView{
+    [self.colorsScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self).offset(10);
+        make.leading.equalTo(self).offset(10);
+        make.trailing.equalTo(self).offset(-10);
+        make.bottom.equalTo(self).offset(-10);
+    }];
+    [self.colorsContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.colorsScrollView);
+        make.height.equalTo(self.colorsScrollView);
+    }];
+}
+- (void)setContentColorsButton{
+    CGFloat width = 125.0f;
+    CGFloat height = 250.0f;
+    CGFloat margin = 8.0f;
+    for (int i = 0; i < self.colorsArray.count; i++) {
+        UIColor *color = self.colorsArray[i];
+        SDTextThemeButton *colorButton = [[SDTextThemeButton alloc] init];
+        [colorButton addTarget:self action:@selector(colorBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+        colorButton.tag = 100 + i;
+        [colorButton setCurrentColor:color];
+        [self.colorsButtonArray addObject:colorButton];
+        [self.colorsContentView addSubview:colorButton];
+        [colorButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.colorsContentView).offset(margin * (i + 1) + width * i);
+            make.top.equalTo(self.colorsContentView);
+            make.width.mas_equalTo(width);
+            make.height.mas_equalTo(height);
+        }];
+        if (i == 0) {
+            [colorButton setIsSelect:YES];
+        }
+        if (i == self.colorsArray.count -1) {
+            [self.colorsContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.trailing.equalTo(colorButton.mas_trailing);
+            }];
+        }
+    }
+}
+- (void)colorBtnClick:(SDTextThemeButton *)colorButton{
+    NSInteger tag = colorButton.tag;
+    for (int i = 0; i < self.colorsButtonArray.count; i++) {
+        SDTextThemeButton *colorButton = self.colorsButtonArray[i];
+        if (tag == colorButton.tag) {
+            [colorButton setIsSelect:YES];
+            self.themeColor = colorButton.currentColor;
+        }else{
+            [colorButton setIsSelect:NO];
+        }
+    }
+}
 #pragma mark - 属性懒加载
 - (UIScrollView *)colorsScrollView{
     if (!_colorsScrollView) {

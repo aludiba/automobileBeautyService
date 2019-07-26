@@ -12,6 +12,15 @@
 "搜索" = "search";
 "字体大小" = "The font size";
 "字体颜色" = "The font color";
+"照相机" = "The camera";
+"本地相簿" = "Local album";
+"最多只能选择6张图片" = "You can only choose 6 pictures at most";
+"取消" = "cancel";
+@"相册" = "Photo album";
+@"您未打开照片权限" = "You did not open photo permissions";
+@"相机胶卷" = "Camera film";
+@"返回" = "return";
+@"确定" = "determine";
 
 
 

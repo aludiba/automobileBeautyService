@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SDButton : UIButton
-
+@property(nonatomic, strong)UILabel *numberLabel;
 @end
 
 NS_ASSUME_NONNULL_END

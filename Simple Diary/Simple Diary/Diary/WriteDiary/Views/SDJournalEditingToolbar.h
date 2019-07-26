@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-@class SDTextSetView;
 typedef NS_ENUM(NSInteger, editingToolbarCompleteType) {
     editingToolbarCompleteTypeText = 0,
     editingToolbarCompleteTypeStyle = 1,
@@ -17,14 +16,22 @@ typedef NS_ENUM(NSInteger, editingToolbarCompleteType) {
     editingToolbarCompleteTypeWeather = 3,
     editingToolbarCompleteTypeLift = 4,
 };
+@class SDWriteDiaryViewController;
 @class SDJournalEditingToolbar;
+@class SDTextSetView;
+@class SDTextThemeView;
+@class SDTextPictureView;
+
 typedef void(^complete)(SDJournalEditingToolbar *editingToolbar);
 @interface SDJournalEditingToolbar : UIView
+@property(nonatomic, strong)SDWriteDiaryViewController *superVC;
 @property(nonatomic, assign)editingToolbarCompleteType completetype;
 @property(nonatomic, copy)complete editingToolbarBlock;
 @property(nonatomic, assign)Boolean isExpand;
 @property(nonatomic, strong)UIView *contentView;
 @property(nonatomic, strong)SDTextSetView *textSetView;
+@property(nonatomic, strong)SDTextThemeView *textThemeView;
+@property(nonatomic, strong)SDTextPictureView *textPictureView;
 @end
 
 NS_ASSUME_NONNULL_END
