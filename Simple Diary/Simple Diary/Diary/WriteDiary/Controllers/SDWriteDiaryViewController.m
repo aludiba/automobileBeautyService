@@ -7,15 +7,20 @@
 //
 
 #import "SDWriteDiaryViewController.h"
+#import "SDWriteDiaryViewController.h"
 #import "SDJournalEditingToolbar.h"
 #import "SDTextSetView.h"
 #import "SDTextThemeView.h"
 #import "SDTextPictureView.h"
-
+#import "SDTextWeatherView.h"
+#import "SDWriteDiaryModel.h"
 @interface SDWriteDiaryViewController()<UITextViewDelegate>
 @property(nonatomic, strong)UIButton *completeButton;
 @property(nonatomic, strong)SDJournalEditingToolbar *editingToolbar;
 @property(nonatomic, strong)NSMutableArray<ImageModel *> *selectImagesArray;
+@property(nonatomic, strong)NSString *locationInformationString;
+@property(nonatomic, strong)NSString *weatherInformationString;
+@property(nonatomic, strong)SDWriteDiaryModel *releaseModel;
 @end
 
 @implementation SDWriteDiaryViewController
@@ -129,6 +134,8 @@
                         [weakSelf.selectImagesArray removeAllObjects];
                     }
                     [weakSelf.selectImagesArray addObjectsFromArray:editingToolbar.textPictureView.selectArray];
+                    weakSelf.locationInformationString = editingToolbar.textWeatherView.locationInformationString;
+                    weakSelf.weatherInformationString = editingToolbar.textWeatherView.weatherInformationString;
                 }
             }
         };
@@ -144,5 +151,11 @@
         [_textView setBackgroundColor:SDH_Color(225, 225, 225, 1)];
     }
     return _textView;
+}
+- (SDWriteDiaryModel *)releaseModel{
+    if (!_releaseModel) {
+        _releaseModel = [[SDWriteDiaryModel alloc] init];
+    }
+    return _releaseModel;
 }
 @end

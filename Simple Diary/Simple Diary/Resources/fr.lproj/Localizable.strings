@@ -21,6 +21,10 @@
 @"相机胶卷" = "Rouleaux pour caméras";
 @"返回" = "Le retour";
 @"确定" = "déterminer";
+@"提示" = "rappel";
+@"您还未开启定位服务，是否需要开启？" = "Vous n’avez pas encore activé le service de positionnement.";
+
+
 
 
 

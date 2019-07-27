@@ -19,8 +19,8 @@
         [self.numberLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self);
             make.trailing.equalTo(self);
-            make.width.mas_equalTo(12);
-            make.height.mas_equalTo(12);
+            make.width.mas_equalTo(24);
+            make.height.mas_equalTo(24);
         }];
         self.numberLabel.hidden = YES;
     }
@@ -36,8 +36,8 @@
         _numberLabel.backgroundColor = [UIColor blackColor];
         _numberLabel.textColor = [UIColor whiteColor];
         _numberLabel.textAlignment = NSTextAlignmentCenter;
-        _numberLabel.font = [UIFont systemFontOfSize:10];
-        _numberLabel.layer.cornerRadius = 6.0f;
+        _numberLabel.font = [UIFont systemFontOfSize:16];
+        _numberLabel.layer.cornerRadius = 12.0f;
         _numberLabel.layer.masksToBounds = YES;
     }
     return _numberLabel;

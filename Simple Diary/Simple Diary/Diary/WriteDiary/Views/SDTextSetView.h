@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong)SDJournalEditingToolbar *superView;
 @property(nonatomic, assign)CGFloat fontSize;
 @property(nonatomic, strong)UIColor *fontColor;
+@property(nonatomic, strong)NSDictionary *fontRGBDictionary;
 @end
 
 NS_ASSUME_NONNULL_END

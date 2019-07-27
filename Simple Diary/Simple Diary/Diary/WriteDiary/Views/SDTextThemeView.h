@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SDTextThemeView : UIView
 @property(nonatomic, strong)UIColor *themeColor;
+@property(nonatomic, strong)NSDictionary *themeRGBDictionary;
 @end
 
 NS_ASSUME_NONNULL_END

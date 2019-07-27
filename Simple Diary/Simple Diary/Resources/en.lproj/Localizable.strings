@@ -21,6 +21,8 @@
 @"相机胶卷" = "Camera film";
 @"返回" = "return";
 @"确定" = "determine";
+@"提示" = "prompt";
+@"您还未开启定位服务，是否需要开启？" = "You have not started the location service, do you need to start it?";
 
 
 

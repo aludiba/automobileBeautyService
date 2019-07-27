@@ -10,6 +10,8 @@
 #import "SDTextSetView.h"
 #import "SDTextThemeView.h"
 #import "SDTextPictureView.h"
+#import "SDTextWeatherView.h"
+#import "SDDiaryViewController.h"
 #import "SDWriteDiaryViewController.h"
 
 @interface SDJournalEditingToolbar()
@@ -26,6 +28,7 @@
 {
     self = [super init];
     if (self) {
+        self.backgroundColor = [UIColor whiteColor];
         [self setContentView];
         [self setLayoutView];
         self.isExpand = NO;
@@ -45,6 +48,7 @@
     [self.contentView addSubview:self.textSetView];
     [self.contentView addSubview:self.textThemeView];
     [self.contentView addSubview:self.textPictureView];
+    [self.contentView addSubview:self.textWeatherView];
 }
 - (void)setLayoutView{
     CGFloat width = 60.0f;
@@ -103,46 +107,71 @@
         make.leading.equalTo(self.contentView);
         make.trailing.equalTo(self.contentView);
         make.top.equalTo(self.contentView);
-        make.bottom.equalTo(self.contentView);
+        make.bottom.equalTo(self.contentView).offset(-5);
     }];
     [self.textThemeView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.contentView);
         make.trailing.equalTo(self.contentView);
         make.top.equalTo(self.contentView);
-        make.bottom.equalTo(self.contentView);
+        make.bottom.equalTo(self.contentView).offset(-5);
     }];
     self.textThemeView.hidden = YES;
     [self.textPictureView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.contentView);
         make.trailing.equalTo(self.contentView);
         make.top.equalTo(self.contentView);
-        make.bottom.equalTo(self.contentView);
+        make.bottom.equalTo(self.contentView).offset(-5);
     }];
     self.textPictureView.hidden = YES;
+    [self.textWeatherView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.contentView);
+        make.trailing.equalTo(self.contentView);
+        make.top.equalTo(self.contentView);
+        make.bottom.equalTo(self.contentView).offset(-5);
+    }];
+    self.textWeatherView.hidden = YES;
 }
 #pragma mark - actions
 - (void)btnClick:(SDButton *)sender{
     if (sender.tag == 100) {
-        NSLog(@"编辑字体~~~");
         self.textSetView.hidden = NO;
         self.textThemeView.hidden = YES;
         self.textPictureView.hidden = YES;
+        self.textWeatherView.hidden = YES;
+        self.contentView.hidden = NO;
+        [SDTabBarController shareInstance].SDDiaryVC.wdVC.textView.hidden = YES;
+        [[SDTabBarController shareInstance].SDDiaryVC.wdVC.textView resignFirstResponder];
     }else if(sender.tag == 101){
-        NSLog(@"编辑主题样式~~~");
         self.textSetView.hidden = YES;
         self.textThemeView.hidden = NO;
         self.textPictureView.hidden = YES;
+        self.textWeatherView.hidden = YES;
+        self.contentView.hidden = NO;
+        [SDTabBarController shareInstance].SDDiaryVC.wdVC.textView.hidden = YES;
+        [[SDTabBarController shareInstance].SDDiaryVC.wdVC.textView resignFirstResponder];
     }else if(sender.tag == 102){
-        NSLog(@"编辑图片~~~");
         self.textSetView.hidden = YES;
         self.textThemeView.hidden = YES;
         self.textPictureView.hidden = NO;
+        self.textWeatherView.hidden = YES;
+        self.contentView.hidden = NO;
+        [SDTabBarController shareInstance].SDDiaryVC.wdVC.textView.hidden = YES;
+        [[SDTabBarController shareInstance].SDDiaryVC.wdVC.textView resignFirstResponder];
     }else if(sender.tag == 103){
-        NSLog(@"编辑天气~~~");
-
+        self.textSetView.hidden = YES;
+        self.textThemeView.hidden = YES;
+        self.textPictureView.hidden = YES;
+        self.textWeatherView.hidden = NO;
+        self.contentView.hidden = NO;
+        [SDTabBarController shareInstance].SDDiaryVC.wdVC.textView.hidden = YES;
+        [[SDTabBarController shareInstance].SDDiaryVC.wdVC.textView resignFirstResponder];
     }else if(sender.tag == 104){
-        NSLog(@"收起来~~~");
         self.completetype = editingToolbarCompleteTypeLift;
+        if ([SDTabBarController shareInstance].SDDiaryVC.wdVC.textView.hidden == YES) {
+            self.isExpand = YES;
+        }else{
+            self.isExpand = NO;
+        }
         self.isExpand = !self.isExpand;
         if (self.isExpand) {
             [self.superVC.textView resignFirstResponder];
@@ -218,7 +247,6 @@
     if (!_contentView) {
         _contentView = [[UIView alloc] init];
         _contentView.backgroundColor = SDH_Color(242, 242, 242, 1);
-        _contentView.alpha = 0.8;
     }
     return _contentView;
 }
@@ -239,7 +267,23 @@
     if (!_textPictureView) {
         _textPictureView = [[SDTextPictureView alloc] init];
         _textPictureView.superVC = self.superVC;
+        __weak typeof(self) weakSelf = self;
+        _textPictureView.pictureBlock = ^(SDTextPictureView * _Nonnull pictureView) {
+            if (weakSelf.textPictureView.selectArray.count) {
+                weakSelf.editPictureButton.numberLabel.hidden = NO;
+                weakSelf.editPictureButton.numberLabel.text = [NSString stringWithFormat:@"%ld",weakSelf.textPictureView.selectArray.count];
+            }else{
+                weakSelf.editPictureButton.numberLabel.text = @"0";
+                weakSelf.editPictureButton.numberLabel.hidden = YES;
+            }
+        };
     }
     return _textPictureView;
+}
+- (SDTextWeatherView *)textWeatherView{
+    if (!_textWeatherView) {
+        _textWeatherView = [[SDTextWeatherView alloc] init];
+    }
+    return _textWeatherView;
 }
 @end

@@ -16,11 +16,11 @@
 @interface SDTextPictureView()<UICollectionViewDelegate,UICollectionViewDataSource,UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @end
 @implementation SDTextPictureView
-- (instancetype)init
-{
+- (instancetype)init{
     self = [super init];
     if (self) {
-         [PHCollectionList fetchTopLevelUserCollectionsWithOptions:nil];
+        self.backgroundColor = SDH_Color(247, 252, 251, 1);
+        [PHCollectionList fetchTopLevelUserCollectionsWithOptions:nil];
         self.maxCount = 6;
         [self initCollectionView];
     }
@@ -50,23 +50,20 @@
                                 if (obj.asset) {
                                     [MLPhotoImageHelper getImageDataWithAsset:obj.asset complete:^(UIImage *image,UIImage*HDImage) {
                                         if (image) {
-                                            
                                             [weakSelf.imageDataSource addObject:image];
-                                            
                                         }
                                     }];
-                                    
                                 }
                                 else{
                                     [weakSelf.imageDataSource addObject:obj.thumbImage];
                                 }
                                 dispatch_async(dispatch_get_main_queue(), ^{
-                                    
                                     [weakSelf.collectionView reloadData];
-                                    
                                     [weakSelf scrollsToBottomAnimated:NO];
+                                    if (weakSelf.pictureBlock) {
+                                        weakSelf.pictureBlock(self);
+                                    }
                                 });
-                                
                             }];
                         });
                     };
@@ -121,17 +118,19 @@
     [self.selectArray removeObjectAtIndex:sender.tag];
     [self.imageDataSource removeObjectAtIndex:sender.tag];
     [self.collectionView reloadData];
+    if (self.pictureBlock) {
+        self.pictureBlock(self);
+    }
 }
-- (void)initCollectionView
-{
+- (void)initCollectionView{
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.minimumLineSpacing = 2.0;
     layout.minimumInteritemSpacing = 0;
-    CGFloat width = (SDWIDTH - 2 * 3) / 4;
+    CGFloat width = (SDWIDTH - 2 * 3) / 2;
     layout.itemSize = CGSizeMake(width, width);
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, SDWIDTH, width + 10) collectionViewLayout:layout];
-    self.collectionView.backgroundColor = [UIColor whiteColor];
+    self.collectionView.backgroundColor = SDH_Color(247, 252, 251, 1);;
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     [SDTabBarController shareInstance].SDDiaryVC.wdVC.automaticallyAdjustsScrollViewInsets = NO;

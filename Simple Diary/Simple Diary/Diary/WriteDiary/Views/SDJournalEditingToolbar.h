@@ -21,7 +21,7 @@ typedef NS_ENUM(NSInteger, editingToolbarCompleteType) {
 @class SDTextSetView;
 @class SDTextThemeView;
 @class SDTextPictureView;
-
+@class SDTextWeatherView;
 typedef void(^complete)(SDJournalEditingToolbar *editingToolbar);
 @interface SDJournalEditingToolbar : UIView
 @property(nonatomic, strong)SDWriteDiaryViewController *superVC;
@@ -32,6 +32,7 @@ typedef void(^complete)(SDJournalEditingToolbar *editingToolbar);
 @property(nonatomic, strong)SDTextSetView *textSetView;
 @property(nonatomic, strong)SDTextThemeView *textThemeView;
 @property(nonatomic, strong)SDTextPictureView *textPictureView;
+@property(nonatomic, strong)SDTextWeatherView *textWeatherView;
 @end
 
 NS_ASSUME_NONNULL_END
