@@ -17,8 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong)NSString *locationInformationString;
 @property(nonatomic, strong)NSString *weatherInformationString;
 @property(nonatomic, strong)NSString *content;
-@property(nonatomic, strong)NSDate *date;
-@property(nonatomic, strong)NSString *whatDayString;
+@property(nonatomic, strong)NSString *dateString;
+@property(nonatomic, strong)NSString *weekDayString;
 @end
 
 NS_ASSUME_NONNULL_END

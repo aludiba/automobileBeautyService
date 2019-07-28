@@ -168,6 +168,7 @@
             [btn setImage:[UIImage imageNamed:imageNameString] forState:UIControlStateNormal];
             [_weatherButtonArray addObject:btn];
         }
+        self.weatherInformationString = self.weatherButtonImageNamesArray[0];
     }
     return _weatherButtonArray;
 }

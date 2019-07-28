@@ -10,6 +10,20 @@
 		7207BBAC22EBEE3A009838F1 /* SDTextWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7207BBAB22EBEE3A009838F1 /* SDTextWeatherView.m */; };
 		7207BBAE22EC1DFA009838F1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7207BBAD22EC1DFA009838F1 /* CoreLocation.framework */; };
 		7207BBB122EC344E009838F1 /* SDWriteDiaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7207BBB022EC344E009838F1 /* SDWriteDiaryModel.m */; };
+		722222BC22ED3CD2004B8352 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 722222B922ED3CD2004B8352 /* NSDictionary+log.m */; };
+		722222BD22ED3CD2004B8352 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 722222BB22ED3CD2004B8352 /* NSArray+log.m */; };
+		722222BF22ED6DAD004B8352 /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222BE22ED6DAD004B8352 /* BmobSDK.framework */; };
+		722222C122ED6E12004B8352 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222C022ED6E12004B8352 /* Security.framework */; };
+		722222C322ED6E1F004B8352 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222C222ED6E1F004B8352 /* CoreGraphics.framework */; };
+		722222C522ED6E2A004B8352 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222C422ED6E2A004B8352 /* MobileCoreServices.framework */; };
+		722222C722ED6E34004B8352 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222C622ED6E34004B8352 /* CFNetwork.framework */; };
+		722222C922ED6E41004B8352 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222C822ED6E41004B8352 /* CoreTelephony.framework */; };
+		722222CB22ED6E4D004B8352 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222CA22ED6E4D004B8352 /* SystemConfiguration.framework */; };
+		722222CD22ED6E5C004B8352 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222CC22ED6E5C004B8352 /* libz.1.2.5.tbd */; };
+		722222CF22ED6E6E004B8352 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222CE22ED6E6E004B8352 /* libicucore.tbd */; };
+		722222D122ED6E7F004B8352 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222D022ED6E7F004B8352 /* libsqlite3.tbd */; };
+		722222D322ED6F30004B8352 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222D222ED6F30004B8352 /* libc++.tbd */; };
+		722222D522ED6F3E004B8352 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222D422ED6F3E004B8352 /* Photos.framework */; };
 		A5B3B3F1E1F1721A84B7C230 /* libPods-Simple Diary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F50E075A98AAD62455C4831 /* libPods-Simple Diary.a */; };
 		AE12200C22EA86F400FB8E9B /* SDTextThemeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AE12200B22EA86F400FB8E9B /* SDTextThemeButton.m */; };
 		AE12200F22EAA1FB00FB8E9B /* SDTextPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE12200E22EAA1FB00FB8E9B /* SDTextPictureView.m */; };
@@ -64,6 +78,22 @@
 		7207BBAD22EC1DFA009838F1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7207BBAF22EC344E009838F1 /* SDWriteDiaryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SDWriteDiaryModel.h; path = "Simple Diary/Diary/WriteDiary/SDWriteDiaryModel.h"; sourceTree = SOURCE_ROOT; };
 		7207BBB022EC344E009838F1 /* SDWriteDiaryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SDWriteDiaryModel.m; path = "Simple Diary/Diary/WriteDiary/SDWriteDiaryModel.m"; sourceTree = SOURCE_ROOT; };
+		722222B822ED3CD2004B8352 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		722222B922ED3CD2004B8352 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
+		722222BA22ED3CD2004B8352 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
+		722222BB22ED3CD2004B8352 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		722222BE22ED6DAD004B8352 /* BmobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BmobSDK.framework; sourceTree = "<group>"; };
+		722222C022ED6E12004B8352 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		722222C222ED6E1F004B8352 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		722222C422ED6E2A004B8352 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		722222C622ED6E34004B8352 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		722222C822ED6E41004B8352 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		722222CA22ED6E4D004B8352 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		722222CC22ED6E5C004B8352 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		722222CE22ED6E6E004B8352 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		722222D022ED6E7F004B8352 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		722222D222ED6F30004B8352 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		722222D422ED6F3E004B8352 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		AE12200A22EA86F400FB8E9B /* SDTextThemeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDTextThemeButton.h; sourceTree = "<group>"; };
 		AE12200B22EA86F400FB8E9B /* SDTextThemeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDTextThemeButton.m; sourceTree = "<group>"; };
 		AE12200D22EAA1FB00FB8E9B /* SDTextPictureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDTextPictureView.h; sourceTree = "<group>"; };
@@ -149,7 +179,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				722222D522ED6F3E004B8352 /* Photos.framework in Frameworks */,
+				722222D322ED6F30004B8352 /* libc++.tbd in Frameworks */,
+				722222D122ED6E7F004B8352 /* libsqlite3.tbd in Frameworks */,
+				722222CF22ED6E6E004B8352 /* libicucore.tbd in Frameworks */,
+				722222CD22ED6E5C004B8352 /* libz.1.2.5.tbd in Frameworks */,
+				722222CB22ED6E4D004B8352 /* SystemConfiguration.framework in Frameworks */,
+				722222C922ED6E41004B8352 /* CoreTelephony.framework in Frameworks */,
+				722222C722ED6E34004B8352 /* CFNetwork.framework in Frameworks */,
+				722222C522ED6E2A004B8352 /* MobileCoreServices.framework in Frameworks */,
+				722222C322ED6E1F004B8352 /* CoreGraphics.framework in Frameworks */,
+				722222C122ED6E12004B8352 /* Security.framework in Frameworks */,
 				7207BBAE22EC1DFA009838F1 /* CoreLocation.framework in Frameworks */,
+				722222BF22ED6DAD004B8352 /* BmobSDK.framework in Frameworks */,
 				A5B3B3F1E1F1721A84B7C230 /* libPods-Simple Diary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,6 +211,17 @@
 		5DA24292002BEB7D267E43D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				722222D422ED6F3E004B8352 /* Photos.framework */,
+				722222D222ED6F30004B8352 /* libc++.tbd */,
+				722222D022ED6E7F004B8352 /* libsqlite3.tbd */,
+				722222CE22ED6E6E004B8352 /* libicucore.tbd */,
+				722222CC22ED6E5C004B8352 /* libz.1.2.5.tbd */,
+				722222CA22ED6E4D004B8352 /* SystemConfiguration.framework */,
+				722222C822ED6E41004B8352 /* CoreTelephony.framework */,
+				722222C622ED6E34004B8352 /* CFNetwork.framework */,
+				722222C422ED6E2A004B8352 /* MobileCoreServices.framework */,
+				722222C222ED6E1F004B8352 /* CoreGraphics.framework */,
+				722222C022ED6E12004B8352 /* Security.framework */,
 				7207BBAD22EC1DFA009838F1 /* CoreLocation.framework */,
 				4F50E075A98AAD62455C4831 /* libPods-Simple Diary.a */,
 			);
@@ -393,6 +446,7 @@
 		AE92DEC922E2AD0A0013618C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				722222BE22ED6DAD004B8352 /* BmobSDK.framework */,
 				AE92DEF422E2E56D0013618C /* Localizable.strings */,
 			);
 			path = Resources;
@@ -402,6 +456,10 @@
 			isa = PBXGroup;
 			children = (
 				AE12201022EAC8B200FB8E9B /* MLPhotoKit */,
+				722222B822ED3CD2004B8352 /* NSArray+log.h */,
+				722222BB22ED3CD2004B8352 /* NSArray+log.m */,
+				722222BA22ED3CD2004B8352 /* NSDictionary+log.h */,
+				722222B922ED3CD2004B8352 /* NSDictionary+log.m */,
 				AE92DEE122E2BEF00013618C /* SDHBTool.h */,
 				AE92DEE222E2BEF00013618C /* SDHBTool.m */,
 				AE92DEDE22E2BEBF0013618C /* CalendarTool.h */,
@@ -644,6 +702,7 @@
 				AE92DEE622E2C1300013618C /* SDTabBarController.m in Sources */,
 				AE8E5B3222E2FCF400818AA0 /* SDWriteDiaryViewController.m in Sources */,
 				AE92DEBB22E2AB550013618C /* Simple_Diary.xcdatamodeld in Sources */,
+				722222BD22ED3CD2004B8352 /* NSArray+log.m in Sources */,
 				AE12203C22EAC8B200FB8E9B /* MLAlbumListTableViewCell.m in Sources */,
 				AE8E5B3D22E305EB00818AA0 /* SDSearchViewController.m in Sources */,
 				AE12203822EAC8B200FB8E9B /* MLAlbumListTableViewController.m in Sources */,
@@ -651,6 +710,7 @@
 				AE92DEE922E2CB4C0013618C /* SDBaseViewController.m in Sources */,
 				AE12203722EAC8B200FB8E9B /* MLShowViewController.m in Sources */,
 				7207BBAC22EBEE3A009838F1 /* SDTextWeatherView.m in Sources */,
+				722222BC22ED3CD2004B8352 /* NSDictionary+log.m in Sources */,
 				7207BBB122EC344E009838F1 /* SDWriteDiaryModel.m in Sources */,
 				AE92DEEC22E2CD9E0013618C /* SDDiaryViewController.m in Sources */,
 				AE92DEE322E2BEF00013618C /* SDHBTool.m in Sources */,
@@ -799,6 +859,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44V2JFTR7R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Simple\\ Diary/Resources",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Simple Diary/Common/SD_PrefixHeader.pch";
 				INFOPLIST_FILE = "Simple Diary/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -819,6 +883,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44V2JFTR7R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Simple\\ Diary/Resources",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Simple Diary/Common/SD_PrefixHeader.pch";
 				INFOPLIST_FILE = "Simple Diary/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

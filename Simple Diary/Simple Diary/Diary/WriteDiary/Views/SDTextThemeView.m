@@ -71,6 +71,8 @@
             }];
         }
     }
+    self.themeColor = SDH_Color(225, 225, 225, 1);
+    self.themeRGBDictionary = self.fontColorsArray[0];
 }
 - (void)colorBtnClick:(SDTextThemeButton *)colorButton{
     NSInteger tag = colorButton.tag;

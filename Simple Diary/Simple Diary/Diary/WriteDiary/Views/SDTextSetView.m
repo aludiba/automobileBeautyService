@@ -202,7 +202,8 @@
 - (UIView *)colorTipsView{
     if (!_colorTipsView) {
         _colorTipsView = [[UIView alloc] init];
-        _colorTipsView.backgroundColor = [UIColor blackColor];
+        _colorTipsView.backgroundColor = SDH_Color(0, 0, 0, 1);
+        self.fontColor = SDH_Color(0, 0, 0, 1);
     }
     return _colorTipsView;
 }
@@ -376,6 +377,8 @@
         [_colorsArray addObject:color34];
         NSDictionary *dic34 = @{@"R":[NSNumber numberWithInteger:245],@"G":[NSNumber numberWithInteger:222],@"B":[NSNumber numberWithInteger:179]};
         [self.fontColorsArray addObject:dic34];
+        
+        self.fontRGBDictionary = self.fontColorsArray[0];
     }
     return _colorsArray;
 }
