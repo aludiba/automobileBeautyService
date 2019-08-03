@@ -10,10 +10,12 @@
 #import "SDCalendarViewController.h"
 #import "SDSearchViewController.h"
 #import "SDWriteDiaryViewController.h"
-@interface SDDiaryViewController ()
+#import "SDShowDiaryTableViewCell.h"
+@interface SDDiaryViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UIButton *calendarButton;
 @property(nonatomic, strong)UIButton *searchButton;
 @property(nonatomic, strong)UIButton *editorButton;
+@property(nonatomic, strong)UITableView *mainTable;
 @end
 
 @implementation SDDiaryViewController
@@ -49,6 +51,10 @@
         [self.navigationController pushViewController:self.wdVC animated:YES];
     }
 }
+- (void)loadData{
+    
+}
+
 #pragma mark - getters
 - (UIButton *)calendarButton{
     if (!_calendarButton) {
@@ -76,5 +82,25 @@
         [_editorButton setImage:[UIImage imageNamed:@"SD_edit"] forState:UIControlStateNormal];
     }
     return _editorButton;
+}
+- (UITableView *)mainTable{
+    if (!_mainTable) {
+        _mainTable = [[UITableView alloc] init];
+        _mainTable.rowHeight = UITableViewAutomaticDimension;
+        _mainTable.estimatedRowHeight = 55.0f;
+        _mainTable.delegate = self;
+        _mainTable.dataSource = self;
+        _mainTable.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadData)];
+        [_mainTable registerClass:[SDShowDiaryTableViewCell class] forCellReuseIdentifier:@"SDShowDiaryTableViewCell"];
+        _mainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
+        [self.view addSubview:_mainTable];
+        [_mainTable mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.view);
+            make.top.equalTo(self.mas_topLayoutGuideBottom);
+            make.trailing.equalTo(self.view);
+            make.bottom.equalTo(self.view);
+        }];
+    }
+    return _mainTable;
 }
 @end

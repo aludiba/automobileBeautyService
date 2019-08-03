@@ -11,14 +11,15 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SDWriteDiaryModel : NSObject
-@property(nonatomic, strong)NSString *fontSizeString;
-@property(nonatomic, strong)NSDictionary *fontRGBDictionary;
-@property(nonatomic, strong)NSDictionary *themeRGBDictionary;
-@property(nonatomic, strong)NSString *locationInformationString;
-@property(nonatomic, strong)NSString *weatherInformationString;
+@property(nonatomic, strong)NSString *fontSize;
+@property(nonatomic, strong)NSDictionary *fontRGB;
+@property(nonatomic, strong)NSDictionary *themeRGB;
+@property(nonatomic, strong)NSString *location;
+@property(nonatomic, strong)NSString *weather;
 @property(nonatomic, strong)NSString *content;
-@property(nonatomic, strong)NSString *dateString;
-@property(nonatomic, strong)NSString *weekDayString;
+@property(nonatomic, strong)NSString *date;
+@property(nonatomic, strong)NSString *weekDay;
+@property(nonatomic, strong)NSArray *imageUrls;
 @end
 
 NS_ASSUME_NONNULL_END

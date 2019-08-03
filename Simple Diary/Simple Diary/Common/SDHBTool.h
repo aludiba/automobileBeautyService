@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)getDataSourcePath:(NSString *)sourceName andType:(NSString *)fileType;
 //得到documents目录
 + (NSString *)getDocumentPath:(NSString *)fileName;
++ (NSData *)compressImage:(UIImage *)image toByte:(NSUInteger) maxLength;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -23,6 +23,16 @@
 @"确定" = "déterminer";
 @"提示" = "rappel";
 @"您还未开启定位服务，是否需要开启？" = "Vous n’avez pas encore activé le service de positionnement.";
+@"请输入日记内容" = "Veuillez indiquer le contenu du journal";
+@"星期日" = "dimanche";
+@"星期一" = "lundi";
+@"星期二" = "mardi";
+@"星期三" = "mercredi";
+@"星期四" = "jeudi";
+@"星期五" = "vendredi";
+@"星期六" = "samedi";
+
+
 
 
 

@@ -14,10 +14,11 @@
 #import "SDTextPictureView.h"
 #import "SDTextWeatherView.h"
 #import "SDWriteDiaryModel.h"
+#import "MLPhotoImageHelper.h"
 @interface SDWriteDiaryViewController()<UITextViewDelegate>
 @property(nonatomic, strong)UIButton *completeButton;
 @property(nonatomic, strong)SDJournalEditingToolbar *editingToolbar;
-@property(nonatomic, strong)NSMutableArray<ImageModel *> *selectImagesArray;
+@property(nonatomic, strong)NSMutableArray *selectImagesArray;
 @property(nonatomic, strong)NSString *locationInformationString;
 @property(nonatomic, strong)NSString *weatherInformationString;
 @property(nonatomic, strong)SDWriteDiaryModel *releaseModel;
@@ -96,11 +97,11 @@
         make.trailing.equalTo(self.view);
         make.bottom.equalTo(self.mas_bottomLayoutGuideBottom).offset(0);
     }];
-    self.releaseModel.fontSizeString = [NSString stringWithFormat:@"%lf",self.editingToolbar.textSetView.fontSize];
-    self.releaseModel.fontRGBDictionary = self.editingToolbar.textSetView.fontRGBDictionary;
-    self.releaseModel.themeRGBDictionary = self.editingToolbar.textThemeView.themeRGBDictionary;
-    self.releaseModel.locationInformationString = self.editingToolbar.textWeatherView.locationInformationString;
-    self.releaseModel.weatherInformationString = self.editingToolbar.textWeatherView.weatherInformationString;
+    self.releaseModel.fontSize = [NSString stringWithFormat:@"%lf",self.editingToolbar.textSetView.fontSize];
+    self.releaseModel.fontRGB = self.editingToolbar.textSetView.fontRGBDictionary;
+    self.releaseModel.themeRGB = self.editingToolbar.textThemeView.themeRGBDictionary;
+    self.releaseModel.location = self.editingToolbar.textWeatherView.locationInformationString;
+    self.releaseModel.weather = self.editingToolbar.textWeatherView.weatherInformationString;
     
 }
 - (void)setGestureRecognizer{
@@ -120,36 +121,87 @@
 #pragma mark - actions
 - (void)btnClick:(UIButton *)sender{
     self.releaseModel.content = self.textView.text;
+    if (!self.releaseModel.content.length) {
+        [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请输入日记内容", nil)];
+    }
     NSDate *nowDate = [[NSDate alloc] init];
-    self.releaseModel.dateString = [self dateToString:nowDate withDateFormat:@"yyyy-MM-dd HH:mm"];
+    self.releaseModel.date = [self dateToString:nowDate withDateFormat:@"yyyy-MM-dd HH:mm"];
     NSInteger weekDay = [CalendarTool convertDateToWeekDay:nowDate];
     switch (weekDay) {
         case 0:
-            self.releaseModel.weekDayString = @"星期日";
+            self.releaseModel.weekDay = NSLocalizedString(@"星期日", nil);
             break;
         case 1:
-            self.releaseModel.weekDayString = @"星期一";
+            self.releaseModel.weekDay = NSLocalizedString(@"星期一", nil);
             break;
         case 2:
-            self.releaseModel.weekDayString = @"星期二";
+            self.releaseModel.weekDay = NSLocalizedString(@"星期二", nil);
             break;
         case 3:
-            self.releaseModel.weekDayString = @"星期三";
+            self.releaseModel.weekDay = NSLocalizedString(@"星期三", nil);
             break;
         case 4:
-            self.releaseModel.weekDayString = @"星期四";
+            self.releaseModel.weekDay = NSLocalizedString(@"星期四", nil);
             break;
         case 5:
-            self.releaseModel.weekDayString = @"星期五";
+            self.releaseModel.weekDay = NSLocalizedString(@"星期五", nil);
             break;
         case 6:
-            self.releaseModel.weekDayString = @"星期六";
+            self.releaseModel.weekDay = NSLocalizedString(@"星期六", nil);
             break;
         default:
             break;
     }
-    NSDictionary *jsonDictionary = (NSDictionary *)[self.releaseModel yy_modelToJSONObject];
-    NSLog(@"写日记完成后的数据：%@",jsonDictionary);
+    if (self.selectImagesArray.count) {
+    NSLog(@"self.selectImagesArray:%@",self.selectImagesArray);
+    [BmobFile filesUploadBatchWithPaths:self.selectImagesArray progressBlock:^(int index, float progress) {
+        NSLog(@"index %d progress %f",index,progress);
+    } resultBlock:^(NSArray *array, BOOL isSuccessful, NSError *error) {
+        if (isSuccessful) {
+            //存放文件URL的数组
+            NSMutableArray *fileArray = [NSMutableArray array];
+            for (int i = 0; i < array.count;i++) {
+                BmobFile *file = array [i];
+                [fileArray addObject:file.url];
+            }
+            self.releaseModel.imageUrls = [fileArray copy];
+            NSDictionary *jsonDictionary = (NSDictionary *)[self.releaseModel yy_modelToJSONObject];
+            BmobObject *diary = [BmobObject objectWithClassName:@"Diary"];
+            [diary saveAllWithDictionary:jsonDictionary];
+            [diary saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+                if (isSuccessful) {
+                    //创建成功后的动作
+                    NSLog(@"保存成功~~~");
+                    [self.navigationController popViewControllerAnimated:YES];
+                } else if (error){
+                    //发生错误后的动作
+                    NSLog(@"保存错误%@",error);
+                } else {
+                    NSLog(@"Unknow error");
+                }
+            }];
+        }else{
+            NSLog(@"上传图片发生错误error:%@",error.userInfo);
+        }
+    }];
+    }else{
+        NSDictionary *jsonDictionary = (NSDictionary *)[self.releaseModel yy_modelToJSONObject];
+        NSLog(@"写日记完成后的数据：%@",jsonDictionary);
+        BmobObject *diary = [BmobObject objectWithClassName:@"Diary"];
+        [diary saveAllWithDictionary:jsonDictionary];
+        [diary saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+            if (isSuccessful) {
+                //创建成功后的动作
+                NSLog(@"保存成功~~~");
+                [self.navigationController popViewControllerAnimated:YES];
+            } else if (error){
+                //发生错误后的动作
+                NSLog(@"保存错误%@",error);
+            } else {
+                NSLog(@"Unknow error");
+            }
+        }];
+    }
 }
 //日期格式转字符串
 - (NSString *)dateToString:(NSDate *)date withDateFormat:(NSString *)format{
@@ -182,7 +234,7 @@
     }
     return _completeButton;
 }
-- (NSMutableArray<ImageModel *> *)selectImagesArray{
+- (NSMutableArray *)selectImagesArray{
     if (!_selectImagesArray) {
         _selectImagesArray = [[NSMutableArray alloc] init];
     }
@@ -202,19 +254,34 @@
                     editingToolbar.contentView.hidden = YES;
                     weakSelf.textView.hidden = NO;
                     weakSelf.textView.font = [UIFont systemFontOfSize:editingToolbar.textSetView.fontSize];
-                    weakSelf.releaseModel.fontSizeString = [NSString stringWithFormat:@"%lf",editingToolbar.textSetView.fontSize];
+                    weakSelf.releaseModel.fontSize = [NSString stringWithFormat:@"%lf",editingToolbar.textSetView.fontSize];
                     weakSelf.textView.textColor = editingToolbar.textSetView.fontColor;
-                    weakSelf.releaseModel.fontRGBDictionary = editingToolbar.textSetView.fontRGBDictionary;
+                    weakSelf.releaseModel.fontRGB = editingToolbar.textSetView.fontRGBDictionary;
                     weakSelf.textView.backgroundColor = editingToolbar.textThemeView.themeColor;
-                    weakSelf.releaseModel.themeRGBDictionary = editingToolbar.textThemeView.themeRGBDictionary;
+                    weakSelf.releaseModel.themeRGB = editingToolbar.textThemeView.themeRGBDictionary;
                     if (weakSelf.selectImagesArray.count) {
                         [weakSelf.selectImagesArray removeAllObjects];
                     }
-                    [weakSelf.selectImagesArray addObjectsFromArray:editingToolbar.textPictureView.selectArray];
+                    for (int i = 0; i < editingToolbar.textPictureView.selectArray.count; i++) {
+                        ImageModel *imageModel = editingToolbar.textPictureView.selectArray[i];
+                        [MLPhotoImageHelper getImageDataWithAsset:imageModel.asset complete:^(UIImage *image,UIImage*HDImage) {
+                            if (image) {
+                                NSData *imageData = [SDHBTool compressImage:image toByte:100000]; 
+                                NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+                                    NSString *doucument=paths[0];
+                                NSString *filename = [imageModel.asset valueForKey:@"filename"];
+
+                                NSString *fullpath = [doucument stringByAppendingPathComponent:filename];
+                                
+                                [imageData writeToFile:fullpath atomically:YES];
+                                [weakSelf.selectImagesArray addObject:fullpath];
+                            }
+                        }];
+                    }
                     weakSelf.locationInformationString = editingToolbar.textWeatherView.locationInformationString;
-                weakSelf.releaseModel.locationInformationString = editingToolbar.textWeatherView.locationInformationString;
+                    weakSelf.releaseModel.location = editingToolbar.textWeatherView.locationInformationString;
                     weakSelf.weatherInformationString = editingToolbar.textWeatherView.weatherInformationString;
-                weakSelf.releaseModel.weatherInformationString = editingToolbar.textWeatherView.weatherInformationString;
+                weakSelf.releaseModel.weather = editingToolbar.textWeatherView.weatherInformationString;
 
                 }
             }
@@ -235,6 +302,7 @@
 - (SDWriteDiaryModel *)releaseModel{
     if (!_releaseModel) {
         _releaseModel = [[SDWriteDiaryModel alloc] init];
+        _releaseModel.imageUrls = [[NSArray alloc] init];
     }
     return _releaseModel;
 }

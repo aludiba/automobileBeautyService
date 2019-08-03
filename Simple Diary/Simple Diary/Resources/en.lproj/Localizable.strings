@@ -23,6 +23,21 @@
 @"确定" = "determine";
 @"提示" = "prompt";
 @"您还未开启定位服务，是否需要开启？" = "You have not started the location service, do you need to start it?";
+@"请输入日记内容" = "Please enter diary contents";
+@"星期日" = "Sunday";
+@"星期一" = "Monday";
+@"星期二" = "Tuesday";
+@"星期三" = "Wednesday";
+@"星期四" = "Thursday";
+@"星期五" = "Friday";
+@"星期六" = "Saturday";
+
+
+
+
+
+
+
 
 
 
