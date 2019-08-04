@@ -31,6 +31,12 @@
 @"星期四" = "jeudi";
 @"星期五" = "vendredi";
 @"星期六" = "samedi";
+@"详情" = "Pour de plus amples informations";
+@"删除成功" = "Suppression réussie";
+@"确定删除?" = "Suppression définitive?";
+
+
+
 
 
 

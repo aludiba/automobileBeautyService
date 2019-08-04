@@ -31,6 +31,10 @@
 @"星期四" = "Thursday";
 @"星期五" = "Friday";
 @"星期六" = "Saturday";
+@"详情" = "details";
+@"删除成功" = "Delete the success";
+@"确定删除?" = "Sure to delete?";
+
 
 
 

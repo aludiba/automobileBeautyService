@@ -13,7 +13,6 @@
 @interface SDTextWeatherView()<CLLocationManagerDelegate>
 @property (nonatomic, strong) CLLocationManager *locationManager;//设置manager
 @property(nonatomic,strong)UILabel *locationTitleLabel;
-@property(nonatomic,strong)UILabel *locationInformationLabel;
 @property(nonatomic,strong)UILabel *weatherTitleLabel;
 @property(nonatomic,strong)NSMutableArray *weatherButtonImageNamesArray;
 @property(nonatomic,strong)NSMutableArray *weatherButtonArray;

@@ -16,7 +16,7 @@
 @property(nonatomic, strong)UILabel *contentLabel;
 @property(nonatomic, strong)UILabel *locationLabel;
 @property(nonatomic, strong)UIImageView *imgView;
-@property(nonatomic, strong)CGFloat contentHeight;
+@property(nonatomic, assign)CGFloat contentHeight;
 @end
 @implementation SDShowDiaryTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -39,10 +39,12 @@
         
         [self.backView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.headLabel.mas_trailing).offset(5);
-            make.top.equalTo(self.contentView).offset(5);
+            make.top.equalTo(self.contentView).offset(10);
             make.trailing.equalTo(self.contentView).offset(-5);
-            make.bottom.equalTo(self.contentView).offset(-5);
+            make.bottom.equalTo(self.contentView).offset(-10);
         }];
+        self.backView.layer.cornerRadius = 4.0f;
+        self.backView.layer.masksToBounds = YES;
         [self.imgView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.equalTo(self.backView);
             make.trailing.equalTo(self.backView).offset(-5);
@@ -52,23 +54,23 @@
         self.imgView.layer.cornerRadius = 4;
         self.imgView.layer.masksToBounds = YES;
         [self.dateLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.backView).offset(5);
-            make.leading.equalTo(self.backView).offset(5);
-            make.trailing.equalTo(self.imgView).offset(-5);
+            make.top.equalTo(self.backView).offset(10);
+            make.leading.equalTo(self.backView).offset(10);
+            make.trailing.equalTo(self.imgView.mas_leading).offset(-5);
             make.height.mas_equalTo(12);
         }];
         [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.dateLabel.mas_bottom).offset(10);
-            make.leading.equalTo(self.backView).offset(5);
-            make.trailing.equalTo(self.imgView).offset(-5);
+            make.leading.equalTo(self.backView).offset(10);
+            make.trailing.equalTo(self.imgView.mas_leading).offset(-5);
             make.height.mas_equalTo(self.contentHeight);
         make.bottom.equalTo(self.locationLabel.mas_top).offset(-10);
         }];
         [self.locationLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.backView).offset(5);
-            make.trailing.equalTo(self.backView).offset(-5);
-            make.height.mas_equalTo(10);
-            make.bottom.equalTo(self.imgView).offset(-5);
+            make.leading.equalTo(self.backView).offset(10);
+            make.trailing.equalTo(self.imageView.mas_leading).offset(-5);
+            make.height.mas_equalTo(11);
+            make.bottom.equalTo(self.backView).offset(-10);
         }];
     }
     return self;
@@ -82,6 +84,7 @@
     NSInteger themeB = [[themeRGBdic objectForKey:@"B"] integerValue];
     self.headLabel.text = [dateArray objectAtIndex:1];
     self.headLabel.backgroundColor = SDH_Color(themeR, themeG, themeB, 1);
+    self.backView.backgroundColor = SDH_Color(themeR, themeG, themeB, 1);
     self.dateLabel.text = [NSString stringWithFormat:@"%@ %@",dateArray[0],_model.weekDay];
     self.contentLabel.text = _model.content;
     self.contentHeight = [self.contentLabel sizeThatFits:CGSizeMake(SDWIDTH - 144, MAXFLOAT)].height;
@@ -90,6 +93,7 @@
     }];
     [self.contentLabel layoutIfNeeded];
     [self.contentView layoutSubviews];
+    self.locationLabel.text = _model.location;
 }
 #pragma mark - 属性懒加载
 - (UILabel *)headLabel{
@@ -97,6 +101,7 @@
         _headLabel = [[UILabel alloc] init];
         _headLabel.textColor = [UIColor whiteColor];
         _headLabel.font = [UIFont systemFontOfSize:15];
+        _headLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _headLabel;
 }
@@ -128,7 +133,7 @@
     if (!_locationLabel) {
         _locationLabel = [[UILabel alloc] init];
         _locationLabel.textColor = [UIColor whiteColor];
-        _locationLabel.font = [UIFont systemFontOfSize:10];
+        _locationLabel.font = [UIFont systemFontOfSize:11];
     }
     return _locationLabel;
 }

@@ -9,8 +9,15 @@
 #import "SDBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
+typedef NS_ENUM(NSInteger, SDWriteDiaryViewControllerType) {
+    SDWriteDiaryViewControllerTypeDefault,
+    SDWriteDiaryViewControllerTypeEdit,
+};
 @class SDWriteDiaryViewController;
+@class SDWriteDiaryModel;
 @interface SDWriteDiaryViewController : SDBaseViewController
+@property(nonatomic, assign)SDWriteDiaryViewControllerType type;
+@property(nonatomic, strong)SDWriteDiaryModel *releaseModel;
 @property(nonatomic, strong)UITextView *textView;
 + (SDWriteDiaryViewController *)shareInstance;
 @end

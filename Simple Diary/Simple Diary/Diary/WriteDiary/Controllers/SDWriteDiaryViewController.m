@@ -15,13 +15,15 @@
 #import "SDTextWeatherView.h"
 #import "SDWriteDiaryModel.h"
 #import "MLPhotoImageHelper.h"
-@interface SDWriteDiaryViewController()<UITextViewDelegate>
+#import <CoreLocation/CoreLocation.h>
+
+@interface SDWriteDiaryViewController()<UITextViewDelegate,CLLocationManagerDelegate>
+@property (nonatomic, strong) CLLocationManager *locationManager;//设置manager
 @property(nonatomic, strong)UIButton *completeButton;
 @property(nonatomic, strong)SDJournalEditingToolbar *editingToolbar;
 @property(nonatomic, strong)NSMutableArray *selectImagesArray;
 @property(nonatomic, strong)NSString *locationInformationString;
 @property(nonatomic, strong)NSString *weatherInformationString;
-@property(nonatomic, strong)SDWriteDiaryModel *releaseModel;
 @end
 
 @implementation SDWriteDiaryViewController
@@ -39,9 +41,64 @@
     // 添加通知监听见键盘弹出/退出
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardAction:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardAction:) name:UIKeyboardWillHideNotification object:nil];
+    [self locate];
     [self setContentView];
     [self setGestureRecognizer];
     [self.textView becomeFirstResponder];
+}
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+
+}
+- (void)locate{
+    if ([CLLocationManager locationServicesEnabled]) {//监测权限设置
+        self.locationManager = [[CLLocationManager alloc] init];
+        self.locationManager.delegate = self;//设置代理
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;//设置精度
+        self.locationManager.distanceFilter = kCLDistanceFilterNone;//距离过滤
+        [self.locationManager requestAlwaysAuthorization];//位置权限申请
+        [self.locationManager startUpdatingLocation];//开始定位
+    }
+}
+#pragma mark location代理
+-(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提示", nil) message:NSLocalizedString(@"您还未开启定位服务，是否需要开启？", nil)  preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    }];
+    UIAlertAction *queren = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSURL *setingsURL = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+        [[UIApplication sharedApplication]openURL:setingsURL];
+    }];
+    [alert addAction:cancel];
+    [alert addAction:queren];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
+    [self.locationManager stopUpdatingLocation];//停止定位
+    //地理反编码
+    CLLocation *currentLocation = [locations lastObject];
+    CLGeocoder *geoCoder = [[CLGeocoder alloc]init];
+    __weak typeof(self) weakSelf = self;
+    [geoCoder reverseGeocodeLocation:currentLocation completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+        if (placemarks.count > 0) {
+            CLPlacemark *placeMark = placemarks[0];
+            NSString *city = placeMark.locality;
+            if (!city) {
+             weakSelf.editingToolbar.textWeatherView.locationInformationString = @"定位失败";
+            weakSelf.editingToolbar.textWeatherView.locationInformationLabel.text = weakSelf.editingToolbar.textWeatherView.locationInformationString;
+            } else {
+                weakSelf.editingToolbar.textWeatherView.locationInformationString = [NSString stringWithFormat:@"%@%@%@%@",placeMark.country,placeMark.locality,placeMark.subLocality,placeMark.name];
+                weakSelf.editingToolbar.textWeatherView.locationInformationLabel.text = weakSelf.editingToolbar.textWeatherView.locationInformationString;
+            }
+        } else if (error == nil && placemarks.count == 0 ) {
+            
+        } else if (error) {
+            weakSelf.editingToolbar.textWeatherView.locationInformationString = @"定位失败";
+            weakSelf.editingToolbar.textWeatherView.locationInformationLabel.text = weakSelf.editingToolbar.textWeatherView.locationInformationString;
+        }
+        weakSelf.locationInformationString = weakSelf.editingToolbar.textWeatherView.locationInformationString;
+        weakSelf.releaseModel.location = weakSelf.locationInformationString;
+    }];
 }
 // 点击非TextField区域取消第一响应者
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
@@ -71,9 +128,6 @@
             }];
         }
 }
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-}
 - (void)SD_setupNavigationItems{
     [super SD_setupNavigationItems];
     [self setNavigationBarItems];
@@ -97,12 +151,32 @@
         make.trailing.equalTo(self.view);
         make.bottom.equalTo(self.mas_bottomLayoutGuideBottom).offset(0);
     }];
+    if (self.type == SDWriteDiaryViewControllerTypeDefault) {
     self.releaseModel.fontSize = [NSString stringWithFormat:@"%lf",self.editingToolbar.textSetView.fontSize];
     self.releaseModel.fontRGB = self.editingToolbar.textSetView.fontRGBDictionary;
     self.releaseModel.themeRGB = self.editingToolbar.textThemeView.themeRGBDictionary;
     self.releaseModel.location = self.editingToolbar.textWeatherView.locationInformationString;
     self.releaseModel.weather = self.editingToolbar.textWeatherView.weatherInformationString;
-    
+    }else if(self.type == SDWriteDiaryViewControllerTypeEdit){
+        self.editingToolbar.textSetView.fontSize = [self.releaseModel.fontSize floatValue];
+        self.editingToolbar.textSetView.fontRGBDictionary = self.releaseModel.fontRGB;
+        self.editingToolbar.textThemeView.themeRGBDictionary = self.releaseModel.themeRGB;
+        self.editingToolbar.textWeatherView.locationInformationString = self.releaseModel.location;
+        self.editingToolbar.textWeatherView.weatherInformationString = self.releaseModel.weather;
+        self.textView.text = self.releaseModel.content;
+        NSDictionary *themeDic = self.releaseModel.themeRGB;
+        NSInteger themeR = [[themeDic objectForKey:@"R"] integerValue];
+        NSInteger themeG = [[themeDic objectForKey:@"G"] integerValue];
+        NSInteger themeB = [[themeDic objectForKey:@"B"] integerValue];
+        self.textView.backgroundColor = SDH_Color(themeR, themeG, themeB, 1);
+        NSDictionary *fontDic = self.releaseModel.fontRGB;
+        NSInteger fontR = [[fontDic objectForKey:@"R"] integerValue];
+        NSInteger fontG = [[fontDic objectForKey:@"G"] integerValue];
+        NSInteger fontB = [[fontDic objectForKey:@"B"] integerValue];
+        self.textView.textColor = SDH_Color(fontR, fontG, fontB, 1);
+        CGFloat fontSize = [self.releaseModel.fontSize floatValue];
+        self.textView.font = [UIFont systemFontOfSize:fontSize];
+    }
 }
 - (void)setGestureRecognizer{
     UISwipeGestureRecognizer *rightRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeFrom:)];
@@ -186,8 +260,8 @@
     }];
     }else{
         NSDictionary *jsonDictionary = (NSDictionary *)[self.releaseModel yy_modelToJSONObject];
-        NSLog(@"写日记完成后的数据：%@",jsonDictionary);
-        BmobObject *diary = [BmobObject objectWithClassName:@"Diary"];
+        if (self.type == SDWriteDiaryViewControllerTypeDefault) {
+            BmobObject *diary = [BmobObject objectWithClassName:@"Diary"];
         [diary saveAllWithDictionary:jsonDictionary];
         [diary saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
             if (isSuccessful) {
@@ -201,6 +275,17 @@
                 NSLog(@"Unknow error");
             }
         }];
+        }else if (self.type == SDWriteDiaryViewControllerTypeEdit){
+            BmobObject *diary = [BmobObject objectWithoutDataWithClassName:@"Diary" objectId:self.releaseModel.objectId];
+            [diary saveAllWithDictionary:jsonDictionary];
+            [diary updateInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+                if (isSuccessful) {
+               NSLog(@"更新成功，以下为对象值，可以看到score值已经改变:%@",diary);
+                } else {
+                    NSLog(@"error:%@",error);
+                }
+            }];
+        }
     }
 }
 //日期格式转字符串
@@ -244,6 +329,8 @@
     if (!_editingToolbar) {
         _editingToolbar = [[SDJournalEditingToolbar alloc] init];
         _editingToolbar.superVC = self;
+        self.weatherInformationString = @"SD_sunny";
+        self.releaseModel.weather = @"SD_sunny";
         __weak typeof(self) weakSelf = self;
         _editingToolbar.editingToolbarBlock = ^(SDJournalEditingToolbar * _Nonnull editingToolbar) {
             if (editingToolbar.completetype == editingToolbarCompleteTypeLift) {
@@ -281,7 +368,7 @@
                     weakSelf.locationInformationString = editingToolbar.textWeatherView.locationInformationString;
                     weakSelf.releaseModel.location = editingToolbar.textWeatherView.locationInformationString;
                     weakSelf.weatherInformationString = editingToolbar.textWeatherView.weatherInformationString;
-                weakSelf.releaseModel.weather = editingToolbar.textWeatherView.weatherInformationString;
+                    weakSelf.releaseModel.weather = editingToolbar.textWeatherView.weatherInformationString;
 
                 }
             }

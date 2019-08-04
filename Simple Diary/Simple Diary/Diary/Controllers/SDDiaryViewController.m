@@ -8,20 +8,27 @@
 
 #import "SDDiaryViewController.h"
 #import "SDCalendarViewController.h"
+#import "SDWriteDiaryDetailViewController.h"
 #import "SDSearchViewController.h"
 #import "SDWriteDiaryViewController.h"
 #import "SDShowDiaryTableViewCell.h"
+#import "SDWriteDiaryModel.h"
 @interface SDDiaryViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UIButton *calendarButton;
 @property(nonatomic, strong)UIButton *searchButton;
 @property(nonatomic, strong)UIButton *editorButton;
 @property(nonatomic, strong)UITableView *mainTable;
+@property(nonatomic, strong)NSMutableArray *dataArray;
 @end
 
 @implementation SDDiaryViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = NSLocalizedString(@"日记", nil);
+}
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self loadData];
 }
 - (void)SD_setupNavigationItems{
     [self setNavigationBarItems];
@@ -52,9 +59,53 @@
     }
 }
 - (void)loadData{
-    
+    BmobQuery *bquery = [BmobQuery queryWithClassName:@"Diary"];
+    //查找GameScore表的数据
+    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+        if (error) {
+            NSLog(@"查询出错:%@",error);
+        }else{
+            [self.dataArray removeAllObjects];
+            for (int i = (int)(array.count - 1); i > -1; i--) {
+                BmobObject *obj = array[i];
+                SDWriteDiaryModel *model = [[SDWriteDiaryModel alloc] init];
+                model.objectId = [obj objectId];
+                model.fontSize = [obj objectForKey:@"fontSize"];
+                model.fontRGB = [obj objectForKey:@"fontRGB"];
+                model.themeRGB = [obj objectForKey:@"themeRGB"];
+                model.location = [obj objectForKey:@"location"];
+                model.weather = [obj objectForKey:@"weather"];
+                model.content = [obj objectForKey:@"content"];
+                model.date = [obj objectForKey:@"date"];
+                model.weekDay = [obj objectForKey:@"weekDay"];
+                model.imageUrls = [obj objectForKey:@"imageUrls"];
+                model.createdAt = [obj createdAt];
+                model.updatedAt = [obj updatedAt];
+                [self.dataArray addObject:model];
+            }
+            [self.mainTable.mj_header endRefreshing];
+            [self.mainTable reloadData];
+        }
+    }];
 }
-
+#pragma mark - 属性懒加载
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.dataArray.count;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    SDWriteDiaryModel *model = self.dataArray[indexPath.row];
+    SDShowDiaryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SDShowDiaryTableViewCell" forIndexPath:indexPath];
+    cell.model = model;
+    return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    SDWriteDiaryModel *model = self.dataArray[indexPath.row];
+    SDWriteDiaryDetailViewController *detailVC = [[SDWriteDiaryDetailViewController alloc] init];
+    detailVC.model = model;
+    detailVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:detailVC animated:YES];
+}
 #pragma mark - getters
 - (UIButton *)calendarButton{
     if (!_calendarButton) {
@@ -102,5 +153,11 @@
         }];
     }
     return _mainTable;
+}
+- (NSMutableArray *)dataArray{
+    if (!_dataArray) {
+        _dataArray = [[NSMutableArray alloc] init];
+    }
+    return _dataArray;
 }
 @end

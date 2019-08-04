@@ -10,6 +10,8 @@
 		7207BBAC22EBEE3A009838F1 /* SDTextWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7207BBAB22EBEE3A009838F1 /* SDTextWeatherView.m */; };
 		7207BBAE22EC1DFA009838F1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7207BBAD22EC1DFA009838F1 /* CoreLocation.framework */; };
 		7207BBB122EC344E009838F1 /* SDWriteDiaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7207BBB022EC344E009838F1 /* SDWriteDiaryModel.m */; };
+		722073A622F6A4AA004DD0A4 /* SDWriteDiaryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722073A522F6A4A9004DD0A4 /* SDWriteDiaryDetailViewController.m */; };
+		722073A922F6A88B004DD0A4 /* SDWriteDiaryDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 722073A822F6A88B004DD0A4 /* SDWriteDiaryDetailTableViewCell.m */; };
 		722222BC22ED3CD2004B8352 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 722222B922ED3CD2004B8352 /* NSDictionary+log.m */; };
 		722222BD22ED3CD2004B8352 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 722222BB22ED3CD2004B8352 /* NSArray+log.m */; };
 		722222BF22ED6DAD004B8352 /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222BE22ED6DAD004B8352 /* BmobSDK.framework */; };
@@ -81,6 +83,10 @@
 		7207BBAD22EC1DFA009838F1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7207BBAF22EC344E009838F1 /* SDWriteDiaryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SDWriteDiaryModel.h; path = "Simple Diary/Diary/WriteDiary/SDWriteDiaryModel.h"; sourceTree = SOURCE_ROOT; };
 		7207BBB022EC344E009838F1 /* SDWriteDiaryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SDWriteDiaryModel.m; path = "Simple Diary/Diary/WriteDiary/SDWriteDiaryModel.m"; sourceTree = SOURCE_ROOT; };
+		722073A422F6A4A9004DD0A4 /* SDWriteDiaryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWriteDiaryDetailViewController.h; sourceTree = "<group>"; };
+		722073A522F6A4A9004DD0A4 /* SDWriteDiaryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWriteDiaryDetailViewController.m; sourceTree = "<group>"; };
+		722073A722F6A88B004DD0A4 /* SDWriteDiaryDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWriteDiaryDetailTableViewCell.h; sourceTree = "<group>"; };
+		722073A822F6A88B004DD0A4 /* SDWriteDiaryDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWriteDiaryDetailTableViewCell.m; sourceTree = "<group>"; };
 		722222B822ED3CD2004B8352 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
 		722222B922ED3CD2004B8352 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
 		722222BA22ED3CD2004B8352 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
@@ -324,6 +330,8 @@
 			children = (
 				AE8E5B3022E2FCF400818AA0 /* SDWriteDiaryViewController.h */,
 				AE8E5B3122E2FCF400818AA0 /* SDWriteDiaryViewController.m */,
+				722073A422F6A4A9004DD0A4 /* SDWriteDiaryDetailViewController.h */,
+				722073A522F6A4A9004DD0A4 /* SDWriteDiaryDetailViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -345,6 +353,8 @@
 				AE7EEFC422E7EF48007CEBC9 /* SDTextColorButton.m */,
 				AE12200A22EA86F400FB8E9B /* SDTextThemeButton.h */,
 				AE12200B22EA86F400FB8E9B /* SDTextThemeButton.m */,
+				722073A722F6A88B004DD0A4 /* SDWriteDiaryDetailTableViewCell.h */,
+				722073A822F6A88B004DD0A4 /* SDWriteDiaryDetailTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -725,11 +735,13 @@
 				7207BBAC22EBEE3A009838F1 /* SDTextWeatherView.m in Sources */,
 				72C7718E22F55AAB00A97DE1 /* SDShowDiaryTableViewCell.m in Sources */,
 				722222BC22ED3CD2004B8352 /* NSDictionary+log.m in Sources */,
+				722073A922F6A88B004DD0A4 /* SDWriteDiaryDetailTableViewCell.m in Sources */,
 				7207BBB122EC344E009838F1 /* SDWriteDiaryModel.m in Sources */,
 				AE92DEEC22E2CD9E0013618C /* SDDiaryViewController.m in Sources */,
 				AE92DEE322E2BEF00013618C /* SDHBTool.m in Sources */,
 				AE92DEEF22E2CE3A0013618C /* SDMineViewController.m in Sources */,
 				AE12203F22EAC8B200FB8E9B /* MLShowBigImage.m in Sources */,
+				722073A622F6A4AA004DD0A4 /* SDWriteDiaryDetailViewController.m in Sources */,
 				AE92DEDD22E2BD9B0013618C /* SDUIUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

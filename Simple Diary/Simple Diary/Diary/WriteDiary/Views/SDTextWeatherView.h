@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SDTextWeatherView : UIView
 @property(nonatomic, strong)NSString *locationInformationString;
+@property(nonatomic,strong)UILabel *locationInformationLabel;
 @property(nonatomic, strong)NSString *weatherInformationString;
 @end
 
