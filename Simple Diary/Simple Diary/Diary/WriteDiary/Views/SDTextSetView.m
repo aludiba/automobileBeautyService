@@ -29,70 +29,9 @@
     self = [super init];
     if (self) {
         self.backgroundColor = SDH_Color(247, 252, 251, 1);
-        [self setContentView];
-        [self setLayoutContentView];
         [self setContentColorsButton];
     }
     return self;
-}
-- (void)setContentView{
-    [self addSubview:self.textFontLabel];
-    [self addSubview:self.sliderMinLabel];
-    [self addSubview:self.slider];
-    [self addSubview:self.sliderMaxLabel];
-    [self addSubview:self.textColorLabel];
-    [self addSubview:self.colorTipsView];
-    [self addSubview:self.colorsScrollView];
-    [self.colorsScrollView addSubview:self.colorsContentView];
-}
-- (void)setLayoutContentView{
-    [self.textFontLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self).offset(10);
-        make.leading.equalTo(self).offset(16);
-        make.trailing.equalTo(self).offset(-16);
-        make.height.mas_equalTo(16);
-    }];
-    [self.sliderMinLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.textFontLabel.mas_bottom).offset(10);
-        make.leading.equalTo(self).offset(16);
-        make.width.mas_equalTo(16);
-        make.height.mas_equalTo(16);
-    }];
-    [self.slider mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.sliderMinLabel);
-        make.leading.equalTo(self.sliderMinLabel.mas_trailing).offset(16);
-        make.height.mas_equalTo(20);
-        make.trailing.equalTo(self.sliderMaxLabel.mas_leading).offset(-16);
-    }];
-    [self.sliderMaxLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.textFontLabel.mas_bottom).offset(10);
-        make.trailing.equalTo(self).offset(-16);
-        make.width.mas_equalTo(16);
-        make.height.mas_equalTo(16);
-    }];
-    CGSize size = [self.textColorLabel sizeThatFits:CGSizeMake(MAXFLOAT, 16)];
-    [self.textColorLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.slider.mas_bottom).offset(10);
-        make.leading.equalTo(self).offset(16);
-        make.width.mas_equalTo(size.width);
-        make.height.mas_equalTo(16);
-    }];
-    [self.colorTipsView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.textColorLabel);
-        make.leading.equalTo(self.textColorLabel.mas_trailing).offset(16);
-        make.width.mas_equalTo(50);
-        make.height.mas_equalTo(20);
-    }];
-    [self.colorsScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.colorTipsView.mas_bottom).offset(10);
-        make.leading.equalTo(self).offset(16);
-        make.trailing.equalTo(self).offset(-16);
-        make.bottom.equalTo(self).offset(-10);
-    }];
-    [self.colorsContentView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.colorsScrollView);//上下滚动
-        make.width.equalTo(self.colorsScrollView);
-    }];
 }
 - (void)setContentColorsButton{
     CGFloat width = 44.0f;
@@ -124,22 +63,37 @@
         }
     }
 }
+- (void)setFontSize:(CGFloat)fontSize{
+    _fontSize = fontSize;
+    self.slider.value = _fontSize;
+    self.textFontLabel.text = [NSString stringWithFormat:@"%@   :   %ld",NSLocalizedString(@"字体大小", nil),(int)_fontSize];
+}
+- (void)setFontRGBDictionary:(NSDictionary *)fontRGBDictionary{
+    _fontRGBDictionary = fontRGBDictionary;
+    NSInteger fontR = [[_fontRGBDictionary objectForKey:@"R"] integerValue];
+    NSInteger fontG = [[_fontRGBDictionary objectForKey:@"G"] integerValue];
+    NSInteger fontB = [[_fontRGBDictionary objectForKey:@"B"] integerValue];
+    UIColor *currentColor = SDH_Color(fontR, fontG, fontB, 1);
+    for (int i = 0; i < self.colorsButtonArray.count; i++) {
+        SDTextColorButton *colorButton = self.colorsButtonArray[i];
+        if ([currentColor isEqual:colorButton.currentColor]) {
+            [colorButton setIsSelect:YES];
+            self.colorTipsView.backgroundColor = colorButton.currentColor;
+            self.fontColor = colorButton.currentColor;
+        }else{
+            [colorButton setIsSelect:NO];
+        }
+    }
+}
 - (void)colorBtnClick:(SDTextColorButton *)colorButton{
     NSInteger tag = colorButton.tag;
     for (int i = 0; i < self.colorsButtonArray.count; i++) {
         SDTextColorButton *colorButton = self.colorsButtonArray[i];
         if (tag == colorButton.tag) {
             [colorButton setIsSelect:YES];
-            self.colorTipsView.backgroundColor = colorButton.currentColor;
-            self.fontColor = colorButton.currentColor;
             self.fontRGBDictionary = self.fontColorsArray[i];
-        }else{
-            [colorButton setIsSelect:NO];
         }
     }
-//    if (self.superView.editingToolbarBlock) {
-//        self.superView.editingToolbarBlock(self.superView);
-//    }
 }
 #pragma mark - actions
 #pragma mark - 字体大小调节实现
@@ -174,8 +128,8 @@
         _slider = [[UISlider alloc] init];
         _slider.minimumValue = 10.0;
         _slider.maximumValue = 40.0;
-        _slider.value = 17;
         self.fontSize = 17;
+        _slider.value = 17;
         [_slider setContinuous:YES];
         [_slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
     }
@@ -219,6 +173,61 @@
     if (!_colorsContentView) {
         _colorsContentView = [[UIView alloc] init];
         _colorsContentView.backgroundColor = [UIColor whiteColor];
+        [self addSubview:self.textFontLabel];
+        [self addSubview:self.sliderMinLabel];
+        [self addSubview:self.slider];
+        [self addSubview:self.sliderMaxLabel];
+        [self addSubview:self.textColorLabel];
+        [self addSubview:self.colorTipsView];
+        [self addSubview:self.colorsScrollView];
+        [self.colorsScrollView addSubview:_colorsContentView];
+        [self.textFontLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self).offset(10);
+            make.leading.equalTo(self).offset(16);
+            make.trailing.equalTo(self).offset(-16);
+            make.height.mas_equalTo(16);
+        }];
+        [self.sliderMinLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.textFontLabel.mas_bottom).offset(10);
+            make.leading.equalTo(self).offset(16);
+            make.width.mas_equalTo(16);
+            make.height.mas_equalTo(16);
+        }];
+        [self.slider mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(self.sliderMinLabel);
+            make.leading.equalTo(self.sliderMinLabel.mas_trailing).offset(16);
+            make.height.mas_equalTo(20);
+            make.trailing.equalTo(self.sliderMaxLabel.mas_leading).offset(-16);
+        }];
+        [self.sliderMaxLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.textFontLabel.mas_bottom).offset(10);
+            make.trailing.equalTo(self).offset(-16);
+            make.width.mas_equalTo(16);
+            make.height.mas_equalTo(16);
+        }];
+        CGSize size = [self.textColorLabel sizeThatFits:CGSizeMake(MAXFLOAT, 16)];
+        [self.textColorLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.slider.mas_bottom).offset(10);
+            make.leading.equalTo(self).offset(16);
+            make.width.mas_equalTo(size.width);
+            make.height.mas_equalTo(16);
+        }];
+        [self.colorTipsView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(self.textColorLabel);
+            make.leading.equalTo(self.textColorLabel.mas_trailing).offset(16);
+            make.width.mas_equalTo(50);
+            make.height.mas_equalTo(20);
+        }];
+        [self.colorsScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.colorTipsView.mas_bottom).offset(10);
+            make.leading.equalTo(self).offset(16);
+            make.trailing.equalTo(self).offset(-16);
+            make.bottom.equalTo(self).offset(-10);
+        }];
+        [_colorsContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(self.colorsScrollView);//上下滚动
+            make.width.equalTo(self.colorsScrollView);
+        }];
     }
     return _colorsContentView;
 }
@@ -377,7 +386,6 @@
         [_colorsArray addObject:color34];
         NSDictionary *dic34 = @{@"R":[NSNumber numberWithInteger:245],@"G":[NSNumber numberWithInteger:222],@"B":[NSNumber numberWithInteger:179]};
         [self.fontColorsArray addObject:dic34];
-        
         self.fontRGBDictionary = self.fontColorsArray[0];
     }
     return _colorsArray;

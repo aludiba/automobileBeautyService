@@ -44,6 +44,22 @@
         make.height.equalTo(self.colorsScrollView);
     }];
 }
+- (void)setThemeRGBDictionary:(NSDictionary *)themeRGBDictionary{
+    _themeRGBDictionary = themeRGBDictionary;
+    NSInteger fontR = [[_themeRGBDictionary objectForKey:@"R"] integerValue];
+    NSInteger fontG = [[_themeRGBDictionary objectForKey:@"G"] integerValue];
+    NSInteger fontB = [[_themeRGBDictionary objectForKey:@"B"] integerValue];
+    UIColor *currentColor = SDH_Color(fontR, fontG, fontB, 1);
+    for (int i = 0; i < self.colorsButtonArray.count; i++) {
+        SDTextThemeButton *colorButton = self.colorsButtonArray[i];
+        if ([currentColor isEqual:colorButton.currentColor]) {
+            [colorButton setIsSelect:YES];
+            self.themeColor = colorButton.currentColor;
+        }else{
+            [colorButton setIsSelect:NO];
+        }
+    }
+}
 - (void)setContentColorsButton{
     CGFloat width = 125.0f;
     CGFloat height = 250.0f;
@@ -72,18 +88,16 @@
         }
     }
     self.themeColor = SDH_Color(225, 225, 225, 1);
-    self.themeRGBDictionary = self.fontColorsArray[0];
+    if (!self.themeRGBDictionary) {
+        self.themeRGBDictionary = self.fontColorsArray[0];
+    }
 }
 - (void)colorBtnClick:(SDTextThemeButton *)colorButton{
     NSInteger tag = colorButton.tag;
     for (int i = 0; i < self.colorsButtonArray.count; i++) {
         SDTextThemeButton *colorButton = self.colorsButtonArray[i];
         if (tag == colorButton.tag) {
-            [colorButton setIsSelect:YES];
-            self.themeColor = colorButton.currentColor;
             self.themeRGBDictionary = self.fontColorsArray[i];
-        }else{
-            [colorButton setIsSelect:NO];
         }
     }
 }

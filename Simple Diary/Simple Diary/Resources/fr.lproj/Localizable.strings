@@ -34,6 +34,12 @@
 @"详情" = "Pour de plus amples informations";
 @"删除成功" = "Suppression réussie";
 @"确定删除?" = "Suppression définitive?";
+@"添加成功" = "Succès de l’addition";
+@"更新成功" = "Mise à jour réussie";
+@"定位失败" = "Défaut de localisation";
+
+
+
 
 
 

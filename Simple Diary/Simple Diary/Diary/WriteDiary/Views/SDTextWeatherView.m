@@ -65,7 +65,7 @@
             CLPlacemark *placeMark = placemarks[0];
             NSString *city = placeMark.locality;
             if (!city) {
-                self.locationInformationString = @"定位失败";
+                self.locationInformationString = NSLocalizedString(@"定位失败", nil);
                 self.locationInformationLabel.text = self.locationInformationString;
             } else {
                 self.locationInformationString = [NSString stringWithFormat:@"%@%@%@%@",placeMark.country,placeMark.locality,placeMark.subLocality,placeMark.name];
@@ -73,7 +73,7 @@
             }
         } else if (error == nil && placemarks.count == 0 ) {
         } else if (error) {
-            self.locationInformationString = @"定位失败";
+            self.locationInformationString = NSLocalizedString(@"定位失败", nil);
             self.locationInformationLabel.text = self.locationInformationString;
         }
     }];
@@ -138,7 +138,9 @@
         _locationInformationLabel = [[UILabel alloc] init];
         _locationInformationLabel.font = [UIFont systemFontOfSize:12];
         _locationInformationLabel.textColor = [UIColor blackColor];
-        _locationInformationLabel.text = self.locationInformationString;
+        if (self.locationInformationString.length) {
+            _locationInformationLabel.text = self.locationInformationString;
+        }
     }
     return _locationInformationLabel;
 }
@@ -154,7 +156,9 @@
 - (NSMutableArray *)weatherButtonImageNamesArray{
     if (!_weatherButtonImageNamesArray) {
         _weatherButtonImageNamesArray = [[NSMutableArray alloc] initWithArray:@[@"SD_sunny",@"SD_cloudy",@"SD_fog",@"SD_hail",@"SD_moreCloud",@"SD_rain",@"SD_shower",@"SD_snow",@"SD_Thunderlightning"]];
-        self.weatherInformationString = _weatherButtonImageNamesArray[0];
+        if (!self.weatherInformationString) {
+            self.weatherInformationString = _weatherButtonImageNamesArray[0];
+        }
     }
     return _weatherButtonImageNamesArray;
 }

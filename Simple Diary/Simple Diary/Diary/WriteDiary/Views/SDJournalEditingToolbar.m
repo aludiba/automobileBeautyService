@@ -31,10 +31,16 @@
         self.backgroundColor = [UIColor whiteColor];
         [self setContentView];
         [self setLayoutView];
-        self.isExpand = NO;
-        self.contentView.hidden = YES;
     }
     return self;
+}
+- (void)setIsExpand:(Boolean)isExpand{
+    _isExpand = isExpand;
+    if (_isExpand) {
+        self.contentView.hidden = NO;
+    }else{
+        self.contentView.hidden = YES;
+    }
 }
 - (void)setContentView{
     [self addSubview:self.toolBar];
@@ -139,6 +145,7 @@
         self.textPictureView.hidden = YES;
         self.textWeatherView.hidden = YES;
         self.contentView.hidden = NO;
+        self.isExpand = YES;
         [SDTabBarController shareInstance].SDDiaryVC.wdVC.textView.hidden = YES;
         [[SDTabBarController shareInstance].SDDiaryVC.wdVC.textView resignFirstResponder];
     }else if(sender.tag == 101){
@@ -147,6 +154,7 @@
         self.textPictureView.hidden = YES;
         self.textWeatherView.hidden = YES;
         self.contentView.hidden = NO;
+        self.isExpand = YES;
         [SDTabBarController shareInstance].SDDiaryVC.wdVC.textView.hidden = YES;
         [[SDTabBarController shareInstance].SDDiaryVC.wdVC.textView resignFirstResponder];
     }else if(sender.tag == 102){
@@ -155,6 +163,7 @@
         self.textPictureView.hidden = NO;
         self.textWeatherView.hidden = YES;
         self.contentView.hidden = NO;
+        self.isExpand = YES;
         [SDTabBarController shareInstance].SDDiaryVC.wdVC.textView.hidden = YES;
         [[SDTabBarController shareInstance].SDDiaryVC.wdVC.textView resignFirstResponder];
     }else if(sender.tag == 103){
@@ -163,15 +172,16 @@
         self.textPictureView.hidden = YES;
         self.textWeatherView.hidden = NO;
         self.contentView.hidden = NO;
+        self.isExpand = YES;
         [SDTabBarController shareInstance].SDDiaryVC.wdVC.textView.hidden = YES;
         [[SDTabBarController shareInstance].SDDiaryVC.wdVC.textView resignFirstResponder];
     }else if(sender.tag == 104){
         self.completetype = editingToolbarCompleteTypeLift;
-        if ([SDTabBarController shareInstance].SDDiaryVC.wdVC.textView.hidden == YES) {
-            self.isExpand = YES;
-        }else{
-            self.isExpand = NO;
-        }
+//        if ([SDTabBarController shareInstance].SDDiaryVC.wdVC.textView.hidden == YES) {
+//            self.isExpand = YES;
+//        }else{
+//            self.isExpand = NO;
+//        }
         self.isExpand = !self.isExpand;
         if (self.isExpand) {
             [self.superVC.textView resignFirstResponder];

@@ -34,6 +34,10 @@
 @"详情" = "details";
 @"删除成功" = "Delete the success";
 @"确定删除?" = "Sure to delete?";
+@"添加成功" = "Add a success";
+@"更新成功" = "The update is successful";
+@"定位失败" = "To locate failure";
+
 
 
 

@@ -84,7 +84,7 @@
             CLPlacemark *placeMark = placemarks[0];
             NSString *city = placeMark.locality;
             if (!city) {
-             weakSelf.editingToolbar.textWeatherView.locationInformationString = @"定位失败";
+             weakSelf.editingToolbar.textWeatherView.locationInformationString = NSLocalizedString(@"定位失败", nil);
             weakSelf.editingToolbar.textWeatherView.locationInformationLabel.text = weakSelf.editingToolbar.textWeatherView.locationInformationString;
             } else {
                 weakSelf.editingToolbar.textWeatherView.locationInformationString = [NSString stringWithFormat:@"%@%@%@%@",placeMark.country,placeMark.locality,placeMark.subLocality,placeMark.name];
@@ -93,7 +93,7 @@
         } else if (error == nil && placemarks.count == 0 ) {
             
         } else if (error) {
-            weakSelf.editingToolbar.textWeatherView.locationInformationString = @"定位失败";
+            weakSelf.editingToolbar.textWeatherView.locationInformationString = NSLocalizedString(@"定位失败", nil);
             weakSelf.editingToolbar.textWeatherView.locationInformationLabel.text = weakSelf.editingToolbar.textWeatherView.locationInformationString;
         }
         weakSelf.locationInformationString = weakSelf.editingToolbar.textWeatherView.locationInformationString;
@@ -137,32 +137,21 @@
     self.navigationItem.rightBarButtonItem = completeItem;
 }
 - (void)setContentView{
-    [self.view addSubview:self.editingToolbar];
-    [self.view addSubview:self.textView];
-    [self.editingToolbar mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.view);
-        make.trailing.equalTo(self.view);
-        make.top.equalTo(self.mas_topLayoutGuideBottom);
-        make.height.mas_equalTo(4 * 90);
-    }];
-    [self.textView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.mas_topLayoutGuideBottom).offset(90);
-        make.leading.equalTo(self.view);
-        make.trailing.equalTo(self.view);
-        make.bottom.equalTo(self.mas_bottomLayoutGuideBottom).offset(0);
-    }];
     if (self.type == SDWriteDiaryViewControllerTypeDefault) {
     self.releaseModel.fontSize = [NSString stringWithFormat:@"%lf",self.editingToolbar.textSetView.fontSize];
     self.releaseModel.fontRGB = self.editingToolbar.textSetView.fontRGBDictionary;
     self.releaseModel.themeRGB = self.editingToolbar.textThemeView.themeRGBDictionary;
     self.releaseModel.location = self.editingToolbar.textWeatherView.locationInformationString;
     self.releaseModel.weather = self.editingToolbar.textWeatherView.weatherInformationString;
+        self.editingToolbar.isExpand = NO;
     }else if(self.type == SDWriteDiaryViewControllerTypeEdit){
         self.editingToolbar.textSetView.fontSize = [self.releaseModel.fontSize floatValue];
+        self.editingToolbar.isExpand = YES;
         self.editingToolbar.textSetView.fontRGBDictionary = self.releaseModel.fontRGB;
         self.editingToolbar.textThemeView.themeRGBDictionary = self.releaseModel.themeRGB;
         self.editingToolbar.textWeatherView.locationInformationString = self.releaseModel.location;
         self.editingToolbar.textWeatherView.weatherInformationString = self.releaseModel.weather;
+        self.weatherInformationString = self.editingToolbar.textWeatherView.weatherInformationString;
         self.textView.text = self.releaseModel.content;
         NSDictionary *themeDic = self.releaseModel.themeRGB;
         NSInteger themeR = [[themeDic objectForKey:@"R"] integerValue];
@@ -176,6 +165,7 @@
         self.textView.textColor = SDH_Color(fontR, fontG, fontB, 1);
         CGFloat fontSize = [self.releaseModel.fontSize floatValue];
         self.textView.font = [UIFont systemFontOfSize:fontSize];
+        self.editingToolbar.isExpand = NO;
     }
 }
 - (void)setGestureRecognizer{
@@ -227,8 +217,7 @@
             break;
     }
     if (self.selectImagesArray.count) {
-    NSLog(@"self.selectImagesArray:%@",self.selectImagesArray);
-    [BmobFile filesUploadBatchWithPaths:self.selectImagesArray progressBlock:^(int index, float progress) {
+        [BmobFile filesUploadBatchWithPaths:self.selectImagesArray progressBlock:^(int index, float progress) {
         NSLog(@"index %d progress %f",index,progress);
     } resultBlock:^(NSArray *array, BOOL isSuccessful, NSError *error) {
         if (isSuccessful) {
@@ -266,7 +255,7 @@
         [diary saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
             if (isSuccessful) {
                 //创建成功后的动作
-                NSLog(@"保存成功~~~");
+                [MBProgressHUD SDshowReminderText:NSLocalizedString(@"添加成功", nil)];
                 [self.navigationController popViewControllerAnimated:YES];
             } else if (error){
                 //发生错误后的动作
@@ -280,7 +269,8 @@
             [diary saveAllWithDictionary:jsonDictionary];
             [diary updateInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
                 if (isSuccessful) {
-               NSLog(@"更新成功，以下为对象值，可以看到score值已经改变:%@",diary);
+                    [MBProgressHUD SDshowReminderText:NSLocalizedString(@"更新成功", nil)];
+                    [self.navigationController popToRootViewControllerAnimated:YES];
                 } else {
                     NSLog(@"error:%@",error);
                 }
@@ -335,10 +325,8 @@
         _editingToolbar.editingToolbarBlock = ^(SDJournalEditingToolbar * _Nonnull editingToolbar) {
             if (editingToolbar.completetype == editingToolbarCompleteTypeLift) {
                 if (editingToolbar.isExpand) {
-                    editingToolbar.contentView.hidden = NO;
                     weakSelf.textView.hidden = YES;
                 }else{
-                    editingToolbar.contentView.hidden = YES;
                     weakSelf.textView.hidden = NO;
                     weakSelf.textView.font = [UIFont systemFontOfSize:editingToolbar.textSetView.fontSize];
                     weakSelf.releaseModel.fontSize = [NSString stringWithFormat:@"%lf",editingToolbar.textSetView.fontSize];
@@ -369,7 +357,6 @@
                     weakSelf.releaseModel.location = editingToolbar.textWeatherView.locationInformationString;
                     weakSelf.weatherInformationString = editingToolbar.textWeatherView.weatherInformationString;
                     weakSelf.releaseModel.weather = editingToolbar.textWeatherView.weatherInformationString;
-
                 }
             }
         };
@@ -379,6 +366,20 @@
 - (UITextView *)textView{
     if (!_textView) {
         _textView = [[UITextView alloc] init];
+        [self.view addSubview:self.editingToolbar];
+        [self.editingToolbar mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.view);
+            make.trailing.equalTo(self.view);
+            make.top.equalTo(self.mas_topLayoutGuideBottom);
+            make.height.mas_equalTo(4 * 90);
+        }];
+        [self.view addSubview:_textView];
+        [_textView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.mas_topLayoutGuideBottom).offset(90);
+            make.leading.equalTo(self.view);
+            make.trailing.equalTo(self.view);
+            make.bottom.equalTo(self.mas_bottomLayoutGuideBottom).offset(0);
+        }];
         _textView.delegate = self;
         [_textView setFont:[UIFont systemFontOfSize:17]];
         [_textView setTextColor:[UIColor blackColor]];

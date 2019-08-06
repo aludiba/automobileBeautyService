@@ -7,6 +7,8 @@
 //
 
 #import "SDWriteDiaryDetailViewController.h"
+#import "SDTabBarController.h"
+#import "SDDiaryViewController.h"
 #import "SDWriteDiaryViewController.h"
 #import "SDWriteDiaryDetailTableViewCell.h"
 #import "SDWriteDiaryModel.h"
@@ -28,6 +30,9 @@
     NSInteger themeB = [[themeDic objectForKey:@"B"] integerValue];
     self.mainTable.backgroundColor = SDH_Color(themeR, themeG, themeB, 1);
     self.view.backgroundColor = SDH_Color(themeR, themeG, themeB, 1);
+}
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     [self.mainTable reloadData];
 }
 - (void)SD_setupNavigationItems{
@@ -58,10 +63,10 @@
         [alertVC addAction:action2];
         [self presentViewController:alertVC animated:YES completion:nil];
     }else if (sender.tag == 102){
-        SDWriteDiaryViewController *writeDiaryVC = [[SDWriteDiaryViewController alloc] init];
-        writeDiaryVC.type = SDWriteDiaryViewControllerTypeEdit;
-        writeDiaryVC.releaseModel = self.model;
-        [self.navigationController pushViewController:writeDiaryVC animated:YES];
+        [SDTabBarController shareInstance].SDDiaryVC.wdVC = [[SDWriteDiaryViewController alloc] init];
+        [SDTabBarController shareInstance].SDDiaryVC.wdVC.type = SDWriteDiaryViewControllerTypeEdit;
+        [SDTabBarController shareInstance].SDDiaryVC.wdVC.releaseModel = self.model;
+        [self.navigationController pushViewController:[SDTabBarController shareInstance].SDDiaryVC.wdVC animated:YES];
     }
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
