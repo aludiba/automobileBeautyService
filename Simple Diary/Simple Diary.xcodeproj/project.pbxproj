@@ -72,6 +72,7 @@
 		AE92DEEC22E2CD9E0013618C /* SDDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE92DEEB22E2CD9E0013618C /* SDDiaryViewController.m */; };
 		AE92DEEF22E2CE3A0013618C /* SDMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE92DEEE22E2CE3A0013618C /* SDMineViewController.m */; };
 		AE92DEF222E2E56D0013618C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE92DEF422E2E56D0013618C /* Localizable.strings */; };
+		AEE06B2022FAC68D00DBC82C /* SDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE06B1F22FAC68D00DBC82C /* SDLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -185,6 +186,8 @@
 		AE92DEFA22E2E5D20013618C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		AE92DF0322E2E74A0013618C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AE92DF0622E2E7500013618C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEE06B1E22FAC68D00DBC82C /* SDLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDLoginViewController.h; sourceTree = "<group>"; };
+		AEE06B1F22FAC68D00DBC82C /* SDLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -448,6 +451,7 @@
 			children = (
 				AE92DECA22E2AD0A0013618C /* Common */,
 				AE92DEC922E2AD0A0013618C /* Resources */,
+				AEE06B1A22FAC62D00DBC82C /* Login */,
 				AE92DECF22E2AD2C0013618C /* Diary */,
 				AE92DECB22E2AD2C0013618C /* Mine */,
 				AE92DEB022E2AB550013618C /* AppDelegate.h */,
@@ -568,6 +572,39 @@
 			children = (
 				72C7718C22F55AAB00A97DE1 /* SDShowDiaryTableViewCell.h */,
 				72C7718D22F55AAB00A97DE1 /* SDShowDiaryTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AEE06B1A22FAC62D00DBC82C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AEE06B1B22FAC62D00DBC82C /* Models */,
+				AEE06B1D22FAC62D00DBC82C /* Views */,
+				AEE06B1C22FAC62D00DBC82C /* Controllers */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AEE06B1B22FAC62D00DBC82C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AEE06B1C22FAC62D00DBC82C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AEE06B1E22FAC68D00DBC82C /* SDLoginViewController.h */,
+				AEE06B1F22FAC68D00DBC82C /* SDLoginViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AEE06B1D22FAC62D00DBC82C /* Views */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -721,6 +758,7 @@
 				AE8E5B4022E3060E00818AA0 /* SDCalendarViewController.m in Sources */,
 				AE12200C22EA86F400FB8E9B /* SDTextThemeButton.m in Sources */,
 				AE7EEFC522E7EF48007CEBC9 /* SDTextColorButton.m in Sources */,
+				AEE06B2022FAC68D00DBC82C /* SDLoginViewController.m in Sources */,
 				AE92DED722E2BC320013618C /* SDNDHTTPClient.m in Sources */,
 				AE92DEE622E2C1300013618C /* SDTabBarController.m in Sources */,
 				AE8E5B3222E2FCF400818AA0 /* SDWriteDiaryViewController.m in Sources */,

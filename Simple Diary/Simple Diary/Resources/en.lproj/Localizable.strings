@@ -37,6 +37,17 @@
 @"添加成功" = "Add a success";
 @"更新成功" = "The update is successful";
 @"定位失败" = "To locate failure";
+@"账号" = "account";
+@"密码" = "password";
+@"登录" = "login";
+@"注册" = "registered";
+@"请输入账号" = "Please enter your account number";
+@"请输入密码" = "Please enter password";
+
+
+
+
+
 
 
 

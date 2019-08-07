@@ -37,6 +37,18 @@
 @"添加成功" = "Succès de l’addition";
 @"更新成功" = "Mise à jour réussie";
 @"定位失败" = "Défaut de localisation";
+@"账号" = "Le compte";
+@"密码" = "Les mots de passe";
+@"登录" = "connexion;
+@"注册" = "l’enregistrement";
+@"请输入账号" = "Veuillez indiquer le numéro de compte";
+@"请输入密码" = "Veuillez introduire votre mot de passe";
+
+
+
+
+
+
 
 
 
