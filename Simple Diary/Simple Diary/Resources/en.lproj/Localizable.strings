@@ -43,6 +43,9 @@
 @"注册" = "registered";
 @"请输入账号" = "Please enter your account number";
 @"请输入密码" = "Please enter password";
+@"登录成功" = "Please enter password";
+@"注册成功" = "Registered successfully";
+
 
 
 

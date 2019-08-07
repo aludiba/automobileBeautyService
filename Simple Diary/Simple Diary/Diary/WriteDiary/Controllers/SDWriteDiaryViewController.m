@@ -250,8 +250,10 @@
     }else{
         NSDictionary *jsonDictionary = (NSDictionary *)[self.releaseModel yy_modelToJSONObject];
         if (self.type == SDWriteDiaryViewControllerTypeDefault) {
-            BmobObject *diary = [BmobObject objectWithClassName:@"Diary"];
+        BmobObject *diary = [BmobObject objectWithClassName:@"Diary"];
         [diary saveAllWithDictionary:jsonDictionary];
+        BmobUser *author = [BmobUser currentUser];
+        [diary setObject:author forKey:@"author"];
         [diary saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
             if (isSuccessful) {
                 //创建成功后的动作

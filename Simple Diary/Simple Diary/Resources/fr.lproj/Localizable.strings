@@ -43,6 +43,10 @@
 @"注册" = "l’enregistrement";
 @"请输入账号" = "Veuillez indiquer le numéro de compte";
 @"请输入密码" = "Veuillez introduire votre mot de passe";
+@"登录成功" = "Accès réussi";
+@"注册成功" = "Succès de l’enregistrement";
+
+
 
 
 

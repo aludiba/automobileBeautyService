@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "SDTabBarController.h"
+#import "SDLoginViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,8 +20,16 @@
     [Bmob registerWithAppKey:@"433c78f96a4eadc43adb74cef6a27b92"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    SDTabBarController *tabVC = [SDTabBarController shareInstance];
-    self.window.rootViewController = tabVC;
+    BmobUser *bUser = [BmobUser currentUser];
+    if (bUser) {
+        //进行操作
+        SDTabBarController *tabVC = [SDTabBarController shareInstance];
+        self.window.rootViewController = tabVC;
+    }else{
+        //对象为空时，可打开用户注册界面
+        SDLoginViewController *loginVC = [SDLoginViewController shareInstance];
+        self.window.rootViewController = loginVC;
+    }
     [self.window makeKeyAndVisible];
     return YES;
 }

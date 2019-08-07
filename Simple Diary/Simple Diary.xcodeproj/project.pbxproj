@@ -26,6 +26,8 @@
 		722222D122ED6E7F004B8352 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222D022ED6E7F004B8352 /* libsqlite3.tbd */; };
 		722222D322ED6F30004B8352 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222D222ED6F30004B8352 /* libc++.tbd */; };
 		722222D522ED6F3E004B8352 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222D422ED6F3E004B8352 /* Photos.framework */; };
+		722328C722FB33E0001B1F08 /* SDMineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 722328C622FB33E0001B1F08 /* SDMineTableViewCell.m */; };
+		722328CA22FB35F2001B1F08 /* SDMineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 722328C922FB35F2001B1F08 /* SDMineModel.m */; };
 		72C7718A22F5374E00A97DE1 /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C7718822F5374E00A97DE1 /* 01.png */; };
 		72C7718B22F5374E00A97DE1 /* 04.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C7718922F5374E00A97DE1 /* 04.png */; };
 		72C7718E22F55AAB00A97DE1 /* SDShowDiaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C7718D22F55AAB00A97DE1 /* SDShowDiaryTableViewCell.m */; };
@@ -104,6 +106,10 @@
 		722222D022ED6E7F004B8352 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		722222D222ED6F30004B8352 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		722222D422ED6F3E004B8352 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		722328C522FB33E0001B1F08 /* SDMineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SDMineTableViewCell.h; path = "Simple Diary/Diary/WriteDiary/Views/SDMineTableViewCell.h"; sourceTree = SOURCE_ROOT; };
+		722328C622FB33E0001B1F08 /* SDMineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SDMineTableViewCell.m; path = "Simple Diary/Diary/WriteDiary/Views/SDMineTableViewCell.m"; sourceTree = SOURCE_ROOT; };
+		722328C822FB35F2001B1F08 /* SDMineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SDMineModel.h; path = "Simple Diary/Diary/WriteDiary/Views/SDMineModel.h"; sourceTree = SOURCE_ROOT; };
+		722328C922FB35F2001B1F08 /* SDMineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SDMineModel.m; path = "Simple Diary/Diary/WriteDiary/Views/SDMineModel.m"; sourceTree = SOURCE_ROOT; };
 		72C7718822F5374E00A97DE1 /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
 		72C7718922F5374E00A97DE1 /* 04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 04.png; sourceTree = "<group>"; };
 		72C7718C22F55AAB00A97DE1 /* SDShowDiaryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SDShowDiaryTableViewCell.h; path = "Simple Diary/Diary/WriteDiary/SDShowDiaryTableViewCell.h"; sourceTree = SOURCE_ROOT; };
@@ -518,6 +524,8 @@
 		AE92DECC22E2AD2C0013618C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				722328C822FB35F2001B1F08 /* SDMineModel.h */,
+				722328C922FB35F2001B1F08 /* SDMineModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -534,6 +542,8 @@
 		AE92DECE22E2AD2C0013618C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				722328C522FB33E0001B1F08 /* SDMineTableViewCell.h */,
+				722328C622FB33E0001B1F08 /* SDMineTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -760,6 +770,7 @@
 				AE7EEFC522E7EF48007CEBC9 /* SDTextColorButton.m in Sources */,
 				AEE06B2022FAC68D00DBC82C /* SDLoginViewController.m in Sources */,
 				AE92DED722E2BC320013618C /* SDNDHTTPClient.m in Sources */,
+				722328CA22FB35F2001B1F08 /* SDMineModel.m in Sources */,
 				AE92DEE622E2C1300013618C /* SDTabBarController.m in Sources */,
 				AE8E5B3222E2FCF400818AA0 /* SDWriteDiaryViewController.m in Sources */,
 				AE92DEBB22E2AB550013618C /* Simple_Diary.xcdatamodeld in Sources */,
@@ -769,6 +780,7 @@
 				AE12203822EAC8B200FB8E9B /* MLAlbumListTableViewController.m in Sources */,
 				AE138CD022E9A3AB005367DB /* SDTextThemeView.m in Sources */,
 				AE92DEE922E2CB4C0013618C /* SDBaseViewController.m in Sources */,
+				722328C722FB33E0001B1F08 /* SDMineTableViewCell.m in Sources */,
 				AE12203722EAC8B200FB8E9B /* MLShowViewController.m in Sources */,
 				7207BBAC22EBEE3A009838F1 /* SDTextWeatherView.m in Sources */,
 				72C7718E22F55AAB00A97DE1 /* SDShowDiaryTableViewCell.m in Sources */,

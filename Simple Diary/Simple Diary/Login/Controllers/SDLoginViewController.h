@@ -9,9 +9,9 @@
 #import "SDBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class SDLoginViewController;
 @interface SDLoginViewController : SDBaseViewController
-
++ (SDLoginViewController *)shareInstance;
 @end
 
 NS_ASSUME_NONNULL_END

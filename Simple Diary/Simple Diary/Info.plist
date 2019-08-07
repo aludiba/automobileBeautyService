@@ -61,10 +61,5 @@
 	<string>We need to get relevant data of your surroundings through your geographical location information</string>
 	<key>Privacy - Microphone Usage Description </key>
 	<string>Is this App allowed to use your microphone?</string>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 </dict>
 </plist>

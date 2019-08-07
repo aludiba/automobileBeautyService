@@ -60,6 +60,8 @@
 }
 - (void)loadData{
     BmobQuery *bquery = [BmobQuery queryWithClassName:@"Diary"];
+    BmobUser *author = [BmobUser currentUser];
+    [bquery whereKey:@"author" equalTo:author];
     //查找GameScore表的数据
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
         if (error) {
