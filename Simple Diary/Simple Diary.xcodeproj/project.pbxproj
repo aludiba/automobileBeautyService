@@ -75,6 +75,7 @@
 		AE92DEEF22E2CE3A0013618C /* SDMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE92DEEE22E2CE3A0013618C /* SDMineViewController.m */; };
 		AE92DEF222E2E56D0013618C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE92DEF422E2E56D0013618C /* Localizable.strings */; };
 		AEE06B2022FAC68D00DBC82C /* SDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE06B1F22FAC68D00DBC82C /* SDLoginViewController.m */; };
+		AEE06B2322FC39C600DBC82C /* SDPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE06B2222FC39C600DBC82C /* SDPasswordChangeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -194,6 +195,8 @@
 		AE92DF0622E2E7500013618C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AEE06B1E22FAC68D00DBC82C /* SDLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDLoginViewController.h; sourceTree = "<group>"; };
 		AEE06B1F22FAC68D00DBC82C /* SDLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDLoginViewController.m; sourceTree = "<group>"; };
+		AEE06B2122FC39C600DBC82C /* SDPasswordChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDPasswordChangeViewController.h; sourceTree = "<group>"; };
+		AEE06B2222FC39C600DBC82C /* SDPasswordChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDPasswordChangeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -535,6 +538,8 @@
 			children = (
 				AE92DEED22E2CE3A0013618C /* SDMineViewController.h */,
 				AE92DEEE22E2CE3A0013618C /* SDMineViewController.m */,
+				AEE06B2122FC39C600DBC82C /* SDPasswordChangeViewController.h */,
+				AEE06B2222FC39C600DBC82C /* SDPasswordChangeViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -758,6 +763,7 @@
 				AE12203922EAC8B200FB8E9B /* MLImageCollectionViewController.m in Sources */,
 				AE779E8422E4329700C3A98E /* SDButton.m in Sources */,
 				AE12200F22EAA1FB00FB8E9B /* SDTextPictureView.m in Sources */,
+				AEE06B2322FC39C600DBC82C /* SDPasswordChangeViewController.m in Sources */,
 				AE92DEE022E2BEBF0013618C /* CalendarTool.m in Sources */,
 				AE92DEDA22E2BD500013618C /* MBProgressHUD+SDNJ.m in Sources */,
 				AE12203E22EAC8B200FB8E9B /* MLCustomSheet.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "SDLoginViewController.h"
 #import "SDTabBarController.h"
+#import "SDPasswordChangeViewController.h"
 @interface SDLoginViewController ()<UITextFieldDelegate>
 @property(nonatomic, strong)UIView *backView;
 @property(nonatomic, strong)UILabel *accountLable;
@@ -18,6 +19,7 @@
 @property(nonatomic, copy)NSString *password;
 @property(nonatomic, strong)UIButton *loginButton;
 @property(nonatomic, strong)UIButton *registeredButton;
+@property(nonatomic, strong)UIButton *forgotPasswordButton;
 @end
 
 @implementation SDLoginViewController
@@ -27,12 +29,12 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self setContent];
 }
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     self.navigationController.navigationBar.hidden = YES;
 }
-- (void)viewDidDisappear:(BOOL)animated{
-    [super viewDidDisappear:animated];
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
     self.navigationController.navigationBar.hidden = NO;
 }
 + (SDLoginViewController *)shareInstance{
@@ -51,6 +53,7 @@
     [self.backView addSubview:self.passwordTextField];
     [self.backView addSubview:self.loginButton];
     [self.backView addSubview:self.registeredButton];
+    [self.backView addSubview:self.forgotPasswordButton];
     
     [self.backView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view).offset(SDHeightNavBar + 50);
@@ -112,9 +115,22 @@
         make.top.equalTo(self.loginButton.mas_bottom).offset(20);
         make.height.mas_equalTo(44);
     }];
+    [self.forgotPasswordButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.backView).offset(26.5);
+        make.trailing.equalTo(self.backView).offset(-26.5);
+        make.top.equalTo(self.registeredButton.mas_bottom).offset(20);
+        make.height.mas_equalTo(14);
+    }];
 }
 #pragma mark - actions
 - (void)btnClick:(UIButton *)sender{
+    [self.view endEditing:YES];
+    if (sender.tag == 102) {
+        NSLog(@"忘记密码~~~");
+        SDPasswordChangeViewController *pcVC = [[SDPasswordChangeViewController alloc] init];
+        [self.navigationController pushViewController:pcVC animated:YES];
+        return;
+    }
     if (!self.account.length) {
         [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请输入账号", nil)];
         return;
@@ -128,6 +144,7 @@
             if (user) {
                 [MBProgressHUD SDshowReminderText:NSLocalizedString(@"登录成功", nil)];
                 SDTabBarController *tabVC = [SDTabBarController shareInstance];
+                tabVC.selectedIndex = 0;
                 [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
             }else{
                 NSLog(@"登录失败error:%@",error);
@@ -141,6 +158,15 @@
         [bUser signUpInBackgroundWithBlock:^ (BOOL isSuccessful, NSError *error){
             if (isSuccessful){
                 [MBProgressHUD SDshowReminderText:NSLocalizedString(@"注册成功", nil)];
+                [BmobUser loginWithUsernameInBackground:self.account password:self.password block:^(BmobUser *user, NSError *error) {
+                    if (user) {
+                        SDTabBarController *tabVC = [SDTabBarController shareInstance];
+                        tabVC.selectedIndex = 0;
+                        [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                    }else{
+                        [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",error]];
+                    }
+                }];
             } else {
                 NSLog(@"注册失败error:%@",error);
                 [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",error]];
@@ -247,5 +273,17 @@
         [_registeredButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _registeredButton;
+}
+- (UIButton *)forgotPasswordButton{
+    if (!_forgotPasswordButton) {
+        _forgotPasswordButton = [[UIButton alloc] init];
+        _forgotPasswordButton.tag = 102;
+        _forgotPasswordButton.titleLabel.font = [UIFont systemFontOfSize:12];
+        [_forgotPasswordButton setTitle:NSLocalizedString(@"忘记密码", nil) forState:UIControlStateNormal];
+        [_forgotPasswordButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+        _forgotPasswordButton.backgroundColor = [UIColor clearColor];
+        [_forgotPasswordButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _forgotPasswordButton;
 }
 @end

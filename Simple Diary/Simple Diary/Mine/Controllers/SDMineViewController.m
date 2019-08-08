@@ -9,6 +9,8 @@
 #import "SDMineViewController.h"
 #import "SDMineModel.h"
 #import "SDMineTableViewCell.h"
+#import "SDLoginViewController.h"
+#import "SDPasswordChangeViewController.h"
 @interface SDMineViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UITableView *mainTable;
 @property(nonatomic, strong)NSMutableArray *viewDataArray;
@@ -25,29 +27,29 @@
     line1Model0.type = SDMineCellTypeLine;
     [self.viewDataArray addObject:line1Model0];
     SDMineModel *nicknameModel = [[SDMineModel alloc] init];
-    nicknameModel.title = @"昵称";
+    nicknameModel.title = NSLocalizedString(@"昵称", nil);
     nicknameModel.type = SDMineCellTypeContent;
     [self.viewDataArray addObject:nicknameModel];
     SDMineModel *passwordModel = [[SDMineModel alloc] init];
-    passwordModel.title = @"密码修改";
+    passwordModel.title = NSLocalizedString(@"密码修改", nil);
     passwordModel.type = SDMineCellTypeDefault;
     [self.viewDataArray addObject:passwordModel];
     SDMineModel *lineModel = [[SDMineModel alloc] init];
     lineModel.type = SDMineCellTypeLine;
     [self.viewDataArray addObject:lineModel];
     SDMineModel *remindModel = [[SDMineModel alloc] init];
-    remindModel.title = @"提醒写日记";
+    remindModel.title = NSLocalizedString(@"提醒写日记", nil);
     remindModel.type = SDMineCellTypeContent;
     [self.viewDataArray addObject:remindModel];
     SDMineModel *styleModel = [[SDMineModel alloc] init];
-    styleModel.title = @"日记样式";
+    styleModel.title = NSLocalizedString(@"日记样式", nil);
     styleModel.type = SDMineCellTypeDefault;
     [self.viewDataArray addObject:styleModel];
     SDMineModel *line1Model = [[SDMineModel alloc] init];
     line1Model.type = SDMineCellTypeLine;
     [self.viewDataArray addObject:line1Model];
     SDMineModel *loginOutModel = [[SDMineModel alloc] init];
-    loginOutModel.title = @"退出登录";
+    loginOutModel.title = NSLocalizedString(@"退出登录", nil);
     loginOutModel.type = SDMineCellTypeLoginOut;
     [self.viewDataArray addObject:loginOutModel];
     [self.mainTable reloadData];
@@ -73,8 +75,25 @@
     }else{
         SDMineTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SDMineTableViewCell" forIndexPath:indexPath];
         cell.model = model;
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
+    }
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    SDMineModel *model = self.viewDataArray[indexPath.row];
+    if (model.type == SDMineCellTypeLine) {
+       
+    }else if(model.type == SDMineCellTypeLoginOut){
+        [BmobUser logout];
+        SDLoginViewController *loginVC = [SDLoginViewController shareInstance];
+        UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+        [[UIApplication sharedApplication].delegate window].rootViewController = loginVCNav;
+    }else{
+        if ([model.title isEqualToString:NSLocalizedString(@"密码修改", nil)]) {
+            SDPasswordChangeViewController *pacVC = [[SDPasswordChangeViewController alloc] init];
+            pacVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:pacVC animated:YES];
+        }
     }
 }
 #pragma mark - 属性懒加载

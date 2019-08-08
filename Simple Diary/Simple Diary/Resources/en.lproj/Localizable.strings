@@ -45,6 +45,28 @@
 @"请输入密码" = "Please enter password";
 @"登录成功" = "Please enter password";
 @"注册成功" = "Registered successfully";
+@"忘记密码" = "Forgot password";
+@"昵称" = "nickname";
+@"密码修改" = "Password change";
+@"提醒写日记" = "Remind yourself to keep a journal";
+@"日记样式" = "Diary style";
+@"退出登录" = "Log out";
+@"输入旧密码" = "Enter old password";
+@"输入新密码" = "Enter a new password";
+@"确认密码" = "Confirm password";
+@"请输入旧密码" = "Please enter the old password";
+@"请输入新密码" = "Please enter a new password";
+@"请确认密码" = "Please confirm the password.";
+@"两次密码输入不一致" = "Two different passwords";
+@"密码修改成功" = "Password modified successfully";
+
+
+
+
+
+
+
+
 
 
 

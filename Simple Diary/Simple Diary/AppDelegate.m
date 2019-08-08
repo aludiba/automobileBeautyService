@@ -28,7 +28,8 @@
     }else{
         //对象为空时，可打开用户注册界面
         SDLoginViewController *loginVC = [SDLoginViewController shareInstance];
-        self.window.rootViewController = loginVC;
+        UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+        self.window.rootViewController = loginVCNav;
     }
     [self.window makeKeyAndVisible];
     return YES;
