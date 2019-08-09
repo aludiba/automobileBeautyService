@@ -59,6 +59,7 @@
 }
 #pragma mark - actions
 - (void)btnClick:(UIButton *)sender{
+    [self.view endEditing:YES];
     if (!self.oldPassword.length) {
         [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请输入旧密码", nil)];
         return;
@@ -75,7 +76,7 @@
         [MBProgressHUD SDshowReminderText:NSLocalizedString(@"两次密码输入不一致", nil)];
         return;
     }
-    [self.view endEditing:YES];
+    if (self.type == SDPasswordChangeViewControllerTypeDefault) {
     BmobUser *user = [BmobUser currentUser];
     NSString *name = user.username;
     [user updateCurrentUserPasswordWithOldPassword:self.oldPassword newPassword:self.confirmPassword block:^(BOOL isSuccessful, NSError *error) {
@@ -83,16 +84,40 @@
             //用新密码登录
             [BmobUser loginInbackgroundWithAccount:name andPassword:self.confirmPassword block:^(BmobUser *user, NSError *error) {
                 if (error) {
-                    [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",error]];
+                    [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
                 } else {
                     [MBProgressHUD SDshowReminderText:NSLocalizedString(@"密码修改成功", nil)];
                     [self.navigationController popViewControllerAnimated:YES];
                 }
             }];
         } else {
-            [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",error]];
+            [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
         }
     }];
+    }else{
+        BmobQuery *query = [BmobUser query];
+        [query whereKey:@"username" equalTo:self.userName];
+        [query findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+            if (error) {
+                [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
+            }else{
+                if (array.count) {
+                    BmobUser *user = array[0];
+                    NSLog(@"user:%@",user.objectId);
+                    [user updateCurrentUserPasswordWithOldPassword:self.oldPassword newPassword:self.confirmPassword block:^(BOOL isSuccessful, NSError *error) {
+                        if (isSuccessful) {
+                            //用新密码登录
+                            [MBProgressHUD SDshowReminderText:NSLocalizedString(@"密码修改成功", nil)];
+                            [self.navigationController popViewControllerAnimated:YES];
+                        } else {
+                            NSLog(@"修改密码失败:%@",error);
+                            [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
+                        }
+                    }];
+                }
+            }
+        }];
+    }
 }
 #pragma mark - UITextFieldDelegate
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{

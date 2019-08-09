@@ -57,6 +57,7 @@
 		AE779E8422E4329700C3A98E /* SDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AE779E8322E4329700C3A98E /* SDButton.m */; };
 		AE779E8722E4528000C3A98E /* SDTextSetView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE779E8622E4528000C3A98E /* SDTextSetView.m */; };
 		AE7EEFC522E7EF48007CEBC9 /* SDTextColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7EEFC422E7EF48007CEBC9 /* SDTextColorButton.m */; };
+		AE84C45822FD62AF00AF69D2 /* SDDiaryStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE84C45722FD62AF00AF69D2 /* SDDiaryStyleViewController.m */; };
 		AE8E5B3222E2FCF400818AA0 /* SDWriteDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8E5B3122E2FCF400818AA0 /* SDWriteDiaryViewController.m */; };
 		AE8E5B3D22E305EB00818AA0 /* SDSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8E5B3C22E305EB00818AA0 /* SDSearchViewController.m */; };
 		AE8E5B4022E3060E00818AA0 /* SDCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8E5B3F22E3060E00818AA0 /* SDCalendarViewController.m */; };
@@ -76,6 +77,8 @@
 		AE92DEF222E2E56D0013618C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE92DEF422E2E56D0013618C /* Localizable.strings */; };
 		AEE06B2022FAC68D00DBC82C /* SDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE06B1F22FAC68D00DBC82C /* SDLoginViewController.m */; };
 		AEE06B2322FC39C600DBC82C /* SDPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE06B2222FC39C600DBC82C /* SDPasswordChangeViewController.m */; };
+		AEE06B2622FD0B5C00DBC82C /* SDModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE06B2522FD0B5C00DBC82C /* SDModifyNicknameViewController.m */; };
+		AEE06B2922FD16B600DBC82C /* SDRemindWriteDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE06B2822FD16B600DBC82C /* SDRemindWriteDiaryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -155,6 +158,8 @@
 		AE779E8622E4528000C3A98E /* SDTextSetView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDTextSetView.m; sourceTree = "<group>"; };
 		AE7EEFC322E7EF48007CEBC9 /* SDTextColorButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDTextColorButton.h; sourceTree = "<group>"; };
 		AE7EEFC422E7EF48007CEBC9 /* SDTextColorButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDTextColorButton.m; sourceTree = "<group>"; };
+		AE84C45622FD62AF00AF69D2 /* SDDiaryStyleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDDiaryStyleViewController.h; sourceTree = "<group>"; };
+		AE84C45722FD62AF00AF69D2 /* SDDiaryStyleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDDiaryStyleViewController.m; sourceTree = "<group>"; };
 		AE8E5B3022E2FCF400818AA0 /* SDWriteDiaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWriteDiaryViewController.h; sourceTree = "<group>"; };
 		AE8E5B3122E2FCF400818AA0 /* SDWriteDiaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWriteDiaryViewController.m; sourceTree = "<group>"; };
 		AE8E5B3B22E305EB00818AA0 /* SDSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDSearchViewController.h; sourceTree = "<group>"; };
@@ -197,6 +202,10 @@
 		AEE06B1F22FAC68D00DBC82C /* SDLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDLoginViewController.m; sourceTree = "<group>"; };
 		AEE06B2122FC39C600DBC82C /* SDPasswordChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDPasswordChangeViewController.h; sourceTree = "<group>"; };
 		AEE06B2222FC39C600DBC82C /* SDPasswordChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDPasswordChangeViewController.m; sourceTree = "<group>"; };
+		AEE06B2422FD0B5C00DBC82C /* SDModifyNicknameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDModifyNicknameViewController.h; sourceTree = "<group>"; };
+		AEE06B2522FD0B5C00DBC82C /* SDModifyNicknameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDModifyNicknameViewController.m; sourceTree = "<group>"; };
+		AEE06B2722FD16B600DBC82C /* SDRemindWriteDiaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDRemindWriteDiaryViewController.h; sourceTree = "<group>"; };
+		AEE06B2822FD16B600DBC82C /* SDRemindWriteDiaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDRemindWriteDiaryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -540,6 +549,12 @@
 				AE92DEEE22E2CE3A0013618C /* SDMineViewController.m */,
 				AEE06B2122FC39C600DBC82C /* SDPasswordChangeViewController.h */,
 				AEE06B2222FC39C600DBC82C /* SDPasswordChangeViewController.m */,
+				AEE06B2422FD0B5C00DBC82C /* SDModifyNicknameViewController.h */,
+				AEE06B2522FD0B5C00DBC82C /* SDModifyNicknameViewController.m */,
+				AEE06B2722FD16B600DBC82C /* SDRemindWriteDiaryViewController.h */,
+				AEE06B2822FD16B600DBC82C /* SDRemindWriteDiaryViewController.m */,
+				AE84C45622FD62AF00AF69D2 /* SDDiaryStyleViewController.h */,
+				AE84C45722FD62AF00AF69D2 /* SDDiaryStyleViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -760,6 +775,7 @@
 			files = (
 				AE779E8722E4528000C3A98E /* SDTextSetView.m in Sources */,
 				AE779E8122E3F99C00C3A98E /* SDJournalEditingToolbar.m in Sources */,
+				AEE06B2922FD16B600DBC82C /* SDRemindWriteDiaryViewController.m in Sources */,
 				AE12203922EAC8B200FB8E9B /* MLImageCollectionViewController.m in Sources */,
 				AE779E8422E4329700C3A98E /* SDButton.m in Sources */,
 				AE12200F22EAA1FB00FB8E9B /* SDTextPictureView.m in Sources */,
@@ -788,6 +804,7 @@
 				AE92DEE922E2CB4C0013618C /* SDBaseViewController.m in Sources */,
 				722328C722FB33E0001B1F08 /* SDMineTableViewCell.m in Sources */,
 				AE12203722EAC8B200FB8E9B /* MLShowViewController.m in Sources */,
+				AE84C45822FD62AF00AF69D2 /* SDDiaryStyleViewController.m in Sources */,
 				7207BBAC22EBEE3A009838F1 /* SDTextWeatherView.m in Sources */,
 				72C7718E22F55AAB00A97DE1 /* SDShowDiaryTableViewCell.m in Sources */,
 				722222BC22ED3CD2004B8352 /* NSDictionary+log.m in Sources */,
@@ -798,6 +815,7 @@
 				AE92DEEF22E2CE3A0013618C /* SDMineViewController.m in Sources */,
 				AE12203F22EAC8B200FB8E9B /* MLShowBigImage.m in Sources */,
 				722073A622F6A4AA004DD0A4 /* SDWriteDiaryDetailViewController.m in Sources */,
+				AEE06B2622FD0B5C00DBC82C /* SDModifyNicknameViewController.m in Sources */,
 				AE92DEDD22E2BD9B0013618C /* SDUIUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

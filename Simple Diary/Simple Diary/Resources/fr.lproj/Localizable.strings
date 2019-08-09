@@ -16,49 +16,61 @@
 "本地相簿" = "Albums de photos locaux";
 "最多只能选择6张图片" = "Un maximum de 6 images peuvent être sélectionnées";
 "取消" = "La suppression des";
-@"相册" = "l’album";
-@"您未打开照片权限" = "Vous n’ouvrez pas le droit de photographie";
-@"相机胶卷" = "Rouleaux pour caméras";
-@"返回" = "Le retour";
-@"确定" = "déterminer";
-@"提示" = "rappel";
-@"您还未开启定位服务，是否需要开启？" = "Vous n’avez pas encore activé le service de positionnement.";
-@"请输入日记内容" = "Veuillez indiquer le contenu du journal";
-@"星期日" = "dimanche";
-@"星期一" = "lundi";
-@"星期二" = "mardi";
-@"星期三" = "mercredi";
-@"星期四" = "jeudi";
-@"星期五" = "vendredi";
-@"星期六" = "samedi";
-@"详情" = "Pour de plus amples informations";
-@"删除成功" = "Suppression réussie";
-@"确定删除?" = "Suppression définitive?";
-@"添加成功" = "Succès de l’addition";
-@"更新成功" = "Mise à jour réussie";
-@"定位失败" = "Défaut de localisation";
-@"账号" = "Le compte";
-@"密码" = "Les mots de passe";
-@"登录" = "connexion;
-@"注册" = "l’enregistrement";
-@"请输入账号" = "Veuillez indiquer le numéro de compte";
-@"请输入密码" = "Veuillez introduire votre mot de passe";
-@"登录成功" = "Accès réussi";
-@"注册成功" = "Succès de l’enregistrement";
-@"忘记密码" = "Oubliez votre mot de passe";
-@"昵称" = "surnom";
-@"密码修改" = "Modification du mot de passe";
-@"提醒写日记" = "Rappel pour tenir un journal";
-@"日记样式" = "Style de carnet";
-@"退出登录" = "Sortie de la session";
-@"输入旧密码" = "Entrée de l’ancien mot de passe";
-@"输入新密码" = "Entrée d’un nouveau mot de passe";
-@"确认密码" = "Confirmation du mot de passe";
-@"请输入旧密码" = "Entrez votre ancien mot de passe";
-@"请输入新密码" = "Entrez votre nouveau mot de passe, s’il vous plaît";
-@"请确认密码" = "Veuillez confirmer votre mot de passe";
-@"两次密码输入不一致" = "Deux entrées de mot de passe ne concordent pas";
-@"密码修改成功" = "Changement réussi du mot de passe";
+"相册" = "l’album";
+"您未打开照片权限" = "Vous n’ouvrez pas le droit de photographie";
+"相机胶卷" = "Rouleaux pour caméras";
+"返回" = "Le retour";
+"确定" = "déterminer";
+"提示" = "rappel";
+"您还未开启定位服务，是否需要开启？" = "Vous n’avez pas encore activé le service de positionnement";
+"请输入日记内容" = "Veuillez indiquer le contenu du journal";
+"星期日" = "dimanche";
+"星期一" = "lundi";
+"星期二" = "mardi";
+"星期三" = "mercredi";
+"星期四" = "jeudi";
+"星期五" = "vendredi";
+"星期六" = "samedi";
+"详情" = "Pour de plus amples informations";
+"删除成功" = "Suppression réussie";
+"确定删除?" = "Suppression définitive";
+"添加成功" = "Succès de l’addition";
+"更新成功" = "Mise à jour réussie";
+"定位失败" = "Défaut de localisation";
+"账号" = "Le compte";
+"密码" = "Les mots de passe";
+"登录" = "connexion";
+"注册" = "l’enregistrement";
+"请输入账号" = "Veuillez indiquer le numéro de compte";
+"请输入密码" = "Veuillez introduire votre mot de passe";
+"登录成功" = "Accès réussi";
+"注册成功" = "Succès de l’enregistrement";
+"忘记密码" = "Oubliez votre mot de passe";
+"昵称" = "surnom";
+"密码修改" = "Modification du mot de passe";
+"提醒写日记" = "Rappel pour tenir un journal";
+"日记样式" = "Style de carnet";
+"退出登录" = "Sortie de la session";
+"输入旧密码" = "Entrée de l’ancien mot de passe";
+"输入新密码" = "Entrée d’un nouveau mot de passe";
+"确认密码" = "Confirmation du mot de passe";
+"请输入旧密码" = "Entrez votre ancien mot de passe";
+"请输入新密码" = "Entrez votre nouveau mot de passe, s’il vous plaît";
+"请确认密码" = "Veuillez confirmer votre mot de passe";
+"两次密码输入不一致" = "Deux entrées de mot de passe ne concordent pas";
+"密码修改成功" = "Changement réussi du mot de passe";
+"修改昵称" = "Modification d’un pseudonyme";
+"请输入昵称" = "Entrez votre pseudonyme";
+"保存" = "La conservation";
+"提醒我写日记" = "Rappelle-moi de tenir un journal";
+"提醒时间" = "Temps de rappel";
+"主题颜色" = "Couleur du sujet";
+
+
+
+
+
+
 
 
 

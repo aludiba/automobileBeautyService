@@ -81,7 +81,7 @@
     CGFloat fontSize = [_model.fontSize floatValue];
     self.contentView.backgroundColor = SDH_Color(themeR, themeG, themeB, 1);
     self.dateLabel.textColor = SDH_Color(fontRGBR, fontRGBG, fontRGBB, 1);
-    self.dateLabel.text = [NSString stringWithFormat:@"%@ %@",_model.date,_model.weekDay];
+    self.dateLabel.text = [NSString stringWithFormat:@"%@ %@",_model.date,NSLocalizedString(_model.weekDay, nil)];
     CGSize dateSize = [self.dateLabel sizeThatFits:CGSizeMake(MAXFLOAT, 17)];
     [self.dateLabel mas_updateConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(dateSize.width);

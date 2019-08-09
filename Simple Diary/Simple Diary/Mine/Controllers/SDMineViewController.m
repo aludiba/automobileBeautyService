@@ -10,7 +10,10 @@
 #import "SDMineModel.h"
 #import "SDMineTableViewCell.h"
 #import "SDLoginViewController.h"
+#import "SDModifyNicknameViewController.h"
 #import "SDPasswordChangeViewController.h"
+#import "SDRemindWriteDiaryViewController.h"
+#import "SDDiaryStyleViewController.h"
 @interface SDMineViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UITableView *mainTable;
 @property(nonatomic, strong)NSMutableArray *viewDataArray;
@@ -29,6 +32,10 @@
     SDMineModel *nicknameModel = [[SDMineModel alloc] init];
     nicknameModel.title = NSLocalizedString(@"昵称", nil);
     nicknameModel.type = SDMineCellTypeContent;
+    BmobUser *user = [BmobUser currentUser];
+    if ([[user objectForKey:@"username"] length]) {
+        nicknameModel.content = [user objectForKey:@"username"];
+    }
     [self.viewDataArray addObject:nicknameModel];
     SDMineModel *passwordModel = [[SDMineModel alloc] init];
     passwordModel.title = NSLocalizedString(@"密码修改", nil);
@@ -39,6 +46,10 @@
     [self.viewDataArray addObject:lineModel];
     SDMineModel *remindModel = [[SDMineModel alloc] init];
     remindModel.title = NSLocalizedString(@"提醒写日记", nil);
+    if ([user objectForKey:@"reminddate"]) {
+        NSString *remindDateString = [SDUIUtilities SDformattedTimeStringWithDate:[user objectForKey:@"reminddate"] format:@"HH:mm"];
+        remindModel.content = remindDateString;
+    }
     remindModel.type = SDMineCellTypeContent;
     [self.viewDataArray addObject:remindModel];
     SDMineModel *styleModel = [[SDMineModel alloc] init];
@@ -89,10 +100,22 @@
         UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
         [[UIApplication sharedApplication].delegate window].rootViewController = loginVCNav;
     }else{
-        if ([model.title isEqualToString:NSLocalizedString(@"密码修改", nil)]) {
+        if ([model.title isEqualToString:NSLocalizedString(@"昵称", nil)]) {
+            SDModifyNicknameViewController *mnnVC = [[SDModifyNicknameViewController alloc] init];
+            mnnVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:mnnVC animated:YES];
+        }else if ([model.title isEqualToString:NSLocalizedString(@"密码修改", nil)]) {
             SDPasswordChangeViewController *pacVC = [[SDPasswordChangeViewController alloc] init];
             pacVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:pacVC animated:YES];
+        }else if ([model.title isEqualToString:NSLocalizedString(@"提醒写日记", nil)]) {
+            SDRemindWriteDiaryViewController *pacVC = [[SDRemindWriteDiaryViewController alloc] init];
+            pacVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:pacVC animated:YES];
+        }else if ([model.title isEqualToString:NSLocalizedString(@"日记样式", nil)]){
+            SDDiaryStyleViewController *sdStyleVC = [[SDDiaryStyleViewController alloc] init];
+            sdStyleVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:sdStyleVC animated:YES];
         }
     }
 }

@@ -17,6 +17,7 @@ typedef NS_ENUM(NSInteger, SDMineCellType) {
 };
 @interface SDMineModel : NSObject
 @property(nonatomic, copy)NSString *title;
+@property(nonatomic, copy)NSString *content;
 @property(nonatomic, assign)SDMineCellType type;
 @end
 

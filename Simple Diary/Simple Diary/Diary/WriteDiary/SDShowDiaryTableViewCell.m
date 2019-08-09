@@ -85,7 +85,7 @@
     self.headLabel.text = [dateArray objectAtIndex:1];
     self.headLabel.backgroundColor = SDH_Color(themeR, themeG, themeB, 1);
     self.backView.backgroundColor = SDH_Color(themeR, themeG, themeB, 1);
-    self.dateLabel.text = [NSString stringWithFormat:@"%@ %@",dateArray[0],_model.weekDay];
+    self.dateLabel.text = [NSString stringWithFormat:@"%@ %@",dateArray[0],NSLocalizedString(_model.weekDay, nil)];
     self.contentLabel.text = _model.content;
     self.contentHeight = [self.contentLabel sizeThatFits:CGSizeMake(SDWIDTH - 144, MAXFLOAT)].height;
     [self.contentLabel mas_updateConstraints:^(MASConstraintMaker *make) {

@@ -23,7 +23,7 @@
         [self.titleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(15);
             make.top.equalTo(self.contentView).offset(15);
-            make.width.mas_equalTo(120);
+            make.trailing.equalTo(self.contentLbl.mas_leading).offset(-5);
             make.height.mas_equalTo(20);
         }];
         [self.arrowImgView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -35,7 +35,7 @@
         [self.contentLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.trailing.equalTo(self.arrowImgView.mas_leading).offset(-10);
             make.centerY.equalTo(self.contentView);
-            make.leading.equalTo(self.titleLbl.mas_trailing).offset(15);
+            make.width.mas_equalTo(90);
             make.height.mas_equalTo(20);
         }];
         UIView *line = [[UIView alloc] init];
@@ -59,6 +59,9 @@
     }else{
         self.arrowImgView.hidden = NO;
     }
+    if (_model.type == SDMineCellTypeContent) {
+        self.contentLbl.text = _model.content;
+    }
 }
 #pragma mark - 属性懒加载
 - (UILabel *)titleLbl{
@@ -74,6 +77,8 @@
         _contentLbl = [[UILabel alloc] init];
         _contentLbl.font = [UIFont systemFontOfSize:17];
         _contentLbl.textColor = [UIColor grayColor];
+        [_contentLbl sizeToFit];
+        _contentLbl.textAlignment = NSTextAlignmentRight;
     }
     return _contentLbl;
 }

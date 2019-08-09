@@ -193,25 +193,25 @@
     NSInteger weekDay = [CalendarTool convertDateToWeekDay:nowDate];
     switch (weekDay) {
         case 0:
-            self.releaseModel.weekDay = NSLocalizedString(@"星期日", nil);
+            self.releaseModel.weekDay = @"星期日";
             break;
         case 1:
-            self.releaseModel.weekDay = NSLocalizedString(@"星期一", nil);
+            self.releaseModel.weekDay = @"星期一";
             break;
         case 2:
-            self.releaseModel.weekDay = NSLocalizedString(@"星期二", nil);
+            self.releaseModel.weekDay = @"星期二";
             break;
         case 3:
-            self.releaseModel.weekDay = NSLocalizedString(@"星期三", nil);
+            self.releaseModel.weekDay = @"星期三";
             break;
         case 4:
-            self.releaseModel.weekDay = NSLocalizedString(@"星期四", nil);
+            self.releaseModel.weekDay = @"星期四";
             break;
         case 5:
-            self.releaseModel.weekDay = NSLocalizedString(@"星期五", nil);
+            self.releaseModel.weekDay = @"星期五";
             break;
         case 6:
-            self.releaseModel.weekDay = NSLocalizedString(@"星期六", nil);
+            self.releaseModel.weekDay = @"星期六";
             break;
         default:
             break;

@@ -53,7 +53,7 @@
     [self.backView addSubview:self.passwordTextField];
     [self.backView addSubview:self.loginButton];
     [self.backView addSubview:self.registeredButton];
-    [self.backView addSubview:self.forgotPasswordButton];
+//    [self.backView addSubview:self.forgotPasswordButton];
     
     [self.backView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view).offset(SDHeightNavBar + 50);
@@ -64,13 +64,13 @@
     [self.accountLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.backView).offset(40);
         make.leading.equalTo(self.backView).offset(31.5);
-        make.width.mas_equalTo(59);
+        make.width.mas_equalTo(70);
         make.height.mas_equalTo(21);
     }];
     [self.accountTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.accountLable);
         make.leading.equalTo(self.accountLable.mas_trailing).offset(20);
-        make.trailing.equalTo(self.backView).offset(-80);
+        make.trailing.equalTo(self.backView).offset(-30);
         make.height.mas_equalTo(21);
     }];
     UIView *line = [[UIView alloc] init];
@@ -85,13 +85,13 @@
     [self.passwordLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(line.mas_bottom).offset(24);
         make.leading.equalTo(self.backView).offset(31.5);
-        make.width.mas_equalTo(59);
+        make.width.mas_equalTo(70);
         make.height.mas_equalTo(21);
     }];
     [self.passwordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.passwordLable);
         make.leading.equalTo(self.passwordLable.mas_trailing).offset(20);
-        make.trailing.equalTo(self.backView).offset(-80);
+        make.trailing.equalTo(self.backView).offset(-30);
         make.height.mas_equalTo(21);
     }];
     UIView *line1 = [[UIView alloc] init];
@@ -115,24 +115,25 @@
         make.top.equalTo(self.loginButton.mas_bottom).offset(20);
         make.height.mas_equalTo(44);
     }];
-    [self.forgotPasswordButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.backView).offset(26.5);
-        make.trailing.equalTo(self.backView).offset(-26.5);
-        make.top.equalTo(self.registeredButton.mas_bottom).offset(20);
-        make.height.mas_equalTo(14);
-    }];
+//    [self.forgotPasswordButton mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.leading.equalTo(self.backView).offset(26.5);
+//        make.trailing.equalTo(self.backView).offset(-26.5);
+//        make.top.equalTo(self.registeredButton.mas_bottom).offset(20);
+//        make.height.mas_equalTo(14);
+//    }];
 }
 #pragma mark - actions
 - (void)btnClick:(UIButton *)sender{
     [self.view endEditing:YES];
-    if (sender.tag == 102) {
-        NSLog(@"忘记密码~~~");
-        SDPasswordChangeViewController *pcVC = [[SDPasswordChangeViewController alloc] init];
-        [self.navigationController pushViewController:pcVC animated:YES];
-        return;
-    }
     if (!self.account.length) {
         [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请输入账号", nil)];
+        return;
+    }
+    if (sender.tag == 102) {
+        SDPasswordChangeViewController *pcVC = [[SDPasswordChangeViewController alloc] init];
+        pcVC.type = SDPasswordChangeViewControllerTypeFromLogin;
+        pcVC.userName = self.account;
+        [self.navigationController pushViewController:pcVC animated:YES];
         return;
     }
     if (!self.password.length) {
@@ -148,7 +149,7 @@
                 [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
             }else{
                 NSLog(@"登录失败error:%@",error);
-                [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",error]];
+                [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
             }
         }];
     }else if(sender.tag == 101){
@@ -164,12 +165,12 @@
                         tabVC.selectedIndex = 0;
                         [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
                     }else{
-                        [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",error]];
+                        [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
                     }
                 }];
             } else {
                 NSLog(@"注册失败error:%@",error);
-                [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",error]];
+                [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
             }
         }];
     }
