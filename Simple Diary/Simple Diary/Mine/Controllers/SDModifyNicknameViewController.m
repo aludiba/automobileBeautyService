@@ -44,6 +44,7 @@
     [bUser setObject:self.nickname forKey:@"username"];
     [bUser updateInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
         if (isSuccessful) {
+            [MBProgressHUD SDshowReminderText:NSLocalizedString(@"更新成功", nil)];
             [self.navigationController popViewControllerAnimated:YES];
         }else{
             NSLog(@"用户更新error %@",[error description]);

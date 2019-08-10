@@ -28,7 +28,7 @@
 {
     self = [super init];
     if (self) {
-        self.backgroundColor = SDH_Color(247, 252, 251, 1);
+        self.backgroundColor = self.colorsArray[1];
         [self setContentColorsButton];
     }
     return self;
@@ -37,6 +37,20 @@
     CGFloat width = 44.0f;
     CGFloat height = 44.0f;
     CGFloat margin = (SDWIDTH - 32 - width * 7) / 8;
+    NSDictionary *textColorDic = [[NSUserDefaults standardUserDefaults] objectForKey:FONTRGB];
+    NSInteger R = [[textColorDic objectForKey:@"R"] integerValue];
+    NSInteger G = [[textColorDic objectForKey:@"G"] integerValue];
+    NSInteger B = [[textColorDic objectForKey:@"B"] integerValue];
+    UIColor *currentColor;
+    for (int i = 0; i < self.fontColorsArray.count; i++) {
+        NSDictionary *dic = self.fontColorsArray[i];
+        NSInteger R1 = [[dic objectForKey:@"R"] integerValue];
+        NSInteger G1 = [[dic objectForKey:@"G"] integerValue];
+        NSInteger B1 = [[dic objectForKey:@"B"] integerValue];
+        if (R == R1 && G == G1 && B == B1) {
+            currentColor = SDH_Color(R, G, B, 1);
+        }
+    }
     for (int i = 0; i < self.colorsArray.count; i++) {
         UIColor *color = self.colorsArray[i];
         SDTextColorButton *colorButton = [[SDTextColorButton alloc] init];
@@ -53,7 +67,7 @@
             make.width.mas_equalTo(width);
             make.height.mas_equalTo(height);
         }];
-        if (i == 0) {
+        if ([color isEqual:currentColor]) {
             [colorButton setIsSelect:YES];
         }
         if (i == self.colorsArray.count -1) {
@@ -110,7 +124,12 @@
         _textFontLabel = [[UILabel alloc] init];
         _textFontLabel.textColor = [UIColor blackColor];
         [_textFontLabel setFont:[UIFont systemFontOfSize:14]];
-        _textFontLabel.text = [NSString stringWithFormat:@"%@   :   17",NSLocalizedString(@"字体大小", nil)];
+        NSNumber *fontSize = [[NSUserDefaults standardUserDefaults] objectForKey:FONTSIZE];
+        CGFloat fontsize = 17;
+        if (fontSize) {
+            fontsize = [fontSize floatValue];
+        }
+        _textFontLabel.text = [NSString stringWithFormat:@"%@   :   %ld",NSLocalizedString(@"字体大小", nil),(int)round(fontsize)];
     }
     return _textFontLabel;
 }
@@ -130,6 +149,13 @@
         _slider.maximumValue = 40.0;
         self.fontSize = 17;
         _slider.value = 17;
+        NSNumber *fontSize = [[NSUserDefaults standardUserDefaults] objectForKey:FONTSIZE];
+        CGFloat fontsize = 17;
+        if (fontSize) {
+            fontsize = [fontSize floatValue];
+            self.fontSize = fontsize;
+            _slider.value = fontsize;
+        }
         [_slider setContinuous:YES];
         [_slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
     }
@@ -158,6 +184,14 @@
         _colorTipsView = [[UIView alloc] init];
         _colorTipsView.backgroundColor = SDH_Color(0, 0, 0, 1);
         self.fontColor = SDH_Color(0, 0, 0, 1);
+        NSDictionary *textColorDic = [[NSUserDefaults standardUserDefaults] objectForKey:FONTRGB];
+        NSInteger R = [[textColorDic objectForKey:@"R"] integerValue];
+        NSInteger G = [[textColorDic objectForKey:@"G"] integerValue];
+        NSInteger B = [[textColorDic objectForKey:@"B"] integerValue];
+        if (textColorDic) {
+        _colorTipsView.backgroundColor = SDH_Color(R, G, B, 1);
+        self.fontColor = SDH_Color(R, G, B, 1);
+        }
     }
     return _colorTipsView;
 }
@@ -387,6 +421,10 @@
         NSDictionary *dic34 = @{@"R":[NSNumber numberWithInteger:245],@"G":[NSNumber numberWithInteger:222],@"B":[NSNumber numberWithInteger:179]};
         [self.fontColorsArray addObject:dic34];
         self.fontRGBDictionary = self.fontColorsArray[0];
+        NSDictionary *textColorDic = [[NSUserDefaults standardUserDefaults] objectForKey:FONTRGB];
+        if (textColorDic) {
+            self.fontRGBDictionary = textColorDic;
+        }
     }
     return _colorsArray;
 }

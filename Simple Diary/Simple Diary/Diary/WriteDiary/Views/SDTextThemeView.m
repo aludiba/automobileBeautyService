@@ -20,8 +20,7 @@
 {
     self = [super init];
     if (self) {
-        self.backgroundColor = SDH_Color(247, 252, 251, 1);
-        self.themeColor = SDH_Color(225, 225, 225, 1);
+        self.backgroundColor = self.colorsArray[0];
         [self setContentView];
         [self setLayoutContentView];
         [self setContentColorsButton];
@@ -64,6 +63,28 @@
     CGFloat width = 125.0f;
     CGFloat height = 250.0f;
     CGFloat margin = 8.0f;
+    UIColor *color0 = SDH_Color(255, 255, 255, 1);
+    NSDictionary *dic0 = @{@"R":[NSNumber numberWithInteger:255],@"G":[NSNumber numberWithInteger:255],@"B":[NSNumber numberWithInteger:255]};
+    self.themeColor = color0;
+    self.themeRGBDictionary = dic0;
+    NSDictionary *themeColorDic = [[NSUserDefaults standardUserDefaults] objectForKey:THEMERGB];
+    NSInteger R = [[themeColorDic objectForKey:@"R"] integerValue];
+    NSInteger G = [[themeColorDic objectForKey:@"G"] integerValue];
+    NSInteger B = [[themeColorDic objectForKey:@"B"] integerValue];
+    if (themeColorDic) {
+    self.themeColor = SDH_Color(R, G, B, 1);
+    self.themeRGBDictionary = themeColorDic;
+    }
+    UIColor *currentColor;
+    for (int i = 0; i < self.fontColorsArray.count; i++) {
+        NSDictionary *dic = self.fontColorsArray[i];
+        NSInteger R1 = [[dic objectForKey:@"R"] integerValue];
+        NSInteger G1 = [[dic objectForKey:@"G"] integerValue];
+        NSInteger B1 = [[dic objectForKey:@"B"] integerValue];
+        if (R == R1 && G == G1 && B == B1) {
+            currentColor = SDH_Color(R, G, B, 1);
+        }
+    }
     for (int i = 0; i < self.colorsArray.count; i++) {
         UIColor *color = self.colorsArray[i];
         SDTextThemeButton *colorButton = [[SDTextThemeButton alloc] init];
@@ -78,7 +99,7 @@
             make.width.mas_equalTo(width);
             make.height.mas_equalTo(height);
         }];
-        if (i == 0) {
+        if ([color isEqual:currentColor]) {
             [colorButton setIsSelect:YES];
         }
         if (i == self.colorsArray.count -1) {
@@ -86,10 +107,6 @@
                 make.trailing.equalTo(colorButton.mas_trailing);
             }];
         }
-    }
-    self.themeColor = SDH_Color(225, 225, 225, 1);
-    if (!self.themeRGBDictionary) {
-        self.themeRGBDictionary = self.fontColorsArray[0];
     }
 }
 - (void)colorBtnClick:(SDTextThemeButton *)colorButton{
@@ -132,9 +149,9 @@
 - (NSMutableArray *)colorsArray{
     if (!_colorsArray) {
         _colorsArray = [[NSMutableArray alloc] init];
-        UIColor *color0 = SDH_Color(225, 225, 225, 1);
+        UIColor *color0 = SDH_Color(255, 255, 255, 1);
         [_colorsArray addObject:color0];
-        NSDictionary *dic0 = @{@"R":[NSNumber numberWithInteger:225],@"G":[NSNumber numberWithInteger:225],@"B":[NSNumber numberWithInteger:225]};
+        NSDictionary *dic0 = @{@"R":[NSNumber numberWithInteger:255],@"G":[NSNumber numberWithInteger:255],@"B":[NSNumber numberWithInteger:255]};
         [self.fontColorsArray addObject:dic0];
         UIColor *color1 = SDH_Color(245, 222, 179, 1);
         [_colorsArray addObject:color1];

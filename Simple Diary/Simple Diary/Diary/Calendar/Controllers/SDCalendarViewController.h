@@ -7,10 +7,14 @@
 //
 
 #import "SDBaseViewController.h"
+#import "JTCalendar.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SDCalendarViewController : SDBaseViewController
+@property (weak, nonatomic) IBOutlet JTCalendarMenuView *calendarMenuView;
+@property (weak, nonatomic) IBOutlet JTHorizontalCalendarView *calendarContentView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *calendarContentViewHeight;
 
 @end
 

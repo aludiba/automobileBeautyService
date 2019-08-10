@@ -9,7 +9,7 @@
 #import "SDJournalEditingToolbar.h"
 #import "SDTextSetView.h"
 #import "SDTextThemeView.h"
-#import "SDTextPictureView.h"
+//#import "SDTextPictureView.h"
 #import "SDTextWeatherView.h"
 #import "SDDiaryViewController.h"
 #import "SDWriteDiaryViewController.h"
@@ -18,7 +18,7 @@
 @property(nonatomic, strong)UIView *toolBar;
 @property(nonatomic, strong)SDButton *editTextButton;
 @property(nonatomic, strong)SDButton *editStyleButton;
-@property(nonatomic, strong)SDButton *editPictureButton;
+//@property(nonatomic, strong)SDButton *editPictureButton;
 @property(nonatomic, strong)SDButton *editWeatherButton;
 @property(nonatomic, strong)SDButton *editLiftButton;
 @property(nonatomic, strong)UIView *lineView;
@@ -46,20 +46,20 @@
     [self addSubview:self.toolBar];
     [self.toolBar addSubview:self.editTextButton];
     [self.toolBar addSubview:self.editStyleButton];
-    [self.toolBar addSubview:self.editPictureButton];
+//    [self.toolBar addSubview:self.editPictureButton];
     [self.toolBar addSubview:self.editWeatherButton];
     [self.toolBar addSubview:self.editLiftButton];
     [self.toolBar addSubview:self.lineView];
     [self addSubview:self.contentView];
     [self.contentView addSubview:self.textSetView];
     [self.contentView addSubview:self.textThemeView];
-    [self.contentView addSubview:self.textPictureView];
+//    [self.contentView addSubview:self.textPictureView];
     [self.contentView addSubview:self.textWeatherView];
 }
 - (void)setLayoutView{
     CGFloat width = 60.0f;
     CGFloat height = 60.0f;
-    CGFloat spacingX = (SDWIDTH - 5 * width) / 6;
+    CGFloat spacingX = (SDWIDTH - 4 * width) / 5;
     CGFloat spacingY = 15.0f;
     [self.toolBar mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self);
@@ -79,14 +79,14 @@
         make.width.mas_equalTo(width);
         make.height.mas_equalTo(height);
     }];
-    [self.editPictureButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.editStyleButton.mas_trailing).offset(spacingX);
-        make.top.equalTo(self.toolBar).offset(spacingY);
-        make.width.mas_equalTo(width);
-        make.height.mas_equalTo(height);
-    }];
+//    [self.editPictureButton mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.leading.equalTo(self.editStyleButton.mas_trailing).offset(spacingX);
+//        make.top.equalTo(self.toolBar).offset(spacingY);
+//        make.width.mas_equalTo(width);
+//        make.height.mas_equalTo(height);
+//    }];
     [self.editWeatherButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.editPictureButton.mas_trailing).offset(spacingX);
+        make.leading.equalTo(self.editStyleButton.mas_trailing).offset(spacingX);
         make.top.equalTo(self.toolBar).offset(spacingY);
         make.width.mas_equalTo(width);
         make.height.mas_equalTo(height);
@@ -122,13 +122,13 @@
         make.bottom.equalTo(self.contentView).offset(-5);
     }];
     self.textThemeView.hidden = YES;
-    [self.textPictureView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.contentView);
-        make.trailing.equalTo(self.contentView);
-        make.top.equalTo(self.contentView);
-        make.bottom.equalTo(self.contentView).offset(-5);
-    }];
-    self.textPictureView.hidden = YES;
+//    [self.textPictureView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.leading.equalTo(self.contentView);
+//        make.trailing.equalTo(self.contentView);
+//        make.top.equalTo(self.contentView);
+//        make.bottom.equalTo(self.contentView).offset(-5);
+//    }];
+//    self.textPictureView.hidden = YES;
     [self.textWeatherView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.contentView);
         make.trailing.equalTo(self.contentView);
@@ -142,7 +142,7 @@
     if (sender.tag == 100) {
         self.textSetView.hidden = NO;
         self.textThemeView.hidden = YES;
-        self.textPictureView.hidden = YES;
+//        self.textPictureView.hidden = YES;
         self.textWeatherView.hidden = YES;
         self.contentView.hidden = NO;
         self.isExpand = YES;
@@ -151,7 +151,7 @@
     }else if(sender.tag == 101){
         self.textSetView.hidden = YES;
         self.textThemeView.hidden = NO;
-        self.textPictureView.hidden = YES;
+//        self.textPictureView.hidden = YES;
         self.textWeatherView.hidden = YES;
         self.contentView.hidden = NO;
         self.isExpand = YES;
@@ -160,7 +160,7 @@
     }else if(sender.tag == 102){
         self.textSetView.hidden = YES;
         self.textThemeView.hidden = YES;
-        self.textPictureView.hidden = NO;
+//        self.textPictureView.hidden = NO;
         self.textWeatherView.hidden = YES;
         self.contentView.hidden = NO;
         self.isExpand = YES;
@@ -169,7 +169,7 @@
     }else if(sender.tag == 103){
         self.textSetView.hidden = YES;
         self.textThemeView.hidden = YES;
-        self.textPictureView.hidden = YES;
+//        self.textPictureView.hidden = YES;
         self.textWeatherView.hidden = NO;
         self.contentView.hidden = NO;
         self.isExpand = YES;
@@ -219,15 +219,15 @@
     }
     return _editStyleButton;
 }
-- (SDButton *)editPictureButton{
-    if (!_editPictureButton) {
-        _editPictureButton = [[SDButton alloc] init];
-        _editPictureButton.tag = 102;
-        [_editPictureButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-        [_editPictureButton setImage:[UIImage imageNamed:@"SD_pictureEdit"] forState:UIControlStateNormal];
-    }
-    return _editPictureButton;
-}
+//- (SDButton *)editPictureButton{
+//    if (!_editPictureButton) {
+//        _editPictureButton = [[SDButton alloc] init];
+//        _editPictureButton.tag = 102;
+//        [_editPictureButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+//        [_editPictureButton setImage:[UIImage imageNamed:@"SD_pictureEdit"] forState:UIControlStateNormal];
+//    }
+//    return _editPictureButton;
+//}
 - (SDButton *)editWeatherButton{
     if (!_editWeatherButton) {
         _editWeatherButton = [[SDButton alloc] init];
@@ -273,23 +273,23 @@
     }
     return _textThemeView;
 }
-- (SDTextPictureView *)textPictureView{
-    if (!_textPictureView) {
-        _textPictureView = [[SDTextPictureView alloc] init];
-        _textPictureView.superVC = self.superVC;
-        __weak typeof(self) weakSelf = self;
-        _textPictureView.pictureBlock = ^(SDTextPictureView * _Nonnull pictureView) {
-            if (weakSelf.textPictureView.selectArray.count) {
-                weakSelf.editPictureButton.numberLabel.hidden = NO;
-                weakSelf.editPictureButton.numberLabel.text = [NSString stringWithFormat:@"%ld",weakSelf.textPictureView.selectArray.count];
-            }else{
-                weakSelf.editPictureButton.numberLabel.text = @"0";
-                weakSelf.editPictureButton.numberLabel.hidden = YES;
-            }
-        };
-    }
-    return _textPictureView;
-}
+//- (SDTextPictureView *)textPictureView{
+//    if (!_textPictureView) {
+//        _textPictureView = [[SDTextPictureView alloc] init];
+//        _textPictureView.superVC = self.superVC;
+//        __weak typeof(self) weakSelf = self;
+//        _textPictureView.pictureBlock = ^(SDTextPictureView * _Nonnull pictureView) {
+//            if (weakSelf.textPictureView.selectArray.count) {
+//                weakSelf.editPictureButton.numberLabel.hidden = NO;
+//                weakSelf.editPictureButton.numberLabel.text = [NSString stringWithFormat:@"%ld",weakSelf.textPictureView.selectArray.count];
+//            }else{
+//                weakSelf.editPictureButton.numberLabel.text = @"0";
+//                weakSelf.editPictureButton.numberLabel.hidden = YES;
+//            }
+//        };
+//    }
+//    return _textPictureView;
+//}
 - (SDTextWeatherView *)textWeatherView{
     if (!_textWeatherView) {
         _textWeatherView = [[SDTextWeatherView alloc] init];

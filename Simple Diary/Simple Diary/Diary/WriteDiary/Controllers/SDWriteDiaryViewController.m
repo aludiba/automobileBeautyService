@@ -64,6 +64,7 @@
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提示", nil) message:NSLocalizedString(@"您还未开启定位服务，是否需要开启？", nil)  preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *cancel = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
     }];
     UIAlertAction *queren = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         NSURL *setingsURL = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
@@ -138,12 +139,19 @@
 }
 - (void)setContentView{
     if (self.type == SDWriteDiaryViewControllerTypeDefault) {
-    self.releaseModel.fontSize = [NSString stringWithFormat:@"%lf",self.editingToolbar.textSetView.fontSize];
-    self.releaseModel.fontRGB = self.editingToolbar.textSetView.fontRGBDictionary;
-    self.releaseModel.themeRGB = self.editingToolbar.textThemeView.themeRGBDictionary;
+        NSNumber *fontSize = [[NSUserDefaults standardUserDefaults] objectForKey:FONTSIZE];
+        CGFloat fontsize = 17;
+        if (fontSize) {
+            fontsize = [fontSize floatValue];
+        }
+    self.releaseModel.fontSize = [NSString stringWithFormat:@"%lf",fontsize];
+    NSDictionary *textColorDic = [[NSUserDefaults standardUserDefaults] objectForKey:FONTRGB];
+    self.releaseModel.fontRGB = textColorDic;
+    NSDictionary *themeColorDic = [[NSUserDefaults standardUserDefaults] objectForKey:THEMERGB];
+    self.releaseModel.themeRGB = themeColorDic;
     self.releaseModel.location = self.editingToolbar.textWeatherView.locationInformationString;
     self.releaseModel.weather = self.editingToolbar.textWeatherView.weatherInformationString;
-        self.editingToolbar.isExpand = NO;
+    self.editingToolbar.isExpand = NO;
     }else if(self.type == SDWriteDiaryViewControllerTypeEdit){
         self.editingToolbar.textSetView.fontSize = [self.releaseModel.fontSize floatValue];
         self.editingToolbar.isExpand = YES;
@@ -188,8 +196,15 @@
     if (!self.releaseModel.content.length) {
         [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请输入日记内容", nil)];
     }
+    CGFloat fontsize = [self.releaseModel.fontSize floatValue];
+    NSNumber *fontSize = [NSNumber numberWithFloat:fontsize];
+    [[NSUserDefaults standardUserDefaults] setObject:fontSize forKey:FONTSIZE];
+    [[NSUserDefaults standardUserDefaults] setObject:self.releaseModel.fontRGB forKey:FONTRGB];
+    [[NSUserDefaults standardUserDefaults] setObject:self.releaseModel.themeRGB forKey:THEMERGB];
     NSDate *nowDate = [[NSDate alloc] init];
-    self.releaseModel.date = [self dateToString:nowDate withDateFormat:@"yyyy-MM-dd HH:mm"];
+    if (!self.releaseModel.date.length) {
+        self.releaseModel.date = [self dateToString:nowDate withDateFormat:@"yyyy-MM-dd HH:mm"];
+    }
     NSInteger weekDay = [CalendarTool convertDateToWeekDay:nowDate];
     switch (weekDay) {
         case 0:
@@ -261,7 +276,7 @@
                 [self.navigationController popViewControllerAnimated:YES];
             } else if (error){
                 //发生错误后的动作
-                NSLog(@"保存错误%@",error);
+                [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",error]];
             } else {
                 NSLog(@"Unknow error");
             }
@@ -274,7 +289,7 @@
                     [MBProgressHUD SDshowReminderText:NSLocalizedString(@"更新成功", nil)];
                     [self.navigationController popToRootViewControllerAnimated:YES];
                 } else {
-                    NSLog(@"error:%@",error);
+                    [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",error]];
                 }
             }];
         }
@@ -383,9 +398,22 @@
             make.bottom.equalTo(self.mas_bottomLayoutGuideBottom).offset(0);
         }];
         _textView.delegate = self;
-        [_textView setFont:[UIFont systemFontOfSize:17]];
-        [_textView setTextColor:[UIColor blackColor]];
-        [_textView setBackgroundColor:SDH_Color(225, 225, 225, 1)];
+        NSNumber *fontSize = [[NSUserDefaults standardUserDefaults] objectForKey:FONTSIZE];
+        CGFloat fontsize = 17;
+        if (fontSize) {
+            fontsize = [fontSize floatValue];
+        }
+        NSDictionary *textColorDic = [[NSUserDefaults standardUserDefaults] objectForKey:FONTRGB];
+        NSInteger R = [[textColorDic objectForKey:@"R"] integerValue];
+        NSInteger G = [[textColorDic objectForKey:@"G"] integerValue];
+        NSInteger B = [[textColorDic objectForKey:@"B"] integerValue];
+        NSDictionary *themeColorDic = [[NSUserDefaults standardUserDefaults] objectForKey:THEMERGB];
+        NSInteger R1 = [[themeColorDic objectForKey:@"R"] integerValue];
+        NSInteger G1 = [[themeColorDic objectForKey:@"G"] integerValue];
+        NSInteger B1 = [[themeColorDic objectForKey:@"B"] integerValue];
+        [_textView setFont:[UIFont systemFontOfSize:fontsize]];
+        [_textView setTextColor:SDH_Color(R, G, B, 1)];
+        [_textView setBackgroundColor:SDH_Color(R1, G1, B1, 1)];
     }
     return _textView;
 }

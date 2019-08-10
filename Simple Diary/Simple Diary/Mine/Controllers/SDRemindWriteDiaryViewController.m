@@ -84,6 +84,7 @@
 }
 #pragma mark - action
 - (void)btnClick:(UIButton *)sender{
+    [MBProgressHUD SDshowReminderText:NSLocalizedString(@"保存成功", nil)];
     [self.navigationController popViewControllerAnimated:YES];
 }
 - (void)switch:(UISwitch *)sender{

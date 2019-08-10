@@ -21,6 +21,7 @@
 @implementation SDShowDiaryTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = SDH_Color(242, 242, 242, 242);
         [self.contentView addSubview:self.headLabel];
         [self.contentView addSubview:self.backView];
         [self.backView addSubview:self.dateLabel];
@@ -40,7 +41,7 @@
         [self.backView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.headLabel.mas_trailing).offset(5);
             make.top.equalTo(self.contentView).offset(10);
-            make.trailing.equalTo(self.contentView).offset(-5);
+            make.trailing.equalTo(self.contentView).offset(-15);
             make.bottom.equalTo(self.contentView).offset(-10);
         }];
         self.backView.layer.cornerRadius = 4.0f;
@@ -99,7 +100,7 @@
 - (UILabel *)headLabel{
     if (!_headLabel) {
         _headLabel = [[UILabel alloc] init];
-        _headLabel.textColor = [UIColor whiteColor];
+        _headLabel.textColor = SDH_Color(200, 200, 200, 1);
         _headLabel.font = [UIFont systemFontOfSize:15];
         _headLabel.textAlignment = NSTextAlignmentCenter;
     }
@@ -114,7 +115,7 @@
 - (UILabel *)dateLabel{
     if (!_dateLabel) {
         _dateLabel = [[UILabel alloc] init];
-        _dateLabel.textColor = [UIColor whiteColor];
+        _dateLabel.textColor =SDH_Color(200, 200, 200, 1);
         _dateLabel.font = [UIFont systemFontOfSize:12];
     }
     return _dateLabel;
@@ -122,7 +123,7 @@
 - (UILabel *)contentLabel{
     if (!_contentLabel) {
         _contentLabel = [[UILabel alloc] init];
-        _contentLabel.textColor = [UIColor whiteColor];
+        _contentLabel.textColor = SDH_Color(200, 200, 200, 1);
         _contentLabel.font = [UIFont systemFontOfSize:14];
         [_contentLabel sizeToFit];
         _contentLabel.numberOfLines = 0;
@@ -132,7 +133,7 @@
 - (UILabel *)locationLabel{
     if (!_locationLabel) {
         _locationLabel = [[UILabel alloc] init];
-        _locationLabel.textColor = [UIColor whiteColor];
+        _locationLabel.textColor = SDH_Color(200, 200, 200, 1);
         _locationLabel.font = [UIFont systemFontOfSize:11];
     }
     return _locationLabel;
