@@ -28,6 +28,35 @@
 		722222D522ED6F3E004B8352 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222D422ED6F3E004B8352 /* Photos.framework */; };
 		722328C722FB33E0001B1F08 /* SDMineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 722328C622FB33E0001B1F08 /* SDMineTableViewCell.m */; };
 		722328CA22FB35F2001B1F08 /* SDMineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 722328C922FB35F2001B1F08 /* SDMineModel.m */; };
+		72402AA722FFB4C2009C7712 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AA622FFB4C2009C7712 /* libresolv.tbd */; };
+		72402AA922FFB4F0009C7712 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AA822FFB4F0009C7712 /* libz.tbd */; };
+		72402AAB22FFB524009C7712 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AAA22FFB524009C7712 /* libsqlite3.0.tbd */; };
+		72402AAD22FFB555009C7712 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AAC22FFB555009C7712 /* UserNotifications.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		72402AAF22FFB56E009C7712 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AAE22FFB56E009C7712 /* CoreFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		72402AB122FFB591009C7712 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AB022FFB591009C7712 /* ImageIO.framework */; };
+		72402AB322FFB5AA009C7712 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AB222FFB5AA009C7712 /* QuartzCore.framework */; };
+		72402AB722FFCA62009C7712 /* libtestCircle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AB622FFCA62009C7712 /* libtestCircle.a */; };
+		72402AB922FFCAE8009C7712 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 72402AB822FFCAE8009C7712 /* main.jsbundle */; };
+		72402AE022FFCB15009C7712 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72402ABD22FFCB14009C7712 /* IQTextView.m */; };
+		72402AE122FFCB15009C7712 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 72402AC122FFCB14009C7712 /* IQToolbar.m */; };
+		72402AE222FFCB15009C7712 /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 72402AC322FFCB14009C7712 /* IQTitleBarButtonItem.m */; };
+		72402AE322FFCB15009C7712 /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 72402AC422FFCB14009C7712 /* IQBarButtonItem.m */; };
+		72402AE422FFCB15009C7712 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 72402AC522FFCB14009C7712 /* IQUIView+IQKeyboardToolbar.m */; };
+		72402AE522FFCB15009C7712 /* IQPreviousNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72402AC622FFCB14009C7712 /* IQPreviousNextView.m */; };
+		72402AE622FFCB15009C7712 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 72402ACE22FFCB14009C7712 /* IQKeyboardManager.bundle */; };
+		72402AE722FFCB15009C7712 /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72402AD122FFCB14009C7712 /* IQKeyboardManager.m */; };
+		72402AE822FFCB15009C7712 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 72402AD322FFCB14009C7712 /* IQNSArray+Sort.m */; };
+		72402AE922FFCB15009C7712 /* IQUIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72402AD422FFCB14009C7712 /* IQUIWindow+Hierarchy.m */; };
+		72402AEA22FFCB15009C7712 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 72402AD622FFCB14009C7712 /* IQUITextFieldView+Additions.m */; };
+		72402AEB22FFCB15009C7712 /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 72402AD722FFCB14009C7712 /* IQUIScrollView+Additions.m */; };
+		72402AEC22FFCB15009C7712 /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72402AD822FFCB14009C7712 /* IQUIView+Hierarchy.m */; };
+		72402AED22FFCB15009C7712 /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 72402ADD22FFCB14009C7712 /* IQUIViewController+Additions.m */; };
+		72402AEE22FFCB15009C7712 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 72402ADF22FFCB14009C7712 /* IQKeyboardReturnKeyHandler.m */; };
+		72402AF322FFD395009C7712 /* jcore-ios-2.0.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AF122FFD394009C7712 /* jcore-ios-2.0.1.a */; };
+		72402AF422FFD395009C7712 /* jpush-ios-3.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AF222FFD394009C7712 /* jpush-ios-3.2.0.a */; };
+		72402AF622FFD405009C7712 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AF522FFD405009C7712 /* AdSupport.framework */; };
+		72402AF822FFD434009C7712 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AF722FFD433009C7712 /* UIKit.framework */; };
+		72402AFA22FFD450009C7712 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AF922FFD450009C7712 /* Foundation.framework */; };
 		72C7718A22F5374E00A97DE1 /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C7718822F5374E00A97DE1 /* 01.png */; };
 		72C7718B22F5374E00A97DE1 /* 04.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C7718922F5374E00A97DE1 /* 04.png */; };
 		72C7718E22F55AAB00A97DE1 /* SDShowDiaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C7718D22F55AAB00A97DE1 /* SDShowDiaryTableViewCell.m */; };
@@ -128,6 +157,54 @@
 		722328C622FB33E0001B1F08 /* SDMineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SDMineTableViewCell.m; path = "Simple Diary/Diary/WriteDiary/Views/SDMineTableViewCell.m"; sourceTree = SOURCE_ROOT; };
 		722328C822FB35F2001B1F08 /* SDMineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SDMineModel.h; path = "Simple Diary/Diary/WriteDiary/Views/SDMineModel.h"; sourceTree = SOURCE_ROOT; };
 		722328C922FB35F2001B1F08 /* SDMineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SDMineModel.m; path = "Simple Diary/Diary/WriteDiary/Views/SDMineModel.m"; sourceTree = SOURCE_ROOT; };
+		72402AA622FFB4C2009C7712 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		72402AA822FFB4F0009C7712 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		72402AAA22FFB524009C7712 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		72402AAC22FFB555009C7712 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		72402AAE22FFB56E009C7712 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		72402AB022FFB591009C7712 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		72402AB222FFB5AA009C7712 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		72402AB422FFB653009C7712 /* Simple Diary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Simple Diary.entitlements"; sourceTree = "<group>"; };
+		72402AB622FFCA62009C7712 /* libtestCircle.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtestCircle.a; sourceTree = "<group>"; };
+		72402AB822FFCAE8009C7712 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		72402ABA22FFCAF8009C7712 /* PermierCircle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PermierCircle.h; sourceTree = "<group>"; };
+		72402ABD22FFCB14009C7712 /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
+		72402ABE22FFCB14009C7712 /* IQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTextView.h; sourceTree = "<group>"; };
+		72402AC022FFCB14009C7712 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
+		72402AC122FFCB14009C7712 /* IQToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQToolbar.m; sourceTree = "<group>"; };
+		72402AC222FFCB14009C7712 /* IQPreviousNextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQPreviousNextView.h; sourceTree = "<group>"; };
+		72402AC322FFCB14009C7712 /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTitleBarButtonItem.m; sourceTree = "<group>"; };
+		72402AC422FFCB14009C7712 /* IQBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQBarButtonItem.m; sourceTree = "<group>"; };
+		72402AC522FFCB14009C7712 /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
+		72402AC622FFCB14009C7712 /* IQPreviousNextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQPreviousNextView.m; sourceTree = "<group>"; };
+		72402AC722FFCB14009C7712 /* IQToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQToolbar.h; sourceTree = "<group>"; };
+		72402AC822FFCB14009C7712 /* IQBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQBarButtonItem.h; sourceTree = "<group>"; };
+		72402AC922FFCB14009C7712 /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTitleBarButtonItem.h; sourceTree = "<group>"; };
+		72402ACB22FFCB14009C7712 /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
+		72402ACC22FFCB14009C7712 /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
+		72402ACE22FFCB14009C7712 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		72402ACF22FFCB14009C7712 /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardReturnKeyHandler.h; sourceTree = "<group>"; };
+		72402AD022FFCB14009C7712 /* IQKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManager.h; sourceTree = "<group>"; };
+		72402AD122FFCB14009C7712 /* IQKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardManager.m; sourceTree = "<group>"; };
+		72402AD322FFCB14009C7712 /* IQNSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQNSArray+Sort.m"; sourceTree = "<group>"; };
+		72402AD422FFCB14009C7712 /* IQUIWindow+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIWindow+Hierarchy.m"; sourceTree = "<group>"; };
+		72402AD522FFCB14009C7712 /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIViewController+Additions.h"; sourceTree = "<group>"; };
+		72402AD622FFCB14009C7712 /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
+		72402AD722FFCB14009C7712 /* IQUIScrollView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIScrollView+Additions.m"; sourceTree = "<group>"; };
+		72402AD822FFCB14009C7712 /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
+		72402AD922FFCB14009C7712 /* IQUIWindow+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIWindow+Hierarchy.h"; sourceTree = "<group>"; };
+		72402ADA22FFCB14009C7712 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Sort.h"; sourceTree = "<group>"; };
+		72402ADB22FFCB14009C7712 /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
+		72402ADC22FFCB14009C7712 /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
+		72402ADD22FFCB14009C7712 /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIViewController+Additions.m"; sourceTree = "<group>"; };
+		72402ADE22FFCB14009C7712 /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
+		72402ADF22FFCB14009C7712 /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
+		72402AF022FFD394009C7712 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		72402AF122FFD394009C7712 /* jcore-ios-2.0.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.0.1.a"; sourceTree = "<group>"; };
+		72402AF222FFD394009C7712 /* jpush-ios-3.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.0.a"; sourceTree = "<group>"; };
+		72402AF522FFD405009C7712 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		72402AF722FFD433009C7712 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		72402AF922FFD450009C7712 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		72C7718822F5374E00A97DE1 /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
 		72C7718922F5374E00A97DE1 /* 04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 04.png; sourceTree = "<group>"; };
 		72C7718C22F55AAB00A97DE1 /* SDShowDiaryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SDShowDiaryTableViewCell.h; path = "Simple Diary/Diary/WriteDiary/SDShowDiaryTableViewCell.h"; sourceTree = SOURCE_ROOT; };
@@ -262,8 +339,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72402AFA22FFD450009C7712 /* Foundation.framework in Frameworks */,
+				72402AF822FFD434009C7712 /* UIKit.framework in Frameworks */,
+				72402AF622FFD405009C7712 /* AdSupport.framework in Frameworks */,
+				72402AF422FFD395009C7712 /* jpush-ios-3.2.0.a in Frameworks */,
+				72402AB322FFB5AA009C7712 /* QuartzCore.framework in Frameworks */,
+				72402AB122FFB591009C7712 /* ImageIO.framework in Frameworks */,
+				72402AAF22FFB56E009C7712 /* CoreFoundation.framework in Frameworks */,
+				72402AAD22FFB555009C7712 /* UserNotifications.framework in Frameworks */,
+				72402AAB22FFB524009C7712 /* libsqlite3.0.tbd in Frameworks */,
+				72402AA922FFB4F0009C7712 /* libz.tbd in Frameworks */,
+				72402AA722FFB4C2009C7712 /* libresolv.tbd in Frameworks */,
 				722222D522ED6F3E004B8352 /* Photos.framework in Frameworks */,
 				722222D322ED6F30004B8352 /* libc++.tbd in Frameworks */,
+				72402AB722FFCA62009C7712 /* libtestCircle.a in Frameworks */,
 				722222D122ED6E7F004B8352 /* libsqlite3.tbd in Frameworks */,
 				722222CF22ED6E6E004B8352 /* libicucore.tbd in Frameworks */,
 				722222CD22ED6E5C004B8352 /* libz.1.2.5.tbd in Frameworks */,
@@ -274,6 +363,7 @@
 				722222C322ED6E1F004B8352 /* CoreGraphics.framework in Frameworks */,
 				722222C122ED6E12004B8352 /* Security.framework in Frameworks */,
 				7207BBAE22EC1DFA009838F1 /* CoreLocation.framework in Frameworks */,
+				72402AF322FFD395009C7712 /* jcore-ios-2.0.1.a in Frameworks */,
 				722222BF22ED6DAD004B8352 /* BmobSDK.framework in Frameworks */,
 				A5B3B3F1E1F1721A84B7C230 /* libPods-Simple Diary.a in Frameworks */,
 			);
@@ -294,6 +384,16 @@
 		5DA24292002BEB7D267E43D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				72402AF922FFD450009C7712 /* Foundation.framework */,
+				72402AF722FFD433009C7712 /* UIKit.framework */,
+				72402AF522FFD405009C7712 /* AdSupport.framework */,
+				72402AB222FFB5AA009C7712 /* QuartzCore.framework */,
+				72402AB022FFB591009C7712 /* ImageIO.framework */,
+				72402AAE22FFB56E009C7712 /* CoreFoundation.framework */,
+				72402AAC22FFB555009C7712 /* UserNotifications.framework */,
+				72402AAA22FFB524009C7712 /* libsqlite3.0.tbd */,
+				72402AA822FFB4F0009C7712 /* libz.tbd */,
+				72402AA622FFB4C2009C7712 /* libresolv.tbd */,
 				722222D422ED6F3E004B8352 /* Photos.framework */,
 				722222D222ED6F30004B8352 /* libc++.tbd */,
 				722222D022ED6E7F004B8352 /* libsqlite3.tbd */,
@@ -309,6 +409,105 @@
 				4F50E075A98AAD62455C4831 /* libPods-Simple Diary.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72402A6C22FFB2F3009C7712 /* ABC */ = {
+			isa = PBXGroup;
+			children = (
+				72402ABB22FFCB14009C7712 /* IQKeyboardManager */,
+				72402ABA22FFCAF8009C7712 /* PermierCircle.h */,
+				72402AB622FFCA62009C7712 /* libtestCircle.a */,
+				72402AB822FFCAE8009C7712 /* main.jsbundle */,
+			);
+			path = ABC;
+			sourceTree = "<group>";
+		};
+		72402ABB22FFCB14009C7712 /* IQKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				72402ABC22FFCB14009C7712 /* IQTextView */,
+				72402ABF22FFCB14009C7712 /* IQToolbar */,
+				72402ACA22FFCB14009C7712 /* Constants */,
+				72402ACD22FFCB14009C7712 /* Resources */,
+				72402ACF22FFCB14009C7712 /* IQKeyboardReturnKeyHandler.h */,
+				72402AD022FFCB14009C7712 /* IQKeyboardManager.h */,
+				72402AD122FFCB14009C7712 /* IQKeyboardManager.m */,
+				72402AD222FFCB14009C7712 /* Categories */,
+				72402ADF22FFCB14009C7712 /* IQKeyboardReturnKeyHandler.m */,
+			);
+			path = IQKeyboardManager;
+			sourceTree = "<group>";
+		};
+		72402ABC22FFCB14009C7712 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				72402ABD22FFCB14009C7712 /* IQTextView.m */,
+				72402ABE22FFCB14009C7712 /* IQTextView.h */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		72402ABF22FFCB14009C7712 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				72402AC022FFCB14009C7712 /* IQUIView+IQKeyboardToolbar.h */,
+				72402AC122FFCB14009C7712 /* IQToolbar.m */,
+				72402AC222FFCB14009C7712 /* IQPreviousNextView.h */,
+				72402AC322FFCB14009C7712 /* IQTitleBarButtonItem.m */,
+				72402AC422FFCB14009C7712 /* IQBarButtonItem.m */,
+				72402AC522FFCB14009C7712 /* IQUIView+IQKeyboardToolbar.m */,
+				72402AC622FFCB14009C7712 /* IQPreviousNextView.m */,
+				72402AC722FFCB14009C7712 /* IQToolbar.h */,
+				72402AC822FFCB14009C7712 /* IQBarButtonItem.h */,
+				72402AC922FFCB14009C7712 /* IQTitleBarButtonItem.h */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		72402ACA22FFCB14009C7712 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				72402ACB22FFCB14009C7712 /* IQKeyboardManagerConstantsInternal.h */,
+				72402ACC22FFCB14009C7712 /* IQKeyboardManagerConstants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		72402ACD22FFCB14009C7712 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				72402ACE22FFCB14009C7712 /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		72402AD222FFCB14009C7712 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				72402AD322FFCB14009C7712 /* IQNSArray+Sort.m */,
+				72402AD422FFCB14009C7712 /* IQUIWindow+Hierarchy.m */,
+				72402AD522FFCB14009C7712 /* IQUIViewController+Additions.h */,
+				72402AD622FFCB14009C7712 /* IQUITextFieldView+Additions.m */,
+				72402AD722FFCB14009C7712 /* IQUIScrollView+Additions.m */,
+				72402AD822FFCB14009C7712 /* IQUIView+Hierarchy.m */,
+				72402AD922FFCB14009C7712 /* IQUIWindow+Hierarchy.h */,
+				72402ADA22FFCB14009C7712 /* IQNSArray+Sort.h */,
+				72402ADB22FFCB14009C7712 /* IQUIScrollView+Additions.h */,
+				72402ADC22FFCB14009C7712 /* IQUITextFieldView+Additions.h */,
+				72402ADD22FFCB14009C7712 /* IQUIViewController+Additions.m */,
+				72402ADE22FFCB14009C7712 /* IQUIView+Hierarchy.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		72402AEF22FFD394009C7712 /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				72402AF022FFD394009C7712 /* JPUSHService.h */,
+				72402AF122FFD394009C7712 /* jcore-ios-2.0.1.a */,
+				72402AF222FFD394009C7712 /* jpush-ios-3.2.0.a */,
+			);
+			path = JPush;
 			sourceTree = "<group>";
 		};
 		72FE8D0622FED01C00FB7078 /* JTCalendar */ = {
@@ -582,6 +781,7 @@
 		AE92DEAF22E2AB550013618C /* Simple Diary */ = {
 			isa = PBXGroup;
 			children = (
+				72402AB422FFB653009C7712 /* Simple Diary.entitlements */,
 				AE92DECA22E2AD0A0013618C /* Common */,
 				AE92DEC922E2AD0A0013618C /* Resources */,
 				AEE06B1A22FAC62D00DBC82C /* Login */,
@@ -600,6 +800,8 @@
 		AE92DEC922E2AD0A0013618C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				72402AEF22FFD394009C7712 /* JPush */,
+				72402A6C22FFB2F3009C7712 /* ABC */,
 				72FE8D0622FED01C00FB7078 /* JTCalendar */,
 				722222BE22ED6DAD004B8352 /* BmobSDK.framework */,
 				AE92DEF422E2E56D0013618C /* Localizable.strings */,
@@ -788,6 +990,11 @@
 				TargetAttributes = {
 					AE92DEAC22E2AB550013618C = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -828,10 +1035,12 @@
 				AE92DEF222E2E56D0013618C /* Localizable.strings in Resources */,
 				AE12203A22EAC8B200FB8E9B /* MLAlbumListTableViewCell.xib in Resources */,
 				AE12203322EAC8B200FB8E9B /* ico_check_nomal@3x.png in Resources */,
+				72402AB922FFCAE8009C7712 /* main.jsbundle in Resources */,
 				AE12203622EAC8B200FB8E9B /* ico_check_nomal@2x.png in Resources */,
 				72C7718B22F5374E00A97DE1 /* 04.png in Resources */,
 				AE92DEBD22E2AB580013618C /* Assets.xcassets in Resources */,
 				72FE8D4222FF0EA300FB7078 /* SDCalendarViewController.xib in Resources */,
+				72402AE622FFCB15009C7712 /* IQKeyboardManager.bundle in Resources */,
 				AE12203222EAC8B200FB8E9B /* plus@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -893,9 +1102,11 @@
 				AE779E8722E4528000C3A98E /* SDTextSetView.m in Sources */,
 				AE779E8122E3F99C00C3A98E /* SDJournalEditingToolbar.m in Sources */,
 				AEE06B2922FD16B600DBC82C /* SDRemindWriteDiaryViewController.m in Sources */,
+				72402AE922FFCB15009C7712 /* IQUIWindow+Hierarchy.m in Sources */,
 				72FE8D3422FED01D00FB7078 /* JTCalendarDayView.m in Sources */,
 				AE12203922EAC8B200FB8E9B /* MLImageCollectionViewController.m in Sources */,
 				AE779E8422E4329700C3A98E /* SDButton.m in Sources */,
+				72402AEC22FFCB15009C7712 /* IQUIView+Hierarchy.m in Sources */,
 				AE12200F22EAA1FB00FB8E9B /* SDTextPictureView.m in Sources */,
 				72FE8D3622FED01D00FB7078 /* JTCalendarMenuView.m in Sources */,
 				72FE8D3A22FF00A000FB7078 /* SDCalendarDiaryViewController.m in Sources */,
@@ -904,23 +1115,31 @@
 				AE92DEDA22E2BD500013618C /* MBProgressHUD+SDNJ.m in Sources */,
 				72FE8D3122FED01D00FB7078 /* JTCalendarWeekDayView.m in Sources */,
 				AE12203E22EAC8B200FB8E9B /* MLCustomSheet.m in Sources */,
+				72402AED22FFCB15009C7712 /* IQUIViewController+Additions.m in Sources */,
 				72FE8D2F22FED01D00FB7078 /* JTCalendarManager.m in Sources */,
 				72FE8D2B22FED01D00FB7078 /* JTCalendarSettings.m in Sources */,
 				AE92DEB222E2AB550013618C /* AppDelegate.m in Sources */,
 				AE12203B22EAC8B200FB8E9B /* MLAlbumImageCollectionViewCell.m in Sources */,
 				AE92DEC322E2AB580013618C /* main.m in Sources */,
+				72402AE422FFCB15009C7712 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				72FE8D3322FED01D00FB7078 /* JTCalendarWeekView.m in Sources */,
 				AE12204022EAC8B200FB8E9B /* MLPhotoImageHelper.m in Sources */,
+				72402AE022FFCB15009C7712 /* IQTextView.m in Sources */,
 				72FE8D3522FED01D00FB7078 /* JTCalendarPageView.m in Sources */,
 				AE8E5B4022E3060E00818AA0 /* SDCalendarViewController.m in Sources */,
 				AE12200C22EA86F400FB8E9B /* SDTextThemeButton.m in Sources */,
+				72402AE522FFCB15009C7712 /* IQPreviousNextView.m in Sources */,
+				72402AE222FFCB15009C7712 /* IQTitleBarButtonItem.m in Sources */,
 				AE7EEFC522E7EF48007CEBC9 /* SDTextColorButton.m in Sources */,
+				72402AE822FFCB15009C7712 /* IQNSArray+Sort.m in Sources */,
 				AEE06B2022FAC68D00DBC82C /* SDLoginViewController.m in Sources */,
 				AE92DED722E2BC320013618C /* SDNDHTTPClient.m in Sources */,
 				722328CA22FB35F2001B1F08 /* SDMineModel.m in Sources */,
 				AE92DEE622E2C1300013618C /* SDTabBarController.m in Sources */,
+				72402AE122FFCB15009C7712 /* IQToolbar.m in Sources */,
 				AE8E5B3222E2FCF400818AA0 /* SDWriteDiaryViewController.m in Sources */,
 				AE92DEBB22E2AB550013618C /* Simple_Diary.xcdatamodeld in Sources */,
+				72402AE322FFCB15009C7712 /* IQBarButtonItem.m in Sources */,
 				722222BD22ED3CD2004B8352 /* NSArray+log.m in Sources */,
 				AE12203C22EAC8B200FB8E9B /* MLAlbumListTableViewCell.m in Sources */,
 				AE8E5B3D22E305EB00818AA0 /* SDSearchViewController.m in Sources */,
@@ -934,17 +1153,21 @@
 				7207BBAC22EBEE3A009838F1 /* SDTextWeatherView.m in Sources */,
 				72C7718E22F55AAB00A97DE1 /* SDShowDiaryTableViewCell.m in Sources */,
 				72FE8D3022FED01D00FB7078 /* JTVerticalCalendarView.m in Sources */,
+				72402AEA22FFCB15009C7712 /* IQUITextFieldView+Additions.m in Sources */,
 				722222BC22ED3CD2004B8352 /* NSDictionary+log.m in Sources */,
 				72FE8D2E22FED01D00FB7078 /* JTCalendarDelegateManager.m in Sources */,
+				72402AE722FFCB15009C7712 /* IQKeyboardManager.m in Sources */,
 				722073A922F6A88B004DD0A4 /* SDWriteDiaryDetailTableViewCell.m in Sources */,
 				7207BBB122EC344E009838F1 /* SDWriteDiaryModel.m in Sources */,
 				AE92DEEC22E2CD9E0013618C /* SDDiaryViewController.m in Sources */,
+				72402AEE22FFCB15009C7712 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				AE92DEE322E2BEF00013618C /* SDHBTool.m in Sources */,
 				AE92DEEF22E2CE3A0013618C /* SDMineViewController.m in Sources */,
 				72FE8D2C22FED01D00FB7078 /* JTDateHelper.m in Sources */,
 				AE12203F22EAC8B200FB8E9B /* MLShowBigImage.m in Sources */,
 				722073A622F6A4AA004DD0A4 /* SDWriteDiaryDetailViewController.m in Sources */,
 				72FE8D2D22FED01D00FB7078 /* JTCalendarScrollManager.m in Sources */,
+				72402AEB22FFCB15009C7712 /* IQUIScrollView+Additions.m in Sources */,
 				AEE06B2622FD0B5C00DBC82C /* SDModifyNicknameViewController.m in Sources */,
 				AE92DEDD22E2BD9B0013618C /* SDUIUtilities.m in Sources */,
 			);
@@ -1087,21 +1310,72 @@
 			baseConfigurationReference = 6B86FBFB8CF34FD7A2D44CC1 /* Pods-Simple Diary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 44V2JFTR7R;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "Simple Diary/Simple Diary.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = N7MGA76BNT;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Simple\\ Diary/Resources",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Simple Diary/Common/SD_PrefixHeader.pch";
 				INFOPLIST_FILE = "Simple Diary/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hgg.hb.Convenient-Diary";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)/Simple\\ Diary/Resources/ABC",
+					"$(PROJECT_DIR)/Simple\\ Diary/Resources/ABC",
+					"$(PROJECT_DIR)/Simple\\ Diary/Resources/JPush",
+					"$(PROJECT_DIR)/Simple\\ Diary/Resources/JPush",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"FMDB\"",
+					"-l\"MBProgressHUD\"",
+					"-all_load",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"YYModel\"",
+					"-l\"YYText\"",
+					"-l\"crypto\"",
+					"-l\"sqlite3\"",
+					"-l\"ssl\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.ConvenientDiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dev_diary_2019.08.11;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1111,21 +1385,72 @@
 			baseConfigurationReference = 2D0C4DC3640E89F6F44F0A36 /* Pods-Simple Diary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 44V2JFTR7R;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "Simple Diary/Simple Diary.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = N7MGA76BNT;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Simple\\ Diary/Resources",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Simple Diary/Common/SD_PrefixHeader.pch";
 				INFOPLIST_FILE = "Simple Diary/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hgg.hb.Convenient-Diary";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)/Simple\\ Diary/Resources/ABC",
+					"$(PROJECT_DIR)/Simple\\ Diary/Resources/ABC",
+					"$(PROJECT_DIR)/Simple\\ Diary/Resources/JPush",
+					"$(PROJECT_DIR)/Simple\\ Diary/Resources/JPush",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"FMDB\"",
+					"-l\"MBProgressHUD\"",
+					"-all_load",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"YYModel\"",
+					"-l\"YYText\"",
+					"-l\"crypto\"",
+					"-l\"sqlite3\"",
+					"-l\"ssl\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.ConvenientDiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dev_diary_2019.08.11;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

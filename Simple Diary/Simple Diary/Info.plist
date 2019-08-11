@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Convenient Diary</string>
+	<string>ConvenientDiary</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -20,25 +20,47 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>mqq</string>
+		<string>mqqapi</string>
+		<string>mqqwpa</string>
+		<string>mqqwpaopenid</string>
+		<string>mqqiapi</string>
+		<string>mqqapiwallet</string>
+		<string>mqqwallet</string>
+		<string>mqqwalletv2</string>
+		<string>weixin</string>
+		<string>wechat</string>
+		<string>weixinapp</string>
+		<string>alipay</string>
+		<string>alipayr</string>
+		<string>alipays</string>
+		<string>alipayqr</string>
+		<string>alipayre</string>
+		<string>alicertpay</string>
+		<string>alipayauth</string>
+		<string>aliminipayauth</string>
+		<string>alipayauthtb</string>
+		<string>openApp.jdMobile</string>
+		<string>openjd</string>
+		<string>openapp.jdiPad</string>
+		<string>jdpay</string>
+		<string>jdpayopen</string>
+		<string>JDUPPay</string>
+		<string>bwapp</string>
+		<string>baiduwallet</string>
+		<string>walletinnerpay</string>
+		<string>weibo</string>
+		<string>intent</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>armv7</string>
-	</array>
-	<key>UISupportedInterfaceOrientations</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>NSCalendarsUsageDescription</key>
 	<string>Is this App allowed to use calendar?</string>
 	<key>NSCameraUsageDescription</key>
@@ -47,8 +69,12 @@
 	<string>Do you allow this App to access your address book?</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>We need to get relevant data of your surroundings through your geographical location information</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need to get relevant data of your surroundings through your geographical location information</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Is this App allowed to use your microphone for voice input?</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>The App needs your permission to save pictures to your album</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Do you allow this App to access your media library?</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
@@ -57,9 +83,28 @@
 	<string>Is the App allowed to use speech recognition?</string>
 	<key>Privacy - Location When In Use Usage Description </key>
 	<string>We need to get relevant data of your surroundings through your geographical location information</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>We need to get relevant data of your surroundings through your geographical location information</string>
 	<key>Privacy - Microphone Usage Description </key>
 	<string>Is this App allowed to use your microphone?</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>com.openinstall.APP_KEY</key>
+	<string>z6li8w</string>
 </dict>
 </plist>

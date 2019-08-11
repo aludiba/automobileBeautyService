@@ -7,6 +7,7 @@
 //
 
 #import "SDWriteDiaryViewController.h"
+#import "IQKeyboardManager.h"
 #import "SDWriteDiaryViewController.h"
 #import "SDJournalEditingToolbar.h"
 #import "SDTextSetView.h"
@@ -46,9 +47,13 @@
     [self setGestureRecognizer];
     [self.textView becomeFirstResponder];
 }
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [[IQKeyboardManager sharedManager] setEnable:NO];
+}
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [[IQKeyboardManager sharedManager] setEnable:YES];
 }
 - (void)locate{
     if ([CLLocationManager locationServicesEnabled]) {//监测权限设置
@@ -116,17 +121,17 @@
             [self.textView layoutIfNeeded];
             [self.view layoutSubviews];
         }];
-        [self.textView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.bottom.equalTo(self.mas_bottomLayoutGuideBottom).offset(-285);
-        }];
+//        [self.textView mas_updateConstraints:^(MASConstraintMaker *make) {
+//            make.bottom.equalTo(self.mas_bottomLayoutGuideBottom).offset(-285);
+//        }];
         }else{
             [UIView animateWithDuration:1.5 animations:^{
                 [self.textView layoutIfNeeded];
                 [self.view layoutSubviews];
             }];
-            [self.textView mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.bottom.equalTo(self.mas_bottomLayoutGuideBottom).offset(0);
-            }];
+//            [self.textView mas_updateConstraints:^(MASConstraintMaker *make) {
+//                make.bottom.equalTo(self.mas_bottomLayoutGuideBottom).offset(0);
+//            }];
         }
 }
 - (void)SD_setupNavigationItems{

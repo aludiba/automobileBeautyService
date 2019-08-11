@@ -87,8 +87,45 @@
     [MBProgressHUD SDshowReminderText:NSLocalizedString(@"保存成功", nil)];
     [self.navigationController popViewControllerAnimated:YES];
 }
+#pragma mark - 是否推送
 - (void)switch:(UISwitch *)sender{
-    
+    if([sender isOn]){
+        [self setLocalPush];
+    }else{
+        [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:NO] forKey:REMINDWRITE];
+        [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    }
+}
+- (void)setLocalPush{
+    BmobUser *user = [BmobUser currentUser];
+    [user setObject:self.remindDate forKey:@"reminddate"];
+    [user updateInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+        if(isSuccessful){
+            
+        }else{
+            [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",error]];
+        }
+    }];
+    //        REMINDWRITE
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:REMINDWRITE];
+    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+    if (localNotification == nil) {
+        return;
+    }
+    //设置UILocalNotification
+    [localNotification setTimeZone:[NSTimeZone defaultTimeZone]];//设置时区
+    localNotification.fireDate = self.remindDate;//设置触发时间
+    localNotification.repeatInterval = 0;//设置重复间隔
+    localNotification.alertBody = NSLocalizedString(@"今天你写日记了吗？", nil);
+    localNotification.alertTitle = NSLocalizedString(@"方便日记", nil);
+    localNotification.soundName = UILocalNotificationDefaultSoundName;
+    //当然你也可以调取当前的气泡,并且设置.也可以设置一个userInfo进行传递信息
+    /*
+     [localNotification setApplicationIconBadgeNumber:66];
+     localNotification.applicationIconBadgeNumber += 1;
+     localNotification.userInfo = @{@"KEY" : @"VALUE"};
+     */
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
 }
 - (void)dateChange:(UIBarButtonItem *)sender{
     [self.view endEditing:YES];
@@ -97,7 +134,10 @@
     }else{
         NSString *remindDateString = [SDUIUtilities SDformattedTimeStringWithDate:self.datePicker.date format:@"HH:mm"];
         self.dateContentTextField.text = remindDateString;
-        self.remindDate = [NSDate date];
+        self.remindDate = self.datePicker.date;
+        if ([self.switchBtn isOn]) {
+            [self setLocalPush];
+        }
     }
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
@@ -125,6 +165,8 @@
 - (UISwitch *)switchBtn{
     if (!_switchBtn) {
         _switchBtn = [[UISwitch alloc] init];
+        Boolean isRemindWrite = [[[NSUserDefaults standardUserDefaults] objectForKey:REMINDWRITE] boolValue];
+        [_switchBtn setOn:isRemindWrite];
         [_switchBtn addTarget:self action:@selector(switch:) forControlEvents:UIControlEventValueChanged];
     }
     return _switchBtn;

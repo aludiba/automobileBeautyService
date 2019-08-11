@@ -25,12 +25,18 @@
 #import "NSArray+log.h"
 #import "NSDictionary+log.h"
 #import <BmobSDK/Bmob.h>
+#import "JPUSHService.h"
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#endif
+#import <AdSupport/AdSupport.h>
 //多语言调用
 #define NSLocalizedString(key, comment) [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
 /**颜色*/
 #define FONTSIZE @"fontSize"
 #define FONTRGB @"fontRGB"
 #define THEMERGB @"themeRGB"
+#define REMINDWRITE @"RemindWrite"
 #define SDH_Color(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
 #define SDKeyWindow [UIApplication sharedApplication].keyWindow
 #define SDWIDTH [UIScreen mainScreen].bounds.size.width
