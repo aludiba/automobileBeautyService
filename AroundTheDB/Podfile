@@ -13,5 +13,5 @@ target 'AroundTheDB' do
     pod 'YYModel'
     pod 'SDWebImage'
     pod 'YYText'
-
+    pod 'FMDB'
 end
