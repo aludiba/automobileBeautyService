@@ -8,5 +8,6 @@ target 'AroundTheDB' do
   # Pods for AroundTheDB
     pod 'Masonry'
     pod 'AFNetworking'
+    pod 'MJRefresh'
 
 end
