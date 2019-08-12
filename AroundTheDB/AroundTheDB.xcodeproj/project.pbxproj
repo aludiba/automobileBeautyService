@@ -60,6 +60,9 @@
 		AED1745123015E8C00764DCA /* AroundTheDB */ = {
 			isa = PBXGroup;
 			children = (
+				AED1746D23015F3300764DCA /* Controllers */,
+				AED1746C23015F3300764DCA /* Models */,
+				AED1746B23015F3300764DCA /* Views */,
 				AED1745223015E8C00764DCA /* AppDelegate.h */,
 				AED1745323015E8C00764DCA /* AppDelegate.m */,
 				AED1745523015E8C00764DCA /* ViewController.h */,
@@ -72,6 +75,27 @@
 				AED1745B23015E8C00764DCA /* AroundTheDB.xcdatamodeld */,
 			);
 			path = AroundTheDB;
+			sourceTree = "<group>";
+		};
+		AED1746B23015F3300764DCA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AED1746C23015F3300764DCA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AED1746D23015F3300764DCA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
