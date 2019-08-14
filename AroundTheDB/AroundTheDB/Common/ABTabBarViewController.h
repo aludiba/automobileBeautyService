@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class ABTabBarViewController;
+@class ABHistoryViewController;
+@class ABMeasurementViewController;
+@class ABSetViewController;
 @interface ABTabBarViewController : UITabBarController
-
++ (ABTabBarViewController *)shareInstance;
 @end
 
 NS_ASSUME_NONNULL_END

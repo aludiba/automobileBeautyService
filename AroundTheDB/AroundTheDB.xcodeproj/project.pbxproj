@@ -15,6 +15,14 @@
 		AE731EE52303AB2400385A6E /* ABHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731EE42303AB2400385A6E /* ABHBTool.m */; };
 		AE731EE92303B7B600385A6E /* ABBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731EE82303B7B600385A6E /* ABBaseViewController.m */; };
 		AE731EEC2303B95200385A6E /* ABTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731EEB2303B95200385A6E /* ABTabBarViewController.m */; };
+		AE731EEF2303BAB700385A6E /* ABMeasurementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731EEE2303BAB700385A6E /* ABMeasurementViewController.m */; };
+		AE731EF22303BAD500385A6E /* ABHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731EF12303BAD500385A6E /* ABHistoryViewController.m */; };
+		AE731EF52303BAF300385A6E /* ABSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731EF42303BAF300385A6E /* ABSetViewController.m */; };
+		AE731EF82303E1DA00385A6E /* ABMeasurementTitleInputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731EF72303E1DA00385A6E /* ABMeasurementTitleInputTableViewCell.m */; };
+		AE731EFB2303EAE300385A6E /* ABMeasurementPositionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731EFA2303EAE300385A6E /* ABMeasurementPositionTableViewCell.m */; };
+		AE731EFE2303ED6E00385A6E /* ABMeasurementModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731EFD2303ED6E00385A6E /* ABMeasurementModel.m */; };
+		AE731F012303F28900385A6E /* ABMeasurementReferenceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731F002303F28900385A6E /* ABMeasurementReferenceTableViewCell.m */; };
+		AE731F042303FA5400385A6E /* ABMeasurementTestDBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731F032303FA5400385A6E /* ABMeasurementTestDBTableViewCell.m */; };
 		AED1745423015E8C00764DCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AED1745323015E8C00764DCA /* AppDelegate.m */; };
 		AED1745D23015E8C00764DCA /* AroundTheDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AED1745B23015E8C00764DCA /* AroundTheDB.xcdatamodeld */; };
 		AED1745F23015E9200764DCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED1745E23015E9200764DCA /* Assets.xcassets */; };
@@ -41,6 +49,22 @@
 		AE731EE82303B7B600385A6E /* ABBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABBaseViewController.m; sourceTree = "<group>"; };
 		AE731EEA2303B95200385A6E /* ABTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABTabBarViewController.h; sourceTree = "<group>"; };
 		AE731EEB2303B95200385A6E /* ABTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABTabBarViewController.m; sourceTree = "<group>"; };
+		AE731EED2303BAB700385A6E /* ABMeasurementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABMeasurementViewController.h; sourceTree = "<group>"; };
+		AE731EEE2303BAB700385A6E /* ABMeasurementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABMeasurementViewController.m; sourceTree = "<group>"; };
+		AE731EF02303BAD500385A6E /* ABHistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABHistoryViewController.h; sourceTree = "<group>"; };
+		AE731EF12303BAD500385A6E /* ABHistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABHistoryViewController.m; sourceTree = "<group>"; };
+		AE731EF32303BAF300385A6E /* ABSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABSetViewController.h; sourceTree = "<group>"; };
+		AE731EF42303BAF300385A6E /* ABSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABSetViewController.m; sourceTree = "<group>"; };
+		AE731EF62303E1DA00385A6E /* ABMeasurementTitleInputTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABMeasurementTitleInputTableViewCell.h; sourceTree = "<group>"; };
+		AE731EF72303E1DA00385A6E /* ABMeasurementTitleInputTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABMeasurementTitleInputTableViewCell.m; sourceTree = "<group>"; };
+		AE731EF92303EAE300385A6E /* ABMeasurementPositionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABMeasurementPositionTableViewCell.h; sourceTree = "<group>"; };
+		AE731EFA2303EAE300385A6E /* ABMeasurementPositionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABMeasurementPositionTableViewCell.m; sourceTree = "<group>"; };
+		AE731EFC2303ED6E00385A6E /* ABMeasurementModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABMeasurementModel.h; sourceTree = "<group>"; };
+		AE731EFD2303ED6E00385A6E /* ABMeasurementModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABMeasurementModel.m; sourceTree = "<group>"; };
+		AE731EFF2303F28900385A6E /* ABMeasurementReferenceTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABMeasurementReferenceTableViewCell.h; sourceTree = "<group>"; };
+		AE731F002303F28900385A6E /* ABMeasurementReferenceTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABMeasurementReferenceTableViewCell.m; sourceTree = "<group>"; };
+		AE731F022303FA5400385A6E /* ABMeasurementTestDBTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABMeasurementTestDBTableViewCell.h; sourceTree = "<group>"; };
+		AE731F032303FA5400385A6E /* ABMeasurementTestDBTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABMeasurementTestDBTableViewCell.m; sourceTree = "<group>"; };
 		AED1744F23015E8C00764DCA /* AroundTheDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AroundTheDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED1745223015E8C00764DCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AED1745323015E8C00764DCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -148,6 +172,14 @@
 		AED1746B23015F3300764DCA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AE731EF62303E1DA00385A6E /* ABMeasurementTitleInputTableViewCell.h */,
+				AE731EF72303E1DA00385A6E /* ABMeasurementTitleInputTableViewCell.m */,
+				AE731EF92303EAE300385A6E /* ABMeasurementPositionTableViewCell.h */,
+				AE731EFA2303EAE300385A6E /* ABMeasurementPositionTableViewCell.m */,
+				AE731F022303FA5400385A6E /* ABMeasurementTestDBTableViewCell.h */,
+				AE731F032303FA5400385A6E /* ABMeasurementTestDBTableViewCell.m */,
+				AE731EFF2303F28900385A6E /* ABMeasurementReferenceTableViewCell.h */,
+				AE731F002303F28900385A6E /* ABMeasurementReferenceTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +187,8 @@
 		AED1746C23015F3300764DCA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AE731EFC2303ED6E00385A6E /* ABMeasurementModel.h */,
+				AE731EFD2303ED6E00385A6E /* ABMeasurementModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,6 +196,12 @@
 		AED1746D23015F3300764DCA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AE731EF02303BAD500385A6E /* ABHistoryViewController.h */,
+				AE731EF12303BAD500385A6E /* ABHistoryViewController.m */,
+				AE731EED2303BAB700385A6E /* ABMeasurementViewController.h */,
+				AE731EEE2303BAB700385A6E /* ABMeasurementViewController.m */,
+				AE731EF32303BAF300385A6E /* ABSetViewController.h */,
+				AE731EF42303BAF300385A6E /* ABSetViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -290,9 +330,17 @@
 				AE731EE92303B7B600385A6E /* ABBaseViewController.m in Sources */,
 				AED1745423015E8C00764DCA /* AppDelegate.m in Sources */,
 				AE731EDB2303A91600385A6E /* NSDictionary+log.m in Sources */,
+				AE731F042303FA5400385A6E /* ABMeasurementTestDBTableViewCell.m in Sources */,
 				AE731EEC2303B95200385A6E /* ABTabBarViewController.m in Sources */,
+				AE731EF22303BAD500385A6E /* ABHistoryViewController.m in Sources */,
+				AE731EFE2303ED6E00385A6E /* ABMeasurementModel.m in Sources */,
+				AE731EEF2303BAB700385A6E /* ABMeasurementViewController.m in Sources */,
+				AE731EF52303BAF300385A6E /* ABSetViewController.m in Sources */,
+				AE731F012303F28900385A6E /* ABMeasurementReferenceTableViewCell.m in Sources */,
 				AE731EE12303A9F200385A6E /* MBProgressHUD+ABNJ.m in Sources */,
 				AE731EDE2303A94300385A6E /* ABUIUtilities.m in Sources */,
+				AE731EF82303E1DA00385A6E /* ABMeasurementTitleInputTableViewCell.m in Sources */,
+				AE731EFB2303EAE300385A6E /* ABMeasurementPositionTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
