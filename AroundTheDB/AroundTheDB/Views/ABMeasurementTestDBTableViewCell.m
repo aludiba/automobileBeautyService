@@ -7,6 +7,8 @@
 //
 
 #import "ABMeasurementTestDBTableViewCell.h"
+#import "ABMeasurementModel.h"
+
 @interface ABMeasurementTestDBTableViewCell()
 @property(nonatomic, strong)UIView *scopeView;
 @property(nonatomic, strong)UILabel *calibrationLabel;//刻度
@@ -26,9 +28,10 @@
 
 @property(nonatomic, strong)UILabel *maxValueLabel;
 @property(nonatomic, strong)UILabel *maxTitleLabel;
-@property(nonatomic, strong)UILabel *realDBLabel;
 @property(nonatomic, strong)UILabel * averageValueLabel;
 @property(nonatomic, strong)UILabel * averageTitleLabel;
+@property(nonatomic, strong)UILabel *realDBLabel;
+
 
 @property(nonatomic, strong)UIButton *controlButton;
 @end
@@ -37,13 +40,159 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         self.contentView.backgroundColor = ABH_Color(15, 18, 39, 1);
         [self.contentView addSubview:self.scopeView];
-         
          [self.scopeView mas_makeConstraints:^(MASConstraintMaker *make) {
-             make.top.equalTo(self.contentView);
+             make.top.equalTo(self.contentView).offset(15);
              make.centerX.equalTo(self.contentView);
              make.width.mas_equalTo(ABWIDTH - 60);
              make.height.mas_equalTo(45);
          }];
+        CGFloat width = 20 * (ABWIDTH - 60) / 120;
+        [self.scopeView addSubview:self.veryQuietLabel];
+        [self.veryQuietLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(self.scopeView);
+            make.leading.equalTo(self.scopeView);
+            make.height.mas_equalTo(45);
+            make.width.mas_equalTo(width);
+        }];
+        CGFloat width1 = 20 * (ABWIDTH - 60) / 120;
+        [self.scopeView addSubview:self.quietLabel];
+        [self.quietLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(self.scopeView);
+            make.leading.equalTo(self.veryQuietLabel.mas_trailing);
+            make.height.mas_equalTo(45);
+            make.width.mas_equalTo(width1);
+        }];
+        CGFloat width2 = 20 * (ABWIDTH - 60) / 120;
+        [self.scopeView addSubview:self.generalLabel];
+        [self.generalLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(self.scopeView);
+            make.leading.equalTo(self.quietLabel.mas_trailing);
+            make.height.mas_equalTo(45);
+            make.width.mas_equalTo(width2);
+        }];
+        CGFloat width3 = 10 * (ABWIDTH - 60) / 120;
+        [self.scopeView addSubview:self.noisyLabel];
+        [self.noisyLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(self.scopeView);
+            make.leading.equalTo(self.generalLabel.mas_trailing);
+            make.height.mas_equalTo(45);
+            make.width.mas_equalTo(width3);
+        }];
+        CGFloat width4 = 20 * (ABWIDTH - 60) / 120;
+        [self.scopeView addSubview:self.veryNoisyLabel];
+        [self.veryNoisyLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(self.scopeView);
+            make.leading.equalTo(self.noisyLabel.mas_trailing);
+            make.height.mas_equalTo(45);
+            make.width.mas_equalTo(width4);
+        }];
+        CGFloat width5 = 30 * (ABWIDTH - 60) / 120;
+        [self.scopeView addSubview:self.moreVeryNoisyLabel];
+        [self.moreVeryNoisyLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(self.scopeView);
+            make.leading.equalTo(self.veryNoisyLabel.mas_trailing);
+            make.height.mas_equalTo(45);
+            make.width.mas_equalTo(width5);
+        }];
+        [self.contentView addSubview:self.calibrationLabel];
+        [self.calibrationLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.contentView).offset(15);
+            make.top.equalTo(self.scopeView.mas_bottom).offset(3);
+            make.width.mas_equalTo(30);
+            make.height.mas_equalTo(15);
+        }];
+        [self.contentView addSubview:self.calibrationLabel1];
+        [self.calibrationLabel1 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.calibrationLabel.mas_trailing).offset(width - 30);
+            make.top.equalTo(self.scopeView.mas_bottom).offset(3);
+            make.width.mas_equalTo(30);
+            make.height.mas_equalTo(15);
+        }];
+        [self.contentView addSubview:self.calibrationLabel2];
+        [self.calibrationLabel2 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.calibrationLabel1.mas_trailing).offset(width1 - 30);
+            make.top.equalTo(self.scopeView.mas_bottom).offset(3);
+            make.width.mas_equalTo(30);
+            make.height.mas_equalTo(15);
+        }];
+        [self.contentView addSubview:self.calibrationLabel3];
+        [self.calibrationLabel3 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.calibrationLabel2.mas_trailing).offset(width2 - 30);
+            make.top.equalTo(self.scopeView.mas_bottom).offset(3);
+            make.width.mas_equalTo(30);
+            make.height.mas_equalTo(15);
+        }];
+        [self.contentView addSubview:self.calibrationLabel4];
+        [self.calibrationLabel4 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.calibrationLabel3.mas_trailing).offset(width3 + width4 * 0.5 - 30);
+            make.top.equalTo(self.scopeView.mas_bottom).offset(3);
+            make.width.mas_equalTo(30);
+            make.height.mas_equalTo(15);
+        }];
+        [self.contentView addSubview:self.calibrationLabel5];
+        [self.calibrationLabel5 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.calibrationLabel4.mas_trailing).offset(width4 * 0.5 + width5 * 0.5 - 30);
+            make.top.equalTo(self.scopeView.mas_bottom).offset(3);
+            make.width.mas_equalTo(30);
+            make.height.mas_equalTo(15);
+        }];
+        [self.contentView addSubview:self.calibrationLabel6];
+        [self.calibrationLabel6 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.calibrationLabel5.mas_trailing).offset(width5 * 0.5 - 30);
+            make.top.equalTo(self.scopeView.mas_bottom).offset(3);
+            make.width.mas_equalTo(30);
+            make.height.mas_equalTo(15);
+        }];
+        [self.contentView addSubview:self.scaleLine];
+        [self.scaleLine mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.calibrationLabel6.mas_bottom).offset(15);
+            make.centerX.equalTo(self.contentView);
+            make.width.mas_equalTo(ABWIDTH - 60);
+            make.height.mas_equalTo(30);
+        }];
+        [self.contentView addSubview:self.maxValueLabel];
+        [self.maxValueLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.contentView).offset(60);
+            make.top.equalTo(self.scaleLine.mas_bottom).offset(30);
+            make.width.mas_equalTo(20);
+            make.height.mas_equalTo(20);
+        }];
+        [self.contentView addSubview:self.maxTitleLabel];
+        [self.maxTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.contentView).offset(30);
+            make.top.equalTo(self.maxValueLabel.mas_bottom).offset(15);
+            make.width.mas_equalTo(80);
+            make.height.mas_equalTo(20);
+        }];
+        [self.contentView addSubview:self.averageValueLabel];
+        [self.averageValueLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.trailing.equalTo(self.contentView).offset(-60);
+            make.top.equalTo(self.scaleLine.mas_bottom).offset(30);
+            make.width.mas_equalTo(20);
+            make.height.mas_equalTo(20);
+        }];
+        [self.contentView addSubview:self.averageTitleLabel];
+        [self.averageTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.trailing.equalTo(self.contentView).offset(-30);
+            make.top.equalTo(self.maxValueLabel.mas_bottom).offset(15);
+            make.width.mas_equalTo(80);
+            make.height.mas_equalTo(20);
+        }];
+        [self.contentView addSubview:self.realDBLabel];
+        [self.realDBLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(self.averageValueLabel);
+            make.centerX.equalTo(self.contentView);
+            make.width.mas_equalTo(25);
+            make.height.mas_equalTo(25);
+        }];
+        [self.contentView addSubview:self.controlButton];
+        [self.controlButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.averageTitleLabel.mas_bottom).offset(20);
+            make.centerX.equalTo(self.contentView);
+            make.height.mas_equalTo(60);
+            make.width.mas_equalTo(180);
+        make.bottom.equalTo(self.contentView).offset(-30);
+        }];
     }
     return self;
 }
@@ -54,6 +203,8 @@
 - (UIView *)scopeView{
     if (!_scopeView) {
         _scopeView = [[UIView alloc] init];
+        _scopeView.layer.cornerRadius = 4.0f;
+        _scopeView.layer.masksToBounds = YES;
         _scopeView.backgroundColor = ABH_Color(15, 18, 39, 1);
     }
     return _scopeView;
@@ -136,7 +287,7 @@
         _noisyLabel = [[UILabel alloc] init];
         _noisyLabel.backgroundColor = ABH_Color(255, 198, 0, 1);
         _noisyLabel.textColor = [UIColor blackColor];
-        _noisyLabel.font = [UIFont systemFontOfSize:15];
+        _noisyLabel.font = [UIFont systemFontOfSize:12];
         _noisyLabel.textAlignment = NSTextAlignmentCenter;
         _noisyLabel.text = @"吵闹";
     }
@@ -222,17 +373,6 @@
     }
     return _maxValueLabel;
 }
-- (UILabel *)realDBLabel{
-    if (!_realDBLabel) {
-        _realDBLabel = [[UILabel alloc] init];
-        _realDBLabel.font = [UIFont systemFontOfSize:24];
-        _realDBLabel.textColor = [UIColor whiteColor];
-        _realDBLabel.textAlignment = NSTextAlignmentCenter;
-        _realDBLabel.backgroundColor = ABH_Color(15, 18, 39, 1);
-        _realDBLabel.text = @"0";
-    }
-    return _realDBLabel;
-}
 - (UILabel *)averageTitleLabel{
     if (!_averageTitleLabel) {
         _averageTitleLabel = [[UILabel alloc] init];
@@ -254,5 +394,28 @@
         _averageValueLabel.text = @"0";
     }
     return _averageValueLabel;
+}
+- (UILabel *)realDBLabel{
+    if (!_realDBLabel) {
+        _realDBLabel = [[UILabel alloc] init];
+        _realDBLabel.font = [UIFont systemFontOfSize:24];
+        _realDBLabel.textColor = [UIColor whiteColor];
+        _realDBLabel.textAlignment = NSTextAlignmentCenter;
+        _realDBLabel.backgroundColor = ABH_Color(15, 18, 39, 1);
+        _realDBLabel.text = @"0";
+    }
+    return _realDBLabel;
+}
+- (UIButton *)controlButton{
+    if (!_controlButton) {
+        _controlButton = [[UIButton alloc] init];
+        _controlButton.backgroundColor = ABH_Color(0, 212, 155, 1);
+        _controlButton.layer.cornerRadius = 6;
+        _controlButton.layer.masksToBounds = YES;
+        [_controlButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _controlButton.titleLabel.font = [UIFont systemFontOfSize:20];
+        [_controlButton setTitle:@"开始测试" forState:UIControlStateNormal];
+    }
+    return _controlButton;
 }
 @end

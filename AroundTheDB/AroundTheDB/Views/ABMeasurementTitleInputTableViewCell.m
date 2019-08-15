@@ -21,11 +21,11 @@
         [self.contentView addSubview:self.writeTextField];
          
          [self.writeTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-             make.top.equalTo(self.contentView);
+             make.top.equalTo(self.contentView).offset(10);
              make.centerX.equalTo(self.contentView).offset(7.5);
-             make.width.mas_equalTo(90);
-             make.height.mas_equalTo(16);
-             make.bottom.equalTo(self.contentView);
+             make.width.mas_equalTo(140);
+             make.height.mas_equalTo(20);
+             make.bottom.equalTo(self.contentView).offset(-10);
          }];
          [self.writeImgView mas_makeConstraints:^(MASConstraintMaker *make) {
              make.centerY.equalTo(self.contentView);
@@ -43,6 +43,15 @@
         self.ABMeasurementTitleInputB(self);
     }
 }
+//实现UITextField代理方法
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];//取消第一响应者
+    self.measurementTitle = textField.text;
+    if (self.ABMeasurementTitleInputB) {
+        self.ABMeasurementTitleInputB(self);
+    }
+    return YES;
+}
 #pragma mark - 属性懒加载
 - (UIImageView *)writeImgView{
     if (!_writeImgView) {
@@ -53,10 +62,14 @@
 - (UITextField *)writeTextField{
     if (!_writeTextField) {
         _writeTextField = [[UITextField alloc] init];
+        _writeTextField.returnKeyType = UIReturnKeyDone;
+        _writeTextField.textColor = ABH_Color(245, 245, 245, 1);
         _writeTextField.delegate = self;
         _writeTextField.placeholder = @"点击输入标题";
+        [_writeTextField setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
         _writeTextField.font = [UIFont systemFontOfSize:15];
         _writeTextField.backgroundColor = ABH_Color(15, 18, 39, 1);
+        [_writeTextField sizeToFit];
     }
     return _writeTextField;
 }

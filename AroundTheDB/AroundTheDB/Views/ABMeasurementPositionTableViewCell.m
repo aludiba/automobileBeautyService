@@ -20,7 +20,7 @@
         self.contentView.backgroundColor = ABH_Color(15, 18, 39, 1);
         [self.contentView addSubview:self.positionImgView];
         [self.contentView addSubview:self.positionLabel];
-        self.positionLblWidth = 136.0f;
+        self.positionLblWidth = 180.0f;
         
         [self.positionLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.contentView);
@@ -40,7 +40,11 @@
 }
 - (void)setModel:(ABMeasurementModel *)model{
     _model = model;
-    self.positionLabel.text = _model.position;
+    if (_model.position) {
+        self.positionLabel.text = _model.position;
+    }else{
+        self.positionLabel.text = @"点击刷新位置信息";
+    }
     CGSize size = [self.positionLabel sizeThatFits:CGSizeMake(MAXFLOAT, 18)];
     self.positionLblWidth = size.width;
     if (self.positionLblWidth > ABWIDTH - 15) {
