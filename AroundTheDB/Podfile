@@ -14,4 +14,6 @@ target 'AroundTheDB' do
     pod 'SDWebImage'
     pod 'YYText'
     pod 'FMDB'
+    pod 'BmobSDK'
+    pod 'BaiduMapKit'
 end
