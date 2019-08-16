@@ -15,5 +15,5 @@ target 'AroundTheDB' do
     pod 'YYText'
     pod 'FMDB'
     pod 'BmobSDK'
-#    pod 'BaiduMapKit'
+    pod 'BaiduMapKit'
 end
