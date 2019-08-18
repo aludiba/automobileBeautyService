@@ -8,17 +8,34 @@
 
 #import "AppDelegate.h"
 #import "ABTabBarViewController.h"
-@interface AppDelegate ()
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>
+#define BMK_KEY @"1qE0Fvek3PM2ufdkB1qakVQSkzBvHNk8"//百度地图的key
 
+@interface AppDelegate ()
+@property (nonatomic, strong) BMKMapManager *mapManager;
 @end
 
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self initBaiDuMapManager];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [ABTabBarViewController shareInstance];
     [self.window makeKeyAndVisible];
     return YES;
+}
+- (void)initBaiDuMapManager{
+    //百度地图
+    _mapManager = [BMKMapManager new];
+    BOOL ret = [_mapManager start:BMK_KEY generalDelegate:nil];
+    if (!ret)
+    {
+        NSLog(@"百度地图启动失败");
+    }
+    else
+    {
+        NSLog(@"百度地图启动成功");
+    }
 }
 @end
