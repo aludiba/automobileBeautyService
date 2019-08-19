@@ -19,6 +19,8 @@
 #import "ABUIUtilities.h"
 #import "NSArray+log.h"
 #import "NSDictionary+log.h"
+#import <BmobSDK/Bmob.h>
+
 //多语言调用
 #define NSLocalizedString(key, comment) [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
 /**颜色*/

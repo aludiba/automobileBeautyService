@@ -5,7 +5,7 @@
 //  Created by bykj on 2019/8/14.
 //  Copyright © 2019 hgg. All rights reserved.
 //
-
+#import <AVFoundation/AVFoundation.h>
 #import "ABMeasurementViewController.h"
 #import "ABMeasurementTitleInputTableViewCell.h"
 #import "ABMeasurementPositionTableViewCell.h"
@@ -16,12 +16,20 @@
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
 #import <BMKLocationKit/BMKLocationComponent.h>//引入定位功能所有的头文件
 #import <BaiduMapAPI_Search/BMKSearchComponent.h>//引入检索功能所有的头文件
+#define kRecordAudioFile @"myRecord.caf"
 #define BMK_KEY @"1qE0Fvek3PM2ufdkB1qakVQSkzBvHNk8"//百度地图的key
-@interface ABMeasurementViewController ()<UITableViewDelegate,UITableViewDataSource,CLLocationManagerDelegate,BMKGeneralDelegate,BMKLocationManagerDelegate,BMKGeoCodeSearchDelegate,BMKLocationAuthDelegate>
+@interface ABMeasurementViewController ()<UITableViewDelegate,UITableViewDataSource,CLLocationManagerDelegate,BMKGeneralDelegate,BMKLocationManagerDelegate,BMKGeoCodeSearchDelegate,BMKLocationAuthDelegate,AVAudioRecorderDelegate>
+/** 录音机 */
+@property (nonatomic, strong) AVAudioRecorder *audioRecorder;
+/** 音频播放器,用于播放录音文件 */
+@property (nonatomic, strong) AVAudioPlayer *audioPlayer;
+/** 录音声波监控（注意这里暂时不对播放进行监控） */
+@property (nonatomic,strong) NSTimer *timer;
 @property(nonatomic, strong)UITableView *mainTable;
 @property(nonatomic, strong)ABMeasurementModel *model;
 @property(nonatomic, strong)BMKLocationManager *locationManager;
 @property (nonatomic, strong)BMKGeoCodeSearch *geocodesearch;
+@property (nonatomic, strong)NSMutableArray *maxArray;
 @property BOOL isGeoSearch;
 @end
 
@@ -30,6 +38,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = ABH_Color(15, 18, 39, 1);
+    [self setAudioSession];
     [[BMKLocationAuth sharedInstance] checkPermisionWithKey:BMK_KEY authDelegate:self];
     [self.locationManager requestLocationWithReGeocode:YES withNetworkState:YES completionBlock:^(BMKLocation * _Nullable location, BMKLocationNetworkState state, NSError * _Nullable error) {
         if (error)
@@ -62,6 +71,114 @@
     [super viewWillDisappear:animated];
     self.navigationController.navigationBar.hidden = NO;
 }
+#pragma mark - 录音方法
+/**
+ *  设置音频会话
+ */
+-(void)setAudioSession{
+    AVAudioSession *audioSession=[AVAudioSession sharedInstance];
+    //设置为播放和录音状态，以便可以在录制完之后播放录音
+    [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+    [audioSession setActive:YES error:nil];
+}
+/**
+ *  取得录音文件保存路径
+ *
+ *  @return 录音文件路径
+ */
+-(NSURL *)getSavePath{
+    NSString *urlStr=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    urlStr=[urlStr stringByAppendingPathComponent:kRecordAudioFile];
+    NSLog(@"file path:%@",urlStr);
+    NSURL *url=[NSURL fileURLWithPath:urlStr];
+    return url;
+}
+/**
+ *  取得录音文件设置
+ *
+ *  @return 录音设置
+ */
+- (NSDictionary *)getAudioSetting {
+    
+    NSMutableDictionary *dicM = [NSMutableDictionary dictionary];
+    // 设置录音格式为lpcm
+    [dicM setObject:@(kAudioFormatLinearPCM) forKey:AVFormatIDKey];
+    // 设置录音采样率，8000是电话采样率，对于一般录音已经够了
+    [dicM setObject:@(8000) forKey:AVSampleRateKey];
+    // 声道
+    [dicM setObject:@(2) forKey:AVNumberOfChannelsKey];
+    // 每个采样点位数
+    [dicM setObject:@(8) forKey:AVLinearPCMBitDepthKey];
+    // 是否使用浮点数采样
+    [dicM setObject:@(YES) forKey:AVLinearPCMIsFloatKey];
+    // 录音品质
+    [dicM setObject:@(AVAudioQualityHigh) forKey:AVSampleRateConverterAudioQualityKey];
+    return dicM;
+}
+/**
+ *  录音声波状态设置
+ */
+-(void)audioPowerChange{
+    [self.audioRecorder updateMeters];//更新测量值
+    float power = [self.audioRecorder averagePowerForChannel:0];
+    float powerMax = [self.audioRecorder peakPowerForChannel:0];
+    
+    power = power + 160  - 50;
+    
+    int dB = 0;
+    if (power < 0.f) {
+        dB = 0;
+    } else if (power < 40.f) {
+        dB = (int)(power * 0.875);
+    } else if (power < 100.f) {
+        dB = (int)(power - 15);
+    } else if (power < 110.f) {
+        dB = (int)(power * 2.5 - 165);
+    } else {
+        dB = 110;
+    }
+    
+    powerMax = powerMax + 160  - 50;
+    
+    int MaxdB = 0;
+    if (powerMax < 0.f) {
+        MaxdB = 0;
+    } else if (powerMax < 40.f) {
+        MaxdB = (int)(powerMax * 0.875);
+    } else if (powerMax < 100.f) {
+        MaxdB = (int)(powerMax - 15);
+    } else if (powerMax < 110.f) {
+        MaxdB = (int)(powerMax * 2.5 - 165);
+    } else {
+        MaxdB = 110;
+    }
+    self.model.realDB = [NSNumber numberWithInt:MaxdB];
+    self.model.averageDB = [NSNumber numberWithInt:dB];
+    [self.maxArray addObject:[NSNumber numberWithInt:MaxdB]];
+    NSArray *result = [self.maxArray sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        return [obj1 compare:obj2]; //升序
+    }];
+    NSNumber *maxNumber = [result lastObject];
+    self.model.maxDB = maxNumber;
+    [self.mainTable reloadData];
+    //NSLog(@"progress = %f, dB = %d", progress, dB);
+//    self.powerLabel.text = [NSString stringWithFormat:@"%ddB", dB];
+//    [self.audioPower setProgress:progress];
+    
+}
+#pragma mark - 录音机代理方法
+/**
+ *  录音完成，录音完成后播放录音
+ *
+ *  @param recorder 录音机对象
+ *  @param flag     是否成功
+ */
+-(void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)flag{
+    if (![self.audioPlayer isPlaying]) {
+        [self.audioPlayer play];
+    }
+    NSLog(@"录音完成!");
+}
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
     [self.view endEditing:YES];
 }
@@ -91,7 +208,29 @@
         return cell;
     }else if (row == 2){
         ABMeasurementTestDBTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ABMeasurementTestDBTableViewCell" forIndexPath:indexPath];
+        cell.maxArray = self.maxArray;
         cell.model = self.model;
+        __weak typeof(self) weakSelf = self;
+        cell.measurementTestDBBlock = ^(ABMeasurementTestDBTableViewCell * _Nonnull cell) {
+            if (cell.isStart) {
+            if (![weakSelf.audioRecorder isRecording]) {
+                [weakSelf.audioRecorder record];//首次使用应用时如果调用record方法会询问用户是否允许使用麦克风
+                weakSelf.timer.fireDate = [NSDate distantPast];
+            }
+            }else{
+                [weakSelf.audioRecorder stop];
+                weakSelf.timer.fireDate=[NSDate distantFuture];
+                [weakSelf saveData];
+                weakSelf.model.title = @"";
+                weakSelf.model.date = nil;
+                weakSelf.model.maxDB = nil;
+                weakSelf.model.realDB = nil;
+                weakSelf.model.averageDB = nil;
+                [weakSelf.maxArray removeAllObjects];
+                [weakSelf.mainTable reloadData];
+//                weakSelf.audioPower.progress=0.0;
+            }
+        };
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }else{
@@ -121,7 +260,70 @@
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+- (void)saveData{
+    if (!self.model.title.length) {
+        self.model.title = @"无标题";
+    }
+    if (!self.model.position.length) {
+        [MBProgressHUD ABshowReminderText:@"请刷新位置信息"];
+        return;
+    }
+    if (!self.model.maxDB && !self.model.averageDB) {
+        [MBProgressHUD ABshowReminderText:@"请检测分贝"];
+        return;
+    }
+    NSDate *nowDate = [[NSDate alloc] init];
+    self.model.date = nowDate;
+    NSDictionary *jsonDictionary = (NSDictionary *)[self.model yy_modelToJSONObject];
+    BmobObject *DB = [BmobObject objectWithClassName:@"DB"];
+    [DB saveAllWithDictionary:jsonDictionary];
+//    BmobUser *author = [BmobUser currentUser];
+//    [diary setObject:author forKey:@"author"];
+    [DB saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+        if (isSuccessful) {
+            //创建成功后的动作
+//            [MBProgressHUD ABshowReminderText:@"添加成功"];
+//            [self.navigationController popViewControllerAnimated:YES];
+        } else if (error){
+            //发生错误后的动作
+            [MBProgressHUD ABshowReminderText:[NSString stringWithFormat:@"%@",error]];
+        } else {
+            NSLog(@"Unknow error");
+        }
+    }];
+}
 #pragma mark - 属性懒加载
+- (AVAudioRecorder *)audioRecorder{
+    if (!_audioRecorder) {
+        // 保存路径
+        NSURL *url = [self getSavePath];
+        // 录音设置
+        NSDictionary *setting = [self getAudioSetting];
+        // 创建录音机
+        NSError *error = nil;
+        _audioRecorder = [[AVAudioRecorder alloc] initWithURL:url settings:setting error:&error];
+        _audioRecorder.delegate = self;
+        _audioRecorder.meteringEnabled = YES;
+        
+        if (error) {
+            NSLog(@"创建录音机对象发生错误，error：%@", error.localizedDescription);
+            return nil;
+        }
+        
+    }
+    return _audioRecorder;
+}
+/**
+ *  录音声波监控定制器
+ *
+ *  @return 定时器
+ */
+-(NSTimer *)timer {
+    if (!_timer) {
+        _timer = [NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(audioPowerChange) userInfo:nil repeats:YES];
+    }
+    return _timer;
+}
 - (BMKLocationManager *)locationManager{
     if (!_locationManager) {
         _locationManager = [[BMKLocationManager alloc] init];
@@ -148,6 +350,12 @@
         _model = [[ABMeasurementModel alloc] init];
     }
     return _model;
+}
+- (NSMutableArray *)maxArray{
+    if (!_maxArray) {
+        _maxArray = [[NSMutableArray alloc] init];
+    }
+    return _maxArray;
 }
 - (UITableView *)mainTable{
     if (!_mainTable) {

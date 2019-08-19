@@ -154,7 +154,7 @@
         [self.maxValueLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(60);
             make.top.equalTo(self.scaleLine.mas_bottom).offset(30);
-            make.width.mas_equalTo(20);
+            make.width.mas_equalTo(30);
             make.height.mas_equalTo(20);
         }];
         [self.contentView addSubview:self.maxTitleLabel];
@@ -168,7 +168,7 @@
         [self.averageValueLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.trailing.equalTo(self.contentView).offset(-60);
             make.top.equalTo(self.scaleLine.mas_bottom).offset(30);
-            make.width.mas_equalTo(20);
+            make.width.mas_equalTo(30);
             make.height.mas_equalTo(20);
         }];
         [self.contentView addSubview:self.averageTitleLabel];
@@ -182,8 +182,8 @@
         [self.realDBLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.equalTo(self.averageValueLabel);
             make.centerX.equalTo(self.contentView);
-            make.width.mas_equalTo(25);
-            make.height.mas_equalTo(25);
+            make.width.mas_equalTo(45);
+            make.height.mas_equalTo(30);
         }];
         [self.contentView addSubview:self.controlButton];
         [self.controlButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -197,7 +197,26 @@
     return self;
 }
 - (void)btnClick:(UIButton *)sender{
+    self.isStart = !self.isStart;
+    if (self.isStart) {
+        [self.controlButton setTitle:@"停止测试" forState:UIControlStateNormal];
+    }else{
+        [self.controlButton setTitle:@"开始测试" forState:UIControlStateNormal];
+    }
+    if (self.measurementTestDBBlock) {
+        self.measurementTestDBBlock(self);
+    }
+}
+- (void)setModel:(ABMeasurementModel *)model{
+    _model = model;
+    int realdb = [_model.realDB intValue];
+    int averagedb = [_model.averageDB intValue];
+    int maxdb = [_model.maxDB intValue];
     
+    self.maxValueLabel.text = [NSString stringWithFormat:@"%d",maxdb];
+    self.averageValueLabel.text = [NSString stringWithFormat:@"%d",averagedb];
+    self.realDBLabel.text = [NSString stringWithFormat:@"%d",realdb];
+    self.scaleLine.value = (float)realdb;
 }
 #pragma mark - 属性懒加载
 - (UIView *)scopeView{
@@ -348,6 +367,8 @@
 - (UISlider *)scaleLine{
     if (!_scaleLine) {
         _scaleLine = [[UISlider alloc] init];
+        _scaleLine.minimumValue = 0;
+        _scaleLine.maximumValue = 120;
     }
     return _scaleLine;
 }
@@ -415,6 +436,7 @@
         [_controlButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         _controlButton.titleLabel.font = [UIFont systemFontOfSize:20];
         [_controlButton setTitle:@"开始测试" forState:UIControlStateNormal];
+        [_controlButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _controlButton;
 }

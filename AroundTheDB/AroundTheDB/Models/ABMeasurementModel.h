@@ -15,8 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, copy)NSString *position;
 @property(nonatomic, strong)NSDate *date;
 @property(nonatomic, strong)NSNumber *maxDB;
+@property(nonatomic, strong)NSNumber *realDB;
 @property(nonatomic, strong)NSNumber *averageDB;
-@property(nonatomic, strong)NSNumber *durationTime;
 @end
 
 NS_ASSUME_NONNULL_END

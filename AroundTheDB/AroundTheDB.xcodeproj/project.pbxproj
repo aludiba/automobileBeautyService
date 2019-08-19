@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		AE731EFE2303ED6E00385A6E /* ABMeasurementModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731EFD2303ED6E00385A6E /* ABMeasurementModel.m */; };
 		AE731F012303F28900385A6E /* ABMeasurementReferenceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731F002303F28900385A6E /* ABMeasurementReferenceTableViewCell.m */; };
 		AE731F042303FA5400385A6E /* ABMeasurementTestDBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731F032303FA5400385A6E /* ABMeasurementTestDBTableViewCell.m */; };
+		AEC7CFBF230AFDB2007D1D27 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC7CFBE230AFDB2007D1D27 /* AVFoundation.framework */; };
 		AED1745423015E8C00764DCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AED1745323015E8C00764DCA /* AppDelegate.m */; };
 		AED1745D23015E8C00764DCA /* AroundTheDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AED1745B23015E8C00764DCA /* AroundTheDB.xcdatamodeld */; };
 		AED1745F23015E9200764DCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED1745E23015E9200764DCA /* Assets.xcassets */; };
@@ -82,6 +83,7 @@
 		AE9C733723065478008E968A /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = Pods/BaiduMapKit/BaiduMapKit/thirdlibs/libssl.a; sourceTree = "<group>"; };
 		AE9C733A23065775008E968A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AE9C733C23065780008E968A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AEC7CFBE230AFDB2007D1D27 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AED1744F23015E8C00764DCA /* AroundTheDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AroundTheDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED1745223015E8C00764DCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AED1745323015E8C00764DCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEC7CFBF230AFDB2007D1D27 /* AVFoundation.framework in Frameworks */,
 				42C4BC20AB8B2A890C4B5DAD /* libPods-AroundTheDB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +109,7 @@
 		3BF9C25251E56FB3656F38EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AEC7CFBE230AFDB2007D1D27 /* AVFoundation.framework */,
 				AE9C733C23065780008E968A /* Foundation.framework */,
 				AE9C733A23065775008E968A /* UIKit.framework */,
 				AE9C733623065478008E968A /* libcrypto.a */,
