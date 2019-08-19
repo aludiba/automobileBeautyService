@@ -36,6 +36,14 @@
     }
     return self;
 }
+- (void)setModel:(ABMeasurementModel *)model{
+    _model = model;
+    if (_model.title.length) {
+        self.writeTextField.text = _model.title;
+    }else{
+        self.writeTextField.text = @"";
+    }
+}
 #pragma mark - UITextFieldDelegate
 - (void)textFieldDidEndEditing:(UITextField *)textField{
     self.measurementTitle = textField.text;

@@ -23,11 +23,11 @@
         self.positionLblWidth = 180.0f;
         
         [self.positionLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.contentView);
+            make.top.equalTo(self.contentView).offset(10);
             make.centerX.equalTo(self.contentView).offset(7.5);
             make.width.mas_equalTo(self.positionLblWidth);
             make.height.mas_equalTo(18);
-            make.bottom.equalTo(self.contentView);
+            make.bottom.equalTo(self.contentView).offset(-10);
         }];
         [self.positionImgView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.equalTo(self.contentView);

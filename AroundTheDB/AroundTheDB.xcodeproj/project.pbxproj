@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42C4BC20AB8B2A890C4B5DAD /* libPods-AroundTheDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0A645483FDCF57E24AFEC2 /* libPods-AroundTheDB.a */; };
+		72B68B102308F3ED004F51E6 /* ABMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B68B0F2308F3ED004F51E6 /* ABMapViewController.m */; };
 		AE731ED82303A90900385A6E /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731ED72303A90800385A6E /* NSArray+log.m */; };
 		AE731EDB2303A91600385A6E /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731ED92303A91500385A6E /* NSDictionary+log.m */; };
 		AE731EDE2303A94300385A6E /* ABUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731EDD2303A94300385A6E /* ABUIUtilities.m */; };
@@ -30,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72B68B0E2308F3ED004F51E6 /* ABMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABMapViewController.h; sourceTree = "<group>"; };
+		72B68B0F2308F3ED004F51E6 /* ABMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABMapViewController.m; sourceTree = "<group>"; };
 		80596B462DD51DFDAD6BF2FF /* Pods-AroundTheDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundTheDB.debug.xcconfig"; path = "Target Support Files/Pods-AroundTheDB/Pods-AroundTheDB.debug.xcconfig"; sourceTree = "<group>"; };
 		88ADB50679EC90A34B78DEE2 /* Pods-AroundTheDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundTheDB.release.xcconfig"; path = "Target Support Files/Pods-AroundTheDB/Pods-AroundTheDB.release.xcconfig"; sourceTree = "<group>"; };
 		8E0A645483FDCF57E24AFEC2 /* libPods-AroundTheDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AroundTheDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,6 +233,8 @@
 				AE731EEE2303BAB700385A6E /* ABMeasurementViewController.m */,
 				AE731EF32303BAF300385A6E /* ABSetViewController.h */,
 				AE731EF42303BAF300385A6E /* ABSetViewController.m */,
+				72B68B0E2308F3ED004F51E6 /* ABMapViewController.h */,
+				72B68B0F2308F3ED004F51E6 /* ABMapViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -306,18 +311,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AroundTheDB/Pods-AroundTheDB-resources.sh",
-				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/mapapi.bundle",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-AroundTheDB/Pods-AroundTheDB-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-AroundTheDB/Pods-AroundTheDB-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -357,6 +355,7 @@
 				AE731ED82303A90900385A6E /* NSArray+log.m in Sources */,
 				AED1745D23015E8C00764DCA /* AroundTheDB.xcdatamodeld in Sources */,
 				AED1746523015E9200764DCA /* main.m in Sources */,
+				72B68B102308F3ED004F51E6 /* ABMapViewController.m in Sources */,
 				AE731EE92303B7B600385A6E /* ABBaseViewController.m in Sources */,
 				AED1745423015E8C00764DCA /* AppDelegate.m in Sources */,
 				AE731EDB2303A91600385A6E /* NSDictionary+log.m in Sources */,
