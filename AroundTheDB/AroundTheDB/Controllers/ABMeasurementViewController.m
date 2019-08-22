@@ -273,8 +273,9 @@
         return;
     }
     NSDate *nowDate = [[NSDate alloc] init];
-    self.model.date = nowDate;
-    NSDictionary *jsonDictionary = (NSDictionary *)[self.model yy_modelToJSONObject];
+//    self.model.date = [nowDate copy];
+    NSMutableDictionary *jsonDictionary = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[self.model yy_modelToJSONObject]];
+    [jsonDictionary setObject:nowDate forKey:@"date"];
     BmobObject *DB = [BmobObject objectWithClassName:@"DB"];
     [DB saveAllWithDictionary:jsonDictionary];
 //    BmobUser *author = [BmobUser currentUser];

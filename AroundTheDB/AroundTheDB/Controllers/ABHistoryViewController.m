@@ -7,7 +7,7 @@
 //
 
 #import "ABHistoryViewController.h"
-
+#import "ABHistoryTableViewCell.h"
 @interface ABHistoryViewController ()
 
 @end

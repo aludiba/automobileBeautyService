@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ABMeasurementModel : NSObject
 @property(nonatomic, copy)NSString *title;
 @property(nonatomic, copy)NSString *position;
-@property(nonatomic, strong)NSDate *date;
+@property(nonatomic, copy)NSDate *date;
 @property(nonatomic, strong)NSNumber *maxDB;
 @property(nonatomic, strong)NSNumber *realDB;
 @property(nonatomic, strong)NSNumber *averageDB;

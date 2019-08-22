@@ -24,6 +24,7 @@
 		AE731EFE2303ED6E00385A6E /* ABMeasurementModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731EFD2303ED6E00385A6E /* ABMeasurementModel.m */; };
 		AE731F012303F28900385A6E /* ABMeasurementReferenceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731F002303F28900385A6E /* ABMeasurementReferenceTableViewCell.m */; };
 		AE731F042303FA5400385A6E /* ABMeasurementTestDBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731F032303FA5400385A6E /* ABMeasurementTestDBTableViewCell.m */; };
+		AEBC556A230ECAA2008B8145 /* ABHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBC5569230ECAA2008B8145 /* ABHistoryTableViewCell.m */; };
 		AEC7CFBF230AFDB2007D1D27 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC7CFBE230AFDB2007D1D27 /* AVFoundation.framework */; };
 		AED1745423015E8C00764DCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AED1745323015E8C00764DCA /* AppDelegate.m */; };
 		AED1745D23015E8C00764DCA /* AroundTheDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AED1745B23015E8C00764DCA /* AroundTheDB.xcdatamodeld */; };
@@ -83,6 +84,8 @@
 		AE9C733723065478008E968A /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = Pods/BaiduMapKit/BaiduMapKit/thirdlibs/libssl.a; sourceTree = "<group>"; };
 		AE9C733A23065775008E968A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AE9C733C23065780008E968A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AEBC5568230ECAA2008B8145 /* ABHistoryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABHistoryTableViewCell.h; sourceTree = "<group>"; };
+		AEBC5569230ECAA2008B8145 /* ABHistoryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABHistoryTableViewCell.m; sourceTree = "<group>"; };
 		AEC7CFBE230AFDB2007D1D27 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AED1744F23015E8C00764DCA /* AroundTheDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AroundTheDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED1745223015E8C00764DCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -215,6 +218,8 @@
 				AE731F032303FA5400385A6E /* ABMeasurementTestDBTableViewCell.m */,
 				AE731EFF2303F28900385A6E /* ABMeasurementReferenceTableViewCell.h */,
 				AE731F002303F28900385A6E /* ABMeasurementReferenceTableViewCell.m */,
+				AEBC5568230ECAA2008B8145 /* ABHistoryTableViewCell.h */,
+				AEBC5569230ECAA2008B8145 /* ABHistoryTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -374,6 +379,7 @@
 				AE731EDE2303A94300385A6E /* ABUIUtilities.m in Sources */,
 				AE731EF82303E1DA00385A6E /* ABMeasurementTitleInputTableViewCell.m in Sources */,
 				AE731EFB2303EAE300385A6E /* ABMeasurementPositionTableViewCell.m in Sources */,
+				AEBC556A230ECAA2008B8145 /* ABHistoryTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
