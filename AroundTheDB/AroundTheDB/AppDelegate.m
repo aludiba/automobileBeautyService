@@ -18,7 +18,9 @@
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [Bmob registerWithAppKey:@"11e1669a7c10fec2b2c79577e2132bab"];
+//    [Bmob registerWithAppKey:@"11e1669a7c10fec2b2c79577e2132bab"];
+    [AVOSCloud setApplicationId:@"qEwQUkhy3ze3bwGtBwKAxbWm-9Nh9j0Va" clientKey:@"9x4VnWXyGjlviXKsrtV1gJmP"];
+    [AVOSCloud setApplicationId:@"{{appid}}" clientKey:@"{{appkey}}"];
     [self initBaiDuMapManager];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];

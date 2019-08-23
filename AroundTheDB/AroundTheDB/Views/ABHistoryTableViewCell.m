@@ -21,6 +21,7 @@
 @implementation ABHistoryTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor =  ABH_Color(21, 24, 46, 1);
         [self.contentView addSubview:self.titleLbl];
         [self.contentView addSubview:self.positionLabel];
         [self.contentView addSubview:self.dateLabel];
@@ -53,6 +54,7 @@
        make.trailing.equalTo(self.contentView).offset(-15);
             make.top.equalTo(self.dateLabel.mas_bottom).offset(20);
             make.height.mas_equalTo(60);
+            make.bottom.equalTo(self.contentView).offset(-10);
         }];
         [self.maxDBLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.dbBackView).offset(30);
@@ -85,10 +87,20 @@
     }
     return self;
 }
+- (void)setModel:(ABMeasurementModel *)model{
+    _model = model;
+    self.titleLbl.text = _model.title;
+    self.positionLabel.text = _model.position;
+    NSString *dateString = [ABUIUtilities ABformattedTimeStringWithDate:_model.date format:@"yyyy/MM/dd HH:mm:ss"];
+    self.dateLabel.text = dateString;
+    self.maxDBLabel.text = [NSString stringWithFormat:@"%d",[_model.maxDB intValue]];
+    self.averageDBLabel.text = [NSString stringWithFormat:@"%d",[_model.averageDB intValue]];
+}
 #pragma mark - 属性懒加载
 - (UILabel *)titleLbl{
     if (!_titleLbl) {
         _titleLbl = [[UILabel alloc] init];
+        _titleLbl.backgroundColor = ABH_Color(21, 24, 46, 1);
         _titleLbl.textColor = [UIColor whiteColor];
         _titleLbl.font = [UIFont systemFontOfSize:20];
     }
@@ -97,6 +109,7 @@
 - (UILabel *)positionLabel{
     if (!_positionLabel) {
         _positionLabel = [[UILabel alloc] init];
+        _positionLabel.backgroundColor = ABH_Color(21, 24, 46, 1);
         _positionLabel.textColor = ABH_Color(108, 111, 118, 1);
         _positionLabel.font = [UIFont systemFontOfSize:14];
     }
@@ -105,6 +118,7 @@
 - (UILabel *)dateLabel{
     if (!_dateLabel) {
         _dateLabel = [[UILabel alloc] init];
+        _dateLabel.backgroundColor = ABH_Color(21, 24, 46, 1);
         _dateLabel.textColor = ABH_Color(108, 111, 118, 1);
         _dateLabel.font = [UIFont systemFontOfSize:14];
     }
@@ -120,6 +134,7 @@
 - (UILabel *)maxDBLabel{
     if (!_maxDBLabel) {
         _maxDBLabel = [[UILabel alloc] init];
+        _maxDBLabel.backgroundColor = ABH_Color(25, 26, 51, 1);
         _maxDBLabel.textColor = [UIColor whiteColor];
         _maxDBLabel.font = [UIFont systemFontOfSize:15];
         _maxDBLabel.textAlignment = NSTextAlignmentCenter;
@@ -129,6 +144,7 @@
 - (UILabel *)maxDBTitleLabel{
     if (_maxDBTitleLabel) {
         _maxDBTitleLabel = [[UILabel alloc] init];
+        _maxDBTitleLabel.backgroundColor = ABH_Color(25, 26, 51, 1);
         _maxDBTitleLabel.textColor = ABH_Color(108, 111, 118, 1);
         _maxDBTitleLabel.font = [UIFont systemFontOfSize:13];
         _maxDBTitleLabel.text = @"最大分贝";
@@ -139,6 +155,7 @@
 - (UILabel *)averageDBLabel{
     if (!_averageDBLabel) {
         _averageDBLabel = [[UILabel alloc] init];
+        _averageDBLabel.backgroundColor = ABH_Color(25, 26, 51, 1);
         _averageDBLabel.textColor = [UIColor whiteColor];
         _averageDBLabel.font = [UIFont systemFontOfSize:15];
         _averageDBLabel.textAlignment = NSTextAlignmentCenter;
@@ -148,6 +165,7 @@
 - (UILabel *)averageDBTitleLabel{
     if (_averageDBTitleLabel) {
         _averageDBTitleLabel = [[UILabel alloc] init];
+        _averageDBTitleLabel.backgroundColor = ABH_Color(25, 26, 51, 1);
         _averageDBTitleLabel.textColor = ABH_Color(108, 111, 118, 1);
         _averageDBTitleLabel.font = [UIFont systemFontOfSize:13];
         _averageDBTitleLabel.text = @"平均分贝";

@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ABMeasurementModel : NSObject
+@property(nonatomic, copy)NSString *objectId;
 @property(nonatomic, copy)NSString *title;
 @property(nonatomic, copy)NSString *position;
 @property(nonatomic, copy)NSDate *date;

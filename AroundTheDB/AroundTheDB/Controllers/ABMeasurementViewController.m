@@ -283,7 +283,7 @@
     [DB saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
         if (isSuccessful) {
             //创建成功后的动作
-//            [MBProgressHUD ABshowReminderText:@"添加成功"];
+            [MBProgressHUD ABshowReminderText:@"添加成功"];
 //            [self.navigationController popViewControllerAnimated:YES];
         } else if (error){
             //发生错误后的动作

@@ -17,4 +17,5 @@ target 'AroundTheDB' do
     pod 'BmobSDK'
     pod 'BaiduMapKit'
     pod 'BMKLocationKit'
+    pod 'AVOSCloud'   # 数据存储、短信、社交、云引擎调用等基础服务模块
 end

@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-AroundTheDB/Pods-AroundTheDB-resources.sh
+${PODS_ROOT}/AVOSCloud/AVOS/AVOSCloud/AVOSCloud_Art.inc
 ${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/mapapi.bundle
 ${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle

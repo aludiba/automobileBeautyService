@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - AVOSCloud (11.6.5)
   - BaiduMapKit (4.3.0)
   - BMKLocationKit (1.7.0)
   - BmobSDK (2.3.1)
@@ -31,6 +32,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - AVOSCloud
   - BaiduMapKit
   - BMKLocationKit
   - BmobSDK
@@ -45,6 +47,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - AVOSCloud
     - BaiduMapKit
     - BMKLocationKit
     - BmobSDK
@@ -58,6 +61,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AVOSCloud: 2929fb36ca7e919e094de5a598a43b31931b7896
   BaiduMapKit: 63575d9236b4112c4ff76391df637f2a6dc1ada8
   BMKLocationKit: cbe7a93bc288465e12961e65aa3f11a8f9da3bb1
   BmobSDK: e0f9e4b451233a80af63a8ae4f2d239474bf567b
@@ -69,6 +73,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 3db378f64fa0c45f963239e0f7401c43a565302f
+PODFILE CHECKSUM: ff4f5d8e72085d4df2277f4f4c25c9805b4225b3
 
 COCOAPODS: 1.7.5

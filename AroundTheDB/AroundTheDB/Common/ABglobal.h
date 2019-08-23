@@ -20,6 +20,7 @@
 #import "NSArray+log.h"
 #import "NSDictionary+log.h"
 #import <BmobSDK/Bmob.h>
+#import <AVOSCloud/AVOSCloud.h>
 
 //多语言调用
 #define NSLocalizedString(key, comment) [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
