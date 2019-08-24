@@ -21,6 +21,6 @@ target 'MindFlashlight' do
   pod 'MJRefresh'
   pod 'MBProgressHUD'
   pod 'YYModel'
-  pod 'SDWebImage'
+  pod 'YYText'
 
 end
