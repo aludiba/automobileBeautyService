@@ -21,6 +21,10 @@
 		AEB96E85231132D100441DD9 /* MBProgressHUD+MFNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E83231132D000441DD9 /* MBProgressHUD+MFNJ.m */; };
 		AEB96E882311330400441DD9 /* MFHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E862311330300441DD9 /* MFHBTool.m */; };
 		AEB96E8C2311350800441DD9 /* MFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E8B2311350700441DD9 /* MFBaseViewController.m */; };
+		AEB96E8F23113F4A00441DD9 /* MFFlashlightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E8E23113F4A00441DD9 /* MFFlashlightViewController.m */; };
+		AEB96E9223113F6C00441DD9 /* MFFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E9123113F6C00441DD9 /* MFFunctionViewController.m */; };
+		AEB96E9523113FF100441DD9 /* MFSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E9423113FF100441DD9 /* MFSetViewController.m */; };
+		AEB96E982311407600441DD9 /* MFTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E972311407600441DD9 /* MFTabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,14 @@
 		AEB96E892311334A00441DD9 /* MFGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFGlobal.h; sourceTree = "<group>"; };
 		AEB96E8A2311350700441DD9 /* MFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFBaseViewController.h; sourceTree = "<group>"; };
 		AEB96E8B2311350700441DD9 /* MFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFBaseViewController.m; sourceTree = "<group>"; };
+		AEB96E8D23113F4A00441DD9 /* MFFlashlightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFFlashlightViewController.h; sourceTree = "<group>"; };
+		AEB96E8E23113F4A00441DD9 /* MFFlashlightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFFlashlightViewController.m; sourceTree = "<group>"; };
+		AEB96E9023113F6C00441DD9 /* MFFunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFFunctionViewController.h; sourceTree = "<group>"; };
+		AEB96E9123113F6C00441DD9 /* MFFunctionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFFunctionViewController.m; sourceTree = "<group>"; };
+		AEB96E9323113FF100441DD9 /* MFSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFSetViewController.h; sourceTree = "<group>"; };
+		AEB96E9423113FF100441DD9 /* MFSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFSetViewController.m; sourceTree = "<group>"; };
+		AEB96E962311407600441DD9 /* MFTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFTabBarViewController.h; sourceTree = "<group>"; };
+		AEB96E972311407600441DD9 /* MFTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFTabBarViewController.m; sourceTree = "<group>"; };
 		B1720A6DBBBB9F46EBE92F9E /* libPods-MindFlashlightTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MindFlashlightTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FDC1EF1BF8C5C1CCCADE1D /* Pods-MindFlashlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindFlashlight.release.xcconfig"; path = "Target Support Files/Pods-MindFlashlight/Pods-MindFlashlight.release.xcconfig"; sourceTree = "<group>"; };
 		CBD5C1E1CEDB076BA7AAC568 /* Pods-MindFlashlightUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindFlashlightUITests.debug.xcconfig"; path = "Target Support Files/Pods-MindFlashlightUITests/Pods-MindFlashlightUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -200,6 +212,8 @@
 				AEB96E862311330300441DD9 /* MFHBTool.m */,
 				AEB96E8A2311350700441DD9 /* MFBaseViewController.h */,
 				AEB96E8B2311350700441DD9 /* MFBaseViewController.m */,
+				AEB96E962311407600441DD9 /* MFTabBarViewController.h */,
+				AEB96E972311407600441DD9 /* MFTabBarViewController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -207,6 +221,12 @@
 		AEB96E7623112EC800441DD9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AEB96E8D23113F4A00441DD9 /* MFFlashlightViewController.h */,
+				AEB96E8E23113F4A00441DD9 /* MFFlashlightViewController.m */,
+				AEB96E9023113F6C00441DD9 /* MFFunctionViewController.h */,
+				AEB96E9123113F6C00441DD9 /* MFFunctionViewController.m */,
+				AEB96E9323113FF100441DD9 /* MFSetViewController.h */,
+				AEB96E9423113FF100441DD9 /* MFSetViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -460,10 +480,14 @@
 			files = (
 				AEB96E882311330400441DD9 /* MFHBTool.m in Sources */,
 				AEB96E7F2311327900441DD9 /* NSArray+log.m in Sources */,
+				AEB96E9523113FF100441DD9 /* MFSetViewController.m in Sources */,
 				AEB96E8C2311350800441DD9 /* MFBaseViewController.m in Sources */,
 				AEB96E7E2311327900441DD9 /* NSDictionary+log.m in Sources */,
+				AEB96E982311407600441DD9 /* MFTabBarViewController.m in Sources */,
 				AEB96E5223111D5800441DD9 /* main.m in Sources */,
 				AEB96E4423111D5700441DD9 /* AppDelegate.m in Sources */,
+				AEB96E8F23113F4A00441DD9 /* MFFlashlightViewController.m in Sources */,
+				AEB96E9223113F6C00441DD9 /* MFFunctionViewController.m in Sources */,
 				AEB96E85231132D100441DD9 /* MBProgressHUD+MFNJ.m in Sources */,
 				AEB96E822311328E00441DD9 /* MFUIUtilities.m in Sources */,
 			);
