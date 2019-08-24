@@ -11,10 +11,7 @@
 		85EE9621904F14C21DBA52A3 /* libPods-MindFlashlightTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1720A6DBBBB9F46EBE92F9E /* libPods-MindFlashlightTests.a */; };
 		96950F720C57D7565899C4F6 /* libPods-MindFlashlightUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B5A3B7D00883028F5075DD /* libPods-MindFlashlightUITests.a */; };
 		AEB96E4423111D5700441DD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E4323111D5700441DD9 /* AppDelegate.m */; };
-		AEB96E4723111D5700441DD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E4623111D5700441DD9 /* ViewController.m */; };
-		AEB96E4A23111D5700441DD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB96E4823111D5700441DD9 /* Main.storyboard */; };
 		AEB96E4C23111D5800441DD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB96E4B23111D5800441DD9 /* Assets.xcassets */; };
-		AEB96E4F23111D5800441DD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB96E4D23111D5800441DD9 /* LaunchScreen.storyboard */; };
 		AEB96E5223111D5800441DD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E5123111D5800441DD9 /* main.m */; };
 		AEB96E5C23111D5800441DD9 /* MindFlashlightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E5B23111D5800441DD9 /* MindFlashlightTests.m */; };
 		AEB96E6723111D5800441DD9 /* MindFlashlightUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E6623111D5800441DD9 /* MindFlashlightUITests.m */; };
@@ -52,11 +49,7 @@
 		AEB96E3F23111D5700441DD9 /* MindFlashlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindFlashlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB96E4223111D5700441DD9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEB96E4323111D5700441DD9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AEB96E4523111D5700441DD9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AEB96E4623111D5700441DD9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AEB96E4923111D5700441DD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEB96E4B23111D5800441DD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AEB96E4E23111D5800441DD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEB96E5023111D5800441DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEB96E5123111D5800441DD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AEB96E5723111D5800441DD9 /* MindFlashlightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindFlashlightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,11 +151,7 @@
 				AEB96E7823112EC900441DD9 /* Views */,
 				AEB96E4223111D5700441DD9 /* AppDelegate.h */,
 				AEB96E4323111D5700441DD9 /* AppDelegate.m */,
-				AEB96E4523111D5700441DD9 /* ViewController.h */,
-				AEB96E4623111D5700441DD9 /* ViewController.m */,
-				AEB96E4823111D5700441DD9 /* Main.storyboard */,
 				AEB96E4B23111D5800441DD9 /* Assets.xcassets */,
-				AEB96E4D23111D5800441DD9 /* LaunchScreen.storyboard */,
 				AEB96E5023111D5800441DD9 /* Info.plist */,
 				AEB96E5123111D5800441DD9 /* main.m */,
 			);
@@ -353,9 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEB96E4F23111D5800441DD9 /* LaunchScreen.storyboard in Resources */,
 				AEB96E4C23111D5800441DD9 /* Assets.xcassets in Resources */,
-				AEB96E4A23111D5700441DD9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +459,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEB96E882311330400441DD9 /* MFHBTool.m in Sources */,
-				AEB96E4723111D5700441DD9 /* ViewController.m in Sources */,
 				AEB96E7F2311327900441DD9 /* NSArray+log.m in Sources */,
 				AEB96E8C2311350800441DD9 /* MFBaseViewController.m in Sources */,
 				AEB96E7E2311327900441DD9 /* NSDictionary+log.m in Sources */,
@@ -513,25 +499,6 @@
 			targetProxy = AEB96E6323111D5800441DD9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		AEB96E4823111D5700441DD9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AEB96E4923111D5700441DD9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AEB96E4D23111D5800441DD9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AEB96E4E23111D5800441DD9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AEB96E6923111D5900441DD9 /* Debug */ = {
