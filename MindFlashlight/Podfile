@@ -18,5 +18,6 @@ target 'MindFlashlight' do
   end
   pod 'Masonry'
   pod 'AFNetworking'
+  pod 'MJRefresh'
 
 end
