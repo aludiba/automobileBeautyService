@@ -22,6 +22,6 @@ target 'MindFlashlight' do
   pod 'MBProgressHUD'
   pod 'YYModel'
   pod 'YYText'
-#  pod 'BmobSDK'
+  pod 'BmobSDK'
 
 end
