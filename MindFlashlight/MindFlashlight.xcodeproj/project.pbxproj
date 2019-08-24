@@ -103,7 +103,6 @@
 				CBD5C1E1CEDB076BA7AAC568 /* Pods-MindFlashlightUITests.debug.xcconfig */,
 				1BD16BC6D58E0C591526B79B /* Pods-MindFlashlightUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -132,6 +131,11 @@
 		AEB96E4123111D5700441DD9 /* MindFlashlight */ = {
 			isa = PBXGroup;
 			children = (
+				AEB96E7523112EC800441DD9 /* Common */,
+				AEB96E7623112EC800441DD9 /* Controllers */,
+				AEB96E7723112EC800441DD9 /* Models */,
+				AEB96E7423112EC800441DD9 /* Resources */,
+				AEB96E7823112EC900441DD9 /* Views */,
 				AEB96E4223111D5700441DD9 /* AppDelegate.h */,
 				AEB96E4323111D5700441DD9 /* AppDelegate.m */,
 				AEB96E4523111D5700441DD9 /* ViewController.h */,
@@ -161,6 +165,41 @@
 				AEB96E6823111D5900441DD9 /* Info.plist */,
 			);
 			path = MindFlashlightUITests;
+			sourceTree = "<group>";
+		};
+		AEB96E7423112EC800441DD9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AEB96E7523112EC800441DD9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AEB96E7623112EC800441DD9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AEB96E7723112EC800441DD9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AEB96E7823112EC900441DD9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F726B206EE0C2CCA4778BC6A /* Frameworks */ = {
