@@ -17,6 +17,8 @@
 @property(nonatomic, strong)UILabel *maxDBTitleLabel;
 @property(nonatomic, strong)UILabel *averageDBLabel;
 @property(nonatomic, strong)UILabel *averageDBTitleLabel;
+@property(nonatomic, assign)CGFloat titleHeight;
+@property(nonatomic, assign)CGFloat positionHeight;
 @end
 @implementation ABHistoryTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -35,13 +37,13 @@
             make.leading.equalTo(self.contentView).offset(15);
             make.top.equalTo(self.contentView).offset(10);
             make.trailing.equalTo(self.contentView).offset(-15);
-            make.height.mas_equalTo(21);
+            make.height.mas_equalTo(ABHEIGHT);
         }];
         [self.positionLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(15);
             make.top.equalTo(self.titleLbl.mas_bottom).offset(20);
             make.width.mas_equalTo((ABWIDTH - 30) * 0.5);
-            make.height.mas_equalTo(15);
+            make.height.mas_equalTo(ABHEIGHT);
         }];
         [self.dateLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.trailing.equalTo(self.contentView).offset(-15);
@@ -52,7 +54,7 @@
         [self.dbBackView mas_makeConstraints:^(MASConstraintMaker *make) {            make.leading.equalTo(self.contentView).offset(15);
             
        make.trailing.equalTo(self.contentView).offset(-15);
-            make.top.equalTo(self.dateLabel.mas_bottom).offset(20);
+            make.top.equalTo(self.positionLabel.mas_bottom).offset(20);
             make.height.mas_equalTo(60);
             make.bottom.equalTo(self.contentView).offset(-10);
         }];
@@ -90,7 +92,20 @@
 - (void)setModel:(ABMeasurementModel *)model{
     _model = model;
     self.titleLbl.text = _model.title;
+    CGSize size = [self.titleLbl sizeThatFits:CGSizeMake(ABWIDTH - 30, MAXFLOAT)];
+    self.titleHeight = size.height;
+    [self.titleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(self.titleHeight);
+    }];
     self.positionLabel.text = _model.position;
+    size = [self.positionLabel sizeThatFits:CGSizeMake((ABWIDTH - 30) * 0.5, MAXFLOAT)];
+    self.positionHeight = size.height;
+    [self.positionLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(self.positionHeight);
+    }];
+    [self.titleLbl layoutIfNeeded];
+    [self.positionLabel layoutIfNeeded];
+    [self.contentView layoutSubviews];
     NSString *dateString = [ABUIUtilities ABformattedTimeStringWithDate:_model.date format:@"yyyy/MM/dd HH:mm:ss"];
     self.dateLabel.text = dateString;
     self.maxDBLabel.text = [NSString stringWithFormat:@"%d",[_model.maxDB intValue]];
@@ -103,6 +118,8 @@
         _titleLbl.backgroundColor = ABH_Color(21, 24, 46, 1);
         _titleLbl.textColor = [UIColor whiteColor];
         _titleLbl.font = [UIFont systemFontOfSize:20];
+        _titleLbl.numberOfLines = 0;
+        [_titleLbl sizeToFit];
     }
     return _titleLbl;
 }
@@ -112,6 +129,8 @@
         _positionLabel.backgroundColor = ABH_Color(21, 24, 46, 1);
         _positionLabel.textColor = ABH_Color(108, 111, 118, 1);
         _positionLabel.font = [UIFont systemFontOfSize:14];
+        _positionLabel.numberOfLines = 0;
+        [_positionLabel sizeToFit];
     }
     return _positionLabel;
 }
@@ -121,6 +140,7 @@
         _dateLabel.backgroundColor = ABH_Color(21, 24, 46, 1);
         _dateLabel.textColor = ABH_Color(108, 111, 118, 1);
         _dateLabel.font = [UIFont systemFontOfSize:14];
+        _dateLabel.textAlignment = NSTextAlignmentRight;
     }
     return _dateLabel;
 }
@@ -142,10 +162,10 @@
     return _maxDBLabel;
 }
 - (UILabel *)maxDBTitleLabel{
-    if (_maxDBTitleLabel) {
+    if (!_maxDBTitleLabel) {
         _maxDBTitleLabel = [[UILabel alloc] init];
         _maxDBTitleLabel.backgroundColor = ABH_Color(25, 26, 51, 1);
-        _maxDBTitleLabel.textColor = ABH_Color(108, 111, 118, 1);
+        _maxDBTitleLabel.textColor = ABH_Color(93, 94, 106, 1);
         _maxDBTitleLabel.font = [UIFont systemFontOfSize:13];
         _maxDBTitleLabel.text = @"最大分贝";
         _maxDBTitleLabel.textAlignment = NSTextAlignmentCenter;
@@ -163,10 +183,10 @@
     return _averageDBLabel;
 }
 - (UILabel *)averageDBTitleLabel{
-    if (_averageDBTitleLabel) {
+    if (!_averageDBTitleLabel) {
         _averageDBTitleLabel = [[UILabel alloc] init];
         _averageDBTitleLabel.backgroundColor = ABH_Color(25, 26, 51, 1);
-        _averageDBTitleLabel.textColor = ABH_Color(108, 111, 118, 1);
+        _averageDBTitleLabel.textColor =  ABH_Color(93, 94, 106, 1);
         _averageDBTitleLabel.font = [UIFont systemFontOfSize:13];
         _averageDBTitleLabel.text = @"平均分贝";
         _averageDBTitleLabel.textAlignment = NSTextAlignmentCenter;

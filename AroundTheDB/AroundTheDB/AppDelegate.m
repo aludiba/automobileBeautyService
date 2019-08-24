@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ABTabBarViewController.h"
+#import "ABLoginViewController.h"
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>
 #define BMK_KEY @"1qE0Fvek3PM2ufdkB1qakVQSkzBvHNk8"//百度地图的key
 
@@ -18,13 +19,13 @@
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-//    [Bmob registerWithAppKey:@"11e1669a7c10fec2b2c79577e2132bab"];
-    [AVOSCloud setApplicationId:@"qEwQUkhy3ze3bwGtBwKAxbWm-9Nh9j0Va" clientKey:@"9x4VnWXyGjlviXKsrtV1gJmP"];
-    [AVOSCloud setApplicationId:@"{{appid}}" clientKey:@"{{appkey}}"];
+    [Bmob registerWithAppKey:@"11e1669a7c10fec2b2c79577e2132bab"];
+//    [AVOSCloud setApplicationId:@"qEwQUkhy3ze3bwGtBwKAxbWm-9Nh9j0Va" clientKey:@"9x4VnWXyGjlviXKsrtV1gJmP"];
+//    [AVOSCloud setApplicationId:@"{{appid}}" clientKey:@"{{appkey}}"];
     [self initBaiDuMapManager];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [ABTabBarViewController shareInstance];
+    self.window.rootViewController = [self rootController];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -39,6 +40,19 @@
     else
     {
         NSLog(@"百度地图启动成功");
+    }
+}
+- (UIViewController *)rootController{
+    BmobUser *bUser = [BmobUser currentUser];
+    if (bUser) {
+        //进行操作
+        ABTabBarViewController *tabVC = [ABTabBarViewController shareInstance];
+        return tabVC;
+    }else{
+        //对象为空时，可打开用户注册界面
+        ABLoginViewController *loginVC = [ABLoginViewController shareInstance];
+        UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+        return loginVCNav;
     }
 }
 @end

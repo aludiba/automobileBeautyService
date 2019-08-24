@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		42C4BC20AB8B2A890C4B5DAD /* libPods-AroundTheDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0A645483FDCF57E24AFEC2 /* libPods-AroundTheDB.a */; };
 		72B68B102308F3ED004F51E6 /* ABMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B68B0F2308F3ED004F51E6 /* ABMapViewController.m */; };
+		AE1178C02310D1A50036B11D /* ABLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1178BF2310D1A50036B11D /* ABLoginViewController.m */; };
+		AE1178C32310DC1B0036B11D /* ABModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1178C22310DC1B0036B11D /* ABModifyNicknameViewController.m */; };
+		AE1178C6231101BD0036B11D /* ABPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1178C5231101BD0036B11D /* ABPasswordChangeViewController.m */; };
+		AE1178C9231104F50036B11D /* ABSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1178C8231104F50036B11D /* ABSetTableViewCell.m */; };
+		AE1178CC231105580036B11D /* ABSetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1178CB231105580036B11D /* ABSetModel.m */; };
 		AE731ED82303A90900385A6E /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731ED72303A90800385A6E /* NSArray+log.m */; };
 		AE731EDB2303A91600385A6E /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731ED92303A91500385A6E /* NSDictionary+log.m */; };
 		AE731EDE2303A94300385A6E /* ABUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE731EDD2303A94300385A6E /* ABUIUtilities.m */; };
@@ -38,6 +43,16 @@
 		80596B462DD51DFDAD6BF2FF /* Pods-AroundTheDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundTheDB.debug.xcconfig"; path = "Target Support Files/Pods-AroundTheDB/Pods-AroundTheDB.debug.xcconfig"; sourceTree = "<group>"; };
 		88ADB50679EC90A34B78DEE2 /* Pods-AroundTheDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundTheDB.release.xcconfig"; path = "Target Support Files/Pods-AroundTheDB/Pods-AroundTheDB.release.xcconfig"; sourceTree = "<group>"; };
 		8E0A645483FDCF57E24AFEC2 /* libPods-AroundTheDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AroundTheDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1178BE2310D1A50036B11D /* ABLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABLoginViewController.h; sourceTree = "<group>"; };
+		AE1178BF2310D1A50036B11D /* ABLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABLoginViewController.m; sourceTree = "<group>"; };
+		AE1178C12310DC1B0036B11D /* ABModifyNicknameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABModifyNicknameViewController.h; sourceTree = "<group>"; };
+		AE1178C22310DC1B0036B11D /* ABModifyNicknameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABModifyNicknameViewController.m; sourceTree = "<group>"; };
+		AE1178C4231101BD0036B11D /* ABPasswordChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABPasswordChangeViewController.h; sourceTree = "<group>"; };
+		AE1178C5231101BD0036B11D /* ABPasswordChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABPasswordChangeViewController.m; sourceTree = "<group>"; };
+		AE1178C7231104F50036B11D /* ABSetTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABSetTableViewCell.h; sourceTree = "<group>"; };
+		AE1178C8231104F50036B11D /* ABSetTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABSetTableViewCell.m; sourceTree = "<group>"; };
+		AE1178CA231105580036B11D /* ABSetModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABSetModel.h; sourceTree = "<group>"; };
+		AE1178CB231105580036B11D /* ABSetModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABSetModel.m; sourceTree = "<group>"; };
 		AE731ED62303A90800385A6E /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
 		AE731ED72303A90800385A6E /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
 		AE731ED92303A91500385A6E /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
@@ -220,6 +235,8 @@
 				AE731F002303F28900385A6E /* ABMeasurementReferenceTableViewCell.m */,
 				AEBC5568230ECAA2008B8145 /* ABHistoryTableViewCell.h */,
 				AEBC5569230ECAA2008B8145 /* ABHistoryTableViewCell.m */,
+				AE1178C7231104F50036B11D /* ABSetTableViewCell.h */,
+				AE1178C8231104F50036B11D /* ABSetTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +246,8 @@
 			children = (
 				AE731EFC2303ED6E00385A6E /* ABMeasurementModel.h */,
 				AE731EFD2303ED6E00385A6E /* ABMeasurementModel.m */,
+				AE1178CA231105580036B11D /* ABSetModel.h */,
+				AE1178CB231105580036B11D /* ABSetModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -236,12 +255,18 @@
 		AED1746D23015F3300764DCA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AE1178BE2310D1A50036B11D /* ABLoginViewController.h */,
+				AE1178BF2310D1A50036B11D /* ABLoginViewController.m */,
 				AE731EF02303BAD500385A6E /* ABHistoryViewController.h */,
 				AE731EF12303BAD500385A6E /* ABHistoryViewController.m */,
 				AE731EED2303BAB700385A6E /* ABMeasurementViewController.h */,
 				AE731EEE2303BAB700385A6E /* ABMeasurementViewController.m */,
 				AE731EF32303BAF300385A6E /* ABSetViewController.h */,
 				AE731EF42303BAF300385A6E /* ABSetViewController.m */,
+				AE1178C12310DC1B0036B11D /* ABModifyNicknameViewController.h */,
+				AE1178C22310DC1B0036B11D /* ABModifyNicknameViewController.m */,
+				AE1178C4231101BD0036B11D /* ABPasswordChangeViewController.h */,
+				AE1178C5231101BD0036B11D /* ABPasswordChangeViewController.m */,
 				72B68B0E2308F3ED004F51E6 /* ABMapViewController.h */,
 				72B68B0F2308F3ED004F51E6 /* ABMapViewController.m */,
 			);
@@ -361,19 +386,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE731EE52303AB2400385A6E /* ABHBTool.m in Sources */,
+				AE1178CC231105580036B11D /* ABSetModel.m in Sources */,
 				AE731ED82303A90900385A6E /* NSArray+log.m in Sources */,
 				AED1745D23015E8C00764DCA /* AroundTheDB.xcdatamodeld in Sources */,
 				AED1746523015E9200764DCA /* main.m in Sources */,
 				72B68B102308F3ED004F51E6 /* ABMapViewController.m in Sources */,
 				AE731EE92303B7B600385A6E /* ABBaseViewController.m in Sources */,
+				AE1178C32310DC1B0036B11D /* ABModifyNicknameViewController.m in Sources */,
 				AED1745423015E8C00764DCA /* AppDelegate.m in Sources */,
+				AE1178C6231101BD0036B11D /* ABPasswordChangeViewController.m in Sources */,
 				AE731EDB2303A91600385A6E /* NSDictionary+log.m in Sources */,
 				AE731F042303FA5400385A6E /* ABMeasurementTestDBTableViewCell.m in Sources */,
+				AE1178C02310D1A50036B11D /* ABLoginViewController.m in Sources */,
 				AE731EEC2303B95200385A6E /* ABTabBarViewController.m in Sources */,
 				AE731EF22303BAD500385A6E /* ABHistoryViewController.m in Sources */,
 				AE731EFE2303ED6E00385A6E /* ABMeasurementModel.m in Sources */,
 				AE731EEF2303BAB700385A6E /* ABMeasurementViewController.m in Sources */,
 				AE731EF52303BAF300385A6E /* ABSetViewController.m in Sources */,
+				AE1178C9231104F50036B11D /* ABSetTableViewCell.m in Sources */,
 				AE731F012303F28900385A6E /* ABMeasurementReferenceTableViewCell.m in Sources */,
 				AE731EE12303A9F200385A6E /* MBProgressHUD+ABNJ.m in Sources */,
 				AE731EDE2303A94300385A6E /* ABUIUtilities.m in Sources */,

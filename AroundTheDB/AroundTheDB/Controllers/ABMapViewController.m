@@ -27,6 +27,7 @@
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    self.navigationController.navigationBar.barTintColor = ABH_Color(32, 37, 54, 1);
     [self.mapView viewWillAppear];
 }
 - (void)viewWillDisappear:(BOOL)animated{

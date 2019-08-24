@@ -20,9 +20,6 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = ABH_Color(15, 18, 39, 1);
     self.title = @"历史";
-    AVObject *testObject = [AVObject objectWithClassName:@"TestObject"];
-    [testObject setObject:@"Hello world!" forKey:@"words"];
-    [testObject save];
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -45,45 +42,47 @@
 #pragma mark - actions
 - (void)loadData{
     [self.dataArray removeAllObjects];
-    for (int i = 0; i < 5; i++) {
-//        BmobObject *obj = array[i];
-        ABMeasurementModel *model = [[ABMeasurementModel alloc] init];
-        model.objectId = @"2eeeeee";
-        model.date = [ABUIUtilities ABdateFromString:@"2019/08/23 15:23:15" formate:@"yyyy/MM/dd HH:mm:ss"];
-        model.maxDB = [NSNumber numberWithInt:50];
-        model.position = @"呵呵";
-        model.realDB = [NSNumber numberWithInt:45];
-        model.title = @"无标题";
-        model.averageDB = [NSNumber numberWithInt:47];
-        [self.dataArray addObject:model];
-    }
-    [self.mainTable.mj_header endRefreshing];
-    [self.mainTable reloadData];
-//    BmobQuery *bquery = [BmobQuery queryWithClassName:@"DB"];
-//    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-//        if (error) {
-//            [MBProgressHUD ABshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
-//        }else{
-//            [self.dataArray removeAllObjects];
-//            for (int i = 0; i < array.count; i++) {
-//                BmobObject *obj = array[i];
-//                ABMeasurementModel *model = [[ABMeasurementModel alloc] init];
-//                model.objectId = [obj objectId];
-//                model.date = [obj objectForKey:@"date"];
-//                model.maxDB = [obj objectForKey:@"maxDB"];
-//                model.position = [obj objectForKey:@"position"];
-//                model.realDB = [obj objectForKey:@"realDB"];
-//                model.title = [obj objectForKey:@"title"];
-//                model.averageDB = [obj objectForKey:@"averageDB"];
-//                [self.dataArray addObject:model];
-//            }
-//            [self.mainTable.mj_header endRefreshing];
-//            [self.mainTable reloadData];
-//        }
-//    }];
+    BmobQuery *bquery = [BmobQuery queryWithClassName:@"DB"];
+    BmobUser *author = [BmobUser currentUser];
+    [bquery whereKey:@"author" equalTo:author];
+    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+        if (error) {
+            [MBProgressHUD ABshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
+        }else{
+            [self.dataArray removeAllObjects];
+            for (int i = 0; i < array.count; i++) {
+                BmobObject *obj = array[i];
+                ABMeasurementModel *model = [[ABMeasurementModel alloc] init];
+                model.objectId = [obj objectId];
+                model.date = [obj objectForKey:@"date"];
+                model.maxDB = [obj objectForKey:@"maxDB"];
+                model.position = [obj objectForKey:@"position"];
+                model.realDB = [obj objectForKey:@"realDB"];
+                model.title = [obj objectForKey:@"title"];
+                model.averageDB = [obj objectForKey:@"averageDB"];
+                [self.dataArray addObject:model];
+            }
+            [self.mainTable.mj_header endRefreshing];
+            [self.mainTable reloadData];
+        }
+    }];
 }
 - (void)btnClick:(UIButton *)sender{
-    
+    BmobObjectsBatch *batch = [[BmobObjectsBatch alloc] init] ;
+    for (int i = 0; i < self.dataArray.count; i++) {
+        BmobObject *obj = self.dataArray[i];
+        NSString *objectId = [obj objectId];
+        [batch deleteBmobObjectWithClassName:@"DB" objectId:objectId];
+    }
+    [batch batchObjectsInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+        if (isSuccessful) {
+            [MBProgressHUD ABshowReminderText:@"数据清空成功"];
+        }else{
+            [MBProgressHUD ABshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
+        }
+    }];
+    [self.dataArray removeAllObjects];
+    [self.mainTable reloadData];
 }
 #pragma mark - 属性懒加载
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
