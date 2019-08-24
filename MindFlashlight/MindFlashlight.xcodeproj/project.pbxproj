@@ -18,6 +18,12 @@
 		AEB96E5223111D5800441DD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E5123111D5800441DD9 /* main.m */; };
 		AEB96E5C23111D5800441DD9 /* MindFlashlightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E5B23111D5800441DD9 /* MindFlashlightTests.m */; };
 		AEB96E6723111D5800441DD9 /* MindFlashlightUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E6623111D5800441DD9 /* MindFlashlightUITests.m */; };
+		AEB96E7E2311327900441DD9 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E7B2311327800441DD9 /* NSDictionary+log.m */; };
+		AEB96E7F2311327900441DD9 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E7C2311327800441DD9 /* NSArray+log.m */; };
+		AEB96E822311328E00441DD9 /* MFUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E812311328E00441DD9 /* MFUIUtilities.m */; };
+		AEB96E85231132D100441DD9 /* MBProgressHUD+MFNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E83231132D000441DD9 /* MBProgressHUD+MFNJ.m */; };
+		AEB96E882311330400441DD9 /* MFHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E862311330300441DD9 /* MFHBTool.m */; };
+		AEB96E8C2311350800441DD9 /* MFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E8B2311350700441DD9 /* MFBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,20 @@
 		AEB96E6223111D5800441DD9 /* MindFlashlightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindFlashlightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB96E6623111D5800441DD9 /* MindFlashlightUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MindFlashlightUITests.m; sourceTree = "<group>"; };
 		AEB96E6823111D5900441DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEB96E792311319600441DD9 /* MF_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MF_PrefixHeader.pch; sourceTree = "<group>"; };
+		AEB96E7A2311327800441DD9 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		AEB96E7B2311327800441DD9 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
+		AEB96E7C2311327800441DD9 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		AEB96E7D2311327800441DD9 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
+		AEB96E802311328E00441DD9 /* MFUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUIUtilities.h; sourceTree = "<group>"; };
+		AEB96E812311328E00441DD9 /* MFUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUIUtilities.m; sourceTree = "<group>"; };
+		AEB96E83231132D000441DD9 /* MBProgressHUD+MFNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MFNJ.m"; sourceTree = "<group>"; };
+		AEB96E84231132D000441DD9 /* MBProgressHUD+MFNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MFNJ.h"; sourceTree = "<group>"; };
+		AEB96E862311330300441DD9 /* MFHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHBTool.m; sourceTree = "<group>"; };
+		AEB96E872311330400441DD9 /* MFHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHBTool.h; sourceTree = "<group>"; };
+		AEB96E892311334A00441DD9 /* MFGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFGlobal.h; sourceTree = "<group>"; };
+		AEB96E8A2311350700441DD9 /* MFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFBaseViewController.h; sourceTree = "<group>"; };
+		AEB96E8B2311350700441DD9 /* MFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFBaseViewController.m; sourceTree = "<group>"; };
 		B1720A6DBBBB9F46EBE92F9E /* libPods-MindFlashlightTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MindFlashlightTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FDC1EF1BF8C5C1CCCADE1D /* Pods-MindFlashlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindFlashlight.release.xcconfig"; path = "Target Support Files/Pods-MindFlashlight/Pods-MindFlashlight.release.xcconfig"; sourceTree = "<group>"; };
 		CBD5C1E1CEDB076BA7AAC568 /* Pods-MindFlashlightUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindFlashlightUITests.debug.xcconfig"; path = "Target Support Files/Pods-MindFlashlightUITests/Pods-MindFlashlightUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +197,20 @@
 		AEB96E7523112EC800441DD9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AEB96E792311319600441DD9 /* MF_PrefixHeader.pch */,
+				AEB96E892311334A00441DD9 /* MFGlobal.h */,
+				AEB96E7A2311327800441DD9 /* NSArray+log.h */,
+				AEB96E7C2311327800441DD9 /* NSArray+log.m */,
+				AEB96E7D2311327800441DD9 /* NSDictionary+log.h */,
+				AEB96E7B2311327800441DD9 /* NSDictionary+log.m */,
+				AEB96E802311328E00441DD9 /* MFUIUtilities.h */,
+				AEB96E812311328E00441DD9 /* MFUIUtilities.m */,
+				AEB96E84231132D000441DD9 /* MBProgressHUD+MFNJ.h */,
+				AEB96E83231132D000441DD9 /* MBProgressHUD+MFNJ.m */,
+				AEB96E872311330400441DD9 /* MFHBTool.h */,
+				AEB96E862311330300441DD9 /* MFHBTool.m */,
+				AEB96E8A2311350700441DD9 /* MFBaseViewController.h */,
+				AEB96E8B2311350700441DD9 /* MFBaseViewController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -437,9 +471,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB96E882311330400441DD9 /* MFHBTool.m in Sources */,
 				AEB96E4723111D5700441DD9 /* ViewController.m in Sources */,
+				AEB96E7F2311327900441DD9 /* NSArray+log.m in Sources */,
+				AEB96E8C2311350800441DD9 /* MFBaseViewController.m in Sources */,
+				AEB96E7E2311327900441DD9 /* NSDictionary+log.m in Sources */,
 				AEB96E5223111D5800441DD9 /* main.m in Sources */,
 				AEB96E4423111D5700441DD9 /* AppDelegate.m in Sources */,
+				AEB96E85231132D100441DD9 /* MBProgressHUD+MFNJ.m in Sources */,
+				AEB96E822311328E00441DD9 /* MFUIUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,14 +653,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MindFlashlight/Common/MF_PrefixHeader.pch";
 				INFOPLIST_FILE = MindFlashlight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hbcAmplifier.MindFlashlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -631,14 +673,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MindFlashlight/Common/MF_PrefixHeader.pch";
 				INFOPLIST_FILE = MindFlashlight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hbcAmplifier.MindFlashlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
