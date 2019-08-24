@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3608C88BA814C07C6D87A9CC /* libPods-MindFlashlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 214453E9D5CE674A72612FC0 /* libPods-MindFlashlight.a */; };
+		85EE9621904F14C21DBA52A3 /* libPods-MindFlashlightTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1720A6DBBBB9F46EBE92F9E /* libPods-MindFlashlightTests.a */; };
+		96950F720C57D7565899C4F6 /* libPods-MindFlashlightUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B5A3B7D00883028F5075DD /* libPods-MindFlashlightUITests.a */; };
 		AEB96E4423111D5700441DD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E4323111D5700441DD9 /* AppDelegate.m */; };
 		AEB96E4723111D5700441DD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E4623111D5700441DD9 /* ViewController.m */; };
 		AEB96E4A23111D5700441DD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB96E4823111D5700441DD9 /* Main.storyboard */; };
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BD16BC6D58E0C591526B79B /* Pods-MindFlashlightUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindFlashlightUITests.release.xcconfig"; path = "Target Support Files/Pods-MindFlashlightUITests/Pods-MindFlashlightUITests.release.xcconfig"; sourceTree = "<group>"; };
+		214453E9D5CE674A72612FC0 /* libPods-MindFlashlight.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MindFlashlight.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		577F8E25DE897B4EBB0142F9 /* Pods-MindFlashlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindFlashlight.debug.xcconfig"; path = "Target Support Files/Pods-MindFlashlight/Pods-MindFlashlight.debug.xcconfig"; sourceTree = "<group>"; };
+		78105D761AC9262E037EC1B6 /* Pods-MindFlashlightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindFlashlightTests.debug.xcconfig"; path = "Target Support Files/Pods-MindFlashlightTests/Pods-MindFlashlightTests.debug.xcconfig"; sourceTree = "<group>"; };
+		80B5A3B7D00883028F5075DD /* libPods-MindFlashlightUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MindFlashlightUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB96E3F23111D5700441DD9 /* MindFlashlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindFlashlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB96E4223111D5700441DD9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEB96E4323111D5700441DD9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +59,10 @@
 		AEB96E6223111D5800441DD9 /* MindFlashlightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindFlashlightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB96E6623111D5800441DD9 /* MindFlashlightUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MindFlashlightUITests.m; sourceTree = "<group>"; };
 		AEB96E6823111D5900441DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1720A6DBBBB9F46EBE92F9E /* libPods-MindFlashlightTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MindFlashlightTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7FDC1EF1BF8C5C1CCCADE1D /* Pods-MindFlashlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindFlashlight.release.xcconfig"; path = "Target Support Files/Pods-MindFlashlight/Pods-MindFlashlight.release.xcconfig"; sourceTree = "<group>"; };
+		CBD5C1E1CEDB076BA7AAC568 /* Pods-MindFlashlightUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindFlashlightUITests.debug.xcconfig"; path = "Target Support Files/Pods-MindFlashlightUITests/Pods-MindFlashlightUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FAF9F7C98437CBB4E4E0D6CF /* Pods-MindFlashlightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindFlashlightTests.release.xcconfig"; path = "Target Support Files/Pods-MindFlashlightTests/Pods-MindFlashlightTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3608C88BA814C07C6D87A9CC /* libPods-MindFlashlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85EE9621904F14C21DBA52A3 /* libPods-MindFlashlightTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96950F720C57D7565899C4F6 /* libPods-MindFlashlightUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2574F9FA077FB5E2E400AA9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				577F8E25DE897B4EBB0142F9 /* Pods-MindFlashlight.debug.xcconfig */,
+				B7FDC1EF1BF8C5C1CCCADE1D /* Pods-MindFlashlight.release.xcconfig */,
+				78105D761AC9262E037EC1B6 /* Pods-MindFlashlightTests.debug.xcconfig */,
+				FAF9F7C98437CBB4E4E0D6CF /* Pods-MindFlashlightTests.release.xcconfig */,
+				CBD5C1E1CEDB076BA7AAC568 /* Pods-MindFlashlightUITests.debug.xcconfig */,
+				1BD16BC6D58E0C591526B79B /* Pods-MindFlashlightUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AEB96E3623111D5700441DD9 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +114,8 @@
 				AEB96E5A23111D5800441DD9 /* MindFlashlightTests */,
 				AEB96E6523111D5800441DD9 /* MindFlashlightUITests */,
 				AEB96E4023111D5700441DD9 /* Products */,
+				2574F9FA077FB5E2E400AA9E /* Pods */,
+				F726B206EE0C2CCA4778BC6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +163,16 @@
 			path = MindFlashlightUITests;
 			sourceTree = "<group>";
 		};
+		F726B206EE0C2CCA4778BC6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				214453E9D5CE674A72612FC0 /* libPods-MindFlashlight.a */,
+				B1720A6DBBBB9F46EBE92F9E /* libPods-MindFlashlightTests.a */,
+				80B5A3B7D00883028F5075DD /* libPods-MindFlashlightUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +180,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEB96E6B23111D5900441DD9 /* Build configuration list for PBXNativeTarget "MindFlashlight" */;
 			buildPhases = (
+				C667CE35FFD4805C0F65D461 /* [CP] Check Pods Manifest.lock */,
 				AEB96E3B23111D5700441DD9 /* Sources */,
 				AEB96E3C23111D5700441DD9 /* Frameworks */,
 				AEB96E3D23111D5700441DD9 /* Resources */,
@@ -156,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEB96E6E23111D5900441DD9 /* Build configuration list for PBXNativeTarget "MindFlashlightTests" */;
 			buildPhases = (
+				015D570C9BD0202E5658E61E /* [CP] Check Pods Manifest.lock */,
 				AEB96E5323111D5800441DD9 /* Sources */,
 				AEB96E5423111D5800441DD9 /* Frameworks */,
 				AEB96E5523111D5800441DD9 /* Resources */,
@@ -174,6 +217,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEB96E7123111D5900441DD9 /* Build configuration list for PBXNativeTarget "MindFlashlightUITests" */;
 			buildPhases = (
+				E9996EE911EBB1094D0718A5 /* [CP] Check Pods Manifest.lock */,
 				AEB96E5E23111D5800441DD9 /* Sources */,
 				AEB96E5F23111D5800441DD9 /* Frameworks */,
 				AEB96E6023111D5800441DD9 /* Resources */,
@@ -256,6 +300,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		015D570C9BD0202E5658E61E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MindFlashlightTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C667CE35FFD4805C0F65D461 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MindFlashlight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9996EE911EBB1094D0718A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MindFlashlightUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AEB96E3B23111D5700441DD9 /* Sources */ = {
@@ -433,9 +546,11 @@
 		};
 		AEB96E6C23111D5900441DD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 577F8E25DE897B4EBB0142F9 /* Pods-MindFlashlight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQ9FAVACVZ;
 				INFOPLIST_FILE = MindFlashlight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,9 +564,11 @@
 		};
 		AEB96E6D23111D5900441DD9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7FDC1EF1BF8C5C1CCCADE1D /* Pods-MindFlashlight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQ9FAVACVZ;
 				INFOPLIST_FILE = MindFlashlight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -465,6 +582,7 @@
 		};
 		AEB96E6F23111D5900441DD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78105D761AC9262E037EC1B6 /* Pods-MindFlashlightTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -483,6 +601,7 @@
 		};
 		AEB96E7023111D5900441DD9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAF9F7C98437CBB4E4E0D6CF /* Pods-MindFlashlightTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -501,6 +620,7 @@
 		};
 		AEB96E7223111D5900441DD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBD5C1E1CEDB076BA7AAC568 /* Pods-MindFlashlightUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MindFlashlightUITests/Info.plist;
@@ -518,6 +638,7 @@
 		};
 		AEB96E7323111D5900441DD9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BD16BC6D58E0C591526B79B /* Pods-MindFlashlightUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MindFlashlightUITests/Info.plist;
