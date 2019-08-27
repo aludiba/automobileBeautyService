@@ -8,4 +8,5 @@ target 'PocketBooks' do
   # Pods for PocketBooks
     pod 'Masonry'
     pod 'AFNetworking'
+    pod 'MJRefresh'
 end
