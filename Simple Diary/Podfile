@@ -15,4 +15,5 @@ target 'Simple Diary' do
     pod 'YYText'
     pod 'FMDB'
     pod 'OpenSSL-Universal'
+    pod 'IQKeyboardManager'
 end
