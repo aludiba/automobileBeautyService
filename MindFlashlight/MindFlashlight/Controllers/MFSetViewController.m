@@ -9,7 +9,8 @@
 #import "MFSetViewController.h"
 
 @interface MFSetViewController ()
-
+@property(nonatomic, strong)UIScrollView *scrollView;
+@property(nonatomic, strong)UIView *contentView;
 @end
 
 @implementation MFSetViewController
@@ -17,16 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = MFH_Color(35, 33, 49, 1);
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.barTintColor = MFH_Color(32, 37, 54, 1);
 }
-*/
 
 @end

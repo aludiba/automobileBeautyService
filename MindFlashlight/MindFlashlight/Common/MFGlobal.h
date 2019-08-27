@@ -20,6 +20,7 @@
 #import "MBProgressHUD+MFNJ.h"
 #import "MFHBTool.h"
 #import "MFBaseViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 //多语言调用
 #define NSLocalizedString(key, comment) [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" tMFle:nil]

@@ -10,6 +10,7 @@
 		3608C88BA814C07C6D87A9CC /* libPods-MindFlashlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 214453E9D5CE674A72612FC0 /* libPods-MindFlashlight.a */; };
 		85EE9621904F14C21DBA52A3 /* libPods-MindFlashlightTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1720A6DBBBB9F46EBE92F9E /* libPods-MindFlashlightTests.a */; };
 		96950F720C57D7565899C4F6 /* libPods-MindFlashlightUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B5A3B7D00883028F5075DD /* libPods-MindFlashlightUITests.a */; };
+		AE9A79892314FE930058B73F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9A79882314FE930058B73F /* AVFoundation.framework */; };
 		AEB96E4423111D5700441DD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E4323111D5700441DD9 /* AppDelegate.m */; };
 		AEB96E4C23111D5800441DD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB96E4B23111D5800441DD9 /* Assets.xcassets */; };
 		AEB96E5223111D5800441DD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E5123111D5800441DD9 /* main.m */; };
@@ -50,6 +51,7 @@
 		577F8E25DE897B4EBB0142F9 /* Pods-MindFlashlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindFlashlight.debug.xcconfig"; path = "Target Support Files/Pods-MindFlashlight/Pods-MindFlashlight.debug.xcconfig"; sourceTree = "<group>"; };
 		78105D761AC9262E037EC1B6 /* Pods-MindFlashlightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindFlashlightTests.debug.xcconfig"; path = "Target Support Files/Pods-MindFlashlightTests/Pods-MindFlashlightTests.debug.xcconfig"; sourceTree = "<group>"; };
 		80B5A3B7D00883028F5075DD /* libPods-MindFlashlightUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MindFlashlightUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9A79882314FE930058B73F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AEB96E3F23111D5700441DD9 /* MindFlashlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindFlashlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB96E4223111D5700441DD9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEB96E4323111D5700441DD9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9A79892314FE930058B73F /* AVFoundation.framework in Frameworks */,
 				3608C88BA814C07C6D87A9CC /* libPods-MindFlashlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +251,7 @@
 		F726B206EE0C2CCA4778BC6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE9A79882314FE930058B73F /* AVFoundation.framework */,
 				214453E9D5CE674A72612FC0 /* libPods-MindFlashlight.a */,
 				B1720A6DBBBB9F46EBE92F9E /* libPods-MindFlashlightTests.a */,
 				80B5A3B7D00883028F5075DD /* libPods-MindFlashlightUITests.a */,

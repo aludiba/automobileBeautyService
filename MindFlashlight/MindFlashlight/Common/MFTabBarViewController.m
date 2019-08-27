@@ -11,9 +11,9 @@
 #import "MFFunctionViewController.h"
 #import "MFSetViewController.h"
 @interface MFTabBarViewController ()<UITabBarDelegate>
-    @property(nonatomic, strong)MFFlashlightViewController *MFFlashlightVC;
-    @property(nonatomic, strong)MFFunctionViewController *MFFunctionVC;
-    @property(nonatomic, strong)MFSetViewController *MFSetVC;
+@property(nonatomic, strong)MFFlashlightViewController *MFFlashlightVC;
+@property(nonatomic, strong)MFFunctionViewController *MFFunctionVC;
+@property(nonatomic, strong)MFSetViewController *MFSetVC;
 @end
 
 @implementation MFTabBarViewController
@@ -60,7 +60,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[UITabBar appearance] setBarTintColor:MFH_Color(32, 36, 53, 1)];
+    [[UITabBar appearance] setBarTintColor:MFH_Color(28, 27, 33, 1)];
     [UITabBar appearance].translucent = NO;
 }
 - (void)viewWillAppear:(BOOL)animated{
@@ -68,6 +68,22 @@
     [self setContentView];
 }
 - (void)setContentView{
+    self.MFFlashlightVC = [[MFFlashlightViewController alloc] init];
+    UINavigationController *Flashlight = [[UINavigationController alloc] initWithRootViewController:self.MFFlashlightVC];
+    self.MFFlashlightVC.tabBarItem.image = [[UIImage imageNamed:@"MF_flashlightDefault"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.MFFlashlightVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"MF_flashlightHlighted"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
+    self.MFFunctionVC = [[MFFunctionViewController alloc] init];
+    UINavigationController *Function = [[UINavigationController alloc] initWithRootViewController:self.MFFunctionVC];
+    self.MFFunctionVC.tabBarItem.image = [[UIImage imageNamed:@"MF_functionDefault"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.MFFunctionVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"MF_functionHighlighted"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    self.MFSetVC = [[MFSetViewController alloc] init];
+    UINavigationController *set = [[UINavigationController alloc] initWithRootViewController:self.MFSetVC];
+    self.MFSetVC.tabBarItem.image = [[UIImage imageNamed:@"MF_setDefault"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.MFSetVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"MF_setHlighted"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    NSArray *arrControllers = [NSArray arrayWithObjects:Flashlight,Function,set,nil];
+    self.viewControllers = arrControllers;
+    [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -4)];
 }
 @end

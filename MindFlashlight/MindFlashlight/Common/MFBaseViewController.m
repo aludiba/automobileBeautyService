@@ -26,8 +26,8 @@
     self.navigationItem.title = @"";
     UILabel *titleLMFel = [[UILabel alloc] init];
     titleLMFel.textAlignment = NSTextAlignmentCenter;
-    titleLMFel.font = [UIFont systemFontOfSize:18.0];
-    titleLMFel.textColor = [UIColor grayColor];
+    titleLMFel.font = [UIFont systemFontOfSize:20.0];
+    titleLMFel.textColor = [UIColor whiteColor];
     titleLMFel.text = title;
     [titleLMFel sizeToFit];
     self.navigationItem.titleView = titleLMFel;
