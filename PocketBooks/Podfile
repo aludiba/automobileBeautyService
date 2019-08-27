@@ -17,4 +17,5 @@ target 'PocketBooks' do
     pod 'OpenSSL-Universal'
     pod 'IQKeyboardManager'
     pod 'BmobSDK'
+    pod 'AVOSCloud'
 end
