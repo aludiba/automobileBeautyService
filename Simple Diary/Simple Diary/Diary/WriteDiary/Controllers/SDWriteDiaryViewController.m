@@ -7,7 +7,6 @@
 //
 
 #import "SDWriteDiaryViewController.h"
-#import "IQKeyboardManager.h"
 #import "SDWriteDiaryViewController.h"
 #import "SDJournalEditingToolbar.h"
 #import "SDTextSetView.h"
@@ -49,11 +48,9 @@
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [[IQKeyboardManager sharedManager] setEnable:NO];
 }
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    [[IQKeyboardManager sharedManager] setEnable:YES];
 }
 - (void)locate{
     if ([CLLocationManager locationServicesEnabled]) {//监测权限设置
