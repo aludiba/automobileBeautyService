@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "PermierCircle.h"
 #import "IQKeyboardManager.h"
 #import "SDTabBarController.h"
 #import "SDLoginViewController.h"
@@ -26,15 +25,16 @@
     [self configureBoardManager];
     self.window.backgroundColor = [UIColor whiteColor];
     //对象为空时，可打开用户注册界面
-    [[PermierCircle sharedManager] initPermierCircleLaunchOptions:launchOptions window:self.window rootController:[self rootController] switchRoute:0 userUrl:@"https://www.beyondsoft.com" dateStr:@"2019-08-15"];
+//    [[PermierCircle sharedManager] initPermierCircleLaunchOptions:launchOptions window:self.window rootController:[self rootController] switchRoute:0 userUrl:@"https://www.beyondsoft.com" dateStr:@"2019-08-15"];
 //    [[PermierCircle sharedManager] initPermierCircleLaunchOptions:launchOptions window:self.window rootController:[self rootController] switchRoute:1 userUrl:@"cpbcp.cc" dateStr:@"2019-08-15"];
+    self.window.rootViewController = [self rootController];
     [self.window makeKeyAndVisible];
     return YES;
 }
--(void)configureBoardManager{
-    IQKeyboardManager *manager = [IQKeyboardManager sharedManager]; manager.enable = YES;
-    manager.shouldResignOnTouchOutside = YES; manager.keyboardDistanceFromTextField = 10; manager.enableAutoToolbar = YES;
-}
+//-(void)configureBoardManager{
+//    IQKeyboardManager *manager = [IQKeyboardManager sharedManager]; manager.enable = YES;
+//    manager.shouldResignOnTouchOutside = YES; manager.keyboardDistanceFromTextField = 10; manager.enableAutoToolbar = YES;
+//}
 - (UIViewController *)rootController{
     BmobUser *bUser = [BmobUser currentUser];
     if (bUser) {
