@@ -14,4 +14,5 @@ target 'PocketBooks' do
     pod 'SDWebImage'
     pod 'YYText'
     pod 'FMDB'
+    pod 'OpenSSL-Universal'
 end
