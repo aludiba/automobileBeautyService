@@ -11,4 +11,5 @@ target 'PocketBooks' do
     pod 'MJRefresh'
     pod 'MBProgressHUD'
     pod 'YYModel'
+    pod 'SDWebImage'
 end
