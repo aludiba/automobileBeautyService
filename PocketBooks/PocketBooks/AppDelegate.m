@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "PKTabBarViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,10 +17,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [self rootController];
+    [self.window makeKeyAndVisible];
     return YES;
 }
-
-
+- (UIViewController *)rootController{
+//    BmobUser *bUser = [BmobUser currentUser];
+//    if (bUser) {
+        //进行操作
+        PKTabBarViewController *tabVC = [PKTabBarViewController shareInstance];
+        return tabVC;
+//    }else{
+//        //对象为空时，可打开用户注册界面
+//        ABLoginViewController *loginVC = [ABLoginViewController shareInstance];
+//        UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+//        return loginVCNav;
+//    }
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

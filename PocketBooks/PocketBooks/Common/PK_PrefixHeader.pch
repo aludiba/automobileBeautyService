@@ -1,0 +1,12 @@
+//
+//  MF_PrefixHeader.pch
+//  PocketBooks
+//
+//  Created by bykj on 2019/8/27.
+//  Copyright © 2019 hbc. All rights reserved.
+//
+
+#ifndef PK_PrefixHeader_pch
+#define PK_PrefixHeader_pch
+#import "PKglobal.h"
+#endif /* PK_PrefixHeader_pch */

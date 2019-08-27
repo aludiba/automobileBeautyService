@@ -11,6 +11,13 @@
 		AE9A799823151A0C0058B73F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A799723151A0C0058B73F /* AppDelegate.m */; };
 		AE9A79A023151A0E0058B73F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9A799F23151A0E0058B73F /* Assets.xcassets */; };
 		AE9A79A623151A0E0058B73F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A79A523151A0E0058B73F /* main.m */; };
+		AE9A79C8231529570058B73F /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A79C5231529560058B73F /* NSArray+log.m */; };
+		AE9A79C9231529570058B73F /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A79C6231529560058B73F /* NSDictionary+log.m */; };
+		AE9A79D523152AC70058B73F /* PKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A79D423152AC70058B73F /* PKBaseViewController.m */; };
+		AE9A79ED2315313C0058B73F /* PKHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A79E92315313C0058B73F /* PKHBTool.m */; };
+		AE9A79EE2315313C0058B73F /* PKUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A79EB2315313C0058B73F /* PKUIUtilities.m */; };
+		AE9A79EF2315313C0058B73F /* MBProgressHUD+PKNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A79EC2315313C0058B73F /* MBProgressHUD+PKNJ.m */; };
+		AE9A79F2231532200058B73F /* PKTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A79F1231532200058B73F /* PKTabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +28,22 @@
 		AE9A799F23151A0E0058B73F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE9A79A423151A0E0058B73F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE9A79A523151A0E0058B73F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE9A79C2231528B50058B73F /* PK_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PK_PrefixHeader.pch; sourceTree = "<group>"; };
+		AE9A79C4231529560058B73F /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+log.h"; path = "../../../AroundTheDB/AroundTheDB/Common/NSDictionary+log.h"; sourceTree = "<group>"; };
+		AE9A79C5231529560058B73F /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+log.m"; path = "../../../AroundTheDB/AroundTheDB/Common/NSArray+log.m"; sourceTree = "<group>"; };
+		AE9A79C6231529560058B73F /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+log.m"; path = "../../../AroundTheDB/AroundTheDB/Common/NSDictionary+log.m"; sourceTree = "<group>"; };
+		AE9A79C7231529570058B73F /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+log.h"; path = "../../../AroundTheDB/AroundTheDB/Common/NSArray+log.h"; sourceTree = "<group>"; };
+		AE9A79D323152AC70058B73F /* PKBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKBaseViewController.h; sourceTree = "<group>"; };
+		AE9A79D423152AC70058B73F /* PKBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKBaseViewController.m; sourceTree = "<group>"; };
+		AE9A79E62315313C0058B73F /* PKglobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKglobal.h; sourceTree = "<group>"; };
+		AE9A79E72315313C0058B73F /* MBProgressHUD+PKNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+PKNJ.h"; sourceTree = "<group>"; };
+		AE9A79E82315313C0058B73F /* PKHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKHBTool.h; sourceTree = "<group>"; };
+		AE9A79E92315313C0058B73F /* PKHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKHBTool.m; sourceTree = "<group>"; };
+		AE9A79EA2315313C0058B73F /* PKUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKUIUtilities.h; sourceTree = "<group>"; };
+		AE9A79EB2315313C0058B73F /* PKUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKUIUtilities.m; sourceTree = "<group>"; };
+		AE9A79EC2315313C0058B73F /* MBProgressHUD+PKNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+PKNJ.m"; sourceTree = "<group>"; };
+		AE9A79F02315321F0058B73F /* PKTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTabBarViewController.h; sourceTree = "<group>"; };
+		AE9A79F1231532200058B73F /* PKTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKTabBarViewController.m; sourceTree = "<group>"; };
 		CAA27E718A7D03D70ADC5C19 /* Pods_PocketBooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketBooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37EADF503B436E1DBBDECD7 /* Pods-PocketBooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBooks.release.xcconfig"; path = "Target Support Files/Pods-PocketBooks/Pods-PocketBooks.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -256,6 +279,22 @@
 		AE9A79C1231525A10058B73F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AE9A79C2231528B50058B73F /* PK_PrefixHeader.pch */,
+				AE9A79C7231529570058B73F /* NSArray+log.h */,
+				AE9A79C5231529560058B73F /* NSArray+log.m */,
+				AE9A79C4231529560058B73F /* NSDictionary+log.h */,
+				AE9A79C6231529560058B73F /* NSDictionary+log.m */,
+				AE9A79E72315313C0058B73F /* MBProgressHUD+PKNJ.h */,
+				AE9A79EC2315313C0058B73F /* MBProgressHUD+PKNJ.m */,
+				AE9A79E62315313C0058B73F /* PKglobal.h */,
+				AE9A79E82315313C0058B73F /* PKHBTool.h */,
+				AE9A79E92315313C0058B73F /* PKHBTool.m */,
+				AE9A79EA2315313C0058B73F /* PKUIUtilities.h */,
+				AE9A79EB2315313C0058B73F /* PKUIUtilities.m */,
+				AE9A79D323152AC70058B73F /* PKBaseViewController.h */,
+				AE9A79D423152AC70058B73F /* PKBaseViewController.m */,
+				AE9A79F02315321F0058B73F /* PKTabBarViewController.h */,
+				AE9A79F1231532200058B73F /* PKTabBarViewController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -372,8 +411,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9A79C8231529570058B73F /* NSArray+log.m in Sources */,
+				AE9A79F2231532200058B73F /* PKTabBarViewController.m in Sources */,
+				AE9A79C9231529570058B73F /* NSDictionary+log.m in Sources */,
+				AE9A79EF2315313C0058B73F /* MBProgressHUD+PKNJ.m in Sources */,
 				AE9A79A623151A0E0058B73F /* main.m in Sources */,
 				AE9A799823151A0C0058B73F /* AppDelegate.m in Sources */,
+				AE9A79ED2315313C0058B73F /* PKHBTool.m in Sources */,
+				AE9A79EE2315313C0058B73F /* PKUIUtilities.m in Sources */,
+				AE9A79D523152AC70058B73F /* PKBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +545,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBooks/Common/PK_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBooks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -518,6 +565,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBooks/Common/PK_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBooks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

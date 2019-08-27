@@ -88,7 +88,7 @@
                     if (error) {
                         [MBProgressHUD ABshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
                     } else {
-                        [MBProgressHUD ABshowReminderText:NSLocalizedString(@"密码修改成功", nil)];
+                        [MBProgressHUD ABshowReminderText:@"密码修改成功"];
                         [self.navigationController popViewControllerAnimated:YES];
                     }
                 }];
