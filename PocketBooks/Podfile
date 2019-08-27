@@ -15,4 +15,5 @@ target 'PocketBooks' do
     pod 'YYText'
     pod 'FMDB'
     pod 'OpenSSL-Universal'
+    pod 'IQKeyboardManager'
 end
