@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - BmobSDK (2.3.4)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -32,6 +33,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - BmobSDK
   - FMDB
   - IQKeyboardManager
   - Masonry
@@ -45,6 +47,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - BmobSDK
     - FMDB
     - IQKeyboardManager
     - Masonry
@@ -57,6 +60,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  BmobSDK: 03e9889d92b721bfc2452faa5b2c2497581abbca
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -67,6 +71,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 3b2cc27c265f34492aa12f24c622ae74c3e4f89d
+PODFILE CHECKSUM: 79086bc766c3043b2b588ab4da9024a0f62209cc
 
 COCOAPODS: 1.7.5
