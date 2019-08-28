@@ -23,7 +23,7 @@
 #import <AVOSCloud/AVOSCloud.h>
 
 //多语言调用
-#define NSLocalizedString(key, comment) [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" tPKle:nil]
+#define NSLocalizedString(key, comment) [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
 /**颜色*/
 #define PKH_Color(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
 #define PKKeyWindow [UIApplication sharedApplication].keyWindow

@@ -1,0 +1,26 @@
+/* 
+  File.strings
+  PocketBooks
+
+  Created by bykj on 2019/8/28.
+  Copyright © 2019 hbc. All rights reserved.
+*/
+"请输入账号" = "Please enter your account";
+"请输入密码" = "Please enter password";
+"登录成功" = "Login successful";
+"注册成功" = "Registered successfully";
+"账号" = "account";
+"密码" = "password";
+"登录" = "login";
+"注册" = "registered";
+"分配情况" = "distribution";
+
+
+
+
+
+
+
+
+
+

@@ -7,13 +7,17 @@
 //
 
 #import "PKTabBarViewController.h"
-//#import "PKHistoryViewController.h"
-//#import "PKMeasurementViewController.h"
-//#import "PKSetViewController.h"
+#import "PKOverallSituationViewController.h"
+#import "PKBillHistoryViewController.h"
+#import "PKBudgetViewController.h"
+#import "PKDistributionViewController.h"
+#import "PKSetViewController.h"
 @interface PKTabBarViewController ()<UITabBarDelegate>
-//@property(nonatomic, strong)PKHistoryViewController *PKHistoryVC;
-//@property(nonatomic, strong)PKMeasurementViewController *PKMeasurementVC;
-//@property(nonatomic, strong)PKSetViewController *PKSetVC;
+@property(nonatomic, strong)PKOverallSituationViewController *PKOverallSituationVC;
+@property(nonatomic, strong)PKBillHistoryViewController *PKBillHistoryVC;
+@property(nonatomic, strong)PKBudgetViewController *PKBudgetVC;
+@property(nonatomic, strong)PKDistributionViewController *PKDistributionVC;
+@property(nonatomic, strong)PKSetViewController *PKSetVC;
 @end
 
 @implementation PKTabBarViewController
@@ -67,22 +71,47 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     [self setContentView];
 }
 - (void)setContentView{
-//    self.PKHistoryVC = [[PKHistoryViewController alloc] init];
-//    UINavigationController *history = [[UINavigationController alloc] initWithRootViewController:self.PKHistoryVC];
-//    self.PKHistoryVC.tPKBarItem.image = [[UIImage imageNamed:@"ad_history_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-//    self.PKHistoryVC.tPKBarItem.selectedImage = [[UIImage imageNamed:@"ad_history_hlight"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-//
-//    self.PKMeasurementVC = [[PKMeasurementViewController alloc] init];
-//    UINavigationController *measurement = [[UINavigationController alloc] initWithRootViewController:self.PKMeasurementVC];
-//    self.PKMeasurementVC.tPKBarItem.image = [[UIImage imageNamed:@"ad_test_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-//    self.PKMeasurementVC.tPKBarItem.selectedImage = [[UIImage imageNamed:@"ad_test_hlight"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-//
-//    self.PKSetVC = [[PKSetViewController alloc] init];
-//    UINavigationController *set = [[UINavigationController alloc] initWithRootViewController:self.PKSetVC];
-//    self.PKSetVC.tPKBarItem.image = [[UIImage imageNamed:@"ad_set_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-//    self.PKSetVC.tPKBarItem.selectedImage = [[UIImage imageNamed:@"ad_set_hlight"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-//    NSArray *arrControllers = [NSArray arrayWithObjects:history,measurement,set,nil];
-//    self.viewControllers = arrControllers;
-//    [[UITPKBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -4)];
+    self.PKOverallSituationVC = [[PKOverallSituationViewController alloc] init];
+    UINavigationController *PKOverallSituation = [[UINavigationController alloc] initWithRootViewController:self.PKOverallSituationVC];
+    self.PKOverallSituationVC.tabBarItem.title = @"总体情况";
+    [self.PKOverallSituationVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
+    [self.PKOverallSituationVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
+    self.PKOverallSituationVC.tabBarItem.image = [[UIImage imageNamed:@"PKtab_home_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.PKOverallSituationVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"PKtab_home_active"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+
+    self.PKBillHistoryVC = [[PKBillHistoryViewController alloc] init];
+    UINavigationController *PKBillHistory = [[UINavigationController alloc] initWithRootViewController:self.PKBillHistoryVC];
+    self.PKBillHistoryVC.tabBarItem.title = @"账单历史";
+    [self.PKBillHistoryVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
+    [self.PKBillHistoryVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
+    self.PKBillHistoryVC.tabBarItem.image = [[UIImage imageNamed:@"PKtab_history_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.PKBillHistoryVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"PKtab_history_active"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+
+    self.PKBudgetVC = [[PKBudgetViewController alloc] init];
+    UINavigationController *PKBudget = [[UINavigationController alloc] initWithRootViewController:self.PKBudgetVC];
+    self.PKBudgetVC.tabBarItem.title = @"财政预算";
+    [self.PKBudgetVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
+    [self.PKBudgetVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
+    self.PKBudgetVC.tabBarItem.image = [[UIImage imageNamed:@"PKtab_budget_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.PKBudgetVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"PKtab_budget_active"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    self.PKDistributionVC = [[PKDistributionViewController alloc] init];
+    UINavigationController *PKDistribution = [[UINavigationController alloc] initWithRootViewController:self.PKDistributionVC];
+    self.PKDistributionVC.tabBarItem.title = @"分配情况";
+    [self.PKDistributionVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
+    [self.PKDistributionVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
+    self.PKDistributionVC.tabBarItem.image = [[UIImage imageNamed:@"PKtab_distribution_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.PKDistributionVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"PKtab_distribution_active"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    self.PKSetVC = [[PKSetViewController alloc] init];
+    UINavigationController *PKSet = [[UINavigationController alloc] initWithRootViewController:self.PKSetVC];
+    self.PKSetVC.tabBarItem.title = @"我的";
+    [self.PKSetVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
+    [self.PKSetVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
+    self.PKSetVC.tabBarItem.image = [[UIImage imageNamed:@"PKtab_mine_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.PKBudgetVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"PKtab_mine_active"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    NSArray *arrControllers = [NSArray arrayWithObjects:PKOverallSituation,PKBillHistory,PKBudget,PKDistribution,PKSet,nil];
+    self.viewControllers = arrControllers;
+    [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -4)];
 }
 @end

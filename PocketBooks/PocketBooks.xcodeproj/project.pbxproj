@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		12C797A32D7C51C37C510662 /* Pods_PocketBooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA27E718A7D03D70ADC5C19 /* Pods_PocketBooks.framework */; };
+		AE5377752316482300160319 /* PKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5377742316482300160319 /* PKLoginViewController.m */; };
+		AE53777823164BA400160319 /* PKLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53777723164BA400160319 /* PKLoginTableViewCell.m */; };
+		AE53777B231653F400160319 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE53777D231653F400160319 /* Localizable.strings */; };
+		AE5377832316603C00160319 /* PKSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5377822316603C00160319 /* PKSetViewController.m */; };
+		AE5377862316609100160319 /* PKOverallSituationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5377852316609100160319 /* PKOverallSituationViewController.m */; };
+		AE537789231660A000160319 /* PKBillHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE537788231660A000160319 /* PKBillHistoryViewController.m */; };
+		AE53778C231660B700160319 /* PKBudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53778B231660B700160319 /* PKBudgetViewController.m */; };
+		AE53778F231660D700160319 /* PKDistributionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53778E231660D700160319 /* PKDistributionViewController.m */; };
 		AE9A799823151A0C0058B73F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A799723151A0C0058B73F /* AppDelegate.m */; };
 		AE9A79A023151A0E0058B73F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9A799F23151A0E0058B73F /* Assets.xcassets */; };
 		AE9A79A623151A0E0058B73F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A79A523151A0E0058B73F /* main.m */; };
@@ -22,6 +30,24 @@
 
 /* Begin PBXFileReference section */
 		40E4D22BC1060D03BACEA31C /* Pods-PocketBooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBooks.debug.xcconfig"; path = "Target Support Files/Pods-PocketBooks/Pods-PocketBooks.debug.xcconfig"; sourceTree = "<group>"; };
+		AE5377732316482300160319 /* PKLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKLoginViewController.h; sourceTree = "<group>"; };
+		AE5377742316482300160319 /* PKLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKLoginViewController.m; sourceTree = "<group>"; };
+		AE53777623164BA400160319 /* PKLoginTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKLoginTableViewCell.h; sourceTree = "<group>"; };
+		AE53777723164BA400160319 /* PKLoginTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKLoginTableViewCell.m; sourceTree = "<group>"; };
+		AE53777C231653F400160319 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AE53777E2316540400160319 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE53777F2316540700160319 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE5377802316540C00160319 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE5377812316603C00160319 /* PKSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKSetViewController.h; sourceTree = "<group>"; };
+		AE5377822316603C00160319 /* PKSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKSetViewController.m; sourceTree = "<group>"; };
+		AE5377842316609100160319 /* PKOverallSituationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKOverallSituationViewController.h; sourceTree = "<group>"; };
+		AE5377852316609100160319 /* PKOverallSituationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKOverallSituationViewController.m; sourceTree = "<group>"; };
+		AE537787231660A000160319 /* PKBillHistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKBillHistoryViewController.h; sourceTree = "<group>"; };
+		AE537788231660A000160319 /* PKBillHistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKBillHistoryViewController.m; sourceTree = "<group>"; };
+		AE53778A231660B700160319 /* PKBudgetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKBudgetViewController.h; sourceTree = "<group>"; };
+		AE53778B231660B700160319 /* PKBudgetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKBudgetViewController.m; sourceTree = "<group>"; };
+		AE53778D231660D700160319 /* PKDistributionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKDistributionViewController.h; sourceTree = "<group>"; };
+		AE53778E231660D700160319 /* PKDistributionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKDistributionViewController.m; sourceTree = "<group>"; };
 		AE9A799323151A0C0058B73F /* PocketBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9A799623151A0C0058B73F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE9A799723151A0C0058B73F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,11 +126,11 @@
 			children = (
 				AE9A79C1231525A10058B73F /* Common */,
 				AE9A79C0231525A10058B73F /* Resources */,
+				AE9A79B4231525460058B73F /* OverallSituation */,
 				AE9A79B8231525460058B73F /* BillHistory */,
 				AE9A79AC231525460058B73F /* Budget */,
 				AE9A79B0231525460058B73F /* Distribution */,
 				AE9A79BC231525460058B73F /* Mine */,
-				AE9A79B4231525460058B73F /* OverallSituation */,
 				AE9A799623151A0C0058B73F /* AppDelegate.h */,
 				AE9A799723151A0C0058B73F /* AppDelegate.m */,
 				AE9A799F23151A0E0058B73F /* Assets.xcassets */,
@@ -134,6 +160,8 @@
 		AE9A79AE231525460058B73F /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AE53778A231660B700160319 /* PKBudgetViewController.h */,
+				AE53778B231660B700160319 /* PKBudgetViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -165,6 +193,8 @@
 		AE9A79B2231525460058B73F /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AE53778D231660D700160319 /* PKDistributionViewController.h */,
+				AE53778E231660D700160319 /* PKDistributionViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -196,6 +226,8 @@
 		AE9A79B6231525460058B73F /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AE5377842316609100160319 /* PKOverallSituationViewController.h */,
+				AE5377852316609100160319 /* PKOverallSituationViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -227,6 +259,8 @@
 		AE9A79BA231525460058B73F /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AE537787231660A000160319 /* PKBillHistoryViewController.h */,
+				AE537788231660A000160319 /* PKBillHistoryViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -258,6 +292,10 @@
 		AE9A79BE231525460058B73F /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AE5377812316603C00160319 /* PKSetViewController.h */,
+				AE5377822316603C00160319 /* PKSetViewController.m */,
+				AE5377732316482300160319 /* PKLoginViewController.h */,
+				AE5377742316482300160319 /* PKLoginViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -265,6 +303,8 @@
 		AE9A79BF231525460058B73F /* views */ = {
 			isa = PBXGroup;
 			children = (
+				AE53777623164BA400160319 /* PKLoginTableViewCell.h */,
+				AE53777723164BA400160319 /* PKLoginTableViewCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -272,6 +312,7 @@
 		AE9A79C0231525A10058B73F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AE53777D231653F400160319 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -342,6 +383,9 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				es,
+				ru,
 			);
 			mainGroup = AE9A798A23151A0C0058B73F;
 			productRefGroup = AE9A799423151A0C0058B73F /* Products */;
@@ -358,6 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE53777B231653F400160319 /* Localizable.strings in Resources */,
 				AE9A79A023151A0E0058B73F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,10 +457,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE9A79C8231529570058B73F /* NSArray+log.m in Sources */,
+				AE537789231660A000160319 /* PKBillHistoryViewController.m in Sources */,
 				AE9A79F2231532200058B73F /* PKTabBarViewController.m in Sources */,
+				AE53778F231660D700160319 /* PKDistributionViewController.m in Sources */,
+				AE53778C231660B700160319 /* PKBudgetViewController.m in Sources */,
 				AE9A79C9231529570058B73F /* NSDictionary+log.m in Sources */,
 				AE9A79EF2315313C0058B73F /* MBProgressHUD+PKNJ.m in Sources */,
+				AE53777823164BA400160319 /* PKLoginTableViewCell.m in Sources */,
+				AE5377862316609100160319 /* PKOverallSituationViewController.m in Sources */,
 				AE9A79A623151A0E0058B73F /* main.m in Sources */,
+				AE5377832316603C00160319 /* PKSetViewController.m in Sources */,
+				AE5377752316482300160319 /* PKLoginViewController.m in Sources */,
 				AE9A799823151A0C0058B73F /* AppDelegate.m in Sources */,
 				AE9A79ED2315313C0058B73F /* PKHBTool.m in Sources */,
 				AE9A79EE2315313C0058B73F /* PKUIUtilities.m in Sources */,
@@ -424,6 +476,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE53777D231653F400160319 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE53777C231653F400160319 /* zh-Hans */,
+				AE53777E2316540400160319 /* en */,
+				AE53777F2316540700160319 /* es */,
+				AE5377802316540C00160319 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AE9A79A723151A0E0058B73F /* Debug */ = {

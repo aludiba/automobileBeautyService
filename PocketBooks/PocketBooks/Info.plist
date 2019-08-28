@@ -26,29 +26,29 @@
 		<true/>
 	</dict>
 	<key>NSCalendarsUsageDescription</key>
-	<string>这个应用程序允许使用日历吗?</string>
+	<string>Does this application allow calendars?</string>
 	<key>NSCameraUsageDescription</key>
-	<string>你允许这个应用程序使用你的相机吗?</string>
+	<string>Do you allow this app to use your camera?</string>
 	<key>NSContactsUsageDescription</key>
-	<string>你允许这个应用程序访问你的通讯录吗?</string>
+	<string>Do you allow this application to access your address book?</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>我们需要通过你的地理位置信息获取你周围的相关数据</string>
+	<string>We need to get data about your surroundings from your geographic location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>我们需要通过你的地理位置信息获取你周围的相关数据</string>
+	<string>We need to get data about your surroundings from your geographic location</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>这个应用程序允许使用您的麦克风进行语音输入吗?</string>
+	<string>Does this application allow you to use your microphone for voice input?</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>该应用程序需要您的许可，以保存图片到您的相册</string>
+	<string>The application requires your permission to save pictures to your album</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>你允许这个应用程序访问你的媒体库吗?</string>
+	<string>Do you allow this application access to your media library?</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>该应用程序是否允许使用语音识别进行语音输入?</string>
+	<string>Does the application allow speech input using speech recognition?</string>
 	<key>NSSpeechRecognitionUsageDescription - 2</key>
-	<string>这个应用程序允许使用语音识别吗?</string>
+	<string>Does the application allow speech recognition?</string>
 	<key>Privacy - Location When In Use Usage Description </key>
-	<string>我们需要通过你的地理位置信息获取你周围的相关数据</string>
+	<string>We need to get data about your surroundings from your geographic location</string>
 	<key>Privacy - Microphone Usage Description </key>
-	<string>这个应用程序允许使用您的麦克风吗?</string>
+	<string>Does this application allow you to use your microphone?</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>

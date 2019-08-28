@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PKLoginViewController.h"
 #import "PKTabBarViewController.h"
 @interface AppDelegate ()
 
@@ -16,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [Bmob registerWithAppKey:@"3b32beaaae004285519d31da13844710"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [self rootController];
@@ -24,17 +25,16 @@
     return YES;
 }
 - (UIViewController *)rootController{
-//    BmobUser *bUser = [BmobUser currentUser];
-//    if (bUser) {
+    BmobUser *bUser = [BmobUser currentUser];
+    if (bUser) {
         //进行操作
         PKTabBarViewController *tabVC = [PKTabBarViewController shareInstance];
         return tabVC;
-//    }else{
-//        //对象为空时，可打开用户注册界面
-//        ABLoginViewController *loginVC = [ABLoginViewController shareInstance];
-//        UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
-//        return loginVCNav;
-//    }
+    }else{
+        //对象为空时，可打开用户注册界面
+        PKLoginViewController *loginVC = [PKLoginViewController shareInstance];
+        return loginVC;
+    }
 }
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -1,0 +1,25 @@
+/* 
+  File.strings
+  PocketBooks
+
+  Created by bykj on 2019/8/28.
+  Copyright © 2019 hbc. All rights reserved.
+*/
+"请输入账号" = "Por favor ingrese su cuenta";
+"请输入密码" = "Por favor, introduzca su contraseña";
+"登录成功" = "Inicio de sesión exitoso";
+"注册成功" = "Registro exitoso";
+"账号" = "La cuenta";
+"密码" = "La contraseña";
+"登录" = "inicio";
+"注册" = "El registro";
+
+
+
+
+
+
+
+
+
+
