@@ -28,13 +28,13 @@
 }
 - (void)setTitle:(NSString *)title {
     self.navigationItem.title = @"";
-    UILabel *titleLPKel = [[UILabel alloc] init];
-    titleLPKel.textAlignment = NSTextAlignmentCenter;
-    titleLPKel.font = [UIFont systemFontOfSize:18.0];
-    titleLPKel.textColor = [UIColor grayColor];
-    titleLPKel.text = title;
-    [titleLPKel sizeToFit];
-    self.navigationItem.titleView = titleLPKel;
+    UILabel *titleLabel = [[UILabel alloc] init];
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.font = [UIFont systemFontOfSize:18.0];
+    titleLabel.textColor = [UIColor whiteColor];
+    titleLabel.text = title;
+    [titleLabel sizeToFit];
+    self.navigationItem.titleView = titleLabel;
 }
 - (void)PK_setupNavigationItems {
     if (self.navigationController && self.navigationController.viewControllers.count > 1) {

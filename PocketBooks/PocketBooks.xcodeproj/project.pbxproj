@@ -16,6 +16,8 @@
 		AE537789231660A000160319 /* PKBillHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE537788231660A000160319 /* PKBillHistoryViewController.m */; };
 		AE53778C231660B700160319 /* PKBudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53778B231660B700160319 /* PKBudgetViewController.m */; };
 		AE53778F231660D700160319 /* PKDistributionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53778E231660D700160319 /* PKDistributionViewController.m */; };
+		AE53779223167AE500160319 /* PKSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53779123167AE500160319 /* PKSetViewModel.m */; };
+		AE53779523167C7300160319 /* PKSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53779423167C7300160319 /* PKSetTableViewCell.m */; };
 		AE9A799823151A0C0058B73F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A799723151A0C0058B73F /* AppDelegate.m */; };
 		AE9A79A023151A0E0058B73F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9A799F23151A0E0058B73F /* Assets.xcassets */; };
 		AE9A79A623151A0E0058B73F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A79A523151A0E0058B73F /* main.m */; };
@@ -48,6 +50,10 @@
 		AE53778B231660B700160319 /* PKBudgetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKBudgetViewController.m; sourceTree = "<group>"; };
 		AE53778D231660D700160319 /* PKDistributionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKDistributionViewController.h; sourceTree = "<group>"; };
 		AE53778E231660D700160319 /* PKDistributionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKDistributionViewController.m; sourceTree = "<group>"; };
+		AE53779023167AE500160319 /* PKSetViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKSetViewModel.h; sourceTree = "<group>"; };
+		AE53779123167AE500160319 /* PKSetViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKSetViewModel.m; sourceTree = "<group>"; };
+		AE53779323167C7300160319 /* PKSetTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKSetTableViewCell.h; sourceTree = "<group>"; };
+		AE53779423167C7300160319 /* PKSetTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKSetTableViewCell.m; sourceTree = "<group>"; };
 		AE9A799323151A0C0058B73F /* PocketBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9A799623151A0C0058B73F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE9A799723151A0C0058B73F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -285,6 +291,8 @@
 		AE9A79BD231525460058B73F /* models */ = {
 			isa = PBXGroup;
 			children = (
+				AE53779023167AE500160319 /* PKSetViewModel.h */,
+				AE53779123167AE500160319 /* PKSetViewModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -303,6 +311,8 @@
 		AE9A79BF231525460058B73F /* views */ = {
 			isa = PBXGroup;
 			children = (
+				AE53779323167C7300160319 /* PKSetTableViewCell.h */,
+				AE53779423167C7300160319 /* PKSetTableViewCell.m */,
 				AE53777623164BA400160319 /* PKLoginTableViewCell.h */,
 				AE53777723164BA400160319 /* PKLoginTableViewCell.m */,
 			);
@@ -458,10 +468,12 @@
 			files = (
 				AE9A79C8231529570058B73F /* NSArray+log.m in Sources */,
 				AE537789231660A000160319 /* PKBillHistoryViewController.m in Sources */,
+				AE53779223167AE500160319 /* PKSetViewModel.m in Sources */,
 				AE9A79F2231532200058B73F /* PKTabBarViewController.m in Sources */,
 				AE53778F231660D700160319 /* PKDistributionViewController.m in Sources */,
 				AE53778C231660B700160319 /* PKBudgetViewController.m in Sources */,
 				AE9A79C9231529570058B73F /* NSDictionary+log.m in Sources */,
+				AE53779523167C7300160319 /* PKSetTableViewCell.m in Sources */,
 				AE9A79EF2315313C0058B73F /* MBProgressHUD+PKNJ.m in Sources */,
 				AE53777823164BA400160319 /* PKLoginTableViewCell.m in Sources */,
 				AE5377862316609100160319 /* PKOverallSituationViewController.m in Sources */,

@@ -73,7 +73,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
 - (void)setContentView{
     self.PKOverallSituationVC = [[PKOverallSituationViewController alloc] init];
     UINavigationController *PKOverallSituation = [[UINavigationController alloc] initWithRootViewController:self.PKOverallSituationVC];
-    self.PKOverallSituationVC.tabBarItem.title = @"总体情况";
+    self.PKOverallSituationVC.tabBarItem.title = NSLocalizedString(@"总体", nil);
     [self.PKOverallSituationVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
     [self.PKOverallSituationVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
     self.PKOverallSituationVC.tabBarItem.image = [[UIImage imageNamed:@"PKtab_home_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -81,7 +81,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
 
     self.PKBillHistoryVC = [[PKBillHistoryViewController alloc] init];
     UINavigationController *PKBillHistory = [[UINavigationController alloc] initWithRootViewController:self.PKBillHistoryVC];
-    self.PKBillHistoryVC.tabBarItem.title = @"账单历史";
+    self.PKBillHistoryVC.tabBarItem.title = NSLocalizedString(@"历史", nil);
     [self.PKBillHistoryVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
     [self.PKBillHistoryVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
     self.PKBillHistoryVC.tabBarItem.image = [[UIImage imageNamed:@"PKtab_history_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -89,7 +89,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
 
     self.PKBudgetVC = [[PKBudgetViewController alloc] init];
     UINavigationController *PKBudget = [[UINavigationController alloc] initWithRootViewController:self.PKBudgetVC];
-    self.PKBudgetVC.tabBarItem.title = @"财政预算";
+    self.PKBudgetVC.tabBarItem.title = NSLocalizedString(@"预算", nil);
     [self.PKBudgetVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
     [self.PKBudgetVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
     self.PKBudgetVC.tabBarItem.image = [[UIImage imageNamed:@"PKtab_budget_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -97,7 +97,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     
     self.PKDistributionVC = [[PKDistributionViewController alloc] init];
     UINavigationController *PKDistribution = [[UINavigationController alloc] initWithRootViewController:self.PKDistributionVC];
-    self.PKDistributionVC.tabBarItem.title = @"分配情况";
+    self.PKDistributionVC.tabBarItem.title = NSLocalizedString(@"分配", nil);
     [self.PKDistributionVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
     [self.PKDistributionVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
     self.PKDistributionVC.tabBarItem.image = [[UIImage imageNamed:@"PKtab_distribution_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -105,7 +105,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     
     self.PKSetVC = [[PKSetViewController alloc] init];
     UINavigationController *PKSet = [[UINavigationController alloc] initWithRootViewController:self.PKSetVC];
-    self.PKSetVC.tabBarItem.title = @"我的";
+    self.PKSetVC.tabBarItem.title = NSLocalizedString(@"我的", nil);
     [self.PKSetVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
     [self.PKSetVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
     self.PKSetVC.tabBarItem.image = [[UIImage imageNamed:@"PKtab_mine_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

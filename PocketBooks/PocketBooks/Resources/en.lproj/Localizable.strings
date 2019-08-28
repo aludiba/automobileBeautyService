@@ -13,7 +13,14 @@
 "密码" = "password";
 "登录" = "login";
 "注册" = "registered";
-"分配情况" = "distribution";
+"总体" = "The overall";
+"历史" = "history";
+"预算" = "The budget";
+"分配" = "distribution";
+"我的" = "My";
+
+
+
 
 
 
