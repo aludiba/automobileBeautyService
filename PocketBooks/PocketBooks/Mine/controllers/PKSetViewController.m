@@ -23,6 +23,30 @@
 }
 - (void)setContentView{
     self.view.backgroundColor = PKH_Color(244, 245, 246, 1);
+    PKSetViewModel *viewModel = [[PKSetViewModel alloc] init];
+    viewModel.title = @"昵称";
+    [self.viewDataArray addObject:viewModel];
+    
+    PKSetViewModel *viewModel1 = [[PKSetViewModel alloc] init];
+    viewModel1.title = @"密码修改";
+    [self.viewDataArray addObject:viewModel1];
+    
+    PKSetViewModel *viewModel2 = [[PKSetViewModel alloc] init];
+    viewModel2.title = @"固定开销";
+    [self.viewDataArray addObject:viewModel2];
+    
+    PKSetViewModel *viewModel3 = [[PKSetViewModel alloc] init];
+    viewModel3.title = @"每月限额";
+    [self.viewDataArray addObject:viewModel3];
+    
+    PKSetViewModel *viewModel4 = [[PKSetViewModel alloc] init];
+    viewModel4.title = @"类别管理";
+    [self.viewDataArray addObject:viewModel4];
+    
+    
+    PKSetViewModel *viewModel5 = [[PKSetViewModel alloc] init];
+    viewModel5.title = @"退出";
+    [self.viewDataArray addObject:viewModel5];
     
     [self.view addSubview:self.mainTable];
     [self.mainTable mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -37,7 +61,15 @@
     return self.viewDataArray.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return nil;
+    PKSetViewModel *viewModel = self.viewDataArray[indexPath.row];
+    PKSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PKSetTableViewCell" forIndexPath:indexPath];
+    cell.model = viewModel;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
 }
 #pragma mark - 属性懒加载
 - (NSMutableArray *)viewDataArray{
@@ -48,7 +80,7 @@
 }
 - (UITableView *)mainTable{
     if (!_mainTable) {
-        _mainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+        _mainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _mainTable.backgroundColor = PKH_Color(244, 245, 246, 1);
         _mainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
         _mainTable.delegate = self;

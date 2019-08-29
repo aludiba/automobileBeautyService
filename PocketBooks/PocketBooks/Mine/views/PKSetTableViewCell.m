@@ -18,20 +18,21 @@
 @implementation PKSetTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = PKH_Color(244, 245, 246, 1);
         [self.contentView addSubview:self.titleLbl];
         [self.contentView addSubview:self.contentLbl];
         [self.contentView addSubview:self.arrowImgView];
         [self.contentView addSubview:self.line];
         
         [self.titleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(15);
-            make.top.equalTo(self.contentView).offset(10);
-            make.width.mas_equalTo(PKWIDTH * 0.5 - 15);
+            make.leading.equalTo(self.contentView).offset(20);
+            make.top.equalTo(self.contentView).offset(15);
+            make.width.mas_equalTo(PKWIDTH * 0.5 - 20);
             make.height.mas_equalTo(21);
-            make.bottom.equalTo(self.contentView).offset(-10);
+            make.bottom.equalTo(self.contentView).offset(-15);
         }];
         [self.arrowImgView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.trailing.equalTo(self.contentView).offset(-10);
+            make.trailing.equalTo(self.contentView).offset(-15);
             make.centerY.equalTo(self.contentView);
             make.width.mas_equalTo(22);
             make.height.mas_equalTo(22);
@@ -39,7 +40,7 @@
         [self.contentLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.trailing.equalTo(self.arrowImgView.mas_leading).offset(-5);
             make.centerY.equalTo(self.contentView);
-            make.width.mas_equalTo(PKWIDTH * 0.5 - 5 - 22 - 10);
+            make.width.mas_equalTo(PKWIDTH * 0.5 - 5 - 22 - 15);
             make.height.mas_equalTo(16);
         }];
         [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
