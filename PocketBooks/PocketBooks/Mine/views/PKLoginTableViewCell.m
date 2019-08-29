@@ -185,6 +185,7 @@
 - (UITextField *)accountTextField{
     if (!_accountTextField) {
         _accountTextField = [[UITextField alloc] init];
+        _accountTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
         _accountTextField.tag = 98;
         _accountTextField.delegate = self;
         _accountTextField.textColor = [UIColor blackColor];
@@ -205,6 +206,7 @@
 - (UITextField *)passwordTextField{
     if (!_passwordTextField) {
         _passwordTextField = [[UITextField alloc] init];
+        _passwordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
         _passwordTextField.tag = 99;
         _passwordTextField.delegate = self;
         _passwordTextField.textColor = [UIColor blackColor];

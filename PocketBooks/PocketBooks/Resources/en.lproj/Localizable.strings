@@ -28,6 +28,10 @@
 "更新成功" = "The update is successful";
 "请输入昵称" = "Please enter nickname";
 "保存" = "save";
+"请输入旧密码" = "Please enter the old password";
+"请输入新密码" = "Please enter a new password";
+
+
 
 
 

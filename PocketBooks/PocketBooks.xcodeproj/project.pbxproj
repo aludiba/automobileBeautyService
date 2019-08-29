@@ -20,6 +20,8 @@
 		AE53779523167C7300160319 /* PKSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53779423167C7300160319 /* PKSetTableViewCell.m */; };
 		AE99DFC82317703B00694CB8 /* PKModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99DFC72317703B00694CB8 /* PKModifyNicknameViewController.m */; };
 		AE99DFCB2317705600694CB8 /* PKPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99DFCA2317705600694CB8 /* PKPasswordChangeViewController.m */; };
+		AE99DFCE2317A10700694CB8 /* PKCategoryManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99DFCD2317A10700694CB8 /* PKCategoryManagementViewController.m */; };
+		AE99DFD12317A12800694CB8 /* PKLimitesMensuellesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99DFD02317A12800694CB8 /* PKLimitesMensuellesViewController.m */; };
 		AE9A799823151A0C0058B73F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A799723151A0C0058B73F /* AppDelegate.m */; };
 		AE9A79A023151A0E0058B73F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9A799F23151A0E0058B73F /* Assets.xcassets */; };
 		AE9A79A623151A0E0058B73F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A79A523151A0E0058B73F /* main.m */; };
@@ -60,6 +62,10 @@
 		AE99DFC72317703B00694CB8 /* PKModifyNicknameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKModifyNicknameViewController.m; sourceTree = "<group>"; };
 		AE99DFC92317705600694CB8 /* PKPasswordChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKPasswordChangeViewController.h; sourceTree = "<group>"; };
 		AE99DFCA2317705600694CB8 /* PKPasswordChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKPasswordChangeViewController.m; sourceTree = "<group>"; };
+		AE99DFCC2317A10700694CB8 /* PKCategoryManagementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKCategoryManagementViewController.h; sourceTree = "<group>"; };
+		AE99DFCD2317A10700694CB8 /* PKCategoryManagementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKCategoryManagementViewController.m; sourceTree = "<group>"; };
+		AE99DFCF2317A12800694CB8 /* PKLimitesMensuellesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKLimitesMensuellesViewController.h; sourceTree = "<group>"; };
+		AE99DFD02317A12800694CB8 /* PKLimitesMensuellesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKLimitesMensuellesViewController.m; sourceTree = "<group>"; };
 		AE9A799323151A0C0058B73F /* PocketBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9A799623151A0C0058B73F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE9A799723151A0C0058B73F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -312,6 +318,10 @@
 				AE99DFC72317703B00694CB8 /* PKModifyNicknameViewController.m */,
 				AE99DFC92317705600694CB8 /* PKPasswordChangeViewController.h */,
 				AE99DFCA2317705600694CB8 /* PKPasswordChangeViewController.m */,
+				AE99DFCC2317A10700694CB8 /* PKCategoryManagementViewController.h */,
+				AE99DFCD2317A10700694CB8 /* PKCategoryManagementViewController.m */,
+				AE99DFCF2317A12800694CB8 /* PKLimitesMensuellesViewController.h */,
+				AE99DFD02317A12800694CB8 /* PKLimitesMensuellesViewController.m */,
 				AE5377732316482300160319 /* PKLoginViewController.h */,
 				AE5377742316482300160319 /* PKLoginViewController.m */,
 			);
@@ -476,12 +486,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE99DFD12317A12800694CB8 /* PKLimitesMensuellesViewController.m in Sources */,
 				AE9A79C8231529570058B73F /* NSArray+log.m in Sources */,
 				AE537789231660A000160319 /* PKBillHistoryViewController.m in Sources */,
 				AE53779223167AE500160319 /* PKSetViewModel.m in Sources */,
 				AE9A79F2231532200058B73F /* PKTabBarViewController.m in Sources */,
 				AE99DFC82317703B00694CB8 /* PKModifyNicknameViewController.m in Sources */,
 				AE53778F231660D700160319 /* PKDistributionViewController.m in Sources */,
+				AE99DFCE2317A10700694CB8 /* PKCategoryManagementViewController.m in Sources */,
 				AE53778C231660B700160319 /* PKBudgetViewController.m in Sources */,
 				AE9A79C9231529570058B73F /* NSDictionary+log.m in Sources */,
 				AE53779523167C7300160319 /* PKSetTableViewCell.m in Sources */,

@@ -11,6 +11,7 @@
 #import "PKModifyNicknameViewController.h"
 #import "PKSetViewModel.h"
 #import "PKSetTableViewCell.h"
+#import "PKPasswordChangeViewController.h"
 @interface PKSetViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)NSMutableArray *viewDataArray;
 @property(nonatomic, strong)UITableView *mainTable;
@@ -38,17 +39,12 @@
     [self.viewDataArray addObject:viewModel1];
     
     PKSetViewModel *viewModel2 = [[PKSetViewModel alloc] init];
-    viewModel2.title = NSLocalizedString(@"固定开销", nil);
+    viewModel2.title = NSLocalizedString(@"类别管理", nil);
     [self.viewDataArray addObject:viewModel2];
     
     PKSetViewModel *viewModel3 = [[PKSetViewModel alloc] init];
     viewModel3.title = NSLocalizedString(@"每月限额", nil);
     [self.viewDataArray addObject:viewModel3];
-    
-    PKSetViewModel *viewModel4 = [[PKSetViewModel alloc] init];
-    viewModel4.title = NSLocalizedString(@"类别管理", nil);
-    [self.viewDataArray addObject:viewModel4];
-    
     
     PKSetViewModel *viewModel5 = [[PKSetViewModel alloc] init];
     viewModel5.title = NSLocalizedString(@"退出", nil);
@@ -90,7 +86,11 @@
         }
             break;
         case 1:
-            
+        {
+            PKPasswordChangeViewController *pacVC = [[PKPasswordChangeViewController alloc] init];
+            pacVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:pacVC animated:YES];
+        }
             break;
         case 2:
             
@@ -99,9 +99,6 @@
             
             break;
         case 4:
-            
-            break;
-        case 5:
         {
             [BmobUser logout];
             PKLoginViewController *loginVC = [PKLoginViewController shareInstance];
