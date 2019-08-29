@@ -22,6 +22,7 @@
 		AE99DFCB2317705600694CB8 /* PKPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99DFCA2317705600694CB8 /* PKPasswordChangeViewController.m */; };
 		AE99DFCE2317A10700694CB8 /* PKCategoryManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99DFCD2317A10700694CB8 /* PKCategoryManagementViewController.m */; };
 		AE99DFD12317A12800694CB8 /* PKLimitesMensuellesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99DFD02317A12800694CB8 /* PKLimitesMensuellesViewController.m */; };
+		AE99DFD42317D73C00694CB8 /* PKCategoryManagerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99DFD32317D73C00694CB8 /* PKCategoryManagerCollectionViewCell.m */; };
 		AE9A799823151A0C0058B73F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A799723151A0C0058B73F /* AppDelegate.m */; };
 		AE9A79A023151A0E0058B73F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9A799F23151A0E0058B73F /* Assets.xcassets */; };
 		AE9A79A623151A0E0058B73F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A79A523151A0E0058B73F /* main.m */; };
@@ -66,6 +67,8 @@
 		AE99DFCD2317A10700694CB8 /* PKCategoryManagementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKCategoryManagementViewController.m; sourceTree = "<group>"; };
 		AE99DFCF2317A12800694CB8 /* PKLimitesMensuellesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKLimitesMensuellesViewController.h; sourceTree = "<group>"; };
 		AE99DFD02317A12800694CB8 /* PKLimitesMensuellesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKLimitesMensuellesViewController.m; sourceTree = "<group>"; };
+		AE99DFD22317D73C00694CB8 /* PKCategoryManagerCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKCategoryManagerCollectionViewCell.h; sourceTree = "<group>"; };
+		AE99DFD32317D73C00694CB8 /* PKCategoryManagerCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKCategoryManagerCollectionViewCell.m; sourceTree = "<group>"; };
 		AE9A799323151A0C0058B73F /* PocketBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9A799623151A0C0058B73F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE9A799723151A0C0058B73F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -335,6 +338,8 @@
 				AE53779423167C7300160319 /* PKSetTableViewCell.m */,
 				AE53777623164BA400160319 /* PKLoginTableViewCell.h */,
 				AE53777723164BA400160319 /* PKLoginTableViewCell.m */,
+				AE99DFD22317D73C00694CB8 /* PKCategoryManagerCollectionViewCell.h */,
+				AE99DFD32317D73C00694CB8 /* PKCategoryManagerCollectionViewCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -503,6 +508,7 @@
 				AE9A79A623151A0E0058B73F /* main.m in Sources */,
 				AE5377832316603C00160319 /* PKSetViewController.m in Sources */,
 				AE5377752316482300160319 /* PKLoginViewController.m in Sources */,
+				AE99DFD42317D73C00694CB8 /* PKCategoryManagerCollectionViewCell.m in Sources */,
 				AE9A799823151A0C0058B73F /* AppDelegate.m in Sources */,
 				AE99DFCB2317705600694CB8 /* PKPasswordChangeViewController.m in Sources */,
 				AE9A79ED2315313C0058B73F /* PKHBTool.m in Sources */,
