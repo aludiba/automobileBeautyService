@@ -8,7 +8,6 @@
 
 #import "PKSetTableViewCell.h"
 #import "PKSetViewModel.h"
-
 @interface PKSetTableViewCell()
 @property(nonatomic, strong)UILabel *titleLbl;
 @property(nonatomic, strong)UILabel *contentLbl;
@@ -69,6 +68,7 @@
 - (UILabel *)contentLbl{
     if (!_contentLbl) {
         _contentLbl = [[UILabel alloc] init];
+        _contentLbl.textAlignment = NSTextAlignmentRight;
         _contentLbl.textColor = [UIColor blueColor];
         _contentLbl.font = [UIFont systemFontOfSize:15];
     }

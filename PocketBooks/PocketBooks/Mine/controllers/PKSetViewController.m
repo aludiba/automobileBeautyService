@@ -7,6 +7,8 @@
 //
 
 #import "PKSetViewController.h"
+#import "PKLoginViewController.h"
+#import "PKModifyNicknameViewController.h"
 #import "PKSetViewModel.h"
 #import "PKSetTableViewCell.h"
 @interface PKSetViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -18,34 +20,38 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"我的";
+    self.title = NSLocalizedString(@"我的", nil);
     [self setContentView];
 }
 - (void)setContentView{
     self.view.backgroundColor = PKH_Color(244, 245, 246, 1);
     PKSetViewModel *viewModel = [[PKSetViewModel alloc] init];
-    viewModel.title = @"昵称";
+    viewModel.title = NSLocalizedString(@"昵称", nil);
+    BmobUser *user = [BmobUser currentUser];
+    if ([[user objectForKey:@"username"] length]) {
+        viewModel.content = [user objectForKey:@"username"];
+    }
     [self.viewDataArray addObject:viewModel];
     
     PKSetViewModel *viewModel1 = [[PKSetViewModel alloc] init];
-    viewModel1.title = @"密码修改";
+    viewModel1.title = NSLocalizedString(@"密码修改", nil);
     [self.viewDataArray addObject:viewModel1];
     
     PKSetViewModel *viewModel2 = [[PKSetViewModel alloc] init];
-    viewModel2.title = @"固定开销";
+    viewModel2.title = NSLocalizedString(@"固定开销", nil);
     [self.viewDataArray addObject:viewModel2];
     
     PKSetViewModel *viewModel3 = [[PKSetViewModel alloc] init];
-    viewModel3.title = @"每月限额";
+    viewModel3.title = NSLocalizedString(@"每月限额", nil);
     [self.viewDataArray addObject:viewModel3];
     
     PKSetViewModel *viewModel4 = [[PKSetViewModel alloc] init];
-    viewModel4.title = @"类别管理";
+    viewModel4.title = NSLocalizedString(@"类别管理", nil);
     [self.viewDataArray addObject:viewModel4];
     
     
     PKSetViewModel *viewModel5 = [[PKSetViewModel alloc] init];
-    viewModel5.title = @"退出";
+    viewModel5.title = NSLocalizedString(@"退出", nil);
     [self.viewDataArray addObject:viewModel5];
     
     [self.view addSubview:self.mainTable];
@@ -64,12 +70,48 @@
     PKSetViewModel *viewModel = self.viewDataArray[indexPath.row];
     PKSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PKSetTableViewCell" forIndexPath:indexPath];
     cell.model = viewModel;
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.selectionStyle = UITableViewCellSelectionStyleDefault;
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-
+    PKSetViewModel *viewModel = self.viewDataArray[indexPath.row];
+    switch (indexPath.row) {
+        case 0:
+        {
+            PKModifyNicknameViewController *mnnVC = [[PKModifyNicknameViewController alloc] init];
+            __weak __typeof(self)weakSelf = self;
+            mnnVC.modifyNicknameB = ^(PKModifyNicknameViewController * _Nonnull nicknameVC) {
+                viewModel.content = nicknameVC.nickname;
+                [weakSelf.mainTable reloadData];
+            };
+            mnnVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:mnnVC animated:YES];
+        }
+            break;
+        case 1:
+            
+            break;
+        case 2:
+            
+            break;
+        case 3:
+            
+            break;
+        case 4:
+            
+            break;
+        case 5:
+        {
+            [BmobUser logout];
+            PKLoginViewController *loginVC = [PKLoginViewController shareInstance];
+            UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+            PKKeyWindow.rootViewController = loginVCNav;
+        }
+            break;
+        default:
+            break;
+    }
 }
 #pragma mark - 属性懒加载
 - (NSMutableArray *)viewDataArray{

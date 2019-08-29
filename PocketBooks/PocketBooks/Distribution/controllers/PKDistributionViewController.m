@@ -18,6 +18,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = PKH_Color(244, 245, 246, 1);
-    self.title = @"分配";
+    self.title = NSLocalizedString(@"分配", nil);
 }
 @end

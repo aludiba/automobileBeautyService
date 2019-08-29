@@ -109,7 +109,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     [self.PKSetVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
     [self.PKSetVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
     self.PKSetVC.tabBarItem.image = [[UIImage imageNamed:@"PKtab_mine_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    self.PKBudgetVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"PKtab_mine_active"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.PKSetVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"PKtab_mine_active"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     NSArray *arrControllers = [NSArray arrayWithObjects:PKOverallSituation,PKBillHistory,PKBudget,PKDistribution,PKSet,nil];
     self.viewControllers = arrControllers;
     [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -4)];

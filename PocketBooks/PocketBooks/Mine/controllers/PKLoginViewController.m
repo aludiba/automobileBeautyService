@@ -25,6 +25,14 @@
     // Do any additional setup after loading the view.
     [self setContentView];
 }
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = YES;
+}
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBar.hidden = NO;
+}
 - (void)setContentView{
     self.view.backgroundColor = PKH_Color(242, 242, 242, 1);
     [self.view addSubview:self.mainTable];
