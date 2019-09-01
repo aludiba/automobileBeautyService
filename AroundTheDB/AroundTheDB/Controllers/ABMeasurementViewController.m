@@ -41,22 +41,18 @@
     [self setAudioSession];
     [[BMKLocationAuth sharedInstance] checkPermisionWithKey:BMK_KEY authDelegate:self];
     [self.locationManager requestLocationWithReGeocode:YES withNetworkState:YES completionBlock:^(BMKLocation * _Nullable location, BMKLocationNetworkState state, NSError * _Nullable error) {
-        if (error)
-        {
-            NSLog(@"locError:{%ld - %@};", (long)error.code, error.localizedDescription);
+        if (error){
+            
         }
-        if (location) {//得到定位信息，添加annotation
-
+        if (location) {
+            //得到定位信息，添加annotation
             if (location.location) {
-                NSLog(@"LOC = %@",location.location);
+                
             }
             if (location.rgcData) {
-                NSLog(@"rgc = %@",[location.rgcData description]);
                 self.model.position = [NSString stringWithFormat:@"%@%@%@%@",location.rgcData.city,location.rgcData.district,location.rgcData.street,location.rgcData.locationDescribe];
-                NSLog(@"当前位置:%@",self.model.position);
             }
         }
-        NSLog(@"netstate = %d",state);
         [self.mainTable reloadData];
     }];
 }
@@ -89,7 +85,6 @@
 -(NSURL *)getSavePath{
     NSString *urlStr=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     urlStr=[urlStr stringByAppendingPathComponent:kRecordAudioFile];
-    NSLog(@"file path:%@",urlStr);
     NSURL *url=[NSURL fileURLWithPath:urlStr];
     return url;
 }
@@ -122,9 +117,7 @@
     [self.audioRecorder updateMeters];//更新测量值
     float power = [self.audioRecorder averagePowerForChannel:0];
     float powerMax = [self.audioRecorder peakPowerForChannel:0];
-    
     power = power + 160  - 50;
-    
     int dB = 0;
     if (power < 0.f) {
         dB = 0;
@@ -137,9 +130,7 @@
     } else {
         dB = 110;
     }
-    
     powerMax = powerMax + 160  - 50;
-    
     int MaxdB = 0;
     if (powerMax < 0.f) {
         MaxdB = 0;
@@ -161,10 +152,6 @@
     NSNumber *maxNumber = [result lastObject];
     self.model.maxDB = maxNumber;
     [self.mainTable reloadData];
-    //NSLog(@"progress = %f, dB = %d", progress, dB);
-//    self.powerLabel.text = [NSString stringWithFormat:@"%ddB", dB];
-//    [self.audioPower setProgress:progress];
-    
 }
 #pragma mark - 录音机代理方法
 /**
@@ -177,7 +164,6 @@
     if (![self.audioPlayer isPlaying]) {
         [self.audioPlayer play];
     }
-    NSLog(@"录音完成!");
 }
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
     [self.view endEditing:YES];
@@ -228,7 +214,6 @@
                 weakSelf.model.averageDB = nil;
                 [weakSelf.maxArray removeAllObjects];
                 [weakSelf.mainTable reloadData];
-//                weakSelf.audioPower.progress=0.0;
             }
         };
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -262,36 +247,31 @@
 }
 - (void)saveData{
     if (!self.model.title.length) {
-        self.model.title = @"无标题";
+        self.model.title = NSLocalizedString(@"无标题", nil);
     }
     if (!self.model.position.length) {
-        [MBProgressHUD ABshowReminderText:@"请刷新位置信息"];
+        [MBProgressHUD ABshowReminderText:NSLocalizedString(@"请刷新位置信息", nil)];
         return;
     }
     if (!self.model.maxDB && !self.model.averageDB) {
-        [MBProgressHUD ABshowReminderText:@"请检测分贝"];
+        [MBProgressHUD ABshowReminderText:NSLocalizedString(@"请检测分贝", nil)];
         return;
     }
     NSDate *nowDate = [[NSDate alloc] init];
-//    self.model.date = [nowDate copy];
     NSMutableDictionary *jsonDictionary = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[self.model yy_modelToJSONObject]];
     [jsonDictionary setObject:nowDate forKey:@"date"];
     BmobObject *DB = [BmobObject objectWithClassName:@"DB"];
     [DB saveAllWithDictionary:jsonDictionary];
     BmobUser *author = [BmobUser currentUser];
     [DB setObject:author forKey:@"author"];
-//    BmobUser *author = [BmobUser currentUser];
-//    [diary setObject:author forKey:@"author"];
     [DB saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
         if (isSuccessful) {
             //创建成功后的动作
-//            [MBProgressHUD ABshowReminderText:@"添加成功"];
-//            [self.navigationController popViewControllerAnimated:YES];
         } else if (error){
             //发生错误后的动作
             [MBProgressHUD ABshowReminderText:[NSString stringWithFormat:@"%@",error]];
         } else {
-            NSLog(@"Unknow error");
+            
         }
     }];
 }
@@ -309,7 +289,6 @@
         _audioRecorder.meteringEnabled = YES;
         
         if (error) {
-            NSLog(@"创建录音机对象发生错误，error：%@", error.localizedDescription);
             return nil;
         }
         
@@ -380,8 +359,6 @@
             make.trailing.equalTo(self.view);
             make.bottom.equalTo(self.view).offset(-ABHeightTabBar-10);
         }];
-//        UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeKeyBoard:)];
-//        [self.view addGestureRecognizer:tapGes];
     }
     return _mainTable;
 }

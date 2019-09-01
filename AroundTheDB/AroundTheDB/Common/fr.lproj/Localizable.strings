@@ -1,0 +1,60 @@
+/* 
+  Localizable.strings
+  AroundTheDB
+
+  Created by 褚红彪 on 2019/9/1.
+  Copyright © 2019 hgg. All rights reserved.
+*/
+"请输入账号" = "Veuillez indiquer le numéro de compte";
+"请输入密码" = "Veuillez introduire votre mot de passe";
+"登录成功" = "Accès réussi";
+"注册成功" = "Succès de l’enregistrement";
+"账号" = "Le compte";
+"请输入账号" = "Veuillez indiquer le numéro de compte";
+"密码" = "Les mots de passe";
+"请输入密码" = "Veuillez introduire votre mot de passe";
+"登录" = "connexion";
+"注册" = "l’enregistrement";
+"忘记密码" = "Oubliez votre mot de passe";
+"历史" = "l’histoire";
+"数据清空成功" = "Les données ont été vidées avec succès";
+"清空" = "vider";
+"无标题" = "Sans titre";
+"请刷新位置信息" = "Veuillez actualiser les informations de localisation";
+"请检测分贝" = "Détectez le db";
+"设置" = "La mise en place";
+"昵称" = "surnom";
+"密码修改" = "Modification du mot de passe";
+"退出登录" = "Sortie de la session";
+"修改昵称" = "Modification d’un pseudonyme";
+"更新成功" = "Mise à jour réussie";
+"请输入昵称" = "Entrez votre pseudonyme";
+"保存" = "La conservation";
+"请输入旧密码" = "Entrez votre ancien mot de passe";
+"请输入新密码" = "Entrez votre nouveau mot de passe, s’il vous plaît";
+"请确认密码" = "Veuillez confirmer votre mot de passe";
+"两次密码输入不一致" = "Deux entrées de mot de passe ne concordent pas";
+"密码修改成功" = "Changement réussi du mot de passe";
+"输入旧密码" = "Entrée de l’ancien mot de passe";
+"输入新密码" = "Entrée d’un nouveau mot de passe";
+"确认密码" = "Confirmation du mot de passe";
+"确定" = "déterminer";
+"点击输入标题" = "Cliquer pour entrer le titre";
+"点击刷新位置信息" = "Cliquer sur actualiser les informations de localisation";
+"停止测试" = "Arrêt de l’essai";
+"开始测试" = "Début des essais";
+"极静" = "Très statique";
+"安静" = "silencieux";
+"一般" = "En général,";
+"吵闹" = "bruyante";
+"很吵" = "bruyant";
+"极吵" = "Très bruyant";
+"最大分贝" = "Db maximum";
+"平均分贝" = "Décibels moyens";
+"分贝参照表:" = "Tableau de référence en db:";
+"0-20dB      极静，几乎感觉不到" = "0-20dB      极静，几乎感觉不到";
+"20-40dB      安静，相当于轻声说话" = "20 à 40dB de silence, équivalent à une conversation douce";
+"40-60dB      一般，相当于室内谈话" = "40 à 60dB généralement, ce qui correspond à une conversation en salle";
+"60-70dB      吵闹，有损神经" = "60 à 70dB bruyants, dangereux pour les nerfs";
+"70-90dB      很吵，长期会损伤神经细胞" = "70 à 90dB sont bruyants et peuvent endommager les cellules nerveuses à long terme";
+"90-120dB      极吵，会使人听力受损，难以忍受" = "De 90 à 120dB très bruyants, ils peuvent causer des lésions auditives insupportables";

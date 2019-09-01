@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"修改昵称";
+    self.title = NSLocalizedString(@"修改昵称", nil);
     self.view.backgroundColor = ABH_Color(21, 23, 45, 1);
     [self setContent];
 }
@@ -49,10 +49,9 @@
     [bUser setObject:self.model.content forKey:@"username"];
     [bUser updateInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
         if (isSuccessful) {
-            [MBProgressHUD ABshowReminderText:@"更新成功"];
+            [MBProgressHUD ABshowReminderText:NSLocalizedString(@"更新成功", nil)];
             [self.navigationController popViewControllerAnimated:YES];
         }else{
-            NSLog(@"用户更新error %@",[error description]);
             [MBProgressHUD ABshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
         }
     }];
@@ -81,7 +80,7 @@
         _confirmNickNameTextField.layer.masksToBounds = YES;
         _confirmNickNameTextField.tag = 102;
         _confirmNickNameTextField.delegate = self;
-        _confirmNickNameTextField.placeholder = [NSString stringWithFormat:@"  %@",@"请输入昵称"];
+        _confirmNickNameTextField.placeholder = [NSString stringWithFormat:@"  %@",NSLocalizedString(@"请输入昵称", nil)];
         [_confirmNickNameTextField setValue:[UIColor greenColor] forKeyPath:@"_placeholderLabel.textColor"];
         _confirmNickNameTextField.textColor = [UIColor whiteColor];
         _confirmNickNameTextField.font = [UIFont systemFontOfSize:15];
@@ -101,7 +100,7 @@
         [_sureButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
         _sureButton.layer.cornerRadius = 8.0f;
         _sureButton.layer.masksToBounds = YES;
-        [_sureButton setTitle:@"保存" forState:UIControlStateNormal];
+        [_sureButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
         [_sureButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _sureButton;

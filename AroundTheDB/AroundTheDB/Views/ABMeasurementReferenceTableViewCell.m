@@ -80,7 +80,7 @@
         _titleLbl = [[UILabel alloc] init];
         _titleLbl.backgroundColor = ABH_Color(15, 18, 39, 1);
         _titleLbl.textColor = ABH_Color(245, 245, 245, 1);
-        _titleLbl.text = @"分贝参照表:";
+        _titleLbl.text = NSLocalizedString(@"分贝参照表:", nil);
         _titleLbl.font = [UIFont systemFontOfSize:14];
     }
     return _titleLbl;
@@ -90,7 +90,7 @@
         _contentLbl = [[UILabel alloc] init];
         _contentLbl.backgroundColor = ABH_Color(15, 18, 39, 1);
         _contentLbl.textColor = ABH_Color(245, 245, 245, 1);
-        _contentLbl.text = @"0-20dB      极静，几乎感觉不到";
+        _contentLbl.text = NSLocalizedString(@"0-20dB      极静，几乎感觉不到", nil);
         _contentLbl.font = [UIFont systemFontOfSize:14];
     }
     return _contentLbl;
@@ -100,7 +100,7 @@
         _contentLbl1 = [[UILabel alloc] init];
         _contentLbl1.backgroundColor = ABH_Color(15, 18, 39, 1);
         _contentLbl1.textColor = ABH_Color(245, 245, 245, 1);
-        _contentLbl1.text = @"20-40dB      安静，相当于轻声说话";
+        _contentLbl1.text = NSLocalizedString(@"20-40dB      安静，相当于轻声说话", nil);
         _contentLbl1.font = [UIFont systemFontOfSize:14];
     }
     return _contentLbl1;
@@ -110,7 +110,7 @@
         _contentLbl2 = [[UILabel alloc] init];
         _contentLbl2.backgroundColor = ABH_Color(15, 18, 39, 1);
         _contentLbl2.textColor = ABH_Color(245, 245, 245, 1);
-        _contentLbl2.text = @"40-60dB      一般，相当于室内谈话";
+        _contentLbl2.text = NSLocalizedString(@"40-60dB      一般，相当于室内谈话", nil);
         _contentLbl2.font = [UIFont systemFontOfSize:14];
     }
     return _contentLbl2;
@@ -120,7 +120,7 @@
         _contentLbl3 = [[UILabel alloc] init];
         _contentLbl3.backgroundColor = ABH_Color(15, 18, 39, 1);
         _contentLbl3.textColor = ABH_Color(245, 245, 245, 1);
-        _contentLbl3.text = @"60-70dB      吵闹，有损神经";
+        _contentLbl3.text = NSLocalizedString(@"60-70dB      吵闹，有损神经", nil);
         _contentLbl3.font = [UIFont systemFontOfSize:14];
     }
     return _contentLbl3;
@@ -130,7 +130,7 @@
         _contentLbl4 = [[UILabel alloc] init];
         _contentLbl4.backgroundColor = ABH_Color(15, 18, 39, 1);
         _contentLbl4.textColor = ABH_Color(245, 245, 245, 1);
-        _contentLbl4.text = @"70-90dB      很吵，长期会损伤神经细胞";
+        _contentLbl4.text = NSLocalizedString(@"70-90dB      很吵，长期会损伤神经细胞", nil);
         _contentLbl4.font = [UIFont systemFontOfSize:14];
     }
     return _contentLbl4;
@@ -140,7 +140,7 @@
         _contentLbl5 = [[UILabel alloc] init];
         _contentLbl5.backgroundColor = ABH_Color(15, 18, 39, 1);
         _contentLbl5.textColor = ABH_Color(245, 245, 245, 1);
-        _contentLbl5.text = @"90-120dB      极吵，会使人听力受损，难以忍受";
+        _contentLbl5.text = NSLocalizedString(@"90-120dB      极吵，会使人听力受损，难以忍受", nil);
         _contentLbl5.font = [UIFont systemFontOfSize:14];
     }
     return _contentLbl5;

@@ -43,7 +43,7 @@
     if (_model.position) {
         self.positionLabel.text = _model.position;
     }else{
-        self.positionLabel.text = @"点击刷新位置信息";
+        self.positionLabel.text = NSLocalizedString(@"点击刷新位置信息", nil);
     }
     CGSize size = [self.positionLabel sizeThatFits:CGSizeMake(MAXFLOAT, 18)];
     self.positionLblWidth = size.width;
@@ -69,7 +69,7 @@
         _positionLabel.font = [UIFont systemFontOfSize:17];
         _positionLabel.textColor = [UIColor grayColor];
         _positionLabel.backgroundColor = ABH_Color(15, 18, 39, 1);
-        _positionLabel.text = @"点击刷新位置信息";
+        _positionLabel.text = NSLocalizedString(@"点击刷新位置信息", nil);
         [_positionLabel sizeToFit];
     }
     return _positionLabel;

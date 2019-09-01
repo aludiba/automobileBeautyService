@@ -49,7 +49,6 @@
     [self.backView addSubview:self.passwordTextField];
     [self.backView addSubview:self.loginButton];
     [self.backView addSubview:self.registeredButton];
-    //    [self.backView addSubview:self.forgotPasswordButton];
     
     [self.backView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view).offset(ABHeightNavBar);
@@ -111,36 +110,29 @@
         make.top.equalTo(self.loginButton.mas_bottom).offset(20);
         make.height.mas_equalTo(44);
     }];
-    //    [self.forgotPasswordButton mas_makeConstraints:^(MASConstraintMaker *make) {
-    //        make.leading.equalTo(self.backView).offset(26.5);
-    //        make.trailing.equalTo(self.backView).offset(-26.5);
-    //        make.top.equalTo(self.registeredButton.mas_bottom).offset(20);
-    //        make.height.mas_equalTo(14);
-    //    }];
 }
 #pragma mark - actions
 - (void)btnClick:(UIButton *)sender{
     [self.view endEditing:YES];
     if (!self.account.length) {
-        [MBProgressHUD ABshowReminderText:@"请输入账号"];
+        [MBProgressHUD ABshowReminderText:NSLocalizedString(@"请输入账号", nil)];
         return;
     }
     if (sender.tag == 102) {
         
     }
     if (!self.password.length) {
-        [MBProgressHUD ABshowReminderText:@"请输入密码"];
+        [MBProgressHUD ABshowReminderText:NSLocalizedString(@"请输入密码", nil)];
         return;
     }
     if (sender.tag == 100) {
         [BmobUser loginWithUsernameInBackground:self.account password:self.password block:^(BmobUser *user, NSError *error) {
             if (user) {
-                [MBProgressHUD ABshowReminderText:@"登录成功"];
+                [MBProgressHUD ABshowReminderText:NSLocalizedString(@"登录成功", nil)];
                 ABTabBarViewController *tabVC = [ABTabBarViewController shareInstance];
                 tabVC.selectedIndex = 0;
                 [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
             }else{
-                NSLog(@"登录失败error:%@",error);
                 [MBProgressHUD ABshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
             }
         }];
@@ -150,7 +142,7 @@
         [bUser setPassword:self.password];
         [bUser signUpInBackgroundWithBlock:^ (BOOL isSuccessful, NSError *error){
             if (isSuccessful){
-                [MBProgressHUD ABshowReminderText:@"注册成功"];
+                [MBProgressHUD ABshowReminderText:NSLocalizedString(@"注册成功", nil)];
                 [BmobUser loginWithUsernameInBackground:self.account password:self.password block:^(BmobUser *user, NSError *error) {
                     if (user) {
                         ABTabBarViewController *tabVC = [ABTabBarViewController shareInstance];
@@ -161,7 +153,6 @@
                     }
                 }];
             } else {
-                NSLog(@"注册失败error:%@",error);
                 [MBProgressHUD ABshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
             }
         }];
@@ -201,7 +192,7 @@
 - (UILabel *)accountLable{
     if (!_accountLable) {
         _accountLable = [[UILabel alloc] init];
-        _accountLable.text = @"账号";
+        _accountLable.text = NSLocalizedString(@"账号", nil);
         _accountLable.textColor = [UIColor whiteColor];
         _accountLable.font = [UIFont systemFontOfSize:15];
     }
@@ -214,7 +205,7 @@
         _accountTextField.delegate = self;
         _accountTextField.textColor = [UIColor whiteColor];
         _accountTextField.font = [UIFont systemFontOfSize:15];
-        _accountTextField.placeholder = @"请输入账号";
+        _accountTextField.placeholder = NSLocalizedString(@"请输入账号", nil);
         [_accountTextField setValue:[UIColor greenColor] forKeyPath:@"_placeholderLabel.textColor"];
     }
     return _accountTextField;
@@ -222,7 +213,7 @@
 - (UILabel *)passwordLable{
     if (!_passwordLable) {
         _passwordLable = [[UILabel alloc] init];
-        _passwordLable.text = @"密码";
+        _passwordLable.text = NSLocalizedString(@"密码", nil);
         _passwordLable.textColor = [UIColor whiteColor];
         _passwordLable.font = [UIFont systemFontOfSize:15];
     }
@@ -235,7 +226,7 @@
         _passwordTextField.delegate = self;
         _passwordTextField.textColor = [UIColor whiteColor];
         _passwordTextField.font = [UIFont systemFontOfSize:15];
-        _passwordTextField.placeholder = @"请输入密码";
+        _passwordTextField.placeholder = NSLocalizedString(@"请输入密码", nil);
         [_passwordTextField setValue:[UIColor greenColor] forKeyPath:@"_placeholderLabel.textColor"];
         _passwordTextField.secureTextEntry = YES;
     }
@@ -250,7 +241,7 @@
         [_loginButton.titleLabel setFont:[UIFont systemFontOfSize:16]];
         _loginButton.layer.cornerRadius = 8.0f;
         _loginButton.layer.masksToBounds = YES;
-        [_loginButton setTitle:@"登录"  forState:UIControlStateNormal];
+        [_loginButton setTitle:NSLocalizedString(@"登录", nil)  forState:UIControlStateNormal];
         [_loginButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _loginButton;
@@ -264,7 +255,7 @@
         [_registeredButton.titleLabel setFont:[UIFont systemFontOfSize:16]];
         _registeredButton.layer.cornerRadius = 8.0f;
         _registeredButton.layer.masksToBounds = YES;
-        [_registeredButton setTitle:@"注册" forState:UIControlStateNormal];
+        [_registeredButton setTitle:NSLocalizedString(@"注册", nil) forState:UIControlStateNormal];
         [_registeredButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _registeredButton;
@@ -274,7 +265,7 @@
         _forgotPasswordButton = [[UIButton alloc] init];
         _forgotPasswordButton.tag = 102;
         _forgotPasswordButton.titleLabel.font = [UIFont systemFontOfSize:12];
-        [_forgotPasswordButton setTitle:@"忘记密码" forState:UIControlStateNormal];
+        [_forgotPasswordButton setTitle:NSLocalizedString(@"忘记密码", nil) forState:UIControlStateNormal];
         [_forgotPasswordButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         _forgotPasswordButton.backgroundColor = [UIColor clearColor];
         [_forgotPasswordButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];

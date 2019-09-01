@@ -167,7 +167,7 @@
         _maxDBTitleLabel.backgroundColor = ABH_Color(25, 26, 51, 1);
         _maxDBTitleLabel.textColor = ABH_Color(93, 94, 106, 1);
         _maxDBTitleLabel.font = [UIFont systemFontOfSize:13];
-        _maxDBTitleLabel.text = @"最大分贝";
+        _maxDBTitleLabel.text = NSLocalizedString(@"最大分贝", nil);
         _maxDBTitleLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _maxDBTitleLabel;
@@ -188,7 +188,7 @@
         _averageDBTitleLabel.backgroundColor = ABH_Color(25, 26, 51, 1);
         _averageDBTitleLabel.textColor =  ABH_Color(93, 94, 106, 1);
         _averageDBTitleLabel.font = [UIFont systemFontOfSize:13];
-        _averageDBTitleLabel.text = @"平均分贝";
+        _averageDBTitleLabel.text = NSLocalizedString(@"平均分贝", nil);
         _averageDBTitleLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _averageDBTitleLabel;

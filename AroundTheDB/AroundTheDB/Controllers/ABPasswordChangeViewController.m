@@ -21,7 +21,7 @@
 @implementation ABPasswordChangeViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"密码修改";
+    self.title = NSLocalizedString(@"密码修改", nil);
     self.view.backgroundColor = ABH_Color(21, 23, 45, 1);
     [self setContent];
 }
@@ -64,19 +64,19 @@
 - (void)btnClick:(UIButton *)sender{
     [self.view endEditing:YES];
     if (!self.oldPassword.length) {
-        [MBProgressHUD ABshowReminderText:@"请输入旧密码"];
+        [MBProgressHUD ABshowReminderText:NSLocalizedString(@"请输入旧密码", nil)];
         return;
     }
     if (!self.currentPassword.length) {
-        [MBProgressHUD ABshowReminderText:@"请输入新密码"];
+        [MBProgressHUD ABshowReminderText:NSLocalizedString(@"请输入新密码", nil)];
         return;
     }
     if (!self.confirmPassword.length) {
-        [MBProgressHUD ABshowReminderText:@"请确认密码"];
+        [MBProgressHUD ABshowReminderText:NSLocalizedString(@"请确认密码", nil)];
         return;
     }
     if (![self.currentPassword isEqualToString:self.confirmPassword]) {
-        [MBProgressHUD ABshowReminderText:@"两次密码输入不一致"];
+        [MBProgressHUD ABshowReminderText:NSLocalizedString(@"两次密码输入不一致", nil)];
         return;
     }
         BmobUser *user = [BmobUser currentUser];
@@ -88,7 +88,7 @@
                     if (error) {
                         [MBProgressHUD ABshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
                     } else {
-                        [MBProgressHUD ABshowReminderText:@"密码修改成功"];
+                        [MBProgressHUD ABshowReminderText:NSLocalizedString(@"密码修改成功", nil)];
                         [self.navigationController popViewControllerAnimated:YES];
                     }
                 }];
@@ -141,7 +141,7 @@
         _oldPasswordTextField.layer.masksToBounds = YES;
         _oldPasswordTextField.tag = 100;
         _oldPasswordTextField.delegate = self;
-        _oldPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",@"输入旧密码"];
+        _oldPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",NSLocalizedString(@"输入旧密码", nil)];
         _oldPasswordTextField.textColor = [UIColor whiteColor];
         [_oldPasswordTextField setValue:[UIColor greenColor] forKeyPath:@"_placeholderLabel.textColor"];
         _oldPasswordTextField.font = [UIFont systemFontOfSize:15];
@@ -159,7 +159,7 @@
         _currentPasswordTextField.layer.masksToBounds = YES;
         _currentPasswordTextField.tag = 101;
         _currentPasswordTextField.delegate = self;
-        _currentPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",@"输入新密码"];
+        _currentPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",NSLocalizedString(@"输入新密码", nil)];
         _currentPasswordTextField.textColor = [UIColor whiteColor];
         [_currentPasswordTextField setValue:[UIColor greenColor] forKeyPath:@"_placeholderLabel.textColor"];
         _currentPasswordTextField.font = [UIFont systemFontOfSize:15];
@@ -177,7 +177,7 @@
         _confirmpasswordTextField.layer.masksToBounds = YES;
         _confirmpasswordTextField.tag = 102;
         _confirmpasswordTextField.delegate = self;
-        _confirmpasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",@"确认密码"];
+        _confirmpasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",NSLocalizedString(@"确认密码", nil)];
         [_confirmpasswordTextField setValue:[UIColor greenColor] forKeyPath:@"_placeholderLabel.textColor"];
         _confirmpasswordTextField.textColor = [UIColor whiteColor];
         _confirmpasswordTextField.font = [UIFont systemFontOfSize:15];
@@ -192,7 +192,7 @@
         [_sureButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
         _sureButton.layer.cornerRadius = 8.0f;
         _sureButton.layer.masksToBounds = YES;
-        [_sureButton setTitle:@"确定" forState:UIControlStateNormal];
+        [_sureButton setTitle:NSLocalizedString(@"确定", nil) forState:UIControlStateNormal];
         [_sureButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _sureButton;

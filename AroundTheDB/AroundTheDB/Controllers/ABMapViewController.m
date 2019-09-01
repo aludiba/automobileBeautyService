@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"位置";
+    self.title = NSLocalizedString(@"位置", nil);
     [self.view addSubview:self.mapView];
     [self.locationManager startUpdatingLocation];
 }

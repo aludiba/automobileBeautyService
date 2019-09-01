@@ -19,6 +19,7 @@
 #import "ABUIUtilities.h"
 #import "NSArray+log.h"
 #import "NSDictionary+log.h"
+#import "PKNDHTTPClient.h"
 #import <BmobSDK/Bmob.h>
 #import <AVOSCloud/AVOSCloud.h>
 
@@ -51,5 +52,5 @@
 #define ABHeightStatusBar ((ABIS_IPHONE_X==YES || ABIS_IPHONE_Xr ==YES || ABIS_IPHONE_Xs== YES || ABIS_IPHONE_Xs_Max== YES) ? 44.0 : 20.0)
 #define ABHeightNavBar ((ABIS_IPHONE_X==YES || ABIS_IPHONE_Xr ==YES || ABIS_IPHONE_Xs== YES || ABIS_IPHONE_Xs_Max== YES) ? 88.0 : 64.0)
 #define ABHeightTabBar ((ABIS_IPHONE_X==YES || ABIS_IPHONE_Xr ==YES || ABIS_IPHONE_Xs== YES || ABIS_IPHONE_Xs_Max== YES) ? 83.0 : 49.0)
-#define ABHeightNavContentBar ((ABIS_IPHONE_X==YES || IS_IPHONE_Xr ==YES || ABIS_IPHONE_Xs== YES || ABIS_IPHONE_Xs_Max== YES)?34.0f: 0)
+#define ABHeightNavContentBar ((ABIS_IPHONE_X==YES || ABIS_IPHONE_Xr ==YES || ABIS_IPHONE_Xs== YES || ABIS_IPHONE_Xs_Max== YES)?34.0f: 0)
 #endif /* ABglobal_h */

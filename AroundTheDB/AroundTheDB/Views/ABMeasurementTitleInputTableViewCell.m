@@ -73,7 +73,7 @@
         _writeTextField.returnKeyType = UIReturnKeyDone;
         _writeTextField.textColor = ABH_Color(245, 245, 245, 1);
         _writeTextField.delegate = self;
-        _writeTextField.placeholder = @"点击输入标题";
+        _writeTextField.placeholder = NSLocalizedString(@"点击输入标题", nil);
         [_writeTextField setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
         _writeTextField.font = [UIFont systemFontOfSize:15];
         _writeTextField.backgroundColor = ABH_Color(15, 18, 39, 1);

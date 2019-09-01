@@ -199,9 +199,9 @@
 - (void)btnClick:(UIButton *)sender{
     self.isStart = !self.isStart;
     if (self.isStart) {
-        [self.controlButton setTitle:@"停止测试" forState:UIControlStateNormal];
+        [self.controlButton setTitle:NSLocalizedString(@"停止测试", nil) forState:UIControlStateNormal];
     }else{
-        [self.controlButton setTitle:@"开始测试" forState:UIControlStateNormal];
+        [self.controlButton setTitle:NSLocalizedString(@"开始测试", nil) forState:UIControlStateNormal];
     }
     if (self.measurementTestDBBlock) {
         self.measurementTestDBBlock(self);
@@ -245,7 +245,7 @@
         _veryQuietLabel.textColor = [UIColor blackColor];
         _veryQuietLabel.font = [UIFont systemFontOfSize:15];
         _veryQuietLabel.textAlignment = NSTextAlignmentCenter;
-        _veryQuietLabel.text = @"极静";
+        _veryQuietLabel.text = NSLocalizedString(@"极静", nil);
     }
     return _veryQuietLabel;
 }
@@ -266,7 +266,7 @@
         _quietLabel.textColor = [UIColor blackColor];
         _quietLabel.font = [UIFont systemFontOfSize:15];
         _quietLabel.textAlignment = NSTextAlignmentCenter;
-        _quietLabel.text = @"安静";
+        _quietLabel.text = NSLocalizedString(@"安静", nil);
     }
     return _quietLabel;
 }
@@ -287,7 +287,7 @@
         _generalLabel.textColor = [UIColor blackColor];
         _generalLabel.font = [UIFont systemFontOfSize:15];
         _generalLabel.textAlignment = NSTextAlignmentCenter;
-        _generalLabel.text = @"一般";
+        _generalLabel.text = NSLocalizedString(@"一般", nil);
     }
     return _generalLabel;
 }
@@ -308,7 +308,7 @@
         _noisyLabel.textColor = [UIColor blackColor];
         _noisyLabel.font = [UIFont systemFontOfSize:12];
         _noisyLabel.textAlignment = NSTextAlignmentCenter;
-        _noisyLabel.text = @"吵闹";
+        _noisyLabel.text = NSLocalizedString(@"吵闹", nil);
     }
     return _noisyLabel;
 }
@@ -329,7 +329,7 @@
         _veryNoisyLabel.textColor = [UIColor blackColor];
         _veryNoisyLabel.font = [UIFont systemFontOfSize:15];
         _veryNoisyLabel.textAlignment = NSTextAlignmentCenter;
-        _veryNoisyLabel.text = @"很吵";
+        _veryNoisyLabel.text = NSLocalizedString(@"很吵", nil);
     }
     return _veryNoisyLabel;
 }
@@ -350,7 +350,7 @@
         _moreVeryNoisyLabel.textColor = [UIColor blackColor];
         _moreVeryNoisyLabel.font = [UIFont systemFontOfSize:15];
         _moreVeryNoisyLabel.textAlignment = NSTextAlignmentCenter;
-        _moreVeryNoisyLabel.text = @"极吵";
+        _moreVeryNoisyLabel.text = NSLocalizedString(@"极吵", nil);
     }
     return _moreVeryNoisyLabel;
 }
@@ -379,7 +379,7 @@
         _maxTitleLabel.textColor = ABH_Color(68, 70, 78, 1);
         _maxTitleLabel.textAlignment = NSTextAlignmentCenter;
         _maxTitleLabel.backgroundColor = ABH_Color(15, 18, 39, 1);
-        _maxTitleLabel.text = @"最大分贝";
+        _maxTitleLabel.text = NSLocalizedString(@"最大分贝", nil);
     }
     return _maxTitleLabel;
 }
@@ -401,7 +401,7 @@
         _averageTitleLabel.textColor = ABH_Color(68, 70, 78, 1);
         _averageTitleLabel.textAlignment = NSTextAlignmentCenter;
         _averageTitleLabel.backgroundColor = ABH_Color(15, 18, 39, 1);
-        _averageTitleLabel.text = @"平均分贝";
+        _averageTitleLabel.text = NSLocalizedString(@"平均分贝", nil);
     }
     return _averageTitleLabel;
 }
@@ -435,7 +435,7 @@
         _controlButton.layer.masksToBounds = YES;
         [_controlButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         _controlButton.titleLabel.font = [UIFont systemFontOfSize:20];
-        [_controlButton setTitle:@"开始测试" forState:UIControlStateNormal];
+        [_controlButton setTitle:NSLocalizedString(@"开始测试", nil) forState:UIControlStateNormal];
         [_controlButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _controlButton;

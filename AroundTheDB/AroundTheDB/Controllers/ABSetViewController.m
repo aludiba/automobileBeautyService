@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"设置";
+    self.title = NSLocalizedString(@"设置", nil);
     self.view.backgroundColor = ABH_Color(15, 18, 39, 1);
 }
 - (void)viewWillAppear:(BOOL)animated{
@@ -38,7 +38,7 @@
     line1Model0.type = ABSetCellTypeLine;
     [self.viewDataArray addObject:line1Model0];
     ABSetModel *nicknameModel = [[ABSetModel alloc] init];
-    nicknameModel.title = @"昵称";
+    nicknameModel.title = NSLocalizedString(@"昵称", nil);
     nicknameModel.type = ABSetCellTypeContent;
     BmobUser *user = [BmobUser currentUser];
     if ([[user objectForKey:@"username"] length]) {
@@ -50,7 +50,7 @@
     [self.viewDataArray addObject:lineModel];
     
     ABSetModel *passwordModel = [[ABSetModel alloc] init];
-    passwordModel.title = @"密码修改";
+    passwordModel.title = NSLocalizedString(@"密码修改", nil);
     passwordModel.type = ABSetCellTypeDefault;
     [self.viewDataArray addObject:passwordModel];
     
@@ -59,7 +59,7 @@
     [self.viewDataArray addObject:line1Model];
     
     ABSetModel *loginOutModel = [[ABSetModel alloc] init];
-    loginOutModel.title = @"退出登录";
+    loginOutModel.title = NSLocalizedString(@"退出登录", nil);
     loginOutModel.type = ABSetCellTypeLoginOut;
     [self.viewDataArray addObject:loginOutModel];
     [self.mainTable reloadData];
@@ -99,12 +99,12 @@
         UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
         [[UIApplication sharedApplication].delegate window].rootViewController = loginVCNav;
     }else{
-        if ([model.title isEqualToString:@"昵称"]) {
+        if ([model.title isEqualToString:NSLocalizedString(@"昵称", nil)]) {
             ABModifyNicknameViewController *mnnVC = [[ABModifyNicknameViewController alloc] init];
             mnnVC.model = model;
             mnnVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:mnnVC animated:YES];
-        }else if ([model.title isEqualToString:@"密码修改"]) {
+        }else if ([model.title isEqualToString:NSLocalizedString(@"密码修改", nil)]) {
             ABPasswordChangeViewController *pacVC = [[ABPasswordChangeViewController alloc] init];
             pacVC.model = model;
             pacVC.hidesBottomBarWhenPushed = YES;

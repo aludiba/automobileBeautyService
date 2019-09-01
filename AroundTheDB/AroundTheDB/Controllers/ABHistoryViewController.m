@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = ABH_Color(15, 18, 39, 1);
-    self.title = @"历史";
+    self.title = NSLocalizedString(@"历史", nil);
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -76,7 +76,7 @@
     }
     [batch batchObjectsInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
         if (isSuccessful) {
-            [MBProgressHUD ABshowReminderText:@"数据清空成功"];
+            [MBProgressHUD ABshowReminderText:NSLocalizedString(@"数据清空成功", nil)];
         }else{
             [MBProgressHUD ABshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
         }
@@ -101,7 +101,7 @@
         _editorForEmptyButton = [[UIButton alloc] init];
         [_editorForEmptyButton setTitleColor:ABH_Color(1, 214, 155, 1) forState:UIControlStateNormal];
         [_editorForEmptyButton.titleLabel setFont:[UIFont systemFontOfSize:16]];
-        [_editorForEmptyButton setTitle:@"清空" forState:UIControlStateNormal];
+        [_editorForEmptyButton setTitle:NSLocalizedString(@"清空", nil) forState:UIControlStateNormal];
         _editorForEmptyButton.tag = 100;
         [_editorForEmptyButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
