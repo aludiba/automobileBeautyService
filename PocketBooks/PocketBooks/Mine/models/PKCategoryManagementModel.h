@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PKCategoryManagementModel : NSObject
+@property(nonatomic, assign)NSInteger code;
 @property(nonatomic, copy)NSString *content;
 @property(nonatomic, assign)Boolean isSelect;
 @end

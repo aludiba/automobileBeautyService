@@ -13,6 +13,7 @@
 
 @interface PKCategoryManagementViewController ()<UICollectionViewDelegateFlowLayout,UICollectionViewDelegate,UICollectionViewDataSource>
 @property(nonatomic, assign)Boolean isEdit;
+@property(nonatomic, assign)Boolean isEdited;
 @property(nonatomic, strong)UIButton *editButton;
 @property(nonatomic, strong)NSMutableArray *selectArray;
 @property(nonatomic, strong)NSMutableArray *dataArray;
@@ -38,74 +39,92 @@
 -(void)setContentView{
     PKCategoryManagementModel *model = [[PKCategoryManagementModel alloc] init];
     model.content = NSLocalizedString(@"服饰", nil);
+    model.code = 000;
     [self.dataArray addObject:model];
     
     PKCategoryManagementModel *model1 = [[PKCategoryManagementModel alloc] init];
     model1.content = NSLocalizedString(@"食品", nil);
+    model1.code = 001;
     [self.dataArray addObject:model1];
     
     PKCategoryManagementModel *model2 = [[PKCategoryManagementModel alloc] init];
     model2.content = NSLocalizedString(@"房屋", nil);
+    model2.code = 002;
     [self.dataArray addObject:model2];
     
     PKCategoryManagementModel *model3 = [[PKCategoryManagementModel alloc] init];
     model3.content = NSLocalizedString(@"交通", nil);
+    model3.code = 003;
     [self.dataArray addObject:model3];
     
     PKCategoryManagementModel *model4 = [[PKCategoryManagementModel alloc] init];
     model4.content = NSLocalizedString(@"健康", nil);
+    model4.code = 004;
     [self.dataArray addObject:model4];
     
     PKCategoryManagementModel *model5 = [[PKCategoryManagementModel alloc] init];
     model5.content = NSLocalizedString(@"空闲", nil);
+    model5.code = 005;
     [self.dataArray addObject:model5];
     
     PKCategoryManagementModel *model6 = [[PKCategoryManagementModel alloc] init];
     model6.content = NSLocalizedString(@"网费", nil);
+    model6.code = 006;
     [self.dataArray addObject:model6];
     
     PKCategoryManagementModel *model7 = [[PKCategoryManagementModel alloc] init];
     model7.content = NSLocalizedString(@"手机", nil);
+    model7.code = 007;
     [self.dataArray addObject:model7];
     
     PKCategoryManagementModel *model8 = [[PKCategoryManagementModel alloc] init];
     model8.content = NSLocalizedString(@"水费", nil);
+    model8.code = 071;
     [self.dataArray addObject:model8];
     
     PKCategoryManagementModel *model9 = [[PKCategoryManagementModel alloc] init];
     model9.content = NSLocalizedString(@"电费", nil);
+    model9.code = 072;
     [self.dataArray addObject:model9];
     
     PKCategoryManagementModel *model10 = [[PKCategoryManagementModel alloc] init];
     model10.content = NSLocalizedString(@"取暖费", nil);
+    model10.code = 010;
     [self.dataArray addObject:model10];
     
     PKCategoryManagementModel *model11 = [[PKCategoryManagementModel alloc] init];
     model11.content = NSLocalizedString(@"物业", nil);
+    model11.code = 011;
     [self.dataArray addObject:model11];
     
     PKCategoryManagementModel *model12 = [[PKCategoryManagementModel alloc] init];
     model12.content = NSLocalizedString(@"车位", nil);
+    model12.code = 012;
     [self.dataArray addObject:model12];
     
     PKCategoryManagementModel *model13 = [[PKCategoryManagementModel alloc] init];
     model13.content = NSLocalizedString(@"装修", nil);
+    model13.code = 013;
     [self.dataArray addObject:model13];
     
     PKCategoryManagementModel *model14 = [[PKCategoryManagementModel alloc] init];
     model14.content = NSLocalizedString(@"家电", nil);
+    model14.code = 014;
     [self.dataArray addObject:model14];
     
     PKCategoryManagementModel *model15 = [[PKCategoryManagementModel alloc] init];
     model15.content = NSLocalizedString(@"服务", nil);
+    model15.code = 015;
     [self.dataArray addObject:model15];
     
     PKCategoryManagementModel *model16 = [[PKCategoryManagementModel alloc] init];
     model16.content = NSLocalizedString(@"家居", nil);
+    model16.code = 016;
     [self.dataArray addObject:model16];
     
     PKCategoryManagementModel *model17 = [[PKCategoryManagementModel alloc] init];
     model17.content = NSLocalizedString(@"其它", nil);
+    model17.code = 017;
     [self.dataArray addObject:model17];
     [self loadData];
 }
@@ -126,14 +145,72 @@
             for (int i = 0;i < dataArray.count; i++) {
                 NSDictionary *dic = dataArray[i];
                 PKCategoryManagementModel *model = [[PKCategoryManagementModel alloc] init];
-                model.content = [dic objectForKey:@"content"];
+                model.code = [[dic objectForKey:@"code"] integerValue];
+                switch (model.code) {
+                    case 000:
+                        model.content = NSLocalizedString(@"服饰", nil);
+                        break;
+                    case 001:
+                        model.content = NSLocalizedString(@"食品", nil);
+                        break;
+                    case 002:
+                        model.content = NSLocalizedString(@"房屋", nil);
+                        break;
+                    case 003:
+                        model.content = NSLocalizedString(@"交通", nil);
+                        break;
+                    case 004:
+                        model.content = NSLocalizedString(@"健康", nil);
+                        break;
+                    case 005:
+                        model.content = NSLocalizedString(@"空闲", nil);
+                        break;
+                    case 006:
+                        model.content = NSLocalizedString(@"网费", nil);
+                        break;
+                    case 007:
+                        model.content = NSLocalizedString(@"手机", nil);
+                        break;
+                    case 071:
+                        model.content = NSLocalizedString(@"水费", nil);
+                        break;
+                    case 072:
+                        model.content = NSLocalizedString(@"电费", nil);
+                        break;
+                    case 010:
+                        model.content = NSLocalizedString(@"取暖费", nil);
+                        break;
+                    case 011:
+                        model.content = NSLocalizedString(@"物业", nil);
+                        break;
+                    case 012:
+                        model.content = NSLocalizedString(@"车位", nil);
+                        break;
+                    case 013:
+                        model.content = NSLocalizedString(@"装修", nil);
+                        break;
+                    case 014:
+                        model.content = NSLocalizedString(@"家电", nil);
+                        break;
+                    case 015:
+                        model.content = NSLocalizedString(@"服务", nil);
+                        break;
+                    case 016:
+                        model.content = NSLocalizedString(@"家居", nil);
+                        break;
+                    case 017:
+                        model.content = NSLocalizedString(@"其它", nil);
+                        break;
+                    default:
+                        break;
+                }
                 model.isSelect = [[dic objectForKey:@"isSelect"] boolValue];
                 [weakSelf.selectArray addObject:model];
             }
             for (int j = 0; j < self.dataArray.count; j++) {
                 PKCategoryManagementModel *model = self.dataArray[j];
                 for (PKCategoryManagementModel *selectmodel in self.selectArray) {
-                    if ([model.content isEqualToString:selectmodel.content]) {
+                    if (model.code == selectmodel.code) {
                         [self.dataArray removeObject:model];
                         j--;
                     }
@@ -144,39 +221,50 @@
     }];
 }
 - (void)PKbackButtonAction{
+    if (self.isEdited) {
     if (self.selectArray.count) {
+        if (self.objectId.length) {
         BmobObject *Diary = [BmobObject objectWithoutDataWithClassName:@"PKCategory" objectId:self.objectId];
         [Diary deleteInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
             if (isSuccessful) {
-                NSMutableArray *tempArray = [[NSMutableArray alloc] init];
-                for (int i = 0; i < self.selectArray.count; i++) {
-                    PKCategoryManagementModel *selectModel = self.selectArray[i];
-                    NSDictionary *jsonDictionary = (NSDictionary *)[selectModel yy_modelToJSONObject];
-                    [tempArray addObject:jsonDictionary];
-                }
-                NSDictionary *dic = @{@"data":tempArray};
-                BmobObject *diary = [BmobObject objectWithClassName:@"PKCategory"];
-                [diary saveAllWithDictionary:dic];
-                BmobUser *author = [BmobUser currentUser];
-                [diary setObject:author forKey:@"author"];
-                [diary saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
-                    if (isSuccessful) {
-                        //创建成功后的动作
-                        [self.navigationController popViewControllerAnimated:YES];
-                    } else if (error){
-                        //发生错误后的动作
-                        [MBProgressHUD PKshowReminderText:[NSString stringWithFormat:@"%@",error]];
-                    } else {
-                        NSLog(@"Unknow error");
-                    }
-                }];
+                [self setNewCategory];
             }else{
                 NSLog(@"删除数据错误error:%@",error);
             }
         }];
+        }else{
+            [self setNewCategory];
+        }
     }else{
         [self.navigationController popViewControllerAnimated:YES];
     }
+    }else{
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+- (void)setNewCategory{
+    NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+    for (int i = 0; i < self.selectArray.count; i++) {
+        PKCategoryManagementModel *selectModel = self.selectArray[i];
+        NSDictionary *jsonDictionary = (NSDictionary *)[selectModel yy_modelToJSONObject];
+        [tempArray addObject:jsonDictionary];
+    }
+    NSDictionary *dic = @{@"data":tempArray};
+    BmobObject *diary = [BmobObject objectWithClassName:@"PKCategory"];
+    [diary saveAllWithDictionary:dic];
+    BmobUser *author = [BmobUser currentUser];
+    [diary setObject:author forKey:@"author"];
+    [diary saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+        if (isSuccessful) {
+            //创建成功后的动作
+            [self.navigationController popViewControllerAnimated:YES];
+        } else if (error){
+            //发生错误后的动作
+            [MBProgressHUD PKshowReminderText:[NSString stringWithFormat:@"%@",error]];
+        } else {
+            NSLog(@"Unknow error");
+        }
+    }];
 }
 #pragma mark - UICollectionViewDelegateFlowLayout
 // 返回Header的尺寸大小
@@ -228,10 +316,11 @@
     }
     __weak typeof(self) weakSelf = self;
     cell.finishSelectCategoryBlock = ^(PKCategoryManagementModel * _Nonnull categoryModel) {
+        weakSelf.isEdited = YES;
         Boolean isContain = NO;
         PKCategoryManagementModel *selectModel;
         for (PKCategoryManagementModel *selectmodel in self.selectArray) {
-            if ([categoryModel.content isEqualToString:selectmodel.content]) {
+            if (categoryModel.code == selectmodel.code) {
                 isContain = YES;
                 selectModel = selectmodel;
                 break;

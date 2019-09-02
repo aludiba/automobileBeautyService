@@ -108,7 +108,7 @@
 - (UILabel *)contentLabel{
     if (!_contentLabel) {
         _contentLabel = [[UILabel alloc] init];
-        _contentLabel.backgroundColor = [UIColor grayColor];
+        _contentLabel.backgroundColor = PKH_Color(242, 242, 242, 1);
         _contentLabel.textAlignment = NSTextAlignmentCenter;
         _contentLabel.layer.cornerRadius = 10.0f;
         _contentLabel.layer.masksToBounds = YES;

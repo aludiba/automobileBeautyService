@@ -30,6 +30,12 @@
 "保存" = "guardar";
 "请输入旧密码" = "Por favor, introduzca su antigua contraseña";
 "请输入新密码" = "Por favor, introduzca una nueva contraseña";
+"编辑" = "editor";
+"完成" = "completar";
+"我的项目" = "Mi proyecto";
+"所有类别" = "Todas las categorías";
+"请至少选择4项" = "Por favor, seleccione al menos 4 opciones";
+
 "服饰" = "Ropa";
 "食品" = "Alimentos";
 "房屋" = "Las casas";
@@ -49,11 +55,6 @@
 "服务" = "servicios";
 "家居" = "Enseres domésticos";
 "其它" = "otros";
-"编辑" = "editor";
-"完成" = "completar";
-"我的项目" = "Mi proyecto";
-"所有类别" = "Todas las categorías";
-"请至少选择4项" = "Por favor, seleccione al menos 4 opciones";
 
 
 

@@ -30,6 +30,12 @@
 "保存" = "save";
 "请输入旧密码" = "Please enter the old password";
 "请输入新密码" = "Please enter a new password";
+"编辑" = "editor";
+"完成" = "complete";
+"我的项目" = "My project";
+"所有类别" = "All categories";
+"请至少选择4项" = "Please select at least 4 items";
+
 "服饰" = "Clothing";
 "食品" = "Food";
 "房屋" = "housing";
@@ -49,11 +55,6 @@
 "服务" = "service";
 "家居" = "household";
 "其它" = "other";
-"编辑" = "editor";
-"完成" = "complete";
-"我的项目" = "My project";
-"所有类别" = "All categories";
-"请至少选择4项" = "Please select at least 4 items";
 
 
 
