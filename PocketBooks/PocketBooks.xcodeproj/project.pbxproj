@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		12C797A32D7C51C37C510662 /* Pods_PocketBooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA27E718A7D03D70ADC5C19 /* Pods_PocketBooks.framework */; };
+		AE3E6F47231CB88400585477 /* PKCategoryManagementModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3E6F46231CB88400585477 /* PKCategoryManagementModel.m */; };
+		AE3E6F51231CF73400585477 /* PKCategoryManagerCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3E6F50231CF73400585477 /* PKCategoryManagerCollectionReusableView.m */; };
 		AE5377752316482300160319 /* PKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5377742316482300160319 /* PKLoginViewController.m */; };
 		AE53777823164BA400160319 /* PKLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53777723164BA400160319 /* PKLoginTableViewCell.m */; };
 		AE53777B231653F400160319 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE53777D231653F400160319 /* Localizable.strings */; };
@@ -37,6 +39,10 @@
 
 /* Begin PBXFileReference section */
 		40E4D22BC1060D03BACEA31C /* Pods-PocketBooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBooks.debug.xcconfig"; path = "Target Support Files/Pods-PocketBooks/Pods-PocketBooks.debug.xcconfig"; sourceTree = "<group>"; };
+		AE3E6F45231CB88400585477 /* PKCategoryManagementModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKCategoryManagementModel.h; sourceTree = "<group>"; };
+		AE3E6F46231CB88400585477 /* PKCategoryManagementModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKCategoryManagementModel.m; sourceTree = "<group>"; };
+		AE3E6F4F231CF73400585477 /* PKCategoryManagerCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKCategoryManagerCollectionReusableView.h; sourceTree = "<group>"; };
+		AE3E6F50231CF73400585477 /* PKCategoryManagerCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKCategoryManagerCollectionReusableView.m; sourceTree = "<group>"; };
 		AE5377732316482300160319 /* PKLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKLoginViewController.h; sourceTree = "<group>"; };
 		AE5377742316482300160319 /* PKLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKLoginViewController.m; sourceTree = "<group>"; };
 		AE53777623164BA400160319 /* PKLoginTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKLoginTableViewCell.h; sourceTree = "<group>"; };
@@ -308,6 +314,8 @@
 			children = (
 				AE53779023167AE500160319 /* PKSetViewModel.h */,
 				AE53779123167AE500160319 /* PKSetViewModel.m */,
+				AE3E6F45231CB88400585477 /* PKCategoryManagementModel.h */,
+				AE3E6F46231CB88400585477 /* PKCategoryManagementModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -338,6 +346,8 @@
 				AE53779423167C7300160319 /* PKSetTableViewCell.m */,
 				AE53777623164BA400160319 /* PKLoginTableViewCell.h */,
 				AE53777723164BA400160319 /* PKLoginTableViewCell.m */,
+				AE3E6F4F231CF73400585477 /* PKCategoryManagerCollectionReusableView.h */,
+				AE3E6F50231CF73400585477 /* PKCategoryManagerCollectionReusableView.m */,
 				AE99DFD22317D73C00694CB8 /* PKCategoryManagerCollectionViewCell.h */,
 				AE99DFD32317D73C00694CB8 /* PKCategoryManagerCollectionViewCell.m */,
 			);
@@ -504,8 +514,10 @@
 				AE53779523167C7300160319 /* PKSetTableViewCell.m in Sources */,
 				AE9A79EF2315313C0058B73F /* MBProgressHUD+PKNJ.m in Sources */,
 				AE53777823164BA400160319 /* PKLoginTableViewCell.m in Sources */,
+				AE3E6F47231CB88400585477 /* PKCategoryManagementModel.m in Sources */,
 				AE5377862316609100160319 /* PKOverallSituationViewController.m in Sources */,
 				AE9A79A623151A0E0058B73F /* main.m in Sources */,
+				AE3E6F51231CF73400585477 /* PKCategoryManagerCollectionReusableView.m in Sources */,
 				AE5377832316603C00160319 /* PKSetViewController.m in Sources */,
 				AE5377752316482300160319 /* PKLoginViewController.m in Sources */,
 				AE99DFD42317D73C00694CB8 /* PKCategoryManagerCollectionViewCell.m in Sources */,

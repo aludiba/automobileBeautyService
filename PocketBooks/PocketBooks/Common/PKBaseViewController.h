@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PKBaseViewController : UIViewController
 @property(nonatomic, strong)UIButton *PKbackButton;
 - (void)PK_setupNavigationItems;
+- (void)PKbackButtonAction;
 @end
 
 NS_ASSUME_NONNULL_END

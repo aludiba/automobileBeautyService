@@ -30,8 +30,30 @@
 "保存" = "guardar";
 "请输入旧密码" = "Por favor, introduzca su antigua contraseña";
 "请输入新密码" = "Por favor, introduzca una nueva contraseña";
-
-
+"服饰" = "Ropa";
+"食品" = "Alimentos";
+"房屋" = "Las casas";
+"交通" = "transporte";
+"健康" = "salud";
+"空闲" = "En vano";
+"网费" = "La tarifa";
+"手机" = "Los teléfonos";
+"水费" = "tarifas";
+"电费" = "La electricidad";
+"气费" = "Gastos de gas";
+"取暖费" = "Tarifa de calefacción";
+"物业" = "La propiedad";
+"车位" = "estacionamiento";
+"装修" = "decorar";
+"家电" = "electrodomésticos";
+"服务" = "servicios";
+"家居" = "Enseres domésticos";
+"其它" = "otros";
+"编辑" = "editor";
+"完成" = "completar";
+"我的项目" = "Mi proyecto";
+"所有类别" = "Todas las categorías";
+"请至少选择4项" = "Por favor, seleccione al menos 4 opciones";
 
 
 

@@ -12,6 +12,7 @@
 #import "PKSetViewModel.h"
 #import "PKSetTableViewCell.h"
 #import "PKPasswordChangeViewController.h"
+#import "PKCategoryManagementViewController.h"
 @interface PKSetViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)NSMutableArray *viewDataArray;
 @property(nonatomic, strong)UITableView *mainTable;
@@ -93,7 +94,11 @@
         }
             break;
         case 2:
-            
+        {
+            PKCategoryManagementViewController *cmVC = [[PKCategoryManagementViewController alloc] init];
+            cmVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:cmVC animated:YES];
+        }
             break;
         case 3:
             

@@ -30,7 +30,30 @@
 "保存" = "save";
 "请输入旧密码" = "Please enter the old password";
 "请输入新密码" = "Please enter a new password";
-
+"服饰" = "Clothing";
+"食品" = "Food";
+"房屋" = "housing";
+"交通" = "traffic";
+"健康" = "health";
+"空闲" = "free";
+"网费" = "Internet fee";
+"手机" = "Mobile phone";
+"水费" = "water";
+"电费" = "electricity";
+"气费" = "Gas fee";
+"取暖费" = "heating";
+"物业" = "Property management";
+"车位" = "Parking space";
+"装修" = "decorate";
+"家电" = "Home appliance";
+"服务" = "service";
+"家居" = "household";
+"其它" = "other";
+"编辑" = "editor";
+"完成" = "complete";
+"我的项目" = "My project";
+"所有类别" = "All categories";
+"请至少选择4项" = "Please select at least 4 items";
 
 
 
