@@ -55,6 +55,9 @@
 "服务" = "service";
 "家居" = "household";
 "其它" = "other";
+"请输入金额" = "Please enter amount";
+"总金额:" = "The total amount:";
+"请填写完整" = "Please complete";
 
 
 

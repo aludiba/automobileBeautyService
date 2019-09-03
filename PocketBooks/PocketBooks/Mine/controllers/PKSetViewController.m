@@ -13,6 +13,7 @@
 #import "PKSetTableViewCell.h"
 #import "PKPasswordChangeViewController.h"
 #import "PKCategoryManagementViewController.h"
+#import "PKLimitesMensuellesViewController.h"
 @interface PKSetViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)NSMutableArray *viewDataArray;
 @property(nonatomic, strong)UITableView *mainTable;
@@ -101,7 +102,11 @@
         }
             break;
         case 3:
-            
+        {
+            PKLimitesMensuellesViewController *lmVC = [[PKLimitesMensuellesViewController alloc] init];
+            lmVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:lmVC animated:YES];
+        }
             break;
         case 4:
         {

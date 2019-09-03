@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		12C797A32D7C51C37C510662 /* Pods_PocketBooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA27E718A7D03D70ADC5C19 /* Pods_PocketBooks.framework */; };
+		AE0FC1DC231E3B1300ED00DA /* PKLimitesMensuellesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0FC1DB231E3B1300ED00DA /* PKLimitesMensuellesModel.m */; };
+		AE0FC1DF231E414400ED00DA /* PKLimitesMensuellesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0FC1DE231E414400ED00DA /* PKLimitesMensuellesTableViewCell.m */; };
 		AE3E6F47231CB88400585477 /* PKCategoryManagementModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3E6F46231CB88400585477 /* PKCategoryManagementModel.m */; };
 		AE3E6F51231CF73400585477 /* PKCategoryManagerCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3E6F50231CF73400585477 /* PKCategoryManagerCollectionReusableView.m */; };
 		AE5377752316482300160319 /* PKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5377742316482300160319 /* PKLoginViewController.m */; };
@@ -39,6 +41,10 @@
 
 /* Begin PBXFileReference section */
 		40E4D22BC1060D03BACEA31C /* Pods-PocketBooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBooks.debug.xcconfig"; path = "Target Support Files/Pods-PocketBooks/Pods-PocketBooks.debug.xcconfig"; sourceTree = "<group>"; };
+		AE0FC1DA231E3B1300ED00DA /* PKLimitesMensuellesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKLimitesMensuellesModel.h; sourceTree = "<group>"; };
+		AE0FC1DB231E3B1300ED00DA /* PKLimitesMensuellesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKLimitesMensuellesModel.m; sourceTree = "<group>"; };
+		AE0FC1DD231E414400ED00DA /* PKLimitesMensuellesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKLimitesMensuellesTableViewCell.h; sourceTree = "<group>"; };
+		AE0FC1DE231E414400ED00DA /* PKLimitesMensuellesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKLimitesMensuellesTableViewCell.m; sourceTree = "<group>"; };
 		AE3E6F45231CB88400585477 /* PKCategoryManagementModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKCategoryManagementModel.h; sourceTree = "<group>"; };
 		AE3E6F46231CB88400585477 /* PKCategoryManagementModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKCategoryManagementModel.m; sourceTree = "<group>"; };
 		AE3E6F4F231CF73400585477 /* PKCategoryManagerCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKCategoryManagerCollectionReusableView.h; sourceTree = "<group>"; };
@@ -316,6 +322,8 @@
 				AE53779123167AE500160319 /* PKSetViewModel.m */,
 				AE3E6F45231CB88400585477 /* PKCategoryManagementModel.h */,
 				AE3E6F46231CB88400585477 /* PKCategoryManagementModel.m */,
+				AE0FC1DA231E3B1300ED00DA /* PKLimitesMensuellesModel.h */,
+				AE0FC1DB231E3B1300ED00DA /* PKLimitesMensuellesModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -350,6 +358,8 @@
 				AE3E6F50231CF73400585477 /* PKCategoryManagerCollectionReusableView.m */,
 				AE99DFD22317D73C00694CB8 /* PKCategoryManagerCollectionViewCell.h */,
 				AE99DFD32317D73C00694CB8 /* PKCategoryManagerCollectionViewCell.m */,
+				AE0FC1DD231E414400ED00DA /* PKLimitesMensuellesTableViewCell.h */,
+				AE0FC1DE231E414400ED00DA /* PKLimitesMensuellesTableViewCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -502,6 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE99DFD12317A12800694CB8 /* PKLimitesMensuellesViewController.m in Sources */,
+				AE0FC1DF231E414400ED00DA /* PKLimitesMensuellesTableViewCell.m in Sources */,
 				AE9A79C8231529570058B73F /* NSArray+log.m in Sources */,
 				AE537789231660A000160319 /* PKBillHistoryViewController.m in Sources */,
 				AE53779223167AE500160319 /* PKSetViewModel.m in Sources */,
@@ -512,6 +523,7 @@
 				AE53778C231660B700160319 /* PKBudgetViewController.m in Sources */,
 				AE9A79C9231529570058B73F /* NSDictionary+log.m in Sources */,
 				AE53779523167C7300160319 /* PKSetTableViewCell.m in Sources */,
+				AE0FC1DC231E3B1300ED00DA /* PKLimitesMensuellesModel.m in Sources */,
 				AE9A79EF2315313C0058B73F /* MBProgressHUD+PKNJ.m in Sources */,
 				AE53777823164BA400160319 /* PKLoginTableViewCell.m in Sources */,
 				AE3E6F47231CB88400585477 /* PKCategoryManagementModel.m in Sources */,
