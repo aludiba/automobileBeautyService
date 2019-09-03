@@ -35,6 +35,7 @@
 		724C831E231BB4C600785ACB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9C7320230650F9008E968A /* CoreGraphics.framework */; };
 		724C831F231BB4CF00785ACB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9C73302306516A008E968A /* Security.framework */; };
 		724C8320231BB4D900785ACB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9C732223065105008E968A /* CoreLocation.framework */; };
+		72AF35AD231EA8A80036BE14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72AF35AF231EA8A80036BE14 /* InfoPlist.strings */; };
 		72B68B102308F3ED004F51E6 /* ABMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B68B0F2308F3ED004F51E6 /* ABMapViewController.m */; };
 		AE1178C02310D1A50036B11D /* ABLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1178BF2310D1A50036B11D /* ABLoginViewController.m */; };
 		AE1178C32310DC1B0036B11D /* ABModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1178C22310DC1B0036B11D /* ABModifyNicknameViewController.m */; };
@@ -87,6 +88,9 @@
 		724C8315231BB46F00785ACB /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		724C8317231BB48300785ACB /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		724C831B231BB4AA00785ACB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		72AF35AE231EA8A80036BE14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72AF35B0231EA8AC0036BE14 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		72AF35B1231EA8B20036BE14 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		72B68B0E2308F3ED004F51E6 /* ABMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABMapViewController.h; sourceTree = "<group>"; };
 		72B68B0F2308F3ED004F51E6 /* ABMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABMapViewController.m; sourceTree = "<group>"; };
 		80596B462DD51DFDAD6BF2FF /* Pods-AroundTheDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundTheDB.debug.xcconfig"; path = "Target Support Files/Pods-AroundTheDB/Pods-AroundTheDB.debug.xcconfig"; sourceTree = "<group>"; };
@@ -315,6 +319,7 @@
 				AED1745323015E8C00764DCA /* AppDelegate.m */,
 				AED1745E23015E9200764DCA /* Assets.xcassets */,
 				AED1746323015E9200764DCA /* Info.plist */,
+				72AF35AF231EA8A80036BE14 /* InfoPlist.strings */,
 				AED1746423015E9200764DCA /* main.m */,
 				AED1745B23015E8C00764DCA /* AroundTheDB.xcdatamodeld */,
 			);
@@ -441,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AED1745F23015E9200764DCA /* Assets.xcassets in Resources */,
+				72AF35AD231EA8A80036BE14 /* InfoPlist.strings in Resources */,
 				724C82EB231B5AA100785ACB /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,6 +541,16 @@
 				724C82EF231B5AA500785ACB /* fr */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		72AF35AF231EA8A80036BE14 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72AF35AE231EA8A80036BE14 /* en */,
+				72AF35B0231EA8AC0036BE14 /* zh-Hans */,
+				72AF35B1231EA8B20036BE14 /* fr */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -659,7 +675,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = AroundTheDB/AroundTheDB.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Norman Graham (VWNPTX8H3L)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Norman Graham (W7R75RGDQ4)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = VWNPTX8H3L;
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
@@ -677,7 +693,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.AroundDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = pro_aroundDB_dis_2019.09.01;
+				PROVISIONING_PROFILE_SPECIFIER = pro_aroundDB_dev_2019.09.01;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -689,7 +705,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = AroundTheDB/AroundTheDB.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Norman Graham (VWNPTX8H3L)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Norman Graham (W7R75RGDQ4)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = VWNPTX8H3L;
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
@@ -707,7 +723,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.AroundDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = pro_aroundDB_dis_2019.09.01;
+				PROVISIONING_PROFILE_SPECIFIER = pro_aroundDB_dev_2019.09.01;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

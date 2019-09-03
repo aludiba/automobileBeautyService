@@ -1,0 +1,12 @@
+/* 
+  InfoPlist.strings
+  AroundTheDB
+
+  Created by 褚红彪 on 2019/9/3.
+  Copyright © 2019 hgg. All rights reserved.
+*/
+NSLocationAlwaysUsageDescription = "Est-ce que notre application peut enregistrer les endroits où le son est détecté en décibels en obtenant vos informations de localisation géographique?";
+NSLocationWhenInUseUsageDescription = "Est-ce que notre application peut enregistrer les endroits où le son est détecté en décibels en obtenant vos informations de localisation géographique?";
+NSMicrophoneUsageDescription = "Notre application est-elle autorisée à utiliser votre microphone pour la détection en db?";
+NSSpeechRecognitionUsageDescription = "Notre application est-elle autorisée à utiliser votre microphone pour la détection en db?";
+NSMicrophoneUsageDescription = "Notre application est-elle autorisée à utiliser votre microphone pour la détection en db?";

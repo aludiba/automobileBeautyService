@@ -1,0 +1,12 @@
+/* 
+  InfoPlist.strings
+  AroundTheDB
+
+  Created by 褚红彪 on 2019/9/3.
+  Copyright © 2019 hgg. All rights reserved.
+*/
+NSLocationAlwaysUsageDescription = "Will it allow our app to record the location of the decibel detection by taking your geo-location information?";
+NSLocationWhenInUseUsageDescription = "Will it allow our app to record the location of the decibel detection by taking your geo-location information?";
+NSMicrophoneUsageDescription = "Allow our application to use your microphone for decibel detection?";
+NSSpeechRecognitionUsageDescription = "Allow our application to use your microphone for decibel detection?";
+NSMicrophoneUsageDescription = "Allow our application to use your microphone for decibel detection?";

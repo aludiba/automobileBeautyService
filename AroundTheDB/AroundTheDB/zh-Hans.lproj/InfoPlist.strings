@@ -1,0 +1,12 @@
+/* 
+  InfoPlist.strings
+  AroundTheDB
+
+  Created by 褚红彪 on 2019/9/3.
+  Copyright © 2019 hgg. All rights reserved.
+*/
+NSLocationAlwaysUsageDescription = "允许我们的应用程序通过获取你的地理位置信息以记录声音分贝检测的地点吗？";
+NSLocationWhenInUseUsageDescription = "允许我们的应用程序通过获取你的地理位置信息以记录声音分贝检测的地点吗？";
+NSMicrophoneUsageDescription = "允许我们的应用程序使用您的麦克风以进行分贝检测吗?";
+NSSpeechRecognitionUsageDescription = "允许我们的应用程序使用您的麦克风以进行分贝检测吗??";
+NSMicrophoneUsageDescription = "允许我们的应用程序使用您的麦克风以进行分贝检测吗?";
