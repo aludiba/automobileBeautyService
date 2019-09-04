@@ -234,7 +234,9 @@
         __weak typeof(self) weakSelf = self;
         mapVC.ABMapViewControllerB = ^(ABMapViewController * _Nonnull vc) {
             BMKLocation *location = vc.locatio;
-            weakSelf.model.position = [NSString stringWithFormat:@"%@%@%@%@",location.rgcData.city,location.rgcData.district,location.rgcData.street,location.rgcData.locationDescribe];
+            if (location.rgcData) {
+                weakSelf.model.position = [NSString stringWithFormat:@"%@%@%@%@",location.rgcData.city,location.rgcData.district,location.rgcData.street,location.rgcData.locationDescribe];
+            }
             [weakSelf.mainTable reloadData];
         };
         [self.navigationController pushViewController:mapVC animated:YES];
