@@ -154,6 +154,7 @@
                 }];
             } else {
                 [MBProgressHUD ABshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
+                NSLog(@"error:%@",[error description]);
             }
         }];
     }
