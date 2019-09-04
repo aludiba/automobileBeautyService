@@ -10,6 +10,9 @@
 		12C797A32D7C51C37C510662 /* Pods_PocketBooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA27E718A7D03D70ADC5C19 /* Pods_PocketBooks.framework */; };
 		AE0FC1DC231E3B1300ED00DA /* PKLimitesMensuellesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0FC1DB231E3B1300ED00DA /* PKLimitesMensuellesModel.m */; };
 		AE0FC1DF231E414400ED00DA /* PKLimitesMensuellesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0FC1DE231E414400ED00DA /* PKLimitesMensuellesTableViewCell.m */; };
+		AE0FC1E2231F905400ED00DA /* PKAddBudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0FC1E1231F905400ED00DA /* PKAddBudgetViewController.m */; };
+		AE0FC1E5231F90B300ED00DA /* PKBudgetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0FC1E4231F90B300ED00DA /* PKBudgetModel.m */; };
+		AE0FC1E8231F96BF00ED00DA /* PKAddBudgetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0FC1E7231F96BF00ED00DA /* PKAddBudgetTableViewCell.m */; };
 		AE3E6F47231CB88400585477 /* PKCategoryManagementModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3E6F46231CB88400585477 /* PKCategoryManagementModel.m */; };
 		AE3E6F51231CF73400585477 /* PKCategoryManagerCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3E6F50231CF73400585477 /* PKCategoryManagerCollectionReusableView.m */; };
 		AE5377752316482300160319 /* PKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5377742316482300160319 /* PKLoginViewController.m */; };
@@ -45,6 +48,12 @@
 		AE0FC1DB231E3B1300ED00DA /* PKLimitesMensuellesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKLimitesMensuellesModel.m; sourceTree = "<group>"; };
 		AE0FC1DD231E414400ED00DA /* PKLimitesMensuellesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKLimitesMensuellesTableViewCell.h; sourceTree = "<group>"; };
 		AE0FC1DE231E414400ED00DA /* PKLimitesMensuellesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKLimitesMensuellesTableViewCell.m; sourceTree = "<group>"; };
+		AE0FC1E0231F905400ED00DA /* PKAddBudgetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKAddBudgetViewController.h; sourceTree = "<group>"; };
+		AE0FC1E1231F905400ED00DA /* PKAddBudgetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKAddBudgetViewController.m; sourceTree = "<group>"; };
+		AE0FC1E3231F90B300ED00DA /* PKBudgetModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKBudgetModel.h; sourceTree = "<group>"; };
+		AE0FC1E4231F90B300ED00DA /* PKBudgetModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKBudgetModel.m; sourceTree = "<group>"; };
+		AE0FC1E6231F96BF00ED00DA /* PKAddBudgetTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKAddBudgetTableViewCell.h; sourceTree = "<group>"; };
+		AE0FC1E7231F96BF00ED00DA /* PKAddBudgetTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKAddBudgetTableViewCell.m; sourceTree = "<group>"; };
 		AE3E6F45231CB88400585477 /* PKCategoryManagementModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKCategoryManagementModel.h; sourceTree = "<group>"; };
 		AE3E6F46231CB88400585477 /* PKCategoryManagementModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKCategoryManagementModel.m; sourceTree = "<group>"; };
 		AE3E6F4F231CF73400585477 /* PKCategoryManagerCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKCategoryManagerCollectionReusableView.h; sourceTree = "<group>"; };
@@ -186,6 +195,8 @@
 		AE9A79AD231525460058B73F /* models */ = {
 			isa = PBXGroup;
 			children = (
+				AE0FC1E3231F90B300ED00DA /* PKBudgetModel.h */,
+				AE0FC1E4231F90B300ED00DA /* PKBudgetModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -195,6 +206,8 @@
 			children = (
 				AE53778A231660B700160319 /* PKBudgetViewController.h */,
 				AE53778B231660B700160319 /* PKBudgetViewController.m */,
+				AE0FC1E0231F905400ED00DA /* PKAddBudgetViewController.h */,
+				AE0FC1E1231F905400ED00DA /* PKAddBudgetViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -202,6 +215,8 @@
 		AE9A79AF231525460058B73F /* views */ = {
 			isa = PBXGroup;
 			children = (
+				AE0FC1E6231F96BF00ED00DA /* PKAddBudgetTableViewCell.h */,
+				AE0FC1E7231F96BF00ED00DA /* PKAddBudgetTableViewCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -512,6 +527,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE99DFD12317A12800694CB8 /* PKLimitesMensuellesViewController.m in Sources */,
+				AE0FC1E8231F96BF00ED00DA /* PKAddBudgetTableViewCell.m in Sources */,
 				AE0FC1DF231E414400ED00DA /* PKLimitesMensuellesTableViewCell.m in Sources */,
 				AE9A79C8231529570058B73F /* NSArray+log.m in Sources */,
 				AE537789231660A000160319 /* PKBillHistoryViewController.m in Sources */,
@@ -521,6 +537,7 @@
 				AE53778F231660D700160319 /* PKDistributionViewController.m in Sources */,
 				AE99DFCE2317A10700694CB8 /* PKCategoryManagementViewController.m in Sources */,
 				AE53778C231660B700160319 /* PKBudgetViewController.m in Sources */,
+				AE0FC1E5231F90B300ED00DA /* PKBudgetModel.m in Sources */,
 				AE9A79C9231529570058B73F /* NSDictionary+log.m in Sources */,
 				AE53779523167C7300160319 /* PKSetTableViewCell.m in Sources */,
 				AE0FC1DC231E3B1300ED00DA /* PKLimitesMensuellesModel.m in Sources */,
@@ -535,6 +552,7 @@
 				AE99DFD42317D73C00694CB8 /* PKCategoryManagerCollectionViewCell.m in Sources */,
 				AE9A799823151A0C0058B73F /* AppDelegate.m in Sources */,
 				AE99DFCB2317705600694CB8 /* PKPasswordChangeViewController.m in Sources */,
+				AE0FC1E2231F905400ED00DA /* PKAddBudgetViewController.m in Sources */,
 				AE9A79ED2315313C0058B73F /* PKHBTool.m in Sources */,
 				AE9A79EE2315313C0058B73F /* PKUIUtilities.m in Sources */,
 				AE9A79D523152AC70058B73F /* PKBaseViewController.m in Sources */,

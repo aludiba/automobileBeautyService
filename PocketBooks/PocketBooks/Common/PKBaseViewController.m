@@ -41,6 +41,7 @@
         self.navigationItem.hidesBackButton = YES;
         _PKbackButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
         [_PKbackButton setImage:[UIImage imageNamed:@"PKbtn_back"] forState:UIControlStateNormal];
+        [_PKbackButton setImage:[UIImage imageNamed:@"PKbtn_back"] forState:UIControlStateSelected];
         _PKbackButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [_PKbackButton addTarget:self action:@selector(PKbackButtonAction) forControlEvents:UIControlEventTouchUpInside];
         UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:_PKbackButton];

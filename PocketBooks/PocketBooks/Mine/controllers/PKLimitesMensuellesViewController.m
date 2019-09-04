@@ -19,6 +19,7 @@
 @property(nonatomic, copy)NSString *unit;//金额单位
 @property(nonatomic, strong)NSMutableArray *viewDataArray;
 @property(nonatomic, strong)UITableView *mainTable;
+@property(nonatomic, copy)NSString *nowTimeStampString;
 @end
 
 @implementation PKLimitesMensuellesViewController
@@ -27,6 +28,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = NSLocalizedString(@"每月限额", nil);
+    NSDate *nowDate = [[NSDate alloc] init];
+    self.nowTimeStampString = [PKUIUtilities PKformattedTimeStringWithDate:nowDate format:@"yyyyMM"];
+    
     self.totalAmount = 0;
     NSArray *languageArry = [NSLocale preferredLanguages];
     NSString *currentLanguage = [languageArry objectAtIndex:0];
@@ -65,7 +69,10 @@
         }else{
             if (array.count) {
             [weakSelf.viewDataArray removeAllObjects];
-            BmobObject *obj = [array lastObject];
+            for (int i = 0; i < array.count; i++) {
+            BmobObject *obj = array[i];
+            NSString *timeStamp = [obj objectForKey:@"timeStamp"];
+            if ([timeStamp isEqualToString:self.nowTimeStampString]) {
             weakSelf.objectId = [obj objectId];
             NSArray *dataArray  = [obj objectForKey:@"data"];
             for (int i = 0;i < dataArray.count; i++) {
@@ -136,6 +143,8 @@
                         break;
                 }
                 [weakSelf.viewDataArray addObject:model];
+               }
+              }
             }
             self.totalAmountLbl.text = [NSString stringWithFormat:@"%@%@",NSLocalizedString(@"总金额:", nil),[NSString stringWithFormat:@"%ld%@",self.totalAmount,self.unit]];
             [self.view addSubview:self.totalAmountLbl];
@@ -146,6 +155,7 @@
                 make.height.mas_equalTo(21);
             }];
             [weakSelf.mainTable reloadData];
+                [self loadInitData];
             }else{
 //                [self loadDataCategory];
                 [MBProgressHUD PKshowReminderText:NSLocalizedString(@"暂无数据", nil)];
@@ -153,7 +163,34 @@
         }
     }];
 }
+- (void)loadInitData{
+    BmobQuery *bquery = [BmobQuery queryWithClassName:@"PKBudget"];
+    BmobUser *author = [BmobUser currentUser];
+    [bquery whereKey:@"author" equalTo:author];
+    //查找GameScore表的数据
+    __weak typeof(self) weakSelf = self;
+    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+        if (error) {
+            weakSelf.editButton.hidden = NO;
+        }else{
+            if (array.count) {
+                for (int i = 0; i < array.count; i++) {
+                    BmobObject *obj = array[i];
+                    NSDate *date = [obj objectForKey:@"date"];
+                    NSString *dateString = [PKUIUtilities PKformattedTimeStringWithDate:date format:@"yyyyMM"];
+                    if ([dateString isEqualToString:self.nowTimeStampString]) {
+                        self.editButton.hidden = YES;
+                        break;
+                    }
+                }
+            }else{
+                weakSelf.editButton.hidden = NO;
+            }
+        }
+    }];
+}
 - (void)PKbackButtonAction{
+    if (self.editButton.isHidden == NO) {
 if (self.isEdit == NO) {
     if (self.viewDataArray.count && (self.totalAmount > 0)) {
         if (self.objectId.length) {
@@ -185,6 +222,9 @@ if (self.isEdit == NO) {
 }else{
     [self.navigationController popViewControllerAnimated:YES];
    }
+    }else{
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 - (void)setNewMensuelles{
     NSMutableArray *tempArray = [[NSMutableArray alloc] init];

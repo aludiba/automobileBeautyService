@@ -19,6 +19,7 @@
 @property(nonatomic, strong)NSMutableArray *dataArray;
 @property(nonatomic, strong)UICollectionView *collectionView;
 @property(nonatomic, copy)NSString *objectId;
+@property(nonatomic, copy)NSString *nowTimeStampString;
 @end
 
 @implementation PKCategoryManagementViewController
@@ -26,6 +27,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = NSLocalizedString(@"类别管理", nil);
+    NSDate *nowDate = [[NSDate alloc] init];
+    self.nowTimeStampString = [PKUIUtilities PKformattedTimeStringWithDate:nowDate format:@"yyyyMM"];
     [self setContentView];
 }
 - (void)PK_setupNavigationItems{
@@ -139,7 +142,10 @@
             [MBProgressHUD PKshowReminderText:[NSString stringWithFormat:@"%@",error]];
         }else{
             [weakSelf.selectArray removeAllObjects];
-            BmobObject *obj = [array lastObject];
+            for (int i = 0; i < array.count; i++) {
+            BmobObject *obj = array[i];
+            NSString *timeStamp = [obj objectForKey:@"timeStamp"];
+                if ([timeStamp isEqualToString:self.nowTimeStampString]) {
             weakSelf.objectId = [obj objectId];
             NSArray *dataArray  = [obj objectForKey:@"data"];
             for (int i = 0;i < dataArray.count; i++) {
@@ -209,6 +215,8 @@
                 model.content = [dic objectForKey:@"content"];
                 [weakSelf.selectArray addObject:model];
             }
+            }
+            }
             for (int j = 0; j < self.dataArray.count; j++) {
                 PKLimitesMensuellesModel *model = self.dataArray[j];
                 for (PKLimitesMensuellesModel *selectmodel in self.selectArray) {
@@ -219,6 +227,33 @@
                 }
             }
             [weakSelf.collectionView reloadData];
+            [self loadInitData];
+        }
+    }];
+}
+- (void)loadInitData{
+    BmobQuery *bquery = [BmobQuery queryWithClassName:@"PKBudget"];
+    BmobUser *author = [BmobUser currentUser];
+    [bquery whereKey:@"author" equalTo:author];
+    //查找GameScore表的数据
+    __weak typeof(self) weakSelf = self;
+    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+        if (error) {
+            weakSelf.editButton.hidden = NO;
+        }else{
+            if (array.count) {
+                for (int i = 0; i < array.count; i++) {
+                    BmobObject *obj = array[i];
+                NSDate *date = [obj objectForKey:@"date"];
+                NSString *dateString = [PKUIUtilities PKformattedTimeStringWithDate:date format:@"yyyyMM"];
+                if ([dateString isEqualToString:self.nowTimeStampString]) {
+                    self.editButton.hidden = YES;
+                    break;
+                   }
+                  }
+                }else{
+                    weakSelf.editButton.hidden = NO;
+            }
         }
     }];
 }
@@ -259,7 +294,9 @@
         NSDictionary *jsonDictionary = (NSDictionary *)[selectModel yy_modelToJSONObject];
         [tempArray addObject:jsonDictionary];
     }
-    NSDictionary *dic = @{@"data":tempArray};
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+    [dic setObject:tempArray forKey:@"data"];
+    [dic setObject:self.nowTimeStampString forKey:@"timeStamp"];
     BmobObject *diary = [BmobObject objectWithClassName:@"PKCategory"];
     [diary saveAllWithDictionary:dic];
     BmobUser *author = [BmobUser currentUser];
