@@ -52,111 +52,21 @@
 - (void)setContentView{
     [self loadData];
 }
-- (void)loadDataCategory{
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"PKCategory"];
-    BmobUser *author = [BmobUser currentUser];
-    [bquery whereKey:@"author" equalTo:author];
-    //查找GameScore表的数据
-    __weak typeof(self) weakSelf = self;    //查找GameScore表的数据
-    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-        if (error) {
-            [MBProgressHUD PKshowReminderText:[NSString stringWithFormat:@"%@",error]];
-        }else{
-            [weakSelf.viewDataArray removeAllObjects];
-            BmobObject *obj = [array lastObject];
-            NSArray *dataArray  = [obj objectForKey:@"data"];
-            for (int i = 0;i < dataArray.count; i++) {
-                NSDictionary *dic = dataArray[i];
-                PKLimitesMensuellesModel *model = [[PKLimitesMensuellesModel alloc] init];
-                model.isEdit = NO;
-                model.unit = self.unit;
-                model.code = [[dic objectForKey:@"code"] integerValue];
-                switch (model.code) {
-                    case 000:
-                        model.title = NSLocalizedString(@"服饰", nil);
-                        break;
-                    case 001:
-                        model.title = NSLocalizedString(@"食品", nil);
-                        break;
-                    case 002:
-                        model.title = NSLocalizedString(@"房屋", nil);
-                        break;
-                    case 003:
-                        model.title = NSLocalizedString(@"交通", nil);
-                        break;
-                    case 004:
-                        model.title = NSLocalizedString(@"健康", nil);
-                        break;
-                    case 005:
-                        model.title = NSLocalizedString(@"空闲", nil);
-                        break;
-                    case 006:
-                        model.title = NSLocalizedString(@"网费", nil);
-                        break;
-                    case 007:
-                        model.title = NSLocalizedString(@"手机", nil);
-                        break;
-                    case 071:
-                        model.title = NSLocalizedString(@"水费", nil);
-                        break;
-                    case 072:
-                        model.title = NSLocalizedString(@"电费", nil);
-                        break;
-                    case 010:
-                        model.title = NSLocalizedString(@"取暖费", nil);
-                        break;
-                    case 011:
-                        model.title = NSLocalizedString(@"物业", nil);
-                        break;
-                    case 012:
-                        model.title = NSLocalizedString(@"车位", nil);
-                        break;
-                    case 013:
-                        model.title = NSLocalizedString(@"装修", nil);
-                        break;
-                    case 014:
-                        model.title = NSLocalizedString(@"家电", nil);
-                        break;
-                    case 015:
-                        model.title = NSLocalizedString(@"服务", nil);
-                        break;
-                    case 016:
-                        model.title = NSLocalizedString(@"家居", nil);
-                        break;
-                    case 017:
-                        model.title = NSLocalizedString(@"其它", nil);
-                        break;
-                    default:
-                        break;
-                }
-                [weakSelf.viewDataArray addObject:model];
-            }
-            [self.view addSubview:self.totalAmountLbl];
-            [self.totalAmountLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.top.equalTo(self.mas_topLayoutGuideBottom).offset(20);
-                make.centerX.equalTo(self.view);
-                make.width.mas_equalTo(PKWIDTH);
-                make.height.mas_equalTo(21);
-            }];
-            [weakSelf.mainTable reloadData];
-        }
-    }];
-}
 - (void)loadData{
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"PKLimitesMensuelles"];
+    BmobQuery *bquery = [BmobQuery queryWithClassName:@"PKCategory"];
     BmobUser *author = [BmobUser currentUser];
     [bquery whereKey:@"author" equalTo:author];
     //查找GameScore表的数据
     __weak typeof(self) weakSelf = self;
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
         if (error) {
-            [self loadDataCategory];
+            [MBProgressHUD PKshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
+//            [self loadDataCategory];
         }else{
             if (array.count) {
             [weakSelf.viewDataArray removeAllObjects];
             BmobObject *obj = [array lastObject];
             weakSelf.objectId = [obj objectId];
-            self.totalAmountLbl.text = [NSString stringWithFormat:@"%@%@",NSLocalizedString(@"总金额:", nil),[NSString stringWithFormat:@"%ld%@",[[obj objectForKey:@"totalAmount"] integerValue],self.unit]];
             NSArray *dataArray  = [obj objectForKey:@"data"];
             for (int i = 0;i < dataArray.count; i++) {
                 NSDictionary *dic = dataArray[i];
@@ -165,6 +75,8 @@
                 model.unit = self.unit;
                 model.code = [[dic objectForKey:@"code"] integerValue];
                 model.content = [dic objectForKey:@"content"];
+                NSUInteger num = [[dic objectForKey:@"content"] integerValue];
+                self.totalAmount += num;
                 switch (model.code) {
                     case 000:
                         model.title = NSLocalizedString(@"服饰", nil);
@@ -225,6 +137,7 @@
                 }
                 [weakSelf.viewDataArray addObject:model];
             }
+            self.totalAmountLbl.text = [NSString stringWithFormat:@"%@%@",NSLocalizedString(@"总金额:", nil),[NSString stringWithFormat:@"%ld%@",self.totalAmount,self.unit]];
             [self.view addSubview:self.totalAmountLbl];
             [self.totalAmountLbl mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.top.equalTo(self.mas_topLayoutGuideBottom).offset(20);
@@ -234,7 +147,8 @@
             }];
             [weakSelf.mainTable reloadData];
             }else{
-                [self loadDataCategory];
+//                [self loadDataCategory];
+                [MBProgressHUD PKshowReminderText:NSLocalizedString(@"暂无数据", nil)];
             }
         }
     }];
@@ -243,12 +157,23 @@
 if (self.isEdit == NO) {
     if (self.viewDataArray.count && (self.totalAmount > 0)) {
         if (self.objectId.length) {
-            BmobObject *Diary = [BmobObject objectWithoutDataWithClassName:@"PKLimitesMensuelles" objectId:self.objectId];
-            [Diary deleteInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
+            BmobObject *Diary = [BmobObject objectWithoutDataWithClassName:@"PKCategory" objectId:self.objectId];
+            NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+            for (int i = 0; i < self.viewDataArray.count; i++) {
+                PKLimitesMensuellesModel *selectModel = self.viewDataArray[i];
+                selectModel.isSelect = YES;
+                NSDictionary *jsonDictionary = (NSDictionary *)[selectModel yy_modelToJSONObject];
+                [tempArray addObject:jsonDictionary];
+            }
+            NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+            [dic setObject:[NSNumber numberWithInteger:self.totalAmount] forKey:@"totalAmount"];
+            [dic setObject:tempArray forKey:@"data"];
+            [Diary saveAllWithDictionary:dic];
+            [Diary updateInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
                 if (isSuccessful) {
-                    [self setNewMensuelles];
+                    [self.navigationController popViewControllerAnimated:YES];
                 }else{
-                    NSLog(@"删除数据错误error:%@",error);
+                    [MBProgressHUD PKshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
                 }
             }];
         }else{
@@ -265,13 +190,14 @@ if (self.isEdit == NO) {
     NSMutableArray *tempArray = [[NSMutableArray alloc] init];
     for (int i = 0; i < self.viewDataArray.count; i++) {
         PKLimitesMensuellesModel *selectModel = self.viewDataArray[i];
+        selectModel.isSelect = YES;
         NSDictionary *jsonDictionary = (NSDictionary *)[selectModel yy_modelToJSONObject];
         [tempArray addObject:jsonDictionary];
     }
     NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
     [dic setObject:[NSNumber numberWithInteger:self.totalAmount] forKey:@"totalAmount"];
     [dic setObject:tempArray forKey:@"data"];
-    BmobObject *diary = [BmobObject objectWithClassName:@"PKLimitesMensuelles"];
+    BmobObject *diary = [BmobObject objectWithClassName:@"PKCategory"];
     [diary saveAllWithDictionary:dic];
     BmobUser *author = [BmobUser currentUser];
     [diary setObject:author forKey:@"author"];
@@ -283,6 +209,7 @@ if (self.isEdit == NO) {
             //发生错误后的动作
             [MBProgressHUD PKshowReminderText:[NSString stringWithFormat:@"%@",error]];
         } else {
+//            [MBProgressHUD PKshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
             NSLog(@"Unknow error");
         }
     }];
@@ -300,6 +227,7 @@ if (self.isEdit == NO) {
         [self.mainTable reloadData];
     }else{
         [self.editButton setTitle:NSLocalizedString(@"编辑", nil) forState:UIControlStateNormal];
+        self.totalAmount = 0;
         for (int i = 0; i < self.viewDataArray.count; i++) {
             PKLimitesMensuellesModel *model = self.viewDataArray[i];
             model.isEdit = NO;

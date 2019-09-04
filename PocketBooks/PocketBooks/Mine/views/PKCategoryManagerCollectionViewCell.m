@@ -7,7 +7,7 @@
 //
 
 #import "PKCategoryManagerCollectionViewCell.h"
-#import "PKCategoryManagementModel.h"
+#import "PKLimitesMensuellesModel.h"
 @interface PKCategoryManagerCollectionViewCell()
 @property(nonatomic, strong)UIButton *operationButton;
 @property(nonatomic, strong)UILabel *contentLabel;
@@ -70,9 +70,9 @@
 //        self.operationButton.hidden = YES;
 //    }
 //}
-- (void)setModel:(PKCategoryManagementModel *)model{
+- (void)setModel:(PKLimitesMensuellesModel *)model{
     _model = model;
-    self.contentLabel.text = _model.content;
+    self.contentLabel.text = _model.title;
     if (self.isEdit) {
         self.operationButton.hidden = NO;
         if (_model.isSelect) {

@@ -7,7 +7,7 @@
 //
 
 #import "PKCategoryManagementViewController.h"
-#import "PKCategoryManagementModel.h"
+#import "PKLimitesMensuellesModel.h"
 #import "PKCategoryManagerCollectionReusableView.h"
 #import "PKCategoryManagerCollectionViewCell.h"
 
@@ -37,93 +37,93 @@
     self.navigationItem.rightBarButtonItem = editButtonItem;
 }
 -(void)setContentView{
-    PKCategoryManagementModel *model = [[PKCategoryManagementModel alloc] init];
-    model.content = NSLocalizedString(@"服饰", nil);
+    PKLimitesMensuellesModel *model = [[PKLimitesMensuellesModel alloc] init];
+    model.title = NSLocalizedString(@"服饰", nil);
     model.code = 000;
     [self.dataArray addObject:model];
     
-    PKCategoryManagementModel *model1 = [[PKCategoryManagementModel alloc] init];
-    model1.content = NSLocalizedString(@"食品", nil);
+    PKLimitesMensuellesModel *model1 = [[PKLimitesMensuellesModel alloc] init];
+    model1.title = NSLocalizedString(@"食品", nil);
     model1.code = 001;
     [self.dataArray addObject:model1];
     
-    PKCategoryManagementModel *model2 = [[PKCategoryManagementModel alloc] init];
-    model2.content = NSLocalizedString(@"房屋", nil);
+    PKLimitesMensuellesModel *model2 = [[PKLimitesMensuellesModel alloc] init];
+    model2.title = NSLocalizedString(@"房屋", nil);
     model2.code = 002;
     [self.dataArray addObject:model2];
     
-    PKCategoryManagementModel *model3 = [[PKCategoryManagementModel alloc] init];
-    model3.content = NSLocalizedString(@"交通", nil);
+    PKLimitesMensuellesModel *model3 = [[PKLimitesMensuellesModel alloc] init];
+    model3.title = NSLocalizedString(@"交通", nil);
     model3.code = 003;
     [self.dataArray addObject:model3];
     
-    PKCategoryManagementModel *model4 = [[PKCategoryManagementModel alloc] init];
-    model4.content = NSLocalizedString(@"健康", nil);
+    PKLimitesMensuellesModel *model4 = [[PKLimitesMensuellesModel alloc] init];
+    model4.title = NSLocalizedString(@"健康", nil);
     model4.code = 004;
     [self.dataArray addObject:model4];
     
-    PKCategoryManagementModel *model5 = [[PKCategoryManagementModel alloc] init];
-    model5.content = NSLocalizedString(@"空闲", nil);
+    PKLimitesMensuellesModel *model5 = [[PKLimitesMensuellesModel alloc] init];
+    model5.title = NSLocalizedString(@"空闲", nil);
     model5.code = 005;
     [self.dataArray addObject:model5];
     
-    PKCategoryManagementModel *model6 = [[PKCategoryManagementModel alloc] init];
-    model6.content = NSLocalizedString(@"网费", nil);
+    PKLimitesMensuellesModel *model6 = [[PKLimitesMensuellesModel alloc] init];
+    model6.title = NSLocalizedString(@"网费", nil);
     model6.code = 006;
     [self.dataArray addObject:model6];
     
-    PKCategoryManagementModel *model7 = [[PKCategoryManagementModel alloc] init];
-    model7.content = NSLocalizedString(@"手机", nil);
+    PKLimitesMensuellesModel *model7 = [[PKLimitesMensuellesModel alloc] init];
+    model7.title = NSLocalizedString(@"手机", nil);
     model7.code = 007;
     [self.dataArray addObject:model7];
     
-    PKCategoryManagementModel *model8 = [[PKCategoryManagementModel alloc] init];
-    model8.content = NSLocalizedString(@"水费", nil);
+    PKLimitesMensuellesModel *model8 = [[PKLimitesMensuellesModel alloc] init];
+    model8.title = NSLocalizedString(@"水费", nil);
     model8.code = 071;
     [self.dataArray addObject:model8];
     
-    PKCategoryManagementModel *model9 = [[PKCategoryManagementModel alloc] init];
-    model9.content = NSLocalizedString(@"电费", nil);
+    PKLimitesMensuellesModel *model9 = [[PKLimitesMensuellesModel alloc] init];
+    model9.title = NSLocalizedString(@"电费", nil);
     model9.code = 072;
     [self.dataArray addObject:model9];
     
-    PKCategoryManagementModel *model10 = [[PKCategoryManagementModel alloc] init];
-    model10.content = NSLocalizedString(@"取暖费", nil);
+    PKLimitesMensuellesModel *model10 = [[PKLimitesMensuellesModel alloc] init];
+    model10.title = NSLocalizedString(@"取暖费", nil);
     model10.code = 010;
     [self.dataArray addObject:model10];
     
-    PKCategoryManagementModel *model11 = [[PKCategoryManagementModel alloc] init];
-    model11.content = NSLocalizedString(@"物业", nil);
+    PKLimitesMensuellesModel *model11 = [[PKLimitesMensuellesModel alloc] init];
+    model11.title = NSLocalizedString(@"物业", nil);
     model11.code = 011;
     [self.dataArray addObject:model11];
     
-    PKCategoryManagementModel *model12 = [[PKCategoryManagementModel alloc] init];
-    model12.content = NSLocalizedString(@"车位", nil);
+    PKLimitesMensuellesModel *model12 = [[PKLimitesMensuellesModel alloc] init];
+    model12.title = NSLocalizedString(@"车位", nil);
     model12.code = 012;
     [self.dataArray addObject:model12];
     
-    PKCategoryManagementModel *model13 = [[PKCategoryManagementModel alloc] init];
-    model13.content = NSLocalizedString(@"装修", nil);
+    PKLimitesMensuellesModel *model13 = [[PKLimitesMensuellesModel alloc] init];
+    model13.title = NSLocalizedString(@"装修", nil);
     model13.code = 013;
     [self.dataArray addObject:model13];
     
-    PKCategoryManagementModel *model14 = [[PKCategoryManagementModel alloc] init];
-    model14.content = NSLocalizedString(@"家电", nil);
+    PKLimitesMensuellesModel *model14 = [[PKLimitesMensuellesModel alloc] init];
+    model14.title = NSLocalizedString(@"家电", nil);
     model14.code = 014;
     [self.dataArray addObject:model14];
     
-    PKCategoryManagementModel *model15 = [[PKCategoryManagementModel alloc] init];
-    model15.content = NSLocalizedString(@"服务", nil);
+    PKLimitesMensuellesModel *model15 = [[PKLimitesMensuellesModel alloc] init];
+    model15.title = NSLocalizedString(@"服务", nil);
     model15.code = 015;
     [self.dataArray addObject:model15];
     
-    PKCategoryManagementModel *model16 = [[PKCategoryManagementModel alloc] init];
-    model16.content = NSLocalizedString(@"家居", nil);
+    PKLimitesMensuellesModel *model16 = [[PKLimitesMensuellesModel alloc] init];
+    model16.title = NSLocalizedString(@"家居", nil);
     model16.code = 016;
     [self.dataArray addObject:model16];
     
-    PKCategoryManagementModel *model17 = [[PKCategoryManagementModel alloc] init];
-    model17.content = NSLocalizedString(@"其它", nil);
+    PKLimitesMensuellesModel *model17 = [[PKLimitesMensuellesModel alloc] init];
+    model17.title = NSLocalizedString(@"其它", nil);
     model17.code = 017;
     [self.dataArray addObject:model17];
     [self loadData];
@@ -144,72 +144,74 @@
             NSArray *dataArray  = [obj objectForKey:@"data"];
             for (int i = 0;i < dataArray.count; i++) {
                 NSDictionary *dic = dataArray[i];
-                PKCategoryManagementModel *model = [[PKCategoryManagementModel alloc] init];
+                PKLimitesMensuellesModel *model = [[PKLimitesMensuellesModel alloc] init];
                 model.code = [[dic objectForKey:@"code"] integerValue];
                 switch (model.code) {
                     case 000:
-                        model.content = NSLocalizedString(@"服饰", nil);
+                        model.title = NSLocalizedString(@"服饰", nil);
                         break;
                     case 001:
-                        model.content = NSLocalizedString(@"食品", nil);
+                        model.title = NSLocalizedString(@"食品", nil);
                         break;
                     case 002:
-                        model.content = NSLocalizedString(@"房屋", nil);
+                        model.title = NSLocalizedString(@"房屋", nil);
                         break;
                     case 003:
-                        model.content = NSLocalizedString(@"交通", nil);
+                        model.title = NSLocalizedString(@"交通", nil);
                         break;
                     case 004:
-                        model.content = NSLocalizedString(@"健康", nil);
+                        model.title = NSLocalizedString(@"健康", nil);
                         break;
                     case 005:
-                        model.content = NSLocalizedString(@"空闲", nil);
+                        model.title = NSLocalizedString(@"空闲", nil);
                         break;
                     case 006:
-                        model.content = NSLocalizedString(@"网费", nil);
+                        model.title = NSLocalizedString(@"网费", nil);
                         break;
                     case 007:
-                        model.content = NSLocalizedString(@"手机", nil);
+                        model.title = NSLocalizedString(@"手机", nil);
                         break;
                     case 071:
-                        model.content = NSLocalizedString(@"水费", nil);
+                        model.title = NSLocalizedString(@"水费", nil);
                         break;
                     case 072:
-                        model.content = NSLocalizedString(@"电费", nil);
+                        model.title = NSLocalizedString(@"电费", nil);
                         break;
                     case 010:
-                        model.content = NSLocalizedString(@"取暖费", nil);
+                        model.title = NSLocalizedString(@"取暖费", nil);
                         break;
                     case 011:
-                        model.content = NSLocalizedString(@"物业", nil);
+                        model.title = NSLocalizedString(@"物业", nil);
                         break;
                     case 012:
-                        model.content = NSLocalizedString(@"车位", nil);
+                        model.title = NSLocalizedString(@"车位", nil);
                         break;
                     case 013:
-                        model.content = NSLocalizedString(@"装修", nil);
+                        model.title = NSLocalizedString(@"装修", nil);
                         break;
                     case 014:
-                        model.content = NSLocalizedString(@"家电", nil);
+                        model.title = NSLocalizedString(@"家电", nil);
                         break;
                     case 015:
-                        model.content = NSLocalizedString(@"服务", nil);
+                        model.title = NSLocalizedString(@"服务", nil);
                         break;
                     case 016:
-                        model.content = NSLocalizedString(@"家居", nil);
+                        model.title = NSLocalizedString(@"家居", nil);
                         break;
                     case 017:
-                        model.content = NSLocalizedString(@"其它", nil);
+                        model.title = NSLocalizedString(@"其它", nil);
                         break;
                     default:
                         break;
                 }
                 model.isSelect = [[dic objectForKey:@"isSelect"] boolValue];
+                model.unit = [dic objectForKey:@"unit"];
+                model.content = [dic objectForKey:@"content"];
                 [weakSelf.selectArray addObject:model];
             }
             for (int j = 0; j < self.dataArray.count; j++) {
-                PKCategoryManagementModel *model = self.dataArray[j];
-                for (PKCategoryManagementModel *selectmodel in self.selectArray) {
+                PKLimitesMensuellesModel *model = self.dataArray[j];
+                for (PKLimitesMensuellesModel *selectmodel in self.selectArray) {
                     if (model.code == selectmodel.code) {
                         [self.dataArray removeObject:model];
                         j--;
@@ -225,11 +227,19 @@
     if (self.selectArray.count) {
         if (self.objectId.length) {
         BmobObject *Diary = [BmobObject objectWithoutDataWithClassName:@"PKCategory" objectId:self.objectId];
-        [Diary deleteInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
+        NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+        for (int i = 0; i < self.selectArray.count; i++) {
+            PKLimitesMensuellesModel *selectModel = self.selectArray[i];
+            NSDictionary *jsonDictionary = (NSDictionary *)[selectModel yy_modelToJSONObject];
+            [tempArray addObject:jsonDictionary];
+        }
+        NSDictionary *dic = @{@"data":tempArray};
+        [Diary saveAllWithDictionary:dic];
+        [Diary updateInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
             if (isSuccessful) {
-                [self setNewCategory];
+                [self.navigationController popViewControllerAnimated:YES];
             }else{
-                NSLog(@"删除数据错误error:%@",error);
+                [MBProgressHUD PKshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
             }
         }];
         }else{
@@ -245,7 +255,7 @@
 - (void)setNewCategory{
     NSMutableArray *tempArray = [[NSMutableArray alloc] init];
     for (int i = 0; i < self.selectArray.count; i++) {
-        PKCategoryManagementModel *selectModel = self.selectArray[i];
+        PKLimitesMensuellesModel *selectModel = self.selectArray[i];
         NSDictionary *jsonDictionary = (NSDictionary *)[selectModel yy_modelToJSONObject];
         [tempArray addObject:jsonDictionary];
     }
@@ -262,7 +272,7 @@
             //发生错误后的动作
             [MBProgressHUD PKshowReminderText:[NSString stringWithFormat:@"%@",error]];
         } else {
-            NSLog(@"Unknow error");
+//            [MBProgressHUD PKshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
         }
     }];
 }
@@ -308,18 +318,18 @@
     cell.isEdit = self.isEdit;
     // 设置cell
     if (indexPath.section == 0) {
-        PKCategoryManagementModel *model = self.selectArray[indexPath.row];
+        PKLimitesMensuellesModel *model = self.selectArray[indexPath.row];
         cell.model = model;
     }else {
-        PKCategoryManagementModel *model = self.dataArray[indexPath.row];
+        PKLimitesMensuellesModel *model = self.dataArray[indexPath.row];
         cell.model = model;
     }
     __weak typeof(self) weakSelf = self;
-    cell.finishSelectCategoryBlock = ^(PKCategoryManagementModel * _Nonnull categoryModel) {
+    cell.finishSelectCategoryBlock = ^(PKLimitesMensuellesModel * _Nonnull categoryModel) {
         weakSelf.isEdited = YES;
         Boolean isContain = NO;
-        PKCategoryManagementModel *selectModel;
-        for (PKCategoryManagementModel *selectmodel in self.selectArray) {
+        PKLimitesMensuellesModel *selectModel;
+        for (PKLimitesMensuellesModel *selectmodel in self.selectArray) {
             if (categoryModel.code == selectmodel.code) {
                 isContain = YES;
                 selectModel = selectmodel;

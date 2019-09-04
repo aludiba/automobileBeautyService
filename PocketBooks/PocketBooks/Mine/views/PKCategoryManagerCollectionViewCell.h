@@ -10,12 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @class PKCategoryManagerCollectionViewCell;
-@class PKCategoryManagementModel;
+@class PKLimitesMensuellesModel;
 typedef void(^operationBlock)(PKCategoryManagerCollectionViewCell *cell);
 @interface PKCategoryManagerCollectionViewCell : UICollectionViewCell
-@property (nonatomic, copy) void(^finishSelectCategoryBlock)(PKCategoryManagementModel *categoryModel);
+@property (nonatomic, copy) void(^finishSelectCategoryBlock)(PKLimitesMensuellesModel *categoryModel);
 @property(nonatomic, assign)Boolean isEdit;
-@property(nonatomic, strong)PKCategoryManagementModel *model;
+@property(nonatomic, strong)PKLimitesMensuellesModel *model;
 @property (nonatomic, copy)operationBlock operationB;
 @end
 
