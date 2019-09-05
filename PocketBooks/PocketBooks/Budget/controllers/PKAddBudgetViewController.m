@@ -24,6 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = PKH_Color(244, 245, 246, 1);
     self.title = NSLocalizedString(@"当天预算", nil);
     NSDate *nowDate = [[NSDate alloc] init];
     self.nowTimeStampString = [PKUIUtilities PKformattedTimeStringWithDate:nowDate format:@"yyyyMM"];

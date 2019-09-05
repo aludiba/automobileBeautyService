@@ -55,12 +55,14 @@
 "服务" = "service";
 "家居" = "household";
 "其它" = "other";
+
 "请输入金额" = "Please enter amount";
 "总金额:" = "The total amount:";
 "请填写完整" = "Please complete";
 "暂无数据" = "Temporarily no data";
 "限额" = "limit";
 "当天预算" = "On the day of the budget";
+"暂时无法添加预算" = "The budget cannot be added for the time being";
 
 
 

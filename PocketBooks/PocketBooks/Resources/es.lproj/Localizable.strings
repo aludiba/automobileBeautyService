@@ -55,12 +55,14 @@
 "服务" = "servicios";
 "家居" = "Enseres domésticos";
 "其它" = "otros";
+
 "请输入金额" = "Por favor introduzca la cantidad";
 "总金额:" = "Importe total:";
 "请填写完整" = "Por favor rellene";
 "暂无数据" = "Sin datos provisionales";
 "限额" = "Los límites";
 "当天预算" = "Presupuesto del día";
+"暂时无法添加预算" = "No se puede añadir presupuesto por el momento";
 
 
 

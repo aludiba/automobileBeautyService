@@ -13,6 +13,7 @@
 		AE0FC1E2231F905400ED00DA /* PKAddBudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0FC1E1231F905400ED00DA /* PKAddBudgetViewController.m */; };
 		AE0FC1E5231F90B300ED00DA /* PKBudgetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0FC1E4231F90B300ED00DA /* PKBudgetModel.m */; };
 		AE0FC1E8231F96BF00ED00DA /* PKAddBudgetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0FC1E7231F96BF00ED00DA /* PKAddBudgetTableViewCell.m */; };
+		AE0FC1EB2320D62800ED00DA /* PKBudgetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0FC1EA2320D62800ED00DA /* PKBudgetTableViewCell.m */; };
 		AE3E6F47231CB88400585477 /* PKCategoryManagementModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3E6F46231CB88400585477 /* PKCategoryManagementModel.m */; };
 		AE3E6F51231CF73400585477 /* PKCategoryManagerCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3E6F50231CF73400585477 /* PKCategoryManagerCollectionReusableView.m */; };
 		AE5377752316482300160319 /* PKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5377742316482300160319 /* PKLoginViewController.m */; };
@@ -54,6 +55,8 @@
 		AE0FC1E4231F90B300ED00DA /* PKBudgetModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKBudgetModel.m; sourceTree = "<group>"; };
 		AE0FC1E6231F96BF00ED00DA /* PKAddBudgetTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKAddBudgetTableViewCell.h; sourceTree = "<group>"; };
 		AE0FC1E7231F96BF00ED00DA /* PKAddBudgetTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKAddBudgetTableViewCell.m; sourceTree = "<group>"; };
+		AE0FC1E92320D62800ED00DA /* PKBudgetTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKBudgetTableViewCell.h; sourceTree = "<group>"; };
+		AE0FC1EA2320D62800ED00DA /* PKBudgetTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKBudgetTableViewCell.m; sourceTree = "<group>"; };
 		AE3E6F45231CB88400585477 /* PKCategoryManagementModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKCategoryManagementModel.h; sourceTree = "<group>"; };
 		AE3E6F46231CB88400585477 /* PKCategoryManagementModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKCategoryManagementModel.m; sourceTree = "<group>"; };
 		AE3E6F4F231CF73400585477 /* PKCategoryManagerCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKCategoryManagerCollectionReusableView.h; sourceTree = "<group>"; };
@@ -217,6 +220,8 @@
 			children = (
 				AE0FC1E6231F96BF00ED00DA /* PKAddBudgetTableViewCell.h */,
 				AE0FC1E7231F96BF00ED00DA /* PKAddBudgetTableViewCell.m */,
+				AE0FC1E92320D62800ED00DA /* PKBudgetTableViewCell.h */,
+				AE0FC1EA2320D62800ED00DA /* PKBudgetTableViewCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -543,6 +548,7 @@
 				AE0FC1DC231E3B1300ED00DA /* PKLimitesMensuellesModel.m in Sources */,
 				AE9A79EF2315313C0058B73F /* MBProgressHUD+PKNJ.m in Sources */,
 				AE53777823164BA400160319 /* PKLoginTableViewCell.m in Sources */,
+				AE0FC1EB2320D62800ED00DA /* PKBudgetTableViewCell.m in Sources */,
 				AE3E6F47231CB88400585477 /* PKCategoryManagementModel.m in Sources */,
 				AE5377862316609100160319 /* PKOverallSituationViewController.m in Sources */,
 				AE9A79A623151A0E0058B73F /* main.m in Sources */,
