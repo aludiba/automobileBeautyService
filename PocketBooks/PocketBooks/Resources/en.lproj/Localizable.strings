@@ -63,6 +63,7 @@
 "限额" = "limit";
 "当天预算" = "On the day of the budget";
 "暂时无法添加预算" = "The budget cannot be added for the time being";
+"暂无数据，请点击加号添加" = "No data temporarily, please click the plus sign to add";
 
 
 
