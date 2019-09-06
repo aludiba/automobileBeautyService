@@ -155,7 +155,6 @@
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
-
 #pragma mark - 属性懒加载
 - (UIButton *)addButton{
     if (!_addButton) {

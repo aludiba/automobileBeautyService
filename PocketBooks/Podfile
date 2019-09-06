@@ -18,4 +18,5 @@ target 'PocketBooks' do
     pod 'IQKeyboardManager'
     pod 'BmobSDK'
     pod 'AVOSCloud'
+    pod 'Charts'
 end

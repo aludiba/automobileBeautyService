@@ -17,9 +17,9 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.1</string>
 	<key>CFBundleVersion</key>
-	<string>4</string>
+	<string>2</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>baidumap</string>
@@ -33,6 +33,8 @@
 	</dict>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>允许我们的应用程序通过获取你的地理位置信息以记录声音分贝检测的地点吗？</string>
+	<key>NSLocationUsageDescription</key>
+	<string>允许我们的应用程序通过获取你的地理位置信息以记录声音分贝检测的地点吗？</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>允许我们的应用程序通过获取你的地理位置信息以记录声音分贝检测的地点吗？</string>
 	<key>NSMicrophoneUsageDescription</key>
@@ -41,6 +43,26 @@
 	<string>允许我们的应用程序使用您的麦克风以进行分贝检测吗?</string>
 	<key>Privacy - Microphone Usage Description </key>
 	<string>允许我们的应用程序使用您的麦克风以进行分贝检测吗?</string>
+	<key>Privacy - Photo Library Usage Description </key>
+	<string>是否允许此App访问您的相册？</string>
+	<key>NSCameraUsageDescription</key>
+	<string>App需要您的同意,才能访问相机</string>
+	<key>NSContactsUsageDescription</key>
+	<string>是否允许此App访问您的通讯录？</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>是否许允此App使用蓝牙？</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>是否允许此App使用日历？</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>App需要您的同意,才能访问提醒事项</string>
+	<key>NSMotionUsageDescription</key>
+	<string>App需要您的同意,才能访问运动与健身</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>App需要您的同意,才能访问健康更新 </string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>App需要您的同意,才能访问健康分享</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>App需要您的同意,才能访问媒体资料库</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

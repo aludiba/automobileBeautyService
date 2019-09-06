@@ -16,6 +16,9 @@ PODS:
     - AFNetworking/NSURLSession
   - AVOSCloud (11.6.5)
   - BmobSDK (2.3.4)
+  - Charts (3.3.0):
+    - Charts/Core (= 3.3.0)
+  - Charts/Core (3.3.0)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -36,6 +39,7 @@ DEPENDENCIES:
   - AFNetworking
   - AVOSCloud
   - BmobSDK
+  - Charts
   - FMDB
   - IQKeyboardManager
   - Masonry
@@ -51,6 +55,7 @@ SPEC REPOS:
     - AFNetworking
     - AVOSCloud
     - BmobSDK
+    - Charts
     - FMDB
     - IQKeyboardManager
     - Masonry
@@ -65,6 +70,7 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   AVOSCloud: 2929fb36ca7e919e094de5a598a43b31931b7896
   BmobSDK: 03e9889d92b721bfc2452faa5b2c2497581abbca
+  Charts: e0dd4cd8f257bccf98407b58183ddca8e8d5b578
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -75,6 +81,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 6b2bbb2616dc40e09f4aca11372634ca38bc744f
+PODFILE CHECKSUM: f1eea5702b8e17144eb2f1dc42bb5fea62bebcf0
 
 COCOAPODS: 1.7.5
