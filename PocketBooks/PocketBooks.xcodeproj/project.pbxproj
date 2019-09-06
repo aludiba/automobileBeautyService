@@ -27,6 +27,7 @@
 		AE53779223167AE500160319 /* PKSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53779123167AE500160319 /* PKSetViewModel.m */; };
 		AE53779523167C7300160319 /* PKSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53779423167C7300160319 /* PKSetTableViewCell.m */; };
 		AE9940F323220A50000FF4C6 /* chartsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9940F223220A4F000FF4C6 /* chartsSwift.swift */; };
+		AE9940F623224B08000FF4C6 /* PKBillHistoryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9940F523224B08000FF4C6 /* PKBillHistoryHeaderView.m */; };
 		AE99DFC82317703B00694CB8 /* PKModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99DFC72317703B00694CB8 /* PKModifyNicknameViewController.m */; };
 		AE99DFCB2317705600694CB8 /* PKPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99DFCA2317705600694CB8 /* PKPasswordChangeViewController.m */; };
 		AE99DFCE2317A10700694CB8 /* PKCategoryManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99DFCD2317A10700694CB8 /* PKCategoryManagementViewController.m */; };
@@ -86,6 +87,8 @@
 		AE53779423167C7300160319 /* PKSetTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKSetTableViewCell.m; sourceTree = "<group>"; };
 		AE9940F123220A4F000FF4C6 /* PocketBooks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PocketBooks-Bridging-Header.h"; sourceTree = "<group>"; };
 		AE9940F223220A4F000FF4C6 /* chartsSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chartsSwift.swift; sourceTree = "<group>"; };
+		AE9940F423224B08000FF4C6 /* PKBillHistoryHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKBillHistoryHeaderView.h; sourceTree = "<group>"; };
+		AE9940F523224B08000FF4C6 /* PKBillHistoryHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKBillHistoryHeaderView.m; sourceTree = "<group>"; };
 		AE99DFC62317703B00694CB8 /* PKModifyNicknameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKModifyNicknameViewController.h; sourceTree = "<group>"; };
 		AE99DFC72317703B00694CB8 /* PKModifyNicknameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKModifyNicknameViewController.m; sourceTree = "<group>"; };
 		AE99DFC92317705600694CB8 /* PKPasswordChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKPasswordChangeViewController.h; sourceTree = "<group>"; };
@@ -233,8 +236,8 @@
 			isa = PBXGroup;
 			children = (
 				AE9A79B1231525460058B73F /* models */,
-				AE9A79B2231525460058B73F /* controllers */,
 				AE9A79B3231525460058B73F /* views */,
+				AE9A79B2231525460058B73F /* controllers */,
 			);
 			path = Distribution;
 			sourceTree = "<group>";
@@ -299,8 +302,8 @@
 			isa = PBXGroup;
 			children = (
 				AE9A79B9231525460058B73F /* models */,
-				AE9A79BA231525460058B73F /* controllers */,
 				AE9A79BB231525460058B73F /* views */,
+				AE9A79BA231525460058B73F /* controllers */,
 			);
 			path = BillHistory;
 			sourceTree = "<group>";
@@ -324,6 +327,8 @@
 		AE9A79BB231525460058B73F /* views */ = {
 			isa = PBXGroup;
 			children = (
+				AE9940F423224B08000FF4C6 /* PKBillHistoryHeaderView.h */,
+				AE9940F523224B08000FF4C6 /* PKBillHistoryHeaderView.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -566,6 +571,7 @@
 				AE99DFCB2317705600694CB8 /* PKPasswordChangeViewController.m in Sources */,
 				AE0FC1E2231F905400ED00DA /* PKAddBudgetViewController.m in Sources */,
 				AE9A79ED2315313C0058B73F /* PKHBTool.m in Sources */,
+				AE9940F623224B08000FF4C6 /* PKBillHistoryHeaderView.m in Sources */,
 				AE9A79EE2315313C0058B73F /* PKUIUtilities.m in Sources */,
 				AE9940F323220A50000FF4C6 /* chartsSwift.swift in Sources */,
 				AE9A79D523152AC70058B73F /* PKBaseViewController.m in Sources */,
