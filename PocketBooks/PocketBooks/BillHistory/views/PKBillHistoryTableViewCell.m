@@ -7,7 +7,7 @@
 //
 
 #import "PKBillHistoryTableViewCell.h"
-//#import "PKBudgetModel.h"
+#import "PKBillHistoryModel.h"
 
 @interface PKBillHistoryTableViewCell()
 @property(nonatomic, strong)UILabel *dateLbl;
@@ -18,31 +18,38 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self.contentView addSubview:self.dateLbl];
-        
+        [self.contentView addSubview:self.contentLbl];
+
         [self.dateLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(15);
-            make.top.equalTo(self.contentView).offset(5);
-            make.trailing.equalTo(self.contentView).offset(-15);
+            make.leading.equalTo(self.contentView).offset(45);
+            make.top.equalTo(self.contentView).offset(10);
+            make.trailing.equalTo(self.contentView).offset(-45);
             make.height.mas_equalTo(16);
         }];
         [self.contentLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(15);
+            make.leading.equalTo(self.contentView).offset(45);
             make.top.equalTo(self.dateLbl.mas_bottom).offset(5);
-            make.trailing.equalTo(self.contentView).offset(-15);
+            make.trailing.equalTo(self.contentView).offset(-45);
             make.height.mas_equalTo(PKHEIGHT);
-            make.bottom.equalTo(self.contentView).offset(-5);
+            make.bottom.equalTo(self.contentView).offset(-10);
+        }];
+        UIView *line = [[UIView alloc] init];
+        line.backgroundColor = PKH_Color(242, 242, 242, 242);
+        [self.contentView addSubview:line];
+        [line mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.contentView).offset(15);
+            make.trailing.equalTo(self.contentView);
+            make.bottom.equalTo(self.contentView);
+            make.height.mas_equalTo(1);
         }];
     }
     return self;
 }
-//- (void)setModel:(PKBudgetModel *)model{
-//    _model = model;
-//    
-//}
-- (void)setContentString:(NSString *)contentString{
-    _contentString = contentString;
-    self.contentLbl.text = _contentString;
-    CGSize size = [self.contentLbl sizeThatFits:CGSizeMake(PKWIDTH - 30, MAXFLOAT)];
+- (void)setModel:(PKBillHistoryModel *)model{
+    _model = model;
+    self.dateLbl.text = _model.dateString;
+    self.contentLbl.text = _model.contentString;
+    CGSize size = [self.contentLbl sizeThatFits:CGSizeMake(PKWIDTH - 90, MAXFLOAT)];
     [self.contentLbl mas_updateConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(size.height);
     }];

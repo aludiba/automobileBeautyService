@@ -27,6 +27,7 @@
 		AE53779223167AE500160319 /* PKSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53779123167AE500160319 /* PKSetViewModel.m */; };
 		AE53779523167C7300160319 /* PKSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53779423167C7300160319 /* PKSetTableViewCell.m */; };
 		AE79116A2324ECEF00A183A0 /* PKBillHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7911692324ECEF00A183A0 /* PKBillHistoryTableViewCell.m */; };
+		AE79116D2324F58600A183A0 /* PKBillHistoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE79116C2324F58600A183A0 /* PKBillHistoryModel.m */; };
 		AE9940F323220A50000FF4C6 /* chartsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9940F223220A4F000FF4C6 /* chartsSwift.swift */; };
 		AE9940F623224B08000FF4C6 /* PKBillHistoryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9940F523224B08000FF4C6 /* PKBillHistoryHeaderView.m */; };
 		AE99DFC82317703B00694CB8 /* PKModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99DFC72317703B00694CB8 /* PKModifyNicknameViewController.m */; };
@@ -88,6 +89,8 @@
 		AE53779423167C7300160319 /* PKSetTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKSetTableViewCell.m; sourceTree = "<group>"; };
 		AE7911682324ECEF00A183A0 /* PKBillHistoryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKBillHistoryTableViewCell.h; sourceTree = "<group>"; };
 		AE7911692324ECEF00A183A0 /* PKBillHistoryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKBillHistoryTableViewCell.m; sourceTree = "<group>"; };
+		AE79116B2324F58600A183A0 /* PKBillHistoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKBillHistoryModel.h; sourceTree = "<group>"; };
+		AE79116C2324F58600A183A0 /* PKBillHistoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKBillHistoryModel.m; sourceTree = "<group>"; };
 		AE9940F123220A4F000FF4C6 /* PocketBooks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PocketBooks-Bridging-Header.h"; sourceTree = "<group>"; };
 		AE9940F223220A4F000FF4C6 /* chartsSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chartsSwift.swift; sourceTree = "<group>"; };
 		AE9940F423224B08000FF4C6 /* PKBillHistoryHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKBillHistoryHeaderView.h; sourceTree = "<group>"; };
@@ -314,6 +317,8 @@
 		AE9A79B9231525460058B73F /* models */ = {
 			isa = PBXGroup;
 			children = (
+				AE79116B2324F58600A183A0 /* PKBillHistoryModel.h */,
+				AE79116C2324F58600A183A0 /* PKBillHistoryModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -577,6 +582,7 @@
 				AE99DFCB2317705600694CB8 /* PKPasswordChangeViewController.m in Sources */,
 				AE0FC1E2231F905400ED00DA /* PKAddBudgetViewController.m in Sources */,
 				AE9A79ED2315313C0058B73F /* PKHBTool.m in Sources */,
+				AE79116D2324F58600A183A0 /* PKBillHistoryModel.m in Sources */,
 				AE9940F623224B08000FF4C6 /* PKBillHistoryHeaderView.m in Sources */,
 				AE9A79EE2315313C0058B73F /* PKUIUtilities.m in Sources */,
 				AE9940F323220A50000FF4C6 /* chartsSwift.swift in Sources */,

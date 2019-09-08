@@ -9,10 +9,9 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-//@class PKBudgetModel;
+@class PKBillHistoryModel;
 @interface PKBillHistoryTableViewCell : UITableViewCell
-//@property(nonatomic, strong)PKBudgetModel *model;
-@property(nonatomic, copy)NSString *contentString;
+@property(nonatomic, strong)PKBillHistoryModel *model;
 @end
 
 NS_ASSUME_NONNULL_END
