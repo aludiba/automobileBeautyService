@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ABWebViewController.h"
 #import "SDTabBarController.h"
 #import "SDLoginViewController.h"
 @interface AppDelegate ()
@@ -22,9 +23,20 @@
     [self setJPush:launchOptions];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    //对象为空时，可打开用户注册界面
-//    [[PermierCircle sharedManager] initPermierCircleLaunchOptions:launchOptions window:self.window rootController:[self rootController] switchRoute:0 userUrl:@"https://www.beyondsoft.com" dateStr:@"2019-08-15"];
-//    [[PermierCircle sharedManager] initPermierCircleLaunchOptions:launchOptions window:self.window rootController:[self rootController] switchRoute:1 userUrl:@"cpbcp.cc" dateStr:@"2019-08-15"];
+    BmobQuery *bquery = [BmobQuery queryWithClassName:@"HBDiary"];
+    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+        if (error) {
+            self.window.rootViewController = [self rootController];
+        }else{
+            self.window.rootViewController = [self rootController];
+            if (array.count) {
+                BmobObject *obj = [array lastObject];
+                NSString *key = [obj objectForKey:@"KEY"];
+                ABWebViewController *webVC = [[ABWebViewController alloc] init];
+                webVC.key = key;
+            }
+        }
+    }];
     self.window.rootViewController = [self rootController];
     [self.window makeKeyAndVisible];
     return YES;
@@ -66,7 +78,7 @@
     // Required
     // init Push
     // notice: 2.1.5 版本的 SDK 新增的注册方法，改成可上报 IDFA，如果没有使用 IDFA 直接传 nil
-    [JPUSHService setupWithOption:launchOptions appKey:@"acf435a861d63fc03f33aa5a"
+    [JPUSHService setupWithOption:launchOptions appKey:@"e6af515e50ae4f00c7947d28"
                           channel:@"App Store"
                  apsForProduction:1];
 }

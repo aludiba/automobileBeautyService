@@ -7,10 +7,12 @@
 //
 
 #import "PKBillHistoryViewController.h"
+#import "PKAddBudgetViewController.h"
 #import "PKBillHistoryHeaderView.h"
 #import "PKBillHistoryTableViewCell.h"
 #import "PKBillHistoryModel.h"
 @interface PKBillHistoryViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property(nonatomic, strong)UIButton *addButton;
 @property(nonatomic, strong)NSMutableDictionary *foldInfoDic;
 @property(nonatomic, strong)NSMutableArray *dataArray;
 @property(nonatomic, strong)UITableView *mainTable;
@@ -28,6 +30,14 @@
     [super viewWillAppear:animated];
     [self loadData];
 }
+- (void)PK_setupNavigationItems{
+    [super PK_setupNavigationItems];
+    [self setNavigationBarItems];
+}
+- (void)setNavigationBarItems{
+    UIBarButtonItem *addButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.addButton];
+    self.navigationItem.rightBarButtonItem = addButtonItem;
+}
 - (void)loadData{
     for (int i = 0; i < self.dataArray.count; i++) {
         NSMutableDictionary *dic = self.dataArray[i];
@@ -43,7 +53,7 @@
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
         if (error) {
             [self.mainTable.mj_header endRefreshing];
-            [MBProgressHUD PKshowReminderText:NSLocalizedString(@"暂无数据，请点击加号添加", nil)];
+            [MBProgressHUD PKshowReminderText:[error description]];
         }else{
             [self.mainTable.mj_header endRefreshing];
             if (array.count) {
@@ -69,7 +79,7 @@
                 }
                 [weakSelf.mainTable reloadData];
             }else{
-                
+                [MBProgressHUD PKshowReminderText:NSLocalizedString(@"暂无数据，请点击加号添加", nil)];
             }
         }
     }];
@@ -95,40 +105,40 @@
     head.fold = [num boolValue];
     switch (section) {
         case 0:
-            head.titleLbl.text = @"一月";
+            head.titleLbl.text = NSLocalizedString(@"一月", nil);
             break;
         case 1:
-            head.titleLbl.text = @"二月";
+            head.titleLbl.text = NSLocalizedString(@"二月", nil);
             break;
         case 2:
-            head.titleLbl.text = @"三月";
+            head.titleLbl.text = NSLocalizedString(@"三月", nil);
             break;
         case 3:
-            head.titleLbl.text = @"四月";
+            head.titleLbl.text = NSLocalizedString(@"四月", nil);
             break;
         case 4:
-            head.titleLbl.text = @"五月";
+            head.titleLbl.text = NSLocalizedString(@"五月", nil);
             break;
         case 5:
-            head.titleLbl.text = @"六月";
+            head.titleLbl.text = NSLocalizedString(@"六月", nil);
             break;
         case 6:
-            head.titleLbl.text = @"七月";
+            head.titleLbl.text = NSLocalizedString(@"七月", nil);
             break;
         case 7:
-            head.titleLbl.text = @"八月";
+            head.titleLbl.text = NSLocalizedString(@"八月", nil);
             break;
         case 8:
-            head.titleLbl.text = @"九月";
+            head.titleLbl.text = NSLocalizedString(@"九月", nil);
             break;
         case 9:
-            head.titleLbl.text = @"十月";
+            head.titleLbl.text = NSLocalizedString(@"十月", nil);
             break;
         case 10:
-            head.titleLbl.text = @"十一月";
+            head.titleLbl.text = NSLocalizedString(@"十一月", nil);
             break;
         case 11:
-            head.titleLbl.text = @"十二月";
+            head.titleLbl.text = NSLocalizedString(@"十二月", nil);
             break;
         default:
             break;
@@ -155,7 +165,21 @@
         return nil;
     }
 }
+- (void)addBtnClick:(UIButton *)sender{
+    PKAddBudgetViewController *vc = [[PKAddBudgetViewController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
 #pragma mark - 属性懒加载
+- (UIButton *)addButton{
+    if (!_addButton) {
+        _addButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_addButton setImage:[UIImage imageNamed:@"PK_btn_add"] forState:UIControlStateNormal];
+        [_addButton setImage:[UIImage imageNamed:@"PK_btn_add"] forState:UIControlStateSelected];
+        [_addButton addTarget:self action:@selector(addBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _addButton;
+}
 - (void)setFold{
             self.foldInfoDic = [[NSMutableDictionary alloc] init];
             [self.foldInfoDic setObject:@YES forKey:@"1"];

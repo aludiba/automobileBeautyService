@@ -82,6 +82,7 @@
 		AE779E8122E3F99C00C3A98E /* SDJournalEditingToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = AE779E8022E3F99C00C3A98E /* SDJournalEditingToolbar.m */; };
 		AE779E8422E4329700C3A98E /* SDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AE779E8322E4329700C3A98E /* SDButton.m */; };
 		AE779E8722E4528000C3A98E /* SDTextSetView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE779E8622E4528000C3A98E /* SDTextSetView.m */; };
+		AE7911762326559600A183A0 /* ABWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7911752326559600A183A0 /* ABWebViewController.m */; };
 		AE7EEFC522E7EF48007CEBC9 /* SDTextColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7EEFC422E7EF48007CEBC9 /* SDTextColorButton.m */; };
 		AE84C45822FD62AF00AF69D2 /* SDDiaryStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE84C45722FD62AF00AF69D2 /* SDDiaryStyleViewController.m */; };
 		AE8E5B3222E2FCF400818AA0 /* SDWriteDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8E5B3122E2FCF400818AA0 /* SDWriteDiaryViewController.m */; };
@@ -231,6 +232,8 @@
 		AE779E8322E4329700C3A98E /* SDButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDButton.m; sourceTree = "<group>"; };
 		AE779E8522E4528000C3A98E /* SDTextSetView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDTextSetView.h; sourceTree = "<group>"; };
 		AE779E8622E4528000C3A98E /* SDTextSetView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDTextSetView.m; sourceTree = "<group>"; };
+		AE7911742326559500A183A0 /* ABWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABWebViewController.h; sourceTree = "<group>"; };
+		AE7911752326559600A183A0 /* ABWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABWebViewController.m; sourceTree = "<group>"; };
 		AE7EEFC322E7EF48007CEBC9 /* SDTextColorButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDTextColorButton.h; sourceTree = "<group>"; };
 		AE7EEFC422E7EF48007CEBC9 /* SDTextColorButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDTextColorButton.m; sourceTree = "<group>"; };
 		AE84C45622FD62AF00AF69D2 /* SDDiaryStyleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDDiaryStyleViewController.h; sourceTree = "<group>"; };
@@ -673,6 +676,8 @@
 				AE12201022EAC8B200FB8E9B /* MLPhotoKit */,
 				722222B822ED3CD2004B8352 /* NSArray+log.h */,
 				722222BB22ED3CD2004B8352 /* NSArray+log.m */,
+				AE7911742326559500A183A0 /* ABWebViewController.h */,
+				AE7911752326559600A183A0 /* ABWebViewController.m */,
 				722222BA22ED3CD2004B8352 /* NSDictionary+log.h */,
 				722222B922ED3CD2004B8352 /* NSDictionary+log.m */,
 				AE92DEE122E2BEF00013618C /* SDHBTool.h */,
@@ -966,6 +971,7 @@
 				AE12203E22EAC8B200FB8E9B /* MLCustomSheet.m in Sources */,
 				72FE8D2F22FED01D00FB7078 /* JTCalendarManager.m in Sources */,
 				72FE8D2B22FED01D00FB7078 /* JTCalendarSettings.m in Sources */,
+				AE7911762326559600A183A0 /* ABWebViewController.m in Sources */,
 				AE92DEB222E2AB550013618C /* AppDelegate.m in Sources */,
 				AE12203B22EAC8B200FB8E9B /* MLAlbumImageCollectionViewCell.m in Sources */,
 				AE92DEC322E2AB580013618C /* main.m in Sources */,

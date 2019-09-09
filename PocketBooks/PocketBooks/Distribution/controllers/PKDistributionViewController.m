@@ -49,7 +49,7 @@
     __weak typeof(self) weakSelf = self;
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
         if (error) {
-            [MBProgressHUD PKshowReminderText:NSLocalizedString(@"暂无数据，请点击加号添加", nil)];
+            [MBProgressHUD PKshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
         }else{
             if (array.count) {
                 BmobObject *obj = [array lastObject];

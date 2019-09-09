@@ -28,6 +28,8 @@
 		AE53779523167C7300160319 /* PKSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53779423167C7300160319 /* PKSetTableViewCell.m */; };
 		AE79116A2324ECEF00A183A0 /* PKBillHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7911692324ECEF00A183A0 /* PKBillHistoryTableViewCell.m */; };
 		AE79116D2324F58600A183A0 /* PKBillHistoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE79116C2324F58600A183A0 /* PKBillHistoryModel.m */; };
+		AE7911702325F93600A183A0 /* PKOverallSituationHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE79116F2325F93600A183A0 /* PKOverallSituationHeadView.m */; };
+		AE7911732325FBBD00A183A0 /* PKOverallSituationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7911722325FBBD00A183A0 /* PKOverallSituationModel.m */; };
 		AE9940F323220A50000FF4C6 /* chartsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9940F223220A4F000FF4C6 /* chartsSwift.swift */; };
 		AE9940F623224B08000FF4C6 /* PKBillHistoryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9940F523224B08000FF4C6 /* PKBillHistoryHeaderView.m */; };
 		AE99DFC82317703B00694CB8 /* PKModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99DFC72317703B00694CB8 /* PKModifyNicknameViewController.m */; };
@@ -91,6 +93,10 @@
 		AE7911692324ECEF00A183A0 /* PKBillHistoryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKBillHistoryTableViewCell.m; sourceTree = "<group>"; };
 		AE79116B2324F58600A183A0 /* PKBillHistoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKBillHistoryModel.h; sourceTree = "<group>"; };
 		AE79116C2324F58600A183A0 /* PKBillHistoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKBillHistoryModel.m; sourceTree = "<group>"; };
+		AE79116E2325F93600A183A0 /* PKOverallSituationHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKOverallSituationHeadView.h; sourceTree = "<group>"; };
+		AE79116F2325F93600A183A0 /* PKOverallSituationHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKOverallSituationHeadView.m; sourceTree = "<group>"; };
+		AE7911712325FBBD00A183A0 /* PKOverallSituationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKOverallSituationModel.h; sourceTree = "<group>"; };
+		AE7911722325FBBD00A183A0 /* PKOverallSituationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKOverallSituationModel.m; sourceTree = "<group>"; };
 		AE9940F123220A4F000FF4C6 /* PocketBooks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PocketBooks-Bridging-Header.h"; sourceTree = "<group>"; };
 		AE9940F223220A4F000FF4C6 /* chartsSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chartsSwift.swift; sourceTree = "<group>"; };
 		AE9940F423224B08000FF4C6 /* PKBillHistoryHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKBillHistoryHeaderView.h; sourceTree = "<group>"; };
@@ -275,8 +281,8 @@
 			isa = PBXGroup;
 			children = (
 				AE9A79B5231525460058B73F /* models */,
-				AE9A79B6231525460058B73F /* controllers */,
 				AE9A79B7231525460058B73F /* views */,
+				AE9A79B6231525460058B73F /* controllers */,
 			);
 			path = OverallSituation;
 			sourceTree = "<group>";
@@ -284,6 +290,8 @@
 		AE9A79B5231525460058B73F /* models */ = {
 			isa = PBXGroup;
 			children = (
+				AE7911712325FBBD00A183A0 /* PKOverallSituationModel.h */,
+				AE7911722325FBBD00A183A0 /* PKOverallSituationModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -300,6 +308,8 @@
 		AE9A79B7231525460058B73F /* views */ = {
 			isa = PBXGroup;
 			children = (
+				AE79116E2325F93600A183A0 /* PKOverallSituationHeadView.h */,
+				AE79116F2325F93600A183A0 /* PKOverallSituationHeadView.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -560,9 +570,11 @@
 				AE53779223167AE500160319 /* PKSetViewModel.m in Sources */,
 				AE9A79F2231532200058B73F /* PKTabBarViewController.m in Sources */,
 				AE99DFC82317703B00694CB8 /* PKModifyNicknameViewController.m in Sources */,
+				AE7911702325F93600A183A0 /* PKOverallSituationHeadView.m in Sources */,
 				AE53778F231660D700160319 /* PKDistributionViewController.m in Sources */,
 				AE99DFCE2317A10700694CB8 /* PKCategoryManagementViewController.m in Sources */,
 				AE53778C231660B700160319 /* PKBudgetViewController.m in Sources */,
+				AE7911732325FBBD00A183A0 /* PKOverallSituationModel.m in Sources */,
 				AE0FC1E5231F90B300ED00DA /* PKBudgetModel.m in Sources */,
 				AE9A79C9231529570058B73F /* NSDictionary+log.m in Sources */,
 				AE53779523167C7300160319 /* PKSetTableViewCell.m in Sources */,

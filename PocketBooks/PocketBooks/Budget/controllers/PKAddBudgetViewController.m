@@ -46,6 +46,7 @@
     __weak typeof(self) weakSelf = self;
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
         if (error) {
+            [MBProgressHUD PKshowReminderText:[error description]];
             self.editButton.hidden = NO;
             [self loadData];
         }else{

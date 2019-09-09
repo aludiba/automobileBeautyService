@@ -63,5 +63,5 @@
 #define SDHeightStatusBar ((SDIS_IPHONE_X==YES || SDIS_IPHONE_Xr ==YES || SDIS_IPHONE_Xs== YES || SDIS_IPHONE_Xs_Max== YES) ? 44.0 : 20.0)
 #define SDHeightNavBar ((SDIS_IPHONE_X==YES || SDIS_IPHONE_Xr ==YES || SDIS_IPHONE_Xs== YES || SDIS_IPHONE_Xs_Max== YES) ? 88.0 : 64.0)
 #define SDHeightTabBar ((SDIS_IPHONE_X==YES || SDIS_IPHONE_Xr ==YES || SDIS_IPHONE_Xs== YES || SDIS_IPHONE_Xs_Max== YES) ? 83.0 : 49.0)
-#define SDHeightNavContentBar ((SDIS_IPHONE_X==YES || IS_IPHONE_Xr ==YES || SDIS_IPHONE_Xs== YES || SDIS_IPHONE_Xs_Max== YES)?34.0f: 0)
+#define SDHeightNavContentBar ((SDIS_IPHONE_X==YES || SDIS_IPHONE_Xr ==YES || SDIS_IPHONE_Xs== YES || SDIS_IPHONE_Xs_Max== YES)?34.0f: 0)
 #endif /* SDglobal_h */

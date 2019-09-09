@@ -51,7 +51,7 @@
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
         if (error) {
             [self.mainTable.mj_header endRefreshing];
-            [MBProgressHUD PKshowReminderText:NSLocalizedString(@"暂无数据，请点击加号添加", nil)];
+            [MBProgressHUD PKshowReminderText:[error description]];
         }else{
             [self.mainTable.mj_header endRefreshing];
             if (array.count) {
