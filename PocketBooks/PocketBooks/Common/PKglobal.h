@@ -51,5 +51,5 @@
 #define PKHeightStatusBar ((PKIS_IPHONE_X==YES || PKIS_IPHONE_Xr ==YES || PKIS_IPHONE_Xs== YES || PKIS_IPHONE_Xs_Max== YES) ? 44.0 : 20.0)
 #define PKHeightNavBar ((PKIS_IPHONE_X==YES || PKIS_IPHONE_Xr ==YES || PKIS_IPHONE_Xs== YES || PKIS_IPHONE_Xs_Max== YES) ? 88.0 : 64.0)
 #define PKHeightTPKBar ((PKIS_IPHONE_X==YES || PKIS_IPHONE_Xr ==YES || PKIS_IPHONE_Xs== YES || PKIS_IPHONE_Xs_Max== YES) ? 83.0 : 49.0)
-#define PKHeightNavContentBar ((PKIS_IPHONE_X==YES || IS_IPHONE_Xr ==YES || PKIS_IPHONE_Xs== YES || PKIS_IPHONE_Xs_Max== YES)?34.0f: 0)
+#define PKHeightNavContentBar ((PKIS_IPHONE_X==YES || PKIS_IPHONE_Xr ==YES || PKIS_IPHONE_Xs== YES || PKIS_IPHONE_Xs_Max== YES)?34.0f: 0)
 #endif /* PKglobal_h */

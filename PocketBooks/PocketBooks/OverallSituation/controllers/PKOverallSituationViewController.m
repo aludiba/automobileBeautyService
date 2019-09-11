@@ -30,10 +30,10 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = PKH_Color(244, 245, 246, 1);
     self.title = NSLocalizedString(@"总体", nil);
-    [self loadData];
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    [self loadData];
 }
 - (void)PK_setupNavigationItems{
     [super PK_setupNavigationItems];
@@ -44,6 +44,10 @@
     self.navigationItem.rightBarButtonItem = addButtonItem;
 }
 - (void)loadData{
+    self.totalNumber = 0;
+    self.limitNumber = 0;
+    [self.dataArray removeAllObjects];
+    [self.overallSituationMode.dataArray removeAllObjects];
     BmobQuery *bquery = [BmobQuery queryWithClassName:@"PKBudget"];
     BmobUser *author = [BmobUser currentUser];
     [bquery whereKey:@"author" equalTo:author];

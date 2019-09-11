@@ -8,6 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		12C797A32D7C51C37C510662 /* Pods_PocketBooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA27E718A7D03D70ADC5C19 /* Pods_PocketBooks.framework */; };
+		AE05330F2328EBF5009846FC /* jcore-ios-2.0.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE05330D2328EBF5009846FC /* jcore-ios-2.0.1.a */; };
+		AE0533102328EBF5009846FC /* jpush-ios-3.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE05330E2328EBF5009846FC /* jpush-ios-3.2.0.a */; };
+		AE0533132328ECF8009846FC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0533122328ECF8009846FC /* CoreLocation.framework */; };
+		AE0533152328ED01009846FC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0533142328ED01009846FC /* Security.framework */; };
+		AE0533172328ED0F009846FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0533162328ED0F009846FC /* CoreGraphics.framework */; };
+		AE0533192328ED1D009846FC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0533182328ED1D009846FC /* MobileCoreServices.framework */; };
+		AE05331B2328ED3B009846FC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE05331A2328ED3B009846FC /* CFNetwork.framework */; };
+		AE05331D2328ED49009846FC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE05331C2328ED49009846FC /* CoreTelephony.framework */; };
+		AE05331F2328ED54009846FC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE05331E2328ED54009846FC /* SystemConfiguration.framework */; };
+		AE0533212328EDAC009846FC /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0533202328EDAB009846FC /* libz.1.2.5.tbd */; };
+		AE0533232328EDB9009846FC /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0533222328EDB8009846FC /* libicucore.tbd */; };
+		AE0533252328EDCD009846FC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0533242328EDCD009846FC /* libsqlite3.tbd */; };
+		AE0533272328EDDD009846FC /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0533262328EDDD009846FC /* libc++.tbd */; };
+		AE0533292328EDE9009846FC /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0533282328EDE9009846FC /* Photos.framework */; };
+		AE05332B2328EDFE009846FC /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE05332A2328EDFE009846FC /* libresolv.tbd */; };
+		AE05332D2328EE18009846FC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE05332C2328EE18009846FC /* libz.tbd */; };
+		AE05332F2328EE2C009846FC /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE05332E2328EE2C009846FC /* libsqlite3.0.tbd */; };
+		AE0533312328EFA5009846FC /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0533302328EFA5009846FC /* UserNotifications.framework */; };
+		AE0533332328EFB0009846FC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0533322328EFB0009846FC /* CoreFoundation.framework */; };
+		AE0533352328EFBA009846FC /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0533342328EFBA009846FC /* ImageIO.framework */; };
+		AE0533372328EFC3009846FC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0533362328EFC3009846FC /* QuartzCore.framework */; };
+		AE0533392328EFCC009846FC /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0533382328EFCC009846FC /* AdSupport.framework */; };
+		AE05333B2328EFD5009846FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE05333A2328EFD5009846FC /* UIKit.framework */; };
+		AE05333D2328EFDD009846FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE05333C2328EFDD009846FC /* Foundation.framework */; };
+		AE05333F2328EFE7009846FC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE05333E2328EFE7009846FC /* AVFoundation.framework */; };
+		AE0533422328F567009846FC /* ABWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0533412328F567009846FC /* ABWebViewController.m */; };
+		AE0533452328F651009846FC /* PKNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0533432328F651009846FC /* PKNDHTTPClient.m */; };
 		AE0FC1DC231E3B1300ED00DA /* PKLimitesMensuellesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0FC1DB231E3B1300ED00DA /* PKLimitesMensuellesModel.m */; };
 		AE0FC1DF231E414400ED00DA /* PKLimitesMensuellesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0FC1DE231E414400ED00DA /* PKLimitesMensuellesTableViewCell.m */; };
 		AE0FC1E2231F905400ED00DA /* PKAddBudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0FC1E1231F905400ED00DA /* PKAddBudgetViewController.m */; };
@@ -51,6 +78,37 @@
 
 /* Begin PBXFileReference section */
 		40E4D22BC1060D03BACEA31C /* Pods-PocketBooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBooks.debug.xcconfig"; path = "Target Support Files/Pods-PocketBooks/Pods-PocketBooks.debug.xcconfig"; sourceTree = "<group>"; };
+		AE05330C2328EBF5009846FC /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		AE05330D2328EBF5009846FC /* jcore-ios-2.0.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.0.1.a"; sourceTree = "<group>"; };
+		AE05330E2328EBF5009846FC /* jpush-ios-3.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.0.a"; sourceTree = "<group>"; };
+		AE0533112328ECCA009846FC /* PocketBooks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PocketBooks.entitlements; sourceTree = "<group>"; };
+		AE0533122328ECF8009846FC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AE0533142328ED01009846FC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AE0533162328ED0F009846FC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AE0533182328ED1D009846FC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AE05331A2328ED3B009846FC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AE05331C2328ED49009846FC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		AE05331E2328ED54009846FC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AE0533202328EDAB009846FC /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		AE0533222328EDB8009846FC /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		AE0533242328EDCD009846FC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		AE0533262328EDDD009846FC /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		AE0533282328EDE9009846FC /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		AE05332A2328EDFE009846FC /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		AE05332C2328EE18009846FC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		AE05332E2328EE2C009846FC /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		AE0533302328EFA5009846FC /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		AE0533322328EFB0009846FC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		AE0533342328EFBA009846FC /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		AE0533362328EFC3009846FC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AE0533382328EFCC009846FC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		AE05333A2328EFD5009846FC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AE05333C2328EFDD009846FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AE05333E2328EFE7009846FC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AE0533402328F567009846FC /* ABWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABWebViewController.h; sourceTree = "<group>"; };
+		AE0533412328F567009846FC /* ABWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABWebViewController.m; sourceTree = "<group>"; };
+		AE0533432328F651009846FC /* PKNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKNDHTTPClient.m; sourceTree = "<group>"; };
+		AE0533442328F651009846FC /* PKNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKNDHTTPClient.h; sourceTree = "<group>"; };
 		AE0FC1DA231E3B1300ED00DA /* PKLimitesMensuellesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKLimitesMensuellesModel.h; sourceTree = "<group>"; };
 		AE0FC1DB231E3B1300ED00DA /* PKLimitesMensuellesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKLimitesMensuellesModel.m; sourceTree = "<group>"; };
 		AE0FC1DD231E414400ED00DA /* PKLimitesMensuellesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKLimitesMensuellesTableViewCell.h; sourceTree = "<group>"; };
@@ -142,7 +200,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE05333F2328EFE7009846FC /* AVFoundation.framework in Frameworks */,
+				AE05333D2328EFDD009846FC /* Foundation.framework in Frameworks */,
+				AE05333B2328EFD5009846FC /* UIKit.framework in Frameworks */,
+				AE0533392328EFCC009846FC /* AdSupport.framework in Frameworks */,
+				AE0533372328EFC3009846FC /* QuartzCore.framework in Frameworks */,
+				AE0533352328EFBA009846FC /* ImageIO.framework in Frameworks */,
+				AE0533332328EFB0009846FC /* CoreFoundation.framework in Frameworks */,
+				AE0533312328EFA5009846FC /* UserNotifications.framework in Frameworks */,
+				AE05332F2328EE2C009846FC /* libsqlite3.0.tbd in Frameworks */,
+				AE05332D2328EE18009846FC /* libz.tbd in Frameworks */,
+				AE05332B2328EDFE009846FC /* libresolv.tbd in Frameworks */,
+				AE0533292328EDE9009846FC /* Photos.framework in Frameworks */,
+				AE0533272328EDDD009846FC /* libc++.tbd in Frameworks */,
+				AE0533252328EDCD009846FC /* libsqlite3.tbd in Frameworks */,
+				AE0533232328EDB9009846FC /* libicucore.tbd in Frameworks */,
+				AE0533212328EDAC009846FC /* libz.1.2.5.tbd in Frameworks */,
+				AE05331F2328ED54009846FC /* SystemConfiguration.framework in Frameworks */,
+				AE05331D2328ED49009846FC /* CoreTelephony.framework in Frameworks */,
+				AE05331B2328ED3B009846FC /* CFNetwork.framework in Frameworks */,
+				AE0533192328ED1D009846FC /* MobileCoreServices.framework in Frameworks */,
+				AE0533172328ED0F009846FC /* CoreGraphics.framework in Frameworks */,
+				AE0533152328ED01009846FC /* Security.framework in Frameworks */,
+				AE0533132328ECF8009846FC /* CoreLocation.framework in Frameworks */,
+				AE0533102328EBF5009846FC /* jpush-ios-3.2.0.a in Frameworks */,
 				12C797A32D7C51C37C510662 /* Pods_PocketBooks.framework in Frameworks */,
+				AE05330F2328EBF5009846FC /* jcore-ios-2.0.1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +235,29 @@
 		1F0FAE0A89F135B29C5F51BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE05333E2328EFE7009846FC /* AVFoundation.framework */,
+				AE05333C2328EFDD009846FC /* Foundation.framework */,
+				AE05333A2328EFD5009846FC /* UIKit.framework */,
+				AE0533382328EFCC009846FC /* AdSupport.framework */,
+				AE0533362328EFC3009846FC /* QuartzCore.framework */,
+				AE0533342328EFBA009846FC /* ImageIO.framework */,
+				AE0533322328EFB0009846FC /* CoreFoundation.framework */,
+				AE0533302328EFA5009846FC /* UserNotifications.framework */,
+				AE05332E2328EE2C009846FC /* libsqlite3.0.tbd */,
+				AE05332C2328EE18009846FC /* libz.tbd */,
+				AE05332A2328EDFE009846FC /* libresolv.tbd */,
+				AE0533282328EDE9009846FC /* Photos.framework */,
+				AE0533262328EDDD009846FC /* libc++.tbd */,
+				AE0533242328EDCD009846FC /* libsqlite3.tbd */,
+				AE0533222328EDB8009846FC /* libicucore.tbd */,
+				AE0533202328EDAB009846FC /* libz.1.2.5.tbd */,
+				AE05331E2328ED54009846FC /* SystemConfiguration.framework */,
+				AE05331C2328ED49009846FC /* CoreTelephony.framework */,
+				AE05331A2328ED3B009846FC /* CFNetwork.framework */,
+				AE0533182328ED1D009846FC /* MobileCoreServices.framework */,
+				AE0533162328ED0F009846FC /* CoreGraphics.framework */,
+				AE0533142328ED01009846FC /* Security.framework */,
+				AE0533122328ECF8009846FC /* CoreLocation.framework */,
 				CAA27E718A7D03D70ADC5C19 /* Pods_PocketBooks.framework */,
 			);
 			name = Frameworks;
@@ -164,6 +270,16 @@
 				E37EADF503B436E1DBBDECD7 /* Pods-PocketBooks.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE05330B2328EBF5009846FC /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				AE05330C2328EBF5009846FC /* JPUSHService.h */,
+				AE05330D2328EBF5009846FC /* jcore-ios-2.0.1.a */,
+				AE05330E2328EBF5009846FC /* jpush-ios-3.2.0.a */,
+			);
+			path = JPush;
 			sourceTree = "<group>";
 		};
 		AE9A798A23151A0C0058B73F = {
@@ -187,6 +303,7 @@
 		AE9A799523151A0C0058B73F /* PocketBooks */ = {
 			isa = PBXGroup;
 			children = (
+				AE0533112328ECCA009846FC /* PocketBooks.entitlements */,
 				AE9A79C1231525A10058B73F /* Common */,
 				AE9A79C0231525A10058B73F /* Resources */,
 				AE9A79B4231525460058B73F /* OverallSituation */,
@@ -423,6 +540,11 @@
 		AE9A79C1231525A10058B73F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AE0533442328F651009846FC /* PKNDHTTPClient.h */,
+				AE0533432328F651009846FC /* PKNDHTTPClient.m */,
+				AE0533402328F567009846FC /* ABWebViewController.h */,
+				AE0533412328F567009846FC /* ABWebViewController.m */,
+				AE05330B2328EBF5009846FC /* JPush */,
 				AE9A79C2231528B50058B73F /* PK_PrefixHeader.pch */,
 				AE9A79C7231529570058B73F /* NSArray+log.h */,
 				AE9A79C5231529560058B73F /* NSArray+log.m */,
@@ -479,6 +601,11 @@
 					AE9A799223151A0C0058B73F = {
 						CreatedOnToolsVersion = 10.2.1;
 						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -574,6 +701,8 @@
 				AE53778F231660D700160319 /* PKDistributionViewController.m in Sources */,
 				AE99DFCE2317A10700694CB8 /* PKCategoryManagementViewController.m in Sources */,
 				AE53778C231660B700160319 /* PKBudgetViewController.m in Sources */,
+				AE0533452328F651009846FC /* PKNDHTTPClient.m in Sources */,
+				AE0533422328F567009846FC /* ABWebViewController.m in Sources */,
 				AE7911732325FBBD00A183A0 /* PKOverallSituationModel.m in Sources */,
 				AE0FC1E5231F90B300ED00DA /* PKBudgetModel.m in Sources */,
 				AE9A79C9231529570058B73F /* NSDictionary+log.m in Sources */,
@@ -736,8 +865,11 @@
 			baseConfigurationReference = 40E4D22BC1060D03BACEA31C /* Pods-PocketBooks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = PocketBooks/PocketBooks.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBooks/Common/PK_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBooks/Info.plist;
@@ -746,12 +878,17 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PocketBooks/Common/JPush",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = hbcAmplifier.PocketBooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = pocketBook_dis_pro_20190911_2;
 				SWIFT_OBJC_BRIDGING_HEADER = "PocketBooks/Common/PocketBooks-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -760,8 +897,11 @@
 			baseConfigurationReference = E37EADF503B436E1DBBDECD7 /* Pods-PocketBooks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = PocketBooks/PocketBooks.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBooks/Common/PK_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBooks/Info.plist;
@@ -770,11 +910,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PocketBooks/Common/JPush",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = hbcAmplifier.PocketBooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = pocketBook_dis_pro_20190911_2;
 				SWIFT_OBJC_BRIDGING_HEADER = "PocketBooks/Common/PocketBooks-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
