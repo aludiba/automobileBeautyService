@@ -78,7 +78,7 @@
     // Required
     // init Push
     // notice: 2.1.5 版本的 SDK 新增的注册方法，改成可上报 IDFA，如果没有使用 IDFA 直接传 nil
-    [JPUSHService setupWithOption:launchOptions appKey:@"7a445828a651f8e7e0bd65e3"
+    [JPUSHService setupWithOption:launchOptions appKey:@"8e643cb6ca1b6d0dc80fda6f"
                           channel:@"App Store"
                  apsForProduction:1];
 }
