@@ -7,5 +7,7 @@ target 'GoodHabit' do
 
   # Pods for GoodHabit
     pod 'Masonry'
-    
+    pod 'AFNetworking'
+    pod 'MJRefresh'
+
 end
