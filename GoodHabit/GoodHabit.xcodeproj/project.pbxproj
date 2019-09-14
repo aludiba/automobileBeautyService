@@ -3,30 +3,115 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		44174B98EC156E8AE26A0351 /* Pods_GoodHabit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78D571AABE2191F4793A4F9 /* Pods_GoodHabit.framework */; };
 		723CBB11232C86BE0095EC7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB10232C86BE0095EC7C /* AppDelegate.m */; };
-		723CBB14232C86BE0095EC7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB13232C86BE0095EC7C /* ViewController.m */; };
-		723CBB17232C86BE0095EC7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723CBB15232C86BE0095EC7C /* Main.storyboard */; };
 		723CBB19232C86C20095EC7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723CBB18232C86C20095EC7C /* Assets.xcassets */; };
-		723CBB1C232C86C20095EC7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723CBB1A232C86C20095EC7C /* LaunchScreen.storyboard */; };
 		723CBB1F232C86C20095EC7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB1E232C86C20095EC7C /* main.m */; };
+		723CBB58232CABF40095EC7C /* JTCalendarSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB35232CABF40095EC7C /* JTCalendarSettings.m */; };
+		723CBB59232CABF40095EC7C /* JTDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB36232CABF40095EC7C /* JTDateHelper.m */; };
+		723CBB5A232CABF40095EC7C /* JTCalendarScrollManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB3C232CABF40095EC7C /* JTCalendarScrollManager.m */; };
+		723CBB5B232CABF40095EC7C /* JTCalendarDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB3D232CABF40095EC7C /* JTCalendarDelegateManager.m */; };
+		723CBB5C232CABF40095EC7C /* JTCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB3F232CABF40095EC7C /* JTCalendarManager.m */; };
+		723CBB5D232CABF40095EC7C /* JTVerticalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB44232CABF40095EC7C /* JTVerticalCalendarView.m */; };
+		723CBB5E232CABF40095EC7C /* JTCalendarWeekDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB47232CABF40095EC7C /* JTCalendarWeekDayView.m */; };
+		723CBB5F232CABF40095EC7C /* JTHorizontalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB49232CABF40095EC7C /* JTHorizontalCalendarView.m */; };
+		723CBB60232CABF40095EC7C /* JTCalendarWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB4A232CABF40095EC7C /* JTCalendarWeekView.m */; };
+		723CBB61232CABF40095EC7C /* JTCalendarDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB4C232CABF40095EC7C /* JTCalendarDayView.m */; };
+		723CBB62232CABF40095EC7C /* JTCalendarPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB4D232CABF40095EC7C /* JTCalendarPageView.m */; };
+		723CBB63232CABF40095EC7C /* JTCalendarMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB4F232CABF40095EC7C /* JTCalendarMenuView.m */; };
+		723CBB69232CAF700095EC7C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 723CBB6B232CAF700095EC7C /* Localizable.strings */; };
+		723CBB72232CAFA40095EC7C /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB70232CAFA40095EC7C /* NSArray+log.m */; };
+		723CBB73232CAFA40095EC7C /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB71232CAFA40095EC7C /* NSDictionary+log.m */; };
+		723CBB76232CAFC60095EC7C /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB75232CAFC60095EC7C /* CalendarTool.m */; };
+		723CBB79232CAFF50095EC7C /* GHWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB78232CAFF50095EC7C /* GHWebViewController.m */; };
+		723CBB7C232CB0580095EC7C /* GHHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB7B232CB0580095EC7C /* GHHBTool.m */; };
+		723CBB7F232CB0A70095EC7C /* GHUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB7E232CB0A70095EC7C /* GHUIUtilities.m */; };
+		723CBB82232CB0FD0095EC7C /* MBProgressHUD+GHNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB81232CB0FD0095EC7C /* MBProgressHUD+GHNJ.m */; };
+		723CBB85232CB1390095EC7C /* GHNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB84232CB1380095EC7C /* GHNDHTTPClient.m */; };
+		723CBB8A232CB71E0095EC7C /* GHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB89232CB71E0095EC7C /* GHBaseViewController.m */; };
+		723CBB8D232CB8CC0095EC7C /* GHTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB8C232CB8CC0095EC7C /* GHTodayViewController.m */; };
+		723CBB90232CB8EC0095EC7C /* GHDailyHabitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB8F232CB8EC0095EC7C /* GHDailyHabitsViewController.m */; };
+		723CBB93232CB9010095EC7C /* GHSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB92232CB9010095EC7C /* GHSetViewController.m */; };
+		723CBB96232CB9930095EC7C /* GHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB95232CB9930095EC7C /* GHTabBarViewController.m */; };
+		723CBB99232CC5120095EC7C /* GHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB98232CC5120095EC7C /* GHLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		723CBB0C232C86BE0095EC7C /* GoodHabit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodHabit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		723CBB0F232C86BE0095EC7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		723CBB10232C86BE0095EC7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		723CBB12232C86BE0095EC7C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		723CBB13232C86BE0095EC7C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		723CBB16232C86BE0095EC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		723CBB18232C86C20095EC7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		723CBB1B232C86C20095EC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		723CBB1D232C86C20095EC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		723CBB1E232C86C20095EC7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		723CBB35232CABF40095EC7C /* JTCalendarSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarSettings.m; sourceTree = "<group>"; };
+		723CBB36232CABF40095EC7C /* JTDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDateHelper.m; sourceTree = "<group>"; };
+		723CBB37232CABF40095EC7C /* JTCalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarManager.h; sourceTree = "<group>"; };
+		723CBB38232CABF40095EC7C /* JTCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendar.h; sourceTree = "<group>"; };
+		723CBB3A232CABF40095EC7C /* JTCalendarDelegateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDelegateManager.h; sourceTree = "<group>"; };
+		723CBB3B232CABF40095EC7C /* JTCalendarScrollManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarScrollManager.h; sourceTree = "<group>"; };
+		723CBB3C232CABF40095EC7C /* JTCalendarScrollManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarScrollManager.m; sourceTree = "<group>"; };
+		723CBB3D232CABF40095EC7C /* JTCalendarDelegateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarDelegateManager.m; sourceTree = "<group>"; };
+		723CBB3E232CABF40095EC7C /* JTCalendarSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarSettings.h; sourceTree = "<group>"; };
+		723CBB3F232CABF40095EC7C /* JTCalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarManager.m; sourceTree = "<group>"; };
+		723CBB40232CABF40095EC7C /* JTDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDateHelper.h; sourceTree = "<group>"; };
+		723CBB41232CABF40095EC7C /* JTCalendarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDelegate.h; sourceTree = "<group>"; };
+		723CBB43232CABF40095EC7C /* JTCalendarDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDayView.h; sourceTree = "<group>"; };
+		723CBB44232CABF40095EC7C /* JTVerticalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTVerticalCalendarView.m; sourceTree = "<group>"; };
+		723CBB45232CABF40095EC7C /* JTCalendarWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeekView.h; sourceTree = "<group>"; };
+		723CBB46232CABF40095EC7C /* JTCalendarPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarPageView.h; sourceTree = "<group>"; };
+		723CBB47232CABF40095EC7C /* JTCalendarWeekDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarWeekDayView.m; sourceTree = "<group>"; };
+		723CBB48232CABF40095EC7C /* JTCalendarMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarMenuView.h; sourceTree = "<group>"; };
+		723CBB49232CABF40095EC7C /* JTHorizontalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTHorizontalCalendarView.m; sourceTree = "<group>"; };
+		723CBB4A232CABF40095EC7C /* JTCalendarWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarWeekView.m; sourceTree = "<group>"; };
+		723CBB4B232CABF40095EC7C /* JTVerticalCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTVerticalCalendarView.h; sourceTree = "<group>"; };
+		723CBB4C232CABF40095EC7C /* JTCalendarDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarDayView.m; sourceTree = "<group>"; };
+		723CBB4D232CABF40095EC7C /* JTCalendarPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarPageView.m; sourceTree = "<group>"; };
+		723CBB4E232CABF40095EC7C /* JTHorizontalCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTHorizontalCalendarView.h; sourceTree = "<group>"; };
+		723CBB4F232CABF40095EC7C /* JTCalendarMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarMenuView.m; sourceTree = "<group>"; };
+		723CBB50232CABF40095EC7C /* JTCalendarWeekDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeekDayView.h; sourceTree = "<group>"; };
+		723CBB52232CABF40095EC7C /* JTCalendarWeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeek.h; sourceTree = "<group>"; };
+		723CBB53232CABF40095EC7C /* JTContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTContent.h; sourceTree = "<group>"; };
+		723CBB54232CABF40095EC7C /* JTCalendarPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarPage.h; sourceTree = "<group>"; };
+		723CBB55232CABF40095EC7C /* JTCalendarWeekDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeekDay.h; sourceTree = "<group>"; };
+		723CBB56232CABF40095EC7C /* JTCalendarDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDay.h; sourceTree = "<group>"; };
+		723CBB57232CABF40095EC7C /* JTMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTMenu.h; sourceTree = "<group>"; };
+		723CBB6A232CAF700095EC7C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		723CBB6C232CAF720095EC7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		723CBB6D232CAF740095EC7C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		723CBB6E232CAFA40095EC7C /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		723CBB6F232CAFA40095EC7C /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
+		723CBB70232CAFA40095EC7C /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		723CBB71232CAFA40095EC7C /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
+		723CBB74232CAFC60095EC7C /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
+		723CBB75232CAFC60095EC7C /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
+		723CBB77232CAFF50095EC7C /* GHWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWebViewController.h; sourceTree = "<group>"; };
+		723CBB78232CAFF50095EC7C /* GHWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHWebViewController.m; sourceTree = "<group>"; };
+		723CBB7A232CB0580095EC7C /* GHHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHHBTool.h; sourceTree = "<group>"; };
+		723CBB7B232CB0580095EC7C /* GHHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHHBTool.m; sourceTree = "<group>"; };
+		723CBB7D232CB0A70095EC7C /* GHUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHUIUtilities.h; sourceTree = "<group>"; };
+		723CBB7E232CB0A70095EC7C /* GHUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHUIUtilities.m; sourceTree = "<group>"; };
+		723CBB80232CB0FD0095EC7C /* MBProgressHUD+GHNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+GHNJ.h"; sourceTree = "<group>"; };
+		723CBB81232CB0FD0095EC7C /* MBProgressHUD+GHNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+GHNJ.m"; sourceTree = "<group>"; };
+		723CBB83232CB1380095EC7C /* GHNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHNDHTTPClient.h; sourceTree = "<group>"; };
+		723CBB84232CB1380095EC7C /* GHNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHNDHTTPClient.m; sourceTree = "<group>"; };
+		723CBB86232CB1650095EC7C /* GHglobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHglobal.h; sourceTree = "<group>"; };
+		723CBB87232CB31F0095EC7C /* GoodHabit_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodHabit_PrefixHeader.pch; sourceTree = "<group>"; };
+		723CBB88232CB71E0095EC7C /* GHBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHBaseViewController.h; sourceTree = "<group>"; };
+		723CBB89232CB71E0095EC7C /* GHBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHBaseViewController.m; sourceTree = "<group>"; };
+		723CBB8B232CB8CC0095EC7C /* GHTodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHTodayViewController.h; sourceTree = "<group>"; };
+		723CBB8C232CB8CC0095EC7C /* GHTodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHTodayViewController.m; sourceTree = "<group>"; };
+		723CBB8E232CB8EC0095EC7C /* GHDailyHabitsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHDailyHabitsViewController.h; sourceTree = "<group>"; };
+		723CBB8F232CB8EC0095EC7C /* GHDailyHabitsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHDailyHabitsViewController.m; sourceTree = "<group>"; };
+		723CBB91232CB9010095EC7C /* GHSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHSetViewController.h; sourceTree = "<group>"; };
+		723CBB92232CB9010095EC7C /* GHSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHSetViewController.m; sourceTree = "<group>"; };
+		723CBB94232CB9930095EC7C /* GHTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHTabBarViewController.h; sourceTree = "<group>"; };
+		723CBB95232CB9930095EC7C /* GHTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHTabBarViewController.m; sourceTree = "<group>"; };
+		723CBB97232CC5120095EC7C /* GHLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHLoginViewController.h; sourceTree = "<group>"; };
+		723CBB98232CC5120095EC7C /* GHLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHLoginViewController.m; sourceTree = "<group>"; };
 		B0CF5393719874A4A8A5E22A /* Pods-GoodHabit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabit.debug.xcconfig"; path = "Target Support Files/Pods-GoodHabit/Pods-GoodHabit.debug.xcconfig"; sourceTree = "<group>"; };
 		B78D571AABE2191F4793A4F9 /* Pods_GoodHabit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodHabit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6DB6FF8EAB5DD241505741 /* Pods-GoodHabit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabit.release.xcconfig"; path = "Target Support Files/Pods-GoodHabit/Pods-GoodHabit.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,17 +158,220 @@
 		723CBB0E232C86BE0095EC7C /* GoodHabit */ = {
 			isa = PBXGroup;
 			children = (
+				723CBB27232CABA10095EC7C /* common */,
+				723CBB26232CABA10095EC7C /* resources */,
+				723CBB28232CABA10095EC7C /* today */,
+				723CBB2C232CABA20095EC7C /* dailyHabits */,
+				723CBB30232CABA20095EC7C /* set */,
 				723CBB0F232C86BE0095EC7C /* AppDelegate.h */,
 				723CBB10232C86BE0095EC7C /* AppDelegate.m */,
-				723CBB12232C86BE0095EC7C /* ViewController.h */,
-				723CBB13232C86BE0095EC7C /* ViewController.m */,
-				723CBB15232C86BE0095EC7C /* Main.storyboard */,
 				723CBB18232C86C20095EC7C /* Assets.xcassets */,
-				723CBB1A232C86C20095EC7C /* LaunchScreen.storyboard */,
 				723CBB1D232C86C20095EC7C /* Info.plist */,
 				723CBB1E232C86C20095EC7C /* main.m */,
 			);
 			path = GoodHabit;
+			sourceTree = "<group>";
+		};
+		723CBB26232CABA10095EC7C /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				723CBB6B232CAF700095EC7C /* Localizable.strings */,
+				723CBB34232CABF40095EC7C /* JTCalendar */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		723CBB27232CABA10095EC7C /* common */ = {
+			isa = PBXGroup;
+			children = (
+				723CBB87232CB31F0095EC7C /* GoodHabit_PrefixHeader.pch */,
+				723CBB86232CB1650095EC7C /* GHglobal.h */,
+				723CBB77232CAFF50095EC7C /* GHWebViewController.h */,
+				723CBB78232CAFF50095EC7C /* GHWebViewController.m */,
+				723CBB6E232CAFA40095EC7C /* NSArray+log.h */,
+				723CBB70232CAFA40095EC7C /* NSArray+log.m */,
+				723CBB6F232CAFA40095EC7C /* NSDictionary+log.h */,
+				723CBB71232CAFA40095EC7C /* NSDictionary+log.m */,
+				723CBB74232CAFC60095EC7C /* CalendarTool.h */,
+				723CBB75232CAFC60095EC7C /* CalendarTool.m */,
+				723CBB7A232CB0580095EC7C /* GHHBTool.h */,
+				723CBB7B232CB0580095EC7C /* GHHBTool.m */,
+				723CBB7D232CB0A70095EC7C /* GHUIUtilities.h */,
+				723CBB7E232CB0A70095EC7C /* GHUIUtilities.m */,
+				723CBB80232CB0FD0095EC7C /* MBProgressHUD+GHNJ.h */,
+				723CBB81232CB0FD0095EC7C /* MBProgressHUD+GHNJ.m */,
+				723CBB83232CB1380095EC7C /* GHNDHTTPClient.h */,
+				723CBB84232CB1380095EC7C /* GHNDHTTPClient.m */,
+				723CBB88232CB71E0095EC7C /* GHBaseViewController.h */,
+				723CBB89232CB71E0095EC7C /* GHBaseViewController.m */,
+				723CBB94232CB9930095EC7C /* GHTabBarViewController.h */,
+				723CBB95232CB9930095EC7C /* GHTabBarViewController.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		723CBB28232CABA10095EC7C /* today */ = {
+			isa = PBXGroup;
+			children = (
+				723CBB29232CABA20095EC7C /* models */,
+				723CBB2B232CABA20095EC7C /* views */,
+				723CBB2A232CABA20095EC7C /* controllers */,
+			);
+			path = today;
+			sourceTree = "<group>";
+		};
+		723CBB29232CABA20095EC7C /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		723CBB2A232CABA20095EC7C /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				723CBB8B232CB8CC0095EC7C /* GHTodayViewController.h */,
+				723CBB8C232CB8CC0095EC7C /* GHTodayViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		723CBB2B232CABA20095EC7C /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		723CBB2C232CABA20095EC7C /* dailyHabits */ = {
+			isa = PBXGroup;
+			children = (
+				723CBB2D232CABA20095EC7C /* models */,
+				723CBB2F232CABA20095EC7C /* views */,
+				723CBB2E232CABA20095EC7C /* controllers */,
+			);
+			path = dailyHabits;
+			sourceTree = "<group>";
+		};
+		723CBB2D232CABA20095EC7C /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		723CBB2E232CABA20095EC7C /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				723CBB8E232CB8EC0095EC7C /* GHDailyHabitsViewController.h */,
+				723CBB8F232CB8EC0095EC7C /* GHDailyHabitsViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		723CBB2F232CABA20095EC7C /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		723CBB30232CABA20095EC7C /* set */ = {
+			isa = PBXGroup;
+			children = (
+				723CBB31232CABA20095EC7C /* models */,
+				723CBB33232CABA20095EC7C /* views */,
+				723CBB32232CABA20095EC7C /* controllers */,
+			);
+			path = set;
+			sourceTree = "<group>";
+		};
+		723CBB31232CABA20095EC7C /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		723CBB32232CABA20095EC7C /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				723CBB91232CB9010095EC7C /* GHSetViewController.h */,
+				723CBB92232CB9010095EC7C /* GHSetViewController.m */,
+				723CBB97232CC5120095EC7C /* GHLoginViewController.h */,
+				723CBB98232CC5120095EC7C /* GHLoginViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		723CBB33232CABA20095EC7C /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		723CBB34232CABF40095EC7C /* JTCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				723CBB35232CABF40095EC7C /* JTCalendarSettings.m */,
+				723CBB36232CABF40095EC7C /* JTDateHelper.m */,
+				723CBB37232CABF40095EC7C /* JTCalendarManager.h */,
+				723CBB38232CABF40095EC7C /* JTCalendar.h */,
+				723CBB39232CABF40095EC7C /* Managers */,
+				723CBB3E232CABF40095EC7C /* JTCalendarSettings.h */,
+				723CBB3F232CABF40095EC7C /* JTCalendarManager.m */,
+				723CBB40232CABF40095EC7C /* JTDateHelper.h */,
+				723CBB41232CABF40095EC7C /* JTCalendarDelegate.h */,
+				723CBB42232CABF40095EC7C /* Views */,
+				723CBB51232CABF40095EC7C /* Protocols */,
+			);
+			path = JTCalendar;
+			sourceTree = "<group>";
+		};
+		723CBB39232CABF40095EC7C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				723CBB3A232CABF40095EC7C /* JTCalendarDelegateManager.h */,
+				723CBB3B232CABF40095EC7C /* JTCalendarScrollManager.h */,
+				723CBB3C232CABF40095EC7C /* JTCalendarScrollManager.m */,
+				723CBB3D232CABF40095EC7C /* JTCalendarDelegateManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		723CBB42232CABF40095EC7C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				723CBB43232CABF40095EC7C /* JTCalendarDayView.h */,
+				723CBB44232CABF40095EC7C /* JTVerticalCalendarView.m */,
+				723CBB45232CABF40095EC7C /* JTCalendarWeekView.h */,
+				723CBB46232CABF40095EC7C /* JTCalendarPageView.h */,
+				723CBB47232CABF40095EC7C /* JTCalendarWeekDayView.m */,
+				723CBB48232CABF40095EC7C /* JTCalendarMenuView.h */,
+				723CBB49232CABF40095EC7C /* JTHorizontalCalendarView.m */,
+				723CBB4A232CABF40095EC7C /* JTCalendarWeekView.m */,
+				723CBB4B232CABF40095EC7C /* JTVerticalCalendarView.h */,
+				723CBB4C232CABF40095EC7C /* JTCalendarDayView.m */,
+				723CBB4D232CABF40095EC7C /* JTCalendarPageView.m */,
+				723CBB4E232CABF40095EC7C /* JTHorizontalCalendarView.h */,
+				723CBB4F232CABF40095EC7C /* JTCalendarMenuView.m */,
+				723CBB50232CABF40095EC7C /* JTCalendarWeekDayView.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		723CBB51232CABF40095EC7C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				723CBB52232CABF40095EC7C /* JTCalendarWeek.h */,
+				723CBB53232CABF40095EC7C /* JTContent.h */,
+				723CBB54232CABF40095EC7C /* JTCalendarPage.h */,
+				723CBB55232CABF40095EC7C /* JTCalendarWeekDay.h */,
+				723CBB56232CABF40095EC7C /* JTCalendarDay.h */,
+				723CBB57232CABF40095EC7C /* JTMenu.h */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		A62101394C1AC522CB2A3ECD /* Pods */ = {
@@ -92,7 +380,6 @@
 				B0CF5393719874A4A8A5E22A /* Pods-GoodHabit.debug.xcconfig */,
 				CD6DB6FF8EAB5DD241505741 /* Pods-GoodHabit.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -137,8 +424,10 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				"zh-Hans",
+				en,
+				ja,
 			);
 			mainGroup = 723CBB03232C86BE0095EC7C;
 			productRefGroup = 723CBB0D232C86BE0095EC7C /* Products */;
@@ -155,9 +444,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				723CBB1C232C86C20095EC7C /* LaunchScreen.storyboard in Resources */,
 				723CBB19232C86C20095EC7C /* Assets.xcassets in Resources */,
-				723CBB17232C86BE0095EC7C /* Main.storyboard in Resources */,
+				723CBB69232CAF700095EC7C /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,29 +498,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				723CBB14232C86BE0095EC7C /* ViewController.m in Sources */,
+				723CBB5A232CABF40095EC7C /* JTCalendarScrollManager.m in Sources */,
+				723CBB85232CB1390095EC7C /* GHNDHTTPClient.m in Sources */,
+				723CBB96232CB9930095EC7C /* GHTabBarViewController.m in Sources */,
+				723CBB73232CAFA40095EC7C /* NSDictionary+log.m in Sources */,
+				723CBB82232CB0FD0095EC7C /* MBProgressHUD+GHNJ.m in Sources */,
+				723CBB5E232CABF40095EC7C /* JTCalendarWeekDayView.m in Sources */,
+				723CBB8A232CB71E0095EC7C /* GHBaseViewController.m in Sources */,
+				723CBB5C232CABF40095EC7C /* JTCalendarManager.m in Sources */,
+				723CBB90232CB8EC0095EC7C /* GHDailyHabitsViewController.m in Sources */,
+				723CBB5B232CABF40095EC7C /* JTCalendarDelegateManager.m in Sources */,
+				723CBB5F232CABF40095EC7C /* JTHorizontalCalendarView.m in Sources */,
+				723CBB8D232CB8CC0095EC7C /* GHTodayViewController.m in Sources */,
+				723CBB59232CABF40095EC7C /* JTDateHelper.m in Sources */,
+				723CBB93232CB9010095EC7C /* GHSetViewController.m in Sources */,
+				723CBB72232CAFA40095EC7C /* NSArray+log.m in Sources */,
+				723CBB79232CAFF50095EC7C /* GHWebViewController.m in Sources */,
+				723CBB58232CABF40095EC7C /* JTCalendarSettings.m in Sources */,
+				723CBB99232CC5120095EC7C /* GHLoginViewController.m in Sources */,
+				723CBB5D232CABF40095EC7C /* JTVerticalCalendarView.m in Sources */,
 				723CBB1F232C86C20095EC7C /* main.m in Sources */,
+				723CBB63232CABF40095EC7C /* JTCalendarMenuView.m in Sources */,
+				723CBB76232CAFC60095EC7C /* CalendarTool.m in Sources */,
+				723CBB60232CABF40095EC7C /* JTCalendarWeekView.m in Sources */,
+				723CBB7C232CB0580095EC7C /* GHHBTool.m in Sources */,
+				723CBB62232CABF40095EC7C /* JTCalendarPageView.m in Sources */,
 				723CBB11232C86BE0095EC7C /* AppDelegate.m in Sources */,
+				723CBB61232CABF40095EC7C /* JTCalendarDayView.m in Sources */,
+				723CBB7F232CB0A70095EC7C /* GHUIUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		723CBB15232C86BE0095EC7C /* Main.storyboard */ = {
+		723CBB6B232CAF700095EC7C /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				723CBB16232C86BE0095EC7C /* Base */,
+				723CBB6A232CAF700095EC7C /* zh-Hans */,
+				723CBB6C232CAF720095EC7C /* en */,
+				723CBB6D232CAF740095EC7C /* ja */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		723CBB1A232C86C20095EC7C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				723CBB1B232C86C20095EC7C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -357,6 +664,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GoodHabit/Common/GoodHabit_PrefixHeader.pch";
 				INFOPLIST_FILE = GoodHabit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -376,6 +684,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GoodHabit/Common/GoodHabit_PrefixHeader.pch";
 				INFOPLIST_FILE = GoodHabit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

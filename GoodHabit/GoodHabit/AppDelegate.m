@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "GHLoginViewController.h"
+#import "GHTabBarViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,11 +17,26 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [Bmob registerWithAppKey:@"df039ce9ff6f2311d96e0abed1cfb43b"];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [self rootController];
+    [self.window makeKeyAndVisible];
     return YES;
 }
-
-
+- (UIViewController *)rootController{
+    BmobUser *bUser = [BmobUser currentUser];
+    if (bUser) {
+        //进行操作
+        GHTabBarViewController *tabVC = [GHTabBarViewController shareInstance];
+        return tabVC;
+    }else{
+        //对象为空时，可打开用户注册界面
+        GHLoginViewController *loginVC = [GHLoginViewController shareInstance];
+        UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+        return loginVCNav;
+    }
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
