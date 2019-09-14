@@ -10,5 +10,5 @@ target 'GoodHabit' do
     pod 'AFNetworking'
     pod 'MJRefresh'
     pod 'MBProgressHUD'
-
+    pod 'YYModel'
 end
