@@ -64,7 +64,7 @@
     __weak typeof(self) weakSelf = self;
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
         if (error) {
-            [MBProgressHUD PKshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
+            [MBProgressHUD PKshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
 //            [self loadDataCategory];
         }else{
             if (array.count) {
@@ -210,7 +210,7 @@ if (self.isEdit == NO) {
                 if (isSuccessful) {
                     [self.navigationController popViewControllerAnimated:YES];
                 }else{
-                    [MBProgressHUD PKshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
+                    [MBProgressHUD PKshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
                 }
             }];
         }else{
@@ -247,7 +247,7 @@ if (self.isEdit == NO) {
             [self.navigationController popViewControllerAnimated:YES];
         } else if (error){
             //发生错误后的动作
-            [MBProgressHUD PKshowReminderText:[NSString stringWithFormat:@"%@",error]];
+            [MBProgressHUD PKshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
         } else {
 //            [MBProgressHUD PKshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
             NSLog(@"Unknow error");

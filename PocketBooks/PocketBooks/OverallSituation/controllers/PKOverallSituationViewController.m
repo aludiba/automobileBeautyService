@@ -55,7 +55,7 @@
     __weak typeof(self) weakSelf = self;
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
         if (error) {
-            [MBProgressHUD PKshowReminderText:[error description]];
+            [MBProgressHUD PKshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
         }else{
             if (array.count) {
                 NSDate *nowDate = [[NSDate alloc] init];

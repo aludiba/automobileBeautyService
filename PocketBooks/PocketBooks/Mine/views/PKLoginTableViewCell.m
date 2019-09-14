@@ -117,7 +117,7 @@
                 tabVC.selectedIndex = 0;
                 [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
             }else{
-                [MBProgressHUD PKshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
+                [MBProgressHUD PKshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
             }
         }];
     }else if(sender.tag == 101){
@@ -137,7 +137,7 @@
                     }
                 }];
             } else {
-                [MBProgressHUD PKshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
+                [MBProgressHUD PKshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
             }
         }];
     }

@@ -868,7 +868,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = PocketBooks/PocketBooks.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: hongbiao chu (LQ9FAVACVZ)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBooks/Common/PK_PrefixHeader.pch";
@@ -884,7 +884,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hbcAmplifier.PocketBooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = dis_pocketBooks_pro_20190911;
+				PROVISIONING_PROFILE_SPECIFIER = dis_pocketBooks_pro_20190913;
 				SWIFT_OBJC_BRIDGING_HEADER = "PocketBooks/Common/PocketBooks-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -900,7 +900,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = PocketBooks/PocketBooks.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: hongbiao chu (LQ9FAVACVZ)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = LQ9FAVACVZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBooks/Common/PK_PrefixHeader.pch";
@@ -916,7 +916,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hbcAmplifier.PocketBooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = dis_pocketBooks_pro_20190911;
+				PROVISIONING_PROFILE_SPECIFIER = dis_pocketBooks_pro_20190913;
 				SWIFT_OBJC_BRIDGING_HEADER = "PocketBooks/Common/PocketBooks-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -53,7 +53,7 @@
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
         if (error) {
             [self.mainTable.mj_header endRefreshing];
-            [MBProgressHUD PKshowReminderText:[error description]];
+            [MBProgressHUD PKshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
         }else{
             [self.mainTable.mj_header endRefreshing];
             if (array.count) {
