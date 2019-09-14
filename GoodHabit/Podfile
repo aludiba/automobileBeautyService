@@ -13,5 +13,5 @@ target 'GoodHabit' do
     pod 'YYModel'
     pod 'YYText'
     pod 'IQKeyboardManager'
-
+    pod 'BmobSDK'
 end
