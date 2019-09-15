@@ -38,6 +38,11 @@
 		723CBB93232CB9010095EC7C /* GHSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB92232CB9010095EC7C /* GHSetViewController.m */; };
 		723CBB96232CB9930095EC7C /* GHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB95232CB9930095EC7C /* GHTabBarViewController.m */; };
 		723CBB99232CC5120095EC7C /* GHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB98232CC5120095EC7C /* GHLoginViewController.m */; };
+		729D0B8F232E142600D88267 /* GHGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B8E232E142600D88267 /* GHGuideViewController.m */; };
+		729D0B92232E15AE00D88267 /* GHGuidePromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B91232E15AE00D88267 /* GHGuidePromptView.m */; };
+		729D0B95232E20B600D88267 /* GHGuideCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B94232E20B600D88267 /* GHGuideCollectionReusableView.m */; };
+		729D0B98232E20F400D88267 /* GHGuideCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B97232E20F400D88267 /* GHGuideCollectionViewCell.m */; };
+		729D0B9B232E28F600D88267 /* GHGuideModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B9A232E28F600D88267 /* GHGuideModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +117,16 @@
 		723CBB95232CB9930095EC7C /* GHTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHTabBarViewController.m; sourceTree = "<group>"; };
 		723CBB97232CC5120095EC7C /* GHLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHLoginViewController.h; sourceTree = "<group>"; };
 		723CBB98232CC5120095EC7C /* GHLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHLoginViewController.m; sourceTree = "<group>"; };
+		729D0B8D232E142600D88267 /* GHGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHGuideViewController.h; sourceTree = "<group>"; };
+		729D0B8E232E142600D88267 /* GHGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHGuideViewController.m; sourceTree = "<group>"; };
+		729D0B90232E15AE00D88267 /* GHGuidePromptView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHGuidePromptView.h; sourceTree = "<group>"; };
+		729D0B91232E15AE00D88267 /* GHGuidePromptView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHGuidePromptView.m; sourceTree = "<group>"; };
+		729D0B93232E20B600D88267 /* GHGuideCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHGuideCollectionReusableView.h; sourceTree = "<group>"; };
+		729D0B94232E20B600D88267 /* GHGuideCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHGuideCollectionReusableView.m; sourceTree = "<group>"; };
+		729D0B96232E20F400D88267 /* GHGuideCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHGuideCollectionViewCell.h; sourceTree = "<group>"; };
+		729D0B97232E20F400D88267 /* GHGuideCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHGuideCollectionViewCell.m; sourceTree = "<group>"; };
+		729D0B99232E28F600D88267 /* GHGuideModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHGuideModel.h; sourceTree = "<group>"; };
+		729D0B9A232E28F600D88267 /* GHGuideModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHGuideModel.m; sourceTree = "<group>"; };
 		B0CF5393719874A4A8A5E22A /* Pods-GoodHabit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabit.debug.xcconfig"; path = "Target Support Files/Pods-GoodHabit/Pods-GoodHabit.debug.xcconfig"; sourceTree = "<group>"; };
 		B78D571AABE2191F4793A4F9 /* Pods_GoodHabit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodHabit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6DB6FF8EAB5DD241505741 /* Pods-GoodHabit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabit.release.xcconfig"; path = "Target Support Files/Pods-GoodHabit/Pods-GoodHabit.release.xcconfig"; sourceTree = "<group>"; };
@@ -289,6 +304,8 @@
 		723CBB31232CABA20095EC7C /* models */ = {
 			isa = PBXGroup;
 			children = (
+				729D0B99232E28F600D88267 /* GHGuideModel.h */,
+				729D0B9A232E28F600D88267 /* GHGuideModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -296,6 +313,8 @@
 		723CBB32232CABA20095EC7C /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				729D0B8D232E142600D88267 /* GHGuideViewController.h */,
+				729D0B8E232E142600D88267 /* GHGuideViewController.m */,
 				723CBB91232CB9010095EC7C /* GHSetViewController.h */,
 				723CBB92232CB9010095EC7C /* GHSetViewController.m */,
 				723CBB97232CC5120095EC7C /* GHLoginViewController.h */,
@@ -307,6 +326,12 @@
 		723CBB33232CABA20095EC7C /* views */ = {
 			isa = PBXGroup;
 			children = (
+				729D0B90232E15AE00D88267 /* GHGuidePromptView.h */,
+				729D0B91232E15AE00D88267 /* GHGuidePromptView.m */,
+				729D0B93232E20B600D88267 /* GHGuideCollectionReusableView.h */,
+				729D0B94232E20B600D88267 /* GHGuideCollectionReusableView.m */,
+				729D0B96232E20F400D88267 /* GHGuideCollectionViewCell.h */,
+				729D0B97232E20F400D88267 /* GHGuideCollectionViewCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -510,6 +535,7 @@
 				723CBB5B232CABF40095EC7C /* JTCalendarDelegateManager.m in Sources */,
 				723CBB5F232CABF40095EC7C /* JTHorizontalCalendarView.m in Sources */,
 				723CBB8D232CB8CC0095EC7C /* GHTodayViewController.m in Sources */,
+				729D0B8F232E142600D88267 /* GHGuideViewController.m in Sources */,
 				723CBB59232CABF40095EC7C /* JTDateHelper.m in Sources */,
 				723CBB93232CB9010095EC7C /* GHSetViewController.m in Sources */,
 				723CBB72232CAFA40095EC7C /* NSArray+log.m in Sources */,
@@ -523,9 +549,13 @@
 				723CBB60232CABF40095EC7C /* JTCalendarWeekView.m in Sources */,
 				723CBB7C232CB0580095EC7C /* GHHBTool.m in Sources */,
 				723CBB62232CABF40095EC7C /* JTCalendarPageView.m in Sources */,
+				729D0B98232E20F400D88267 /* GHGuideCollectionViewCell.m in Sources */,
+				729D0B92232E15AE00D88267 /* GHGuidePromptView.m in Sources */,
 				723CBB11232C86BE0095EC7C /* AppDelegate.m in Sources */,
 				723CBB61232CABF40095EC7C /* JTCalendarDayView.m in Sources */,
+				729D0B9B232E28F600D88267 /* GHGuideModel.m in Sources */,
 				723CBB7F232CB0A70095EC7C /* GHUIUtilities.m in Sources */,
+				729D0B95232E20B600D88267 /* GHGuideCollectionReusableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

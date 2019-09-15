@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "GHLoginViewController.h"
+#import "GHGuideViewController.h"
 #import "GHTabBarViewController.h"
 @interface AppDelegate ()
 
@@ -28,8 +29,10 @@
     BmobUser *bUser = [BmobUser currentUser];
     if (bUser) {
         //进行操作
-        GHTabBarViewController *tabVC = [GHTabBarViewController shareInstance];
-        return tabVC;
+//        GHTabBarViewController *tabVC = [GHTabBarViewController shareInstance];
+//        return tabVC;
+        GHGuideViewController *guideVC = [[GHGuideViewController alloc] init];
+        return guideVC;
     }else{
         //对象为空时，可打开用户注册界面
         GHLoginViewController *loginVC = [GHLoginViewController shareInstance];
