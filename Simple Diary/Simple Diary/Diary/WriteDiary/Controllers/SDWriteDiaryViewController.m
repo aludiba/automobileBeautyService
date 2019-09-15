@@ -255,13 +255,13 @@
                     [self.navigationController popViewControllerAnimated:YES];
                 } else if (error){
                     //发生错误后的动作
-                    NSLog(@"保存错误%@",error);
+                    [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请稍后再试", nil)];
                 } else {
-                    NSLog(@"Unknow error");
+                    [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请稍后再试", nil)];
                 }
             }];
         }else{
-            NSLog(@"上传图片发生错误error:%@",error.userInfo);
+            [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请稍后再试", nil)];
         }
     }];
     }else{
@@ -278,9 +278,9 @@
                 [self.navigationController popViewControllerAnimated:YES];
             } else if (error){
                 //发生错误后的动作
-                [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",error]];
+                [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请稍后再试", nil)];
             } else {
-                NSLog(@"Unknow error");
+                [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请稍后再试", nil)];
             }
         }];
         }else if (self.type == SDWriteDiaryViewControllerTypeEdit){
@@ -291,7 +291,7 @@
                     [MBProgressHUD SDshowReminderText:NSLocalizedString(@"更新成功", nil)];
                     [self.navigationController popToRootViewControllerAnimated:YES];
                 } else {
-                    [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",error]];
+                    [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请稍后再试", nil)];
                 }
             }];
         }

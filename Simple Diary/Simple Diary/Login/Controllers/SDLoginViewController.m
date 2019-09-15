@@ -148,8 +148,7 @@
                 tabVC.selectedIndex = 0;
                 [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
             }else{
-                NSLog(@"登录失败error:%@",error);
-                [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
+                [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请稍后再试", nil)];
             }
         }];
     }else if(sender.tag == 101){
@@ -165,12 +164,11 @@
                         tabVC.selectedIndex = 0;
                         [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
                     }else{
-                        [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
+                        [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请稍后再试", nil)];
                     }
                 }];
             } else {
-                NSLog(@"注册失败error:%@",error);
-                [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
+                [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请稍后再试", nil)];
             }
         }];
     }

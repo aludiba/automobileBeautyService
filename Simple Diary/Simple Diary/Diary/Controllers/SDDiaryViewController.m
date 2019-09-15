@@ -66,7 +66,7 @@
     //查找GameScore表的数据
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
         if (error) {
-            [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",error]];
+            [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请稍后再试", nil)];
         }else{
             [self.dataArray removeAllObjects];
             for (int i = (int)(array.count - 1); i > -1; i--) {

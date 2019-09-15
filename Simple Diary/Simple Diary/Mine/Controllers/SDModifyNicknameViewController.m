@@ -47,8 +47,7 @@
             [MBProgressHUD SDshowReminderText:NSLocalizedString(@"更新成功", nil)];
             [self.navigationController popViewControllerAnimated:YES];
         }else{
-            NSLog(@"用户更新error %@",[error description]);
-            [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
+            [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请稍后再试", nil)];
         }
     }];
 }

@@ -91,7 +91,7 @@
                 }
             }];
         } else {
-            [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
+            [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请稍后再试", nil)];
         }
     }];
     }else{
@@ -103,15 +103,13 @@
             }else{
                 if (array.count) {
                     BmobUser *user = array[0];
-                    NSLog(@"user:%@",user.objectId);
                     [user updateCurrentUserPasswordWithOldPassword:self.oldPassword newPassword:self.confirmPassword block:^(BOOL isSuccessful, NSError *error) {
                         if (isSuccessful) {
                             //用新密码登录
                             [MBProgressHUD SDshowReminderText:NSLocalizedString(@"密码修改成功", nil)];
                             [self.navigationController popViewControllerAnimated:YES];
                         } else {
-                            NSLog(@"修改密码失败:%@",error);
-                            [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
+                            [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请稍后再试", nil)];
                         }
                     }];
                 }

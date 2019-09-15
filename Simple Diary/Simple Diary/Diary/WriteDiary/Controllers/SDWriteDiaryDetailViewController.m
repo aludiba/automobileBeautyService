@@ -53,7 +53,7 @@
                     [MBProgressHUD SDshowReminderText:NSLocalizedString(@"删除成功", nil)];
                     [self.navigationController popViewControllerAnimated:YES];
                 }else{
-                    NSLog(@"删除数据错误error:%@",error);
+                    [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请稍后再试", nil)];
                 }
             }];
         }];

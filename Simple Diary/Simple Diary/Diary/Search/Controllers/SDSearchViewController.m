@@ -30,7 +30,7 @@
     //查找GameScore表的数据
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
         if (error) {
-            NSLog(@"查询出错:%@",error);
+            [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请稍后再试", nil)];
         }else{
             NSMutableArray *tempArray = [[NSMutableArray alloc] init];
             for (int i = (int)(array.count - 1); i > -1; i--) {
