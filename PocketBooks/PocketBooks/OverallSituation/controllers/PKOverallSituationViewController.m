@@ -181,7 +181,7 @@
                         break;
                 }
                 PKBudgetModel *model = [self.dataArray lastObject];
-                self.overallSituationMode.totalAmountString = [NSString stringWithFormat:@"%ld %@",self.totalNumber,model.unit];
+                self.overallSituationMode.totalAmountString = [NSString stringWithFormat:@"%@:%ld %@",NSLocalizedString(@"总预算", nil),self.totalNumber,model.unit];
                 BmobObject *obj = [array lastObject];
                 NSArray *arr = [obj objectForKey:@"data"];
                 for (NSDictionary *dict in arr) {
@@ -379,7 +379,7 @@
         // 坐标数值的位置
         leftAxis.labelPosition = YAxisLabelPositionOutsideChart;
         // 数值分割个数
-        leftAxis.labelCount = self.overallSituationMode.dataArray.count * 3;
+        leftAxis.labelCount = self.overallSituationMode.dataArray.count * 2;
         // 最大值到顶部的范围比
         leftAxis.spaceTop = 0.15;
     }
