@@ -20,8 +20,22 @@
 "今天" = "Today";
 "日常习惯" = "DailyHabits";
 "设置" = "Set";
+
 "请先挑选3个习惯来开始" = "Pick three habits to start with";
+
 "起床" = "Get out of bed";
 "刷牙" = "Brush your teeth";
 "喝杯水" = "A glass of water";
 "叠被子" = "Fold the quilt";
+
+"晨间" = "morning";
+"跑步" = "running";
+"吃早餐" = "Eat breakfast";
+"早起" = "Get up early";
+"阅读新闻" = "Reading the news";
+"吃鸡蛋" = "Eat an egg";
+"听播客" = "Listen to the podcast";
+"背单词" = "Listen to the podcast";
+"眼操" = "exercise";
+"吃水果" = "Eat fruit";
+

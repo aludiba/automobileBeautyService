@@ -36,8 +36,8 @@
     }else{
         //对象为空时，可打开用户注册界面
         GHLoginViewController *loginVC = [GHLoginViewController shareInstance];
-        UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
-        return loginVCNav;
+//        UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+        return loginVC;
     }
 }
 - (void)applicationWillResignActive:(UIApplication *)application {
