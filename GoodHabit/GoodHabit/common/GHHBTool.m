@@ -64,4 +64,33 @@
     }
     return data;
 }
++ (BOOL)isFirstLoad{
+
+NSString *currentVersion = [[[NSBundle mainBundle] infoDictionary]
+
+objectForKey:@"CFBundleShortVersionString"];
+
+NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+
+NSString *lastRunVersion = [defaults objectForKey:LAST_RUN_VERSION_KEY];
+
+if (!lastRunVersion) {
+
+[defaults setObject:currentVersion forKey:LAST_RUN_VERSION_KEY];
+
+return YES;
+
+}
+
+else if (![lastRunVersion isEqualToString:currentVersion]) {
+
+[defaults setObject:currentVersion forKey:LAST_RUN_VERSION_KEY];
+
+return YES;
+
+}
+
+return NO;
+
+}
 @end

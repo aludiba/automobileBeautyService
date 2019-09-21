@@ -29,17 +29,15 @@
     BmobUser *bUser = [BmobUser currentUser];
     if (bUser) {
         //进行操作
-//        GHTabBarViewController *tabVC = [GHTabBarViewController shareInstance];
-//        return tabVC;
-        GHGuideViewController *guideVC = [[GHGuideViewController alloc] init];
-        return guideVC;
+        GHTabBarViewController *tabVC = [GHTabBarViewController shareInstance];
+        return tabVC;
     }else{
         //对象为空时，可打开用户注册界面
         GHLoginViewController *loginVC = [GHLoginViewController shareInstance];
-//        UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
         return loginVC;
     }
 }
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

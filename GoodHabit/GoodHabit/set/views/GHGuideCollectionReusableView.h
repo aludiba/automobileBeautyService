@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GHGuideCollectionReusableView : UICollectionReusableView
-@property(nonatomic, copy)NSString *title;
+@property(nonatomic, strong)UILabel *titleLbl;
+@property(nonatomic, strong)NSString *titleString;
 @end
 
 NS_ASSUME_NONNULL_END

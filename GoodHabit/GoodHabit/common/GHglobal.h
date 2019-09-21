@@ -23,6 +23,7 @@
 #import <BmobSDK/Bmob.h>
 //多语言调用
 #define NSLocalizedString(key, comment) [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
+#define LAST_RUN_VERSION_KEY @"Last_Run_Version_Key"
 /**颜色*/
 #define FONTSIZE @"fontSize"
 #define FONTRGB @"fontRGB"

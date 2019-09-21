@@ -8,15 +8,14 @@
 
 #import "GHGuideCollectionReusableView.h"
 @interface GHGuideCollectionReusableView()
-@property(nonatomic, strong)UILabel *titleLabel;
 @end
 @implementation GHGuideCollectionReusableView
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         self.backgroundColor = [UIColor whiteColor];
-        [self addSubview:self.titleLabel];
+        [self addSubview:self.titleLbl];
         
-        [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.titleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self).offset(30);
             make.width.mas_equalTo(GHWIDTH - 60);
             make.top.equalTo(self);
@@ -25,30 +24,28 @@
     }
     return self;
 }
-- (void)setTitle:(NSString *)title{
-    _title = title;
-    self.titleLabel.text = [NSString stringWithFormat:@" %@ ",NSLocalizedString(_title, nil)];
-    CGSize size = CGSizeMake(MAXFLOAT, 30);
-    [self.titleLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+- (void)setTitleString:(NSString *)titleString{
+    _titleString = titleString;
+    self.titleLbl.text = [NSString stringWithFormat:@"   %@   ",_titleString];
+    CGSize size = [self.titleLbl sizeThatFits:CGSizeMake(MAXFLOAT, 30)];
+    [self.titleLbl mas_updateConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(size.width);
     }];
-    [self.titleLabel layoutIfNeeded];
+    [self.titleLbl layoutIfNeeded];
     [self layoutSubviews];
-    
+
 }
 #pragma mark - 属性懒加载
-- (UILabel *)titleLabel{
-    if (!_titleLabel) {
-        _titleLabel = [[UILabel alloc] init];
-        _titleLabel.backgroundColor = GHH_Color(235, 240, 240, 1);
-        _titleLabel.textColor = [UIColor blackColor];
-        _titleLabel.font = [UIFont systemFontOfSize:15];
-        _titleLabel.textAlignment = NSTextAlignmentCenter;
-        _titleLabel.layer.cornerRadius = 15.0f;
-        _titleLabel.layer.masksToBounds = YES;
-        _titleLabel.numberOfLines = 0;
-        [_titleLabel sizeToFit];
+- (UILabel *)titleLbl{
+    if (!_titleLbl) {
+        _titleLbl = [[UILabel alloc] init];
+        _titleLbl.backgroundColor = GHH_Color(235, 240, 240, 1);
+        _titleLbl.textColor = [UIColor blackColor];
+        _titleLbl.font = [UIFont systemFontOfSize:15];
+        _titleLbl.layer.cornerRadius = 15.0f;
+        _titleLbl.layer.masksToBounds = YES;
+        _titleLbl.numberOfLines = 0;
     }
-    return _titleLabel;
+    return _titleLbl;
 }
 @end

@@ -8,6 +8,7 @@
 
 #import "GHLoginViewController.h"
 #import "GHTabBarViewController.h"
+#import "GHGuideViewController.h"
 
 @interface GHLoginViewController ()<UITextFieldDelegate>
 @property(nonatomic, strong)UIView *backView;
@@ -122,9 +123,14 @@
         [BmobUser loginWithUsernameInBackground:self.account password:self.password block:^(BmobUser *user, NSError *error) {
             if (user) {
                 [MBProgressHUD GHshowReminderText:NSLocalizedString(@"登录成功", nil)];
+                if ([GHHBTool isFirstLoad]) {
+                    GHGuideViewController *guideVC = [[GHGuideViewController alloc] init];
+                    [[UIApplication sharedApplication].delegate window].rootViewController = guideVC;
+                }else{
                 GHTabBarViewController *tabVC = [GHTabBarViewController shareInstance];
                 tabVC.selectedIndex = 0;
                 [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                }
             }else{
                 [MBProgressHUD GHshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
             }

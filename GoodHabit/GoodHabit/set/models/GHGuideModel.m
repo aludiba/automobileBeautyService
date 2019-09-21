@@ -9,5 +9,7 @@
 #import "GHGuideModel.h"
 
 @implementation GHGuideModel
-
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{@"punchArray" : [GHGuideClockInformationModel class]};
+}
 @end
