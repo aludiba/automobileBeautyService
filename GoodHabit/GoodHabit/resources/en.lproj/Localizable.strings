@@ -40,6 +40,7 @@
 "天" = "day";
 "打卡日志" = "Clock in the log";
 "所有日志" = "All log";
+"请输入日志" = "Please enter log";
 
 "请先挑选3个习惯来开始" = "Pick three habits to start with";
 

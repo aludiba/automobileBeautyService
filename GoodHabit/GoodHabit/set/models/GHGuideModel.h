@@ -18,7 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, copy)NSString *content;
 @property(nonatomic, assign)Boolean isSelect;
 
-@property(nonatomic, strong)NSMutableArray<GHGuideClockInformationModel *> *punchArray;//打卡信息数组
+@property(nonatomic, strong)NSArray<GHGuideClockInformationModel *> *punchArray;//打卡信息数组
+@property(nonatomic, strong)NSDate *lastClockDate;
 @property(nonatomic, assign)NSUInteger clockContinuouslyNumber;//连续打卡时间
 @end
 

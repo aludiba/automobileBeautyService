@@ -10,7 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @class GHGuideModel;
+@class GHTodayViewController;
 @interface GHClockInViewController : GHBaseViewController
+@property(nonatomic, weak)GHTodayViewController *superVC;
 @property(nonatomic, strong)NSMutableArray *dataArray;
 @property(nonatomic, strong)GHGuideModel *model;
 @end

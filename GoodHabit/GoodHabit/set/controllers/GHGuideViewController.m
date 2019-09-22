@@ -343,6 +343,7 @@
             } else if (error){
                 [MBProgressHUD GHshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
             } else {
+                [MBProgressHUD GHshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
 
             }
         }];

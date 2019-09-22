@@ -142,6 +142,9 @@
     GHGuideModel *model = array[indexPath.row];
     GHClockInViewController *clockInVC = [[GHClockInViewController alloc] init];
     clockInVC.model = model;
+    clockInVC.dataArray = self.dataArray;
+    clockInVC.superVC = self;
+    clockInVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:clockInVC animated:YES];
 }
 #pragma mark - 属性懒加载
