@@ -9,6 +9,7 @@
 #import "GHClockInViewController.h"
 #import "GHTodayViewController.h"
 #import "GHGuideModel.h"
+#import "GHAllClockLogsViewController.h"
 @interface GHClockInViewController ()<UITextViewDelegate>
 @property(nonatomic, strong)UILabel *clockInDateLabel;
 @property(nonatomic, strong)UIImageView *projectImgView;
@@ -91,7 +92,10 @@
 }
 #pragma mark - actions
 - (void)allLogAction{
-    
+    GHAllClockLogsViewController *vc = [[GHAllClockLogsViewController alloc] init];
+    vc.data = self.dataArray;
+    vc.model = self.model;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)saveAction{
     if (!self.clockInLogTextView.text.length) {

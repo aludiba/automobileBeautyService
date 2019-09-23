@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		44174B98EC156E8AE26A0351 /* Pods_GoodHabit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78D571AABE2191F4793A4F9 /* Pods_GoodHabit.framework */; };
+		72263EEC2338F23E00F54FFD /* GHAllClockLogsViewCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72263EEB2338F23E00F54FFD /* GHAllClockLogsViewCellTableViewCell.m */; };
+		72263EEF2338FC1900F54FFD /* GHAllClockLogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72263EEE2338FC1900F54FFD /* GHAllClockLogsViewController.m */; };
 		723CBB11232C86BE0095EC7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB10232C86BE0095EC7C /* AppDelegate.m */; };
 		723CBB19232C86C20095EC7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723CBB18232C86C20095EC7C /* Assets.xcassets */; };
 		723CBB1F232C86C20095EC7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB1E232C86C20095EC7C /* main.m */; };
@@ -53,6 +55,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72263EEA2338F23E00F54FFD /* GHAllClockLogsViewCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHAllClockLogsViewCellTableViewCell.h; sourceTree = "<group>"; };
+		72263EEB2338F23E00F54FFD /* GHAllClockLogsViewCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHAllClockLogsViewCellTableViewCell.m; sourceTree = "<group>"; };
+		72263EED2338FC1900F54FFD /* GHAllClockLogsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHAllClockLogsViewController.h; sourceTree = "<group>"; };
+		72263EEE2338FC1900F54FFD /* GHAllClockLogsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHAllClockLogsViewController.m; sourceTree = "<group>"; };
 		723CBB0C232C86BE0095EC7C /* GoodHabit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodHabit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		723CBB0F232C86BE0095EC7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		723CBB10232C86BE0095EC7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -270,6 +276,8 @@
 				723CBB8C232CB8CC0095EC7C /* GHTodayViewController.m */,
 				72A2979F23363D24004EE230 /* GHClockInViewController.h */,
 				72A297A023363D24004EE230 /* GHClockInViewController.m */,
+				72263EED2338FC1900F54FFD /* GHAllClockLogsViewController.h */,
+				72263EEE2338FC1900F54FFD /* GHAllClockLogsViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -279,6 +287,8 @@
 			children = (
 				72A2979C23362AB9004EE230 /* GHTodayClockInCollectionViewCell.h */,
 				72A2979D23362AB9004EE230 /* GHTodayClockInCollectionViewCell.m */,
+				72263EEA2338F23E00F54FFD /* GHAllClockLogsViewCellTableViewCell.h */,
+				72263EEB2338F23E00F54FFD /* GHAllClockLogsViewCellTableViewCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -563,8 +573,10 @@
 				723CBB96232CB9930095EC7C /* GHTabBarViewController.m in Sources */,
 				723CBB73232CAFA40095EC7C /* NSDictionary+log.m in Sources */,
 				723CBB82232CB0FD0095EC7C /* MBProgressHUD+GHNJ.m in Sources */,
+				72263EEF2338FC1900F54FFD /* GHAllClockLogsViewController.m in Sources */,
 				723CBB5E232CABF40095EC7C /* JTCalendarWeekDayView.m in Sources */,
 				723CBB8A232CB71E0095EC7C /* GHBaseViewController.m in Sources */,
+				72263EEC2338F23E00F54FFD /* GHAllClockLogsViewCellTableViewCell.m in Sources */,
 				723CBB5C232CABF40095EC7C /* JTCalendarManager.m in Sources */,
 				723CBB90232CB8EC0095EC7C /* GHDailyHabitsViewController.m in Sources */,
 				723CBB5B232CABF40095EC7C /* JTCalendarDelegateManager.m in Sources */,
