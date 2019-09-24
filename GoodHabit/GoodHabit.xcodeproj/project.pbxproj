@@ -52,6 +52,7 @@
 		72A2979B23361A9D004EE230 /* GHSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2979A23361A9D004EE230 /* GHSetViewModel.m */; };
 		72A2979E23362AB9004EE230 /* GHTodayClockInCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2979D23362AB9004EE230 /* GHTodayClockInCollectionViewCell.m */; };
 		72A297A123363D24004EE230 /* GHClockInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A297A023363D24004EE230 /* GHClockInViewController.m */; };
+		AE56BD06233A294F00456819 /* GHDailyHabitsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE56BD05233A294F00456819 /* GHDailyHabitsTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -154,6 +155,8 @@
 		72A2979D23362AB9004EE230 /* GHTodayClockInCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHTodayClockInCollectionViewCell.m; sourceTree = "<group>"; };
 		72A2979F23363D24004EE230 /* GHClockInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHClockInViewController.h; sourceTree = "<group>"; };
 		72A297A023363D24004EE230 /* GHClockInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHClockInViewController.m; sourceTree = "<group>"; };
+		AE56BD04233A294F00456819 /* GHDailyHabitsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GHDailyHabitsTableViewCell.h; path = ../../../../../Desktop/emp_martix/ios/Matrix_Employee/Service/ResearchReport/Views/GHDailyHabitsTableViewCell.h; sourceTree = "<group>"; };
+		AE56BD05233A294F00456819 /* GHDailyHabitsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GHDailyHabitsTableViewCell.m; path = ../../../../../Desktop/emp_martix/ios/Matrix_Employee/Service/ResearchReport/Views/GHDailyHabitsTableViewCell.m; sourceTree = "<group>"; };
 		B0CF5393719874A4A8A5E22A /* Pods-GoodHabit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabit.debug.xcconfig"; path = "Target Support Files/Pods-GoodHabit/Pods-GoodHabit.debug.xcconfig"; sourceTree = "<group>"; };
 		B78D571AABE2191F4793A4F9 /* Pods_GoodHabit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodHabit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6DB6FF8EAB5DD241505741 /* Pods-GoodHabit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabit.release.xcconfig"; path = "Target Support Files/Pods-GoodHabit/Pods-GoodHabit.release.xcconfig"; sourceTree = "<group>"; };
@@ -322,6 +325,8 @@
 		723CBB2F232CABA20095EC7C /* views */ = {
 			isa = PBXGroup;
 			children = (
+				AE56BD04233A294F00456819 /* GHDailyHabitsTableViewCell.h */,
+				AE56BD05233A294F00456819 /* GHDailyHabitsTableViewCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -599,6 +604,7 @@
 				72A297952336116B004EE230 /* GHPasswordChangeViewController.m in Sources */,
 				723CBB76232CAFC60095EC7C /* CalendarTool.m in Sources */,
 				723CBB60232CABF40095EC7C /* JTCalendarWeekView.m in Sources */,
+				AE56BD06233A294F00456819 /* GHDailyHabitsTableViewCell.m in Sources */,
 				72A29798233618E4004EE230 /* GHSetTableViewCell.m in Sources */,
 				723CBB7C232CB0580095EC7C /* GHHBTool.m in Sources */,
 				723CBB62232CABF40095EC7C /* JTCalendarPageView.m in Sources */,

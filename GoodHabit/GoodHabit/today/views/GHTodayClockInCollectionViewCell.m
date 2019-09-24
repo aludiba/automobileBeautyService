@@ -56,6 +56,11 @@
     _model = model;
     self.projectImgView.image = [UIImage imageNamed:_model.imageContent];
     self.projectLabel.text = _model.content;
+    if (_model.clockContinuouslyNumber > 0) {
+        self.clockInImgView.hidden = NO;
+    }else{
+        self.clockInImgView.hidden = YES;
+    }
     self.clockContinuouslyInformationLabel.text = [NSString stringWithFormat:@"%@%ld%@",NSLocalizedString(@"连续", nil),_model.clockContinuouslyNumber,NSLocalizedString(@"天", nil)];
 }
 #pragma mark - 属性懒加载
