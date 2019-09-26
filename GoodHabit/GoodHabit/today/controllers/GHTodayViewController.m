@@ -31,10 +31,10 @@
     __weak typeof(self) weakSelf = self;
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
         if (error) {
-            [self.collectionView.mj_header endRefreshing];
+            [weakSelf.collectionView.mj_header endRefreshing];
             [MBProgressHUD GHshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
         }else{
-            [self.collectionView.mj_header endRefreshing];
+            [weakSelf.collectionView.mj_header endRefreshing];
             if (array.count) {
                 [weakSelf.dataArray removeAllObjects];
                 BmobObject *obj = [array lastObject];
@@ -55,10 +55,10 @@
                         NSMutableArray *dataArray = [[NSMutableArray alloc] init];
                         [dic setObject:dataArray forKey:@"data"];
                         [dataArray addObject:model];
-                        [self.dataArray addObject:dic];
+                        [weakSelf.dataArray addObject:dic];
                     }else{
                         NSMutableDictionary *DIC;
-                        for (NSMutableDictionary *dic in self.dataArray) {
+                        for (NSMutableDictionary *dic in weakSelf.dataArray) {
                             NSString *sectionString = [dic objectForKey:@"section"];
                             if ([sectionString isEqualToString:model.periodTimeString]) {
                                 DIC = dic;
@@ -68,7 +68,11 @@
                         [dataArray addObject:model];
                     }
                 }
-                [weakSelf collectionViewReload];
+                if (weakSelf.dataArray.count) {
+                    [weakSelf collectionViewReload];
+                }else{
+                    [MBProgressHUD GHshowReminderText:NSLocalizedString(@"暂无数据", nil)];
+                }
             }else{
                 [self.collectionView.mj_header endRefreshing];
                 [MBProgressHUD GHshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
