@@ -44,7 +44,13 @@
         btn.tag = periodCode;
         btn.layer.cornerRadius = 14.0f;
         btn.layer.masksToBounds = YES;
-        btn.backgroundColor = GHH_Color(242, 242, 242, 1);
+        if (i == 0) {
+            btn.backgroundColor = [UIColor grayColor];
+            [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        }else{
+            btn.backgroundColor = GHH_Color(242, 242, 242, 1);
+            [btn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        }
         [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
         CGSize size = [btn sizeThatFits:CGSizeMake(MAXFLOAT, 60)];
         CGFloat width = size.width;
@@ -76,8 +82,30 @@
 - (void)setDataA:(NSArray *)dataA{
     _dataA = dataA;
 }
+- (void)adjustColor{
+    for (int i = 0; i < self.viewDataArray.count; i++) {
+           UIButton *btn = self.viewDataArray[i];
+           if (btn.tag != self.selectIndex) {
+           btn.backgroundColor = GHH_Color(242, 242, 242, 1);
+           [btn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+           }else{
+               btn.backgroundColor = [UIColor grayColor];
+               [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+           }
+       }
+}
 - (void)btnClick:(UIButton *)sender{
     NSInteger tag = sender.tag;
+    self.selectIndex = tag;
+//    sender.backgroundColor = [UIColor grayColor];
+//    [sender setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    for (int i = 0; i < self.viewDataArray.count; i++) {
+//        UIButton *btn = self.viewDataArray[i];
+//        if (btn.tag != tag) {
+//        btn.backgroundColor = GHH_Color(242, 242, 242, 1);
+//        [btn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+//        }
+//    }
     self.periodCode = tag;
     for (int i = 0; i < self.dataArray.count; i++) {
         NSMutableDictionary *dic = self.dataArray[i];

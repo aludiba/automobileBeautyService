@@ -8,6 +8,7 @@
 
 #import "GHGuideViewController.h"
 #import "GHTabBarViewController.h"
+#import "GHDailyHabitsViewController.h"
 #import "GHGuidePromptView.h"
 #import "GHGuideCollectionReusableView.h"
 #import "GHGuideCollectionViewCell.h"
@@ -24,9 +25,34 @@
 @implementation GHGuideViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self GH_setupNavigationItems];
     [self setContentView];
 }
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    if (self.selectIndex == 0) {
+        self.GHbackButton.hidden = YES;
+//        self.promptView.hidden = NO;
+    }else{
+        self.GHbackButton.hidden = NO;
+//        self.promptView.hidden = YES;
+    }
+}
+- (void)GH_setupNavigationItems {
+    if (self.navigationController && self.navigationController.viewControllers.count > 1) {
+        self.navigationItem.hidesBackButton = YES;
+        _GHbackButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+        [_GHbackButton setImage:[UIImage imageNamed:@"btn_back"] forState:UIControlStateNormal];
+        _GHbackButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+        [_GHbackButton addTarget:self action:@selector(GHbackButtonAction) forControlEvents:UIControlEventTouchUpInside];
+        UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:_GHbackButton];
+        self.navigationItem.leftBarButtonItem = backItem;
+    }
+}
+- (void)GHbackButtonAction{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 #pragma mark - actions
 - (void)setContentView{
     [self.view addSubview:self.promptView];
@@ -319,9 +345,12 @@
     self.promptView.numberLabel.text = [NSString stringWithFormat:@"%ld",self.selectArray.count];
 }
 - (void)sureBtnClick{
-    if (self.selectArray.count < 3) {
-        [MBProgressHUD GHshowReminderText:NSLocalizedString(@"请选择3项", nil)];
-    }
+//    if (self.selectIndex == 0) {
+         if (self.selectArray.count < 3) {
+               [MBProgressHUD GHshowReminderText:NSLocalizedString(@"请选择3项", nil)];
+             return;
+           }
+//    }
     BmobObject *clockProjects = [BmobObject objectWithClassName:@"GHClockProjects"];
     BmobUser *author = [BmobUser currentUser];
     [clockProjects setObject:author forKey:@"author"];
@@ -337,9 +366,16 @@
     [clockProjects saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
             if (isSuccessful) {
                   [MBProgressHUD GHshowReminderText:NSLocalizedString(@"设置成功", nil)];
-                           GHTabBarViewController *tabVC = [GHTabBarViewController shareInstance];
-                           tabVC.selectedIndex = 0;
-                           [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                if (self.selectIndex == 0) {
+                     GHTabBarViewController *tabVC = [GHTabBarViewController shareInstance];
+                                              tabVC.selectedIndex = 0;
+                                              [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                }else{
+                    [self.navigationController popViewControllerAnimated:YES];
+                    if (self.selectIndex == 1) {
+                        [self.superHabitsVC.mainTable.mj_header beginRefreshing];
+                    }
+                }
             } else if (error){
                 [MBProgressHUD GHshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
             } else {

@@ -10,6 +10,7 @@
 #import "GHModifyNicknameViewController.h"
 #import "GHPasswordChangeViewController.h"
 #import "GHLoginViewController.h"
+#import "GHGuideViewController.h"
 #import "GHSetTableViewCell.h"
 #import "GHSetViewModel.h"
 
@@ -39,6 +40,10 @@
     GHSetViewModel *viewModel1 = [[GHSetViewModel alloc] init];
     viewModel1.title = NSLocalizedString(@"密码修改", nil);
     [self.viewDataArray addObject:viewModel1];
+    
+    GHSetViewModel *viewModel2 = [[GHSetViewModel alloc] init];
+       viewModel2.title = NSLocalizedString(@"设置环境", nil);
+       [self.viewDataArray addObject:viewModel2];
     
     GHSetViewModel *viewModel5 = [[GHSetViewModel alloc] init];
     viewModel5.title = NSLocalizedString(@"退出", nil);
@@ -87,6 +92,14 @@
         }
             break;
         case 2:
+            {
+            GHGuideViewController *guideVC = [[GHGuideViewController alloc] init];
+            guideVC.selectIndex = 2;
+            guideVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:guideVC animated:YES];
+        }
+            break;
+        case 3:
         {
             [BmobUser logout];
             GHLoginViewController *loginVC = [GHLoginViewController shareInstance];

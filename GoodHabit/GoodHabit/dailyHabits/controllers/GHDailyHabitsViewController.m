@@ -7,15 +7,16 @@
 //
 
 #import "GHDailyHabitsViewController.h"
+#import "GHGuideViewController.h"
 #import "GHDailyHabitsTableViewHeaderView.h"
 #import "GHDailyHabitsTableViewCell.h"
 #import "GHGuideModel.h"
 @interface GHDailyHabitsViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic, strong)UITableView *mainTable;
 @property(nonatomic, strong)NSArray *array;
 @property(nonatomic, strong)NSMutableArray *dataArray;
 @property(nonatomic, strong)NSMutableArray *currentDataArray;
 @property(nonatomic, strong)GHDailyHabitsTableViewHeaderView *headerView;
+@property(nonatomic, strong)UIButton *addHbbitButton;
 @end
 
 @implementation GHDailyHabitsViewController
@@ -23,6 +24,15 @@
     [super viewDidLoad];
     self.title = NSLocalizedString(@"日常习惯", nil);
     [self loadData];
+}
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+}
+- (void)GH_setupNavigationItems{
+    [super GH_setupNavigationItems];
+    UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.addHbbitButton];
+    self.navigationItem.rightBarButtonItem = rightButtonItem;
 }
 - (void)loadData{
     BmobQuery *bquery = [BmobQuery queryWithClassName:@"GHClockProjects"];
@@ -121,7 +131,15 @@
     __weak typeof(self) weakSelf = self;
     headerView.selectSectionB = ^(GHDailyHabitsTableViewHeaderView * _Nonnull habitsHeaderView) {
         weakSelf.currentDataArray = habitsHeaderView.currentDataArray;
+//        NSMutableArray *indexPathArray = [[NSMutableArray alloc] init];
+//        NSArray *array = [weakSelf.mainTable visibleCells];
+//               for (GHDailyHabitsTableViewCell *cell in array) {
+//                   NSIndexPath *indexPath = [weakSelf.mainTable indexPathForCell:cell];
+//                   [indexPathArray addObject:indexPath];
+//               }
+//        [weakSelf.mainTable reloadRowsAtIndexPaths:indexPathArray withRowAnimation:UITableViewRowAnimationNone];
         [weakSelf.mainTable reloadData];
+        [habitsHeaderView adjustColor];
     };
     return headerView;
 }
@@ -140,6 +158,13 @@
     // 再删除cell
     [self.mainTable deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     [self dataUpdate];
+}
+- (void)addHabits{
+    GHGuideViewController *guideVC = [[GHGuideViewController alloc] init];
+    guideVC.superHabitsVC = self;
+    guideVC.selectIndex = 1;
+    guideVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:guideVC animated:YES];
 }
 #pragma mark - 属性懒加载
 - (NSMutableArray *)dataArray{
@@ -170,5 +195,13 @@
         }];
     }
     return _mainTable;
+}
+- (UIButton *)addHbbitButton{
+    if (!_addHbbitButton) {
+        _addHbbitButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+        [_addHbbitButton setImage:[UIImage imageNamed:@"btn_new_add"] forState:UIControlStateNormal];
+        [_addHbbitButton addTarget:self action:@selector(addHabits) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _addHbbitButton;
 }
 @end

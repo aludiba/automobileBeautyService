@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GHDailyHabitsViewController : GHBaseViewController
-
+@property(nonatomic, strong)UITableView *mainTable;
 @end
 
 NS_ASSUME_NONNULL_END
