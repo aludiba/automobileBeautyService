@@ -17,6 +17,7 @@
 @property(nonatomic, strong)NSMutableArray *currentDataArray;
 @property(nonatomic, strong)GHDailyHabitsTableViewHeaderView *headerView;
 @property(nonatomic, strong)UIButton *addHbbitButton;
+@property(nonatomic, assign)NSUInteger selectIndex;
 @end
 
 @implementation GHDailyHabitsViewController
@@ -127,19 +128,14 @@
     GHDailyHabitsTableViewHeaderView *headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"GHDailyHabitsTableViewHeaderView"];
     headerView.dataA = self.array;
     headerView.dataArray = self.dataArray;
+    headerView.selectIndex = self.selectIndex;
+    [headerView adjustColor];
     self.headerView = headerView;
     __weak typeof(self) weakSelf = self;
     headerView.selectSectionB = ^(GHDailyHabitsTableViewHeaderView * _Nonnull habitsHeaderView) {
         weakSelf.currentDataArray = habitsHeaderView.currentDataArray;
-//        NSMutableArray *indexPathArray = [[NSMutableArray alloc] init];
-//        NSArray *array = [weakSelf.mainTable visibleCells];
-//               for (GHDailyHabitsTableViewCell *cell in array) {
-//                   NSIndexPath *indexPath = [weakSelf.mainTable indexPathForCell:cell];
-//                   [indexPathArray addObject:indexPath];
-//               }
-//        [weakSelf.mainTable reloadRowsAtIndexPaths:indexPathArray withRowAnimation:UITableViewRowAnimationNone];
+        weakSelf.selectIndex = habitsHeaderView.selectIndex;
         [weakSelf.mainTable reloadData];
-        [habitsHeaderView adjustColor];
     };
     return headerView;
 }
