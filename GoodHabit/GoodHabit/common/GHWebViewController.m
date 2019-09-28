@@ -7,9 +7,10 @@
 //
 
 #import "GHWebViewController.h"
+#import <WebKit/WebKit.h>
 
-@interface GHWebViewController ()<UIWebViewDelegate>
-@property(nonatomic, strong)UIWebView *web;
+@interface GHWebViewController ()<WKUIDelegate,WKNavigationDelegate>
+@property(nonatomic, strong)WKWebView *web;
 @end
 @implementation GHWebViewController
 - (void)viewDidLoad {
@@ -30,10 +31,11 @@
     }];
 }
 #pragma mark - 属性懒加载
-- (UIWebView *)web{
+- (WKWebView *)web{
     if (!_web) {
-        _web = [[UIWebView alloc] init];
-        _web.delegate = self;
+        _web = [[WKWebView alloc] init];
+        _web.UIDelegate = self;        // UI代理
+        _web.navigationDelegate = self;        // 导航代理
         [self.view addSubview:_web];
         [_web mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.mas_topLayoutGuideTop).offset(-GHHeightStatusBar);
@@ -43,5 +45,4 @@
         }];
     }
     return _web;
-}
-@end
+}@end

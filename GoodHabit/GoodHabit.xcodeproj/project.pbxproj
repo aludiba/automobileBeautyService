@@ -52,6 +52,25 @@
 		72A2979B23361A9D004EE230 /* GHSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2979A23361A9D004EE230 /* GHSetViewModel.m */; };
 		72A2979E23362AB9004EE230 /* GHTodayClockInCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2979D23362AB9004EE230 /* GHTodayClockInCollectionViewCell.m */; };
 		72A297A123363D24004EE230 /* GHClockInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A297A023363D24004EE230 /* GHClockInViewController.m */; };
+		AE361CA9233F781900702F40 /* jcore-ios-2.0.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CA7233F781900702F40 /* jcore-ios-2.0.1.a */; };
+		AE361CAA233F781900702F40 /* jpush-ios-3.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CA8233F781900702F40 /* jpush-ios-3.2.0.a */; };
+		AE361CAC233F7A0100702F40 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CAB233F7A0100702F40 /* AdSupport.framework */; };
+		AE361CAE233F7A0B00702F40 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CAD233F7A0B00702F40 /* AVFoundation.framework */; };
+		AE361CB0233F7A1600702F40 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CAF233F7A1600702F40 /* CFNetwork.framework */; };
+		AE361CB2233F7A2200702F40 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CB1233F7A2200702F40 /* CoreFoundation.framework */; };
+		AE361CB4233F7A2D00702F40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CB3233F7A2D00702F40 /* CoreGraphics.framework */; };
+		AE361CB6233F7A3600702F40 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CB5233F7A3600702F40 /* CoreLocation.framework */; };
+		AE361CB8233F7A4200702F40 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CB7233F7A4100702F40 /* CoreTelephony.framework */; };
+		AE361CBA233F7A4900702F40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CB9233F7A4800702F40 /* Foundation.framework */; };
+		AE361CBC233F7A5000702F40 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CBB233F7A5000702F40 /* ImageIO.framework */; };
+		AE361CC5233F7AD600702F40 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CC4233F7AD500702F40 /* MobileCoreServices.framework */; };
+		AE361CC7233F7AE200702F40 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CC6233F7AE100702F40 /* Photos.framework */; };
+		AE361CC9233F7AEE00702F40 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CC8233F7AEE00702F40 /* QuartzCore.framework */; };
+		AE361CCB233F7AFA00702F40 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CCA233F7AFA00702F40 /* Security.framework */; };
+		AE361CCD233F7B0700702F40 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CCC233F7B0700702F40 /* SystemConfiguration.framework */; };
+		AE361CCF233F7B1000702F40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CCE233F7B1000702F40 /* UIKit.framework */; };
+		AE361CD1233F7B1900702F40 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CD0233F7B1900702F40 /* UserNotifications.framework */; };
+		AE361CD9233F818D00702F40 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CBF233F7A9300702F40 /* libresolv.tbd */; };
 		AEBA658A233B367200B37FED /* GHDailyHabitsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBA6589233B367200B37FED /* GHDailyHabitsTableViewCell.m */; };
 		AEBA658D233B3F7600B37FED /* GHDailyHabitsTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBA658C233B3F7600B37FED /* GHDailyHabitsTableViewHeaderView.m */; };
 /* End PBXBuildFile section */
@@ -156,6 +175,32 @@
 		72A2979D23362AB9004EE230 /* GHTodayClockInCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHTodayClockInCollectionViewCell.m; sourceTree = "<group>"; };
 		72A2979F23363D24004EE230 /* GHClockInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHClockInViewController.h; sourceTree = "<group>"; };
 		72A297A023363D24004EE230 /* GHClockInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHClockInViewController.m; sourceTree = "<group>"; };
+		AE361CA6233F781900702F40 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		AE361CA7233F781900702F40 /* jcore-ios-2.0.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.0.1.a"; sourceTree = "<group>"; };
+		AE361CA8233F781900702F40 /* jpush-ios-3.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.0.a"; sourceTree = "<group>"; };
+		AE361CAB233F7A0100702F40 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		AE361CAD233F7A0B00702F40 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AE361CAF233F7A1600702F40 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AE361CB1233F7A2200702F40 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		AE361CB3233F7A2D00702F40 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AE361CB5233F7A3600702F40 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AE361CB7233F7A4100702F40 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		AE361CB9233F7A4800702F40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AE361CBB233F7A5000702F40 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		AE361CBD233F7A6C00702F40 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		AE361CBE233F7A8200702F40 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		AE361CBF233F7A9300702F40 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		AE361CC0233F7AA500702F40 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		AE361CC1233F7AB100702F40 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		AE361CC2233F7AC400702F40 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		AE361CC3233F7ACA00702F40 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		AE361CC4233F7AD500702F40 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AE361CC6233F7AE100702F40 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		AE361CC8233F7AEE00702F40 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AE361CCA233F7AFA00702F40 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AE361CCC233F7B0700702F40 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AE361CCE233F7B1000702F40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AE361CD0233F7B1900702F40 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		AEBA6588233B367200B37FED /* GHDailyHabitsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHDailyHabitsTableViewCell.h; sourceTree = "<group>"; };
 		AEBA6589233B367200B37FED /* GHDailyHabitsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHDailyHabitsTableViewCell.m; sourceTree = "<group>"; };
 		AEBA658B233B3F7600B37FED /* GHDailyHabitsTableViewHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHDailyHabitsTableViewHeaderView.h; sourceTree = "<group>"; };
@@ -170,7 +215,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE361CB0233F7A1600702F40 /* CFNetwork.framework in Frameworks */,
+				AE361CCF233F7B1000702F40 /* UIKit.framework in Frameworks */,
+				AE361CAA233F781900702F40 /* jpush-ios-3.2.0.a in Frameworks */,
+				AE361CB8233F7A4200702F40 /* CoreTelephony.framework in Frameworks */,
+				AE361CAC233F7A0100702F40 /* AdSupport.framework in Frameworks */,
+				AE361CB6233F7A3600702F40 /* CoreLocation.framework in Frameworks */,
+				AE361CC9233F7AEE00702F40 /* QuartzCore.framework in Frameworks */,
+				AE361CD9233F818D00702F40 /* libresolv.tbd in Frameworks */,
+				AE361CCB233F7AFA00702F40 /* Security.framework in Frameworks */,
+				AE361CB2233F7A2200702F40 /* CoreFoundation.framework in Frameworks */,
+				AE361CB4233F7A2D00702F40 /* CoreGraphics.framework in Frameworks */,
+				AE361CAE233F7A0B00702F40 /* AVFoundation.framework in Frameworks */,
+				AE361CCD233F7B0700702F40 /* SystemConfiguration.framework in Frameworks */,
+				AE361CC5233F7AD600702F40 /* MobileCoreServices.framework in Frameworks */,
+				AE361CBC233F7A5000702F40 /* ImageIO.framework in Frameworks */,
 				44174B98EC156E8AE26A0351 /* Pods_GoodHabit.framework in Frameworks */,
+				AE361CD1233F7B1900702F40 /* UserNotifications.framework in Frameworks */,
+				AE361CC7233F7AE200702F40 /* Photos.framework in Frameworks */,
+				AE361CA9233F781900702F40 /* jcore-ios-2.0.1.a in Frameworks */,
+				AE361CBA233F7A4900702F40 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +244,29 @@
 		51FA3096D4A306DA80A1CE30 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE361CD0233F7B1900702F40 /* UserNotifications.framework */,
+				AE361CCE233F7B1000702F40 /* UIKit.framework */,
+				AE361CCC233F7B0700702F40 /* SystemConfiguration.framework */,
+				AE361CCA233F7AFA00702F40 /* Security.framework */,
+				AE361CC8233F7AEE00702F40 /* QuartzCore.framework */,
+				AE361CC6233F7AE100702F40 /* Photos.framework */,
+				AE361CC4233F7AD500702F40 /* MobileCoreServices.framework */,
+				AE361CC3233F7ACA00702F40 /* libz.tbd */,
+				AE361CC2233F7AC400702F40 /* libz.1.2.5.tbd */,
+				AE361CC1233F7AB100702F40 /* libsqlite3.tbd */,
+				AE361CC0233F7AA500702F40 /* libsqlite3.0.tbd */,
+				AE361CBF233F7A9300702F40 /* libresolv.tbd */,
+				AE361CBE233F7A8200702F40 /* libicucore.tbd */,
+				AE361CBD233F7A6C00702F40 /* libc++.tbd */,
+				AE361CBB233F7A5000702F40 /* ImageIO.framework */,
+				AE361CB9233F7A4800702F40 /* Foundation.framework */,
+				AE361CB7233F7A4100702F40 /* CoreTelephony.framework */,
+				AE361CB5233F7A3600702F40 /* CoreLocation.framework */,
+				AE361CB3233F7A2D00702F40 /* CoreGraphics.framework */,
+				AE361CB1233F7A2200702F40 /* CoreFoundation.framework */,
+				AE361CAF233F7A1600702F40 /* CFNetwork.framework */,
+				AE361CAD233F7A0B00702F40 /* AVFoundation.framework */,
+				AE361CAB233F7A0100702F40 /* AdSupport.framework */,
 				B78D571AABE2191F4793A4F9 /* Pods_GoodHabit.framework */,
 			);
 			name = Frameworks;
@@ -223,6 +310,7 @@
 		723CBB26232CABA10095EC7C /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				AE361CA5233F781900702F40 /* JPush */,
 				723CBB6B232CAF700095EC7C /* Localizable.strings */,
 				723CBB34232CABF40095EC7C /* JTCalendar */,
 			);
@@ -443,6 +531,16 @@
 				CD6DB6FF8EAB5DD241505741 /* Pods-GoodHabit.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE361CA5233F781900702F40 /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				AE361CA6233F781900702F40 /* JPUSHService.h */,
+				AE361CA7233F781900702F40 /* jcore-ios-2.0.1.a */,
+				AE361CA8233F781900702F40 /* jpush-ios-3.2.0.a */,
+			);
+			path = JPush;
 			sourceTree = "<group>";
 		};
 		AEBA6586233B363F00B37FED /* models */ = {
@@ -767,6 +865,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoodHabit/resources/JPush",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.GoodHabit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -786,6 +888,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoodHabit/resources/JPush",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.GoodHabit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
