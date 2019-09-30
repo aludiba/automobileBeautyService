@@ -71,6 +71,7 @@
 		AE361CCF233F7B1000702F40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CCE233F7B1000702F40 /* UIKit.framework */; };
 		AE361CD1233F7B1900702F40 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CD0233F7B1900702F40 /* UserNotifications.framework */; };
 		AE361CD9233F818D00702F40 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CBF233F7A9300702F40 /* libresolv.tbd */; };
+		AEB6B1312340625800265045 /* InfoPlist.Strings in Resources */ = {isa = PBXBuildFile; fileRef = AEB6B1332340625800265045 /* InfoPlist.Strings */; };
 		AEBA658A233B367200B37FED /* GHDailyHabitsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBA6589233B367200B37FED /* GHDailyHabitsTableViewCell.m */; };
 		AEBA658D233B3F7600B37FED /* GHDailyHabitsTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBA658C233B3F7600B37FED /* GHDailyHabitsTableViewHeaderView.m */; };
 /* End PBXBuildFile section */
@@ -80,7 +81,7 @@
 		72263EEB2338F23E00F54FFD /* GHAllClockLogsViewCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHAllClockLogsViewCellTableViewCell.m; sourceTree = "<group>"; };
 		72263EED2338FC1900F54FFD /* GHAllClockLogsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHAllClockLogsViewController.h; sourceTree = "<group>"; };
 		72263EEE2338FC1900F54FFD /* GHAllClockLogsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHAllClockLogsViewController.m; sourceTree = "<group>"; };
-		723CBB0C232C86BE0095EC7C /* GoodHabit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodHabit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		723CBB0C232C86BE0095EC7C /* GoodHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		723CBB0F232C86BE0095EC7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		723CBB10232C86BE0095EC7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		723CBB18232C86C20095EC7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -201,6 +202,12 @@
 		AE361CCC233F7B0700702F40 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AE361CCE233F7B1000702F40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AE361CD0233F7B1900702F40 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		AEB6B12D23405C2A00265045 /* GoodHabit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoodHabit.entitlements; sourceTree = "<group>"; };
+		AEB6B12E23405DFC00265045 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AEB6B1322340625800265045 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.Strings; sourceTree = "<group>"; };
+		AEB6B1342340627100265045 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.Strings"; sourceTree = "<group>"; };
+		AEB6B1352340627600265045 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.Strings"; sourceTree = "<group>"; };
+		AEB6B1362340627700265045 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.Strings; sourceTree = "<group>"; };
 		AEBA6588233B367200B37FED /* GHDailyHabitsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHDailyHabitsTableViewCell.h; sourceTree = "<group>"; };
 		AEBA6589233B367200B37FED /* GHDailyHabitsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHDailyHabitsTableViewCell.m; sourceTree = "<group>"; };
 		AEBA658B233B3F7600B37FED /* GHDailyHabitsTableViewHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHDailyHabitsTableViewHeaderView.h; sourceTree = "<group>"; };
@@ -285,7 +292,7 @@
 		723CBB0D232C86BE0095EC7C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				723CBB0C232C86BE0095EC7C /* GoodHabit.app */,
+				723CBB0C232C86BE0095EC7C /* GoodHabits.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -293,6 +300,7 @@
 		723CBB0E232C86BE0095EC7C /* GoodHabit */ = {
 			isa = PBXGroup;
 			children = (
+				AEB6B12D23405C2A00265045 /* GoodHabit.entitlements */,
 				723CBB27232CABA10095EC7C /* common */,
 				723CBB26232CABA10095EC7C /* resources */,
 				723CBB28232CABA10095EC7C /* today */,
@@ -313,6 +321,7 @@
 				AE361CA5233F781900702F40 /* JPush */,
 				723CBB6B232CAF700095EC7C /* Localizable.strings */,
 				723CBB34232CABF40095EC7C /* JTCalendar */,
+				AEB6B1332340625800265045 /* InfoPlist.Strings */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -580,7 +589,7 @@
 			);
 			name = GoodHabit;
 			productName = GoodHabit;
-			productReference = 723CBB0C232C86BE0095EC7C /* GoodHabit.app */;
+			productReference = 723CBB0C232C86BE0095EC7C /* GoodHabits.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -606,6 +615,7 @@
 				"zh-Hans",
 				en,
 				ja,
+				"zh-Hant",
 			);
 			mainGroup = 723CBB03232C86BE0095EC7C;
 			productRefGroup = 723CBB0D232C86BE0095EC7C /* Products */;
@@ -624,6 +634,7 @@
 			files = (
 				723CBB19232C86C20095EC7C /* Assets.xcassets in Resources */,
 				723CBB69232CAF700095EC7C /* Localizable.strings in Resources */,
+				AEB6B1312340625800265045 /* InfoPlist.Strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -732,8 +743,20 @@
 				723CBB6A232CAF700095EC7C /* zh-Hans */,
 				723CBB6C232CAF720095EC7C /* en */,
 				723CBB6D232CAF740095EC7C /* ja */,
+				AEB6B12E23405DFC00265045 /* zh-Hant */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		AEB6B1332340625800265045 /* InfoPlist.Strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEB6B1322340625800265045 /* ja */,
+				AEB6B1342340627100265045 /* zh-Hant */,
+				AEB6B1352340627600265045 /* zh-Hans */,
+				AEB6B1362340627700265045 /* en */,
+			);
+			name = InfoPlist.Strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -856,8 +879,11 @@
 			baseConfigurationReference = B0CF5393719874A4A8A5E22A /* Pods-GoodHabit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = GoodHabit/GoodHabit.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Y3TKBZYF5D;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GoodHabit/Common/GoodHabit_PrefixHeader.pch";
 				INFOPLIST_FILE = GoodHabit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -870,7 +896,8 @@
 					"$(PROJECT_DIR)/GoodHabit/resources/JPush",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.GoodHabit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GoodHabits;
+				PROVISIONING_PROFILE_SPECIFIER = disPro_GoodHabit_2019.09.29;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -880,8 +907,11 @@
 			baseConfigurationReference = CD6DB6FF8EAB5DD241505741 /* Pods-GoodHabit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = GoodHabit/GoodHabit.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Y3TKBZYF5D;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GoodHabit/Common/GoodHabit_PrefixHeader.pch";
 				INFOPLIST_FILE = GoodHabit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -894,7 +924,8 @@
 					"$(PROJECT_DIR)/GoodHabit/resources/JPush",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.GoodHabit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GoodHabits;
+				PROVISIONING_PROFILE_SPECIFIER = disPro_GoodHabit_2019.09.29;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
