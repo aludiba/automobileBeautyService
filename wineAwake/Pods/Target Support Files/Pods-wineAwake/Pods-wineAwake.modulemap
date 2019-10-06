@@ -1,0 +1,6 @@
+framework module Pods_wineAwake {
+  umbrella header "Pods-wineAwake-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "723CBB0B232C86BE0095EC7C"
-               BuildableName = "GoodHabit.app"
+               BuildableName = "GoodHabits.app"
                BlueprintName = "GoodHabit"
                ReferencedContainer = "container:GoodHabit.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "723CBB0B232C86BE0095EC7C"
-            BuildableName = "GoodHabit.app"
+            BuildableName = "GoodHabits.app"
             BlueprintName = "GoodHabit"
             ReferencedContainer = "container:GoodHabit.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "723CBB0B232C86BE0095EC7C"
-            BuildableName = "GoodHabit.app"
+            BuildableName = "GoodHabits.app"
             BlueprintName = "GoodHabit"
             ReferencedContainer = "container:GoodHabit.xcodeproj">
          </BuildableReference>

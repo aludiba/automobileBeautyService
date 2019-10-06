@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1999A9E2FB26E43093CF20CD /* Pods_wineAwake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B50A5434D5E2E4B7548FD024 /* Pods_wineAwake.framework */; };
 		AEFF890323497B2B00B81B11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF890223497B2B00B81B11 /* AppDelegate.m */; };
 		AEFF890623497B2B00B81B11 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF890523497B2B00B81B11 /* SceneDelegate.m */; };
 		AEFF890923497B2B00B81B11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF890823497B2B00B81B11 /* ViewController.m */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		448F2C8E77FD0027ED89D0E7 /* Pods-wineAwake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wineAwake.release.xcconfig"; path = "Target Support Files/Pods-wineAwake/Pods-wineAwake.release.xcconfig"; sourceTree = "<group>"; };
 		AEFF88FE23497B2B00B81B11 /* wineAwake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wineAwake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFF890123497B2B00B81B11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEFF890223497B2B00B81B11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		AEFF891023497B2E00B81B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEFF891223497B2E00B81B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEFF891323497B2E00B81B11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B50A5434D5E2E4B7548FD024 /* Pods_wineAwake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wineAwake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1DFA28AEE9D389E2E980736 /* Pods-wineAwake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wineAwake.debug.xcconfig"; path = "Target Support Files/Pods-wineAwake/Pods-wineAwake.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1999A9E2FB26E43093CF20CD /* Pods_wineAwake.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11686BB2CB02ECC9F08AA722 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B50A5434D5E2E4B7548FD024 /* Pods_wineAwake.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AEFF88F523497B2B00B81B11 = {
 			isa = PBXGroup;
 			children = (
 				AEFF890023497B2B00B81B11 /* wineAwake */,
 				AEFF88FF23497B2B00B81B11 /* Products */,
+				DB87A1116B34681753F04F5F /* Pods */,
+				11686BB2CB02ECC9F08AA722 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +91,16 @@
 			path = wineAwake;
 			sourceTree = "<group>";
 		};
+		DB87A1116B34681753F04F5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1DFA28AEE9D389E2E980736 /* Pods-wineAwake.debug.xcconfig */,
+				448F2C8E77FD0027ED89D0E7 /* Pods-wineAwake.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEFF891723497B2E00B81B11 /* Build configuration list for PBXNativeTarget "wineAwake" */;
 			buildPhases = (
+				A603F8985EC6F0A5E0C778F8 /* [CP] Check Pods Manifest.lock */,
 				AEFF88FA23497B2B00B81B11 /* Sources */,
 				AEFF88FB23497B2B00B81B11 /* Frameworks */,
 				AEFF88FC23497B2B00B81B11 /* Resources */,
+				3AFEF721358F870DFC0C30BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AFEF721358F870DFC0C30BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wineAwake/Pods-wineAwake-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wineAwake/Pods-wineAwake-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wineAwake/Pods-wineAwake-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A603F8985EC6F0A5E0C778F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wineAwake-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AEFF88FA23497B2B00B81B11 /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		AEFF891823497B2E00B81B11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1DFA28AEE9D389E2E980736 /* Pods-wineAwake.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +373,7 @@
 		};
 		AEFF891923497B2E00B81B11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 448F2C8E77FD0027ED89D0E7 /* Pods-wineAwake.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
