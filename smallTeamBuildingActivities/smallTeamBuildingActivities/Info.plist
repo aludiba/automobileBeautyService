@@ -20,6 +20,8 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -29,8 +31,6 @@
 	</dict>
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>Does this App allow bluetooth?</string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
 	<key>NSCalendarsUsageDescription</key>
 	<string>Is this App allowed to use calendar?</string>
 	<key>NSCameraUsageDescription</key>

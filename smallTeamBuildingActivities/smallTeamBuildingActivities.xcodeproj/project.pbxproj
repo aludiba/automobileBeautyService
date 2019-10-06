@@ -695,9 +695,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = smallTeamBuildingActivities/smallTeamBuildingActivities.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = V633ZU77NA;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQ9FAVACVZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/smallTeamBuildingActivities/stbaCommon/stba_PrefixHeader.pch";
 				INFOPLIST_FILE = smallTeamBuildingActivities/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -710,9 +710,9 @@
 					"$(PROJECT_DIR)/smallTeamBuildingActivities/stbaResources/OpenSSL/lib-ios",
 					"$(PROJECT_DIR)/smallTeamBuildingActivities/stbaResources/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SmallGroupMeeting.hb;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SmallGroupMeeting.hgg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = pro_dis_smg_2019.07.15;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -724,9 +724,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = smallTeamBuildingActivities/smallTeamBuildingActivities.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = V633ZU77NA;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQ9FAVACVZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/smallTeamBuildingActivities/stbaCommon/stba_PrefixHeader.pch";
 				INFOPLIST_FILE = smallTeamBuildingActivities/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -739,9 +739,9 @@
 					"$(PROJECT_DIR)/smallTeamBuildingActivities/stbaResources/OpenSSL/lib-ios",
 					"$(PROJECT_DIR)/smallTeamBuildingActivities/stbaResources/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SmallGroupMeeting.hb;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SmallGroupMeeting.hgg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = pro_dis_smg_2019.07.15;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
