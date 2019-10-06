@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - BmobSDK (2.3.4)
   - IQKeyboardManager (6.4.0)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
@@ -22,6 +23,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - BmobSDK
   - IQKeyboardManager
   - Masonry
   - MBProgressHUD
@@ -31,6 +33,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - BmobSDK
     - IQKeyboardManager
     - Masonry
     - MBProgressHUD
@@ -39,12 +42,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  BmobSDK: 03e9889d92b721bfc2452faa5b2c2497581abbca
   IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 63be1c6aad924216fab74dad17cb8ba9b71a605a
+PODFILE CHECKSUM: 12993e07e5d8957009b17ed54b50d132fc1eb5b0
 
 COCOAPODS: 1.7.5

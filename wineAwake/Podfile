@@ -12,4 +12,5 @@ target 'wineAwake' do
   pod 'MBProgressHUD'
   pod 'YYModel'
   pod 'IQKeyboardManager'
+  pod 'BmobSDK'
 end
