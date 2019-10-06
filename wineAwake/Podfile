@@ -8,4 +8,6 @@ target 'wineAwake' do
   # Pods for wineAwake
   pod 'Masonry'
   pod 'AFNetworking'
+  pod 'MJRefresh'
+
 end
