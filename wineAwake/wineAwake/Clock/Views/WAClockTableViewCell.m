@@ -7,6 +7,8 @@
 //
 
 #import "WAClockTableViewCell.h"
+#import "WADrinkingPlanSaveModel.h"
+
 @interface WAClockTableViewCell()
 @property(nonatomic, strong)UILabel *remindLabel;//戒酒提醒
 @property(nonatomic, strong)UIButton *targetButton;//目标
@@ -23,7 +25,7 @@
             make.leading.equalTo(self.contentView).offset(16);
             make.trailing.equalTo(self.contentView).offset(-16);
             make.top.equalTo(self.contentView).offset(10);
-            make.height.mas_equalTo(100);
+            make.height.mas_equalTo(120);
         }];
         [self.targetButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(64);
@@ -40,6 +42,10 @@
         }];
     }
     return self;
+}
+- (void)setModel:(WADrinkingPlanSaveModel *)model{
+    _model = model;
+    self.remindLabel.text = [NSString stringWithFormat:@"%@\n\n%@%ld%@\n\n%@%ld%@\n%@%ld%@",NSLocalizedString(@"亲爱的戒酒玩家", nil),NSLocalizedString(@"已经", nil),_model.cumulativeNumberDays,NSLocalizedString(@"天没喝酒了~", nil),NSLocalizedString(@"已经少喝", nil),_model.accumulativeBottle,NSLocalizedString(@"瓶酒", nil),NSLocalizedString(@"累计节省", nil),_model.cumulativeAmount,NSLocalizedString(@"元", nil)];
 }
 #pragma mark - 按钮点击事件
 - (void)btnClick:(UIButton *)sender{
@@ -65,7 +71,6 @@
         _remindLabel.layer.borderColor = [UIColor grayColor].CGColor;
         _remindLabel.layer.borderWidth = 1.0f;
         _remindLabel.textAlignment = NSTextAlignmentCenter;
-        _remindLabel.text = @"亲爱的戒酒玩家 \n \n \n";
     }
     return _remindLabel;
 }

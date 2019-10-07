@@ -10,8 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @class WAClockTableViewCell;
+@class WADrinkingPlanSaveModel;
+
 typedef void(^WAClockCellBlock)(WAClockTableViewCell *cell);
 @interface WAClockTableViewCell : UITableViewCell
+@property (nonatomic, strong)WADrinkingPlanSaveModel *model;
 @property (nonatomic, copy)WAClockCellBlock WAClockCellB;
 @property (nonatomic, assign)NSUInteger selectIndex;
 @end

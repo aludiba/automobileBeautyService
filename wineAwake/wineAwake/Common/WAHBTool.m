@@ -23,4 +23,10 @@
     NSString *path = [documents stringByAppendingPathComponent:fileName];
     return path;
 }
++ (NSString *)getPreferredLanguage{
+    NSUserDefaults *defs = [NSUserDefaults standardUserDefaults];
+    NSArray *languages = [defs objectForKey:@"AppleLanguages"];
+    NSString *preferredLang = [languages objectAtIndex:0];
+    return preferredLang;
+}
 @end

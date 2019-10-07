@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1999A9E2FB26E43093CF20CD /* Pods_wineAwake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B50A5434D5E2E4B7548FD024 /* Pods_wineAwake.framework */; };
+		AE0F5DA1234AE18500E7468E /* WADrinkingPlanDateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0F5DA0234AE18500E7468E /* WADrinkingPlanDateTableViewCell.m */; };
+		AE0F5DA4234AE49300E7468E /* WADrinkingPlanSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0F5DA3234AE49300E7468E /* WADrinkingPlanSaveTableViewCell.m */; };
+		AE0F5DA7234B1EF400E7468E /* WADrinkingPlanSaveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0F5DA6234B1EF400E7468E /* WADrinkingPlanSaveModel.m */; };
+		AE0F5DAA234B372900E7468E /* WADrinkingPlanClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0F5DA9234B372900E7468E /* WADrinkingPlanClockView.m */; };
 		AEFF890323497B2B00B81B11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF890223497B2B00B81B11 /* AppDelegate.m */; };
 		AEFF890E23497B2E00B81B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEFF890D23497B2E00B81B11 /* Assets.xcassets */; };
 		AEFF891423497B2E00B81B11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF891323497B2E00B81B11 /* main.m */; };
@@ -50,6 +54,14 @@
 
 /* Begin PBXFileReference section */
 		448F2C8E77FD0027ED89D0E7 /* Pods-wineAwake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wineAwake.release.xcconfig"; path = "Target Support Files/Pods-wineAwake/Pods-wineAwake.release.xcconfig"; sourceTree = "<group>"; };
+		AE0F5D9F234AE18500E7468E /* WADrinkingPlanDateTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WADrinkingPlanDateTableViewCell.h; sourceTree = "<group>"; };
+		AE0F5DA0234AE18500E7468E /* WADrinkingPlanDateTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WADrinkingPlanDateTableViewCell.m; sourceTree = "<group>"; };
+		AE0F5DA2234AE49300E7468E /* WADrinkingPlanSaveTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WADrinkingPlanSaveTableViewCell.h; sourceTree = "<group>"; };
+		AE0F5DA3234AE49300E7468E /* WADrinkingPlanSaveTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WADrinkingPlanSaveTableViewCell.m; sourceTree = "<group>"; };
+		AE0F5DA5234B1EF400E7468E /* WADrinkingPlanSaveModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WADrinkingPlanSaveModel.h; sourceTree = "<group>"; };
+		AE0F5DA6234B1EF400E7468E /* WADrinkingPlanSaveModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WADrinkingPlanSaveModel.m; sourceTree = "<group>"; };
+		AE0F5DA8234B372900E7468E /* WADrinkingPlanClockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WADrinkingPlanClockView.h; sourceTree = "<group>"; };
+		AE0F5DA9234B372900E7468E /* WADrinkingPlanClockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WADrinkingPlanClockView.m; sourceTree = "<group>"; };
 		AEFF88FE23497B2B00B81B11 /* wineAwake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wineAwake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFF890123497B2B00B81B11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEFF890223497B2B00B81B11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -246,6 +258,8 @@
 			children = (
 				AEFF89AD2349DE9C00B81B11 /* WADrinkingPlanModel.h */,
 				AEFF89AE2349DE9C00B81B11 /* WADrinkingPlanModel.m */,
+				AE0F5DA5234B1EF400E7468E /* WADrinkingPlanSaveModel.h */,
+				AE0F5DA6234B1EF400E7468E /* WADrinkingPlanSaveModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -264,10 +278,16 @@
 		AEFF891F23497FDE00B81B11 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AE0F5DA8234B372900E7468E /* WADrinkingPlanClockView.h */,
+				AE0F5DA9234B372900E7468E /* WADrinkingPlanClockView.m */,
 				AEFF89A42349CF3200B81B11 /* WAClockTableViewCell.h */,
 				AEFF89A52349CF3200B81B11 /* WAClockTableViewCell.m */,
 				AEFF89AA2349DB0500B81B11 /* WADrinkingPlanEditTableViewCell.h */,
 				AEFF89AB2349DB0500B81B11 /* WADrinkingPlanEditTableViewCell.m */,
+				AE0F5D9F234AE18500E7468E /* WADrinkingPlanDateTableViewCell.h */,
+				AE0F5DA0234AE18500E7468E /* WADrinkingPlanDateTableViewCell.m */,
+				AE0F5DA2234AE49300E7468E /* WADrinkingPlanSaveTableViewCell.h */,
+				AE0F5DA3234AE49300E7468E /* WADrinkingPlanSaveTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -539,6 +559,7 @@
 			files = (
 				AEFF899A2349C6BA00B81B11 /* WAModifyNicknameViewController.m in Sources */,
 				AEFF89A92349DA5600B81B11 /* WADrinkingPlanViewController.m in Sources */,
+				AE0F5DA1234AE18500E7468E /* WADrinkingPlanDateTableViewCell.m in Sources */,
 				AEFF89AF2349DE9C00B81B11 /* WADrinkingPlanModel.m in Sources */,
 				AEFF89502349806B00B81B11 /* JTCalendarManager.m in Sources */,
 				AEFF894C2349806B00B81B11 /* JTCalendarSettings.m in Sources */,
@@ -556,9 +577,11 @@
 				AEFF89992349C6BA00B81B11 /* WAPasswordChangeViewController.m in Sources */,
 				AEFF895D2349850100B81B11 /* WANDHTTPClient.m in Sources */,
 				AEFF89A62349CF3200B81B11 /* WAClockTableViewCell.m in Sources */,
+				AE0F5DAA234B372900E7468E /* WADrinkingPlanClockView.m in Sources */,
 				AEFF896F23498FB500B81B11 /* WABaseViewController.m in Sources */,
 				AEFF894D2349806B00B81B11 /* JTDateHelper.m in Sources */,
 				AEFF89662349857F00B81B11 /* MBProgressHUD+WANJ.m in Sources */,
+				AE0F5DA4234AE49300E7468E /* WADrinkingPlanSaveTableViewCell.m in Sources */,
 				AEFF89772349947300B81B11 /* CalendarTool.m in Sources */,
 				AEFF894F2349806B00B81B11 /* JTCalendarDelegateManager.m in Sources */,
 				AEFF8974234993A000B81B11 /* WATabBarController.m in Sources */,
@@ -566,6 +589,7 @@
 				AEFF89512349806B00B81B11 /* JTVerticalCalendarView.m in Sources */,
 				AEFF89862349BABC00B81B11 /* WAMineViewController.m in Sources */,
 				AEFF891423497B2E00B81B11 /* main.m in Sources */,
+				AE0F5DA7234B1EF400E7468E /* WADrinkingPlanSaveModel.m in Sources */,
 				AEFF89832349BAA900B81B11 /* WARecordViewController.m in Sources */,
 				AEFF89A32349C76200B81B11 /* WASetViewModel.m in Sources */,
 				AEFF89622349854400B81B11 /* NSArray+log.m in Sources */,

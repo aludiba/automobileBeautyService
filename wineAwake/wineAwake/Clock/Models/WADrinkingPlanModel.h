@@ -11,7 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WADrinkingPlanModel : NSObject
-
+@property(nonatomic, copy)NSString *title;
+@property(nonatomic, copy)NSString *content;
+@property(nonatomic, copy)NSString *defaultString;
+@property(nonatomic, copy)NSString *unit;
+@property(nonatomic, assign)NSUInteger type;
 @end
 
 NS_ASSUME_NONNULL_END

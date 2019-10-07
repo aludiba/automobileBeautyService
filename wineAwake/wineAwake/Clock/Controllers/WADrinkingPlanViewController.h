@@ -9,9 +9,12 @@
 #import "WABaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class WADrinkingPlanSaveModel;
+@class WAClockViewController;
 @interface WADrinkingPlanViewController : WABaseViewController
-
+@property(nonatomic, weak)WAClockViewController *superVC;
+@property(nonatomic, copy)NSString *objectId;
+@property(nonatomic, strong)WADrinkingPlanSaveModel *saveModel;
 @end
 
 NS_ASSUME_NONNULL_END
