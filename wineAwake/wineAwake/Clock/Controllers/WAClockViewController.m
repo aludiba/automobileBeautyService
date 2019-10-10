@@ -40,14 +40,14 @@
             if (array.count) {
                 BmobObject *obj = [array lastObject];
                 weakSelf.objectId = [obj objectId];
-                weakSelf.saveModel.clockInDate = [obj objectForKey:@"clockInDate"];
+             weakSelf.saveModel.clockInDAndNumberB = [[NSMutableArray alloc] initWithArray:[obj objectForKey:@"clockInDAndNumberB"]];
                 weakSelf.saveModel.saveDate = [obj objectForKey:@"saveDate"];
                 weakSelf.saveModel.wineAges = [[obj objectForKey:@"wineAges"] integerValue];
                 weakSelf.saveModel.timeDrinkDate = [obj objectForKey:@"timeDrinkDate"];
                 weakSelf.saveModel.drinkEveryDay = [[obj objectForKey:@"drinkEveryDay"] integerValue];
                 weakSelf.saveModel.winePrices = [[obj objectForKey:@"winePrices"] integerValue];
                 weakSelf.saveModel.alcoholContent = [[obj objectForKey:@"alcoholContent"] integerValue];
-                weakSelf.saveModel.numberBottlesDrunk = [[obj objectForKey:@"numberBottlesDrunk"] integerValue];
+//                weakSelf.saveModel.numberBottlesDrunk = [[obj objectForKey:@"numberBottlesDrunk"] integerValue];
                 weakSelf.saveModel.cumulativeNumberDays = [[obj objectForKey:@"cumulativeNumberDays"] integerValue];
                 weakSelf.saveModel.accumulativeBottle = [[obj objectForKey:@"accumulativeBottle"] integerValue];
                 weakSelf.saveModel.cumulativeAmount = [[obj objectForKey:@"cumulativeAmount"] integerValue];
@@ -60,7 +60,6 @@
 }
 - (void)save{
     NSMutableDictionary *jsonDictionary = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[self.saveModel yy_modelToJSONObject]];
-    [jsonDictionary setObject:[[NSDate alloc] init] forKey:@"clockInDate"];
     [jsonDictionary setObject:[[NSDate alloc] init] forKey:@"saveDate"];
     NSString *dateString = [WAUIUtilities WAformattedTimeStringWithDate:self.saveModel.timeDrinkDate format:@"yyyy-MM-dd"];
     NSDate *date = [WAUIUtilities WAdateFromString:dateString formate:@"yyyy-MM-dd"];
@@ -126,14 +125,19 @@
             if (weakSelf.objectId.length) {
             NSDate *nowDate = [[NSDate alloc] init];
             NSString *nowDateString = [WAUIUtilities WAformattedTimeStringWithDate:nowDate format:@"yyyy-MM-dd"];
-            NSString *clockDateString = [WAUIUtilities WAformattedTimeStringWithDate:weakSelf.saveModel.clockInDate format:@"yyyy-MM-dd"];
-            if ([nowDateString isEqualToString:clockDateString]) {
-                [MBProgressHUD WAshowReminderText:NSLocalizedString(@"今天已经打卡", nil)];
-            }else{
-            weakSelf.drinkingPlanClockView.hidden = NO;
-            }
+                for (int i = 0; i < weakSelf.saveModel.clockInDAndNumberB.count; i++) {
+                    NSMutableDictionary *dic = [[NSMutableDictionary alloc] initWithDictionary:weakSelf.saveModel.clockInDAndNumberB[i]];
+                    NSString *clockDateString = [dic objectForKey:@"clockInDate"];
+//                    NSString *clockDateString = [WAUIUtilities WAformattedTimeStringWithDate:clockInDate format:@"yyyy-MM-dd"];
+                    if ([nowDateString isEqualToString:clockDateString]) {
+                        [MBProgressHUD WAshowReminderText:NSLocalizedString(@"今天已经打卡", nil)];
+                        return;
+                    }
+                }
+                weakSelf.drinkingPlanClockView.hidden = NO;
             }else{
                 [MBProgressHUD WAshowReminderText:NSLocalizedString(@"请先创建目标", nil)];
+                 return;
             }
         }
     };
@@ -186,9 +190,15 @@
         }];
         __weak typeof(self) weakSelf = self;
         _drinkingPlanClockView.WADrinkingPlanClockSaveB = ^(WADrinkingPlanClockView * _Nonnull view) {
-            weakSelf.saveModel.numberBottlesDrunk = [view.contentField.text integerValue];
+            NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+            NSDate *nowDate = [[NSDate alloc] init];
+            NSString *nowDateString = [WAUIUtilities WAformattedTimeStringWithDate:nowDate format:@"yyyy-MM-dd"];
+//            NSDate *clockInDate = [WAUIUtilities WAdateFromString:nowDateString formate:@"yyyy-MM-dd"];
+            [dic setObject:nowDateString forKey:@"clockInDate"];
+            [dic setObject:[NSNumber numberWithInteger:[view.contentField.text integerValue]] forKey:@"numberBottlesDrunk"];
+           [weakSelf.saveModel.clockInDAndNumberB addObject:dic];
             weakSelf.saveModel.cumulativeNumberDays += 1;
-            weakSelf.saveModel.accumulativeBottle += (weakSelf.saveModel.drinkEveryDay - weakSelf.saveModel.numberBottlesDrunk);
+            weakSelf.saveModel.accumulativeBottle += (weakSelf.saveModel.drinkEveryDay - [view.contentField.text integerValue]);
             weakSelf.saveModel.cumulativeAmount = weakSelf.saveModel.accumulativeBottle * weakSelf.saveModel.winePrices;
             [weakSelf.mainTable reloadData];
             

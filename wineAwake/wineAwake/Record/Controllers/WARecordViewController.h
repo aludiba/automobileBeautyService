@@ -1,16 +1,20 @@
 //
 //  WARecordViewController.h
-//  wineAwake
+//  Simple Diary
 //
-//  Created by bykj on 2019/10/6.
-//  Copyright © 2019 hbc. All rights reserved.
+//  Created by bykj on 2019/7/20.
+//  Copyright © 2019 hgg. All rights reserved.
 //
 
 #import "WABaseViewController.h"
+#import "JTCalendar.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WARecordViewController : WABaseViewController
+@property (weak, nonatomic) IBOutlet JTCalendarMenuView *calendarMenuView;
+@property (weak, nonatomic) IBOutlet JTHorizontalCalendarView *calendarContentView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *calendarContentViewHeight;
 
 @end
 

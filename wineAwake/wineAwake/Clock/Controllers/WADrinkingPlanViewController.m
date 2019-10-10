@@ -153,7 +153,15 @@
     }
     NSMutableDictionary *jsonDictionary = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[self.saveModel yy_modelToJSONObject]];
     [jsonDictionary setObject:[[NSDate alloc] init] forKey:@"saveDate"];
-    [jsonDictionary setObject:[WAUIUtilities WAdateFromString:@"2019-10-01" formate:@"yyyy-MM-dd"] forKey:@"clockInDate"];
+    if (!self.saveModel.clockInDAndNumberB.count) {
+    NSMutableArray *clockInDAndNumberB = [[NSMutableArray alloc] init];
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+    NSString *clockInDateString = @"2019-01-01";
+    [dic setObject:clockInDateString forKey:@"clockInDate"];
+    [dic setObject:[NSNumber numberWithInteger:0] forKey:@"numberBottlesDrunk"];
+    [clockInDAndNumberB addObject:dic];
+    [jsonDictionary setObject:clockInDAndNumberB forKey:@"clockInDAndNumberB"];
+    }
     WADrinkingPlanModel *model = self.viewDataArray[1];
     NSString *dateString = model.content;
     NSDate *date = [WAUIUtilities WAdateFromString:dateString formate:@"yyyy-MM-dd"];
@@ -205,7 +213,6 @@
 - (WADrinkingPlanSaveModel *)saveModel{
     if (!_saveModel) {
         _saveModel = [[WADrinkingPlanSaveModel alloc] init];
-        _saveModel.numberBottlesDrunk = 0;
         _saveModel.cumulativeNumberDays = 0;//累计天数
         _saveModel.accumulativeBottle = 0;//累计少喝瓶数
         _saveModel.cumulativeAmount = 0;//累计少花钱数
