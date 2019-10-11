@@ -15,6 +15,8 @@
 		AE0F5DA4234AE49300E7468E /* WADrinkingPlanSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0F5DA3234AE49300E7468E /* WADrinkingPlanSaveTableViewCell.m */; };
 		AE0F5DA7234B1EF400E7468E /* WADrinkingPlanSaveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0F5DA6234B1EF400E7468E /* WADrinkingPlanSaveModel.m */; };
 		AE0F5DAA234B372900E7468E /* WADrinkingPlanClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0F5DA9234B372900E7468E /* WADrinkingPlanClockView.m */; };
+		AE17A08023506D4C0095E229 /* WAClockRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE17A07F23506D4C0095E229 /* WAClockRecordTableViewCell.m */; };
+		AE17A083235071950095E229 /* WAClockRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE17A082235071950095E229 /* WAClockRecordModel.m */; };
 		AEFF890323497B2B00B81B11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF890223497B2B00B81B11 /* AppDelegate.m */; };
 		AEFF890E23497B2E00B81B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEFF890D23497B2E00B81B11 /* Assets.xcassets */; };
 		AEFF891423497B2E00B81B11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF891323497B2E00B81B11 /* main.m */; };
@@ -69,6 +71,10 @@
 		AE0F5DA6234B1EF400E7468E /* WADrinkingPlanSaveModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WADrinkingPlanSaveModel.m; sourceTree = "<group>"; };
 		AE0F5DA8234B372900E7468E /* WADrinkingPlanClockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WADrinkingPlanClockView.h; sourceTree = "<group>"; };
 		AE0F5DA9234B372900E7468E /* WADrinkingPlanClockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WADrinkingPlanClockView.m; sourceTree = "<group>"; };
+		AE17A07E23506D4C0095E229 /* WAClockRecordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAClockRecordTableViewCell.h; sourceTree = "<group>"; };
+		AE17A07F23506D4C0095E229 /* WAClockRecordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAClockRecordTableViewCell.m; sourceTree = "<group>"; };
+		AE17A081235071950095E229 /* WAClockRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAClockRecordModel.h; sourceTree = "<group>"; };
+		AE17A082235071950095E229 /* WAClockRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAClockRecordModel.m; sourceTree = "<group>"; };
 		AEFF88FE23497B2B00B81B11 /* wineAwake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wineAwake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFF890123497B2B00B81B11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEFF890223497B2B00B81B11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -355,6 +361,8 @@
 		AEFF892523497FDE00B81B11 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AE17A081235071950095E229 /* WAClockRecordModel.h */,
+				AE17A082235071950095E229 /* WAClockRecordModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -374,6 +382,8 @@
 		AEFF892723497FDE00B81B11 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AE17A07E23506D4C0095E229 /* WAClockRecordTableViewCell.h */,
+				AE17A07F23506D4C0095E229 /* WAClockRecordTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -571,6 +581,8 @@
 				AE0F5DA1234AE18500E7468E /* WADrinkingPlanDateTableViewCell.m in Sources */,
 				AEFF89AF2349DE9C00B81B11 /* WADrinkingPlanModel.m in Sources */,
 				AEFF89502349806B00B81B11 /* JTCalendarManager.m in Sources */,
+				AE17A08023506D4C0095E229 /* WAClockRecordTableViewCell.m in Sources */,
+				AE17A083235071950095E229 /* WAClockRecordModel.m in Sources */,
 				AEFF894C2349806B00B81B11 /* JTCalendarSettings.m in Sources */,
 				AEFF89532349806B00B81B11 /* JTHorizontalCalendarView.m in Sources */,
 				AEFF896C23498EE700B81B11 /* WAHBTool.m in Sources */,

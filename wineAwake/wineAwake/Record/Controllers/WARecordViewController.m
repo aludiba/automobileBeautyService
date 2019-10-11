@@ -36,7 +36,6 @@
     // Generate random events sort by date using a dateformatter for the demonstration
     [self loadData];
     [self createRandomEvents];
-    // Create a min and max date for limit the calendar, optional
     [self createMinAndMaxDate];
 }
 - (void)createRandomEvents{
@@ -138,12 +137,26 @@
     _dateSelected = dayView.date;
     NSDate *nowDate = [[NSDate alloc] init];
     if ([_dateSelected compare:nowDate] != NSOrderedDescending) {
+        NSString *dateSelectedString = [WAUIUtilities WAformattedTimeStringWithDate:_dateSelected format:@"yyyy-MM-dd"];
+        NSDictionary *contentDic;
+        for (int i = 0; i < self.saveModel.clockInDAndNumberB.count; i++) {
+            NSDictionary *dic = self.saveModel.clockInDAndNumberB[i];
+            NSString *currentDateString = [dic objectForKey:@"clockInDate"];
+            if ([dateSelectedString isEqualToString:currentDateString]) {
+                contentDic = [dic copy];
+                break;
+            }
+        }
 //        [self loadData:_dateSelected];
+        if (contentDic) {
         WAClockRecordViewController *clockRecordVC = [[WAClockRecordViewController alloc] init];
         clockRecordVC.dateSelected = _dateSelected;
         clockRecordVC.saveModel = self.saveModel;
         clockRecordVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:clockRecordVC animated:YES];
+        }else{
+            [MBProgressHUD WAshowReminderText:NSLocalizedString(@"这一天未打卡", nil)];
+        }
     }
     // Animation for the circleView
     dayView.circleView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.1, 0.1);

@@ -47,7 +47,6 @@
                 weakSelf.saveModel.drinkEveryDay = [[obj objectForKey:@"drinkEveryDay"] integerValue];
                 weakSelf.saveModel.winePrices = [[obj objectForKey:@"winePrices"] integerValue];
                 weakSelf.saveModel.alcoholContent = [[obj objectForKey:@"alcoholContent"] integerValue];
-//                weakSelf.saveModel.numberBottlesDrunk = [[obj objectForKey:@"numberBottlesDrunk"] integerValue];
                 weakSelf.saveModel.cumulativeNumberDays = [[obj objectForKey:@"cumulativeNumberDays"] integerValue];
                 weakSelf.saveModel.accumulativeBottle = [[obj objectForKey:@"accumulativeBottle"] integerValue];
                 weakSelf.saveModel.cumulativeAmount = [[obj objectForKey:@"cumulativeAmount"] integerValue];
