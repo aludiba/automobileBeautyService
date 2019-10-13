@@ -12,7 +12,6 @@
 @property(nonatomic, strong)UILabel *titleLbl;
 @property(nonatomic, strong)UILabel *contentLbl;
 @property(nonatomic, strong)UIImageView *arrowImgView;
-@property(nonatomic, strong)UIView *line;
 @end
 @implementation WASetTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -21,14 +20,13 @@
         [self.contentView addSubview:self.titleLbl];
         [self.contentView addSubview:self.contentLbl];
         [self.contentView addSubview:self.arrowImgView];
-        [self.contentView addSubview:self.line];
         
         [self.titleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(20);
-            make.top.equalTo(self.contentView).offset(15);
+            make.top.equalTo(self.contentView).offset(30);
             make.width.mas_equalTo(WAWIDTH * 0.5 - 20);
             make.height.mas_equalTo(21);
-            make.bottom.equalTo(self.contentView).offset(-15);
+            make.bottom.equalTo(self.contentView).offset(-30);
         }];
         [self.arrowImgView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.trailing.equalTo(self.contentView).offset(-15);
@@ -41,12 +39,6 @@
             make.centerY.equalTo(self.contentView);
             make.width.mas_equalTo(WAWIDTH * 0.5 - 5 - 22 - 15);
             make.height.mas_equalTo(16);
-        }];
-        [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView);
-            make.trailing.equalTo(self.contentView);
-            make.height.mas_equalTo(1);
-            make.bottom.equalTo(self.contentView);
         }];
     }
     return self;
@@ -69,8 +61,8 @@
     if (!_contentLbl) {
         _contentLbl = [[UILabel alloc] init];
         _contentLbl.textAlignment = NSTextAlignmentRight;
-        _contentLbl.textColor = [UIColor blueColor];
-        _contentLbl.font = [UIFont systemFontOfSize:15];
+        _contentLbl.textColor = [UIColor purpleColor];
+        _contentLbl.font = [UIFont systemFontOfSize:20];
     }
     return _contentLbl;
 }
@@ -79,12 +71,5 @@
         _arrowImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"WA_arrow_right"]];
     }
     return _arrowImgView;
-}
-- (UIView *)line{
-    if (!_line) {
-        _line = [[UIView alloc] init];
-        _line.backgroundColor = WAH_Color(216, 218, 219, 1);
-    }
-    return _line;
 }
 @end

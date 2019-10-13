@@ -11,6 +11,7 @@
 		72381276234F80D300F3939A /* WARecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72381274234F80D300F3939A /* WARecordViewController.xib */; };
 		7238127A234F822100F3939A /* WARecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72381279234F822100F3939A /* WARecordViewController.m */; };
 		7238127D234F839900F3939A /* WAClockRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7238127C234F839900F3939A /* WAClockRecordViewController.m */; };
+		726B763023535E6F0067A72E /* WAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726B762E23535E6E0067A72E /* WAWebViewController.m */; };
 		AE0F5DA1234AE18500E7468E /* WADrinkingPlanDateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0F5DA0234AE18500E7468E /* WADrinkingPlanDateTableViewCell.m */; };
 		AE0F5DA4234AE49300E7468E /* WADrinkingPlanSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0F5DA3234AE49300E7468E /* WADrinkingPlanSaveTableViewCell.m */; };
 		AE0F5DA7234B1EF400E7468E /* WADrinkingPlanSaveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0F5DA6234B1EF400E7468E /* WADrinkingPlanSaveModel.m */; };
@@ -63,6 +64,8 @@
 		72381279234F822100F3939A /* WARecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WARecordViewController.m; sourceTree = "<group>"; };
 		7238127B234F839900F3939A /* WAClockRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAClockRecordViewController.h; sourceTree = "<group>"; };
 		7238127C234F839900F3939A /* WAClockRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAClockRecordViewController.m; sourceTree = "<group>"; };
+		726B762E23535E6E0067A72E /* WAWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAWebViewController.m; sourceTree = "<group>"; };
+		726B762F23535E6F0067A72E /* WAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAWebViewController.h; sourceTree = "<group>"; };
 		AE0F5D9F234AE18500E7468E /* WADrinkingPlanDateTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WADrinkingPlanDateTableViewCell.h; sourceTree = "<group>"; };
 		AE0F5DA0234AE18500E7468E /* WADrinkingPlanDateTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WADrinkingPlanDateTableViewCell.m; sourceTree = "<group>"; };
 		AE0F5DA2234AE49300E7468E /* WADrinkingPlanSaveTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WADrinkingPlanSaveTableViewCell.h; sourceTree = "<group>"; };
@@ -221,6 +224,8 @@
 		AEFF891A23497FDE00B81B11 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				726B762F23535E6F0067A72E /* WAWebViewController.h */,
+				726B762E23535E6E0067A72E /* WAWebViewController.m */,
 				AEFF8971234992E500B81B11 /* WA_PrefixHeader.pch */,
 				AEFF89702349920E00B81B11 /* WAGlobal.h */,
 				AEFF895B2349850100B81B11 /* WANDHTTPClient.h */,
@@ -601,6 +606,7 @@
 				AEFF89A62349CF3200B81B11 /* WAClockTableViewCell.m in Sources */,
 				7238127D234F839900F3939A /* WAClockRecordViewController.m in Sources */,
 				AE0F5DAA234B372900E7468E /* WADrinkingPlanClockView.m in Sources */,
+				726B763023535E6F0067A72E /* WAWebViewController.m in Sources */,
 				AEFF896F23498FB500B81B11 /* WABaseViewController.m in Sources */,
 				AEFF894D2349806B00B81B11 /* JTDateHelper.m in Sources */,
 				AEFF89662349857F00B81B11 /* MBProgressHUD+WANJ.m in Sources */,

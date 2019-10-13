@@ -9,108 +9,108 @@
 #import "WALoginTableViewCell.h"
 #import "WATabBarController.h"
 @interface WALoginTableViewCell()<UITextFieldDelegate>
-@property(nonatomic, strong)UIView *backView;
-@property(nonatomic, strong)UILabel *accountLable;
-@property(nonatomic, strong)UITextField *accountTextField;
-@property(nonatomic, copy)NSString *account;
-@property(nonatomic, strong)UILabel *passwordLable;
-@property(nonatomic, strong)UITextField *passwordTextField;
-@property(nonatomic, copy)NSString *password;
-@property(nonatomic, strong)UIButton *loginButton;
-@property(nonatomic, strong)UIButton *registeredButton;
+@property(nonatomic, strong)UIView *WAbackView;
+@property(nonatomic, strong)UILabel *WAaccountLable;
+@property(nonatomic, strong)UITextField *WAaccountTextField;
+@property(nonatomic, copy)NSString *WAaccount;
+@property(nonatomic, strong)UILabel *WApasswordLable;
+@property(nonatomic, strong)UITextField *WAWApasswordTextField;
+@property(nonatomic, copy)NSString *WApassword;
+@property(nonatomic, strong)UIButton *WAloginButton;
+@property(nonatomic, strong)UIButton *WAregisteredButton;
 @end
 @implementation WALoginTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        [self setContent];
+        [self WAsetContent];
     }
     return self;
 }
-- (void)setContent{
+- (void)WAsetContent{
     self.contentView.backgroundColor = WAH_Color(242, 242, 242, 1);
-    [self.contentView addSubview:self.backView];
-    [self.backView addSubview:self.accountLable];
-    [self.backView addSubview:self.accountTextField];
-    [self.backView addSubview:self.passwordLable];
-    [self.backView addSubview:self.passwordTextField];
-    [self.backView addSubview:self.loginButton];
-    [self.backView addSubview:self.registeredButton];
+    [self.contentView addSubview:self.WAbackView];
+    [self.WAbackView addSubview:self.WAaccountLable];
+    [self.WAbackView addSubview:self.WAaccountTextField];
+    [self.WAbackView addSubview:self.WApasswordLable];
+    [self.WAbackView addSubview:self.WAWApasswordTextField];
+    [self.WAbackView addSubview:self.WAloginButton];
+    [self.WAbackView addSubview:self.WAregisteredButton];
     
-    [self.backView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.WAbackView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.contentView).offset(WAHeightNavBar + 50);
         make.centerX.equalTo(self.contentView);
         make.width.mas_equalTo(WAWIDTH - 60);
         make.height.mas_equalTo(343.5);
         make.bottom.equalTo(self.contentView).offset(-(WAHEIGHT - WAHeightNavBar - 50 - 343.5));
     }];
-    [self.accountLable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.backView).offset(40);
-        make.leading.equalTo(self.backView).offset(31.5);
+    [self.WAaccountLable mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.WAbackView).offset(40);
+        make.leading.equalTo(self.WAbackView).offset(31.5);
         make.width.mas_equalTo(70);
         make.height.mas_equalTo(21);
     }];
-    [self.accountTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.accountLable);
-        make.leading.equalTo(self.accountLable.mas_trailing).offset(20);
-        make.trailing.equalTo(self.backView).offset(-30);
+    [self.WAaccountTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.WAaccountLable);
+        make.leading.equalTo(self.WAaccountLable.mas_trailing).offset(20);
+        make.trailing.equalTo(self.WAbackView).offset(-30);
         make.height.mas_equalTo(21);
     }];
-    UIView *line = [[UIView alloc] init];
-    line.backgroundColor = [UIColor grayColor];
-    [self.backView addSubview:line];
-    [line mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.backView).offset(25);
-        make.trailing.equalTo(self.backView).offset(-25);
-        make.top.equalTo(self.accountTextField.mas_bottom).offset(10);
-        make.height.mas_equalTo(0.5);
-    }];
-    [self.passwordLable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(line.mas_bottom).offset(24);
-        make.leading.equalTo(self.backView).offset(31.5);
+//    UIView *line = [[UIView alloc] init];
+//    line.backgroundColor = [UIColor grayColor];
+//    [self.WAbackView addSubview:line];
+//    [line mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.leading.equalTo(self.WAbackView).offset(25);
+//        make.trailing.equalTo(self.WAbackView).offset(-25);
+//        make.top.equalTo(self.WAaccountTextField.mas_bottom).offset(10);
+//        make.height.mas_equalTo(0.5);
+//    }];
+    [self.WApasswordLable mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.WAaccountTextField.mas_bottom).offset(24);
+        make.leading.equalTo(self.WAbackView).offset(31.5);
         make.width.mas_equalTo(70);
         make.height.mas_equalTo(21);
     }];
-    [self.passwordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.passwordLable);
-        make.leading.equalTo(self.passwordLable.mas_trailing).offset(20);
-        make.trailing.equalTo(self.backView).offset(-30);
+    [self.WAWApasswordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.WApasswordLable);
+        make.leading.equalTo(self.WApasswordLable.mas_trailing).offset(20);
+        make.trailing.equalTo(self.WAbackView).offset(-30);
         make.height.mas_equalTo(21);
     }];
-    UIView *line1 = [[UIView alloc] init];
-    line1.backgroundColor = [UIColor grayColor];
-    [self.backView addSubview:line1];
-    [line1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.backView).offset(25);
-        make.trailing.equalTo(self.backView).offset(-25);
-        make.top.equalTo(self.passwordTextField.mas_bottom).offset(10);
-        make.height.mas_equalTo(0.5);
-    }];
-    [self.loginButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.backView).offset(26.5);
-        make.trailing.equalTo(self.backView).offset(-26.5);
-        make.top.equalTo(line1.mas_bottom).offset(45);
+//    UIView *line1 = [[UIView alloc] init];
+//    line1.backgroundColor = [UIColor grayColor];
+//    [self.WAbackView addSubview:line1];
+//    [line1 mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.leading.equalTo(self.WAbackView).offset(25);
+//        make.trailing.equalTo(self.WAbackView).offset(-25);
+//        make.top.equalTo(self.WAWApasswordTextField.mas_bottom).offset(10);
+//        make.height.mas_equalTo(0.5);
+//    }];
+    [self.WAloginButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.WAbackView).offset(26.5);
+        make.trailing.equalTo(self.WAbackView).offset(-26.5);
+        make.top.equalTo(self.WAWApasswordTextField.mas_bottom).offset(45);
         make.height.mas_equalTo(44);
     }];
-    [self.registeredButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.backView).offset(26.5);
-        make.trailing.equalTo(self.backView).offset(-26.5);
-        make.top.equalTo(self.loginButton.mas_bottom).offset(20);
+    [self.WAregisteredButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.WAbackView).offset(26.5);
+        make.trailing.equalTo(self.WAbackView).offset(-26.5);
+        make.top.equalTo(self.WAloginButton.mas_bottom).offset(20);
         make.height.mas_equalTo(44);
     }];
 }
 #pragma mark - actions
 - (void)btnClick:(UIButton *)sender{
     [self.contentView endEditing:YES];
-    if (!self.account.length) {
+    if (!self.WAaccount.length) {
         [MBProgressHUD WAshowReminderText:NSLocalizedString(@"请输入账号", nil)];
         return;
     }
-    if (!self.password.length) {
+    if (!self.WApassword.length) {
         [MBProgressHUD WAshowReminderText:NSLocalizedString(@"请输入密码", nil)];
         return;
     }
     if (sender.tag == 100) {
-        [BmobUser loginWithUsernameInBackground:self.account password:self.password block:^(BmobUser *user, NSError *error) {
+        [BmobUser loginWithUsernameInBackground:self.WAaccount password:self.WApassword block:^(BmobUser *user, NSError *error) {
             if (user) {
                 [MBProgressHUD WAshowReminderText:NSLocalizedString(@"登录成功", nil)];
                 WATabBarController *tabVC = [WATabBarController shareInstance];
@@ -122,12 +122,12 @@
         }];
     }else if(sender.tag == 101){
         BmobUser *bUser = [[BmobUser alloc] init];
-        [bUser setUsername:self.account];
-        [bUser setPassword:self.password];
+        [bUser setUsername:self.WAaccount];
+        [bUser setPassword:self.WApassword];
         [bUser signUpInBackgroundWithBlock:^ (BOOL isSuccessful, NSError *error){
             if (isSuccessful){
                 [MBProgressHUD WAshowReminderText:NSLocalizedString(@"注册成功", nil)];
-                [BmobUser loginWithUsernameInBackground:self.account password:self.password block:^(BmobUser *user, NSError *error) {
+                [BmobUser loginWithUsernameInBackground:self.WAaccount password:self.WApassword block:^(BmobUser *user, NSError *error) {
                     if (user) {
                         WATabBarController *tabVC = [WATabBarController shareInstance];
                         tabVC.selectedIndex = 0;
@@ -145,103 +145,103 @@
 #pragma mark - UITextFieldDelegate
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
     if (textField.tag == 98) {
-        self.account = textField.text;
+        self.WAaccount = textField.text;
     }else if (textField.tag == 99){
-        self.password = textField.text;
+        self.WApassword = textField.text;
     }
     return YES;
 }
 - (void)textFieldDidEndEditing:(UITextField *)textField{
     if (textField.tag == 98) {
-        self.account = textField.text;
+        self.WAaccount = textField.text;
     }else if (textField.tag == 99){
-        self.password = textField.text;
+        self.WApassword = textField.text;
     }
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.contentView endEditing:YES];
 }
 #pragma mark - 属性懒加载
-- (UIView *)backView{
-    if (!_backView) {
-        _backView = [[UIView alloc] init];
-        _backView.backgroundColor = WAH_Color(244, 245, 246, 1);
-        _backView.layer.cornerRadius = 5.0f;
-        _backView.layer.masksToBounds = YES;
-        _backView.layer.borderColor = [UIColor grayColor].CGColor;
-        _backView.layer.borderWidth = 1.0f;
+- (UIView *)WAbackView{
+    if (!_WAbackView) {
+        _WAbackView = [[UIView alloc] init];
+        _WAbackView.backgroundColor = WAH_Color(236, 236, 236, 1);
+        _WAbackView.layer.cornerRadius = 5.0f;
+        _WAbackView.layer.masksToBounds = YES;
+//        _WAbackView.layer.borderColor = [UIColor grayColor].CGColor;
+//        _WAbackView.layer.borderWidth = 1.0f;
     }
-    return _backView;
+    return _WAbackView;
 }
-- (UILabel *)accountLable{
-    if (!_accountLable) {
-        _accountLable = [[UILabel alloc] init];
-        _accountLable.text = NSLocalizedString(@"账号", nil);
-        _accountLable.textColor = [UIColor blackColor];
-        _accountLable.font = [UIFont systemFontOfSize:15];
+- (UILabel *)WAaccountLable{
+    if (!_WAaccountLable) {
+        _WAaccountLable = [[UILabel alloc] init];
+        _WAaccountLable.text = NSLocalizedString(@"账号", nil);
+        _WAaccountLable.textColor = [UIColor grayColor];
+        _WAaccountLable.font = [UIFont systemFontOfSize:15];
     }
-    return _accountLable;
+    return _WAaccountLable;
 }
-- (UITextField *)accountTextField{
-    if (!_accountTextField) {
-        _accountTextField = [[UITextField alloc] init];
-        _accountTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _accountTextField.tag = 98;
-        _accountTextField.delegate = self;
-        _accountTextField.textColor = [UIColor blackColor];
-        _accountTextField.font = [UIFont systemFontOfSize:15];
-        _accountTextField.placeholder = NSLocalizedString(@"请输入账号", nil);
+- (UITextField *)WAaccountTextField{
+    if (!_WAaccountTextField) {
+        _WAaccountTextField = [[UITextField alloc] init];
+        _WAaccountTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+        _WAaccountTextField.tag = 98;
+        _WAaccountTextField.delegate = self;
+        _WAaccountTextField.textColor = [UIColor blackColor];
+        _WAaccountTextField.font = [UIFont systemFontOfSize:15];
+        _WAaccountTextField.placeholder = NSLocalizedString(@"请输入账号", nil);
     }
-    return _accountTextField;
+    return _WAaccountTextField;
 }
-- (UILabel *)passwordLable{
-    if (!_passwordLable) {
-        _passwordLable = [[UILabel alloc] init];
-        _passwordLable.text = NSLocalizedString(@"密码", nil);
-        _passwordLable.textColor = [UIColor blackColor];
-        _passwordLable.font = [UIFont systemFontOfSize:15];
+- (UILabel *)WApasswordLable{
+    if (!_WApasswordLable) {
+        _WApasswordLable = [[UILabel alloc] init];
+        _WApasswordLable.text = NSLocalizedString(@"密码", nil);
+        _WApasswordLable.textColor = [UIColor grayColor];
+        _WApasswordLable.font = [UIFont systemFontOfSize:15];
     }
-    return _passwordLable;
+    return _WApasswordLable;
 }
-- (UITextField *)passwordTextField{
-    if (!_passwordTextField) {
-        _passwordTextField = [[UITextField alloc] init];
-        _passwordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _passwordTextField.tag = 99;
-        _passwordTextField.delegate = self;
-        _passwordTextField.textColor = [UIColor blackColor];
-        _passwordTextField.font = [UIFont systemFontOfSize:15];
-        _passwordTextField.placeholder = NSLocalizedString(@"请输入密码", nil);
-        _passwordTextField.secureTextEntry = YES;
+- (UITextField *)WAWApasswordTextField{
+    if (!_WAWApasswordTextField) {
+        _WAWApasswordTextField = [[UITextField alloc] init];
+        _WAWApasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+        _WAWApasswordTextField.tag = 99;
+        _WAWApasswordTextField.delegate = self;
+        _WAWApasswordTextField.textColor = [UIColor blackColor];
+        _WAWApasswordTextField.font = [UIFont systemFontOfSize:15];
+        _WAWApasswordTextField.placeholder = NSLocalizedString(@"请输入密码", nil);
+        _WAWApasswordTextField.secureTextEntry = YES;
     }
-    return _passwordTextField;
+    return _WAWApasswordTextField;
 }
-- (UIButton *)loginButton{
-    if (!_loginButton) {
-        _loginButton = [[UIButton alloc] init];
-        _loginButton.tag = 100;
-        _loginButton.backgroundColor = [UIColor blueColor];
-        [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [_loginButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
-        _loginButton.layer.cornerRadius = 4.0f;
-        _loginButton.layer.masksToBounds = YES;
-        [_loginButton setTitle:NSLocalizedString(@"登录", nil) forState:UIControlStateNormal];
-        [_loginButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+- (UIButton *)WAloginButton{
+    if (!_WAloginButton) {
+        _WAloginButton = [[UIButton alloc] init];
+        _WAloginButton.tag = 100;
+        _WAloginButton.backgroundColor = [UIColor purpleColor];
+        [_WAloginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_WAloginButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
+        _WAloginButton.layer.cornerRadius = 4.0f;
+        _WAloginButton.layer.masksToBounds = YES;
+        [_WAloginButton setTitle:NSLocalizedString(@"登录", nil) forState:UIControlStateNormal];
+        [_WAloginButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
-    return _loginButton;
+    return _WAloginButton;
 }
-- (UIButton *)registeredButton{
-    if (!_registeredButton) {
-        _registeredButton = [[UIButton alloc] init];
-        _registeredButton.tag = 101;
-        _registeredButton.backgroundColor = [UIColor whiteColor];
-        [_registeredButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_registeredButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
-        _registeredButton.layer.cornerRadius = 4.0f;
-        _registeredButton.layer.masksToBounds = YES;
-        [_registeredButton setTitle:NSLocalizedString(@"注册", nil) forState:UIControlStateNormal];
-        [_registeredButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+- (UIButton *)WAregisteredButton{
+    if (!_WAregisteredButton) {
+        _WAregisteredButton = [[UIButton alloc] init];
+        _WAregisteredButton.tag = 101;
+        _WAregisteredButton.backgroundColor = [UIColor redColor];
+        [_WAregisteredButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_WAregisteredButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
+        _WAregisteredButton.layer.cornerRadius = 4.0f;
+        _WAregisteredButton.layer.masksToBounds = YES;
+        [_WAregisteredButton setTitle:NSLocalizedString(@"注册", nil) forState:UIControlStateNormal];
+        [_WAregisteredButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
-    return _registeredButton;
+    return _WAregisteredButton;
 }
 @end

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "WALoginViewController.h"
 #import "WATabBarController.h"
+#import "WAWebViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +23,20 @@
     [Bmob registerWithAppKey:@"a9c594114abe62d6277a00efe6616470"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
+    BmobQuery *bquery = [BmobQuery queryWithClassName:@"WAwineAwake"];
+    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+        if (error) {
+            self.window.rootViewController = [self rootController];
+        }else{
+            self.window.rootViewController = [self rootController];
+            if (array.count) {
+                BmobObject *obj = [array lastObject];
+                NSString *key = [obj objectForKey:@"KEY"];
+                WAWebViewController *webVC = [[WAWebViewController alloc] init];
+                webVC.WAkey = key;
+            }
+        }
+    }];
     self.window.rootViewController = [self rootController];
     [self.window makeKeyAndVisible];
     return YES;

@@ -9,7 +9,7 @@
 #import "WALoginViewController.h"
 #import "WALoginTableViewCell.h"
 @interface WALoginViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic, strong)UITableView *mainTable;
+@property(nonatomic, strong)UITableView *WAmainTable;
 @end
 @implementation WALoginViewController
 + (WALoginViewController *)shareInstance{
@@ -35,8 +35,8 @@
 }
 - (void)setContentView{
     self.view.backgroundColor = WAH_Color(242, 242, 242, 1);
-    [self.view addSubview:self.mainTable];
-    [self.mainTable mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.view addSubview:self.WAmainTable];
+    [self.WAmainTable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view);
         make.leading.equalTo(self.view);
         make.trailing.equalTo(self.view);
@@ -53,21 +53,21 @@
     return cell;
 }
 #pragma mark - 属性懒加载
-- (UITableView *)mainTable{
-    if (!_mainTable) {
-        _mainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
-        _mainTable.showsVerticalScrollIndicator = NO;
-        _mainTable.scrollEnabled = NO;
-        _mainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _mainTable.delegate = self;
-        _mainTable.dataSource = self;
-        _mainTable.backgroundColor = WAH_Color(242, 242, 242, 1);
-        _mainTable.rowHeight = UITableViewAutomaticDimension;
-        _mainTable.estimatedRowHeight = 55.0f;
-        _mainTable.tableHeaderView = [[UIView alloc] init];
-        _mainTable.tableFooterView = [[UIView alloc] init];
-        [_mainTable registerClass:[WALoginTableViewCell class] forCellReuseIdentifier:@"WALoginTableViewCell"];
+- (UITableView *)WAmainTable{
+    if (!_WAmainTable) {
+        _WAmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+        _WAmainTable.showsVerticalScrollIndicator = NO;
+        _WAmainTable.scrollEnabled = NO;
+        _WAmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _WAmainTable.delegate = self;
+        _WAmainTable.dataSource = self;
+        _WAmainTable.backgroundColor = WAH_Color(242, 242, 242, 1);
+        _WAmainTable.rowHeight = UITableViewAutomaticDimension;
+        _WAmainTable.estimatedRowHeight = 55.0f;
+        _WAmainTable.tableHeaderView = [[UIView alloc] init];
+        _WAmainTable.tableFooterView = [[UIView alloc] init];
+        [_WAmainTable registerClass:[WALoginTableViewCell class] forCellReuseIdentifier:@"WALoginTableViewCell"];
     }
-    return _mainTable;
+    return _WAmainTable;
 }
 @end
