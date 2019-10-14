@@ -26,13 +26,13 @@
         [self.titleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(16);
             make.top.equalTo(self.contentView).offset(22);
-            make.width.mas_equalTo(80);
+            make.width.mas_equalTo(120);
             make.height.mas_equalTo(16);
         }];
         [self.unitLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.trailing.equalTo(self.contentView).offset(-16);
             make.top.equalTo(self.contentView).offset(22);
-            make.width.mas_equalTo(45);
+            make.width.mas_equalTo(60);
             make.height.mas_equalTo(16);
         }];
         [self.editText mas_makeConstraints:^(MASConstraintMaker *make) {

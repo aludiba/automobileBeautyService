@@ -78,6 +78,7 @@
 		AE17A07F23506D4C0095E229 /* WAClockRecordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAClockRecordTableViewCell.m; sourceTree = "<group>"; };
 		AE17A081235071950095E229 /* WAClockRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAClockRecordModel.h; sourceTree = "<group>"; };
 		AE17A082235071950095E229 /* WAClockRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAClockRecordModel.m; sourceTree = "<group>"; };
+		AE44FC9C235411B20033D031 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AEFF88FE23497B2B00B81B11 /* wineAwake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wineAwake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFF890123497B2B00B81B11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEFF890223497B2B00B81B11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -636,6 +637,7 @@
 			children = (
 				AEFF89922349BEF200B81B11 /* ja */,
 				AEFF89942349BEF700B81B11 /* zh-Hans */,
+				AE44FC9C235411B20033D031 /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

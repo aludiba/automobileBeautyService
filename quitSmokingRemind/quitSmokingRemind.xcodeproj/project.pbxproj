@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -66,6 +66,11 @@
 		AE44FC82235405860033D031 /* quitSmokingRemind */ = {
 			isa = PBXGroup;
 			children = (
+				AE44FC9E23541B7C0033D031 /* Clock */,
+				AE44FC9D23541B7C0033D031 /* Common */,
+				AE44FCA723541B7C0033D031 /* Mine */,
+				AE44FCA223541B7C0033D031 /* Record */,
+				AE44FCA623541B7C0033D031 /* Resources */,
 				AE44FC83235405860033D031 /* AppDelegate.h */,
 				AE44FC84235405860033D031 /* AppDelegate.m */,
 				AE44FC8F2354058C0033D031 /* Assets.xcassets */,
@@ -75,13 +80,119 @@
 			path = quitSmokingRemind;
 			sourceTree = "<group>";
 		};
+		AE44FC9D23541B7C0033D031 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AE44FC9E23541B7C0033D031 /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				AE44FC9F23541B7C0033D031 /* Models */,
+				AE44FCA023541B7C0033D031 /* Controllers */,
+				AE44FCA123541B7C0033D031 /* Views */,
+			);
+			path = Clock;
+			sourceTree = "<group>";
+		};
+		AE44FC9F23541B7C0033D031 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE44FCA023541B7C0033D031 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE44FCA123541B7C0033D031 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE44FCA223541B7C0033D031 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				AE44FCA323541B7C0033D031 /* Models */,
+				AE44FCA423541B7C0033D031 /* Controllers */,
+				AE44FCA523541B7C0033D031 /* Views */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		AE44FCA323541B7C0033D031 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE44FCA423541B7C0033D031 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE44FCA523541B7C0033D031 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE44FCA623541B7C0033D031 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE44FCA723541B7C0033D031 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				AE44FCA823541B7C0033D031 /* Models */,
+				AE44FCA923541B7C0033D031 /* Controllers */,
+				AE44FCAA23541B7C0033D031 /* Views */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		AE44FCA823541B7C0033D031 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE44FCA923541B7C0033D031 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE44FCAA23541B7C0033D031 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E0D47A6863B96A74D88A30C8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				3C991F5F35D450D2EBFF97C0 /* Pods-quitSmokingRemind.debug.xcconfig */,
 				9874E84BAC9EF8B57A917A4E /* Pods-quitSmokingRemind.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -128,6 +239,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				ja,
 			);
 			mainGroup = AE44FC77235405850033D031;
 			productRefGroup = AE44FC81235405860033D031 /* Products */;

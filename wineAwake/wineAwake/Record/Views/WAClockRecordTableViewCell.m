@@ -21,7 +21,7 @@
         [self.titleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(16);
             make.centerY.equalTo(self.contentView);
-            make.width.mas_equalTo(100);
+            make.width.mas_equalTo(150);
             make.height.mas_equalTo(18);
         }];
         [self.contentLbl mas_makeConstraints:^(MASConstraintMaker *make) {
