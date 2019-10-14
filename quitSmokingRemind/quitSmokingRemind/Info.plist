@@ -40,7 +40,5 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>NSCalendarsUsageDescription</key>
-	<string>允许此应用程序访问您的日历以进行戒酒打卡当天详情的展示吗？</string>
 </dict>
 </plist>
