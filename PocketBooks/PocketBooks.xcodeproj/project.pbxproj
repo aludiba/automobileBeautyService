@@ -78,6 +78,7 @@
 
 /* Begin PBXFileReference section */
 		40E4D22BC1060D03BACEA31C /* Pods-PocketBooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBooks.debug.xcconfig"; path = "Target Support Files/Pods-PocketBooks/Pods-PocketBooks.debug.xcconfig"; sourceTree = "<group>"; };
+		720915342354B4C900053BD7 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE05330C2328EBF5009846FC /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
 		AE05330D2328EBF5009846FC /* jcore-ios-2.0.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.0.1.a"; sourceTree = "<group>"; };
 		AE05330E2328EBF5009846FC /* jpush-ios-3.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.0.a"; sourceTree = "<group>"; };
@@ -235,6 +236,7 @@
 		1F0FAE0A89F135B29C5F51BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				720915342354B4C900053BD7 /* AFNetworking.framework */,
 				AE05333E2328EFE7009846FC /* AVFoundation.framework */,
 				AE05333C2328EFDD009846FC /* Foundation.framework */,
 				AE05333A2328EFD5009846FC /* UIKit.framework */,

@@ -14,8 +14,6 @@
 		7209151A2354A93300053BD7 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247446323549C5B009BBE40 /* libsqlite3.tbd */; };
 		7209151B2354A94B00053BD7 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247446423549C69009BBE40 /* libz.1.2.5.tbd */; };
 		7209151C2354A95C00053BD7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247446523549C74009BBE40 /* libz.tbd */; };
-		7209152D2354AAE800053BD7 /* Pods_wineAwake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720915122354A7F300053BD7 /* Pods_wineAwake.framework */; };
-		720915322354AC9F00053BD7 /* Pods_wineAwake.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 720915122354A7F300053BD7 /* Pods_wineAwake.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		72381276234F80D300F3939A /* WARecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72381274234F80D300F3939A /* WARecordViewController.xib */; };
 		7238127A234F822100F3939A /* WARecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72381279234F822100F3939A /* WARecordViewController.m */; };
 		7238127D234F839900F3939A /* WAClockRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7238127C234F839900F3939A /* WAClockRecordViewController.m */; };
@@ -91,7 +89,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				720915322354AC9F00053BD7 /* Pods_wineAwake.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,13 +97,6 @@
 
 /* Begin PBXFileReference section */
 		448F2C8E77FD0027ED89D0E7 /* Pods-wineAwake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wineAwake.release.xcconfig"; path = "Target Support Files/Pods-wineAwake/Pods-wineAwake.release.xcconfig"; sourceTree = "<group>"; };
-		720915122354A7F300053BD7 /* Pods_wineAwake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_wineAwake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7209151D2354AABF00053BD7 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		720915212354AAC400053BD7 /* IQKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IQKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		720915242354AAC800053BD7 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		720915272354AACC00053BD7 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7209152A2354AAE300053BD7 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7209152F2354AAED00053BD7 /* YYModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72381274234F80D300F3939A /* WARecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WARecordViewController.xib; sourceTree = "<group>"; };
 		72381278234F822100F3939A /* WARecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WARecordViewController.h; sourceTree = "<group>"; };
 		72381279234F822100F3939A /* WARecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WARecordViewController.m; sourceTree = "<group>"; };
@@ -238,7 +228,6 @@
 		AEFF89AB2349DB0500B81B11 /* WADrinkingPlanEditTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WADrinkingPlanEditTableViewCell.m; sourceTree = "<group>"; };
 		AEFF89AD2349DE9C00B81B11 /* WADrinkingPlanModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WADrinkingPlanModel.h; sourceTree = "<group>"; };
 		AEFF89AE2349DE9C00B81B11 /* WADrinkingPlanModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WADrinkingPlanModel.m; sourceTree = "<group>"; };
-		B50A5434D5E2E4B7548FD024 /* Pods_wineAwake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wineAwake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1DFA28AEE9D389E2E980736 /* Pods-wineAwake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wineAwake.debug.xcconfig"; path = "Target Support Files/Pods-wineAwake/Pods-wineAwake.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -250,7 +239,6 @@
 				7209151A2354A93300053BD7 /* libsqlite3.tbd in Frameworks */,
 				7247447323549CDC009BBE40 /* UserNotifications.framework in Frameworks */,
 				7247446B23549CA8009BBE40 /* QuartzCore.framework in Frameworks */,
-				7209152D2354AAE800053BD7 /* Pods_wineAwake.framework in Frameworks */,
 				720915192354A92400053BD7 /* libsqlite3.0.tbd in Frameworks */,
 				7247445123549B96009BBE40 /* CFNetwork.framework in Frameworks */,
 				7247446723549C80009BBE40 /* MobileCoreServices.framework in Frameworks */,
@@ -283,13 +271,6 @@
 		11686BB2CB02ECC9F08AA722 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7209152F2354AAED00053BD7 /* YYModel.framework */,
-				7209152A2354AAE300053BD7 /* MJRefresh.framework */,
-				720915272354AACC00053BD7 /* MBProgressHUD.framework */,
-				720915242354AAC800053BD7 /* Masonry.framework */,
-				720915212354AAC400053BD7 /* IQKeyboardManager.framework */,
-				7209151D2354AABF00053BD7 /* AFNetworking.framework */,
-				720915122354A7F300053BD7 /* Pods_wineAwake.framework */,
 				7247447223549CDC009BBE40 /* UserNotifications.framework */,
 				7247447023549CCA009BBE40 /* UIKit.framework */,
 				7247446E23549CC2009BBE40 /* SystemConfiguration.framework */,
@@ -313,7 +294,6 @@
 				7247445023549B96009BBE40 /* CFNetwork.framework */,
 				7247444E23549B5A009BBE40 /* AVFoundation.framework */,
 				7247444C23549B4A009BBE40 /* AdSupport.framework */,
-				B50A5434D5E2E4B7548FD024 /* Pods_wineAwake.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
