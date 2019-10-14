@@ -7,10 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1999A9E2FB26E43093CF20CD /* Pods_wineAwake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B50A5434D5E2E4B7548FD024 /* Pods_wineAwake.framework */; };
+		720915162354A8E400053BD7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247445E23549BF7009BBE40 /* libc++.tbd */; };
+		720915172354A8F900053BD7 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247445F23549C0D009BBE40 /* libicucore.tbd */; };
+		720915182354A91000053BD7 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247446023549C1D009BBE40 /* libresolv.tbd */; };
+		720915192354A92400053BD7 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247446223549C4C009BBE40 /* libsqlite3.0.tbd */; };
+		7209151A2354A93300053BD7 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247446323549C5B009BBE40 /* libsqlite3.tbd */; };
+		7209151B2354A94B00053BD7 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247446423549C69009BBE40 /* libz.1.2.5.tbd */; };
+		7209151C2354A95C00053BD7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247446523549C74009BBE40 /* libz.tbd */; };
+		7209152D2354AAE800053BD7 /* Pods_wineAwake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720915122354A7F300053BD7 /* Pods_wineAwake.framework */; };
+		720915322354AC9F00053BD7 /* Pods_wineAwake.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 720915122354A7F300053BD7 /* Pods_wineAwake.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		72381276234F80D300F3939A /* WARecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72381274234F80D300F3939A /* WARecordViewController.xib */; };
 		7238127A234F822100F3939A /* WARecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72381279234F822100F3939A /* WARecordViewController.m */; };
 		7238127D234F839900F3939A /* WAClockRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7238127C234F839900F3939A /* WAClockRecordViewController.m */; };
+		7247444923549AFB009BBE40 /* jcore-ios-2.0.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247444723549AFA009BBE40 /* jcore-ios-2.0.1.a */; };
+		7247444A23549AFB009BBE40 /* jpush-ios-3.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247444823549AFA009BBE40 /* jpush-ios-3.2.0.a */; };
+		7247444D23549B4A009BBE40 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247444C23549B4A009BBE40 /* AdSupport.framework */; };
+		7247444F23549B5A009BBE40 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247444E23549B5A009BBE40 /* AVFoundation.framework */; };
+		7247445123549B96009BBE40 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247445023549B96009BBE40 /* CFNetwork.framework */; };
+		7247445323549BA0009BBE40 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247445223549BA0009BBE40 /* CoreFoundation.framework */; };
+		7247445523549BAB009BBE40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247445423549BAB009BBE40 /* CoreGraphics.framework */; };
+		7247445723549BB4009BBE40 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247445623549BB4009BBE40 /* CoreLocation.framework */; };
+		7247445923549BBD009BBE40 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247445823549BBC009BBE40 /* CoreTelephony.framework */; };
+		7247445B23549BCA009BBE40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247445A23549BC9009BBE40 /* Foundation.framework */; };
+		7247445D23549BD4009BBE40 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247445C23549BD4009BBE40 /* ImageIO.framework */; };
+		7247446123549C3E009BBE40 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247446023549C1D009BBE40 /* libresolv.tbd */; };
+		7247446723549C80009BBE40 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247446623549C80009BBE40 /* MobileCoreServices.framework */; };
+		7247446923549C8E009BBE40 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247446823549C8E009BBE40 /* Photos.framework */; };
+		7247446B23549CA8009BBE40 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247446A23549CA8009BBE40 /* QuartzCore.framework */; };
+		7247446D23549CB5009BBE40 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247446C23549CB4009BBE40 /* Security.framework */; };
+		7247446F23549CC2009BBE40 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247446E23549CC2009BBE40 /* SystemConfiguration.framework */; };
+		7247447123549CCB009BBE40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247447023549CCA009BBE40 /* UIKit.framework */; };
+		7247447323549CDC009BBE40 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247447223549CDC009BBE40 /* UserNotifications.framework */; };
 		726B763023535E6F0067A72E /* WAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726B762E23535E6E0067A72E /* WAWebViewController.m */; };
 		AE0F5DA1234AE18500E7468E /* WADrinkingPlanDateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0F5DA0234AE18500E7468E /* WADrinkingPlanDateTableViewCell.m */; };
 		AE0F5DA4234AE49300E7468E /* WADrinkingPlanSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0F5DA3234AE49300E7468E /* WADrinkingPlanSaveTableViewCell.m */; };
@@ -57,13 +84,61 @@
 		AEFF89AF2349DE9C00B81B11 /* WADrinkingPlanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF89AE2349DE9C00B81B11 /* WADrinkingPlanModel.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		720915332354AC9F00053BD7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				720915322354AC9F00053BD7 /* Pods_wineAwake.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		448F2C8E77FD0027ED89D0E7 /* Pods-wineAwake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wineAwake.release.xcconfig"; path = "Target Support Files/Pods-wineAwake/Pods-wineAwake.release.xcconfig"; sourceTree = "<group>"; };
+		720915122354A7F300053BD7 /* Pods_wineAwake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_wineAwake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7209151D2354AABF00053BD7 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		720915212354AAC400053BD7 /* IQKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IQKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		720915242354AAC800053BD7 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		720915272354AACC00053BD7 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7209152A2354AAE300053BD7 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7209152F2354AAED00053BD7 /* YYModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72381274234F80D300F3939A /* WARecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WARecordViewController.xib; sourceTree = "<group>"; };
 		72381278234F822100F3939A /* WARecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WARecordViewController.h; sourceTree = "<group>"; };
 		72381279234F822100F3939A /* WARecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WARecordViewController.m; sourceTree = "<group>"; };
 		7238127B234F839900F3939A /* WAClockRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAClockRecordViewController.h; sourceTree = "<group>"; };
 		7238127C234F839900F3939A /* WAClockRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAClockRecordViewController.m; sourceTree = "<group>"; };
+		7247444623549AFA009BBE40 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		7247444723549AFA009BBE40 /* jcore-ios-2.0.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.0.1.a"; sourceTree = "<group>"; };
+		7247444823549AFA009BBE40 /* jpush-ios-3.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.0.a"; sourceTree = "<group>"; };
+		7247444B23549B17009BBE40 /* wineAwake.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wineAwake.entitlements; sourceTree = "<group>"; };
+		7247444C23549B4A009BBE40 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		7247444E23549B5A009BBE40 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7247445023549B96009BBE40 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7247445223549BA0009BBE40 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		7247445423549BAB009BBE40 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7247445623549BB4009BBE40 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7247445823549BBC009BBE40 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		7247445A23549BC9009BBE40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7247445C23549BD4009BBE40 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		7247445E23549BF7009BBE40 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		7247445F23549C0D009BBE40 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		7247446023549C1D009BBE40 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		7247446223549C4C009BBE40 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		7247446323549C5B009BBE40 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		7247446423549C69009BBE40 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		7247446523549C74009BBE40 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7247446623549C80009BBE40 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		7247446823549C8E009BBE40 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		7247446A23549CA8009BBE40 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7247446C23549CB4009BBE40 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7247446E23549CC2009BBE40 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7247447023549CCA009BBE40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7247447223549CDC009BBE40 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		726B762E23535E6E0067A72E /* WAWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAWebViewController.m; sourceTree = "<group>"; };
 		726B762F23535E6F0067A72E /* WAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAWebViewController.h; sourceTree = "<group>"; };
 		AE0F5D9F234AE18500E7468E /* WADrinkingPlanDateTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WADrinkingPlanDateTableViewCell.h; sourceTree = "<group>"; };
@@ -172,7 +247,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1999A9E2FB26E43093CF20CD /* Pods_wineAwake.framework in Frameworks */,
+				7209151A2354A93300053BD7 /* libsqlite3.tbd in Frameworks */,
+				7247447323549CDC009BBE40 /* UserNotifications.framework in Frameworks */,
+				7247446B23549CA8009BBE40 /* QuartzCore.framework in Frameworks */,
+				7209152D2354AAE800053BD7 /* Pods_wineAwake.framework in Frameworks */,
+				720915192354A92400053BD7 /* libsqlite3.0.tbd in Frameworks */,
+				7247445123549B96009BBE40 /* CFNetwork.framework in Frameworks */,
+				7247446723549C80009BBE40 /* MobileCoreServices.framework in Frameworks */,
+				7247444A23549AFB009BBE40 /* jpush-ios-3.2.0.a in Frameworks */,
+				720915172354A8F900053BD7 /* libicucore.tbd in Frameworks */,
+				7247445923549BBD009BBE40 /* CoreTelephony.framework in Frameworks */,
+				7247444D23549B4A009BBE40 /* AdSupport.framework in Frameworks */,
+				7247447123549CCB009BBE40 /* UIKit.framework in Frameworks */,
+				7247445723549BB4009BBE40 /* CoreLocation.framework in Frameworks */,
+				7247446123549C3E009BBE40 /* libresolv.tbd in Frameworks */,
+				7247445323549BA0009BBE40 /* CoreFoundation.framework in Frameworks */,
+				7247445523549BAB009BBE40 /* CoreGraphics.framework in Frameworks */,
+				7247446F23549CC2009BBE40 /* SystemConfiguration.framework in Frameworks */,
+				7247444F23549B5A009BBE40 /* AVFoundation.framework in Frameworks */,
+				7247445D23549BD4009BBE40 /* ImageIO.framework in Frameworks */,
+				720915162354A8E400053BD7 /* libc++.tbd in Frameworks */,
+				7209151B2354A94B00053BD7 /* libz.1.2.5.tbd in Frameworks */,
+				7247446923549C8E009BBE40 /* Photos.framework in Frameworks */,
+				720915182354A91000053BD7 /* libresolv.tbd in Frameworks */,
+				7247444923549AFB009BBE40 /* jcore-ios-2.0.1.a in Frameworks */,
+				7247446D23549CB5009BBE40 /* Security.framework in Frameworks */,
+				7209151C2354A95C00053BD7 /* libz.tbd in Frameworks */,
+				7247445B23549BCA009BBE40 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,9 +283,49 @@
 		11686BB2CB02ECC9F08AA722 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7209152F2354AAED00053BD7 /* YYModel.framework */,
+				7209152A2354AAE300053BD7 /* MJRefresh.framework */,
+				720915272354AACC00053BD7 /* MBProgressHUD.framework */,
+				720915242354AAC800053BD7 /* Masonry.framework */,
+				720915212354AAC400053BD7 /* IQKeyboardManager.framework */,
+				7209151D2354AABF00053BD7 /* AFNetworking.framework */,
+				720915122354A7F300053BD7 /* Pods_wineAwake.framework */,
+				7247447223549CDC009BBE40 /* UserNotifications.framework */,
+				7247447023549CCA009BBE40 /* UIKit.framework */,
+				7247446E23549CC2009BBE40 /* SystemConfiguration.framework */,
+				7247446C23549CB4009BBE40 /* Security.framework */,
+				7247446A23549CA8009BBE40 /* QuartzCore.framework */,
+				7247446823549C8E009BBE40 /* Photos.framework */,
+				7247446623549C80009BBE40 /* MobileCoreServices.framework */,
+				7247446523549C74009BBE40 /* libz.tbd */,
+				7247446423549C69009BBE40 /* libz.1.2.5.tbd */,
+				7247446323549C5B009BBE40 /* libsqlite3.tbd */,
+				7247446223549C4C009BBE40 /* libsqlite3.0.tbd */,
+				7247446023549C1D009BBE40 /* libresolv.tbd */,
+				7247445F23549C0D009BBE40 /* libicucore.tbd */,
+				7247445E23549BF7009BBE40 /* libc++.tbd */,
+				7247445C23549BD4009BBE40 /* ImageIO.framework */,
+				7247445A23549BC9009BBE40 /* Foundation.framework */,
+				7247445823549BBC009BBE40 /* CoreTelephony.framework */,
+				7247445623549BB4009BBE40 /* CoreLocation.framework */,
+				7247445423549BAB009BBE40 /* CoreGraphics.framework */,
+				7247445223549BA0009BBE40 /* CoreFoundation.framework */,
+				7247445023549B96009BBE40 /* CFNetwork.framework */,
+				7247444E23549B5A009BBE40 /* AVFoundation.framework */,
+				7247444C23549B4A009BBE40 /* AdSupport.framework */,
 				B50A5434D5E2E4B7548FD024 /* Pods_wineAwake.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7247444523549AFA009BBE40 /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				7247444623549AFA009BBE40 /* JPUSHService.h */,
+				7247444723549AFA009BBE40 /* jcore-ios-2.0.1.a */,
+				7247444823549AFA009BBE40 /* jpush-ios-3.2.0.a */,
+			);
+			path = JPush;
 			sourceTree = "<group>";
 		};
 		AEFF88F523497B2B00B81B11 = {
@@ -208,6 +349,7 @@
 		AEFF890023497B2B00B81B11 /* wineAwake */ = {
 			isa = PBXGroup;
 			children = (
+				7247444B23549B17009BBE40 /* wineAwake.entitlements */,
 				AEFF891A23497FDE00B81B11 /* Common */,
 				AEFF891B23497FDE00B81B11 /* Resources */,
 				AEFF891C23497FDE00B81B11 /* Clock */,
@@ -225,6 +367,7 @@
 		AEFF891A23497FDE00B81B11 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7247444523549AFA009BBE40 /* JPush */,
 				726B762F23535E6F0067A72E /* WAWebViewController.h */,
 				726B762E23535E6E0067A72E /* WAWebViewController.m */,
 				AEFF8971234992E500B81B11 /* WA_PrefixHeader.pch */,
@@ -478,6 +621,7 @@
 				AEFF88FB23497B2B00B81B11 /* Frameworks */,
 				AEFF88FC23497B2B00B81B11 /* Resources */,
 				3AFEF721358F870DFC0C30BE /* [CP] Embed Pods Frameworks */,
+				720915332354AC9F00053BD7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -762,8 +906,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				CODE_SIGN_ENTITLEMENTS = wineAwake/wineAwake.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 32A8756LJS;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wineAwake/Common/WA_PrefixHeader.pch";
 				INFOPLIST_FILE = wineAwake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -771,8 +917,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hbcAmplifier.wineAwake;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wineAwake/Common/JPush",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hbc.Amplifier.wineAwake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dis_wineAwake_20191014;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -784,8 +935,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				CODE_SIGN_ENTITLEMENTS = wineAwake/wineAwake.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 32A8756LJS;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wineAwake/Common/WA_PrefixHeader.pch";
 				INFOPLIST_FILE = wineAwake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -793,8 +946,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hbcAmplifier.wineAwake;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wineAwake/Common/JPush",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hbc.Amplifier.wineAwake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dis_wineAwake_20191014;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
