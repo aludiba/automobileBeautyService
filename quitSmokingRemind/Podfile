@@ -8,4 +8,5 @@ target 'quitSmokingRemind' do
   # Pods for quitSmokingRemind
     pod 'Masonry'
     pod 'AFNetworking'
+    pod 'MJRefresh'
 end
