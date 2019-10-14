@@ -1,0 +1,12 @@
+//
+//  QS_PrefixHeader.pch
+//  Simple Diary
+//
+//  Created by bykj on 2019/7/20.
+//  Copyright © 2019 hgg. All rights reserved.
+//
+
+#ifndef QS_PrefixHeader_pch
+#define QS_PrefixHeader_pch
+#import "QSGlobal.h"
+#endif /* QS_PrefixHeader_pch */
