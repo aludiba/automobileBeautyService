@@ -12,4 +12,5 @@ target 'quitSmokingRemind' do
     pod 'MBProgressHUD'
     pod 'YYModel'
     pod 'IQKeyboardManager'
+    pod 'BmobSDK'
 end
