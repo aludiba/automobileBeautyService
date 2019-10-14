@@ -41,6 +41,6 @@
 		<true/>
 	</dict>
 	<key>NSCalendarsUsageDescription</key>
-	<string>允许此应用程序访问您的日历以进行戒酒打卡当天详情的展示吗？</string>
+	<string>Allow this application to access your calendar to display details of the day you quit punching in?</string>
 </dict>
 </plist>
