@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		58F5483D5057F0E7B1B33DF3 /* Pods_quitSmokingRemind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AAC23F69D6C00AABA331BAF /* Pods_quitSmokingRemind.framework */; };
+		AE0B083123555AAE002756B5 /* QSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0B083023555AAE002756B5 /* QSLoginViewController.m */; };
+		AE0B083423555AC7002756B5 /* QSMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0B083323555AC7002756B5 /* QSMineViewController.m */; };
+		AE0B083723555ADB002756B5 /* QSRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0B083623555ADB002756B5 /* QSRecordViewController.m */; };
+		AE0B083A23555AF4002756B5 /* QSClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0B083923555AF4002756B5 /* QSClockViewController.m */; };
 		AE44FC85235405860033D031 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE44FC84235405860033D031 /* AppDelegate.m */; };
 		AE44FC902354058C0033D031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE44FC8F2354058C0033D031 /* Assets.xcassets */; };
 		AE44FC962354058C0033D031 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE44FC952354058C0033D031 /* main.m */; };
@@ -28,6 +32,14 @@
 		3C991F5F35D450D2EBFF97C0 /* Pods-quitSmokingRemind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quitSmokingRemind.debug.xcconfig"; path = "Target Support Files/Pods-quitSmokingRemind/Pods-quitSmokingRemind.debug.xcconfig"; sourceTree = "<group>"; };
 		4AAC23F69D6C00AABA331BAF /* Pods_quitSmokingRemind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quitSmokingRemind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9874E84BAC9EF8B57A917A4E /* Pods-quitSmokingRemind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quitSmokingRemind.release.xcconfig"; path = "Target Support Files/Pods-quitSmokingRemind/Pods-quitSmokingRemind.release.xcconfig"; sourceTree = "<group>"; };
+		AE0B082F23555AAE002756B5 /* QSLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSLoginViewController.h; sourceTree = "<group>"; };
+		AE0B083023555AAE002756B5 /* QSLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSLoginViewController.m; sourceTree = "<group>"; };
+		AE0B083223555AC7002756B5 /* QSMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSMineViewController.h; sourceTree = "<group>"; };
+		AE0B083323555AC7002756B5 /* QSMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSMineViewController.m; sourceTree = "<group>"; };
+		AE0B083523555ADB002756B5 /* QSRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSRecordViewController.h; sourceTree = "<group>"; };
+		AE0B083623555ADB002756B5 /* QSRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSRecordViewController.m; sourceTree = "<group>"; };
+		AE0B083823555AF4002756B5 /* QSClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSClockViewController.h; sourceTree = "<group>"; };
+		AE0B083923555AF4002756B5 /* QSClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSClockViewController.m; sourceTree = "<group>"; };
 		AE44FC80235405860033D031 /* quitSmokingRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quitSmokingRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE44FC83235405860033D031 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE44FC84235405860033D031 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -149,8 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				AE44FC9F23541B7C0033D031 /* Models */,
-				AE44FCA023541B7C0033D031 /* Controllers */,
 				AE44FCA123541B7C0033D031 /* Views */,
+				AE44FCA023541B7C0033D031 /* Controllers */,
 			);
 			path = Clock;
 			sourceTree = "<group>";
@@ -165,6 +177,8 @@
 		AE44FCA023541B7C0033D031 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AE0B083823555AF4002756B5 /* QSClockViewController.h */,
+				AE0B083923555AF4002756B5 /* QSClockViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,8 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				AE44FCA323541B7C0033D031 /* Models */,
-				AE44FCA423541B7C0033D031 /* Controllers */,
 				AE44FCA523541B7C0033D031 /* Views */,
+				AE44FCA423541B7C0033D031 /* Controllers */,
 			);
 			path = Record;
 			sourceTree = "<group>";
@@ -196,6 +210,8 @@
 		AE44FCA423541B7C0033D031 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AE0B083523555ADB002756B5 /* QSRecordViewController.h */,
+				AE0B083623555ADB002756B5 /* QSRecordViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -219,8 +235,8 @@
 			isa = PBXGroup;
 			children = (
 				AE44FCA823541B7C0033D031 /* Models */,
-				AE44FCA923541B7C0033D031 /* Controllers */,
 				AE44FCAA23541B7C0033D031 /* Views */,
+				AE44FCA923541B7C0033D031 /* Controllers */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -235,6 +251,10 @@
 		AE44FCA923541B7C0033D031 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AE0B082F23555AAE002756B5 /* QSLoginViewController.h */,
+				AE0B083023555AAE002756B5 /* QSLoginViewController.m */,
+				AE0B083223555AC7002756B5 /* QSMineViewController.h */,
+				AE0B083323555AC7002756B5 /* QSMineViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -371,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE44FCCD235420D70033D031 /* QSBaseViewController.m in Sources */,
+				AE0B083A23555AF4002756B5 /* QSClockViewController.m in Sources */,
 				AE44FCCE235420D70033D031 /* QSWebViewController.m in Sources */,
 				AE44FCCF235420D70033D031 /* MBProgressHUD+QSNJ.m in Sources */,
 				AE44FCB823541EBE0033D031 /* NSArray+log.m in Sources */,
@@ -380,6 +401,9 @@
 				AE44FCB923541EBE0033D031 /* NSDictionary+log.m in Sources */,
 				AE44FCD2235420D70033D031 /* QSNDHTTPClient.m in Sources */,
 				AE44FC85235405860033D031 /* AppDelegate.m in Sources */,
+				AE0B083723555ADB002756B5 /* QSRecordViewController.m in Sources */,
+				AE0B083123555AAE002756B5 /* QSLoginViewController.m in Sources */,
+				AE0B083423555AC7002756B5 /* QSMineViewController.m in Sources */,
 				AE44FC962354058C0033D031 /* main.m in Sources */,
 				AE44FCBA23541EBE0033D031 /* CalendarTool.m in Sources */,
 			);

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "QSLoginViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -31,7 +32,7 @@
         return tabVC;
 //    }else{
 //        //对象为空时，可打开用户注册界面
-//        WALoginViewController *loginVC = [WALoginViewController shareInstance];
+//        QSLoginViewController *loginVC = [QSLoginViewController shareInstance];
 //        return loginVC;
 //    }
 }

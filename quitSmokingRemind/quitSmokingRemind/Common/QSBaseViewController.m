@@ -13,7 +13,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self QS_setupNavigationItems];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = QSH_Color(236, 236, 236, 1);
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -33,6 +33,7 @@
     self.navigationItem.titleView = titleLabel;
 }
 - (void)QS_setupNavigationItems {
+    self.navigationController.navigationBar.barTintColor = [UIColor purpleColor];
     if (self.navigationController && self.navigationController.viewControllers.count > 1) {
         self.navigationItem.hidesBackButton = YES;
         _QSbackButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
