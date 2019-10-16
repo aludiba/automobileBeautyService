@@ -26,6 +26,11 @@
 		AE44FCD1235420D70033D031 /* QSHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE44FCC4235420D60033D031 /* QSHBTool.m */; };
 		AE44FCD2235420D70033D031 /* QSNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE44FCC7235420D60033D031 /* QSNDHTTPClient.m */; };
 		AE44FCD3235420D70033D031 /* QSUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE44FCCB235420D70033D031 /* QSUIUtilities.m */; };
+		AE6A24F42356A0AC00DAB0AD /* QSSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A24F22356A0AC00DAB0AD /* QSSetViewModel.m */; };
+		AE6A24FA2356A14600DAB0AD /* QSLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A24F92356A14600DAB0AD /* QSLoginTableViewCell.m */; };
+		AE6A24FD2356A95E00DAB0AD /* QSSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A24FC2356A95E00DAB0AD /* QSSetTableViewCell.m */; };
+		AE6A25022356AA2800DAB0AD /* QSPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A24FE2356AA2800DAB0AD /* QSPasswordChangeViewController.m */; };
+		AE6A25032356AA2800DAB0AD /* QSModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A24FF2356AA2800DAB0AD /* QSModifyNicknameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +76,16 @@
 		AE44FCCA235420D70033D031 /* QSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBaseViewController.h; sourceTree = "<group>"; };
 		AE44FCCB235420D70033D031 /* QSUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSUIUtilities.m; sourceTree = "<group>"; };
 		AE44FCCC235420D70033D031 /* QSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSTabBarController.h; sourceTree = "<group>"; };
+		AE6A24F22356A0AC00DAB0AD /* QSSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSSetViewModel.m; sourceTree = "<group>"; };
+		AE6A24F32356A0AC00DAB0AD /* QSSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSSetViewModel.h; sourceTree = "<group>"; };
+		AE6A24F82356A14600DAB0AD /* QSLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSLoginTableViewCell.h; sourceTree = "<group>"; };
+		AE6A24F92356A14600DAB0AD /* QSLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSLoginTableViewCell.m; sourceTree = "<group>"; };
+		AE6A24FB2356A95E00DAB0AD /* QSSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSSetTableViewCell.h; sourceTree = "<group>"; };
+		AE6A24FC2356A95E00DAB0AD /* QSSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSSetTableViewCell.m; sourceTree = "<group>"; };
+		AE6A24FE2356AA2800DAB0AD /* QSPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSPasswordChangeViewController.m; sourceTree = "<group>"; };
+		AE6A24FF2356AA2800DAB0AD /* QSModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSModifyNicknameViewController.m; sourceTree = "<group>"; };
+		AE6A25002356AA2800DAB0AD /* QSPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSPasswordChangeViewController.h; sourceTree = "<group>"; };
+		AE6A25012356AA2800DAB0AD /* QSModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSModifyNicknameViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +259,8 @@
 		AE44FCA823541B7C0033D031 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AE6A24F32356A0AC00DAB0AD /* QSSetViewModel.h */,
+				AE6A24F22356A0AC00DAB0AD /* QSSetViewModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -251,6 +268,10 @@
 		AE44FCA923541B7C0033D031 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AE6A25012356AA2800DAB0AD /* QSModifyNicknameViewController.h */,
+				AE6A24FF2356AA2800DAB0AD /* QSModifyNicknameViewController.m */,
+				AE6A25002356AA2800DAB0AD /* QSPasswordChangeViewController.h */,
+				AE6A24FE2356AA2800DAB0AD /* QSPasswordChangeViewController.m */,
 				AE0B082F23555AAE002756B5 /* QSLoginViewController.h */,
 				AE0B083023555AAE002756B5 /* QSLoginViewController.m */,
 				AE0B083223555AC7002756B5 /* QSMineViewController.h */,
@@ -262,6 +283,10 @@
 		AE44FCAA23541B7C0033D031 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AE6A24FB2356A95E00DAB0AD /* QSSetTableViewCell.h */,
+				AE6A24FC2356A95E00DAB0AD /* QSSetTableViewCell.m */,
+				AE6A24F82356A14600DAB0AD /* QSLoginTableViewCell.h */,
+				AE6A24F92356A14600DAB0AD /* QSLoginTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -394,7 +419,9 @@
 				AE0B083A23555AF4002756B5 /* QSClockViewController.m in Sources */,
 				AE44FCCE235420D70033D031 /* QSWebViewController.m in Sources */,
 				AE44FCCF235420D70033D031 /* MBProgressHUD+QSNJ.m in Sources */,
+				AE6A24F42356A0AC00DAB0AD /* QSSetViewModel.m in Sources */,
 				AE44FCB823541EBE0033D031 /* NSArray+log.m in Sources */,
+				AE6A25022356AA2800DAB0AD /* QSPasswordChangeViewController.m in Sources */,
 				AE44FCD3235420D70033D031 /* QSUIUtilities.m in Sources */,
 				AE44FCD0235420D70033D031 /* QSTabBarController.m in Sources */,
 				AE44FCD1235420D70033D031 /* QSHBTool.m in Sources */,
@@ -402,8 +429,11 @@
 				AE44FCD2235420D70033D031 /* QSNDHTTPClient.m in Sources */,
 				AE44FC85235405860033D031 /* AppDelegate.m in Sources */,
 				AE0B083723555ADB002756B5 /* QSRecordViewController.m in Sources */,
+				AE6A24FD2356A95E00DAB0AD /* QSSetTableViewCell.m in Sources */,
 				AE0B083123555AAE002756B5 /* QSLoginViewController.m in Sources */,
+				AE6A25032356AA2800DAB0AD /* QSModifyNicknameViewController.m in Sources */,
 				AE0B083423555AC7002756B5 /* QSMineViewController.m in Sources */,
+				AE6A24FA2356A14600DAB0AD /* QSLoginTableViewCell.m in Sources */,
 				AE44FC962354058C0033D031 /* main.m in Sources */,
 				AE44FCBA23541EBE0033D031 /* CalendarTool.m in Sources */,
 			);

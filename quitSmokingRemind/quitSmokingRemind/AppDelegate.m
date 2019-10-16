@@ -25,15 +25,15 @@
     return YES;
 }
 - (UIViewController *)rootController{
-//    BmobUser *bUser = [BmobUser currentUser];
-//    if (bUser) {
+    BmobUser *bUser = [BmobUser currentUser];
+    if (bUser) {
 //        进行操作
         QSTabBarController *tabVC = [QSTabBarController shareInstance];
         return tabVC;
-//    }else{
-//        //对象为空时，可打开用户注册界面
-//        QSLoginViewController *loginVC = [QSLoginViewController shareInstance];
-//        return loginVC;
-//    }
+    }else{
+        //对象为空时，可打开用户注册界面
+        QSLoginViewController *loginVC = [QSLoginViewController shareInstance];
+        return loginVC;
+    }
 }
 @end

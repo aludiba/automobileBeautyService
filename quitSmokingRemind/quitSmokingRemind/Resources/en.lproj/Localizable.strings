@@ -5,6 +5,31 @@
   Created by bykj on 2019/10/14.
   Copyright © 2019 hbc. All rights reserved.
 */
+"登录" = "Login";
+"注册" = "Registration";
+"账号" = "Account";
+"密码" = "Password";
 "打卡" = "Punch in";
 "记录" = "Record";
 "我的" = "Mine";
+"保存" = "Save";
+"确定" = "Confirm";
+"昵称" = "Nickname";
+"退出" = "Exit";
+"确认密码" = "Confirm password";
+"密码修改" = "Password change";
+"请输入旧密码" = "Please enter old password";
+"请输入新密码" = "Please enter new password";
+"请确认密码" = "Please confirm password";
+"两次密码输入不一致" = "Inconsistent password input";
+"密码修改成功" = "Password changed successfully";
+"输入旧密码" = "Enter old password";
+"输入新密码" = "Enter new password";
+"请输入账号" = "Please enter account number";
+"请输入密码" = "Please enter password";
+"登录成功" = "Login successful";
+"请稍后重试" = "Please try again later";
+"注册成功" = "Registered successfully";
+"修改昵称" = "Change nickname";
+"更新成功" = "Update successful";
+"请输入昵称" = "Please enter nickname";
