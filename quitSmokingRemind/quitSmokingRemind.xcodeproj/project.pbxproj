@@ -11,7 +11,6 @@
 		AE0B083123555AAE002756B5 /* QSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0B083023555AAE002756B5 /* QSLoginViewController.m */; };
 		AE0B083423555AC7002756B5 /* QSMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0B083323555AC7002756B5 /* QSMineViewController.m */; };
 		AE0B083723555ADB002756B5 /* QSRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0B083623555ADB002756B5 /* QSRecordViewController.m */; };
-		AE0B083A23555AF4002756B5 /* QSClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0B083923555AF4002756B5 /* QSClockViewController.m */; };
 		AE44FC85235405860033D031 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE44FC84235405860033D031 /* AppDelegate.m */; };
 		AE44FC902354058C0033D031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE44FC8F2354058C0033D031 /* Assets.xcassets */; };
 		AE44FC962354058C0033D031 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE44FC952354058C0033D031 /* main.m */; };
@@ -31,6 +30,15 @@
 		AE6A24FD2356A95E00DAB0AD /* QSSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A24FC2356A95E00DAB0AD /* QSSetTableViewCell.m */; };
 		AE6A25022356AA2800DAB0AD /* QSPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A24FE2356AA2800DAB0AD /* QSPasswordChangeViewController.m */; };
 		AE6A25032356AA2800DAB0AD /* QSModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A24FF2356AA2800DAB0AD /* QSModifyNicknameViewController.m */; };
+		AE6A250C2356DA0D00DAB0AD /* QSClockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A250B2356DA0D00DAB0AD /* QSClockTableViewCell.m */; };
+		AE6A25122356DB1C00DAB0AD /* QSClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A25102356DB1C00DAB0AD /* QSClockViewController.m */; };
+		AE6A251B2356DB8D00DAB0AD /* QSsmokingPlanDateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A25142356DB8C00DAB0AD /* QSsmokingPlanDateTableViewCell.m */; };
+		AE6A251C2356DB8D00DAB0AD /* QSsmokingPlanEditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A25152356DB8C00DAB0AD /* QSsmokingPlanEditTableViewCell.m */; };
+		AE6A251D2356DB8D00DAB0AD /* QSsmokingPlanSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A25182356DB8D00DAB0AD /* QSsmokingPlanSaveTableViewCell.m */; };
+		AE6A251E2356DB8D00DAB0AD /* QSsmokingPlanClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A251A2356DB8D00DAB0AD /* QSsmokingPlanClockView.m */; };
+		AE6A25212356DBC300DAB0AD /* QSsmokingPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A25202356DBC300DAB0AD /* QSsmokingPlanViewController.m */; };
+		AE6A25262356DD4300DAB0AD /* QSsmokingPlanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A25232356DD4300DAB0AD /* QSsmokingPlanModel.m */; };
+		AE6A25272356DD4300DAB0AD /* QSsmokingPlanSaveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A25252356DD4300DAB0AD /* QSsmokingPlanSaveModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,8 +51,6 @@
 		AE0B083323555AC7002756B5 /* QSMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSMineViewController.m; sourceTree = "<group>"; };
 		AE0B083523555ADB002756B5 /* QSRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSRecordViewController.h; sourceTree = "<group>"; };
 		AE0B083623555ADB002756B5 /* QSRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSRecordViewController.m; sourceTree = "<group>"; };
-		AE0B083823555AF4002756B5 /* QSClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSClockViewController.h; sourceTree = "<group>"; };
-		AE0B083923555AF4002756B5 /* QSClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSClockViewController.m; sourceTree = "<group>"; };
 		AE44FC80235405860033D031 /* quitSmokingRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quitSmokingRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE44FC83235405860033D031 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE44FC84235405860033D031 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -86,6 +92,24 @@
 		AE6A24FF2356AA2800DAB0AD /* QSModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSModifyNicknameViewController.m; sourceTree = "<group>"; };
 		AE6A25002356AA2800DAB0AD /* QSPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSPasswordChangeViewController.h; sourceTree = "<group>"; };
 		AE6A25012356AA2800DAB0AD /* QSModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSModifyNicknameViewController.h; sourceTree = "<group>"; };
+		AE6A250A2356DA0D00DAB0AD /* QSClockTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSClockTableViewCell.h; sourceTree = "<group>"; };
+		AE6A250B2356DA0D00DAB0AD /* QSClockTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSClockTableViewCell.m; sourceTree = "<group>"; };
+		AE6A250F2356DB1B00DAB0AD /* QSClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSClockViewController.h; sourceTree = "<group>"; };
+		AE6A25102356DB1C00DAB0AD /* QSClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSClockViewController.m; sourceTree = "<group>"; };
+		AE6A25132356DB8C00DAB0AD /* QSsmokingPlanEditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSsmokingPlanEditTableViewCell.h; sourceTree = "<group>"; };
+		AE6A25142356DB8C00DAB0AD /* QSsmokingPlanDateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSsmokingPlanDateTableViewCell.m; sourceTree = "<group>"; };
+		AE6A25152356DB8C00DAB0AD /* QSsmokingPlanEditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSsmokingPlanEditTableViewCell.m; sourceTree = "<group>"; };
+		AE6A25162356DB8D00DAB0AD /* QSsmokingPlanClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSsmokingPlanClockView.h; sourceTree = "<group>"; };
+		AE6A25172356DB8D00DAB0AD /* QSsmokingPlanSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSsmokingPlanSaveTableViewCell.h; sourceTree = "<group>"; };
+		AE6A25182356DB8D00DAB0AD /* QSsmokingPlanSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSsmokingPlanSaveTableViewCell.m; sourceTree = "<group>"; };
+		AE6A25192356DB8D00DAB0AD /* QSsmokingPlanDateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSsmokingPlanDateTableViewCell.h; sourceTree = "<group>"; };
+		AE6A251A2356DB8D00DAB0AD /* QSsmokingPlanClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSsmokingPlanClockView.m; sourceTree = "<group>"; };
+		AE6A251F2356DBC300DAB0AD /* QSsmokingPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSsmokingPlanViewController.h; sourceTree = "<group>"; };
+		AE6A25202356DBC300DAB0AD /* QSsmokingPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSsmokingPlanViewController.m; sourceTree = "<group>"; };
+		AE6A25222356DD4300DAB0AD /* QSsmokingPlanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSsmokingPlanModel.h; sourceTree = "<group>"; };
+		AE6A25232356DD4300DAB0AD /* QSsmokingPlanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSsmokingPlanModel.m; sourceTree = "<group>"; };
+		AE6A25242356DD4300DAB0AD /* QSsmokingPlanSaveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSsmokingPlanSaveModel.h; sourceTree = "<group>"; };
+		AE6A25252356DD4300DAB0AD /* QSsmokingPlanSaveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSsmokingPlanSaveModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +209,10 @@
 		AE44FC9F23541B7C0033D031 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AE6A25222356DD4300DAB0AD /* QSsmokingPlanModel.h */,
+				AE6A25232356DD4300DAB0AD /* QSsmokingPlanModel.m */,
+				AE6A25242356DD4300DAB0AD /* QSsmokingPlanSaveModel.h */,
+				AE6A25252356DD4300DAB0AD /* QSsmokingPlanSaveModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,8 +220,10 @@
 		AE44FCA023541B7C0033D031 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE0B083823555AF4002756B5 /* QSClockViewController.h */,
-				AE0B083923555AF4002756B5 /* QSClockViewController.m */,
+				AE6A250F2356DB1B00DAB0AD /* QSClockViewController.h */,
+				AE6A25102356DB1C00DAB0AD /* QSClockViewController.m */,
+				AE6A251F2356DBC300DAB0AD /* QSsmokingPlanViewController.h */,
+				AE6A25202356DBC300DAB0AD /* QSsmokingPlanViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -201,6 +231,16 @@
 		AE44FCA123541B7C0033D031 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AE6A250A2356DA0D00DAB0AD /* QSClockTableViewCell.h */,
+				AE6A250B2356DA0D00DAB0AD /* QSClockTableViewCell.m */,
+				AE6A25162356DB8D00DAB0AD /* QSsmokingPlanClockView.h */,
+				AE6A251A2356DB8D00DAB0AD /* QSsmokingPlanClockView.m */,
+				AE6A25192356DB8D00DAB0AD /* QSsmokingPlanDateTableViewCell.h */,
+				AE6A25142356DB8C00DAB0AD /* QSsmokingPlanDateTableViewCell.m */,
+				AE6A25132356DB8C00DAB0AD /* QSsmokingPlanEditTableViewCell.h */,
+				AE6A25152356DB8C00DAB0AD /* QSsmokingPlanEditTableViewCell.m */,
+				AE6A25172356DB8D00DAB0AD /* QSsmokingPlanSaveTableViewCell.h */,
+				AE6A25182356DB8D00DAB0AD /* QSsmokingPlanSaveTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -416,19 +456,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE44FCCD235420D70033D031 /* QSBaseViewController.m in Sources */,
-				AE0B083A23555AF4002756B5 /* QSClockViewController.m in Sources */,
 				AE44FCCE235420D70033D031 /* QSWebViewController.m in Sources */,
 				AE44FCCF235420D70033D031 /* MBProgressHUD+QSNJ.m in Sources */,
+				AE6A250C2356DA0D00DAB0AD /* QSClockTableViewCell.m in Sources */,
+				AE6A25122356DB1C00DAB0AD /* QSClockViewController.m in Sources */,
 				AE6A24F42356A0AC00DAB0AD /* QSSetViewModel.m in Sources */,
+				AE6A251B2356DB8D00DAB0AD /* QSsmokingPlanDateTableViewCell.m in Sources */,
 				AE44FCB823541EBE0033D031 /* NSArray+log.m in Sources */,
 				AE6A25022356AA2800DAB0AD /* QSPasswordChangeViewController.m in Sources */,
 				AE44FCD3235420D70033D031 /* QSUIUtilities.m in Sources */,
+				AE6A251C2356DB8D00DAB0AD /* QSsmokingPlanEditTableViewCell.m in Sources */,
+				AE6A25262356DD4300DAB0AD /* QSsmokingPlanModel.m in Sources */,
 				AE44FCD0235420D70033D031 /* QSTabBarController.m in Sources */,
 				AE44FCD1235420D70033D031 /* QSHBTool.m in Sources */,
+				AE6A25272356DD4300DAB0AD /* QSsmokingPlanSaveModel.m in Sources */,
 				AE44FCB923541EBE0033D031 /* NSDictionary+log.m in Sources */,
+				AE6A251E2356DB8D00DAB0AD /* QSsmokingPlanClockView.m in Sources */,
 				AE44FCD2235420D70033D031 /* QSNDHTTPClient.m in Sources */,
+				AE6A25212356DBC300DAB0AD /* QSsmokingPlanViewController.m in Sources */,
 				AE44FC85235405860033D031 /* AppDelegate.m in Sources */,
 				AE0B083723555ADB002756B5 /* QSRecordViewController.m in Sources */,
+				AE6A251D2356DB8D00DAB0AD /* QSsmokingPlanSaveTableViewCell.m in Sources */,
 				AE6A24FD2356A95E00DAB0AD /* QSSetTableViewCell.m in Sources */,
 				AE0B083123555AAE002756B5 /* QSLoginViewController.m in Sources */,
 				AE6A25032356AA2800DAB0AD /* QSModifyNicknameViewController.m in Sources */,
