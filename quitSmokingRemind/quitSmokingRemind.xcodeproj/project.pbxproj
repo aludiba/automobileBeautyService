@@ -19,7 +19,6 @@
 		AE44FCB923541EBE0033D031 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE44FCB523541EBE0033D031 /* NSDictionary+log.m */; };
 		AE44FCBA23541EBE0033D031 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE44FCB623541EBE0033D031 /* CalendarTool.m */; };
 		AE44FCCD235420D70033D031 /* QSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE44FCBE235420D60033D031 /* QSBaseViewController.m */; };
-		AE44FCCE235420D70033D031 /* QSWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE44FCBF235420D60033D031 /* QSWebViewController.m */; };
 		AE44FCCF235420D70033D031 /* MBProgressHUD+QSNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE44FCC0235420D60033D031 /* MBProgressHUD+QSNJ.m */; };
 		AE44FCD0235420D70033D031 /* QSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE44FCC1235420D60033D031 /* QSTabBarController.m */; };
 		AE44FCD1235420D70033D031 /* QSHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE44FCC4235420D60033D031 /* QSHBTool.m */; };
@@ -39,6 +38,10 @@
 		AE6A25212356DBC300DAB0AD /* QSsmokingPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A25202356DBC300DAB0AD /* QSsmokingPlanViewController.m */; };
 		AE6A25262356DD4300DAB0AD /* QSsmokingPlanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A25232356DD4300DAB0AD /* QSsmokingPlanModel.m */; };
 		AE6A25272356DD4300DAB0AD /* QSsmokingPlanSaveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6A25252356DD4300DAB0AD /* QSsmokingPlanSaveModel.m */; };
+		AEC330222357F67B00A06A18 /* QSClockRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC330202357F67B00A06A18 /* QSClockRecordModel.m */; };
+		AEC330252357F6F400A06A18 /* QSClockRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC330242357F6F400A06A18 /* QSClockRecordTableViewCell.m */; };
+		AEC330282357F70A00A06A18 /* QSClockRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC330272357F70A00A06A18 /* QSClockRecordViewController.m */; };
+		AEC3302A2357F71100A06A18 /* QSRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC330292357F71000A06A18 /* QSRecordViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +54,7 @@
 		AE0B083323555AC7002756B5 /* QSMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSMineViewController.m; sourceTree = "<group>"; };
 		AE0B083523555ADB002756B5 /* QSRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSRecordViewController.h; sourceTree = "<group>"; };
 		AE0B083623555ADB002756B5 /* QSRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSRecordViewController.m; sourceTree = "<group>"; };
-		AE44FC80235405860033D031 /* quitSmokingRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quitSmokingRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE44FC80235405860033D031 /* smokingAwake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smokingAwake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE44FC83235405860033D031 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE44FC84235405860033D031 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AE44FC8F2354058C0033D031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,10 +71,8 @@
 		AE44FCB723541EBE0033D031 /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
 		AE44FCBB23541FFE0033D031 /* QSGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSGlobal.h; sourceTree = "<group>"; };
 		AE44FCBE235420D60033D031 /* QSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBaseViewController.m; sourceTree = "<group>"; };
-		AE44FCBF235420D60033D031 /* QSWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSWebViewController.m; sourceTree = "<group>"; };
 		AE44FCC0235420D60033D031 /* MBProgressHUD+QSNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+QSNJ.m"; sourceTree = "<group>"; };
 		AE44FCC1235420D60033D031 /* QSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSTabBarController.m; sourceTree = "<group>"; };
-		AE44FCC2235420D60033D031 /* QSWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSWebViewController.h; sourceTree = "<group>"; };
 		AE44FCC3235420D60033D031 /* MBProgressHUD+QSNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+QSNJ.h"; sourceTree = "<group>"; };
 		AE44FCC4235420D60033D031 /* QSHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSHBTool.m; sourceTree = "<group>"; };
 		AE44FCC5235420D60033D031 /* QSHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSHBTool.h; sourceTree = "<group>"; };
@@ -110,6 +111,13 @@
 		AE6A25232356DD4300DAB0AD /* QSsmokingPlanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSsmokingPlanModel.m; sourceTree = "<group>"; };
 		AE6A25242356DD4300DAB0AD /* QSsmokingPlanSaveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSsmokingPlanSaveModel.h; sourceTree = "<group>"; };
 		AE6A25252356DD4300DAB0AD /* QSsmokingPlanSaveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSsmokingPlanSaveModel.m; sourceTree = "<group>"; };
+		AEC330202357F67B00A06A18 /* QSClockRecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSClockRecordModel.m; sourceTree = "<group>"; };
+		AEC330212357F67B00A06A18 /* QSClockRecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSClockRecordModel.h; sourceTree = "<group>"; };
+		AEC330232357F6F400A06A18 /* QSClockRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSClockRecordTableViewCell.h; sourceTree = "<group>"; };
+		AEC330242357F6F400A06A18 /* QSClockRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSClockRecordTableViewCell.m; sourceTree = "<group>"; };
+		AEC330262357F70A00A06A18 /* QSClockRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSClockRecordViewController.h; sourceTree = "<group>"; };
+		AEC330272357F70A00A06A18 /* QSClockRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSClockRecordViewController.m; sourceTree = "<group>"; };
+		AEC330292357F71000A06A18 /* QSRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QSRecordViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +153,7 @@
 		AE44FC81235405860033D031 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE44FC80235405860033D031 /* quitSmokingRemind.app */,
+				AE44FC80235405860033D031 /* smokingAwake.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,8 +194,6 @@
 				AE44FCC1235420D60033D031 /* QSTabBarController.m */,
 				AE44FCC9235420D70033D031 /* QSUIUtilities.h */,
 				AE44FCCB235420D70033D031 /* QSUIUtilities.m */,
-				AE44FCC2235420D60033D031 /* QSWebViewController.h */,
-				AE44FCBF235420D60033D031 /* QSWebViewController.m */,
 				AE44FCB423541EBE0033D031 /* NSArray+log.h */,
 				AE44FCB323541EBE0033D031 /* NSArray+log.m */,
 				AE44FCB223541EBE0033D031 /* NSDictionary+log.h */,
@@ -258,6 +264,8 @@
 		AE44FCA323541B7C0033D031 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AEC330212357F67B00A06A18 /* QSClockRecordModel.h */,
+				AEC330202357F67B00A06A18 /* QSClockRecordModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -265,8 +273,11 @@
 		AE44FCA423541B7C0033D031 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AEC330262357F70A00A06A18 /* QSClockRecordViewController.h */,
+				AEC330272357F70A00A06A18 /* QSClockRecordViewController.m */,
 				AE0B083523555ADB002756B5 /* QSRecordViewController.h */,
 				AE0B083623555ADB002756B5 /* QSRecordViewController.m */,
+				AEC330292357F71000A06A18 /* QSRecordViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -274,6 +285,8 @@
 		AE44FCA523541B7C0033D031 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AEC330232357F6F400A06A18 /* QSClockRecordTableViewCell.h */,
+				AEC330242357F6F400A06A18 /* QSClockRecordTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -359,7 +372,7 @@
 			);
 			name = quitSmokingRemind;
 			productName = quitSmokingRemind;
-			productReference = AE44FC80235405860033D031 /* quitSmokingRemind.app */;
+			productReference = AE44FC80235405860033D031 /* smokingAwake.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -403,6 +416,7 @@
 			files = (
 				AE44FC902354058C0033D031 /* Assets.xcassets in Resources */,
 				AE44FCAD23541C3D0033D031 /* Localizable.strings in Resources */,
+				AEC3302A2357F71100A06A18 /* QSRecordViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,16 +470,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE44FCCD235420D70033D031 /* QSBaseViewController.m in Sources */,
-				AE44FCCE235420D70033D031 /* QSWebViewController.m in Sources */,
 				AE44FCCF235420D70033D031 /* MBProgressHUD+QSNJ.m in Sources */,
 				AE6A250C2356DA0D00DAB0AD /* QSClockTableViewCell.m in Sources */,
 				AE6A25122356DB1C00DAB0AD /* QSClockViewController.m in Sources */,
 				AE6A24F42356A0AC00DAB0AD /* QSSetViewModel.m in Sources */,
+				AEC330282357F70A00A06A18 /* QSClockRecordViewController.m in Sources */,
 				AE6A251B2356DB8D00DAB0AD /* QSsmokingPlanDateTableViewCell.m in Sources */,
 				AE44FCB823541EBE0033D031 /* NSArray+log.m in Sources */,
 				AE6A25022356AA2800DAB0AD /* QSPasswordChangeViewController.m in Sources */,
 				AE44FCD3235420D70033D031 /* QSUIUtilities.m in Sources */,
 				AE6A251C2356DB8D00DAB0AD /* QSsmokingPlanEditTableViewCell.m in Sources */,
+				AEC330252357F6F400A06A18 /* QSClockRecordTableViewCell.m in Sources */,
 				AE6A25262356DD4300DAB0AD /* QSsmokingPlanModel.m in Sources */,
 				AE44FCD0235420D70033D031 /* QSTabBarController.m in Sources */,
 				AE44FCD1235420D70033D031 /* QSHBTool.m in Sources */,
@@ -482,6 +497,7 @@
 				AE6A25032356AA2800DAB0AD /* QSModifyNicknameViewController.m in Sources */,
 				AE0B083423555AC7002756B5 /* QSMineViewController.m in Sources */,
 				AE6A24FA2356A14600DAB0AD /* QSLoginTableViewCell.m in Sources */,
+				AEC330222357F67B00A06A18 /* QSClockRecordModel.m in Sources */,
 				AE44FC962354058C0033D031 /* main.m in Sources */,
 				AE44FCBA23541EBE0033D031 /* CalendarTool.m in Sources */,
 			);
@@ -627,8 +643,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hbcAmplifier.quitSmokingRemind;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = hbc.amplifier.smokingAwake;
+				PRODUCT_NAME = smokingAwake;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -647,8 +663,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hbcAmplifier.quitSmokingRemind;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = hbc.amplifier.smokingAwake;
+				PRODUCT_NAME = smokingAwake;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

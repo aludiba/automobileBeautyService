@@ -46,25 +46,25 @@
     [self.QSaccountLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.QSbackView).offset(40);
         make.leading.equalTo(self.QSbackView).offset(31.5);
-        make.width.mas_equalTo(70);
+        make.width.mas_equalTo(80);
         make.height.mas_equalTo(21);
     }];
     [self.QSaccountTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.QSaccountLable);
-        make.leading.equalTo(self.QSaccountLable.mas_trailing).offset(20);
-        make.trailing.equalTo(self.QSbackView).offset(-30);
+        make.leading.equalTo(self.QSaccountLable.mas_trailing).offset(10);
+        make.trailing.equalTo(self.QSbackView).offset(-10);
         make.height.mas_equalTo(21);
     }];
     [self.QSpasswordLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.QSaccountTextField.mas_bottom).offset(24);
         make.leading.equalTo(self.QSbackView).offset(31.5);
-        make.width.mas_equalTo(70);
+        make.width.mas_equalTo(80);
         make.height.mas_equalTo(21);
     }];
     [self.QSQSpasswordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.QSpasswordLable);
-        make.leading.equalTo(self.QSpasswordLable.mas_trailing).offset(20);
-        make.trailing.equalTo(self.QSbackView).offset(-30);
+        make.leading.equalTo(self.QSpasswordLable.mas_trailing).offset(10);
+        make.trailing.equalTo(self.QSbackView).offset(-10);
         make.height.mas_equalTo(21);
     }];
     [self.QSloginButton mas_makeConstraints:^(MASConstraintMaker *make) {
