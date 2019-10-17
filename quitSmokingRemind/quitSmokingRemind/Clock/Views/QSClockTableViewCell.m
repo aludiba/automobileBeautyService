@@ -22,20 +22,20 @@
         [self.contentView addSubview:self.QSclockInButton];
         
         [self.QSremindLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(16);
-            make.trailing.equalTo(self.contentView).offset(-16);
-            make.top.equalTo(self.contentView).offset(10);
-            make.height.mas_equalTo(120);
+            make.leading.equalTo(self.contentView).offset(48);
+            make.trailing.equalTo(self.contentView).offset(-48);
+            make.top.equalTo(self.contentView).offset(100);
+            make.height.mas_equalTo(140);
         }];
         [self.QStargetButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(64);
-            make.top.equalTo(self.QSremindLabel.mas_bottom).offset(15);
+            make.top.equalTo(self.QSremindLabel.mas_bottom).offset(60);
             make.width.mas_equalTo(64);
             make.height.mas_equalTo(64);
         }];
         [self.QSclockInButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.trailing.equalTo(self.contentView).offset(-64);
-            make.top.equalTo(self.QSremindLabel.mas_bottom).offset(15);
+            make.top.equalTo(self.QSremindLabel.mas_bottom).offset(60);
             make.width.mas_equalTo(64);
             make.height.mas_equalTo(64);
             make.bottom.equalTo(self.contentView).offset(-10);
@@ -79,9 +79,9 @@
         _QStargetButton = [[UIButton alloc] init];
         _QStargetButton.layer.cornerRadius = 32.0f;
         _QStargetButton.layer.masksToBounds = YES;
-        [_QStargetButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_QStargetButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         _QStargetButton.titleLabel.font = [UIFont systemFontOfSize:15];
-        [_QStargetButton setBackgroundColor:[UIColor greenColor]];
+        [_QStargetButton setBackgroundColor:[UIColor purpleColor]];
         _QStargetButton.titleLabel.textAlignment = NSTextAlignmentCenter;
         [_QStargetButton setTitle:NSLocalizedString(@"目标", nil) forState:UIControlStateNormal];
         _QStargetButton.tag = 100;
@@ -94,9 +94,9 @@
         _QSclockInButton = [[UIButton alloc] init];
         _QSclockInButton.layer.cornerRadius = 32.0f;
         _QSclockInButton.layer.masksToBounds = YES;
-        [_QSclockInButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_QSclockInButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         _QSclockInButton.titleLabel.font = [UIFont systemFontOfSize:15];
-        [_QSclockInButton setBackgroundColor:[UIColor greenColor]];
+        [_QSclockInButton setBackgroundColor:[UIColor purpleColor]];
         _QSclockInButton.titleLabel.textAlignment = NSTextAlignmentCenter;
         [_QSclockInButton setTitle:NSLocalizedString(@"打卡", nil) forState:UIControlStateNormal];
         _QSclockInButton.tag = 101;

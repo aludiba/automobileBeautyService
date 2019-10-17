@@ -16,22 +16,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     [Bmob registerWithAppKey:@"bae3af210cf8c975d4dfc342ee0e79a3"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     BmobQuery *bquery = [BmobQuery queryWithClassName:@"QSSmokeRemind"];
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-        if (error) {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"QSSmokeRemind"]]];
             self.window.rootViewController = [self rootController];
             [self.window makeKeyAndVisible];
-        }else{
-            self.window.rootViewController = [self rootController];
-            [self.window makeKeyAndVisible];
-            if (array.count) {
-               [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"QSSmokingR"]]];
-            }
-        }
     }];
     return YES;
 }
