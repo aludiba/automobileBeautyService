@@ -9,4 +9,5 @@ target 'GameAlert' do
     pod 'Masonry'
     pod 'AFNetworking'
     pod 'MJRefresh'
+    pod 'MBProgressHUD'
 end
