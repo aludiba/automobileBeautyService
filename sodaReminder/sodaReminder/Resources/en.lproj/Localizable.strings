@@ -1,6 +1,6 @@
 /* 
   Localizable.strings
-  quitSmokingRemind
+  quitDrinkRemind
 
   Created by bykj on 2019/10/14.
   Copyright © 2019 hbc. All rights reserved.
@@ -35,31 +35,31 @@
 "保存成功" = "Saved successfully";
 "更新成功" = "Update successful";
 "请输入昵称" = "Please enter nickname";
-"戒烟计划" = "Quit smoking program";
-"烟龄" = "Smoking age";
-"请输入烟龄" = "Please enter smoking age";
-"戒烟时间" = "Quit time";
-"请选择戒烟时间" = "Please select quit time";
-"每天烟量" = "Smoke per day";
-"包" = "Package";
-"请输入每天烟量" = "Please enter daily smoke";
-"烟价格" = "Cigarette price";
-"元/包" = "$/package";
-"请输入烟价格" = "Please enter cigarette price";
-"亲爱的戒烟玩家" = "Dear quitter";
+"戒苏打水计划" = "Quit drink program";
+"苏打水龄" = "Drink age";
+"请输入苏打水龄" = "Please enter drink age";
+"戒苏打水时间" = "Quit time";
+"请选择戒苏打水时间" = "Please select quit time";
+"每天苏打水量" = "Number of drinks per day";
+"瓶" = "Bottle";
+"请输入每天苏打水量" = "Please enter the daily amount of soda";
+"苏打水价格" = "Soda price";
+"元/瓶" = "$/bottle";
+"请输入苏打水价格" = "Please enter the price of soda";
+"亲爱的戒苏打水玩家" = "Dear quit soda player";
 "已经" = "Already";
-"已经少抽" = "Already light";
-"包烟" = "Pack a cigarette";
+"已经少喝" = "Have to drink less";
+"瓶苏打水" = "Bottle of soda";
 "累计节省" = "Cumulative savings";
 "元" = "$";
-"天没抽烟了~" = "No smoking ~";
+"天没喝苏打水了~" = "No soda for days~";
 "目标" = "Goal";
-"   今天抽了几包烟" = "   Smoked several packs of cigarettes today";
+"   今天喝了几瓶苏打水" = "   I had a few bottles of soda today";
 "这一天未打卡" = "Not clocked in this day";
-"少抽烟数" = "Fewer cigarettes";
+"少喝苏打水数" = "Drink less soda";
 "打卡时间" = "Clock time";
 "节省钱量" = "Money saved";
-"抽烟包数" = "Pack number of cigarettes";
+"喝苏打水瓶数" = "Drink soda bottles";
 "日历" = "Calendar";
 "今天已经打卡" = "Clocked in today";
 "取消" = "Cancel";

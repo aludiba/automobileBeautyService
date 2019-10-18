@@ -1,13 +1,13 @@
 //
 //  AppDelegate.m
-//  sodaReminder
+//  quitSmokingRemind
 //
-//  Created by bykj on 2019/10/18.
+//  Created by bykj on 2019/10/14.
 //  Copyright © 2019 hbc. All rights reserved.
 //
 
 #import "AppDelegate.h"
-
+#import "SOLoginViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,26 +16,27 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [Bmob registerWithAppKey:@"b54db1ee77e5cdf960d6818559aee34f"];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    BmobQuery *bquery = [BmobQuery queryWithClassName:@"SOSodaRemind"];
+    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"SOSodaRemind"]]];
+            self.window.rootViewController = [self rootController];
+            [self.window makeKeyAndVisible];
+    }];
     return YES;
 }
-
-
-#pragma mark - UISceneSession lifecycle
-
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
+- (UIViewController *)rootController{
+    BmobUser *bUser = [BmobUser currentUser];
+    if (bUser) {
+//        进行操作
+        SOTabBarController *tabVC = [SOTabBarController shareInstance];
+        return tabVC;
+    }else{
+        //对象为空时，可打开用户注册界面
+        SOLoginViewController *loginVC = [SOLoginViewController shareInstance];
+        return loginVC;
+    }
 }
-
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-}
-
-
 @end
