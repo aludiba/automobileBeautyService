@@ -13,4 +13,5 @@ target 'GameAlert' do
     pod 'YYModel'
     pod 'IQKeyboardManager'
     pod 'BmobSDK'
+    pod 'JTCalendar'
 end
