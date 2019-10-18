@@ -34,6 +34,7 @@
     //查找GameScore表的数据
     __weak typeof(self) weakSelf = self;
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+        [self.mainTable.mj_header endRefreshing];
         if (error) {
             [weakSelf setContentView];
         }else{
@@ -165,6 +166,7 @@
         _mainTable.tableHeaderView = [[UIView alloc] init];
         _mainTable.tableFooterView = [[UIView alloc] init];
         [_mainTable registerClass:[SOClockTableViewCell class] forCellReuseIdentifier:@"SOClockTableViewCell"];
+        _mainTable.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadData)];
         [self.view addSubview:_mainTable];
            [_mainTable mas_makeConstraints:^(MASConstraintMaker *make) {
                make.top.equalTo(self.view);

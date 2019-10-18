@@ -26,35 +26,35 @@
     [self SOsetContent];
 }
 - (void)SOsetContent{
-    self.view.backgroundColor = SOH_Color(244, 245, 246, 1);
+    self.view.backgroundColor = SOH_Color(242, 242, 242, 1);
     [self.view addSubview:self.SOSOoldPasswordTextField];
     [self.view addSubview:self.SOSOcurrentPasswordTextField];
     [self.view addSubview:self.SOSOconfirmPasswordTextField];
     [self.view addSubview:self.SOsureButton];
     
     [self.SOSOoldPasswordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.view).offset(30);
-        make.trailing.equalTo(self.view).offset(-30);
+        make.leading.equalTo(self.view).offset(60);
+        make.trailing.equalTo(self.view).offset(-60);
         make.top.equalTo(self.mas_topLayoutGuideBottom).offset(100);
         make.height.mas_equalTo(60);
     }];
     [self.SOSOcurrentPasswordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.view).offset(30);
-        make.trailing.equalTo(self.view).offset(-30);
+        make.leading.equalTo(self.view).offset(60);
+        make.trailing.equalTo(self.view).offset(-60);
         make.top.equalTo(self.SOSOoldPasswordTextField.mas_bottom).offset(20);
         make.height.mas_equalTo(60);
     }];
     [self.SOSOconfirmPasswordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.view).offset(30);
-        make.trailing.equalTo(self.view).offset(-30);
+        make.leading.equalTo(self.view).offset(60);
+        make.trailing.equalTo(self.view).offset(-60);
         make.top.equalTo(self.SOSOcurrentPasswordTextField.mas_bottom).offset(20);
         make.height.mas_equalTo(60);
     }];
     [self.SOsureButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.view).offset(60);
-        make.trailing.equalTo(self.view).offset(-60);
+        make.leading.equalTo(self.view).offset(120);
+        make.trailing.equalTo(self.view).offset(-120);
         make.top.equalTo(self.SOSOconfirmPasswordTextField.mas_bottom).offset(30);
-        make.height.mas_equalTo(44);
+        make.height.mas_equalTo(60);
     }];
 }
 #pragma mark - actions
@@ -132,15 +132,14 @@
         _SOSOoldPasswordTextField = [[UITextField alloc] init];
         _SOSOoldPasswordTextField.secureTextEntry = YES;
         _SOSOoldPasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _SOSOoldPasswordTextField.layer.borderColor = [UIColor grayColor].CGColor;
-        _SOSOoldPasswordTextField.layer.borderWidth = 1.0f;
+        _SOSOoldPasswordTextField.backgroundColor = [UIColor grayColor];
         _SOSOoldPasswordTextField.layer.cornerRadius = 12.0f;
         _SOSOoldPasswordTextField.layer.masksToBounds = YES;
         _SOSOoldPasswordTextField.tag = 100;
         _SOSOoldPasswordTextField.delegate = self;
         _SOSOoldPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",NSLocalizedString(@"输入旧密码", nil)];
         _SOSOoldPasswordTextField.textColor = [UIColor blackColor];
-        _SOSOoldPasswordTextField.font = [UIFont systemFontOfSize:20];
+        _SOSOoldPasswordTextField.font = [UIFont systemFontOfSize:25];
     }
     return _SOSOoldPasswordTextField;
 }
@@ -149,15 +148,14 @@
         _SOSOcurrentPasswordTextField = [[UITextField alloc] init];
         _SOSOcurrentPasswordTextField.secureTextEntry = YES;
         _SOSOcurrentPasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _SOSOcurrentPasswordTextField.layer.borderColor = [UIColor grayColor].CGColor;
-        _SOSOcurrentPasswordTextField.layer.borderWidth = 1.0f;
+        _SOSOcurrentPasswordTextField.backgroundColor = [UIColor grayColor];
         _SOSOcurrentPasswordTextField.layer.cornerRadius = 12.0f;
         _SOSOcurrentPasswordTextField.layer.masksToBounds = YES;
         _SOSOcurrentPasswordTextField.tag = 101;
         _SOSOcurrentPasswordTextField.delegate = self;
         _SOSOcurrentPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",NSLocalizedString(@"输入新密码", nil)];
         _SOSOcurrentPasswordTextField.textColor = [UIColor blackColor];
-        _SOSOcurrentPasswordTextField.font = [UIFont systemFontOfSize:20];
+        _SOSOcurrentPasswordTextField.font = [UIFont systemFontOfSize:25];
     }
     return _SOSOcurrentPasswordTextField;
 }
@@ -166,24 +164,23 @@
         _SOSOconfirmPasswordTextField = [[UITextField alloc] init];
         _SOSOconfirmPasswordTextField.secureTextEntry = YES;
         _SOSOconfirmPasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _SOSOconfirmPasswordTextField.layer.borderColor = [UIColor grayColor].CGColor;
-        _SOSOconfirmPasswordTextField.layer.borderWidth = 1.0f;
+        _SOSOconfirmPasswordTextField.backgroundColor = [UIColor grayColor];
         _SOSOconfirmPasswordTextField.layer.cornerRadius = 12.0f;
         _SOSOconfirmPasswordTextField.layer.masksToBounds = YES;
         _SOSOconfirmPasswordTextField.tag = 102;
         _SOSOconfirmPasswordTextField.delegate = self;
         _SOSOconfirmPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",NSLocalizedString(@"确认密码", nil)];
         _SOSOconfirmPasswordTextField.textColor = [UIColor blackColor];
-        _SOSOconfirmPasswordTextField.font = [UIFont systemFontOfSize:20];
+        _SOSOconfirmPasswordTextField.font = [UIFont systemFontOfSize:25];
     }
     return _SOSOconfirmPasswordTextField;
 }
 - (UIButton *)SOsureButton{
     if (!_SOsureButton) {
         _SOsureButton = [[UIButton alloc] init];
-        _SOsureButton.backgroundColor = [UIColor grayColor];
+        _SOsureButton.backgroundColor = [UIColor purpleColor];
         [_SOsureButton setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
-        [_SOsureButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
+        [_SOsureButton.titleLabel setFont:[UIFont systemFontOfSize:25]];
         _SOsureButton.layer.cornerRadius = 8.0f;
         _SOsureButton.layer.masksToBounds = YES;
         [_SOsureButton setTitle:NSLocalizedString(@"确定", nil) forState:UIControlStateNormal];

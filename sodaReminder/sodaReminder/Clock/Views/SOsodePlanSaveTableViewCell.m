@@ -17,11 +17,11 @@
         [self.contentView addSubview:self.saveButton];
         
         [self.saveButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.contentView).offset(30);
-            make.leading.equalTo(self.contentView).offset(32);
-            make.height.mas_equalTo(40);
-            make.trailing.equalTo(self.contentView).offset(-32);
-            make.bottom.equalTo(self.contentView).offset(-30);
+            make.top.equalTo(self.contentView).offset(60);
+            make.leading.equalTo(self.contentView).offset(100);
+            make.height.mas_equalTo(60);
+            make.trailing.equalTo(self.contentView).offset(-100);
+            make.bottom.equalTo(self.contentView).offset(-60);
         }];
     }
     return self;
@@ -36,10 +36,10 @@
     if (!_saveButton) {
         _saveButton = [[UIButton alloc] init];
         [_saveButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_saveButton.titleLabel setFont:[UIFont systemFontOfSize:16]];
+        [_saveButton.titleLabel setFont:[UIFont systemFontOfSize:25]];
         [_saveButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
-        [_saveButton setBackgroundColor:[UIColor greenColor]];
-        _saveButton.layer.cornerRadius = 10.0f;
+        [_saveButton setBackgroundColor:[UIColor yellowColor]];
+        _saveButton.layer.cornerRadius = 16.0f;
         _saveButton.layer.masksToBounds = YES;
         [_saveButton addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     }

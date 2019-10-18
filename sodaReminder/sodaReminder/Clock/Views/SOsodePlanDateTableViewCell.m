@@ -20,6 +20,7 @@
 @implementation SOsodePlanDateTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = SOH_Color(236, 236, 236, 1);
         [self.contentView addSubview:self.titleLbl];
         [self.contentView addSubview:self.editText];
         [self.contentView addSubview:self.rightArrowImgView];
@@ -27,7 +28,7 @@
         
         [self.titleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(16);
-            make.top.equalTo(self.contentView).offset(22);
+            make.top.equalTo(self.contentView).offset(25);
             make.width.mas_equalTo(100);
             make.height.mas_equalTo(16);
         }];
@@ -39,14 +40,14 @@
         }];
         [self.editText mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.contentView).offset(22);
-            make.height.mas_equalTo(16);
+            make.height.mas_equalTo(20);
             make.trailing.equalTo(self.rightArrowImgView.mas_leading).offset(-32);
             make.leading.equalTo(self.titleLbl.mas_trailing).offset(0);
         }];
         [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(16);
             make.trailing.equalTo(self.contentView);
-            make.top.equalTo(self.editText.mas_bottom).offset(21);
+            make.top.equalTo(self.editText.mas_bottom).offset(24);
             make.height.mas_equalTo(1);
             make.bottom.equalTo(self.contentView);
         }];
@@ -116,7 +117,7 @@
     if (!_titleLbl) {
         _titleLbl = [[UILabel alloc] init];
         _titleLbl.textColor = [UIColor blackColor];
-        _titleLbl.font = [UIFont systemFontOfSize:14];
+        _titleLbl.font = [UIFont systemFontOfSize:15];
         _titleLbl.numberOfLines = 0;
     }
     return _titleLbl;
@@ -126,7 +127,7 @@
         _editText = [[UITextField alloc] init];
         _editText.delegate = self;
         _editText.textColor = [UIColor blackColor];
-        _editText.font = [UIFont systemFontOfSize:15];
+        _editText.font = [UIFont systemFontOfSize:18];
         _editText.textAlignment = NSTextAlignmentRight;
     }
     return _editText;

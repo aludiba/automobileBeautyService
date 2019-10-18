@@ -69,7 +69,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     [self setContentView];
 }
 - (void)setContentView{
-    self.tabBar.barTintColor = [UIColor yellowColor];
+    self.tabBar.barTintColor = [UIColor greenColor];
     self.SOClockVC = [[SOClockViewController alloc] init];
     UINavigationController *SOClock = [[UINavigationController alloc] initWithRootViewController:self.SOClockVC];
     self.SOClockVC.tabBarItem.title = NSLocalizedString(@"打卡", nil);

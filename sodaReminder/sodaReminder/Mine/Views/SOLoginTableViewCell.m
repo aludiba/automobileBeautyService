@@ -37,47 +37,47 @@
     [self.SObackView addSubview:self.SOregisteredButton];
     
     [self.SObackView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.contentView).offset(SOHeightNavBar + 50);
+        make.top.equalTo(self.contentView).offset(SOHeightNavBar);
         make.centerX.equalTo(self.contentView);
-        make.width.mas_equalTo(SOWIDTH - 60);
-        make.height.mas_equalTo(343.5);
-        make.bottom.equalTo(self.contentView).offset(-(SOHEIGHT - SOHeightNavBar - 50 - 343.5));
+        make.width.mas_equalTo(SOWIDTH - 40);
+        make.height.mas_equalTo(400);
+        make.bottom.equalTo(self.contentView).offset(-(SOHEIGHT - SOHeightNavBar - 50 - 400));
     }];
     [self.SOaccountLable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.SObackView).offset(40);
-        make.leading.equalTo(self.SObackView).offset(31.5);
+        make.top.equalTo(self.SObackView).offset(50);
+        make.leading.equalTo(self.SObackView).offset(30);
         make.width.mas_equalTo(80);
-        make.height.mas_equalTo(21);
+        make.height.mas_equalTo(60);
     }];
     [self.SOaccountTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.SOaccountLable);
-        make.leading.equalTo(self.SOaccountLable.mas_trailing).offset(10);
+        make.leading.equalTo(self.SOaccountLable.mas_trailing).offset(5);
         make.trailing.equalTo(self.SObackView).offset(-10);
-        make.height.mas_equalTo(21);
+        make.height.mas_equalTo(60);
     }];
     [self.SOpasswordLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.SOaccountTextField.mas_bottom).offset(24);
-        make.leading.equalTo(self.SObackView).offset(31.5);
+        make.leading.equalTo(self.SObackView).offset(30);
         make.width.mas_equalTo(80);
-        make.height.mas_equalTo(21);
+        make.height.mas_equalTo(60);
     }];
     [self.SOSOpasswordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.SOpasswordLable);
-        make.leading.equalTo(self.SOpasswordLable.mas_trailing).offset(10);
+        make.leading.equalTo(self.SOpasswordLable.mas_trailing).offset(5);
         make.trailing.equalTo(self.SObackView).offset(-10);
-        make.height.mas_equalTo(21);
+        make.height.mas_equalTo(60);
     }];
     [self.SOloginButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.SObackView).offset(26.5);
-        make.trailing.equalTo(self.SObackView).offset(-26.5);
+        make.leading.equalTo(self.SObackView).offset(50);
+        make.trailing.equalTo(self.SObackView).offset(-50);
         make.top.equalTo(self.SOSOpasswordTextField.mas_bottom).offset(45);
-        make.height.mas_equalTo(44);
+        make.height.mas_equalTo(50);
     }];
     [self.SOregisteredButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.SObackView).offset(26.5);
-        make.trailing.equalTo(self.SObackView).offset(-26.5);
+        make.leading.equalTo(self.SObackView).offset(50);
+        make.trailing.equalTo(self.SObackView).offset(-50);
         make.top.equalTo(self.SOloginButton.mas_bottom).offset(20);
-        make.height.mas_equalTo(44);
+        make.height.mas_equalTo(50);
     }];
 }
 #pragma mark - actions
@@ -147,9 +147,9 @@
 - (UIView *)SObackView{
     if (!_SObackView) {
         _SObackView = [[UIView alloc] init];
-        _SObackView.backgroundColor = SOH_Color(236, 236, 236, 1);
-        _SObackView.layer.cornerRadius = 5.0f;
+        _SObackView.layer.cornerRadius = 20.0f;
         _SObackView.layer.masksToBounds = YES;
+        _SObackView.backgroundColor = [UIColor systemBlueColor];
     }
     return _SObackView;
 }
@@ -169,7 +169,7 @@
         _SOaccountTextField.tag = 98;
         _SOaccountTextField.delegate = self;
         _SOaccountTextField.textColor = [UIColor blackColor];
-        _SOaccountTextField.font = [UIFont systemFontOfSize:15];
+        _SOaccountTextField.font = [UIFont systemFontOfSize:18];
         _SOaccountTextField.placeholder = NSLocalizedString(@"请输入账号", nil);
     }
     return _SOaccountTextField;
@@ -190,7 +190,7 @@
         _SOSOpasswordTextField.tag = 99;
         _SOSOpasswordTextField.delegate = self;
         _SOSOpasswordTextField.textColor = [UIColor blackColor];
-        _SOSOpasswordTextField.font = [UIFont systemFontOfSize:15];
+        _SOSOpasswordTextField.font = [UIFont systemFontOfSize:18];
         _SOSOpasswordTextField.placeholder = NSLocalizedString(@"请输入密码", nil);
         _SOSOpasswordTextField.secureTextEntry = YES;
     }
@@ -200,10 +200,10 @@
     if (!_SOloginButton) {
         _SOloginButton = [[UIButton alloc] init];
         _SOloginButton.tag = 100;
-        _SOloginButton.backgroundColor = [UIColor purpleColor];
+        _SOloginButton.backgroundColor = [UIColor orangeColor];
         [_SOloginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [_SOloginButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
-        _SOloginButton.layer.cornerRadius = 4.0f;
+        [_SOloginButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
+        _SOloginButton.layer.cornerRadius = 12.0f;
         _SOloginButton.layer.masksToBounds = YES;
         [_SOloginButton setTitle:NSLocalizedString(@"登录", nil) forState:UIControlStateNormal];
         [_SOloginButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -214,10 +214,10 @@
     if (!_SOregisteredButton) {
         _SOregisteredButton = [[UIButton alloc] init];
         _SOregisteredButton.tag = 101;
-        _SOregisteredButton.backgroundColor = [UIColor redColor];
+        _SOregisteredButton.backgroundColor = [UIColor greenColor];
         [_SOregisteredButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_SOregisteredButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
-        _SOregisteredButton.layer.cornerRadius = 4.0f;
+        [_SOregisteredButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
+        _SOregisteredButton.layer.cornerRadius = 12.0f;
         _SOregisteredButton.layer.masksToBounds = YES;
         [_SOregisteredButton setTitle:NSLocalizedString(@"注册", nil) forState:UIControlStateNormal];
         [_SOregisteredButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];

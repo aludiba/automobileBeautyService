@@ -22,21 +22,20 @@
     [self SOsetContent];
 }
 - (void)SOsetContent{
-    self.view.backgroundColor = SOH_Color(244, 245, 246, 1);
     [self.view addSubview:self.SOconfirmNickNameTextField];
     [self.view addSubview:self.SOsureButton];
     
     [self.SOconfirmNickNameTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.view).offset(30);
-        make.trailing.equalTo(self.view).offset(-30);
-        make.top.equalTo(self.mas_topLayoutGuideBottom).offset(100);
+        make.leading.equalTo(self.view).offset(60);
+        make.trailing.equalTo(self.view).offset(-60);
+        make.top.equalTo(self.mas_topLayoutGuideBottom).offset(50);
         make.height.mas_equalTo(60);
     }];
     [self.SOsureButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.view).offset(60);
-        make.trailing.equalTo(self.view).offset(-60);
-        make.top.equalTo(self.SOconfirmNickNameTextField.mas_bottom).offset(30);
-        make.height.mas_equalTo(44);
+        make.leading.equalTo(self.view).offset(120);
+        make.trailing.equalTo(self.view).offset(-120);
+        make.top.equalTo(self.SOconfirmNickNameTextField.mas_bottom).offset(80);
+        make.height.mas_equalTo(60);
     }];
 }
 #pragma mark - actions
@@ -74,18 +73,17 @@
     if (!_SOconfirmNickNameTextField) {
         _SOconfirmNickNameTextField = [[UITextField alloc] init];
         _SOconfirmNickNameTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _SOconfirmNickNameTextField.layer.borderColor = [UIColor grayColor].CGColor;
-        _SOconfirmNickNameTextField.layer.borderWidth = 1.0f;
-        _SOconfirmNickNameTextField.layer.cornerRadius = 12.0f;
+        _SOconfirmNickNameTextField.backgroundColor = [UIColor grayColor];
+        _SOconfirmNickNameTextField.layer.cornerRadius = 16.0f;
         _SOconfirmNickNameTextField.layer.masksToBounds = YES;
         _SOconfirmNickNameTextField.tag = 102;
         _SOconfirmNickNameTextField.delegate = self;
         _SOconfirmNickNameTextField.placeholder = [NSString stringWithFormat:@"  %@",NSLocalizedString(@"请输入昵称", nil)];
         _SOconfirmNickNameTextField.textColor = [UIColor blackColor];
-        _SOconfirmNickNameTextField.font = [UIFont systemFontOfSize:20];
+        _SOconfirmNickNameTextField.font = [UIFont systemFontOfSize:25];
         BmobUser *user = [BmobUser currentUser];
         if ([[user objectForKey:@"username"] length]) {
-            _SOconfirmNickNameTextField.text = [user objectForKey:@"username"];
+            _SOconfirmNickNameTextField.text = [NSString stringWithFormat:@"  %@",[user objectForKey:@"username"]];
             self.SOnickname = [user objectForKey:@"username"];
         }
     }
@@ -96,8 +94,8 @@
         _SOsureButton = [[UIButton alloc] init];
         _SOsureButton.backgroundColor = [UIColor purpleColor];
         [_SOsureButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_SOsureButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
-        _SOsureButton.layer.cornerRadius = 8.0f;
+        [_SOsureButton.titleLabel setFont:[UIFont systemFontOfSize:25]];
+        _SOsureButton.layer.cornerRadius = 16.0f;
         _SOsureButton.layer.masksToBounds = YES;
         [_SOsureButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
         [_SOsureButton addTarget:self action:@selector(SObtnClick:) forControlEvents:UIControlEventTouchUpInside];

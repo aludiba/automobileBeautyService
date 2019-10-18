@@ -80,7 +80,6 @@
     if (!_SOmainTable) {
         _SOmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _SOmainTable.backgroundColor = SOH_Color(244, 245, 246, 1);
-        _SOmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
         _SOmainTable.delegate = self;
         _SOmainTable.dataSource = self;
         _SOmainTable.rowHeight = UITableViewAutomaticDimension;

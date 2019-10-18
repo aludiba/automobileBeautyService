@@ -48,11 +48,11 @@
 "请输入苏打水价格" = "Please enter the price of soda";
 "亲爱的戒苏打水玩家" = "Dear quit soda player";
 "已经" = "Already";
-"已经少喝" = "Have to drink less";
+"少喝" = "Drink less";
 "瓶苏打水" = "Bottle of soda";
 "累计节省" = "Cumulative savings";
 "元" = "$";
-"天没喝苏打水了~" = "No soda for days~";
+"天~" = "days~";
 "目标" = "Goal";
 "   今天喝了几瓶苏打水" = "   I had a few bottles of soda today";
 "这一天未打卡" = "Not clocked in this day";

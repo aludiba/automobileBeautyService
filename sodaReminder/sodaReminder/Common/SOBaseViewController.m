@@ -13,7 +13,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self SO_setupNavigationItems];
-    self.view.backgroundColor = SOH_Color(236, 236, 236, 1);
+    self.view.backgroundColor = [UIColor yellowColor];
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -33,7 +33,7 @@
     self.navigationItem.titleView = titleLabel;
 }
 - (void)SO_setupNavigationItems {
-    self.navigationController.navigationBar.barTintColor = [UIColor purpleColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor redColor];
     if (self.navigationController && self.navigationController.viewControllers.count > 1) {
         self.navigationItem.hidesBackButton = YES;
         _SObackButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];

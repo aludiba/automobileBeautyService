@@ -17,6 +17,7 @@
 @implementation SOClockTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = SOH_Color(242, 242, 242, 1);
         [self.contentView addSubview:self.SOremindLabel];
         [self.contentView addSubview:self.SOtargetButton];
         [self.contentView addSubview:self.SOclockInButton];
@@ -28,24 +29,24 @@
             make.height.mas_equalTo(140);
         }];
         [self.SOtargetButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(64);
+            make.leading.equalTo(self.contentView).offset(100);
             make.top.equalTo(self.SOremindLabel.mas_bottom).offset(60);
             make.width.mas_equalTo(64);
             make.height.mas_equalTo(64);
         }];
         [self.SOclockInButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.trailing.equalTo(self.contentView).offset(-64);
+            make.trailing.equalTo(self.contentView).offset(-100);
             make.top.equalTo(self.SOremindLabel.mas_bottom).offset(60);
             make.width.mas_equalTo(64);
             make.height.mas_equalTo(64);
-            make.bottom.equalTo(self.contentView).offset(-10);
+            make.bottom.equalTo(self.contentView).offset(-100);
         }];
     }
     return self;
 }
 - (void)setModel:(SOsodePlanSaveModel *)model{
     _model = model;
-    self.SOremindLabel.text = [NSString stringWithFormat:@"%@\n\n%@%ld%@\n\n%@%ld%@\n%@%ld%@",NSLocalizedString(@"亲爱的戒苏打水玩家", nil),NSLocalizedString(@"已经", nil),_model.SOcumulativeNubDays,NSLocalizedString(@"天没喝苏打水了~", nil),NSLocalizedString(@"已经少喝", nil),_model.SOaccumulativeBot,NSLocalizedString(@"瓶苏打水", nil),NSLocalizedString(@"累计节省", nil),_model.SOcumulativeAmount,NSLocalizedString(@"元", nil)];
+    self.SOremindLabel.text = [NSString stringWithFormat:@"%@%ld%@\n\n%@%ld%@\n%@%ld%@",NSLocalizedString(@"已经", nil),_model.SOcumulativeNubDays,NSLocalizedString(@"天~", nil),NSLocalizedString(@"少喝", nil),_model.SOaccumulativeBot,NSLocalizedString(@"瓶苏打水", nil),NSLocalizedString(@"累计节省", nil),_model.SOcumulativeAmount,NSLocalizedString(@"元", nil)];
 }
 #pragma mark - 按钮点击事件
 - (void)SObtnClick:(UIButton *)sender{
@@ -62,14 +63,12 @@
 - (UILabel *)SOremindLabel{
     if (!_SOremindLabel) {
         _SOremindLabel = [[UILabel alloc] init];
-        _SOremindLabel.textColor = [UIColor blackColor];
-        _SOremindLabel.font = [UIFont systemFontOfSize:14];
-        _SOremindLabel.numberOfLines = 0;
-        [_SOremindLabel sizeToFit];
-        _SOremindLabel.layer.cornerRadius = 8.0f;
+        _SOremindLabel.layer.cornerRadius = 32.0f;
         _SOremindLabel.layer.masksToBounds = YES;
-        _SOremindLabel.layer.borderColor = [UIColor grayColor].CGColor;
-        _SOremindLabel.layer.borderWidth = 1.0f;
+        _SOremindLabel.textColor = [UIColor blackColor];
+        _SOremindLabel.font = [UIFont systemFontOfSize:20];
+        _SOremindLabel.numberOfLines = 0;
+        _SOremindLabel.backgroundColor = [UIColor grayColor];
         _SOremindLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _SOremindLabel;
@@ -77,7 +76,7 @@
 - (UIButton *)SOtargetButton{
     if (!_SOtargetButton) {
         _SOtargetButton = [[UIButton alloc] init];
-        _SOtargetButton.layer.cornerRadius = 32.0f;
+        _SOtargetButton.layer.cornerRadius = 8.0f;
         _SOtargetButton.layer.masksToBounds = YES;
         [_SOtargetButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         _SOtargetButton.titleLabel.font = [UIFont systemFontOfSize:15];
@@ -92,7 +91,7 @@
 - (UIButton *)SOclockInButton{
     if (!_SOclockInButton) {
         _SOclockInButton = [[UIButton alloc] init];
-        _SOclockInButton.layer.cornerRadius = 32.0f;
+        _SOclockInButton.layer.cornerRadius = 8.0f;
         _SOclockInButton.layer.masksToBounds = YES;
         [_SOclockInButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         _SOclockInButton.titleLabel.font = [UIFont systemFontOfSize:15];

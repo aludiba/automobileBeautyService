@@ -19,9 +19,9 @@
     [Bmob registerWithAppKey:@"b54db1ee77e5cdf960d6818559aee34f"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"SOSodaRemind"];
+    BmobQuery *bquery = [BmobQuery queryWithClassName:@"SOsodaRemind"];
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"SOSodaRemind"]]];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"SOsodaRemind"]]];
             self.window.rootViewController = [self rootController];
             [self.window makeKeyAndVisible];
     }];

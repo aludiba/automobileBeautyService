@@ -15,21 +15,22 @@
 @implementation SOClockRecordTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = SOH_Color(242, 242, 242, 1);
         [self.contentView addSubview:self.SOtitleLbl];
         [self.contentView addSubview:self.SOcontentLbl];
         
         [self.SOtitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(16);
             make.centerY.equalTo(self.contentView);
-            make.width.mas_equalTo(160);
-            make.height.mas_equalTo(18);
+            make.width.mas_equalTo(SOWIDTH * 0.5);
+            make.height.mas_equalTo(25);
         }];
         [self.SOcontentLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.trailing.equalTo(self.contentView).offset(-16);
-            make.top.equalTo(self.contentView).offset(15);
+            make.top.equalTo(self.contentView).offset(25);
             make.leading.equalTo(self.SOtitleLbl.mas_trailing).offset(10);
             make.height.mas_equalTo(self.model.SOcontentHeight);
-            make.bottom.equalTo(self.contentView).offset(-15);
+            make.bottom.equalTo(self.contentView).offset(-25);
         }];
     }
     return self;
@@ -54,7 +55,7 @@
 - (UILabel *)SOtitleLbl{
     if (!_SOtitleLbl) {
         _SOtitleLbl = [[UILabel alloc] init];
-        _SOtitleLbl.font = [UIFont systemFontOfSize:13];
+        _SOtitleLbl.font = [UIFont systemFontOfSize:20];
         _SOtitleLbl.textColor = [UIColor blackColor];
         _SOtitleLbl.numberOfLines = 0;
         [_SOtitleLbl sizeToFit];
@@ -65,7 +66,7 @@
     if (!_SOcontentLbl) {
         _SOcontentLbl = [[UILabel alloc] init];
         _SOcontentLbl.textColor = [UIColor grayColor];
-        _SOcontentLbl.font = [UIFont systemFontOfSize:14];
+        _SOcontentLbl.font = [UIFont systemFontOfSize:24];
         _SOcontentLbl.textAlignment = NSTextAlignmentRight;
         _SOcontentLbl.numberOfLines = 0;
         [_SOcontentLbl sizeToFit];
