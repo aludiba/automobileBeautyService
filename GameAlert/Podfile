@@ -8,4 +8,5 @@ target 'GameAlert' do
   # Pods for GameAlert
     pod 'Masonry'
     pod 'AFNetworking'
+    pod 'MJRefresh'
 end
