@@ -3,34 +3,119 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		08FC8A1D873CE113F391998E /* Pods_GameAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FA4BBE8B8ED9F9D2DE6D5E /* Pods_GameAlert.framework */; };
-		AE76D7562359B6BB00415680 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7552359B6BB00415680 /* AppDelegate.m */; };
-		AE76D7592359B6BB00415680 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7582359B6BB00415680 /* SceneDelegate.m */; };
-		AE76D75C2359B6BB00415680 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D75B2359B6BB00415680 /* ViewController.m */; };
-		AE76D75F2359B6BB00415680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE76D75D2359B6BB00415680 /* Main.storyboard */; };
 		AE76D7612359B6C000415680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE76D7602359B6C000415680 /* Assets.xcassets */; };
-		AE76D7642359B6C000415680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE76D7622359B6C000415680 /* LaunchScreen.storyboard */; };
 		AE76D7672359B6C000415680 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7662359B6C000415680 /* main.m */; };
+		AE76D7BE2359BC2600415680 /* GAgamePlanSaveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7712359BC2500415680 /* GAgamePlanSaveModel.m */; };
+		AE76D7BF2359BC2600415680 /* GAgamePlanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7722359BC2500415680 /* GAgamePlanModel.m */; };
+		AE76D7C02359BC2600415680 /* GAgamePlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7762359BC2500415680 /* GAgamePlanViewController.m */; };
+		AE76D7C12359BC2600415680 /* GAClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7772359BC2500415680 /* GAClockViewController.m */; };
+		AE76D7C22359BC2600415680 /* GAgamePlanClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7792359BC2500415680 /* GAgamePlanClockView.m */; };
+		AE76D7C32359BC2600415680 /* GAgamePlanSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D77C2359BC2500415680 /* GAgamePlanSaveTableViewCell.m */; };
+		AE76D7C42359BC2600415680 /* GAgamePlanDateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D77D2359BC2500415680 /* GAgamePlanDateTableViewCell.m */; };
+		AE76D7C52359BC2600415680 /* GAgamePlanEditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D77E2359BC2500415680 /* GAgamePlanEditTableViewCell.m */; };
+		AE76D7C62359BC2600415680 /* GAClockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7802359BC2500415680 /* GAClockTableViewCell.m */; };
+		AE76D7C72359BC2600415680 /* GAClockRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7862359BC2500415680 /* GAClockRecordModel.m */; };
+		AE76D7C82359BC2600415680 /* GARecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7882359BC2500415680 /* GARecordViewController.m */; };
+		AE76D7C92359BC2600415680 /* GARecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE76D78A2359BC2500415680 /* GARecordViewController.xib */; };
+		AE76D7CA2359BC2600415680 /* GAClockRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D78C2359BC2500415680 /* GAClockRecordViewController.m */; };
+		AE76D7CB2359BC2600415680 /* GAClockRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D78E2359BC2500415680 /* GAClockRecordTableViewCell.m */; };
+		AE76D7CC2359BC2600415680 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7912359BC2500415680 /* NSDictionary+log.m */; };
+		AE76D7CD2359BC2600415680 /* GANDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7942359BC2500415680 /* GANDHTTPClient.m */; };
+		AE76D7CE2359BC2600415680 /* GAUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7962359BC2500415680 /* GAUIUtilities.m */; };
+		AE76D7CF2359BC2600415680 /* GABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D79A2359BC2500415680 /* GABaseViewController.m */; };
+		AE76D7D02359BC2600415680 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D79E2359BC2500415680 /* CalendarTool.m */; };
+		AE76D7D12359BC2600415680 /* GAHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7A02359BC2500415680 /* GAHBTool.m */; };
+		AE76D7D22359BC2600415680 /* GATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7A22359BC2500415680 /* GATabBarController.m */; };
+		AE76D7D32359BC2600415680 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7A32359BC2500415680 /* NSArray+log.m */; };
+		AE76D7D42359BC2600415680 /* MBProgressHUD+GANJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7A42359BC2500415680 /* MBProgressHUD+GANJ.m */; };
+		AE76D7D52359BC2600415680 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7A62359BC2500415680 /* AppDelegate.m */; };
+		AE76D7D62359BC2600415680 /* GASetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7A92359BC2500415680 /* GASetViewModel.m */; };
+		AE76D7D72359BC2600415680 /* GAModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7AC2359BC2500415680 /* GAModifyNicknameViewController.m */; };
+		AE76D7D82359BC2600415680 /* GAPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7AF2359BC2500415680 /* GAPasswordChangeViewController.m */; };
+		AE76D7D92359BC2600415680 /* GALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7B12359BC2500415680 /* GALoginViewController.m */; };
+		AE76D7DA2359BC2600415680 /* GAMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7B22359BC2500415680 /* GAMineViewController.m */; };
+		AE76D7DB2359BC2600415680 /* GALoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7B52359BC2500415680 /* GALoginTableViewCell.m */; };
+		AE76D7DC2359BC2600415680 /* GASetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7B72359BC2500415680 /* GASetTableViewCell.m */; };
+		AE76D7DD2359BC2600415680 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE76D7BA2359BC2600415680 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8CA7B8BE9D07300A3A6C29E6 /* Pods-GameAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameAlert.release.xcconfig"; path = "Target Support Files/Pods-GameAlert/Pods-GameAlert.release.xcconfig"; sourceTree = "<group>"; };
 		AE76D7512359B6BB00415680 /* GameAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE76D7542359B6BB00415680 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AE76D7552359B6BB00415680 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AE76D7572359B6BB00415680 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		AE76D7582359B6BB00415680 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		AE76D75A2359B6BB00415680 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AE76D75B2359B6BB00415680 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AE76D75E2359B6BB00415680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE76D7602359B6C000415680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AE76D7632359B6C000415680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE76D7652359B6C000415680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE76D7662359B6C000415680 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE76D76F2359BC2500415680 /* GAgamePlanSaveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAgamePlanSaveModel.h; sourceTree = "<group>"; };
+		AE76D7702359BC2500415680 /* GAgamePlanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAgamePlanModel.h; sourceTree = "<group>"; };
+		AE76D7712359BC2500415680 /* GAgamePlanSaveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAgamePlanSaveModel.m; sourceTree = "<group>"; };
+		AE76D7722359BC2500415680 /* GAgamePlanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAgamePlanModel.m; sourceTree = "<group>"; };
+		AE76D7742359BC2500415680 /* GAgamePlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAgamePlanViewController.h; sourceTree = "<group>"; };
+		AE76D7752359BC2500415680 /* GAClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAClockViewController.h; sourceTree = "<group>"; };
+		AE76D7762359BC2500415680 /* GAgamePlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAgamePlanViewController.m; sourceTree = "<group>"; };
+		AE76D7772359BC2500415680 /* GAClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAClockViewController.m; sourceTree = "<group>"; };
+		AE76D7792359BC2500415680 /* GAgamePlanClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAgamePlanClockView.m; sourceTree = "<group>"; };
+		AE76D77A2359BC2500415680 /* GAClockTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAClockTableViewCell.h; sourceTree = "<group>"; };
+		AE76D77B2359BC2500415680 /* GAgamePlanEditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAgamePlanEditTableViewCell.h; sourceTree = "<group>"; };
+		AE76D77C2359BC2500415680 /* GAgamePlanSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAgamePlanSaveTableViewCell.m; sourceTree = "<group>"; };
+		AE76D77D2359BC2500415680 /* GAgamePlanDateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAgamePlanDateTableViewCell.m; sourceTree = "<group>"; };
+		AE76D77E2359BC2500415680 /* GAgamePlanEditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAgamePlanEditTableViewCell.m; sourceTree = "<group>"; };
+		AE76D77F2359BC2500415680 /* GAgamePlanClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAgamePlanClockView.h; sourceTree = "<group>"; };
+		AE76D7802359BC2500415680 /* GAClockTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAClockTableViewCell.m; sourceTree = "<group>"; };
+		AE76D7812359BC2500415680 /* GAgamePlanSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAgamePlanSaveTableViewCell.h; sourceTree = "<group>"; };
+		AE76D7822359BC2500415680 /* GAgamePlanDateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAgamePlanDateTableViewCell.h; sourceTree = "<group>"; };
+		AE76D7852359BC2500415680 /* GAClockRecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAClockRecordModel.h; sourceTree = "<group>"; };
+		AE76D7862359BC2500415680 /* GAClockRecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAClockRecordModel.m; sourceTree = "<group>"; };
+		AE76D7882359BC2500415680 /* GARecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GARecordViewController.m; sourceTree = "<group>"; };
+		AE76D7892359BC2500415680 /* GAClockRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAClockRecordViewController.h; sourceTree = "<group>"; };
+		AE76D78A2359BC2500415680 /* GARecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GARecordViewController.xib; sourceTree = "<group>"; };
+		AE76D78B2359BC2500415680 /* GARecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GARecordViewController.h; sourceTree = "<group>"; };
+		AE76D78C2359BC2500415680 /* GAClockRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAClockRecordViewController.m; sourceTree = "<group>"; };
+		AE76D78E2359BC2500415680 /* GAClockRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAClockRecordTableViewCell.m; sourceTree = "<group>"; };
+		AE76D78F2359BC2500415680 /* GAClockRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAClockRecordTableViewCell.h; sourceTree = "<group>"; };
+		AE76D7912359BC2500415680 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
+		AE76D7922359BC2500415680 /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
+		AE76D7932359BC2500415680 /* GA_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA_PrefixHeader.pch; sourceTree = "<group>"; };
+		AE76D7942359BC2500415680 /* GANDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GANDHTTPClient.m; sourceTree = "<group>"; };
+		AE76D7952359BC2500415680 /* GAGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAGlobal.h; sourceTree = "<group>"; };
+		AE76D7962359BC2500415680 /* GAUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAUIUtilities.m; sourceTree = "<group>"; };
+		AE76D7972359BC2500415680 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		AE76D7982359BC2500415680 /* MBProgressHUD+GANJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+GANJ.h"; sourceTree = "<group>"; };
+		AE76D7992359BC2500415680 /* GATabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GATabBarController.h; sourceTree = "<group>"; };
+		AE76D79A2359BC2500415680 /* GABaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GABaseViewController.m; sourceTree = "<group>"; };
+		AE76D79B2359BC2500415680 /* GAHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAHBTool.h; sourceTree = "<group>"; };
+		AE76D79C2359BC2500415680 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
+		AE76D79D2359BC2500415680 /* GANDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GANDHTTPClient.h; sourceTree = "<group>"; };
+		AE76D79E2359BC2500415680 /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
+		AE76D79F2359BC2500415680 /* GAUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAUIUtilities.h; sourceTree = "<group>"; };
+		AE76D7A02359BC2500415680 /* GAHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAHBTool.m; sourceTree = "<group>"; };
+		AE76D7A12359BC2500415680 /* GABaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GABaseViewController.h; sourceTree = "<group>"; };
+		AE76D7A22359BC2500415680 /* GATabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GATabBarController.m; sourceTree = "<group>"; };
+		AE76D7A32359BC2500415680 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		AE76D7A42359BC2500415680 /* MBProgressHUD+GANJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+GANJ.m"; sourceTree = "<group>"; };
+		AE76D7A52359BC2500415680 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE76D7A62359BC2500415680 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE76D7A92359BC2500415680 /* GASetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GASetViewModel.m; sourceTree = "<group>"; };
+		AE76D7AA2359BC2500415680 /* GASetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GASetViewModel.h; sourceTree = "<group>"; };
+		AE76D7AC2359BC2500415680 /* GAModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAModifyNicknameViewController.m; sourceTree = "<group>"; };
+		AE76D7AD2359BC2500415680 /* GALoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GALoginViewController.h; sourceTree = "<group>"; };
+		AE76D7AE2359BC2500415680 /* GAMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAMineViewController.h; sourceTree = "<group>"; };
+		AE76D7AF2359BC2500415680 /* GAPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAPasswordChangeViewController.m; sourceTree = "<group>"; };
+		AE76D7B02359BC2500415680 /* GAModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAModifyNicknameViewController.h; sourceTree = "<group>"; };
+		AE76D7B12359BC2500415680 /* GALoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GALoginViewController.m; sourceTree = "<group>"; };
+		AE76D7B22359BC2500415680 /* GAMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAMineViewController.m; sourceTree = "<group>"; };
+		AE76D7B32359BC2500415680 /* GAPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAPasswordChangeViewController.h; sourceTree = "<group>"; };
+		AE76D7B52359BC2500415680 /* GALoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GALoginTableViewCell.m; sourceTree = "<group>"; };
+		AE76D7B62359BC2500415680 /* GASetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GASetTableViewCell.h; sourceTree = "<group>"; };
+		AE76D7B72359BC2500415680 /* GASetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GASetTableViewCell.m; sourceTree = "<group>"; };
+		AE76D7B82359BC2500415680 /* GALoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GALoginTableViewCell.h; sourceTree = "<group>"; };
+		AE76D7BB2359BC2600415680 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AE76D7BC2359BC2600415680 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE76D7BD2359BC2600415680 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B9478F8F00EDD3248B1A975D /* Pods-GameAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameAlert.debug.xcconfig"; path = "Target Support Files/Pods-GameAlert/Pods-GameAlert.debug.xcconfig"; sourceTree = "<group>"; };
 		C2FA4BBE8B8ED9F9D2DE6D5E /* Pods_GameAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,19 +161,187 @@
 		AE76D7532359B6BB00415680 /* GameAlert */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D7542359B6BB00415680 /* AppDelegate.h */,
-				AE76D7552359B6BB00415680 /* AppDelegate.m */,
-				AE76D7572359B6BB00415680 /* SceneDelegate.h */,
-				AE76D7582359B6BB00415680 /* SceneDelegate.m */,
-				AE76D75A2359B6BB00415680 /* ViewController.h */,
-				AE76D75B2359B6BB00415680 /* ViewController.m */,
-				AE76D75D2359B6BB00415680 /* Main.storyboard */,
+				AE76D7A52359BC2500415680 /* AppDelegate.h */,
+				AE76D7A62359BC2500415680 /* AppDelegate.m */,
+				AE76D7902359BC2500415680 /* Common */,
+				AE76D76D2359BC2500415680 /* Clock */,
+				AE76D7A72359BC2500415680 /* Mine */,
+				AE76D7832359BC2500415680 /* Record */,
+				AE76D7B92359BC2600415680 /* Resources */,
 				AE76D7602359B6C000415680 /* Assets.xcassets */,
-				AE76D7622359B6C000415680 /* LaunchScreen.storyboard */,
 				AE76D7652359B6C000415680 /* Info.plist */,
 				AE76D7662359B6C000415680 /* main.m */,
 			);
 			path = GameAlert;
+			sourceTree = "<group>";
+		};
+		AE76D76D2359BC2500415680 /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				AE76D76E2359BC2500415680 /* Models */,
+				AE76D7732359BC2500415680 /* Controllers */,
+				AE76D7782359BC2500415680 /* Views */,
+			);
+			path = Clock;
+			sourceTree = "<group>";
+		};
+		AE76D76E2359BC2500415680 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE76D76F2359BC2500415680 /* GAgamePlanSaveModel.h */,
+				AE76D7712359BC2500415680 /* GAgamePlanSaveModel.m */,
+				AE76D7702359BC2500415680 /* GAgamePlanModel.h */,
+				AE76D7722359BC2500415680 /* GAgamePlanModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE76D7732359BC2500415680 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE76D7742359BC2500415680 /* GAgamePlanViewController.h */,
+				AE76D7762359BC2500415680 /* GAgamePlanViewController.m */,
+				AE76D7752359BC2500415680 /* GAClockViewController.h */,
+				AE76D7772359BC2500415680 /* GAClockViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE76D7782359BC2500415680 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE76D77F2359BC2500415680 /* GAgamePlanClockView.h */,
+				AE76D7792359BC2500415680 /* GAgamePlanClockView.m */,
+				AE76D77A2359BC2500415680 /* GAClockTableViewCell.h */,
+				AE76D7802359BC2500415680 /* GAClockTableViewCell.m */,
+				AE76D77B2359BC2500415680 /* GAgamePlanEditTableViewCell.h */,
+				AE76D77E2359BC2500415680 /* GAgamePlanEditTableViewCell.m */,
+				AE76D7812359BC2500415680 /* GAgamePlanSaveTableViewCell.h */,
+				AE76D77C2359BC2500415680 /* GAgamePlanSaveTableViewCell.m */,
+				AE76D7822359BC2500415680 /* GAgamePlanDateTableViewCell.h */,
+				AE76D77D2359BC2500415680 /* GAgamePlanDateTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE76D7832359BC2500415680 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				AE76D7842359BC2500415680 /* Models */,
+				AE76D7872359BC2500415680 /* Controllers */,
+				AE76D78D2359BC2500415680 /* Views */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		AE76D7842359BC2500415680 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE76D7852359BC2500415680 /* GAClockRecordModel.h */,
+				AE76D7862359BC2500415680 /* GAClockRecordModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE76D7872359BC2500415680 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE76D78B2359BC2500415680 /* GARecordViewController.h */,
+				AE76D7882359BC2500415680 /* GARecordViewController.m */,
+				AE76D78A2359BC2500415680 /* GARecordViewController.xib */,
+				AE76D7892359BC2500415680 /* GAClockRecordViewController.h */,
+				AE76D78C2359BC2500415680 /* GAClockRecordViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE76D78D2359BC2500415680 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE76D78E2359BC2500415680 /* GAClockRecordTableViewCell.m */,
+				AE76D78F2359BC2500415680 /* GAClockRecordTableViewCell.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE76D7902359BC2500415680 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AE76D7932359BC2500415680 /* GA_PrefixHeader.pch */,
+				AE76D7952359BC2500415680 /* GAGlobal.h */,
+				AE76D79C2359BC2500415680 /* NSDictionary+log.h */,
+				AE76D7912359BC2500415680 /* NSDictionary+log.m */,
+				AE76D7922359BC2500415680 /* CalendarTool.h */,
+				AE76D79E2359BC2500415680 /* CalendarTool.m */,
+				AE76D79D2359BC2500415680 /* GANDHTTPClient.h */,
+				AE76D7942359BC2500415680 /* GANDHTTPClient.m */,
+				AE76D79F2359BC2500415680 /* GAUIUtilities.h */,
+				AE76D7962359BC2500415680 /* GAUIUtilities.m */,
+				AE76D7972359BC2500415680 /* NSArray+log.h */,
+				AE76D7A32359BC2500415680 /* NSArray+log.m */,
+				AE76D7982359BC2500415680 /* MBProgressHUD+GANJ.h */,
+				AE76D7A42359BC2500415680 /* MBProgressHUD+GANJ.m */,
+				AE76D7992359BC2500415680 /* GATabBarController.h */,
+				AE76D7A22359BC2500415680 /* GATabBarController.m */,
+				AE76D7A12359BC2500415680 /* GABaseViewController.h */,
+				AE76D79A2359BC2500415680 /* GABaseViewController.m */,
+				AE76D79B2359BC2500415680 /* GAHBTool.h */,
+				AE76D7A02359BC2500415680 /* GAHBTool.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AE76D7A72359BC2500415680 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				AE76D7A82359BC2500415680 /* Models */,
+				AE76D7AB2359BC2500415680 /* Controllers */,
+				AE76D7B42359BC2500415680 /* Views */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		AE76D7A82359BC2500415680 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE76D7A92359BC2500415680 /* GASetViewModel.m */,
+				AE76D7AA2359BC2500415680 /* GASetViewModel.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE76D7AB2359BC2500415680 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE76D7B02359BC2500415680 /* GAModifyNicknameViewController.h */,
+				AE76D7AC2359BC2500415680 /* GAModifyNicknameViewController.m */,
+				AE76D7B32359BC2500415680 /* GAPasswordChangeViewController.h */,
+				AE76D7AF2359BC2500415680 /* GAPasswordChangeViewController.m */,
+				AE76D7AD2359BC2500415680 /* GALoginViewController.h */,
+				AE76D7B12359BC2500415680 /* GALoginViewController.m */,
+				AE76D7AE2359BC2500415680 /* GAMineViewController.h */,
+				AE76D7B22359BC2500415680 /* GAMineViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE76D7B42359BC2500415680 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE76D7B82359BC2500415680 /* GALoginTableViewCell.h */,
+				AE76D7B52359BC2500415680 /* GALoginTableViewCell.m */,
+				AE76D7B62359BC2500415680 /* GASetTableViewCell.h */,
+				AE76D7B72359BC2500415680 /* GASetTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE76D7B92359BC2600415680 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE76D7BA2359BC2600415680 /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		D6A2A1DE6F932D32A7025085 /* Pods */ = {
@@ -97,7 +350,6 @@
 				B9478F8F00EDD3248B1A975D /* Pods-GameAlert.debug.xcconfig */,
 				8CA7B8BE9D07300A3A6C29E6 /* Pods-GameAlert.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,6 +396,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				ja,
 			);
 			mainGroup = AE76D7482359B6BB00415680;
 			productRefGroup = AE76D7522359B6BB00415680 /* Products */;
@@ -160,9 +414,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE76D7642359B6C000415680 /* LaunchScreen.storyboard in Resources */,
 				AE76D7612359B6C000415680 /* Assets.xcassets in Resources */,
-				AE76D75F2359B6BB00415680 /* Main.storyboard in Resources */,
+				AE76D7DD2359BC2600415680 /* Localizable.strings in Resources */,
+				AE76D7C92359BC2600415680 /* GARecordViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,30 +469,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE76D75C2359B6BB00415680 /* ViewController.m in Sources */,
-				AE76D7562359B6BB00415680 /* AppDelegate.m in Sources */,
+				AE76D7D72359BC2600415680 /* GAModifyNicknameViewController.m in Sources */,
+				AE76D7C62359BC2600415680 /* GAClockTableViewCell.m in Sources */,
+				AE76D7D32359BC2600415680 /* NSArray+log.m in Sources */,
 				AE76D7672359B6C000415680 /* main.m in Sources */,
-				AE76D7592359B6BB00415680 /* SceneDelegate.m in Sources */,
+				AE76D7C52359BC2600415680 /* GAgamePlanEditTableViewCell.m in Sources */,
+				AE76D7DB2359BC2600415680 /* GALoginTableViewCell.m in Sources */,
+				AE76D7C72359BC2600415680 /* GAClockRecordModel.m in Sources */,
+				AE76D7CD2359BC2600415680 /* GANDHTTPClient.m in Sources */,
+				AE76D7DC2359BC2600415680 /* GASetTableViewCell.m in Sources */,
+				AE76D7D02359BC2600415680 /* CalendarTool.m in Sources */,
+				AE76D7C32359BC2600415680 /* GAgamePlanSaveTableViewCell.m in Sources */,
+				AE76D7D62359BC2600415680 /* GASetViewModel.m in Sources */,
+				AE76D7CA2359BC2600415680 /* GAClockRecordViewController.m in Sources */,
+				AE76D7C82359BC2600415680 /* GARecordViewController.m in Sources */,
+				AE76D7D82359BC2600415680 /* GAPasswordChangeViewController.m in Sources */,
+				AE76D7D22359BC2600415680 /* GATabBarController.m in Sources */,
+				AE76D7C02359BC2600415680 /* GAgamePlanViewController.m in Sources */,
+				AE76D7CF2359BC2600415680 /* GABaseViewController.m in Sources */,
+				AE76D7CC2359BC2600415680 /* NSDictionary+log.m in Sources */,
+				AE76D7BE2359BC2600415680 /* GAgamePlanSaveModel.m in Sources */,
+				AE76D7D92359BC2600415680 /* GALoginViewController.m in Sources */,
+				AE76D7CE2359BC2600415680 /* GAUIUtilities.m in Sources */,
+				AE76D7CB2359BC2600415680 /* GAClockRecordTableViewCell.m in Sources */,
+				AE76D7DA2359BC2600415680 /* GAMineViewController.m in Sources */,
+				AE76D7BF2359BC2600415680 /* GAgamePlanModel.m in Sources */,
+				AE76D7C22359BC2600415680 /* GAgamePlanClockView.m in Sources */,
+				AE76D7D42359BC2600415680 /* MBProgressHUD+GANJ.m in Sources */,
+				AE76D7D52359BC2600415680 /* AppDelegate.m in Sources */,
+				AE76D7D12359BC2600415680 /* GAHBTool.m in Sources */,
+				AE76D7C42359BC2600415680 /* GAgamePlanDateTableViewCell.m in Sources */,
+				AE76D7C12359BC2600415680 /* GAClockViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AE76D75D2359B6BB00415680 /* Main.storyboard */ = {
+		AE76D7BA2359BC2600415680 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AE76D75E2359B6BB00415680 /* Base */,
+				AE76D7BB2359BC2600415680 /* zh-Hans */,
+				AE76D7BC2359BC2600415680 /* ja */,
+				AE76D7BD2359BC2600415680 /* en */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AE76D7622359B6C000415680 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AE76D7632359B6C000415680 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -294,7 +569,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -346,7 +621,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -359,7 +634,10 @@
 			baseConfigurationReference = B9478F8F00EDD3248B1A975D /* Pods-GameAlert.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GameAlert/Common/GA_PrefixHeader.pch";
 				INFOPLIST_FILE = GameAlert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -376,7 +654,10 @@
 			baseConfigurationReference = 8CA7B8BE9D07300A3A6C29E6 /* Pods-GameAlert.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GameAlert/Common/GA_PrefixHeader.pch";
 				INFOPLIST_FILE = GameAlert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

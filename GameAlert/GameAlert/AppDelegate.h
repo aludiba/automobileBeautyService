@@ -1,14 +1,15 @@
 //
 //  AppDelegate.h
-//  GameAlert
+//  quitSmokingRemind
 //
-//  Created by bykj on 2019/10/18.
+//  Created by bykj on 2019/10/14.
 //  Copyright © 2019 hbc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+@property (strong, nonatomic) UIWindow *window;
 
 
 @end
