@@ -1,0 +1,6 @@
+framework module Pods_GameAlert {
+  umbrella header "Pods-GameAlert-umbrella.h"
+
+  export *
+  module * { export * }
+}

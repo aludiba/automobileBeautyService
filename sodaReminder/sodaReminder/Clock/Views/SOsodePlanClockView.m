@@ -30,22 +30,22 @@
             make.bottom.equalTo(self);
         }];
         [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.backView).offset(36);
+            make.leading.equalTo(self.backView).offset(50);
             make.centerY.equalTo(self.backView).offset(-90);
-            make.trailing.equalTo(self.backView).offset(-36);
-            make.height.mas_equalTo(140);
+            make.trailing.equalTo(self.backView).offset(-50);
+            make.height.mas_equalTo(160);
         }];
         [self.contentField mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(15);
-            make.top.equalTo(self.contentView).offset(20);
-            make.trailing.equalTo(self.contentView).offset(-15);
-            make.height.mas_equalTo(40);
+            make.leading.equalTo(self.contentView).offset(20);
+            make.top.equalTo(self.contentView).offset(25);
+            make.trailing.equalTo(self.contentView).offset(-20);
+            make.height.mas_equalTo(50);
         }];
         [self.saveButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(40);
-            make.top.equalTo(self.contentField.mas_bottom).offset(20);
-            make.trailing.equalTo(self.contentView).offset(-40);
-            make.height.mas_equalTo(36);
+            make.leading.equalTo(self.contentView).offset(50);
+            make.top.equalTo(self.contentField.mas_bottom).offset(25);
+            make.trailing.equalTo(self.contentView).offset(-50);
+            make.height.mas_equalTo(40);
         }];
     }
     return self;
@@ -71,7 +71,7 @@
     if (!_contentView) {
         _contentView = [[UIView alloc] init];
         _contentView.backgroundColor = [UIColor greenColor];
-        _contentView.layer.cornerRadius = 16.0f;
+        _contentView.layer.cornerRadius = 10.0f;
         _contentView.layer.masksToBounds = YES;
     }
     return _contentView;
@@ -80,11 +80,11 @@
     if (!_contentField) {
         _contentField = [[UITextField alloc] init];
         _contentField.keyboardType = UIKeyboardTypeNumberPad;
-        _contentField.backgroundColor = [UIColor whiteColor];
+        _contentField.backgroundColor = [UIColor grayColor];
         _contentField.delegate = self;
         _contentField.textColor = [UIColor blackColor];
         _contentField.placeholder = NSLocalizedString(@"   今天喝了几瓶苏打水", nil);
-        _contentField.font = [UIFont systemFontOfSize:15];
+        _contentField.font = [UIFont systemFontOfSize:16];
         _contentField.layer.cornerRadius = 8.0f;
         _contentField.layer.masksToBounds = YES;
     }
@@ -93,11 +93,11 @@
 - (UIButton *)saveButton{
     if (!_saveButton) {
         _saveButton = [[UIButton alloc] init];
-        [_saveButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [_saveButton.titleLabel setFont:[UIFont systemFontOfSize:16]];
+        [_saveButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_saveButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
         [_saveButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
-        [_saveButton setBackgroundColor:[UIColor purpleColor]];
-        _saveButton.layer.cornerRadius = 10.0f;
+        [_saveButton setBackgroundColor:[UIColor redColor]];
+        _saveButton.layer.cornerRadius = 8.0f;
         _saveButton.layer.masksToBounds = YES;
         [_saveButton addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     }
