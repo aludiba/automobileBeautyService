@@ -7,4 +7,5 @@ target 'sodaReminder' do
 
   # Pods for sodaReminder
     pod 'Masonry'
+    pod 'AFNetworking'
 end
