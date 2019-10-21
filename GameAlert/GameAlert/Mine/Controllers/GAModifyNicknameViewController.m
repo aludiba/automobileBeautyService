@@ -73,14 +73,15 @@
     if (!_GAconfirmNickNameTextField) {
         _GAconfirmNickNameTextField = [[UITextField alloc] init];
         _GAconfirmNickNameTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _GAconfirmNickNameTextField.backgroundColor = [UIColor grayColor];
-        _GAconfirmNickNameTextField.layer.cornerRadius = 16.0f;
+        _GAconfirmNickNameTextField.layer.cornerRadius = 8.0f;
         _GAconfirmNickNameTextField.layer.masksToBounds = YES;
+        _GAconfirmNickNameTextField.layer.borderWidth = 2.0f;
+        _GAconfirmNickNameTextField.layer.borderColor = [UIColor grayColor].CGColor;
         _GAconfirmNickNameTextField.tag = 102;
         _GAconfirmNickNameTextField.delegate = self;
         _GAconfirmNickNameTextField.placeholder = [NSString stringWithFormat:@"  %@",NSLocalizedString(@"请输入昵称", nil)];
         _GAconfirmNickNameTextField.textColor = [UIColor blackColor];
-        _GAconfirmNickNameTextField.font = [UIFont systemFontOfSize:25];
+        _GAconfirmNickNameTextField.font = [UIFont systemFontOfSize:20];
         BmobUser *user = [BmobUser currentUser];
         if ([[user objectForKey:@"username"] length]) {
             _GAconfirmNickNameTextField.text = [NSString stringWithFormat:@"  %@",[user objectForKey:@"username"]];
@@ -92,11 +93,13 @@
 - (UIButton *)GAsureButton{
     if (!_GAsureButton) {
         _GAsureButton = [[UIButton alloc] init];
-        _GAsureButton.backgroundColor = [UIColor purpleColor];
+        _GAsureButton.backgroundColor = [UIColor cyanColor];
         [_GAsureButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_GAsureButton.titleLabel setFont:[UIFont systemFontOfSize:25]];
-        _GAsureButton.layer.cornerRadius = 16.0f;
+        _GAsureButton.layer.cornerRadius = 8.0f;
         _GAsureButton.layer.masksToBounds = YES;
+        _GAsureButton.layer.borderWidth = 2.0f;
+        _GAsureButton.layer.borderColor = [UIColor grayColor].CGColor;
         [_GAsureButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
         [_GAsureButton addTarget:self action:@selector(GAbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }

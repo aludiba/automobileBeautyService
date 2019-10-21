@@ -16,20 +16,19 @@
 @implementation GASetTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = GAH_Color(242, 242, 242, 1);
         [self.contentView addSubview:self.GAtitleLbl];
         [self.contentView addSubview:self.GAcontentLbl];
         [self.contentView addSubview:self.GAarrowImgView];
         
         [self.GAtitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(20);
-            make.top.equalTo(self.contentView).offset(30);
+            make.top.equalTo(self.contentView).offset(25);
             make.width.mas_equalTo(GAWIDTH * 0.5 - 20);
             make.height.mas_equalTo(25);
-            make.bottom.equalTo(self.contentView).offset(-30);
+            make.bottom.equalTo(self.contentView).offset(-25);
         }];
         [self.GAarrowImgView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.trailing.equalTo(self.contentView).offset(-15);
+            make.trailing.equalTo(self.contentView).offset(-16);
             make.centerY.equalTo(self.contentView);
             make.width.mas_equalTo(22);
             make.height.mas_equalTo(22);
@@ -37,7 +36,7 @@
         [self.GAcontentLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.trailing.equalTo(self.GAarrowImgView.mas_leading).offset(-5);
             make.centerY.equalTo(self.contentView);
-            make.width.mas_equalTo(GAWIDTH * 0.5 - 5 - 22 - 15);
+            make.width.mas_equalTo(GAWIDTH * 0.5 - 5 - 22 - 16);
             make.height.mas_equalTo(25);
         }];
     }
@@ -53,7 +52,7 @@
     if (!_GAtitleLbl) {
         _GAtitleLbl = [[UILabel alloc] init];
         _GAtitleLbl.textColor = [UIColor blackColor];
-        _GAtitleLbl.font = [UIFont systemFontOfSize:24];
+        _GAtitleLbl.font = [UIFont systemFontOfSize:20];
     }
     return _GAtitleLbl;
 }
@@ -61,8 +60,8 @@
     if (!_GAcontentLbl) {
         _GAcontentLbl = [[UILabel alloc] init];
         _GAcontentLbl.textAlignment = NSTextAlignmentRight;
-        _GAcontentLbl.textColor = [UIColor whiteColor];
-        _GAcontentLbl.font = [UIFont boldSystemFontOfSize:25];
+        _GAcontentLbl.textColor = [UIColor blackColor];
+        _GAcontentLbl.font = [UIFont boldSystemFontOfSize:22];
     }
     return _GAcontentLbl;
 }

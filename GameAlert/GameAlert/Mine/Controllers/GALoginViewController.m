@@ -35,13 +35,12 @@
     self.navigationController.navigationBar.hidden = NO;
 }
 - (void)GAsetContentView{
-    self.view.backgroundColor = GAH_Color(242, 242, 242, 1);
     [self.view addSubview:self.GAmainTable];
     [self.GAmainTable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view);
+        make.top.equalTo(self.mas_topLayoutGuideTop);
         make.leading.equalTo(self.view);
         make.trailing.equalTo(self.view);
-        make.bottom.equalTo(self.view);
+        make.bottom.equalTo(self.mas_bottomLayoutGuideBottom);
     }];
 }
 #pragma mark - 属性懒加载
@@ -62,7 +61,6 @@
         _GAmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
         _GAmainTable.delegate = self;
         _GAmainTable.dataSource = self;
-        _GAmainTable.backgroundColor = GAH_Color(242, 242, 242, 1);
         _GAmainTable.rowHeight = UITableViewAutomaticDimension;
         _GAmainTable.estimatedRowHeight = 55.0f;
         _GAmainTable.tableHeaderView = [[UIView alloc] init];

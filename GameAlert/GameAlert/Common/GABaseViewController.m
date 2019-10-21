@@ -13,7 +13,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self GA_setupNavigationItems];
-    self.view.backgroundColor = [UIColor yellowColor];
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -33,7 +32,6 @@
     self.navigationItem.titleView = titleLabel;
 }
 - (void)GA_setupNavigationItems {
-    self.navigationController.navigationBar.barTintColor = [UIColor redColor];
     if (self.navigationController && self.navigationController.viewControllers.count > 1) {
         self.navigationItem.hidesBackButton = YES;
         _GAbackButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];

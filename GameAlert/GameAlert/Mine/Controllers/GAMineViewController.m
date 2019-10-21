@@ -25,7 +25,6 @@
     [self GAsetContentView];
 }
 - (void)GAsetContentView{
-    self.view.backgroundColor = GAH_Color(242, 242, 242, 1);
     GASetViewModel *viewModel = [[GASetViewModel alloc] init];
     viewModel.GAtitle = NSLocalizedString(@"昵称", nil);
     BmobUser *user = [BmobUser currentUser];
@@ -106,7 +105,6 @@
 - (UITableView *)GAmainTable{
     if (!_GAmainTable) {
         _GAmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-        _GAmainTable.backgroundColor = GAH_Color(244, 245, 246, 1);
         _GAmainTable.delegate = self;
         _GAmainTable.dataSource = self;
         _GAmainTable.rowHeight = UITableViewAutomaticDimension;

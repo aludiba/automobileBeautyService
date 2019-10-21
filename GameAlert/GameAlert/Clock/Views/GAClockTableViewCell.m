@@ -17,7 +17,6 @@
 @implementation GAClockTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = GAH_Color(242, 242, 242, 1);
         [self.contentView addSubview:self.GAremindLabel];
         [self.contentView addSubview:self.GAtargetButton];
         [self.contentView addSubview:self.GAclockInButton];
@@ -46,7 +45,7 @@
 }
 - (void)setModel:(GAgamePlanSaveModel *)model{
     _model = model;
-    self.GAremindLabel.text = [NSString stringWithFormat:@"%@%ld%@\n\n%@%ld%@\n%@%ld%@",NSLocalizedString(@"已经", nil),_model.GAcumulativeNubDays,NSLocalizedString(@"天~", nil),NSLocalizedString(@"少喝", nil),_model.GAaccumulativeGames,NSLocalizedString(@"瓶苏打水", nil),NSLocalizedString(@"累计节省", nil),_model.GAcumulativeAmount,NSLocalizedString(@"元", nil)];
+    self.GAremindLabel.text = [NSString stringWithFormat:@"%@%ld%@\n\n%@%ld%@\n%@%ld%@",NSLocalizedString(@"已经", nil),_model.GAcumulativeNubDays,NSLocalizedString(@"天~", nil),NSLocalizedString(@"少玩", nil),_model.GAaccumulativeGames,NSLocalizedString(@"次游戏", nil),NSLocalizedString(@"累计节省", nil),_model.GAcumulativeAmount,NSLocalizedString(@"小时", nil)];
 }
 #pragma mark - 按钮点击事件
 - (void)GAbtnClick:(UIButton *)sender{
@@ -63,12 +62,13 @@
 - (UILabel *)GAremindLabel{
     if (!_GAremindLabel) {
         _GAremindLabel = [[UILabel alloc] init];
-        _GAremindLabel.layer.cornerRadius = 32.0f;
-        _GAremindLabel.layer.masksToBounds = YES;
+//        _GAremindLabel.layer.cornerRadius = 8.0f;
+//        _GAremindLabel.layer.masksToBounds = YES;
+//        _GAremindLabel.layer.borderColor = [UIColor grayColor].CGColor;
+//        _GAremindLabel.layer.borderWidth = 1.0f;
         _GAremindLabel.textColor = [UIColor blackColor];
         _GAremindLabel.font = [UIFont systemFontOfSize:20];
         _GAremindLabel.numberOfLines = 0;
-        _GAremindLabel.backgroundColor = [UIColor grayColor];
         _GAremindLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _GAremindLabel;
@@ -76,11 +76,12 @@
 - (UIButton *)GAtargetButton{
     if (!_GAtargetButton) {
         _GAtargetButton = [[UIButton alloc] init];
-        _GAtargetButton.layer.cornerRadius = 8.0f;
+        _GAtargetButton.layer.cornerRadius = 32.0f;
         _GAtargetButton.layer.masksToBounds = YES;
-        [_GAtargetButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        _GAtargetButton.layer.borderColor = [UIColor grayColor].CGColor;
+        _GAtargetButton.layer.borderWidth = 1.0f;
+        [_GAtargetButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         _GAtargetButton.titleLabel.font = [UIFont systemFontOfSize:15];
-        [_GAtargetButton setBackgroundColor:[UIColor purpleColor]];
         _GAtargetButton.titleLabel.textAlignment = NSTextAlignmentCenter;
         [_GAtargetButton setTitle:NSLocalizedString(@"目标", nil) forState:UIControlStateNormal];
         _GAtargetButton.tag = 100;
@@ -91,11 +92,12 @@
 - (UIButton *)GAclockInButton{
     if (!_GAclockInButton) {
         _GAclockInButton = [[UIButton alloc] init];
-        _GAclockInButton.layer.cornerRadius = 8.0f;
+        _GAclockInButton.layer.cornerRadius = 32.0f;
         _GAclockInButton.layer.masksToBounds = YES;
-        [_GAclockInButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        _GAclockInButton.layer.borderColor = [UIColor grayColor].CGColor;
+        _GAclockInButton.layer.borderWidth = 1.0f;
+        [_GAclockInButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         _GAclockInButton.titleLabel.font = [UIFont systemFontOfSize:15];
-        [_GAclockInButton setBackgroundColor:[UIColor purpleColor]];
         _GAclockInButton.titleLabel.textAlignment = NSTextAlignmentCenter;
         [_GAclockInButton setTitle:NSLocalizedString(@"打卡", nil) forState:UIControlStateNormal];
         _GAclockInButton.tag = 101;

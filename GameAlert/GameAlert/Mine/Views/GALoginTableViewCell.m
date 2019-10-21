@@ -12,9 +12,11 @@
 @property(nonatomic, strong)UIView *GAbackView;
 @property(nonatomic, strong)UILabel *GAaccountLable;
 @property(nonatomic, strong)UITextField *GAaccountTextField;
+@property(nonatomic, strong)UIView *line;
 @property(nonatomic, copy)NSString *GAaccount;
 @property(nonatomic, strong)UILabel *GApasswordLable;
 @property(nonatomic, strong)UITextField *GAGApasswordTextField;
+@property(nonatomic, strong)UIView *line1;
 @property(nonatomic, copy)NSString *GApassword;
 @property(nonatomic, strong)UIButton *GAloginButton;
 @property(nonatomic, strong)UIButton *GAregisteredButton;
@@ -27,12 +29,13 @@
     return self;
 }
 - (void)GAsetContent{
-    self.contentView.backgroundColor = GAH_Color(242, 242, 242, 1);
     [self.contentView addSubview:self.GAbackView];
     [self.GAbackView addSubview:self.GAaccountLable];
     [self.GAbackView addSubview:self.GAaccountTextField];
+    [self.GAbackView addSubview:self.line];
     [self.GAbackView addSubview:self.GApasswordLable];
     [self.GAbackView addSubview:self.GAGApasswordTextField];
+    [self.GAbackView addSubview:self.line1];
     [self.GAbackView addSubview:self.GAloginButton];
     [self.GAbackView addSubview:self.GAregisteredButton];
     
@@ -55,6 +58,12 @@
         make.trailing.equalTo(self.GAbackView).offset(-10);
         make.height.mas_equalTo(60);
     }];
+    [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.GAaccountTextField.mas_bottom);
+               make.leading.equalTo(self.GAbackView).offset(16);
+               make.trailing.equalTo(self.GAbackView);
+               make.height.mas_equalTo(1);
+    }];
     [self.GApasswordLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.GAaccountTextField.mas_bottom).offset(24);
         make.leading.equalTo(self.GAbackView).offset(30);
@@ -67,6 +76,12 @@
         make.trailing.equalTo(self.GAbackView).offset(-10);
         make.height.mas_equalTo(60);
     }];
+    [self.line1 mas_makeConstraints:^(MASConstraintMaker *make) {
+           make.top.equalTo(self.GAGApasswordTextField.mas_bottom);
+                  make.leading.equalTo(self.GAbackView).offset(16);
+                  make.trailing.equalTo(self.GAbackView);
+                  make.height.mas_equalTo(1);
+       }];
     [self.GAloginButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.GAbackView).offset(50);
         make.trailing.equalTo(self.GAbackView).offset(-50);
@@ -149,7 +164,9 @@
         _GAbackView = [[UIView alloc] init];
         _GAbackView.layer.cornerRadius = 20.0f;
         _GAbackView.layer.masksToBounds = YES;
-        _GAbackView.backgroundColor = [UIColor systemBlueColor];
+        _GAbackView.layer.borderColor = [UIColor systemBlueColor].CGColor;
+        _GAbackView.layer.borderWidth = 2.0f;
+        _GAbackView.backgroundColor = [UIColor cyanColor];
     }
     return _GAbackView;
 }
@@ -174,6 +191,13 @@
     }
     return _GAaccountTextField;
 }
+- (UIView *)line{
+    if (!_line) {
+        _line = [[UIView alloc] init];
+        _line.backgroundColor = GAH_Color(230, 230, 230, 1);
+    }
+    return _line;
+}
 - (UILabel *)GApasswordLable{
     if (!_GApasswordLable) {
         _GApasswordLable = [[UILabel alloc] init];
@@ -196,14 +220,21 @@
     }
     return _GAGApasswordTextField;
 }
+- (UIView *)line1{
+    if (!_line1) {
+        _line1 = [[UIView alloc] init];
+        _line1.backgroundColor = GAH_Color(230, 230, 230, 1);
+    }
+    return _line1;
+}
 - (UIButton *)GAloginButton{
     if (!_GAloginButton) {
         _GAloginButton = [[UIButton alloc] init];
         _GAloginButton.tag = 100;
-        _GAloginButton.backgroundColor = [UIColor orangeColor];
-        [_GAloginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _GAloginButton.backgroundColor = [UIColor whiteColor];
+        [_GAloginButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_GAloginButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
-        _GAloginButton.layer.cornerRadius = 12.0f;
+        _GAloginButton.layer.cornerRadius = 6.0f;
         _GAloginButton.layer.masksToBounds = YES;
         [_GAloginButton setTitle:NSLocalizedString(@"登录", nil) forState:UIControlStateNormal];
         [_GAloginButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -214,10 +245,10 @@
     if (!_GAregisteredButton) {
         _GAregisteredButton = [[UIButton alloc] init];
         _GAregisteredButton.tag = 101;
-        _GAregisteredButton.backgroundColor = [UIColor greenColor];
+        _GAregisteredButton.backgroundColor = [UIColor whiteColor];
         [_GAregisteredButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_GAregisteredButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
-        _GAregisteredButton.layer.cornerRadius = 12.0f;
+        _GAregisteredButton.layer.cornerRadius = 6.0f;
         _GAregisteredButton.layer.masksToBounds = YES;
         [_GAregisteredButton setTitle:NSLocalizedString(@"注册", nil) forState:UIControlStateNormal];
         [_GAregisteredButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];

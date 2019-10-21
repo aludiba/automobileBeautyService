@@ -15,22 +15,21 @@
 @implementation GAClockRecordTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = GAH_Color(242, 242, 242, 1);
         [self.contentView addSubview:self.GAtitleLbl];
         [self.contentView addSubview:self.GAcontentLbl];
         
         [self.GAtitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(16);
+            make.leading.equalTo(self.contentView).offset(20);
             make.centerY.equalTo(self.contentView);
-            make.width.mas_equalTo(GAWIDTH * 0.5);
-            make.height.mas_equalTo(25);
+            make.width.mas_equalTo(GAWIDTH * 1.8 / 3);
+            make.height.mas_equalTo(20);
         }];
         [self.GAcontentLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.trailing.equalTo(self.contentView).offset(-16);
-            make.top.equalTo(self.contentView).offset(25);
+            make.trailing.equalTo(self.contentView).offset(-20);
+            make.top.equalTo(self.contentView).offset(20);
             make.leading.equalTo(self.GAtitleLbl.mas_trailing).offset(10);
             make.height.mas_equalTo(self.model.GAcontentHeight);
-            make.bottom.equalTo(self.contentView).offset(-25);
+            make.bottom.equalTo(self.contentView).offset(-20);
         }];
     }
     return self;
@@ -55,7 +54,7 @@
 - (UILabel *)GAtitleLbl{
     if (!_GAtitleLbl) {
         _GAtitleLbl = [[UILabel alloc] init];
-        _GAtitleLbl.font = [UIFont systemFontOfSize:20];
+        _GAtitleLbl.font = [UIFont systemFontOfSize:16];
         _GAtitleLbl.textColor = [UIColor blackColor];
         _GAtitleLbl.numberOfLines = 0;
         [_GAtitleLbl sizeToFit];
@@ -65,8 +64,8 @@
 - (UILabel *)GAcontentLbl{
     if (!_GAcontentLbl) {
         _GAcontentLbl = [[UILabel alloc] init];
-        _GAcontentLbl.textColor = [UIColor grayColor];
-        _GAcontentLbl.font = [UIFont systemFontOfSize:24];
+        _GAcontentLbl.textColor = [UIColor blackColor];
+        _GAcontentLbl.font = [UIFont boldSystemFontOfSize:18];
         _GAcontentLbl.textAlignment = NSTextAlignmentRight;
         _GAcontentLbl.numberOfLines = 0;
         [_GAcontentLbl sizeToFit];

@@ -26,7 +26,6 @@
     [self GAsetContent];
 }
 - (void)GAsetContent{
-    self.view.backgroundColor = GAH_Color(242, 242, 242, 1);
     [self.view addSubview:self.GAGAoldPasswordTextField];
     [self.view addSubview:self.GAGAcurrentPasswordTextField];
     [self.view addSubview:self.GAGAconfirmPasswordTextField];
@@ -132,14 +131,15 @@
         _GAGAoldPasswordTextField = [[UITextField alloc] init];
         _GAGAoldPasswordTextField.secureTextEntry = YES;
         _GAGAoldPasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _GAGAoldPasswordTextField.backgroundColor = [UIColor grayColor];
-        _GAGAoldPasswordTextField.layer.cornerRadius = 12.0f;
+        _GAGAoldPasswordTextField.layer.cornerRadius = 8.0f;
         _GAGAoldPasswordTextField.layer.masksToBounds = YES;
+        _GAGAoldPasswordTextField.layer.borderWidth = 2.0f;
+        _GAGAoldPasswordTextField.layer.borderColor = [UIColor grayColor].CGColor;
         _GAGAoldPasswordTextField.tag = 100;
         _GAGAoldPasswordTextField.delegate = self;
         _GAGAoldPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",NSLocalizedString(@"输入旧密码", nil)];
         _GAGAoldPasswordTextField.textColor = [UIColor blackColor];
-        _GAGAoldPasswordTextField.font = [UIFont systemFontOfSize:25];
+        _GAGAoldPasswordTextField.font = [UIFont systemFontOfSize:20];
     }
     return _GAGAoldPasswordTextField;
 }
@@ -148,14 +148,15 @@
         _GAGAcurrentPasswordTextField = [[UITextField alloc] init];
         _GAGAcurrentPasswordTextField.secureTextEntry = YES;
         _GAGAcurrentPasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _GAGAcurrentPasswordTextField.backgroundColor = [UIColor grayColor];
-        _GAGAcurrentPasswordTextField.layer.cornerRadius = 12.0f;
-        _GAGAcurrentPasswordTextField.layer.masksToBounds = YES;
+    _GAGAcurrentPasswordTextField.layer.cornerRadius = 8.0f;
+    _GAGAcurrentPasswordTextField.layer.masksToBounds = YES;
+        _GAGAcurrentPasswordTextField.layer.borderWidth = 2.0f;
+        _GAGAcurrentPasswordTextField.layer.borderColor = [UIColor grayColor].CGColor;
         _GAGAcurrentPasswordTextField.tag = 101;
         _GAGAcurrentPasswordTextField.delegate = self;
         _GAGAcurrentPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",NSLocalizedString(@"输入新密码", nil)];
         _GAGAcurrentPasswordTextField.textColor = [UIColor blackColor];
-        _GAGAcurrentPasswordTextField.font = [UIFont systemFontOfSize:25];
+        _GAGAcurrentPasswordTextField.font = [UIFont systemFontOfSize:20];
     }
     return _GAGAcurrentPasswordTextField;
 }
@@ -164,25 +165,28 @@
         _GAGAconfirmPasswordTextField = [[UITextField alloc] init];
         _GAGAconfirmPasswordTextField.secureTextEntry = YES;
         _GAGAconfirmPasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _GAGAconfirmPasswordTextField.backgroundColor = [UIColor grayColor];
-        _GAGAconfirmPasswordTextField.layer.cornerRadius = 12.0f;
+        _GAGAconfirmPasswordTextField.layer.cornerRadius = 8.0f;
         _GAGAconfirmPasswordTextField.layer.masksToBounds = YES;
+            _GAGAconfirmPasswordTextField.layer.borderWidth = 2.0f;
+            _GAGAconfirmPasswordTextField.layer.borderColor = [UIColor grayColor].CGColor;
         _GAGAconfirmPasswordTextField.tag = 102;
         _GAGAconfirmPasswordTextField.delegate = self;
         _GAGAconfirmPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",NSLocalizedString(@"确认密码", nil)];
         _GAGAconfirmPasswordTextField.textColor = [UIColor blackColor];
-        _GAGAconfirmPasswordTextField.font = [UIFont systemFontOfSize:25];
+        _GAGAconfirmPasswordTextField.font = [UIFont systemFontOfSize:20];
     }
     return _GAGAconfirmPasswordTextField;
 }
 - (UIButton *)GAsureButton{
     if (!_GAsureButton) {
         _GAsureButton = [[UIButton alloc] init];
-        _GAsureButton.backgroundColor = [UIColor purpleColor];
-        [_GAsureButton setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+        _GAsureButton.backgroundColor = [UIColor cyanColor];
+        [_GAsureButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_GAsureButton.titleLabel setFont:[UIFont systemFontOfSize:25]];
-        _GAsureButton.layer.cornerRadius = 8.0f;
+         _GAsureButton.layer.cornerRadius = 8.0f;
         _GAsureButton.layer.masksToBounds = YES;
+        _GAsureButton.layer.borderWidth = 2.0f;
+        _GAsureButton.layer.borderColor = [UIColor grayColor].CGColor;
         [_GAsureButton setTitle:NSLocalizedString(@"确定", nil) forState:UIControlStateNormal];
         [_GAsureButton addTarget:self action:@selector(GAbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }

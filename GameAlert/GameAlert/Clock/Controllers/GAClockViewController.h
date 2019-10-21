@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GAClockViewController : GABaseViewController
-- (void)loadData;
+- (void)GAloadData;
 @end
 
 NS_ASSUME_NONNULL_END

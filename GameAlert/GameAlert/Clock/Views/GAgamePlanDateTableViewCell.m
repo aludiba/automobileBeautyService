@@ -15,21 +15,18 @@
 @property(nonatomic, strong)UIDatePicker *datePicker;
 @property(nonatomic, strong)UIToolbar *toolbar;
 @property(nonatomic, strong)UIImageView *rightArrowImgView;
-@property(nonatomic, strong)UIView *line;
 @end
 @implementation GAgamePlanDateTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = GAH_Color(236, 236, 236, 1);
         [self.contentView addSubview:self.titleLbl];
         [self.contentView addSubview:self.editText];
         [self.contentView addSubview:self.rightArrowImgView];
-        [self.contentView addSubview:self.line];
         
         [self.titleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(16);
             make.top.equalTo(self.contentView).offset(25);
-            make.width.mas_equalTo(100);
+            make.width.mas_equalTo(220);
             make.height.mas_equalTo(16);
         }];
         [self.rightArrowImgView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -43,13 +40,7 @@
             make.height.mas_equalTo(20);
             make.trailing.equalTo(self.rightArrowImgView.mas_leading).offset(-32);
             make.leading.equalTo(self.titleLbl.mas_trailing).offset(0);
-        }];
-        [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(16);
-            make.trailing.equalTo(self.contentView);
-            make.top.equalTo(self.editText.mas_bottom).offset(24);
-            make.height.mas_equalTo(1);
-            make.bottom.equalTo(self.contentView);
+            make.bottom.equalTo(self.contentView).offset(-22);
         }];
         
         self.editText.inputView = self.datePicker;
@@ -97,7 +88,7 @@
     if (sender.tag == 100) {
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
         //设置时间格式
-        formatter.dateFormat = @"yyyy-MM-dd";
+        formatter.dateFormat = @"yyyy/MM/dd";
         NSString *dateStr = [formatter  stringFromDate:self.datePicker.date];
         if (dateStr.length) {
             self.model.GAcontent = dateStr;
@@ -127,7 +118,7 @@
         _editText = [[UITextField alloc] init];
         _editText.delegate = self;
         _editText.textColor = [UIColor blackColor];
-        _editText.font = [UIFont systemFontOfSize:18];
+        _editText.font = [UIFont systemFontOfSize:16];
         _editText.textAlignment = NSTextAlignmentRight;
     }
     return _editText;
@@ -190,12 +181,5 @@
         _rightArrowImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"GA_arrow_right"]];
     }
     return _rightArrowImgView;
-}
-- (UIView *)line{
-    if (!_line) {
-        _line = [[UIView alloc] init];
-        _line.backgroundColor = GAH_Color(242, 242, 242, 1);
-    }
-    return _line;
 }
 @end

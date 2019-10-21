@@ -69,7 +69,6 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     [self setContentView];
 }
 - (void)setContentView{
-    self.tabBar.barTintColor = [UIColor greenColor];
     self.GAClockVC = [[GAClockViewController alloc] init];
     UINavigationController *GAClock = [[UINavigationController alloc] initWithRootViewController:self.GAClockVC];
     self.GAClockVC.tabBarItem.title = NSLocalizedString(@"打卡", nil);

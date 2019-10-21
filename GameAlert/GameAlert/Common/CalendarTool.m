@@ -1062,7 +1062,7 @@
 //根据date获取当前周的日期
 + (NSArray *)getNowWeekDate:(NSDate *)date{
     NSDateFormatter *formatter0 = [[NSDateFormatter alloc] init];
-    [formatter0 setDateFormat:@"yyyy-MM-dd"];
+    [formatter0 setDateFormat:@"yyyy/MM/dd"];
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *comp = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekdayCalendarUnit | NSDayCalendarUnit fromDate:date];
     NSInteger weekDay = [comp weekday];
@@ -1106,7 +1106,7 @@
     
     //字符串转时间
     NSDateFormatter *matter = [[NSDateFormatter alloc] init];
-    matter.dateFormat = @"yyyy-MM-dd";
+    matter.dateFormat = @"yyyy/MM/dd";
     NSDate *start = [matter dateFromString:startDate];
     NSDate *end = [matter dateFromString:endDate];
     

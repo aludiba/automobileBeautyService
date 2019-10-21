@@ -42,9 +42,9 @@
             make.height.mas_equalTo(50);
         }];
         [self.saveButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(50);
+            make.leading.equalTo(self.contentView).offset(80);
             make.top.equalTo(self.contentField.mas_bottom).offset(25);
-            make.trailing.equalTo(self.contentView).offset(-50);
+            make.trailing.equalTo(self.contentView).offset(-80);
             make.height.mas_equalTo(40);
         }];
     }
@@ -70,8 +70,8 @@
 - (UIView *)contentView{
     if (!_contentView) {
         _contentView = [[UIView alloc] init];
-        _contentView.backgroundColor = [UIColor greenColor];
-        _contentView.layer.cornerRadius = 10.0f;
+        _contentView.backgroundColor = [UIColor whiteColor];
+        _contentView.layer.cornerRadius = 16.0f;
         _contentView.layer.masksToBounds = YES;
     }
     return _contentView;
@@ -80,13 +80,14 @@
     if (!_contentField) {
         _contentField = [[UITextField alloc] init];
         _contentField.keyboardType = UIKeyboardTypeNumberPad;
-        _contentField.backgroundColor = [UIColor grayColor];
         _contentField.delegate = self;
         _contentField.textColor = [UIColor blackColor];
-        _contentField.placeholder = NSLocalizedString(@"   今天喝了几瓶苏打水", nil);
+        _contentField.placeholder = NSLocalizedString(@"   今天玩了几次游戏", nil);
         _contentField.font = [UIFont systemFontOfSize:16];
         _contentField.layer.cornerRadius = 8.0f;
         _contentField.layer.masksToBounds = YES;
+        _contentField.layer.borderWidth = 2.0f;
+        _contentField.layer.borderColor = [UIColor grayColor].CGColor;
     }
     return _contentField;
 }
@@ -94,11 +95,13 @@
     if (!_saveButton) {
         _saveButton = [[UIButton alloc] init];
         [_saveButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_saveButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
+        [_saveButton.titleLabel setFont:[UIFont systemFontOfSize:15]];
         [_saveButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
-        [_saveButton setBackgroundColor:[UIColor redColor]];
+        [_saveButton setBackgroundColor:[UIColor cyanColor]];
         _saveButton.layer.cornerRadius = 8.0f;
         _saveButton.layer.masksToBounds = YES;
+        _saveButton.layer.borderWidth = 2.0f;
+        _saveButton.layer.borderColor = [UIColor grayColor].CGColor;
         [_saveButton addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return _saveButton;

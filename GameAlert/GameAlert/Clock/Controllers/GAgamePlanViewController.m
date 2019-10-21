@@ -24,47 +24,47 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = NSLocalizedString(@"戒苏打水计划", nil);
+    self.title = NSLocalizedString(@"戒游戏计划", nil);
     [self GAsetContentView];
 }
 - (void)GAsetContentView{
     GAgamePlanModel *gameAgesModel = [[GAgamePlanModel alloc] init];
     gameAgesModel.GAtype = 0;
-    gameAgesModel.GAtitle = NSLocalizedString(@"苏打水龄", nil);
+    gameAgesModel.GAtitle = NSLocalizedString(@"游戏龄", nil);
     gameAgesModel.GAunit = NSLocalizedString(@"年", nil);
     if (self.objectId.length) {
         gameAgesModel.GAcontent = [NSString stringWithFormat:@"%ld",self.saveModel.GAgameAges];
     }
-    gameAgesModel.GAdefaultString = NSLocalizedString(@"请输入苏打水龄", nil);
+    gameAgesModel.GAdefaultString = NSLocalizedString(@"请输入游戏龄", nil);
     [self.GAviewDataArray addObject:gameAgesModel];
     
     GAgamePlanModel *timeDrinkModel = [[GAgamePlanModel alloc] init];
     timeDrinkModel.GAtype = 1;
-    timeDrinkModel.GAtitle = NSLocalizedString(@"戒苏打水时间", nil);
+    timeDrinkModel.GAtitle = NSLocalizedString(@"戒游戏时间", nil);
     if (self.objectId.length) {
-        timeDrinkModel.GAcontent = [GAUIUtilities GAformattedTimeStringWithDate:self.saveModel.GAtimeGiveGameDate format:@"yyyy-MM-dd"];
+        timeDrinkModel.GAcontent = [GAUIUtilities GAformattedTimeStringWithDate:self.saveModel.GAtimeGiveGameDate format:@"yyyy/MM/dd"];
     }
-    timeDrinkModel.GAdefaultString = NSLocalizedString(@"请选择戒苏打水时间", nil);
+    timeDrinkModel.GAdefaultString = NSLocalizedString(@"请选择戒游戏时间", nil);
     [self.GAviewDataArray addObject:timeDrinkModel];
     
     GAgamePlanModel *GAgameEveryDayModel = [[GAgamePlanModel alloc] init];
     GAgameEveryDayModel.GAtype = 0;
-    GAgameEveryDayModel.GAtitle = NSLocalizedString(@"每天苏打水量", nil);
+    GAgameEveryDayModel.GAtitle = NSLocalizedString(@"每天游戏次数", nil);
     if (self.objectId.length) {
         GAgameEveryDayModel.GAcontent = [NSString stringWithFormat:@"%ld",self.saveModel.GAgameEveryDay];
     }
-    GAgameEveryDayModel.GAunit = NSLocalizedString(@"瓶", nil);
-    GAgameEveryDayModel.GAdefaultString = NSLocalizedString(@"请输入每天苏打水量", nil);
+    GAgameEveryDayModel.GAunit = NSLocalizedString(@"次", nil);
+    GAgameEveryDayModel.GAdefaultString = NSLocalizedString(@"请输入每天游戏次数", nil);
     [self.GAviewDataArray addObject:GAgameEveryDayModel];
     
     GAgamePlanModel *GAgameLongModel = [[GAgamePlanModel alloc] init];
     GAgameLongModel.GAtype = 0;
-    GAgameLongModel.GAtitle = NSLocalizedString(@"苏打水价格", nil);
+    GAgameLongModel.GAtitle = NSLocalizedString(@"游戏时间", nil);
     if (self.objectId.length) {
         GAgameLongModel.GAcontent = [NSString stringWithFormat:@"%ld",self.saveModel.GAgameLong];
     }
-    GAgameLongModel.GAunit = NSLocalizedString(@"元/瓶", nil);
-    GAgameLongModel.GAdefaultString = NSLocalizedString(@"请输入苏打水价格", nil);
+    GAgameLongModel.GAunit = NSLocalizedString(@"小时/次", nil);
+    GAgameLongModel.GAdefaultString = NSLocalizedString(@"请输入游戏时间", nil);
     [self.GAviewDataArray addObject:GAgameLongModel];
     
     
@@ -137,7 +137,7 @@
     if (!self.saveModel.GAclockInSAndNumberB.count) {
     NSMutableArray *GAclockInSAndNumberB = [[NSMutableArray alloc] init];
     NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
-    NSString *clockInDateString = @"2019-01-01";
+    NSString *clockInDateString = @"2019/01/01";
     [dic setObject:clockInDateString forKey:@"clockInDate"];
     [dic setObject:[NSNumber numberWithInteger:0] forKey:@"numberGamesPlayed"];//当天喝苏打水瓶数
     [GAclockInSAndNumberB addObject:dic];
@@ -145,7 +145,7 @@
     }
     GAgamePlanModel *model = self.GAviewDataArray[1];
     NSString *dateString = model.GAcontent;
-    NSDate *date = [GAUIUtilities GAdateFromString:dateString formate:@"yyyy-MM-dd"];
+    NSDate *date = [GAUIUtilities GAdateFromString:dateString formate:@"yyyy/MM/dd"];
     [jsonDictionary setObject:date forKey:@"GAtimeGiveGameDate"];
     NSLog(@"jsonDictionary:%@",jsonDictionary);
     if (self.objectId.length) {
@@ -157,7 +157,7 @@
             if (isSuccessful) {
                 //创建成功后的动作
                 [MBProgressHUD GAshowReminderText:NSLocalizedString(@"更新成功", nil)];
-                [self.superVC loadData];
+                [self.superVC GAloadData];
                 [self.navigationController popViewControllerAnimated:YES];
             } else if (error){
                 //发生错误后的动作
@@ -177,7 +177,7 @@
         if (isSuccessful) {
             //创建成功后的动作
             [MBProgressHUD GAshowReminderText:NSLocalizedString(@"保存成功", nil)];
-            [self.superVC loadData];
+            [self.superVC GAloadData];
             [self.navigationController popViewControllerAnimated:YES];
         } else if (error){
             //发生错误后的动作
@@ -195,7 +195,7 @@
     if (!_saveModel) {
         _saveModel = [[GAgamePlanSaveModel alloc] init];
         _saveModel.GAcumulativeNubDays = 0;//累计天数
-        _saveModel.GAaccumulativeGames = 0;//累计少喝瓶数
+        _saveModel.GAaccumulativeGames = 0;//累计少玩瓶数
         _saveModel.GAcumulativeAmount = 0;//累计少花钱数
     }
     return _saveModel;
@@ -209,8 +209,6 @@
 - (UITableView *)GAmainTable{
     if (!_GAmainTable) {
         _GAmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-        _GAmainTable.backgroundColor = GAH_Color(244, 245, 246, 1);
-        _GAmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
         _GAmainTable.delegate = self;
         _GAmainTable.dataSource = self;
         _GAmainTable.rowHeight = UITableViewAutomaticDimension;

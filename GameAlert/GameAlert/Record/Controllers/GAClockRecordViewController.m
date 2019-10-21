@@ -20,10 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = NSLocalizedString(@"详情", nil);
     [self GAsetContentView];
 }
 - (void)GAsetContentView{
-    NSString *dateSelectedString = [GAUIUtilities GAformattedTimeStringWithDate:self.dateSelected format:@"yyyy-MM-dd"];
+    NSString *dateSelectedString = [GAUIUtilities GAformattedTimeStringWithDate:self.dateSelected format:@"yyyy/MM/dd"];
     NSDictionary *contentDic;
     for (int i = 0; i < self.saveModel.GAclockInSAndNumberB.count; i++) {
         NSDictionary *dic = self.saveModel.GAclockInSAndNumberB[i];
@@ -39,7 +40,7 @@
     [self.GAviewDataArray addObject:clockTimeModel];
     
     GAClockRecordModel *gameLessNumberModel = [[GAClockRecordModel alloc] init];
-    gameLessNumberModel.GAtitle = NSLocalizedString(@"少喝苏打水数", nil);
+    gameLessNumberModel.GAtitle = NSLocalizedString(@"少玩游戏次数", nil);
     NSInteger gameEveryDay = self.saveModel.GAgameEveryDay;
     NSInteger numberGamesPlayed = [[contentDic objectForKey:@"numberGamesPlayed"] integerValue];
     NSString *gameLessNumberString = [NSString stringWithFormat:@"%ld",numberGamesPlayed];
@@ -47,13 +48,13 @@
     [self.GAviewDataArray addObject:gameLessNumberModel];
     
     GAClockRecordModel *saveAmountMoneyModel = [[GAClockRecordModel alloc] init];
-    saveAmountMoneyModel.GAtitle = NSLocalizedString(@"节省钱量", nil);
+    saveAmountMoneyModel.GAtitle = NSLocalizedString(@"节省时间", nil);
     NSString *saveAmountMoneyString = [NSString stringWithFormat:@"%ld",numberGamesPlayed * self.saveModel.GAgameAges];
     saveAmountMoneyModel.GAcontent = saveAmountMoneyString;
     [self.GAviewDataArray addObject:saveAmountMoneyModel];
     
     GAClockRecordModel *gameDrinkNumberModel = [[GAClockRecordModel alloc] init];
-    gameDrinkNumberModel.GAtitle = NSLocalizedString(@"喝苏打水瓶数", nil);
+    gameDrinkNumberModel.GAtitle = NSLocalizedString(@"玩游戏次数", nil);
     gameDrinkNumberModel.GAcontent = [NSString stringWithFormat:@"%@",[contentDic objectForKey:@"numberGamesPlayed"]];
     [self.GAviewDataArray addObject:gameDrinkNumberModel];
     
@@ -79,7 +80,6 @@
 - (UITableView *)GAmainTable{
     if (!_GAmainTable) {
         _GAmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-        _GAmainTable.backgroundColor = GAH_Color(244, 245, 246, 1);
         _GAmainTable.delegate = self;
         _GAmainTable.dataSource = self;
         _GAmainTable.rowHeight = UITableViewAutomaticDimension;

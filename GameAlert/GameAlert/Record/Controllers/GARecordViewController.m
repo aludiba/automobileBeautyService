@@ -44,7 +44,7 @@
         // Generate 30 random dates between now and 60 days later
         NSDate *randomDate = [NSDate dateWithTimeInterval:(rand() % (3600 * 24 * 60)) sinceDate:[NSDate date]];
         // Use the date as key for eventsByDate
-        NSString *key = [GAUIUtilities GAformattedTimeStringWithDate:randomDate format:@"yyyy-MM-dd"];
+        NSString *key = [GAUIUtilities GAformattedTimeStringWithDate:randomDate format:@"yyyy/MM/dd"];
         if(!_eventsByDate[key]){
             _eventsByDate[key] = [NSMutableArray new];
         }
@@ -59,7 +59,7 @@
     _maxDate = [self.GAcalendarManager.dateHelper addToDate:_todayDate months:2];
 }
 - (BOOL)haveEventForDay:(NSDate *)date{
-    NSString *key = [GAUIUtilities GAformattedTimeStringWithDate:date format:@"yyyy-MM-dd"];
+    NSString *key = [GAUIUtilities GAformattedTimeStringWithDate:date format:@"yyyy/MM/dd"];
     if(_eventsByDate[key] && [(NSMutableArray *)_eventsByDate[key] count] > 0){
         return YES;
     }
@@ -137,8 +137,7 @@
     _dateSelected = dayView.date;
     NSDate *nowDate = [[NSDate alloc] init];
     if ([_dateSelected compare:nowDate] != NSOrderedDescending) {
-        NSString *dateSelectedString = [GAUIUtilities GAformattedTimeStringWithDate:_dateSelected format:@"yyyy-MM-dd"];
-        NSLog(@"dateSelectedString:%@",dateSelectedString);
+        NSString *dateSelectedString = [GAUIUtilities GAformattedTimeStringWithDate:_dateSelected format:@"yyyy/MM/dd"];
         NSDictionary *contentDic;
         for (int i = 0; i < self.GAsaveModel.GAclockInSAndNumberB.count; i++) {
             NSDictionary *dic = self.GAsaveModel.GAclockInSAndNumberB[i];
