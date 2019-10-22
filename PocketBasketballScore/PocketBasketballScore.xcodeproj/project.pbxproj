@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0931D38F62095CD5FD8B7B6 /* Pods_PocketBasketballScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3CBE82C81CFA027D06FCDF /* Pods_PocketBasketballScore.framework */; };
+		AE110B80235F035D00C3FF9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE110B7F235F035D00C3FF9F /* AppDelegate.m */; };
+		AE110B83235F035D00C3FF9F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE110B82235F035D00C3FF9F /* SceneDelegate.m */; };
+		AE110B86235F035D00C3FF9F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE110B85235F035D00C3FF9F /* ViewController.m */; };
+		AE110B89235F035D00C3FF9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE110B87235F035D00C3FF9F /* Main.storyboard */; };
+		AE110B8B235F036200C3FF9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE110B8A235F036200C3FF9F /* Assets.xcassets */; };
+		AE110B8E235F036200C3FF9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE110B8C235F036200C3FF9F /* LaunchScreen.storyboard */; };
+		AE110B91235F036200C3FF9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE110B90235F036200C3FF9F /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3EFBF06AB3193076217CFDE2 /* Pods-PocketBasketballScore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBasketballScore.release.xcconfig"; path = "Target Support Files/Pods-PocketBasketballScore/Pods-PocketBasketballScore.release.xcconfig"; sourceTree = "<group>"; };
+		6D3CBE82C81CFA027D06FCDF /* Pods_PocketBasketballScore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketBasketballScore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE110B7B235F035D00C3FF9F /* PocketBasketballScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketBasketballScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE110B7E235F035D00C3FF9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE110B7F235F035D00C3FF9F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE110B81235F035D00C3FF9F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		AE110B82235F035D00C3FF9F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		AE110B84235F035D00C3FF9F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AE110B85235F035D00C3FF9F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AE110B88235F035D00C3FF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE110B8A235F036200C3FF9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE110B8D235F036200C3FF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE110B8F235F036200C3FF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE110B90235F036200C3FF9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E3A9E8ED44D6908DFDD13BC5 /* Pods-PocketBasketballScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBasketballScore.debug.xcconfig"; path = "Target Support Files/Pods-PocketBasketballScore/Pods-PocketBasketballScore.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE110B78235F035D00C3FF9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0931D38F62095CD5FD8B7B6 /* Pods_PocketBasketballScore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BB33F82770EFFE6C21B1F26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D3CBE82C81CFA027D06FCDF /* Pods_PocketBasketballScore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA5ED494ADFCB1422D80C57F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3A9E8ED44D6908DFDD13BC5 /* Pods-PocketBasketballScore.debug.xcconfig */,
+				3EFBF06AB3193076217CFDE2 /* Pods-PocketBasketballScore.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE110B72235F035D00C3FF9F = {
+			isa = PBXGroup;
+			children = (
+				AE110B7D235F035D00C3FF9F /* PocketBasketballScore */,
+				AE110B7C235F035D00C3FF9F /* Products */,
+				AA5ED494ADFCB1422D80C57F /* Pods */,
+				2BB33F82770EFFE6C21B1F26 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE110B7C235F035D00C3FF9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE110B7B235F035D00C3FF9F /* PocketBasketballScore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE110B7D235F035D00C3FF9F /* PocketBasketballScore */ = {
+			isa = PBXGroup;
+			children = (
+				AE110B7E235F035D00C3FF9F /* AppDelegate.h */,
+				AE110B7F235F035D00C3FF9F /* AppDelegate.m */,
+				AE110B81235F035D00C3FF9F /* SceneDelegate.h */,
+				AE110B82235F035D00C3FF9F /* SceneDelegate.m */,
+				AE110B84235F035D00C3FF9F /* ViewController.h */,
+				AE110B85235F035D00C3FF9F /* ViewController.m */,
+				AE110B87235F035D00C3FF9F /* Main.storyboard */,
+				AE110B8A235F036200C3FF9F /* Assets.xcassets */,
+				AE110B8C235F036200C3FF9F /* LaunchScreen.storyboard */,
+				AE110B8F235F036200C3FF9F /* Info.plist */,
+				AE110B90235F036200C3FF9F /* main.m */,
+			);
+			path = PocketBasketballScore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE110B7A235F035D00C3FF9F /* PocketBasketballScore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE110B94235F036200C3FF9F /* Build configuration list for PBXNativeTarget "PocketBasketballScore" */;
+			buildPhases = (
+				93338EA98D277AF0945F0864 /* [CP] Check Pods Manifest.lock */,
+				AE110B77235F035D00C3FF9F /* Sources */,
+				AE110B78235F035D00C3FF9F /* Frameworks */,
+				AE110B79235F035D00C3FF9F /* Resources */,
+				0C9F79FD4FC4E1BF7A09A853 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketBasketballScore;
+			productName = PocketBasketballScore;
+			productReference = AE110B7B235F035D00C3FF9F /* PocketBasketballScore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE110B73235F035D00C3FF9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = hbc;
+				TargetAttributes = {
+					AE110B7A235F035D00C3FF9F = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = AE110B76235F035D00C3FF9F /* Build configuration list for PBXProject "PocketBasketballScore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE110B72235F035D00C3FF9F;
+			productRefGroup = AE110B7C235F035D00C3FF9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE110B7A235F035D00C3FF9F /* PocketBasketballScore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE110B79235F035D00C3FF9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE110B8E235F036200C3FF9F /* LaunchScreen.storyboard in Resources */,
+				AE110B8B235F036200C3FF9F /* Assets.xcassets in Resources */,
+				AE110B89235F035D00C3FF9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C9F79FD4FC4E1BF7A09A853 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PocketBasketballScore/Pods-PocketBasketballScore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PocketBasketballScore/Pods-PocketBasketballScore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PocketBasketballScore/Pods-PocketBasketballScore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93338EA98D277AF0945F0864 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PocketBasketballScore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE110B77235F035D00C3FF9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE110B86235F035D00C3FF9F /* ViewController.m in Sources */,
+				AE110B80235F035D00C3FF9F /* AppDelegate.m in Sources */,
+				AE110B91235F036200C3FF9F /* main.m in Sources */,
+				AE110B83235F035D00C3FF9F /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE110B87235F035D00C3FF9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE110B88235F035D00C3FF9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE110B8C235F036200C3FF9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE110B8D235F036200C3FF9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE110B92235F036200C3FF9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE110B93235F036200C3FF9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE110B95235F036200C3FF9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3A9E8ED44D6908DFDD13BC5 /* Pods-PocketBasketballScore.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PocketBasketballScore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hbcAmplifier.PocketBasketballScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE110B96235F036200C3FF9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EFBF06AB3193076217CFDE2 /* Pods-PocketBasketballScore.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PocketBasketballScore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hbcAmplifier.PocketBasketballScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE110B76235F035D00C3FF9F /* Build configuration list for PBXProject "PocketBasketballScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE110B92235F036200C3FF9F /* Debug */,
+				AE110B93235F036200C3FF9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE110B94235F036200C3FF9F /* Build configuration list for PBXNativeTarget "PocketBasketballScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE110B95235F036200C3FF9F /* Debug */,
+				AE110B96235F036200C3FF9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE110B73235F035D00C3FF9F /* Project object */;
+}
