@@ -27,6 +27,9 @@
 		AE10A14923604349009C7F2C /* PBModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A14323604349009C7F2C /* PBModifyNicknameViewController.m */; };
 		AE10A14A23604349009C7F2C /* PBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A14423604349009C7F2C /* PBLoginViewController.m */; };
 		AE10A14B23604349009C7F2C /* PBPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A14723604349009C7F2C /* PBPasswordChangeViewController.m */; };
+		AE10A14E23604DA4009C7F2C /* PBScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A14D23604DA4009C7F2C /* PBScorecardModel.m */; };
+		AE10A15123604F63009C7F2C /* PBScorecardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A15023604F63009C7F2C /* PBScorecardTableViewCell.m */; };
+		AE10A15423604FB1009C7F2C /* PBScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A15323604FB1009C7F2C /* PBScorecardViewModel.m */; };
 		AE110B80235F035D00C3FF9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE110B7F235F035D00C3FF9F /* AppDelegate.m */; };
 		AE110B8B235F036200C3FF9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE110B8A235F036200C3FF9F /* Assets.xcassets */; };
 		AE110B91235F036200C3FF9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE110B90235F036200C3FF9F /* main.m */; };
@@ -76,6 +79,12 @@
 		AE10A14623604349009C7F2C /* PBPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBPasswordChangeViewController.h; sourceTree = "<group>"; };
 		AE10A14723604349009C7F2C /* PBPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBPasswordChangeViewController.m; sourceTree = "<group>"; };
 		AE10A14823604349009C7F2C /* PBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBLoginViewController.h; sourceTree = "<group>"; };
+		AE10A14C23604DA4009C7F2C /* PBScorecardModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBScorecardModel.h; sourceTree = "<group>"; };
+		AE10A14D23604DA4009C7F2C /* PBScorecardModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBScorecardModel.m; sourceTree = "<group>"; };
+		AE10A14F23604F63009C7F2C /* PBScorecardTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBScorecardTableViewCell.h; sourceTree = "<group>"; };
+		AE10A15023604F63009C7F2C /* PBScorecardTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBScorecardTableViewCell.m; sourceTree = "<group>"; };
+		AE10A15223604FB1009C7F2C /* PBScorecardViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBScorecardViewModel.h; sourceTree = "<group>"; };
+		AE10A15323604FB1009C7F2C /* PBScorecardViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBScorecardViewModel.m; sourceTree = "<group>"; };
 		AE110B7B235F035D00C3FF9F /* PocketBasketballScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketBasketballScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE110B7E235F035D00C3FF9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE110B7F235F035D00C3FF9F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -154,6 +163,10 @@
 		AE10A0ED236031B6009C7F2C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AE10A14C23604DA4009C7F2C /* PBScorecardModel.h */,
+				AE10A14D23604DA4009C7F2C /* PBScorecardModel.m */,
+				AE10A15223604FB1009C7F2C /* PBScorecardViewModel.h */,
+				AE10A15323604FB1009C7F2C /* PBScorecardViewModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -170,6 +183,8 @@
 		AE10A0EF236031B6009C7F2C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AE10A14F23604F63009C7F2C /* PBScorecardTableViewCell.h */,
+				AE10A15023604F63009C7F2C /* PBScorecardTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -412,6 +427,7 @@
 			files = (
 				AE10A13E236042D5009C7F2C /* PBSetTableViewCell.m in Sources */,
 				AE10A14A23604349009C7F2C /* PBLoginViewController.m in Sources */,
+				AE10A15123604F63009C7F2C /* PBScorecardTableViewCell.m in Sources */,
 				AE10A14B23604349009C7F2C /* PBPasswordChangeViewController.m in Sources */,
 				AE10A10E23603237009C7F2C /* PBNDHTTPClient.m in Sources */,
 				AE10A11223603237009C7F2C /* CalendarTool.m in Sources */,
@@ -421,11 +437,13 @@
 				AE10A11423603237009C7F2C /* PBUIUtilities.m in Sources */,
 				AE110B80235F035D00C3FF9F /* AppDelegate.m in Sources */,
 				AE10A142236042DD009C7F2C /* PBSetViewModel.m in Sources */,
+				AE10A14E23604DA4009C7F2C /* PBScorecardModel.m in Sources */,
 				AE110B91235F036200C3FF9F /* main.m in Sources */,
 				AE10A10D23603237009C7F2C /* PBHBTool.m in Sources */,
 				AE10A11E2360397C009C7F2C /* PBScorecardViewController.m in Sources */,
 				AE10A14923604349009C7F2C /* PBModifyNicknameViewController.m in Sources */,
 				AE10A11123603237009C7F2C /* PBBaseViewController.m in Sources */,
+				AE10A15423604FB1009C7F2C /* PBScorecardViewModel.m in Sources */,
 				AE10A11323603237009C7F2C /* PBTabBarController.m in Sources */,
 				AE10A13F236042D5009C7F2C /* PBLoginTableViewCell.m in Sources */,
 				AE10A11023603237009C7F2C /* NSDictionary+log.m in Sources */,
