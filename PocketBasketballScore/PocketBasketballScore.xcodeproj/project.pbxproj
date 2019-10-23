@@ -8,6 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		A0931D38F62095CD5FD8B7B6 /* Pods_PocketBasketballScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3CBE82C81CFA027D06FCDF /* Pods_PocketBasketballScore.framework */; };
+		AE10A10C23603237009C7F2C /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A0FD23603236009C7F2C /* NSArray+log.m */; };
+		AE10A10D23603237009C7F2C /* PBHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A0FE23603236009C7F2C /* PBHBTool.m */; };
+		AE10A10E23603237009C7F2C /* PBNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A0FF23603236009C7F2C /* PBNDHTTPClient.m */; };
+		AE10A10F23603237009C7F2C /* MBProgressHUD+PBNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A10123603236009C7F2C /* MBProgressHUD+PBNJ.m */; };
+		AE10A11023603237009C7F2C /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A10223603236009C7F2C /* NSDictionary+log.m */; };
+		AE10A11123603237009C7F2C /* PBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A10523603236009C7F2C /* PBBaseViewController.m */; };
+		AE10A11223603237009C7F2C /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A10623603237009C7F2C /* CalendarTool.m */; };
+		AE10A11323603237009C7F2C /* PBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A10823603237009C7F2C /* PBTabBarController.m */; };
+		AE10A11423603237009C7F2C /* PBUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A10B23603237009C7F2C /* PBUIUtilities.m */; };
+		AE10A1182360393D009C7F2C /* PBMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A1172360393D009C7F2C /* PBMineViewController.m */; };
+		AE10A11B2360394E009C7F2C /* PBRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A11A2360394E009C7F2C /* PBRecordViewController.m */; };
+		AE10A11E2360397C009C7F2C /* PBScorecardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A11D2360397C009C7F2C /* PBScorecardViewController.m */; };
+		AE10A13023603B95009C7F2C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE10A12C23603B94009C7F2C /* Localizable.strings */; };
+		AE10A13E236042D5009C7F2C /* PBSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A13B236042D5009C7F2C /* PBSetTableViewCell.m */; };
+		AE10A13F236042D5009C7F2C /* PBLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A13D236042D5009C7F2C /* PBLoginTableViewCell.m */; };
+		AE10A142236042DD009C7F2C /* PBSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A141236042DC009C7F2C /* PBSetViewModel.m */; };
+		AE10A14923604349009C7F2C /* PBModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A14323604349009C7F2C /* PBModifyNicknameViewController.m */; };
+		AE10A14A23604349009C7F2C /* PBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A14423604349009C7F2C /* PBLoginViewController.m */; };
+		AE10A14B23604349009C7F2C /* PBPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10A14723604349009C7F2C /* PBPasswordChangeViewController.m */; };
 		AE110B80235F035D00C3FF9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE110B7F235F035D00C3FF9F /* AppDelegate.m */; };
 		AE110B8B235F036200C3FF9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE110B8A235F036200C3FF9F /* Assets.xcassets */; };
 		AE110B91235F036200C3FF9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE110B90235F036200C3FF9F /* main.m */; };
@@ -16,6 +35,47 @@
 /* Begin PBXFileReference section */
 		3EFBF06AB3193076217CFDE2 /* Pods-PocketBasketballScore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBasketballScore.release.xcconfig"; path = "Target Support Files/Pods-PocketBasketballScore/Pods-PocketBasketballScore.release.xcconfig"; sourceTree = "<group>"; };
 		6D3CBE82C81CFA027D06FCDF /* Pods_PocketBasketballScore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketBasketballScore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE10A0F823603236009C7F2C /* PBUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBUIUtilities.h; sourceTree = "<group>"; };
+		AE10A0F923603236009C7F2C /* PBHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBHBTool.h; sourceTree = "<group>"; };
+		AE10A0FA23603236009C7F2C /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
+		AE10A0FB23603236009C7F2C /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		AE10A0FC23603236009C7F2C /* PBNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBNDHTTPClient.h; sourceTree = "<group>"; };
+		AE10A0FD23603236009C7F2C /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		AE10A0FE23603236009C7F2C /* PBHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBHBTool.m; sourceTree = "<group>"; };
+		AE10A0FF23603236009C7F2C /* PBNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBNDHTTPClient.m; sourceTree = "<group>"; };
+		AE10A10023603236009C7F2C /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
+		AE10A10123603236009C7F2C /* MBProgressHUD+PBNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+PBNJ.m"; sourceTree = "<group>"; };
+		AE10A10223603236009C7F2C /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
+		AE10A10323603236009C7F2C /* PB_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PB_PrefixHeader.pch; sourceTree = "<group>"; };
+		AE10A10423603236009C7F2C /* PBGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBGlobal.h; sourceTree = "<group>"; };
+		AE10A10523603236009C7F2C /* PBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBaseViewController.m; sourceTree = "<group>"; };
+		AE10A10623603237009C7F2C /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
+		AE10A10723603237009C7F2C /* PBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBTabBarController.h; sourceTree = "<group>"; };
+		AE10A10823603237009C7F2C /* PBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBTabBarController.m; sourceTree = "<group>"; };
+		AE10A10923603237009C7F2C /* PBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBaseViewController.h; sourceTree = "<group>"; };
+		AE10A10A23603237009C7F2C /* MBProgressHUD+PBNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+PBNJ.h"; sourceTree = "<group>"; };
+		AE10A10B23603237009C7F2C /* PBUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBUIUtilities.m; sourceTree = "<group>"; };
+		AE10A1162360393D009C7F2C /* PBMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBMineViewController.h; sourceTree = "<group>"; };
+		AE10A1172360393D009C7F2C /* PBMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBMineViewController.m; sourceTree = "<group>"; };
+		AE10A1192360394E009C7F2C /* PBRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBRecordViewController.h; sourceTree = "<group>"; };
+		AE10A11A2360394E009C7F2C /* PBRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBRecordViewController.m; sourceTree = "<group>"; };
+		AE10A11C2360397C009C7F2C /* PBScorecardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBScorecardViewController.h; sourceTree = "<group>"; };
+		AE10A11D2360397C009C7F2C /* PBScorecardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBScorecardViewController.m; sourceTree = "<group>"; };
+		AE10A12D23603B94009C7F2C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AE10A12E23603B94009C7F2C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE10A12F23603B94009C7F2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE10A13A236042D5009C7F2C /* PBLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBLoginTableViewCell.h; sourceTree = "<group>"; };
+		AE10A13B236042D5009C7F2C /* PBSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBSetTableViewCell.m; sourceTree = "<group>"; };
+		AE10A13C236042D5009C7F2C /* PBSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBSetTableViewCell.h; sourceTree = "<group>"; };
+		AE10A13D236042D5009C7F2C /* PBLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBLoginTableViewCell.m; sourceTree = "<group>"; };
+		AE10A140236042DC009C7F2C /* PBSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBSetViewModel.h; sourceTree = "<group>"; };
+		AE10A141236042DC009C7F2C /* PBSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBSetViewModel.m; sourceTree = "<group>"; };
+		AE10A14323604349009C7F2C /* PBModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBModifyNicknameViewController.m; sourceTree = "<group>"; };
+		AE10A14423604349009C7F2C /* PBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBLoginViewController.m; sourceTree = "<group>"; };
+		AE10A14523604349009C7F2C /* PBModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBModifyNicknameViewController.h; sourceTree = "<group>"; };
+		AE10A14623604349009C7F2C /* PBPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBPasswordChangeViewController.h; sourceTree = "<group>"; };
+		AE10A14723604349009C7F2C /* PBPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBPasswordChangeViewController.m; sourceTree = "<group>"; };
+		AE10A14823604349009C7F2C /* PBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBLoginViewController.h; sourceTree = "<group>"; };
 		AE110B7B235F035D00C3FF9F /* PocketBasketballScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketBasketballScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE110B7E235F035D00C3FF9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE110B7F235F035D00C3FF9F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +114,152 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AE10A0EA236031B5009C7F2C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AE10A10323603236009C7F2C /* PB_PrefixHeader.pch */,
+				AE10A10423603236009C7F2C /* PBGlobal.h */,
+				AE10A0FA23603236009C7F2C /* CalendarTool.h */,
+				AE10A10623603237009C7F2C /* CalendarTool.m */,
+				AE10A10A23603237009C7F2C /* MBProgressHUD+PBNJ.h */,
+				AE10A10123603236009C7F2C /* MBProgressHUD+PBNJ.m */,
+				AE10A0FB23603236009C7F2C /* NSArray+log.h */,
+				AE10A0FD23603236009C7F2C /* NSArray+log.m */,
+				AE10A10023603236009C7F2C /* NSDictionary+log.h */,
+				AE10A10223603236009C7F2C /* NSDictionary+log.m */,
+				AE10A10923603237009C7F2C /* PBBaseViewController.h */,
+				AE10A10523603236009C7F2C /* PBBaseViewController.m */,
+				AE10A0F923603236009C7F2C /* PBHBTool.h */,
+				AE10A0FE23603236009C7F2C /* PBHBTool.m */,
+				AE10A0FC23603236009C7F2C /* PBNDHTTPClient.h */,
+				AE10A0FF23603236009C7F2C /* PBNDHTTPClient.m */,
+				AE10A10723603237009C7F2C /* PBTabBarController.h */,
+				AE10A10823603237009C7F2C /* PBTabBarController.m */,
+				AE10A0F823603236009C7F2C /* PBUIUtilities.h */,
+				AE10A10B23603237009C7F2C /* PBUIUtilities.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AE10A0EC236031B6009C7F2C /* Scorecard */ = {
+			isa = PBXGroup;
+			children = (
+				AE10A0ED236031B6009C7F2C /* Models */,
+				AE10A0EF236031B6009C7F2C /* Views */,
+				AE10A0EE236031B6009C7F2C /* Controllers */,
+			);
+			path = Scorecard;
+			sourceTree = "<group>";
+		};
+		AE10A0ED236031B6009C7F2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE10A0EE236031B6009C7F2C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE10A11C2360397C009C7F2C /* PBScorecardViewController.h */,
+				AE10A11D2360397C009C7F2C /* PBScorecardViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE10A0EF236031B6009C7F2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE10A0F0236031B6009C7F2C /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				AE10A0F1236031B6009C7F2C /* Models */,
+				AE10A0F3236031B6009C7F2C /* Views */,
+				AE10A0F2236031B6009C7F2C /* Controllers */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		AE10A0F1236031B6009C7F2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE10A140236042DC009C7F2C /* PBSetViewModel.h */,
+				AE10A141236042DC009C7F2C /* PBSetViewModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE10A0F2236031B6009C7F2C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE10A1162360393D009C7F2C /* PBMineViewController.h */,
+				AE10A1172360393D009C7F2C /* PBMineViewController.m */,
+				AE10A14823604349009C7F2C /* PBLoginViewController.h */,
+				AE10A14423604349009C7F2C /* PBLoginViewController.m */,
+				AE10A14523604349009C7F2C /* PBModifyNicknameViewController.h */,
+				AE10A14323604349009C7F2C /* PBModifyNicknameViewController.m */,
+				AE10A14623604349009C7F2C /* PBPasswordChangeViewController.h */,
+				AE10A14723604349009C7F2C /* PBPasswordChangeViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE10A0F3236031B6009C7F2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE10A13A236042D5009C7F2C /* PBLoginTableViewCell.h */,
+				AE10A13D236042D5009C7F2C /* PBLoginTableViewCell.m */,
+				AE10A13C236042D5009C7F2C /* PBSetTableViewCell.h */,
+				AE10A13B236042D5009C7F2C /* PBSetTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE10A0F4236031B6009C7F2C /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				AE10A0F5236031B6009C7F2C /* Models */,
+				AE10A0F7236031B6009C7F2C /* Views */,
+				AE10A0F6236031B6009C7F2C /* Controllers */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		AE10A0F5236031B6009C7F2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE10A0F6236031B6009C7F2C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE10A1192360394E009C7F2C /* PBRecordViewController.h */,
+				AE10A11A2360394E009C7F2C /* PBRecordViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE10A0F7236031B6009C7F2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE10A12B23603B94009C7F2C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE10A12C23603B94009C7F2C /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		AE110B72235F035D00C3FF9F = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +281,11 @@
 		AE110B7D235F035D00C3FF9F /* PocketBasketballScore */ = {
 			isa = PBXGroup;
 			children = (
+				AE10A12B23603B94009C7F2C /* Resources */,
+				AE10A0EA236031B5009C7F2C /* Common */,
+				AE10A0F0236031B6009C7F2C /* Mine */,
+				AE10A0F4236031B6009C7F2C /* Record */,
+				AE10A0EC236031B6009C7F2C /* Scorecard */,
 				AE110B7E235F035D00C3FF9F /* AppDelegate.h */,
 				AE110B7F235F035D00C3FF9F /* AppDelegate.m */,
 				AE110B8A235F036200C3FF9F /* Assets.xcassets */,
@@ -127,6 +338,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
+				"zh-Hans",
 			);
 			mainGroup = AE110B72235F035D00C3FF9F;
 			productRefGroup = AE110B7C235F035D00C3FF9F /* Products */;
@@ -144,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE110B8B235F036200C3FF9F /* Assets.xcassets in Resources */,
+				AE10A13023603B95009C7F2C /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,12 +410,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE10A13E236042D5009C7F2C /* PBSetTableViewCell.m in Sources */,
+				AE10A14A23604349009C7F2C /* PBLoginViewController.m in Sources */,
+				AE10A14B23604349009C7F2C /* PBPasswordChangeViewController.m in Sources */,
+				AE10A10E23603237009C7F2C /* PBNDHTTPClient.m in Sources */,
+				AE10A11223603237009C7F2C /* CalendarTool.m in Sources */,
+				AE10A10C23603237009C7F2C /* NSArray+log.m in Sources */,
+				AE10A11B2360394E009C7F2C /* PBRecordViewController.m in Sources */,
+				AE10A1182360393D009C7F2C /* PBMineViewController.m in Sources */,
+				AE10A11423603237009C7F2C /* PBUIUtilities.m in Sources */,
 				AE110B80235F035D00C3FF9F /* AppDelegate.m in Sources */,
+				AE10A142236042DD009C7F2C /* PBSetViewModel.m in Sources */,
 				AE110B91235F036200C3FF9F /* main.m in Sources */,
+				AE10A10D23603237009C7F2C /* PBHBTool.m in Sources */,
+				AE10A11E2360397C009C7F2C /* PBScorecardViewController.m in Sources */,
+				AE10A14923604349009C7F2C /* PBModifyNicknameViewController.m in Sources */,
+				AE10A11123603237009C7F2C /* PBBaseViewController.m in Sources */,
+				AE10A11323603237009C7F2C /* PBTabBarController.m in Sources */,
+				AE10A13F236042D5009C7F2C /* PBLoginTableViewCell.m in Sources */,
+				AE10A11023603237009C7F2C /* NSDictionary+log.m in Sources */,
+				AE10A10F23603237009C7F2C /* MBProgressHUD+PBNJ.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE10A12C23603B94009C7F2C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE10A12D23603B94009C7F2C /* zh-Hans */,
+				AE10A12E23603B94009C7F2C /* ja */,
+				AE10A12F23603B94009C7F2C /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AE110B92235F036200C3FF9F /* Debug */ = {
@@ -254,7 +499,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -306,7 +551,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -319,7 +564,10 @@
 			baseConfigurationReference = E3A9E8ED44D6908DFDD13BC5 /* Pods-PocketBasketballScore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScore/Common/PB_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBasketballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,7 +584,10 @@
 			baseConfigurationReference = 3EFBF06AB3193076217CFDE2 /* Pods-PocketBasketballScore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQ9FAVACVZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScore/Common/PB_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBasketballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

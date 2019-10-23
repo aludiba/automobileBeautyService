@@ -1,0 +1,12 @@
+//
+//  PB_PrefixHeader.pch
+//  Simple Diary
+//
+//  Created by bykj on 2019/7/20.
+//  Copyright © 2019 hgg. All rights reserved.
+//
+
+#ifndef PB_PrefixHeader_pch
+#define PB_PrefixHeader_pch
+#import "PBGlobal.h"
+#endif /* PB_PrefixHeader_pch */
