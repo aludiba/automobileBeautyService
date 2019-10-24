@@ -9,9 +9,16 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+typedef NS_ENUM(NSInteger, PBScorecardCellType) {
+    PBScorecardCellTypeTimeStatistics,
+    PBScorecardCellTypeScoreStatistics,
+    PBScorecardCellTypeOperation,
+};
 @interface PBScorecardViewModel : NSObject
-
+@property(nonatomic, copy)NSString *teamName;
+@property(nonatomic, strong)NSDate *timeStatisticsDate;
+@property(nonatomic, assign)NSUInteger score;//得分
+@property(nonatomic, assign)PBScorecardCellType cellType;//cell类型
 @end
 
 NS_ASSUME_NONNULL_END

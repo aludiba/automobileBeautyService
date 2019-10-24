@@ -20,6 +20,74 @@
 @property(nonatomic, strong)UIButton *addThreePointsButton;//加三分
 @end
 @implementation PBScorecardTableViewCell
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = [UIColor blueColor];
+        [self.contentView addSubview:self.teamNameTextField];
+        [self.contentView addSubview:self.scoreColumnOneLbl];
+        [self.contentView addSubview:self.scoreColumnSecondLbl];
+        [self.contentView addSubview:self.scoreColumnThreeLbl];
+        [self.contentView addSubview:self.minusOnePointsButton];
+        [self.contentView addSubview:self.addAPointButton];
+        [self.contentView addSubview:self.addBinaryButton];
+        [self.contentView addSubview:self.addThreePointsButton];
+        
+        [self.teamNameTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.contentView).offset(20);
+            make.top.equalTo(self.contentView).offset(10);
+            make.trailing.equalTo(self.contentView).offset(-20);
+            make.height.mas_equalTo(25);
+        }];
+        [self.scoreColumnOneLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.contentView).offset(32);
+            make.top.equalTo(self.teamNameTextField.mas_bottom).offset(15);
+            make.width.mas_equalTo((PBWIDTH - 144) / 3);
+            make.height.mas_equalTo(120);
+        }];
+        [self.scoreColumnSecondLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.scoreColumnOneLbl.mas_trailing).offset(40);
+            make.top.equalTo(self.teamNameTextField.mas_bottom).offset(15);
+            make.width.mas_equalTo((PBWIDTH - 144) / 3);
+            make.height.mas_equalTo(120);
+        }];
+        [self.scoreColumnThreeLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.scoreColumnSecondLbl.mas_trailing).offset(40);
+            make.top.equalTo(self.teamNameTextField.mas_bottom).offset(15);
+            make.width.mas_equalTo((PBWIDTH - 144) / 3);
+            make.height.mas_equalTo(120);
+        }];
+        [self.minusOnePointsButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.contentView).offset(40);
+            make.top.equalTo(self.scoreColumnThreeLbl.mas_bottom).offset(15);
+            make.width.mas_equalTo((PBWIDTH - 140) / 4);
+            make.height.mas_equalTo(42);
+        }];
+        [self.addAPointButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.minusOnePointsButton.mas_trailing).offset(20);
+            make.top.equalTo(self.scoreColumnThreeLbl.mas_bottom).offset(15);
+            make.width.mas_equalTo((PBWIDTH - 140) / 4);
+            make.height.mas_equalTo(42);
+        }];
+        [self.addBinaryButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.addAPointButton.mas_trailing).offset(20);
+            make.top.equalTo(self.scoreColumnThreeLbl.mas_bottom).offset(15);
+            make.width.mas_equalTo((PBWIDTH - 140) / 4);
+            make.height.mas_equalTo(42);
+        }];
+        [self.addThreePointsButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.addBinaryButton.mas_trailing).offset(20);
+            make.top.equalTo(self.scoreColumnThreeLbl.mas_bottom).offset(15);
+            make.width.mas_equalTo((PBWIDTH - 140) / 4);
+            make.height.mas_equalTo(42);
+            make.bottom.equalTo(self.contentView).offset(-15);
+        }];
+    }
+    return self;
+}
+- (void)setModel:(PBScorecardViewModel *)model{
+    _model = model;
+    self.teamNameTextField.text = _model.teamName;
+}
 #pragma mark - action
 - (void)btnClick:(UIButton *)sender{
     if (sender.tag == 99) {
@@ -36,9 +104,12 @@
 - (UITextField *)teamNameTextField{
     if (!_teamNameTextField) {
         _teamNameTextField = [[UITextField alloc] init];
+        _teamNameTextField.layer.cornerRadius = 4.0f;
+        _teamNameTextField.layer.masksToBounds = YES;
         _teamNameTextField.delegate = self;
+        _teamNameTextField.backgroundColor = [UIColor cyanColor];
         _teamNameTextField.textColor = [UIColor blackColor];
-        _teamNameTextField.font = [UIFont systemFontOfSize:14];
+        _teamNameTextField.font = [UIFont systemFontOfSize:18];
     }
     return _teamNameTextField;
 }
@@ -46,10 +117,12 @@
     if (!_scoreColumnOneLbl) {
         _scoreColumnOneLbl = [[UILabel alloc] init];
         _scoreColumnOneLbl.backgroundColor = [UIColor blackColor];
-        _scoreColumnOneLbl.layer.cornerRadius = 3.0f;
+        _scoreColumnOneLbl.layer.cornerRadius = 10.0f;
         _scoreColumnOneLbl.layer.masksToBounds = YES;
         _scoreColumnOneLbl.textColor = [UIColor whiteColor];
-        _scoreColumnOneLbl.font = [UIFont systemFontOfSize:25];
+        _scoreColumnOneLbl.font = [UIFont boldSystemFontOfSize:100];
+        _scoreColumnOneLbl.textAlignment = NSTextAlignmentCenter;
+        _scoreColumnOneLbl.text = @"0";
     }
     return _scoreColumnOneLbl;
 }
@@ -57,10 +130,12 @@
     if (!_scoreColumnSecondLbl) {
         _scoreColumnSecondLbl = [[UILabel alloc] init];
         _scoreColumnSecondLbl.backgroundColor = [UIColor blackColor];
-        _scoreColumnSecondLbl.layer.cornerRadius = 3.0f;
+        _scoreColumnSecondLbl.layer.cornerRadius = 10.0f;
         _scoreColumnSecondLbl.layer.masksToBounds = YES;
         _scoreColumnSecondLbl.textColor = [UIColor whiteColor];
-        _scoreColumnSecondLbl.font = [UIFont systemFontOfSize:25];
+        _scoreColumnSecondLbl.font = [UIFont boldSystemFontOfSize:100];
+        _scoreColumnSecondLbl.textAlignment = NSTextAlignmentCenter;
+        _scoreColumnSecondLbl.text = @"0";
     }
     return _scoreColumnSecondLbl;
 }
@@ -68,10 +143,12 @@
     if (!_scoreColumnThreeLbl) {
         _scoreColumnThreeLbl = [[UILabel alloc] init];
         _scoreColumnThreeLbl.backgroundColor = [UIColor blackColor];
-        _scoreColumnThreeLbl.layer.cornerRadius = 3.0f;
+        _scoreColumnThreeLbl.layer.cornerRadius = 10.0f;
         _scoreColumnThreeLbl.layer.masksToBounds = YES;
         _scoreColumnThreeLbl.textColor = [UIColor whiteColor];
-        _scoreColumnThreeLbl.font = [UIFont systemFontOfSize:25];
+        _scoreColumnThreeLbl.font = [UIFont boldSystemFontOfSize:100];
+        _scoreColumnThreeLbl.textAlignment = NSTextAlignmentCenter;
+        _scoreColumnThreeLbl.text = @"0";
     }
     return _scoreColumnThreeLbl;
 }
@@ -81,7 +158,7 @@
         _minusOnePointsButton.tag = 99;
         [_minusOnePointsButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
         _minusOnePointsButton.backgroundColor = [UIColor orangeColor];
-        _minusOnePointsButton.layer.cornerRadius = 10.0f;
+        _minusOnePointsButton.layer.cornerRadius = 20.5f;
         _minusOnePointsButton.layer.masksToBounds = YES;
         [_minusOnePointsButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_minusOnePointsButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
@@ -95,7 +172,7 @@
         _addAPointButton.tag = 100;
         [_addAPointButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
         _addAPointButton.backgroundColor = [UIColor orangeColor];
-        _addAPointButton.layer.cornerRadius = 10.0f;
+        _addAPointButton.layer.cornerRadius = 20.5f;
         _addAPointButton.layer.masksToBounds = YES;
         [_addAPointButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_addAPointButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
@@ -109,7 +186,7 @@
         _addBinaryButton.tag = 101;
         [_addBinaryButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
         _addBinaryButton.backgroundColor = [UIColor orangeColor];
-        _addBinaryButton.layer.cornerRadius = 10.0f;
+        _addBinaryButton.layer.cornerRadius = 20.5f;
         _addBinaryButton.layer.masksToBounds = YES;
         [_addBinaryButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_addBinaryButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
@@ -123,7 +200,7 @@
         _addThreePointsButton.tag = 102;
         [_addThreePointsButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
         _addThreePointsButton.backgroundColor = [UIColor orangeColor];
-      _addThreePointsButton.layer.cornerRadius = 10.0f;
+      _addThreePointsButton.layer.cornerRadius = 20.5f;
         _addThreePointsButton.layer.masksToBounds = YES;
         [_addThreePointsButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_addThreePointsButton.titleLabel setFont:[UIFont systemFontOfSize:20]];

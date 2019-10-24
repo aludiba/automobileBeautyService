@@ -33,6 +33,8 @@
 		AE110B80235F035D00C3FF9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE110B7F235F035D00C3FF9F /* AppDelegate.m */; };
 		AE110B8B235F036200C3FF9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE110B8A235F036200C3FF9F /* Assets.xcassets */; };
 		AE110B91235F036200C3FF9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE110B90235F036200C3FF9F /* main.m */; };
+		AEE196692361751100EBB6F2 /* PBScorecardOperationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE196682361751100EBB6F2 /* PBScorecardOperationTableViewCell.m */; };
+		AEE1966C2361753D00EBB6F2 /* PBScorecardTimeStatisticsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE1966B2361753D00EBB6F2 /* PBScorecardTimeStatisticsTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +93,10 @@
 		AE110B8A235F036200C3FF9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE110B8F235F036200C3FF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE110B90235F036200C3FF9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AEE196672361751100EBB6F2 /* PBScorecardOperationTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBScorecardOperationTableViewCell.h; sourceTree = "<group>"; };
+		AEE196682361751100EBB6F2 /* PBScorecardOperationTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBScorecardOperationTableViewCell.m; sourceTree = "<group>"; };
+		AEE1966A2361753D00EBB6F2 /* PBScorecardTimeStatisticsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBScorecardTimeStatisticsTableViewCell.h; sourceTree = "<group>"; };
+		AEE1966B2361753D00EBB6F2 /* PBScorecardTimeStatisticsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBScorecardTimeStatisticsTableViewCell.m; sourceTree = "<group>"; };
 		E3A9E8ED44D6908DFDD13BC5 /* Pods-PocketBasketballScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBasketballScore.debug.xcconfig"; path = "Target Support Files/Pods-PocketBasketballScore/Pods-PocketBasketballScore.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,6 +191,10 @@
 			children = (
 				AE10A14F23604F63009C7F2C /* PBScorecardTableViewCell.h */,
 				AE10A15023604F63009C7F2C /* PBScorecardTableViewCell.m */,
+				AEE196672361751100EBB6F2 /* PBScorecardOperationTableViewCell.h */,
+				AEE196682361751100EBB6F2 /* PBScorecardOperationTableViewCell.m */,
+				AEE1966A2361753D00EBB6F2 /* PBScorecardTimeStatisticsTableViewCell.h */,
+				AEE1966B2361753D00EBB6F2 /* PBScorecardTimeStatisticsTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -443,10 +453,12 @@
 				AE10A11E2360397C009C7F2C /* PBScorecardViewController.m in Sources */,
 				AE10A14923604349009C7F2C /* PBModifyNicknameViewController.m in Sources */,
 				AE10A11123603237009C7F2C /* PBBaseViewController.m in Sources */,
+				AEE196692361751100EBB6F2 /* PBScorecardOperationTableViewCell.m in Sources */,
 				AE10A15423604FB1009C7F2C /* PBScorecardViewModel.m in Sources */,
 				AE10A11323603237009C7F2C /* PBTabBarController.m in Sources */,
 				AE10A13F236042D5009C7F2C /* PBLoginTableViewCell.m in Sources */,
 				AE10A11023603237009C7F2C /* NSDictionary+log.m in Sources */,
+				AEE1966C2361753D00EBB6F2 /* PBScorecardTimeStatisticsTableViewCell.m in Sources */,
 				AE10A10F23603237009C7F2C /* MBProgressHUD+PBNJ.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -27,8 +27,6 @@
 		AE10A0DB23602DBA009C7F2C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE10A0DA23602DBA009C7F2C /* SystemConfiguration.framework */; };
 		AE10A0DD23602DC3009C7F2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE10A0DC23602DC2009C7F2C /* UIKit.framework */; };
 		AE10A0DF23602DD7009C7F2C /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE10A0DE23602DD7009C7F2C /* UserNotifications.framework */; };
-		AE10A0E82360304A009C7F2C /* jpush-ios-3.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE10A0E523603048009C7F2C /* jpush-ios-3.2.0.a */; };
-		AE10A0E92360304A009C7F2C /* jcore-ios-2.0.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE10A0E72360304A009C7F2C /* jcore-ios-2.0.1.a */; };
 		AE44FC85235405860033D031 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE44FC84235405860033D031 /* AppDelegate.m */; };
 		AE44FC902354058C0033D031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE44FC8F2354058C0033D031 /* Assets.xcassets */; };
 		AE44FC962354058C0033D031 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE44FC952354058C0033D031 /* main.m */; };
@@ -60,6 +58,10 @@
 		AEC330252357F6F400A06A18 /* QSClockRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC330242357F6F400A06A18 /* QSClockRecordTableViewCell.m */; };
 		AEC330282357F70A00A06A18 /* QSClockRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC330272357F70A00A06A18 /* QSClockRecordViewController.m */; };
 		AEC3302A2357F71100A06A18 /* QSRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC330292357F71000A06A18 /* QSRecordViewController.xib */; };
+		AEE196612361450200EBB6F2 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE10A0CD23602D44009C7F2C /* libresolv.tbd */; };
+		AEE196622361450F00EBB6F2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE10A0D123602D79009C7F2C /* libz.tbd */; };
+		AEE196652361452000EBB6F2 /* jcore-ios-2.1.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE196632361452000EBB6F2 /* jcore-ios-2.1.4.a */; };
+		AEE196662361452100EBB6F2 /* jpush-ios-3.2.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE196642361452000EBB6F2 /* jpush-ios-3.2.6.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,9 +98,6 @@
 		AE10A0DC23602DC2009C7F2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AE10A0DE23602DD7009C7F2C /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		AE10A0E023602DF6009C7F2C /* smokingAwake.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = smokingAwake.entitlements; sourceTree = "<group>"; };
-		AE10A0E523603048009C7F2C /* jpush-ios-3.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.0.a"; sourceTree = "<group>"; };
-		AE10A0E623603048009C7F2C /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
-		AE10A0E72360304A009C7F2C /* jcore-ios-2.0.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.0.1.a"; sourceTree = "<group>"; };
 		AE44FC80235405860033D031 /* smokingAwake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smokingAwake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE44FC83235405860033D031 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE44FC84235405860033D031 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -163,6 +162,9 @@
 		AEC330262357F70A00A06A18 /* QSClockRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSClockRecordViewController.h; sourceTree = "<group>"; };
 		AEC330272357F70A00A06A18 /* QSClockRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSClockRecordViewController.m; sourceTree = "<group>"; };
 		AEC330292357F71000A06A18 /* QSRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QSRecordViewController.xib; sourceTree = "<group>"; };
+		AEE1965B236143F200EBB6F2 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		AEE196632361452000EBB6F2 /* jcore-ios-2.1.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.1.4.a"; sourceTree = "<group>"; };
+		AEE196642361452000EBB6F2 /* jpush-ios-3.2.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.6.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,18 +172,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE10A0E82360304A009C7F2C /* jpush-ios-3.2.0.a in Frameworks */,
 				AE10A0BE23602CC0009C7F2C /* CFNetwork.framework in Frameworks */,
 				AE10A0DD23602DC3009C7F2C /* UIKit.framework in Frameworks */,
 				AE10A0C623602CEC009C7F2C /* CoreTelephony.framework in Frameworks */,
+				AEE196612361450200EBB6F2 /* libresolv.tbd in Frameworks */,
 				AE10A0BA23602CAF009C7F2C /* AdSupport.framework in Frameworks */,
-				AE10A0E92360304A009C7F2C /* jcore-ios-2.0.1.a in Frameworks */,
 				AE10A0C423602CE2009C7F2C /* CoreLocation.framework in Frameworks */,
 				AE10A0D723602D9F009C7F2C /* QuartzCore.framework in Frameworks */,
 				AE10A0D923602DAB009C7F2C /* Security.framework in Frameworks */,
+				AEE196622361450F00EBB6F2 /* libz.tbd in Frameworks */,
 				AE10A0C023602CC9009C7F2C /* CoreFoundation.framework in Frameworks */,
 				AE10A0C223602CD4009C7F2C /* CoreGraphics.framework in Frameworks */,
+				AEE196662361452100EBB6F2 /* jpush-ios-3.2.6.a in Frameworks */,
 				AE10A0BC23602CB9009C7F2C /* AVFoundation.framework in Frameworks */,
+				AEE196652361452000EBB6F2 /* jcore-ios-2.1.4.a in Frameworks */,
 				AE10A0DB23602DBA009C7F2C /* SystemConfiguration.framework in Frameworks */,
 				AE10A0D323602D86009C7F2C /* MobileCoreServices.framework in Frameworks */,
 				AE10A0CA23602D08009C7F2C /* ImageIO.framework in Frameworks */,
@@ -229,9 +233,9 @@
 		AE10A0E42360302B009C7F2C /* JPush */ = {
 			isa = PBXGroup;
 			children = (
-				AE10A0E72360304A009C7F2C /* jcore-ios-2.0.1.a */,
-				AE10A0E523603048009C7F2C /* jpush-ios-3.2.0.a */,
-				AE10A0E623603048009C7F2C /* JPUSHService.h */,
+				AEE196632361452000EBB6F2 /* jcore-ios-2.1.4.a */,
+				AEE196642361452000EBB6F2 /* jpush-ios-3.2.6.a */,
+				AEE1965B236143F200EBB6F2 /* JPUSHService.h */,
 			);
 			path = JPush;
 			sourceTree = "<group>";
@@ -734,9 +738,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = quitSmokingRemind/smokingAwake.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Norman Graham (W7R75RGDQ4)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ren Guanfei (9JMTNVWG46)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = VWNPTX8H3L;
+				DEVELOPMENT_TEAM = 9JMTNVWG46;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/quitSmokingRemind/Common/QS_PrefixHeader.pch";
 				INFOPLIST_FILE = quitSmokingRemind/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -747,9 +751,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/quitSmokingRemind/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.AroundDB;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.smokingAwake;
 				PRODUCT_NAME = smokingAwake;
-				PROVISIONING_PROFILE_SPECIFIER = pro_aroundDB_dev_2019.09.01;
+				PROVISIONING_PROFILE_SPECIFIER = dis_smokingAwake_profile_20191024;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -761,9 +765,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = quitSmokingRemind/smokingAwake.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Norman Graham (W7R75RGDQ4)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ren Guanfei (9JMTNVWG46)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = VWNPTX8H3L;
+				DEVELOPMENT_TEAM = 9JMTNVWG46;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/quitSmokingRemind/Common/QS_PrefixHeader.pch";
 				INFOPLIST_FILE = quitSmokingRemind/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -774,9 +778,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/quitSmokingRemind/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.AroundDB;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.smokingAwake;
 				PRODUCT_NAME = smokingAwake;
-				PROVISIONING_PROFILE_SPECIFIER = pro_aroundDB_dev_2019.09.01;
+				PROVISIONING_PROFILE_SPECIFIER = dis_smokingAwake_profile_20191024;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
