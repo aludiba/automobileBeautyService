@@ -22,7 +22,7 @@
 @implementation PBScorecardTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = [UIColor blueColor];
+        self.contentView.backgroundColor = [UIColor systemBlueColor];
         [self.contentView addSubview:self.teamNameTextField];
         [self.contentView addSubview:self.scoreColumnOneLbl];
         [self.contentView addSubview:self.scoreColumnSecondLbl];
@@ -33,10 +33,10 @@
         [self.contentView addSubview:self.addThreePointsButton];
         
         [self.teamNameTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(20);
-            make.top.equalTo(self.contentView).offset(10);
-            make.trailing.equalTo(self.contentView).offset(-20);
-            make.height.mas_equalTo(25);
+            make.leading.equalTo(self.contentView);
+            make.top.equalTo(self.contentView);
+            make.trailing.equalTo(self.contentView);
+            make.height.mas_equalTo(40);
         }];
         [self.scoreColumnOneLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(32);
@@ -107,9 +107,10 @@
         _teamNameTextField.layer.cornerRadius = 4.0f;
         _teamNameTextField.layer.masksToBounds = YES;
         _teamNameTextField.delegate = self;
-        _teamNameTextField.backgroundColor = [UIColor cyanColor];
+        _teamNameTextField.backgroundColor = [UIColor systemPurpleColor];
         _teamNameTextField.textColor = [UIColor blackColor];
-        _teamNameTextField.font = [UIFont systemFontOfSize:18];
+        _teamNameTextField.textAlignment = NSTextAlignmentCenter;
+        _teamNameTextField.font = [UIFont systemFontOfSize:25];
     }
     return _teamNameTextField;
 }
@@ -157,7 +158,7 @@
         _minusOnePointsButton = [[UIButton alloc] init];
         _minusOnePointsButton.tag = 99;
         [_minusOnePointsButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-        _minusOnePointsButton.backgroundColor = [UIColor orangeColor];
+        _minusOnePointsButton.backgroundColor = [UIColor systemRedColor];
         _minusOnePointsButton.layer.cornerRadius = 20.5f;
         _minusOnePointsButton.layer.masksToBounds = YES;
         [_minusOnePointsButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -171,7 +172,7 @@
         _addAPointButton = [[UIButton alloc] init];
         _addAPointButton.tag = 100;
         [_addAPointButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-        _addAPointButton.backgroundColor = [UIColor orangeColor];
+        _addAPointButton.backgroundColor = [UIColor systemGreenColor];
         _addAPointButton.layer.cornerRadius = 20.5f;
         _addAPointButton.layer.masksToBounds = YES;
         [_addAPointButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -185,7 +186,7 @@
         _addBinaryButton = [[UIButton alloc] init];
         _addBinaryButton.tag = 101;
         [_addBinaryButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-        _addBinaryButton.backgroundColor = [UIColor orangeColor];
+        _addBinaryButton.backgroundColor = [UIColor systemGreenColor];
         _addBinaryButton.layer.cornerRadius = 20.5f;
         _addBinaryButton.layer.masksToBounds = YES;
         [_addBinaryButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -199,7 +200,7 @@
         _addThreePointsButton = [[UIButton alloc] init];
         _addThreePointsButton.tag = 102;
         [_addThreePointsButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-        _addThreePointsButton.backgroundColor = [UIColor orangeColor];
+        _addThreePointsButton.backgroundColor = [UIColor systemGreenColor];
       _addThreePointsButton.layer.cornerRadius = 20.5f;
         _addThreePointsButton.layer.masksToBounds = YES;
         [_addThreePointsButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

@@ -68,7 +68,7 @@
     if (!_PBResetButton) {
         _PBResetButton = [[UIButton alloc] init];
         _PBResetButton.tag = 100;
-        _PBResetButton.backgroundColor = [UIColor redColor];
+        _PBResetButton.backgroundColor = [UIColor systemYellowColor];
         [_PBResetButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_PBResetButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
         _PBResetButton.layer.cornerRadius = 10.0f;
@@ -82,7 +82,7 @@
     if (!_PBStartButton) {
         _PBStartButton = [[UIButton alloc] init];
         _PBStartButton.tag = 101;
-        _PBStartButton.backgroundColor = [UIColor redColor];
+        _PBStartButton.backgroundColor = [UIColor systemYellowColor];
         [_PBStartButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_PBStartButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
         _PBStartButton.layer.cornerRadius = 10.0f;
@@ -96,7 +96,7 @@
     if (!_PBChangeButton) {
         _PBChangeButton = [[UIButton alloc] init];
         _PBChangeButton.tag = 102;
-        _PBChangeButton.backgroundColor = [UIColor redColor];
+        _PBChangeButton.backgroundColor = [UIColor systemYellowColor];
         [_PBChangeButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_PBChangeButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
         _PBChangeButton.layer.cornerRadius = 10.0f;
@@ -110,7 +110,7 @@
     if (!_PBSaveButton) {
         _PBSaveButton = [[UIButton alloc] init];
         _PBSaveButton.tag = 103;
-        _PBSaveButton.backgroundColor = [UIColor redColor];
+        _PBSaveButton.backgroundColor = [UIColor systemYellowColor];
         [_PBSaveButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_PBSaveButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
         _PBSaveButton.layer.cornerRadius = 10.0f;
