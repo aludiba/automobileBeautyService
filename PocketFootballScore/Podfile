@@ -7,4 +7,5 @@ target 'PocketFootballScore' do
 
   # Pods for PocketFootballScore
     pod 'Masonry'
+    pod 'AFNetworking'
 end
