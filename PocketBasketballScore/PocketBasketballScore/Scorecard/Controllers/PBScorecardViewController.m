@@ -59,14 +59,53 @@
         return cell;
     }else if (viewModel.cellType == PBScorecardCellTypeScoreStatistics){
     PBScorecardTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PBScorecardTableViewCell" forIndexPath:indexPath];
+    __weak typeof(self) weakSelf = self;
     cell.model = viewModel;
+        cell.PBScorecardB = ^(PBScorecardTableViewCell * _Nonnull cell) {
+        [weakSelf.PBmainTable reloadData];
+    };
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
     }else{
         PBScorecardOperationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PBScorecardOperationTableViewCell" forIndexPath:indexPath];
+        __weak typeof(self) weakSelf = self;
+        cell.PBScorecardOperationB = ^(PBScorecardOperationTableViewCell * _Nonnull cell) {
+            if (cell.index == 100) {
+            PBScorecardViewModel *timeStatisticsDateModel = self.PBviewDataArray[0];
+            NSString *dateString = [NSString stringWithFormat:@"%.2d:%.2d:%.2d",cell.hours,cell.minutes,cell.seconds];
+        timeStatisticsDateModel.timeStatisticsDateString = dateString;
+            timeStatisticsDateModel.timeStatisticsDate = [PBUIUtilities PBdateFromString:dateString formate:@"HH:mm:ss"];
+                
+            PBScorecardViewModel *teamAModel = self.PBviewDataArray[1];
+            teamAModel.score = 0;
+            
+            PBScorecardViewModel *teamBModel = self.PBviewDataArray[2];
+            teamBModel.score = 0;
+                
+            [weakSelf.PBmainTable reloadData];
+            }else if (cell.index == 101){
+            PBScorecardViewModel *timeStatisticsDateModel = self.PBviewDataArray[0];
+            NSString *dateString = [NSString stringWithFormat:@"%.2d:%.2d:%.2d",cell.hours,cell.minutes,cell.seconds];
+        timeStatisticsDateModel.timeStatisticsDateString = dateString;
+            timeStatisticsDateModel.timeStatisticsDate = [PBUIUtilities PBdateFromString:dateString formate:@"HH:mm:ss"];
+            [weakSelf.PBmainTable reloadData];
+            }else if (cell.index == 102){
+                PBScorecardViewModel *teamAModel = self.PBviewDataArray[1];
+                PBScorecardViewModel *teamBModel = self.PBviewDataArray[2];
+                [self.PBviewDataArray replaceObjectAtIndex:1 withObject:teamBModel];
+                [self.PBviewDataArray replaceObjectAtIndex:2 withObject:teamAModel];
+                [weakSelf.PBmainTable reloadData];
+            }else if (cell.index == 103){
+                [weakSelf save];
+                [weakSelf.PBmainTable reloadData];
+            }
+        };
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
+}
+- (void)save{
+    
 }
 #pragma mark - 属性懒加载
 - (NSMutableArray *)PBviewDataArray{

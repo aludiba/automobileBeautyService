@@ -13,7 +13,6 @@
 @implementation QSsmokingPlanSaveTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = QSH_Color(244, 245, 246, 1);
         [self.contentView addSubview:self.saveButton];
         
         [self.saveButton mas_makeConstraints:^(MASConstraintMaker *make) {

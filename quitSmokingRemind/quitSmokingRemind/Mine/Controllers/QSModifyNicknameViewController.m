@@ -22,7 +22,6 @@
     [self QSsetContent];
 }
 - (void)QSsetContent{
-    self.view.backgroundColor = QSH_Color(244, 245, 246, 1);
     [self.view addSubview:self.QSconfirmNickNameTextField];
     [self.view addSubview:self.QSsureButton];
     

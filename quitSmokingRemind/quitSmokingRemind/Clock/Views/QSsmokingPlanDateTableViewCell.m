@@ -65,33 +65,6 @@
         self.editText.placeholder = _model.QSdefaultString;
     }
 }
-//#pragma mark - UITextFieldDelegate
-//- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
-//    if (textField.text.length) {
-//        self.model.content = textField.text;
-//    }else{
-//        self.editText.placeholder = _model.defaultString;
-//    }
-//    return YES;
-//}
-//- (BOOL)textFieldShouldEndEditing:(UITextField *)textField{
-//    if (textField.text.length) {
-//        self.model.content = textField.text;
-//    }else{
-//        self.editText.placeholder = _model.defaultString;
-//    }
-//    return YES;
-//}
-//- (void)textFieldDidEndEditing:(UITextField *)textField{
-//    if (textField.text.length) {
-//        self.model.content = textField.text;
-//    }else{
-//        self.editText.placeholder = _model.defaultString;
-//    }
-//}
-- (void)dateChange:(UIDatePicker *)datePicker {
-    
-}
 - (void)dateResult:(UIBarButtonItem *)sender{
     if (sender.tag == 100) {
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];

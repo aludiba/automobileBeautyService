@@ -12,7 +12,9 @@
 @property(nonatomic, strong)UIButton *PBStartButton;//开始按钮
 @property(nonatomic, strong)UIButton *PBChangeButton;//交换按钮
 @property(nonatomic, strong)UIButton *PBSaveButton;//保存按钮
-
+@property(nonatomic, assign)BOOL isOn;
+@property(nonatomic, assign)BOOL isStop;
+@property (nonatomic,strong )NSTimer *timer;//定时器
 @end
 @implementation PBScorecardOperationTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -48,20 +50,67 @@
             make.width.mas_equalTo((PBWIDTH - 100) / 4);
             make.height.mas_equalTo(40);
         }];
+        
+        self.isStop = YES;
+            //类方法会自动释放。
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(startTimer) userInfo:nil repeats:YES];
+        //需要让定时器暂停
+        [self.timer setFireDate:[NSDate distantFuture]];
     }
     return self;
 }
+-(void)startTimer{
+    self.index = 101;
+    self.seconds++;
+    if (self.seconds == 60) {
+        self.minutes++;
+        self.seconds = 0;
+    }
+    if (self.minutes == 60) {
+        self.hours++;
+        self.minutes = 0;
+    }
+    if (self.PBScorecardOperationB) {
+        self.PBScorecardOperationB(self);
+    }
+}
 #pragma mark - action
 - (void)btnClick:(UIButton *)sender{
+    self.index = sender.tag;
     if (sender.tag == 100) {
         NSLog(@"重来~~~");
+        self.seconds = 0;
+        self.minutes = 0;
+        self.hours = 0;
+        [self.PBStartButton setTitle:NSLocalizedString(@"开始", nil) forState:UIControlStateNormal];
+        [self.timer setFireDate:[NSDate distantFuture]];
+        self.isStop = YES;
+        if (self.PBScorecardOperationB) {
+            self.PBScorecardOperationB(self);
+        }
     }else if (sender.tag == 101){
         NSLog(@"开始~~~");
+        if (self.isStop) {
+          [self.PBStartButton setTitle:NSLocalizedString(@"停止", nil) forState:UIControlStateNormal];
+           [_timer setFireDate:[NSDate date]];
+           self.isStop = NO;
+        }else{
+            [self.PBStartButton setTitle:NSLocalizedString(@"开始", nil) forState:UIControlStateNormal];
+            [self.timer setFireDate:[NSDate distantFuture]];
+            self.isStop = YES;
+        }
     }else if (sender.tag == 102){
         NSLog(@"交换~~~");
+        if (self.PBScorecardOperationB) {
+            self.PBScorecardOperationB(self);
+        }
     }else if (sender.tag == 103){
         NSLog(@"保存~~~");
+        if (self.PBScorecardOperationB) {
+            self.PBScorecardOperationB(self);
+        }
     }
+   
 }
 #pragma mark - 属性懒加载
 - (UIButton *)PBResetButton{

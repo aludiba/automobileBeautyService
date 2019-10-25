@@ -26,7 +26,6 @@
     [self QSsetContent];
 }
 - (void)QSsetContent{
-    self.view.backgroundColor = QSH_Color(244, 245, 246, 1);
     [self.view addSubview:self.QSQSoldPasswordTextField];
     [self.view addSubview:self.QSQScurrentPasswordTextField];
     [self.view addSubview:self.QSQSconfirmPasswordTextField];

@@ -10,8 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @class PBScorecardViewModel;
+@class PBScorecardTableViewCell;
+typedef void(^PBScorecardBlock)(PBScorecardTableViewCell *cell);
 @interface PBScorecardTableViewCell : UITableViewCell
 @property(nonatomic, strong)PBScorecardViewModel *model;
+@property(nonatomic, strong)PBScorecardBlock PBScorecardB;
 @end
 
 NS_ASSUME_NONNULL_END

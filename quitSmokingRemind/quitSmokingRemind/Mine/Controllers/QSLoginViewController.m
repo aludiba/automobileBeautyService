@@ -35,7 +35,6 @@
     self.navigationController.navigationBar.hidden = NO;
 }
 - (void)QSsetContentView{
-    self.view.backgroundColor = QSH_Color(242, 242, 242, 1);
     [self.view addSubview:self.QSmainTable];
     [self.QSmainTable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view);

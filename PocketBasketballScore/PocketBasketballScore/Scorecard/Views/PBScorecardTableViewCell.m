@@ -87,18 +87,65 @@
 - (void)setModel:(PBScorecardViewModel *)model{
     _model = model;
     self.teamNameTextField.text = _model.teamName;
+    NSUInteger singleDigits = 0;
+    NSUInteger tenDigits = 0;
+    NSUInteger hundredsDigits = 0;
+    if (self.model.score >= 100) {
+        singleDigits = self.model.score % 10;
+        tenDigits = (self.model.score - singleDigits) / 10;
+        tenDigits = tenDigits % 10;
+        hundredsDigits = (self.model.score - tenDigits * 10 - singleDigits) / 100;
+    }else if (self.model.score >= 10){
+        singleDigits = self.model.score % 10;
+        tenDigits = (self.model.score - singleDigits) / 10;
+    }else{
+        singleDigits = self.model.score;
+    }
+    self.scoreColumnThreeLbl.text = [NSString stringWithFormat:@"%ld",singleDigits];
+    self.scoreColumnSecondLbl.text = [NSString stringWithFormat:@"%ld",tenDigits];
+    if (hundredsDigits > 0) {
+        self.scoreColumnOneLbl.text = [NSString stringWithFormat:@"%ld",hundredsDigits];
+    }
 }
 #pragma mark - action
 - (void)btnClick:(UIButton *)sender{
+    NSUInteger singleDigits = 0;
+    NSUInteger tenDigits = 0;
+    NSUInteger hundredsDigits = 0;
     if (sender.tag == 99) {
         NSLog(@"减一分~");
+        if (self.model.score > 0) {
+            self.model.score -= 1;
+        }
     }else if (sender.tag == 100){
         NSLog(@"加一分~");
+        self.model.score += 1;
     }else if (sender.tag == 101){
         NSLog(@"加二分~");
+        self.model.score += 2;
     }else if (sender.tag == 102){
         NSLog(@"加三分~");
+        self.model.score += 3;
     }
+        if (self.model.score >= 100) {
+            singleDigits = self.model.score % 10;
+            tenDigits = (self.model.score - singleDigits) / 10;
+            tenDigits = tenDigits % 10;
+            hundredsDigits = (self.model.score - tenDigits * 10 - singleDigits) / 100;
+        }else if (self.model.score >= 10){
+            singleDigits = self.model.score % 10;
+            tenDigits = (self.model.score - singleDigits) / 10;
+        }else{
+            singleDigits = self.model.score;
+        }
+        self.scoreColumnThreeLbl.text = [NSString stringWithFormat:@"%ld",singleDigits];
+        self.scoreColumnSecondLbl.text = [NSString stringWithFormat:@"%ld",tenDigits];
+        if (hundredsDigits > 0) {
+            self.scoreColumnOneLbl.text = [NSString stringWithFormat:@"%ld",hundredsDigits];
+        }
+        if (self.PBScorecardB) {
+            self.PBScorecardB(self);
+        }
 }
 #pragma mark - 属性懒加载
 - (UITextField *)teamNameTextField{

@@ -156,7 +156,6 @@
 - (UITableView *)mainTable{
     if (!_mainTable) {
         _mainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-        _mainTable.backgroundColor = QSH_Color(244, 245, 246, 1);
         _mainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
         _mainTable.delegate = self;
         _mainTable.dataSource = self;

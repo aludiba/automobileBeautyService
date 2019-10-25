@@ -25,7 +25,6 @@
     [self QSsetContentView];
 }
 - (void)QSsetContentView{
-    self.view.backgroundColor = QSH_Color(242, 242, 242, 1);
     QSSetViewModel *viewModel = [[QSSetViewModel alloc] init];
     viewModel.QStitle = NSLocalizedString(@"昵称", nil);
     BmobUser *user = [BmobUser currentUser];
@@ -106,8 +105,6 @@
 - (UITableView *)QSmainTable{
     if (!_QSmainTable) {
         _QSmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-        _QSmainTable.backgroundColor = QSH_Color(244, 245, 246, 1);
-        _QSmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
         _QSmainTable.delegate = self;
         _QSmainTable.dataSource = self;
         _QSmainTable.rowHeight = UITableViewAutomaticDimension;

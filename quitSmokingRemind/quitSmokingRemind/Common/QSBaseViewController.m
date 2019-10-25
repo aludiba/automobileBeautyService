@@ -13,7 +13,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self QS_setupNavigationItems];
-    self.view.backgroundColor = QSH_Color(236, 236, 236, 1);
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];

@@ -17,6 +17,7 @@ typedef NS_ENUM(NSInteger, PBScorecardCellType) {
 @interface PBScorecardViewModel : NSObject
 @property(nonatomic, copy)NSString *teamName;
 @property(nonatomic, strong)NSDate *timeStatisticsDate;
+@property(nonatomic, copy)NSString *timeStatisticsDateString;
 @property(nonatomic, assign)NSUInteger score;//得分
 @property(nonatomic, assign)PBScorecardCellType cellType;//cell类型
 @end

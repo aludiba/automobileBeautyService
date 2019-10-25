@@ -69,7 +69,6 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     [self setContentView];
 }
 - (void)setContentView{
-    self.tabBar.barTintColor = [UIColor yellowColor];
     self.QSClockVC = [[QSClockViewController alloc] init];
     UINavigationController *QSClock = [[UINavigationController alloc] initWithRootViewController:self.QSClockVC];
     self.QSClockVC.tabBarItem.title = NSLocalizedString(@"打卡", nil);
