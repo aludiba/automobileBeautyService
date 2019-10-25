@@ -179,8 +179,11 @@
         if (isSuccessful) {
             //创建成功后的动作
             [MBProgressHUD PBshowReminderText:NSLocalizedString(@"保存成功", nil)];
+            self->_scorecardModel = nil;
+            self->_PBmainTable = nil;
+            [self.timer setFireDate:[NSDate distantFuture]];
+            self.timer = nil;
             [self PBsetContentView];
-            self.scorecardModel = nil;
         } else if (error){
             //发生错误后的动作
             NSLog(@"error:%@",error);

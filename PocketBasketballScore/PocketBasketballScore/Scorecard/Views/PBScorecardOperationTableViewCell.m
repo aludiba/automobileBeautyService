@@ -77,7 +77,6 @@
 - (void)btnClick:(UIButton *)sender{
     self.index = sender.tag;
     if (sender.tag == 100) {
-        NSLog(@"重来~~~");
         self.seconds = 0;
         self.minutes = 0;
         self.hours = 0;
@@ -88,7 +87,6 @@
             self.PBScorecardOperationB(self);
         }
     }else if (sender.tag == 101){
-        NSLog(@"开始~~~");
         if (self.isStop) {
           [self.PBStartButton setTitle:NSLocalizedString(@"停止", nil) forState:UIControlStateNormal];
            [_timer setFireDate:[NSDate date]];
@@ -99,12 +97,10 @@
             self.isStop = YES;
         }
     }else if (sender.tag == 102){
-        NSLog(@"交换~~~");
         if (self.PBScorecardOperationB) {
             self.PBScorecardOperationB(self);
         }
     }else if (sender.tag == 103){
-        NSLog(@"保存~~~");
         if (self.PBScorecardOperationB) {
             self.PBScorecardOperationB(self);
         }

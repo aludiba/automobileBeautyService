@@ -113,18 +113,14 @@
     NSUInteger tenDigits = 0;
     NSUInteger hundredsDigits = 0;
     if (sender.tag == 99) {
-        NSLog(@"减一分~");
         if (self.model.score > 0) {
             self.model.score -= 1;
         }
     }else if (sender.tag == 100){
-        NSLog(@"加一分~");
         self.model.score += 1;
     }else if (sender.tag == 101){
-        NSLog(@"加二分~");
         self.model.score += 2;
     }else if (sender.tag == 102){
-        NSLog(@"加三分~");
         self.model.score += 3;
     }
         if (self.model.score >= 100) {

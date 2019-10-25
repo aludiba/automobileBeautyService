@@ -5,6 +5,18 @@
   Created by bykj on 2019/10/14.
   Copyright © 2019 hbc. All rights reserved.
 */
+"例如：友谊比赛第一场" = "E.g. Friendship match first";
+"结束时间" = "End time";
+"比赛用时" = "Race time";
+"交换" = "Exchange";
+"重来" = "Start over";
+"停止" = "Stop";
+"开始" = "Start";
+"请输入B队名称" = "Please enter team B name";
+"请输入A队名称" = "Please enter team A name";
+"比赛时长不能为空" = "Race duration cannot be empty";
+"请输入比赛性质" = "Please enter contest nature";
+"暂无数据" = "Temporary no data";
 "登录" = "Login";
 "注册" = "Registration";
 "账号" = "Account";
