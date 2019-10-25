@@ -8,4 +8,5 @@ target 'PocketFootballScore' do
   # Pods for PocketFootballScore
     pod 'Masonry'
     pod 'AFNetworking'
+    pod 'MJRefresh'
 end
