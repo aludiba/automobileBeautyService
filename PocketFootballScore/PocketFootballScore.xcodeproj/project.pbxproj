@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E18FDAA08CE2E4AEAAC4FC9 /* Pods_PocketFootballScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F441EF6B3DBEEB2FA803146 /* Pods_PocketFootballScore.framework */; };
 		AE8BB6352362FAD900AD37E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8BB6342362FAD900AD37E0 /* AppDelegate.m */; };
 		AE8BB6402362FADC00AD37E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE8BB63F2362FADC00AD37E0 /* Assets.xcassets */; };
 		AE8BB6462362FADC00AD37E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8BB6452362FADC00AD37E0 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F441EF6B3DBEEB2FA803146 /* Pods_PocketFootballScore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketFootballScore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		621C02E881E3185407E164D2 /* Pods-PocketFootballScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketFootballScore.debug.xcconfig"; path = "Target Support Files/Pods-PocketFootballScore/Pods-PocketFootballScore.debug.xcconfig"; sourceTree = "<group>"; };
 		AE8BB6302362FAD900AD37E0 /* PocketFootballScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketFootballScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE8BB6332362FAD900AD37E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE8BB6342362FAD900AD37E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -20,6 +23,7 @@
 		AE8BB6442362FADC00AD37E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE8BB6452362FADC00AD37E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE8BB64C2362FCAA00AD37E0 /* PocketFootballScore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PocketFootballScore.entitlements; sourceTree = "<group>"; };
+		ED190BF350010FA8719F11FE /* Pods-PocketFootballScore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketFootballScore.release.xcconfig"; path = "Target Support Files/Pods-PocketFootballScore/Pods-PocketFootballScore.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E18FDAA08CE2E4AEAAC4FC9 /* Pods_PocketFootballScore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04EB67C5ADAC12CD64F5A3C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				621C02E881E3185407E164D2 /* Pods-PocketFootballScore.debug.xcconfig */,
+				ED190BF350010FA8719F11FE /* Pods-PocketFootballScore.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		225870C98389AB06A6B4AE77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F441EF6B3DBEEB2FA803146 /* Pods_PocketFootballScore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AE8BB6272362FAD800AD37E0 = {
 			isa = PBXGroup;
 			children = (
 				AE8BB6322362FAD900AD37E0 /* PocketFootballScore */,
 				AE8BB6312362FAD900AD37E0 /* Products */,
+				04EB67C5ADAC12CD64F5A3C2 /* Pods */,
+				225870C98389AB06A6B4AE77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,9 +94,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE8BB6492362FADC00AD37E0 /* Build configuration list for PBXNativeTarget "PocketFootballScore" */;
 			buildPhases = (
+				B298CA302901B1EF2B90AE38 /* [CP] Check Pods Manifest.lock */,
 				AE8BB62C2362FAD900AD37E0 /* Sources */,
 				AE8BB62D2362FAD900AD37E0 /* Frameworks */,
 				AE8BB62E2362FAD900AD37E0 /* Resources */,
+				DB233ECED24C65C61F841789 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +151,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B298CA302901B1EF2B90AE38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PocketFootballScore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB233ECED24C65C61F841789 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PocketFootballScore/Pods-PocketFootballScore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PocketFootballScore/Pods-PocketFootballScore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PocketFootballScore/Pods-PocketFootballScore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE8BB62C2362FAD900AD37E0 /* Sources */ = {
@@ -250,6 +319,7 @@
 		};
 		AE8BB64A2362FADC00AD37E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 621C02E881E3185407E164D2 /* Pods-PocketFootballScore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -269,6 +339,7 @@
 		};
 		AE8BB64B2362FADC00AD37E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED190BF350010FA8719F11FE /* Pods-PocketFootballScore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
