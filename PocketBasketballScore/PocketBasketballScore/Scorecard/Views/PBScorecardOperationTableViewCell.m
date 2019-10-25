@@ -9,12 +9,10 @@
 #import "PBScorecardOperationTableViewCell.h"
 @interface PBScorecardOperationTableViewCell()
 @property(nonatomic, strong)UIButton *PBResetButton;//重新计时、计分按钮
-@property(nonatomic, strong)UIButton *PBStartButton;//开始按钮
 @property(nonatomic, strong)UIButton *PBChangeButton;//交换按钮
 @property(nonatomic, strong)UIButton *PBSaveButton;//保存按钮
 @property(nonatomic, assign)BOOL isOn;
 @property(nonatomic, assign)BOOL isStop;
-@property (nonatomic,strong )NSTimer *timer;//定时器
 @end
 @implementation PBScorecardOperationTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -56,6 +54,7 @@
         self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(startTimer) userInfo:nil repeats:YES];
         //需要让定时器暂停
         [self.timer setFireDate:[NSDate distantFuture]];
+        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     }
     return self;
 }

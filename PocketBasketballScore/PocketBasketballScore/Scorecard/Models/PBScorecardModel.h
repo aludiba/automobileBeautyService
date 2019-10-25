@@ -16,8 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign)NSUInteger teamANameScore;//A队得分
 @property(nonatomic, copy)NSString *teamBName;//B队名称
 @property(nonatomic, assign)NSUInteger teamBNameScore;//B队得分
-@property(nonatomic, strong)NSDate *totalTime;//总共用时
-@property(nonatomic, strong)NSDate *endTime;//结束时间
+@property(nonatomic, strong)NSString *totalTimeString;//总共用时
+@property(nonatomic, strong)NSString *endTimeString;//结束时间
 @end
 
 NS_ASSUME_NONNULL_END

@@ -147,6 +147,29 @@
             self.PBScorecardB(self);
         }
 }
+#pragma mark - UITextFieldDelegate
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    self.model.teamName = textField.text;
+    self.type = 0;
+    if (self.PBScorecardEditB) {
+        self.PBScorecardEditB(self);
+    }
+    return YES;
+}
+- (void)textFieldDidBeginEditing:(UITextField *)textField{
+    self.model.teamName = textField.text;
+}
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField{
+    self.model.teamName = textField.text;
+    return YES;
+}
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+    self.type = 1;
+    if (self.PBScorecardEditB) {
+        self.PBScorecardEditB(self);
+    }
+    self.model.teamName = textField.text;
+}
 #pragma mark - 属性懒加载
 - (UITextField *)teamNameTextField{
     if (!_teamNameTextField) {

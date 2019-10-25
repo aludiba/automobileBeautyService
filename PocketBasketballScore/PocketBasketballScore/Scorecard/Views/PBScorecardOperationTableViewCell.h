@@ -17,6 +17,8 @@ typedef void(^PBScorecardOperationBlock)(PBScorecardOperationTableViewCell *cell
 @property(nonatomic, assign)int hours;//时
 @property(nonatomic, assign)int minutes;//分秒
 @property(nonatomic, assign)int seconds;//秒
+@property (nonatomic,strong )NSTimer *timer;//定时器
+@property(nonatomic, strong)UIButton *PBStartButton;//开始按钮
 @end
 
 NS_ASSUME_NONNULL_END
