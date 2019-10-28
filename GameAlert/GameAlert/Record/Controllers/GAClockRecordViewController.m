@@ -49,7 +49,7 @@
     
     GAClockRecordModel *saveAmountMoneyModel = [[GAClockRecordModel alloc] init];
     saveAmountMoneyModel.GAtitle = NSLocalizedString(@"节省时间", nil);
-    NSString *saveAmountMoneyString = [NSString stringWithFormat:@"%ld",numberGamesPlayed * self.saveModel.GAgameAges];
+    NSString *saveAmountMoneyString = [NSString stringWithFormat:@"%ld",numberGamesPlayed * self.saveModel.GAgameLong];
     saveAmountMoneyModel.GAcontent = saveAmountMoneyString;
     [self.GAviewDataArray addObject:saveAmountMoneyModel];
     
