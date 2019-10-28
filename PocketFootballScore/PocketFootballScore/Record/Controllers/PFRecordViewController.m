@@ -20,8 +20,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = NSLocalizedString(@"记录", nil);
+}
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     [self PFLoadData];
-    
 }
 - (void)PFLoadData{
     BmobQuery *bquery = [BmobQuery queryWithClassName:@"PFScore"];

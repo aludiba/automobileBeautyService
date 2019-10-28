@@ -13,11 +13,9 @@
 @property(nonatomic, strong)UITextField *PFteamNameTextField;//队伍名称
 @property(nonatomic, strong)UILabel *PFscoreColumnOneLbl;//分数第一列
 @property(nonatomic, strong)UILabel *PFscoreColumnSecondLbl;//分数第二列
-@property(nonatomic, strong)UILabel *PFscoreColumnThreeLbl;//分数第三列
 @property(nonatomic, strong)UIButton *PFminusOnePointsButton;//减一分
 @property(nonatomic, strong)UIButton *PFaddAPointButton;//加一分
-@property(nonatomic, strong)UIButton *PFaddBinaryButton;//加二分
-@property(nonatomic, strong)UIButton *PFaddThreePointsButton;//加三分
+
 @end
 @implementation PFScorecardTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -26,11 +24,8 @@
         [self.contentView addSubview:self.PFteamNameTextField];
         [self.contentView addSubview:self.PFscoreColumnOneLbl];
         [self.contentView addSubview:self.PFscoreColumnSecondLbl];
-        [self.contentView addSubview:self.PFscoreColumnThreeLbl];
         [self.contentView addSubview:self.PFminusOnePointsButton];
         [self.contentView addSubview:self.PFaddAPointButton];
-        [self.contentView addSubview:self.PFaddBinaryButton];
-        [self.contentView addSubview:self.PFaddThreePointsButton];
         
         [self.PFteamNameTextField mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView);
@@ -41,42 +36,24 @@
         [self.PFscoreColumnOneLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(32);
             make.top.equalTo(self.PFteamNameTextField.mas_bottom).offset(15);
-            make.width.mas_equalTo((PFWIDTH - 144) / 3);
+            make.width.mas_equalTo((PFWIDTH - 144) / 2);
             make.height.mas_equalTo(120);
         }];
         [self.PFscoreColumnSecondLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.PFscoreColumnOneLbl.mas_trailing).offset(40);
+            make.leading.equalTo(self.PFscoreColumnOneLbl.mas_trailing).offset(80);
             make.top.equalTo(self.PFteamNameTextField.mas_bottom).offset(15);
-            make.width.mas_equalTo((PFWIDTH - 144) / 3);
-            make.height.mas_equalTo(120);
-        }];
-        [self.PFscoreColumnThreeLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.PFscoreColumnSecondLbl.mas_trailing).offset(40);
-            make.top.equalTo(self.PFteamNameTextField.mas_bottom).offset(15);
-            make.width.mas_equalTo((PFWIDTH - 144) / 3);
+            make.width.mas_equalTo((PFWIDTH - 144) / 2);
             make.height.mas_equalTo(120);
         }];
         [self.PFminusOnePointsButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(40);
-            make.top.equalTo(self.PFscoreColumnThreeLbl.mas_bottom).offset(15);
+            make.centerX.equalTo(self.PFscoreColumnOneLbl);
+            make.top.equalTo(self.PFscoreColumnSecondLbl.mas_bottom).offset(15);
             make.width.mas_equalTo((PFWIDTH - 140) / 4);
             make.height.mas_equalTo(42);
         }];
         [self.PFaddAPointButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.PFminusOnePointsButton.mas_trailing).offset(20);
-            make.top.equalTo(self.PFscoreColumnThreeLbl.mas_bottom).offset(15);
-            make.width.mas_equalTo((PFWIDTH - 140) / 4);
-            make.height.mas_equalTo(42);
-        }];
-        [self.PFaddBinaryButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.PFaddAPointButton.mas_trailing).offset(20);
-            make.top.equalTo(self.PFscoreColumnThreeLbl.mas_bottom).offset(15);
-            make.width.mas_equalTo((PFWIDTH - 140) / 4);
-            make.height.mas_equalTo(42);
-        }];
-        [self.PFaddThreePointsButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.PFaddBinaryButton.mas_trailing).offset(20);
-            make.top.equalTo(self.PFscoreColumnThreeLbl.mas_bottom).offset(15);
+            make.centerX.equalTo(self.PFscoreColumnSecondLbl);
+            make.top.equalTo(self.PFscoreColumnSecondLbl.mas_bottom).offset(15);
             make.width.mas_equalTo((PFWIDTH - 140) / 4);
             make.height.mas_equalTo(42);
             make.bottom.equalTo(self.contentView).offset(-15);
@@ -89,56 +66,34 @@
     self.PFteamNameTextField.text = _model.PFteamName;
     NSUInteger singleDigits = 0;
     NSUInteger tenDigits = 0;
-    NSUInteger hundredsDigits = 0;
-    if (self.model.score >= 100) {
-        singleDigits = self.model.score % 10;
-        tenDigits = (self.model.score - singleDigits) / 10;
-        tenDigits = tenDigits % 10;
-        hundredsDigits = (self.model.score - tenDigits * 10 - singleDigits) / 100;
-    }else if (self.model.score >= 10){
+    if(self.model.score >= 10){
         singleDigits = self.model.score % 10;
         tenDigits = (self.model.score - singleDigits) / 10;
     }else{
         singleDigits = self.model.score;
     }
-    self.PFscoreColumnThreeLbl.text = [NSString stringWithFormat:@"%ld",singleDigits];
-    self.PFscoreColumnSecondLbl.text = [NSString stringWithFormat:@"%ld",tenDigits];
-    if (hundredsDigits > 0) {
-        self.PFscoreColumnOneLbl.text = [NSString stringWithFormat:@"%ld",hundredsDigits];
-    }
+    self.PFscoreColumnSecondLbl.text = [NSString stringWithFormat:@"%ld",singleDigits];
+    self.PFscoreColumnOneLbl.text = [NSString stringWithFormat:@"%ld",tenDigits];
 }
 #pragma mark - action
 - (void)PFbtnClick:(UIButton *)sender{
     NSUInteger singleDigits = 0;
     NSUInteger tenDigits = 0;
-    NSUInteger hundredsDigits = 0;
     if (sender.tag == 99) {
         if (self.model.score > 0) {
             self.model.score -= 1;
         }
     }else if (sender.tag == 100){
         self.model.score += 1;
-    }else if (sender.tag == 101){
-        self.model.score += 2;
-    }else if (sender.tag == 102){
-        self.model.score += 3;
     }
-        if (self.model.score >= 100) {
-            singleDigits = self.model.score % 10;
-            tenDigits = (self.model.score - singleDigits) / 10;
-            tenDigits = tenDigits % 10;
-            hundredsDigits = (self.model.score - tenDigits * 10 - singleDigits) / 100;
-        }else if (self.model.score >= 10){
+        if (self.model.score >= 10){
             singleDigits = self.model.score % 10;
             tenDigits = (self.model.score - singleDigits) / 10;
         }else{
             singleDigits = self.model.score;
         }
-        self.PFscoreColumnThreeLbl.text = [NSString stringWithFormat:@"%ld",singleDigits];
+        self.PFscoreColumnSecondLbl.text = [NSString stringWithFormat:@"%ld",singleDigits];
         self.PFscoreColumnSecondLbl.text = [NSString stringWithFormat:@"%ld",tenDigits];
-        if (hundredsDigits > 0) {
-            self.PFscoreColumnOneLbl.text = [NSString stringWithFormat:@"%ld",hundredsDigits];
-        }
         if (self.PFScorecardB) {
             self.PFScorecardB(self);
         }
@@ -206,19 +161,6 @@
     }
     return _PFscoreColumnSecondLbl;
 }
-- (UILabel *)PFscoreColumnThreeLbl{
-    if (!_PFscoreColumnThreeLbl) {
-        _PFscoreColumnThreeLbl = [[UILabel alloc] init];
-        _PFscoreColumnThreeLbl.backgroundColor = [UIColor blackColor];
-        _PFscoreColumnThreeLbl.layer.cornerRadius = 10.0f;
-        _PFscoreColumnThreeLbl.layer.masksToBounds = YES;
-        _PFscoreColumnThreeLbl.textColor = [UIColor whiteColor];
-        _PFscoreColumnThreeLbl.font = [UIFont boldSystemFontOfSize:100];
-        _PFscoreColumnThreeLbl.textAlignment = NSTextAlignmentCenter;
-        _PFscoreColumnThreeLbl.text = @"0";
-    }
-    return _PFscoreColumnThreeLbl;
-}
 - (UIButton *)PFminusOnePointsButton{
     if (!_PFminusOnePointsButton) {
         _PFminusOnePointsButton = [[UIButton alloc] init];
@@ -246,33 +188,5 @@
         [_PFaddAPointButton setTitle:@"+1" forState:UIControlStateNormal];
     }
     return _PFaddAPointButton;
-}
-- (UIButton *)PFaddBinaryButton{
-    if (!_PFaddBinaryButton) {
-        _PFaddBinaryButton = [[UIButton alloc] init];
-        _PFaddBinaryButton.tag = 101;
-        [_PFaddBinaryButton addTarget:self action:@selector(PFbtnClick:) forControlEvents:UIControlEventTouchUpInside];
-        _PFaddBinaryButton.backgroundColor = [UIColor systemGreenColor];
-        _PFaddBinaryButton.layer.cornerRadius = 20.5f;
-        _PFaddBinaryButton.layer.masksToBounds = YES;
-        [_PFaddBinaryButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [_PFaddBinaryButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
-        [_PFaddBinaryButton setTitle:@"+2" forState:UIControlStateNormal];
-    }
-    return _PFaddBinaryButton;
-}
-- (UIButton *)PFaddThreePointsButton{
-    if (!_PFaddThreePointsButton) {
-        _PFaddThreePointsButton = [[UIButton alloc] init];
-        _PFaddThreePointsButton.tag = 102;
-        [_PFaddThreePointsButton addTarget:self action:@selector(PFbtnClick:) forControlEvents:UIControlEventTouchUpInside];
-        _PFaddThreePointsButton.backgroundColor = [UIColor systemGreenColor];
-      _PFaddThreePointsButton.layer.cornerRadius = 20.5f;
-        _PFaddThreePointsButton.layer.masksToBounds = YES;
-        [_PFaddThreePointsButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [_PFaddThreePointsButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
-        [_PFaddThreePointsButton setTitle:@"+3" forState:UIControlStateNormal];
-    }
-    return _PFaddThreePointsButton;
 }
 @end
