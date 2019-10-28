@@ -85,7 +85,8 @@
                     weakSelf.GAsaveModel.GAtimeGiveGameDate = [obj objectForKey:@"GAtimeGiveGameDate"];
                     weakSelf.GAsaveModel.GAgameEveryDay = [[obj objectForKey:@"GAgameEveryDay"] integerValue];
                     weakSelf.GAsaveModel.GAgameAges = [[obj objectForKey:@"GAgameAges"] integerValue];
-                
+                weakSelf.GAsaveModel.GAgameLong = [[obj objectForKey:@"GAgameLong"] integerValue];
+
                     weakSelf.GAsaveModel.GAcumulativeNubDays = [[obj objectForKey:@"GAcumulativeNubDays"] integerValue];
                     weakSelf.GAsaveModel.GAaccumulativeGames = [[obj objectForKey:@"GAaccumulativeGames"] integerValue];
                     weakSelf.GAsaveModel.GAcumulativeAmount = [[obj objectForKey:@"GAcumulativeAmount"] integerValue];
