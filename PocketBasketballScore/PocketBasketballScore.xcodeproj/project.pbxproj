@@ -702,6 +702,7 @@
 				CODE_SIGN_ENTITLEMENTS = PocketBasketballScore/PocketBasketballScore.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Xu Zhu (CHP7QS3GTL)";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = CHP7QS3GTL;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScore/Common/PB_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBasketballScore/Info.plist;
@@ -713,9 +714,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketBasketballScore/Common/JPush",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.PocketBasketballScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = dis_PocketBasketballScore;
+				PROVISIONING_PROFILE_SPECIFIER = dis_basketBall_20191026;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -729,6 +731,7 @@
 				CODE_SIGN_ENTITLEMENTS = PocketBasketballScore/PocketBasketballScore.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Xu Zhu (CHP7QS3GTL)";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = CHP7QS3GTL;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScore/Common/PB_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBasketballScore/Info.plist;
@@ -740,9 +743,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketBasketballScore/Common/JPush",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.PocketBasketballScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = dis_PocketBasketballScore;
+				PROVISIONING_PROFILE_SPECIFIER = dis_basketBall_20191026;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

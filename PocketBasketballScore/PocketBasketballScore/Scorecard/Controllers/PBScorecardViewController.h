@@ -9,9 +9,10 @@
 #import "PBBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class PBScorecardViewController;
 @interface PBScorecardViewController : PBBaseViewController
-
++ (PBScorecardViewController *)shareInstance;
+- (void)PBsaveAction;
 @end
 
 NS_ASSUME_NONNULL_END

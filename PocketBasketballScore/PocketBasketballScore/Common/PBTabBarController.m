@@ -7,7 +7,6 @@
 //
 
 #import "PBTabBarController.h"
-#import "PBScorecardViewController.h"
 #import "PBRecordViewController.h"
 #import "PBMineViewController.h"
 @interface PBTabBarController ()<UITabBarDelegate>
@@ -69,7 +68,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     [self setContentView];
 }
 - (void)setContentView{
-    self.PBScorecardVC = [[PBScorecardViewController alloc] init];
+    self.PBScorecardVC = [PBScorecardViewController shareInstance];
     UINavigationController *PBScorecard = [[UINavigationController alloc] initWithRootViewController:self.PBScorecardVC];
     self.PBScorecardVC.tabBarItem.title = NSLocalizedString(@"比分", nil);
     [self.PBScorecardVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];

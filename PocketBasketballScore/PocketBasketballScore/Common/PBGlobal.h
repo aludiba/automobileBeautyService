@@ -19,6 +19,7 @@
 #import "CalendarTool.h"
 #import "PBUIUtilities.h"
 #import "PBTabBarController.h"
+#import "PBScorecardViewController.h"
 #import "NSArray+log.h"
 #import "NSDictionary+log.h"
 #import <BmobSDK/Bmob.h>

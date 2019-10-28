@@ -34,16 +34,16 @@
     return YES;
 }
 - (UIViewController *)rootController{
-    BmobUser *bUser = [BmobUser currentUser];
-    if (bUser) {
+//    BmobUser *bUser = [BmobUser currentUser];
+//    if (bUser) {
 //        进行操作
         PBTabBarController *tabVC = [PBTabBarController shareInstance];
         return tabVC;
-    }else{
-        //对象为空时，可打开用户注册界面
-        PBLoginViewController *loginVC = [PBLoginViewController shareInstance];
-        return loginVC;
-    }
+//    }else{
+//        //对象为空时，可打开用户注册界面
+//        PBLoginViewController *loginVC = [PBLoginViewController shareInstance];
+//        return loginVC;
+//    }
 }
 - (void)setJPush:(NSDictionary *)launchOptions{
     //Required

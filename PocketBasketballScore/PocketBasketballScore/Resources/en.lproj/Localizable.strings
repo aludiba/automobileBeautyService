@@ -5,6 +5,7 @@
   Created by bykj on 2019/10/14.
   Copyright © 2019 hbc. All rights reserved.
 */
+"请先登录" = "Please login first";
 "例如：友谊比赛第一场" = "E.g. Friendship match first";
 "结束时间" = "End time";
 "比赛用时" = "Race time";
@@ -27,7 +28,7 @@
 "保存" = "Save";
 "确定" = "Confirm";
 "昵称" = "Nickname";
-"退出" = "Exit";
+"登录&退出" = "Logon & logout";
 "年" = "Year";
 "确认密码" = "Confirm password";
 "密码修改" = "Password change";

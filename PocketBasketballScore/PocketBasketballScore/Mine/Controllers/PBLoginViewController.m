@@ -24,24 +24,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self PBsetContentView];
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.hidden = YES;
+    [self PBsetContentView];
 }
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     self.navigationController.navigationBar.hidden = NO;
 }
 - (void)PBsetContentView{
-    [self.view addSubview:self.PBmainTable];
-    [self.PBmainTable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view);
-        make.leading.equalTo(self.view);
-        make.trailing.equalTo(self.view);
-        make.bottom.equalTo(self.view);
-    }];
+    [self.PBmainTable reloadData];
 }
 #pragma mark - 属性懒加载
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -49,6 +43,7 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     PBLoginTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PBLoginTableViewCell" forIndexPath:indexPath];
+    cell.type = self.type;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
@@ -66,6 +61,13 @@
         _PBmainTable.tableHeaderView = [[UIView alloc] init];
         _PBmainTable.tableFooterView = [[UIView alloc] init];
         [_PBmainTable registerClass:[PBLoginTableViewCell class] forCellReuseIdentifier:@"PBLoginTableViewCell"];
+        [self.view addSubview:_PBmainTable];
+        [_PBmainTable mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.view);
+            make.leading.equalTo(self.view);
+            make.trailing.equalTo(self.view);
+            make.bottom.equalTo(self.view);
+        }];
     }
     return _PBmainTable;
 }

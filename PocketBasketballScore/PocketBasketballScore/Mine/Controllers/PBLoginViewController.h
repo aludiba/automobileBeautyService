@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PBLoginViewController : PBBaseViewController
+@property(nonatomic, assign)NSUInteger type;
 + (PBLoginViewController *)shareInstance;
 @end
 

@@ -9,6 +9,7 @@
 #import "PBRecordViewController.h"
 #import "PBRecordTableViewCell.h"
 #import "PBScorecardModel.h"
+#import "PBLoginViewController.h"
 @interface PBRecordViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)NSMutableArray *PBDataArray;
 @property(nonatomic, strong)UITableView *PBmainTable;
@@ -20,12 +21,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = NSLocalizedString(@"记录", nil);
+}
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     [self PBLoadData];
-    
 }
 - (void)PBLoadData{
     BmobQuery *bquery = [BmobQuery queryWithClassName:@"PBScore"];
     BmobUser *author = [BmobUser currentUser];
+    if (author) {
     [bquery whereKey:@"author" equalTo:author];
     //查找GameScore表的数据
     __weak typeof(self) weakSelf = self;
@@ -56,7 +60,23 @@
                 }
         }
     }];
-
+    }else{
+        [self.PBmainTable.mj_header endRefreshing];
+        [MBProgressHUD PBshowReminderText:NSLocalizedString(@"暂无数据", nil)];
+        [self.PBmainTable reloadData];
+        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:nil message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            PBLoginViewController *loginVC = [PBLoginViewController shareInstance];
+            loginVC.type = 2;
+            UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+            PBKeyWindow.rootViewController = loginVCNav;
+            
+        }];
+        [alertVC addAction:cancelAction];
+        [alertVC addAction:sureAction];
+        [self presentViewController:alertVC animated:YES completion:nil];
+    }
 }
 #pragma mark - UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

@@ -39,7 +39,7 @@
     [self.PBviewDataArray addObject:viewModel1];
     
     PBSetViewModel *viewModel2 = [[PBSetViewModel alloc] init];
-    viewModel2.PBtitle = NSLocalizedString(@"退出", nil);
+    viewModel2.PBtitle = NSLocalizedString(@"登录&退出", nil);
     [self.PBviewDataArray addObject:viewModel2];
     
     [self.view addSubview:self.PBmainTable];

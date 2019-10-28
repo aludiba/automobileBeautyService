@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PBLoginTableViewCell : UITableViewCell
-
+@property(nonatomic, assign)NSUInteger type;
 @end
 
 NS_ASSUME_NONNULL_END

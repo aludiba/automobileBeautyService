@@ -8,6 +8,7 @@
 
 #import "PBLoginTableViewCell.h"
 #import "PBTabBarController.h"
+#import "PBLoginViewController.h"
 @interface PBLoginTableViewCell()<UITextFieldDelegate>
 @property(nonatomic, strong)UIView *PBbackView;
 @property(nonatomic, strong)UILabel *PBaccountLable;
@@ -95,9 +96,20 @@
         [BmobUser loginWithUsernameInBackground:self.PBaccount password:self.PBpassword block:^(BmobUser *user, NSError *error) {
             if (user) {
                 [MBProgressHUD PBshowReminderText:NSLocalizedString(@"登录成功", nil)];
-                PBTabBarController *tabVC = [PBTabBarController shareInstance];
-                tabVC.selectedIndex = 0;
-                [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                if (self.type == 1) {
+                    PBTabBarController *tabVC = [PBTabBarController shareInstance];
+                    tabVC.selectedIndex = 0;
+                    [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                   [[PBScorecardViewController shareInstance] PBsaveAction];
+                   PBLoginViewController *loginVC = [PBLoginViewController shareInstance];
+                   loginVC.type = 0;
+                }else if (self.type == 2){
+                    PBTabBarController *tabVC = [PBTabBarController shareInstance];
+                    tabVC.selectedIndex = 1;
+                    [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                    PBLoginViewController *loginVC = [PBLoginViewController shareInstance];
+                    loginVC.type = 0;
+                }
             }else{
                 [MBProgressHUD PBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
             }
@@ -111,9 +123,20 @@
                 [MBProgressHUD PBshowReminderText:NSLocalizedString(@"注册成功", nil)];
                 [BmobUser loginWithUsernameInBackground:self.PBaccount password:self.PBpassword block:^(BmobUser *user, NSError *error) {
                     if (user) {
+                        if (self.type == 1) {
                         PBTabBarController *tabVC = [PBTabBarController shareInstance];
                         tabVC.selectedIndex = 0;
                         [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                        [[PBScorecardViewController shareInstance] PBsaveAction];
+                        PBLoginViewController *loginVC = [PBLoginViewController shareInstance];
+                        loginVC.type = 0;
+                        }else if (self.type == 2){
+                            PBTabBarController *tabVC = [PBTabBarController shareInstance];
+                            tabVC.selectedIndex = 1;
+                            [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                            PBLoginViewController *loginVC = [PBLoginViewController shareInstance];
+                            loginVC.type = 0;
+                        }
                     }else{
                         [MBProgressHUD PBshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
                     }

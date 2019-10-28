@@ -7,6 +7,7 @@
 //
 
 #import "PBScorecardViewController.h"
+#import "PBLoginViewController.h"
 #import "PBScorecardModel.h"
 #import "PBScorecardViewModel.h"
 #import "PBScorecardTitleTableViewCell.h"
@@ -21,7 +22,14 @@
 @end
 
 @implementation PBScorecardViewController
-
++ (PBScorecardViewController *)shareInstance{
+    static PBLoginViewController *client;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        client = [[PBScorecardViewController allocWithZone:NULL] init];
+    });
+    return client;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -139,7 +147,8 @@
         return cell;
     }
 }
-- (void)PBsave{
+- (void)PBsaveAction{
+    //        进行操作
     PBScorecardViewModel *titleModel = self.PBviewDataArray[0];
     if (!titleModel.natureCompetitionString.length) {
         [MBProgressHUD PBshowReminderText:NSLocalizedString(@"请输入比赛性质", nil)];
@@ -193,6 +202,25 @@
 
         }
     }];
+}
+- (void)PBsave{
+    BmobUser *bUser = [BmobUser currentUser];
+        if (bUser) {
+            [self PBsaveAction];
+    }else{
+        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:nil message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            PBLoginViewController *loginVC = [PBLoginViewController shareInstance];
+            loginVC.type = 1;
+            UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+            PBKeyWindow.rootViewController = loginVCNav;
+            
+        }];
+        [alertVC addAction:cancelAction];
+        [alertVC addAction:sureAction];
+        [self presentViewController:alertVC animated:YES completion:nil];
+    }
 }
 #pragma mark - 属性懒加载
 - (PBScorecardModel *)scorecardModel{
