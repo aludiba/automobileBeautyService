@@ -717,11 +717,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.PocketBasketballScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-<<<<<<< HEAD
 				PROVISIONING_PROFILE_SPECIFIER = dis_basketBall_20191026;
-=======
 				PROVISIONING_PROFILE_SPECIFIER = dev_PocketBasketballScore_20191025;
->>>>>>> 19b528c021b218e333c8665b896c94d08219cd97
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -750,11 +747,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.PocketBasketballScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-<<<<<<< HEAD
 				PROVISIONING_PROFILE_SPECIFIER = dis_basketBall_20191026;
-=======
 				PROVISIONING_PROFILE_SPECIFIER = dev_PocketBasketballScore_20191025;
->>>>>>> 19b528c021b218e333c8665b896c94d08219cd97
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
