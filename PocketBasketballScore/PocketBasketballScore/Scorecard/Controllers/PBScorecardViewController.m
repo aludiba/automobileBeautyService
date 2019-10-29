@@ -23,7 +23,7 @@
 
 @implementation PBScorecardViewController
 + (PBScorecardViewController *)shareInstance{
-    static PBLoginViewController *client;
+    static PBScorecardViewController *client;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         client = [[PBScorecardViewController allocWithZone:NULL] init];

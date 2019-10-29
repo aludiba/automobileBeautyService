@@ -16,6 +16,7 @@
 @implementation PBSetTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.PBtitleLbl];
         [self.contentView addSubview:self.PBcontentLbl];
         [self.contentView addSubview:self.PBarrowImgView];
@@ -69,7 +70,6 @@
         _PBtitleLbl = [[UILabel alloc] init];
         _PBtitleLbl.textColor = [UIColor blackColor];
         _PBtitleLbl.font = [UIFont systemFontOfSize:18];
-        _PBtitleLbl.backgroundColor = [UIColor cyanColor];
         _PBtitleLbl.layer.cornerRadius = 14.0f;
         _PBtitleLbl.layer.masksToBounds = YES;
     }
@@ -80,7 +80,6 @@
         _PBcontentLbl = [[UILabel alloc] init];
         _PBcontentLbl.textColor = [UIColor blackColor];
         _PBcontentLbl.font = [UIFont boldSystemFontOfSize:22];
-        _PBcontentLbl.backgroundColor = [UIColor cyanColor];
         _PBcontentLbl.layer.cornerRadius = 16.0f;
         _PBcontentLbl.layer.masksToBounds = YES;
     }

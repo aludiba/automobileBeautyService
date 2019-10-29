@@ -49,6 +49,7 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     PFLoginTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PFLoginTableViewCell" forIndexPath:indexPath];
+    cell.type = self.type;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }

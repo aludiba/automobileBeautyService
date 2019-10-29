@@ -8,6 +8,8 @@
 
 #import "PFLoginTableViewCell.h"
 #import "PFTabBarController.h"
+#import "PFLoginViewController.h"
+#import "PFScorecardViewController.h"
 @interface PFLoginTableViewCell()<UITextFieldDelegate>
 @property(nonatomic, strong)UIView *PFbackView;
 @property(nonatomic, strong)UILabel *PFaccountLable;
@@ -95,9 +97,20 @@
         [BmobUser loginWithUsernameInBackground:self.PFaccount password:self.PFpassword block:^(BmobUser *user, NSError *error) {
             if (user) {
                 [MBProgressHUD PFshowReminderText:NSLocalizedString(@"登录成功", nil)];
-                PFTabBarController *tabVC = [PFTabBarController shareInstance];
-                tabVC.selectedIndex = 0;
-                [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                if (self.type == 1) {
+                    PFTabBarController *tabVC = [PFTabBarController shareInstance];
+                    tabVC.selectedIndex = 0;
+                    [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                   [[PFScorecardViewController shareInstance] PFsaveAction];
+                   PFLoginViewController *loginVC = [PFLoginViewController shareInstance];
+                   loginVC.type = 0;
+                }else if (self.type == 2){
+                    PFTabBarController *tabVC = [PFTabBarController shareInstance];
+                    tabVC.selectedIndex = 1;
+                    [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                    PFLoginViewController *loginVC = [PFLoginViewController shareInstance];
+                    loginVC.type = 0;
+                }
             }else{
                 [MBProgressHUD PFshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
             }
@@ -111,9 +124,20 @@
                 [MBProgressHUD PFshowReminderText:NSLocalizedString(@"注册成功", nil)];
                 [BmobUser loginWithUsernameInBackground:self.PFaccount password:self.PFpassword block:^(BmobUser *user, NSError *error) {
                     if (user) {
+                        if (self.type == 1) {
                         PFTabBarController *tabVC = [PFTabBarController shareInstance];
                         tabVC.selectedIndex = 0;
                         [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                        [[PFScorecardViewController shareInstance] PFsaveAction];
+                        PFLoginViewController *loginVC = [PFLoginViewController shareInstance];
+                        loginVC.type = 0;
+                        }else if (self.type == 2){
+                            PFTabBarController *tabVC = [PFTabBarController shareInstance];
+                            tabVC.selectedIndex = 1;
+                            [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                            PFLoginViewController *loginVC = [PFLoginViewController shareInstance];
+                            loginVC.type = 0;
+                        }
                     }else{
                         [MBProgressHUD PFshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
                     }

@@ -86,14 +86,14 @@
     _model = model;
     self.PFTitleLbl.text = _model.PFnatureCompetition;
     self.PFTeamALbl.text = _model.PFteamAName;
-    self.PFScoreALbl.text = [NSString stringWithFormat:@" %.3ld ",_model.PFteamANameScore];
+    self.PFScoreALbl.text = [NSString stringWithFormat:@" %.2ld ",_model.PFteamANameScore];
     CGSize size = [self.PFScoreALbl sizeThatFits:CGSizeMake(MAXFLOAT, 50)];
     [self.PFScoreALbl mas_updateConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(size.width);
     }];
     [self.PFScoreALbl layoutIfNeeded];
     self.PFTeamBLbl.text = _model.PFteamBName;
-    self.PFScoreBLbl.text = [NSString stringWithFormat:@" %.3ld ",_model.PFteamBNameScore];
+    self.PFScoreBLbl.text = [NSString stringWithFormat:@" %.2ld ",_model.PFteamBNameScore];
     size = [self.PFScoreBLbl sizeThatFits:CGSizeMake(MAXFLOAT, 50)];
     [self.PFScoreBLbl mas_updateConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(size.width);

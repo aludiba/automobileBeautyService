@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor cyanColor];
     self.title = NSLocalizedString(@"我的", nil);
     [self PBsetContentView];
 }
@@ -106,6 +107,7 @@
 - (UITableView *)PBmainTable{
     if (!_PBmainTable) {
         _PBmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _PBmainTable.backgroundColor = [UIColor cyanColor];
         _PBmainTable.delegate = self;
         _PBmainTable.dataSource = self;
         _PBmainTable.rowHeight = UITableViewAutomaticDimension;

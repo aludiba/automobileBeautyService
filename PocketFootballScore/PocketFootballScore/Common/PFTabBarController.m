@@ -69,7 +69,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     [self PFsetContentView];
 }
 - (void)PFsetContentView{
-    self.PFScorecardVC = [[PFScorecardViewController alloc] init];
+    self.PFScorecardVC = [PFScorecardViewController shareInstance];
     UINavigationController *PFScorecard = [[UINavigationController alloc] initWithRootViewController:self.PFScorecardVC];
     self.PFScorecardVC.tabBarItem.title = NSLocalizedString(@"比分", nil);
     [self.PFScorecardVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];

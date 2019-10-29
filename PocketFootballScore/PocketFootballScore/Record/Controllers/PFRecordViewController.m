@@ -7,6 +7,7 @@
 //
 
 #import "PFRecordViewController.h"
+#import "PFLoginViewController.h"
 #import "PFRecordTableViewCell.h"
 #import "PFScorecardModel.h"
 @interface PFRecordViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -28,6 +29,7 @@
 - (void)PFLoadData{
     BmobQuery *bquery = [BmobQuery queryWithClassName:@"PFScore"];
     BmobUser *author = [BmobUser currentUser];
+    if (author) {
     [bquery whereKey:@"author" equalTo:author];
     //查找GameScore表的数据
     __weak typeof(self) weakSelf = self;
@@ -58,7 +60,22 @@
                 }
         }
     }];
-
+    }else{
+        [self.PFmainTable.mj_header endRefreshing];
+        [MBProgressHUD PFshowReminderText:NSLocalizedString(@"暂无数据", nil)];
+        [self.PFmainTable reloadData];
+        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:nil message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            PFLoginViewController *loginVC = [PFLoginViewController shareInstance];
+            loginVC.type = 2;
+            UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+            PFKeyWindow.rootViewController = loginVCNav;
+        }];
+        [alertVC addAction:cancelAction];
+        [alertVC addAction:sureAction];
+        [self presentViewController:alertVC animated:YES completion:nil];
+    }
 }
 #pragma mark - UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

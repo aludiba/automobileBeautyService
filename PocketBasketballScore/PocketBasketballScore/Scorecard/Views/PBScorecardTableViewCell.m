@@ -173,7 +173,7 @@
         _teamNameTextField.layer.cornerRadius = 4.0f;
         _teamNameTextField.layer.masksToBounds = YES;
         _teamNameTextField.delegate = self;
-        _teamNameTextField.backgroundColor = [UIColor systemPurpleColor];
+        _teamNameTextField.backgroundColor = [UIColor systemRedColor];
         _teamNameTextField.textColor = [UIColor blackColor];
         _teamNameTextField.textAlignment = NSTextAlignmentCenter;
         _teamNameTextField.font = [UIFont systemFontOfSize:25];

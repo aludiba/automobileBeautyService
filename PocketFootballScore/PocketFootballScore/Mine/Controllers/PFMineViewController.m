@@ -39,7 +39,7 @@
     [self.PFviewDataArray addObject:viewModel1];
     
     PFSetViewModel *viewModel2 = [[PFSetViewModel alloc] init];
-    viewModel2.PFtitle = NSLocalizedString(@"退出", nil);
+    viewModel2.PFtitle = NSLocalizedString(@"登录&退出", nil);
     [self.PFviewDataArray addObject:viewModel2];
     
     [self.view addSubview:self.PFmainTable];

@@ -7,6 +7,7 @@
 //
 
 #import "PFScorecardViewController.h"
+#import "PFLoginViewController.h"
 #import "PFScorecardModel.h"
 #import "PFScorecardViewModel.h"
 #import "PFScorecardTitleTableViewCell.h"
@@ -21,15 +22,22 @@
 @end
 
 @implementation PFScorecardViewController
-
++ (PFScorecardViewController *)shareInstance{
+    static PFScorecardViewController *client;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        client = [[PFScorecardViewController allocWithZone:NULL] init];
+    });
+    return client;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = NSLocalizedString(@"比分", nil);
+    [self PFsetContentView];
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self PFsetContentView];
 }
 - (void)PFsetContentView{
     [self.PFviewDataArray removeAllObjects];
@@ -142,7 +150,7 @@
         return cell;
     }
 }
-- (void)PFsave{
+- (void)PFsaveAction{
     PFScorecardViewModel *titleModel = self.PFviewDataArray[0];
     if (!titleModel.PFnatureCompetitionString.length) {
         [MBProgressHUD PFshowReminderText:NSLocalizedString(@"请输入比赛性质", nil)];
@@ -196,6 +204,24 @@
 
         }
     }];
+}
+- (void)PFsave{
+    BmobUser *bUser = [BmobUser currentUser];
+        if (bUser) {
+            [self PFsaveAction];
+    }else{
+        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:nil message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            PFLoginViewController *loginVC = [PFLoginViewController shareInstance];
+            loginVC.type = 1;
+            UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+            PFKeyWindow.rootViewController = loginVCNav;
+        }];
+        [alertVC addAction:cancelAction];
+        [alertVC addAction:sureAction];
+        [self presentViewController:alertVC animated:YES completion:nil];
+    }
 }
 #pragma mark - 属性懒加载
 - (PFScorecardModel *)PFscorecardModel{

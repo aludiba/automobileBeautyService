@@ -28,15 +28,15 @@
     return YES;
 }
 - (UIViewController *)rootController{
-    BmobUser *bUser = [BmobUser currentUser];
-    if (bUser) {
+//    BmobUser *bUser = [BmobUser currentUser];
+//    if (bUser) {
 //        进行操作
         PFTabBarController *tabVC = [PFTabBarController shareInstance];
         return tabVC;
-    }else{
-        //对象为空时，可打开用户注册界面
-        PFLoginViewController *loginVC = [PFLoginViewController shareInstance];
-        return loginVC;
-    }
+//    }else{
+//        //对象为空时，可打开用户注册界面
+//        PFLoginViewController *loginVC = [PFLoginViewController shareInstance];
+//        return loginVC;
+//    }
 }
 @end

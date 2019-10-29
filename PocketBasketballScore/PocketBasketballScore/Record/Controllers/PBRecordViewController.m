@@ -99,6 +99,7 @@
 - (UITableView *)PBmainTable{
     if (!_PBmainTable) {
         _PBmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _PBmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
         _PBmainTable.delegate = self;
         _PBmainTable.dataSource = self;
         _PBmainTable.rowHeight = UITableViewAutomaticDimension;
