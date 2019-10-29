@@ -39,9 +39,9 @@
         }];
         [self.PFBackView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.PFTitleLbl.mas_bottom).offset(15);
-            make.leading.equalTo(self.contentView).offset(16);
-            make.trailing.equalTo(self.contentView).offset(-16);
-            make.height.mas_equalTo(160);
+            make.leading.equalTo(self.contentView).offset(32);
+            make.trailing.equalTo(self.contentView).offset(-32);
+            make.height.mas_equalTo(210);
             make.bottom.equalTo(self.contentView).offset(-15);
         }];
         [self.PFTeamALbl mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -70,15 +70,15 @@
         }];
         [self.PFTotalTimeLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.PFScoreALbl.mas_bottom).offset(10);
-            make.leading.equalTo(self.PFBackView).offset(16);
+            make.leading.equalTo(self.PFBackView).offset(54);
             make.trailing.equalTo(self.PFBackView).offset(-16);
-            make.height.mas_equalTo(20);
+            make.height.mas_equalTo(44);
         }];
         [self.PFEndTimeLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.PFTotalTimeLbl.mas_bottom).offset(10);
-            make.leading.equalTo(self.PFBackView).offset(16);
+            make.leading.equalTo(self.PFBackView).offset(54);
             make.trailing.equalTo(self.PFBackView).offset(-16);
-            make.height.mas_equalTo(20);
+            make.height.mas_equalTo(44);
         }];
     }
     return self;
@@ -101,8 +101,8 @@
     }];
     [self.PFScoreBLbl layoutIfNeeded];
     [self.contentView layoutSubviews];
-    self.PFTotalTimeLbl.text = [NSString stringWithFormat:@"%@ : %@",NSLocalizedString(@"比赛用时", nil),_model.PFtotalTimeString];
-    self.PFEndTimeLbl.text = [NSString stringWithFormat:@"%@ : %@",NSLocalizedString(@"结束时间", nil),_model.PFendTimeString];
+    self.PFTotalTimeLbl.text = [NSString stringWithFormat:@"%@:\n%@",NSLocalizedString(@"比赛用时", nil),_model.PFtotalTimeString];
+    self.PFEndTimeLbl.text = [NSString stringWithFormat:@"%@:\n%@",NSLocalizedString(@"结束时间", nil),_model.PFendTimeString];
 }
 #pragma mark - 属性懒加载
 - (UILabel *)PFTitleLbl{
@@ -117,7 +117,7 @@
 - (UIView *)PFBackView{
     if (!_PFBackView) {
         _PFBackView = [[UIView alloc] init];
-        _PFBackView.layer.cornerRadius = 12.0f;
+        _PFBackView.layer.cornerRadius = 24.0f;
         _PFBackView.layer.masksToBounds = YES;
         _PFBackView.backgroundColor = [UIColor systemRedColor];
     }
@@ -168,6 +168,7 @@
         _PFTotalTimeLbl = [[UILabel alloc] init];
         _PFTotalTimeLbl.textColor = [UIColor whiteColor];
         _PFTotalTimeLbl.font = [UIFont systemFontOfSize:18];
+        _PFTotalTimeLbl.numberOfLines = 0;
     }
     return _PFTotalTimeLbl;
 }
@@ -176,6 +177,7 @@
         _PFEndTimeLbl = [[UILabel alloc] init];
         _PFEndTimeLbl.textColor = [UIColor whiteColor];
         _PFEndTimeLbl.font = [UIFont systemFontOfSize:18];
+        _PFEndTimeLbl.numberOfLines = 0;
     }
     return _PFEndTimeLbl;
 }

@@ -113,10 +113,10 @@
     if (!_PFResetButton) {
         _PFResetButton = [[UIButton alloc] init];
         _PFResetButton.tag = 100;
-        _PFResetButton.backgroundColor = [UIColor systemYellowColor];
+        _PFResetButton.backgroundColor = [UIColor systemGreenColor];
         [_PFResetButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_PFResetButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
-        _PFResetButton.layer.cornerRadius = 10.0f;
+        _PFResetButton.layer.cornerRadius = 20.0f;
         _PFResetButton.layer.masksToBounds = YES;
         [_PFResetButton addTarget:self action:@selector(PFbtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [_PFResetButton setTitle:NSLocalizedString(@"重来", nil) forState:UIControlStateNormal];
@@ -127,10 +127,10 @@
     if (!_PFStartButton) {
         _PFStartButton = [[UIButton alloc] init];
         _PFStartButton.tag = 101;
-        _PFStartButton.backgroundColor = [UIColor systemYellowColor];
+        _PFStartButton.backgroundColor = [UIColor systemGreenColor];
         [_PFStartButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_PFStartButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
-        _PFStartButton.layer.cornerRadius = 10.0f;
+        _PFStartButton.layer.cornerRadius = 20.0f;
         _PFStartButton.layer.masksToBounds = YES;
         [_PFStartButton addTarget:self action:@selector(PFbtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [_PFStartButton setTitle:NSLocalizedString(@"开始", nil) forState:UIControlStateNormal];
@@ -141,10 +141,10 @@
     if (!_PFChangeButton) {
         _PFChangeButton = [[UIButton alloc] init];
         _PFChangeButton.tag = 102;
-        _PFChangeButton.backgroundColor = [UIColor systemYellowColor];
+        _PFChangeButton.backgroundColor = [UIColor systemGreenColor];
         [_PFChangeButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_PFChangeButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
-        _PFChangeButton.layer.cornerRadius = 10.0f;
+        _PFChangeButton.layer.cornerRadius = 20.0f;
         _PFChangeButton.layer.masksToBounds = YES;
         [_PFChangeButton addTarget:self action:@selector(PFbtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [_PFChangeButton setTitle:NSLocalizedString(@"交换", nil) forState:UIControlStateNormal];
@@ -155,10 +155,10 @@
     if (!_PFSaveButton) {
         _PFSaveButton = [[UIButton alloc] init];
         _PFSaveButton.tag = 103;
-        _PFSaveButton.backgroundColor = [UIColor systemYellowColor];
+        _PFSaveButton.backgroundColor = [UIColor systemGreenColor];
         [_PFSaveButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_PFSaveButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
-        _PFSaveButton.layer.cornerRadius = 10.0f;
+        _PFSaveButton.layer.cornerRadius = 20.0f;
         _PFSaveButton.layer.masksToBounds = YES;
         [_PFSaveButton addTarget:self action:@selector(PFbtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [_PFSaveButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];

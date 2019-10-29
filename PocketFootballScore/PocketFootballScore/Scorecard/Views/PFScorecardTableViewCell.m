@@ -48,13 +48,13 @@
         [self.PFminusOnePointsButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self.PFscoreColumnOneLbl);
             make.top.equalTo(self.PFscoreColumnSecondLbl.mas_bottom).offset(15);
-            make.width.mas_equalTo((PFWIDTH - 140) / 4);
+            make.width.mas_equalTo(42);
             make.height.mas_equalTo(42);
         }];
         [self.PFaddAPointButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self.PFscoreColumnSecondLbl);
             make.top.equalTo(self.PFscoreColumnSecondLbl.mas_bottom).offset(15);
-            make.width.mas_equalTo((PFWIDTH - 140) / 4);
+            make.width.mas_equalTo(42);
             make.height.mas_equalTo(42);
             make.bottom.equalTo(self.contentView).offset(-15);
         }];
@@ -139,7 +139,7 @@
     if (!_PFscoreColumnOneLbl) {
         _PFscoreColumnOneLbl = [[UILabel alloc] init];
         _PFscoreColumnOneLbl.backgroundColor = [UIColor blackColor];
-        _PFscoreColumnOneLbl.layer.cornerRadius = 10.0f;
+        _PFscoreColumnOneLbl.layer.cornerRadius = 30.0f;
         _PFscoreColumnOneLbl.layer.masksToBounds = YES;
         _PFscoreColumnOneLbl.textColor = [UIColor whiteColor];
         _PFscoreColumnOneLbl.font = [UIFont boldSystemFontOfSize:100];
@@ -152,7 +152,7 @@
     if (!_PFscoreColumnSecondLbl) {
         _PFscoreColumnSecondLbl = [[UILabel alloc] init];
         _PFscoreColumnSecondLbl.backgroundColor = [UIColor blackColor];
-        _PFscoreColumnSecondLbl.layer.cornerRadius = 10.0f;
+        _PFscoreColumnSecondLbl.layer.cornerRadius = 30.0f;
         _PFscoreColumnSecondLbl.layer.masksToBounds = YES;
         _PFscoreColumnSecondLbl.textColor = [UIColor whiteColor];
         _PFscoreColumnSecondLbl.font = [UIFont boldSystemFontOfSize:100];
