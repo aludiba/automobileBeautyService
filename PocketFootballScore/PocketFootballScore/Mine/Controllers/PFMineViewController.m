@@ -88,6 +88,7 @@
         {
             [BmobUser logout];
             PFLoginViewController *loginVC = [PFLoginViewController shareInstance];
+            loginVC.type = 0;
             UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
             PFKeyWindow.rootViewController = loginVCNav;
         }

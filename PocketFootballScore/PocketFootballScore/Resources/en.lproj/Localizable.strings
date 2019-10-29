@@ -5,6 +5,8 @@
   Created by bykj on 2019/10/14.
   Copyright © 2019 hbc. All rights reserved.
 */
+"无数据" = "No data";
+"当日比赛记录" = "Race record of the day";
 "请先登录" = "Please login first";
 "例如：友谊比赛第一场" = "E.g. Friendship match first";
 "结束时间" = "End time";

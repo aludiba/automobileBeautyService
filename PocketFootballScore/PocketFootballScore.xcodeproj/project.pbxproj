@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9E18FDAA08CE2E4AEAAC4FC9 /* Pods_PocketFootballScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F441EF6B3DBEEB2FA803146 /* Pods_PocketFootballScore.framework */; };
+		AE124737236824D000C6BCAA /* PFRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE124733236824CF00C6BCAA /* PFRecordViewController.m */; };
+		AE124738236824D000C6BCAA /* PFRecordDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE124734236824CF00C6BCAA /* PFRecordDetailsViewController.m */; };
+		AE124739236824D000C6BCAA /* PFRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE124735236824D000C6BCAA /* PFRecordViewController.xib */; };
 		AE2AC0EC2366CD0B0010E54D /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC0A32366CD0A0010E54D /* NSDictionary+log.m */; };
 		AE2AC0F32366CD0B0010E54D /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC0B22366CD0A0010E54D /* CalendarTool.m */; };
 		AE2AC0F72366CD0B0010E54D /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC0BA2366CD0A0010E54D /* NSArray+log.m */; };
@@ -25,7 +28,6 @@
 		AE2AC12B2366CFF20010E54D /* PFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1232366CFF20010E54D /* PFLoginViewController.m */; };
 		AE2AC1302366D0350010E54D /* PFLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC12C2366D0350010E54D /* PFLoginTableViewCell.m */; };
 		AE2AC1312366D0350010E54D /* PFSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC12D2366D0350010E54D /* PFSetTableViewCell.m */; };
-		AE2AC1342366D04F0010E54D /* PFRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1322366D04E0010E54D /* PFRecordViewController.m */; };
 		AE2AC1372366D0670010E54D /* PFRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1362366D0670010E54D /* PFRecordTableViewCell.m */; };
 		AE2AC13C2366D0860010E54D /* PFScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1392366D0860010E54D /* PFScorecardViewModel.m */; };
 		AE2AC13D2366D0860010E54D /* PFScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC13B2366D0860010E54D /* PFScorecardModel.m */; };
@@ -42,6 +44,11 @@
 /* Begin PBXFileReference section */
 		3F441EF6B3DBEEB2FA803146 /* Pods_PocketFootballScore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketFootballScore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		621C02E881E3185407E164D2 /* Pods-PocketFootballScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketFootballScore.debug.xcconfig"; path = "Target Support Files/Pods-PocketFootballScore/Pods-PocketFootballScore.debug.xcconfig"; sourceTree = "<group>"; };
+		AE124732236824CF00C6BCAA /* PFRecordDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFRecordDetailsViewController.h; sourceTree = "<group>"; };
+		AE124733236824CF00C6BCAA /* PFRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFRecordViewController.m; sourceTree = "<group>"; };
+		AE124734236824CF00C6BCAA /* PFRecordDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFRecordDetailsViewController.m; sourceTree = "<group>"; };
+		AE124735236824D000C6BCAA /* PFRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PFRecordViewController.xib; sourceTree = "<group>"; };
+		AE124736236824D000C6BCAA /* PFRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFRecordViewController.h; sourceTree = "<group>"; };
 		AE2AC0A32366CD0A0010E54D /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
 		AE2AC0A42366CD0A0010E54D /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
 		AE2AC0AA2366CD0A0010E54D /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
@@ -79,8 +86,6 @@
 		AE2AC12D2366D0350010E54D /* PFSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFSetTableViewCell.m; sourceTree = "<group>"; };
 		AE2AC12E2366D0350010E54D /* PFLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFLoginTableViewCell.h; sourceTree = "<group>"; };
 		AE2AC12F2366D0350010E54D /* PFSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFSetTableViewCell.h; sourceTree = "<group>"; };
-		AE2AC1322366D04E0010E54D /* PFRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFRecordViewController.m; sourceTree = "<group>"; };
-		AE2AC1332366D04E0010E54D /* PFRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFRecordViewController.h; sourceTree = "<group>"; };
 		AE2AC1352366D0670010E54D /* PFRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFRecordTableViewCell.h; sourceTree = "<group>"; };
 		AE2AC1362366D0670010E54D /* PFRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFRecordTableViewCell.m; sourceTree = "<group>"; };
 		AE2AC1382366D0860010E54D /* PFScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFScorecardModel.h; sourceTree = "<group>"; };
@@ -228,8 +233,11 @@
 		AE2AC0CF2366CD0B0010E54D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE2AC1332366D04E0010E54D /* PFRecordViewController.h */,
-				AE2AC1322366D04E0010E54D /* PFRecordViewController.m */,
+				AE124732236824CF00C6BCAA /* PFRecordDetailsViewController.h */,
+				AE124734236824CF00C6BCAA /* PFRecordDetailsViewController.m */,
+				AE124736236824D000C6BCAA /* PFRecordViewController.h */,
+				AE124733236824CF00C6BCAA /* PFRecordViewController.m */,
+				AE124735236824D000C6BCAA /* PFRecordViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -395,6 +403,7 @@
 			files = (
 				AE8BB6402362FADC00AD37E0 /* Assets.xcassets in Resources */,
 				AE2AC1012366CD0B0010E54D /* Localizable.strings in Resources */,
+				AE124739236824D000C6BCAA /* PFRecordViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +464,7 @@
 				AE2AC1372366D0670010E54D /* PFRecordTableViewCell.m in Sources */,
 				AE2AC14B2366D0D30010E54D /* PFScorecardOperationTableViewCell.m in Sources */,
 				AE8BB6462362FADC00AD37E0 /* main.m in Sources */,
+				AE124737236824D000C6BCAA /* PFRecordViewController.m in Sources */,
 				AE2AC13C2366D0860010E54D /* PFScorecardViewModel.m in Sources */,
 				AE2AC1282366CFF20010E54D /* PFPasswordChangeViewController.m in Sources */,
 				AE2AC0EC2366CD0B0010E54D /* NSDictionary+log.m in Sources */,
@@ -462,6 +472,7 @@
 				AE2AC12B2366CFF20010E54D /* PFLoginViewController.m in Sources */,
 				AE2AC1492366D0D30010E54D /* PFScorecardTitleTableViewCell.m in Sources */,
 				AE2AC11F2366CFBE0010E54D /* PFSetViewModel.m in Sources */,
+				AE124738236824D000C6BCAA /* PFRecordDetailsViewController.m in Sources */,
 				AE2AC1312366D0350010E54D /* PFSetTableViewCell.m in Sources */,
 				AE2AC1402366D09D0010E54D /* PFScorecardViewController.m in Sources */,
 				AE2AC12A2366CFF20010E54D /* PFModifyNicknameViewController.m in Sources */,
@@ -473,7 +484,6 @@
 				AE2AC11B2366CF510010E54D /* PFUIUtilities.m in Sources */,
 				AE2AC1292366CFF20010E54D /* PFMineViewController.m in Sources */,
 				AE2AC0F32366CD0B0010E54D /* CalendarTool.m in Sources */,
-				AE2AC1342366D04F0010E54D /* PFRecordViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -69,7 +69,7 @@
         _PFtitleLbl = [[UILabel alloc] init];
         _PFtitleLbl.textColor = [UIColor blackColor];
         _PFtitleLbl.font = [UIFont systemFontOfSize:18];
-        _PFtitleLbl.backgroundColor = [UIColor cyanColor];
+        _PFtitleLbl.backgroundColor = [UIColor systemGrayColor];
         _PFtitleLbl.layer.cornerRadius = 14.0f;
         _PFtitleLbl.layer.masksToBounds = YES;
     }
@@ -80,7 +80,7 @@
         _PFcontentLbl = [[UILabel alloc] init];
         _PFcontentLbl.textColor = [UIColor blackColor];
         _PFcontentLbl.font = [UIFont boldSystemFontOfSize:22];
-        _PFcontentLbl.backgroundColor = [UIColor cyanColor];
+        _PFcontentLbl.backgroundColor = [UIColor systemGrayColor];
         _PFcontentLbl.layer.cornerRadius = 16.0f;
         _PFcontentLbl.layer.masksToBounds = YES;
     }

@@ -89,6 +89,7 @@
         {
             [BmobUser logout];
             PBLoginViewController *loginVC = [PBLoginViewController shareInstance];
+            loginVC.type = 0;
             UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
             PBKeyWindow.rootViewController = loginVCNav;
         }

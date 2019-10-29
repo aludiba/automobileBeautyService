@@ -20,7 +20,7 @@
 @implementation PFScorecardTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = [UIColor systemBlueColor];
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.PFteamNameTextField];
         [self.contentView addSubview:self.PFscoreColumnOneLbl];
         [self.contentView addSubview:self.PFscoreColumnSecondLbl];
@@ -128,7 +128,7 @@
         _PFteamNameTextField.layer.cornerRadius = 4.0f;
         _PFteamNameTextField.layer.masksToBounds = YES;
         _PFteamNameTextField.delegate = self;
-        _PFteamNameTextField.backgroundColor = [UIColor systemPurpleColor];
+        _PFteamNameTextField.backgroundColor = [UIColor cyanColor];
         _PFteamNameTextField.textColor = [UIColor blackColor];
         _PFteamNameTextField.textAlignment = NSTextAlignmentCenter;
         _PFteamNameTextField.font = [UIFont systemFontOfSize:25];

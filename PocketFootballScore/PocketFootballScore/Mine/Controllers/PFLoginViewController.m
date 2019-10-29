@@ -57,6 +57,7 @@
 - (UITableView *)PFmainTable{
     if (!_PFmainTable) {
         _PFmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+        _PFmainTable.backgroundColor = PFH_Color(242, 242, 242, 242);
         _PFmainTable.showsVerticalScrollIndicator = NO;
         _PFmainTable.scrollEnabled = NO;
         _PFmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;

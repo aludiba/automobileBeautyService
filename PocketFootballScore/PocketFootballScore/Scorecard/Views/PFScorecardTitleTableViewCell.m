@@ -14,7 +14,7 @@
 @implementation PFScorecardTitleTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = [UIColor systemOrangeColor];
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.PFtitleField];
         
         [self.PFtitleField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -58,7 +58,7 @@
     if (!_PFtitleField) {
         _PFtitleField = [[UITextField alloc] init];
         _PFtitleField.delegate = self;
-        _PFtitleField.backgroundColor = [UIColor systemOrangeColor];
+        _PFtitleField.backgroundColor = [UIColor cyanColor];
         _PFtitleField.textColor = [UIColor blackColor];
         _PFtitleField.textAlignment = NSTextAlignmentCenter;
         _PFtitleField.font = [UIFont systemFontOfSize:25];

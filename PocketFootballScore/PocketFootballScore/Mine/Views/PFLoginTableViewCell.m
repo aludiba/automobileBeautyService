@@ -29,7 +29,7 @@
     return self;
 }
 - (void)PFsetContent{
-    self.contentView.backgroundColor = [UIColor cyanColor];
+    self.contentView.backgroundColor = PFH_Color(242, 242, 242, 242);
     [self.contentView addSubview:self.PFbackView];
     [self.PFbackView addSubview:self.PFaccountLable];
     [self.PFbackView addSubview:self.PFaccountTextField];
@@ -110,6 +110,10 @@
                     [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
                     PFLoginViewController *loginVC = [PFLoginViewController shareInstance];
                     loginVC.type = 0;
+                }else{
+                    PFTabBarController *tabVC = [PFTabBarController shareInstance];
+                    tabVC.selectedIndex = 0;
+                    [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
                 }
             }else{
                 [MBProgressHUD PFshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
@@ -137,6 +141,10 @@
                             [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
                             PFLoginViewController *loginVC = [PFLoginViewController shareInstance];
                             loginVC.type = 0;
+                        }else{
+                            PFTabBarController *tabVC = [PFTabBarController shareInstance];
+                            tabVC.selectedIndex = 0;
+                            [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
                         }
                     }else{
                         [MBProgressHUD PFshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
@@ -171,8 +179,10 @@
 - (UIView *)PFbackView{
     if (!_PFbackView) {
         _PFbackView = [[UIView alloc] init];
-        _PFbackView.backgroundColor = [UIColor whiteColor];
-        _PFbackView.layer.cornerRadius = 5.0f;
+        _PFbackView.backgroundColor = [UIColor cyanColor];
+        _PFbackView.layer.borderColor = [UIColor grayColor].CGColor;
+        _PFbackView.layer.borderWidth = 1.0f;
+        _PFbackView.layer.cornerRadius = 8.0f;
         _PFbackView.layer.masksToBounds = YES;
     }
     return _PFbackView;

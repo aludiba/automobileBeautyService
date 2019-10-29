@@ -109,6 +109,10 @@
                     [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
                     PBLoginViewController *loginVC = [PBLoginViewController shareInstance];
                     loginVC.type = 0;
+                }else{
+                    PBTabBarController *tabVC = [PBTabBarController shareInstance];
+                    tabVC.selectedIndex = 0;
+                    [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
                 }
             }else{
                 [MBProgressHUD PBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
@@ -136,6 +140,10 @@
                             [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
                             PBLoginViewController *loginVC = [PBLoginViewController shareInstance];
                             loginVC.type = 0;
+                        }else{
+                            PBTabBarController *tabVC = [PBTabBarController shareInstance];
+                            tabVC.selectedIndex = 0;
+                            [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
                         }
                     }else{
                         [MBProgressHUD PBshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];

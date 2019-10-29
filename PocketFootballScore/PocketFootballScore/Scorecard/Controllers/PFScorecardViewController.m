@@ -239,7 +239,7 @@
 - (UITableView *)PFmainTable{
     if (!_PFmainTable) {
         _PFmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-        _PFmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _PFmainTable.backgroundColor = [UIColor cyanColor];
         _PFmainTable.delegate = self;
         _PFmainTable.dataSource = self;
         _PFmainTable.rowHeight = UITableViewAutomaticDimension;

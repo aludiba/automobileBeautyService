@@ -21,6 +21,7 @@
 @implementation PFRecordTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.PFTitleLbl];
         [self.contentView addSubview:self.PFBackView];
         [self.PFBackView addSubview:self.PFTeamALbl];
@@ -118,7 +119,7 @@
         _PFBackView = [[UIView alloc] init];
         _PFBackView.layer.cornerRadius = 12.0f;
         _PFBackView.layer.masksToBounds = YES;
-        _PFBackView.backgroundColor = [UIColor systemOrangeColor];
+        _PFBackView.backgroundColor = [UIColor systemRedColor];
     }
     return _PFBackView;
 }

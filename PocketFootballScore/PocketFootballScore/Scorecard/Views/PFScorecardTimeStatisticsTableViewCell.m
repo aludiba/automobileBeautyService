@@ -15,6 +15,7 @@
 @implementation PFScorecardTimeStatisticsTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.PFtitleLbl];
         
         [self.PFtitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {

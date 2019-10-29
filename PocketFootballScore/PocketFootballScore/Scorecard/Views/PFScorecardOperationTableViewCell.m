@@ -17,6 +17,7 @@
 @implementation PFScorecardOperationTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.PFResetButton];
         [self.contentView addSubview:self.PFStartButton];
         [self.contentView addSubview:self.PFChangeButton];
