@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AEC1BDDF2369857200091475 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDDE2369857200091475 /* AppDelegate.m */; };
+		AEC1BDEA2369857700091475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC1BDE92369857700091475 /* Assets.xcassets */; };
+		AEC1BDF02369857700091475 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDEF2369857700091475 /* main.m */; };
+		AEC1BE1223698E8200091475 /* PVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDFA23698E8200091475 /* PVTabBarController.m */; };
+		AEC1BE1323698E8200091475 /* PVUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDFB23698E8200091475 /* PVUIUtilities.m */; };
+		AEC1BE1423698E8200091475 /* PVHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDFC23698E8200091475 /* PVHBTool.m */; };
+		AEC1BE1523698E8200091475 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDFD23698E8200091475 /* NSDictionary+log.m */; };
+		AEC1BE1623698E8200091475 /* MBProgressHUD+PVNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDFF23698E8200091475 /* MBProgressHUD+PVNJ.m */; };
+		AEC1BE1723698E8200091475 /* PVNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE0023698E8200091475 /* PVNDHTTPClient.m */; };
+		AEC1BE1823698E8200091475 /* PVBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE0623698E8200091475 /* PVBaseViewController.m */; };
+		AEC1BE1923698E8200091475 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE0923698E8200091475 /* CalendarTool.m */; };
+		AEC1BE1D23698E8200091475 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE1123698E8200091475 /* NSArray+log.m */; };
+		AEC1BE2323698FEE00091475 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEC1BE1F23698FEE00091475 /* Localizable.strings */; };
+		AEC1BE36236990F000091475 /* PVScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE26236990EF00091475 /* PVScorecardViewModel.m */; };
+		AEC1BE37236990F000091475 /* PVScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE27236990EF00091475 /* PVScorecardModel.m */; };
+		AEC1BE38236990F000091475 /* PVScorecardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE2C236990EF00091475 /* PVScorecardViewController.m */; };
+		AEC1BE39236990F000091475 /* PVScorecardTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE31236990F000091475 /* PVScorecardTitleTableViewCell.m */; };
+		AEC1BE3A236990F000091475 /* PVScorecardTimeStatisticsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE32236990F000091475 /* PVScorecardTimeStatisticsTableViewCell.m */; };
+		AEC1BE3B236990F000091475 /* PVScorecardOperationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE33236990F000091475 /* PVScorecardOperationTableViewCell.m */; };
+		AEC1BE3C236990F000091475 /* PVScorecardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE34236990F000091475 /* PVScorecardTableViewCell.m */; };
+		AEC1BE562369925600091475 /* PVRecordDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE502369925600091475 /* PVRecordDetailsViewController.m */; };
+		AEC1BE572369925600091475 /* PVRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC1BE512369925600091475 /* PVRecordViewController.xib */; };
+		AEC1BE582369925600091475 /* PVRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE522369925600091475 /* PVRecordViewController.m */; };
+		AEC1BE592369925600091475 /* PVRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE542369925600091475 /* PVRecordTableViewCell.m */; };
+		AEC1BE6C236992FF00091475 /* PVSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE5C236992FE00091475 /* PVSetViewModel.m */; };
+		AEC1BE6D236992FF00091475 /* PVMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE60236992FE00091475 /* PVMineViewController.m */; };
+		AEC1BE6E236992FF00091475 /* PVLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE62236992FE00091475 /* PVLoginViewController.m */; };
+		AEC1BE6F236992FF00091475 /* PVModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE63236992FE00091475 /* PVModifyNicknameViewController.m */; };
+		AEC1BE70236992FF00091475 /* PVPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE65236992FE00091475 /* PVPasswordChangeViewController.m */; };
+		AEC1BE71236992FF00091475 /* PVSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE69236992FE00091475 /* PVSetTableViewCell.m */; };
+		AEC1BE72236992FF00091475 /* PVLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE6A236992FE00091475 /* PVLoginTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AEC1BDDA2369857200091475 /* PocketVolleyballScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketVolleyballScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC1BDDD2369857200091475 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AEC1BDDE2369857200091475 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AEC1BDE92369857700091475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEC1BDEE2369857700091475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEC1BDEF2369857700091475 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AEC1BDF623698A1700091475 /* PocketVolleyballScore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PocketVolleyballScore.entitlements; sourceTree = "<group>"; };
+		AEC1BDF823698E8200091475 /* PVBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVBaseViewController.h; sourceTree = "<group>"; };
+		AEC1BDF923698E8200091475 /* PV_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PV_PrefixHeader.pch; sourceTree = "<group>"; };
+		AEC1BDFA23698E8200091475 /* PVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVTabBarController.m; sourceTree = "<group>"; };
+		AEC1BDFB23698E8200091475 /* PVUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVUIUtilities.m; sourceTree = "<group>"; };
+		AEC1BDFC23698E8200091475 /* PVHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVHBTool.m; sourceTree = "<group>"; };
+		AEC1BDFD23698E8200091475 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
+		AEC1BDFE23698E8200091475 /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
+		AEC1BDFF23698E8200091475 /* MBProgressHUD+PVNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+PVNJ.m"; sourceTree = "<group>"; };
+		AEC1BE0023698E8200091475 /* PVNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVNDHTTPClient.m; sourceTree = "<group>"; };
+		AEC1BE0123698E8200091475 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		AEC1BE0223698E8200091475 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
+		AEC1BE0323698E8200091475 /* PVHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVHBTool.h; sourceTree = "<group>"; };
+		AEC1BE0423698E8200091475 /* PVUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVUIUtilities.h; sourceTree = "<group>"; };
+		AEC1BE0523698E8200091475 /* PVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVTabBarController.h; sourceTree = "<group>"; };
+		AEC1BE0623698E8200091475 /* PVBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVBaseViewController.m; sourceTree = "<group>"; };
+		AEC1BE0723698E8200091475 /* MBProgressHUD+PVNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+PVNJ.h"; sourceTree = "<group>"; };
+		AEC1BE0823698E8200091475 /* PVGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVGlobal.h; sourceTree = "<group>"; };
+		AEC1BE0923698E8200091475 /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
+		AEC1BE0A23698E8200091475 /* PVNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVNDHTTPClient.h; sourceTree = "<group>"; };
+		AEC1BE1123698E8200091475 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		AEC1BE2023698FEE00091475 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AEC1BE2123698FEE00091475 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEC1BE2223698FEE00091475 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEC1BE26236990EF00091475 /* PVScorecardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVScorecardViewModel.m; sourceTree = "<group>"; };
+		AEC1BE27236990EF00091475 /* PVScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVScorecardModel.m; sourceTree = "<group>"; };
+		AEC1BE28236990EF00091475 /* PVScorecardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVScorecardViewModel.h; sourceTree = "<group>"; };
+		AEC1BE29236990EF00091475 /* PVScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVScorecardModel.h; sourceTree = "<group>"; };
+		AEC1BE2B236990EF00091475 /* PVScorecardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVScorecardViewController.h; sourceTree = "<group>"; };
+		AEC1BE2C236990EF00091475 /* PVScorecardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVScorecardViewController.m; sourceTree = "<group>"; };
+		AEC1BE2E236990F000091475 /* PVScorecardTimeStatisticsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVScorecardTimeStatisticsTableViewCell.h; sourceTree = "<group>"; };
+		AEC1BE2F236990F000091475 /* PVScorecardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVScorecardTableViewCell.h; sourceTree = "<group>"; };
+		AEC1BE30236990F000091475 /* PVScorecardOperationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVScorecardOperationTableViewCell.h; sourceTree = "<group>"; };
+		AEC1BE31236990F000091475 /* PVScorecardTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVScorecardTitleTableViewCell.m; sourceTree = "<group>"; };
+		AEC1BE32236990F000091475 /* PVScorecardTimeStatisticsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVScorecardTimeStatisticsTableViewCell.m; sourceTree = "<group>"; };
+		AEC1BE33236990F000091475 /* PVScorecardOperationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVScorecardOperationTableViewCell.m; sourceTree = "<group>"; };
+		AEC1BE34236990F000091475 /* PVScorecardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVScorecardTableViewCell.m; sourceTree = "<group>"; };
+		AEC1BE35236990F000091475 /* PVScorecardTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVScorecardTitleTableViewCell.h; sourceTree = "<group>"; };
+		AEC1BE4E2369925600091475 /* PVRecordDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRecordDetailsViewController.h; sourceTree = "<group>"; };
+		AEC1BE4F2369925600091475 /* PVRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRecordViewController.h; sourceTree = "<group>"; };
+		AEC1BE502369925600091475 /* PVRecordDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVRecordDetailsViewController.m; sourceTree = "<group>"; };
+		AEC1BE512369925600091475 /* PVRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PVRecordViewController.xib; sourceTree = "<group>"; };
+		AEC1BE522369925600091475 /* PVRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVRecordViewController.m; sourceTree = "<group>"; };
+		AEC1BE542369925600091475 /* PVRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVRecordTableViewCell.m; sourceTree = "<group>"; };
+		AEC1BE552369925600091475 /* PVRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRecordTableViewCell.h; sourceTree = "<group>"; };
+		AEC1BE5C236992FE00091475 /* PVSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVSetViewModel.m; sourceTree = "<group>"; };
+		AEC1BE5D236992FE00091475 /* PVSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVSetViewModel.h; sourceTree = "<group>"; };
+		AEC1BE5F236992FE00091475 /* PVModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVModifyNicknameViewController.h; sourceTree = "<group>"; };
+		AEC1BE60236992FE00091475 /* PVMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVMineViewController.m; sourceTree = "<group>"; };
+		AEC1BE61236992FE00091475 /* PVPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVPasswordChangeViewController.h; sourceTree = "<group>"; };
+		AEC1BE62236992FE00091475 /* PVLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVLoginViewController.m; sourceTree = "<group>"; };
+		AEC1BE63236992FE00091475 /* PVModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVModifyNicknameViewController.m; sourceTree = "<group>"; };
+		AEC1BE64236992FE00091475 /* PVMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVMineViewController.h; sourceTree = "<group>"; };
+		AEC1BE65236992FE00091475 /* PVPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVPasswordChangeViewController.m; sourceTree = "<group>"; };
+		AEC1BE66236992FE00091475 /* PVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVLoginViewController.h; sourceTree = "<group>"; };
+		AEC1BE68236992FE00091475 /* PVLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVLoginTableViewCell.h; sourceTree = "<group>"; };
+		AEC1BE69236992FE00091475 /* PVSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVSetTableViewCell.m; sourceTree = "<group>"; };
+		AEC1BE6A236992FE00091475 /* PVLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVLoginTableViewCell.m; sourceTree = "<group>"; };
+		AEC1BE6B236992FE00091475 /* PVSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVSetTableViewCell.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEC1BDD72369857200091475 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEC1BDD12369857200091475 = {
+			isa = PBXGroup;
+			children = (
+				AEC1BDDC2369857200091475 /* PocketVolleyballScore */,
+				AEC1BDDB2369857200091475 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEC1BDDB2369857200091475 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEC1BDDA2369857200091475 /* PocketVolleyballScore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEC1BDDC2369857200091475 /* PocketVolleyballScore */ = {
+			isa = PBXGroup;
+			children = (
+				AEC1BDF623698A1700091475 /* PocketVolleyballScore.entitlements */,
+				AEC1BDF723698E8200091475 /* Common */,
+				AEC1BE1E23698FEE00091475 /* Resources */,
+				AEC1BE24236990EF00091475 /* Scorecard */,
+				AEC1BE4C2369925600091475 /* Record */,
+				AEC1BE5A236992FE00091475 /* Mine */,
+				AEC1BDDD2369857200091475 /* AppDelegate.h */,
+				AEC1BDDE2369857200091475 /* AppDelegate.m */,
+				AEC1BDE92369857700091475 /* Assets.xcassets */,
+				AEC1BDEE2369857700091475 /* Info.plist */,
+				AEC1BDEF2369857700091475 /* main.m */,
+			);
+			path = PocketVolleyballScore;
+			sourceTree = "<group>";
+		};
+		AEC1BDF723698E8200091475 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AEC1BDF923698E8200091475 /* PV_PrefixHeader.pch */,
+				AEC1BE0823698E8200091475 /* PVGlobal.h */,
+				AEC1BE0323698E8200091475 /* PVHBTool.h */,
+				AEC1BDFC23698E8200091475 /* PVHBTool.m */,
+				AEC1BE0423698E8200091475 /* PVUIUtilities.h */,
+				AEC1BDFB23698E8200091475 /* PVUIUtilities.m */,
+				AEC1BDFE23698E8200091475 /* CalendarTool.h */,
+				AEC1BE0923698E8200091475 /* CalendarTool.m */,
+				AEC1BE0123698E8200091475 /* NSArray+log.h */,
+				AEC1BE1123698E8200091475 /* NSArray+log.m */,
+				AEC1BE0223698E8200091475 /* NSDictionary+log.h */,
+				AEC1BDFD23698E8200091475 /* NSDictionary+log.m */,
+				AEC1BE0723698E8200091475 /* MBProgressHUD+PVNJ.h */,
+				AEC1BDFF23698E8200091475 /* MBProgressHUD+PVNJ.m */,
+				AEC1BE0A23698E8200091475 /* PVNDHTTPClient.h */,
+				AEC1BE0023698E8200091475 /* PVNDHTTPClient.m */,
+				AEC1BDF823698E8200091475 /* PVBaseViewController.h */,
+				AEC1BE0623698E8200091475 /* PVBaseViewController.m */,
+				AEC1BE0523698E8200091475 /* PVTabBarController.h */,
+				AEC1BDFA23698E8200091475 /* PVTabBarController.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AEC1BE1E23698FEE00091475 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AEC1BE1F23698FEE00091475 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AEC1BE24236990EF00091475 /* Scorecard */ = {
+			isa = PBXGroup;
+			children = (
+				AEC1BE25236990EF00091475 /* Models */,
+				AEC1BE2A236990EF00091475 /* Controllers */,
+				AEC1BE2D236990EF00091475 /* Views */,
+			);
+			name = Scorecard;
+			path = PocketVolleyballScore/Scorecard;
+			sourceTree = SOURCE_ROOT;
+		};
+		AEC1BE25236990EF00091475 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AEC1BE28236990EF00091475 /* PVScorecardViewModel.h */,
+				AEC1BE26236990EF00091475 /* PVScorecardViewModel.m */,
+				AEC1BE29236990EF00091475 /* PVScorecardModel.h */,
+				AEC1BE27236990EF00091475 /* PVScorecardModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AEC1BE2A236990EF00091475 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AEC1BE2B236990EF00091475 /* PVScorecardViewController.h */,
+				AEC1BE2C236990EF00091475 /* PVScorecardViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AEC1BE2D236990EF00091475 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AEC1BE31236990F000091475 /* PVScorecardTitleTableViewCell.m */,
+				AEC1BE35236990F000091475 /* PVScorecardTitleTableViewCell.h */,
+				AEC1BE2E236990F000091475 /* PVScorecardTimeStatisticsTableViewCell.h */,
+				AEC1BE32236990F000091475 /* PVScorecardTimeStatisticsTableViewCell.m */,
+				AEC1BE2F236990F000091475 /* PVScorecardTableViewCell.h */,
+				AEC1BE34236990F000091475 /* PVScorecardTableViewCell.m */,
+				AEC1BE30236990F000091475 /* PVScorecardOperationTableViewCell.h */,
+				AEC1BE33236990F000091475 /* PVScorecardOperationTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AEC1BE4C2369925600091475 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				AEC1BE532369925600091475 /* Views */,
+				AEC1BE4D2369925600091475 /* Controllers */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		AEC1BE4D2369925600091475 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AEC1BE4F2369925600091475 /* PVRecordViewController.h */,
+				AEC1BE522369925600091475 /* PVRecordViewController.m */,
+				AEC1BE512369925600091475 /* PVRecordViewController.xib */,
+				AEC1BE4E2369925600091475 /* PVRecordDetailsViewController.h */,
+				AEC1BE502369925600091475 /* PVRecordDetailsViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AEC1BE532369925600091475 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AEC1BE542369925600091475 /* PVRecordTableViewCell.m */,
+				AEC1BE552369925600091475 /* PVRecordTableViewCell.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AEC1BE5A236992FE00091475 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				AEC1BE5B236992FE00091475 /* Models */,
+				AEC1BE67236992FE00091475 /* Views */,
+				AEC1BE5E236992FE00091475 /* Controllers */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		AEC1BE5B236992FE00091475 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AEC1BE5D236992FE00091475 /* PVSetViewModel.h */,
+				AEC1BE5C236992FE00091475 /* PVSetViewModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AEC1BE5E236992FE00091475 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AEC1BE66236992FE00091475 /* PVLoginViewController.h */,
+				AEC1BE62236992FE00091475 /* PVLoginViewController.m */,
+				AEC1BE64236992FE00091475 /* PVMineViewController.h */,
+				AEC1BE60236992FE00091475 /* PVMineViewController.m */,
+				AEC1BE5F236992FE00091475 /* PVModifyNicknameViewController.h */,
+				AEC1BE63236992FE00091475 /* PVModifyNicknameViewController.m */,
+				AEC1BE61236992FE00091475 /* PVPasswordChangeViewController.h */,
+				AEC1BE65236992FE00091475 /* PVPasswordChangeViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AEC1BE67236992FE00091475 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AEC1BE68236992FE00091475 /* PVLoginTableViewCell.h */,
+				AEC1BE6A236992FE00091475 /* PVLoginTableViewCell.m */,
+				AEC1BE6B236992FE00091475 /* PVSetTableViewCell.h */,
+				AEC1BE69236992FE00091475 /* PVSetTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEC1BDD92369857200091475 /* PocketVolleyballScore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEC1BDF32369857700091475 /* Build configuration list for PBXNativeTarget "PocketVolleyballScore" */;
+			buildPhases = (
+				AEC1BDD62369857200091475 /* Sources */,
+				AEC1BDD72369857200091475 /* Frameworks */,
+				AEC1BDD82369857200091475 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketVolleyballScore;
+			productName = PocketVolleyballScore;
+			productReference = AEC1BDDA2369857200091475 /* PocketVolleyballScore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEC1BDD22369857200091475 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = com;
+				TargetAttributes = {
+					AEC1BDD92369857200091475 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = AEC1BDD52369857200091475 /* Build configuration list for PBXProject "PocketVolleyballScore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+				ja,
+			);
+			mainGroup = AEC1BDD12369857200091475;
+			productRefGroup = AEC1BDDB2369857200091475 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEC1BDD92369857200091475 /* PocketVolleyballScore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEC1BDD82369857200091475 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC1BDEA2369857700091475 /* Assets.xcassets in Resources */,
+				AEC1BE572369925600091475 /* PVRecordViewController.xib in Resources */,
+				AEC1BE2323698FEE00091475 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEC1BDD62369857200091475 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC1BE70236992FF00091475 /* PVPasswordChangeViewController.m in Sources */,
+				AEC1BE1623698E8200091475 /* MBProgressHUD+PVNJ.m in Sources */,
+				AEC1BE3B236990F000091475 /* PVScorecardOperationTableViewCell.m in Sources */,
+				AEC1BE71236992FF00091475 /* PVSetTableViewCell.m in Sources */,
+				AEC1BE38236990F000091475 /* PVScorecardViewController.m in Sources */,
+				AEC1BE582369925600091475 /* PVRecordViewController.m in Sources */,
+				AEC1BE1D23698E8200091475 /* NSArray+log.m in Sources */,
+				AEC1BE72236992FF00091475 /* PVLoginTableViewCell.m in Sources */,
+				AEC1BDDF2369857200091475 /* AppDelegate.m in Sources */,
+				AEC1BE562369925600091475 /* PVRecordDetailsViewController.m in Sources */,
+				AEC1BE1823698E8200091475 /* PVBaseViewController.m in Sources */,
+				AEC1BE6E236992FF00091475 /* PVLoginViewController.m in Sources */,
+				AEC1BE3C236990F000091475 /* PVScorecardTableViewCell.m in Sources */,
+				AEC1BE6C236992FF00091475 /* PVSetViewModel.m in Sources */,
+				AEC1BE1723698E8200091475 /* PVNDHTTPClient.m in Sources */,
+				AEC1BE36236990F000091475 /* PVScorecardViewModel.m in Sources */,
+				AEC1BE1423698E8200091475 /* PVHBTool.m in Sources */,
+				AEC1BE1223698E8200091475 /* PVTabBarController.m in Sources */,
+				AEC1BE1323698E8200091475 /* PVUIUtilities.m in Sources */,
+				AEC1BDF02369857700091475 /* main.m in Sources */,
+				AEC1BE39236990F000091475 /* PVScorecardTitleTableViewCell.m in Sources */,
+				AEC1BE3A236990F000091475 /* PVScorecardTimeStatisticsTableViewCell.m in Sources */,
+				AEC1BE1523698E8200091475 /* NSDictionary+log.m in Sources */,
+				AEC1BE6D236992FF00091475 /* PVMineViewController.m in Sources */,
+				AEC1BE1923698E8200091475 /* CalendarTool.m in Sources */,
+				AEC1BE6F236992FF00091475 /* PVModifyNicknameViewController.m in Sources */,
+				AEC1BE37236990F000091475 /* PVScorecardModel.m in Sources */,
+				AEC1BE592369925600091475 /* PVRecordTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AEC1BE1F23698FEE00091475 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEC1BE2023698FEE00091475 /* zh-Hans */,
+				AEC1BE2123698FEE00091475 /* ja */,
+				AEC1BE2223698FEE00091475 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AEC1BDF12369857700091475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AEC1BDF22369857700091475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEC1BDF42369857700091475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = PocketVolleyballScore/PocketVolleyballScore.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VWNPTX8H3L;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScore/Common/PV_PrefixHeader.pch";
+				INFOPLIST_FILE = PocketVolleyballScore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PocketVolleyballScore/Common/JPush",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketVolleyballScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AEC1BDF52369857700091475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = PocketVolleyballScore/PocketVolleyballScore.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VWNPTX8H3L;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScore/Common/PV_PrefixHeader.pch";
+				INFOPLIST_FILE = PocketVolleyballScore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PocketVolleyballScore/Common/JPush",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketVolleyballScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEC1BDD52369857200091475 /* Build configuration list for PBXProject "PocketVolleyballScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC1BDF12369857700091475 /* Debug */,
+				AEC1BDF22369857700091475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEC1BDF32369857700091475 /* Build configuration list for PBXNativeTarget "PocketVolleyballScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC1BDF42369857700091475 /* Debug */,
+				AEC1BDF52369857700091475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEC1BDD22369857200091475 /* Project object */;
+}

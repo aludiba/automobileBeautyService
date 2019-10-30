@@ -326,11 +326,11 @@
 			isa = PBXGroup;
 			children = (
 				AE8BB64C2362FCAA00AD37E0 /* PocketFootballScore.entitlements */,
-				AE2AC0A02366CD0A0010E54D /* Common */,
-				AE2AC0BB2366CD0A0010E54D /* Mine */,
-				AE2AC0CD2366CD0B0010E54D /* Record */,
 				AE2AC0D52366CD0B0010E54D /* Resources */,
+				AE2AC0A02366CD0A0010E54D /* Common */,
 				AE2AC0DA2366CD0B0010E54D /* Scorecard */,
+				AE2AC0CD2366CD0B0010E54D /* Record */,
+				AE2AC0BB2366CD0A0010E54D /* Mine */,
 				AE8BB6332362FAD900AD37E0 /* AppDelegate.h */,
 				AE8BB6342362FAD900AD37E0 /* AppDelegate.m */,
 				AE8BB63F2362FADC00AD37E0 /* Assets.xcassets */,
