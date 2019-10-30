@@ -9,4 +9,5 @@ target 'PocketVolleyballScore' do
     pod 'Masonry'
     pod 'AFNetworking'
     pod 'MJRefresh'
+    pod 'MBProgressHUD'
 end
