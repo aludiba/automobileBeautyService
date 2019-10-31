@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "WALoginViewController.h"
 #import "WATabBarController.h"
-#import "WAWebViewController.h"
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
@@ -28,19 +27,11 @@
     [Bmob registerWithAppKey:@"a9c594114abe62d6277a00efe6616470"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"WAwineAwake"];
+    BmobQuery *bquery = [BmobQuery queryWithClassName:@"WAwineRemind"];
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-        if (error) {
-            self.window.rootViewController = [self rootController];
-        }else{
-            self.window.rootViewController = [self rootController];
-            if (array.count) {
-                BmobObject *obj = [array lastObject];
-                NSString *key = [obj objectForKey:@"KEY"];
-                WAWebViewController *webVC = [[WAWebViewController alloc] init];
-                webVC.WAkey = key;
-            }
-        }
+         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"WAwineRemind"]]];
+        self.window.rootViewController = [self rootController];
+        [self.window makeKeyAndVisible];
     }];
     self.window.rootViewController = [self rootController];
     [self.window makeKeyAndVisible];
@@ -78,7 +69,7 @@
     // Required
     // init Push
     // notice: 2.1.5 版本的 SDK 新增的注册方法，改成可上报 IDFA，如果没有使用 IDFA 直接传 nil
-    [JPUSHService setupWithOption:launchOptions appKey:@"bc72bf7a2d1562868fcaf049"
+    [JPUSHService setupWithOption:launchOptions appKey:@"5a37fe5767caacf4e3a49376"
                           channel:@"App Store"
                  apsForProduction:1];
 }

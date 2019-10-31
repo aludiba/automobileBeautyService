@@ -36,7 +36,6 @@
 		7247446F23549CC2009BBE40 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247446E23549CC2009BBE40 /* SystemConfiguration.framework */; };
 		7247447123549CCB009BBE40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247447023549CCA009BBE40 /* UIKit.framework */; };
 		7247447323549CDC009BBE40 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7247447223549CDC009BBE40 /* UserNotifications.framework */; };
-		726B763023535E6F0067A72E /* WAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726B762E23535E6E0067A72E /* WAWebViewController.m */; };
 		AE0F5DA1234AE18500E7468E /* WADrinkingPlanDateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0F5DA0234AE18500E7468E /* WADrinkingPlanDateTableViewCell.m */; };
 		AE0F5DA4234AE49300E7468E /* WADrinkingPlanSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0F5DA3234AE49300E7468E /* WADrinkingPlanSaveTableViewCell.m */; };
 		AE0F5DA7234B1EF400E7468E /* WADrinkingPlanSaveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0F5DA6234B1EF400E7468E /* WADrinkingPlanSaveModel.m */; };
@@ -129,8 +128,6 @@
 		7247446E23549CC2009BBE40 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7247447023549CCA009BBE40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7247447223549CDC009BBE40 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
-		726B762E23535E6E0067A72E /* WAWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAWebViewController.m; sourceTree = "<group>"; };
-		726B762F23535E6F0067A72E /* WAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAWebViewController.h; sourceTree = "<group>"; };
 		AE0F5D9F234AE18500E7468E /* WADrinkingPlanDateTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WADrinkingPlanDateTableViewCell.h; sourceTree = "<group>"; };
 		AE0F5DA0234AE18500E7468E /* WADrinkingPlanDateTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WADrinkingPlanDateTableViewCell.m; sourceTree = "<group>"; };
 		AE0F5DA2234AE49300E7468E /* WADrinkingPlanSaveTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WADrinkingPlanSaveTableViewCell.h; sourceTree = "<group>"; };
@@ -144,7 +141,7 @@
 		AE17A081235071950095E229 /* WAClockRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAClockRecordModel.h; sourceTree = "<group>"; };
 		AE17A082235071950095E229 /* WAClockRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAClockRecordModel.m; sourceTree = "<group>"; };
 		AE44FC9C235411B20033D031 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AEFF88FE23497B2B00B81B11 /* wineAwake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wineAwake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEFF88FE23497B2B00B81B11 /* wineRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wineRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFF890123497B2B00B81B11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEFF890223497B2B00B81B11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AEFF890D23497B2E00B81B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -321,7 +318,7 @@
 		AEFF88FF23497B2B00B81B11 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AEFF88FE23497B2B00B81B11 /* wineAwake.app */,
+				AEFF88FE23497B2B00B81B11 /* wineRemind.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -348,8 +345,6 @@
 			isa = PBXGroup;
 			children = (
 				7247444523549AFA009BBE40 /* JPush */,
-				726B762F23535E6F0067A72E /* WAWebViewController.h */,
-				726B762E23535E6E0067A72E /* WAWebViewController.m */,
 				AEFF8971234992E500B81B11 /* WA_PrefixHeader.pch */,
 				AEFF89702349920E00B81B11 /* WAGlobal.h */,
 				AEFF895B2349850100B81B11 /* WANDHTTPClient.h */,
@@ -609,7 +604,7 @@
 			);
 			name = wineAwake;
 			productName = wineAwake;
-			productReference = AEFF88FE23497B2B00B81B11 /* wineAwake.app */;
+			productReference = AEFF88FE23497B2B00B81B11 /* wineRemind.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -731,7 +726,6 @@
 				AEFF89A62349CF3200B81B11 /* WAClockTableViewCell.m in Sources */,
 				7238127D234F839900F3939A /* WAClockRecordViewController.m in Sources */,
 				AE0F5DAA234B372900E7468E /* WADrinkingPlanClockView.m in Sources */,
-				726B763023535E6F0067A72E /* WAWebViewController.m in Sources */,
 				AEFF896F23498FB500B81B11 /* WABaseViewController.m in Sources */,
 				AEFF894D2349806B00B81B11 /* JTDateHelper.m in Sources */,
 				AEFF89662349857F00B81B11 /* MBProgressHUD+WANJ.m in Sources */,
@@ -887,9 +881,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = wineAwake/wineAwake.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer: zhiguang he (NTF347VWTK)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 32A8756LJS;
+				DEVELOPMENT_TEAM = 69HX82HGYZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wineAwake/Common/WA_PrefixHeader.pch";
 				INFOPLIST_FILE = wineAwake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -901,9 +895,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/wineAwake/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hbc.Amplifier.wineAwake;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = dis_wineAwake_20191014;
+				PRODUCT_BUNDLE_IDENTIFIER = hbc.Amplifier.wineRemind;
+				PRODUCT_NAME = wineRemind;
+				PROVISIONING_PROFILE_SPECIFIER = dev_wineRemind_20191031;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -916,9 +910,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = wineAwake/wineAwake.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer: zhiguang he (NTF347VWTK)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 32A8756LJS;
+				DEVELOPMENT_TEAM = 69HX82HGYZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wineAwake/Common/WA_PrefixHeader.pch";
 				INFOPLIST_FILE = wineAwake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -930,9 +924,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/wineAwake/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hbc.Amplifier.wineAwake;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = dis_wineAwake_20191014;
+				PRODUCT_BUNDLE_IDENTIFIER = hbc.Amplifier.wineRemind;
+				PRODUCT_NAME = wineRemind;
+				PROVISIONING_PROFILE_SPECIFIER = dev_wineRemind_20191031;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
