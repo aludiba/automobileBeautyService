@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		44174B98EC156E8AE26A0351 /* Pods_GoodHabit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78D571AABE2191F4793A4F9 /* Pods_GoodHabit.framework */; };
-		72263EEC2338F23E00F54FFD /* GHAllClockLogsViewCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72263EEB2338F23E00F54FFD /* GHAllClockLogsViewCellTableViewCell.m */; };
-		72263EEF2338FC1900F54FFD /* GHAllClockLogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72263EEE2338FC1900F54FFD /* GHAllClockLogsViewController.m */; };
+		72263EEC2338F23E00F54FFD /* PHAllClockLogsViewCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72263EEB2338F23E00F54FFD /* PHAllClockLogsViewCellTableViewCell.m */; };
+		72263EEF2338FC1900F54FFD /* PHAllClockLogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72263EEE2338FC1900F54FFD /* PHAllClockLogsViewController.m */; };
 		723CBB11232C86BE0095EC7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB10232C86BE0095EC7C /* AppDelegate.m */; };
 		723CBB19232C86C20095EC7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723CBB18232C86C20095EC7C /* Assets.xcassets */; };
 		723CBB1F232C86C20095EC7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB1E232C86C20095EC7C /* main.m */; };
@@ -29,31 +29,28 @@
 		723CBB72232CAFA40095EC7C /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB70232CAFA40095EC7C /* NSArray+log.m */; };
 		723CBB73232CAFA40095EC7C /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB71232CAFA40095EC7C /* NSDictionary+log.m */; };
 		723CBB76232CAFC60095EC7C /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB75232CAFC60095EC7C /* CalendarTool.m */; };
-		723CBB79232CAFF50095EC7C /* GHWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB78232CAFF50095EC7C /* GHWebViewController.m */; };
-		723CBB7C232CB0580095EC7C /* GHHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB7B232CB0580095EC7C /* GHHBTool.m */; };
-		723CBB7F232CB0A70095EC7C /* GHUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB7E232CB0A70095EC7C /* GHUIUtilities.m */; };
-		723CBB82232CB0FD0095EC7C /* MBProgressHUD+GHNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB81232CB0FD0095EC7C /* MBProgressHUD+GHNJ.m */; };
-		723CBB85232CB1390095EC7C /* GHNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB84232CB1380095EC7C /* GHNDHTTPClient.m */; };
-		723CBB8A232CB71E0095EC7C /* GHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB89232CB71E0095EC7C /* GHBaseViewController.m */; };
-		723CBB8D232CB8CC0095EC7C /* GHTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB8C232CB8CC0095EC7C /* GHTodayViewController.m */; };
-		723CBB90232CB8EC0095EC7C /* GHDailyHabitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB8F232CB8EC0095EC7C /* GHDailyHabitsViewController.m */; };
-		723CBB93232CB9010095EC7C /* GHSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB92232CB9010095EC7C /* GHSetViewController.m */; };
-		723CBB96232CB9930095EC7C /* GHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB95232CB9930095EC7C /* GHTabBarViewController.m */; };
-		723CBB99232CC5120095EC7C /* GHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB98232CC5120095EC7C /* GHLoginViewController.m */; };
-		729D0B8F232E142600D88267 /* GHGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B8E232E142600D88267 /* GHGuideViewController.m */; };
-		729D0B92232E15AE00D88267 /* GHGuidePromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B91232E15AE00D88267 /* GHGuidePromptView.m */; };
-		729D0B95232E20B600D88267 /* GHGuideCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B94232E20B600D88267 /* GHGuideCollectionReusableView.m */; };
-		729D0B98232E20F400D88267 /* GHGuideCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B97232E20F400D88267 /* GHGuideCollectionViewCell.m */; };
-		729D0B9B232E28F600D88267 /* GHGuideModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B9A232E28F600D88267 /* GHGuideModel.m */; };
-		72A2978F2336039E004EE230 /* GHGuideClockInformationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2978E2336039E004EE230 /* GHGuideClockInformationModel.m */; };
-		72A2979223360F1E004EE230 /* GHModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2979123360F1E004EE230 /* GHModifyNicknameViewController.m */; };
-		72A297952336116B004EE230 /* GHPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A297942336116B004EE230 /* GHPasswordChangeViewController.m */; };
-		72A29798233618E4004EE230 /* GHSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A29797233618E4004EE230 /* GHSetTableViewCell.m */; };
-		72A2979B23361A9D004EE230 /* GHSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2979A23361A9D004EE230 /* GHSetViewModel.m */; };
-		72A2979E23362AB9004EE230 /* GHTodayClockInCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2979D23362AB9004EE230 /* GHTodayClockInCollectionViewCell.m */; };
-		72A297A123363D24004EE230 /* GHClockInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A297A023363D24004EE230 /* GHClockInViewController.m */; };
-		AE361CA9233F781900702F40 /* jcore-ios-2.0.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CA7233F781900702F40 /* jcore-ios-2.0.1.a */; };
-		AE361CAA233F781900702F40 /* jpush-ios-3.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CA8233F781900702F40 /* jpush-ios-3.2.0.a */; };
+		723CBB7C232CB0580095EC7C /* PHHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB7B232CB0580095EC7C /* PHHBTool.m */; };
+		723CBB7F232CB0A70095EC7C /* PHUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB7E232CB0A70095EC7C /* PHUIUtilities.m */; };
+		723CBB82232CB0FD0095EC7C /* MBProgressHUD+PHNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB81232CB0FD0095EC7C /* MBProgressHUD+PHNJ.m */; };
+		723CBB85232CB1390095EC7C /* PHNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB84232CB1380095EC7C /* PHNDHTTPClient.m */; };
+		723CBB8A232CB71E0095EC7C /* PHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB89232CB71E0095EC7C /* PHBaseViewController.m */; };
+		723CBB8D232CB8CC0095EC7C /* PHTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB8C232CB8CC0095EC7C /* PHTodayViewController.m */; };
+		723CBB90232CB8EC0095EC7C /* PHDailyHabitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB8F232CB8EC0095EC7C /* PHDailyHabitsViewController.m */; };
+		723CBB93232CB9010095EC7C /* PHSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB92232CB9010095EC7C /* PHSetViewController.m */; };
+		723CBB96232CB9930095EC7C /* PHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB95232CB9930095EC7C /* PHTabBarViewController.m */; };
+		723CBB99232CC5120095EC7C /* PHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB98232CC5120095EC7C /* PHLoginViewController.m */; };
+		729D0B8F232E142600D88267 /* PHGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B8E232E142600D88267 /* PHGuideViewController.m */; };
+		729D0B92232E15AE00D88267 /* PHGuidePromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B91232E15AE00D88267 /* PHGuidePromptView.m */; };
+		729D0B95232E20B600D88267 /* PHGuideCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B94232E20B600D88267 /* PHGuideCollectionReusableView.m */; };
+		729D0B98232E20F400D88267 /* PHGuideCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B97232E20F400D88267 /* PHGuideCollectionViewCell.m */; };
+		729D0B9B232E28F600D88267 /* PHGuideModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B9A232E28F600D88267 /* PHGuideModel.m */; };
+		72A2978F2336039E004EE230 /* PHGuideClockInformationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2978E2336039E004EE230 /* PHGuideClockInformationModel.m */; };
+		72A2979223360F1E004EE230 /* PHModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2979123360F1E004EE230 /* PHModifyNicknameViewController.m */; };
+		72A297952336116B004EE230 /* PHPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A297942336116B004EE230 /* PHPasswordChangeViewController.m */; };
+		72A29798233618E4004EE230 /* PHSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A29797233618E4004EE230 /* PHSetTableViewCell.m */; };
+		72A2979B23361A9D004EE230 /* PHSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2979A23361A9D004EE230 /* PHSetViewModel.m */; };
+		72A2979E23362AB9004EE230 /* PHTodayClockInCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2979D23362AB9004EE230 /* PHTodayClockInCollectionViewCell.m */; };
+		72A297A123363D24004EE230 /* PHClockInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A297A023363D24004EE230 /* PHClockInViewController.m */; };
 		AE361CAC233F7A0100702F40 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CAB233F7A0100702F40 /* AdSupport.framework */; };
 		AE361CAE233F7A0B00702F40 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CAD233F7A0B00702F40 /* AVFoundation.framework */; };
 		AE361CB0233F7A1600702F40 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CAF233F7A1600702F40 /* CFNetwork.framework */; };
@@ -71,17 +68,19 @@
 		AE361CCF233F7B1000702F40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CCE233F7B1000702F40 /* UIKit.framework */; };
 		AE361CD1233F7B1900702F40 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CD0233F7B1900702F40 /* UserNotifications.framework */; };
 		AE361CD9233F818D00702F40 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CBF233F7A9300702F40 /* libresolv.tbd */; };
+		AE8BF48E236BBE5C0026F8C3 /* jcore-ios-2.1.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8BF48C236BBE5C0026F8C3 /* jcore-ios-2.1.4.a */; };
+		AE8BF48F236BBE5C0026F8C3 /* jpush-ios-3.2.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8BF48D236BBE5C0026F8C3 /* jpush-ios-3.2.6.a */; };
 		AEB6B1312340625800265045 /* InfoPlist.Strings in Resources */ = {isa = PBXBuildFile; fileRef = AEB6B1332340625800265045 /* InfoPlist.Strings */; };
-		AEBA658A233B367200B37FED /* GHDailyHabitsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBA6589233B367200B37FED /* GHDailyHabitsTableViewCell.m */; };
-		AEBA658D233B3F7600B37FED /* GHDailyHabitsTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBA658C233B3F7600B37FED /* GHDailyHabitsTableViewHeaderView.m */; };
+		AEBA658A233B367200B37FED /* PHDailyHabitsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBA6589233B367200B37FED /* PHDailyHabitsTableViewCell.m */; };
+		AEBA658D233B3F7600B37FED /* PHDailyHabitsTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBA658C233B3F7600B37FED /* PHDailyHabitsTableViewHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		72263EEA2338F23E00F54FFD /* GHAllClockLogsViewCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHAllClockLogsViewCellTableViewCell.h; sourceTree = "<group>"; };
-		72263EEB2338F23E00F54FFD /* GHAllClockLogsViewCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHAllClockLogsViewCellTableViewCell.m; sourceTree = "<group>"; };
-		72263EED2338FC1900F54FFD /* GHAllClockLogsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHAllClockLogsViewController.h; sourceTree = "<group>"; };
-		72263EEE2338FC1900F54FFD /* GHAllClockLogsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHAllClockLogsViewController.m; sourceTree = "<group>"; };
-		723CBB0C232C86BE0095EC7C /* GoodHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72263EEA2338F23E00F54FFD /* PHAllClockLogsViewCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHAllClockLogsViewCellTableViewCell.h; sourceTree = "<group>"; };
+		72263EEB2338F23E00F54FFD /* PHAllClockLogsViewCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHAllClockLogsViewCellTableViewCell.m; sourceTree = "<group>"; };
+		72263EED2338FC1900F54FFD /* PHAllClockLogsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHAllClockLogsViewController.h; sourceTree = "<group>"; };
+		72263EEE2338FC1900F54FFD /* PHAllClockLogsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHAllClockLogsViewController.m; sourceTree = "<group>"; };
+		723CBB0C232C86BE0095EC7C /* PocketHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		723CBB0F232C86BE0095EC7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		723CBB10232C86BE0095EC7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		723CBB18232C86C20095EC7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,57 +127,53 @@
 		723CBB71232CAFA40095EC7C /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
 		723CBB74232CAFC60095EC7C /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
 		723CBB75232CAFC60095EC7C /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
-		723CBB77232CAFF50095EC7C /* GHWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWebViewController.h; sourceTree = "<group>"; };
-		723CBB78232CAFF50095EC7C /* GHWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHWebViewController.m; sourceTree = "<group>"; };
-		723CBB7A232CB0580095EC7C /* GHHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHHBTool.h; sourceTree = "<group>"; };
-		723CBB7B232CB0580095EC7C /* GHHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHHBTool.m; sourceTree = "<group>"; };
-		723CBB7D232CB0A70095EC7C /* GHUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHUIUtilities.h; sourceTree = "<group>"; };
-		723CBB7E232CB0A70095EC7C /* GHUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHUIUtilities.m; sourceTree = "<group>"; };
-		723CBB80232CB0FD0095EC7C /* MBProgressHUD+GHNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+GHNJ.h"; sourceTree = "<group>"; };
-		723CBB81232CB0FD0095EC7C /* MBProgressHUD+GHNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+GHNJ.m"; sourceTree = "<group>"; };
-		723CBB83232CB1380095EC7C /* GHNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHNDHTTPClient.h; sourceTree = "<group>"; };
-		723CBB84232CB1380095EC7C /* GHNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHNDHTTPClient.m; sourceTree = "<group>"; };
-		723CBB86232CB1650095EC7C /* GHglobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHglobal.h; sourceTree = "<group>"; };
-		723CBB87232CB31F0095EC7C /* GoodHabit_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodHabit_PrefixHeader.pch; sourceTree = "<group>"; };
-		723CBB88232CB71E0095EC7C /* GHBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHBaseViewController.h; sourceTree = "<group>"; };
-		723CBB89232CB71E0095EC7C /* GHBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHBaseViewController.m; sourceTree = "<group>"; };
-		723CBB8B232CB8CC0095EC7C /* GHTodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHTodayViewController.h; sourceTree = "<group>"; };
-		723CBB8C232CB8CC0095EC7C /* GHTodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHTodayViewController.m; sourceTree = "<group>"; };
-		723CBB8E232CB8EC0095EC7C /* GHDailyHabitsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHDailyHabitsViewController.h; sourceTree = "<group>"; };
-		723CBB8F232CB8EC0095EC7C /* GHDailyHabitsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHDailyHabitsViewController.m; sourceTree = "<group>"; };
-		723CBB91232CB9010095EC7C /* GHSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHSetViewController.h; sourceTree = "<group>"; };
-		723CBB92232CB9010095EC7C /* GHSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHSetViewController.m; sourceTree = "<group>"; };
-		723CBB94232CB9930095EC7C /* GHTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHTabBarViewController.h; sourceTree = "<group>"; };
-		723CBB95232CB9930095EC7C /* GHTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHTabBarViewController.m; sourceTree = "<group>"; };
-		723CBB97232CC5120095EC7C /* GHLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHLoginViewController.h; sourceTree = "<group>"; };
-		723CBB98232CC5120095EC7C /* GHLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHLoginViewController.m; sourceTree = "<group>"; };
-		729D0B8D232E142600D88267 /* GHGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHGuideViewController.h; sourceTree = "<group>"; };
-		729D0B8E232E142600D88267 /* GHGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHGuideViewController.m; sourceTree = "<group>"; };
-		729D0B90232E15AE00D88267 /* GHGuidePromptView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHGuidePromptView.h; sourceTree = "<group>"; };
-		729D0B91232E15AE00D88267 /* GHGuidePromptView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHGuidePromptView.m; sourceTree = "<group>"; };
-		729D0B93232E20B600D88267 /* GHGuideCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHGuideCollectionReusableView.h; sourceTree = "<group>"; };
-		729D0B94232E20B600D88267 /* GHGuideCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHGuideCollectionReusableView.m; sourceTree = "<group>"; };
-		729D0B96232E20F400D88267 /* GHGuideCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHGuideCollectionViewCell.h; sourceTree = "<group>"; };
-		729D0B97232E20F400D88267 /* GHGuideCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHGuideCollectionViewCell.m; sourceTree = "<group>"; };
-		729D0B99232E28F600D88267 /* GHGuideModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHGuideModel.h; sourceTree = "<group>"; };
-		729D0B9A232E28F600D88267 /* GHGuideModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHGuideModel.m; sourceTree = "<group>"; };
-		72A2978D2336039E004EE230 /* GHGuideClockInformationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHGuideClockInformationModel.h; sourceTree = "<group>"; };
-		72A2978E2336039E004EE230 /* GHGuideClockInformationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHGuideClockInformationModel.m; sourceTree = "<group>"; };
-		72A2979023360F1E004EE230 /* GHModifyNicknameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHModifyNicknameViewController.h; sourceTree = "<group>"; };
-		72A2979123360F1E004EE230 /* GHModifyNicknameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHModifyNicknameViewController.m; sourceTree = "<group>"; };
-		72A297932336116B004EE230 /* GHPasswordChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHPasswordChangeViewController.h; sourceTree = "<group>"; };
-		72A297942336116B004EE230 /* GHPasswordChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHPasswordChangeViewController.m; sourceTree = "<group>"; };
-		72A29796233618E4004EE230 /* GHSetTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHSetTableViewCell.h; sourceTree = "<group>"; };
-		72A29797233618E4004EE230 /* GHSetTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHSetTableViewCell.m; sourceTree = "<group>"; };
-		72A2979923361A9D004EE230 /* GHSetViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHSetViewModel.h; sourceTree = "<group>"; };
-		72A2979A23361A9D004EE230 /* GHSetViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHSetViewModel.m; sourceTree = "<group>"; };
-		72A2979C23362AB9004EE230 /* GHTodayClockInCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHTodayClockInCollectionViewCell.h; sourceTree = "<group>"; };
-		72A2979D23362AB9004EE230 /* GHTodayClockInCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHTodayClockInCollectionViewCell.m; sourceTree = "<group>"; };
-		72A2979F23363D24004EE230 /* GHClockInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHClockInViewController.h; sourceTree = "<group>"; };
-		72A297A023363D24004EE230 /* GHClockInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHClockInViewController.m; sourceTree = "<group>"; };
+		723CBB7A232CB0580095EC7C /* PHHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHHBTool.h; sourceTree = "<group>"; };
+		723CBB7B232CB0580095EC7C /* PHHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHHBTool.m; sourceTree = "<group>"; };
+		723CBB7D232CB0A70095EC7C /* PHUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHUIUtilities.h; sourceTree = "<group>"; };
+		723CBB7E232CB0A70095EC7C /* PHUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHUIUtilities.m; sourceTree = "<group>"; };
+		723CBB80232CB0FD0095EC7C /* MBProgressHUD+PHNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+PHNJ.h"; sourceTree = "<group>"; };
+		723CBB81232CB0FD0095EC7C /* MBProgressHUD+PHNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+PHNJ.m"; sourceTree = "<group>"; };
+		723CBB83232CB1380095EC7C /* PHNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHNDHTTPClient.h; sourceTree = "<group>"; };
+		723CBB84232CB1380095EC7C /* PHNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHNDHTTPClient.m; sourceTree = "<group>"; };
+		723CBB86232CB1650095EC7C /* PHglobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHglobal.h; sourceTree = "<group>"; };
+		723CBB87232CB31F0095EC7C /* PocketHabits_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PocketHabits_PrefixHeader.pch; sourceTree = "<group>"; };
+		723CBB88232CB71E0095EC7C /* PHBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHBaseViewController.h; sourceTree = "<group>"; };
+		723CBB89232CB71E0095EC7C /* PHBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHBaseViewController.m; sourceTree = "<group>"; };
+		723CBB8B232CB8CC0095EC7C /* PHTodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHTodayViewController.h; sourceTree = "<group>"; };
+		723CBB8C232CB8CC0095EC7C /* PHTodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHTodayViewController.m; sourceTree = "<group>"; };
+		723CBB8E232CB8EC0095EC7C /* PHDailyHabitsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHDailyHabitsViewController.h; sourceTree = "<group>"; };
+		723CBB8F232CB8EC0095EC7C /* PHDailyHabitsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHDailyHabitsViewController.m; sourceTree = "<group>"; };
+		723CBB91232CB9010095EC7C /* PHSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHSetViewController.h; sourceTree = "<group>"; };
+		723CBB92232CB9010095EC7C /* PHSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHSetViewController.m; sourceTree = "<group>"; };
+		723CBB94232CB9930095EC7C /* PHTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHTabBarViewController.h; sourceTree = "<group>"; };
+		723CBB95232CB9930095EC7C /* PHTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHTabBarViewController.m; sourceTree = "<group>"; };
+		723CBB97232CC5120095EC7C /* PHLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHLoginViewController.h; sourceTree = "<group>"; };
+		723CBB98232CC5120095EC7C /* PHLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHLoginViewController.m; sourceTree = "<group>"; };
+		729D0B8D232E142600D88267 /* PHGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHGuideViewController.h; sourceTree = "<group>"; };
+		729D0B8E232E142600D88267 /* PHGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHGuideViewController.m; sourceTree = "<group>"; };
+		729D0B90232E15AE00D88267 /* PHGuidePromptView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHGuidePromptView.h; sourceTree = "<group>"; };
+		729D0B91232E15AE00D88267 /* PHGuidePromptView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHGuidePromptView.m; sourceTree = "<group>"; };
+		729D0B93232E20B600D88267 /* PHGuideCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHGuideCollectionReusableView.h; sourceTree = "<group>"; };
+		729D0B94232E20B600D88267 /* PHGuideCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHGuideCollectionReusableView.m; sourceTree = "<group>"; };
+		729D0B96232E20F400D88267 /* PHGuideCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHGuideCollectionViewCell.h; sourceTree = "<group>"; };
+		729D0B97232E20F400D88267 /* PHGuideCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHGuideCollectionViewCell.m; sourceTree = "<group>"; };
+		729D0B99232E28F600D88267 /* PHGuideModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHGuideModel.h; sourceTree = "<group>"; };
+		729D0B9A232E28F600D88267 /* PHGuideModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHGuideModel.m; sourceTree = "<group>"; };
+		72A2978D2336039E004EE230 /* PHGuideClockInformationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHGuideClockInformationModel.h; sourceTree = "<group>"; };
+		72A2978E2336039E004EE230 /* PHGuideClockInformationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHGuideClockInformationModel.m; sourceTree = "<group>"; };
+		72A2979023360F1E004EE230 /* PHModifyNicknameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHModifyNicknameViewController.h; sourceTree = "<group>"; };
+		72A2979123360F1E004EE230 /* PHModifyNicknameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHModifyNicknameViewController.m; sourceTree = "<group>"; };
+		72A297932336116B004EE230 /* PHPasswordChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHPasswordChangeViewController.h; sourceTree = "<group>"; };
+		72A297942336116B004EE230 /* PHPasswordChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHPasswordChangeViewController.m; sourceTree = "<group>"; };
+		72A29796233618E4004EE230 /* PHSetTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHSetTableViewCell.h; sourceTree = "<group>"; };
+		72A29797233618E4004EE230 /* PHSetTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHSetTableViewCell.m; sourceTree = "<group>"; };
+		72A2979923361A9D004EE230 /* PHSetViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHSetViewModel.h; sourceTree = "<group>"; };
+		72A2979A23361A9D004EE230 /* PHSetViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHSetViewModel.m; sourceTree = "<group>"; };
+		72A2979C23362AB9004EE230 /* PHTodayClockInCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHTodayClockInCollectionViewCell.h; sourceTree = "<group>"; };
+		72A2979D23362AB9004EE230 /* PHTodayClockInCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHTodayClockInCollectionViewCell.m; sourceTree = "<group>"; };
+		72A2979F23363D24004EE230 /* PHClockInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHClockInViewController.h; sourceTree = "<group>"; };
+		72A297A023363D24004EE230 /* PHClockInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHClockInViewController.m; sourceTree = "<group>"; };
 		AE361CA6233F781900702F40 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
-		AE361CA7233F781900702F40 /* jcore-ios-2.0.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.0.1.a"; sourceTree = "<group>"; };
-		AE361CA8233F781900702F40 /* jpush-ios-3.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.0.a"; sourceTree = "<group>"; };
 		AE361CAB233F7A0100702F40 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		AE361CAD233F7A0B00702F40 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AE361CAF233F7A1600702F40 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -202,16 +197,18 @@
 		AE361CCC233F7B0700702F40 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AE361CCE233F7B1000702F40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AE361CD0233F7B1900702F40 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		AE8BF48C236BBE5C0026F8C3 /* jcore-ios-2.1.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.1.4.a"; sourceTree = "<group>"; };
+		AE8BF48D236BBE5C0026F8C3 /* jpush-ios-3.2.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.6.a"; sourceTree = "<group>"; };
 		AEB6B12D23405C2A00265045 /* GoodHabit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoodHabit.entitlements; sourceTree = "<group>"; };
 		AEB6B12E23405DFC00265045 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		AEB6B1322340625800265045 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.Strings; sourceTree = "<group>"; };
 		AEB6B1342340627100265045 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.Strings"; sourceTree = "<group>"; };
 		AEB6B1352340627600265045 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.Strings"; sourceTree = "<group>"; };
 		AEB6B1362340627700265045 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.Strings; sourceTree = "<group>"; };
-		AEBA6588233B367200B37FED /* GHDailyHabitsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHDailyHabitsTableViewCell.h; sourceTree = "<group>"; };
-		AEBA6589233B367200B37FED /* GHDailyHabitsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHDailyHabitsTableViewCell.m; sourceTree = "<group>"; };
-		AEBA658B233B3F7600B37FED /* GHDailyHabitsTableViewHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHDailyHabitsTableViewHeaderView.h; sourceTree = "<group>"; };
-		AEBA658C233B3F7600B37FED /* GHDailyHabitsTableViewHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHDailyHabitsTableViewHeaderView.m; sourceTree = "<group>"; };
+		AEBA6588233B367200B37FED /* PHDailyHabitsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHDailyHabitsTableViewCell.h; sourceTree = "<group>"; };
+		AEBA6589233B367200B37FED /* PHDailyHabitsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHDailyHabitsTableViewCell.m; sourceTree = "<group>"; };
+		AEBA658B233B3F7600B37FED /* PHDailyHabitsTableViewHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHDailyHabitsTableViewHeaderView.h; sourceTree = "<group>"; };
+		AEBA658C233B3F7600B37FED /* PHDailyHabitsTableViewHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHDailyHabitsTableViewHeaderView.m; sourceTree = "<group>"; };
 		B0CF5393719874A4A8A5E22A /* Pods-GoodHabit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabit.debug.xcconfig"; path = "Target Support Files/Pods-GoodHabit/Pods-GoodHabit.debug.xcconfig"; sourceTree = "<group>"; };
 		B78D571AABE2191F4793A4F9 /* Pods_GoodHabit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodHabit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6DB6FF8EAB5DD241505741 /* Pods-GoodHabit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabit.release.xcconfig"; path = "Target Support Files/Pods-GoodHabit/Pods-GoodHabit.release.xcconfig"; sourceTree = "<group>"; };
@@ -224,7 +221,6 @@
 			files = (
 				AE361CB0233F7A1600702F40 /* CFNetwork.framework in Frameworks */,
 				AE361CCF233F7B1000702F40 /* UIKit.framework in Frameworks */,
-				AE361CAA233F781900702F40 /* jpush-ios-3.2.0.a in Frameworks */,
 				AE361CB8233F7A4200702F40 /* CoreTelephony.framework in Frameworks */,
 				AE361CAC233F7A0100702F40 /* AdSupport.framework in Frameworks */,
 				AE361CB6233F7A3600702F40 /* CoreLocation.framework in Frameworks */,
@@ -234,13 +230,14 @@
 				AE361CB2233F7A2200702F40 /* CoreFoundation.framework in Frameworks */,
 				AE361CB4233F7A2D00702F40 /* CoreGraphics.framework in Frameworks */,
 				AE361CAE233F7A0B00702F40 /* AVFoundation.framework in Frameworks */,
+				AE8BF48F236BBE5C0026F8C3 /* jpush-ios-3.2.6.a in Frameworks */,
 				AE361CCD233F7B0700702F40 /* SystemConfiguration.framework in Frameworks */,
+				AE8BF48E236BBE5C0026F8C3 /* jcore-ios-2.1.4.a in Frameworks */,
 				AE361CC5233F7AD600702F40 /* MobileCoreServices.framework in Frameworks */,
 				AE361CBC233F7A5000702F40 /* ImageIO.framework in Frameworks */,
 				44174B98EC156E8AE26A0351 /* Pods_GoodHabit.framework in Frameworks */,
 				AE361CD1233F7B1900702F40 /* UserNotifications.framework in Frameworks */,
 				AE361CC7233F7AE200702F40 /* Photos.framework in Frameworks */,
-				AE361CA9233F781900702F40 /* jcore-ios-2.0.1.a in Frameworks */,
 				AE361CBA233F7A4900702F40 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +289,7 @@
 		723CBB0D232C86BE0095EC7C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				723CBB0C232C86BE0095EC7C /* GoodHabits.app */,
+				723CBB0C232C86BE0095EC7C /* PocketHabits.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -329,28 +326,26 @@
 		723CBB27232CABA10095EC7C /* common */ = {
 			isa = PBXGroup;
 			children = (
-				723CBB87232CB31F0095EC7C /* GoodHabit_PrefixHeader.pch */,
-				723CBB86232CB1650095EC7C /* GHglobal.h */,
-				723CBB77232CAFF50095EC7C /* GHWebViewController.h */,
-				723CBB78232CAFF50095EC7C /* GHWebViewController.m */,
+				723CBB87232CB31F0095EC7C /* PocketHabits_PrefixHeader.pch */,
+				723CBB86232CB1650095EC7C /* PHglobal.h */,
 				723CBB6E232CAFA40095EC7C /* NSArray+log.h */,
 				723CBB70232CAFA40095EC7C /* NSArray+log.m */,
 				723CBB6F232CAFA40095EC7C /* NSDictionary+log.h */,
 				723CBB71232CAFA40095EC7C /* NSDictionary+log.m */,
 				723CBB74232CAFC60095EC7C /* CalendarTool.h */,
 				723CBB75232CAFC60095EC7C /* CalendarTool.m */,
-				723CBB7A232CB0580095EC7C /* GHHBTool.h */,
-				723CBB7B232CB0580095EC7C /* GHHBTool.m */,
-				723CBB7D232CB0A70095EC7C /* GHUIUtilities.h */,
-				723CBB7E232CB0A70095EC7C /* GHUIUtilities.m */,
-				723CBB80232CB0FD0095EC7C /* MBProgressHUD+GHNJ.h */,
-				723CBB81232CB0FD0095EC7C /* MBProgressHUD+GHNJ.m */,
-				723CBB83232CB1380095EC7C /* GHNDHTTPClient.h */,
-				723CBB84232CB1380095EC7C /* GHNDHTTPClient.m */,
-				723CBB88232CB71E0095EC7C /* GHBaseViewController.h */,
-				723CBB89232CB71E0095EC7C /* GHBaseViewController.m */,
-				723CBB94232CB9930095EC7C /* GHTabBarViewController.h */,
-				723CBB95232CB9930095EC7C /* GHTabBarViewController.m */,
+				723CBB7A232CB0580095EC7C /* PHHBTool.h */,
+				723CBB7B232CB0580095EC7C /* PHHBTool.m */,
+				723CBB7D232CB0A70095EC7C /* PHUIUtilities.h */,
+				723CBB7E232CB0A70095EC7C /* PHUIUtilities.m */,
+				723CBB80232CB0FD0095EC7C /* MBProgressHUD+PHNJ.h */,
+				723CBB81232CB0FD0095EC7C /* MBProgressHUD+PHNJ.m */,
+				723CBB83232CB1380095EC7C /* PHNDHTTPClient.h */,
+				723CBB84232CB1380095EC7C /* PHNDHTTPClient.m */,
+				723CBB88232CB71E0095EC7C /* PHBaseViewController.h */,
+				723CBB89232CB71E0095EC7C /* PHBaseViewController.m */,
+				723CBB94232CB9930095EC7C /* PHTabBarViewController.h */,
+				723CBB95232CB9930095EC7C /* PHTabBarViewController.m */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -375,12 +370,12 @@
 		723CBB2A232CABA20095EC7C /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				723CBB8B232CB8CC0095EC7C /* GHTodayViewController.h */,
-				723CBB8C232CB8CC0095EC7C /* GHTodayViewController.m */,
-				72A2979F23363D24004EE230 /* GHClockInViewController.h */,
-				72A297A023363D24004EE230 /* GHClockInViewController.m */,
-				72263EED2338FC1900F54FFD /* GHAllClockLogsViewController.h */,
-				72263EEE2338FC1900F54FFD /* GHAllClockLogsViewController.m */,
+				723CBB8B232CB8CC0095EC7C /* PHTodayViewController.h */,
+				723CBB8C232CB8CC0095EC7C /* PHTodayViewController.m */,
+				72A2979F23363D24004EE230 /* PHClockInViewController.h */,
+				72A297A023363D24004EE230 /* PHClockInViewController.m */,
+				72263EED2338FC1900F54FFD /* PHAllClockLogsViewController.h */,
+				72263EEE2338FC1900F54FFD /* PHAllClockLogsViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -388,10 +383,10 @@
 		723CBB2B232CABA20095EC7C /* views */ = {
 			isa = PBXGroup;
 			children = (
-				72A2979C23362AB9004EE230 /* GHTodayClockInCollectionViewCell.h */,
-				72A2979D23362AB9004EE230 /* GHTodayClockInCollectionViewCell.m */,
-				72263EEA2338F23E00F54FFD /* GHAllClockLogsViewCellTableViewCell.h */,
-				72263EEB2338F23E00F54FFD /* GHAllClockLogsViewCellTableViewCell.m */,
+				72A2979C23362AB9004EE230 /* PHTodayClockInCollectionViewCell.h */,
+				72A2979D23362AB9004EE230 /* PHTodayClockInCollectionViewCell.m */,
+				72263EEA2338F23E00F54FFD /* PHAllClockLogsViewCellTableViewCell.h */,
+				72263EEB2338F23E00F54FFD /* PHAllClockLogsViewCellTableViewCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -409,8 +404,8 @@
 		723CBB2E232CABA20095EC7C /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				723CBB8E232CB8EC0095EC7C /* GHDailyHabitsViewController.h */,
-				723CBB8F232CB8EC0095EC7C /* GHDailyHabitsViewController.m */,
+				723CBB8E232CB8EC0095EC7C /* PHDailyHabitsViewController.h */,
+				723CBB8F232CB8EC0095EC7C /* PHDailyHabitsViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -428,12 +423,12 @@
 		723CBB31232CABA20095EC7C /* models */ = {
 			isa = PBXGroup;
 			children = (
-				729D0B99232E28F600D88267 /* GHGuideModel.h */,
-				729D0B9A232E28F600D88267 /* GHGuideModel.m */,
-				72A2978D2336039E004EE230 /* GHGuideClockInformationModel.h */,
-				72A2978E2336039E004EE230 /* GHGuideClockInformationModel.m */,
-				72A2979923361A9D004EE230 /* GHSetViewModel.h */,
-				72A2979A23361A9D004EE230 /* GHSetViewModel.m */,
+				729D0B99232E28F600D88267 /* PHGuideModel.h */,
+				729D0B9A232E28F600D88267 /* PHGuideModel.m */,
+				72A2978D2336039E004EE230 /* PHGuideClockInformationModel.h */,
+				72A2978E2336039E004EE230 /* PHGuideClockInformationModel.m */,
+				72A2979923361A9D004EE230 /* PHSetViewModel.h */,
+				72A2979A23361A9D004EE230 /* PHSetViewModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -441,16 +436,16 @@
 		723CBB32232CABA20095EC7C /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				729D0B8D232E142600D88267 /* GHGuideViewController.h */,
-				729D0B8E232E142600D88267 /* GHGuideViewController.m */,
-				723CBB91232CB9010095EC7C /* GHSetViewController.h */,
-				723CBB92232CB9010095EC7C /* GHSetViewController.m */,
-				72A2979023360F1E004EE230 /* GHModifyNicknameViewController.h */,
-				72A2979123360F1E004EE230 /* GHModifyNicknameViewController.m */,
-				72A297932336116B004EE230 /* GHPasswordChangeViewController.h */,
-				72A297942336116B004EE230 /* GHPasswordChangeViewController.m */,
-				723CBB97232CC5120095EC7C /* GHLoginViewController.h */,
-				723CBB98232CC5120095EC7C /* GHLoginViewController.m */,
+				729D0B8D232E142600D88267 /* PHGuideViewController.h */,
+				729D0B8E232E142600D88267 /* PHGuideViewController.m */,
+				723CBB91232CB9010095EC7C /* PHSetViewController.h */,
+				723CBB92232CB9010095EC7C /* PHSetViewController.m */,
+				72A2979023360F1E004EE230 /* PHModifyNicknameViewController.h */,
+				72A2979123360F1E004EE230 /* PHModifyNicknameViewController.m */,
+				72A297932336116B004EE230 /* PHPasswordChangeViewController.h */,
+				72A297942336116B004EE230 /* PHPasswordChangeViewController.m */,
+				723CBB97232CC5120095EC7C /* PHLoginViewController.h */,
+				723CBB98232CC5120095EC7C /* PHLoginViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -458,14 +453,14 @@
 		723CBB33232CABA20095EC7C /* views */ = {
 			isa = PBXGroup;
 			children = (
-				729D0B90232E15AE00D88267 /* GHGuidePromptView.h */,
-				729D0B91232E15AE00D88267 /* GHGuidePromptView.m */,
-				729D0B93232E20B600D88267 /* GHGuideCollectionReusableView.h */,
-				729D0B94232E20B600D88267 /* GHGuideCollectionReusableView.m */,
-				729D0B96232E20F400D88267 /* GHGuideCollectionViewCell.h */,
-				729D0B97232E20F400D88267 /* GHGuideCollectionViewCell.m */,
-				72A29796233618E4004EE230 /* GHSetTableViewCell.h */,
-				72A29797233618E4004EE230 /* GHSetTableViewCell.m */,
+				729D0B90232E15AE00D88267 /* PHGuidePromptView.h */,
+				729D0B91232E15AE00D88267 /* PHGuidePromptView.m */,
+				729D0B93232E20B600D88267 /* PHGuideCollectionReusableView.h */,
+				729D0B94232E20B600D88267 /* PHGuideCollectionReusableView.m */,
+				729D0B96232E20F400D88267 /* PHGuideCollectionViewCell.h */,
+				729D0B97232E20F400D88267 /* PHGuideCollectionViewCell.m */,
+				72A29796233618E4004EE230 /* PHSetTableViewCell.h */,
+				72A29797233618E4004EE230 /* PHSetTableViewCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -546,8 +541,8 @@
 			isa = PBXGroup;
 			children = (
 				AE361CA6233F781900702F40 /* JPUSHService.h */,
-				AE361CA7233F781900702F40 /* jcore-ios-2.0.1.a */,
-				AE361CA8233F781900702F40 /* jpush-ios-3.2.0.a */,
+				AE8BF48C236BBE5C0026F8C3 /* jcore-ios-2.1.4.a */,
+				AE8BF48D236BBE5C0026F8C3 /* jpush-ios-3.2.6.a */,
 			);
 			path = JPush;
 			sourceTree = "<group>";
@@ -562,10 +557,10 @@
 		AEBA6587233B363F00B37FED /* views */ = {
 			isa = PBXGroup;
 			children = (
-				AEBA6588233B367200B37FED /* GHDailyHabitsTableViewCell.h */,
-				AEBA6589233B367200B37FED /* GHDailyHabitsTableViewCell.m */,
-				AEBA658B233B3F7600B37FED /* GHDailyHabitsTableViewHeaderView.h */,
-				AEBA658C233B3F7600B37FED /* GHDailyHabitsTableViewHeaderView.m */,
+				AEBA6588233B367200B37FED /* PHDailyHabitsTableViewCell.h */,
+				AEBA6589233B367200B37FED /* PHDailyHabitsTableViewCell.m */,
+				AEBA658B233B3F7600B37FED /* PHDailyHabitsTableViewHeaderView.h */,
+				AEBA658C233B3F7600B37FED /* PHDailyHabitsTableViewHeaderView.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -589,7 +584,7 @@
 			);
 			name = GoodHabit;
 			productName = GoodHabit;
-			productReference = 723CBB0C232C86BE0095EC7C /* GoodHabits.app */;
+			productReference = 723CBB0C232C86BE0095EC7C /* PocketHabits.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -688,49 +683,48 @@
 			buildActionMask = 2147483647;
 			files = (
 				723CBB5A232CABF40095EC7C /* JTCalendarScrollManager.m in Sources */,
-				723CBB85232CB1390095EC7C /* GHNDHTTPClient.m in Sources */,
-				723CBB96232CB9930095EC7C /* GHTabBarViewController.m in Sources */,
+				723CBB85232CB1390095EC7C /* PHNDHTTPClient.m in Sources */,
+				723CBB96232CB9930095EC7C /* PHTabBarViewController.m in Sources */,
 				723CBB73232CAFA40095EC7C /* NSDictionary+log.m in Sources */,
-				723CBB82232CB0FD0095EC7C /* MBProgressHUD+GHNJ.m in Sources */,
-				AEBA658D233B3F7600B37FED /* GHDailyHabitsTableViewHeaderView.m in Sources */,
-				72263EEF2338FC1900F54FFD /* GHAllClockLogsViewController.m in Sources */,
+				723CBB82232CB0FD0095EC7C /* MBProgressHUD+PHNJ.m in Sources */,
+				AEBA658D233B3F7600B37FED /* PHDailyHabitsTableViewHeaderView.m in Sources */,
+				72263EEF2338FC1900F54FFD /* PHAllClockLogsViewController.m in Sources */,
 				723CBB5E232CABF40095EC7C /* JTCalendarWeekDayView.m in Sources */,
-				723CBB8A232CB71E0095EC7C /* GHBaseViewController.m in Sources */,
-				72263EEC2338F23E00F54FFD /* GHAllClockLogsViewCellTableViewCell.m in Sources */,
+				723CBB8A232CB71E0095EC7C /* PHBaseViewController.m in Sources */,
+				72263EEC2338F23E00F54FFD /* PHAllClockLogsViewCellTableViewCell.m in Sources */,
 				723CBB5C232CABF40095EC7C /* JTCalendarManager.m in Sources */,
-				723CBB90232CB8EC0095EC7C /* GHDailyHabitsViewController.m in Sources */,
+				723CBB90232CB8EC0095EC7C /* PHDailyHabitsViewController.m in Sources */,
 				723CBB5B232CABF40095EC7C /* JTCalendarDelegateManager.m in Sources */,
 				723CBB5F232CABF40095EC7C /* JTHorizontalCalendarView.m in Sources */,
-				72A2978F2336039E004EE230 /* GHGuideClockInformationModel.m in Sources */,
-				72A2979223360F1E004EE230 /* GHModifyNicknameViewController.m in Sources */,
-				723CBB8D232CB8CC0095EC7C /* GHTodayViewController.m in Sources */,
-				729D0B8F232E142600D88267 /* GHGuideViewController.m in Sources */,
-				72A2979E23362AB9004EE230 /* GHTodayClockInCollectionViewCell.m in Sources */,
+				72A2978F2336039E004EE230 /* PHGuideClockInformationModel.m in Sources */,
+				72A2979223360F1E004EE230 /* PHModifyNicknameViewController.m in Sources */,
+				723CBB8D232CB8CC0095EC7C /* PHTodayViewController.m in Sources */,
+				729D0B8F232E142600D88267 /* PHGuideViewController.m in Sources */,
+				72A2979E23362AB9004EE230 /* PHTodayClockInCollectionViewCell.m in Sources */,
 				723CBB59232CABF40095EC7C /* JTDateHelper.m in Sources */,
-				723CBB93232CB9010095EC7C /* GHSetViewController.m in Sources */,
+				723CBB93232CB9010095EC7C /* PHSetViewController.m in Sources */,
 				723CBB72232CAFA40095EC7C /* NSArray+log.m in Sources */,
-				72A2979B23361A9D004EE230 /* GHSetViewModel.m in Sources */,
-				723CBB79232CAFF50095EC7C /* GHWebViewController.m in Sources */,
+				72A2979B23361A9D004EE230 /* PHSetViewModel.m in Sources */,
 				723CBB58232CABF40095EC7C /* JTCalendarSettings.m in Sources */,
-				723CBB99232CC5120095EC7C /* GHLoginViewController.m in Sources */,
+				723CBB99232CC5120095EC7C /* PHLoginViewController.m in Sources */,
 				723CBB5D232CABF40095EC7C /* JTVerticalCalendarView.m in Sources */,
 				723CBB1F232C86C20095EC7C /* main.m in Sources */,
 				723CBB63232CABF40095EC7C /* JTCalendarMenuView.m in Sources */,
-				72A297952336116B004EE230 /* GHPasswordChangeViewController.m in Sources */,
+				72A297952336116B004EE230 /* PHPasswordChangeViewController.m in Sources */,
 				723CBB76232CAFC60095EC7C /* CalendarTool.m in Sources */,
 				723CBB60232CABF40095EC7C /* JTCalendarWeekView.m in Sources */,
-				AEBA658A233B367200B37FED /* GHDailyHabitsTableViewCell.m in Sources */,
-				72A29798233618E4004EE230 /* GHSetTableViewCell.m in Sources */,
-				723CBB7C232CB0580095EC7C /* GHHBTool.m in Sources */,
+				AEBA658A233B367200B37FED /* PHDailyHabitsTableViewCell.m in Sources */,
+				72A29798233618E4004EE230 /* PHSetTableViewCell.m in Sources */,
+				723CBB7C232CB0580095EC7C /* PHHBTool.m in Sources */,
 				723CBB62232CABF40095EC7C /* JTCalendarPageView.m in Sources */,
-				729D0B98232E20F400D88267 /* GHGuideCollectionViewCell.m in Sources */,
-				729D0B92232E15AE00D88267 /* GHGuidePromptView.m in Sources */,
+				729D0B98232E20F400D88267 /* PHGuideCollectionViewCell.m in Sources */,
+				729D0B92232E15AE00D88267 /* PHGuidePromptView.m in Sources */,
 				723CBB11232C86BE0095EC7C /* AppDelegate.m in Sources */,
 				723CBB61232CABF40095EC7C /* JTCalendarDayView.m in Sources */,
-				729D0B9B232E28F600D88267 /* GHGuideModel.m in Sources */,
-				72A297A123363D24004EE230 /* GHClockInViewController.m in Sources */,
-				723CBB7F232CB0A70095EC7C /* GHUIUtilities.m in Sources */,
-				729D0B95232E20B600D88267 /* GHGuideCollectionReusableView.m in Sources */,
+				729D0B9B232E28F600D88267 /* PHGuideModel.m in Sources */,
+				72A297A123363D24004EE230 /* PHClockInViewController.m in Sources */,
+				723CBB7F232CB0A70095EC7C /* PHUIUtilities.m in Sources */,
+				729D0B95232E20B600D88267 /* PHGuideCollectionReusableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -883,8 +877,8 @@
 				CODE_SIGN_ENTITLEMENTS = GoodHabit/GoodHabit.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = Y3TKBZYF5D;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/GoodHabit/Common/GoodHabit_PrefixHeader.pch";
+				DEVELOPMENT_TEAM = 69HX82HGYZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GoodHabit/Common/PocketHabits_PrefixHeader.pch";
 				INFOPLIST_FILE = GoodHabit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -895,9 +889,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoodHabit/resources/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.GoodHabit;
-				PRODUCT_NAME = GoodHabits;
-				PROVISIONING_PROFILE_SPECIFIER = disPro_GoodHabit_2019.09.29;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketHabits;
+				PRODUCT_NAME = PocketHabits;
+				PROVISIONING_PROFILE_SPECIFIER = dis_PocketHabits_20191101;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -911,8 +905,8 @@
 				CODE_SIGN_ENTITLEMENTS = GoodHabit/GoodHabit.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = Y3TKBZYF5D;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/GoodHabit/Common/GoodHabit_PrefixHeader.pch";
+				DEVELOPMENT_TEAM = 69HX82HGYZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GoodHabit/Common/PocketHabits_PrefixHeader.pch";
 				INFOPLIST_FILE = GoodHabit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -923,9 +917,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoodHabit/resources/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.GoodHabit;
-				PRODUCT_NAME = GoodHabits;
-				PROVISIONING_PROFILE_SPECIFIER = disPro_GoodHabit_2019.09.29;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketHabits;
+				PRODUCT_NAME = PocketHabits;
+				PROVISIONING_PROFILE_SPECIFIER = dis_PocketHabits_20191101;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

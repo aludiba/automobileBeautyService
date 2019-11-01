@@ -12,10 +12,9 @@
 #import <UserNotifications/UserNotifications.h>
 #endif
 #import <AdSupport/AdSupport.h>
-#import "GHLoginViewController.h"
-#import "GHGuideViewController.h"
-#import "GHTabBarViewController.h"
-#import "GHWebViewController.h"
+#import "PHLoginViewController.h"
+#import "PHGuideViewController.h"
+#import "PHTabBarViewController.h"
 
 @interface AppDelegate ()<JPUSHRegisterDelegate,JPUSHGeofenceDelegate>
 
@@ -29,33 +28,23 @@
     [Bmob registerWithAppKey:@"df039ce9ff6f2311d96e0abed1cfb43b"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"HBGoodHabit"];
+    BmobQuery *bquery = [BmobQuery queryWithClassName:@"PHPocketHabits"];
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-        if (error) {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"PHPocketHabits"]]];
             self.window.rootViewController = [self rootController];
-        }else{
-            self.window.rootViewController = [self rootController];
-            if (array.count) {
-                BmobObject *obj = [array lastObject];
-                NSString *key = [obj objectForKey:@"KEY"];
-                GHWebViewController *webVC = [[GHWebViewController alloc] init];
-                webVC.key = key;
-            }
-        }
+            [self.window makeKeyAndVisible];
     }];
-    self.window.rootViewController = [self rootController];
-    [self.window makeKeyAndVisible];
     return YES;
 }
 - (UIViewController *)rootController{
     BmobUser *bUser = [BmobUser currentUser];
     if (bUser) {
         //进行操作
-        GHTabBarViewController *tabVC = [GHTabBarViewController shareInstance];
+        PHTabBarViewController *tabVC = [PHTabBarViewController PHshareInstance];
         return tabVC;
     }else{
         //对象为空时，可打开用户注册界面
-        GHLoginViewController *loginVC = [GHLoginViewController shareInstance];
+        PHLoginViewController *loginVC = [PHLoginViewController PHshareInstance];
         return loginVC;
     }
 }
@@ -79,7 +68,7 @@
     // Required
     // init Push
     // notice: 2.1.5 版本的 SDK 新增的注册方法，改成可上报 IDFA，如果没有使用 IDFA 直接传 nil
-    [JPUSHService setupWithOption:launchOptions appKey:@"5c2424958b93c4039c0f2807"
+    [JPUSHService setupWithOption:launchOptions appKey:@"5d6d074c82194afbf185ebcc"
                           channel:@"App Store"
                  apsForProduction:1];
 }
