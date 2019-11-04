@@ -17,7 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [Bmob registerWithAppKey:@"b54db1ee77e5cdf960d6818559aee34f"];
-    [AVOSCloud setAllLogsEnabled:YES];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     BmobQuery *bquery = [BmobQuery queryWithClassName:@"SOsodaRemind"];

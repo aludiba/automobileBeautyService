@@ -27,6 +27,16 @@
     self.title = NSLocalizedString(@"戒苏打水计划", nil);
     [self SOsetContentView];
 }
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSString *urlString = @"mockGet";
+    [SONDHTTPClient SOgetURLString:urlString withParam:nil withSuccessBlock:^(id data) {
+        NSLog(@"请求到的数据:%@",data);
+           
+    } withErrorBlock:^(NSError *error, id errorData) {
+        NSLog(@"error:%@,errorData:%@",error,errorData);
+    }];
+}
 - (void)SOsetContentView{
     SOsodePlanModel *sodaAgesModel = [[SOsodePlanModel alloc] init];
     sodaAgesModel.SOtype = 0;

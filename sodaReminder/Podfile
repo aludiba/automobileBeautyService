@@ -14,5 +14,4 @@ target 'sodaReminder' do
     pod 'IQKeyboardManager'
     pod 'BmobSDK'
     pod 'JTCalendar'
-    pod 'AVOSCloud'
 end
