@@ -25,6 +25,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = NSLocalizedString(@"打卡", nil);
+    AVObject *testObject = [AVObject objectWithClassName:@"TestObject"];
+    [testObject setObject:@"Hello world!" forKey:@"words"];
+    [testObject save];
     [self loadData];
 }
 - (void)loadData{

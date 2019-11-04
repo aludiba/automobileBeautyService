@@ -36,6 +36,7 @@
     self.navigationItem.rightBarButtonItem = rightButtonItem;
 }
 - (void)PHloadData{
+    self.PHselectIndex = 0;
     BmobQuery *bquery = [BmobQuery queryWithClassName:@"PHClockProjects"];
        BmobUser *author = [BmobUser currentUser];
        [bquery whereKey:@"author" equalTo:author];

@@ -39,6 +39,26 @@
 		AE8BB6352362FAD900AD37E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8BB6342362FAD900AD37E0 /* AppDelegate.m */; };
 		AE8BB6402362FADC00AD37E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE8BB63F2362FADC00AD37E0 /* Assets.xcassets */; };
 		AE8BB6462362FADC00AD37E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8BB6452362FADC00AD37E0 /* main.m */; };
+		AE97714D236FE02200163F70 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE97714C236FE02200163F70 /* AdSupport.framework */; };
+		AE97714F236FE02900163F70 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE97714E236FE02900163F70 /* AVFoundation.framework */; };
+		AE977151236FE03200163F70 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE977150236FE03200163F70 /* CFNetwork.framework */; };
+		AE977153236FE03900163F70 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE977152236FE03900163F70 /* CoreFoundation.framework */; };
+		AE977155236FE04500163F70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE977154236FE04500163F70 /* CoreGraphics.framework */; };
+		AE977157236FE04D00163F70 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE977156236FE04D00163F70 /* CoreLocation.framework */; };
+		AE977159236FE05D00163F70 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE977158236FE05D00163F70 /* CoreTelephony.framework */; };
+		AE97715B236FE06400163F70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE97715A236FE06400163F70 /* Foundation.framework */; };
+		AE97715D236FE07100163F70 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE97715C236FE07100163F70 /* ImageIO.framework */; };
+		AE97715F236FE08200163F70 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE97715E236FE08200163F70 /* MobileCoreServices.framework */; };
+		AE977161236FE09100163F70 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE977160236FE09100163F70 /* Photos.framework */; };
+		AE977163236FE0A000163F70 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE977162236FE09F00163F70 /* QuartzCore.framework */; };
+		AE977165236FE0AA00163F70 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE977164236FE0AA00163F70 /* Security.framework */; };
+		AE977167236FE0B900163F70 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE977166236FE0B900163F70 /* SystemConfiguration.framework */; };
+		AE977169236FE0C000163F70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE977168236FE0C000163F70 /* UIKit.framework */; };
+		AE97716B236FE0CC00163F70 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE97716A236FE0CC00163F70 /* UserNotifications.framework */; };
+		AE977175236FE10B00163F70 /* jpush-ios-3.2.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE977170236FE10B00163F70 /* jpush-ios-3.2.6.a */; };
+		AE977176236FE10B00163F70 /* jcore-ios-2.1.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE977172236FE10B00163F70 /* jcore-ios-2.1.4.a */; };
+		AE977177236FE12A00163F70 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE97716C236FE0ED00163F70 /* libresolv.tbd */; };
+		AE977178236FE13100163F70 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE97716D236FE0F600163F70 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,13 +122,34 @@
 		AE2AC1462366D0D30010E54D /* PFScorecardTimeStatisticsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFScorecardTimeStatisticsTableViewCell.h; sourceTree = "<group>"; };
 		AE2AC1472366D0D30010E54D /* PFScorecardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFScorecardTableViewCell.m; sourceTree = "<group>"; };
 		AE2AC1482366D0D30010E54D /* PFScorecardOperationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFScorecardOperationTableViewCell.h; sourceTree = "<group>"; };
-		AE8BB6302362FAD900AD37E0 /* PocketFootballScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketFootballScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE8BB6302362FAD900AD37E0 /* PocketFootballScores.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketFootballScores.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE8BB6332362FAD900AD37E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE8BB6342362FAD900AD37E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AE8BB63F2362FADC00AD37E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE8BB6442362FADC00AD37E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE8BB6452362FADC00AD37E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE8BB64C2362FCAA00AD37E0 /* PocketFootballScore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PocketFootballScore.entitlements; sourceTree = "<group>"; };
+		AE97714C236FE02200163F70 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		AE97714E236FE02900163F70 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AE977150236FE03200163F70 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AE977152236FE03900163F70 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		AE977154236FE04500163F70 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AE977156236FE04D00163F70 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AE977158236FE05D00163F70 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		AE97715A236FE06400163F70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AE97715C236FE07100163F70 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		AE97715E236FE08200163F70 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AE977160236FE09100163F70 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		AE977162236FE09F00163F70 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AE977164236FE0AA00163F70 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AE977166236FE0B900163F70 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AE977168236FE0C000163F70 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AE97716A236FE0CC00163F70 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		AE97716C236FE0ED00163F70 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		AE97716D236FE0F600163F70 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		AE977170236FE10B00163F70 /* jpush-ios-3.2.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.6.a"; sourceTree = "<group>"; };
+		AE977172236FE10B00163F70 /* jcore-ios-2.1.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.1.4.a"; sourceTree = "<group>"; };
+		AE977173236FE10B00163F70 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
 		ED190BF350010FA8719F11FE /* Pods-PocketFootballScore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketFootballScore.release.xcconfig"; path = "Target Support Files/Pods-PocketFootballScore/Pods-PocketFootballScore.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,7 +158,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE977155236FE04500163F70 /* CoreGraphics.framework in Frameworks */,
+				AE97716B236FE0CC00163F70 /* UserNotifications.framework in Frameworks */,
+				AE977169236FE0C000163F70 /* UIKit.framework in Frameworks */,
+				AE977167236FE0B900163F70 /* SystemConfiguration.framework in Frameworks */,
+				AE977163236FE0A000163F70 /* QuartzCore.framework in Frameworks */,
+				AE97715B236FE06400163F70 /* Foundation.framework in Frameworks */,
+				AE977153236FE03900163F70 /* CoreFoundation.framework in Frameworks */,
+				AE977177236FE12A00163F70 /* libresolv.tbd in Frameworks */,
+				AE977165236FE0AA00163F70 /* Security.framework in Frameworks */,
 				9E18FDAA08CE2E4AEAAC4FC9 /* Pods_PocketFootballScore.framework in Frameworks */,
+				AE977175236FE10B00163F70 /* jpush-ios-3.2.6.a in Frameworks */,
+				AE97715D236FE07100163F70 /* ImageIO.framework in Frameworks */,
+				AE977176236FE10B00163F70 /* jcore-ios-2.1.4.a in Frameworks */,
+				AE977161236FE09100163F70 /* Photos.framework in Frameworks */,
+				AE97714D236FE02200163F70 /* AdSupport.framework in Frameworks */,
+				AE977159236FE05D00163F70 /* CoreTelephony.framework in Frameworks */,
+				AE977178236FE13100163F70 /* libz.tbd in Frameworks */,
+				AE977157236FE04D00163F70 /* CoreLocation.framework in Frameworks */,
+				AE977151236FE03200163F70 /* CFNetwork.framework in Frameworks */,
+				AE97715F236FE08200163F70 /* MobileCoreServices.framework in Frameworks */,
+				AE97714F236FE02900163F70 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +197,24 @@
 		225870C98389AB06A6B4AE77 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE97716D236FE0F600163F70 /* libz.tbd */,
+				AE97716C236FE0ED00163F70 /* libresolv.tbd */,
+				AE97716A236FE0CC00163F70 /* UserNotifications.framework */,
+				AE977168236FE0C000163F70 /* UIKit.framework */,
+				AE977166236FE0B900163F70 /* SystemConfiguration.framework */,
+				AE977164236FE0AA00163F70 /* Security.framework */,
+				AE977162236FE09F00163F70 /* QuartzCore.framework */,
+				AE977160236FE09100163F70 /* Photos.framework */,
+				AE97715E236FE08200163F70 /* MobileCoreServices.framework */,
+				AE97715C236FE07100163F70 /* ImageIO.framework */,
+				AE97715A236FE06400163F70 /* Foundation.framework */,
+				AE977158236FE05D00163F70 /* CoreTelephony.framework */,
+				AE977156236FE04D00163F70 /* CoreLocation.framework */,
+				AE977154236FE04500163F70 /* CoreGraphics.framework */,
+				AE977152236FE03900163F70 /* CoreFoundation.framework */,
+				AE977150236FE03200163F70 /* CFNetwork.framework */,
+				AE97714E236FE02900163F70 /* AVFoundation.framework */,
+				AE97714C236FE02200163F70 /* AdSupport.framework */,
 				3F441EF6B3DBEEB2FA803146 /* Pods_PocketFootballScore.framework */,
 			);
 			name = Frameworks;
@@ -144,6 +223,7 @@
 		AE2AC0A02366CD0A0010E54D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AE97716E236FE10B00163F70 /* JPush */,
 				AE2AC0AA2366CD0A0010E54D /* NSArray+log.h */,
 				AE2AC0BA2366CD0A0010E54D /* NSArray+log.m */,
 				AE2AC0AB2366CD0A0010E54D /* NSDictionary+log.h */,
@@ -317,7 +397,7 @@
 		AE8BB6312362FAD900AD37E0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE8BB6302362FAD900AD37E0 /* PocketFootballScore.app */,
+				AE8BB6302362FAD900AD37E0 /* PocketFootballScores.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -340,6 +420,16 @@
 			path = PocketFootballScore;
 			sourceTree = "<group>";
 		};
+		AE97716E236FE10B00163F70 /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				AE977170236FE10B00163F70 /* jpush-ios-3.2.6.a */,
+				AE977172236FE10B00163F70 /* jcore-ios-2.1.4.a */,
+				AE977173236FE10B00163F70 /* JPUSHService.h */,
+			);
+			path = JPush;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -359,7 +449,7 @@
 			);
 			name = PocketFootballScore;
 			productName = PocketFootballScore;
-			productReference = AE8BB6302362FAD900AD37E0 /* PocketFootballScore.app */;
+			productReference = AE8BB6302362FAD900AD37E0 /* PocketFootballScores.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -620,9 +710,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketFootballScore/PocketFootballScore.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VWNPTX8H3L;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: shasha huang (TSZND88BX8)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = TSZND88BX8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketFootballScore/Common/PF_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketFootballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -633,9 +723,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketFootballScore/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketFootballScores;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com..cn.PocketFootballScores;
+				PRODUCT_NAME = PocketFootballScores;
+				PROVISIONING_PROFILE_SPECIFIER = dis_PocketFootballScores_20191104;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -647,9 +737,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketFootballScore/PocketFootballScore.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VWNPTX8H3L;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: shasha huang (TSZND88BX8)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = TSZND88BX8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketFootballScore/Common/PF_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketFootballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -660,9 +750,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketFootballScore/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketFootballScores;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com..cn.PocketFootballScores;
+				PRODUCT_NAME = PocketFootballScores;
+				PROVISIONING_PROFILE_SPECIFIER = dis_PocketFootballScores_20191104;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
