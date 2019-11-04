@@ -8,4 +8,5 @@ target 'PocketScout' do
   # Pods for PocketScout
     pod 'Masonry'
     pod 'AFNetworking'
+    pod 'MJRefresh'
 end
