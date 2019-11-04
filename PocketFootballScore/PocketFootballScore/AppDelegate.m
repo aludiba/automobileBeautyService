@@ -21,6 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setJPush:launchOptions];
+    [Bmob resetDomain:@"http://www.jd127.cn"];
     [Bmob registerWithAppKey:@"7981ca212772a9ef8ace8f55d4620ff8"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];

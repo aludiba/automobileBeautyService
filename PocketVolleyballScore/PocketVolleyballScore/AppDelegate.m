@@ -16,6 +16,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [Bmob resetDomain:@"http://pocketvolleyballscore.jd127.cn"];
     [Bmob registerWithAppKey:@"433c78f96a4eadc43adb74cef6a27b92"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
