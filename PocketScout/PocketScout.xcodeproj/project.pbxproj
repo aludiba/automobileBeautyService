@@ -14,9 +14,13 @@
 		AE977192236FF6BD00163F70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE977191236FF6BD00163F70 /* Assets.xcassets */; };
 		AE977195236FF6BD00163F70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE977193236FF6BD00163F70 /* LaunchScreen.storyboard */; };
 		AE977198236FF6BD00163F70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE977197236FF6BD00163F70 /* main.m */; };
+		C15729B2299FE95726D4018C /* Pods_PocketScout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1935D52CCCF584E436965C /* Pods_PocketScout.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		331C525DA6A69D03BC5FF409 /* Pods-PocketScout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketScout.debug.xcconfig"; path = "Target Support Files/Pods-PocketScout/Pods-PocketScout.debug.xcconfig"; sourceTree = "<group>"; };
+		8C1935D52CCCF584E436965C /* Pods_PocketScout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketScout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0D183C2DD1E5985173F5496 /* Pods-PocketScout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketScout.release.xcconfig"; path = "Target Support Files/Pods-PocketScout/Pods-PocketScout.release.xcconfig"; sourceTree = "<group>"; };
 		AE977182236FF6B800163F70 /* PocketScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE977185236FF6B900163F70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE977186236FF6B900163F70 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,17 +40,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C15729B2299FE95726D4018C /* Pods_PocketScout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79862208CC68AD87ACD7B393 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C1935D52CCCF584E436965C /* Pods_PocketScout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5D88ADF4F59E86910C16DB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				331C525DA6A69D03BC5FF409 /* Pods-PocketScout.debug.xcconfig */,
+				A0D183C2DD1E5985173F5496 /* Pods-PocketScout.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AE977179236FF6B800163F70 = {
 			isa = PBXGroup;
 			children = (
 				AE977184236FF6B800163F70 /* PocketScout */,
 				AE977183236FF6B800163F70 /* Products */,
+				A5D88ADF4F59E86910C16DB6 /* Pods */,
+				79862208CC68AD87ACD7B393 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE97719B236FF6BD00163F70 /* Build configuration list for PBXNativeTarget "PocketScout" */;
 			buildPhases = (
+				5824C75A3D29D77D254DA2BB /* [CP] Check Pods Manifest.lock */,
 				AE97717E236FF6B800163F70 /* Sources */,
 				AE97717F236FF6B800163F70 /* Frameworks */,
 				AE977180236FF6B800163F70 /* Resources */,
+				BA97FC46B93387D9244FC693 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5824C75A3D29D77D254DA2BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PocketScout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA97FC46B93387D9244FC693 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PocketScout/Pods-PocketScout-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PocketScout/Pods-PocketScout-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PocketScout/Pods-PocketScout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE97717E236FF6B800163F70 /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		AE97719C236FF6BD00163F70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 331C525DA6A69D03BC5FF409 /* Pods-PocketScout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +374,7 @@
 		};
 		AE97719D236FF6BD00163F70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0D183C2DD1E5985173F5496 /* Pods-PocketScout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
