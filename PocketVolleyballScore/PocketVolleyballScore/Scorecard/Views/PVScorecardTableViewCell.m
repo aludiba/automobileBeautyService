@@ -31,23 +31,23 @@
             make.leading.equalTo(self.contentView);
             make.top.equalTo(self.contentView);
             make.trailing.equalTo(self.contentView);
-            make.height.mas_equalTo(40);
+            make.height.mas_equalTo(25);
         }];
         [self.PVscoreColumnOneLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(32);
-            make.top.equalTo(self.PVteamNameTextField.mas_bottom).offset(15);
-            make.width.mas_equalTo((PVWIDTH - 144) / 2);
-            make.height.mas_equalTo(120);
+            make.leading.equalTo(self.contentView).offset(64);
+            make.top.equalTo(self.PVteamNameTextField.mas_bottom).offset(10);
+            make.width.mas_equalTo((PVWIDTH - 208) / 2);
+            make.height.mas_equalTo(60);
         }];
         [self.PVscoreColumnSecondLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.PVscoreColumnOneLbl.mas_trailing).offset(80);
-            make.top.equalTo(self.PVteamNameTextField.mas_bottom).offset(15);
-            make.width.mas_equalTo((PVWIDTH - 144) / 2);
-            make.height.mas_equalTo(120);
+            make.top.equalTo(self.PVteamNameTextField.mas_bottom).offset(10);
+            make.width.mas_equalTo((PVWIDTH - 208) / 2);
+            make.height.mas_equalTo(60);
         }];
         [self.PVminusOnePointsButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self.PVscoreColumnOneLbl);
-            make.top.equalTo(self.PVscoreColumnSecondLbl.mas_bottom).offset(15);
+            make.top.equalTo(self.PVscoreColumnSecondLbl.mas_bottom).offset(10);
             make.width.mas_equalTo(42);
             make.height.mas_equalTo(42);
         }];
@@ -56,7 +56,7 @@
             make.top.equalTo(self.PVscoreColumnSecondLbl.mas_bottom).offset(15);
             make.width.mas_equalTo(42);
             make.height.mas_equalTo(42);
-            make.bottom.equalTo(self.contentView).offset(-15);
+            make.bottom.equalTo(self.contentView).offset(-10);
         }];
     }
     return self;
@@ -131,7 +131,7 @@
         _PVteamNameTextField.backgroundColor = [UIColor cyanColor];
         _PVteamNameTextField.textColor = [UIColor blackColor];
         _PVteamNameTextField.textAlignment = NSTextAlignmentCenter;
-        _PVteamNameTextField.font = [UIFont systemFontOfSize:25];
+        _PVteamNameTextField.font = [UIFont boldSystemFontOfSize:20];
     }
     return _PVteamNameTextField;
 }
@@ -139,10 +139,10 @@
     if (!_PVscoreColumnOneLbl) {
         _PVscoreColumnOneLbl = [[UILabel alloc] init];
         _PVscoreColumnOneLbl.backgroundColor = [UIColor blackColor];
-        _PVscoreColumnOneLbl.layer.cornerRadius = 30.0f;
+        _PVscoreColumnOneLbl.layer.cornerRadius = 15.0f;
         _PVscoreColumnOneLbl.layer.masksToBounds = YES;
         _PVscoreColumnOneLbl.textColor = [UIColor whiteColor];
-        _PVscoreColumnOneLbl.font = [UIFont boldSystemFontOfSize:100];
+        _PVscoreColumnOneLbl.font = [UIFont boldSystemFontOfSize:50];
         _PVscoreColumnOneLbl.textAlignment = NSTextAlignmentCenter;
         _PVscoreColumnOneLbl.text = @"0";
     }
@@ -152,10 +152,10 @@
     if (!_PVscoreColumnSecondLbl) {
         _PVscoreColumnSecondLbl = [[UILabel alloc] init];
         _PVscoreColumnSecondLbl.backgroundColor = [UIColor blackColor];
-        _PVscoreColumnSecondLbl.layer.cornerRadius = 30.0f;
+        _PVscoreColumnSecondLbl.layer.cornerRadius = 15.0f;
         _PVscoreColumnSecondLbl.layer.masksToBounds = YES;
         _PVscoreColumnSecondLbl.textColor = [UIColor whiteColor];
-        _PVscoreColumnSecondLbl.font = [UIFont boldSystemFontOfSize:100];
+        _PVscoreColumnSecondLbl.font = [UIFont boldSystemFontOfSize:50];
         _PVscoreColumnSecondLbl.textAlignment = NSTextAlignmentCenter;
         _PVscoreColumnSecondLbl.text = @"0";
     }

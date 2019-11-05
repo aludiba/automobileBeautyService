@@ -9,6 +9,16 @@
 "当日比赛记录" = "Race record of the day";
 "请先登录" = "Please login first";
 "例如：友谊比赛第一场" = "E.g. Friendship match first";
+"例如：第一局" = "The first game";
+"第一局" = "The first inning";
+"例如：第二局" = "The second game";
+"第二局" = "The second inning";
+"例如：第三局" = "The third game";
+"第三局" = "The third inning";
+"例如：第四局" = "The fourth inning";
+"第四局" = "The fourth";
+"例如：第五局" = "The fifth inning";
+"第五局" = "The fifth game";
 "结束时间" = "End time";
 "比赛用时" = "Race time";
 "交换" = "Exchange";

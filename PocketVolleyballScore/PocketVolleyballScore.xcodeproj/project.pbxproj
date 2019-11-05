@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		26EE50F24DAF7D5CB9156A47 /* Pods_PocketVolleyballScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A0BF5BA5C3FAC5FD918FAD /* Pods_PocketVolleyballScore.framework */; };
+		AE95D231237119A50033E085 /* PVScorecardSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95D230237119A50033E085 /* PVScorecardSaveTableViewCell.m */; };
 		AEC1BDDF2369857200091475 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDDE2369857200091475 /* AppDelegate.m */; };
 		AEC1BDEA2369857700091475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC1BDE92369857700091475 /* Assets.xcassets */; };
 		AEC1BDF02369857700091475 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDEF2369857700091475 /* main.m */; };
@@ -44,6 +45,8 @@
 /* Begin PBXFileReference section */
 		27CD20C0A6F66DD960E8BEDD /* Pods-PocketVolleyballScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketVolleyballScore.debug.xcconfig"; path = "Target Support Files/Pods-PocketVolleyballScore/Pods-PocketVolleyballScore.debug.xcconfig"; sourceTree = "<group>"; };
 		3E7B142BE856A46822316937 /* Pods-PocketVolleyballScore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketVolleyballScore.release.xcconfig"; path = "Target Support Files/Pods-PocketVolleyballScore/Pods-PocketVolleyballScore.release.xcconfig"; sourceTree = "<group>"; };
+		AE95D22F237119A50033E085 /* PVScorecardSaveTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVScorecardSaveTableViewCell.h; sourceTree = "<group>"; };
+		AE95D230237119A50033E085 /* PVScorecardSaveTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVScorecardSaveTableViewCell.m; sourceTree = "<group>"; };
 		AEC1BDDA2369857200091475 /* PocketVolleyballScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketVolleyballScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC1BDDD2369857200091475 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEC1BDDE2369857200091475 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -237,14 +240,16 @@
 		AEC1BE2D236990EF00091475 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AEC1BE31236990F000091475 /* PVScorecardTitleTableViewCell.m */,
 				AEC1BE35236990F000091475 /* PVScorecardTitleTableViewCell.h */,
+				AEC1BE31236990F000091475 /* PVScorecardTitleTableViewCell.m */,
 				AEC1BE2E236990F000091475 /* PVScorecardTimeStatisticsTableViewCell.h */,
 				AEC1BE32236990F000091475 /* PVScorecardTimeStatisticsTableViewCell.m */,
 				AEC1BE2F236990F000091475 /* PVScorecardTableViewCell.h */,
 				AEC1BE34236990F000091475 /* PVScorecardTableViewCell.m */,
 				AEC1BE30236990F000091475 /* PVScorecardOperationTableViewCell.h */,
 				AEC1BE33236990F000091475 /* PVScorecardOperationTableViewCell.m */,
+				AE95D22F237119A50033E085 /* PVScorecardSaveTableViewCell.h */,
+				AE95D230237119A50033E085 /* PVScorecardSaveTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -330,7 +335,6 @@
 				27CD20C0A6F66DD960E8BEDD /* Pods-PocketVolleyballScore.debug.xcconfig */,
 				3E7B142BE856A46822316937 /* Pods-PocketVolleyballScore.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -475,6 +479,7 @@
 				AEC1BE1523698E8200091475 /* NSDictionary+log.m in Sources */,
 				AEC1BE6D236992FF00091475 /* PVMineViewController.m in Sources */,
 				AEC1BE1923698E8200091475 /* CalendarTool.m in Sources */,
+				AE95D231237119A50033E085 /* PVScorecardSaveTableViewCell.m in Sources */,
 				AEC1BE6F236992FF00091475 /* PVModifyNicknameViewController.m in Sources */,
 				AEC1BE37236990F000091475 /* PVScorecardModel.m in Sources */,
 				AEC1BE592369925600091475 /* PVRecordTableViewCell.m in Sources */,

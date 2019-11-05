@@ -44,6 +44,7 @@
     PVScorecardViewModel *titleModel = [[PVScorecardViewModel alloc] init];
     titleModel.cellType = PVScorecardCellTypeTitle;
     titleModel.PVnatureCompetitionString = NSLocalizedString(@"例如：友谊比赛第一场", nil);
+    titleModel.PVbureauString = NSLocalizedString(@"例如：第一局", nil);
     [self.PVviewDataArray addObject:titleModel];
     
     PVScorecardViewModel *timeStatisticsDateModel = [[PVScorecardViewModel alloc] init];

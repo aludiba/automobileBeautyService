@@ -17,6 +17,7 @@ typedef NS_ENUM(NSInteger, PVScorecardCellType) {
 };
 @interface PVScorecardViewModel : NSObject
 @property(nonatomic, copy)NSString *PVnatureCompetitionString;//比赛性质
+@property(nonatomic, copy)NSString *PVbureauString;//当前是第几局
 @property(nonatomic, copy)NSString *PVteamName;//队名
 @property(nonatomic, strong)NSDate *PVtimeStatisticsDate;//比赛时长
 @property(nonatomic, copy)NSString *PVtimeStatisticsDateString;//比赛时长字符串
