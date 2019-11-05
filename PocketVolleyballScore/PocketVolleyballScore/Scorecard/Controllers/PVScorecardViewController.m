@@ -15,6 +15,7 @@
 #import "PVScorecardTableViewCell.h"
 #import "PVScorecardOperationTableViewCell.h"
 #import "PVScorecardSaveTableViewCell.h"
+#import "PVScoreSummaryTableViewCell.h"
 @interface PVScorecardViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)PVScorecardModel *PVscorecardModel;//数据模型
 @property(nonatomic, strong)NSMutableArray *PVviewDataArray;
@@ -68,6 +69,10 @@
     PVScorecardViewModel *operationModel = [[PVScorecardViewModel alloc] init];
     operationModel.cellType = PVScorecardCellTypeOperation;
     [self.PVviewDataArray addObject:operationModel];
+    
+    PVScorecardViewModel *summaryModel = [[PVScorecardViewModel alloc] init];
+    summaryModel.cellType = PVScorecardCellTypeSummary;
+    [self.PVviewDataArray addObject:summaryModel];
     
     PVScorecardViewModel *saveModel = [[PVScorecardViewModel alloc] init];
     saveModel.cellType = PVScorecardCellTypeSave;
@@ -149,6 +154,11 @@
                
             }
         };
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cell;
+    }else if(viewModel.cellType == PVScorecardCellTypeSummary){
+        PVScoreSummaryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PVScoreSummaryTableViewCell" forIndexPath:indexPath];
+        cell.PVModel = viewModel;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }else{
@@ -264,6 +274,7 @@
         [_PVmainTable registerClass:[PVScorecardTableViewCell class] forCellReuseIdentifier:@"PVScorecardTableViewCell"];
         [_PVmainTable registerClass:[PVScorecardOperationTableViewCell class] forCellReuseIdentifier:@"PVScorecardOperationTableViewCell"];
         [_PVmainTable registerClass:[PVScorecardSaveTableViewCell class] forCellReuseIdentifier:@"PVScorecardSaveTableViewCell"];
+        [_PVmainTable registerClass:[PVScoreSummaryTableViewCell class] forCellReuseIdentifier:@"PVScoreSummaryTableViewCell"];
         [self.view addSubview:_PVmainTable];
         [_PVmainTable mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.view);

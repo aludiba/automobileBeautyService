@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PVBureauPointsModel : NSObject
 @property(nonatomic, assign)NSUInteger PVIndex;//局次
-@property(nonatomic, assign)NSUInteger PVtBureauScore;//局分
+@property(nonatomic, copy)NSString *PVtBureauScoreString;//局分
 @end
 
 NS_ASSUME_NONNULL_END

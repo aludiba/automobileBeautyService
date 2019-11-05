@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PVBureauPointsModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSInteger, PVScorecardCellType) {
@@ -14,6 +15,7 @@ typedef NS_ENUM(NSInteger, PVScorecardCellType) {
     PVScorecardCellTypeTimeStatistics,
     PVScorecardCellTypeScoreStatistics,
     PVScorecardCellTypeOperation,
+    PVScorecardCellTypeSummary,
     PVScorecardCellTypeSave,
 };
 @interface PVScorecardViewModel : NSObject
@@ -24,6 +26,8 @@ typedef NS_ENUM(NSInteger, PVScorecardCellType) {
 @property(nonatomic, copy)NSString *PVtimeStatisticsDateString;//比赛时长字符串
 @property(nonatomic, assign)NSUInteger score;//得分
 @property(nonatomic, assign)PVScorecardCellType cellType;//cell类型
+@property(nonatomic, strong)NSMutableArray *PVBureauPointsArray;//每一局得分的记录数组
+@property(nonatomic, copy)NSString *totalAcoreString;//总得分
 @end
 
 NS_ASSUME_NONNULL_END
