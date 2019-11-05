@@ -25,6 +25,7 @@
 @implementation PVScoreSummaryTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.PVFirstTitleLbl];
         [self.contentView addSubview:self.PVFirstContentLbl];
         [self.contentView addSubview:self.PVSecondTitleLbl];
@@ -38,7 +39,17 @@
         [self.contentView addSubview:self.PVTotalScoreTitleLbl];
         [self.contentView addSubview:self.PVTotalScoreContentLbl];
         
-        
+        [self.PVFirstTitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.contentView).offset(16);
+            make.top.equalTo(self.contentView).offset(10);
+            make.width.mas_equalTo(PVWIDTH);
+            make.height.mas_equalTo(15);
+        }];
+        [self.PVFirstContentLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.PVFirstTitleLbl.mas_trailing).offset(8);
+            make.trailing.equalTo(self.contentView).offset(-16);
+            make.top
+        }];
     }
     return self;
 }
