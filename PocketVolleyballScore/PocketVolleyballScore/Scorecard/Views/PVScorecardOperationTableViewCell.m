@@ -21,34 +21,34 @@
         [self.contentView addSubview:self.PVResetButton];
         [self.contentView addSubview:self.PVStartButton];
         [self.contentView addSubview:self.PVChangeButton];
-        [self.contentView addSubview:self.PVSaveButton];
+//        [self.contentView addSubview:self.PVSaveButton];
         
         [self.PVResetButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(20);
+            make.leading.equalTo(self.contentView).offset(30);
             make.top.equalTo(self.contentView).offset(20);
-            make.width.mas_equalTo((PVWIDTH - 100) / 4);
+            make.width.mas_equalTo((PVWIDTH - 120) / 3);
             make.height.mas_equalTo(40);
             make.bottom.equalTo(self.contentView).offset(-20);
 
         }];
         [self.PVStartButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.PVResetButton.mas_trailing).offset(20);
+            make.leading.equalTo(self.PVResetButton.mas_trailing).offset(30);
             make.top.equalTo(self.contentView).offset(20);
-            make.width.mas_equalTo((PVWIDTH - 100) / 4);
+            make.width.mas_equalTo((PVWIDTH - 120) / 3);
             make.height.mas_equalTo(40);
         }];
         [self.PVChangeButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.PVStartButton.mas_trailing).offset(20);
+            make.leading.equalTo(self.PVStartButton.mas_trailing).offset(30);
             make.top.equalTo(self.contentView).offset(20);
-            make.width.mas_equalTo((PVWIDTH - 100) / 4);
+            make.width.mas_equalTo((PVWIDTH - 120) / 3);
             make.height.mas_equalTo(40);
         }];
-        [self.PVSaveButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.PVChangeButton.mas_trailing).offset(20);
-            make.top.equalTo(self.contentView).offset(20);
-            make.width.mas_equalTo((PVWIDTH - 100) / 4);
-            make.height.mas_equalTo(40);
-        }];
+//        [self.PVSaveButton mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.leading.equalTo(self.PVChangeButton.mas_trailing).offset(20);
+//            make.top.equalTo(self.contentView).offset(20);
+//            make.width.mas_equalTo((PVWIDTH - 100) / 4);
+//            make.height.mas_equalTo(40);
+//        }];
         
         self.PVisStop = YES;
             //类方法会自动释放。

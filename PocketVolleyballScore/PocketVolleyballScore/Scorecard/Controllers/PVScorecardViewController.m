@@ -14,6 +14,7 @@
 #import "PVScorecardTimeStatisticsTableViewCell.h"
 #import "PVScorecardTableViewCell.h"
 #import "PVScorecardOperationTableViewCell.h"
+#import "PVScorecardSaveTableViewCell.h"
 @interface PVScorecardViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)PVScorecardModel *PVscorecardModel;//数据模型
 @property(nonatomic, strong)NSMutableArray *PVviewDataArray;
@@ -68,6 +69,10 @@
     operationModel.cellType = PVScorecardCellTypeOperation;
     [self.PVviewDataArray addObject:operationModel];
     
+    PVScorecardViewModel *saveModel = [[PVScorecardViewModel alloc] init];
+    saveModel.cellType = PVScorecardCellTypeSave;
+    [self.PVviewDataArray addObject:saveModel];
+    
     [self.PVmainTable reloadData];
 }
 #pragma mark - UITableViewDelegat
@@ -110,7 +115,7 @@
     };
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
-    }else{
+    }else if(viewModel.cellType == PVScorecardCellTypeOperation){
         PVScorecardOperationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PVScorecardOperationTableViewCell" forIndexPath:indexPath];
         self.PVtimer = cell.PVtimer;
         __weak typeof(self) weakSelf = self;
@@ -141,13 +146,20 @@
                 [self.PVviewDataArray replaceObjectAtIndex:3 withObject:teamAModel];
                 [weakSelf.PVmainTable reloadData];
             }else if (cell.index == 103){
-                [cell.PVStartButton setTitle:NSLocalizedString(@"开始", nil) forState:UIControlStateNormal];
-                [cell.PVtimer setFireDate:[NSDate distantFuture]];
-                [weakSelf PVsave];
-                [weakSelf.PVmainTable reloadData];
+               
             }
         };
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cell;
+    }else{
+        PVScorecardSaveTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PVScorecardSaveTableViewCell" forIndexPath:indexPath];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        __weak typeof(self) weakSelf = self;
+        cell.PVScorecardSaveB = ^(PVScorecardSaveTableViewCell * _Nonnull cell) {
+            [self.PVtimer setFireDate:[NSDate distantFuture]];
+            [weakSelf PVsave];
+            [weakSelf.PVmainTable reloadData];
+        };
         return cell;
     }
 }
@@ -202,7 +214,6 @@
             [MBProgressHUD PVshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
         } else {
             [MBProgressHUD PVshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
-
         }
     }];
 }
@@ -252,6 +263,7 @@
         [_PVmainTable registerClass:[PVScorecardTimeStatisticsTableViewCell class] forCellReuseIdentifier:@"PVScorecardTimeStatisticsTableViewCell"];
         [_PVmainTable registerClass:[PVScorecardTableViewCell class] forCellReuseIdentifier:@"PVScorecardTableViewCell"];
         [_PVmainTable registerClass:[PVScorecardOperationTableViewCell class] forCellReuseIdentifier:@"PVScorecardOperationTableViewCell"];
+        [_PVmainTable registerClass:[PVScorecardSaveTableViewCell class] forCellReuseIdentifier:@"PVScorecardSaveTableViewCell"];
         [self.view addSubview:_PVmainTable];
         [_PVmainTable mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.view);

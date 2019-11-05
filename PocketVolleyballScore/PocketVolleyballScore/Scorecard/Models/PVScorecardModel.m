@@ -9,5 +9,7 @@
 #import "PVScorecardModel.h"
 
 @implementation PVScorecardModel
-
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{@"PVBureauPointsArray" : [PVBureauPointsModel class]};
+}
 @end

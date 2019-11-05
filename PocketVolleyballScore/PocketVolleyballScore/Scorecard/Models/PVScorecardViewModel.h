@@ -14,6 +14,7 @@ typedef NS_ENUM(NSInteger, PVScorecardCellType) {
     PVScorecardCellTypeTimeStatistics,
     PVScorecardCellTypeScoreStatistics,
     PVScorecardCellTypeOperation,
+    PVScorecardCellTypeSave,
 };
 @interface PVScorecardViewModel : NSObject
 @property(nonatomic, copy)NSString *PVnatureCompetitionString;//比赛性质

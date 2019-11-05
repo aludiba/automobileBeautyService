@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PVBureauPointsModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign)NSUInteger PVteamBNameScore;//B队得分
 @property(nonatomic, strong)NSString *PVtotalTimeString;//总共用时
 @property(nonatomic, strong)NSString *PVendTimeString;//结束时间
+@property(nonatomic, strong)NSMutableArray *PVBureauPointsArray;//每一局得分的记录数组
 @end
 
 NS_ASSUME_NONNULL_END
