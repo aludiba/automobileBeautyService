@@ -288,8 +288,8 @@
 		AEC1BE532369925600091475 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AEC1BE542369925600091475 /* PVRecordTableViewCell.m */,
 				AEC1BE552369925600091475 /* PVRecordTableViewCell.h */,
+				AEC1BE542369925600091475 /* PVRecordTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";

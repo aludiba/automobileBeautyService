@@ -22,6 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self setJPush:launchOptions];
+    [Bmob resetDomain:@"http://pocketbasketballscore.jd127.cn"];
     [Bmob registerWithAppKey:@"70724917a25832e836932c80ff0995a5"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];

@@ -69,9 +69,11 @@
         _PVtitleLbl = [[UILabel alloc] init];
         _PVtitleLbl.textColor = [UIColor blackColor];
         _PVtitleLbl.font = [UIFont systemFontOfSize:18];
-        _PVtitleLbl.backgroundColor = [UIColor systemGrayColor];
+        _PVtitleLbl.backgroundColor = [UIColor cyanColor];
         _PVtitleLbl.layer.cornerRadius = 14.0f;
         _PVtitleLbl.layer.masksToBounds = YES;
+        _PVtitleLbl.layer.borderWidth = 1.0f;
+        _PVtitleLbl.layer.borderColor = [UIColor systemGrayColor].CGColor;
     }
     return _PVtitleLbl;
 }
@@ -80,9 +82,11 @@
         _PVcontentLbl = [[UILabel alloc] init];
         _PVcontentLbl.textColor = [UIColor blackColor];
         _PVcontentLbl.font = [UIFont boldSystemFontOfSize:22];
-        _PVcontentLbl.backgroundColor = [UIColor systemGrayColor];
+        _PVcontentLbl.backgroundColor = [UIColor cyanColor];
         _PVcontentLbl.layer.cornerRadius = 16.0f;
         _PVcontentLbl.layer.masksToBounds = YES;
+        _PVcontentLbl.layer.borderWidth = 1.0f;
+        _PVcontentLbl.layer.borderColor = [UIColor systemGrayColor].CGColor;
     }
     return _PVcontentLbl;
 }

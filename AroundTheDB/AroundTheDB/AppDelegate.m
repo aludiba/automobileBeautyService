@@ -25,6 +25,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self setJPush:launchOptions];
+    [Bmob resetDomain:@"http://AroundDB.jd127.cn"];
     [Bmob registerWithAppKey:@"11e1669a7c10fec2b2c79577e2132bab"];
 //    [AVOSCloud setApplicationId:@"qEwQUkhy3ze3bwGtBwKAxbWm-9Nh9j0Va" clientKey:@"9x4VnWXyGjlviXKsrtV1gJmP"];
 //    [AVOSCloud setApplicationId:@"{{appid}}" clientKey:@"{{appkey}}"];

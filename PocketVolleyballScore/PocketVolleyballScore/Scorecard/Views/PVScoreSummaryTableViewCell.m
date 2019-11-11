@@ -123,23 +123,53 @@
         PVBureauPointsModel *bureauPointsModel = _PVModel.PVBureauPointsArray[i];
         if (bureauPointsModel.PVIndex == 0) {
             if (bureauPointsModel.PVtBureauScoreString.length) {
-                self.PVFirstContentLbl.text = bureauPointsModel.PVtBureauScoreString;
+                NSString *deadEvenString;
+                if (bureauPointsModel.whichWinType == scorecardWhichWinTypeMain) {
+                    deadEvenString = NSLocalizedString(@"主胜", nil);
+                }else{
+                    deadEvenString = NSLocalizedString(@"客胜", nil);
+                }
+                self.PVFirstContentLbl.text = [NSString stringWithFormat:@"%@   %@",bureauPointsModel.PVtBureauScoreString,deadEvenString];
             }
         }else if (bureauPointsModel.PVIndex == 1){
             if (bureauPointsModel.PVtBureauScoreString.length) {
-                self.PVSecondContentLbl.text = bureauPointsModel.PVtBureauScoreString;
+                NSString *deadEvenString;
+                if (bureauPointsModel.whichWinType == scorecardWhichWinTypeMain) {
+                    deadEvenString = NSLocalizedString(@"主胜", nil);
+                }else{
+                    deadEvenString = NSLocalizedString(@"客胜", nil);
+                }
+                self.PVSecondContentLbl.text = [NSString stringWithFormat:@"%@   %@",bureauPointsModel.PVtBureauScoreString,deadEvenString];
             }
         }else if (bureauPointsModel.PVIndex == 2){
             if (bureauPointsModel.PVtBureauScoreString.length) {
-                self.PVThirdContentLbl.text = bureauPointsModel.PVtBureauScoreString;
+                NSString *deadEvenString;
+                if (bureauPointsModel.whichWinType == scorecardWhichWinTypeMain) {
+                    deadEvenString = NSLocalizedString(@"主胜", nil);
+                }else{
+                    deadEvenString = NSLocalizedString(@"客胜", nil);
+                }
+                self.PVThirdContentLbl.text = [NSString stringWithFormat:@"%@   %@",bureauPointsModel.PVtBureauScoreString,deadEvenString];
             }
         }else if (bureauPointsModel.PVIndex == 3){
             if (bureauPointsModel.PVtBureauScoreString.length) {
-                self.PVFourthContentLbl.text = bureauPointsModel.PVtBureauScoreString;
+                NSString *deadEvenString;
+                if (bureauPointsModel.whichWinType == scorecardWhichWinTypeMain) {
+                    deadEvenString = NSLocalizedString(@"主胜", nil);
+                }else{
+                    deadEvenString = NSLocalizedString(@"客胜", nil);
+                }
+                self.PVFourthContentLbl.text = [NSString stringWithFormat:@"%@   %@",bureauPointsModel.PVtBureauScoreString,deadEvenString];
             }
         }else if (bureauPointsModel.PVIndex == 4){
             if (bureauPointsModel.PVtBureauScoreString.length) {
-                self.PVFifthContentLbl.text = bureauPointsModel.PVtBureauScoreString;
+                NSString *deadEvenString;
+                if (bureauPointsModel.whichWinType == scorecardWhichWinTypeMain) {
+                    deadEvenString = NSLocalizedString(@"主胜", nil);
+                }else{
+                    deadEvenString = NSLocalizedString(@"客胜", nil);
+                }
+                self.PVFifthContentLbl.text = [NSString stringWithFormat:@"%@   %@",bureauPointsModel.PVtBureauScoreString,deadEvenString];
             }
         }
     }

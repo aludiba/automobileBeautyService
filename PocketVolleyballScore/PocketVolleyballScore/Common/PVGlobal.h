@@ -22,6 +22,14 @@
 #import "NSArray+log.h"
 #import "NSDictionary+log.h"
 #import <BmobSDK/Bmob.h>
+typedef NS_ENUM(NSInteger, scorecardOperationStartOrStopType) {
+    scorecardOperationStartOrStopTypeStart,
+    scorecardOperationStartOrStopTypeStop,
+};
+typedef NS_ENUM(NSInteger, scorecardWhichWinType) {
+    scorecardWhichWinTypeMain,
+    scorecardWhichWinTypeGuest,
+};
 //多语言调用
 #define NSLocalizedString(key, comment) [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
 //颜色

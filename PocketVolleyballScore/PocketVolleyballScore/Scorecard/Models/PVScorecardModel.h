@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong)NSString *PVtotalTimeString;//总共用时
 @property(nonatomic, strong)NSString *PVendTimeString;//结束时间
 @property(nonatomic, strong)NSMutableArray *PVBureauPointsArray;//每一局得分的记录数组
+@property(nonatomic, copy)NSString *totalAcoreString;//总得分
 @end
 
 NS_ASSUME_NONNULL_END

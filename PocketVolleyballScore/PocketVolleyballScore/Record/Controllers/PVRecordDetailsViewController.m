@@ -54,6 +54,13 @@
                     model.PVteamBNameScore = [[obj objectForKey:@"PVteamBNameScore"] integerValue];
                     model.PVtotalTimeString = [obj objectForKey:@"PVtotalTimeString"];
                     model.PVendTimeString = [obj objectForKey:@"PVendTimeString"];
+                    model.PVBureauPointsArray = [[NSMutableArray alloc] init];
+                    NSArray *bureauPointsArray = [obj objectForKey:@"PVBureauPointsArray"];
+                       for (int i = 0; i < bureauPointsArray.count; i++) {
+                           NSDictionary *dic = bureauPointsArray[i];
+                           PVBureauPointsModel *pointModel = [PVBureauPointsModel yy_modelWithDictionary:dic];
+                           [model.PVBureauPointsArray addObject:pointModel];
+                       }
                     [self.PVDataArray addObject:model];
                     }
                 }
@@ -105,7 +112,6 @@
 - (UITableView *)PVmainTable{
     if (!_PVmainTable) {
         _PVmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-        _PVmainTable.backgroundColor = [UIColor cyanColor];
         _PVmainTable.delegate = self;
         _PVmainTable.dataSource = self;
         _PVmainTable.rowHeight = UITableViewAutomaticDimension;

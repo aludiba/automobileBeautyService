@@ -16,6 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [Bmob resetDomain:@"http://gamealert.jd127.cn"];
     [Bmob registerWithAppKey:@"16b349e4eb3b7e001d4d3d938fe21ba3"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];

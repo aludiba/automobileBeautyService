@@ -22,6 +22,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setJPush:launchOptions];
+    [Bmob resetDomain:@"http://quitSmokingRemind.jd127.cn"];
     [Bmob registerWithAppKey:@"bae3af210cf8c975d4dfc342ee0e79a3"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];

@@ -19,6 +19,7 @@ typedef void(^PVScorecardOperationBlock)(PVScorecardOperationTableViewCell *cell
 @property(nonatomic, assign)int seconds;//秒
 @property (nonatomic,strong )NSTimer *PVtimer;//定时器
 @property(nonatomic, strong)UIButton *PVStartButton;//开始按钮
+@property(nonatomic, assign)scorecardOperationStartOrStopType startOrStopType;//开始或者暂停状态标注
 @end
 
 NS_ASSUME_NONNULL_END

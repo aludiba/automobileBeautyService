@@ -5,6 +5,12 @@
   Created by bykj on 2019/10/14.
   Copyright © 2019 hbc. All rights reserved.
 */
+"每局比分" = "With the score";
+"胜负已分请保存" = "Win/loss divided please save";
+"提示" = "Hint";
+"比赛还未结束" = "The game is not over yet";
+"主胜" = "Main win";
+"客胜" = "Guest wins";
 "总比分" = "Total score";
 "无数据" = "No data";
 "当日比赛记录" = "Race record of the day";

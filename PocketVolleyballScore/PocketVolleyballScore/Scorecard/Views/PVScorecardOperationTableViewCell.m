@@ -92,10 +92,15 @@
           [self.PVStartButton setTitle:NSLocalizedString(@"停止", nil) forState:UIControlStateNormal];
            [_PVtimer setFireDate:[NSDate date]];
            self.PVisStop = NO;
+           self.startOrStopType = scorecardOperationStartOrStopTypeStart;
         }else{
             [self.PVStartButton setTitle:NSLocalizedString(@"开始", nil) forState:UIControlStateNormal];
             [self.PVtimer setFireDate:[NSDate distantFuture]];
             self.PVisStop = YES;
+            self.startOrStopType = scorecardOperationStartOrStopTypeStop;
+        }
+        if (self.PVScorecardOperationB) {
+            self.PVScorecardOperationB(self);
         }
     }else if (sender.tag == 102){
         if (self.PVScorecardOperationB) {

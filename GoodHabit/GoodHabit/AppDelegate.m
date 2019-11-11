@@ -25,14 +25,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setJPush:launchOptions];
+    [Bmob resetDomain:@"http://goodhabit.jd127.cn"];
     [Bmob registerWithAppKey:@"df039ce9ff6f2311d96e0abed1cfb43b"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     BmobQuery *bquery = [BmobQuery queryWithClassName:@"PHPocketHabits"];
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"PHPocketHabits"]]];
-            self.window.rootViewController = [self rootController];
-            [self.window makeKeyAndVisible];
+        [PHNDHTTPClient PHgetURLStringNoHUD:[[array lastObject] objectForKey:@"PHPocketHabits"] withParam:nil withSuccessBlock:^(id data) {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[(NSDictionary *)data objectForKey:@"Url"]]];
+            } withErrorBlock:^(NSError *error, id errorData) {
+               
+            }];
+           self.window.rootViewController = [self rootController];
+           [self.window makeKeyAndVisible];
     }];
     return YES;
 }
@@ -68,7 +73,7 @@
     // Required
     // init Push
     // notice: 2.1.5 版本的 SDK 新增的注册方法，改成可上报 IDFA，如果没有使用 IDFA 直接传 nil
-    [JPUSHService setupWithOption:launchOptions appKey:@"5d6d074c82194afbf185ebcc"
+    [JPUSHService setupWithOption:launchOptions appKey:@"d5c5f9bd195a376a63a7e8ed"
                           channel:@"App Store"
                  apsForProduction:1];
 }

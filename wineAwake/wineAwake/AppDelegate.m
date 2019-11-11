@@ -24,6 +24,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self setJPush:launchOptions];
+    [Bmob resetDomain:@"http://wineAwake.jd127.cn"];
     [Bmob registerWithAppKey:@"a9c594114abe62d6277a00efe6616470"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];

@@ -875,9 +875,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = GoodHabit/GoodHabit.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: zhiguang he (69HX82HGYZ)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Lowell Duncan (GNRQGZ34T5)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 69HX82HGYZ;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = GNRQGZ34T5;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GoodHabit/Common/PocketHabits_PrefixHeader.pch";
 				INFOPLIST_FILE = GoodHabit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -892,7 +893,7 @@
 				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketHabits;
 				PRODUCT_NAME = PocketHabits;
-				PROVISIONING_PROFILE_SPECIFIER = dis_PocketHabits_20191101;
+				PROVISIONING_PROFILE_SPECIFIER = dis_PocketHabits_20191111;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -904,9 +905,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = GoodHabit/GoodHabit.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: zhiguang he (69HX82HGYZ)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Lowell Duncan (GNRQGZ34T5)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 69HX82HGYZ;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = GNRQGZ34T5;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GoodHabit/Common/PocketHabits_PrefixHeader.pch";
 				INFOPLIST_FILE = GoodHabit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -921,7 +923,7 @@
 				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketHabits;
 				PRODUCT_NAME = PocketHabits;
-				PROVISIONING_PROFILE_SPECIFIER = dis_PocketHabits_20191101;
+				PROVISIONING_PROFILE_SPECIFIER = dis_PocketHabits_20191111;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

@@ -710,7 +710,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketFootballScore/PocketFootballScore.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: zhiguang he (69HX82HGYZ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: zhiguang he (NTF347VWTK)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 69HX82HGYZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketFootballScore/Common/YB_PrefixHeader.pch";
@@ -725,7 +725,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com..cn.PortableFootballScoring;
 				PRODUCT_NAME = PortableFootballScoring;
-				PROVISIONING_PROFILE_SPECIFIER = dis_PortableFootballScoring_20191106;
+				PROVISIONING_PROFILE_SPECIFIER = dev_PortableFootballScoring_20191106;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -737,7 +737,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketFootballScore/PocketFootballScore.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: zhiguang he (69HX82HGYZ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: zhiguang he (NTF347VWTK)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 69HX82HGYZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketFootballScore/Common/YB_PrefixHeader.pch";
@@ -752,7 +752,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com..cn.PortableFootballScoring;
 				PRODUCT_NAME = PortableFootballScoring;
-				PROVISIONING_PROFILE_SPECIFIER = dis_PortableFootballScoring_20191106;
+				PROVISIONING_PROFILE_SPECIFIER = dev_PortableFootballScoring_20191106;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

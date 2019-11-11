@@ -15,19 +15,20 @@
 @property(nonatomic, strong)UILabel *PVScoreALbl;//A队得分
 @property(nonatomic, strong)UILabel *PVTeamBLbl;//B队队名
 @property(nonatomic, strong)UILabel *PVScoreBLbl;//B队得分
+@property(nonatomic, strong)UILabel *PVWithScoreLbl;//每局比分
 @property(nonatomic, strong)UILabel *PVTotalTimeLbl;//比赛用时
 @property(nonatomic, strong)UILabel *PVEndTimeLbl;//结束时间
 @end
 @implementation PVRecordTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.PVTitleLbl];
         [self.contentView addSubview:self.PVBackView];
         [self.PVBackView addSubview:self.PVTeamALbl];
         [self.PVBackView addSubview:self.PVScoreALbl];
         [self.PVBackView addSubview:self.PVTeamBLbl];
         [self.PVBackView addSubview:self.PVScoreBLbl];
+        [self.PVBackView addSubview:self.PVWithScoreLbl];
         [self.PVBackView addSubview:self.PVTotalTimeLbl];
         [self.PVBackView addSubview:self.PVEndTimeLbl];
         
@@ -41,7 +42,7 @@
             make.top.equalTo(self.PVTitleLbl.mas_bottom).offset(15);
             make.leading.equalTo(self.contentView).offset(32);
             make.trailing.equalTo(self.contentView).offset(-32);
-            make.height.mas_equalTo(210);
+            make.height.mas_equalTo(264);
             make.bottom.equalTo(self.contentView).offset(-15);
         }];
         [self.PVTeamALbl mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -68,8 +69,14 @@
             make.width.mas_equalTo((PVWIDTH - 32) * 0.5 - 20);
             make.height.mas_equalTo(50);
         }];
-        [self.PVTotalTimeLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.PVWithScoreLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.PVScoreALbl.mas_bottom).offset(10);
+            make.leading.equalTo(self.PVBackView).offset(54);
+            make.trailing.equalTo(self.PVBackView).offset(-16);
+            make.height.mas_equalTo(44);
+        }];
+        [self.PVTotalTimeLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.PVWithScoreLbl.mas_bottom).offset(10);
             make.leading.equalTo(self.PVBackView).offset(54);
             make.trailing.equalTo(self.PVBackView).offset(-16);
             make.height.mas_equalTo(44);
@@ -79,6 +86,7 @@
             make.leading.equalTo(self.PVBackView).offset(54);
             make.trailing.equalTo(self.PVBackView).offset(-16);
             make.height.mas_equalTo(44);
+            
         }];
     }
     return self;
@@ -87,14 +95,14 @@
     _model = model;
     self.PVTitleLbl.text = _model.PVnatureCompetition;
     self.PVTeamALbl.text = _model.PVteamAName;
-    self.PVScoreALbl.text = [NSString stringWithFormat:@" %.2ld ",_model.PVteamANameScore];
+    self.PVScoreALbl.text = [NSString stringWithFormat:@" %.1ld ",_model.PVteamANameScore];
     CGSize size = [self.PVScoreALbl sizeThatFits:CGSizeMake(MAXFLOAT, 50)];
     [self.PVScoreALbl mas_updateConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(size.width);
     }];
     [self.PVScoreALbl layoutIfNeeded];
     self.PVTeamBLbl.text = _model.PVteamBName;
-    self.PVScoreBLbl.text = [NSString stringWithFormat:@" %.2ld ",_model.PVteamBNameScore];
+    self.PVScoreBLbl.text = [NSString stringWithFormat:@" %.1ld ",_model.PVteamBNameScore];
     size = [self.PVScoreBLbl sizeThatFits:CGSizeMake(MAXFLOAT, 50)];
     [self.PVScoreBLbl mas_updateConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(size.width);
@@ -103,6 +111,12 @@
     [self.contentView layoutSubviews];
     self.PVTotalTimeLbl.text = [NSString stringWithFormat:@"%@:\n%@",NSLocalizedString(@"比赛用时", nil),_model.PVtotalTimeString];
     self.PVEndTimeLbl.text = [NSString stringWithFormat:@"%@:\n%@",NSLocalizedString(@"结束时间", nil),_model.PVendTimeString];
+    NSMutableString *withTheScoreString = [[NSMutableString alloc] init];
+    for (int i = 0; i < _model.PVBureauPointsArray.count; i++) {
+        PVBureauPointsModel *model = _model.PVBureauPointsArray[i];
+        [withTheScoreString appendString:[NSString stringWithFormat:@"%@ ",model.PVtBureauScoreString]];
+    }
+    self.PVWithScoreLbl.text = [NSString stringWithFormat:@"%@:\n%@",NSLocalizedString(@"每局比分", nil),withTheScoreString];
 }
 #pragma mark - 属性懒加载
 - (UILabel *)PVTitleLbl{
@@ -117,9 +131,11 @@
 - (UIView *)PVBackView{
     if (!_PVBackView) {
         _PVBackView = [[UIView alloc] init];
-        _PVBackView.layer.cornerRadius = 24.0f;
+        _PVBackView.layer.cornerRadius = 8.0f;
         _PVBackView.layer.masksToBounds = YES;
-        _PVBackView.backgroundColor = [UIColor systemRedColor];
+        _PVBackView.layer.borderWidth = 2.0f;
+        _PVBackView.layer.borderColor = [UIColor systemRedColor].CGColor;
+        _PVBackView.backgroundColor = [UIColor systemYellowColor];
     }
     return _PVBackView;
 }
@@ -162,6 +178,15 @@
         _PVScoreBLbl.font = [UIFont systemFontOfSize:40];
     }
     return _PVScoreBLbl;
+}
+- (UILabel *)PVWithScoreLbl{
+    if (!_PVWithScoreLbl) {
+        _PVWithScoreLbl = [[UILabel alloc] init];
+        _PVWithScoreLbl.textColor = [UIColor whiteColor];
+        _PVWithScoreLbl.font = [UIFont systemFontOfSize:18];
+        _PVWithScoreLbl.numberOfLines = 0;
+    }
+    return _PVWithScoreLbl;
 }
 - (UILabel *)PVTotalTimeLbl{
     if (!_PVTotalTimeLbl) {
