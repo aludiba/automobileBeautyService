@@ -3,16 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE605018237A4214004BC919 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE605005237A4214004BC919 /* Localizable.strings */; };
+		AE60502F237A452A004BC919 /* KTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE605021237A4529004BC919 /* KTBaseViewController.m */; };
+		AE605030237A452A004BC919 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE605022237A4529004BC919 /* NSArray+log.m */; };
+		AE605031237A452A004BC919 /* KTNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE605025237A4529004BC919 /* KTNDHTTPClient.m */; };
+		AE605032237A452A004BC919 /* KTUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE605026237A4529004BC919 /* KTUIUtilities.m */; };
+		AE605033237A452A004BC919 /* KTHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE605027237A4529004BC919 /* KTHBTool.m */; };
+		AE605034237A452A004BC919 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE605028237A4529004BC919 /* NSDictionary+log.m */; };
+		AE605035237A452A004BC919 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE605029237A4529004BC919 /* CalendarTool.m */; };
+		AE605036237A452A004BC919 /* MBProgressHUD+KTNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE60502D237A452A004BC919 /* MBProgressHUD+KTNJ.m */; };
+		AE605039237A47B4004BC919 /* KTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE605038237A47B4004BC919 /* KTTabBarController.m */; };
+		AE60503C237A4805004BC919 /* KTScorecardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE60503B237A4805004BC919 /* KTScorecardViewController.m */; };
+		AE60503F237A4815004BC919 /* KTRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE60503E237A4815004BC919 /* KTRecordViewController.m */; };
+		AE605042237A4828004BC919 /* KTMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE605041237A4828004BC919 /* KTMineViewController.m */; };
+		AE605045237A48A5004BC919 /* KTLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE605044237A48A5004BC919 /* KTLoginTableViewCell.m */; };
+		AE605048237A48AF004BC919 /* KTSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE605047237A48AF004BC919 /* KTSetViewModel.m */; };
+		AE60504F237A48BE004BC919 /* KTPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE605049237A48BD004BC919 /* KTPasswordChangeViewController.m */; };
+		AE605051237A48BE004BC919 /* KTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE60504C237A48BE004BC919 /* KTLoginViewController.m */; };
+		AE605054237AA199004BC919 /* KTBothTeamsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE605053237AA199004BC919 /* KTBothTeamsTableViewCell.m */; };
+		AE605057237AA1D4004BC919 /* KTScoringPartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE605056237AA1D4004BC919 /* KTScoringPartTableViewCell.m */; };
+		AE60505A237AA1FA004BC919 /* KTTimePortionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE605059237AA1FA004BC919 /* KTTimePortionTableViewCell.m */; };
+		AE60505D237AA21E004BC919 /* KTScoringSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE60505C237AA21E004BC919 /* KTScoringSaveTableViewCell.m */; };
+		AE605060237AAE3C004BC919 /* KTScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE60505F237AAE3C004BC919 /* KTScorecardViewModel.m */; };
 		AE977187236FF6B900163F70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE977186236FF6B900163F70 /* AppDelegate.m */; };
-		AE97718A236FF6B900163F70 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE977189236FF6B900163F70 /* SceneDelegate.m */; };
-		AE97718D236FF6B900163F70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE97718C236FF6B900163F70 /* ViewController.m */; };
-		AE977190236FF6B900163F70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE97718E236FF6B900163F70 /* Main.storyboard */; };
 		AE977192236FF6BD00163F70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE977191236FF6BD00163F70 /* Assets.xcassets */; };
-		AE977195236FF6BD00163F70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE977193236FF6BD00163F70 /* LaunchScreen.storyboard */; };
 		AE977198236FF6BD00163F70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE977197236FF6BD00163F70 /* main.m */; };
 		C15729B2299FE95726D4018C /* Pods_PocketScout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1935D52CCCF584E436965C /* Pods_PocketScout.framework */; };
 /* End PBXBuildFile section */
@@ -21,16 +39,58 @@
 		331C525DA6A69D03BC5FF409 /* Pods-PocketScout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketScout.debug.xcconfig"; path = "Target Support Files/Pods-PocketScout/Pods-PocketScout.debug.xcconfig"; sourceTree = "<group>"; };
 		8C1935D52CCCF584E436965C /* Pods_PocketScout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketScout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D183C2DD1E5985173F5496 /* Pods-PocketScout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketScout.release.xcconfig"; path = "Target Support Files/Pods-PocketScout/Pods-PocketScout.release.xcconfig"; sourceTree = "<group>"; };
-		AE977182236FF6B800163F70 /* PocketScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE605006237A4214004BC919 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AE605007237A4214004BC919 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE605008237A4214004BC919 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE60501C237A42C9004BC919 /* PocketScout.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PocketScout.entitlements; sourceTree = "<group>"; };
+		AE60501D237A4528004BC919 /* KT_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KT_PrefixHeader.pch; path = Common/KT_PrefixHeader.pch; sourceTree = "<group>"; };
+		AE60501E237A4528004BC919 /* KTHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KTHBTool.h; path = Common/KTHBTool.h; sourceTree = "<group>"; };
+		AE60501F237A4528004BC919 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+log.h"; path = "Common/NSArray+log.h"; sourceTree = "<group>"; };
+		AE605020237A4528004BC919 /* KTNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KTNDHTTPClient.h; path = Common/KTNDHTTPClient.h; sourceTree = "<group>"; };
+		AE605021237A4529004BC919 /* KTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KTBaseViewController.m; path = Common/KTBaseViewController.m; sourceTree = "<group>"; };
+		AE605022237A4529004BC919 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+log.m"; path = "Common/NSArray+log.m"; sourceTree = "<group>"; };
+		AE605023237A4529004BC919 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+log.h"; path = "Common/NSDictionary+log.h"; sourceTree = "<group>"; };
+		AE605024237A4529004BC919 /* MBProgressHUD+KTNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MBProgressHUD+KTNJ.h"; path = "Common/MBProgressHUD+KTNJ.h"; sourceTree = "<group>"; };
+		AE605025237A4529004BC919 /* KTNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KTNDHTTPClient.m; path = Common/KTNDHTTPClient.m; sourceTree = "<group>"; };
+		AE605026237A4529004BC919 /* KTUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KTUIUtilities.m; path = Common/KTUIUtilities.m; sourceTree = "<group>"; };
+		AE605027237A4529004BC919 /* KTHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KTHBTool.m; path = Common/KTHBTool.m; sourceTree = "<group>"; };
+		AE605028237A4529004BC919 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+log.m"; path = "Common/NSDictionary+log.m"; sourceTree = "<group>"; };
+		AE605029237A4529004BC919 /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarTool.m; path = Common/CalendarTool.m; sourceTree = "<group>"; };
+		AE60502A237A4529004BC919 /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarTool.h; path = Common/CalendarTool.h; sourceTree = "<group>"; };
+		AE60502B237A452A004BC919 /* KTUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KTUIUtilities.h; path = Common/KTUIUtilities.h; sourceTree = "<group>"; };
+		AE60502C237A452A004BC919 /* KTGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KTGlobal.h; path = Common/KTGlobal.h; sourceTree = "<group>"; };
+		AE60502D237A452A004BC919 /* MBProgressHUD+KTNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MBProgressHUD+KTNJ.m"; path = "Common/MBProgressHUD+KTNJ.m"; sourceTree = "<group>"; };
+		AE60502E237A452A004BC919 /* KTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KTBaseViewController.h; path = Common/KTBaseViewController.h; sourceTree = "<group>"; };
+		AE605037237A47B4004BC919 /* KTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KTTabBarController.h; path = Common/KTTabBarController.h; sourceTree = "<group>"; };
+		AE605038237A47B4004BC919 /* KTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KTTabBarController.m; path = Common/KTTabBarController.m; sourceTree = "<group>"; };
+		AE60503A237A4805004BC919 /* KTScorecardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTScorecardViewController.h; sourceTree = "<group>"; };
+		AE60503B237A4805004BC919 /* KTScorecardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTScorecardViewController.m; sourceTree = "<group>"; };
+		AE60503D237A4815004BC919 /* KTRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTRecordViewController.h; sourceTree = "<group>"; };
+		AE60503E237A4815004BC919 /* KTRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTRecordViewController.m; sourceTree = "<group>"; };
+		AE605040237A4828004BC919 /* KTMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMineViewController.h; sourceTree = "<group>"; };
+		AE605041237A4828004BC919 /* KTMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMineViewController.m; sourceTree = "<group>"; };
+		AE605043237A48A5004BC919 /* KTLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTLoginTableViewCell.h; sourceTree = "<group>"; };
+		AE605044237A48A5004BC919 /* KTLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTLoginTableViewCell.m; sourceTree = "<group>"; };
+		AE605046237A48AF004BC919 /* KTSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTSetViewModel.h; sourceTree = "<group>"; };
+		AE605047237A48AF004BC919 /* KTSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTSetViewModel.m; sourceTree = "<group>"; };
+		AE605049237A48BD004BC919 /* KTPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTPasswordChangeViewController.m; sourceTree = "<group>"; };
+		AE60504B237A48BE004BC919 /* KTPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTPasswordChangeViewController.h; sourceTree = "<group>"; };
+		AE60504C237A48BE004BC919 /* KTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTLoginViewController.m; sourceTree = "<group>"; };
+		AE60504D237A48BE004BC919 /* KTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTLoginViewController.h; sourceTree = "<group>"; };
+		AE605052237AA199004BC919 /* KTBothTeamsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTBothTeamsTableViewCell.h; sourceTree = "<group>"; };
+		AE605053237AA199004BC919 /* KTBothTeamsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTBothTeamsTableViewCell.m; sourceTree = "<group>"; };
+		AE605055237AA1D4004BC919 /* KTScoringPartTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTScoringPartTableViewCell.h; sourceTree = "<group>"; };
+		AE605056237AA1D4004BC919 /* KTScoringPartTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTScoringPartTableViewCell.m; sourceTree = "<group>"; };
+		AE605058237AA1FA004BC919 /* KTTimePortionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTTimePortionTableViewCell.h; sourceTree = "<group>"; };
+		AE605059237AA1FA004BC919 /* KTTimePortionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTTimePortionTableViewCell.m; sourceTree = "<group>"; };
+		AE60505B237AA21E004BC919 /* KTScoringSaveTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTScoringSaveTableViewCell.h; sourceTree = "<group>"; };
+		AE60505C237AA21E004BC919 /* KTScoringSaveTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTScoringSaveTableViewCell.m; sourceTree = "<group>"; };
+		AE60505E237AAE3C004BC919 /* KTScorecardViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTScorecardViewModel.h; sourceTree = "<group>"; };
+		AE60505F237AAE3C004BC919 /* KTScorecardViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTScorecardViewModel.m; sourceTree = "<group>"; };
+		AE977182236FF6B800163F70 /* PocketFootballScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketFootballScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE977185236FF6B900163F70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE977186236FF6B900163F70 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AE977188236FF6B900163F70 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		AE977189236FF6B900163F70 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		AE97718B236FF6B900163F70 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AE97718C236FF6B900163F70 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AE97718F236FF6B900163F70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE977191236FF6BD00163F70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AE977194236FF6BD00163F70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE977196236FF6BD00163F70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE977197236FF6BD00163F70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,8 +121,139 @@
 				331C525DA6A69D03BC5FF409 /* Pods-PocketScout.debug.xcconfig */,
 				A0D183C2DD1E5985173F5496 /* Pods-PocketScout.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE605000237A4214004BC919 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				AE605001237A4214004BC919 /* Models */,
+				AE605003237A4214004BC919 /* Views */,
+				AE605002237A4214004BC919 /* Controllers */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		AE605001237A4214004BC919 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE605002237A4214004BC919 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE60503D237A4815004BC919 /* KTRecordViewController.h */,
+				AE60503E237A4815004BC919 /* KTRecordViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE605003237A4214004BC919 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE605004237A4214004BC919 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE605005237A4214004BC919 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE605009237A4214004BC919 /* Scorecard */ = {
+			isa = PBXGroup;
+			children = (
+				AE60500A237A4214004BC919 /* Models */,
+				AE60500C237A4214004BC919 /* Views */,
+				AE60500B237A4214004BC919 /* Controllers */,
+			);
+			path = Scorecard;
+			sourceTree = "<group>";
+		};
+		AE60500A237A4214004BC919 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE60505E237AAE3C004BC919 /* KTScorecardViewModel.h */,
+				AE60505F237AAE3C004BC919 /* KTScorecardViewModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE60500B237A4214004BC919 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE60503A237A4805004BC919 /* KTScorecardViewController.h */,
+				AE60503B237A4805004BC919 /* KTScorecardViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE60500C237A4214004BC919 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE605052237AA199004BC919 /* KTBothTeamsTableViewCell.h */,
+				AE605053237AA199004BC919 /* KTBothTeamsTableViewCell.m */,
+				AE605055237AA1D4004BC919 /* KTScoringPartTableViewCell.h */,
+				AE605056237AA1D4004BC919 /* KTScoringPartTableViewCell.m */,
+				AE605058237AA1FA004BC919 /* KTTimePortionTableViewCell.h */,
+				AE605059237AA1FA004BC919 /* KTTimePortionTableViewCell.m */,
+				AE60505B237AA21E004BC919 /* KTScoringSaveTableViewCell.h */,
+				AE60505C237AA21E004BC919 /* KTScoringSaveTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE60500D237A4214004BC919 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AE605014237A4214004BC919 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				AE605015237A4214004BC919 /* Models */,
+				AE605017237A4214004BC919 /* Views */,
+				AE605016237A4214004BC919 /* Controllers */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		AE605015237A4214004BC919 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE605046237A48AF004BC919 /* KTSetViewModel.h */,
+				AE605047237A48AF004BC919 /* KTSetViewModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE605016237A4214004BC919 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE605040237A4828004BC919 /* KTMineViewController.h */,
+				AE605041237A4828004BC919 /* KTMineViewController.m */,
+				AE60504B237A48BE004BC919 /* KTPasswordChangeViewController.h */,
+				AE605049237A48BD004BC919 /* KTPasswordChangeViewController.m */,
+				AE60504D237A48BE004BC919 /* KTLoginViewController.h */,
+				AE60504C237A48BE004BC919 /* KTLoginViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE605017237A4214004BC919 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE605043237A48A5004BC919 /* KTLoginTableViewCell.h */,
+				AE605044237A48A5004BC919 /* KTLoginTableViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		AE977179236FF6B800163F70 = {
@@ -78,7 +269,7 @@
 		AE977183236FF6B800163F70 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE977182236FF6B800163F70 /* PocketScout.app */,
+				AE977182236FF6B800163F70 /* PocketFootballScout.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,15 +277,35 @@
 		AE977184236FF6B800163F70 /* PocketScout */ = {
 			isa = PBXGroup;
 			children = (
+				AE60501C237A42C9004BC919 /* PocketScout.entitlements */,
+				AE605004237A4214004BC919 /* Resources */,
+				AE60500D237A4214004BC919 /* Common */,
+				AE60502A237A4529004BC919 /* CalendarTool.h */,
+				AE605029237A4529004BC919 /* CalendarTool.m */,
+				AE60501D237A4528004BC919 /* KT_PrefixHeader.pch */,
+				AE60502C237A452A004BC919 /* KTGlobal.h */,
+				AE605037237A47B4004BC919 /* KTTabBarController.h */,
+				AE605038237A47B4004BC919 /* KTTabBarController.m */,
+				AE60502E237A452A004BC919 /* KTBaseViewController.h */,
+				AE605021237A4529004BC919 /* KTBaseViewController.m */,
+				AE60501E237A4528004BC919 /* KTHBTool.h */,
+				AE605027237A4529004BC919 /* KTHBTool.m */,
+				AE605020237A4528004BC919 /* KTNDHTTPClient.h */,
+				AE605025237A4529004BC919 /* KTNDHTTPClient.m */,
+				AE60502B237A452A004BC919 /* KTUIUtilities.h */,
+				AE605026237A4529004BC919 /* KTUIUtilities.m */,
+				AE605024237A4529004BC919 /* MBProgressHUD+KTNJ.h */,
+				AE60502D237A452A004BC919 /* MBProgressHUD+KTNJ.m */,
+				AE60501F237A4528004BC919 /* NSArray+log.h */,
+				AE605022237A4529004BC919 /* NSArray+log.m */,
+				AE605023237A4529004BC919 /* NSDictionary+log.h */,
+				AE605028237A4529004BC919 /* NSDictionary+log.m */,
+				AE605009237A4214004BC919 /* Scorecard */,
+				AE605000237A4214004BC919 /* Record */,
+				AE605014237A4214004BC919 /* Mine */,
 				AE977185236FF6B900163F70 /* AppDelegate.h */,
 				AE977186236FF6B900163F70 /* AppDelegate.m */,
-				AE977188236FF6B900163F70 /* SceneDelegate.h */,
-				AE977189236FF6B900163F70 /* SceneDelegate.m */,
-				AE97718B236FF6B900163F70 /* ViewController.h */,
-				AE97718C236FF6B900163F70 /* ViewController.m */,
-				AE97718E236FF6B900163F70 /* Main.storyboard */,
 				AE977191236FF6BD00163F70 /* Assets.xcassets */,
-				AE977193236FF6BD00163F70 /* LaunchScreen.storyboard */,
 				AE977196236FF6BD00163F70 /* Info.plist */,
 				AE977197236FF6BD00163F70 /* main.m */,
 			);
@@ -120,7 +331,7 @@
 			);
 			name = PocketScout;
 			productName = PocketScout;
-			productReference = AE977182236FF6B800163F70 /* PocketScout.app */;
+			productReference = AE977182236FF6B800163F70 /* PocketFootballScout.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -144,6 +355,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				ja,
 			);
 			mainGroup = AE977179236FF6B800163F70;
 			productRefGroup = AE977183236FF6B800163F70 /* Products */;
@@ -160,9 +373,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE977195236FF6BD00163F70 /* LaunchScreen.storyboard in Resources */,
 				AE977192236FF6BD00163F70 /* Assets.xcassets in Resources */,
-				AE977190236FF6B900163F70 /* Main.storyboard in Resources */,
+				AE605018237A4214004BC919 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,30 +427,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE97718D236FF6B900163F70 /* ViewController.m in Sources */,
+				AE605054237AA199004BC919 /* KTBothTeamsTableViewCell.m in Sources */,
+				AE605060237AAE3C004BC919 /* KTScorecardViewModel.m in Sources */,
+				AE605042237A4828004BC919 /* KTMineViewController.m in Sources */,
+				AE605033237A452A004BC919 /* KTHBTool.m in Sources */,
+				AE605048237A48AF004BC919 /* KTSetViewModel.m in Sources */,
+				AE605035237A452A004BC919 /* CalendarTool.m in Sources */,
+				AE60505D237AA21E004BC919 /* KTScoringSaveTableViewCell.m in Sources */,
+				AE605057237AA1D4004BC919 /* KTScoringPartTableViewCell.m in Sources */,
+				AE60503C237A4805004BC919 /* KTScorecardViewController.m in Sources */,
+				AE605034237A452A004BC919 /* NSDictionary+log.m in Sources */,
+				AE60504F237A48BE004BC919 /* KTPasswordChangeViewController.m in Sources */,
 				AE977187236FF6B900163F70 /* AppDelegate.m in Sources */,
+				AE605030237A452A004BC919 /* NSArray+log.m in Sources */,
+				AE60502F237A452A004BC919 /* KTBaseViewController.m in Sources */,
+				AE60503F237A4815004BC919 /* KTRecordViewController.m in Sources */,
+				AE605036237A452A004BC919 /* MBProgressHUD+KTNJ.m in Sources */,
+				AE605045237A48A5004BC919 /* KTLoginTableViewCell.m in Sources */,
 				AE977198236FF6BD00163F70 /* main.m in Sources */,
-				AE97718A236FF6B900163F70 /* SceneDelegate.m in Sources */,
+				AE605031237A452A004BC919 /* KTNDHTTPClient.m in Sources */,
+				AE605051237A48BE004BC919 /* KTLoginViewController.m in Sources */,
+				AE605032237A452A004BC919 /* KTUIUtilities.m in Sources */,
+				AE605039237A47B4004BC919 /* KTTabBarController.m in Sources */,
+				AE60505A237AA1FA004BC919 /* KTTimePortionTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AE97718E236FF6B900163F70 /* Main.storyboard */ = {
+		AE605005237A4214004BC919 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AE97718F236FF6B900163F70 /* Base */,
+				AE605006237A4214004BC919 /* zh-Hans */,
+				AE605007237A4214004BC919 /* ja */,
+				AE605008237A4214004BC919 /* en */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AE977193236FF6BD00163F70 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AE977194236FF6BD00163F70 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -294,7 +519,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -346,7 +571,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -359,16 +584,23 @@
 			baseConfigurationReference = 331C525DA6A69D03BC5FF409 /* Pods-PocketScout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = PocketScout/PocketScout.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSZND88BX8;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketScout/Common/KT_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hgg.PocketScout;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PocketScout/Common/JPush",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketFootballScout;
+				PRODUCT_NAME = PocketFootballScout;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -377,16 +609,23 @@
 			baseConfigurationReference = A0D183C2DD1E5985173F5496 /* Pods-PocketScout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = PocketScout/PocketScout.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSZND88BX8;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketScout/Common/KT_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hgg.PocketScout;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PocketScout/Common/JPush",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketFootballScout;
+				PRODUCT_NAME = PocketFootballScout;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

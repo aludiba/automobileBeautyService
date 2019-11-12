@@ -69,7 +69,7 @@
     
     [self.YBmainTable reloadData];
 }
-#pragma mark - UITableViewDelegat
+#pragma mark - UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.YBviewDataArray.count;
 }
