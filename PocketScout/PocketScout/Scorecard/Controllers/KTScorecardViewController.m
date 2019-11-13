@@ -68,6 +68,10 @@
     [self.KTmainTable reloadData];
 }
 #pragma mark - actions
+#pragma mark - 关闭键盘
+- (void)KTCloseKeyBoard{
+    [self.view endEditing:YES];
+}
 #pragma mark - 保存功能
 - (void)KTsaveLoginJudge{
     BmobUser *bUser = [BmobUser currentUser];
@@ -170,6 +174,10 @@
 - (void)textFieldDidEndEditing:(UITextField *)textField{
     self.KTScoreModel.KTNatureCompetition = textField.text;
 }
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    [self.view endEditing:YES];
+}
 #pragma mark - UITableViewDelegate
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.KTviewDataArray.count;
@@ -244,6 +252,7 @@
 - (UITableView *)KTmainTable{
     if (!_KTmainTable) {
         _KTmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _KTmainTable.showsVerticalScrollIndicator = NO;
         _KTmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
         _KTmainTable.delegate = self;
         _KTmainTable.dataSource = self;
@@ -265,6 +274,9 @@
             make.trailing.equalTo(self.view).offset(-20);
             make.bottom.equalTo(self.view).offset(-KTHeightTabBar - 20);
         }];
+        UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(KTCloseKeyBoard)];
+        [_KTmainTable addGestureRecognizer:tapGes];
+        [self.view addGestureRecognizer:tapGes];
     }
     return _KTmainTable;
 }
