@@ -29,6 +29,7 @@
 		AE60505A237AA1FA004BC919 /* KTTimePortionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE605059237AA1FA004BC919 /* KTTimePortionTableViewCell.m */; };
 		AE60505D237AA21E004BC919 /* KTScoringSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE60505C237AA21E004BC919 /* KTScoringSaveTableViewCell.m */; };
 		AE605060237AAE3C004BC919 /* KTScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE60505F237AAE3C004BC919 /* KTScorecardViewModel.m */; };
+		AE605063237BD6F4004BC919 /* KTScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE605061237BD6F3004BC919 /* KTScorecardModel.m */; };
 		AE977187236FF6B900163F70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE977186236FF6B900163F70 /* AppDelegate.m */; };
 		AE977192236FF6BD00163F70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE977191236FF6BD00163F70 /* Assets.xcassets */; };
 		AE977198236FF6BD00163F70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE977197236FF6BD00163F70 /* main.m */; };
@@ -87,6 +88,8 @@
 		AE60505C237AA21E004BC919 /* KTScoringSaveTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTScoringSaveTableViewCell.m; sourceTree = "<group>"; };
 		AE60505E237AAE3C004BC919 /* KTScorecardViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTScorecardViewModel.h; sourceTree = "<group>"; };
 		AE60505F237AAE3C004BC919 /* KTScorecardViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTScorecardViewModel.m; sourceTree = "<group>"; };
+		AE605061237BD6F3004BC919 /* KTScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTScorecardModel.m; sourceTree = "<group>"; };
+		AE605062237BD6F3004BC919 /* KTScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTScorecardModel.h; sourceTree = "<group>"; };
 		AE977182236FF6B800163F70 /* PocketFootballScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketFootballScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE977185236FF6B900163F70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE977186236FF6B900163F70 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -178,6 +181,8 @@
 		AE60500A237A4214004BC919 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AE605062237BD6F3004BC919 /* KTScorecardModel.h */,
+				AE605061237BD6F3004BC919 /* KTScorecardModel.m */,
 				AE60505E237AAE3C004BC919 /* KTScorecardViewModel.h */,
 				AE60505F237AAE3C004BC919 /* KTScorecardViewModel.m */,
 			);
@@ -430,6 +435,7 @@
 				AE605054237AA199004BC919 /* KTBothTeamsTableViewCell.m in Sources */,
 				AE605060237AAE3C004BC919 /* KTScorecardViewModel.m in Sources */,
 				AE605042237A4828004BC919 /* KTMineViewController.m in Sources */,
+				AE605063237BD6F4004BC919 /* KTScorecardModel.m in Sources */,
 				AE605033237A452A004BC919 /* KTHBTool.m in Sources */,
 				AE605048237A48AF004BC919 /* KTSetViewModel.m in Sources */,
 				AE605035237A452A004BC919 /* CalendarTool.m in Sources */,

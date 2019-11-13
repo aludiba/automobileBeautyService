@@ -62,7 +62,7 @@
     [self.KTNickNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.KTBackView);
         make.top.equalTo(self.KTImageView.mas_bottom).offset(10);
-        make.width.mas_equalTo(60);
+        make.width.mas_equalTo(120);
         make.height.mas_equalTo(20);
     }];
     [self.KTNicknameTextField mas_makeConstraints:^(MASConstraintMaker *make) {
