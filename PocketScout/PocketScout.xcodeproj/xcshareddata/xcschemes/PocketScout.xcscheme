@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AE977181236FF6B800163F70"
-               BuildableName = "PocketScout.app"
+               BuildableName = "PocketFootballScout.app"
                BlueprintName = "PocketScout"
                ReferencedContainer = "container:PocketScout.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AE977181236FF6B800163F70"
-            BuildableName = "PocketScout.app"
+            BuildableName = "PocketFootballScout.app"
             BlueprintName = "PocketScout"
             ReferencedContainer = "container:PocketScout.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AE977181236FF6B800163F70"
-            BuildableName = "PocketScout.app"
+            BuildableName = "PocketFootballScout.app"
             BlueprintName = "PocketScout"
             ReferencedContainer = "container:PocketScout.xcodeproj">
          </BuildableReference>

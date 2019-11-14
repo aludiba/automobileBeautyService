@@ -5,6 +5,8 @@
   Created by bykj on 2019/10/14.
   Copyright © 2019 hbc. All rights reserved.
 */
+"是否删除?" = "Delete or not?";
+"删除成功" = "Deleted successfully";
 "请输入比赛名称" = "Please enter competition name";
 "请完整填写队伍名称" = "Please complete team name";
 "是否保存比赛结果?" = "Save result?";

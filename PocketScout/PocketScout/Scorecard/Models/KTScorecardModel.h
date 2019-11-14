@@ -11,6 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KTScorecardModel : NSObject
+@property(nonatomic, copy)NSString *KTObjectId;//数据标识
+
 @property(nonatomic, copy)NSString *KTNatureCompetition;//比赛性质
 @property(nonatomic, copy)NSString *KTTeamRightName;//右边队伍名称
 @property(nonatomic, assign)NSUInteger KTTeamRightScore;//右边队伍得分
