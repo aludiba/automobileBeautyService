@@ -23,10 +23,10 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor cyanColor];
     self.title = NSLocalizedString(@"记录", nil);
+    [self KTLoadData];
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self KTLoadData];
 }
 #pragma mark - actions
 - (void)KTDeleteData:(KTScorecardModel *)model{
