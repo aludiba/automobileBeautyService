@@ -1,0 +1,12 @@
+//
+//  GF_PrefixHeader.pch
+//  Simple Diary
+//
+//  Created by bykj on 2019/7/20.
+//  Copyright © 2019 hgg. All rights reserved.
+//
+
+#ifndef GF_PrefixHeader_pch
+#define GF_PrefixHeader_pch
+#import "GFGlobal.h"
+#endif /* GF_PrefixHeader_pch */

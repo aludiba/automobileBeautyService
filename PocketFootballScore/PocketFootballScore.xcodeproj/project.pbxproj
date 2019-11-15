@@ -8,34 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		9E18FDAA08CE2E4AEAAC4FC9 /* Pods_PocketFootballScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F441EF6B3DBEEB2FA803146 /* Pods_PocketFootballScore.framework */; };
-		AE124737236824D000C6BCAA /* YBRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE124733236824CF00C6BCAA /* YBRecordViewController.m */; };
-		AE124738236824D000C6BCAA /* YBRecordDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE124734236824CF00C6BCAA /* YBRecordDetailsViewController.m */; };
-		AE124739236824D000C6BCAA /* YBRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE124735236824D000C6BCAA /* YBRecordViewController.xib */; };
+		AE124737236824D000C6BCAA /* GFRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE124733236824CF00C6BCAA /* GFRecordViewController.m */; };
+		AE124738236824D000C6BCAA /* GFRecordDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE124734236824CF00C6BCAA /* GFRecordDetailsViewController.m */; };
+		AE124739236824D000C6BCAA /* GFRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE124735236824D000C6BCAA /* GFRecordViewController.xib */; };
 		AE2AC0EC2366CD0B0010E54D /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC0A32366CD0A0010E54D /* NSDictionary+log.m */; };
 		AE2AC0F32366CD0B0010E54D /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC0B22366CD0A0010E54D /* CalendarTool.m */; };
 		AE2AC0F72366CD0B0010E54D /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC0BA2366CD0A0010E54D /* NSArray+log.m */; };
 		AE2AC1012366CD0B0010E54D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE2AC0D62366CD0B0010E54D /* Localizable.strings */; };
-		AE2AC1172366CF510010E54D /* YBNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC10B2366CF500010E54D /* YBNDHTTPClient.m */; };
-		AE2AC1182366CF510010E54D /* YBHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC10D2366CF500010E54D /* YBHBTool.m */; };
-		AE2AC1192366CF510010E54D /* YBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC10E2366CF510010E54D /* YBTabBarController.m */; };
-		AE2AC11A2366CF510010E54D /* YBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC10F2366CF510010E54D /* YBBaseViewController.m */; };
-		AE2AC11B2366CF510010E54D /* YBUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1112366CF510010E54D /* YBUIUtilities.m */; };
-		AE2AC11C2366CF510010E54D /* MBProgressHUD+YBNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1152366CF510010E54D /* MBProgressHUD+YBNJ.m */; };
-		AE2AC11F2366CFBE0010E54D /* YBSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC11E2366CFBD0010E54D /* YBSetViewModel.m */; };
-		AE2AC1282366CFF20010E54D /* YBPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1202366CFF10010E54D /* YBPasswordChangeViewController.m */; };
-		AE2AC1292366CFF20010E54D /* YBMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1212366CFF10010E54D /* YBMineViewController.m */; };
-		AE2AC12A2366CFF20010E54D /* YBModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1222366CFF10010E54D /* YBModifyNicknameViewController.m */; };
-		AE2AC12B2366CFF20010E54D /* YBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1232366CFF20010E54D /* YBLoginViewController.m */; };
-		AE2AC1302366D0350010E54D /* YBLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC12C2366D0350010E54D /* YBLoginTableViewCell.m */; };
-		AE2AC1312366D0350010E54D /* YBSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC12D2366D0350010E54D /* YBSetTableViewCell.m */; };
-		AE2AC1372366D0670010E54D /* YBRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1362366D0670010E54D /* YBRecordTableViewCell.m */; };
-		AE2AC13C2366D0860010E54D /* YBScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1392366D0860010E54D /* YBScorecardViewModel.m */; };
-		AE2AC13D2366D0860010E54D /* YBScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC13B2366D0860010E54D /* YBScorecardModel.m */; };
-		AE2AC1402366D09D0010E54D /* YBScorecardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC13F2366D09D0010E54D /* YBScorecardViewController.m */; };
-		AE2AC1492366D0D30010E54D /* YBScorecardTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1412366D0D20010E54D /* YBScorecardTitleTableViewCell.m */; };
-		AE2AC14A2366D0D30010E54D /* YBScorecardTimeStatisticsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1442366D0D20010E54D /* YBScorecardTimeStatisticsTableViewCell.m */; };
-		AE2AC14B2366D0D30010E54D /* YBScorecardOperationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1452366D0D20010E54D /* YBScorecardOperationTableViewCell.m */; };
-		AE2AC14C2366D0D30010E54D /* YBScorecardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1472366D0D30010E54D /* YBScorecardTableViewCell.m */; };
+		AE2AC1172366CF510010E54D /* GFNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC10B2366CF500010E54D /* GFNDHTTPClient.m */; };
+		AE2AC1182366CF510010E54D /* GFHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC10D2366CF500010E54D /* GFHBTool.m */; };
+		AE2AC1192366CF510010E54D /* GFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC10E2366CF510010E54D /* GFTabBarController.m */; };
+		AE2AC11A2366CF510010E54D /* GFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC10F2366CF510010E54D /* GFBaseViewController.m */; };
+		AE2AC11B2366CF510010E54D /* GFUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1112366CF510010E54D /* GFUIUtilities.m */; };
+		AE2AC11C2366CF510010E54D /* MBProgressHUD+GFNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1152366CF510010E54D /* MBProgressHUD+GFNJ.m */; };
+		AE2AC11F2366CFBE0010E54D /* GFSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC11E2366CFBD0010E54D /* GFSetViewModel.m */; };
+		AE2AC1282366CFF20010E54D /* GFPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1202366CFF10010E54D /* GFPasswordChangeViewController.m */; };
+		AE2AC1292366CFF20010E54D /* GFMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1212366CFF10010E54D /* GFMineViewController.m */; };
+		AE2AC12A2366CFF20010E54D /* GFModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1222366CFF10010E54D /* GFModifyNicknameViewController.m */; };
+		AE2AC12B2366CFF20010E54D /* GFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1232366CFF20010E54D /* GFLoginViewController.m */; };
+		AE2AC1302366D0350010E54D /* GFLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC12C2366D0350010E54D /* GFLoginTableViewCell.m */; };
+		AE2AC1312366D0350010E54D /* GFSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC12D2366D0350010E54D /* GFSetTableViewCell.m */; };
+		AE2AC1372366D0670010E54D /* GFRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1362366D0670010E54D /* GFRecordTableViewCell.m */; };
+		AE2AC13C2366D0860010E54D /* GFScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1392366D0860010E54D /* GFScorecardViewModel.m */; };
+		AE2AC13D2366D0860010E54D /* GFScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC13B2366D0860010E54D /* GFScorecardModel.m */; };
+		AE2AC1402366D09D0010E54D /* GFScorecardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC13F2366D09D0010E54D /* GFScorecardViewController.m */; };
+		AE2AC1492366D0D30010E54D /* GFScorecardTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1412366D0D20010E54D /* GFScorecardTitleTableViewCell.m */; };
+		AE2AC14A2366D0D30010E54D /* GFScorecardTimeStatisticsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1442366D0D20010E54D /* GFScorecardTimeStatisticsTableViewCell.m */; };
+		AE2AC14B2366D0D30010E54D /* GFScorecardOperationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1452366D0D20010E54D /* GFScorecardOperationTableViewCell.m */; };
+		AE2AC14C2366D0D30010E54D /* GFScorecardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC1472366D0D30010E54D /* GFScorecardTableViewCell.m */; };
 		AE8BB6352362FAD900AD37E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8BB6342362FAD900AD37E0 /* AppDelegate.m */; };
 		AE8BB6402362FADC00AD37E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE8BB63F2362FADC00AD37E0 /* Assets.xcassets */; };
 		AE8BB6462362FADC00AD37E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8BB6452362FADC00AD37E0 /* main.m */; };
@@ -64,11 +64,11 @@
 /* Begin PBXFileReference section */
 		3F441EF6B3DBEEB2FA803146 /* Pods_PocketFootballScore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketFootballScore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		621C02E881E3185407E164D2 /* Pods-PocketFootballScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketFootballScore.debug.xcconfig"; path = "Target Support Files/Pods-PocketFootballScore/Pods-PocketFootballScore.debug.xcconfig"; sourceTree = "<group>"; };
-		AE124732236824CF00C6BCAA /* YBRecordDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBRecordDetailsViewController.h; sourceTree = "<group>"; };
-		AE124733236824CF00C6BCAA /* YBRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBRecordViewController.m; sourceTree = "<group>"; };
-		AE124734236824CF00C6BCAA /* YBRecordDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBRecordDetailsViewController.m; sourceTree = "<group>"; };
-		AE124735236824D000C6BCAA /* YBRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBRecordViewController.xib; sourceTree = "<group>"; };
-		AE124736236824D000C6BCAA /* YBRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBRecordViewController.h; sourceTree = "<group>"; };
+		AE124732236824CF00C6BCAA /* GFRecordDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRecordDetailsViewController.h; sourceTree = "<group>"; };
+		AE124733236824CF00C6BCAA /* GFRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFRecordViewController.m; sourceTree = "<group>"; };
+		AE124734236824CF00C6BCAA /* GFRecordDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFRecordDetailsViewController.m; sourceTree = "<group>"; };
+		AE124735236824D000C6BCAA /* GFRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFRecordViewController.xib; sourceTree = "<group>"; };
+		AE124736236824D000C6BCAA /* GFRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRecordViewController.h; sourceTree = "<group>"; };
 		AE2AC0A32366CD0A0010E54D /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
 		AE2AC0A42366CD0A0010E54D /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
 		AE2AC0AA2366CD0A0010E54D /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
@@ -78,51 +78,51 @@
 		AE2AC0D72366CD0B0010E54D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		AE2AC0D82366CD0B0010E54D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AE2AC0D92366CD0B0010E54D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AE2AC1092366CF500010E54D /* YBUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBUIUtilities.h; sourceTree = "<group>"; };
-		AE2AC10A2366CF500010E54D /* YBNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBNDHTTPClient.h; sourceTree = "<group>"; };
-		AE2AC10B2366CF500010E54D /* YBNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBNDHTTPClient.m; sourceTree = "<group>"; };
-		AE2AC10C2366CF500010E54D /* MBProgressHUD+YBNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+YBNJ.h"; sourceTree = "<group>"; };
-		AE2AC10D2366CF500010E54D /* YBHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBHBTool.m; sourceTree = "<group>"; };
-		AE2AC10E2366CF510010E54D /* YBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBTabBarController.m; sourceTree = "<group>"; };
-		AE2AC10F2366CF510010E54D /* YBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBBaseViewController.m; sourceTree = "<group>"; };
-		AE2AC1102366CF510010E54D /* YBHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBHBTool.h; sourceTree = "<group>"; };
-		AE2AC1112366CF510010E54D /* YBUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBUIUtilities.m; sourceTree = "<group>"; };
-		AE2AC1122366CF510010E54D /* YB_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YB_PrefixHeader.pch; sourceTree = "<group>"; };
-		AE2AC1132366CF510010E54D /* YBGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBGlobal.h; sourceTree = "<group>"; };
-		AE2AC1142366CF510010E54D /* YBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBBaseViewController.h; sourceTree = "<group>"; };
-		AE2AC1152366CF510010E54D /* MBProgressHUD+YBNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+YBNJ.m"; sourceTree = "<group>"; };
-		AE2AC1162366CF510010E54D /* YBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBTabBarController.h; sourceTree = "<group>"; };
-		AE2AC11D2366CFBD0010E54D /* YBSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSetViewModel.h; sourceTree = "<group>"; };
-		AE2AC11E2366CFBD0010E54D /* YBSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSetViewModel.m; sourceTree = "<group>"; };
-		AE2AC1202366CFF10010E54D /* YBPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPasswordChangeViewController.m; sourceTree = "<group>"; };
-		AE2AC1212366CFF10010E54D /* YBMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBMineViewController.m; sourceTree = "<group>"; };
-		AE2AC1222366CFF10010E54D /* YBModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBModifyNicknameViewController.m; sourceTree = "<group>"; };
-		AE2AC1232366CFF20010E54D /* YBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBLoginViewController.m; sourceTree = "<group>"; };
-		AE2AC1242366CFF20010E54D /* YBMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBMineViewController.h; sourceTree = "<group>"; };
-		AE2AC1252366CFF20010E54D /* YBModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBModifyNicknameViewController.h; sourceTree = "<group>"; };
-		AE2AC1262366CFF20010E54D /* YBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBLoginViewController.h; sourceTree = "<group>"; };
-		AE2AC1272366CFF20010E54D /* YBPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPasswordChangeViewController.h; sourceTree = "<group>"; };
-		AE2AC12C2366D0350010E54D /* YBLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBLoginTableViewCell.m; sourceTree = "<group>"; };
-		AE2AC12D2366D0350010E54D /* YBSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSetTableViewCell.m; sourceTree = "<group>"; };
-		AE2AC12E2366D0350010E54D /* YBLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBLoginTableViewCell.h; sourceTree = "<group>"; };
-		AE2AC12F2366D0350010E54D /* YBSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSetTableViewCell.h; sourceTree = "<group>"; };
-		AE2AC1352366D0670010E54D /* YBRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBRecordTableViewCell.h; sourceTree = "<group>"; };
-		AE2AC1362366D0670010E54D /* YBRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBRecordTableViewCell.m; sourceTree = "<group>"; };
-		AE2AC1382366D0860010E54D /* YBScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBScorecardModel.h; sourceTree = "<group>"; };
-		AE2AC1392366D0860010E54D /* YBScorecardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBScorecardViewModel.m; sourceTree = "<group>"; };
-		AE2AC13A2366D0860010E54D /* YBScorecardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBScorecardViewModel.h; sourceTree = "<group>"; };
-		AE2AC13B2366D0860010E54D /* YBScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBScorecardModel.m; sourceTree = "<group>"; };
-		AE2AC13E2366D09D0010E54D /* YBScorecardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBScorecardViewController.h; sourceTree = "<group>"; };
-		AE2AC13F2366D09D0010E54D /* YBScorecardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBScorecardViewController.m; sourceTree = "<group>"; };
-		AE2AC1412366D0D20010E54D /* YBScorecardTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBScorecardTitleTableViewCell.m; sourceTree = "<group>"; };
-		AE2AC1422366D0D20010E54D /* YBScorecardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBScorecardTableViewCell.h; sourceTree = "<group>"; };
-		AE2AC1432366D0D20010E54D /* YBScorecardTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBScorecardTitleTableViewCell.h; sourceTree = "<group>"; };
-		AE2AC1442366D0D20010E54D /* YBScorecardTimeStatisticsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBScorecardTimeStatisticsTableViewCell.m; sourceTree = "<group>"; };
-		AE2AC1452366D0D20010E54D /* YBScorecardOperationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBScorecardOperationTableViewCell.m; sourceTree = "<group>"; };
-		AE2AC1462366D0D30010E54D /* YBScorecardTimeStatisticsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBScorecardTimeStatisticsTableViewCell.h; sourceTree = "<group>"; };
-		AE2AC1472366D0D30010E54D /* YBScorecardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBScorecardTableViewCell.m; sourceTree = "<group>"; };
-		AE2AC1482366D0D30010E54D /* YBScorecardOperationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBScorecardOperationTableViewCell.h; sourceTree = "<group>"; };
-		AE8BB6302362FAD900AD37E0 /* PortableFootballScoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PortableFootballScoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2AC1092366CF500010E54D /* GFUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFUIUtilities.h; sourceTree = "<group>"; };
+		AE2AC10A2366CF500010E54D /* GFNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNDHTTPClient.h; sourceTree = "<group>"; };
+		AE2AC10B2366CF500010E54D /* GFNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFNDHTTPClient.m; sourceTree = "<group>"; };
+		AE2AC10C2366CF500010E54D /* MBProgressHUD+GFNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+GFNJ.h"; sourceTree = "<group>"; };
+		AE2AC10D2366CF500010E54D /* GFHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHBTool.m; sourceTree = "<group>"; };
+		AE2AC10E2366CF510010E54D /* GFTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTabBarController.m; sourceTree = "<group>"; };
+		AE2AC10F2366CF510010E54D /* GFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBaseViewController.m; sourceTree = "<group>"; };
+		AE2AC1102366CF510010E54D /* GFHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHBTool.h; sourceTree = "<group>"; };
+		AE2AC1112366CF510010E54D /* GFUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFUIUtilities.m; sourceTree = "<group>"; };
+		AE2AC1122366CF510010E54D /* GF_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GF_PrefixHeader.pch; sourceTree = "<group>"; };
+		AE2AC1132366CF510010E54D /* GFGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGlobal.h; sourceTree = "<group>"; };
+		AE2AC1142366CF510010E54D /* GFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBaseViewController.h; sourceTree = "<group>"; };
+		AE2AC1152366CF510010E54D /* MBProgressHUD+GFNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+GFNJ.m"; sourceTree = "<group>"; };
+		AE2AC1162366CF510010E54D /* GFTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTabBarController.h; sourceTree = "<group>"; };
+		AE2AC11D2366CFBD0010E54D /* GFSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSetViewModel.h; sourceTree = "<group>"; };
+		AE2AC11E2366CFBD0010E54D /* GFSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSetViewModel.m; sourceTree = "<group>"; };
+		AE2AC1202366CFF10010E54D /* GFPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFPasswordChangeViewController.m; sourceTree = "<group>"; };
+		AE2AC1212366CFF10010E54D /* GFMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFMineViewController.m; sourceTree = "<group>"; };
+		AE2AC1222366CFF10010E54D /* GFModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFModifyNicknameViewController.m; sourceTree = "<group>"; };
+		AE2AC1232366CFF20010E54D /* GFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFLoginViewController.m; sourceTree = "<group>"; };
+		AE2AC1242366CFF20010E54D /* GFMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFMineViewController.h; sourceTree = "<group>"; };
+		AE2AC1252366CFF20010E54D /* GFModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFModifyNicknameViewController.h; sourceTree = "<group>"; };
+		AE2AC1262366CFF20010E54D /* GFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFLoginViewController.h; sourceTree = "<group>"; };
+		AE2AC1272366CFF20010E54D /* GFPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFPasswordChangeViewController.h; sourceTree = "<group>"; };
+		AE2AC12C2366D0350010E54D /* GFLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFLoginTableViewCell.m; sourceTree = "<group>"; };
+		AE2AC12D2366D0350010E54D /* GFSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSetTableViewCell.m; sourceTree = "<group>"; };
+		AE2AC12E2366D0350010E54D /* GFLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFLoginTableViewCell.h; sourceTree = "<group>"; };
+		AE2AC12F2366D0350010E54D /* GFSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSetTableViewCell.h; sourceTree = "<group>"; };
+		AE2AC1352366D0670010E54D /* GFRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRecordTableViewCell.h; sourceTree = "<group>"; };
+		AE2AC1362366D0670010E54D /* GFRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFRecordTableViewCell.m; sourceTree = "<group>"; };
+		AE2AC1382366D0860010E54D /* GFScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFScorecardModel.h; sourceTree = "<group>"; };
+		AE2AC1392366D0860010E54D /* GFScorecardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFScorecardViewModel.m; sourceTree = "<group>"; };
+		AE2AC13A2366D0860010E54D /* GFScorecardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFScorecardViewModel.h; sourceTree = "<group>"; };
+		AE2AC13B2366D0860010E54D /* GFScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFScorecardModel.m; sourceTree = "<group>"; };
+		AE2AC13E2366D09D0010E54D /* GFScorecardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFScorecardViewController.h; sourceTree = "<group>"; };
+		AE2AC13F2366D09D0010E54D /* GFScorecardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFScorecardViewController.m; sourceTree = "<group>"; };
+		AE2AC1412366D0D20010E54D /* GFScorecardTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFScorecardTitleTableViewCell.m; sourceTree = "<group>"; };
+		AE2AC1422366D0D20010E54D /* GFScorecardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFScorecardTableViewCell.h; sourceTree = "<group>"; };
+		AE2AC1432366D0D20010E54D /* GFScorecardTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFScorecardTitleTableViewCell.h; sourceTree = "<group>"; };
+		AE2AC1442366D0D20010E54D /* GFScorecardTimeStatisticsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFScorecardTimeStatisticsTableViewCell.m; sourceTree = "<group>"; };
+		AE2AC1452366D0D20010E54D /* GFScorecardOperationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFScorecardOperationTableViewCell.m; sourceTree = "<group>"; };
+		AE2AC1462366D0D30010E54D /* GFScorecardTimeStatisticsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFScorecardTimeStatisticsTableViewCell.h; sourceTree = "<group>"; };
+		AE2AC1472366D0D30010E54D /* GFScorecardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFScorecardTableViewCell.m; sourceTree = "<group>"; };
+		AE2AC1482366D0D30010E54D /* GFScorecardOperationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFScorecardOperationTableViewCell.h; sourceTree = "<group>"; };
+		AE8BB6302362FAD900AD37E0 /* goodFootballScoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goodFootballScoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE8BB6332362FAD900AD37E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE8BB6342362FAD900AD37E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AE8BB63F2362FADC00AD37E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -230,20 +230,20 @@
 				AE2AC0A32366CD0A0010E54D /* NSDictionary+log.m */,
 				AE2AC0A42366CD0A0010E54D /* CalendarTool.h */,
 				AE2AC0B22366CD0A0010E54D /* CalendarTool.m */,
-				AE2AC10C2366CF500010E54D /* MBProgressHUD+YBNJ.h */,
-				AE2AC1152366CF510010E54D /* MBProgressHUD+YBNJ.m */,
-				AE2AC1122366CF510010E54D /* YB_PrefixHeader.pch */,
-				AE2AC1142366CF510010E54D /* YBBaseViewController.h */,
-				AE2AC10F2366CF510010E54D /* YBBaseViewController.m */,
-				AE2AC1132366CF510010E54D /* YBGlobal.h */,
-				AE2AC1102366CF510010E54D /* YBHBTool.h */,
-				AE2AC10D2366CF500010E54D /* YBHBTool.m */,
-				AE2AC10A2366CF500010E54D /* YBNDHTTPClient.h */,
-				AE2AC10B2366CF500010E54D /* YBNDHTTPClient.m */,
-				AE2AC1162366CF510010E54D /* YBTabBarController.h */,
-				AE2AC10E2366CF510010E54D /* YBTabBarController.m */,
-				AE2AC1092366CF500010E54D /* YBUIUtilities.h */,
-				AE2AC1112366CF510010E54D /* YBUIUtilities.m */,
+				AE2AC10C2366CF500010E54D /* MBProgressHUD+GFNJ.h */,
+				AE2AC1152366CF510010E54D /* MBProgressHUD+GFNJ.m */,
+				AE2AC1122366CF510010E54D /* GF_PrefixHeader.pch */,
+				AE2AC1142366CF510010E54D /* GFBaseViewController.h */,
+				AE2AC10F2366CF510010E54D /* GFBaseViewController.m */,
+				AE2AC1132366CF510010E54D /* GFGlobal.h */,
+				AE2AC1102366CF510010E54D /* GFHBTool.h */,
+				AE2AC10D2366CF500010E54D /* GFHBTool.m */,
+				AE2AC10A2366CF500010E54D /* GFNDHTTPClient.h */,
+				AE2AC10B2366CF500010E54D /* GFNDHTTPClient.m */,
+				AE2AC1162366CF510010E54D /* GFTabBarController.h */,
+				AE2AC10E2366CF510010E54D /* GFTabBarController.m */,
+				AE2AC1092366CF500010E54D /* GFUIUtilities.h */,
+				AE2AC1112366CF510010E54D /* GFUIUtilities.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -261,8 +261,8 @@
 		AE2AC0BC2366CD0A0010E54D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE2AC11D2366CFBD0010E54D /* YBSetViewModel.h */,
-				AE2AC11E2366CFBD0010E54D /* YBSetViewModel.m */,
+				AE2AC11D2366CFBD0010E54D /* GFSetViewModel.h */,
+				AE2AC11E2366CFBD0010E54D /* GFSetViewModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -270,14 +270,14 @@
 		AE2AC0BF2366CD0A0010E54D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE2AC1262366CFF20010E54D /* YBLoginViewController.h */,
-				AE2AC1232366CFF20010E54D /* YBLoginViewController.m */,
-				AE2AC1242366CFF20010E54D /* YBMineViewController.h */,
-				AE2AC1212366CFF10010E54D /* YBMineViewController.m */,
-				AE2AC1252366CFF20010E54D /* YBModifyNicknameViewController.h */,
-				AE2AC1222366CFF10010E54D /* YBModifyNicknameViewController.m */,
-				AE2AC1272366CFF20010E54D /* YBPasswordChangeViewController.h */,
-				AE2AC1202366CFF10010E54D /* YBPasswordChangeViewController.m */,
+				AE2AC1262366CFF20010E54D /* GFLoginViewController.h */,
+				AE2AC1232366CFF20010E54D /* GFLoginViewController.m */,
+				AE2AC1242366CFF20010E54D /* GFMineViewController.h */,
+				AE2AC1212366CFF10010E54D /* GFMineViewController.m */,
+				AE2AC1252366CFF20010E54D /* GFModifyNicknameViewController.h */,
+				AE2AC1222366CFF10010E54D /* GFModifyNicknameViewController.m */,
+				AE2AC1272366CFF20010E54D /* GFPasswordChangeViewController.h */,
+				AE2AC1202366CFF10010E54D /* GFPasswordChangeViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -285,10 +285,10 @@
 		AE2AC0C82366CD0A0010E54D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE2AC12E2366D0350010E54D /* YBLoginTableViewCell.h */,
-				AE2AC12C2366D0350010E54D /* YBLoginTableViewCell.m */,
-				AE2AC12F2366D0350010E54D /* YBSetTableViewCell.h */,
-				AE2AC12D2366D0350010E54D /* YBSetTableViewCell.m */,
+				AE2AC12E2366D0350010E54D /* GFLoginTableViewCell.h */,
+				AE2AC12C2366D0350010E54D /* GFLoginTableViewCell.m */,
+				AE2AC12F2366D0350010E54D /* GFSetTableViewCell.h */,
+				AE2AC12D2366D0350010E54D /* GFSetTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,11 +313,11 @@
 		AE2AC0CF2366CD0B0010E54D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE124732236824CF00C6BCAA /* YBRecordDetailsViewController.h */,
-				AE124734236824CF00C6BCAA /* YBRecordDetailsViewController.m */,
-				AE124736236824D000C6BCAA /* YBRecordViewController.h */,
-				AE124733236824CF00C6BCAA /* YBRecordViewController.m */,
-				AE124735236824D000C6BCAA /* YBRecordViewController.xib */,
+				AE124732236824CF00C6BCAA /* GFRecordDetailsViewController.h */,
+				AE124734236824CF00C6BCAA /* GFRecordDetailsViewController.m */,
+				AE124736236824D000C6BCAA /* GFRecordViewController.h */,
+				AE124733236824CF00C6BCAA /* GFRecordViewController.m */,
+				AE124735236824D000C6BCAA /* GFRecordViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -325,8 +325,8 @@
 		AE2AC0D22366CD0B0010E54D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE2AC1352366D0670010E54D /* YBRecordTableViewCell.h */,
-				AE2AC1362366D0670010E54D /* YBRecordTableViewCell.m */,
+				AE2AC1352366D0670010E54D /* GFRecordTableViewCell.h */,
+				AE2AC1362366D0670010E54D /* GFRecordTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -352,10 +352,10 @@
 		AE2AC0DB2366CD0B0010E54D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE2AC1382366D0860010E54D /* YBScorecardModel.h */,
-				AE2AC13B2366D0860010E54D /* YBScorecardModel.m */,
-				AE2AC13A2366D0860010E54D /* YBScorecardViewModel.h */,
-				AE2AC1392366D0860010E54D /* YBScorecardViewModel.m */,
+				AE2AC1382366D0860010E54D /* GFScorecardModel.h */,
+				AE2AC13B2366D0860010E54D /* GFScorecardModel.m */,
+				AE2AC13A2366D0860010E54D /* GFScorecardViewModel.h */,
+				AE2AC1392366D0860010E54D /* GFScorecardViewModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -363,8 +363,8 @@
 		AE2AC0E02366CD0B0010E54D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE2AC13E2366D09D0010E54D /* YBScorecardViewController.h */,
-				AE2AC13F2366D09D0010E54D /* YBScorecardViewController.m */,
+				AE2AC13E2366D09D0010E54D /* GFScorecardViewController.h */,
+				AE2AC13F2366D09D0010E54D /* GFScorecardViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -372,14 +372,14 @@
 		AE2AC0E32366CD0B0010E54D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE2AC1482366D0D30010E54D /* YBScorecardOperationTableViewCell.h */,
-				AE2AC1452366D0D20010E54D /* YBScorecardOperationTableViewCell.m */,
-				AE2AC1422366D0D20010E54D /* YBScorecardTableViewCell.h */,
-				AE2AC1472366D0D30010E54D /* YBScorecardTableViewCell.m */,
-				AE2AC1462366D0D30010E54D /* YBScorecardTimeStatisticsTableViewCell.h */,
-				AE2AC1442366D0D20010E54D /* YBScorecardTimeStatisticsTableViewCell.m */,
-				AE2AC1432366D0D20010E54D /* YBScorecardTitleTableViewCell.h */,
-				AE2AC1412366D0D20010E54D /* YBScorecardTitleTableViewCell.m */,
+				AE2AC1482366D0D30010E54D /* GFScorecardOperationTableViewCell.h */,
+				AE2AC1452366D0D20010E54D /* GFScorecardOperationTableViewCell.m */,
+				AE2AC1422366D0D20010E54D /* GFScorecardTableViewCell.h */,
+				AE2AC1472366D0D30010E54D /* GFScorecardTableViewCell.m */,
+				AE2AC1462366D0D30010E54D /* GFScorecardTimeStatisticsTableViewCell.h */,
+				AE2AC1442366D0D20010E54D /* GFScorecardTimeStatisticsTableViewCell.m */,
+				AE2AC1432366D0D20010E54D /* GFScorecardTitleTableViewCell.h */,
+				AE2AC1412366D0D20010E54D /* GFScorecardTitleTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -397,7 +397,7 @@
 		AE8BB6312362FAD900AD37E0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE8BB6302362FAD900AD37E0 /* PortableFootballScoring.app */,
+				AE8BB6302362FAD900AD37E0 /* goodFootballScoring.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -449,7 +449,7 @@
 			);
 			name = PocketFootballScore;
 			productName = PocketFootballScore;
-			productReference = AE8BB6302362FAD900AD37E0 /* PortableFootballScoring.app */;
+			productReference = AE8BB6302362FAD900AD37E0 /* goodFootballScoring.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -493,7 +493,7 @@
 			files = (
 				AE8BB6402362FADC00AD37E0 /* Assets.xcassets in Resources */,
 				AE2AC1012366CD0B0010E54D /* Localizable.strings in Resources */,
-				AE124739236824D000C6BCAA /* YBRecordViewController.xib in Resources */,
+				AE124739236824D000C6BCAA /* GFRecordViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,32 +547,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE8BB6352362FAD900AD37E0 /* AppDelegate.m in Sources */,
-				AE2AC1182366CF510010E54D /* YBHBTool.m in Sources */,
-				AE2AC11C2366CF510010E54D /* MBProgressHUD+YBNJ.m in Sources */,
+				AE2AC1182366CF510010E54D /* GFHBTool.m in Sources */,
+				AE2AC11C2366CF510010E54D /* MBProgressHUD+GFNJ.m in Sources */,
 				AE2AC0F72366CD0B0010E54D /* NSArray+log.m in Sources */,
-				AE2AC1192366CF510010E54D /* YBTabBarController.m in Sources */,
-				AE2AC1372366D0670010E54D /* YBRecordTableViewCell.m in Sources */,
-				AE2AC14B2366D0D30010E54D /* YBScorecardOperationTableViewCell.m in Sources */,
+				AE2AC1192366CF510010E54D /* GFTabBarController.m in Sources */,
+				AE2AC1372366D0670010E54D /* GFRecordTableViewCell.m in Sources */,
+				AE2AC14B2366D0D30010E54D /* GFScorecardOperationTableViewCell.m in Sources */,
 				AE8BB6462362FADC00AD37E0 /* main.m in Sources */,
-				AE124737236824D000C6BCAA /* YBRecordViewController.m in Sources */,
-				AE2AC13C2366D0860010E54D /* YBScorecardViewModel.m in Sources */,
-				AE2AC1282366CFF20010E54D /* YBPasswordChangeViewController.m in Sources */,
+				AE124737236824D000C6BCAA /* GFRecordViewController.m in Sources */,
+				AE2AC13C2366D0860010E54D /* GFScorecardViewModel.m in Sources */,
+				AE2AC1282366CFF20010E54D /* GFPasswordChangeViewController.m in Sources */,
 				AE2AC0EC2366CD0B0010E54D /* NSDictionary+log.m in Sources */,
-				AE2AC11A2366CF510010E54D /* YBBaseViewController.m in Sources */,
-				AE2AC12B2366CFF20010E54D /* YBLoginViewController.m in Sources */,
-				AE2AC1492366D0D30010E54D /* YBScorecardTitleTableViewCell.m in Sources */,
-				AE2AC11F2366CFBE0010E54D /* YBSetViewModel.m in Sources */,
-				AE124738236824D000C6BCAA /* YBRecordDetailsViewController.m in Sources */,
-				AE2AC1312366D0350010E54D /* YBSetTableViewCell.m in Sources */,
-				AE2AC1402366D09D0010E54D /* YBScorecardViewController.m in Sources */,
-				AE2AC12A2366CFF20010E54D /* YBModifyNicknameViewController.m in Sources */,
-				AE2AC13D2366D0860010E54D /* YBScorecardModel.m in Sources */,
-				AE2AC14A2366D0D30010E54D /* YBScorecardTimeStatisticsTableViewCell.m in Sources */,
-				AE2AC14C2366D0D30010E54D /* YBScorecardTableViewCell.m in Sources */,
-				AE2AC1302366D0350010E54D /* YBLoginTableViewCell.m in Sources */,
-				AE2AC1172366CF510010E54D /* YBNDHTTPClient.m in Sources */,
-				AE2AC11B2366CF510010E54D /* YBUIUtilities.m in Sources */,
-				AE2AC1292366CFF20010E54D /* YBMineViewController.m in Sources */,
+				AE2AC11A2366CF510010E54D /* GFBaseViewController.m in Sources */,
+				AE2AC12B2366CFF20010E54D /* GFLoginViewController.m in Sources */,
+				AE2AC1492366D0D30010E54D /* GFScorecardTitleTableViewCell.m in Sources */,
+				AE2AC11F2366CFBE0010E54D /* GFSetViewModel.m in Sources */,
+				AE124738236824D000C6BCAA /* GFRecordDetailsViewController.m in Sources */,
+				AE2AC1312366D0350010E54D /* GFSetTableViewCell.m in Sources */,
+				AE2AC1402366D09D0010E54D /* GFScorecardViewController.m in Sources */,
+				AE2AC12A2366CFF20010E54D /* GFModifyNicknameViewController.m in Sources */,
+				AE2AC13D2366D0860010E54D /* GFScorecardModel.m in Sources */,
+				AE2AC14A2366D0D30010E54D /* GFScorecardTimeStatisticsTableViewCell.m in Sources */,
+				AE2AC14C2366D0D30010E54D /* GFScorecardTableViewCell.m in Sources */,
+				AE2AC1302366D0350010E54D /* GFLoginTableViewCell.m in Sources */,
+				AE2AC1172366CF510010E54D /* GFNDHTTPClient.m in Sources */,
+				AE2AC11B2366CF510010E54D /* GFUIUtilities.m in Sources */,
+				AE2AC1292366CFF20010E54D /* GFMineViewController.m in Sources */,
 				AE2AC0F32366CD0B0010E54D /* CalendarTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -710,10 +710,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketFootballScore/PocketFootballScore.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CHP7QS3GTL;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketFootballScore/Common/YB_PrefixHeader.pch";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ren Guanfei (9JMTNVWG46)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9JMTNVWG46;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketFootballScore/Common/GF_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketFootballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -723,9 +723,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketFootballScore/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.PortableFootballScoring;
-				PRODUCT_NAME = PortableFootballScoring;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.goodFootballScoring;
+				PRODUCT_NAME = goodFootballScoring;
+				PROVISIONING_PROFILE_SPECIFIER = dis_pro_goodFootBall_20191115;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -737,10 +737,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketFootballScore/PocketFootballScore.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CHP7QS3GTL;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketFootballScore/Common/YB_PrefixHeader.pch";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ren Guanfei (9JMTNVWG46)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9JMTNVWG46;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketFootballScore/Common/GF_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketFootballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -750,9 +750,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketFootballScore/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.PortableFootballScoring;
-				PRODUCT_NAME = PortableFootballScoring;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.goodFootballScoring;
+				PRODUCT_NAME = goodFootballScoring;
+				PROVISIONING_PROFILE_SPECIFIER = dis_pro_goodFootBall_20191115;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

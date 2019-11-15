@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "YBLoginViewController.h"
+#import "GFLoginViewController.h"
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
@@ -25,9 +25,9 @@
     [Bmob registerWithAppKey:@"7981ca212772a9ef8ace8f55d4620ff8"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"YBScoreAD"];
+    BmobQuery *bquery = [BmobQuery queryWithClassName:@"GFScoreAD"];
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"YBScoreAD"]]];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"GFScoreAD"]]];
             self.window.rootViewController = [self rootController];
             [self.window makeKeyAndVisible];
     }];
@@ -37,11 +37,11 @@
 //    BmobUser *bUser = [BmobUser currentUser];
 //    if (bUser) {
 //        进行操作
-        YBTabBarController *tabVC = [YBTabBarController shareInstance];
+        GFTabBarController *tabVC = [GFTabBarController shareInstance];
         return tabVC;
 //    }else{
 //        //对象为空时，可打开用户注册界面
-//        YBLoginViewController *loginVC = [YBLoginViewController shareInstance];
+//        GFLoginViewController *loginVC = [GFLoginViewController shareInstance];
 //        return loginVC;
 //    }
 }
@@ -65,7 +65,7 @@
     // Required
     // init Push
     // notice: 2.1.5 版本的 SDK 新增的注册方法，改成可上报 IDFA，如果没有使用 IDFA 直接传 nil
-    [JPUSHService setupWithOption:launchOptions appKey:@"d8b043074b5abc2da239927d"
+    [JPUSHService setupWithOption:launchOptions appKey:@"dfecbf9992916b22e3ba7487"
                           channel:@"App Store"
                  apsForProduction:1];
 }
