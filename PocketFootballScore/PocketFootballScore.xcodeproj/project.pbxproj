@@ -723,6 +723,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketFootballScore/Common/JPush",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.goodFootballScoring;
 				PRODUCT_NAME = goodFootballScoring;
 				PROVISIONING_PROFILE_SPECIFIER = dis_pro_goodFootBall_20191115;
@@ -750,6 +751,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketFootballScore/Common/JPush",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.goodFootballScoring;
 				PRODUCT_NAME = goodFootballScoring;
 				PROVISIONING_PROFILE_SPECIFIER = dis_pro_goodFootBall_20191115;

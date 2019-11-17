@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "WALoginViewController.h"
-#import "WATabBarController.h"
+#import "AKLoginViewController.h"
+#import "AKTabBarController.h"
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
@@ -24,29 +24,31 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self setJPush:launchOptions];
-    [Bmob resetDomain:@"http://wineAwake.jd127.cn"];
+    [Bmob resetDomain:@"http://wineawake.jd127.cn"];
     [Bmob registerWithAppKey:@"a9c594114abe62d6277a00efe6616470"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"WAwineRemind"];
+    BmobQuery *bquery = [BmobQuery queryWithClassName:@"AKwineRemind"];
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"WAwineRemind"]]];
+         [AKNDHTTPClient AKgetURLStringNoHUD:[[array lastObject] objectForKey:@"AKwineRemind"] withParam:nil withSuccessBlock:^(id data) {
+         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[(NSDictionary *)data objectForKey:@"Url"]]];
+         } withErrorBlock:^(NSError *error, id errorData) {
+            
+         }];
         self.window.rootViewController = [self rootController];
         [self.window makeKeyAndVisible];
     }];
-    self.window.rootViewController = [self rootController];
-    [self.window makeKeyAndVisible];
     return YES;
 }
 - (UIViewController *)rootController{
     BmobUser *bUser = [BmobUser currentUser];
     if (bUser) {
 //        进行操作
-        WATabBarController *tabVC = [WATabBarController shareInstance];
+        AKTabBarController *tabVC = [AKTabBarController shareInstance];
         return tabVC;
     }else{
         //对象为空时，可打开用户注册界面
-        WALoginViewController *loginVC = [WALoginViewController shareInstance];
+        AKLoginViewController *loginVC = [AKLoginViewController shareInstance];
         return loginVC;
     }
 }
@@ -70,7 +72,7 @@
     // Required
     // init Push
     // notice: 2.1.5 版本的 SDK 新增的注册方法，改成可上报 IDFA，如果没有使用 IDFA 直接传 nil
-    [JPUSHService setupWithOption:launchOptions appKey:@"5a37fe5767caacf4e3a49376"
+    [JPUSHService setupWithOption:launchOptions appKey:@"8dc164f49ef5fb003ba87da2"
                           channel:@"App Store"
                  apsForProduction:1];
 }
