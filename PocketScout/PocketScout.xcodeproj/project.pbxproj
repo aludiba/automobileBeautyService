@@ -91,6 +91,7 @@
 		AE60505F237AAE3C004BC919 /* KTScorecardViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTScorecardViewModel.m; sourceTree = "<group>"; };
 		AE605061237BD6F3004BC919 /* KTScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTScorecardModel.m; sourceTree = "<group>"; };
 		AE605062237BD6F3004BC919 /* KTScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTScorecardModel.h; sourceTree = "<group>"; };
+		AE6C74BB23824352009329F2 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AE7108DC237CE44F0054C452 /* KTRecordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTRecordTableViewCell.h; sourceTree = "<group>"; };
 		AE7108DD237CE44F0054C452 /* KTRecordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTRecordTableViewCell.m; sourceTree = "<group>"; };
 		AE977182236FF6B800163F70 /* PocketFootballScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketFootballScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -367,6 +368,7 @@
 				Base,
 				"zh-Hans",
 				ja,
+				ko,
 			);
 			mainGroup = AE977179236FF6B800163F70;
 			productRefGroup = AE977183236FF6B800163F70 /* Products */;
@@ -474,6 +476,7 @@
 				AE605006237A4214004BC919 /* zh-Hans */,
 				AE605007237A4214004BC919 /* ja */,
 				AE605008237A4214004BC919 /* en */,
+				AE6C74BB23824352009329F2 /* ko */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
