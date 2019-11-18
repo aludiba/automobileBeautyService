@@ -40,7 +40,6 @@
     [super viewDidAppear:animated];
 }
 - (void)BTSetContentView{
-    self.view.backgroundColor = [UIColor cyanColor];
     [self.BTviewDataArray removeAllObjects];
     
     BTScorecardViewModel *BTBothTeamsModel = [[BTScorecardViewModel alloc] init];
@@ -252,6 +251,7 @@
 - (UITableView *)BTmainTable{
     if (!_BTmainTable) {
         _BTmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _BTmainTable.backgroundColor = [UIColor cyanColor];
         _BTmainTable.showsVerticalScrollIndicator = NO;
         _BTmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
         _BTmainTable.delegate = self;

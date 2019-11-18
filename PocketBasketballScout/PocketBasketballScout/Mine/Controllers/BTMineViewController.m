@@ -27,7 +27,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor cyanColor];
     [self BTSetContentView];
 }
 - (void)viewWillAppear:(BOOL)animated{
@@ -158,7 +157,7 @@
 - (UIView *)BTBackView{
     if (!_BTBackView) {
         _BTBackView = [[UIView alloc] init];
-        _BTBackView.backgroundColor = BTH_Color(0, 204, 131, 1);
+        _BTBackView.backgroundColor = [UIColor systemRedColor];
     }
     return _BTBackView;
 }
@@ -174,7 +173,7 @@
 - (UILabel *)BTNickNameLabel{
     if (!_BTNickNameLabel) {
         _BTNickNameLabel = [[UILabel alloc] init];
-        _BTNickNameLabel.textColor = [UIColor cyanColor];
+        _BTNickNameLabel.textColor = [UIColor greenColor];
         _BTNickNameLabel.font = [UIFont systemFontOfSize:18];
         _BTNickNameLabel.numberOfLines = 0;
         _BTNickNameLabel.text = NSLocalizedString(@"昵称", nil);
@@ -186,12 +185,12 @@
     if (!_BTNicknameTextField) {
         _BTNicknameTextField = [[UITextField alloc] init];
         _BTNicknameTextField.delegate = self;
-        _BTNicknameTextField.textColor = [UIColor blackColor];
+        _BTNicknameTextField.textColor = [UIColor systemYellowColor];
         _BTNicknameTextField.font = [UIFont systemFontOfSize:22];
-        _BTNicknameTextField.backgroundColor = [UIColor whiteColor];
-        _BTNicknameTextField.layer.borderColor = [UIColor redColor].CGColor;
-        _BTNicknameTextField.layer.borderWidth = 1.0f;
-        _BTNicknameTextField.layer.cornerRadius = 3.0f;
+        _BTNicknameTextField.backgroundColor = [UIColor cyanColor];
+        _BTNicknameTextField.layer.borderColor = [UIColor systemPurpleColor].CGColor;
+        _BTNicknameTextField.layer.borderWidth = 2.0f;
+        _BTNicknameTextField.layer.cornerRadius = 6.0f;
         _BTNicknameTextField.layer.masksToBounds = YES;
         BmobUser *user = [BmobUser currentUser];
         if ([[user objectForKey:@"username"] length]) {
@@ -214,12 +213,12 @@
     if (!_BTChangePasswordButton) {
         _BTChangePasswordButton = [[UIButton alloc] init];
         [_BTChangePasswordButton setTitle:NSLocalizedString(@"更改密码", nil) forState:UIControlStateNormal];
-        [_BTChangePasswordButton setTitleColor:BTH_Color(0, 204, 131, 1) forState:UIControlStateNormal];
+        [_BTChangePasswordButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         _BTChangePasswordButton.titleLabel.font = [UIFont systemFontOfSize:20];
         _BTChangePasswordButton.titleLabel.numberOfLines = 0;
-        _BTChangePasswordButton.backgroundColor = [UIColor whiteColor];
+        _BTChangePasswordButton.backgroundColor = [UIColor cyanColor];
         _BTChangePasswordButton.layer.masksToBounds = YES;
-        _BTChangePasswordButton.layer.cornerRadius = 8.0f;
+        _BTChangePasswordButton.layer.cornerRadius = 16.0f;
         [_BTChangePasswordButton addTarget:self action:@selector(BTChangePasswordAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _BTChangePasswordButton;
@@ -228,12 +227,12 @@
     if (!_BTSignOutButton) {
         _BTSignOutButton = [[UIButton alloc] init];
         [_BTSignOutButton setTitle:NSLocalizedString(@"退出", nil) forState:UIControlStateNormal];
-        [_BTSignOutButton setTitleColor:BTH_Color(0, 204, 131, 1) forState:UIControlStateNormal];
+        [_BTSignOutButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         _BTSignOutButton.titleLabel.font = [UIFont systemFontOfSize:20];
      _BTSignOutButton.titleLabel.numberOfLines = 0;
-        _BTSignOutButton.backgroundColor = [UIColor whiteColor];
+        _BTSignOutButton.backgroundColor = [UIColor cyanColor];
         _BTSignOutButton.layer.masksToBounds = YES;
-        _BTSignOutButton.layer.cornerRadius = 8.0f;
+        _BTSignOutButton.layer.cornerRadius = 16.0f;
         [_BTSignOutButton addTarget:self action:@selector(BTSignOutAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _BTSignOutButton;

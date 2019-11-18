@@ -19,8 +19,8 @@
 @implementation BTTimePortionTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self BTSetContentView];
-        
         self.BTisStop = YES;
             //类方法会自动释放。
         self.BTTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(BTstartTimer) userInfo:nil repeats:YES];
@@ -41,7 +41,7 @@
         make.top.equalTo(self.contentView).offset(30);
         make.width.mas_equalTo(60);
         make.height.mas_equalTo(60);
-        make.bottom.equalTo(self.contentView).offset(-30);
+        make.bottom.equalTo(self.contentView).offset(-15);
     }];
     [self.BTEndGameButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.trailing.equalTo(self.contentView).offset(-50);
@@ -120,7 +120,7 @@
         _BTDisplayTimeLengthLabel.layer.cornerRadius = 8.0f;
         _BTDisplayTimeLengthLabel.layer.masksToBounds = YES;
         _BTDisplayTimeLengthLabel.layer.borderColor = [UIColor systemRedColor].CGColor;
-        _BTDisplayTimeLengthLabel.layer.borderWidth = 1.5f;
+        _BTDisplayTimeLengthLabel.layer.borderWidth = 2.0f;
         _BTDisplayTimeLengthLabel.numberOfLines = 0;
     }
     return _BTDisplayTimeLengthLabel;

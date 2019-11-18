@@ -21,6 +21,7 @@
 @implementation BTBothTeamsTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self BTSetContentView];
     }
     return self;
@@ -49,7 +50,7 @@
         make.top.equalTo(self.BTRightTeamLabel.mas_bottom).offset(15);
         make.width.mas_equalTo((BTWIDTH - 200) * 0.5);
         make.height.mas_equalTo(36);
-        make.bottom.equalTo(self.contentView).offset(-30);
+        make.bottom.equalTo(self.contentView).offset(-15);
     }];
     [self.BTVSLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.contentView);
@@ -121,15 +122,15 @@
         _BTRightTeamField.font = [UIFont systemFontOfSize:15];
         _BTRightTeamField.layer.cornerRadius = 8.0f;
         _BTRightTeamField.layer.masksToBounds = YES;
-        _BTRightTeamField.layer.borderColor = [UIColor systemGrayColor].CGColor;
-        _BTRightTeamField.layer.borderWidth = 1.5f;
+        _BTRightTeamField.layer.borderColor = [UIColor systemRedColor].CGColor;
+        _BTRightTeamField.layer.borderWidth = 2.0f;
     }
     return _BTRightTeamField;
 }
 - (UILabel *)BTVSLabel{
     if (!_BTVSLabel) {
         _BTVSLabel = [[UILabel alloc] init];
-        _BTVSLabel.textColor = BTH_Color(0, 204, 131, 1);
+        _BTVSLabel.textColor = [UIColor systemRedColor];
         _BTVSLabel.font = [UIFont boldSystemFontOfSize:30];
         _BTVSLabel.textAlignment = NSTextAlignmentCenter;
         _BTVSLabel.text = @"VS";
@@ -156,8 +157,8 @@
         _BTLeftTeamField.font = [UIFont systemFontOfSize:15];
         _BTLeftTeamField.layer.cornerRadius = 8.0f;
         _BTLeftTeamField.layer.masksToBounds = YES;
-        _BTLeftTeamField.layer.borderColor = [UIColor systemGrayColor].CGColor;
-        _BTLeftTeamField.layer.borderWidth = 1.5f;
+        _BTLeftTeamField.layer.borderColor = [UIColor systemRedColor].CGColor;
+        _BTLeftTeamField.layer.borderWidth = 2.0f;
     }
     return _BTLeftTeamField;
 }

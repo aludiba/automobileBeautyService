@@ -21,7 +21,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor cyanColor];
     self.title = NSLocalizedString(@"记录", nil);
     [self BTLoadData];
 }
@@ -133,7 +132,6 @@
         _BTmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _BTmainTable.showsVerticalScrollIndicator = NO;
         _BTmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _BTmainTable.backgroundColor = [UIColor cyanColor];
         _BTmainTable.delegate = self;
         _BTmainTable.dataSource = self;
         _BTmainTable.rowHeight = UITableViewAutomaticDimension;

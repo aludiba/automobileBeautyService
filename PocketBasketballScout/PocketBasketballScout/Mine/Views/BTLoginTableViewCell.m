@@ -179,10 +179,10 @@
 - (UIView *)BTbackView{
     if (!_BTbackView) {
         _BTbackView = [[UIView alloc] init];
-        _BTbackView.backgroundColor = BTH_Color(0, 204, 131, 1);
-        _BTbackView.layer.borderColor = [UIColor grayColor].CGColor;
-        _BTbackView.layer.borderWidth = 1.0f;
-        _BTbackView.layer.cornerRadius = 8.0f;
+        _BTbackView.backgroundColor = [UIColor systemRedColor];
+        _BTbackView.layer.borderColor = [UIColor systemGreenColor].CGColor;
+        _BTbackView.layer.borderWidth = 1.5f;
+        _BTbackView.layer.cornerRadius = 16.0f;
         _BTbackView.layer.masksToBounds = YES;
     }
     return _BTbackView;
@@ -191,7 +191,7 @@
     if (!_BTaccountLable) {
         _BTaccountLable = [[UILabel alloc] init];
         _BTaccountLable.text = NSLocalizedString(@"账号", nil);
-        _BTaccountLable.textColor = [UIColor blackColor];
+        _BTaccountLable.textColor = [UIColor systemYellowColor];
         _BTaccountLable.font = [UIFont systemFontOfSize:17];
     }
     return _BTaccountLable;
@@ -202,7 +202,7 @@
         _BTaccountTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
         _BTaccountTextField.tag = 98;
         _BTaccountTextField.delegate = self;
-        _BTaccountTextField.textColor = [UIColor blackColor];
+        _BTaccountTextField.textColor = [UIColor systemYellowColor];
         _BTaccountTextField.font = [UIFont systemFontOfSize:17];
         _BTaccountTextField.placeholder = NSLocalizedString(@"请输入账号", nil);
     }
@@ -212,7 +212,7 @@
     if (!_BTpasswordLable) {
         _BTpasswordLable = [[UILabel alloc] init];
         _BTpasswordLable.text = NSLocalizedString(@"密码", nil);
-        _BTpasswordLable.textColor = [UIColor blackColor];
+        _BTpasswordLable.textColor = [UIColor systemYellowColor];
         _BTpasswordLable.font = [UIFont systemFontOfSize:17];
     }
     return _BTpasswordLable;
@@ -223,7 +223,7 @@
         _BTBTpasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
         _BTBTpasswordTextField.tag = 99;
         _BTBTpasswordTextField.delegate = self;
-        _BTBTpasswordTextField.textColor = [UIColor blackColor];
+        _BTBTpasswordTextField.textColor = [UIColor systemYellowColor];
         _BTBTpasswordTextField.font = [UIFont systemFontOfSize:17];
         _BTBTpasswordTextField.placeholder = NSLocalizedString(@"请输入密码", nil);
         _BTBTpasswordTextField.secureTextEntry = YES;
@@ -235,11 +235,11 @@
         _BTloginButton = [[UIButton alloc] init];
         _BTloginButton.tag = 100;
         _BTloginButton.backgroundColor = [UIColor whiteColor];
-        [_BTloginButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_BTloginButton setTitleColor:[UIColor systemYellowColor] forState:UIControlStateNormal];
         [_BTloginButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
-        _BTloginButton.layer.cornerRadius = 6.0f;
+        _BTloginButton.layer.cornerRadius = 12.0f;
         _BTloginButton.layer.masksToBounds = YES;
-        _BTloginButton.layer.borderColor = [UIColor grayColor].CGColor;
+        _BTloginButton.layer.borderColor = [UIColor systemOrangeColor].CGColor;
         _BTloginButton.layer.borderWidth = 2.0f;
         [_BTloginButton setTitle:NSLocalizedString(@"登录", nil) forState:UIControlStateNormal];
         [_BTloginButton addTarget:self action:@selector(BTbtnClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -251,11 +251,11 @@
         _BTregisteredButton = [[UIButton alloc] init];
         _BTregisteredButton.tag = 101;
         _BTregisteredButton.backgroundColor = [UIColor whiteColor];
-        [_BTregisteredButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_BTregisteredButton setTitleColor:[UIColor systemYellowColor] forState:UIControlStateNormal];
         [_BTregisteredButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
-        _BTregisteredButton.layer.cornerRadius = 6.0f;
+        _BTregisteredButton.layer.cornerRadius = 12.0f;
         _BTregisteredButton.layer.masksToBounds = YES;
-        _BTregisteredButton.layer.borderColor = [UIColor grayColor].CGColor;
+        _BTregisteredButton.layer.borderColor = [UIColor systemOrangeColor].CGColor;
         _BTregisteredButton.layer.borderWidth = 2.0f;
         [_BTregisteredButton setTitle:NSLocalizedString(@"注册", nil) forState:UIControlStateNormal];
         [_BTregisteredButton addTarget:self action:@selector(BTbtnClick:) forControlEvents:UIControlEventTouchUpInside];

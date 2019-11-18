@@ -23,7 +23,6 @@
 @implementation BTRecordTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = [UIColor cyanColor];
         [self BTSetContentView];
     }
     return self;
@@ -130,8 +129,8 @@
 - (UIView *)BTBackView{
     if (!_BTBackView) {
         _BTBackView = [[UIView alloc] init];
-        _BTBackView.backgroundColor = [UIColor whiteColor];
-        _BTBackView.layer.cornerRadius = 16.0f;
+        _BTBackView.backgroundColor = [UIColor cyanColor];
+        _BTBackView.layer.cornerRadius = 32.0f;
         _BTBackView.layer.masksToBounds = YES;
     }
     return _BTBackView;
@@ -156,7 +155,7 @@
 - (UILabel *)BTEndTimeLabel{
     if (!_BTEndTimeLabel) {
         _BTEndTimeLabel = [[UILabel alloc] init];
-        _BTEndTimeLabel.textColor = [UIColor blackColor];
+        _BTEndTimeLabel.textColor = [UIColor systemOrangeColor];
         _BTEndTimeLabel.font = [UIFont systemFontOfSize:15];
         _BTEndTimeLabel.textAlignment = NSTextAlignmentCenter;
         _BTEndTimeLabel.numberOfLines = 0;
@@ -166,7 +165,7 @@
 - (UILabel *)BTElapsedTimeLabel{
     if (!_BTElapsedTimeLabel) {
         _BTElapsedTimeLabel = [[UILabel alloc] init];
-        _BTElapsedTimeLabel.textColor = [UIColor blackColor];
+        _BTElapsedTimeLabel.textColor = [UIColor systemOrangeColor];
         _BTElapsedTimeLabel.font = [UIFont systemFontOfSize:15];
         _BTElapsedTimeLabel.textAlignment = NSTextAlignmentCenter;
         _BTElapsedTimeLabel.numberOfLines = 0;
@@ -176,7 +175,7 @@
 - (UILabel *)BTRightNameLabel{
     if (!_BTRightNameLabel) {
         _BTRightNameLabel = [[UILabel alloc] init];
-        _BTRightNameLabel.textColor = [UIColor systemRedColor];
+        _BTRightNameLabel.textColor = [UIColor redColor];
         _BTRightNameLabel.font = [UIFont systemFontOfSize:18];
         _BTRightNameLabel.textAlignment = NSTextAlignmentCenter;
         _BTRightNameLabel.numberOfLines = 0;
@@ -186,7 +185,7 @@
 - (UILabel *)BTRightScoreLabel{
     if (!_BTRightScoreLabel) {
         _BTRightScoreLabel = [[UILabel alloc] init];
-        _BTRightScoreLabel.textColor = [UIColor systemGreenColor];
+        _BTRightScoreLabel.textColor = [UIColor greenColor];
         _BTRightScoreLabel.font = [UIFont systemFontOfSize:30];
         _BTRightScoreLabel.textAlignment = NSTextAlignmentCenter;
         _BTRightScoreLabel.numberOfLines = 0;
@@ -196,7 +195,7 @@
 - (UILabel *)BTVSLabel{
     if (!_BTVSLabel) {
         _BTVSLabel = [[UILabel alloc] init];
-        _BTVSLabel.textColor = [UIColor systemGreenColor];
+        _BTVSLabel.textColor = [UIColor greenColor];
         _BTVSLabel.font = [UIFont boldSystemFontOfSize:30];
         _BTVSLabel.textAlignment = NSTextAlignmentCenter;
         _BTVSLabel.numberOfLines = 0;
@@ -207,7 +206,7 @@
 - (UILabel *)BTLeftNameLabel{
     if (!_BTLeftNameLabel) {
         _BTLeftNameLabel = [[UILabel alloc] init];
-        _BTLeftNameLabel.textColor = [UIColor systemRedColor];
+        _BTLeftNameLabel.textColor = [UIColor redColor];
         _BTLeftNameLabel.font = [UIFont systemFontOfSize:18];
         _BTLeftNameLabel.textAlignment = NSTextAlignmentCenter;
         _BTLeftNameLabel.numberOfLines = 0;
@@ -217,7 +216,7 @@
 - (UILabel *)BTLeftScoreLabel{
     if (!_BTLeftScoreLabel) {
         _BTLeftScoreLabel = [[UILabel alloc] init];
-        _BTLeftScoreLabel.textColor = [UIColor systemGreenColor];
+        _BTLeftScoreLabel.textColor = [UIColor greenColor];
         _BTLeftScoreLabel.font = [UIFont systemFontOfSize:30];
         _BTLeftScoreLabel.textAlignment = NSTextAlignmentCenter;
         _BTLeftScoreLabel.numberOfLines = 0;
