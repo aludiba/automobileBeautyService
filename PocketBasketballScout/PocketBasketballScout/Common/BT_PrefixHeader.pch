@@ -1,0 +1,12 @@
+//
+//  BT_PrefixHeader.pch
+//  Simple Diary
+//
+//  Created by bykj on 2019/7/20.
+//  Copyright © 2019 hgg. All rights reserved.
+//
+
+#ifndef BT_PrefixHeader_pch
+#define BT_PrefixHeader_pch
+#import "BTGlobal.h"
+#endif /* BT_PrefixHeader_pch */
