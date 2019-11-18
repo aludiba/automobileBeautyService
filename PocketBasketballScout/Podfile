@@ -12,4 +12,5 @@ target 'PocketBasketballScout' do
     pod 'MBProgressHUD'
     pod 'YYModel'
     pod 'IQKeyboardManager'
+    pod 'JTCalendar'
 end
