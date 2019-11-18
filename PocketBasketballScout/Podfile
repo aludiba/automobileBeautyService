@@ -13,4 +13,5 @@ target 'PocketBasketballScout' do
     pod 'YYModel'
     pod 'IQKeyboardManager'
     pod 'JTCalendar'
+    pod 'BmobSDK'
 end
