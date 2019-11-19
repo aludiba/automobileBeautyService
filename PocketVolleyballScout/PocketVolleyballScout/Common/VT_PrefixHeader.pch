@@ -1,0 +1,12 @@
+//
+//  VT_PrefixHeader.pch
+//  Simple Diary
+//
+//  Created by bykj on 2019/7/20.
+//  Copyright © 2019 hgg. All rights reserved.
+//
+
+#ifndef VT_PrefixHeader_pch
+#define VT_PrefixHeader_pch
+#import "VTGlobal.h"
+#endif /* VT_PrefixHeader_pch */

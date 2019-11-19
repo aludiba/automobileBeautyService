@@ -1,12 +1,13 @@
 //
 //  AppDelegate.m
-//  PocketVolleyballScout
+//  PocketScout
 //
-//  Created by bykj on 2019/11/19.
+//  Created by bykj on 2019/11/4.
 //  Copyright © 2019 com. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "VTLoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,25 +18,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [Bmob resetDomain:@"http://pocketfootballscout.jd127.cn"];
+    [Bmob registerWithAppKey:@"3b32beaaae004285519d31da13844710"];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    BmobQuery *bquery = [BmobQuery queryWithClassName:@"VTPocketScout"];
+    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"VTPocketScout"]]];
+            self.window.rootViewController = [self rootController];
+            [self.window makeKeyAndVisible];
+    }];
     return YES;
 }
-
-
-#pragma mark - UISceneSession lifecycle
-
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
+- (UIViewController *)rootController{
+//    BmobUser *bUser = [BmobUser currentUser];
+//    if (bUser) {
+//        进行操作
+        VTTabBarController *tabVC = [VTTabBarController shareInstance];
+        return tabVC;
+//    }else{
+//        //对象为空时，可打开用户注册界面
+//        YBLoginViewController *loginVC = [YBLoginViewController shareInstance];
+//        return loginVC;
+//    }
 }
-
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-}
-
-
 @end

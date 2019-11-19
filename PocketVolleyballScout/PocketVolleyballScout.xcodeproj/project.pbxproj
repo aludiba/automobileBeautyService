@@ -7,28 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AEB6EA642383DE87007526EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA632383DE87007526EF /* AppDelegate.m */; };
-		AEB6EA672383DE87007526EF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA662383DE87007526EF /* SceneDelegate.m */; };
-		AEB6EA6A2383DE88007526EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA692383DE88007526EF /* ViewController.m */; };
-		AEB6EA6D2383DE88007526EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB6EA6B2383DE88007526EF /* Main.storyboard */; };
+		8C4BD9B80B55EF7388AD75BB /* Pods_PocketVolleyballScout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B5CAF451D7D3A6B06F4335 /* Pods_PocketVolleyballScout.framework */; };
 		AEB6EA6F2383DE8B007526EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB6EA6E2383DE8B007526EF /* Assets.xcassets */; };
-		AEB6EA722383DE8B007526EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB6EA702383DE8B007526EF /* LaunchScreen.storyboard */; };
 		AEB6EA752383DE8B007526EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA742383DE8B007526EF /* main.m */; };
+		AEB6EA7D2383E12D007526EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA7C2383E12D007526EF /* AppDelegate.m */; };
+		AEB6EA992383E212007526EF /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA7F2383E212007526EF /* NSDictionary+log.m */; };
+		AEB6EA9A2383E212007526EF /* VTHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA802383E212007526EF /* VTHBTool.m */; };
+		AEB6EA9B2383E212007526EF /* VTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA812383E212007526EF /* VTTabBarController.m */; };
+		AEB6EA9C2383E212007526EF /* VTUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA832383E212007526EF /* VTUIUtilities.m */; };
+		AEB6EA9D2383E212007526EF /* MBProgressHUD+VTNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA852383E212007526EF /* MBProgressHUD+VTNJ.m */; };
+		AEB6EA9E2383E212007526EF /* VTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA872383E212007526EF /* VTBaseViewController.m */; };
+		AEB6EA9F2383E212007526EF /* VTNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA8A2383E212007526EF /* VTNDHTTPClient.m */; };
+		AEB6EAA02383E212007526EF /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA8D2383E212007526EF /* CalendarTool.m */; };
+		AEB6EAA42383E212007526EF /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA972383E212007526EF /* NSArray+log.m */; };
+		AEB6EAB32383E472007526EF /* VTSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAA82383E472007526EF /* VTSetViewModel.m */; };
+		AEB6EAB42383E472007526EF /* VTPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAAC2383E472007526EF /* VTPasswordChangeViewController.m */; };
+		AEB6EAB52383E472007526EF /* VTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAAD2383E472007526EF /* VTLoginViewController.m */; };
+		AEB6EAB62383E472007526EF /* VTMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAAF2383E472007526EF /* VTMineViewController.m */; };
+		AEB6EAB72383E472007526EF /* VTLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAB12383E472007526EF /* VTLoginTableViewCell.m */; };
+		AEB6EAC02383E514007526EF /* VTRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EABC2383E514007526EF /* VTRecordViewController.m */; };
+		AEB6EAC12383E514007526EF /* VTRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EABF2383E514007526EF /* VTRecordTableViewCell.m */; };
+		AEB6EAC82383E54B007526EF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEB6EAC32383E54B007526EF /* Localizable.strings */; };
+		AEB6EADB2383E5A8007526EF /* VTScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EACB2383E5A8007526EF /* VTScorecardModel.m */; };
+		AEB6EADC2383E5A8007526EF /* VTScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EACE2383E5A8007526EF /* VTScorecardViewModel.m */; };
+		AEB6EADD2383E5A8007526EF /* VTScorecardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAD12383E5A8007526EF /* VTScorecardViewController.m */; };
+		AEB6EADE2383E5A8007526EF /* VTBothTeamsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAD42383E5A8007526EF /* VTBothTeamsTableViewCell.m */; };
+		AEB6EADF2383E5A8007526EF /* VTScoringPartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAD72383E5A8007526EF /* VTScoringPartTableViewCell.m */; };
+		AEB6EAE02383E5A8007526EF /* VTTimePortionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAD92383E5A8007526EF /* VTTimePortionTableViewCell.m */; };
+		AEB6EAE12383E5A8007526EF /* VTScoringSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EADA2383E5A8007526EF /* VTScoringSaveTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16B5CAF451D7D3A6B06F4335 /* Pods_PocketVolleyballScout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketVolleyballScout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3110E4F790F083DC8C6F9F54 /* Pods-PocketVolleyballScout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketVolleyballScout.release.xcconfig"; path = "Target Support Files/Pods-PocketVolleyballScout/Pods-PocketVolleyballScout.release.xcconfig"; sourceTree = "<group>"; };
+		34C2F693CE22346253830808 /* Pods-PocketVolleyballScout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketVolleyballScout.debug.xcconfig"; path = "Target Support Files/Pods-PocketVolleyballScout/Pods-PocketVolleyballScout.debug.xcconfig"; sourceTree = "<group>"; };
 		AEB6EA5F2383DE87007526EF /* PocketVolleyballScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketVolleyballScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEB6EA622383DE87007526EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AEB6EA632383DE87007526EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AEB6EA652383DE87007526EF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		AEB6EA662383DE87007526EF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		AEB6EA682383DE87007526EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AEB6EA692383DE88007526EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AEB6EA6C2383DE88007526EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEB6EA6E2383DE8B007526EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AEB6EA712383DE8B007526EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEB6EA732383DE8B007526EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEB6EA742383DE8B007526EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AEB6EA7B2383E12D007526EF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AEB6EA7C2383E12D007526EF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AEB6EA7F2383E212007526EF /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
+		AEB6EA802383E212007526EF /* VTHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTHBTool.m; sourceTree = "<group>"; };
+		AEB6EA812383E212007526EF /* VTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTTabBarController.m; sourceTree = "<group>"; };
+		AEB6EA822383E212007526EF /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
+		AEB6EA832383E212007526EF /* VTUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTUIUtilities.m; sourceTree = "<group>"; };
+		AEB6EA842383E212007526EF /* VTNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTNDHTTPClient.h; sourceTree = "<group>"; };
+		AEB6EA852383E212007526EF /* MBProgressHUD+VTNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+VTNJ.m"; sourceTree = "<group>"; };
+		AEB6EA862383E212007526EF /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		AEB6EA872383E212007526EF /* VTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTBaseViewController.m; sourceTree = "<group>"; };
+		AEB6EA882383E212007526EF /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
+		AEB6EA892383E212007526EF /* VTHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTHBTool.h; sourceTree = "<group>"; };
+		AEB6EA8A2383E212007526EF /* VTNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTNDHTTPClient.m; sourceTree = "<group>"; };
+		AEB6EA8B2383E212007526EF /* VTGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTGlobal.h; sourceTree = "<group>"; };
+		AEB6EA8C2383E212007526EF /* VTUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTUIUtilities.h; sourceTree = "<group>"; };
+		AEB6EA8D2383E212007526EF /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
+		AEB6EA8E2383E212007526EF /* VTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTTabBarController.h; sourceTree = "<group>"; };
+		AEB6EA952383E212007526EF /* VT_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VT_PrefixHeader.pch; sourceTree = "<group>"; };
+		AEB6EA962383E212007526EF /* VTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTBaseViewController.h; sourceTree = "<group>"; };
+		AEB6EA972383E212007526EF /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		AEB6EA982383E212007526EF /* MBProgressHUD+VTNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+VTNJ.h"; sourceTree = "<group>"; };
+		AEB6EAA72383E472007526EF /* VTSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTSetViewModel.h; sourceTree = "<group>"; };
+		AEB6EAA82383E472007526EF /* VTSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTSetViewModel.m; sourceTree = "<group>"; };
+		AEB6EAAA2383E472007526EF /* VTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTLoginViewController.h; sourceTree = "<group>"; };
+		AEB6EAAB2383E472007526EF /* VTMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTMineViewController.h; sourceTree = "<group>"; };
+		AEB6EAAC2383E472007526EF /* VTPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPasswordChangeViewController.m; sourceTree = "<group>"; };
+		AEB6EAAD2383E472007526EF /* VTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTLoginViewController.m; sourceTree = "<group>"; };
+		AEB6EAAE2383E472007526EF /* VTPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPasswordChangeViewController.h; sourceTree = "<group>"; };
+		AEB6EAAF2383E472007526EF /* VTMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTMineViewController.m; sourceTree = "<group>"; };
+		AEB6EAB12383E472007526EF /* VTLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTLoginTableViewCell.m; sourceTree = "<group>"; };
+		AEB6EAB22383E472007526EF /* VTLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTLoginTableViewCell.h; sourceTree = "<group>"; };
+		AEB6EABB2383E514007526EF /* VTRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTRecordViewController.h; sourceTree = "<group>"; };
+		AEB6EABC2383E514007526EF /* VTRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTRecordViewController.m; sourceTree = "<group>"; };
+		AEB6EABE2383E514007526EF /* VTRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTRecordTableViewCell.h; sourceTree = "<group>"; };
+		AEB6EABF2383E514007526EF /* VTRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTRecordTableViewCell.m; sourceTree = "<group>"; };
+		AEB6EAC42383E54B007526EF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AEB6EAC52383E54B007526EF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEB6EAC62383E54B007526EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEB6EAC72383E54B007526EF /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEB6EACB2383E5A8007526EF /* VTScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTScorecardModel.m; sourceTree = "<group>"; };
+		AEB6EACC2383E5A8007526EF /* VTScorecardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTScorecardViewModel.h; sourceTree = "<group>"; };
+		AEB6EACD2383E5A8007526EF /* VTScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTScorecardModel.h; sourceTree = "<group>"; };
+		AEB6EACE2383E5A8007526EF /* VTScorecardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTScorecardViewModel.m; sourceTree = "<group>"; };
+		AEB6EAD02383E5A8007526EF /* VTScorecardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTScorecardViewController.h; sourceTree = "<group>"; };
+		AEB6EAD12383E5A8007526EF /* VTScorecardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTScorecardViewController.m; sourceTree = "<group>"; };
+		AEB6EAD32383E5A8007526EF /* VTScoringPartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTScoringPartTableViewCell.h; sourceTree = "<group>"; };
+		AEB6EAD42383E5A8007526EF /* VTBothTeamsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTBothTeamsTableViewCell.m; sourceTree = "<group>"; };
+		AEB6EAD52383E5A8007526EF /* VTTimePortionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTTimePortionTableViewCell.h; sourceTree = "<group>"; };
+		AEB6EAD62383E5A8007526EF /* VTScoringSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTScoringSaveTableViewCell.h; sourceTree = "<group>"; };
+		AEB6EAD72383E5A8007526EF /* VTScoringPartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTScoringPartTableViewCell.m; sourceTree = "<group>"; };
+		AEB6EAD82383E5A8007526EF /* VTBothTeamsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTBothTeamsTableViewCell.h; sourceTree = "<group>"; };
+		AEB6EAD92383E5A8007526EF /* VTTimePortionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTTimePortionTableViewCell.m; sourceTree = "<group>"; };
+		AEB6EADA2383E5A8007526EF /* VTScoringSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTScoringSaveTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +106,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C4BD9B80B55EF7388AD75BB /* Pods_PocketVolleyballScout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		795C1B3C2874B89047F02D97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34C2F693CE22346253830808 /* Pods-PocketVolleyballScout.debug.xcconfig */,
+				3110E4F790F083DC8C6F9F54 /* Pods-PocketVolleyballScout.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AEB6EA562383DE87007526EF = {
 			isa = PBXGroup;
 			children = (
 				AEB6EA612383DE87007526EF /* PocketVolleyballScout */,
 				AEB6EA602383DE87007526EF /* Products */,
+				795C1B3C2874B89047F02D97 /* Pods */,
+				E214BAD324213D24A84939BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,19 +144,183 @@
 		AEB6EA612383DE87007526EF /* PocketVolleyballScout */ = {
 			isa = PBXGroup;
 			children = (
-				AEB6EA622383DE87007526EF /* AppDelegate.h */,
-				AEB6EA632383DE87007526EF /* AppDelegate.m */,
-				AEB6EA652383DE87007526EF /* SceneDelegate.h */,
-				AEB6EA662383DE87007526EF /* SceneDelegate.m */,
-				AEB6EA682383DE87007526EF /* ViewController.h */,
-				AEB6EA692383DE88007526EF /* ViewController.m */,
-				AEB6EA6B2383DE88007526EF /* Main.storyboard */,
+				AEB6EA7B2383E12D007526EF /* AppDelegate.h */,
+				AEB6EA7C2383E12D007526EF /* AppDelegate.m */,
+				AEB6EAC22383E54B007526EF /* Resources */,
+				AEB6EAB82383E514007526EF /* Record */,
+				AEB6EA7E2383E212007526EF /* Common */,
+				AEB6EAA52383E472007526EF /* Mine */,
+				AEB6EAC92383E5A8007526EF /* Scorecard */,
 				AEB6EA6E2383DE8B007526EF /* Assets.xcassets */,
-				AEB6EA702383DE8B007526EF /* LaunchScreen.storyboard */,
 				AEB6EA732383DE8B007526EF /* Info.plist */,
 				AEB6EA742383DE8B007526EF /* main.m */,
 			);
 			path = PocketVolleyballScout;
+			sourceTree = "<group>";
+		};
+		AEB6EA7E2383E212007526EF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AEB6EA952383E212007526EF /* VT_PrefixHeader.pch */,
+				AEB6EA8B2383E212007526EF /* VTGlobal.h */,
+				AEB6EA862383E212007526EF /* NSArray+log.h */,
+				AEB6EA972383E212007526EF /* NSArray+log.m */,
+				AEB6EA882383E212007526EF /* NSDictionary+log.h */,
+				AEB6EA7F2383E212007526EF /* NSDictionary+log.m */,
+				AEB6EA892383E212007526EF /* VTHBTool.h */,
+				AEB6EA802383E212007526EF /* VTHBTool.m */,
+				AEB6EA982383E212007526EF /* MBProgressHUD+VTNJ.h */,
+				AEB6EA852383E212007526EF /* MBProgressHUD+VTNJ.m */,
+				AEB6EA822383E212007526EF /* CalendarTool.h */,
+				AEB6EA8D2383E212007526EF /* CalendarTool.m */,
+				AEB6EA8C2383E212007526EF /* VTUIUtilities.h */,
+				AEB6EA832383E212007526EF /* VTUIUtilities.m */,
+				AEB6EA842383E212007526EF /* VTNDHTTPClient.h */,
+				AEB6EA8A2383E212007526EF /* VTNDHTTPClient.m */,
+				AEB6EA8E2383E212007526EF /* VTTabBarController.h */,
+				AEB6EA812383E212007526EF /* VTTabBarController.m */,
+				AEB6EA962383E212007526EF /* VTBaseViewController.h */,
+				AEB6EA872383E212007526EF /* VTBaseViewController.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AEB6EAA52383E472007526EF /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				AEB6EAA62383E472007526EF /* Models */,
+				AEB6EAB02383E472007526EF /* Views */,
+				AEB6EAA92383E472007526EF /* Controllers */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		AEB6EAA62383E472007526EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AEB6EAA72383E472007526EF /* VTSetViewModel.h */,
+				AEB6EAA82383E472007526EF /* VTSetViewModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AEB6EAA92383E472007526EF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AEB6EAAA2383E472007526EF /* VTLoginViewController.h */,
+				AEB6EAAD2383E472007526EF /* VTLoginViewController.m */,
+				AEB6EAAB2383E472007526EF /* VTMineViewController.h */,
+				AEB6EAAF2383E472007526EF /* VTMineViewController.m */,
+				AEB6EAAE2383E472007526EF /* VTPasswordChangeViewController.h */,
+				AEB6EAAC2383E472007526EF /* VTPasswordChangeViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AEB6EAB02383E472007526EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AEB6EAB12383E472007526EF /* VTLoginTableViewCell.m */,
+				AEB6EAB22383E472007526EF /* VTLoginTableViewCell.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AEB6EAB82383E514007526EF /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				AEB6EAB92383E514007526EF /* Models */,
+				AEB6EABD2383E514007526EF /* Views */,
+				AEB6EABA2383E514007526EF /* Controllers */,
+			);
+			name = Record;
+			path = PocketVolleyballScout/Record;
+			sourceTree = SOURCE_ROOT;
+		};
+		AEB6EAB92383E514007526EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AEB6EABA2383E514007526EF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AEB6EABB2383E514007526EF /* VTRecordViewController.h */,
+				AEB6EABC2383E514007526EF /* VTRecordViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AEB6EABD2383E514007526EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AEB6EABE2383E514007526EF /* VTRecordTableViewCell.h */,
+				AEB6EABF2383E514007526EF /* VTRecordTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AEB6EAC22383E54B007526EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AEB6EAC32383E54B007526EF /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AEB6EAC92383E5A8007526EF /* Scorecard */ = {
+			isa = PBXGroup;
+			children = (
+				AEB6EACA2383E5A8007526EF /* Models */,
+				AEB6EACF2383E5A8007526EF /* Controllers */,
+				AEB6EAD22383E5A8007526EF /* Views */,
+			);
+			path = Scorecard;
+			sourceTree = "<group>";
+		};
+		AEB6EACA2383E5A8007526EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AEB6EACD2383E5A8007526EF /* VTScorecardModel.h */,
+				AEB6EACB2383E5A8007526EF /* VTScorecardModel.m */,
+				AEB6EACC2383E5A8007526EF /* VTScorecardViewModel.h */,
+				AEB6EACE2383E5A8007526EF /* VTScorecardViewModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AEB6EACF2383E5A8007526EF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AEB6EAD02383E5A8007526EF /* VTScorecardViewController.h */,
+				AEB6EAD12383E5A8007526EF /* VTScorecardViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AEB6EAD22383E5A8007526EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AEB6EAD32383E5A8007526EF /* VTScoringPartTableViewCell.h */,
+				AEB6EAD72383E5A8007526EF /* VTScoringPartTableViewCell.m */,
+				AEB6EAD82383E5A8007526EF /* VTBothTeamsTableViewCell.h */,
+				AEB6EAD42383E5A8007526EF /* VTBothTeamsTableViewCell.m */,
+				AEB6EAD52383E5A8007526EF /* VTTimePortionTableViewCell.h */,
+				AEB6EAD92383E5A8007526EF /* VTTimePortionTableViewCell.m */,
+				AEB6EAD62383E5A8007526EF /* VTScoringSaveTableViewCell.h */,
+				AEB6EADA2383E5A8007526EF /* VTScoringSaveTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E214BAD324213D24A84939BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16B5CAF451D7D3A6B06F4335 /* Pods_PocketVolleyballScout.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +330,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEB6EA782383DE8B007526EF /* Build configuration list for PBXNativeTarget "PocketVolleyballScout" */;
 			buildPhases = (
+				7835111D3EEA7320632C6E95 /* [CP] Check Pods Manifest.lock */,
 				AEB6EA5B2383DE87007526EF /* Sources */,
 				AEB6EA5C2383DE87007526EF /* Frameworks */,
 				AEB6EA5D2383DE87007526EF /* Resources */,
+				21363D4390324E0CCAB9A707 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -117,6 +366,9 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				ja,
+				ko,
 			);
 			mainGroup = AEB6EA562383DE87007526EF;
 			productRefGroup = AEB6EA602383DE87007526EF /* Products */;
@@ -133,43 +385,100 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEB6EA722383DE8B007526EF /* LaunchScreen.storyboard in Resources */,
 				AEB6EA6F2383DE8B007526EF /* Assets.xcassets in Resources */,
-				AEB6EA6D2383DE88007526EF /* Main.storyboard in Resources */,
+				AEB6EAC82383E54B007526EF /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21363D4390324E0CCAB9A707 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PocketVolleyballScout/Pods-PocketVolleyballScout-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PocketVolleyballScout/Pods-PocketVolleyballScout-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PocketVolleyballScout/Pods-PocketVolleyballScout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7835111D3EEA7320632C6E95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PocketVolleyballScout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AEB6EA5B2383DE87007526EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEB6EA6A2383DE88007526EF /* ViewController.m in Sources */,
-				AEB6EA642383DE87007526EF /* AppDelegate.m in Sources */,
+				AEB6EA9D2383E212007526EF /* MBProgressHUD+VTNJ.m in Sources */,
+				AEB6EAA42383E212007526EF /* NSArray+log.m in Sources */,
+				AEB6EA9C2383E212007526EF /* VTUIUtilities.m in Sources */,
+				AEB6EAB62383E472007526EF /* VTMineViewController.m in Sources */,
+				AEB6EAC12383E514007526EF /* VTRecordTableViewCell.m in Sources */,
+				AEB6EAE12383E5A8007526EF /* VTScoringSaveTableViewCell.m in Sources */,
+				AEB6EA7D2383E12D007526EF /* AppDelegate.m in Sources */,
+				AEB6EAC02383E514007526EF /* VTRecordViewController.m in Sources */,
+				AEB6EADD2383E5A8007526EF /* VTScorecardViewController.m in Sources */,
 				AEB6EA752383DE8B007526EF /* main.m in Sources */,
-				AEB6EA672383DE87007526EF /* SceneDelegate.m in Sources */,
+				AEB6EAB32383E472007526EF /* VTSetViewModel.m in Sources */,
+				AEB6EAB72383E472007526EF /* VTLoginTableViewCell.m in Sources */,
+				AEB6EADE2383E5A8007526EF /* VTBothTeamsTableViewCell.m in Sources */,
+				AEB6EAB42383E472007526EF /* VTPasswordChangeViewController.m in Sources */,
+				AEB6EA992383E212007526EF /* NSDictionary+log.m in Sources */,
+				AEB6EADB2383E5A8007526EF /* VTScorecardModel.m in Sources */,
+				AEB6EADC2383E5A8007526EF /* VTScorecardViewModel.m in Sources */,
+				AEB6EA9F2383E212007526EF /* VTNDHTTPClient.m in Sources */,
+				AEB6EA9E2383E212007526EF /* VTBaseViewController.m in Sources */,
+				AEB6EA9B2383E212007526EF /* VTTabBarController.m in Sources */,
+				AEB6EA9A2383E212007526EF /* VTHBTool.m in Sources */,
+				AEB6EADF2383E5A8007526EF /* VTScoringPartTableViewCell.m in Sources */,
+				AEB6EAB52383E472007526EF /* VTLoginViewController.m in Sources */,
+				AEB6EAE02383E5A8007526EF /* VTTimePortionTableViewCell.m in Sources */,
+				AEB6EAA02383E212007526EF /* CalendarTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AEB6EA6B2383DE88007526EF /* Main.storyboard */ = {
+		AEB6EAC32383E54B007526EF /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AEB6EA6C2383DE88007526EF /* Base */,
+				AEB6EAC42383E54B007526EF /* zh-Hans */,
+				AEB6EAC52383E54B007526EF /* ja */,
+				AEB6EAC62383E54B007526EF /* en */,
+				AEB6EAC72383E54B007526EF /* ko */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AEB6EA702383DE8B007526EF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AEB6EA712383DE8B007526EF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -287,14 +596,21 @@
 		};
 		AEB6EA792383DE8B007526EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34C2F693CE22346253830808 /* Pods-PocketVolleyballScout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VWNPTX8H3L;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScout/Common/VT_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketVolleyballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PocketVolleyballScout/Common/JPush",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketVolleyballScout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,14 +620,21 @@
 		};
 		AEB6EA7A2383DE8B007526EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3110E4F790F083DC8C6F9F54 /* Pods-PocketVolleyballScout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VWNPTX8H3L;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScout/Common/VT_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketVolleyballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PocketVolleyballScout/Common/JPush",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketVolleyballScout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
