@@ -1,14 +1,14 @@
 //
-//  HVTool.m
+//  HBTool.m
 //  communityVehicleManagement
 //
 //  Created by 褚红彪 on 2019/6/1.
 //  Copyright © 2019年 hb. All rights reserved.
 //
 
-#import "VTHVTool.h"
+#import "VTHBTool.h"
 
-@implementation VTHVTool
+@implementation VTHBTool
 //得到资源目录（新建的plist文件）
 + (NSString *)getDataSourcePath:(NSString *) sourceName andType:(NSString *) fileType{
     NSString *path = [[NSBundle mainBundle] pathForResource:sourceName ofType:fileType];

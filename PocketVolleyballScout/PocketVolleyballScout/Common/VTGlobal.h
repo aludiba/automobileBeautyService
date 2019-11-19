@@ -15,7 +15,7 @@
 #import <YYModel/YYModel.h>
 #import "VTNDHTTPClient.h"
 #import "MBProgressHUD+VTNJ.h"
-#import "VTHVTool.h"
+#import "VTHBTool.h"
 #import "CalendarTool.h"
 #import "VTUIUtilities.h"
 #import "VTTabBarController.h"
