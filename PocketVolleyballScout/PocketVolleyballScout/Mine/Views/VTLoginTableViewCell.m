@@ -29,7 +29,7 @@
     return self;
 }
 - (void)VTsetContent{
-    self.contentView.backgroundColor = VTH_Color(242, 242, 242, 242);
+    self.contentView.backgroundColor = [UIColor whiteColor];
     [self.contentView addSubview:self.VTbackView];
     [self.VTbackView addSubview:self.VTaccountLable];
     [self.VTbackView addSubview:self.VTaccountTextField];
@@ -179,10 +179,8 @@
 - (UIView *)VTbackView{
     if (!_VTbackView) {
         _VTbackView = [[UIView alloc] init];
-        _VTbackView.backgroundColor = [UIColor systemRedColor];
-        _VTbackView.layer.borderColor = [UIColor systemGreenColor].CGColor;
-        _VTbackView.layer.borderWidth = 1.5f;
-        _VTbackView.layer.cornerRadius = 16.0f;
+        _VTbackView.backgroundColor = VTH_Color(180, 177, 158, 1);
+        _VTbackView.layer.cornerRadius = 8.0f;
         _VTbackView.layer.masksToBounds = YES;
     }
     return _VTbackView;
@@ -191,7 +189,7 @@
     if (!_VTaccountLable) {
         _VTaccountLable = [[UILabel alloc] init];
         _VTaccountLable.text = NSLocalizedString(@"账号", nil);
-        _VTaccountLable.textColor = [UIColor systemYellowColor];
+        _VTaccountLable.textColor = [UIColor whiteColor];
         _VTaccountLable.font = [UIFont systemFontOfSize:17];
     }
     return _VTaccountLable;
@@ -202,7 +200,7 @@
         _VTaccountTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
         _VTaccountTextField.tag = 98;
         _VTaccountTextField.delegate = self;
-        _VTaccountTextField.textColor = [UIColor systemYellowColor];
+        _VTaccountTextField.textColor = [UIColor blackColor];
         _VTaccountTextField.font = [UIFont systemFontOfSize:17];
         _VTaccountTextField.placeholder = NSLocalizedString(@"请输入账号", nil);
     }
@@ -212,7 +210,7 @@
     if (!_VTpasswordLable) {
         _VTpasswordLable = [[UILabel alloc] init];
         _VTpasswordLable.text = NSLocalizedString(@"密码", nil);
-        _VTpasswordLable.textColor = [UIColor systemYellowColor];
+        _VTpasswordLable.textColor = [UIColor whiteColor];
         _VTpasswordLable.font = [UIFont systemFontOfSize:17];
     }
     return _VTpasswordLable;
@@ -223,7 +221,7 @@
         _VTVTpasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
         _VTVTpasswordTextField.tag = 99;
         _VTVTpasswordTextField.delegate = self;
-        _VTVTpasswordTextField.textColor = [UIColor systemYellowColor];
+        _VTVTpasswordTextField.textColor = [UIColor blackColor];
         _VTVTpasswordTextField.font = [UIFont systemFontOfSize:17];
         _VTVTpasswordTextField.placeholder = NSLocalizedString(@"请输入密码", nil);
         _VTVTpasswordTextField.secureTextEntry = YES;
@@ -235,12 +233,10 @@
         _VTloginButton = [[UIButton alloc] init];
         _VTloginButton.tag = 100;
         _VTloginButton.backgroundColor = [UIColor whiteColor];
-        [_VTloginButton setTitleColor:[UIColor systemYellowColor] forState:UIControlStateNormal];
+        [_VTloginButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_VTloginButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
-        _VTloginButton.layer.cornerRadius = 12.0f;
+        _VTloginButton.layer.cornerRadius = 8.0f;
         _VTloginButton.layer.masksToBounds = YES;
-        _VTloginButton.layer.borderColor = [UIColor systemOrangeColor].CGColor;
-        _VTloginButton.layer.borderWidth = 2.0f;
         [_VTloginButton setTitle:NSLocalizedString(@"登录", nil) forState:UIControlStateNormal];
         [_VTloginButton addTarget:self action:@selector(VTbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -251,12 +247,10 @@
         _VTregisteredButton = [[UIButton alloc] init];
         _VTregisteredButton.tag = 101;
         _VTregisteredButton.backgroundColor = [UIColor whiteColor];
-        [_VTregisteredButton setTitleColor:[UIColor systemYellowColor] forState:UIControlStateNormal];
+        [_VTregisteredButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_VTregisteredButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
-        _VTregisteredButton.layer.cornerRadius = 12.0f;
+        _VTregisteredButton.layer.cornerRadius = 8.0f;
         _VTregisteredButton.layer.masksToBounds = YES;
-        _VTregisteredButton.layer.borderColor = [UIColor systemOrangeColor].CGColor;
-        _VTregisteredButton.layer.borderWidth = 2.0f;
         [_VTregisteredButton setTitle:NSLocalizedString(@"注册", nil) forState:UIControlStateNormal];
         [_VTregisteredButton addTarget:self action:@selector(VTbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }

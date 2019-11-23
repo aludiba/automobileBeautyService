@@ -22,7 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor cyanColor];
     self.title = NSLocalizedString(@"密码修改", nil);
     [self VTsetContent];
 }
@@ -131,10 +130,8 @@
     if (!_VTVToldPasswordTextField) {
         _VTVToldPasswordTextField = [[UITextField alloc] init];
         _VTVToldPasswordTextField.secureTextEntry = YES;
-        _VTVToldPasswordTextField.backgroundColor = [UIColor whiteColor];
+        _VTVToldPasswordTextField.backgroundColor = [UIColor cyanColor];
         _VTVToldPasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _VTVToldPasswordTextField.layer.borderColor = [UIColor grayColor].CGColor;
-        _VTVToldPasswordTextField.layer.borderWidth = 2.0f;
         _VTVToldPasswordTextField.layer.cornerRadius = 12.0f;
         _VTVToldPasswordTextField.layer.masksToBounds = YES;
         _VTVToldPasswordTextField.tag = 100;
@@ -148,11 +145,9 @@
 - (UITextField *)VTVTcurrentPasswordTextField{
     if (!_VTVTcurrentPasswordTextField) {
         _VTVTcurrentPasswordTextField = [[UITextField alloc] init];
-       _VTVTcurrentPasswordTextField.backgroundColor = [UIColor whiteColor];
+       _VTVTcurrentPasswordTextField.backgroundColor = [UIColor cyanColor];
         _VTVTcurrentPasswordTextField.secureTextEntry = YES;
         _VTVTcurrentPasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _VTVTcurrentPasswordTextField.layer.borderColor = [UIColor grayColor].CGColor;
-        _VTVTcurrentPasswordTextField.layer.borderWidth = 2.0f;
         _VTVTcurrentPasswordTextField.layer.cornerRadius = 12.0f;
         _VTVTcurrentPasswordTextField.layer.masksToBounds = YES;
         _VTVTcurrentPasswordTextField.tag = 101;
@@ -166,11 +161,9 @@
 - (UITextField *)VTVTconfirmPasswordTextField{
     if (!_VTVTconfirmPasswordTextField) {
         _VTVTconfirmPasswordTextField = [[UITextField alloc] init];
-       _VTVTconfirmPasswordTextField.backgroundColor = [UIColor whiteColor];
+       _VTVTconfirmPasswordTextField.backgroundColor = [UIColor cyanColor];
         _VTVTconfirmPasswordTextField.secureTextEntry = YES;
         _VTVTconfirmPasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _VTVTconfirmPasswordTextField.layer.borderColor = [UIColor grayColor].CGColor;
-        _VTVTconfirmPasswordTextField.layer.borderWidth = 2.0f;
         _VTVTconfirmPasswordTextField.layer.cornerRadius = 12.0f;
         _VTVTconfirmPasswordTextField.layer.masksToBounds = YES;
         _VTVTconfirmPasswordTextField.tag = 102;
@@ -184,13 +177,11 @@
 - (UIButton *)VTsureButton{
     if (!_VTsureButton) {
         _VTsureButton = [[UIButton alloc] init];
-        _VTsureButton.backgroundColor = [UIColor whiteColor];
+        _VTsureButton.backgroundColor = [UIColor cyanColor];
         [_VTsureButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_VTsureButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
         _VTsureButton.layer.cornerRadius = 8.0f;
         _VTsureButton.layer.masksToBounds = YES;
-        _VTsureButton.layer.borderColor = [UIColor grayColor].CGColor;
-        _VTsureButton.layer.borderWidth = 2.0f;
         [_VTsureButton setTitle:NSLocalizedString(@"确定", nil) forState:UIControlStateNormal];
         [_VTsureButton addTarget:self action:@selector(VTbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }

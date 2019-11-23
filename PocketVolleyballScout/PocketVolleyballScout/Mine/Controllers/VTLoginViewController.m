@@ -57,7 +57,7 @@
 - (UITableView *)VTmainTable{
     if (!_VTmainTable) {
         _VTmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
-        _VTmainTable.backgroundColor = VTH_Color(242, 242, 242, 242);
+        _VTmainTable.backgroundColor = [UIColor whiteColor];
         _VTmainTable.showsVerticalScrollIndicator = NO;
         _VTmainTable.scrollEnabled = NO;
         _VTmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;

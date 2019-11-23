@@ -50,11 +50,11 @@
         make.top.equalTo(self.mas_topLayoutGuideTop);
         make.leading.equalTo(self.view);
         make.trailing.equalTo(self.view);
-        make.height.mas_equalTo(VTHEIGHT / 3);
+        make.height.mas_equalTo(VTHEIGHT / 3 - 40);
     }];
     [self.VTImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.VTBackView);
-        make.centerY.equalTo(self.VTBackView);
+        make.top.equalTo(self.VTBackView).offset(VTHeightNavContentBar + 20);
         make.width.mas_equalTo(100);
         make.height.mas_equalTo(100);
     }];
@@ -77,16 +77,16 @@
         make.height.mas_equalTo(29);
     }];
     [self.VTChangePasswordButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.VTBackView.mas_bottom).offset(15);
-        make.leading.equalTo(self.view).offset(16);
-        make.width.mas_equalTo((VTWIDTH - 52) * 0.5);
-        make.height.mas_equalTo(120);
+        make.top.equalTo(self.VTBackView.mas_bottom).offset(30);
+        make.leading.equalTo(self.view).offset(64);
+        make.width.mas_equalTo(VTWIDTH - 128);
+        make.height.mas_equalTo(60);
     }];
     [self.VTSignOutButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.VTBackView.mas_bottom).offset(15);
-        make.trailing.equalTo(self.view).offset(-16);
-        make.width.mas_equalTo((VTWIDTH - 52) * 0.5);
-        make.height.mas_equalTo(120);
+        make.top.equalTo(self.VTChangePasswordButton.mas_bottom).offset(30);
+        make.leading.equalTo(self.view).offset(64);
+        make.width.mas_equalTo(VTWIDTH - 128);
+        make.height.mas_equalTo(60);
     }];
     UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeKeyBoard)];
     [self.view addGestureRecognizer:tapGes];
@@ -157,7 +157,7 @@
 - (UIView *)VTBackView{
     if (!_VTBackView) {
         _VTBackView = [[UIView alloc] init];
-        _VTBackView.backgroundColor = [UIColor systemRedColor];
+        _VTBackView.backgroundColor = VTH_Color(180, 177, 158, 1);
     }
     return _VTBackView;
 }
@@ -173,7 +173,7 @@
 - (UILabel *)VTNickNameLabel{
     if (!_VTNickNameLabel) {
         _VTNickNameLabel = [[UILabel alloc] init];
-        _VTNickNameLabel.textColor = [UIColor greenColor];
+        _VTNickNameLabel.textColor = [UIColor cyanColor];
         _VTNickNameLabel.font = [UIFont systemFontOfSize:18];
         _VTNickNameLabel.numberOfLines = 0;
         _VTNickNameLabel.text = NSLocalizedString(@"昵称", nil);
@@ -185,16 +185,16 @@
     if (!_VTNicknameTextField) {
         _VTNicknameTextField = [[UITextField alloc] init];
         _VTNicknameTextField.delegate = self;
-        _VTNicknameTextField.textColor = [UIColor systemYellowColor];
+        _VTNicknameTextField.textColor = [UIColor systemPurpleColor];
         _VTNicknameTextField.font = [UIFont systemFontOfSize:22];
         _VTNicknameTextField.backgroundColor = [UIColor cyanColor];
-        _VTNicknameTextField.layer.borderColor = [UIColor systemPurpleColor].CGColor;
-        _VTNicknameTextField.layer.borderWidth = 2.0f;
-        _VTNicknameTextField.layer.cornerRadius = 6.0f;
+        _VTNicknameTextField.layer.borderColor = [UIColor systemRedColor].CGColor;
+        _VTNicknameTextField.layer.borderWidth = 1.0f;
+        _VTNicknameTextField.layer.cornerRadius = 4.0f;
         _VTNicknameTextField.layer.masksToBounds = YES;
         BmobUser *user = [BmobUser currentUser];
         if ([[user objectForKey:@"username"] length]) {
-            _VTNicknameTextField.text = [user objectForKey:@"username"];
+            _VTNicknameTextField.text = [NSString stringWithFormat:@"   %@",[user objectForKey:@"username"]];
             self.VTnickname = [user objectForKey:@"username"];
         }
     _VTNicknameTextField.userInteractionEnabled = NO;
@@ -213,12 +213,12 @@
     if (!_VTChangePasswordButton) {
         _VTChangePasswordButton = [[UIButton alloc] init];
         [_VTChangePasswordButton setTitle:NSLocalizedString(@"更改密码", nil) forState:UIControlStateNormal];
-        [_VTChangePasswordButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [_VTChangePasswordButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _VTChangePasswordButton.titleLabel.font = [UIFont systemFontOfSize:20];
         _VTChangePasswordButton.titleLabel.numberOfLines = 0;
         _VTChangePasswordButton.backgroundColor = [UIColor cyanColor];
         _VTChangePasswordButton.layer.masksToBounds = YES;
-        _VTChangePasswordButton.layer.cornerRadius = 16.0f;
+        _VTChangePasswordButton.layer.cornerRadius = 4.0f;
         [_VTChangePasswordButton addTarget:self action:@selector(VTChangePasswordAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _VTChangePasswordButton;
@@ -227,12 +227,12 @@
     if (!_VTSignOutButton) {
         _VTSignOutButton = [[UIButton alloc] init];
         [_VTSignOutButton setTitle:NSLocalizedString(@"退出", nil) forState:UIControlStateNormal];
-        [_VTSignOutButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [_VTSignOutButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _VTSignOutButton.titleLabel.font = [UIFont systemFontOfSize:20];
-     _VTSignOutButton.titleLabel.numberOfLines = 0;
+        _VTSignOutButton.titleLabel.numberOfLines = 0;
         _VTSignOutButton.backgroundColor = [UIColor cyanColor];
         _VTSignOutButton.layer.masksToBounds = YES;
-        _VTSignOutButton.layer.cornerRadius = 16.0f;
+        _VTSignOutButton.layer.cornerRadius = 4.0f;
         [_VTSignOutButton addTarget:self action:@selector(VTSignOutAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _VTSignOutButton;

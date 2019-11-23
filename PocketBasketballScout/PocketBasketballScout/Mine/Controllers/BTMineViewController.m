@@ -229,7 +229,7 @@
         [_BTSignOutButton setTitle:NSLocalizedString(@"退出", nil) forState:UIControlStateNormal];
         [_BTSignOutButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         _BTSignOutButton.titleLabel.font = [UIFont systemFontOfSize:20];
-     _BTSignOutButton.titleLabel.numberOfLines = 0;
+        _BTSignOutButton.titleLabel.numberOfLines = 0;
         _BTSignOutButton.backgroundColor = [UIColor cyanColor];
         _BTSignOutButton.layer.masksToBounds = YES;
         _BTSignOutButton.layer.cornerRadius = 16.0f;

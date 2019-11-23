@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -119,7 +119,6 @@
 				34C2F693CE22346253830808 /* Pods-PocketVolleyballScout.debug.xcconfig */,
 				3110E4F790F083DC8C6F9F54 /* Pods-PocketVolleyballScout.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -220,8 +219,8 @@
 		AEB6EAB02383E472007526EF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AEB6EAB12383E472007526EF /* VTLoginTableViewCell.m */,
 				AEB6EAB22383E472007526EF /* VTLoginTableViewCell.h */,
+				AEB6EAB12383E472007526EF /* VTLoginTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
