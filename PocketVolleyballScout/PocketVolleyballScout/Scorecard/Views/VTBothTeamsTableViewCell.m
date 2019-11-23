@@ -13,6 +13,7 @@
 @property(nonatomic, strong)UILabel *VTRightTeamLabel;//右边队伍名称标识
 @property(nonatomic, strong)UITextField *VTRightTeamField;//右边队伍
 @property(nonatomic, copy)NSString *VTRightTeamName;//右边队伍名称
+@property(nonatomic, strong)UILabel *VTWhichGameLabel;//哪一局比赛
 @property(nonatomic, strong)UILabel *VTVSLabel;//VS标识
 @property(nonatomic, strong)UILabel *VTLeftTeamLabel;//左边队伍名称标识
 @property(nonatomic, strong)UITextField *VTLeftTeamField;//左边队伍
@@ -35,6 +36,7 @@
 - (void)VTSetContentView{
     [self.contentView addSubview:self.VTRightTeamLabel];
     [self.contentView addSubview:self.VTRightTeamField];
+    [self.contentView addSubview:self.VTWhichGameLabel];
     [self.contentView addSubview:self.VTVSLabel];
     [self.contentView addSubview:self.VTLeftTeamLabel];
     [self.contentView addSubview:self.VTLeftTeamField];
@@ -51,6 +53,12 @@
         make.width.mas_equalTo((VTWIDTH - 200) * 0.5);
         make.height.mas_equalTo(36);
         make.bottom.equalTo(self.contentView).offset(-15);
+    }];
+    [self.VTWhichGameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.contentView);
+        make.top.equalTo(self.VTRightTeamLabel).offset(2);
+        make.width.mas_equalTo(60);
+        make.height.mas_equalTo(30);
     }];
     [self.VTVSLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.contentView);
@@ -120,12 +128,23 @@
         _VTRightTeamField.delegate = self;
         _VTRightTeamField.textColor = [UIColor blackColor];
         _VTRightTeamField.font = [UIFont systemFontOfSize:15];
-        _VTRightTeamField.layer.cornerRadius = 8.0f;
+        _VTRightTeamField.layer.cornerRadius = 6.0f;
         _VTRightTeamField.layer.masksToBounds = YES;
-        _VTRightTeamField.layer.borderColor = [UIColor systemRedColor].CGColor;
+        _VTRightTeamField.layer.borderColor = [UIColor blueColor].CGColor;
         _VTRightTeamField.layer.borderWidth = 2.0f;
     }
     return _VTRightTeamField;
+}
+- (UILabel *)VTWhichGameLabel{
+    if (!_VTWhichGameLabel) {
+        _VTWhichGameLabel = [[UILabel alloc] init];
+        _VTWhichGameLabel.textColor = [UIColor systemPurpleColor];
+        _VTWhichGameLabel.font = [UIFont boldSystemFontOfSize:22];
+        _VTWhichGameLabel.textAlignment = NSTextAlignmentCenter;
+        _VTWhichGameLabel.text = @"No.1";
+        _VTWhichGameLabel.numberOfLines = 0;
+    }
+    return _VTWhichGameLabel;
 }
 - (UILabel *)VTVSLabel{
     if (!_VTVSLabel) {
@@ -155,9 +174,9 @@
         _VTLeftTeamField.delegate = self;
         _VTLeftTeamField.textColor = [UIColor blackColor];
         _VTLeftTeamField.font = [UIFont systemFontOfSize:15];
-        _VTLeftTeamField.layer.cornerRadius = 8.0f;
+        _VTLeftTeamField.layer.cornerRadius = 6.0f;
         _VTLeftTeamField.layer.masksToBounds = YES;
-        _VTLeftTeamField.layer.borderColor = [UIColor systemRedColor].CGColor;
+        _VTLeftTeamField.layer.borderColor = [UIColor blueColor].CGColor;
         _VTLeftTeamField.layer.borderWidth = 2.0f;
     }
     return _VTLeftTeamField;

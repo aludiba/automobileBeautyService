@@ -25,7 +25,7 @@
 @implementation BTScoringPartTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = [UIColor cyanColor];
+        self.contentView.backgroundColor = [UIColor whiteColor];
         [self BTSetContentView];
     }
     return self;

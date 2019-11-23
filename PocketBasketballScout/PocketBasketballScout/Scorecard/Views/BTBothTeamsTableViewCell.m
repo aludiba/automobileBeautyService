@@ -21,7 +21,7 @@
 @implementation BTBothTeamsTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = [UIColor cyanColor];
+        self.contentView.backgroundColor = [UIColor whiteColor];
         [self BTSetContentView];
     }
     return self;
@@ -106,7 +106,7 @@
     if (!_BTRightTeamLabel) {
         _BTRightTeamLabel = [[UILabel alloc] init];
         _BTRightTeamLabel.textColor = [UIColor redColor];
-        _BTRightTeamLabel.font = [UIFont systemFontOfSize:20];
+        _BTRightTeamLabel.font = [UIFont systemFontOfSize:15];
         _BTRightTeamLabel.textAlignment = NSTextAlignmentCenter;
         _BTRightTeamLabel.text = NSLocalizedString(@"请输入队伍1名称", nil);
         _BTRightTeamLabel.numberOfLines = 0;
@@ -120,10 +120,10 @@
         _BTRightTeamField.delegate = self;
         _BTRightTeamField.textColor = [UIColor blackColor];
         _BTRightTeamField.font = [UIFont systemFontOfSize:15];
-        _BTRightTeamField.layer.cornerRadius = 8.0f;
+        _BTRightTeamField.layer.cornerRadius = 4.0f;
         _BTRightTeamField.layer.masksToBounds = YES;
-        _BTRightTeamField.layer.borderColor = [UIColor systemRedColor].CGColor;
-        _BTRightTeamField.layer.borderWidth = 2.0f;
+        _BTRightTeamField.layer.borderColor = [UIColor systemPurpleColor].CGColor;
+        _BTRightTeamField.layer.borderWidth = 1.5f;
     }
     return _BTRightTeamField;
 }
@@ -141,7 +141,7 @@
     if (!_BTLeftTeamLabel) {
         _BTLeftTeamLabel = [[UILabel alloc] init];
         _BTLeftTeamLabel.textColor = [UIColor redColor];
-        _BTLeftTeamLabel.font = [UIFont systemFontOfSize:20];
+        _BTLeftTeamLabel.font = [UIFont systemFontOfSize:15];
         _BTLeftTeamLabel.textAlignment = NSTextAlignmentCenter;
         _BTLeftTeamLabel.text = NSLocalizedString(@"请输入队伍2名称", nil);
         _BTLeftTeamLabel.numberOfLines = 0;
@@ -155,10 +155,10 @@
         _BTLeftTeamField.delegate = self;
         _BTLeftTeamField.textColor = [UIColor blackColor];
         _BTLeftTeamField.font = [UIFont systemFontOfSize:15];
-        _BTLeftTeamField.layer.cornerRadius = 8.0f;
+        _BTLeftTeamField.layer.cornerRadius = 4.0f;
         _BTLeftTeamField.layer.masksToBounds = YES;
-        _BTLeftTeamField.layer.borderColor = [UIColor systemRedColor].CGColor;
-        _BTLeftTeamField.layer.borderWidth = 2.0f;
+        _BTLeftTeamField.layer.borderColor = [UIColor systemPurpleColor].CGColor;
+        _BTLeftTeamField.layer.borderWidth = 1.5f;
     }
     return _BTLeftTeamField;
 }

@@ -101,9 +101,9 @@
         [_VTStartGameButton setBackgroundColor:[UIColor systemGreenColor]];
         [_VTStartGameButton setTitle:NSLocalizedString(@"开始", nil) forState:UIControlStateNormal];
         _VTStartGameButton.titleLabel.font = [UIFont systemFontOfSize:20];
-        [_VTStartGameButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_VTStartGameButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _VTStartGameButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-        _VTStartGameButton.layer.cornerRadius = 29.0f;
+        _VTStartGameButton.layer.cornerRadius = 14.5f;
         _VTStartGameButton.layer.masksToBounds = YES;
         _VTStartGameButton.tag = 99;
         [_VTStartGameButton addTarget:self action:@selector(VTTimeControlAction:) forControlEvents:UIControlEventTouchUpInside];
@@ -113,14 +113,12 @@
 - (UILabel *)VTDisplayTimeLengthLabel{
     if (!_VTDisplayTimeLengthLabel) {
         _VTDisplayTimeLengthLabel = [[UILabel alloc] init];
-        _VTDisplayTimeLengthLabel.textColor = [UIColor blackColor];
-        _VTDisplayTimeLengthLabel.backgroundColor = [UIColor cyanColor];
+        _VTDisplayTimeLengthLabel.textColor = [UIColor whiteColor];
+        _VTDisplayTimeLengthLabel.backgroundColor = VTH_Color(180, 177, 158, 1);
         _VTDisplayTimeLengthLabel.font = [UIFont boldSystemFontOfSize:25];
         _VTDisplayTimeLengthLabel.textAlignment = NSTextAlignmentCenter;
-        _VTDisplayTimeLengthLabel.layer.cornerRadius = 8.0f;
+        _VTDisplayTimeLengthLabel.layer.cornerRadius = 4.0f;
         _VTDisplayTimeLengthLabel.layer.masksToBounds = YES;
-        _VTDisplayTimeLengthLabel.layer.borderColor = [UIColor systemRedColor].CGColor;
-        _VTDisplayTimeLengthLabel.layer.borderWidth = 2.0f;
         _VTDisplayTimeLengthLabel.numberOfLines = 0;
     }
     return _VTDisplayTimeLengthLabel;
@@ -131,9 +129,9 @@
         [_VTEndGameButton setBackgroundColor:[UIColor systemRedColor]];
         [_VTEndGameButton setTitle:NSLocalizedString(@"停止", nil) forState:UIControlStateNormal];
         _VTEndGameButton.titleLabel.font = [UIFont systemFontOfSize:20];
-        [_VTEndGameButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_VTEndGameButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _VTEndGameButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-        _VTEndGameButton.layer.cornerRadius = 29.0f;
+        _VTEndGameButton.layer.cornerRadius = 14.5f;
         _VTEndGameButton.layer.masksToBounds = YES;
         _VTEndGameButton.tag = 100;
         [_VTEndGameButton addTarget:self action:@selector(VTTimeControlAction:) forControlEvents:UIControlEventTouchUpInside];

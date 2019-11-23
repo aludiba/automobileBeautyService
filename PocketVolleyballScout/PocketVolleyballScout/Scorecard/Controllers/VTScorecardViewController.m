@@ -40,6 +40,7 @@
     [super viewDidAppear:animated];
 }
 - (void)VTSetContentView{
+    self.view.backgroundColor = VTH_Color(180, 177, 158, 1);
     [self.VTviewDataArray removeAllObjects];
     
     VTScorecardViewModel *VTBothTeamsModel = [[VTScorecardViewModel alloc] init];
@@ -260,7 +261,7 @@
         _VTmainTable.estimatedRowHeight = 55.0f;
         _VTmainTable.tableHeaderView = [[UIView alloc] init];
         _VTmainTable.tableFooterView = [[UIView alloc] init];
-        _VTmainTable.layer.cornerRadius = 16.0f;
+        _VTmainTable.layer.cornerRadius = 8.0f;
         _VTmainTable.layer.masksToBounds = YES;
         [_VTmainTable registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
        [_VTmainTable registerClass:[VTBothTeamsTableViewCell class] forCellReuseIdentifier:@"VTBothTeamsTableViewCell"];

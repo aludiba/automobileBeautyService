@@ -132,11 +132,11 @@
 - (UILabel *)VTRightScoreLabel{
     if (!_VTRightScoreLabel) {
         _VTRightScoreLabel = [[UILabel alloc] init];
-        _VTRightScoreLabel.backgroundColor = VTH_Color(0, 204, 131, 1);
+        _VTRightScoreLabel.backgroundColor = VTH_Color(180, 177, 158, 1);
         _VTRightScoreLabel.textColor = [UIColor whiteColor];
         _VTRightScoreLabel.font = [UIFont boldSystemFontOfSize:30];
         _VTRightScoreLabel.textAlignment = NSTextAlignmentCenter;
-        _VTRightScoreLabel.layer.cornerRadius = 8.0f;
+        _VTRightScoreLabel.layer.cornerRadius = 4.0f;
         _VTRightScoreLabel.layer.masksToBounds = YES;
     }
     return _VTRightScoreLabel;
@@ -147,10 +147,10 @@
         _VTRightScoreAddButton.titleLabel.font = [UIFont boldSystemFontOfSize:22];
         _VTRightScoreAddButton.titleLabel.textAlignment = NSTextAlignmentCenter;
         [_VTRightScoreAddButton setTitle:@"+1" forState:UIControlStateNormal];
-        [_VTRightScoreAddButton setTitleColor:[UIColor systemGreenColor] forState:UIControlStateNormal];
+        [_VTRightScoreAddButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         _VTRightScoreAddButton.layer.cornerRadius = 6.0f;
         _VTRightScoreAddButton.layer.masksToBounds = YES;
-        _VTRightScoreAddButton.layer.borderColor = [UIColor systemRedColor].CGColor;
+        _VTRightScoreAddButton.layer.borderColor = [UIColor blueColor].CGColor;
         _VTRightScoreAddButton.layer.borderWidth = 2.0f;
         _VTRightScoreAddButton.tag = 99;
         [_VTRightScoreAddButton addTarget:self action:@selector(VTScorerRefresh:) forControlEvents:UIControlEventTouchUpInside];
@@ -166,7 +166,7 @@
         [_VTRightScoreAddTwoButton setTitle:@"+2" forState:UIControlStateNormal];
         _VTRightScoreAddTwoButton.layer.cornerRadius = 6.0f;
         _VTRightScoreAddTwoButton.layer.masksToBounds = YES;
-        _VTRightScoreAddTwoButton.layer.borderColor = [UIColor systemRedColor].CGColor;
+        _VTRightScoreAddTwoButton.layer.borderColor = [UIColor blueColor].CGColor;
         _VTRightScoreAddTwoButton.layer.borderWidth = 2.0f;
         _VTRightScoreAddTwoButton.tag = 100;
         [_VTRightScoreAddTwoButton addTarget:self action:@selector(VTScorerRefresh:) forControlEvents:UIControlEventTouchUpInside];
@@ -182,7 +182,7 @@
         [_VTRightScoreAddThreeButton setTitle:@"+3" forState:UIControlStateNormal];
         _VTRightScoreAddThreeButton.layer.cornerRadius = 6.0f;
         _VTRightScoreAddThreeButton.layer.masksToBounds = YES;
-        _VTRightScoreAddThreeButton.layer.borderColor = [UIColor systemRedColor].CGColor;
+        _VTRightScoreAddThreeButton.layer.borderColor = [UIColor blueColor].CGColor;
         _VTRightScoreAddThreeButton.layer.borderWidth = 2.0f;
         _VTRightScoreAddThreeButton.tag = 101;
         [_VTRightScoreAddThreeButton addTarget:self action:@selector(VTScorerRefresh:) forControlEvents:UIControlEventTouchUpInside];
@@ -193,7 +193,7 @@
     if (!_VTVSLabel) {
         _VTVSLabel = [[UILabel alloc] init];
         _VTVSLabel.textColor = [UIColor systemRedColor];
-        _VTVSLabel.font = [UIFont boldSystemFontOfSize:38];
+        _VTVSLabel.font = [UIFont boldSystemFontOfSize:40];
         _VTVSLabel.textAlignment = NSTextAlignmentCenter;
         _VTVSLabel.text = @":";
     }
@@ -202,11 +202,11 @@
 - (UILabel *)VTLeftScoreLabel{
     if (!_VTLeftScoreLabel) {
         _VTLeftScoreLabel = [[UILabel alloc] init];
-        _VTLeftScoreLabel.backgroundColor = VTH_Color(0, 204, 131, 1);
+        _VTLeftScoreLabel.backgroundColor = VTH_Color(180, 177, 158, 1);
         _VTLeftScoreLabel.textColor = [UIColor whiteColor];
         _VTLeftScoreLabel.font = [UIFont boldSystemFontOfSize:30];
         _VTLeftScoreLabel.textAlignment = NSTextAlignmentCenter;
-        _VTLeftScoreLabel.layer.cornerRadius = 8.0f;
+        _VTLeftScoreLabel.layer.cornerRadius = 4.0f;
         _VTLeftScoreLabel.layer.masksToBounds = YES;
     }
     return _VTLeftScoreLabel;
@@ -214,13 +214,13 @@
 - (UIButton *)VTLeftScoreAddButton{
     if (!_VTLeftScoreAddButton) {
         _VTLeftScoreAddButton = [[UIButton alloc] init];
-        [_VTLeftScoreAddButton setTitleColor:[UIColor systemGreenColor] forState:UIControlStateNormal];
+        [_VTLeftScoreAddButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         _VTLeftScoreAddButton.titleLabel.font = [UIFont boldSystemFontOfSize:22];
         _VTLeftScoreAddButton.titleLabel.textAlignment = NSTextAlignmentCenter;
         [_VTLeftScoreAddButton setTitle:@"+1" forState:UIControlStateNormal];
         _VTLeftScoreAddButton.layer.cornerRadius = 6.0f;
         _VTLeftScoreAddButton.layer.masksToBounds = YES;
-        _VTLeftScoreAddButton.layer.borderColor = [UIColor systemRedColor].CGColor;
+        _VTLeftScoreAddButton.layer.borderColor = [UIColor blueColor].CGColor;
         _VTLeftScoreAddButton.layer.borderWidth = 2.0f;
         _VTLeftScoreAddButton.tag = 102;
         [_VTLeftScoreAddButton addTarget:self action:@selector(VTScorerRefresh:) forControlEvents:UIControlEventTouchUpInside];
@@ -236,7 +236,7 @@
         [_VTLeftScoreAddTwoButton setTitle:@"+2" forState:UIControlStateNormal];
         _VTLeftScoreAddTwoButton.layer.cornerRadius = 6.0f;
         _VTLeftScoreAddTwoButton.layer.masksToBounds = YES;
-        _VTLeftScoreAddTwoButton.layer.borderColor = [UIColor systemRedColor].CGColor;
+        _VTLeftScoreAddTwoButton.layer.borderColor = [UIColor blueColor].CGColor;
         _VTLeftScoreAddTwoButton.layer.borderWidth = 2.0f;
         _VTLeftScoreAddTwoButton.tag = 103;
         [_VTLeftScoreAddTwoButton addTarget:self action:@selector(VTScorerRefresh:) forControlEvents:UIControlEventTouchUpInside];
@@ -252,7 +252,7 @@
         [_VTLeftScoreAddThreeButton setTitle:@"+3" forState:UIControlStateNormal];
         _VTLeftScoreAddThreeButton.layer.cornerRadius = 6.0f;
         _VTLeftScoreAddThreeButton.layer.masksToBounds = YES;
-        _VTLeftScoreAddThreeButton.layer.borderColor = [UIColor systemRedColor].CGColor;
+        _VTLeftScoreAddThreeButton.layer.borderColor = [UIColor blueColor].CGColor;
         _VTLeftScoreAddThreeButton.layer.borderWidth = 2.0f;
         _VTLeftScoreAddThreeButton.tag = 104;
         [_VTLeftScoreAddThreeButton addTarget:self action:@selector(VTScorerRefresh:) forControlEvents:UIControlEventTouchUpInside];

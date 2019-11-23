@@ -302,10 +302,10 @@
 		AEB6EAD22383E5A8007526EF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AEB6EAD32383E5A8007526EF /* VTScoringPartTableViewCell.h */,
-				AEB6EAD72383E5A8007526EF /* VTScoringPartTableViewCell.m */,
 				AEB6EAD82383E5A8007526EF /* VTBothTeamsTableViewCell.h */,
 				AEB6EAD42383E5A8007526EF /* VTBothTeamsTableViewCell.m */,
+				AEB6EAD32383E5A8007526EF /* VTScoringPartTableViewCell.h */,
+				AEB6EAD72383E5A8007526EF /* VTScoringPartTableViewCell.m */,
 				AEB6EAD52383E5A8007526EF /* VTTimePortionTableViewCell.h */,
 				AEB6EAD92383E5A8007526EF /* VTTimePortionTableViewCell.m */,
 				AEB6EAD62383E5A8007526EF /* VTScoringSaveTableViewCell.h */,

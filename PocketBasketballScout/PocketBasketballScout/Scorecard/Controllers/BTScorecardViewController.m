@@ -34,6 +34,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = NSLocalizedString(@"比分", nil);
+    self.view.backgroundColor = [UIColor cyanColor];
     [self BTSetContentView];
 }
 - (void)viewDidAppear:(BOOL)animated{
@@ -251,7 +252,7 @@
 - (UITableView *)BTmainTable{
     if (!_BTmainTable) {
         _BTmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-        _BTmainTable.backgroundColor = [UIColor cyanColor];
+        _BTmainTable.backgroundColor = [UIColor whiteColor];
         _BTmainTable.showsVerticalScrollIndicator = NO;
         _BTmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
         _BTmainTable.delegate = self;
@@ -260,7 +261,7 @@
         _BTmainTable.estimatedRowHeight = 55.0f;
         _BTmainTable.tableHeaderView = [[UIView alloc] init];
         _BTmainTable.tableFooterView = [[UIView alloc] init];
-        _BTmainTable.layer.cornerRadius = 16.0f;
+        _BTmainTable.layer.cornerRadius = 4.0f;
         _BTmainTable.layer.masksToBounds = YES;
         [_BTmainTable registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
        [_BTmainTable registerClass:[BTBothTeamsTableViewCell class] forCellReuseIdentifier:@"BTBothTeamsTableViewCell"];

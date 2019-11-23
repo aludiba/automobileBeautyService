@@ -25,10 +25,10 @@
     [self.contentView addSubview:self.VTSaveButton];
     
     [self.VTSaveButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.contentView).offset(120);
+        make.leading.equalTo(self.contentView).offset(110);
         make.top.equalTo(self.contentView).offset(20);
-        make.trailing.equalTo(self.contentView).offset(-120);
-        make.height.mas_equalTo(44);
+        make.trailing.equalTo(self.contentView).offset(-110);
+        make.height.mas_equalTo(50);
         make.bottom.equalTo(self.contentView).offset(-10);
     }];
 }
@@ -47,12 +47,10 @@
         _VTSaveButton = [[UIButton alloc] init];
         [_VTSaveButton setTitle:NSLocalizedString(@"保存比赛结果", nil) forState:UIControlStateNormal];
         [_VTSaveButton setTitleColor:[UIColor cyanColor] forState:UIControlStateNormal];
-        _VTSaveButton.backgroundColor = [UIColor systemPurpleColor];
-        _VTSaveButton.titleLabel.font = [UIFont boldSystemFontOfSize:20];
+        _VTSaveButton.backgroundColor = [UIColor systemBlueColor];
+        _VTSaveButton.titleLabel.font = [UIFont boldSystemFontOfSize:18];
         _VTSaveButton.layer.cornerRadius = 8.0f;
         _VTSaveButton.layer.masksToBounds = YES;
-        _VTSaveButton.layer.borderColor = [UIColor systemRedColor].CGColor;
-        _VTSaveButton.layer.borderWidth = 2.0f;
         _VTSaveButton.titleLabel.textAlignment = NSTextAlignmentCenter;
         [_VTSaveButton addTarget:self action:@selector(VTSave:) forControlEvents:UIControlEventTouchUpInside];
     }

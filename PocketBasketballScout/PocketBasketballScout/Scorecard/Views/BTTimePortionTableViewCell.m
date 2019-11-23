@@ -19,7 +19,7 @@
 @implementation BTTimePortionTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = [UIColor cyanColor];
+        self.contentView.backgroundColor = [UIColor whiteColor];
         [self BTSetContentView];
         self.BTisStop = YES;
             //类方法会自动释放。
