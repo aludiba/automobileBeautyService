@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VTBureauPointsModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSInteger, VTScorecardCellType) {
     VTScorecardCellTypeBothTeams,
     VTScorecardCellTypeScoringPart,
     VTScorecardCellTypeTimePortion,
+    VTScorecardCellTypeSummary,
     VTScorecardCellTypeSave,
 };
 @interface VTScorecardViewModel : NSObject
@@ -24,6 +26,8 @@ typedef NS_ENUM(NSInteger, VTScorecardCellType) {
 @property(nonatomic, assign)NSUInteger VTLeftscore;//左队得分
 @property(nonatomic, assign)NSUInteger VTIndexTime;//时间状态
 @property(nonatomic, assign)VTScorecardCellType cellType;//cell类型
+@property(nonatomic, strong)NSMutableArray *VTBureauPointsArray;//每一局得分的记录数组
+@property(nonatomic, copy)NSString *totalAcoreString;//总得分
 @end
 
 NS_ASSUME_NONNULL_END

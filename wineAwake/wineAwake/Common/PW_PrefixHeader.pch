@@ -1,0 +1,12 @@
+//
+//  PW_PrefixHeader.pch
+//  Simple Diary
+//
+//  Created by bykj on 2019/7/20.
+//  Copyright © 2019 hgg. All rights reserved.
+//
+
+#ifndef PW_PrefixHeader_pch
+#define PW_PrefixHeader_pch
+#import "PWGlobal.h"
+#endif /* PW_PrefixHeader_pch */

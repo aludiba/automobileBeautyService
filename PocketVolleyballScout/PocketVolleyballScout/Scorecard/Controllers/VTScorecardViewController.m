@@ -11,6 +11,7 @@
 #import "VTBothTeamsTableViewCell.h"
 #import "VTScoringPartTableViewCell.h"
 #import "VTTimePortionTableViewCell.h"
+#import "VTScoreSummaryTableViewCell.h"
 #import "VTScoringSaveTableViewCell.h"
 #import "VTScorecardModel.h"
 #import "VTScorecardViewModel.h"
@@ -61,6 +62,11 @@
     VTTimePortionModel.VTTimeStatisticsDateString = @"00:00";
     [self.VTviewDataArray addObject:VTTimePortionModel];
     
+    VTScorecardViewModel *VTSummaryModel = [[VTScorecardViewModel alloc] init];
+    VTSummaryModel.cellType = VTScorecardCellTypeSummary;
+    VTSummaryModel.VTBureauPointsArray = [self.VTScoreModel.VTBureauPointsArray mutableCopy];
+    [self.VTviewDataArray addObject:VTSummaryModel];
+
     VTScorecardViewModel *VTScoringSaveModel = [[VTScorecardViewModel alloc] init];
     VTScoringSaveModel.cellType = VTScorecardCellTypeSave;
     [self.VTviewDataArray addObject:VTScoringSaveModel];
@@ -224,6 +230,11 @@
         };
         cell.VTModel = VTViewModel;
         return cell;
+    }else if (VTViewModel.cellType == VTScorecardCellTypeSummary){
+        VTScoreSummaryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VTScoreSummaryTableViewCell" forIndexPath:indexPath];
+        cell.VTModel = VTViewModel;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cell;
     }else{
         VTScoringSaveTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VTScoringSaveTableViewCell" forIndexPath:indexPath];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -267,6 +278,7 @@
        [_VTmainTable registerClass:[VTBothTeamsTableViewCell class] forCellReuseIdentifier:@"VTBothTeamsTableViewCell"];
         [_VTmainTable registerClass:[VTScoringPartTableViewCell class] forCellReuseIdentifier:@"VTScoringPartTableViewCell"];
         [_VTmainTable registerClass:[VTTimePortionTableViewCell class] forCellReuseIdentifier:@"VTTimePortionTableViewCell"];
+        [_VTmainTable registerClass:[VTScoreSummaryTableViewCell class] forCellReuseIdentifier:@"VTScoreSummaryTableViewCell"];
         [_VTmainTable registerClass:[VTScoringSaveTableViewCell class] forCellReuseIdentifier:@"VTScoringSaveTableViewCell"];
         [self.view addSubview:_VTmainTable];
         [_VTmainTable mas_makeConstraints:^(MASConstraintMaker *make) {

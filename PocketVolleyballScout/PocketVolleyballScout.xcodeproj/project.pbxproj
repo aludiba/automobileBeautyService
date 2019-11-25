@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8C4BD9B80B55EF7388AD75BB /* Pods_PocketVolleyballScout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B5CAF451D7D3A6B06F4335 /* Pods_PocketVolleyballScout.framework */; };
+		AE120A08238B6F8500DCD896 /* VTScoreSummaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE120A07238B6F8500DCD896 /* VTScoreSummaryTableViewCell.m */; };
+		AE120A0B238B6FF900DCD896 /* VTBureauPointsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE120A0A238B6FF900DCD896 /* VTBureauPointsModel.m */; };
 		AEB6EA6F2383DE8B007526EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB6EA6E2383DE8B007526EF /* Assets.xcassets */; };
 		AEB6EA752383DE8B007526EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA742383DE8B007526EF /* main.m */; };
 		AEB6EA7D2383E12D007526EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA7C2383E12D007526EF /* AppDelegate.m */; };
@@ -41,6 +43,10 @@
 		16B5CAF451D7D3A6B06F4335 /* Pods_PocketVolleyballScout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketVolleyballScout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3110E4F790F083DC8C6F9F54 /* Pods-PocketVolleyballScout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketVolleyballScout.release.xcconfig"; path = "Target Support Files/Pods-PocketVolleyballScout/Pods-PocketVolleyballScout.release.xcconfig"; sourceTree = "<group>"; };
 		34C2F693CE22346253830808 /* Pods-PocketVolleyballScout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketVolleyballScout.debug.xcconfig"; path = "Target Support Files/Pods-PocketVolleyballScout/Pods-PocketVolleyballScout.debug.xcconfig"; sourceTree = "<group>"; };
+		AE120A06238B6F8500DCD896 /* VTScoreSummaryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTScoreSummaryTableViewCell.h; sourceTree = "<group>"; };
+		AE120A07238B6F8500DCD896 /* VTScoreSummaryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTScoreSummaryTableViewCell.m; sourceTree = "<group>"; };
+		AE120A09238B6FF900DCD896 /* VTBureauPointsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTBureauPointsModel.h; sourceTree = "<group>"; };
+		AE120A0A238B6FF900DCD896 /* VTBureauPointsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTBureauPointsModel.m; sourceTree = "<group>"; };
 		AEB6EA5F2383DE87007526EF /* PocketVolleyballScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketVolleyballScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB6EA6E2383DE8B007526EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEB6EA732383DE8B007526EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -286,6 +292,8 @@
 				AEB6EACB2383E5A8007526EF /* VTScorecardModel.m */,
 				AEB6EACC2383E5A8007526EF /* VTScorecardViewModel.h */,
 				AEB6EACE2383E5A8007526EF /* VTScorecardViewModel.m */,
+				AE120A09238B6FF900DCD896 /* VTBureauPointsModel.h */,
+				AE120A0A238B6FF900DCD896 /* VTBureauPointsModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -308,6 +316,8 @@
 				AEB6EAD72383E5A8007526EF /* VTScoringPartTableViewCell.m */,
 				AEB6EAD52383E5A8007526EF /* VTTimePortionTableViewCell.h */,
 				AEB6EAD92383E5A8007526EF /* VTTimePortionTableViewCell.m */,
+				AE120A06238B6F8500DCD896 /* VTScoreSummaryTableViewCell.h */,
+				AE120A07238B6F8500DCD896 /* VTScoreSummaryTableViewCell.m */,
 				AEB6EAD62383E5A8007526EF /* VTScoringSaveTableViewCell.h */,
 				AEB6EADA2383E5A8007526EF /* VTScoringSaveTableViewCell.m */,
 			);
@@ -454,11 +464,13 @@
 				AEB6EAB42383E472007526EF /* VTPasswordChangeViewController.m in Sources */,
 				AEB6EA992383E212007526EF /* NSDictionary+log.m in Sources */,
 				AEB6EADB2383E5A8007526EF /* VTScorecardModel.m in Sources */,
+				AE120A0B238B6FF900DCD896 /* VTBureauPointsModel.m in Sources */,
 				AEB6EADC2383E5A8007526EF /* VTScorecardViewModel.m in Sources */,
 				AEB6EA9F2383E212007526EF /* VTNDHTTPClient.m in Sources */,
 				AEB6EA9E2383E212007526EF /* VTBaseViewController.m in Sources */,
 				AEB6EA9B2383E212007526EF /* VTTabBarController.m in Sources */,
 				AEB6EA9A2383E212007526EF /* VTHBTool.m in Sources */,
+				AE120A08238B6F8500DCD896 /* VTScoreSummaryTableViewCell.m in Sources */,
 				AEB6EADF2383E5A8007526EF /* VTScoringPartTableViewCell.m in Sources */,
 				AEB6EAB52383E472007526EF /* VTLoginViewController.m in Sources */,
 				AEB6EAE02383E5A8007526EF /* VTTimePortionTableViewCell.m in Sources */,

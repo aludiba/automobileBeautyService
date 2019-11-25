@@ -194,8 +194,8 @@
 		AEFF896A23498EE700B81B11 /* AKUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKUIUtilities.h; sourceTree = "<group>"; };
 		AEFF896D23498FB500B81B11 /* AKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKBaseViewController.m; sourceTree = "<group>"; };
 		AEFF896E23498FB500B81B11 /* AKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKBaseViewController.h; sourceTree = "<group>"; };
-		AEFF89702349920E00B81B11 /* AKGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKGlobal.h; sourceTree = "<group>"; };
-		AEFF8971234992E500B81B11 /* AK_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AK_PrefixHeader.pch; sourceTree = "<group>"; };
+		AEFF89702349920E00B81B11 /* PWGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWGlobal.h; sourceTree = "<group>"; };
+		AEFF8971234992E500B81B11 /* PW_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PW_PrefixHeader.pch; sourceTree = "<group>"; };
 		AEFF8972234993A000B81B11 /* AKTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKTabBarController.h; sourceTree = "<group>"; };
 		AEFF8973234993A000B81B11 /* AKTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKTabBarController.m; sourceTree = "<group>"; };
 		AEFF89752349947200B81B11 /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
@@ -346,8 +346,8 @@
 			isa = PBXGroup;
 			children = (
 				7247444523549AFA009BBE40 /* JPush */,
-				AEFF8971234992E500B81B11 /* AK_PrefixHeader.pch */,
-				AEFF89702349920E00B81B11 /* AKGlobal.h */,
+				AEFF8971234992E500B81B11 /* PW_PrefixHeader.pch */,
+				AEFF89702349920E00B81B11 /* PWGlobal.h */,
 				AEFF895B2349850100B81B11 /* AKNDHTTPClient.h */,
 				AEFF895C2349850100B81B11 /* AKNDHTTPClient.m */,
 				AEFF89752349947200B81B11 /* CalendarTool.h */,
@@ -888,7 +888,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = V4XX2ANH6A;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/wineAwake/Common/AK_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/wineAwake/Common/PW_PrefixHeader.pch";
 				INFOPLIST_FILE = wineAwake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -918,7 +918,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = V4XX2ANH6A;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/wineAwake/Common/AK_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/wineAwake/Common/PW_PrefixHeader.pch";
 				INFOPLIST_FILE = wineAwake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

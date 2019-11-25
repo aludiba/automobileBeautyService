@@ -52,7 +52,7 @@
         make.top.equalTo(self.VTRightTeamLabel.mas_bottom).offset(15);
         make.width.mas_equalTo((VTWIDTH - 200) * 0.5);
         make.height.mas_equalTo(36);
-        make.bottom.equalTo(self.contentView).offset(-15);
+        make.bottom.equalTo(self.contentView).offset(-5);
     }];
     [self.VTWhichGameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.contentView);
