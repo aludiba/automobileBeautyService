@@ -160,6 +160,7 @@
                    PVScorecardViewModel *temaAModel = self.PVviewDataArray[2];
                     
                     PVScorecardViewModel *temaBModel = self.PVviewDataArray[3];
+                    
                     NSUInteger homeTemaScore = 0;
                     NSUInteger visitingTeamScore = 0;
                     if (temaAModel.teamStatusType == PVScorecardHomeTeamOrVisitingTeamTypeHome && temaBModel.teamStatusType == PVScorecardHomeTeamOrVisitingTeamTypeVisiting) {
@@ -292,6 +293,7 @@
     self.PVscorecardModel.PVtotalTimeString = timeStatisticsDateModel.PVtimeStatisticsDateString;
     NSUInteger loc = self.PVscorecardModel.PVteamANameScore + self.PVscorecardModel.PVteamBNameScore;
     [self.PVscorecardModel.PVBureauPointsArray removeObjectsInRange:NSMakeRange(loc, self.PVscorecardModel.PVBureauPointsArray.count - loc)];
+    
     NSDate *nowDate = [[NSDate alloc] init];
     NSString *nowDateString = [PVUIUtilities PVformattedTimeStringWithDate:nowDate format:@"yyyy/MM/dd HH:mm"];
     self.PVscorecardModel.PVendTimeString = nowDateString;

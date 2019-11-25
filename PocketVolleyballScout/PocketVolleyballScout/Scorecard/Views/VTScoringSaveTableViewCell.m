@@ -26,10 +26,10 @@
     
     [self.VTSaveButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.contentView).offset(110);
-        make.top.equalTo(self.contentView).offset(20);
+        make.top.equalTo(self.contentView).offset(5);
         make.trailing.equalTo(self.contentView).offset(-110);
         make.height.mas_equalTo(50);
-        make.bottom.equalTo(self.contentView).offset(-10);
+        make.bottom.equalTo(self.contentView).offset(-5);
     }];
 }
 - (void)VTSave:(UIButton *)sender{

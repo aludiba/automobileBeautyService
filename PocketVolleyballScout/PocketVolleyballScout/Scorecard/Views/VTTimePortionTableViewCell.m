@@ -7,6 +7,7 @@
 //
 
 #import "VTTimePortionTableViewCell.h"
+#import "VTScorecardModel.h"
 #import "VTScorecardViewModel.h"
 
 @interface VTTimePortionTableViewCell()
@@ -38,14 +39,14 @@
     
     [self.VTStartGameButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.contentView).offset(50);
-        make.top.equalTo(self.contentView).offset(30);
+        make.top.equalTo(self.contentView).offset(20);
         make.width.mas_equalTo(60);
         make.height.mas_equalTo(60);
-        make.bottom.equalTo(self.contentView).offset(-15);
+        make.bottom.equalTo(self.contentView).offset(-5);
     }];
     [self.VTEndGameButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.trailing.equalTo(self.contentView).offset(-50);
-        make.top.equalTo(self.contentView).offset(30);
+        make.top.equalTo(self.contentView).offset(20);
         make.width.mas_equalTo(60);
         make.height.mas_equalTo(60);
     }];
@@ -75,13 +76,14 @@
     NSString *dateString = [NSString stringWithFormat:@"%.2d:%.2d:%.2d",self.VTHours,self.VTMinutes,self.VTSeconds];
     self.VTModel.VTTimeStatisticsDateString = dateString;
     self.VTModel.VTTimeStatisticsDate = [VTUIUtilities VTdateFromString:dateString formate:@"HH:mm:ss"];
+    self.VTScoreModel.VTTotalTimeString = dateString;
     self.VTDisplayTimeLengthLabel.text = dateString;
 }
 - (void)VTTimeControlAction:(UIButton *)sender{
     if (sender.tag == 99) {
-        self.VTSeconds = 0;
-        self.VTMinutes = 0;
-        self.VTHours = 0;
+//        self.VTSeconds = 0;
+//        self.VTMinutes = 0;
+//        self.VTHours = 0;
         self.VTIndex = 0;
         [self.VTTimer setFireDate:[NSDate date]];
         self.VTisStop = NO;

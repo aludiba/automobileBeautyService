@@ -18,6 +18,7 @@ typedef NS_ENUM(NSInteger, VTScorecardCellType) {
     VTScorecardCellTypeSave,
 };
 @interface VTScorecardViewModel : NSObject
+@property(nonatomic, copy)NSString *VTbureauString;//当前是第几局
 @property(nonatomic, copy)NSString *VTTeamRightName;//右队队名
 @property(nonatomic, copy)NSString *VTTeamLeftName;//左队队名
 @property(nonatomic, strong)NSDate *VTTimeStatisticsDate;//比赛时长

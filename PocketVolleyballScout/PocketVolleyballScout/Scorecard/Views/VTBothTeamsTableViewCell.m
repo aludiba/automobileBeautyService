@@ -7,6 +7,7 @@
 //
 
 #import "VTBothTeamsTableViewCell.h"
+#import "VTScorecardModel.h"
 #import "VTScorecardViewModel.h"
 
 @interface VTBothTeamsTableViewCell()<UITextFieldDelegate>
@@ -30,8 +31,9 @@
 #pragma mark - action
 - (void)setVTModel:(VTScorecardViewModel *)VTModel{
     _VTModel = VTModel;
-    self.VTRightTeamField.text = _VTModel.VTTeamRightName;
-    self.VTLeftTeamField.text = _VTModel.VTTeamLeftName;
+    self.VTWhichGameLabel.text = _VTModel.VTbureauString;
+    self.VTRightTeamField.text = [NSString stringWithFormat:@"   %@",_VTModel.VTTeamRightName];
+    self.VTLeftTeamField.text = [NSString stringWithFormat:@"   %@",_VTModel.VTTeamLeftName];
 }
 - (void)VTSetContentView{
     [self.contentView addSubview:self.VTRightTeamLabel];
@@ -88,6 +90,8 @@
     }
     self.VTModel.VTTeamRightName = self.VTRightTeamName;
     self.VTModel.VTTeamLeftName = self.VTLeftTeamName;
+    self.VTScoreModel.VTTeamRightName = self.VTRightTeamName;
+    self.VTScoreModel.VTTeamLeftName = self.VTLeftTeamName;
     return YES;
 }
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField{
@@ -98,6 +102,8 @@
     }
     self.VTModel.VTTeamRightName = self.VTRightTeamName;
     self.VTModel.VTTeamLeftName = self.VTLeftTeamName;
+    self.VTScoreModel.VTTeamRightName = self.VTRightTeamName;
+    self.VTScoreModel.VTTeamLeftName = self.VTLeftTeamName;
     return YES;
 }
 - (void)textFieldDidEndEditing:(UITextField *)textField{
@@ -108,6 +114,8 @@
     }
     self.VTModel.VTTeamRightName = self.VTRightTeamName;
     self.VTModel.VTTeamLeftName = self.VTLeftTeamName;
+    self.VTScoreModel.VTTeamRightName = self.VTRightTeamName;
+    self.VTScoreModel.VTTeamLeftName = self.VTLeftTeamName;
 }
 #pragma mark - 属性懒加载
 - (UILabel *)VTRightTeamLabel{
@@ -141,7 +149,6 @@
         _VTWhichGameLabel.textColor = [UIColor systemPurpleColor];
         _VTWhichGameLabel.font = [UIFont boldSystemFontOfSize:22];
         _VTWhichGameLabel.textAlignment = NSTextAlignmentCenter;
-        _VTWhichGameLabel.text = @"No.1";
         _VTWhichGameLabel.numberOfLines = 0;
     }
     return _VTWhichGameLabel;

@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+@class VTScorecardModel;
 @class VTScorecardViewModel;
 @class VTTimePortionTableViewCell;
 typedef void(^VTScorecardTimingBlock)(VTTimePortionTableViewCell *cell);
 @interface VTTimePortionTableViewCell : UITableViewCell
+@property(nonatomic, strong)VTScorecardModel *VTScoreModel;//记录模型
 @property(nonatomic, strong)VTScorecardViewModel *VTModel;//数据模型
 @property(nonatomic, assign)int VTHours;//时
 @property(nonatomic, assign)int VTMinutes;//分秒

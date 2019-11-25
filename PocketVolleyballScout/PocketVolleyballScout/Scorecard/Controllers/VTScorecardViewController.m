@@ -46,8 +46,9 @@
     
     VTScorecardViewModel *VTBothTeamsModel = [[VTScorecardViewModel alloc] init];
     VTBothTeamsModel.cellType = VTScorecardCellTypeBothTeams;
-    VTBothTeamsModel.VTTeamRightName = @"";
-    VTBothTeamsModel.VTTeamLeftName = @"";
+    VTBothTeamsModel.VTbureauString = self.VTScoreModel.VTbureauString;
+    VTBothTeamsModel.VTTeamRightName = self.VTScoreModel.VTTeamRightName;
+    VTBothTeamsModel.VTTeamLeftName = self.VTScoreModel.VTTeamLeftName;
     [self.VTviewDataArray addObject:VTBothTeamsModel];
     
     VTScorecardViewModel *VTScoringPartModel = [[VTScorecardViewModel alloc] init];
@@ -59,7 +60,7 @@
     
     VTScorecardViewModel *VTTimePortionModel = [[VTScorecardViewModel alloc] init];
     VTTimePortionModel.cellType = VTScorecardCellTypeTimePortion;
-    VTTimePortionModel.VTTimeStatisticsDateString = @"00:00";
+    VTTimePortionModel.VTTimeStatisticsDateString = self.VTScoreModel.VTTotalTimeString;
     [self.VTviewDataArray addObject:VTTimePortionModel];
     
     VTScorecardViewModel *VTSummaryModel = [[VTScorecardViewModel alloc] init];
@@ -98,16 +99,23 @@
     }
 }
 - (void)VTsaveAction{
+    VTScorecardViewModel *summaryModel = self.VTviewDataArray[self.VTviewDataArray.count - 2];
+    if ((self.VTScoreModel.VTTeamRightScore < 3) && (self.VTScoreModel.VTTeamLeftScore < 3)) {
+        [MBProgressHUD VTshowReminderText:NSLocalizedString(@"比赛还未结束", nil)];
+        return;
+    }
+    
     VTScorecardViewModel *viewModel = self.VTviewDataArray[0];
     self.VTScoreModel.VTTeamRightName = viewModel.VTTeamRightName;
     self.VTScoreModel.VTTeamLeftName = viewModel.VTTeamLeftName;
     
-    VTScorecardViewModel *viewModel1 = self.VTviewDataArray[1];
-    self.VTScoreModel.VTTeamRightScore = viewModel1.VTRightscore;
-    self.VTScoreModel.VTTeamLeftScore = viewModel1.VTLeftscore;
+    NSArray *array = [self.VTScoreModel.totalAcoreString componentsSeparatedByString:@" "];
+    NSString *scoreString = array[0];
+    NSArray *array1 = [scoreString componentsSeparatedByString:@"-"];
+    self.VTScoreModel.VTTeamRightScore = [array1[0] integerValue];
+    self.VTScoreModel.VTTeamLeftScore = [array1[1] integerValue];
     
-    VTScorecardViewModel *viewModel2 = self.VTviewDataArray[2];
-    self.VTScoreModel.VTTotalTimeString = viewModel2.VTTimeStatisticsDateString;
+        
     NSDate *nowDate = [[NSDate alloc] init];
     NSString *nowDateString = [VTUIUtilities VTformattedTimeStringWithDate:nowDate format:@"yyyy/MM/dd HH:mm"];
     self.VTScoreModel.VTEndTimeString = nowDateString;
@@ -194,6 +202,7 @@
         VTBothTeamsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VTBothTeamsTableViewCell" forIndexPath:indexPath];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.VTModel = VTViewModel;
+        cell.VTScoreModel = self.VTScoreModel;
         return cell;
     }else if (VTViewModel.cellType == VTScorecardCellTypeScoringPart){
         VTScoringPartTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VTScoringPartTableViewCell" forIndexPath:indexPath];
@@ -202,21 +211,68 @@
         return cell;
     }else if (VTViewModel.cellType == VTScorecardCellTypeTimePortion){
         VTTimePortionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VTTimePortionTableViewCell" forIndexPath:indexPath];
+        cell.VTScoreModel = self.VTScoreModel;
         self.VTtimer = cell.VTTimer;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         __weak typeof(self) weakSelf = self;
         cell.VTScorecardTimingB = ^(VTTimePortionTableViewCell * _Nonnull cell) {
             if (cell.VTIndex == 0) {
                 self.VTScoreModel.VTNatureCompetition = @"";
-                self.VTScoreModel.VTTeamRightName = @"";//右边队伍名称
+//                self.VTScoreModel.VTTeamRightName = @"";//右边队伍名称
                 self.VTScoreModel.VTTeamRightScore = 0;//右边队伍得分
-                self.VTScoreModel.VTTeamLeftName = @"";//左边队伍名称
+//                self.VTScoreModel.VTTeamLeftName = @"";//左边队伍名称
                 self.VTScoreModel.VTTeamLeftScore = 0;//左边队伍得分
-                self.VTScoreModel.VTTotalTimeString = @"";//总共用时
-                self.VTScoreModel.VTEndTimeString = @"";//结束时
+//                self.VTScoreModel.VTTotalTimeString = @"";//总共用时
+//                self.VTScoreModel.VTEndTimeString = @"";//结束时
                 [weakSelf VTSetContentView];
             }else{
-                UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"温馨提示", nil) message:NSLocalizedString(@"是否保存比赛结果?", nil) preferredStyle:UIAlertControllerStyleAlert];
+                VTBureauPointsModel *pointsModel = [[VTBureauPointsModel alloc] init];
+            [self.VTScoreModel.VTBureauPointsArray addObject:pointsModel];
+                pointsModel.VTIndex = self.VTScoreModel.VTBureauPointsArray.count - 1;
+                
+                VTScorecardViewModel *temaModel = self.VTviewDataArray[1];
+                
+                NSUInteger homeTemaScore = 0;//主队得分
+                NSUInteger visitingTeamScore = 0;//客队得分
+                
+                homeTemaScore = temaModel.VTRightscore;
+                visitingTeamScore = temaModel.VTLeftscore;
+                pointsModel.VTtBureauScoreString = [NSString stringWithFormat:@"%ld-%ld",homeTemaScore,visitingTeamScore];
+                if (homeTemaScore > visitingTeamScore) {
+                    pointsModel.whichWinType = scorecardWhichWinTypeMain;
+                }else{
+                    pointsModel.whichWinType = scorecardWhichWinTypeGuest;
+                }
+                
+                VTScorecardViewModel *summaryModel = self.VTviewDataArray[self.VTviewDataArray.count - 2];
+                summaryModel.VTBureauPointsArray = [self.VTScoreModel.VTBureauPointsArray mutableCopy];
+                
+                if (self.VTScoreModel.VTBureauPointsArray.count > 2) {
+                    NSUInteger homeTeamScores = 0;
+                    NSUInteger visitingTeamScored = 0;
+                    for (int i = 0; i < self.VTScoreModel.VTBureauPointsArray.count; i++) {
+                        VTBureauPointsModel *pointsModel = self.VTScoreModel.VTBureauPointsArray[i];
+                        if (pointsModel.whichWinType == scorecardWhichWinTypeMain) {
+                            homeTeamScores++;
+                        }else{
+                            visitingTeamScored++;
+                        }
+                    }
+                    VTScorecardViewModel *summaryModel = self.VTviewDataArray[self.VTviewDataArray.count - 2];
+                    if (homeTeamScores > visitingTeamScored) {
+                        summaryModel.totalAcoreString = [NSString stringWithFormat:@"%ld-%ld   %@",homeTeamScores,visitingTeamScored,NSLocalizedString(@"主胜", nil)];
+                    }else{
+                        summaryModel.totalAcoreString = [NSString stringWithFormat:@"%ld-%ld   %@",homeTeamScores,visitingTeamScored,NSLocalizedString(@"客胜", nil)];
+                    }
+                    self.VTScoreModel.totalAcoreString = summaryModel.totalAcoreString;
+                    self.VTScoreModel.VTTeamRightScore = homeTeamScores;
+                   
+                    self.VTScoreModel.VTTeamLeftScore = visitingTeamScored;
+                }
+                self.VTScoreModel.VTbureauString = [NSString stringWithFormat:@"No.%ld",pointsModel.VTIndex + 2];
+                [weakSelf.VTmainTable reloadData];
+              if ((self.VTScoreModel.VTTeamRightScore == 3) || (self.VTScoreModel.VTTeamLeftScore == 3)) {
+                UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"温馨提示", nil) message:NSLocalizedString(@"胜负已分!是否保存比赛结果?", nil) preferredStyle:UIAlertControllerStyleAlert];
                 UIAlertAction *actionCancel = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
                     
                 }];
@@ -226,6 +282,7 @@
                 [alertVC addAction:actionCancel];
                 [alertVC addAction:actionSure];
                 [self presentViewController:alertVC animated:YES completion:nil];
+            }
             }
         };
         cell.VTModel = VTViewModel;
@@ -251,6 +308,11 @@
 - (VTScorecardModel *)VTScoreModel{
     if (!_VTScoreModel) {
         _VTScoreModel = [[VTScorecardModel alloc] init];
+        _VTScoreModel.VTbureauString = @"No.1";
+        _VTScoreModel.VTTeamRightName = @"";
+        _VTScoreModel.VTTeamLeftName = @"";
+        _VTScoreModel.VTBureauPointsArray = [[NSMutableArray alloc] init];
+        _VTScoreModel.VTTotalTimeString = @"00:00";
     }
     return _VTScoreModel;
 }

@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface VTScorecardModel : NSObject
 @property(nonatomic, copy)NSString *VTObjectId;//数据标识
 
+@property(nonatomic, copy)NSString *VTbureauString;//当前是第几局
 @property(nonatomic, copy)NSString *VTNatureCompetition;//比赛性质
 @property(nonatomic, copy)NSString *VTTeamRightName;//右边队伍名称
 @property(nonatomic, assign)NSUInteger VTTeamRightScore;//右边队伍得分

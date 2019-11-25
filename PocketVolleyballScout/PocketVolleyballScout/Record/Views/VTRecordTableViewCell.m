@@ -8,6 +8,7 @@
 
 #import "VTRecordTableViewCell.h"
 #import "VTScorecardModel.h"
+#import "VTBureauPointsModel.h"
 @interface VTRecordTableViewCell()
 @property(nonatomic, strong)UIView *VTBackView;//背景板
 @property(nonatomic, strong)UILabel *VTTitleLabel;//标题
@@ -19,6 +20,7 @@
 @property(nonatomic, strong)UILabel *VTVSLabel;//VS标识
 @property(nonatomic, strong)UILabel *VTLeftNameLabel;//左边队伍名称
 @property(nonatomic, strong)UILabel *VTLeftScoreLabel;//左边队伍得分
+@property(nonatomic, strong)UILabel *VTWithScoreLbl;//每局比分
 @end
 @implementation VTRecordTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -39,12 +41,14 @@
     [self.VTBackView addSubview:self.VTVSLabel];
     [self.VTBackView addSubview:self.VTLeftNameLabel];
     [self.VTBackView addSubview:self.VTLeftScoreLabel];
+    [self.VTBackView addSubview:self.VTWithScoreLbl];
+
     
     [self.VTBackView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.contentView).offset(20);
         make.top.equalTo(self.contentView).offset(10);
         make.trailing.equalTo(self.contentView).offset(-20);
-        make.height.mas_equalTo(254);
+        make.height.mas_equalTo(308);
         make.bottom.equalTo(self.contentView).offset(-10);
     }];
     [self.VTTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -71,8 +75,14 @@
         make.trailing.equalTo(self.VTBackView).offset(-16);
         make.height.mas_equalTo(20);
     }];
+    [self.VTWithScoreLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.VTElapsedTimeLabel.mas_bottom).offset(10);
+        make.leading.equalTo(self.VTBackView).offset(16);
+        make.trailing.equalTo(self.VTBackView).offset(-16);
+        make.height.mas_equalTo(44);
+    }];
     [self.VTRightNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.VTElapsedTimeLabel.mas_bottom).offset(20);
+        make.top.equalTo(self.VTWithScoreLbl.mas_bottom).offset(20);
         make.leading.equalTo(self.VTBackView).offset(16);
         make.width.mas_equalTo((VTWIDTH - 32 - 60) * 0.5);
         make.height.mas_equalTo(20);
@@ -90,7 +100,7 @@
         make.height.mas_equalTo(44);
     }];
     [self.VTLeftNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.VTElapsedTimeLabel.mas_bottom).offset(20);
+        make.top.equalTo(self.VTWithScoreLbl.mas_bottom).offset(20);
         make.trailing.equalTo(self.VTBackView).offset(-16);
         make.width.mas_equalTo((VTWIDTH - 32 - 60) * 0.5);
         make.height.mas_equalTo(20);
@@ -118,6 +128,13 @@
     self.VTRightScoreLabel.text = [NSString stringWithFormat:@"%ld",_VTModel.VTTeamRightScore];
     self.VTLeftNameLabel.text = _VTModel.VTTeamLeftName;
     self.VTLeftScoreLabel.text = [NSString stringWithFormat:@"%ld",_VTModel.VTTeamLeftScore];
+    
+    NSMutableString *withTheScoreString = [[NSMutableString alloc] init];
+    for (int i = 0; i < _VTModel.VTBureauPointsArray.count; i++) {
+        VTBureauPointsModel *model = _VTModel.VTBureauPointsArray[i];
+        [withTheScoreString appendString:[NSString stringWithFormat:@"%@ ",model.VTtBureauScoreString]];
+    }
+    self.VTWithScoreLbl.text = [NSString stringWithFormat:@"%@:\n%@",NSLocalizedString(@"每局比分", nil),withTheScoreString];
 }
 #pragma mark - 删除
 - (void)VTDeleteButton:(UIButton *)sender{
@@ -222,5 +239,15 @@
         _VTLeftScoreLabel.numberOfLines = 0;
     }
     return _VTLeftScoreLabel;
+}
+- (UILabel *)VTWithScoreLbl{
+    if (!_VTWithScoreLbl) {
+        _VTWithScoreLbl = [[UILabel alloc] init];
+        _VTWithScoreLbl.textColor = [UIColor systemOrangeColor];
+        _VTWithScoreLbl.font = [UIFont systemFontOfSize:18];
+        _VTWithScoreLbl.numberOfLines = 0;
+        _VTWithScoreLbl.textAlignment = NSTextAlignmentCenter;
+    }
+    return _VTWithScoreLbl;
 }
 @end

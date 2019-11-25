@@ -10,6 +10,7 @@
 #import "VTLoginViewController.h"
 #import "VTRecordTableViewCell.h"
 #import "VTScorecardModel.h"
+#import "VTBureauPointsModel.h"
 
 @interface VTRecordViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)NSMutableArray *VTDataArray;
@@ -69,6 +70,13 @@
                     model.VTTeamLeftScore = [[obj objectForKey:@"VTTeamLeftScore"] integerValue];
                     model.VTEndTimeString = [obj objectForKey:@"VTEndTimeString"];
                     model.VTTotalTimeString = [obj objectForKey:@"VTTotalTimeString"];
+                    model.VTBureauPointsArray = [[NSMutableArray alloc] init];
+                    NSArray *bureauPointsArray = [obj objectForKey:@"VTBureauPointsArray"];
+                       for (int i = 0; i < bureauPointsArray.count; i++) {
+                           NSDictionary *dic = bureauPointsArray[i];
+                           VTBureauPointsModel *pointModel = [VTBureauPointsModel yy_modelWithDictionary:dic];
+                           [model.VTBureauPointsArray addObject:pointModel];
+                       }
                     [self.VTDataArray addObject:model];
                     }
                 if (!self.VTDataArray.count) {

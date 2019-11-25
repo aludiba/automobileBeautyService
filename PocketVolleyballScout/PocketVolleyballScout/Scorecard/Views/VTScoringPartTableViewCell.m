@@ -12,11 +12,13 @@
 @interface VTScoringPartTableViewCell()
 @property(nonatomic, strong)UILabel *VTRightScoreLabel;//右边得分
 @property(nonatomic, strong)UIButton *VTRightScoreAddButton;//右边得1分按钮
+@property(nonatomic, strong)UIButton *VTRightScoreReductionButton;//右边减1分按钮
 
 @property(nonatomic, strong)UILabel *VTVSLabel;//VS标识
 
 @property(nonatomic, strong)UILabel *VTLeftScoreLabel;//左边得分
 @property(nonatomic, strong)UIButton *VTLeftScoreAddButton;//左边得1分按钮
+@property(nonatomic, strong)UIButton *VTLeftScoreReductionButton;//左边减1分按钮
 @end
 @implementation VTScoringPartTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -30,22 +32,30 @@
 - (void)VTSetContentView{
     [self.contentView addSubview:self.VTRightScoreLabel];
     [self.contentView addSubview:self.VTRightScoreAddButton];
+    [self.contentView addSubview:self.VTRightScoreReductionButton];
     
     [self.contentView addSubview:self.VTVSLabel];
     
     [self.contentView addSubview:self.VTLeftScoreLabel];
     [self.contentView addSubview:self.VTLeftScoreAddButton];
+    [self.contentView addSubview:self.VTLeftScoreReductionButton];
 
     
     [self.VTRightScoreLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.contentView).offset(32);
-        make.top.equalTo(self.contentView).offset(30);
+        make.top.equalTo(self.contentView).offset(15);
         make.width.mas_equalTo((VTWIDTH - 224) * 0.5);
         make.height.mas_equalTo(60);
     }];
     [self.VTRightScoreAddButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.VTRightScoreLabel);
         make.top.equalTo(self.VTRightScoreLabel.mas_bottom).offset(20);
+        make.width.mas_equalTo(60);
+        make.height.mas_equalTo(60);
+    }];
+    [self.VTRightScoreReductionButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.VTRightScoreLabel);
+        make.top.equalTo(self.VTRightScoreAddButton.mas_bottom).offset(10);
         make.width.mas_equalTo(60);
         make.height.mas_equalTo(60);
         make.bottom.equalTo(self.contentView).offset(-5);
@@ -58,7 +68,7 @@
     }];
     [self.VTLeftScoreLabel mas_makeConstraints:^(MASConstraintMaker *make) {
     make.trailing.equalTo(self.contentView).offset(-32);
-        make.top.equalTo(self.contentView).offset(30);
+        make.top.equalTo(self.contentView).offset(15);
         make.width.mas_equalTo((VTWIDTH - 224) * 0.5);
         make.height.mas_equalTo(60);
     }];
@@ -68,6 +78,12 @@
         make.width.mas_equalTo(60);
         make.height.mas_equalTo(60);
     }];
+    [self.VTLeftScoreReductionButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.VTLeftScoreLabel);
+        make.top.equalTo(self.VTLeftScoreAddButton.mas_bottom).offset(10);
+            make.width.mas_equalTo(60);
+            make.height.mas_equalTo(60);
+    }];
 }
 #pragma mark - actions
 - (void)VTScorerRefresh:(UIButton *)sender{
@@ -75,19 +91,13 @@
         self.VTModel.VTRightscore = self.VTModel.VTRightscore + 1;
         self.VTRightScoreLabel.text = [NSString stringWithFormat:@"%ld",_VTModel.VTRightscore];
     }else if (sender.tag == 100){
-        self.VTModel.VTRightscore = self.VTModel.VTRightscore + 2;
+        self.VTModel.VTRightscore = self.VTModel.VTRightscore - 1;
         self.VTRightScoreLabel.text = [NSString stringWithFormat:@"%ld",_VTModel.VTRightscore];
     }else if (sender.tag == 101){
-        self.VTModel.VTRightscore = self.VTModel.VTRightscore + 3;
-        self.VTRightScoreLabel.text = [NSString stringWithFormat:@"%ld",_VTModel.VTRightscore];
-    }else if (sender.tag == 102){
         self.VTModel.VTLeftscore = self.VTModel.VTLeftscore + 1;
         self.VTLeftScoreLabel.text = [NSString stringWithFormat:@"%ld",_VTModel.VTLeftscore];
-    }else if (sender.tag == 103){
-        self.VTModel.VTLeftscore = self.VTModel.VTLeftscore + 2;
-        self.VTLeftScoreLabel.text = [NSString stringWithFormat:@"%ld",_VTModel.VTLeftscore];
-    }else if (sender.tag == 104){
-        self.VTModel.VTLeftscore = self.VTModel.VTLeftscore + 3;
+    }else if (sender.tag == 102){
+        self.VTModel.VTLeftscore = self.VTModel.VTLeftscore - 1;
         self.VTLeftScoreLabel.text = [NSString stringWithFormat:@"%ld",_VTModel.VTLeftscore];
     }
 }
@@ -124,6 +134,21 @@
     }
     return _VTRightScoreAddButton;
 }
+- (UIButton *)VTRightScoreReductionButton{
+    if (!_VTRightScoreReductionButton) {
+        _VTRightScoreReductionButton = [[UIButton alloc] init];
+        _VTRightScoreReductionButton.backgroundColor = [UIColor blackColor];
+        _VTRightScoreReductionButton.titleLabel.font = [UIFont boldSystemFontOfSize:30];
+        _VTRightScoreReductionButton.titleLabel.textAlignment = NSTextAlignmentCenter;
+        [_VTRightScoreReductionButton setTitle:@"-1" forState:UIControlStateNormal];
+        [_VTRightScoreReductionButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _VTRightScoreReductionButton.layer.cornerRadius = 30.0f;
+        _VTRightScoreReductionButton.layer.masksToBounds = YES;
+        _VTRightScoreReductionButton.tag = 100;
+        [_VTRightScoreReductionButton addTarget:self action:@selector(VTScorerRefresh:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _VTRightScoreReductionButton;
+}
 - (UILabel *)VTVSLabel{
     if (!_VTVSLabel) {
         _VTVSLabel = [[UILabel alloc] init];
@@ -156,9 +181,24 @@
         [_VTLeftScoreAddButton setTitle:@"+1" forState:UIControlStateNormal];
         _VTLeftScoreAddButton.layer.cornerRadius = 30.0f;
         _VTLeftScoreAddButton.layer.masksToBounds = YES;
-        _VTLeftScoreAddButton.tag = 102;
+        _VTLeftScoreAddButton.tag = 101;
         [_VTLeftScoreAddButton addTarget:self action:@selector(VTScorerRefresh:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _VTLeftScoreAddButton;
+}
+- (UIButton *)VTLeftScoreReductionButton{
+    if (!_VTLeftScoreReductionButton) {
+        _VTLeftScoreReductionButton = [[UIButton alloc] init];
+        _VTLeftScoreReductionButton.backgroundColor = [UIColor blackColor];
+        [_VTLeftScoreReductionButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _VTLeftScoreReductionButton.titleLabel.font = [UIFont boldSystemFontOfSize:30];
+        _VTLeftScoreReductionButton.titleLabel.textAlignment = NSTextAlignmentCenter;
+        [_VTLeftScoreReductionButton setTitle:@"-1" forState:UIControlStateNormal];
+        _VTLeftScoreReductionButton.layer.cornerRadius = 30.0f;
+        _VTLeftScoreReductionButton.layer.masksToBounds = YES;
+        _VTLeftScoreReductionButton.tag = 102;
+        [_VTLeftScoreReductionButton addTarget:self action:@selector(VTScorerRefresh:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _VTLeftScoreReductionButton;
 }
 @end
