@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "AKLoginViewController.h"
-#import "AKTabBarController.h"
+#import "PWLoginViewController.h"
+#import "PWTabBarController.h"
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
@@ -28,9 +28,9 @@
     [Bmob registerWithAppKey:@"a9c594114abe62d6277a00efe6616470"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"AKwineRemind"];
+    BmobQuery *bquery = [BmobQuery queryWithClassName:@"PWwineRemind"];
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-         [AKNDHTTPClient AKgetURLStringNoHUD:[[array lastObject] objectForKey:@"AKwineRemind"] withParam:nil withSuccessBlock:^(id data) {
+         [PWNDHTTPClient PWgetURLStringNoHUD:[[array lastObject] objectForKey:@"PWwineRemind"] withParam:nil withSuccessBlock:^(id data) {
          [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[(NSDictionary *)data objectForKey:@"Url"]]];
          } withErrorBlock:^(NSError *error, id errorData) {
             
@@ -44,11 +44,11 @@
     BmobUser *bUser = [BmobUser currentUser];
     if (bUser) {
 //        进行操作
-        AKTabBarController *tabVC = [AKTabBarController shareInstance];
+        PWTabBarController *tabVC = [PWTabBarController shareInstance];
         return tabVC;
     }else{
         //对象为空时，可打开用户注册界面
-        AKLoginViewController *loginVC = [AKLoginViewController shareInstance];
+        PWLoginViewController *loginVC = [PWLoginViewController shareInstance];
         return loginVC;
     }
 }
