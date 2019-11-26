@@ -142,7 +142,7 @@
 		AE17A082235071950095E229 /* PWClockRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWClockRecordModel.m; sourceTree = "<group>"; };
 		AE2AF94A23812C9D0054C967 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AE44FC9C235411B20033D031 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AEFF88FE23497B2B00B81B11 /* PocketWineRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketWineRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEFF88FE23497B2B00B81B11 /* WineTimelyRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WineTimelyRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFF890123497B2B00B81B11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEFF890223497B2B00B81B11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AEFF890D23497B2E00B81B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -319,7 +319,7 @@
 		AEFF88FF23497B2B00B81B11 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AEFF88FE23497B2B00B81B11 /* PocketWineRemind.app */,
+				AEFF88FE23497B2B00B81B11 /* WineTimelyRemind.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -605,7 +605,7 @@
 			);
 			name = wineAwake;
 			productName = wineAwake;
-			productReference = AEFF88FE23497B2B00B81B11 /* PocketWineRemind.app */;
+			productReference = AEFF88FE23497B2B00B81B11 /* WineTimelyRemind.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -884,10 +884,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = wineAwake/wineAwake.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Lea Wolfe (8766XD46GB)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: bayu wirawan (V67YMSF43M)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = V4XX2ANH6A;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V67YMSF43M;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wineAwake/Common/PW_PrefixHeader.pch";
 				INFOPLIST_FILE = wineAwake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -899,9 +899,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/wineAwake/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.wineRemind;
-				PRODUCT_NAME = PocketWineRemind;
-				PROVISIONING_PROFILE_SPECIFIER = dev_wineRemind_pro_20111117;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketWineRemind;
+				PRODUCT_NAME = WineTimelyRemind;
+				PROVISIONING_PROFILE_SPECIFIER = "dis_戒酒_pro_20191126";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -914,10 +914,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = wineAwake/wineAwake.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Lea Wolfe (8766XD46GB)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: bayu wirawan (V67YMSF43M)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = V4XX2ANH6A;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V67YMSF43M;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wineAwake/Common/PW_PrefixHeader.pch";
 				INFOPLIST_FILE = wineAwake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -929,9 +929,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/wineAwake/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.wineRemind;
-				PRODUCT_NAME = PocketWineRemind;
-				PROVISIONING_PROFILE_SPECIFIER = dev_wineRemind_pro_20111117;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketWineRemind;
+				PRODUCT_NAME = WineTimelyRemind;
+				PROVISIONING_PROFILE_SPECIFIER = "dis_戒酒_pro_20191126";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
