@@ -34,7 +34,6 @@
 		AE977187236FF6B900163F70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE977186236FF6B900163F70 /* AppDelegate.m */; };
 		AE977192236FF6BD00163F70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE977191236FF6BD00163F70 /* Assets.xcassets */; };
 		AE977198236FF6BD00163F70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE977197236FF6BD00163F70 /* main.m */; };
-		C15729B2299FE95726D4018C /* Pods_PocketScout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1935D52CCCF584E436965C /* Pods_PocketScout.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,7 +106,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C15729B2299FE95726D4018C /* Pods_PocketScout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,8 +599,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketScout/PocketScout.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TSZND88BX8;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 9JMTNVWG46;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketScout/Common/KT_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -613,8 +613,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketScout/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketFootballScout;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ConvenientBasketballScoring;
 				PRODUCT_NAME = PocketFootballScout;
+				PROVISIONING_PROFILE_SPECIFIER = dis_ConvenientBasketballScoring_pro;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -626,8 +627,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketScout/PocketScout.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TSZND88BX8;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 9JMTNVWG46;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketScout/Common/KT_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -638,8 +641,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketScout/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketFootballScout;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ConvenientBasketballScoring;
 				PRODUCT_NAME = PocketFootballScout;
+				PROVISIONING_PROFILE_SPECIFIER = dis_ConvenientBasketballScoring_pro;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		89A3C33287E42F7DDA808ABB /* Pods_PocketBasketballScout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F6A05CDF360A69D060122F /* Pods_PocketBasketballScout.framework */; };
 		AE6C74AF23824284009329F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6C74AE23824284009329F2 /* Assets.xcassets */; };
 		AE6C74B523824284009329F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C74B423824284009329F2 /* main.m */; };
 		AE6C74BE2382657C009329F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C74BD2382657C009329F2 /* AppDelegate.m */; };
@@ -15,7 +14,6 @@
 		AE6C7517238265A5009329F2 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C74F0238265A4009329F2 /* NSDictionary+log.m */; };
 		AE6C751D238265A5009329F2 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C74FE238265A4009329F2 /* CalendarTool.m */; };
 		AE6C7522238265A5009329F2 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C7506238265A5009329F2 /* NSArray+log.m */; };
-		AE6C753123826733009329F2 /* BTNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752523826732009329F2 /* BTNDHTTPClient.m */; };
 		AE6C753223826733009329F2 /* MBProgressHUD+BTNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752623826732009329F2 /* MBProgressHUD+BTNJ.m */; };
 		AE6C753323826733009329F2 /* BTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752723826732009329F2 /* BTBaseViewController.m */; };
 		AE6C753423826733009329F2 /* BTHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752923826732009329F2 /* BTHBTool.m */; };
@@ -35,12 +33,32 @@
 		AE6C755E2382695D009329F2 /* BTScoringSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75572382695D009329F2 /* BTScoringSaveTableViewCell.m */; };
 		AE6C755F2382695D009329F2 /* BTScoringPartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75582382695D009329F2 /* BTScoringPartTableViewCell.m */; };
 		AE6C75602382695D009329F2 /* BTTimePortionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75592382695D009329F2 /* BTTimePortionTableViewCell.m */; };
+		AECF7705238F754B00F65475 /* jpush-ios-3.2.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7700238F754A00F65475 /* jpush-ios-3.2.6.a */; };
+		AECF7706238F754B00F65475 /* jcore-ios-2.1.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7702238F754A00F65475 /* jcore-ios-2.1.4.a */; };
+		AECF7708238F75A400F65475 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7707238F75A400F65475 /* AdSupport.framework */; };
+		AECF770A238F75AC00F65475 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7709238F75AC00F65475 /* AVFoundation.framework */; };
+		AECF770C238F75B700F65475 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF770B238F75B600F65475 /* CFNetwork.framework */; };
+		AECF770E238F75C000F65475 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF770D238F75C000F65475 /* CoreFoundation.framework */; };
+		AECF7710238F75CE00F65475 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF770F238F75CE00F65475 /* CoreGraphics.framework */; };
+		AECF7712238F75D700F65475 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7711238F75D700F65475 /* CoreLocation.framework */; };
+		AECF7714238F75E100F65475 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7713238F75E100F65475 /* CoreTelephony.framework */; };
+		AECF7716238F75E900F65475 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7715238F75E900F65475 /* Foundation.framework */; };
+		AECF7718238F75F600F65475 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7717238F75F600F65475 /* ImageIO.framework */; };
+		AECF771C238F764400F65475 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF771B238F764400F65475 /* MobileCoreServices.framework */; };
+		AECF771E238F764E00F65475 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF771D238F764E00F65475 /* Photos.framework */; };
+		AECF7720238F766300F65475 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF771F238F766300F65475 /* QuartzCore.framework */; };
+		AECF7722238F76D400F65475 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7721238F76D400F65475 /* Security.framework */; };
+		AECF7724238F76FE00F65475 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7723238F76FD00F65475 /* SystemConfiguration.framework */; };
+		AECF7726238F772400F65475 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7725238F772400F65475 /* UIKit.framework */; };
+		AECF7728238F772E00F65475 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7727238F772E00F65475 /* UserNotifications.framework */; };
+		AECF7729238F777900F65475 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7719238F760C00F65475 /* libresolv.tbd */; };
+		AECF772A238F778400F65475 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF771A238F762700F65475 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0095D88E6030915DAB7F8149 /* Pods-PocketBasketballScout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBasketballScout.debug.xcconfig"; path = "Target Support Files/Pods-PocketBasketballScout/Pods-PocketBasketballScout.debug.xcconfig"; sourceTree = "<group>"; };
 		AA94B92244B3E8AE8D1350D2 /* Pods-PocketBasketballScout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBasketballScout.release.xcconfig"; path = "Target Support Files/Pods-PocketBasketballScout/Pods-PocketBasketballScout.release.xcconfig"; sourceTree = "<group>"; };
-		AE6C749F23824280009329F2 /* PocketBasketballScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketBasketballScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6C749F23824280009329F2 /* ConvenientBasketballScoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvenientBasketballScoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6C74AE23824284009329F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE6C74B323824284009329F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE6C74B423824284009329F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,7 +67,6 @@
 		AE6C74C1238265A4009329F2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		AE6C74C2238265A4009329F2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AE6C74C3238265A4009329F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AE6C74C4238265A4009329F2 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AE6C74F0238265A4009329F2 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
 		AE6C74F1238265A4009329F2 /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
 		AE6C74F6238265A4009329F2 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
@@ -58,10 +75,8 @@
 		AE6C7506238265A5009329F2 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
 		AE6C752323826732009329F2 /* BTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTTabBarController.h; sourceTree = "<group>"; };
 		AE6C752423826732009329F2 /* BT_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BT_PrefixHeader.pch; sourceTree = "<group>"; };
-		AE6C752523826732009329F2 /* BTNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTNDHTTPClient.m; sourceTree = "<group>"; };
 		AE6C752623826732009329F2 /* MBProgressHUD+BTNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+BTNJ.m"; sourceTree = "<group>"; };
 		AE6C752723826732009329F2 /* BTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTBaseViewController.m; sourceTree = "<group>"; };
-		AE6C752823826732009329F2 /* BTNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTNDHTTPClient.h; sourceTree = "<group>"; };
 		AE6C752923826732009329F2 /* BTHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTHBTool.m; sourceTree = "<group>"; };
 		AE6C752A23826732009329F2 /* BTHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTHBTool.h; sourceTree = "<group>"; };
 		AE6C752B23826732009329F2 /* BTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTBaseViewController.h; sourceTree = "<group>"; };
@@ -98,6 +113,28 @@
 		AE6C755A2382695D009329F2 /* BTBothTeamsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTBothTeamsTableViewCell.h; sourceTree = "<group>"; };
 		AE6C755B2382695D009329F2 /* BTScoringSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTScoringSaveTableViewCell.h; sourceTree = "<group>"; };
 		AE6C755C2382695D009329F2 /* BTScoringPartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTScoringPartTableViewCell.h; sourceTree = "<group>"; };
+		AECF76FD238F74EC00F65475 /* PocketBasketballScout.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PocketBasketballScout.entitlements; sourceTree = "<group>"; };
+		AECF7700238F754A00F65475 /* jpush-ios-3.2.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.6.a"; sourceTree = "<group>"; };
+		AECF7702238F754A00F65475 /* jcore-ios-2.1.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.1.4.a"; sourceTree = "<group>"; };
+		AECF7703238F754A00F65475 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		AECF7707238F75A400F65475 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		AECF7709238F75AC00F65475 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AECF770B238F75B600F65475 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AECF770D238F75C000F65475 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		AECF770F238F75CE00F65475 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AECF7711238F75D700F65475 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AECF7713238F75E100F65475 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		AECF7715238F75E900F65475 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AECF7717238F75F600F65475 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		AECF7719238F760C00F65475 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		AECF771A238F762700F65475 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		AECF771B238F764400F65475 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AECF771D238F764E00F65475 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		AECF771F238F766300F65475 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AECF7721238F76D400F65475 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AECF7723238F76FD00F65475 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AECF7725238F772400F65475 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AECF7727238F772E00F65475 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		B3F6A05CDF360A69D060122F /* Pods_PocketBasketballScout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketBasketballScout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,7 +143,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89A3C33287E42F7DDA808ABB /* Pods_PocketBasketballScout.framework in Frameworks */,
+				AECF7728238F772E00F65475 /* UserNotifications.framework in Frameworks */,
+				AECF772A238F778400F65475 /* libz.tbd in Frameworks */,
+				AECF7720238F766300F65475 /* QuartzCore.framework in Frameworks */,
+				AECF7705238F754B00F65475 /* jpush-ios-3.2.6.a in Frameworks */,
+				AECF771C238F764400F65475 /* MobileCoreServices.framework in Frameworks */,
+				AECF7708238F75A400F65475 /* AdSupport.framework in Frameworks */,
+				AECF770C238F75B700F65475 /* CFNetwork.framework in Frameworks */,
+				AECF7714238F75E100F65475 /* CoreTelephony.framework in Frameworks */,
+				AECF7726238F772400F65475 /* UIKit.framework in Frameworks */,
+				AECF7710238F75CE00F65475 /* CoreGraphics.framework in Frameworks */,
+				AECF770A238F75AC00F65475 /* AVFoundation.framework in Frameworks */,
+				AECF770E238F75C000F65475 /* CoreFoundation.framework in Frameworks */,
+				AECF7716238F75E900F65475 /* Foundation.framework in Frameworks */,
+				AECF7724238F76FE00F65475 /* SystemConfiguration.framework in Frameworks */,
+				AECF7718238F75F600F65475 /* ImageIO.framework in Frameworks */,
+				AECF7712238F75D700F65475 /* CoreLocation.framework in Frameworks */,
+				AECF771E238F764E00F65475 /* Photos.framework in Frameworks */,
+				AECF7729238F777900F65475 /* libresolv.tbd in Frameworks */,
+				AECF7722238F76D400F65475 /* Security.framework in Frameworks */,
+				AECF7706238F754B00F65475 /* jcore-ios-2.1.4.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +191,7 @@
 		AE6C74A023824280009329F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C749F23824280009329F2 /* PocketBasketballScout.app */,
+				AE6C749F23824280009329F2 /* ConvenientBasketballScoring.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +199,7 @@
 		AE6C74A123824280009329F2 /* PocketBasketballScout */ = {
 			isa = PBXGroup;
 			children = (
+				AECF76FD238F74EC00F65475 /* PocketBasketballScout.entitlements */,
 				AE6C74BC2382657C009329F2 /* AppDelegate.h */,
 				AE6C74BD2382657C009329F2 /* AppDelegate.m */,
 				AE6C74ED238265A4009329F2 /* Common */,
@@ -289,6 +346,7 @@
 		AE6C74ED238265A4009329F2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AECF76FE238F754A00F65475 /* JPush */,
 				AE6C74F6238265A4009329F2 /* NSArray+log.h */,
 				AE6C7506238265A5009329F2 /* NSArray+log.m */,
 				AE6C74F8238265A4009329F2 /* NSDictionary+log.h */,
@@ -301,8 +359,6 @@
 				AE6C753023826733009329F2 /* BTGlobal.h */,
 				AE6C752A23826732009329F2 /* BTHBTool.h */,
 				AE6C752923826732009329F2 /* BTHBTool.m */,
-				AE6C752823826732009329F2 /* BTNDHTTPClient.h */,
-				AE6C752523826732009329F2 /* BTNDHTTPClient.m */,
 				AE6C752323826732009329F2 /* BTTabBarController.h */,
 				AE6C752E23826733009329F2 /* BTTabBarController.m */,
 				AE6C752D23826732009329F2 /* BTUIUtilities.h */,
@@ -313,9 +369,37 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		AECF76FE238F754A00F65475 /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				AECF7700238F754A00F65475 /* jpush-ios-3.2.6.a */,
+				AECF7702238F754A00F65475 /* jcore-ios-2.1.4.a */,
+				AECF7703238F754A00F65475 /* JPUSHService.h */,
+			);
+			path = JPush;
+			sourceTree = "<group>";
+		};
 		B9F1004DC4D1655F8EC44852 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AECF7727238F772E00F65475 /* UserNotifications.framework */,
+				AECF7725238F772400F65475 /* UIKit.framework */,
+				AECF7723238F76FD00F65475 /* SystemConfiguration.framework */,
+				AECF7721238F76D400F65475 /* Security.framework */,
+				AECF771F238F766300F65475 /* QuartzCore.framework */,
+				AECF771D238F764E00F65475 /* Photos.framework */,
+				AECF771B238F764400F65475 /* MobileCoreServices.framework */,
+				AECF771A238F762700F65475 /* libz.tbd */,
+				AECF7719238F760C00F65475 /* libresolv.tbd */,
+				AECF7717238F75F600F65475 /* ImageIO.framework */,
+				AECF7715238F75E900F65475 /* Foundation.framework */,
+				AECF7713238F75E100F65475 /* CoreTelephony.framework */,
+				AECF7711238F75D700F65475 /* CoreLocation.framework */,
+				AECF770F238F75CE00F65475 /* CoreGraphics.framework */,
+				AECF770D238F75C000F65475 /* CoreFoundation.framework */,
+				AECF770B238F75B600F65475 /* CFNetwork.framework */,
+				AECF7709238F75AC00F65475 /* AVFoundation.framework */,
+				AECF7707238F75A400F65475 /* AdSupport.framework */,
 				B3F6A05CDF360A69D060122F /* Pods_PocketBasketballScout.framework */,
 			);
 			name = Frameworks;
@@ -340,7 +424,7 @@
 			);
 			name = PocketBasketballScout;
 			productName = PocketBasketballScout;
-			productReference = AE6C749F23824280009329F2 /* PocketBasketballScout.app */;
+			productReference = AE6C749F23824280009329F2 /* ConvenientBasketballScoring.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -366,7 +450,6 @@
 				Base,
 				"zh-Hans",
 				ja,
-				ko,
 			);
 			mainGroup = AE6C74962382427F009329F2;
 			productRefGroup = AE6C74A023824280009329F2 /* Products */;
@@ -450,7 +533,6 @@
 				AE6C755D2382695D009329F2 /* BTBothTeamsTableViewCell.m in Sources */,
 				AE6C753323826733009329F2 /* BTBaseViewController.m in Sources */,
 				AE6C75602382695D009329F2 /* BTTimePortionTableViewCell.m in Sources */,
-				AE6C753123826733009329F2 /* BTNDHTTPClient.m in Sources */,
 				AE6C754B238268F5009329F2 /* BTRecordTableViewCell.m in Sources */,
 				AE6C7517238265A5009329F2 /* NSDictionary+log.m in Sources */,
 				AE6C7522238265A5009329F2 /* NSArray+log.m in Sources */,
@@ -474,7 +556,6 @@
 				AE6C74C1238265A4009329F2 /* zh-Hans */,
 				AE6C74C2238265A4009329F2 /* ja */,
 				AE6C74C3238265A4009329F2 /* en */,
-				AE6C74C4238265A4009329F2 /* ko */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -532,7 +613,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -584,7 +665,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -598,8 +679,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VWNPTX8H3L;
+				CODE_SIGN_ENTITLEMENTS = PocketBasketballScout/PocketBasketballScout.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ren Guanfei (9JMTNVWG46)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 9JMTNVWG46;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScout/Common/BT_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBasketballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -610,8 +694,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketBasketballScout/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketBasketballScout;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ConvenientBasketballScoring;
+				PRODUCT_NAME = ConvenientBasketballScoring;
+				PROVISIONING_PROFILE_SPECIFIER = dis_ConvenientBasketballScoring_pro;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -622,8 +708,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VWNPTX8H3L;
+				CODE_SIGN_ENTITLEMENTS = PocketBasketballScout/PocketBasketballScout.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ren Guanfei (9JMTNVWG46)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 9JMTNVWG46;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScout/Common/BT_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBasketballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -634,8 +723,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketBasketballScout/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketBasketballScout;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ConvenientBasketballScoring;
+				PRODUCT_NAME = ConvenientBasketballScoring;
+				PROVISIONING_PROFILE_SPECIFIER = dis_ConvenientBasketballScoring_pro;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

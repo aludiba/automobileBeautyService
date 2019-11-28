@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AE977181236FF6B800163F70"
-               BuildableName = "PocketFootballScout.app"
-               BlueprintName = "PocketScout"
-               ReferencedContainer = "container:PocketScout.xcodeproj">
+               BlueprintIdentifier = "AEB6EA5E2383DE87007526EF"
+               BuildableName = "PocketVolleyballScout.app"
+               BlueprintName = "PocketVolleyballScout"
+               ReferencedContainer = "container:PocketVolleyballScout.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,10 +44,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AE977181236FF6B800163F70"
-            BuildableName = "PocketFootballScout.app"
-            BlueprintName = "PocketScout"
-            ReferencedContainer = "container:PocketScout.xcodeproj">
+            BlueprintIdentifier = "AEB6EA5E2383DE87007526EF"
+            BuildableName = "PocketVolleyballScout.app"
+            BlueprintName = "PocketVolleyballScout"
+            ReferencedContainer = "container:PocketVolleyballScout.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,10 +61,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AE977181236FF6B800163F70"
-            BuildableName = "PocketFootballScout.app"
-            BlueprintName = "PocketScout"
-            ReferencedContainer = "container:PocketScout.xcodeproj">
+            BlueprintIdentifier = "AEB6EA5E2383DE87007526EF"
+            BuildableName = "PocketVolleyballScout.app"
+            BlueprintName = "PocketVolleyballScout"
+            ReferencedContainer = "container:PocketVolleyballScout.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

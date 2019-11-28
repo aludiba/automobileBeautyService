@@ -8,12 +8,10 @@
 
 #ifndef BTglobal_h
 #define BTglobal_h
-#import <AFNetworking/AFNetworking.h>
 #import <Masonry/Masonry.h>
 #import <MJRefresh/MJRefresh.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <YYModel/YYModel.h>
-#import "BTNDHTTPClient.h"
 #import "MBProgressHUD+BTNJ.h"
 #import "BTHBTool.h"
 #import "CalendarTool.h"

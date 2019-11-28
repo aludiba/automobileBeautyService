@@ -611,8 +611,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VWNPTX8H3L;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = 9JMTNVWG46;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScout/Common/VT_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketVolleyballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -623,8 +625,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketVolleyballScout/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketVolleyballScout;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ConvenientBasketballScoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dis_ConvenientBasketballScoring_pro;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -635,8 +638,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VWNPTX8H3L;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = 9JMTNVWG46;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScout/Common/VT_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketVolleyballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -647,8 +652,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketVolleyballScout/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketVolleyballScout;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ConvenientBasketballScoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dis_ConvenientBasketballScoring_pro;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

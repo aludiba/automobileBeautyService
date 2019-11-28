@@ -7,11 +7,8 @@ target 'PocketBasketballScout' do
 
   # Pods for PocketBasketballScout
     pod 'Masonry'
-    pod 'AFNetworking'
     pod 'MJRefresh'
     pod 'MBProgressHUD'
     pod 'YYModel'
-    pod 'IQKeyboardManager'
-    pod 'JTCalendar'
     pod 'BmobSDK'
 end

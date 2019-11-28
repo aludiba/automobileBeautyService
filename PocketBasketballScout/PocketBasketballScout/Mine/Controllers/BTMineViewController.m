@@ -50,7 +50,7 @@
         make.top.equalTo(self.mas_topLayoutGuideTop);
         make.leading.equalTo(self.view);
         make.trailing.equalTo(self.view);
-        make.height.mas_equalTo(BTHEIGHT / 3);
+        make.height.mas_equalTo(BTHEIGHT / 3 + 60);
     }];
     [self.BTImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.BTBackView);
@@ -157,7 +157,7 @@
 - (UIView *)BTBackView{
     if (!_BTBackView) {
         _BTBackView = [[UIView alloc] init];
-        _BTBackView.backgroundColor = [UIColor systemRedColor];
+        _BTBackView.backgroundColor = [UIColor systemGreenColor];
     }
     return _BTBackView;
 }
@@ -213,7 +213,7 @@
     if (!_BTChangePasswordButton) {
         _BTChangePasswordButton = [[UIButton alloc] init];
         [_BTChangePasswordButton setTitle:NSLocalizedString(@"更改密码", nil) forState:UIControlStateNormal];
-        [_BTChangePasswordButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [_BTChangePasswordButton setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
         _BTChangePasswordButton.titleLabel.font = [UIFont systemFontOfSize:20];
         _BTChangePasswordButton.titleLabel.numberOfLines = 0;
         _BTChangePasswordButton.backgroundColor = [UIColor cyanColor];
@@ -227,7 +227,7 @@
     if (!_BTSignOutButton) {
         _BTSignOutButton = [[UIButton alloc] init];
         [_BTSignOutButton setTitle:NSLocalizedString(@"退出", nil) forState:UIControlStateNormal];
-        [_BTSignOutButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [_BTSignOutButton setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
         _BTSignOutButton.titleLabel.font = [UIFont systemFontOfSize:20];
         _BTSignOutButton.titleLabel.numberOfLines = 0;
         _BTSignOutButton.backgroundColor = [UIColor cyanColor];

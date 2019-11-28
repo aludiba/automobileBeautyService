@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26EE50F24DAF7D5CB9156A47 /* Pods_PocketVolleyballScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A0BF5BA5C3FAC5FD918FAD /* Pods_PocketVolleyballScore.framework */; };
 		AE95D231237119A50033E085 /* PVScorecardSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95D230237119A50033E085 /* PVScorecardSaveTableViewCell.m */; };
 		AE95D2342371462B0033E085 /* PVBureauPointsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95D2332371462B0033E085 /* PVBureauPointsModel.m */; };
 		AE95D237237148880033E085 /* PVScoreSummaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95D236237148880033E085 /* PVScoreSummaryTableViewCell.m */; };
@@ -42,6 +41,26 @@
 		AEC1BE70236992FF00091475 /* PVPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE65236992FE00091475 /* PVPasswordChangeViewController.m */; };
 		AEC1BE71236992FF00091475 /* PVSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE69236992FE00091475 /* PVSetTableViewCell.m */; };
 		AEC1BE72236992FF00091475 /* PVLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE6A236992FE00091475 /* PVLoginTableViewCell.m */; };
+		AECF7732238F9B0800F65475 /* jpush-ios-3.2.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF772D238F9B0800F65475 /* jpush-ios-3.2.6.a */; };
+		AECF7733238F9B0800F65475 /* jcore-ios-2.1.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF772F238F9B0800F65475 /* jcore-ios-2.1.4.a */; };
+		AECF7735238F9B2F00F65475 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7734238F9B2F00F65475 /* AdSupport.framework */; };
+		AECF7737238F9B3600F65475 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7736238F9B3600F65475 /* AVFoundation.framework */; };
+		AECF7739238F9B3E00F65475 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7738238F9B3D00F65475 /* CFNetwork.framework */; };
+		AECF773B238F9B4900F65475 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF773A238F9B4900F65475 /* CoreFoundation.framework */; };
+		AECF773D238F9B5300F65475 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF773C238F9B5300F65475 /* CoreGraphics.framework */; };
+		AECF773F238F9B5E00F65475 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF773E238F9B5E00F65475 /* CoreLocation.framework */; };
+		AECF7741238F9B6700F65475 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7740238F9B6700F65475 /* CoreTelephony.framework */; };
+		AECF7743238F9B6F00F65475 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7742238F9B6F00F65475 /* Foundation.framework */; };
+		AECF7745238F9B7700F65475 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7744238F9B7700F65475 /* ImageIO.framework */; };
+		AECF7747238F9B8600F65475 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7746238F9B8500F65475 /* MobileCoreServices.framework */; };
+		AECF7749238F9B9100F65475 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7748238F9B9100F65475 /* Photos.framework */; };
+		AECF774B238F9B9C00F65475 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF774A238F9B9C00F65475 /* QuartzCore.framework */; };
+		AECF774D238F9BA300F65475 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF774C238F9BA300F65475 /* Security.framework */; };
+		AECF774F238F9BA900F65475 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF774E238F9BA900F65475 /* SystemConfiguration.framework */; };
+		AECF7751238F9BB300F65475 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7750238F9BB300F65475 /* UIKit.framework */; };
+		AECF7753238F9BBD00F65475 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7752238F9BBD00F65475 /* UserNotifications.framework */; };
+		AECF7756238F9BEF00F65475 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7754238F9BCC00F65475 /* libresolv.tbd */; };
+		AECF7757238F9BF800F65475 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7755238F9BD800F65475 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +137,27 @@
 		AEC1BE69236992FE00091475 /* PVSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVSetTableViewCell.m; sourceTree = "<group>"; };
 		AEC1BE6A236992FE00091475 /* PVLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVLoginTableViewCell.m; sourceTree = "<group>"; };
 		AEC1BE6B236992FE00091475 /* PVSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVSetTableViewCell.h; sourceTree = "<group>"; };
+		AECF772D238F9B0800F65475 /* jpush-ios-3.2.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.6.a"; sourceTree = "<group>"; };
+		AECF772F238F9B0800F65475 /* jcore-ios-2.1.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.1.4.a"; sourceTree = "<group>"; };
+		AECF7730238F9B0800F65475 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		AECF7734238F9B2F00F65475 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		AECF7736238F9B3600F65475 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AECF7738238F9B3D00F65475 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AECF773A238F9B4900F65475 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		AECF773C238F9B5300F65475 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AECF773E238F9B5E00F65475 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AECF7740238F9B6700F65475 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		AECF7742238F9B6F00F65475 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AECF7744238F9B7700F65475 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		AECF7746238F9B8500F65475 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AECF7748238F9B9100F65475 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		AECF774A238F9B9C00F65475 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AECF774C238F9BA300F65475 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AECF774E238F9BA900F65475 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AECF7750238F9BB300F65475 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AECF7752238F9BBD00F65475 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		AECF7754238F9BCC00F65475 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		AECF7755238F9BD800F65475 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D6A0BF5BA5C3FAC5FD918FAD /* Pods_PocketVolleyballScore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketVolleyballScore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -126,7 +166,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26EE50F24DAF7D5CB9156A47 /* Pods_PocketVolleyballScore.framework in Frameworks */,
+				AECF7739238F9B3E00F65475 /* CFNetwork.framework in Frameworks */,
+				AECF7751238F9BB300F65475 /* UIKit.framework in Frameworks */,
+				AECF7732238F9B0800F65475 /* jpush-ios-3.2.6.a in Frameworks */,
+				AECF7741238F9B6700F65475 /* CoreTelephony.framework in Frameworks */,
+				AECF7735238F9B2F00F65475 /* AdSupport.framework in Frameworks */,
+				AECF773F238F9B5E00F65475 /* CoreLocation.framework in Frameworks */,
+				AECF774B238F9B9C00F65475 /* QuartzCore.framework in Frameworks */,
+				AECF7756238F9BEF00F65475 /* libresolv.tbd in Frameworks */,
+				AECF774D238F9BA300F65475 /* Security.framework in Frameworks */,
+				AECF773B238F9B4900F65475 /* CoreFoundation.framework in Frameworks */,
+				AECF773D238F9B5300F65475 /* CoreGraphics.framework in Frameworks */,
+				AECF7737238F9B3600F65475 /* AVFoundation.framework in Frameworks */,
+				AECF774F238F9BA900F65475 /* SystemConfiguration.framework in Frameworks */,
+				AECF7747238F9B8600F65475 /* MobileCoreServices.framework in Frameworks */,
+				AECF7745238F9B7700F65475 /* ImageIO.framework in Frameworks */,
+				AECF7757238F9BF800F65475 /* libz.tbd in Frameworks */,
+				AECF7753238F9BBD00F65475 /* UserNotifications.framework in Frameworks */,
+				AECF7749238F9B9100F65475 /* Photos.framework in Frameworks */,
+				AECF7733238F9B0800F65475 /* jcore-ios-2.1.4.a in Frameworks */,
+				AECF7743238F9B6F00F65475 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +195,24 @@
 		024DF6AC040BEA777AE7702C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AECF7755238F9BD800F65475 /* libz.tbd */,
+				AECF7754238F9BCC00F65475 /* libresolv.tbd */,
+				AECF7752238F9BBD00F65475 /* UserNotifications.framework */,
+				AECF7750238F9BB300F65475 /* UIKit.framework */,
+				AECF774E238F9BA900F65475 /* SystemConfiguration.framework */,
+				AECF774C238F9BA300F65475 /* Security.framework */,
+				AECF774A238F9B9C00F65475 /* QuartzCore.framework */,
+				AECF7748238F9B9100F65475 /* Photos.framework */,
+				AECF7746238F9B8500F65475 /* MobileCoreServices.framework */,
+				AECF7744238F9B7700F65475 /* ImageIO.framework */,
+				AECF7742238F9B6F00F65475 /* Foundation.framework */,
+				AECF7740238F9B6700F65475 /* CoreTelephony.framework */,
+				AECF773E238F9B5E00F65475 /* CoreLocation.framework */,
+				AECF773C238F9B5300F65475 /* CoreGraphics.framework */,
+				AECF773A238F9B4900F65475 /* CoreFoundation.framework */,
+				AECF7738238F9B3D00F65475 /* CFNetwork.framework */,
+				AECF7736238F9B3600F65475 /* AVFoundation.framework */,
+				AECF7734238F9B2F00F65475 /* AdSupport.framework */,
 				D6A0BF5BA5C3FAC5FD918FAD /* Pods_PocketVolleyballScore.framework */,
 			);
 			name = Frameworks;
@@ -180,6 +257,7 @@
 		AEC1BDF723698E8200091475 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AECF772B238F9B0800F65475 /* JPush */,
 				AEC1BDF923698E8200091475 /* PV_PrefixHeader.pch */,
 				AEC1BE0823698E8200091475 /* PVGlobal.h */,
 				AEC1BE0323698E8200091475 /* PVHBTool.h */,
@@ -337,6 +415,16 @@
 				AEC1BE69236992FE00091475 /* PVSetTableViewCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AECF772B238F9B0800F65475 /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				AECF772D238F9B0800F65475 /* jpush-ios-3.2.6.a */,
+				AECF772F238F9B0800F65475 /* jcore-ios-2.1.4.a */,
+				AECF7730238F9B0800F65475 /* JPUSHService.h */,
+			);
+			path = JPush;
 			sourceTree = "<group>";
 		};
 		D65D3887A644D991A02B11A7 /* Pods */ = {
@@ -564,7 +652,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -616,7 +704,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -631,8 +719,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketVolleyballScore/PocketVolleyballScore.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VWNPTX8H3L;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ren Guanfei (9JMTNVWG46)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = 9JMTNVWG46;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScore/Common/PV_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketVolleyballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -643,8 +733,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketVolleyballScore/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketVolleyballScore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ConvenientBasketballScoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dis_ConvenientBasketballScoring_pro;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -656,8 +747,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketVolleyballScore/PocketVolleyballScore.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VWNPTX8H3L;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ren Guanfei (9JMTNVWG46)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = 9JMTNVWG46;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScore/Common/PV_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketVolleyballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -668,8 +761,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketVolleyballScore/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketVolleyballScore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ConvenientBasketballScoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dis_ConvenientBasketballScoring_pro;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
