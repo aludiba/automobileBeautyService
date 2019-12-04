@@ -7,4 +7,6 @@ target 'ConvenientFootballScoreboard' do
 
   # Pods for ConvenientFootballScoreboard
     pod 'Masonry'
+    pod 'AFNetworking'
+    pod 'MJRefresh'
 end
