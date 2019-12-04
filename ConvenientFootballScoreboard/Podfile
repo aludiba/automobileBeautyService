@@ -11,4 +11,5 @@ target 'ConvenientFootballScoreboard' do
     pod 'MJRefresh'
     pod 'MBProgressHUD'
     pod 'YYModel'
+    pod 'IQKeyboardManager'
 end
