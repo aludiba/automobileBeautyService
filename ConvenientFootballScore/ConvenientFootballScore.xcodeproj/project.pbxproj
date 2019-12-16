@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		346E9C87ADB01A9A8255FFC5 /* Pods_ConvenientFootballScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9A2A88F0D4A28FA9ADE10B /* Pods_ConvenientFootballScore.framework */; };
 		AE2788E423A71AF1006C700E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2788E323A71AF1006C700E /* AppDelegate.m */; };
 		AE2788EF23A71AF5006C700E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2788EE23A71AF5006C700E /* Assets.xcassets */; };
 		AE2788F523A71AF5006C700E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2788F423A71AF5006C700E /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0113B6641BFEBB1C208939BB /* Pods-ConvenientFootballScore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvenientFootballScore.release.xcconfig"; path = "Target Support Files/Pods-ConvenientFootballScore/Pods-ConvenientFootballScore.release.xcconfig"; sourceTree = "<group>"; };
+		7D9A2A88F0D4A28FA9ADE10B /* Pods_ConvenientFootballScore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConvenientFootballScore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D70A34C6121B4D85107E1B /* Pods-ConvenientFootballScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvenientFootballScore.debug.xcconfig"; path = "Target Support Files/Pods-ConvenientFootballScore/Pods-ConvenientFootballScore.debug.xcconfig"; sourceTree = "<group>"; };
 		AE2788DF23A71AF1006C700E /* ConvenientFootballScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvenientFootballScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2788E223A71AF1006C700E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE2788E323A71AF1006C700E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,17 +30,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346E9C87ADB01A9A8255FFC5 /* Pods_ConvenientFootballScore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0119B1287F3AC81C13FB129C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90D70A34C6121B4D85107E1B /* Pods-ConvenientFootballScore.debug.xcconfig */,
+				0113B6641BFEBB1C208939BB /* Pods-ConvenientFootballScore.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AE2788D623A71AF1006C700E = {
 			isa = PBXGroup;
 			children = (
 				AE2788E123A71AF1006C700E /* ConvenientFootballScore */,
 				AE2788E023A71AF1006C700E /* Products */,
+				0119B1287F3AC81C13FB129C /* Pods */,
+				FFEE1289088BB68EE8390401 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +77,14 @@
 			path = ConvenientFootballScore;
 			sourceTree = "<group>";
 		};
+		FFEE1289088BB68EE8390401 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D9A2A88F0D4A28FA9ADE10B /* Pods_ConvenientFootballScore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -67,9 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE2788F823A71AF5006C700E /* Build configuration list for PBXNativeTarget "ConvenientFootballScore" */;
 			buildPhases = (
+				6F6EF90961581A681B61BB88 /* [CP] Check Pods Manifest.lock */,
 				AE2788DB23A71AF1006C700E /* Sources */,
 				AE2788DC23A71AF1006C700E /* Frameworks */,
 				AE2788DD23A71AF1006C700E /* Resources */,
+				529C6580FD4FB932979628E7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,6 +149,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		529C6580FD4FB932979628E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConvenientFootballScore/Pods-ConvenientFootballScore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConvenientFootballScore/Pods-ConvenientFootballScore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConvenientFootballScore/Pods-ConvenientFootballScore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F6EF90961581A681B61BB88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConvenientFootballScore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE2788DB23A71AF1006C700E /* Sources */ = {
@@ -248,6 +317,7 @@
 		};
 		AE2788F923A71AF5006C700E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90D70A34C6121B4D85107E1B /* Pods-ConvenientFootballScore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -256,14 +326,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hgg.ConvenientFootballScore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.ConvenientFootballScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		AE2788FA23A71AF5006C700E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0113B6641BFEBB1C208939BB /* Pods-ConvenientFootballScore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -272,9 +343,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hgg.ConvenientFootballScore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.ConvenientFootballScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
