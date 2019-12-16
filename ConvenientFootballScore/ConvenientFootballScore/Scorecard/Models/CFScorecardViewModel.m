@@ -1,13 +1,12 @@
 //
-//  KTScorecardViewModel.m
-//  PocketScout
+//  CFScorecardViewModel.m
 //
 //  Created by bykj on 2019/11/12.
 //  Copyright © 2019 com. All rights reserved.
 //
 
-#import "KTScorecardViewModel.h"
+#import "CFScorecardViewModel.h"
 
-@implementation KTScorecardViewModel
+@implementation CFScorecardViewModel
 
 @end

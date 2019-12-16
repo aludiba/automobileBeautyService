@@ -1,208 +1,207 @@
 //
-//  KTScoringPartTableViewCell.m
-//  PocketScout
+//  CFScoringPartTableViewCell.m
 //
 //  Created by bykj on 2019/11/12.
 //  Copyright © 2019 com. All rights reserved.
 //
 
-#import "KTScoringPartTableViewCell.h"
-#import "KTScorecardViewModel.h"
+#import "CFScoringPartTableViewCell.h"
+#import "CFScorecardViewModel.h"
 
-@interface KTScoringPartTableViewCell()
-@property(nonatomic, strong)UILabel *KTRightScoreLabel;//右边得分
-@property(nonatomic, strong)UIButton *KTRightScoreAddButton;//右边得分按钮
-@property(nonatomic, strong)UIButton *KTRightScoreReduceButton;//右边减分按钮
+@interface CFScoringPartTableViewCell()
+@property(nonatomic, strong)UILabel *CFRightScoreLabel;//右边得分
+@property(nonatomic, strong)UIButton *CFRightScoreAddButton;//右边得分按钮
+@property(nonatomic, strong)UIButton *CFRightScoreReduceButton;//右边减分按钮
 
-@property(nonatomic, strong)UILabel *KTVSLabel;//VS标识
+@property(nonatomic, strong)UILabel *CFVSLabel;//VS标识
 
-@property(nonatomic, strong)UILabel *KTLeftScoreLabel;//左边得分
-@property(nonatomic, strong)UIButton *KTLeftScoreAddButton;//左边得分按钮
-@property(nonatomic, strong)UIButton *KTLeftScoreReduceButton;//左边减分按钮
+@property(nonatomic, strong)UILabel *CFLeftScoreLabel;//左边得分
+@property(nonatomic, strong)UIButton *CFLeftScoreAddButton;//左边得分按钮
+@property(nonatomic, strong)UIButton *CFLeftScoreReduceButton;//左边减分按钮
 @end
-@implementation KTScoringPartTableViewCell
+@implementation CFScoringPartTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        [self KTSetContentView];
+        [self CFSetContentView];
     }
     return self;
 }
 #pragma mark - action
-- (void)KTSetContentView{
-    [self.contentView addSubview:self.KTRightScoreLabel];
-    [self.contentView addSubview:self.KTRightScoreAddButton];
-    [self.contentView addSubview:self.KTRightScoreReduceButton];
-    [self.contentView addSubview:self.KTVSLabel];
-    [self.contentView addSubview:self.KTLeftScoreLabel];
-    [self.contentView addSubview:self.KTLeftScoreAddButton];
-    [self.contentView addSubview:self.KTLeftScoreReduceButton];
+- (void)CFSetContentView{
+    [self.contentView addSubview:self.CFRightScoreLabel];
+    [self.contentView addSubview:self.CFRightScoreAddButton];
+    [self.contentView addSubview:self.CFRightScoreReduceButton];
+    [self.contentView addSubview:self.CFVSLabel];
+    [self.contentView addSubview:self.CFLeftScoreLabel];
+    [self.contentView addSubview:self.CFLeftScoreAddButton];
+    [self.contentView addSubview:self.CFLeftScoreReduceButton];
     
-    [self.KTRightScoreLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.CFRightScoreLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.contentView).offset(32);
         make.top.equalTo(self.contentView).offset(30);
-        make.width.mas_equalTo((KTWIDTH - 224) * 0.5);
+        make.width.mas_equalTo((CFWIDTH - 224) * 0.5);
         make.height.mas_equalTo(60);
     }];
-    [self.KTRightScoreAddButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.KTRightScoreLabel);
-        make.top.equalTo(self.KTRightScoreLabel.mas_bottom).offset(20);
-        make.width.mas_equalTo((KTWIDTH - 224) * 0.5);
+    [self.CFRightScoreAddButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.CFRightScoreLabel);
+        make.top.equalTo(self.CFRightScoreLabel.mas_bottom).offset(20);
+        make.width.mas_equalTo((CFWIDTH - 224) * 0.5);
         make.height.mas_equalTo(30);
     }];
-    [self.KTRightScoreReduceButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.KTRightScoreLabel);
-        make.top.equalTo(self.KTRightScoreAddButton.mas_bottom).offset(20);
-        make.width.mas_equalTo((KTWIDTH - 224) * 0.5);
+    [self.CFRightScoreReduceButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.CFRightScoreLabel);
+        make.top.equalTo(self.CFRightScoreAddButton.mas_bottom).offset(20);
+        make.width.mas_equalTo((CFWIDTH - 224) * 0.5);
         make.height.mas_equalTo(30);
         make.bottom.equalTo(self.contentView).offset(-30);
     }];
-    [self.KTVSLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.CFVSLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.contentView);
-    make.centerY.equalTo(self.KTRightScoreLabel);
+    make.centerY.equalTo(self.CFRightScoreLabel);
         make.width.mas_equalTo(80);
         make.height.mas_equalTo(40);
     }];
-    [self.KTLeftScoreLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.CFLeftScoreLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.trailing.equalTo(self.contentView).offset(-32);
         make.top.equalTo(self.contentView).offset(30);
-        make.width.mas_equalTo((KTWIDTH - 224) * 0.5);
+        make.width.mas_equalTo((CFWIDTH - 224) * 0.5);
         make.height.mas_equalTo(60);
     }];
-    [self.KTLeftScoreAddButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.KTLeftScoreLabel);
-        make.top.equalTo(self.KTLeftScoreLabel.mas_bottom).offset(20);
-        make.width.mas_equalTo((KTWIDTH - 224) * 0.5);
+    [self.CFLeftScoreAddButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.CFLeftScoreLabel);
+        make.top.equalTo(self.CFLeftScoreLabel.mas_bottom).offset(20);
+        make.width.mas_equalTo((CFWIDTH - 224) * 0.5);
         make.height.mas_equalTo(30);
     }];
-    [self.KTLeftScoreReduceButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.KTLeftScoreLabel);
-        make.top.equalTo(self.KTLeftScoreAddButton.mas_bottom).offset(20);
-        make.width.mas_equalTo((KTWIDTH - 224) * 0.5);
+    [self.CFLeftScoreReduceButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.CFLeftScoreLabel);
+        make.top.equalTo(self.CFLeftScoreAddButton.mas_bottom).offset(20);
+        make.width.mas_equalTo((CFWIDTH - 224) * 0.5);
         make.height.mas_equalTo(30);
     }];
 }
 #pragma mark - actions
-- (void)KTScorerRefresh:(UIButton *)sender{
+- (void)CFScorerRefresh:(UIButton *)sender{
     if (sender.tag == 99) {
-        self.KTModel.KTRightscore++;
-        self.KTRightScoreLabel.text = [NSString stringWithFormat:@"%ld",_KTModel.KTRightscore];
+        self.CFModel.CFRightscore++;
+        self.CFRightScoreLabel.text = [NSString stringWithFormat:@"%ld",_CFModel.CFRightscore];
     }else if (sender.tag == 100){
-        if (self.KTModel.KTRightscore > 0) {
-            self.KTModel.KTRightscore--;
-            self.KTRightScoreLabel.text = [NSString stringWithFormat:@"%ld",_KTModel.KTRightscore];
+        if (self.CFModel.CFRightscore > 0) {
+            self.CFModel.CFRightscore--;
+            self.CFRightScoreLabel.text = [NSString stringWithFormat:@"%ld",_CFModel.CFRightscore];
         }
     }else if (sender.tag == 101){
-        self.KTModel.KTLeftscore++;
-        self.KTLeftScoreLabel.text = [NSString stringWithFormat:@"%ld",_KTModel.KTLeftscore];
+        self.CFModel.CFLeftscore++;
+        self.CFLeftScoreLabel.text = [NSString stringWithFormat:@"%ld",_CFModel.CFLeftscore];
     }else if (sender.tag == 102){
-        if (self.KTModel.KTLeftscore > 0) {
-        self.KTModel.KTLeftscore--;
-        self.KTLeftScoreLabel.text = [NSString stringWithFormat:@"%ld",_KTModel.KTLeftscore];
+        if (self.CFModel.CFLeftscore > 0) {
+        self.CFModel.CFLeftscore--;
+        self.CFLeftScoreLabel.text = [NSString stringWithFormat:@"%ld",_CFModel.CFLeftscore];
         }
     }
 }
-- (void)setKTModel:(KTScorecardViewModel *)KTModel{
-    _KTModel = KTModel;
-    self.KTRightScoreLabel.text = [NSString stringWithFormat:@"%ld",_KTModel.KTRightscore];
-    self.KTLeftScoreLabel.text = [NSString stringWithFormat:@"%ld",_KTModel.KTLeftscore];
+- (void)setCFModel:(CFScorecardViewModel *)CFModel{
+    _CFModel = CFModel;
+    self.CFRightScoreLabel.text = [NSString stringWithFormat:@"%ld",_CFModel.CFRightscore];
+    self.CFLeftScoreLabel.text = [NSString stringWithFormat:@"%ld",_CFModel.CFLeftscore];
 }
 #pragma mark - 属性懒加载
-- (UILabel *)KTRightScoreLabel{
-    if (!_KTRightScoreLabel) {
-        _KTRightScoreLabel = [[UILabel alloc] init];
-        _KTRightScoreLabel.backgroundColor = KTH_Color(0, 204, 131, 1);
-        _KTRightScoreLabel.textColor = [UIColor whiteColor];
-        _KTRightScoreLabel.font = [UIFont boldSystemFontOfSize:30];
-        _KTRightScoreLabel.textAlignment = NSTextAlignmentCenter;
-        _KTRightScoreLabel.layer.cornerRadius = 8.0f;
-        _KTRightScoreLabel.layer.masksToBounds = YES;
+- (UILabel *)CFRightScoreLabel{
+    if (!_CFRightScoreLabel) {
+        _CFRightScoreLabel = [[UILabel alloc] init];
+        _CFRightScoreLabel.backgroundColor = CFH_Color(0, 204, 131, 1);
+        _CFRightScoreLabel.textColor = [UIColor whiteColor];
+        _CFRightScoreLabel.font = [UIFont boldSystemFontOfSize:30];
+        _CFRightScoreLabel.textAlignment = NSTextAlignmentCenter;
+        _CFRightScoreLabel.layer.cornerRadius = 8.0f;
+        _CFRightScoreLabel.layer.masksToBounds = YES;
     }
-    return _KTRightScoreLabel;
+    return _CFRightScoreLabel;
 }
-- (UIButton *)KTRightScoreAddButton{
-    if (!_KTRightScoreAddButton) {
-        _KTRightScoreAddButton = [[UIButton alloc] init];
-        _KTRightScoreAddButton.titleLabel.font = [UIFont boldSystemFontOfSize:22];
-        _KTRightScoreAddButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-        [_KTRightScoreAddButton setTitle:@"+1" forState:UIControlStateNormal];
-        [_KTRightScoreAddButton setTitleColor:[UIColor systemGreenColor] forState:UIControlStateNormal];
-        _KTRightScoreAddButton.layer.cornerRadius = 6.0f;
-        _KTRightScoreAddButton.layer.masksToBounds = YES;
-        _KTRightScoreAddButton.layer.borderColor = [UIColor grayColor].CGColor;
-        _KTRightScoreAddButton.layer.borderWidth = 1.5f;
-        _KTRightScoreAddButton.tag = 99;
-        [_KTRightScoreAddButton addTarget:self action:@selector(KTScorerRefresh:) forControlEvents:UIControlEventTouchUpInside];
+- (UIButton *)CFRightScoreAddButton{
+    if (!_CFRightScoreAddButton) {
+        _CFRightScoreAddButton = [[UIButton alloc] init];
+        _CFRightScoreAddButton.titleLabel.font = [UIFont boldSystemFontOfSize:22];
+        _CFRightScoreAddButton.titleLabel.textAlignment = NSTextAlignmentCenter;
+        [_CFRightScoreAddButton setTitle:@"+1" forState:UIControlStateNormal];
+        [_CFRightScoreAddButton setTitleColor:[UIColor systemGreenColor] forState:UIControlStateNormal];
+        _CFRightScoreAddButton.layer.cornerRadius = 6.0f;
+        _CFRightScoreAddButton.layer.masksToBounds = YES;
+        _CFRightScoreAddButton.layer.borderColor = [UIColor grayColor].CGColor;
+        _CFRightScoreAddButton.layer.borderWidth = 1.5f;
+        _CFRightScoreAddButton.tag = 99;
+        [_CFRightScoreAddButton addTarget:self action:@selector(CFScorerRefresh:) forControlEvents:UIControlEventTouchUpInside];
     }
-    return _KTRightScoreAddButton;
+    return _CFRightScoreAddButton;
 }
-- (UIButton *)KTRightScoreReduceButton{
-    if (!_KTRightScoreReduceButton) {
-        _KTRightScoreReduceButton = [[UIButton alloc] init];
-        [_KTRightScoreReduceButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-        _KTRightScoreReduceButton.titleLabel.font = [UIFont boldSystemFontOfSize:22];
-        _KTRightScoreReduceButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-        [_KTRightScoreReduceButton setTitle:@"-1" forState:UIControlStateNormal];
-        _KTRightScoreReduceButton.layer.cornerRadius = 6.0f;
-        _KTRightScoreReduceButton.layer.masksToBounds = YES;
-        _KTRightScoreReduceButton.layer.borderColor = [UIColor grayColor].CGColor;
-        _KTRightScoreReduceButton.layer.borderWidth = 1.5f;
-        _KTRightScoreReduceButton.tag = 100;
-        [_KTRightScoreReduceButton addTarget:self action:@selector(KTScorerRefresh:) forControlEvents:UIControlEventTouchUpInside];
+- (UIButton *)CFRightScoreReduceButton{
+    if (!_CFRightScoreReduceButton) {
+        _CFRightScoreReduceButton = [[UIButton alloc] init];
+        [_CFRightScoreReduceButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        _CFRightScoreReduceButton.titleLabel.font = [UIFont boldSystemFontOfSize:22];
+        _CFRightScoreReduceButton.titleLabel.textAlignment = NSTextAlignmentCenter;
+        [_CFRightScoreReduceButton setTitle:@"-1" forState:UIControlStateNormal];
+        _CFRightScoreReduceButton.layer.cornerRadius = 6.0f;
+        _CFRightScoreReduceButton.layer.masksToBounds = YES;
+        _CFRightScoreReduceButton.layer.borderColor = [UIColor grayColor].CGColor;
+        _CFRightScoreReduceButton.layer.borderWidth = 1.5f;
+        _CFRightScoreReduceButton.tag = 100;
+        [_CFRightScoreReduceButton addTarget:self action:@selector(CFScorerRefresh:) forControlEvents:UIControlEventTouchUpInside];
     }
-    return _KTRightScoreReduceButton;
+    return _CFRightScoreReduceButton;
 }
-- (UILabel *)KTVSLabel{
-    if (!_KTVSLabel) {
-        _KTVSLabel = [[UILabel alloc] init];
-        _KTVSLabel.textColor = KTH_Color(0, 204, 131, 1);
-        _KTVSLabel.font = [UIFont boldSystemFontOfSize:38];
-        _KTVSLabel.textAlignment = NSTextAlignmentCenter;
-        _KTVSLabel.text = @":";
+- (UILabel *)CFVSLabel{
+    if (!_CFVSLabel) {
+        _CFVSLabel = [[UILabel alloc] init];
+        _CFVSLabel.textColor = CFH_Color(0, 204, 131, 1);
+        _CFVSLabel.font = [UIFont boldSystemFontOfSize:38];
+        _CFVSLabel.textAlignment = NSTextAlignmentCenter;
+        _CFVSLabel.text = @":";
     }
-    return _KTVSLabel;
+    return _CFVSLabel;
 }
-- (UILabel *)KTLeftScoreLabel{
-    if (!_KTLeftScoreLabel) {
-        _KTLeftScoreLabel = [[UILabel alloc] init];
-        _KTLeftScoreLabel.backgroundColor = KTH_Color(0, 204, 131, 1);
-        _KTLeftScoreLabel.textColor = [UIColor whiteColor];
-        _KTLeftScoreLabel.font = [UIFont boldSystemFontOfSize:30];
-        _KTLeftScoreLabel.textAlignment = NSTextAlignmentCenter;
-        _KTLeftScoreLabel.layer.cornerRadius = 8.0f;
-        _KTLeftScoreLabel.layer.masksToBounds = YES;
+- (UILabel *)CFLeftScoreLabel{
+    if (!_CFLeftScoreLabel) {
+        _CFLeftScoreLabel = [[UILabel alloc] init];
+        _CFLeftScoreLabel.backgroundColor = CFH_Color(0, 204, 131, 1);
+        _CFLeftScoreLabel.textColor = [UIColor whiteColor];
+        _CFLeftScoreLabel.font = [UIFont boldSystemFontOfSize:30];
+        _CFLeftScoreLabel.textAlignment = NSTextAlignmentCenter;
+        _CFLeftScoreLabel.layer.cornerRadius = 8.0f;
+        _CFLeftScoreLabel.layer.masksToBounds = YES;
     }
-    return _KTLeftScoreLabel;
+    return _CFLeftScoreLabel;
 }
-- (UIButton *)KTLeftScoreAddButton{
-    if (!_KTLeftScoreAddButton) {
-        _KTLeftScoreAddButton = [[UIButton alloc] init];
-        [_KTLeftScoreAddButton setTitleColor:[UIColor systemGreenColor] forState:UIControlStateNormal];
-        _KTLeftScoreAddButton.titleLabel.font = [UIFont boldSystemFontOfSize:22];
-        _KTLeftScoreAddButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-        [_KTLeftScoreAddButton setTitle:@"+1" forState:UIControlStateNormal];
-        _KTLeftScoreAddButton.layer.cornerRadius = 6.0f;
-        _KTLeftScoreAddButton.layer.masksToBounds = YES;
-        _KTLeftScoreAddButton.layer.borderColor = [UIColor grayColor].CGColor;
-        _KTLeftScoreAddButton.layer.borderWidth = 1.5f;
-        _KTLeftScoreAddButton.tag = 101;
-        [_KTLeftScoreAddButton addTarget:self action:@selector(KTScorerRefresh:) forControlEvents:UIControlEventTouchUpInside];
+- (UIButton *)CFLeftScoreAddButton{
+    if (!_CFLeftScoreAddButton) {
+        _CFLeftScoreAddButton = [[UIButton alloc] init];
+        [_CFLeftScoreAddButton setTitleColor:[UIColor systemGreenColor] forState:UIControlStateNormal];
+        _CFLeftScoreAddButton.titleLabel.font = [UIFont boldSystemFontOfSize:22];
+        _CFLeftScoreAddButton.titleLabel.textAlignment = NSTextAlignmentCenter;
+        [_CFLeftScoreAddButton setTitle:@"+1" forState:UIControlStateNormal];
+        _CFLeftScoreAddButton.layer.cornerRadius = 6.0f;
+        _CFLeftScoreAddButton.layer.masksToBounds = YES;
+        _CFLeftScoreAddButton.layer.borderColor = [UIColor grayColor].CGColor;
+        _CFLeftScoreAddButton.layer.borderWidth = 1.5f;
+        _CFLeftScoreAddButton.tag = 101;
+        [_CFLeftScoreAddButton addTarget:self action:@selector(CFScorerRefresh:) forControlEvents:UIControlEventTouchUpInside];
     }
-    return _KTLeftScoreAddButton;
+    return _CFLeftScoreAddButton;
 }
-- (UIButton *)KTLeftScoreReduceButton{
-    if (!_KTLeftScoreReduceButton) {
-        _KTLeftScoreReduceButton = [[UIButton alloc] init];
-        [_KTLeftScoreReduceButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-      _KTLeftScoreReduceButton.titleLabel.font = [UIFont boldSystemFontOfSize:22];
-        _KTLeftScoreReduceButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-        [_KTLeftScoreReduceButton setTitle:@"-1" forState:UIControlStateNormal];
-        _KTLeftScoreReduceButton.layer.cornerRadius = 6.0f;
-        _KTLeftScoreReduceButton.layer.masksToBounds = YES;
-        _KTLeftScoreReduceButton.layer.borderColor = [UIColor grayColor].CGColor;
-        _KTLeftScoreReduceButton.layer.borderWidth = 1.5f;
-        _KTLeftScoreReduceButton.tag = 102;
-        [_KTLeftScoreReduceButton addTarget:self action:@selector(KTScorerRefresh:) forControlEvents:UIControlEventTouchUpInside];
+- (UIButton *)CFLeftScoreReduceButton{
+    if (!_CFLeftScoreReduceButton) {
+        _CFLeftScoreReduceButton = [[UIButton alloc] init];
+        [_CFLeftScoreReduceButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+      _CFLeftScoreReduceButton.titleLabel.font = [UIFont boldSystemFontOfSize:22];
+        _CFLeftScoreReduceButton.titleLabel.textAlignment = NSTextAlignmentCenter;
+        [_CFLeftScoreReduceButton setTitle:@"-1" forState:UIControlStateNormal];
+        _CFLeftScoreReduceButton.layer.cornerRadius = 6.0f;
+        _CFLeftScoreReduceButton.layer.masksToBounds = YES;
+        _CFLeftScoreReduceButton.layer.borderColor = [UIColor grayColor].CGColor;
+        _CFLeftScoreReduceButton.layer.borderWidth = 1.5f;
+        _CFLeftScoreReduceButton.tag = 102;
+        [_CFLeftScoreReduceButton addTarget:self action:@selector(CFScorerRefresh:) forControlEvents:UIControlEventTouchUpInside];
     }
-    return _KTLeftScoreReduceButton;
+    return _CFLeftScoreReduceButton;
 }
 @end

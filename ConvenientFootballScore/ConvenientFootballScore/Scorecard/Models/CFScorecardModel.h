@@ -1,5 +1,5 @@
 //
-//  KTScorecardModel.h
+//  CFScorecardModel.h
 //  PocketFootballScore
 //
 //  Created by bykj on 2019/10/23.
@@ -10,16 +10,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KTScorecardModel : NSObject
-@property(nonatomic, copy)NSString *KTObjectId;//数据标识
+@interface CFScorecardModel : NSObject
+@property(nonatomic, copy)NSString *CFObjectId;//数据标识
 
-@property(nonatomic, copy)NSString *KTNatureCompetition;//比赛性质
-@property(nonatomic, copy)NSString *KTTeamRightName;//右边队伍名称
-@property(nonatomic, assign)NSUInteger KTTeamRightScore;//右边队伍得分
-@property(nonatomic, copy)NSString *KTTeamLeftName;//左边队伍名称
-@property(nonatomic, assign)NSUInteger KTTeamLeftScore;//左边队伍得分
-@property(nonatomic, strong)NSString *KTTotalTimeString;//总共用时
-@property(nonatomic, strong)NSString *KTEndTimeString;//结束时间
+@property(nonatomic, copy)NSString *CFNatureCompetition;//比赛性质
+@property(nonatomic, copy)NSString *CFTeamRightName;//右边队伍名称
+@property(nonatomic, assign)NSUInteger CFTeamRightScore;//右边队伍得分
+@property(nonatomic, copy)NSString *CFTeamLeftName;//左边队伍名称
+@property(nonatomic, assign)NSUInteger CFTeamLeftScore;//左边队伍得分
+@property(nonatomic, strong)NSString *CFTotalTimeString;//总共用时
+@property(nonatomic, strong)NSString *CFEndTimeString;//结束时间
 @end
 
 NS_ASSUME_NONNULL_END

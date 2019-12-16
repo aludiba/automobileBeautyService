@@ -1,144 +1,143 @@
 //
-//  KTTimePortionTableViewCell.m
-//  PocketScout
+//  CFTimePortionTableViewCell.m
 //
 //  Created by bykj on 2019/11/12.
 //  Copyright © 2019 com. All rights reserved.
 //
 
-#import "KTTimePortionTableViewCell.h"
-#import "KTScorecardViewModel.h"
+#import "CFTimePortionTableViewCell.h"
+#import "CFScorecardViewModel.h"
 
-@interface KTTimePortionTableViewCell()
-@property(nonatomic, strong)UIButton *KTStartGameButton;//开始比赛
-@property(nonatomic, strong)UILabel *KTDisplayTimeLengthLabel;//显示比赛时长
-@property(nonatomic, strong)UIButton *KTEndGameButton;//结束比赛
-@property(nonatomic, assign)BOOL KTisOn;
-@property(nonatomic, assign)BOOL KTisStop;
+@interface CFTimePortionTableViewCell()
+@property(nonatomic, strong)UIButton *CFStartGameButton;//开始比赛
+@property(nonatomic, strong)UILabel *CFDisplayTimeLengthLabel;//显示比赛时长
+@property(nonatomic, strong)UIButton *CFEndGameButton;//结束比赛
+@property(nonatomic, assign)BOOL CFisOn;
+@property(nonatomic, assign)BOOL CFisStop;
 @end
-@implementation KTTimePortionTableViewCell
+@implementation CFTimePortionTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        [self KTSetContentView];
+        [self CFSetContentView];
         
-        self.KTisStop = YES;
+        self.CFisStop = YES;
             //类方法会自动释放。
-        self.KTTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(KTstartTimer) userInfo:nil repeats:YES];
+        self.CFTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(CFstartTimer) userInfo:nil repeats:YES];
         //需要让定时器暂停
-        [self.KTTimer setFireDate:[NSDate distantFuture]];
-        [[NSRunLoop currentRunLoop] addTimer:self.KTTimer forMode:NSRunLoopCommonModes];
+        [self.CFTimer setFireDate:[NSDate distantFuture]];
+        [[NSRunLoop currentRunLoop] addTimer:self.CFTimer forMode:NSRunLoopCommonModes];
     }
     return self;
 }
 #pragma mark - actions
-- (void)KTSetContentView{
-    [self.contentView addSubview:self.KTStartGameButton];
-    [self.contentView addSubview:self.KTDisplayTimeLengthLabel];
-    [self.contentView addSubview:self.KTEndGameButton];
+- (void)CFSetContentView{
+    [self.contentView addSubview:self.CFStartGameButton];
+    [self.contentView addSubview:self.CFDisplayTimeLengthLabel];
+    [self.contentView addSubview:self.CFEndGameButton];
     
-    [self.KTStartGameButton mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.CFStartGameButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.contentView).offset(50);
         make.top.equalTo(self.contentView).offset(30);
         make.width.mas_equalTo(60);
         make.height.mas_equalTo(60);
         make.bottom.equalTo(self.contentView).offset(-30);
     }];
-    [self.KTEndGameButton mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.CFEndGameButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.trailing.equalTo(self.contentView).offset(-50);
         make.top.equalTo(self.contentView).offset(30);
         make.width.mas_equalTo(60);
         make.height.mas_equalTo(60);
     }];
-    [self.KTDisplayTimeLengthLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.KTStartGameButton.mas_trailing).offset(15);
-        make.centerY.equalTo(self.KTStartGameButton);
-        make.trailing.equalTo(self.KTEndGameButton.mas_leading).offset(-15);
+    [self.CFDisplayTimeLengthLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.CFStartGameButton.mas_trailing).offset(15);
+        make.centerY.equalTo(self.CFStartGameButton);
+        make.trailing.equalTo(self.CFEndGameButton.mas_leading).offset(-15);
         make.height.mas_equalTo(44);
     }];
 }
-- (void)setKTModel:(KTScorecardViewModel *)KTModel{
-    _KTModel = KTModel;
-    self.KTDisplayTimeLengthLabel.text = _KTModel.KTTimeStatisticsDateString;
-    self.KTIndex = _KTModel.KTIndexTime;
+- (void)setCFModel:(CFScorecardViewModel *)CFModel{
+    _CFModel = CFModel;
+    self.CFDisplayTimeLengthLabel.text = _CFModel.CFTimeStatisticsDateString;
+    self.CFIndex = _CFModel.CFIndexTime;
 }
--(void)KTstartTimer{
-    self.KTIndex = 101;
-    self.KTSeconds++;
-    if (self.KTSeconds == 60) {
-        self.KTMinutes++;
-        self.KTSeconds = 0;
+-(void)CFstartTimer{
+    self.CFIndex = 101;
+    self.CFSeconds++;
+    if (self.CFSeconds == 60) {
+        self.CFMinutes++;
+        self.CFSeconds = 0;
     }
-    if (self.KTMinutes == 60) {
-        self.KTHours++;
-        self.KTMinutes = 0;
+    if (self.CFMinutes == 60) {
+        self.CFHours++;
+        self.CFMinutes = 0;
     }
-    NSString *dateString = [NSString stringWithFormat:@"%.2d:%.2d:%.2d",self.KTHours,self.KTMinutes,self.KTSeconds];
-    self.KTModel.KTTimeStatisticsDateString = dateString;
-    self.KTModel.KTTimeStatisticsDate = [KTUIUtilities KTdateFromString:dateString formate:@"HH:mm:ss"];
-    self.KTDisplayTimeLengthLabel.text = dateString;
+    NSString *dateString = [NSString stringWithFormat:@"%.2d:%.2d:%.2d",self.CFHours,self.CFMinutes,self.CFSeconds];
+    self.CFModel.CFTimeStatisticsDateString = dateString;
+    self.CFModel.CFTimeStatisticsDate = [CFUIUtilities CFdateFromString:dateString formate:@"HH:mm:ss"];
+    self.CFDisplayTimeLengthLabel.text = dateString;
 }
-- (void)KTTimeControlAction:(UIButton *)sender{
+- (void)CFTimeControlAction:(UIButton *)sender{
     if (sender.tag == 99) {
-        self.KTSeconds = 0;
-        self.KTMinutes = 0;
-        self.KTHours = 0;
-        self.KTIndex = 0;
-        [self.KTTimer setFireDate:[NSDate date]];
-        self.KTisStop = NO;
+        self.CFSeconds = 0;
+        self.CFMinutes = 0;
+        self.CFHours = 0;
+        self.CFIndex = 0;
+        [self.CFTimer setFireDate:[NSDate date]];
+        self.CFisStop = NO;
     }else if (sender.tag == 100){
-        self.KTIndex = 1;
-        [self.KTTimer setFireDate:[NSDate distantFuture]];
-        self.KTisStop = YES;
+        self.CFIndex = 1;
+        [self.CFTimer setFireDate:[NSDate distantFuture]];
+        self.CFisStop = YES;
     }
-    if (self.KTScorecardTimingB) {
-        self.KTScorecardTimingB(self);
+    if (self.CFScorecardTimingB) {
+        self.CFScorecardTimingB(self);
     }
 }
 #pragma mark - 属性懒加载
-- (UIButton *)KTStartGameButton{
-    if (!_KTStartGameButton) {
-        _KTStartGameButton = [[UIButton alloc] init];
-        [_KTStartGameButton setBackgroundColor:[UIColor systemGreenColor]];
-        [_KTStartGameButton setTitle:NSLocalizedString(@"开始", nil) forState:UIControlStateNormal];
-        _KTStartGameButton.titleLabel.font = [UIFont systemFontOfSize:20];
-        [_KTStartGameButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        _KTStartGameButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-        _KTStartGameButton.layer.cornerRadius = 29.0f;
-        _KTStartGameButton.layer.masksToBounds = YES;
-        _KTStartGameButton.tag = 99;
-        [_KTStartGameButton addTarget:self action:@selector(KTTimeControlAction:) forControlEvents:UIControlEventTouchUpInside];
+- (UIButton *)CFStartGameButton{
+    if (!_CFStartGameButton) {
+        _CFStartGameButton = [[UIButton alloc] init];
+        [_CFStartGameButton setBackgroundColor:[UIColor systemGreenColor]];
+        [_CFStartGameButton setTitle:NSLocalizedString(@"开始", nil) forState:UIControlStateNormal];
+        _CFStartGameButton.titleLabel.font = [UIFont systemFontOfSize:20];
+        [_CFStartGameButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _CFStartGameButton.titleLabel.textAlignment = NSTextAlignmentCenter;
+        _CFStartGameButton.layer.cornerRadius = 29.0f;
+        _CFStartGameButton.layer.masksToBounds = YES;
+        _CFStartGameButton.tag = 99;
+        [_CFStartGameButton addTarget:self action:@selector(CFTimeControlAction:) forControlEvents:UIControlEventTouchUpInside];
     }
-    return _KTStartGameButton;
+    return _CFStartGameButton;
 }
-- (UILabel *)KTDisplayTimeLengthLabel{
-    if (!_KTDisplayTimeLengthLabel) {
-        _KTDisplayTimeLengthLabel = [[UILabel alloc] init];
-        _KTDisplayTimeLengthLabel.textColor = [UIColor blackColor];
-        _KTDisplayTimeLengthLabel.backgroundColor = [UIColor cyanColor];
-        _KTDisplayTimeLengthLabel.font = [UIFont boldSystemFontOfSize:25];
-        _KTDisplayTimeLengthLabel.textAlignment = NSTextAlignmentCenter;
-        _KTDisplayTimeLengthLabel.layer.cornerRadius = 8.0f;
-        _KTDisplayTimeLengthLabel.layer.masksToBounds = YES;
-        _KTDisplayTimeLengthLabel.layer.borderColor = [UIColor systemRedColor].CGColor;
-        _KTDisplayTimeLengthLabel.layer.borderWidth = 1.5f;
-        _KTDisplayTimeLengthLabel.numberOfLines = 0;
+- (UILabel *)CFDisplayTimeLengthLabel{
+    if (!_CFDisplayTimeLengthLabel) {
+        _CFDisplayTimeLengthLabel = [[UILabel alloc] init];
+        _CFDisplayTimeLengthLabel.textColor = [UIColor blackColor];
+        _CFDisplayTimeLengthLabel.backgroundColor = [UIColor cyanColor];
+        _CFDisplayTimeLengthLabel.font = [UIFont boldSystemFontOfSize:25];
+        _CFDisplayTimeLengthLabel.textAlignment = NSTextAlignmentCenter;
+        _CFDisplayTimeLengthLabel.layer.cornerRadius = 8.0f;
+        _CFDisplayTimeLengthLabel.layer.masksToBounds = YES;
+        _CFDisplayTimeLengthLabel.layer.borderColor = [UIColor systemRedColor].CGColor;
+        _CFDisplayTimeLengthLabel.layer.borderWidth = 1.5f;
+        _CFDisplayTimeLengthLabel.numberOfLines = 0;
     }
-    return _KTDisplayTimeLengthLabel;
+    return _CFDisplayTimeLengthLabel;
 }
-- (UIButton *)KTEndGameButton{
-    if (!_KTEndGameButton) {
-        _KTEndGameButton = [[UIButton alloc] init];
-        [_KTEndGameButton setBackgroundColor:[UIColor systemRedColor]];
-        [_KTEndGameButton setTitle:NSLocalizedString(@"停止", nil) forState:UIControlStateNormal];
-        _KTEndGameButton.titleLabel.font = [UIFont systemFontOfSize:20];
-        [_KTEndGameButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        _KTEndGameButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-        _KTEndGameButton.layer.cornerRadius = 29.0f;
-        _KTEndGameButton.layer.masksToBounds = YES;
-        _KTEndGameButton.tag = 100;
-        [_KTEndGameButton addTarget:self action:@selector(KTTimeControlAction:) forControlEvents:UIControlEventTouchUpInside];
+- (UIButton *)CFEndGameButton{
+    if (!_CFEndGameButton) {
+        _CFEndGameButton = [[UIButton alloc] init];
+        [_CFEndGameButton setBackgroundColor:[UIColor systemRedColor]];
+        [_CFEndGameButton setTitle:NSLocalizedString(@"停止", nil) forState:UIControlStateNormal];
+        _CFEndGameButton.titleLabel.font = [UIFont systemFontOfSize:20];
+        [_CFEndGameButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _CFEndGameButton.titleLabel.textAlignment = NSTextAlignmentCenter;
+        _CFEndGameButton.layer.cornerRadius = 29.0f;
+        _CFEndGameButton.layer.masksToBounds = YES;
+        _CFEndGameButton.tag = 100;
+        [_CFEndGameButton addTarget:self action:@selector(CFTimeControlAction:) forControlEvents:UIControlEventTouchUpInside];
 
     }
-    return _KTEndGameButton;
+    return _CFEndGameButton;
 }
 @end

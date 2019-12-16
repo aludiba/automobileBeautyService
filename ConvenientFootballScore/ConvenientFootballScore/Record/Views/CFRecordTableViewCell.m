@@ -1,6 +1,5 @@
 //
 //  CFRecordTableViewCell.m
-//  PocketScout
 //
 //  Created by bykj on 2019/11/14.
 //  Copyright © 2019 com. All rights reserved.

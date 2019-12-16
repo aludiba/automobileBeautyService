@@ -1,18 +1,17 @@
 //
-//  KTScorecardViewController.h
-//  PocketScout
+//  CFScorecardViewController.h
 //
 //  Created by bykj on 2019/11/12.
 //  Copyright © 2019 com. All rights reserved.
 //
 
-#import "KTBaseViewController.h"
+#import "CFBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KTScorecardViewController : KTBaseViewController
-+ (KTScorecardViewController *)shareInstance;
-- (void)KTsaveAction;
+@interface CFScorecardViewController : CFBaseViewController
++ (CFScorecardViewController *)shareInstance;
+- (void)CFsaveAction;
 @end
 
 NS_ASSUME_NONNULL_END

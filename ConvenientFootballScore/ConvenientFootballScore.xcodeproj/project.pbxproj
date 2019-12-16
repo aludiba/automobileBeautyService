@@ -33,9 +33,6 @@
 		AE27895123A7270F006C700E /* MBProgressHUD+CFNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893A23A7270F006C700E /* MBProgressHUD+CFNJ.m */; };
 		AE27895223A7270F006C700E /* CFHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893F23A7270F006C700E /* CFHBTool.m */; };
 		AE27895323A7270F006C700E /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27894023A7270F006C700E /* CalendarTool.m */; };
-		AE27895423A7270F006C700E /* jpush-extension-ios-1.1.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE27894523A7270F006C700E /* jpush-extension-ios-1.1.2.a */; };
-		AE27895523A7270F006C700E /* jpush-ios-3.2.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE27894623A7270F006C700E /* jpush-ios-3.2.6.a */; };
-		AE27895623A7270F006C700E /* jcore-ios-2.1.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE27894823A7270F006C700E /* jcore-ios-2.1.4.a */; };
 		AE27895723A7270F006C700E /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27894A23A7270F006C700E /* NSArray+log.m */; };
 		AE27895E23A728E0006C700E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE27895923A728E0006C700E /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -96,11 +93,6 @@
 		AE27894123A7270F006C700E /* MBProgressHUD+CFNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+CFNJ.h"; sourceTree = "<group>"; };
 		AE27894223A7270F006C700E /* CFUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFUIUtilities.h; sourceTree = "<group>"; };
 		AE27894323A7270F006C700E /* CFNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNDHTTPClient.h; sourceTree = "<group>"; };
-		AE27894523A7270F006C700E /* jpush-extension-ios-1.1.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-extension-ios-1.1.2.a"; sourceTree = "<group>"; };
-		AE27894623A7270F006C700E /* jpush-ios-3.2.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.6.a"; sourceTree = "<group>"; };
-		AE27894723A7270F006C700E /* JPushNotificationExtensionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPushNotificationExtensionService.h; sourceTree = "<group>"; };
-		AE27894823A7270F006C700E /* jcore-ios-2.1.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.1.4.a"; sourceTree = "<group>"; };
-		AE27894923A7270F006C700E /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
 		AE27894A23A7270F006C700E /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
 		AE27894B23A7270F006C700E /* CF_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CF_PrefixHeader.pch; sourceTree = "<group>"; };
 		AE27895A23A728E0006C700E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -114,10 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE27895523A7270F006C700E /* jpush-ios-3.2.6.a in Frameworks */,
 				346E9C87ADB01A9A8255FFC5 /* Pods_ConvenientFootballScore.framework in Frameworks */,
-				AE27895423A7270F006C700E /* jpush-extension-ios-1.1.2.a in Frameworks */,
-				AE27895623A7270F006C700E /* jcore-ios-2.1.4.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +247,9 @@
 			isa = PBXGroup;
 			children = (
 				AE27891A23A7261B006C700E /* CFScorecardViewModel.h */,
-				AE27891B23A7261B006C700E /* CFScorecardModel.m */,
 				AE27891C23A7261B006C700E /* CFScorecardViewModel.m */,
 				AE27891D23A7261B006C700E /* CFScorecardModel.h */,
+				AE27891B23A7261B006C700E /* CFScorecardModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -277,14 +266,14 @@
 		AE27892123A7261B006C700E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE27892223A7261B006C700E /* CFBothTeamsTableViewCell.m */,
 				AE27892323A7261B006C700E /* CFScoringPartTableViewCell.h */,
-				AE27892423A7261B006C700E /* CFScoringSaveTableViewCell.h */,
-				AE27892523A7261B006C700E /* CFTimePortionTableViewCell.h */,
-				AE27892623A7261B006C700E /* CFBothTeamsTableViewCell.h */,
 				AE27892723A7261B006C700E /* CFScoringPartTableViewCell.m */,
-				AE27892823A7261B006C700E /* CFScoringSaveTableViewCell.m */,
+				AE27892523A7261B006C700E /* CFTimePortionTableViewCell.h */,
 				AE27892923A7261B006C700E /* CFTimePortionTableViewCell.m */,
+				AE27892623A7261B006C700E /* CFBothTeamsTableViewCell.h */,
+				AE27892223A7261B006C700E /* CFBothTeamsTableViewCell.m */,
+				AE27892423A7261B006C700E /* CFScoringSaveTableViewCell.h */,
+				AE27892823A7261B006C700E /* CFScoringSaveTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -292,7 +281,6 @@
 		AE27893123A7270E006C700E /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				AE27894423A7270F006C700E /* JPush */,
 				AE27894B23A7270F006C700E /* CF_PrefixHeader.pch */,
 				AE27893223A7270E006C700E /* CFGlobal.h */,
 				AE27894323A7270F006C700E /* CFNDHTTPClient.h */,
@@ -315,18 +303,6 @@
 				AE27893523A7270E006C700E /* CFTabBarController.m */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		AE27894423A7270F006C700E /* JPush */ = {
-			isa = PBXGroup;
-			children = (
-				AE27894523A7270F006C700E /* jpush-extension-ios-1.1.2.a */,
-				AE27894623A7270F006C700E /* jpush-ios-3.2.6.a */,
-				AE27894723A7270F006C700E /* JPushNotificationExtensionService.h */,
-				AE27894823A7270F006C700E /* jcore-ios-2.1.4.a */,
-				AE27894923A7270F006C700E /* JPUSHService.h */,
-			);
-			path = JPush;
 			sourceTree = "<group>";
 		};
 		AE27895823A728E0006C700E /* Resources */ = {
@@ -621,7 +597,9 @@
 			baseConfigurationReference = 90D70A34C6121B4D85107E1B /* Pods-ConvenientFootballScore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ConvenientFootballScore/Common/CF_PrefixHeader.pch";
 				INFOPLIST_FILE = ConvenientFootballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -642,7 +620,9 @@
 			baseConfigurationReference = 0113B6641BFEBB1C208939BB /* Pods-ConvenientFootballScore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ConvenientFootballScore/Common/CF_PrefixHeader.pch";
 				INFOPLIST_FILE = ConvenientFootballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
