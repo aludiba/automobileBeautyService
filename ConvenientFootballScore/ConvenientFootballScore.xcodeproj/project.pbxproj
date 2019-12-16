@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,33 @@
 		AE2788E423A71AF1006C700E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2788E323A71AF1006C700E /* AppDelegate.m */; };
 		AE2788EF23A71AF5006C700E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2788EE23A71AF5006C700E /* Assets.xcassets */; };
 		AE2788F523A71AF5006C700E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2788F423A71AF5006C700E /* main.m */; };
+		AE27890923A723F3006C700E /* CFSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2788FD23A723F2006C700E /* CFSetViewModel.m */; };
+		AE27890A23A723F3006C700E /* CFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27890123A723F2006C700E /* CFLoginViewController.m */; };
+		AE27890B23A723F3006C700E /* CFMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27890323A723F2006C700E /* CFMineViewController.m */; };
+		AE27890C23A723F3006C700E /* CFPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27890523A723F2006C700E /* CFPasswordChangeViewController.m */; };
+		AE27890D23A723F3006C700E /* CFLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27890723A723F2006C700E /* CFLoginTableViewCell.m */; };
+		AE27891623A72550006C700E /* CFRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27891223A72550006C700E /* CFRecordViewController.m */; };
+		AE27891723A72550006C700E /* CFRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27891423A72550006C700E /* CFRecordTableViewCell.m */; };
+		AE27892A23A7261B006C700E /* CFScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27891B23A7261B006C700E /* CFScorecardModel.m */; };
+		AE27892B23A7261B006C700E /* CFScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27891C23A7261B006C700E /* CFScorecardViewModel.m */; };
+		AE27892C23A7261B006C700E /* CFScorecardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27892023A7261B006C700E /* CFScorecardViewController.m */; };
+		AE27892D23A7261B006C700E /* CFBothTeamsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27892223A7261B006C700E /* CFBothTeamsTableViewCell.m */; };
+		AE27892E23A7261B006C700E /* CFScoringPartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27892723A7261B006C700E /* CFScoringPartTableViewCell.m */; };
+		AE27892F23A7261B006C700E /* CFScoringSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27892823A7261B006C700E /* CFScoringSaveTableViewCell.m */; };
+		AE27893023A7261B006C700E /* CFTimePortionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27892923A7261B006C700E /* CFTimePortionTableViewCell.m */; };
+		AE27894C23A7270F006C700E /* CFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893323A7270E006C700E /* CFBaseViewController.m */; };
+		AE27894D23A7270F006C700E /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893423A7270E006C700E /* NSDictionary+log.m */; };
+		AE27894E23A7270F006C700E /* CFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893523A7270E006C700E /* CFTabBarController.m */; };
+		AE27894F23A7270F006C700E /* CFNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893823A7270F006C700E /* CFNDHTTPClient.m */; };
+		AE27895023A7270F006C700E /* CFUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893923A7270F006C700E /* CFUIUtilities.m */; };
+		AE27895123A7270F006C700E /* MBProgressHUD+CFNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893A23A7270F006C700E /* MBProgressHUD+CFNJ.m */; };
+		AE27895223A7270F006C700E /* CFHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893F23A7270F006C700E /* CFHBTool.m */; };
+		AE27895323A7270F006C700E /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27894023A7270F006C700E /* CalendarTool.m */; };
+		AE27895423A7270F006C700E /* jpush-extension-ios-1.1.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE27894523A7270F006C700E /* jpush-extension-ios-1.1.2.a */; };
+		AE27895523A7270F006C700E /* jpush-ios-3.2.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE27894623A7270F006C700E /* jpush-ios-3.2.6.a */; };
+		AE27895623A7270F006C700E /* jcore-ios-2.1.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE27894823A7270F006C700E /* jcore-ios-2.1.4.a */; };
+		AE27895723A7270F006C700E /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27894A23A7270F006C700E /* NSArray+log.m */; };
+		AE27895E23A728E0006C700E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE27895923A728E0006C700E /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +50,63 @@
 		AE2788EE23A71AF5006C700E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE2788F323A71AF5006C700E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE2788F423A71AF5006C700E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE2788FD23A723F2006C700E /* CFSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFSetViewModel.m; sourceTree = "<group>"; };
+		AE2788FE23A723F2006C700E /* CFSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFSetViewModel.h; sourceTree = "<group>"; };
+		AE27890023A723F2006C700E /* CFMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFMineViewController.h; sourceTree = "<group>"; };
+		AE27890123A723F2006C700E /* CFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFLoginViewController.m; sourceTree = "<group>"; };
+		AE27890223A723F2006C700E /* CFPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFPasswordChangeViewController.h; sourceTree = "<group>"; };
+		AE27890323A723F2006C700E /* CFMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFMineViewController.m; sourceTree = "<group>"; };
+		AE27890423A723F2006C700E /* CFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFLoginViewController.h; sourceTree = "<group>"; };
+		AE27890523A723F2006C700E /* CFPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFPasswordChangeViewController.m; sourceTree = "<group>"; };
+		AE27890723A723F2006C700E /* CFLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFLoginTableViewCell.m; sourceTree = "<group>"; };
+		AE27890823A723F3006C700E /* CFLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFLoginTableViewCell.h; sourceTree = "<group>"; };
+		AE27891123A72550006C700E /* CFRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFRecordViewController.h; sourceTree = "<group>"; };
+		AE27891223A72550006C700E /* CFRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFRecordViewController.m; sourceTree = "<group>"; };
+		AE27891423A72550006C700E /* CFRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFRecordTableViewCell.m; sourceTree = "<group>"; };
+		AE27891523A72550006C700E /* CFRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFRecordTableViewCell.h; sourceTree = "<group>"; };
+		AE27891A23A7261B006C700E /* CFScorecardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFScorecardViewModel.h; sourceTree = "<group>"; };
+		AE27891B23A7261B006C700E /* CFScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFScorecardModel.m; sourceTree = "<group>"; };
+		AE27891C23A7261B006C700E /* CFScorecardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFScorecardViewModel.m; sourceTree = "<group>"; };
+		AE27891D23A7261B006C700E /* CFScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFScorecardModel.h; sourceTree = "<group>"; };
+		AE27891F23A7261B006C700E /* CFScorecardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFScorecardViewController.h; sourceTree = "<group>"; };
+		AE27892023A7261B006C700E /* CFScorecardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFScorecardViewController.m; sourceTree = "<group>"; };
+		AE27892223A7261B006C700E /* CFBothTeamsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFBothTeamsTableViewCell.m; sourceTree = "<group>"; };
+		AE27892323A7261B006C700E /* CFScoringPartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFScoringPartTableViewCell.h; sourceTree = "<group>"; };
+		AE27892423A7261B006C700E /* CFScoringSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFScoringSaveTableViewCell.h; sourceTree = "<group>"; };
+		AE27892523A7261B006C700E /* CFTimePortionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFTimePortionTableViewCell.h; sourceTree = "<group>"; };
+		AE27892623A7261B006C700E /* CFBothTeamsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFBothTeamsTableViewCell.h; sourceTree = "<group>"; };
+		AE27892723A7261B006C700E /* CFScoringPartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFScoringPartTableViewCell.m; sourceTree = "<group>"; };
+		AE27892823A7261B006C700E /* CFScoringSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFScoringSaveTableViewCell.m; sourceTree = "<group>"; };
+		AE27892923A7261B006C700E /* CFTimePortionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFTimePortionTableViewCell.m; sourceTree = "<group>"; };
+		AE27893223A7270E006C700E /* CFGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFGlobal.h; sourceTree = "<group>"; };
+		AE27893323A7270E006C700E /* CFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFBaseViewController.m; sourceTree = "<group>"; };
+		AE27893423A7270E006C700E /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
+		AE27893523A7270E006C700E /* CFTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFTabBarController.m; sourceTree = "<group>"; };
+		AE27893623A7270F006C700E /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
+		AE27893723A7270F006C700E /* CFHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFHBTool.h; sourceTree = "<group>"; };
+		AE27893823A7270F006C700E /* CFNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNDHTTPClient.m; sourceTree = "<group>"; };
+		AE27893923A7270F006C700E /* CFUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFUIUtilities.m; sourceTree = "<group>"; };
+		AE27893A23A7270F006C700E /* MBProgressHUD+CFNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+CFNJ.m"; sourceTree = "<group>"; };
+		AE27893B23A7270F006C700E /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		AE27893C23A7270F006C700E /* CFTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFTabBarController.h; sourceTree = "<group>"; };
+		AE27893D23A7270F006C700E /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
+		AE27893E23A7270F006C700E /* CFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFBaseViewController.h; sourceTree = "<group>"; };
+		AE27893F23A7270F006C700E /* CFHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFHBTool.m; sourceTree = "<group>"; };
+		AE27894023A7270F006C700E /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
+		AE27894123A7270F006C700E /* MBProgressHUD+CFNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+CFNJ.h"; sourceTree = "<group>"; };
+		AE27894223A7270F006C700E /* CFUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFUIUtilities.h; sourceTree = "<group>"; };
+		AE27894323A7270F006C700E /* CFNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNDHTTPClient.h; sourceTree = "<group>"; };
+		AE27894523A7270F006C700E /* jpush-extension-ios-1.1.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-extension-ios-1.1.2.a"; sourceTree = "<group>"; };
+		AE27894623A7270F006C700E /* jpush-ios-3.2.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.6.a"; sourceTree = "<group>"; };
+		AE27894723A7270F006C700E /* JPushNotificationExtensionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPushNotificationExtensionService.h; sourceTree = "<group>"; };
+		AE27894823A7270F006C700E /* jcore-ios-2.1.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.1.4.a"; sourceTree = "<group>"; };
+		AE27894923A7270F006C700E /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		AE27894A23A7270F006C700E /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		AE27894B23A7270F006C700E /* CF_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CF_PrefixHeader.pch; sourceTree = "<group>"; };
+		AE27895A23A728E0006C700E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AE27895B23A728E0006C700E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE27895C23A728E0006C700E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE27895D23A728E0006C700E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,7 +114,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE27895523A7270F006C700E /* jpush-ios-3.2.6.a in Frameworks */,
 				346E9C87ADB01A9A8255FFC5 /* Pods_ConvenientFootballScore.framework in Frameworks */,
+				AE27895423A7270F006C700E /* jpush-extension-ios-1.1.2.a in Frameworks */,
+				AE27895623A7270F006C700E /* jcore-ios-2.1.4.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,7 +130,6 @@
 				90D70A34C6121B4D85107E1B /* Pods-ConvenientFootballScore.debug.xcconfig */,
 				0113B6641BFEBB1C208939BB /* Pods-ConvenientFootballScore.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -70,11 +156,185 @@
 			children = (
 				AE2788E223A71AF1006C700E /* AppDelegate.h */,
 				AE2788E323A71AF1006C700E /* AppDelegate.m */,
+				AE27895823A728E0006C700E /* Resources */,
+				AE27893123A7270E006C700E /* Common */,
+				AE27891823A7261B006C700E /* Scorecard */,
+				AE27890E23A72550006C700E /* Record */,
+				AE2788FB23A723F2006C700E /* Mine */,
 				AE2788EE23A71AF5006C700E /* Assets.xcassets */,
 				AE2788F323A71AF5006C700E /* Info.plist */,
 				AE2788F423A71AF5006C700E /* main.m */,
 			);
 			path = ConvenientFootballScore;
+			sourceTree = "<group>";
+		};
+		AE2788FB23A723F2006C700E /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				AE2788FC23A723F2006C700E /* Models */,
+				AE27890623A723F2006C700E /* Views */,
+				AE2788FF23A723F2006C700E /* Controllers */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		AE2788FC23A723F2006C700E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE2788FE23A723F2006C700E /* CFSetViewModel.h */,
+				AE2788FD23A723F2006C700E /* CFSetViewModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE2788FF23A723F2006C700E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE27890023A723F2006C700E /* CFMineViewController.h */,
+				AE27890323A723F2006C700E /* CFMineViewController.m */,
+				AE27890423A723F2006C700E /* CFLoginViewController.h */,
+				AE27890123A723F2006C700E /* CFLoginViewController.m */,
+				AE27890223A723F2006C700E /* CFPasswordChangeViewController.h */,
+				AE27890523A723F2006C700E /* CFPasswordChangeViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE27890623A723F2006C700E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE27890823A723F3006C700E /* CFLoginTableViewCell.h */,
+				AE27890723A723F2006C700E /* CFLoginTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE27890E23A72550006C700E /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				AE27890F23A72550006C700E /* Models */,
+				AE27891023A72550006C700E /* Controllers */,
+				AE27891323A72550006C700E /* Views */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		AE27890F23A72550006C700E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE27891023A72550006C700E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE27891123A72550006C700E /* CFRecordViewController.h */,
+				AE27891223A72550006C700E /* CFRecordViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE27891323A72550006C700E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE27891523A72550006C700E /* CFRecordTableViewCell.h */,
+				AE27891423A72550006C700E /* CFRecordTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE27891823A7261B006C700E /* Scorecard */ = {
+			isa = PBXGroup;
+			children = (
+				AE27891923A7261B006C700E /* Models */,
+				AE27891E23A7261B006C700E /* Controllers */,
+				AE27892123A7261B006C700E /* Views */,
+			);
+			path = Scorecard;
+			sourceTree = "<group>";
+		};
+		AE27891923A7261B006C700E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE27891A23A7261B006C700E /* CFScorecardViewModel.h */,
+				AE27891B23A7261B006C700E /* CFScorecardModel.m */,
+				AE27891C23A7261B006C700E /* CFScorecardViewModel.m */,
+				AE27891D23A7261B006C700E /* CFScorecardModel.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE27891E23A7261B006C700E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE27891F23A7261B006C700E /* CFScorecardViewController.h */,
+				AE27892023A7261B006C700E /* CFScorecardViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE27892123A7261B006C700E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE27892223A7261B006C700E /* CFBothTeamsTableViewCell.m */,
+				AE27892323A7261B006C700E /* CFScoringPartTableViewCell.h */,
+				AE27892423A7261B006C700E /* CFScoringSaveTableViewCell.h */,
+				AE27892523A7261B006C700E /* CFTimePortionTableViewCell.h */,
+				AE27892623A7261B006C700E /* CFBothTeamsTableViewCell.h */,
+				AE27892723A7261B006C700E /* CFScoringPartTableViewCell.m */,
+				AE27892823A7261B006C700E /* CFScoringSaveTableViewCell.m */,
+				AE27892923A7261B006C700E /* CFTimePortionTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE27893123A7270E006C700E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AE27894423A7270F006C700E /* JPush */,
+				AE27894B23A7270F006C700E /* CF_PrefixHeader.pch */,
+				AE27893223A7270E006C700E /* CFGlobal.h */,
+				AE27894323A7270F006C700E /* CFNDHTTPClient.h */,
+				AE27893823A7270F006C700E /* CFNDHTTPClient.m */,
+				AE27893D23A7270F006C700E /* NSDictionary+log.h */,
+				AE27893423A7270E006C700E /* NSDictionary+log.m */,
+				AE27893723A7270F006C700E /* CFHBTool.h */,
+				AE27893F23A7270F006C700E /* CFHBTool.m */,
+				AE27894223A7270F006C700E /* CFUIUtilities.h */,
+				AE27893923A7270F006C700E /* CFUIUtilities.m */,
+				AE27894123A7270F006C700E /* MBProgressHUD+CFNJ.h */,
+				AE27893A23A7270F006C700E /* MBProgressHUD+CFNJ.m */,
+				AE27893B23A7270F006C700E /* NSArray+log.h */,
+				AE27894A23A7270F006C700E /* NSArray+log.m */,
+				AE27893623A7270F006C700E /* CalendarTool.h */,
+				AE27894023A7270F006C700E /* CalendarTool.m */,
+				AE27893E23A7270F006C700E /* CFBaseViewController.h */,
+				AE27893323A7270E006C700E /* CFBaseViewController.m */,
+				AE27893C23A7270F006C700E /* CFTabBarController.h */,
+				AE27893523A7270E006C700E /* CFTabBarController.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AE27894423A7270F006C700E /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				AE27894523A7270F006C700E /* jpush-extension-ios-1.1.2.a */,
+				AE27894623A7270F006C700E /* jpush-ios-3.2.6.a */,
+				AE27894723A7270F006C700E /* JPushNotificationExtensionService.h */,
+				AE27894823A7270F006C700E /* jcore-ios-2.1.4.a */,
+				AE27894923A7270F006C700E /* JPUSHService.h */,
+			);
+			path = JPush;
+			sourceTree = "<group>";
+		};
+		AE27895823A728E0006C700E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE27895923A728E0006C700E /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		FFEE1289088BB68EE8390401 /* Frameworks */ = {
@@ -128,6 +388,9 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				ja,
+				ko,
 			);
 			mainGroup = AE2788D623A71AF1006C700E;
 			productRefGroup = AE2788E023A71AF1006C700E /* Products */;
@@ -145,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE2788EF23A71AF5006C700E /* Assets.xcassets in Resources */,
+				AE27895E23A728E0006C700E /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,12 +461,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE27892C23A7261B006C700E /* CFScorecardViewController.m in Sources */,
+				AE27895323A7270F006C700E /* CalendarTool.m in Sources */,
+				AE27895023A7270F006C700E /* CFUIUtilities.m in Sources */,
+				AE27890923A723F3006C700E /* CFSetViewModel.m in Sources */,
+				AE27892D23A7261B006C700E /* CFBothTeamsTableViewCell.m in Sources */,
 				AE2788E423A71AF1006C700E /* AppDelegate.m in Sources */,
+				AE27894C23A7270F006C700E /* CFBaseViewController.m in Sources */,
+				AE27891623A72550006C700E /* CFRecordViewController.m in Sources */,
+				AE27892B23A7261B006C700E /* CFScorecardViewModel.m in Sources */,
+				AE27892A23A7261B006C700E /* CFScorecardModel.m in Sources */,
+				AE27892F23A7261B006C700E /* CFScoringSaveTableViewCell.m in Sources */,
+				AE27895123A7270F006C700E /* MBProgressHUD+CFNJ.m in Sources */,
+				AE27890C23A723F3006C700E /* CFPasswordChangeViewController.m in Sources */,
+				AE27891723A72550006C700E /* CFRecordTableViewCell.m in Sources */,
 				AE2788F523A71AF5006C700E /* main.m in Sources */,
+				AE27890A23A723F3006C700E /* CFLoginViewController.m in Sources */,
+				AE27892E23A7261B006C700E /* CFScoringPartTableViewCell.m in Sources */,
+				AE27893023A7261B006C700E /* CFTimePortionTableViewCell.m in Sources */,
+				AE27890B23A723F3006C700E /* CFMineViewController.m in Sources */,
+				AE27894E23A7270F006C700E /* CFTabBarController.m in Sources */,
+				AE27895223A7270F006C700E /* CFHBTool.m in Sources */,
+				AE27895723A7270F006C700E /* NSArray+log.m in Sources */,
+				AE27894F23A7270F006C700E /* CFNDHTTPClient.m in Sources */,
+				AE27890D23A723F3006C700E /* CFLoginTableViewCell.m in Sources */,
+				AE27894D23A7270F006C700E /* NSDictionary+log.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE27895923A728E0006C700E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE27895A23A728E0006C700E /* zh-Hans */,
+				AE27895B23A728E0006C700E /* ja */,
+				AE27895C23A728E0006C700E /* en */,
+				AE27895D23A728E0006C700E /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AE2788F623A71AF5006C700E /* Debug */ = {
@@ -326,6 +627,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ConvenientFootballScore/Common/JPush",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.ConvenientFootballScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -342,6 +647,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ConvenientFootballScore/Common/JPush",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.ConvenientFootballScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";

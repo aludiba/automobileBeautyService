@@ -1,0 +1,12 @@
+//
+//  CF_PrefixHeader.pch
+//  Simple Diary
+//
+//  Created by bykj on 2019/7/20.
+//  Copyright © 2019 hgg. All rights reserved.
+//
+
+#ifndef CF_PrefixHeader_pch
+#define CF_PrefixHeader_pch
+#import "CFGlobal.h"
+#endif /* CF_PrefixHeader_pch */
