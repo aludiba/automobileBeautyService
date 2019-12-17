@@ -696,7 +696,9 @@
 				CODE_SIGN_ENTITLEMENTS = ConvenientFootballScore/ConvenientFootballScore.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Ildomar Bavaresco Model (264VCF2ZR7)";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 264VCF2ZR7;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ConvenientFootballScore/Common/CF_PrefixHeader.pch";
 				INFOPLIST_FILE = ConvenientFootballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -723,7 +725,9 @@
 				CODE_SIGN_ENTITLEMENTS = ConvenientFootballScore/ConvenientFootballScore.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Ildomar Bavaresco Model (264VCF2ZR7)";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 264VCF2ZR7;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ConvenientFootballScore/Common/CF_PrefixHeader.pch";
 				INFOPLIST_FILE = ConvenientFootballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
