@@ -58,7 +58,7 @@
 /* Begin PBXFileReference section */
 		0095D88E6030915DAB7F8149 /* Pods-PocketBasketballScout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBasketballScout.debug.xcconfig"; path = "Target Support Files/Pods-PocketBasketballScout/Pods-PocketBasketballScout.debug.xcconfig"; sourceTree = "<group>"; };
 		AA94B92244B3E8AE8D1350D2 /* Pods-PocketBasketballScout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBasketballScout.release.xcconfig"; path = "Target Support Files/Pods-PocketBasketballScout/Pods-PocketBasketballScout.release.xcconfig"; sourceTree = "<group>"; };
-		AE6C749F23824280009329F2 /* ConvenientBasketballScoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvenientBasketballScoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6C749F23824280009329F2 /* ConvenientBasketballScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvenientBasketballScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6C74AE23824284009329F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE6C74B323824284009329F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE6C74B423824284009329F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 		AE6C74A023824280009329F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C749F23824280009329F2 /* ConvenientBasketballScoring.app */,
+				AE6C749F23824280009329F2 /* ConvenientBasketballScout.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -424,7 +424,7 @@
 			);
 			name = PocketBasketballScout;
 			productName = PocketBasketballScout;
-			productReference = AE6C749F23824280009329F2 /* ConvenientBasketballScoring.app */;
+			productReference = AE6C749F23824280009329F2 /* ConvenientBasketballScout.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -680,10 +680,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketBasketballScout/PocketBasketballScout.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Ren Guanfei (9JMTNVWG46)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: baoqiang hu (W83W86BHRQ)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 9JMTNVWG46;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 496U6436F5;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScout/Common/BT_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBasketballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -695,9 +695,9 @@
 					"$(PROJECT_DIR)/PocketBasketballScout/Common/JPush",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ConvenientBasketballScoring;
-				PRODUCT_NAME = ConvenientBasketballScoring;
-				PROVISIONING_PROFILE_SPECIFIER = dev_ConvenientBasketballScoring_pro;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.hgg.PocketBasketballScout;
+				PRODUCT_NAME = ConvenientBasketballScout;
+				PROVISIONING_PROFILE_SPECIFIER = dev_pro_lanqiuqiutan_20191226;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -709,10 +709,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketBasketballScout/PocketBasketballScout.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Ren Guanfei (9JMTNVWG46)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: baoqiang hu (W83W86BHRQ)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 9JMTNVWG46;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 496U6436F5;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScout/Common/BT_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBasketballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -724,9 +724,9 @@
 					"$(PROJECT_DIR)/PocketBasketballScout/Common/JPush",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ConvenientBasketballScoring;
-				PRODUCT_NAME = ConvenientBasketballScoring;
-				PROVISIONING_PROFILE_SPECIFIER = dev_ConvenientBasketballScoring_pro;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.hgg.PocketBasketballScout;
+				PRODUCT_NAME = ConvenientBasketballScout;
+				PROVISIONING_PROFILE_SPECIFIER = dev_pro_lanqiuqiutan_20191226;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
