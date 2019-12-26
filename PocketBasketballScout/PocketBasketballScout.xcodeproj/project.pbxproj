@@ -697,7 +697,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ConvenientBasketballScoring;
 				PRODUCT_NAME = ConvenientBasketballScoring;
-				PROVISIONING_PROFILE_SPECIFIER = dis_ConvenientBasketballScoring_pro;
+				PROVISIONING_PROFILE_SPECIFIER = dev_ConvenientBasketballScoring_pro;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -726,7 +726,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ConvenientBasketballScoring;
 				PRODUCT_NAME = ConvenientBasketballScoring;
-				PROVISIONING_PROFILE_SPECIFIER = dis_ConvenientBasketballScoring_pro;
+				PROVISIONING_PROFILE_SPECIFIER = dev_ConvenientBasketballScoring_pro;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
