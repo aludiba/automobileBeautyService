@@ -22,7 +22,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setJPush:launchOptions];
-    [Bmob resetDomain:@"http://pocketfootballscout.jd127.cn"];
+    [Bmob resetDomain:@"http://convenientscore.jd127.cn"];
     [Bmob registerWithAppKey:@"3b32beaaae004285519d31da13844710"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
