@@ -13,4 +13,5 @@ target 'PocketLuckyNumbers' do
     pod 'YYModel'
     pod 'IQKeyboardManager'
     pod 'JTCalendar'
+    pod 'BmobSDK'
 end
