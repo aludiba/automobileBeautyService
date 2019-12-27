@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "BTLoginViewController.h"
+#import "CBSLoginViewController.h"
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
@@ -38,7 +38,7 @@
 //    BmobUser *bUser = [BmobUser currentUser];
 //    if (bUser) {
 //        进行操作
-        BTTabBarController *tabVC = [BTTabBarController shareInstance];
+        CBSTabBarController *tabVC = [CBSTabBarController shareInstance];
         return tabVC;
 //    }else{
 //        //对象为空时，可打开用户注册界面
