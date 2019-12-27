@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  quitSmokingRemind
+
+  Created by bykj on 2019/10/14.
+  Copyright © 2019 hbc. All rights reserved.
+*/
+"是否删除?" = "Excluir?";
+"删除成功" = "Excluído com sucesso";
+"请输入比赛名称" = "Digite um nome de correspondência";
+"请完整填写队伍名称" = "Por favor complete o nome da equipe";
+"是否保存比赛结果?" = "Você salva os resultados?";
+"温馨提示" = "Lembrete quente";
+"请输入队伍1名称" = "Digite o nome da equipe 1";
+"请输入队伍2名称" = "Digite o nome da equipe 2";
+"保存比赛结果" = "Salvar resultados da partida";
+"退出" = "Sair";
+"更改密码" = "Alterar senha";
+"无数据" = "Sem dados";
+"当日比赛记录" = "Registro do jogo do dia";
+"请先登录" = "Faça o login primeiro";
+"例如：友谊比赛第一场" = "Por exemplo: faça o login na primeira correspondência";
+"结束时间" = "Hora de término";
+"比赛用时" = "Hora da partida";
+"交换" = "Troca";
+"重来" = "Volta";
+"停止" = "Parar";
+"开始" = "Iniciar";
+"请输入B队名称" = "Digite o nome da equipe B";
+"请输入A队名称" = "Digite o nome da equipe A";
+"比赛时长不能为空" = "A duração da correspondência não pode estar vazia";
+"请输入比赛性质" = "Por favor, indique a natureza do jogo";
+"暂无数据" = "Sem dados";
+"登录" = "Entrar";
+"注册" = "Inscreva-se";
+"账号" = "Conta";
+"密码" = "Senha";
+"比分" = "Pontuação";
+"记录" = "Record";
+"我的" = "Mina";
+"保存" = "Salvar";
+"确定" = "OK";
+"昵称" = "Apelido";
+"登录&退出" = "Login e Logout";
+"年" = "Ano";
+"确认密码" = "Confirmar senha";
+"密码修改" = "Alteração de senha";
+"请输入旧密码" = "Digite a senha antiga";
+"请输入新密码" = "Digite uma nova senha";
+"请确认密码" = "Confirme a senha";
+"两次密码输入不一致" = "As senhas digitadas duas vezes são inconsistentes";
+"密码修改成功" = "Senha alterada com sucesso";
+"输入旧密码" = "Digite a senha antiga";
+"输入新密码" = "Digite a nova senha";
+"请输入账号" = "Por favor insira uma conta";
+"请输入密码" = "Digite a senha";
+"登录成功" = "Login efetuado com sucesso";
+"请稍后重试" = "Por favor tente novamente mais tarde";
+"注册成功" = "Registrado com sucesso";
+"修改昵称" = "Editar apelido";
+"保存成功" = "Guardado com sucesso";
+"更新成功" = "Atualização bem-sucedida";
+"请输入昵称" = "Digite um apelido";
+
+

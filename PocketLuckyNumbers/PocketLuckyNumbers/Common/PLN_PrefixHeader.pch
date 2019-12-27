@@ -1,0 +1,12 @@
+//
+//  PLN_PrefixHeader.pch
+//  Simple Diary
+//
+//  Created by bykj on 2019/7/20.
+//  Copyright © 2019 hgg. All rights reserved.
+//
+
+#ifndef PLN_PrefixHeader_pch
+#define PLN_PrefixHeader_pch
+#import "PLNGlobal.h"
+#endif /* PLN_PrefixHeader_pch */

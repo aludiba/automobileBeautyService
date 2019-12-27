@@ -3,13 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		AE9F85BE23B5D9C8001442D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F85BD23B5D9C8001442D4 /* AppDelegate.m */; };
 		AE9F85C923B5D9CE001442D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9F85C823B5D9CE001442D4 /* Assets.xcassets */; };
 		AE9F85CF23B5D9CE001442D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F85CE23B5D9CE001442D4 /* main.m */; };
+		AE9F861823B5E4E2001442D4 /* PLNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F860623B5E4E0001442D4 /* PLNBaseViewController.m */; };
+		AE9F861923B5E4E2001442D4 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F860923B5E4E0001442D4 /* NSDictionary+log.m */; };
+		AE9F861A23B5E4E2001442D4 /* PLNHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F860E23B5E4E1001442D4 /* PLNHBTool.m */; };
+		AE9F861B23B5E4E2001442D4 /* PLNUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F860F23B5E4E1001442D4 /* PLNUIUtilities.m */; };
+		AE9F861C23B5E4E2001442D4 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F861023B5E4E1001442D4 /* NSArray+log.m */; };
+		AE9F861D23B5E4E2001442D4 /* MBProgressHUD+PLNNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F861523B5E4E1001442D4 /* MBProgressHUD+PLNNJ.m */; };
+		AE9F861E23B5E4E2001442D4 /* PLNNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F861623B5E4E1001442D4 /* PLNNDHTTPClient.m */; };
+		AE9F861F23B5E4E2001442D4 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F861723B5E4E1001442D4 /* CalendarTool.m */; };
+		AE9F862223B5E6BB001442D4 /* PLNLuckyNumbersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F862123B5E6BB001442D4 /* PLNLuckyNumbersViewController.m */; };
+		AE9F862523B5E6F5001442D4 /* PLNRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F862423B5E6F5001442D4 /* PLNRecordViewController.m */; };
+		AE9F862823B5E70F001442D4 /* PLNSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F862723B5E70F001442D4 /* PLNSetViewController.m */; };
+		AE9F862B23B5E748001442D4 /* PLNTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F862923B5E748001442D4 /* PLNTabBarController.m */; };
+		AE9F862E23B5E8C1001442D4 /* PLNLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F862C23B5E8C1001442D4 /* PLNLoginViewController.m */; };
+		AE9F863123B5E8E4001442D4 /* PLNLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F862F23B5E8E4001442D4 /* PLNLoginTableViewCell.m */; };
+		AE9F864D23B5EA2C001442D4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE9F864723B5EA2C001442D4 /* Localizable.strings */; };
 		E3FC64AA0ACFA0B1EA90C043 /* Pods_PocketLuckyNumbers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AD82A3CD7179271443C6E8 /* Pods_PocketLuckyNumbers.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +35,40 @@
 		AE9F85C823B5D9CE001442D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE9F85CD23B5D9CE001442D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE9F85CE23B5D9CE001442D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE9F860623B5E4E0001442D4 /* PLNBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLNBaseViewController.m; sourceTree = "<group>"; };
+		AE9F860723B5E4E0001442D4 /* PLNUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLNUIUtilities.h; sourceTree = "<group>"; };
+		AE9F860823B5E4E0001442D4 /* MBProgressHUD+PLNNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+PLNNJ.h"; sourceTree = "<group>"; };
+		AE9F860923B5E4E0001442D4 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
+		AE9F860A23B5E4E0001442D4 /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
+		AE9F860B23B5E4E1001442D4 /* PLN_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLN_PrefixHeader.pch; sourceTree = "<group>"; };
+		AE9F860C23B5E4E1001442D4 /* PLNGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLNGlobal.h; sourceTree = "<group>"; };
+		AE9F860D23B5E4E1001442D4 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		AE9F860E23B5E4E1001442D4 /* PLNHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLNHBTool.m; sourceTree = "<group>"; };
+		AE9F860F23B5E4E1001442D4 /* PLNUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLNUIUtilities.m; sourceTree = "<group>"; };
+		AE9F861023B5E4E1001442D4 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		AE9F861123B5E4E1001442D4 /* PLNHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLNHBTool.h; sourceTree = "<group>"; };
+		AE9F861223B5E4E1001442D4 /* PLNNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLNNDHTTPClient.h; sourceTree = "<group>"; };
+		AE9F861323B5E4E1001442D4 /* PLNBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLNBaseViewController.h; sourceTree = "<group>"; };
+		AE9F861423B5E4E1001442D4 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
+		AE9F861523B5E4E1001442D4 /* MBProgressHUD+PLNNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+PLNNJ.m"; sourceTree = "<group>"; };
+		AE9F861623B5E4E1001442D4 /* PLNNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLNNDHTTPClient.m; sourceTree = "<group>"; };
+		AE9F861723B5E4E1001442D4 /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
+		AE9F862023B5E6BB001442D4 /* PLNLuckyNumbersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLNLuckyNumbersViewController.h; sourceTree = "<group>"; };
+		AE9F862123B5E6BB001442D4 /* PLNLuckyNumbersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLNLuckyNumbersViewController.m; sourceTree = "<group>"; };
+		AE9F862323B5E6F5001442D4 /* PLNRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLNRecordViewController.h; sourceTree = "<group>"; };
+		AE9F862423B5E6F5001442D4 /* PLNRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLNRecordViewController.m; sourceTree = "<group>"; };
+		AE9F862623B5E70F001442D4 /* PLNSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLNSetViewController.h; sourceTree = "<group>"; };
+		AE9F862723B5E70F001442D4 /* PLNSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLNSetViewController.m; sourceTree = "<group>"; };
+		AE9F862923B5E748001442D4 /* PLNTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLNTabBarController.m; sourceTree = "<group>"; };
+		AE9F862A23B5E748001442D4 /* PLNTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLNTabBarController.h; sourceTree = "<group>"; };
+		AE9F862C23B5E8C1001442D4 /* PLNLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLNLoginViewController.m; sourceTree = "<group>"; };
+		AE9F862D23B5E8C1001442D4 /* PLNLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLNLoginViewController.h; sourceTree = "<group>"; };
+		AE9F862F23B5E8E4001442D4 /* PLNLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLNLoginTableViewCell.m; sourceTree = "<group>"; };
+		AE9F863023B5E8E4001442D4 /* PLNLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLNLoginTableViewCell.h; sourceTree = "<group>"; };
+		AE9F864823B5EA2C001442D4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AE9F864923B5EA2C001442D4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE9F864A23B5EA2C001442D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE9F864B23B5EA2C001442D4 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C9AD82A3CD7179271443C6E8 /* Pods_PocketLuckyNumbers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketLuckyNumbers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC67D06B3544C44658D35A0 /* Pods-PocketLuckyNumbers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketLuckyNumbers.debug.xcconfig"; path = "Target Support Files/Pods-PocketLuckyNumbers/Pods-PocketLuckyNumbers.debug.xcconfig"; sourceTree = "<group>"; };
 		ED13E6A37D68CD0D1A6F987F /* Pods-PocketLuckyNumbers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketLuckyNumbers.release.xcconfig"; path = "Target Support Files/Pods-PocketLuckyNumbers/Pods-PocketLuckyNumbers.release.xcconfig"; sourceTree = "<group>"; };
@@ -43,7 +92,6 @@
 				DDC67D06B3544C44658D35A0 /* Pods-PocketLuckyNumbers.debug.xcconfig */,
 				ED13E6A37D68CD0D1A6F987F /* Pods-PocketLuckyNumbers.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -78,11 +126,154 @@
 			children = (
 				AE9F85BC23B5D9C8001442D4 /* AppDelegate.h */,
 				AE9F85BD23B5D9C8001442D4 /* AppDelegate.m */,
+				AE9F864623B5EA2C001442D4 /* Resources */,
+				AE9F85E223B5E3F4001442D4 /* Common */,
+				AE9F85D923B5E3F4001442D4 /* LuckyNumbers */,
+				AE9F85DE23B5E3F4001442D4 /* Record */,
+				AE9F85D523B5E3F3001442D4 /* Set */,
 				AE9F85C823B5D9CE001442D4 /* Assets.xcassets */,
 				AE9F85CD23B5D9CE001442D4 /* Info.plist */,
 				AE9F85CE23B5D9CE001442D4 /* main.m */,
 			);
 			path = PocketLuckyNumbers;
+			sourceTree = "<group>";
+		};
+		AE9F85D523B5E3F3001442D4 /* Set */ = {
+			isa = PBXGroup;
+			children = (
+				AE9F85D623B5E3F3001442D4 /* Models */,
+				AE9F85D823B5E3F3001442D4 /* Views */,
+				AE9F85D723B5E3F3001442D4 /* Controllers */,
+			);
+			path = Set;
+			sourceTree = "<group>";
+		};
+		AE9F85D623B5E3F3001442D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE9F85D723B5E3F3001442D4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE9F862623B5E70F001442D4 /* PLNSetViewController.h */,
+				AE9F862723B5E70F001442D4 /* PLNSetViewController.m */,
+				AE9F862D23B5E8C1001442D4 /* PLNLoginViewController.h */,
+				AE9F862C23B5E8C1001442D4 /* PLNLoginViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE9F85D823B5E3F3001442D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE9F863023B5E8E4001442D4 /* PLNLoginTableViewCell.h */,
+				AE9F862F23B5E8E4001442D4 /* PLNLoginTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE9F85D923B5E3F4001442D4 /* LuckyNumbers */ = {
+			isa = PBXGroup;
+			children = (
+				AE9F85DA23B5E3F4001442D4 /* Models */,
+				AE9F85DC23B5E3F4001442D4 /* Views */,
+				AE9F85DB23B5E3F4001442D4 /* Controllers */,
+			);
+			path = LuckyNumbers;
+			sourceTree = "<group>";
+		};
+		AE9F85DA23B5E3F4001442D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE9F85DB23B5E3F4001442D4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE9F862023B5E6BB001442D4 /* PLNLuckyNumbersViewController.h */,
+				AE9F862123B5E6BB001442D4 /* PLNLuckyNumbersViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE9F85DC23B5E3F4001442D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE9F85DE23B5E3F4001442D4 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				AE9F85DF23B5E3F4001442D4 /* Models */,
+				AE9F85E123B5E3F4001442D4 /* Views */,
+				AE9F85E023B5E3F4001442D4 /* Controllers */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		AE9F85DF23B5E3F4001442D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE9F85E023B5E3F4001442D4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE9F862323B5E6F5001442D4 /* PLNRecordViewController.h */,
+				AE9F862423B5E6F5001442D4 /* PLNRecordViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE9F85E123B5E3F4001442D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE9F85E223B5E3F4001442D4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AE9F860B23B5E4E1001442D4 /* PLN_PrefixHeader.pch */,
+				AE9F860C23B5E4E1001442D4 /* PLNGlobal.h */,
+				AE9F860D23B5E4E1001442D4 /* NSArray+log.h */,
+				AE9F861023B5E4E1001442D4 /* NSArray+log.m */,
+				AE9F861423B5E4E1001442D4 /* NSDictionary+log.h */,
+				AE9F860923B5E4E0001442D4 /* NSDictionary+log.m */,
+				AE9F861123B5E4E1001442D4 /* PLNHBTool.h */,
+				AE9F860E23B5E4E1001442D4 /* PLNHBTool.m */,
+				AE9F860723B5E4E0001442D4 /* PLNUIUtilities.h */,
+				AE9F860F23B5E4E1001442D4 /* PLNUIUtilities.m */,
+				AE9F860A23B5E4E0001442D4 /* CalendarTool.h */,
+				AE9F861723B5E4E1001442D4 /* CalendarTool.m */,
+				AE9F860823B5E4E0001442D4 /* MBProgressHUD+PLNNJ.h */,
+				AE9F861523B5E4E1001442D4 /* MBProgressHUD+PLNNJ.m */,
+				AE9F861223B5E4E1001442D4 /* PLNNDHTTPClient.h */,
+				AE9F861623B5E4E1001442D4 /* PLNNDHTTPClient.m */,
+				AE9F861323B5E4E1001442D4 /* PLNBaseViewController.h */,
+				AE9F860623B5E4E0001442D4 /* PLNBaseViewController.m */,
+				AE9F862A23B5E748001442D4 /* PLNTabBarController.h */,
+				AE9F862923B5E748001442D4 /* PLNTabBarController.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AE9F864623B5EA2C001442D4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE9F864723B5EA2C001442D4 /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +319,9 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
+				"zh-Hans",
+				ja,
 			);
 			mainGroup = AE9F85B023B5D9C8001442D4;
 			productRefGroup = AE9F85BA23B5D9C8001442D4 /* Products */;
@@ -145,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE9F85C923B5D9CE001442D4 /* Assets.xcassets in Resources */,
+				AE9F864D23B5EA2C001442D4 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,12 +392,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9F861A23B5E4E2001442D4 /* PLNHBTool.m in Sources */,
+				AE9F861E23B5E4E2001442D4 /* PLNNDHTTPClient.m in Sources */,
+				AE9F861B23B5E4E2001442D4 /* PLNUIUtilities.m in Sources */,
+				AE9F862823B5E70F001442D4 /* PLNSetViewController.m in Sources */,
+				AE9F861D23B5E4E2001442D4 /* MBProgressHUD+PLNNJ.m in Sources */,
 				AE9F85BE23B5D9C8001442D4 /* AppDelegate.m in Sources */,
+				AE9F862B23B5E748001442D4 /* PLNTabBarController.m in Sources */,
+				AE9F862E23B5E8C1001442D4 /* PLNLoginViewController.m in Sources */,
+				AE9F863123B5E8E4001442D4 /* PLNLoginTableViewCell.m in Sources */,
+				AE9F862223B5E6BB001442D4 /* PLNLuckyNumbersViewController.m in Sources */,
+				AE9F861923B5E4E2001442D4 /* NSDictionary+log.m in Sources */,
+				AE9F861C23B5E4E2001442D4 /* NSArray+log.m in Sources */,
+				AE9F862523B5E6F5001442D4 /* PLNRecordViewController.m in Sources */,
 				AE9F85CF23B5D9CE001442D4 /* main.m in Sources */,
+				AE9F861823B5E4E2001442D4 /* PLNBaseViewController.m in Sources */,
+				AE9F861F23B5E4E2001442D4 /* CalendarTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE9F864723B5EA2C001442D4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE9F864823B5EA2C001442D4 /* zh-Hans */,
+				AE9F864923B5EA2C001442D4 /* ja */,
+				AE9F864A23B5EA2C001442D4 /* en */,
+				AE9F864B23B5EA2C001442D4 /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AE9F85D023B5D9CE001442D4 /* Debug */ = {
@@ -320,11 +543,17 @@
 			baseConfigurationReference = DDC67D06B3544C44658D35A0 /* Pods-PocketLuckyNumbers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketLuckyNumbers/Common/PLN_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketLuckyNumbers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PocketLuckyNumbers/Common/JPush",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketLuckyNumbers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -337,11 +566,17 @@
 			baseConfigurationReference = ED13E6A37D68CD0D1A6F987F /* Pods-PocketLuckyNumbers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketLuckyNumbers/Common/PLN_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketLuckyNumbers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PocketLuckyNumbers/Common/JPush",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketLuckyNumbers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
