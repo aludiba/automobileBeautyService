@@ -39,7 +39,7 @@
     [super viewDidAppear:animated];
 }
 - (void)AFSSetContentView{
-    self.view.backgroundColor = [UIColor cyanColor];
+    self.view.backgroundColor = [UIColor greenColor];
     [self.AFSviewDataArray removeAllObjects];
     
     AFSScorecardViewModel *AFSBothTeamsModel = [[AFSScorecardViewModel alloc] init];
@@ -251,6 +251,7 @@
 - (UITableView *)AFSmainTable{
     if (!_AFSmainTable) {
         _AFSmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _AFSmainTable.backgroundColor = [UIColor greenColor];
         _AFSmainTable.showsVerticalScrollIndicator = NO;
         _AFSmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
         _AFSmainTable.delegate = self;
@@ -259,8 +260,6 @@
         _AFSmainTable.estimatedRowHeight = 55.0f;
         _AFSmainTable.tableHeaderView = [[UIView alloc] init];
         _AFSmainTable.tableFooterView = [[UIView alloc] init];
-        _AFSmainTable.layer.cornerRadius = 16.0f;
-        _AFSmainTable.layer.masksToBounds = YES;
         [_AFSmainTable registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
        [_AFSmainTable registerClass:[AFSBothTeamsTableViewCell class] forCellReuseIdentifier:@"AFSBothTeamsTableViewCell"];
         [_AFSmainTable registerClass:[AFSScoringPartTableViewCell class] forCellReuseIdentifier:@"AFSScoringPartTableViewCell"];
@@ -268,10 +267,10 @@
         [_AFSmainTable registerClass:[AFSScoringSaveTableViewCell class] forCellReuseIdentifier:@"AFSScoringSaveTableViewCell"];
         [self.view addSubview:_AFSmainTable];
         [_AFSmainTable mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.mas_topLayoutGuideBottom).offset(20);
-            make.leading.equalTo(self.view).offset(20);
-            make.trailing.equalTo(self.view).offset(-20);
-            make.bottom.equalTo(self.view).offset(-AFSHeightTabBar - 20);
+            make.top.equalTo(self.mas_topLayoutGuideBottom);
+            make.leading.equalTo(self.view);
+            make.trailing.equalTo(self.view);
+            make.bottom.equalTo(self.view).offset(-AFSHeightTabBar);
         }];
         UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(AFSCloseKeyBoard)];
         [_AFSmainTable addGestureRecognizer:tapGes];

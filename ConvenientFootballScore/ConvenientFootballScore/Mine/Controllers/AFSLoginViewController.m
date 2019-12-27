@@ -34,6 +34,17 @@
     [super viewWillDisappear:animated];
     self.navigationController.navigationBar.hidden = NO;
 }
+- (void)AFS_setupNavigationItems{
+    UIView *navView = [[UIView alloc] init];
+    navView.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:navView];
+    [navView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view).offset(-AFSHeightStatusBar);
+        make.leading.equalTo(self.view);
+        make.trailing.equalTo(self.view);
+        make.height.mas_equalTo(AFSHeightNavBar);
+    }];
+}
 - (void)AFSsetContentView{
     [self.view addSubview:self.AFSmainTable];
     [self.AFSmainTable mas_makeConstraints:^(MASConstraintMaker *make) {

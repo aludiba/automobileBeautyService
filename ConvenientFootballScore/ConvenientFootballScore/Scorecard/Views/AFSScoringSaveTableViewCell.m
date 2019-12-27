@@ -23,11 +23,11 @@
     [self.contentView addSubview:self.AFSSaveButton];
     
     [self.AFSSaveButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.contentView).offset(120);
-        make.top.equalTo(self.contentView).offset(20);
-        make.trailing.equalTo(self.contentView).offset(-120);
+        make.leading.equalTo(self.contentView).offset(60);
+        make.top.equalTo(self.contentView).offset(30);
+        make.trailing.equalTo(self.contentView).offset(-60);
         make.height.mas_equalTo(44);
-        make.bottom.equalTo(self.contentView).offset(-20);
+        make.bottom.equalTo(self.contentView).offset(-30);
     }];
 }
 - (void)AFSSave:(UIButton *)sender{
@@ -45,12 +45,10 @@
         _AFSSaveButton = [[UIButton alloc] init];
         [_AFSSaveButton setTitle:NSLocalizedString(@"保存比赛结果", nil) forState:UIControlStateNormal];
         [_AFSSaveButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        _AFSSaveButton.backgroundColor = [UIColor systemBlueColor];
-        _AFSSaveButton.titleLabel.font = [UIFont boldSystemFontOfSize:20];
+        _AFSSaveButton.backgroundColor = [UIColor systemGreenColor];
+        _AFSSaveButton.titleLabel.font = [UIFont boldSystemFontOfSize:25];
         _AFSSaveButton.layer.cornerRadius = 8.0f;
         _AFSSaveButton.layer.masksToBounds = YES;
-        _AFSSaveButton.layer.borderColor = [UIColor systemGreenColor].CGColor;
-        _AFSSaveButton.layer.borderWidth = 2.0f;
         _AFSSaveButton.titleLabel.textAlignment = NSTextAlignmentCenter;
         [_AFSSaveButton addTarget:self action:@selector(AFSSave:) forControlEvents:UIControlEventTouchUpInside];
     }

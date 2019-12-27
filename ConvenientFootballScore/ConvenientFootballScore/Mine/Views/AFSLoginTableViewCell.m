@@ -29,7 +29,7 @@
     return self;
 }
 - (void)AFSsetContent{
-    self.contentView.backgroundColor = AFSH_Color(242, 242, 242, 242);
+    self.contentView.backgroundColor = [UIColor greenColor];
     [self.contentView addSubview:self.AFSbackView];
     [self.AFSbackView addSubview:self.AFSaccountLable];
     [self.AFSbackView addSubview:self.AFSaccountTextField];
@@ -179,9 +179,7 @@
 - (UIView *)AFSbackView{
     if (!_AFSbackView) {
         _AFSbackView = [[UIView alloc] init];
-        _AFSbackView.backgroundColor = AFSH_Color(0, 204, 131, 1);
-        _AFSbackView.layer.borderColor = [UIColor grayColor].CGColor;
-        _AFSbackView.layer.borderWidth = 1.0f;
+        _AFSbackView.backgroundColor = [UIColor systemGreenColor];
         _AFSbackView.layer.cornerRadius = 8.0f;
         _AFSbackView.layer.masksToBounds = YES;
     }
@@ -191,7 +189,7 @@
     if (!_AFSaccountLable) {
         _AFSaccountLable = [[UILabel alloc] init];
         _AFSaccountLable.text = NSLocalizedString(@"账号", nil);
-        _AFSaccountLable.textColor = [UIColor blackColor];
+        _AFSaccountLable.textColor = [UIColor whiteColor];
         _AFSaccountLable.font = [UIFont systemFontOfSize:17];
     }
     return _AFSaccountLable;
@@ -212,7 +210,7 @@
     if (!_AFSpasswordLable) {
         _AFSpasswordLable = [[UILabel alloc] init];
         _AFSpasswordLable.text = NSLocalizedString(@"密码", nil);
-        _AFSpasswordLable.textColor = [UIColor blackColor];
+        _AFSpasswordLable.textColor = [UIColor whiteColor];
         _AFSpasswordLable.font = [UIFont systemFontOfSize:17];
     }
     return _AFSpasswordLable;
@@ -234,13 +232,11 @@
     if (!_AFSloginButton) {
         _AFSloginButton = [[UIButton alloc] init];
         _AFSloginButton.tag = 100;
-        _AFSloginButton.backgroundColor = [UIColor whiteColor];
-        [_AFSloginButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_AFSloginButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
-        _AFSloginButton.layer.cornerRadius = 6.0f;
+        _AFSloginButton.backgroundColor = [UIColor greenColor];
+        [_AFSloginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_AFSloginButton.titleLabel setFont:[UIFont boldSystemFontOfSize:20]];
+        _AFSloginButton.layer.cornerRadius = 8.0f;
         _AFSloginButton.layer.masksToBounds = YES;
-        _AFSloginButton.layer.borderColor = [UIColor grayColor].CGColor;
-        _AFSloginButton.layer.borderWidth = 2.0f;
         [_AFSloginButton setTitle:NSLocalizedString(@"登录", nil) forState:UIControlStateNormal];
         [_AFSloginButton addTarget:self action:@selector(AFSbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -250,13 +246,11 @@
     if (!_AFSregisteredButton) {
         _AFSregisteredButton = [[UIButton alloc] init];
         _AFSregisteredButton.tag = 101;
-        _AFSregisteredButton.backgroundColor = [UIColor whiteColor];
-        [_AFSregisteredButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_AFSregisteredButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
-        _AFSregisteredButton.layer.cornerRadius = 6.0f;
+        _AFSregisteredButton.backgroundColor = [UIColor greenColor];
+        [_AFSregisteredButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_AFSregisteredButton.titleLabel setFont:[UIFont boldSystemFontOfSize:20]];
+        _AFSregisteredButton.layer.cornerRadius = 8.0f;
         _AFSregisteredButton.layer.masksToBounds = YES;
-        _AFSregisteredButton.layer.borderColor = [UIColor grayColor].CGColor;
-        _AFSregisteredButton.layer.borderWidth = 2.0f;
         [_AFSregisteredButton setTitle:NSLocalizedString(@"注册", nil) forState:UIControlStateNormal];
         [_AFSregisteredButton addTarget:self action:@selector(AFSbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }

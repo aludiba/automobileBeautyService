@@ -26,7 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor cyanColor];
+    self.view.backgroundColor = [UIColor greenColor];
     [self AFSSetContentView];
 }
 - (void)viewWillAppear:(BOOL)animated{
@@ -53,22 +53,22 @@
         make.height.mas_equalTo(AFSHEIGHT / 3);
     }];
     [self.AFSImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.AFSBackView);
+        make.centerX.equalTo(self.AFSBackView.mas_centerX).offset(-50);
         make.centerY.equalTo(self.AFSBackView);
         make.width.mas_equalTo(100);
         make.height.mas_equalTo(100);
     }];
     [self.AFSNickNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.AFSBackView);
-        make.top.equalTo(self.AFSImageView.mas_bottom).offset(10);
+        make.centerX.equalTo(self.AFSBackView.mas_centerX).offset(60);
+        make.centerY.equalTo(self.AFSImageView);
         make.width.mas_equalTo(120);
         make.height.mas_equalTo(20);
     }];
     [self.AFSNicknameTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.AFSNickNameLabel.mas_bottom).offset(10);
-        make.centerX.equalTo(self.AFSBackView.mas_centerX).offset(-20);
-        make.width.mas_equalTo(80);
-        make.height.mas_equalTo(30);
+        make.top.equalTo(self.AFSImageView.mas_bottom).offset(10);
+        make.centerX.equalTo(self.AFSBackView);
+        make.width.mas_equalTo(160);
+        make.height.mas_equalTo(40);
     }];
     [self.AFSNicknameButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.AFSNicknameTextField);
@@ -77,16 +77,16 @@
         make.height.mas_equalTo(29);
     }];
     [self.AFSChangePasswordButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.AFSBackView.mas_bottom).offset(15);
-        make.leading.equalTo(self.view).offset(16);
-        make.width.mas_equalTo((AFSWIDTH - 52) * 0.5);
-        make.height.mas_equalTo(120);
+        make.top.equalTo(self.AFSBackView.mas_bottom).offset(30);
+        make.centerX.equalTo(self.view);
+        make.width.mas_equalTo((AFSWIDTH - 60));
+        make.height.mas_equalTo(60);
     }];
     [self.AFSSignOutButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.AFSBackView.mas_bottom).offset(15);
-        make.trailing.equalTo(self.view).offset(-16);
-        make.width.mas_equalTo((AFSWIDTH - 52) * 0.5);
-        make.height.mas_equalTo(120);
+        make.top.equalTo(self.AFSChangePasswordButton.mas_bottom).offset(25);
+        make.centerX.equalTo(self.view);
+        make.width.mas_equalTo((AFSWIDTH - 60));
+        make.height.mas_equalTo(60);
     }];
     UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeKeyBoard)];
     [self.view addGestureRecognizer:tapGes];
@@ -157,7 +157,7 @@
 - (UIView *)AFSBackView{
     if (!_AFSBackView) {
         _AFSBackView = [[UIView alloc] init];
-        _AFSBackView.backgroundColor = AFSH_Color(0, 204, 131, 1);
+        _AFSBackView.backgroundColor = [UIColor systemGreenColor];
     }
     return _AFSBackView;
 }
@@ -174,7 +174,7 @@
     if (!_AFSNickNameLabel) {
         _AFSNickNameLabel = [[UILabel alloc] init];
         _AFSNickNameLabel.textColor = [UIColor cyanColor];
-        _AFSNickNameLabel.font = [UIFont systemFontOfSize:18];
+        _AFSNickNameLabel.font = [UIFont systemFontOfSize:20];
         _AFSNickNameLabel.numberOfLines = 0;
         _AFSNickNameLabel.text = NSLocalizedString(@"昵称", nil);
         _AFSNickNameLabel.textAlignment = NSTextAlignmentCenter;
@@ -187,9 +187,7 @@
         _AFSNicknameTextField.delegate = self;
         _AFSNicknameTextField.textColor = [UIColor blackColor];
         _AFSNicknameTextField.font = [UIFont systemFontOfSize:22];
-        _AFSNicknameTextField.backgroundColor = [UIColor whiteColor];
-        _AFSNicknameTextField.layer.borderColor = [UIColor redColor].CGColor;
-        _AFSNicknameTextField.layer.borderWidth = 1.0f;
+        _AFSNicknameTextField.backgroundColor = [UIColor greenColor];
         _AFSNicknameTextField.layer.cornerRadius = 3.0f;
         _AFSNicknameTextField.layer.masksToBounds = YES;
         BmobUser *user = [BmobUser currentUser];
@@ -213,12 +211,12 @@
     if (!_AFSChangePasswordButton) {
         _AFSChangePasswordButton = [[UIButton alloc] init];
         [_AFSChangePasswordButton setTitle:NSLocalizedString(@"更改密码", nil) forState:UIControlStateNormal];
-        [_AFSChangePasswordButton setTitleColor:AFSH_Color(0, 204, 131, 1) forState:UIControlStateNormal];
-        _AFSChangePasswordButton.titleLabel.font = [UIFont systemFontOfSize:20];
+        [_AFSChangePasswordButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _AFSChangePasswordButton.titleLabel.font = [UIFont systemFontOfSize:25];
         _AFSChangePasswordButton.titleLabel.numberOfLines = 0;
-        _AFSChangePasswordButton.backgroundColor = [UIColor whiteColor];
+        _AFSChangePasswordButton.backgroundColor = [UIColor systemGreenColor];
         _AFSChangePasswordButton.layer.masksToBounds = YES;
-        _AFSChangePasswordButton.layer.cornerRadius = 8.0f;
+        _AFSChangePasswordButton.layer.cornerRadius = 16.0f;
         [_AFSChangePasswordButton addTarget:self action:@selector(AFSChangePasswordAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _AFSChangePasswordButton;
@@ -227,12 +225,12 @@
     if (!_AFSSignOutButton) {
         _AFSSignOutButton = [[UIButton alloc] init];
         [_AFSSignOutButton setTitle:NSLocalizedString(@"退出", nil) forState:UIControlStateNormal];
-        [_AFSSignOutButton setTitleColor:AFSH_Color(0, 204, 131, 1) forState:UIControlStateNormal];
-        _AFSSignOutButton.titleLabel.font = [UIFont systemFontOfSize:20];
+        [_AFSSignOutButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _AFSSignOutButton.titleLabel.font = [UIFont systemFontOfSize:25];
      _AFSSignOutButton.titleLabel.numberOfLines = 0;
-        _AFSSignOutButton.backgroundColor = [UIColor whiteColor];
+        _AFSSignOutButton.backgroundColor = [UIColor systemGreenColor];
         _AFSSignOutButton.layer.masksToBounds = YES;
-        _AFSSignOutButton.layer.cornerRadius = 8.0f;
+        _AFSSignOutButton.layer.cornerRadius = 16.0f;
         [_AFSSignOutButton addTarget:self action:@selector(AFSSignOutAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _AFSSignOutButton;

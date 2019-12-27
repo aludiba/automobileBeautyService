@@ -100,9 +100,9 @@
         [_AFSStartGameButton setBackgroundColor:[UIColor systemGreenColor]];
         [_AFSStartGameButton setTitle:NSLocalizedString(@"开始", nil) forState:UIControlStateNormal];
         _AFSStartGameButton.titleLabel.font = [UIFont systemFontOfSize:20];
-        [_AFSStartGameButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_AFSStartGameButton setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
         _AFSStartGameButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-        _AFSStartGameButton.layer.cornerRadius = 29.0f;
+        _AFSStartGameButton.layer.cornerRadius = 8.0f;
         _AFSStartGameButton.layer.masksToBounds = YES;
         _AFSStartGameButton.tag = 99;
         [_AFSStartGameButton addTarget:self action:@selector(AFSTimeControlAction:) forControlEvents:UIControlEventTouchUpInside];
@@ -112,14 +112,12 @@
 - (UILabel *)AFSDisplayTimeLengthLabel{
     if (!_AFSDisplayTimeLengthLabel) {
         _AFSDisplayTimeLengthLabel = [[UILabel alloc] init];
-        _AFSDisplayTimeLengthLabel.textColor = [UIColor blackColor];
-        _AFSDisplayTimeLengthLabel.backgroundColor = [UIColor cyanColor];
+        _AFSDisplayTimeLengthLabel.backgroundColor = [UIColor systemGreenColor];
+        _AFSDisplayTimeLengthLabel.textColor = [UIColor whiteColor];
         _AFSDisplayTimeLengthLabel.font = [UIFont boldSystemFontOfSize:25];
         _AFSDisplayTimeLengthLabel.textAlignment = NSTextAlignmentCenter;
         _AFSDisplayTimeLengthLabel.layer.cornerRadius = 8.0f;
         _AFSDisplayTimeLengthLabel.layer.masksToBounds = YES;
-        _AFSDisplayTimeLengthLabel.layer.borderColor = [UIColor systemRedColor].CGColor;
-        _AFSDisplayTimeLengthLabel.layer.borderWidth = 1.5f;
         _AFSDisplayTimeLengthLabel.numberOfLines = 0;
     }
     return _AFSDisplayTimeLengthLabel;
@@ -127,12 +125,12 @@
 - (UIButton *)AFSEndGameButton{
     if (!_AFSEndGameButton) {
         _AFSEndGameButton = [[UIButton alloc] init];
-        [_AFSEndGameButton setBackgroundColor:[UIColor systemRedColor]];
+        [_AFSEndGameButton setBackgroundColor:[UIColor systemGreenColor]];
         [_AFSEndGameButton setTitle:NSLocalizedString(@"停止", nil) forState:UIControlStateNormal];
         _AFSEndGameButton.titleLabel.font = [UIFont systemFontOfSize:20];
-        [_AFSEndGameButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_AFSEndGameButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         _AFSEndGameButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-        _AFSEndGameButton.layer.cornerRadius = 29.0f;
+        _AFSEndGameButton.layer.cornerRadius = 8.0f;
         _AFSEndGameButton.layer.masksToBounds = YES;
         _AFSEndGameButton.tag = 100;
         [_AFSEndGameButton addTarget:self action:@selector(AFSTimeControlAction:) forControlEvents:UIControlEventTouchUpInside];

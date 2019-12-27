@@ -103,8 +103,8 @@
 - (UILabel *)AFSRightTeamLabel{
     if (!_AFSRightTeamLabel) {
         _AFSRightTeamLabel = [[UILabel alloc] init];
-        _AFSRightTeamLabel.textColor = [UIColor redColor];
-        _AFSRightTeamLabel.font = [UIFont systemFontOfSize:20];
+        _AFSRightTeamLabel.textColor = [UIColor systemGreenColor];
+        _AFSRightTeamLabel.font = [UIFont systemFontOfSize:15];
         _AFSRightTeamLabel.textAlignment = NSTextAlignmentCenter;
         _AFSRightTeamLabel.text = NSLocalizedString(@"请输入队伍1名称", nil);
         _AFSRightTeamLabel.numberOfLines = 0;
@@ -117,18 +117,18 @@
         _AFSRightTeamField.tag = 99;
         _AFSRightTeamField.delegate = self;
         _AFSRightTeamField.textColor = [UIColor blackColor];
-        _AFSRightTeamField.font = [UIFont systemFontOfSize:15];
-        _AFSRightTeamField.layer.cornerRadius = 8.0f;
+        _AFSRightTeamField.font = [UIFont systemFontOfSize:22];
+        _AFSRightTeamField.layer.cornerRadius = 4.0f;
         _AFSRightTeamField.layer.masksToBounds = YES;
-        _AFSRightTeamField.layer.borderColor = [UIColor systemGrayColor].CGColor;
-        _AFSRightTeamField.layer.borderWidth = 1.5f;
+        _AFSRightTeamField.layer.borderColor = [UIColor systemGreenColor].CGColor;
+        _AFSRightTeamField.layer.borderWidth = 2.0f;
     }
     return _AFSRightTeamField;
 }
 - (UILabel *)AFSVSLabel{
     if (!_AFSVSLabel) {
         _AFSVSLabel = [[UILabel alloc] init];
-        _AFSVSLabel.textColor = AFSH_Color(0, 204, 131, 1);
+        _AFSVSLabel.textColor = [UIColor systemGreenColor];
         _AFSVSLabel.font = [UIFont boldSystemFontOfSize:30];
         _AFSVSLabel.textAlignment = NSTextAlignmentCenter;
         _AFSVSLabel.text = @"VS";
@@ -138,8 +138,8 @@
 - (UILabel *)AFSLeftTeamLabel{
     if (!_AFSLeftTeamLabel) {
         _AFSLeftTeamLabel = [[UILabel alloc] init];
-        _AFSLeftTeamLabel.textColor = [UIColor redColor];
-        _AFSLeftTeamLabel.font = [UIFont systemFontOfSize:20];
+        _AFSLeftTeamLabel.textColor = [UIColor systemGreenColor];
+        _AFSLeftTeamLabel.font = [UIFont systemFontOfSize:15];
         _AFSLeftTeamLabel.textAlignment = NSTextAlignmentCenter;
         _AFSLeftTeamLabel.text = NSLocalizedString(@"请输入队伍2名称", nil);
         _AFSLeftTeamLabel.numberOfLines = 0;
@@ -152,11 +152,11 @@
         _AFSLeftTeamField.tag = 100;
         _AFSLeftTeamField.delegate = self;
         _AFSLeftTeamField.textColor = [UIColor blackColor];
-        _AFSLeftTeamField.font = [UIFont systemFontOfSize:15];
-        _AFSLeftTeamField.layer.cornerRadius = 8.0f;
+        _AFSLeftTeamField.font = [UIFont systemFontOfSize:22];
+        _AFSLeftTeamField.layer.cornerRadius = 4.0f;
         _AFSLeftTeamField.layer.masksToBounds = YES;
-        _AFSLeftTeamField.layer.borderColor = [UIColor systemGrayColor].CGColor;
-        _AFSLeftTeamField.layer.borderWidth = 1.5f;
+        _AFSLeftTeamField.layer.borderColor = [UIColor systemGreenColor].CGColor;
+        _AFSLeftTeamField.layer.borderWidth = 2.0f;
     }
     return _AFSLeftTeamField;
 }

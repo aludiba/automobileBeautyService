@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor cyanColor];
+    self.view.backgroundColor = [UIColor greenColor];
     self.title = NSLocalizedString(@"记录", nil);
     [self AFSLoadData];
 }
@@ -130,9 +130,9 @@
 - (UITableView *)AFSmainTable{
     if (!_AFSmainTable) {
         _AFSmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _AFSmainTable.backgroundColor = [UIColor greenColor];
         _AFSmainTable.showsVerticalScrollIndicator = NO;
         _AFSmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _AFSmainTable.backgroundColor = [UIColor cyanColor];
         _AFSmainTable.delegate = self;
         _AFSmainTable.dataSource = self;
         _AFSmainTable.rowHeight = UITableViewAutomaticDimension;

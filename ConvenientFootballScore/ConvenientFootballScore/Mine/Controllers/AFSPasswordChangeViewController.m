@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor cyanColor];
+    self.view.backgroundColor = [UIColor greenColor];
     self.title = NSLocalizedString(@"密码修改", nil);
     [self AFSsetContent];
 }
@@ -35,25 +35,25 @@
     [self.AFSoldPasswordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.view).offset(80);
         make.trailing.equalTo(self.view).offset(-80);
-        make.top.equalTo(self.mas_topLayoutGuideBottom).offset(30);
+        make.top.equalTo(self.mas_topLayoutGuideBottom).offset(60);
         make.height.mas_equalTo(60);
     }];
     [self.AFScurrentPasswordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.view).offset(80);
         make.trailing.equalTo(self.view).offset(-80);
-        make.top.equalTo(self.AFSoldPasswordTextField.mas_bottom).offset(20);
+        make.top.equalTo(self.AFSoldPasswordTextField.mas_bottom).offset(25);
         make.height.mas_equalTo(60);
     }];
     [self.AFSconfirmPasswordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.view).offset(80);
         make.trailing.equalTo(self.view).offset(-80);
-        make.top.equalTo(self.AFScurrentPasswordTextField.mas_bottom).offset(20);
+        make.top.equalTo(self.AFScurrentPasswordTextField.mas_bottom).offset(25);
         make.height.mas_equalTo(60);
     }];
     [self.AFSsureButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.view).offset(120);
         make.trailing.equalTo(self.view).offset(-120);
-        make.top.equalTo(self.AFSconfirmPasswordTextField.mas_bottom).offset(30);
+        make.top.equalTo(self.AFSconfirmPasswordTextField.mas_bottom).offset(35);
         make.height.mas_equalTo(44);
     }];
 }
@@ -130,11 +130,9 @@
 - (UITextField *)AFSoldPasswordTextField{
     if (!_AFSoldPasswordTextField) {
         _AFSoldPasswordTextField = [[UITextField alloc] init];
+        _AFSoldPasswordTextField.backgroundColor = [UIColor systemGreenColor];
         _AFSoldPasswordTextField.secureTextEntry = YES;
-        _AFSoldPasswordTextField.backgroundColor = [UIColor whiteColor];
         _AFSoldPasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _AFSoldPasswordTextField.layer.borderColor = [UIColor grayColor].CGColor;
-        _AFSoldPasswordTextField.layer.borderWidth = 2.0f;
         _AFSoldPasswordTextField.layer.cornerRadius = 12.0f;
         _AFSoldPasswordTextField.layer.masksToBounds = YES;
         _AFSoldPasswordTextField.tag = 100;
@@ -148,11 +146,11 @@
 - (UITextField *)AFScurrentPasswordTextField{
     if (!_AFScurrentPasswordTextField) {
         _AFScurrentPasswordTextField = [[UITextField alloc] init];
-       _AFScurrentPasswordTextField.backgroundColor = [UIColor whiteColor];
+        _AFScurrentPasswordTextField.backgroundColor = [UIColor systemGreenColor];
         _AFScurrentPasswordTextField.secureTextEntry = YES;
         _AFScurrentPasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
         _AFScurrentPasswordTextField.layer.borderColor = [UIColor grayColor].CGColor;
-        _AFScurrentPasswordTextField.layer.borderWidth = 2.0f;
+        _AFScurrentPasswordTextField.layer.masksToBounds = YES;
         _AFScurrentPasswordTextField.layer.cornerRadius = 12.0f;
         _AFScurrentPasswordTextField.layer.masksToBounds = YES;
         _AFScurrentPasswordTextField.tag = 101;
@@ -166,11 +164,9 @@
 - (UITextField *)AFSconfirmPasswordTextField{
     if (!_AFSconfirmPasswordTextField) {
         _AFSconfirmPasswordTextField = [[UITextField alloc] init];
-       _AFSconfirmPasswordTextField.backgroundColor = [UIColor whiteColor];
+        _AFSconfirmPasswordTextField.backgroundColor = [UIColor systemGreenColor];
         _AFSconfirmPasswordTextField.secureTextEntry = YES;
         _AFSconfirmPasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _AFSconfirmPasswordTextField.layer.borderColor = [UIColor grayColor].CGColor;
-        _AFSconfirmPasswordTextField.layer.borderWidth = 2.0f;
         _AFSconfirmPasswordTextField.layer.cornerRadius = 12.0f;
         _AFSconfirmPasswordTextField.layer.masksToBounds = YES;
         _AFSconfirmPasswordTextField.tag = 102;
@@ -184,13 +180,11 @@
 - (UIButton *)AFSsureButton{
     if (!_AFSsureButton) {
         _AFSsureButton = [[UIButton alloc] init];
-        _AFSsureButton.backgroundColor = [UIColor whiteColor];
+        _AFSsureButton.backgroundColor = [UIColor systemGreenColor];
         [_AFSsureButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_AFSsureButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
         _AFSsureButton.layer.cornerRadius = 8.0f;
         _AFSsureButton.layer.masksToBounds = YES;
-        _AFSsureButton.layer.borderColor = [UIColor grayColor].CGColor;
-        _AFSsureButton.layer.borderWidth = 2.0f;
         [_AFSsureButton setTitle:NSLocalizedString(@"确定", nil) forState:UIControlStateNormal];
         [_AFSsureButton addTarget:self action:@selector(AFSbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }

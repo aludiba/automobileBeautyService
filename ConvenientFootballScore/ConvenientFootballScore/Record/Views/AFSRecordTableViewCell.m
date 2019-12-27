@@ -18,11 +18,12 @@
 @property(nonatomic, strong)UILabel *AFSVSLabel;//VS标识
 @property(nonatomic, strong)UILabel *AFSLeftNameLabel;//左边队伍名称
 @property(nonatomic, strong)UILabel *AFSLeftScoreLabel;//左边队伍得分
+@property(nonatomic, strong)UIView *AFSBottomLine;
+
 @end
 @implementation AFSRecordTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = [UIColor cyanColor];
         [self AFSSetContentView];
     }
     return self;
@@ -39,13 +40,13 @@
     [self.AFSBackView addSubview:self.AFSVSLabel];
     [self.AFSBackView addSubview:self.AFSLeftNameLabel];
     [self.AFSBackView addSubview:self.AFSLeftScoreLabel];
-    
+    [self.AFSBackView addSubview:self.AFSBottomLine];
+
     [self.AFSBackView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.contentView).offset(20);
-        make.top.equalTo(self.contentView).offset(10);
-        make.trailing.equalTo(self.contentView).offset(-20);
-        make.height.mas_equalTo(254);
-        make.bottom.equalTo(self.contentView).offset(-10);
+        make.leading.equalTo(self.contentView);
+        make.top.equalTo(self.contentView);
+        make.trailing.equalTo(self.contentView);
+        make.bottom.equalTo(self.contentView);
     }];
     [self.AFSTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.AFSBackView);
@@ -77,17 +78,17 @@
         make.width.mas_equalTo((AFSWIDTH - 32 - 60) * 0.5);
         make.height.mas_equalTo(20);
     }];
+    [self.AFSVSLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.AFSRightNameLabel);
+        make.centerX.equalTo(self.AFSBackView);
+        make.width.mas_equalTo(44);
+        make.height.mas_equalTo(44);
+    }];
     [self.AFSRightScoreLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.AFSRightNameLabel.mas_bottom).offset(20);
                make.centerX.equalTo(self.AFSRightNameLabel);
                make.width.mas_equalTo((AFSWIDTH - 32 - 60) * 0.5);
                make.height.mas_equalTo(44);
-    }];
-    [self.AFSVSLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.AFSRightScoreLabel);
-        make.centerX.equalTo(self.AFSBackView);
-        make.width.mas_equalTo(44);
-        make.height.mas_equalTo(44);
     }];
     [self.AFSLeftNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.AFSElapsedTimeLabel.mas_bottom).offset(20);
@@ -100,6 +101,13 @@
                make.centerX.equalTo(self.AFSLeftNameLabel);
                make.width.mas_equalTo((AFSWIDTH - 32 - 60) * 0.5);
                make.height.mas_equalTo(44);
+    }];
+    [self.AFSBottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.AFSLeftScoreLabel.mas_bottom).offset(20);
+        make.leading.equalTo(self.AFSBackView).offset(16);
+        make.height.mas_equalTo(1);
+        make.trailing.equalTo(self.AFSBackView);
+        make.bottom.equalTo(self.AFSBackView);
     }];
 }
 - (void)setAFSModel:(AFSScorecardModel *)AFSModel{
@@ -130,16 +138,14 @@
     if (!_AFSBackView) {
         _AFSBackView = [[UIView alloc] init];
         _AFSBackView.backgroundColor = [UIColor whiteColor];
-        _AFSBackView.layer.cornerRadius = 16.0f;
-        _AFSBackView.layer.masksToBounds = YES;
     }
     return _AFSBackView;
 }
 - (UILabel *)AFSTitleLabel{
     if (!_AFSTitleLabel) {
         _AFSTitleLabel = [[UILabel alloc] init];
-        _AFSTitleLabel.textColor = [UIColor redColor];
-        _AFSTitleLabel.font = [UIFont boldSystemFontOfSize:25];
+        _AFSTitleLabel.textColor = [UIColor systemGreenColor];
+        _AFSTitleLabel.font = [UIFont boldSystemFontOfSize:35];
         _AFSTitleLabel.numberOfLines = 0;
     }
     return _AFSTitleLabel;
@@ -155,7 +161,7 @@
 - (UILabel *)AFSEndTimeLabel{
     if (!_AFSEndTimeLabel) {
         _AFSEndTimeLabel = [[UILabel alloc] init];
-        _AFSEndTimeLabel.textColor = [UIColor blackColor];
+        _AFSEndTimeLabel.textColor = [UIColor systemGreenColor];
         _AFSEndTimeLabel.font = [UIFont systemFontOfSize:15];
         _AFSEndTimeLabel.textAlignment = NSTextAlignmentCenter;
         _AFSEndTimeLabel.numberOfLines = 0;
@@ -165,7 +171,7 @@
 - (UILabel *)AFSElapsedTimeLabel{
     if (!_AFSElapsedTimeLabel) {
         _AFSElapsedTimeLabel = [[UILabel alloc] init];
-        _AFSElapsedTimeLabel.textColor = [UIColor blackColor];
+        _AFSElapsedTimeLabel.textColor = [UIColor systemGreenColor];
         _AFSElapsedTimeLabel.font = [UIFont systemFontOfSize:15];
         _AFSElapsedTimeLabel.textAlignment = NSTextAlignmentCenter;
         _AFSElapsedTimeLabel.numberOfLines = 0;
@@ -175,7 +181,7 @@
 - (UILabel *)AFSRightNameLabel{
     if (!_AFSRightNameLabel) {
         _AFSRightNameLabel = [[UILabel alloc] init];
-        _AFSRightNameLabel.textColor = [UIColor systemRedColor];
+        _AFSRightNameLabel.textColor = [UIColor systemGreenColor];
         _AFSRightNameLabel.font = [UIFont systemFontOfSize:18];
         _AFSRightNameLabel.textAlignment = NSTextAlignmentCenter;
         _AFSRightNameLabel.numberOfLines = 0;
@@ -186,7 +192,7 @@
     if (!_AFSRightScoreLabel) {
         _AFSRightScoreLabel = [[UILabel alloc] init];
         _AFSRightScoreLabel.textColor = [UIColor systemGreenColor];
-        _AFSRightScoreLabel.font = [UIFont systemFontOfSize:30];
+        _AFSRightScoreLabel.font = [UIFont boldSystemFontOfSize:30];
         _AFSRightScoreLabel.textAlignment = NSTextAlignmentCenter;
         _AFSRightScoreLabel.numberOfLines = 0;
     }
@@ -199,14 +205,14 @@
         _AFSVSLabel.font = [UIFont boldSystemFontOfSize:30];
         _AFSVSLabel.textAlignment = NSTextAlignmentCenter;
         _AFSVSLabel.numberOfLines = 0;
-        _AFSVSLabel.text = @":";
+        _AFSVSLabel.text = @"vs";
     }
     return _AFSVSLabel;
 }
 - (UILabel *)AFSLeftNameLabel{
     if (!_AFSLeftNameLabel) {
         _AFSLeftNameLabel = [[UILabel alloc] init];
-        _AFSLeftNameLabel.textColor = [UIColor systemRedColor];
+        _AFSLeftNameLabel.textColor = [UIColor systemGreenColor];
         _AFSLeftNameLabel.font = [UIFont systemFontOfSize:18];
         _AFSLeftNameLabel.textAlignment = NSTextAlignmentCenter;
         _AFSLeftNameLabel.numberOfLines = 0;
@@ -217,10 +223,17 @@
     if (!_AFSLeftScoreLabel) {
         _AFSLeftScoreLabel = [[UILabel alloc] init];
         _AFSLeftScoreLabel.textColor = [UIColor systemGreenColor];
-        _AFSLeftScoreLabel.font = [UIFont systemFontOfSize:30];
+        _AFSLeftScoreLabel.font = [UIFont boldSystemFontOfSize:30];
         _AFSLeftScoreLabel.textAlignment = NSTextAlignmentCenter;
         _AFSLeftScoreLabel.numberOfLines = 0;
     }
     return _AFSLeftScoreLabel;
+}
+- (UIView *)AFSBottomLine{
+    if (!_AFSBottomLine) {
+        _AFSBottomLine = [[UIView alloc] init];
+        _AFSBottomLine.backgroundColor = AFSH_Color(190, 194, 202, 1);
+    }
+    return _AFSBottomLine;
 }
 @end
