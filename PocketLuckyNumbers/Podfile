@@ -7,4 +7,5 @@ target 'PocketLuckyNumbers' do
 
   # Pods for PocketLuckyNumbers
     pod 'Masonry'
+    pod 'AFNetworking'
 end
