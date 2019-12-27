@@ -52,7 +52,7 @@
         make.centerX.equalTo(self.AFSBackView);
         make.top.equalTo(self.AFSBackView).offset(20);
         make.width.mas_equalTo(AFSWIDTH - 16 - 16 - 26 - 16);
-        make.height.mas_equalTo(30);
+        make.height.mas_equalTo(40);
     }];
     [self.AFSDeleteButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.AFSTitleLabel);
