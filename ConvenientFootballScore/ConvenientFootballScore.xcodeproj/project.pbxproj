@@ -11,32 +11,30 @@
 		AE2788E423A71AF1006C700E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2788E323A71AF1006C700E /* AppDelegate.m */; };
 		AE2788EF23A71AF5006C700E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2788EE23A71AF5006C700E /* Assets.xcassets */; };
 		AE2788F523A71AF5006C700E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2788F423A71AF5006C700E /* main.m */; };
-		AE27890923A723F3006C700E /* CFSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2788FD23A723F2006C700E /* CFSetViewModel.m */; };
-		AE27890A23A723F3006C700E /* CFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27890123A723F2006C700E /* CFLoginViewController.m */; };
-		AE27890B23A723F3006C700E /* CFMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27890323A723F2006C700E /* CFMineViewController.m */; };
-		AE27890C23A723F3006C700E /* CFPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27890523A723F2006C700E /* CFPasswordChangeViewController.m */; };
-		AE27890D23A723F3006C700E /* CFLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27890723A723F2006C700E /* CFLoginTableViewCell.m */; };
-		AE27891623A72550006C700E /* CFRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27891223A72550006C700E /* CFRecordViewController.m */; };
-		AE27891723A72550006C700E /* CFRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27891423A72550006C700E /* CFRecordTableViewCell.m */; };
-		AE27892A23A7261B006C700E /* CFScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27891B23A7261B006C700E /* CFScorecardModel.m */; };
-		AE27892B23A7261B006C700E /* CFScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27891C23A7261B006C700E /* CFScorecardViewModel.m */; };
-		AE27892C23A7261B006C700E /* CFScorecardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27892023A7261B006C700E /* CFScorecardViewController.m */; };
-		AE27892D23A7261B006C700E /* CFBothTeamsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27892223A7261B006C700E /* CFBothTeamsTableViewCell.m */; };
-		AE27892E23A7261B006C700E /* CFScoringPartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27892723A7261B006C700E /* CFScoringPartTableViewCell.m */; };
-		AE27892F23A7261B006C700E /* CFScoringSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27892823A7261B006C700E /* CFScoringSaveTableViewCell.m */; };
-		AE27893023A7261B006C700E /* CFTimePortionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27892923A7261B006C700E /* CFTimePortionTableViewCell.m */; };
-		AE27894C23A7270F006C700E /* CFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893323A7270E006C700E /* CFBaseViewController.m */; };
+		AE27890923A723F3006C700E /* AFSSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2788FD23A723F2006C700E /* AFSSetViewModel.m */; };
+		AE27890A23A723F3006C700E /* AFSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27890123A723F2006C700E /* AFSLoginViewController.m */; };
+		AE27890B23A723F3006C700E /* AFSMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27890323A723F2006C700E /* AFSMineViewController.m */; };
+		AE27890C23A723F3006C700E /* AFSPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27890523A723F2006C700E /* AFSPasswordChangeViewController.m */; };
+		AE27890D23A723F3006C700E /* AFSLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27890723A723F2006C700E /* AFSLoginTableViewCell.m */; };
+		AE27891623A72550006C700E /* AFSRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27891223A72550006C700E /* AFSRecordViewController.m */; };
+		AE27891723A72550006C700E /* AFSRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27891423A72550006C700E /* AFSRecordTableViewCell.m */; };
+		AE27892A23A7261B006C700E /* AFSScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27891B23A7261B006C700E /* AFSScorecardModel.m */; };
+		AE27892B23A7261B006C700E /* AFScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27891C23A7261B006C700E /* AFScorecardViewModel.m */; };
+		AE27892C23A7261B006C700E /* AFSScorecardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27892023A7261B006C700E /* AFSScorecardViewController.m */; };
+		AE27892D23A7261B006C700E /* AFSBothTeamsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27892223A7261B006C700E /* AFSBothTeamsTableViewCell.m */; };
+		AE27892E23A7261B006C700E /* AFSScoringPartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27892723A7261B006C700E /* AFSScoringPartTableViewCell.m */; };
+		AE27892F23A7261B006C700E /* AFSScoringSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27892823A7261B006C700E /* AFSScoringSaveTableViewCell.m */; };
+		AE27893023A7261B006C700E /* AFSTimePortionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27892923A7261B006C700E /* AFSTimePortionTableViewCell.m */; };
+		AE27894C23A7270F006C700E /* AFSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893323A7270E006C700E /* AFSBaseViewController.m */; };
 		AE27894D23A7270F006C700E /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893423A7270E006C700E /* NSDictionary+log.m */; };
-		AE27894E23A7270F006C700E /* CFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893523A7270E006C700E /* CFTabBarController.m */; };
-		AE27894F23A7270F006C700E /* CFNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893823A7270F006C700E /* CFNDHTTPClient.m */; };
-		AE27895023A7270F006C700E /* CFUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893923A7270F006C700E /* CFUIUtilities.m */; };
-		AE27895123A7270F006C700E /* MBProgressHUD+CFNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893A23A7270F006C700E /* MBProgressHUD+CFNJ.m */; };
-		AE27895223A7270F006C700E /* CFHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893F23A7270F006C700E /* CFHBTool.m */; };
+		AE27894E23A7270F006C700E /* AFSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893523A7270E006C700E /* AFSTabBarController.m */; };
+		AE27894F23A7270F006C700E /* AFSNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893823A7270F006C700E /* AFSNDHTTPClient.m */; };
+		AE27895023A7270F006C700E /* AFSUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893923A7270F006C700E /* AFSUIUtilities.m */; };
+		AE27895123A7270F006C700E /* MBProgressHUD+AFSNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893A23A7270F006C700E /* MBProgressHUD+AFSNJ.m */; };
+		AE27895223A7270F006C700E /* AFSHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27893F23A7270F006C700E /* AFSHBTool.m */; };
 		AE27895323A7270F006C700E /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27894023A7270F006C700E /* CalendarTool.m */; };
 		AE27895723A7270F006C700E /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27894A23A7270F006C700E /* NSArray+log.m */; };
 		AE27895E23A728E0006C700E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE27895923A728E0006C700E /* Localizable.strings */; };
-		AECCDB4123A773C5006B96F2 /* jpush-ios-3.2.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AECCDB3C23A773C4006B96F2 /* jpush-ios-3.2.6.a */; };
-		AECCDB4223A773C5006B96F2 /* jcore-ios-2.1.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AECCDB3E23A773C4006B96F2 /* jcore-ios-2.1.4.a */; };
 		AECCDB4523A7743C006B96F2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECCDB4423A7743C006B96F2 /* AdSupport.framework */; };
 		AECCDB4723A77443006B96F2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECCDB4623A77442006B96F2 /* AVFoundation.framework */; };
 		AECCDB4923A7744A006B96F2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECCDB4823A77449006B96F2 /* CFNetwork.framework */; };
@@ -61,68 +59,64 @@
 		0113B6641BFEBB1C208939BB /* Pods-ConvenientFootballScore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvenientFootballScore.release.xcconfig"; path = "Target Support Files/Pods-ConvenientFootballScore/Pods-ConvenientFootballScore.release.xcconfig"; sourceTree = "<group>"; };
 		7D9A2A88F0D4A28FA9ADE10B /* Pods_ConvenientFootballScore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConvenientFootballScore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D70A34C6121B4D85107E1B /* Pods-ConvenientFootballScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvenientFootballScore.debug.xcconfig"; path = "Target Support Files/Pods-ConvenientFootballScore/Pods-ConvenientFootballScore.debug.xcconfig"; sourceTree = "<group>"; };
-		AE2788DF23A71AF1006C700E /* ConvenientFootballScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvenientFootballScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2788DF23A71AF1006C700E /* ConvenientFootballScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvenientFootballScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2788E223A71AF1006C700E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE2788E323A71AF1006C700E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AE2788EE23A71AF5006C700E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE2788F323A71AF5006C700E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE2788F423A71AF5006C700E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AE2788FD23A723F2006C700E /* CFSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFSetViewModel.m; sourceTree = "<group>"; };
-		AE2788FE23A723F2006C700E /* CFSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFSetViewModel.h; sourceTree = "<group>"; };
-		AE27890023A723F2006C700E /* CFMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFMineViewController.h; sourceTree = "<group>"; };
-		AE27890123A723F2006C700E /* CFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFLoginViewController.m; sourceTree = "<group>"; };
-		AE27890223A723F2006C700E /* CFPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFPasswordChangeViewController.h; sourceTree = "<group>"; };
-		AE27890323A723F2006C700E /* CFMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFMineViewController.m; sourceTree = "<group>"; };
-		AE27890423A723F2006C700E /* CFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFLoginViewController.h; sourceTree = "<group>"; };
-		AE27890523A723F2006C700E /* CFPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFPasswordChangeViewController.m; sourceTree = "<group>"; };
-		AE27890723A723F2006C700E /* CFLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFLoginTableViewCell.m; sourceTree = "<group>"; };
-		AE27890823A723F3006C700E /* CFLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFLoginTableViewCell.h; sourceTree = "<group>"; };
-		AE27891123A72550006C700E /* CFRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFRecordViewController.h; sourceTree = "<group>"; };
-		AE27891223A72550006C700E /* CFRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFRecordViewController.m; sourceTree = "<group>"; };
-		AE27891423A72550006C700E /* CFRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFRecordTableViewCell.m; sourceTree = "<group>"; };
-		AE27891523A72550006C700E /* CFRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFRecordTableViewCell.h; sourceTree = "<group>"; };
-		AE27891A23A7261B006C700E /* CFScorecardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFScorecardViewModel.h; sourceTree = "<group>"; };
-		AE27891B23A7261B006C700E /* CFScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFScorecardModel.m; sourceTree = "<group>"; };
-		AE27891C23A7261B006C700E /* CFScorecardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFScorecardViewModel.m; sourceTree = "<group>"; };
-		AE27891D23A7261B006C700E /* CFScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFScorecardModel.h; sourceTree = "<group>"; };
-		AE27891F23A7261B006C700E /* CFScorecardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFScorecardViewController.h; sourceTree = "<group>"; };
-		AE27892023A7261B006C700E /* CFScorecardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFScorecardViewController.m; sourceTree = "<group>"; };
-		AE27892223A7261B006C700E /* CFBothTeamsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFBothTeamsTableViewCell.m; sourceTree = "<group>"; };
-		AE27892323A7261B006C700E /* CFScoringPartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFScoringPartTableViewCell.h; sourceTree = "<group>"; };
-		AE27892423A7261B006C700E /* CFScoringSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFScoringSaveTableViewCell.h; sourceTree = "<group>"; };
-		AE27892523A7261B006C700E /* CFTimePortionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFTimePortionTableViewCell.h; sourceTree = "<group>"; };
-		AE27892623A7261B006C700E /* CFBothTeamsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFBothTeamsTableViewCell.h; sourceTree = "<group>"; };
-		AE27892723A7261B006C700E /* CFScoringPartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFScoringPartTableViewCell.m; sourceTree = "<group>"; };
-		AE27892823A7261B006C700E /* CFScoringSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFScoringSaveTableViewCell.m; sourceTree = "<group>"; };
-		AE27892923A7261B006C700E /* CFTimePortionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFTimePortionTableViewCell.m; sourceTree = "<group>"; };
-		AE27893223A7270E006C700E /* CFGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFGlobal.h; sourceTree = "<group>"; };
-		AE27893323A7270E006C700E /* CFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFBaseViewController.m; sourceTree = "<group>"; };
+		AE2788FD23A723F2006C700E /* AFSSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSSetViewModel.m; sourceTree = "<group>"; };
+		AE2788FE23A723F2006C700E /* AFSSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSSetViewModel.h; sourceTree = "<group>"; };
+		AE27890023A723F2006C700E /* AFSMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSMineViewController.h; sourceTree = "<group>"; };
+		AE27890123A723F2006C700E /* AFSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSLoginViewController.m; sourceTree = "<group>"; };
+		AE27890223A723F2006C700E /* AFSPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSPasswordChangeViewController.h; sourceTree = "<group>"; };
+		AE27890323A723F2006C700E /* AFSMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSMineViewController.m; sourceTree = "<group>"; };
+		AE27890423A723F2006C700E /* AFSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSLoginViewController.h; sourceTree = "<group>"; };
+		AE27890523A723F2006C700E /* AFSPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSPasswordChangeViewController.m; sourceTree = "<group>"; };
+		AE27890723A723F2006C700E /* AFSLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSLoginTableViewCell.m; sourceTree = "<group>"; };
+		AE27890823A723F3006C700E /* AFSLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSLoginTableViewCell.h; sourceTree = "<group>"; };
+		AE27891123A72550006C700E /* AFSRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSRecordViewController.h; sourceTree = "<group>"; };
+		AE27891223A72550006C700E /* AFSRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSRecordViewController.m; sourceTree = "<group>"; };
+		AE27891423A72550006C700E /* AFSRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSRecordTableViewCell.m; sourceTree = "<group>"; };
+		AE27891523A72550006C700E /* AFSRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSRecordTableViewCell.h; sourceTree = "<group>"; };
+		AE27891A23A7261B006C700E /* AFSScorecardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSScorecardViewModel.h; sourceTree = "<group>"; };
+		AE27891B23A7261B006C700E /* AFSScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSScorecardModel.m; sourceTree = "<group>"; };
+		AE27891C23A7261B006C700E /* AFScorecardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFScorecardViewModel.m; sourceTree = "<group>"; };
+		AE27891D23A7261B006C700E /* AFSScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSScorecardModel.h; sourceTree = "<group>"; };
+		AE27891F23A7261B006C700E /* AFSScorecardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSScorecardViewController.h; sourceTree = "<group>"; };
+		AE27892023A7261B006C700E /* AFSScorecardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSScorecardViewController.m; sourceTree = "<group>"; };
+		AE27892223A7261B006C700E /* AFSBothTeamsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSBothTeamsTableViewCell.m; sourceTree = "<group>"; };
+		AE27892323A7261B006C700E /* AFSScoringPartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSScoringPartTableViewCell.h; sourceTree = "<group>"; };
+		AE27892423A7261B006C700E /* AFSScoringSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSScoringSaveTableViewCell.h; sourceTree = "<group>"; };
+		AE27892523A7261B006C700E /* AFSTimePortionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSTimePortionTableViewCell.h; sourceTree = "<group>"; };
+		AE27892623A7261B006C700E /* AFSBothTeamsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSBothTeamsTableViewCell.h; sourceTree = "<group>"; };
+		AE27892723A7261B006C700E /* AFSScoringPartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSScoringPartTableViewCell.m; sourceTree = "<group>"; };
+		AE27892823A7261B006C700E /* AFSScoringSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSScoringSaveTableViewCell.m; sourceTree = "<group>"; };
+		AE27892923A7261B006C700E /* AFSTimePortionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSTimePortionTableViewCell.m; sourceTree = "<group>"; };
+		AE27893223A7270E006C700E /* AFSGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSGlobal.h; sourceTree = "<group>"; };
+		AE27893323A7270E006C700E /* AFSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSBaseViewController.m; sourceTree = "<group>"; };
 		AE27893423A7270E006C700E /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
-		AE27893523A7270E006C700E /* CFTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFTabBarController.m; sourceTree = "<group>"; };
+		AE27893523A7270E006C700E /* AFSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSTabBarController.m; sourceTree = "<group>"; };
 		AE27893623A7270F006C700E /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
-		AE27893723A7270F006C700E /* CFHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFHBTool.h; sourceTree = "<group>"; };
-		AE27893823A7270F006C700E /* CFNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNDHTTPClient.m; sourceTree = "<group>"; };
-		AE27893923A7270F006C700E /* CFUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFUIUtilities.m; sourceTree = "<group>"; };
-		AE27893A23A7270F006C700E /* MBProgressHUD+CFNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+CFNJ.m"; sourceTree = "<group>"; };
+		AE27893723A7270F006C700E /* AFSHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSHBTool.h; sourceTree = "<group>"; };
+		AE27893823A7270F006C700E /* AFSNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSNDHTTPClient.m; sourceTree = "<group>"; };
+		AE27893923A7270F006C700E /* AFSUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSUIUtilities.m; sourceTree = "<group>"; };
+		AE27893A23A7270F006C700E /* MBProgressHUD+AFSNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+AFSNJ.m"; sourceTree = "<group>"; };
 		AE27893B23A7270F006C700E /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
-		AE27893C23A7270F006C700E /* CFTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFTabBarController.h; sourceTree = "<group>"; };
+		AE27893C23A7270F006C700E /* AFSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSTabBarController.h; sourceTree = "<group>"; };
 		AE27893D23A7270F006C700E /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
-		AE27893E23A7270F006C700E /* CFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFBaseViewController.h; sourceTree = "<group>"; };
-		AE27893F23A7270F006C700E /* CFHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFHBTool.m; sourceTree = "<group>"; };
+		AE27893E23A7270F006C700E /* AFSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSBaseViewController.h; sourceTree = "<group>"; };
+		AE27893F23A7270F006C700E /* AFSHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSHBTool.m; sourceTree = "<group>"; };
 		AE27894023A7270F006C700E /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
-		AE27894123A7270F006C700E /* MBProgressHUD+CFNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+CFNJ.h"; sourceTree = "<group>"; };
-		AE27894223A7270F006C700E /* CFUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFUIUtilities.h; sourceTree = "<group>"; };
-		AE27894323A7270F006C700E /* CFNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNDHTTPClient.h; sourceTree = "<group>"; };
+		AE27894123A7270F006C700E /* MBProgressHUD+AFSNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+AFSNJ.h"; sourceTree = "<group>"; };
+		AE27894223A7270F006C700E /* AFSUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSUIUtilities.h; sourceTree = "<group>"; };
+		AE27894323A7270F006C700E /* AFSNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSNDHTTPClient.h; sourceTree = "<group>"; };
 		AE27894A23A7270F006C700E /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
-		AE27894B23A7270F006C700E /* CF_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CF_PrefixHeader.pch; sourceTree = "<group>"; };
+		AE27894B23A7270F006C700E /* AFS_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFS_PrefixHeader.pch; sourceTree = "<group>"; };
 		AE27895A23A728E0006C700E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		AE27895B23A728E0006C700E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AE27895C23A728E0006C700E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AE27895D23A728E0006C700E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AECCDB3C23A773C4006B96F2 /* jpush-ios-3.2.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.6.a"; sourceTree = "<group>"; };
-		AECCDB3E23A773C4006B96F2 /* jcore-ios-2.1.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.1.4.a"; sourceTree = "<group>"; };
-		AECCDB3F23A773C4006B96F2 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
-		AECCDB4323A7741E006B96F2 /* ConvenientFootballScore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConvenientFootballScore.entitlements; sourceTree = "<group>"; };
 		AECCDB4423A7743C006B96F2 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		AECCDB4623A77442006B96F2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AECCDB4823A77449006B96F2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -151,7 +145,6 @@
 			files = (
 				AECCDB4923A7744A006B96F2 /* CFNetwork.framework in Frameworks */,
 				AECCDB6123A774C6006B96F2 /* UIKit.framework in Frameworks */,
-				AECCDB4123A773C5006B96F2 /* jpush-ios-3.2.6.a in Frameworks */,
 				AECCDB5123A7746A006B96F2 /* CoreTelephony.framework in Frameworks */,
 				AECCDB4523A7743C006B96F2 /* AdSupport.framework in Frameworks */,
 				AECCDB4F23A77461006B96F2 /* CoreLocation.framework in Frameworks */,
@@ -168,7 +161,6 @@
 				AECCDB6723A7750E006B96F2 /* libz.tbd in Frameworks */,
 				AECCDB6323A774CF006B96F2 /* UserNotifications.framework in Frameworks */,
 				AECCDB5923A77495006B96F2 /* Photos.framework in Frameworks */,
-				AECCDB4223A773C5006B96F2 /* jcore-ios-2.1.4.a in Frameworks */,
 				AECCDB5323A77473006B96F2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,7 +190,7 @@
 		AE2788E023A71AF1006C700E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE2788DF23A71AF1006C700E /* ConvenientFootballScore.app */,
+				AE2788DF23A71AF1006C700E /* ConvenientFootballScout.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,7 +198,6 @@
 		AE2788E123A71AF1006C700E /* ConvenientFootballScore */ = {
 			isa = PBXGroup;
 			children = (
-				AECCDB4323A7741E006B96F2 /* ConvenientFootballScore.entitlements */,
 				AE2788E223A71AF1006C700E /* AppDelegate.h */,
 				AE2788E323A71AF1006C700E /* AppDelegate.m */,
 				AE27895823A728E0006C700E /* Resources */,
@@ -234,8 +225,8 @@
 		AE2788FC23A723F2006C700E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE2788FE23A723F2006C700E /* CFSetViewModel.h */,
-				AE2788FD23A723F2006C700E /* CFSetViewModel.m */,
+				AE2788FE23A723F2006C700E /* AFSSetViewModel.h */,
+				AE2788FD23A723F2006C700E /* AFSSetViewModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -243,12 +234,12 @@
 		AE2788FF23A723F2006C700E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE27890023A723F2006C700E /* CFMineViewController.h */,
-				AE27890323A723F2006C700E /* CFMineViewController.m */,
-				AE27890423A723F2006C700E /* CFLoginViewController.h */,
-				AE27890123A723F2006C700E /* CFLoginViewController.m */,
-				AE27890223A723F2006C700E /* CFPasswordChangeViewController.h */,
-				AE27890523A723F2006C700E /* CFPasswordChangeViewController.m */,
+				AE27890023A723F2006C700E /* AFSMineViewController.h */,
+				AE27890323A723F2006C700E /* AFSMineViewController.m */,
+				AE27890423A723F2006C700E /* AFSLoginViewController.h */,
+				AE27890123A723F2006C700E /* AFSLoginViewController.m */,
+				AE27890223A723F2006C700E /* AFSPasswordChangeViewController.h */,
+				AE27890523A723F2006C700E /* AFSPasswordChangeViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -256,8 +247,8 @@
 		AE27890623A723F2006C700E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE27890823A723F3006C700E /* CFLoginTableViewCell.h */,
-				AE27890723A723F2006C700E /* CFLoginTableViewCell.m */,
+				AE27890823A723F3006C700E /* AFSLoginTableViewCell.h */,
+				AE27890723A723F2006C700E /* AFSLoginTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -282,8 +273,8 @@
 		AE27891023A72550006C700E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE27891123A72550006C700E /* CFRecordViewController.h */,
-				AE27891223A72550006C700E /* CFRecordViewController.m */,
+				AE27891123A72550006C700E /* AFSRecordViewController.h */,
+				AE27891223A72550006C700E /* AFSRecordViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -291,8 +282,8 @@
 		AE27891323A72550006C700E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE27891523A72550006C700E /* CFRecordTableViewCell.h */,
-				AE27891423A72550006C700E /* CFRecordTableViewCell.m */,
+				AE27891523A72550006C700E /* AFSRecordTableViewCell.h */,
+				AE27891423A72550006C700E /* AFSRecordTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -310,10 +301,10 @@
 		AE27891923A7261B006C700E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE27891A23A7261B006C700E /* CFScorecardViewModel.h */,
-				AE27891C23A7261B006C700E /* CFScorecardViewModel.m */,
-				AE27891D23A7261B006C700E /* CFScorecardModel.h */,
-				AE27891B23A7261B006C700E /* CFScorecardModel.m */,
+				AE27891A23A7261B006C700E /* AFSScorecardViewModel.h */,
+				AE27891C23A7261B006C700E /* AFScorecardViewModel.m */,
+				AE27891D23A7261B006C700E /* AFSScorecardModel.h */,
+				AE27891B23A7261B006C700E /* AFSScorecardModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -321,8 +312,8 @@
 		AE27891E23A7261B006C700E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE27891F23A7261B006C700E /* CFScorecardViewController.h */,
-				AE27892023A7261B006C700E /* CFScorecardViewController.m */,
+				AE27891F23A7261B006C700E /* AFSScorecardViewController.h */,
+				AE27892023A7261B006C700E /* AFSScorecardViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -330,14 +321,14 @@
 		AE27892123A7261B006C700E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE27892323A7261B006C700E /* CFScoringPartTableViewCell.h */,
-				AE27892723A7261B006C700E /* CFScoringPartTableViewCell.m */,
-				AE27892523A7261B006C700E /* CFTimePortionTableViewCell.h */,
-				AE27892923A7261B006C700E /* CFTimePortionTableViewCell.m */,
-				AE27892623A7261B006C700E /* CFBothTeamsTableViewCell.h */,
-				AE27892223A7261B006C700E /* CFBothTeamsTableViewCell.m */,
-				AE27892423A7261B006C700E /* CFScoringSaveTableViewCell.h */,
-				AE27892823A7261B006C700E /* CFScoringSaveTableViewCell.m */,
+				AE27892323A7261B006C700E /* AFSScoringPartTableViewCell.h */,
+				AE27892723A7261B006C700E /* AFSScoringPartTableViewCell.m */,
+				AE27892523A7261B006C700E /* AFSTimePortionTableViewCell.h */,
+				AE27892923A7261B006C700E /* AFSTimePortionTableViewCell.m */,
+				AE27892623A7261B006C700E /* AFSBothTeamsTableViewCell.h */,
+				AE27892223A7261B006C700E /* AFSBothTeamsTableViewCell.m */,
+				AE27892423A7261B006C700E /* AFSScoringSaveTableViewCell.h */,
+				AE27892823A7261B006C700E /* AFSScoringSaveTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -345,27 +336,26 @@
 		AE27893123A7270E006C700E /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				AECCDB3A23A773C4006B96F2 /* JPush */,
-				AE27894B23A7270F006C700E /* CF_PrefixHeader.pch */,
-				AE27893223A7270E006C700E /* CFGlobal.h */,
-				AE27894323A7270F006C700E /* CFNDHTTPClient.h */,
-				AE27893823A7270F006C700E /* CFNDHTTPClient.m */,
+				AE27894B23A7270F006C700E /* AFS_PrefixHeader.pch */,
+				AE27893223A7270E006C700E /* AFSGlobal.h */,
+				AE27894323A7270F006C700E /* AFSNDHTTPClient.h */,
+				AE27893823A7270F006C700E /* AFSNDHTTPClient.m */,
 				AE27893D23A7270F006C700E /* NSDictionary+log.h */,
 				AE27893423A7270E006C700E /* NSDictionary+log.m */,
-				AE27893723A7270F006C700E /* CFHBTool.h */,
-				AE27893F23A7270F006C700E /* CFHBTool.m */,
-				AE27894223A7270F006C700E /* CFUIUtilities.h */,
-				AE27893923A7270F006C700E /* CFUIUtilities.m */,
-				AE27894123A7270F006C700E /* MBProgressHUD+CFNJ.h */,
-				AE27893A23A7270F006C700E /* MBProgressHUD+CFNJ.m */,
+				AE27893723A7270F006C700E /* AFSHBTool.h */,
+				AE27893F23A7270F006C700E /* AFSHBTool.m */,
+				AE27894223A7270F006C700E /* AFSUIUtilities.h */,
+				AE27893923A7270F006C700E /* AFSUIUtilities.m */,
+				AE27894123A7270F006C700E /* MBProgressHUD+AFSNJ.h */,
+				AE27893A23A7270F006C700E /* MBProgressHUD+AFSNJ.m */,
 				AE27893B23A7270F006C700E /* NSArray+log.h */,
 				AE27894A23A7270F006C700E /* NSArray+log.m */,
 				AE27893623A7270F006C700E /* CalendarTool.h */,
 				AE27894023A7270F006C700E /* CalendarTool.m */,
-				AE27893E23A7270F006C700E /* CFBaseViewController.h */,
-				AE27893323A7270E006C700E /* CFBaseViewController.m */,
-				AE27893C23A7270F006C700E /* CFTabBarController.h */,
-				AE27893523A7270E006C700E /* CFTabBarController.m */,
+				AE27893E23A7270F006C700E /* AFSBaseViewController.h */,
+				AE27893323A7270E006C700E /* AFSBaseViewController.m */,
+				AE27893C23A7270F006C700E /* AFSTabBarController.h */,
+				AE27893523A7270E006C700E /* AFSTabBarController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -376,16 +366,6 @@
 				AE27895923A728E0006C700E /* Localizable.strings */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		AECCDB3A23A773C4006B96F2 /* JPush */ = {
-			isa = PBXGroup;
-			children = (
-				AECCDB3C23A773C4006B96F2 /* jpush-ios-3.2.6.a */,
-				AECCDB3E23A773C4006B96F2 /* jcore-ios-2.1.4.a */,
-				AECCDB3F23A773C4006B96F2 /* JPUSHService.h */,
-			);
-			path = JPush;
 			sourceTree = "<group>";
 		};
 		FFEE1289088BB68EE8390401 /* Frameworks */ = {
@@ -433,7 +413,7 @@
 			);
 			name = ConvenientFootballScore;
 			productName = ConvenientFootballScore;
-			productReference = AE2788DF23A71AF1006C700E /* ConvenientFootballScore.app */;
+			productReference = AE2788DF23A71AF1006C700E /* ConvenientFootballScout.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -531,30 +511,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE27892C23A7261B006C700E /* CFScorecardViewController.m in Sources */,
+				AE27892C23A7261B006C700E /* AFSScorecardViewController.m in Sources */,
 				AE27895323A7270F006C700E /* CalendarTool.m in Sources */,
-				AE27895023A7270F006C700E /* CFUIUtilities.m in Sources */,
-				AE27890923A723F3006C700E /* CFSetViewModel.m in Sources */,
-				AE27892D23A7261B006C700E /* CFBothTeamsTableViewCell.m in Sources */,
+				AE27895023A7270F006C700E /* AFSUIUtilities.m in Sources */,
+				AE27890923A723F3006C700E /* AFSSetViewModel.m in Sources */,
+				AE27892D23A7261B006C700E /* AFSBothTeamsTableViewCell.m in Sources */,
 				AE2788E423A71AF1006C700E /* AppDelegate.m in Sources */,
-				AE27894C23A7270F006C700E /* CFBaseViewController.m in Sources */,
-				AE27891623A72550006C700E /* CFRecordViewController.m in Sources */,
-				AE27892B23A7261B006C700E /* CFScorecardViewModel.m in Sources */,
-				AE27892A23A7261B006C700E /* CFScorecardModel.m in Sources */,
-				AE27892F23A7261B006C700E /* CFScoringSaveTableViewCell.m in Sources */,
-				AE27895123A7270F006C700E /* MBProgressHUD+CFNJ.m in Sources */,
-				AE27890C23A723F3006C700E /* CFPasswordChangeViewController.m in Sources */,
-				AE27891723A72550006C700E /* CFRecordTableViewCell.m in Sources */,
+				AE27894C23A7270F006C700E /* AFSBaseViewController.m in Sources */,
+				AE27891623A72550006C700E /* AFSRecordViewController.m in Sources */,
+				AE27892B23A7261B006C700E /* AFScorecardViewModel.m in Sources */,
+				AE27892A23A7261B006C700E /* AFSScorecardModel.m in Sources */,
+				AE27892F23A7261B006C700E /* AFSScoringSaveTableViewCell.m in Sources */,
+				AE27895123A7270F006C700E /* MBProgressHUD+AFSNJ.m in Sources */,
+				AE27890C23A723F3006C700E /* AFSPasswordChangeViewController.m in Sources */,
+				AE27891723A72550006C700E /* AFSRecordTableViewCell.m in Sources */,
 				AE2788F523A71AF5006C700E /* main.m in Sources */,
-				AE27890A23A723F3006C700E /* CFLoginViewController.m in Sources */,
-				AE27892E23A7261B006C700E /* CFScoringPartTableViewCell.m in Sources */,
-				AE27893023A7261B006C700E /* CFTimePortionTableViewCell.m in Sources */,
-				AE27890B23A723F3006C700E /* CFMineViewController.m in Sources */,
-				AE27894E23A7270F006C700E /* CFTabBarController.m in Sources */,
-				AE27895223A7270F006C700E /* CFHBTool.m in Sources */,
+				AE27890A23A723F3006C700E /* AFSLoginViewController.m in Sources */,
+				AE27892E23A7261B006C700E /* AFSScoringPartTableViewCell.m in Sources */,
+				AE27893023A7261B006C700E /* AFSTimePortionTableViewCell.m in Sources */,
+				AE27890B23A723F3006C700E /* AFSMineViewController.m in Sources */,
+				AE27894E23A7270F006C700E /* AFSTabBarController.m in Sources */,
+				AE27895223A7270F006C700E /* AFSHBTool.m in Sources */,
 				AE27895723A7270F006C700E /* NSArray+log.m in Sources */,
-				AE27894F23A7270F006C700E /* CFNDHTTPClient.m in Sources */,
-				AE27890D23A723F3006C700E /* CFLoginTableViewCell.m in Sources */,
+				AE27894F23A7270F006C700E /* AFSNDHTTPClient.m in Sources */,
+				AE27890D23A723F3006C700E /* AFSLoginTableViewCell.m in Sources */,
 				AE27894D23A7270F006C700E /* NSDictionary+log.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -696,10 +676,10 @@
 				CODE_SIGN_ENTITLEMENTS = ConvenientFootballScore/ConvenientFootballScore.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Ildomar Bavaresco Model (9M7WGWRBCG)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 264VCF2ZR7;
 				ENABLE_BITCODE = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/ConvenientFootballScore/Common/CF_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ConvenientFootballScore/Common/AFS_PrefixHeader.pch";
 				INFOPLIST_FILE = ConvenientFootballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -709,8 +689,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ConvenientFootballScore/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.ConvenientFootballScore;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.hgg.PocketBasketballScout;
+				PRODUCT_NAME = ConvenientFootballScout;
 				PROVISIONING_PROFILE_SPECIFIER = dev_ConvenientFootballScore_pro_20191216;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -725,10 +705,10 @@
 				CODE_SIGN_ENTITLEMENTS = ConvenientFootballScore/ConvenientFootballScore.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Ildomar Bavaresco Model (9M7WGWRBCG)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 264VCF2ZR7;
 				ENABLE_BITCODE = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/ConvenientFootballScore/Common/CF_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ConvenientFootballScore/Common/AFS_PrefixHeader.pch";
 				INFOPLIST_FILE = ConvenientFootballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -738,8 +718,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ConvenientFootballScore/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.ConvenientFootballScore;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.hgg.PocketBasketballScout;
+				PRODUCT_NAME = ConvenientFootballScout;
 				PROVISIONING_PROFILE_SPECIFIER = dev_ConvenientFootballScore_pro_20191216;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
