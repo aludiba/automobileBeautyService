@@ -678,7 +678,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 264VCF2ZR7;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ConvenientFootballScore/Common/AFS_PrefixHeader.pch";
 				INFOPLIST_FILE = ConvenientFootballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -707,7 +707,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 264VCF2ZR7;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ConvenientFootballScore/Common/AFS_PrefixHeader.pch";
 				INFOPLIST_FILE = ConvenientFootballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
