@@ -29,6 +29,8 @@
     self.title = NSLocalizedString(@"幸运数字", nil);
     [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
     [self becomeFirstResponder];
+    UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(produceLuckyNumbersAction)];
+    [self.view addGestureRecognizer:tapGes];
     self.view.backgroundColor = [UIColor systemRedColor];
     [self.PLNMainTable reloadData];
 }
@@ -45,13 +47,11 @@
     //检测到摇动开始
     if (motion == UIEventSubtypeMotionShake){
       // your code
-      NSLog(@"检测到摇动开始");
     }
 }
 
 - (void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event{
     //摇动取消
-    NSLog(@"摇动取消");
 }
 
 - (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event{
@@ -59,11 +59,14 @@
     if (event.subtype == UIEventSubtypeMotionShake)
     {
         // your code
-        NSLog(@"摇动结束");
         self.PLNModel.PLNGeneratedNumber = [self getRandomNumber:0 to:100];
         [self.PLNMainTable reloadData];
     }
     
+}
+- (void)produceLuckyNumbersAction{
+    self.PLNModel.PLNGeneratedNumber = [self getRandomNumber:0 to:100];
+    [self.PLNMainTable reloadData];
 }
 - (int)getRandomNumber:(int)from to:(int)to{
     return (int)(rand() % (to - from + 1) + from);
