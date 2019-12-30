@@ -7,6 +7,7 @@
 //
 
 #import "PLNLuckyNumbersTableViewCell.h"
+#import "PLNLuckyNumbersModel.h"
 @interface PLNLuckyNumbersTableViewCell()
 @property(nonatomic, strong)UILabel *PLNMinTitleLbl;//最小数标题
 @property(nonatomic, strong)UILabel *PLNMinContentLbl;//最小数内容
@@ -84,46 +85,21 @@
         }];
         UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(produceLuckyNumbersAction)];
         [self.contentView addGestureRecognizer:tapGes];
-        [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
-        [self becomeFirstResponder];
     }
     return self;
 }
 #pragma mark - action
+- (void)setModel:(PLNLuckyNumbersModel *)model{
+    _model = model;
+    self.PLNLuckyNumber = _model.PLNGeneratedNumber;
+    self.PLNCurrentDigitalLbl.text = [NSString stringWithFormat:@"%d",self.PLNLuckyNumber];
+}
 - (void)produceLuckyNumbersAction{
     self.PLNLuckyNumber = [self getRandomNumber:0 to:100];
     self.PLNCurrentDigitalLbl.text = [NSString stringWithFormat:@"%d",self.PLNLuckyNumber];
     if (self.PLNLuckyNumbersB) {
         self.PLNLuckyNumbersB(self);
     }
-}
-#pragma mark - ShakeToEdit 摇动手机之后的回调方法
-- (void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event{
-    //检测到摇动开始
-    if (motion == UIEventSubtypeMotionShake){
-      // your code
-      NSLog(@"检测到摇动开始");
-    }
-}
-
-- (void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event{
-    //摇动取消
-    NSLog(@"摇动取消");
-}
-
-- (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event{
-    //摇动结束
-    if (event.subtype == UIEventSubtypeMotionShake)
-    {
-        // your code
-        NSLog(@"摇动结束");
-        self.PLNLuckyNumber = [self getRandomNumber:0 to:100];
-        self.PLNCurrentDigitalLbl.text = [NSString stringWithFormat:@"%d",self.PLNLuckyNumber];
-        if (self.PLNLuckyNumbersB) {
-            self.PLNLuckyNumbersB(self);
-        }
-    }
-    
 }
 - (int)getRandomNumber:(int)from to:(int)to{
     return (int)(rand() % (to - from + 1) + from);

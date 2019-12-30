@@ -10,9 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @class PLNLuckyNumbersTableViewCell;
+@class PLNLuckyNumbersModel;
 typedef void(^PLNLuckyNumbersBlock)(PLNLuckyNumbersTableViewCell *cell);
 @interface PLNLuckyNumbersTableViewCell : UITableViewCell
 @property(nonatomic, assign)int PLNLuckyNumber;
+@property(nonatomic, strong)PLNLuckyNumbersModel *model;
 @property(nonatomic, strong)PLNLuckyNumbersBlock PLNLuckyNumbersB;
 @end
 

@@ -27,15 +27,46 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = NSLocalizedString(@"幸运数字", nil);
+    [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
+    [self becomeFirstResponder];
     self.view.backgroundColor = [UIColor systemRedColor];
     [self.PLNMainTable reloadData];
 }
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
+    [self resignFirstResponder];
 }
 #pragma mark - actions
 - (void)PLNsaveAction{
     
+}
+#pragma mark - ShakeToEdit 摇动手机之后的回调方法
+- (void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event{
+    //检测到摇动开始
+    if (motion == UIEventSubtypeMotionShake){
+      // your code
+      NSLog(@"检测到摇动开始");
+    }
+}
+
+- (void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event{
+    //摇动取消
+    NSLog(@"摇动取消");
+}
+
+- (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event{
+    //摇动结束
+    if (event.subtype == UIEventSubtypeMotionShake)
+    {
+        // your code
+        NSLog(@"摇动结束");
+        self.PLNModel.PLNGeneratedNumber = [self getRandomNumber:0 to:100];
+        [self.PLNMainTable reloadData];
+    }
+    
+}
+- (int)getRandomNumber:(int)from to:(int)to{
+    return (int)(rand() % (to - from + 1) + from);
 }
 #pragma mark - UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -43,6 +74,7 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     PLNLuckyNumbersTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PLNLuckyNumbersTableViewCell" forIndexPath:indexPath];
+    cell.model = self.PLNModel;
     __weak typeof(self) weakSelf = self;
     cell.PLNLuckyNumbersB = ^(PLNLuckyNumbersTableViewCell * _Nonnull cell) {
         weakSelf.PLNModel.PLNGeneratedNumber = cell.PLNLuckyNumber;
@@ -55,6 +87,7 @@
         _PLNModel = [[PLNLuckyNumbersModel alloc] init];
         _PLNModel.PLNMinNumber = 1;
         _PLNModel.PLNMaxNumber = 100;//最大数
+        _PLNModel.PLNGeneratedNumber = [self getRandomNumber:0 to:100];
     }
     return _PLNModel;
 }
