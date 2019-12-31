@@ -11,6 +11,7 @@
 #import "PLNLuckyNumbersModel.h"
 @interface PLNLuckyNumbersViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UITableView *PLNMainTable;//列表
+@property(nonatomic, strong)UIButton *PLNSaveBtn;//保存
 @property(nonatomic, strong)PLNLuckyNumbersModel *PLNModel;
 @end
 
@@ -93,6 +94,16 @@
         _PLNModel.PLNGeneratedNumber = [self getRandomNumber:0 to:100];
     }
     return _PLNModel;
+}
+- (UIButton *)PLNSaveBtn{
+    if (!_PLNSaveBtn) {
+        _PLNSaveBtn = [[UIButton alloc] init];
+        _PLNSaveBtn.backgroundColor = [UIColor systemGreenColor];
+        [_PLNSaveBtn.titleLabel setFont:[UIFont systemFontOfSize:20]];
+        [_PLNSaveBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_PLNSaveBtn setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
+    }
+    return _PLNSaveBtn;
 }
 - (UITableView *)PLNMainTable{
     if (!_PLNMainTable) {
