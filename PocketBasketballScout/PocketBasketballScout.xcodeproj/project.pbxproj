@@ -682,8 +682,9 @@
 				CODE_SIGN_ENTITLEMENTS = PocketBasketballScout/PocketBasketballScout.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: baoqiang hu (W83W86BHRQ)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 496U6436F5;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScout/Common/CBS_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBasketballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -711,8 +712,9 @@
 				CODE_SIGN_ENTITLEMENTS = PocketBasketballScout/PocketBasketballScout.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: baoqiang hu (W83W86BHRQ)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 496U6436F5;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScout/Common/CBS_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBasketballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
