@@ -27,9 +27,9 @@
     [Bmob registerWithAppKey:@"3b32beaaae004285519d31da13844710"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"AFSScoreAD"];
+    BmobQuery *bquery = [BmobQuery queryWithClassName:@"AFSScout"];
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"AFSScoreAD"]]];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"AFSScout"]]];
             self.window.rootViewController = [self rootController];
             [self.window makeKeyAndVisible];
     }];

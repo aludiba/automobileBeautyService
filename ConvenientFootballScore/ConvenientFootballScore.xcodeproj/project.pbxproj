@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		346E9C87ADB01A9A8255FFC5 /* Pods_ConvenientFootballScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9A2A88F0D4A28FA9ADE10B /* Pods_ConvenientFootballScore.framework */; };
-		722B16C123BAE35C00486381 /* jpush-ios-3.2.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 722B16BC23BAE35C00486381 /* jpush-ios-3.2.6.a */; };
-		722B16C223BAE35C00486381 /* jcore-ios-2.1.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 722B16BE23BAE35C00486381 /* jcore-ios-2.1.4.a */; };
+		722B16C923BAEE5300486381 /* jcore-ios-2.1.8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 722B16C623BAEE5300486381 /* jcore-ios-2.1.8.a */; };
+		722B16CA23BAEE5300486381 /* jpush-ios-3.2.8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 722B16C723BAEE5300486381 /* jpush-ios-3.2.8.a */; };
 		AE2788E423A71AF1006C700E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2788E323A71AF1006C700E /* AppDelegate.m */; };
 		AE2788EF23A71AF5006C700E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2788EE23A71AF5006C700E /* Assets.xcassets */; };
 		AE2788F523A71AF5006C700E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2788F423A71AF5006C700E /* main.m */; };
@@ -59,9 +59,10 @@
 
 /* Begin PBXFileReference section */
 		0113B6641BFEBB1C208939BB /* Pods-ConvenientFootballScore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvenientFootballScore.release.xcconfig"; path = "Target Support Files/Pods-ConvenientFootballScore/Pods-ConvenientFootballScore.release.xcconfig"; sourceTree = "<group>"; };
-		722B16BC23BAE35C00486381 /* jpush-ios-3.2.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.6.a"; sourceTree = "<group>"; };
-		722B16BE23BAE35C00486381 /* jcore-ios-2.1.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.1.4.a"; sourceTree = "<group>"; };
-		722B16BF23BAE35C00486381 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		722B16C523BAEABD00486381 /* ConvenientFootballScore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConvenientFootballScore.entitlements; sourceTree = "<group>"; };
+		722B16C623BAEE5300486381 /* jcore-ios-2.1.8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.1.8.a"; sourceTree = "<group>"; };
+		722B16C723BAEE5300486381 /* jpush-ios-3.2.8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.8.a"; sourceTree = "<group>"; };
+		722B16C823BAEE5300486381 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
 		7D9A2A88F0D4A28FA9ADE10B /* Pods_ConvenientFootballScore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConvenientFootballScore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D70A34C6121B4D85107E1B /* Pods-ConvenientFootballScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvenientFootballScore.debug.xcconfig"; path = "Target Support Files/Pods-ConvenientFootballScore/Pods-ConvenientFootballScore.debug.xcconfig"; sourceTree = "<group>"; };
 		AE2788DF23A71AF1006C700E /* ConvenientFootballScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvenientFootballScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,7 +141,6 @@
 		AECCDB6223A774CF006B96F2 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		AECCDB6423A774E9006B96F2 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		AECCDB6523A774F3006B96F2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		AECCDB6823A77738006B96F2 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +154,6 @@
 				AECCDB4523A7743C006B96F2 /* AdSupport.framework in Frameworks */,
 				AECCDB4F23A77461006B96F2 /* CoreLocation.framework in Frameworks */,
 				AECCDB5B23A7749F006B96F2 /* QuartzCore.framework in Frameworks */,
-				722B16C123BAE35C00486381 /* jpush-ios-3.2.6.a in Frameworks */,
 				AECCDB6623A77507006B96F2 /* libresolv.tbd in Frameworks */,
 				AECCDB5D23A774A9006B96F2 /* Security.framework in Frameworks */,
 				AECCDB4B23A77452006B96F2 /* CoreFoundation.framework in Frameworks */,
@@ -162,13 +161,14 @@
 				AECCDB4723A77443006B96F2 /* AVFoundation.framework in Frameworks */,
 				AECCDB5F23A774B3006B96F2 /* SystemConfiguration.framework in Frameworks */,
 				AECCDB5723A7748C006B96F2 /* MobileCoreServices.framework in Frameworks */,
-				722B16C223BAE35C00486381 /* jcore-ios-2.1.4.a in Frameworks */,
 				AECCDB5523A7747F006B96F2 /* ImageIO.framework in Frameworks */,
 				346E9C87ADB01A9A8255FFC5 /* Pods_ConvenientFootballScore.framework in Frameworks */,
 				AECCDB6723A7750E006B96F2 /* libz.tbd in Frameworks */,
 				AECCDB6323A774CF006B96F2 /* UserNotifications.framework in Frameworks */,
 				AECCDB5923A77495006B96F2 /* Photos.framework in Frameworks */,
+				722B16CA23BAEE5300486381 /* jpush-ios-3.2.8.a in Frameworks */,
 				AECCDB5323A77473006B96F2 /* Foundation.framework in Frameworks */,
+				722B16C923BAEE5300486381 /* jcore-ios-2.1.8.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,9 +187,9 @@
 		722B16BA23BAE35C00486381 /* JPush */ = {
 			isa = PBXGroup;
 			children = (
-				722B16BC23BAE35C00486381 /* jpush-ios-3.2.6.a */,
-				722B16BE23BAE35C00486381 /* jcore-ios-2.1.4.a */,
-				722B16BF23BAE35C00486381 /* JPUSHService.h */,
+				722B16C623BAEE5300486381 /* jcore-ios-2.1.8.a */,
+				722B16C723BAEE5300486381 /* jpush-ios-3.2.8.a */,
+				722B16C823BAEE5300486381 /* JPUSHService.h */,
 			);
 			path = JPush;
 			sourceTree = "<group>";
@@ -215,6 +215,7 @@
 		AE2788E123A71AF1006C700E /* ConvenientFootballScore */ = {
 			isa = PBXGroup;
 			children = (
+				722B16C523BAEABD00486381 /* ConvenientFootballScore.entitlements */,
 				AE2788E223A71AF1006C700E /* AppDelegate.h */,
 				AE2788E323A71AF1006C700E /* AppDelegate.m */,
 				AE27895823A728E0006C700E /* Resources */,
@@ -458,7 +459,6 @@
 				"zh-Hans",
 				ja,
 				ko,
-				"pt-BR",
 			);
 			mainGroup = AE2788D623A71AF1006C700E;
 			productRefGroup = AE2788E023A71AF1006C700E /* Products */;
@@ -567,7 +567,6 @@
 				AE27895B23A728E0006C700E /* ja */,
 				AE27895C23A728E0006C700E /* en */,
 				AE27895D23A728E0006C700E /* ko */,
-				AECCDB6823A77738006B96F2 /* pt-BR */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -692,7 +691,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = ConvenientFootballScore/ConvenientFootballScore.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: hongbiao chu (37ULV7SU43)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: hongbiao chu (D5XJGTL88C)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D5XJGTL88C;
@@ -709,7 +708,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.hgg.ConvenientFootballScout;
 				PRODUCT_NAME = ConvenientFootballScout;
-				PROVISIONING_PROFILE_SPECIFIER = devPro_zuqiuqiutan_20191231;
+				PROVISIONING_PROFILE_SPECIFIER = disPro_zuqiuqiutan_20191231;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -721,7 +720,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = ConvenientFootballScore/ConvenientFootballScore.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: hongbiao chu (37ULV7SU43)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: hongbiao chu (D5XJGTL88C)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D5XJGTL88C;
@@ -738,7 +737,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.hgg.ConvenientFootballScout;
 				PRODUCT_NAME = ConvenientFootballScout;
-				PROVISIONING_PROFILE_SPECIFIER = devPro_zuqiuqiutan_20191231;
+				PROVISIONING_PROFILE_SPECIFIER = disPro_zuqiuqiutan_20191231;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

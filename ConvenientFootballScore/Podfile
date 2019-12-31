@@ -11,7 +11,5 @@ target 'ConvenientFootballScore' do
     pod 'MJRefresh'
     pod 'MBProgressHUD'
     pod 'YYModel'
-    pod 'IQKeyboardManager'
-    pod 'JTCalendar'
     pod 'BmobSDK'
 end
