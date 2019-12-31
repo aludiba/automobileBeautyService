@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72EA1A5123B8D17E001CE3F2 /* PLNLuckyNumbersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EA1A5023B8D17E001CE3F2 /* PLNLuckyNumbersModel.m */; };
+		72EA1A5423B8D400001CE3F2 /* PLNLuckyNumbersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EA1A5323B8D400001CE3F2 /* PLNLuckyNumbersTableViewCell.m */; };
 		AE9F85BE23B5D9C8001442D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F85BD23B5D9C8001442D4 /* AppDelegate.m */; };
 		AE9F85C923B5D9CE001442D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9F85C823B5D9CE001442D4 /* Assets.xcassets */; };
 		AE9F85CF23B5D9CE001442D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F85CE23B5D9CE001442D4 /* main.m */; };
@@ -29,6 +31,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72EA1A4F23B8D17E001CE3F2 /* PLNLuckyNumbersModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLNLuckyNumbersModel.h; sourceTree = "<group>"; };
+		72EA1A5023B8D17E001CE3F2 /* PLNLuckyNumbersModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLNLuckyNumbersModel.m; sourceTree = "<group>"; };
+		72EA1A5223B8D400001CE3F2 /* PLNLuckyNumbersTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLNLuckyNumbersTableViewCell.h; sourceTree = "<group>"; };
+		72EA1A5323B8D400001CE3F2 /* PLNLuckyNumbersTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLNLuckyNumbersTableViewCell.m; sourceTree = "<group>"; };
 		AE9F85B923B5D9C8001442D4 /* PocketLuckyNumbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketLuckyNumbers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9F85BC23B5D9C8001442D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE9F85BD23B5D9C8001442D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,6 +99,24 @@
 				ED13E6A37D68CD0D1A6F987F /* Pods-PocketLuckyNumbers.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		72EA1A4D23B8D16B001CE3F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				72EA1A4F23B8D17E001CE3F2 /* PLNLuckyNumbersModel.h */,
+				72EA1A5023B8D17E001CE3F2 /* PLNLuckyNumbersModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		72EA1A4E23B8D16B001CE3F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				72EA1A5223B8D400001CE3F2 /* PLNLuckyNumbersTableViewCell.h */,
+				72EA1A5323B8D400001CE3F2 /* PLNLuckyNumbersTableViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		ADCC0488F18567D7FA0391FF /* Frameworks */ = {
@@ -178,18 +202,11 @@
 		AE9F85D923B5E3F4001442D4 /* LuckyNumbers */ = {
 			isa = PBXGroup;
 			children = (
-				AE9F85DA23B5E3F4001442D4 /* Models */,
-				AE9F85DC23B5E3F4001442D4 /* Views */,
+				72EA1A4D23B8D16B001CE3F2 /* Models */,
+				72EA1A4E23B8D16B001CE3F2 /* Views */,
 				AE9F85DB23B5E3F4001442D4 /* Controllers */,
 			);
 			path = LuckyNumbers;
-			sourceTree = "<group>";
-		};
-		AE9F85DA23B5E3F4001442D4 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		AE9F85DB23B5E3F4001442D4 /* Controllers */ = {
@@ -199,13 +216,6 @@
 				AE9F862123B5E6BB001442D4 /* PLNLuckyNumbersViewController.m */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		AE9F85DC23B5E3F4001442D4 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		AE9F85DE23B5E3F4001442D4 /* Record */ = {
@@ -398,7 +408,9 @@
 				AE9F862823B5E70F001442D4 /* PLNSetViewController.m in Sources */,
 				AE9F861D23B5E4E2001442D4 /* MBProgressHUD+PLNNJ.m in Sources */,
 				AE9F85BE23B5D9C8001442D4 /* AppDelegate.m in Sources */,
+				72EA1A5423B8D400001CE3F2 /* PLNLuckyNumbersTableViewCell.m in Sources */,
 				AE9F862B23B5E748001442D4 /* PLNTabBarController.m in Sources */,
+				72EA1A5123B8D17E001CE3F2 /* PLNLuckyNumbersModel.m in Sources */,
 				AE9F862E23B5E8C1001442D4 /* PLNLoginViewController.m in Sources */,
 				AE9F863123B5E8E4001442D4 /* PLNLoginTableViewCell.m in Sources */,
 				AE9F862223B5E6BB001442D4 /* PLNLuckyNumbersViewController.m in Sources */,
@@ -544,8 +556,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D5XJGTL88C;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketLuckyNumbers/Common/PLN_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketLuckyNumbers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -569,8 +582,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D5XJGTL88C;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketLuckyNumbers/Common/PLN_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketLuckyNumbers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

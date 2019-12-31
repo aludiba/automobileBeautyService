@@ -8,3 +8,21 @@
 "幸运数字" = "Lucky number";
 "幸运记录" = "Lucky record";
 "幸运设置" = "Lucky Settings";
+
+"请输入账号" = "Please enter account number";
+"请输入密码" = "Please enter password";
+"登录成功" = "Login success";
+"请稍后重试" = "Please try again later";
+"注册成功" = "Registered successfully";
+"账号" = "Account";
+"请输入账号" = "Please enter account number";
+"密码" = "Password";
+"请输入密码" = "Please enter password";
+"登录" = "Login";
+"注册" = "Registration";
+
+"最小数" = "The minimum number of";
+"最大数" = "Max";
+"生成数量" = "Generation quantity";
+"点击屏幕或摇一摇生成幸运数" = "Click on the screen or shake to generate the lucky number";
+"保存" = "Save";
