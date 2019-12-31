@@ -36,7 +36,7 @@
 }
 - (void)PLN_setupNavigationItems{
     UIView *navView = [[UIView alloc] init];
-    navView.backgroundColor = [UIColor greenColor];
+    navView.backgroundColor = [UIColor redColor];
     [self.view addSubview:navView];
     [navView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view).offset(-PLNHeightStatusBar);
@@ -68,7 +68,7 @@
 - (UITableView *)PLNmainTable{
     if (!_PLNmainTable) {
         _PLNmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
-        _PLNmainTable.backgroundColor = PLNH_Color(242, 242, 242, 242);
+        _PLNmainTable.backgroundColor = [UIColor cyanColor];
         _PLNmainTable.showsVerticalScrollIndicator = NO;
         _PLNmainTable.scrollEnabled = NO;
         _PLNmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
