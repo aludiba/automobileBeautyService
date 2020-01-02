@@ -29,7 +29,7 @@
     return self;
 }
 - (void)PLNsetContent{
-    self.contentView.backgroundColor = [UIColor greenColor];
+    self.contentView.backgroundColor = [UIColor cyanColor];
     [self.contentView addSubview:self.PLNbackView];
     [self.PLNbackView addSubview:self.PLNaccountLable];
     [self.PLNbackView addSubview:self.PLNaccountTextField];
@@ -179,8 +179,8 @@
 - (UIView *)PLNbackView{
     if (!_PLNbackView) {
         _PLNbackView = [[UIView alloc] init];
-        _PLNbackView.backgroundColor = [UIColor systemGreenColor];
-        _PLNbackView.layer.cornerRadius = 8.0f;
+        _PLNbackView.backgroundColor = [UIColor systemRedColor];
+        _PLNbackView.layer.cornerRadius = 6.0f;
         _PLNbackView.layer.masksToBounds = YES;
     }
     return _PLNbackView;
@@ -232,10 +232,10 @@
     if (!_PLNloginButton) {
         _PLNloginButton = [[UIButton alloc] init];
         _PLNloginButton.tag = 100;
-        _PLNloginButton.backgroundColor = [UIColor greenColor];
-        [_PLNloginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _PLNloginButton.backgroundColor = [UIColor cyanColor];
+        [_PLNloginButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         [_PLNloginButton.titleLabel setFont:[UIFont boldSystemFontOfSize:20]];
-        _PLNloginButton.layer.cornerRadius = 8.0f;
+        _PLNloginButton.layer.cornerRadius = 4.0f;
         _PLNloginButton.layer.masksToBounds = YES;
         [_PLNloginButton setTitle:NSLocalizedString(@"登录", nil) forState:UIControlStateNormal];
         [_PLNloginButton addTarget:self action:@selector(PLNbtnClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -246,10 +246,10 @@
     if (!_PLNregisteredButton) {
         _PLNregisteredButton = [[UIButton alloc] init];
         _PLNregisteredButton.tag = 101;
-        _PLNregisteredButton.backgroundColor = [UIColor greenColor];
-        [_PLNregisteredButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _PLNregisteredButton.backgroundColor = [UIColor cyanColor];
+        [_PLNregisteredButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         [_PLNregisteredButton.titleLabel setFont:[UIFont boldSystemFontOfSize:20]];
-        _PLNregisteredButton.layer.cornerRadius = 8.0f;
+        _PLNregisteredButton.layer.cornerRadius = 4.0f;
         _PLNregisteredButton.layer.masksToBounds = YES;
         [_PLNregisteredButton setTitle:NSLocalizedString(@"注册", nil) forState:UIControlStateNormal];
         [_PLNregisteredButton addTarget:self action:@selector(PLNbtnClick:) forControlEvents:UIControlEventTouchUpInside];

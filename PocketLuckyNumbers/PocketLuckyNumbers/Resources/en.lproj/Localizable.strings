@@ -20,6 +20,18 @@
 "请输入密码" = "Please enter password";
 "登录" = "Login";
 "注册" = "Registration";
+"退出" = "exit";
+"更改密码" = "Change password";
+"昵称" = "Nickname";
+"更新成功" = "Update successful";
+"密码修改" = "Password change";
+"请输入旧密码" = "Please enter old password";
+"请输入新密码" = "Please enter a new password";
+"请确认密码" = "Please confirm password";
+"两次密码输入不一致" = "Two password inconsistencies";
+"密码修改成功" = "Password is changed";
+"确认密码" = "Confirm password";
+"确定" = "Sure";
 
 "最小数" = "The minimum number of";
 "最大数" = "Max";

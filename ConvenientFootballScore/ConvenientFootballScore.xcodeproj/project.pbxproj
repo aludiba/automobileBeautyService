@@ -691,7 +691,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = ConvenientFootballScore/ConvenientFootballScore.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: hongbiao chu (D5XJGTL88C)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: hongbiao chu (37ULV7SU43)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D5XJGTL88C;
@@ -708,7 +708,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.hgg.ConvenientFootballScout;
 				PRODUCT_NAME = ConvenientFootballScout;
-				PROVISIONING_PROFILE_SPECIFIER = disPro_zuqiuqiutan_20191231;
+				PROVISIONING_PROFILE_SPECIFIER = devPro_zuqiuqiutan_20191231;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -720,7 +720,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = ConvenientFootballScore/ConvenientFootballScore.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: hongbiao chu (D5XJGTL88C)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: hongbiao chu (37ULV7SU43)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D5XJGTL88C;
@@ -737,7 +737,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.hgg.ConvenientFootballScout;
 				PRODUCT_NAME = ConvenientFootballScout;
-				PROVISIONING_PROFILE_SPECIFIER = disPro_zuqiuqiutan_20191231;
+				PROVISIONING_PROFILE_SPECIFIER = devPro_zuqiuqiutan_20191231;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
