@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign)int PLNMinNumber;//最小数
 @property(nonatomic, assign)int PLNMaxNumber;//最大数
 @property(nonatomic, assign)int PLNGeneratedNumber;//当前生成数
+@property(nonatomic, strong)NSString *PLNGenTimeString;//生成时间
 @end
 
 NS_ASSUME_NONNULL_END

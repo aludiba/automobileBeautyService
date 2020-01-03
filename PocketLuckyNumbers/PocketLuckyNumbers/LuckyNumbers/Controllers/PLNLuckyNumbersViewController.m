@@ -7,6 +7,7 @@
 //
 
 #import "PLNLuckyNumbersViewController.h"
+#import "PLNLoginViewController.h"
 #import "PLNLuckyNumbersTableViewCell.h"
 #import "PLNLuckyNumbersModel.h"
 @interface PLNLuckyNumbersViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -41,7 +42,44 @@
 }
 #pragma mark - actions
 - (void)PLNsaveAction{
-    
+    BmobUser *bUser = [BmobUser currentUser];
+        if (bUser) {
+            [self PLNsave];
+    }else{
+        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"温馨提示", nil) message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            PLNLoginViewController *loginVC = [PLNLoginViewController shareInstance];
+            loginVC.type = 1;
+            UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+            PLNKeyWindow.rootViewController = loginVCNav;
+        }];
+        [alertVC addAction:cancelAction];
+        [alertVC addAction:sureAction];
+        [self presentViewController:alertVC animated:YES completion:nil];
+    }
+}
+- (void)PLNsave{
+    NSDate *nowDate = [[NSDate alloc] init];
+    NSString *nowDateString = [PLNUIUtilities PLNformattedTimeStringWithDate:nowDate format:@"yyyy/MM/dd HH:mm:ss"];
+    self.PLNModel.PLNGenTimeString = nowDateString;
+    NSMutableDictionary *jsonDictionary = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[self.self.PLNModel yy_modelToJSONObject]];
+    BmobObject *diary = [BmobObject objectWithClassName:@"PLNLuckyNumbers"];
+    [diary saveAllWithDictionary:jsonDictionary];
+    BmobUser *author = [BmobUser currentUser];
+    [diary setObject:author forKey:@"author"];
+    [diary saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+        if (isSuccessful) {
+            //创建成功后的动作
+            [MBProgressHUD PLNshowReminderText:NSLocalizedString(@"保存成功", nil)];
+        } else if (error){
+            //发生错误后的动作
+            NSLog(@"error:%@",error);
+            [MBProgressHUD PLNshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
+        } else {
+            [MBProgressHUD PLNshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
+        }
+    }];
 }
 #pragma mark - ShakeToEdit 摇动手机之后的回调方法
 - (void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event{
@@ -99,9 +137,12 @@
     if (!_PLNSaveBtn) {
         _PLNSaveBtn = [[UIButton alloc] init];
         _PLNSaveBtn.backgroundColor = [UIColor systemGreenColor];
+        _PLNSaveBtn.layer.cornerRadius = 8.0f;
+        _PLNSaveBtn.layer.masksToBounds = YES;
         [_PLNSaveBtn.titleLabel setFont:[UIFont systemFontOfSize:20]];
         [_PLNSaveBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_PLNSaveBtn setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
+        [_PLNSaveBtn addTarget:self action:@selector(PLNsaveAction) forControlEvents:UIControlEventTouchUpInside];
     }
     return _PLNSaveBtn;
 }
@@ -118,12 +159,20 @@
          _PLNMainTable.tableHeaderView = [[UIView alloc] init];
          _PLNMainTable.tableFooterView = [[UIView alloc] init];
         [_PLNMainTable registerClass:[PLNLuckyNumbersTableViewCell class] forCellReuseIdentifier:@"PLNLuckyNumbersTableViewCell"];
+         [self.view addSubview:self.PLNSaveBtn];
+        [self.PLNSaveBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.view).offset(60);
+            make.trailing.equalTo(self.view).offset(-60);
+            make.bottom.equalTo(self.view).offset(-PLNHeightTabBar - 30);
+            make.height.mas_equalTo(40);
+
+        }];
          [self.view addSubview:_PLNMainTable];
          [_PLNMainTable mas_makeConstraints:^(MASConstraintMaker *make) {
              make.top.equalTo(self.mas_topLayoutGuideBottom);
              make.leading.equalTo(self.view);
              make.trailing.equalTo(self.view);
-             make.bottom.equalTo(self.view).offset(-PLNHeightTabBar);
+             make.bottom.equalTo(self.PLNSaveBtn.mas_top).offset(-20);
          }];
     }
     return _PLNMainTable;
