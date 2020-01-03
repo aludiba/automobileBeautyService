@@ -29,6 +29,7 @@
 		AE9F862E23B5E8C1001442D4 /* PLNLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F862C23B5E8C1001442D4 /* PLNLoginViewController.m */; };
 		AE9F863123B5E8E4001442D4 /* PLNLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F862F23B5E8E4001442D4 /* PLNLoginTableViewCell.m */; };
 		AE9F864D23B5EA2C001442D4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE9F864723B5EA2C001442D4 /* Localizable.strings */; };
+		AECAD7DD23BF2890001BC9C2 /* PLNRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AECAD7DC23BF2890001BC9C2 /* PLNRecordTableViewCell.m */; };
 		E3FC64AA0ACFA0B1EA90C043 /* Pods_PocketLuckyNumbers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AD82A3CD7179271443C6E8 /* Pods_PocketLuckyNumbers.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,8 @@
 		AE9F864923B5EA2C001442D4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AE9F864A23B5EA2C001442D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AE9F864B23B5EA2C001442D4 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AECAD7DB23BF2890001BC9C2 /* PLNRecordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLNRecordTableViewCell.h; sourceTree = "<group>"; };
+		AECAD7DC23BF2890001BC9C2 /* PLNRecordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLNRecordTableViewCell.m; sourceTree = "<group>"; };
 		C9AD82A3CD7179271443C6E8 /* Pods_PocketLuckyNumbers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketLuckyNumbers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC67D06B3544C44658D35A0 /* Pods-PocketLuckyNumbers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketLuckyNumbers.debug.xcconfig"; path = "Target Support Files/Pods-PocketLuckyNumbers/Pods-PocketLuckyNumbers.debug.xcconfig"; sourceTree = "<group>"; };
 		ED13E6A37D68CD0D1A6F987F /* Pods-PocketLuckyNumbers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketLuckyNumbers.release.xcconfig"; path = "Target Support Files/Pods-PocketLuckyNumbers/Pods-PocketLuckyNumbers.release.xcconfig"; sourceTree = "<group>"; };
@@ -257,6 +260,8 @@
 		AE9F85E123B5E3F4001442D4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AECAD7DB23BF2890001BC9C2 /* PLNRecordTableViewCell.h */,
+				AECAD7DC23BF2890001BC9C2 /* PLNRecordTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -429,6 +434,7 @@
 				AE9F861C23B5E4E2001442D4 /* NSArray+log.m in Sources */,
 				AE9F862523B5E6F5001442D4 /* PLNRecordViewController.m in Sources */,
 				AE9F85CF23B5D9CE001442D4 /* main.m in Sources */,
+				AECAD7DD23BF2890001BC9C2 /* PLNRecordTableViewCell.m in Sources */,
 				AE9F861823B5E4E2001442D4 /* PLNBaseViewController.m in Sources */,
 				72A2278723BB178900C8A2F8 /* PLNSetViewModel.m in Sources */,
 				AE9F861F23B5E4E2001442D4 /* CalendarTool.m in Sources */,

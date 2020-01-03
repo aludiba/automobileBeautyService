@@ -42,3 +42,9 @@
 "请先登录" = "Please log in first";
 "取消" = "Cancel";
 "保存成功" = "Save success";
+
+"记录" = "record";
+"删除成功" = "Delete success";
+"无数据" = "No data";
+"暂无数据" = "Temporary data";
+"是否删除？" = "Delete or not?";
