@@ -7,7 +7,14 @@
 //
 
 #import "PLNRecordTableViewCell.h"
-
+@interface PLNRecordTableViewCell()
+@property(nonatomic, strong)UIView *PLNBackView;//背景板
+@property(nonatomic, assign)UILabel *PLNMinNumberLabel;//最小数标签
+@property(nonatomic, assign)UILabel *PLNMaxNumberLabel;//最大数标签
+@property(nonatomic, assign)UILabel *PLNGeneratedNumberLabel;//当前生成数标签
+@property(nonatomic, strong)UILabel *PLNGenTimeLabel;//数字产生时间标签
+@property(nonatomic, strong)UIButton *PLNDeleteButton;//删除
+@end
 @implementation PLNRecordTableViewCell
 
 - (void)awakeFromNib {
