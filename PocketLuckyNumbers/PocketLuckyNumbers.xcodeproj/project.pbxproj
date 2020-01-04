@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		723DD19523C04D5B00D50A00 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD19423C04D5B00D50A00 /* AdSupport.framework */; };
+		723DD19723C04D6F00D50A00 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD19623C04D6F00D50A00 /* AVFoundation.framework */; };
+		723DD19923C04D7900D50A00 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD19823C04D7900D50A00 /* CFNetwork.framework */; };
+		723DD19B23C04D8500D50A00 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD19A23C04D8500D50A00 /* CoreFoundation.framework */; };
+		723DD19D23C04D9400D50A00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD19C23C04D9400D50A00 /* CoreGraphics.framework */; };
+		723DD19F23C04D9C00D50A00 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD19E23C04D9C00D50A00 /* CoreLocation.framework */; };
+		723DD1A123C04DA800D50A00 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD1A023C04DA800D50A00 /* CoreTelephony.framework */; };
+		723DD1A323C04DB000D50A00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD1A223C04DB000D50A00 /* Foundation.framework */; };
+		723DD1A523C04DB900D50A00 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD1A423C04DB900D50A00 /* ImageIO.framework */; };
+		723DD1A723C04DC300D50A00 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD1A623C04DC300D50A00 /* MobileCoreServices.framework */; };
+		723DD1A923C04DCE00D50A00 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD1A823C04DCE00D50A00 /* Photos.framework */; };
+		723DD1AB23C04DDA00D50A00 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD1AA23C04DDA00D50A00 /* QuartzCore.framework */; };
+		723DD1AD23C04DE400D50A00 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD1AC23C04DE400D50A00 /* Security.framework */; };
+		723DD1AF23C04DEE00D50A00 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD1AE23C04DEE00D50A00 /* SystemConfiguration.framework */; };
+		723DD1B123C04DF800D50A00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD1B023C04DF800D50A00 /* UIKit.framework */; };
+		723DD1B323C04E0900D50A00 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD1B223C04E0900D50A00 /* UserNotifications.framework */; };
+		723DD1B623C04E8B00D50A00 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD1B423C04E3A00D50A00 /* libz.tbd */; };
+		723DD1B723C04E9E00D50A00 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD1B523C04E7F00D50A00 /* libresolv.tbd */; };
+		723DD1C023C050A500D50A00 /* jcore-ios-2.1.8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD1BD23C050A400D50A00 /* jcore-ios-2.1.8.a */; };
+		723DD1C123C050A500D50A00 /* jpush-ios-3.2.8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 723DD1BF23C050A500D50A00 /* jpush-ios-3.2.8.a */; };
 		72A2278723BB178900C8A2F8 /* PLNSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2278523BB178900C8A2F8 /* PLNSetViewModel.m */; };
 		72A2278A23BB183700C8A2F8 /* PLNPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2278823BB183600C8A2F8 /* PLNPasswordChangeViewController.m */; };
 		72EA1A5123B8D17E001CE3F2 /* PLNLuckyNumbersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EA1A5023B8D17E001CE3F2 /* PLNLuckyNumbersModel.m */; };
@@ -34,6 +54,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		723DD18D23C04CF400D50A00 /* PocketLuckyNumbers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PocketLuckyNumbers.entitlements; sourceTree = "<group>"; };
+		723DD19423C04D5B00D50A00 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		723DD19623C04D6F00D50A00 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		723DD19823C04D7900D50A00 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		723DD19A23C04D8500D50A00 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		723DD19C23C04D9400D50A00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		723DD19E23C04D9C00D50A00 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		723DD1A023C04DA800D50A00 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		723DD1A223C04DB000D50A00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		723DD1A423C04DB900D50A00 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		723DD1A623C04DC300D50A00 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		723DD1A823C04DCE00D50A00 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		723DD1AA23C04DDA00D50A00 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		723DD1AC23C04DE400D50A00 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		723DD1AE23C04DEE00D50A00 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		723DD1B023C04DF800D50A00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		723DD1B223C04E0900D50A00 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		723DD1B423C04E3A00D50A00 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		723DD1B523C04E7F00D50A00 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		723DD1BD23C050A400D50A00 /* jcore-ios-2.1.8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.1.8.a"; sourceTree = "<group>"; };
+		723DD1BE23C050A400D50A00 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		723DD1BF23C050A500D50A00 /* jpush-ios-3.2.8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.8.a"; sourceTree = "<group>"; };
 		72A2278523BB178900C8A2F8 /* PLNSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLNSetViewModel.m; sourceTree = "<group>"; };
 		72A2278623BB178900C8A2F8 /* PLNSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLNSetViewModel.h; sourceTree = "<group>"; };
 		72A2278823BB183600C8A2F8 /* PLNPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLNPasswordChangeViewController.m; sourceTree = "<group>"; };
@@ -94,7 +136,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				723DD19923C04D7900D50A00 /* CFNetwork.framework in Frameworks */,
+				723DD1B123C04DF800D50A00 /* UIKit.framework in Frameworks */,
+				723DD1A123C04DA800D50A00 /* CoreTelephony.framework in Frameworks */,
+				723DD19523C04D5B00D50A00 /* AdSupport.framework in Frameworks */,
+				723DD19F23C04D9C00D50A00 /* CoreLocation.framework in Frameworks */,
+				723DD1AB23C04DDA00D50A00 /* QuartzCore.framework in Frameworks */,
+				723DD1AD23C04DE400D50A00 /* Security.framework in Frameworks */,
+				723DD19B23C04D8500D50A00 /* CoreFoundation.framework in Frameworks */,
+				723DD1B623C04E8B00D50A00 /* libz.tbd in Frameworks */,
+				723DD19D23C04D9400D50A00 /* CoreGraphics.framework in Frameworks */,
+				723DD19723C04D6F00D50A00 /* AVFoundation.framework in Frameworks */,
+				723DD1AF23C04DEE00D50A00 /* SystemConfiguration.framework in Frameworks */,
+				723DD1A723C04DC300D50A00 /* MobileCoreServices.framework in Frameworks */,
+				723DD1A523C04DB900D50A00 /* ImageIO.framework in Frameworks */,
+				723DD1B323C04E0900D50A00 /* UserNotifications.framework in Frameworks */,
+				723DD1B723C04E9E00D50A00 /* libresolv.tbd in Frameworks */,
+				723DD1A923C04DCE00D50A00 /* Photos.framework in Frameworks */,
 				E3FC64AA0ACFA0B1EA90C043 /* Pods_PocketLuckyNumbers.framework in Frameworks */,
+				723DD1C123C050A500D50A00 /* jpush-ios-3.2.8.a in Frameworks */,
+				723DD1A323C04DB000D50A00 /* Foundation.framework in Frameworks */,
+				723DD1C023C050A500D50A00 /* jcore-ios-2.1.8.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +170,16 @@
 				ED13E6A37D68CD0D1A6F987F /* Pods-PocketLuckyNumbers.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		723DD18E23C04D1E00D50A00 /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				723DD1BD23C050A400D50A00 /* jcore-ios-2.1.8.a */,
+				723DD1BF23C050A500D50A00 /* jpush-ios-3.2.8.a */,
+				723DD1BE23C050A400D50A00 /* JPUSHService.h */,
+			);
+			path = JPush;
 			sourceTree = "<group>";
 		};
 		72EA1A4D23B8D16B001CE3F2 /* Models */ = {
@@ -131,6 +203,24 @@
 		ADCC0488F18567D7FA0391FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				723DD1B523C04E7F00D50A00 /* libresolv.tbd */,
+				723DD1B423C04E3A00D50A00 /* libz.tbd */,
+				723DD1B223C04E0900D50A00 /* UserNotifications.framework */,
+				723DD1B023C04DF800D50A00 /* UIKit.framework */,
+				723DD1AE23C04DEE00D50A00 /* SystemConfiguration.framework */,
+				723DD1AC23C04DE400D50A00 /* Security.framework */,
+				723DD1AA23C04DDA00D50A00 /* QuartzCore.framework */,
+				723DD1A823C04DCE00D50A00 /* Photos.framework */,
+				723DD1A623C04DC300D50A00 /* MobileCoreServices.framework */,
+				723DD1A423C04DB900D50A00 /* ImageIO.framework */,
+				723DD1A223C04DB000D50A00 /* Foundation.framework */,
+				723DD1A023C04DA800D50A00 /* CoreTelephony.framework */,
+				723DD19E23C04D9C00D50A00 /* CoreLocation.framework */,
+				723DD19C23C04D9400D50A00 /* CoreGraphics.framework */,
+				723DD19A23C04D8500D50A00 /* CoreFoundation.framework */,
+				723DD19823C04D7900D50A00 /* CFNetwork.framework */,
+				723DD19623C04D6F00D50A00 /* AVFoundation.framework */,
+				723DD19423C04D5B00D50A00 /* AdSupport.framework */,
 				C9AD82A3CD7179271443C6E8 /* Pods_PocketLuckyNumbers.framework */,
 			);
 			name = Frameworks;
@@ -157,6 +247,7 @@
 		AE9F85BB23B5D9C8001442D4 /* PocketLuckyNumbers */ = {
 			isa = PBXGroup;
 			children = (
+				723DD18D23C04CF400D50A00 /* PocketLuckyNumbers.entitlements */,
 				AE9F85BC23B5D9C8001442D4 /* AppDelegate.h */,
 				AE9F85BD23B5D9C8001442D4 /* AppDelegate.m */,
 				AE9F864623B5EA2C001442D4 /* Resources */,
@@ -269,6 +360,7 @@
 		AE9F85E223B5E3F4001442D4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				723DD18E23C04D1E00D50A00 /* JPush */,
 				AE9F860B23B5E4E1001442D4 /* PLN_PrefixHeader.pch */,
 				AE9F860C23B5E4E1001442D4 /* PLNGlobal.h */,
 				AE9F860D23B5E4E1001442D4 /* NSArray+log.h */,
@@ -574,9 +666,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D5XJGTL88C;
+				CODE_SIGN_ENTITLEMENTS = PocketLuckyNumbers/PocketLuckyNumbers.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Fenghua Li (U547WUXZ5X)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2Y3BW4DKSF;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketLuckyNumbers/Common/PLN_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketLuckyNumbers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -587,9 +681,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketLuckyNumbers/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketLuckyNumbers;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.PocketLuckyNumbers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = devPro_PocketLuckyNumbers;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -600,9 +694,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D5XJGTL88C;
+				CODE_SIGN_ENTITLEMENTS = PocketLuckyNumbers/PocketLuckyNumbers.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Fenghua Li (U547WUXZ5X)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2Y3BW4DKSF;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketLuckyNumbers/Common/PLN_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketLuckyNumbers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -613,9 +709,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketLuckyNumbers/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketLuckyNumbers;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.PocketLuckyNumbers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = devPro_PocketLuckyNumbers;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
