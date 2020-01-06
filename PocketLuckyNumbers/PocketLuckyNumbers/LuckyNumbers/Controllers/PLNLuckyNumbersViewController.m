@@ -36,6 +36,9 @@
     self.view.backgroundColor = [UIColor systemRedColor];
     [self.PLNMainTable reloadData];
 }
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     [self resignFirstResponder];

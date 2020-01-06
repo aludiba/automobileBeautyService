@@ -27,13 +27,15 @@
     [Bmob registerWithAppKey:@"df039ce9ff6f2311d96e0abed1cfb43b"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"PLNVictory"];
-    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"PLNVictory"]]];
-            self.window.rootViewController = [self rootController];
-            [self.window makeKeyAndVisible];
-    }];
+    self.window.rootViewController = [self rootController];
+    [self.window makeKeyAndVisible];
     return YES;
+}
+- (void)applicationDidBecomeActive:(UIApplication *)application{
+    BmobQuery *bquery = [BmobQuery queryWithClassName:@"PLNVictory"];
+       [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+               [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"PLNVictory"]]];
+       }];
 }
 - (UIViewController *)rootController{
         //进行操作
