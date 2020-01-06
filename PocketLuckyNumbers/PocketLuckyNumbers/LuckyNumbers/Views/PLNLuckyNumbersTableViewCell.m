@@ -77,7 +77,7 @@
             make.height.mas_equalTo(160);
         }];
         [self.PLNMessageLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.PLNCurrentDigitalLbl.mas_bottom).offset(100);
+            make.top.equalTo(self.PLNCurrentDigitalLbl.mas_bottom).offset(50);
             make.leading.equalTo(self.contentView);
             make.trailing.equalTo(self.contentView);
             make.height.mas_equalTo(80);

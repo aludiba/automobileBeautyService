@@ -165,14 +165,13 @@
             make.trailing.equalTo(self.view).offset(-60);
             make.bottom.equalTo(self.view).offset(-PLNHeightTabBar - 30);
             make.height.mas_equalTo(40);
-
         }];
          [self.view addSubview:_PLNMainTable];
          [_PLNMainTable mas_makeConstraints:^(MASConstraintMaker *make) {
              make.top.equalTo(self.mas_topLayoutGuideBottom);
              make.leading.equalTo(self.view);
              make.trailing.equalTo(self.view);
-             make.bottom.equalTo(self.PLNSaveBtn.mas_top).offset(-20);
+             make.bottom.equalTo(self.view).offset(-PLNHeightTabBar - 30 -20 - 40);
          }];
     }
     return _PLNMainTable;
