@@ -49,7 +49,7 @@
         make.top.equalTo(self.mas_topLayoutGuideTop);
         make.leading.equalTo(self.view);
         make.trailing.equalTo(self.view);
-        make.height.mas_equalTo(PLNHEIGHT / 3);
+        make.height.mas_equalTo(PLNHEIGHT / 2);
     }];
     [self.PLNImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.PLNBackView.mas_centerX);
