@@ -667,7 +667,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketLuckyNumbers/PocketLuckyNumbers.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: mengyou tian (QAQ5X54F7C)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: mengyou tian (4LJ6SRJTU8)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = QAQ5X54F7C;
 				ENABLE_BITCODE = NO;
@@ -683,7 +683,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hgg.cn.PocketLuckyNumbers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = disPro_PocketLuckyNumbers_20200105;
+				PROVISIONING_PROFILE_SPECIFIER = devPro_PocketLuckyNumbers_20200105;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -695,7 +695,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketLuckyNumbers/PocketLuckyNumbers.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: mengyou tian (QAQ5X54F7C)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: mengyou tian (4LJ6SRJTU8)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = QAQ5X54F7C;
 				ENABLE_BITCODE = NO;
@@ -711,7 +711,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hgg.cn.PocketLuckyNumbers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = disPro_PocketLuckyNumbers_20200105;
+				PROVISIONING_PROFILE_SPECIFIER = devPro_PocketLuckyNumbers_20200105;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
