@@ -6,6 +6,7 @@
   Copyright © 2019 hbc. All rights reserved.
 */
 "总比分" = "Total score";
+"每局比分" = "With the score";
 "第一局" = "The first inning";
 "第二局" = "The second inning";
 "第三局" = "The third inning";
