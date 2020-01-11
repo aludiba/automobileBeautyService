@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "VTLoginViewController.h"
+#import "CVSLoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,13 +27,13 @@
     return YES;
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application{
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"VTPocketScout"];
+    BmobQuery *bquery = [BmobQuery queryWithClassName:@"CVSScout"];
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"VTPocketScout"]]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"CVSScout"]]];
     }];
 }
 - (UIViewController *)rootController{
-        VTTabBarController *tabVC = [VTTabBarController shareInstance];
+        CVSTabBarController *tabVC = [CVSTabBarController shareInstance];
         return tabVC;
 }
 @end
