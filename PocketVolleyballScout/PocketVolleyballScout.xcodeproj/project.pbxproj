@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C4BD9B80B55EF7388AD75BB /* Pods_PocketVolleyballScout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B5CAF451D7D3A6B06F4335 /* Pods_PocketVolleyballScout.framework */; };
 		AE120A08238B6F8500DCD896 /* CVSScoreSummaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE120A07238B6F8500DCD896 /* CVSScoreSummaryTableViewCell.m */; };
 		AE120A0B238B6FF900DCD896 /* CVSBureauPointsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE120A0A238B6FF900DCD896 /* CVSBureauPointsModel.m */; };
 		AEB6EA6F2383DE8B007526EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB6EA6E2383DE8B007526EF /* Assets.xcassets */; };
@@ -37,10 +36,30 @@
 		AEB6EADF2383E5A8007526EF /* CVSScoringPartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAD72383E5A8007526EF /* CVSScoringPartTableViewCell.m */; };
 		AEB6EAE02383E5A8007526EF /* CVSTimePortionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAD92383E5A8007526EF /* CVSTimePortionTableViewCell.m */; };
 		AEB6EAE12383E5A8007526EF /* CVSScoringSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EADA2383E5A8007526EF /* CVSScoringSaveTableViewCell.m */; };
+		AEEABBE723CB0CF400683EC3 /* jpush-ios-3.2.8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABBE423CB0CF400683EC3 /* jpush-ios-3.2.8.a */; };
+		AEEABBE823CB0CF400683EC3 /* jcore-ios-2.1.8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABBE623CB0CF400683EC3 /* jcore-ios-2.1.8.a */; };
+		AEEABBEB23CB0FCF00683EC3 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABBEA23CB0FCF00683EC3 /* AdSupport.framework */; };
+		AEEABBED23CB0FD600683EC3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABBEC23CB0FD600683EC3 /* AVFoundation.framework */; };
+		AEEABBEF23CB0FDE00683EC3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABBEE23CB0FDE00683EC3 /* CFNetwork.framework */; };
+		AEEABBF123CB0FE700683EC3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABBF023CB0FE700683EC3 /* CoreFoundation.framework */; };
+		AEEABBF323CB0FF300683EC3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABBF223CB0FF300683EC3 /* CoreGraphics.framework */; };
+		AEEABBF523CB0FFC00683EC3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABBF423CB0FFC00683EC3 /* CoreLocation.framework */; };
+		AEEABBF723CB100900683EC3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABBF623CB100900683EC3 /* CoreTelephony.framework */; };
+		AEEABBF923CB101300683EC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABBF823CB101300683EC3 /* Foundation.framework */; };
+		AEEABBFB23CB101E00683EC3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABBFA23CB101E00683EC3 /* ImageIO.framework */; };
+		AEEABBFD23CB102A00683EC3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABBFC23CB102A00683EC3 /* MobileCoreServices.framework */; };
+		AEEABBFF23CB103900683EC3 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABBFE23CB103900683EC3 /* Photos.framework */; };
+		AEEABC0123CB104800683EC3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABC0023CB104800683EC3 /* QuartzCore.framework */; };
+		AEEABC0323CB105200683EC3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABC0223CB105200683EC3 /* Security.framework */; };
+		AEEABC0523CB105B00683EC3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABC0423CB105B00683EC3 /* SystemConfiguration.framework */; };
+		AEEABC0723CB106200683EC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABC0623CB106200683EC3 /* UIKit.framework */; };
+		AEEABC0923CB107000683EC3 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABC0823CB107000683EC3 /* UserNotifications.framework */; };
+		AEEABC0C23CB109700683EC3 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABC0A23CB108400683EC3 /* libresolv.tbd */; };
+		AEEABC0D23CB10A000683EC3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABC0B23CB108C00683EC3 /* libz.tbd */; };
+		AEEABC1623CB191C00683EC3 /* Pods_PocketVolleyballScout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABC1423CB188400683EC3 /* Pods_PocketVolleyballScout.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		16B5CAF451D7D3A6B06F4335 /* Pods_PocketVolleyballScout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketVolleyballScout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3110E4F790F083DC8C6F9F54 /* Pods-PocketVolleyballScout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketVolleyballScout.release.xcconfig"; path = "Target Support Files/Pods-PocketVolleyballScout/Pods-PocketVolleyballScout.release.xcconfig"; sourceTree = "<group>"; };
 		34C2F693CE22346253830808 /* Pods-PocketVolleyballScout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketVolleyballScout.debug.xcconfig"; path = "Target Support Files/Pods-PocketVolleyballScout/Pods-PocketVolleyballScout.debug.xcconfig"; sourceTree = "<group>"; };
 		AE120A06238B6F8500DCD896 /* CVSScoreSummaryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVSScoreSummaryTableViewCell.h; sourceTree = "<group>"; };
@@ -105,6 +124,29 @@
 		AEB6EAD82383E5A8007526EF /* CVSBothTeamsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVSBothTeamsTableViewCell.h; sourceTree = "<group>"; };
 		AEB6EAD92383E5A8007526EF /* CVSTimePortionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVSTimePortionTableViewCell.m; sourceTree = "<group>"; };
 		AEB6EADA2383E5A8007526EF /* CVSScoringSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVSScoringSaveTableViewCell.m; sourceTree = "<group>"; };
+		AEEABBE423CB0CF400683EC3 /* jpush-ios-3.2.8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.8.a"; sourceTree = "<group>"; };
+		AEEABBE523CB0CF400683EC3 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		AEEABBE623CB0CF400683EC3 /* jcore-ios-2.1.8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.1.8.a"; sourceTree = "<group>"; };
+		AEEABBE923CB0F9600683EC3 /* ConvenientVolleyballScout.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConvenientVolleyballScout.entitlements; sourceTree = "<group>"; };
+		AEEABBEA23CB0FCF00683EC3 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		AEEABBEC23CB0FD600683EC3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AEEABBEE23CB0FDE00683EC3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AEEABBF023CB0FE700683EC3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		AEEABBF223CB0FF300683EC3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AEEABBF423CB0FFC00683EC3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AEEABBF623CB100900683EC3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		AEEABBF823CB101300683EC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AEEABBFA23CB101E00683EC3 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		AEEABBFC23CB102A00683EC3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AEEABBFE23CB103900683EC3 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		AEEABC0023CB104800683EC3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AEEABC0223CB105200683EC3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AEEABC0423CB105B00683EC3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AEEABC0623CB106200683EC3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AEEABC0823CB107000683EC3 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		AEEABC0A23CB108400683EC3 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		AEEABC0B23CB108C00683EC3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		AEEABC1423CB188400683EC3 /* Pods_PocketVolleyballScout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pods_PocketVolleyballScout.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +154,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C4BD9B80B55EF7388AD75BB /* Pods_PocketVolleyballScout.framework in Frameworks */,
+				AEEABBEF23CB0FDE00683EC3 /* CFNetwork.framework in Frameworks */,
+				AEEABC0723CB106200683EC3 /* UIKit.framework in Frameworks */,
+				AEEABBE723CB0CF400683EC3 /* jpush-ios-3.2.8.a in Frameworks */,
+				AEEABBF723CB100900683EC3 /* CoreTelephony.framework in Frameworks */,
+				AEEABBEB23CB0FCF00683EC3 /* AdSupport.framework in Frameworks */,
+				AEEABBF523CB0FFC00683EC3 /* CoreLocation.framework in Frameworks */,
+				AEEABC0123CB104800683EC3 /* QuartzCore.framework in Frameworks */,
+				AEEABC0C23CB109700683EC3 /* libresolv.tbd in Frameworks */,
+				AEEABC0323CB105200683EC3 /* Security.framework in Frameworks */,
+				AEEABBF123CB0FE700683EC3 /* CoreFoundation.framework in Frameworks */,
+				AEEABBF323CB0FF300683EC3 /* CoreGraphics.framework in Frameworks */,
+				AEEABBED23CB0FD600683EC3 /* AVFoundation.framework in Frameworks */,
+				AEEABC1623CB191C00683EC3 /* Pods_PocketVolleyballScout.framework in Frameworks */,
+				AEEABC0523CB105B00683EC3 /* SystemConfiguration.framework in Frameworks */,
+				AEEABBFD23CB102A00683EC3 /* MobileCoreServices.framework in Frameworks */,
+				AEEABBFB23CB101E00683EC3 /* ImageIO.framework in Frameworks */,
+				AEEABBE823CB0CF400683EC3 /* jcore-ios-2.1.8.a in Frameworks */,
+				AEEABC0D23CB10A000683EC3 /* libz.tbd in Frameworks */,
+				AEEABC0923CB107000683EC3 /* UserNotifications.framework in Frameworks */,
+				AEEABBFF23CB103900683EC3 /* Photos.framework in Frameworks */,
+				AEEABBF923CB101300683EC3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +211,7 @@
 		AEB6EA612383DE87007526EF /* PocketVolleyballScout */ = {
 			isa = PBXGroup;
 			children = (
+				AEEABBE923CB0F9600683EC3 /* ConvenientVolleyballScout.entitlements */,
 				AEB6EA7B2383E12D007526EF /* AppDelegate.h */,
 				AEB6EA7C2383E12D007526EF /* AppDelegate.m */,
 				AEB6EAC22383E54B007526EF /* Resources */,
@@ -166,6 +229,7 @@
 		AEB6EA7E2383E212007526EF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AEEABBE323CB0CF400683EC3 /* JPush */,
 				AEB6EA952383E212007526EF /* CVS_PrefixHeader.pch */,
 				AEB6EA8B2383E212007526EF /* CVSGlobal.h */,
 				AEB6EA862383E212007526EF /* NSArray+log.h */,
@@ -316,10 +380,38 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		AEEABBE323CB0CF400683EC3 /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				AEEABBE423CB0CF400683EC3 /* jpush-ios-3.2.8.a */,
+				AEEABBE523CB0CF400683EC3 /* JPUSHService.h */,
+				AEEABBE623CB0CF400683EC3 /* jcore-ios-2.1.8.a */,
+			);
+			path = JPush;
+			sourceTree = "<group>";
+		};
 		E214BAD324213D24A84939BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				16B5CAF451D7D3A6B06F4335 /* Pods_PocketVolleyballScout.framework */,
+				AEEABC0B23CB108C00683EC3 /* libz.tbd */,
+				AEEABC0A23CB108400683EC3 /* libresolv.tbd */,
+				AEEABC0823CB107000683EC3 /* UserNotifications.framework */,
+				AEEABC0623CB106200683EC3 /* UIKit.framework */,
+				AEEABC0423CB105B00683EC3 /* SystemConfiguration.framework */,
+				AEEABC0223CB105200683EC3 /* Security.framework */,
+				AEEABC0023CB104800683EC3 /* QuartzCore.framework */,
+				AEEABBFE23CB103900683EC3 /* Photos.framework */,
+				AEEABBFC23CB102A00683EC3 /* MobileCoreServices.framework */,
+				AEEABBFA23CB101E00683EC3 /* ImageIO.framework */,
+				AEEABBF823CB101300683EC3 /* Foundation.framework */,
+				AEEABBF623CB100900683EC3 /* CoreTelephony.framework */,
+				AEEABBF423CB0FFC00683EC3 /* CoreLocation.framework */,
+				AEEABBF223CB0FF300683EC3 /* CoreGraphics.framework */,
+				AEEABBF023CB0FE700683EC3 /* CoreFoundation.framework */,
+				AEEABBEE23CB0FDE00683EC3 /* CFNetwork.framework */,
+				AEEABBEC23CB0FD600683EC3 /* AVFoundation.framework */,
+				AEEABBEA23CB0FCF00683EC3 /* AdSupport.framework */,
+				AEEABC1423CB188400683EC3 /* Pods_PocketVolleyballScout.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -603,10 +695,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = PocketVolleyballScout/ConvenientVolleyballScout.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9JMTNVWG46;
+				DEVELOPMENT_TEAM = CUKGY4LT2J;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScout/Common/CVS_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketVolleyballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -619,7 +717,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ConvenientVolleyballScout;
 				PRODUCT_NAME = ConvenientVolleyballScout;
-				PROVISIONING_PROFILE_SPECIFIER = dis_ConvenientBasketballScoring_pro;
+				PROVISIONING_PROFILE_SPECIFIER = disPro_ConvenientVolleyballScout_20200112;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -630,10 +728,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = PocketVolleyballScout/ConvenientVolleyballScout.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9JMTNVWG46;
+				DEVELOPMENT_TEAM = CUKGY4LT2J;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScout/Common/CVS_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketVolleyballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -646,7 +750,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ConvenientVolleyballScout;
 				PRODUCT_NAME = ConvenientVolleyballScout;
-				PROVISIONING_PROFILE_SPECIFIER = dis_ConvenientBasketballScoring_pro;
+				PROVISIONING_PROFILE_SPECIFIER = disPro_ConvenientVolleyballScout_20200112;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
