@@ -26,13 +26,15 @@
     [Bmob registerWithAppKey:@"3b32beaaae004285519d31da13844710"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"CBSBasketball"];
-    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"CBSBasketball"]]];
-            self.window.rootViewController = [self rootController];
-            [self.window makeKeyAndVisible];
-    }];
+    self.window.rootViewController = [self rootController];
+    [self.window makeKeyAndVisible];
     return YES;
+}
+- (void)applicationDidBecomeActive:(UIApplication *)application{
+    BmobQuery *bquery = [BmobQuery queryWithClassName:@"CBSBasketball"];
+       [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"CBSBasketball"]]];
+       }];
 }
 - (UIViewController *)rootController{
         //进行操作
