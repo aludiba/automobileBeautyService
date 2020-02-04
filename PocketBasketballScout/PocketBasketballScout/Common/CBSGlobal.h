@@ -8,6 +8,7 @@
 
 #ifndef CBSglobal_h
 #define CBSglobal_h
+#import <AFNetworking/AFNetworking.h>
 #import <Masonry/Masonry.h>
 #import <MJRefresh/MJRefresh.h>
 #import <MBProgressHUD/MBProgressHUD.h>
@@ -19,7 +20,8 @@
 #import "CBSTabBarController.h"
 #import "NSArray+log.h"
 #import "NSDictionary+log.h"
-#import <BmobSDK/Bmob.h>
+//#import <BmobSDK/Bmob.h>
+#import <AVOSCloud/AVOSCloud.h>
 //多语言调用
 #define NSLocalizedString(key, comment) [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
 //颜色

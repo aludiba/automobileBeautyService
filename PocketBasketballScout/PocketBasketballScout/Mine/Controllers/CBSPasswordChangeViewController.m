@@ -76,23 +76,23 @@
         [MBProgressHUD CBSshowReminderText:NSLocalizedString(@"两次密码输入不一致", nil)];
         return;
     }
-        BmobUser *user = [BmobUser currentUser];
-        NSString *name = user.username;
-        [user updateCurrentUserPasswordWithOldPassword:self.CBSoldPassword newPassword:self.CBSconfirmPassword block:^(BOOL isSuccessful, NSError *error) {
-            if (isSuccessful) {
-                //用新密码登录
-                [BmobUser loginInbackgroundWithAccount:name andPassword:self.CBSconfirmPassword block:^(BmobUser *user, NSError *error) {
-                    if (error) {
-                        [MBProgressHUD CBSshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
-                    } else {
-                        [MBProgressHUD CBSshowReminderText:NSLocalizedString(@"密码修改成功", nil)];
-                        [self.navigationController popViewControllerAnimated:YES];
-                    }
-                }];
-            } else {
-                [MBProgressHUD CBSshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
-            }
-        }];
+     AVUser *user = [AVUser currentUser];
+     NSString *name = user.username;
+     [user updatePassword:self.CBSoldPassword newPassword:self.CBSconfirmPassword block:^(id  _Nullable object, NSError * _Nullable error) {
+        if (error) {
+            [MBProgressHUD CBSshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
+        } else {
+            //用新密码登录
+            [AVUser logInWithUsernameInBackground:name password:name block:^(AVUser * _Nullable user, NSError * _Nullable error) {
+                if (error) {
+                    [MBProgressHUD CBSshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
+                } else {
+                    [MBProgressHUD CBSshowReminderText:NSLocalizedString(@"密码修改成功", nil)];
+                    [self.navigationController popViewControllerAnimated:YES];
+                }
+            }];
+        }
+    }];
 }
 #pragma mark - UITextFieldDelegate
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{

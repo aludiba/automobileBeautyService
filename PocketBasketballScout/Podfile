@@ -10,5 +10,6 @@ target 'PocketBasketballScout' do
     pod 'MJRefresh'
     pod 'MBProgressHUD'
     pod 'YYModel'
-    pod 'BmobSDK'
+    pod 'AVOSCloud'
+    pod 'AFNetworking'
 end

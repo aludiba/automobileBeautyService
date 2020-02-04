@@ -74,7 +74,7 @@
 }
 #pragma mark - 保存功能
 - (void)CBSsaveLoginJudge{
-    BmobUser *bUser = [BmobUser currentUser];
+    AVUser *bUser = [AVUser currentUser];
         if (bUser) {
             [self CBSsaveAction];
     }else{
@@ -107,11 +107,13 @@
     self.CBSScoreModel.CBSEndTimeString = nowDateString;
     
     NSMutableDictionary *jsonDictionary = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[self.self.CBSScoreModel yy_modelToJSONObject]];
-    BmobObject *diary = [BmobObject objectWithClassName:@"CBSScore"];
-    [diary saveAllWithDictionary:jsonDictionary];
-    BmobUser *author = [BmobUser currentUser];
+    AVObject *diary = [AVObject objectWithClassName:@"CBSScore"];
+    for (NSString *key in jsonDictionary.allKeys) {
+        [diary setObject:[jsonDictionary objectForKey:key]  forKey:key];
+    }
+    AVUser *author = [AVUser currentUser];
     [diary setObject:author forKey:@"author"];
-    [diary saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+    [diary saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
         if (isSuccessful) {
             //创建成功后的动作
             [MBProgressHUD CBSshowReminderText:NSLocalizedString(@"保存成功", nil)];

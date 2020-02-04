@@ -58,7 +58,9 @@
 }
 - (void)setCBSModel:(CBSScorecardViewModel *)CBSModel{
     _CBSModel = CBSModel;
-    self.CBSDisplayTimeLengthLabel.text = _CBSModel.CBSTimeStatisticsDateString;
+    if (_CBSModel.CBSTimeStatisticsDateString.length) {
+        self.CBSDisplayTimeLengthLabel.text = _CBSModel.CBSTimeStatisticsDateString;
+    }
     self.CBSIndex = _CBSModel.CBSIndexTime;
 }
 -(void)CBSstartTimer{
@@ -75,6 +77,7 @@
     NSString *dateString = [NSString stringWithFormat:@"%.2d:%.2d:%.2d",self.CBSHours,self.CBSMinutes,self.CBSSeconds];
     self.CBSModel.CBSTimeStatisticsDateString = dateString;
     self.CBSModel.CBSTimeStatisticsDate = [CBSUIUtilities CBSdateFromString:dateString formate:@"HH:mm:ss"];
+    NSLog(@"CBSDisplayTimeLengthLabel:%@",dateString);
     self.CBSDisplayTimeLengthLabel.text = dateString;
 }
 - (void)CBSTimeControlAction:(UIButton *)sender{
@@ -115,13 +118,14 @@
         _CBSDisplayTimeLengthLabel = [[UILabel alloc] init];
         _CBSDisplayTimeLengthLabel.textColor = [UIColor blackColor];
         _CBSDisplayTimeLengthLabel.backgroundColor = [UIColor cyanColor];
-        _CBSDisplayTimeLengthLabel.font = [UIFont boldSystemFontOfSize:25];
+        _CBSDisplayTimeLengthLabel.font = [UIFont boldSystemFontOfSize:18];
         _CBSDisplayTimeLengthLabel.textAlignment = NSTextAlignmentCenter;
         _CBSDisplayTimeLengthLabel.layer.cornerRadius = 8.0f;
         _CBSDisplayTimeLengthLabel.layer.masksToBounds = YES;
         _CBSDisplayTimeLengthLabel.layer.borderColor = [UIColor systemRedColor].CGColor;
         _CBSDisplayTimeLengthLabel.layer.borderWidth = 2.0f;
         _CBSDisplayTimeLengthLabel.numberOfLines = 0;
+        _CBSDisplayTimeLengthLabel.text = @"00:00";
     }
     return _CBSDisplayTimeLengthLabel;
 }

@@ -94,8 +94,9 @@
         return;
     }
     if (sender.tag == 100) {
-        [BmobUser loginWithUsernameInBackground:self.CBSaccount password:self.CBSpassword block:^(BmobUser *user, NSError *error) {
-            if (user) {
+        [AVUser logInWithUsernameInBackground:self.CBSaccount password:self.CBSpassword block:^(AVUser *user, NSError *error) {
+            if (user != nil) {
+                // 登录成功
                 [MBProgressHUD CBSshowReminderText:NSLocalizedString(@"登录成功", nil)];
                 if (self.type == 1) {
                     CBSTabBarController *tabVC = [CBSTabBarController shareInstance];
@@ -115,19 +116,24 @@
                     tabVC.selectedIndex = 0;
                     [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
                 }
-            }else{
+            } else {
+                // 登录失败（可能是密码错误）
                 [MBProgressHUD CBSshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
             }
         }];
     }else if(sender.tag == 101){
-        BmobUser *bUser = [[BmobUser alloc] init];
-        [bUser setUsername:self.CBSaccount];
-        [bUser setPassword:self.CBSpassword];
-        [bUser signUpInBackgroundWithBlock:^ (BOOL isSuccessful, NSError *error){
-            if (isSuccessful){
+        // 创建实例
+        AVUser *user = [AVUser user];
+        // 等同于 [user setObject:@"Tom" forKey:@"username"]
+        user.username = self.CBSaccount;
+        user.password = self.CBSpassword;
+        [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if (succeeded) {
+                // 注册成功
                 [MBProgressHUD CBSshowReminderText:NSLocalizedString(@"注册成功", nil)];
-                [BmobUser loginWithUsernameInBackground:self.CBSaccount password:self.CBSpassword block:^(BmobUser *user, NSError *error) {
-                    if (user) {
+                [AVUser logInWithUsernameInBackground:self.CBSaccount password:self.CBSpassword block:^(AVUser *user, NSError *error) {
+                    if (user != nil) {
+                        // 登录成功
                         if (self.type == 1) {
                         CBSTabBarController *tabVC = [CBSTabBarController shareInstance];
                         tabVC.selectedIndex = 0;
@@ -146,12 +152,12 @@
                             tabVC.selectedIndex = 0;
                             [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
                         }
-                    }else{
-                        [MBProgressHUD CBSshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
+                    } else {
+                        // 登录失败（可能是密码错误）
                     }
                 }];
             } else {
-                [MBProgressHUD CBSshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
+                // 注册失败（通常是因为用户名已被使用）
             }
         }];
     }

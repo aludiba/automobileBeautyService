@@ -119,22 +119,16 @@
 #pragma mark - 登录或者退出
 - (void)CBSSignOutAction:(UIButton *)sender{
     NSLog(@"登录或者退出~~~");
-    [BmobUser logout];
+//    [BmobUser logout];
     CBSLoginViewController *loginVC = [CBSLoginViewController shareInstance];
     loginVC.type = 0;
     UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
     CBSKeyWindow.rootViewController = loginVCNav;
 }
 - (void)CBSNicknameUpdate{
-    BmobUser *bUser = [BmobUser currentUser];
+    AVUser *bUser = [AVUser currentUser];
     [bUser setObject:self.CBSnickname forKey:@"username"];
-    [bUser updateInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
-        if (isSuccessful) {
-        [MBProgressHUD CBSshowReminderText:NSLocalizedString(@"更新成功", nil)];
-        }else{
-            [MBProgressHUD CBSshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
-        }
-    }];
+    [bUser saveInBackground];
 }
 #pragma mark - 属性懒加载
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
@@ -192,7 +186,7 @@
         _CBSNicknameTextField.layer.borderWidth = 2.0f;
         _CBSNicknameTextField.layer.cornerRadius = 6.0f;
         _CBSNicknameTextField.layer.masksToBounds = YES;
-        BmobUser *user = [BmobUser currentUser];
+        AVUser *user = [AVUser currentUser];
         if ([[user objectForKey:@"username"] length]) {
             _CBSNicknameTextField.text = [user objectForKey:@"username"];
             self.CBSnickname = [user objectForKey:@"username"];
