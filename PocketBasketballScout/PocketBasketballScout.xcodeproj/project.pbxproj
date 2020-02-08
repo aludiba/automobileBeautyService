@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7233377D23E993A200991083 /* CBSNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7233377B23E993A200991083 /* CBSNDHTTPClient.m */; };
+		7233377D23E993A200991083 /* YBPBSNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7233377B23E993A200991083 /* YBPBSNDHTTPClient.m */; };
 		9DB85CFE44BA05559FD42CBB /* Pods_PocketBasketballScout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F6A05CDF360A69D060122F /* Pods_PocketBasketballScout.framework */; };
 		AE6C74AF23824284009329F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6C74AE23824284009329F2 /* Assets.xcassets */; };
 		AE6C74B523824284009329F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C74B423824284009329F2 /* main.m */; };
@@ -16,57 +16,45 @@
 		AE6C7517238265A5009329F2 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C74F0238265A4009329F2 /* NSDictionary+log.m */; };
 		AE6C751D238265A5009329F2 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C74FE238265A4009329F2 /* CalendarTool.m */; };
 		AE6C7522238265A5009329F2 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C7506238265A5009329F2 /* NSArray+log.m */; };
-		AE6C753223826733009329F2 /* MBProgressHUD+CBSNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752623826732009329F2 /* MBProgressHUD+CBSNJ.m */; };
-		AE6C753323826733009329F2 /* CBSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752723826732009329F2 /* CBSBaseViewController.m */; };
-		AE6C753423826733009329F2 /* CBSHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752923826732009329F2 /* CBSHBTool.m */; };
-		AE6C753523826733009329F2 /* CBSUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752C23826732009329F2 /* CBSUIUtilities.m */; };
-		AE6C753623826733009329F2 /* CBSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752E23826733009329F2 /* CBSTabBarController.m */; };
-		AE6C753923826822009329F2 /* CBSSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753723826822009329F2 /* CBSSetViewModel.m */; };
-		AE6C75402382684D009329F2 /* CBSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753B2382684D009329F2 /* CBSLoginViewController.m */; };
-		AE6C75412382684D009329F2 /* CBSMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753D2382684D009329F2 /* CBSMineViewController.m */; };
-		AE6C75422382684D009329F2 /* CBSPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753F2382684D009329F2 /* CBSPasswordChangeViewController.m */; };
-		AE6C754523826862009329F2 /* CBSLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754323826862009329F2 /* CBSLoginTableViewCell.m */; };
-		AE6C7548238268EA009329F2 /* CBSRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C7547238268EA009329F2 /* CBSRecordViewController.m */; };
-		AE6C754B238268F5009329F2 /* CBSRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754A238268F5009329F2 /* CBSRecordTableViewCell.m */; };
-		AE6C754E23826949009329F2 /* CBSScorecardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754D23826949009329F2 /* CBSScorecardViewController.m */; };
-		AE6C755323826952009329F2 /* CBSScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754F23826952009329F2 /* CBSScorecardViewModel.m */; };
-		AE6C755423826952009329F2 /* CBSScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C755223826952009329F2 /* CBSScorecardModel.m */; };
-		AE6C755D2382695D009329F2 /* CBSBothTeamsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75562382695D009329F2 /* CBSBothTeamsTableViewCell.m */; };
-		AE6C755E2382695D009329F2 /* CBSScoringSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75572382695D009329F2 /* CBSScoringSaveTableViewCell.m */; };
-		AE6C755F2382695D009329F2 /* CBSScoringPartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75582382695D009329F2 /* CBSScoringPartTableViewCell.m */; };
-		AE6C75602382695D009329F2 /* CBSTimePortionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75592382695D009329F2 /* CBSTimePortionTableViewCell.m */; };
-		AECF7708238F75A400F65475 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7707238F75A400F65475 /* AdSupport.framework */; };
+		AE6C753223826733009329F2 /* MBProgressHUD+YBPBSNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752623826732009329F2 /* MBProgressHUD+YBPBSNJ.m */; };
+		AE6C753323826733009329F2 /* YBPBSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752723826732009329F2 /* YBPBSBaseViewController.m */; };
+		AE6C753423826733009329F2 /* YBPBSHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752923826732009329F2 /* YBPBSHBTool.m */; };
+		AE6C753523826733009329F2 /* YBPBSUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752C23826732009329F2 /* YBPBSUIUtilities.m */; };
+		AE6C753623826733009329F2 /* YBPBSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752E23826733009329F2 /* YBPBSTabBarController.m */; };
+		AE6C753923826822009329F2 /* YBPBSSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753723826822009329F2 /* YBPBSSetViewModel.m */; };
+		AE6C75402382684D009329F2 /* YBPBSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753B2382684D009329F2 /* YBPBSLoginViewController.m */; };
+		AE6C75412382684D009329F2 /* YBPBSMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753D2382684D009329F2 /* YBPBSMineViewController.m */; };
+		AE6C75422382684D009329F2 /* YBPBSPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753F2382684D009329F2 /* YBPBSPasswordChangeViewController.m */; };
+		AE6C754523826862009329F2 /* YBPBSLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754323826862009329F2 /* YBPBSLoginTableViewCell.m */; };
+		AE6C7548238268EA009329F2 /* YBPBSRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C7547238268EA009329F2 /* YBPBSRecordViewController.m */; };
+		AE6C754B238268F5009329F2 /* YBPBSRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754A238268F5009329F2 /* YBPBSRecordTableViewCell.m */; };
+		AE6C754E23826949009329F2 /* YBPBSScorecardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754D23826949009329F2 /* YBPBSScorecardViewController.m */; };
+		AE6C755323826952009329F2 /* YBPBSScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754F23826952009329F2 /* YBPBSScorecardViewModel.m */; };
+		AE6C755423826952009329F2 /* YBPBSScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C755223826952009329F2 /* YBPBSScorecardModel.m */; };
+		AE6C755D2382695D009329F2 /* YBPBSBothTeamsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75562382695D009329F2 /* YBPBSBothTeamsTableViewCell.m */; };
+		AE6C755E2382695D009329F2 /* YBPBSScoringSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75572382695D009329F2 /* YBPBSScoringSaveTableViewCell.m */; };
+		AE6C755F2382695D009329F2 /* YBPBSScoringPartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75582382695D009329F2 /* YBPBSScoringPartTableViewCell.m */; };
+		AE6C75602382695D009329F2 /* YBPBSTimePortionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75592382695D009329F2 /* YBPBSTimePortionTableViewCell.m */; };
 		AECF770A238F75AC00F65475 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7709238F75AC00F65475 /* AVFoundation.framework */; };
-		AECF770C238F75B700F65475 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF770B238F75B600F65475 /* CFNetwork.framework */; };
-		AECF770E238F75C000F65475 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF770D238F75C000F65475 /* CoreFoundation.framework */; };
-		AECF7710238F75CE00F65475 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF770F238F75CE00F65475 /* CoreGraphics.framework */; };
 		AECF7712238F75D700F65475 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7711238F75D700F65475 /* CoreLocation.framework */; };
-		AECF7714238F75E100F65475 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7713238F75E100F65475 /* CoreTelephony.framework */; };
-		AECF7716238F75E900F65475 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7715238F75E900F65475 /* Foundation.framework */; };
 		AECF7718238F75F600F65475 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7717238F75F600F65475 /* ImageIO.framework */; };
 		AECF771C238F764400F65475 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF771B238F764400F65475 /* MobileCoreServices.framework */; };
 		AECF771E238F764E00F65475 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF771D238F764E00F65475 /* Photos.framework */; };
 		AECF7720238F766300F65475 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF771F238F766300F65475 /* QuartzCore.framework */; };
-		AECF7722238F76D400F65475 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7721238F76D400F65475 /* Security.framework */; };
-		AECF7724238F76FE00F65475 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7723238F76FD00F65475 /* SystemConfiguration.framework */; };
-		AECF7726238F772400F65475 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7725238F772400F65475 /* UIKit.framework */; };
-		AECF7728238F772E00F65475 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7727238F772E00F65475 /* UserNotifications.framework */; };
-		AECF7729238F777900F65475 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7719238F760C00F65475 /* libresolv.tbd */; };
-		AECF772A238F778400F65475 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF771A238F762700F65475 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0095D88E6030915DAB7F8149 /* Pods-PocketBasketballScout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBasketballScout.debug.xcconfig"; path = "Target Support Files/Pods-PocketBasketballScout/Pods-PocketBasketballScout.debug.xcconfig"; sourceTree = "<group>"; };
-		7233377B23E993A200991083 /* CBSNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSNDHTTPClient.m; sourceTree = "<group>"; };
-		7233377C23E993A200991083 /* CBSNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSNDHTTPClient.h; sourceTree = "<group>"; };
+		7233377B23E993A200991083 /* YBPBSNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSNDHTTPClient.m; sourceTree = "<group>"; };
+		7233377C23E993A200991083 /* YBPBSNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSNDHTTPClient.h; sourceTree = "<group>"; };
+		72470C1523EA99DC009817E9 /* PocketBasketballScout.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = PocketBasketballScout.entitlements; path = PocketBasketballScout/PocketBasketballScout.entitlements; sourceTree = "<group>"; };
 		AA94B92244B3E8AE8D1350D2 /* Pods-PocketBasketballScout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBasketballScout.release.xcconfig"; path = "Target Support Files/Pods-PocketBasketballScout/Pods-PocketBasketballScout.release.xcconfig"; sourceTree = "<group>"; };
-		AE6C749F23824280009329F2 /* ConvenientBasketballScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvenientBasketballScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6C749F23824280009329F2 /* PracticalBasketballScoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticalBasketballScoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6C74AE23824284009329F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE6C74B323824284009329F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE6C74B423824284009329F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE6C74BC2382657C009329F2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE6C74BD2382657C009329F2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AE6C74C1238265A4009329F2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		AE6C74C2238265A4009329F2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AE6C74C3238265A4009329F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AE6C74F0238265A4009329F2 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
@@ -75,46 +63,46 @@
 		AE6C74F8238265A4009329F2 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
 		AE6C74FE238265A4009329F2 /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
 		AE6C7506238265A5009329F2 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
-		AE6C752323826732009329F2 /* CBSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSTabBarController.h; sourceTree = "<group>"; };
-		AE6C752423826732009329F2 /* CBS_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBS_PrefixHeader.pch; sourceTree = "<group>"; };
-		AE6C752623826732009329F2 /* MBProgressHUD+CBSNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+CBSNJ.m"; sourceTree = "<group>"; };
-		AE6C752723826732009329F2 /* CBSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSBaseViewController.m; sourceTree = "<group>"; };
-		AE6C752923826732009329F2 /* CBSHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSHBTool.m; sourceTree = "<group>"; };
-		AE6C752A23826732009329F2 /* CBSHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSHBTool.h; sourceTree = "<group>"; };
-		AE6C752B23826732009329F2 /* CBSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSBaseViewController.h; sourceTree = "<group>"; };
-		AE6C752C23826732009329F2 /* CBSUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSUIUtilities.m; sourceTree = "<group>"; };
-		AE6C752D23826732009329F2 /* CBSUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSUIUtilities.h; sourceTree = "<group>"; };
-		AE6C752E23826733009329F2 /* CBSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSTabBarController.m; sourceTree = "<group>"; };
-		AE6C752F23826733009329F2 /* MBProgressHUD+CBSNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+CBSNJ.h"; sourceTree = "<group>"; };
-		AE6C753023826733009329F2 /* CBSGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSGlobal.h; sourceTree = "<group>"; };
-		AE6C753723826822009329F2 /* CBSSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSSetViewModel.m; sourceTree = "<group>"; };
-		AE6C753823826822009329F2 /* CBSSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSSetViewModel.h; sourceTree = "<group>"; };
-		AE6C753A2382684D009329F2 /* CBSPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSPasswordChangeViewController.h; sourceTree = "<group>"; };
-		AE6C753B2382684D009329F2 /* CBSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSLoginViewController.m; sourceTree = "<group>"; };
-		AE6C753C2382684D009329F2 /* CBSMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSMineViewController.h; sourceTree = "<group>"; };
-		AE6C753D2382684D009329F2 /* CBSMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSMineViewController.m; sourceTree = "<group>"; };
-		AE6C753E2382684D009329F2 /* CBSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSLoginViewController.h; sourceTree = "<group>"; };
-		AE6C753F2382684D009329F2 /* CBSPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSPasswordChangeViewController.m; sourceTree = "<group>"; };
-		AE6C754323826862009329F2 /* CBSLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSLoginTableViewCell.m; sourceTree = "<group>"; };
-		AE6C754423826862009329F2 /* CBSLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSLoginTableViewCell.h; sourceTree = "<group>"; };
-		AE6C7546238268EA009329F2 /* CBSRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSRecordViewController.h; sourceTree = "<group>"; };
-		AE6C7547238268EA009329F2 /* CBSRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSRecordViewController.m; sourceTree = "<group>"; };
-		AE6C7549238268F5009329F2 /* CBSRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSRecordTableViewCell.h; sourceTree = "<group>"; };
-		AE6C754A238268F5009329F2 /* CBSRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSRecordTableViewCell.m; sourceTree = "<group>"; };
-		AE6C754C23826949009329F2 /* CBSScorecardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSScorecardViewController.h; sourceTree = "<group>"; };
-		AE6C754D23826949009329F2 /* CBSScorecardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSScorecardViewController.m; sourceTree = "<group>"; };
-		AE6C754F23826952009329F2 /* CBSScorecardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSScorecardViewModel.m; sourceTree = "<group>"; };
-		AE6C755023826952009329F2 /* CBSScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSScorecardModel.h; sourceTree = "<group>"; };
-		AE6C755123826952009329F2 /* CBSScorecardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSScorecardViewModel.h; sourceTree = "<group>"; };
-		AE6C755223826952009329F2 /* CBSScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSScorecardModel.m; sourceTree = "<group>"; };
-		AE6C75552382695D009329F2 /* CBSTimePortionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSTimePortionTableViewCell.h; sourceTree = "<group>"; };
-		AE6C75562382695D009329F2 /* CBSBothTeamsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSBothTeamsTableViewCell.m; sourceTree = "<group>"; };
-		AE6C75572382695D009329F2 /* CBSScoringSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSScoringSaveTableViewCell.m; sourceTree = "<group>"; };
-		AE6C75582382695D009329F2 /* CBSScoringPartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSScoringPartTableViewCell.m; sourceTree = "<group>"; };
-		AE6C75592382695D009329F2 /* CBSTimePortionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSTimePortionTableViewCell.m; sourceTree = "<group>"; };
-		AE6C755A2382695D009329F2 /* CBSBothTeamsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSBothTeamsTableViewCell.h; sourceTree = "<group>"; };
-		AE6C755B2382695D009329F2 /* CBSScoringSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSScoringSaveTableViewCell.h; sourceTree = "<group>"; };
-		AE6C755C2382695D009329F2 /* CBSScoringPartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSScoringPartTableViewCell.h; sourceTree = "<group>"; };
+		AE6C752323826732009329F2 /* YBPBSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSTabBarController.h; sourceTree = "<group>"; };
+		AE6C752423826732009329F2 /* YBPBS_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBS_PrefixHeader.pch; sourceTree = "<group>"; };
+		AE6C752623826732009329F2 /* MBProgressHUD+YBPBSNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+YBPBSNJ.m"; sourceTree = "<group>"; };
+		AE6C752723826732009329F2 /* YBPBSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSBaseViewController.m; sourceTree = "<group>"; };
+		AE6C752923826732009329F2 /* YBPBSHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSHBTool.m; sourceTree = "<group>"; };
+		AE6C752A23826732009329F2 /* YBPBSHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSHBTool.h; sourceTree = "<group>"; };
+		AE6C752B23826732009329F2 /* YBPBSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSBaseViewController.h; sourceTree = "<group>"; };
+		AE6C752C23826732009329F2 /* YBPBSUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSUIUtilities.m; sourceTree = "<group>"; };
+		AE6C752D23826732009329F2 /* YBPBSUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSUIUtilities.h; sourceTree = "<group>"; };
+		AE6C752E23826733009329F2 /* YBPBSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSTabBarController.m; sourceTree = "<group>"; };
+		AE6C752F23826733009329F2 /* MBProgressHUD+YBPBSNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+YBPBSNJ.h"; sourceTree = "<group>"; };
+		AE6C753023826733009329F2 /* YBPBSGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSGlobal.h; sourceTree = "<group>"; };
+		AE6C753723826822009329F2 /* YBPBSSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSSetViewModel.m; sourceTree = "<group>"; };
+		AE6C753823826822009329F2 /* YBPBSSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSSetViewModel.h; sourceTree = "<group>"; };
+		AE6C753A2382684D009329F2 /* YBPBSPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSPasswordChangeViewController.h; sourceTree = "<group>"; };
+		AE6C753B2382684D009329F2 /* YBPBSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSLoginViewController.m; sourceTree = "<group>"; };
+		AE6C753C2382684D009329F2 /* YBPBSMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSMineViewController.h; sourceTree = "<group>"; };
+		AE6C753D2382684D009329F2 /* YBPBSMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSMineViewController.m; sourceTree = "<group>"; };
+		AE6C753E2382684D009329F2 /* YBPBSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSLoginViewController.h; sourceTree = "<group>"; };
+		AE6C753F2382684D009329F2 /* YBPBSPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSPasswordChangeViewController.m; sourceTree = "<group>"; };
+		AE6C754323826862009329F2 /* YBPBSLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSLoginTableViewCell.m; sourceTree = "<group>"; };
+		AE6C754423826862009329F2 /* YBPBSLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSLoginTableViewCell.h; sourceTree = "<group>"; };
+		AE6C7546238268EA009329F2 /* YBPBSRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSRecordViewController.h; sourceTree = "<group>"; };
+		AE6C7547238268EA009329F2 /* YBPBSRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSRecordViewController.m; sourceTree = "<group>"; };
+		AE6C7549238268F5009329F2 /* YBPBSRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSRecordTableViewCell.h; sourceTree = "<group>"; };
+		AE6C754A238268F5009329F2 /* YBPBSRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSRecordTableViewCell.m; sourceTree = "<group>"; };
+		AE6C754C23826949009329F2 /* YBPBSScorecardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSScorecardViewController.h; sourceTree = "<group>"; };
+		AE6C754D23826949009329F2 /* YBPBSScorecardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSScorecardViewController.m; sourceTree = "<group>"; };
+		AE6C754F23826952009329F2 /* YBPBSScorecardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSScorecardViewModel.m; sourceTree = "<group>"; };
+		AE6C755023826952009329F2 /* YBPBSScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSScorecardModel.h; sourceTree = "<group>"; };
+		AE6C755123826952009329F2 /* YBPBSScorecardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSScorecardViewModel.h; sourceTree = "<group>"; };
+		AE6C755223826952009329F2 /* YBPBSScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSScorecardModel.m; sourceTree = "<group>"; };
+		AE6C75552382695D009329F2 /* YBPBSTimePortionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSTimePortionTableViewCell.h; sourceTree = "<group>"; };
+		AE6C75562382695D009329F2 /* YBPBSBothTeamsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSBothTeamsTableViewCell.m; sourceTree = "<group>"; };
+		AE6C75572382695D009329F2 /* YBPBSScoringSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSScoringSaveTableViewCell.m; sourceTree = "<group>"; };
+		AE6C75582382695D009329F2 /* YBPBSScoringPartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSScoringPartTableViewCell.m; sourceTree = "<group>"; };
+		AE6C75592382695D009329F2 /* YBPBSTimePortionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSTimePortionTableViewCell.m; sourceTree = "<group>"; };
+		AE6C755A2382695D009329F2 /* YBPBSBothTeamsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSBothTeamsTableViewCell.h; sourceTree = "<group>"; };
+		AE6C755B2382695D009329F2 /* YBPBSScoringSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSScoringSaveTableViewCell.h; sourceTree = "<group>"; };
+		AE6C755C2382695D009329F2 /* YBPBSScoringPartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSScoringPartTableViewCell.h; sourceTree = "<group>"; };
 		AECF7707238F75A400F65475 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		AECF7709238F75AC00F65475 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AECF770B238F75B600F65475 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -141,24 +129,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AECF7728238F772E00F65475 /* UserNotifications.framework in Frameworks */,
-				AECF772A238F778400F65475 /* libz.tbd in Frameworks */,
 				AECF7720238F766300F65475 /* QuartzCore.framework in Frameworks */,
 				AECF771C238F764400F65475 /* MobileCoreServices.framework in Frameworks */,
-				AECF7708238F75A400F65475 /* AdSupport.framework in Frameworks */,
-				AECF770C238F75B700F65475 /* CFNetwork.framework in Frameworks */,
-				AECF7714238F75E100F65475 /* CoreTelephony.framework in Frameworks */,
-				AECF7726238F772400F65475 /* UIKit.framework in Frameworks */,
-				AECF7710238F75CE00F65475 /* CoreGraphics.framework in Frameworks */,
 				AECF770A238F75AC00F65475 /* AVFoundation.framework in Frameworks */,
-				AECF770E238F75C000F65475 /* CoreFoundation.framework in Frameworks */,
-				AECF7716238F75E900F65475 /* Foundation.framework in Frameworks */,
-				AECF7724238F76FE00F65475 /* SystemConfiguration.framework in Frameworks */,
 				AECF7718238F75F600F65475 /* ImageIO.framework in Frameworks */,
 				AECF7712238F75D700F65475 /* CoreLocation.framework in Frameworks */,
 				AECF771E238F764E00F65475 /* Photos.framework in Frameworks */,
-				AECF7729238F777900F65475 /* libresolv.tbd in Frameworks */,
-				AECF7722238F76D400F65475 /* Security.framework in Frameworks */,
 				9DB85CFE44BA05559FD42CBB /* Pods_PocketBasketballScout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +154,7 @@
 		AE6C74962382427F009329F2 = {
 			isa = PBXGroup;
 			children = (
+				72470C1523EA99DC009817E9 /* PocketBasketballScout.entitlements */,
 				AE6C74A123824280009329F2 /* PocketBasketballScout */,
 				AE6C74A023824280009329F2 /* Products */,
 				9F473B284136E72D2FFFB3AA /* Pods */,
@@ -188,7 +165,7 @@
 		AE6C74A023824280009329F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C749F23824280009329F2 /* ConvenientBasketballScout.app */,
+				AE6C749F23824280009329F2 /* PracticalBasketballScoring.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -238,8 +215,8 @@
 		AE6C74C7238265A4009329F2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C7546238268EA009329F2 /* CBSRecordViewController.h */,
-				AE6C7547238268EA009329F2 /* CBSRecordViewController.m */,
+				AE6C7546238268EA009329F2 /* YBPBSRecordViewController.h */,
+				AE6C7547238268EA009329F2 /* YBPBSRecordViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -247,8 +224,8 @@
 		AE6C74CA238265A4009329F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C7549238268F5009329F2 /* CBSRecordTableViewCell.h */,
-				AE6C754A238268F5009329F2 /* CBSRecordTableViewCell.m */,
+				AE6C7549238268F5009329F2 /* YBPBSRecordTableViewCell.h */,
+				AE6C754A238268F5009329F2 /* YBPBSRecordTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -266,10 +243,10 @@
 		AE6C74CE238265A4009329F2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C755023826952009329F2 /* CBSScorecardModel.h */,
-				AE6C755223826952009329F2 /* CBSScorecardModel.m */,
-				AE6C755123826952009329F2 /* CBSScorecardViewModel.h */,
-				AE6C754F23826952009329F2 /* CBSScorecardViewModel.m */,
+				AE6C755023826952009329F2 /* YBPBSScorecardModel.h */,
+				AE6C755223826952009329F2 /* YBPBSScorecardModel.m */,
+				AE6C755123826952009329F2 /* YBPBSScorecardViewModel.h */,
+				AE6C754F23826952009329F2 /* YBPBSScorecardViewModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -277,8 +254,8 @@
 		AE6C74D3238265A4009329F2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C754C23826949009329F2 /* CBSScorecardViewController.h */,
-				AE6C754D23826949009329F2 /* CBSScorecardViewController.m */,
+				AE6C754C23826949009329F2 /* YBPBSScorecardViewController.h */,
+				AE6C754D23826949009329F2 /* YBPBSScorecardViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -286,14 +263,14 @@
 		AE6C74D6238265A4009329F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C755A2382695D009329F2 /* CBSBothTeamsTableViewCell.h */,
-				AE6C75562382695D009329F2 /* CBSBothTeamsTableViewCell.m */,
-				AE6C755C2382695D009329F2 /* CBSScoringPartTableViewCell.h */,
-				AE6C75582382695D009329F2 /* CBSScoringPartTableViewCell.m */,
-				AE6C755B2382695D009329F2 /* CBSScoringSaveTableViewCell.h */,
-				AE6C75572382695D009329F2 /* CBSScoringSaveTableViewCell.m */,
-				AE6C75552382695D009329F2 /* CBSTimePortionTableViewCell.h */,
-				AE6C75592382695D009329F2 /* CBSTimePortionTableViewCell.m */,
+				AE6C755A2382695D009329F2 /* YBPBSBothTeamsTableViewCell.h */,
+				AE6C75562382695D009329F2 /* YBPBSBothTeamsTableViewCell.m */,
+				AE6C755C2382695D009329F2 /* YBPBSScoringPartTableViewCell.h */,
+				AE6C75582382695D009329F2 /* YBPBSScoringPartTableViewCell.m */,
+				AE6C755B2382695D009329F2 /* YBPBSScoringSaveTableViewCell.h */,
+				AE6C75572382695D009329F2 /* YBPBSScoringSaveTableViewCell.m */,
+				AE6C75552382695D009329F2 /* YBPBSTimePortionTableViewCell.h */,
+				AE6C75592382695D009329F2 /* YBPBSTimePortionTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -311,8 +288,8 @@
 		AE6C74E0238265A4009329F2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C753823826822009329F2 /* CBSSetViewModel.h */,
-				AE6C753723826822009329F2 /* CBSSetViewModel.m */,
+				AE6C753823826822009329F2 /* YBPBSSetViewModel.h */,
+				AE6C753723826822009329F2 /* YBPBSSetViewModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -320,12 +297,12 @@
 		AE6C74E3238265A4009329F2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C753E2382684D009329F2 /* CBSLoginViewController.h */,
-				AE6C753B2382684D009329F2 /* CBSLoginViewController.m */,
-				AE6C753C2382684D009329F2 /* CBSMineViewController.h */,
-				AE6C753D2382684D009329F2 /* CBSMineViewController.m */,
-				AE6C753A2382684D009329F2 /* CBSPasswordChangeViewController.h */,
-				AE6C753F2382684D009329F2 /* CBSPasswordChangeViewController.m */,
+				AE6C753E2382684D009329F2 /* YBPBSLoginViewController.h */,
+				AE6C753B2382684D009329F2 /* YBPBSLoginViewController.m */,
+				AE6C753C2382684D009329F2 /* YBPBSMineViewController.h */,
+				AE6C753D2382684D009329F2 /* YBPBSMineViewController.m */,
+				AE6C753A2382684D009329F2 /* YBPBSPasswordChangeViewController.h */,
+				AE6C753F2382684D009329F2 /* YBPBSPasswordChangeViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -333,8 +310,8 @@
 		AE6C74EA238265A4009329F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C754423826862009329F2 /* CBSLoginTableViewCell.h */,
-				AE6C754323826862009329F2 /* CBSLoginTableViewCell.m */,
+				AE6C754423826862009329F2 /* YBPBSLoginTableViewCell.h */,
+				AE6C754323826862009329F2 /* YBPBSLoginTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -342,26 +319,26 @@
 		AE6C74ED238265A4009329F2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				7233377C23E993A200991083 /* CBSNDHTTPClient.h */,
-				7233377B23E993A200991083 /* CBSNDHTTPClient.m */,
+				7233377C23E993A200991083 /* YBPBSNDHTTPClient.h */,
+				7233377B23E993A200991083 /* YBPBSNDHTTPClient.m */,
 				AE6C74F6238265A4009329F2 /* NSArray+log.h */,
 				AE6C7506238265A5009329F2 /* NSArray+log.m */,
 				AE6C74F8238265A4009329F2 /* NSDictionary+log.h */,
 				AE6C74F0238265A4009329F2 /* NSDictionary+log.m */,
 				AE6C74F1238265A4009329F2 /* CalendarTool.h */,
 				AE6C74FE238265A4009329F2 /* CalendarTool.m */,
-				AE6C752423826732009329F2 /* CBS_PrefixHeader.pch */,
-				AE6C752B23826732009329F2 /* CBSBaseViewController.h */,
-				AE6C752723826732009329F2 /* CBSBaseViewController.m */,
-				AE6C753023826733009329F2 /* CBSGlobal.h */,
-				AE6C752A23826732009329F2 /* CBSHBTool.h */,
-				AE6C752923826732009329F2 /* CBSHBTool.m */,
-				AE6C752323826732009329F2 /* CBSTabBarController.h */,
-				AE6C752E23826733009329F2 /* CBSTabBarController.m */,
-				AE6C752D23826732009329F2 /* CBSUIUtilities.h */,
-				AE6C752C23826732009329F2 /* CBSUIUtilities.m */,
-				AE6C752F23826733009329F2 /* MBProgressHUD+CBSNJ.h */,
-				AE6C752623826732009329F2 /* MBProgressHUD+CBSNJ.m */,
+				AE6C752423826732009329F2 /* YBPBS_PrefixHeader.pch */,
+				AE6C752B23826732009329F2 /* YBPBSBaseViewController.h */,
+				AE6C752723826732009329F2 /* YBPBSBaseViewController.m */,
+				AE6C753023826733009329F2 /* YBPBSGlobal.h */,
+				AE6C752A23826732009329F2 /* YBPBSHBTool.h */,
+				AE6C752923826732009329F2 /* YBPBSHBTool.m */,
+				AE6C752323826732009329F2 /* YBPBSTabBarController.h */,
+				AE6C752E23826733009329F2 /* YBPBSTabBarController.m */,
+				AE6C752D23826732009329F2 /* YBPBSUIUtilities.h */,
+				AE6C752C23826732009329F2 /* YBPBSUIUtilities.m */,
+				AE6C752F23826733009329F2 /* MBProgressHUD+YBPBSNJ.h */,
+				AE6C752623826732009329F2 /* MBProgressHUD+YBPBSNJ.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -411,7 +388,7 @@
 			);
 			name = PocketBasketballScout;
 			productName = PocketBasketballScout;
-			productReference = AE6C749F23824280009329F2 /* ConvenientBasketballScout.app */;
+			productReference = AE6C749F23824280009329F2 /* PracticalBasketballScoring.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -435,7 +412,6 @@
 			knownRegions = (
 				en,
 				Base,
-				"zh-Hans",
 				ja,
 			);
 			mainGroup = AE6C74962382427F009329F2;
@@ -510,28 +486,28 @@
 				AE6C74BE2382657C009329F2 /* AppDelegate.m in Sources */,
 				AE6C751D238265A5009329F2 /* CalendarTool.m in Sources */,
 				AE6C74B523824284009329F2 /* main.m in Sources */,
-				AE6C755423826952009329F2 /* CBSScorecardModel.m in Sources */,
-				AE6C754523826862009329F2 /* CBSLoginTableViewCell.m in Sources */,
-				AE6C755323826952009329F2 /* CBSScorecardViewModel.m in Sources */,
-				AE6C753523826733009329F2 /* CBSUIUtilities.m in Sources */,
-				AE6C753423826733009329F2 /* CBSHBTool.m in Sources */,
-				AE6C753623826733009329F2 /* CBSTabBarController.m in Sources */,
-				7233377D23E993A200991083 /* CBSNDHTTPClient.m in Sources */,
-				AE6C75402382684D009329F2 /* CBSLoginViewController.m in Sources */,
-				AE6C755D2382695D009329F2 /* CBSBothTeamsTableViewCell.m in Sources */,
-				AE6C753323826733009329F2 /* CBSBaseViewController.m in Sources */,
-				AE6C75602382695D009329F2 /* CBSTimePortionTableViewCell.m in Sources */,
-				AE6C754B238268F5009329F2 /* CBSRecordTableViewCell.m in Sources */,
+				AE6C755423826952009329F2 /* YBPBSScorecardModel.m in Sources */,
+				AE6C754523826862009329F2 /* YBPBSLoginTableViewCell.m in Sources */,
+				AE6C755323826952009329F2 /* YBPBSScorecardViewModel.m in Sources */,
+				AE6C753523826733009329F2 /* YBPBSUIUtilities.m in Sources */,
+				AE6C753423826733009329F2 /* YBPBSHBTool.m in Sources */,
+				AE6C753623826733009329F2 /* YBPBSTabBarController.m in Sources */,
+				7233377D23E993A200991083 /* YBPBSNDHTTPClient.m in Sources */,
+				AE6C75402382684D009329F2 /* YBPBSLoginViewController.m in Sources */,
+				AE6C755D2382695D009329F2 /* YBPBSBothTeamsTableViewCell.m in Sources */,
+				AE6C753323826733009329F2 /* YBPBSBaseViewController.m in Sources */,
+				AE6C75602382695D009329F2 /* YBPBSTimePortionTableViewCell.m in Sources */,
+				AE6C754B238268F5009329F2 /* YBPBSRecordTableViewCell.m in Sources */,
 				AE6C7517238265A5009329F2 /* NSDictionary+log.m in Sources */,
 				AE6C7522238265A5009329F2 /* NSArray+log.m in Sources */,
-				AE6C7548238268EA009329F2 /* CBSRecordViewController.m in Sources */,
-				AE6C755E2382695D009329F2 /* CBSScoringSaveTableViewCell.m in Sources */,
-				AE6C753923826822009329F2 /* CBSSetViewModel.m in Sources */,
-				AE6C75422382684D009329F2 /* CBSPasswordChangeViewController.m in Sources */,
-				AE6C755F2382695D009329F2 /* CBSScoringPartTableViewCell.m in Sources */,
-				AE6C75412382684D009329F2 /* CBSMineViewController.m in Sources */,
-				AE6C753223826733009329F2 /* MBProgressHUD+CBSNJ.m in Sources */,
-				AE6C754E23826949009329F2 /* CBSScorecardViewController.m in Sources */,
+				AE6C7548238268EA009329F2 /* YBPBSRecordViewController.m in Sources */,
+				AE6C755E2382695D009329F2 /* YBPBSScoringSaveTableViewCell.m in Sources */,
+				AE6C753923826822009329F2 /* YBPBSSetViewModel.m in Sources */,
+				AE6C75422382684D009329F2 /* YBPBSPasswordChangeViewController.m in Sources */,
+				AE6C755F2382695D009329F2 /* YBPBSScoringPartTableViewCell.m in Sources */,
+				AE6C75412382684D009329F2 /* YBPBSMineViewController.m in Sources */,
+				AE6C753223826733009329F2 /* MBProgressHUD+YBPBSNJ.m in Sources */,
+				AE6C754E23826949009329F2 /* YBPBSScorecardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,7 +517,6 @@
 		AE6C74C0238265A4009329F2 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AE6C74C1238265A4009329F2 /* zh-Hans */,
 				AE6C74C2238265A4009329F2 /* ja */,
 				AE6C74C3238265A4009329F2 /* en */,
 			);
@@ -668,12 +643,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketBasketballScout/PocketBasketballScout.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QAQ5X54F7C;
-				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScout/Common/CBS_PrefixHeader.pch";
+				DEVELOPMENT_TEAM = 3Z8UBML2LU;
+				ENABLE_BITCODE = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScout/Common/YBPBS_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBasketballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -683,10 +658,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketBasketballScout/Common/JPush",
 				);
-				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.hgg.PocketBasketballScouts;
-				PRODUCT_NAME = ConvenientBasketballScout;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.PracticalBasketballScoring;
+				PRODUCT_NAME = PracticalBasketballScoring;
+				PROVISIONING_PROFILE_SPECIFIER = disWeushilanqiubifenPro_20200205;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -698,12 +673,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketBasketballScout/PocketBasketballScout.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QAQ5X54F7C;
-				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScout/Common/CBS_PrefixHeader.pch";
+				DEVELOPMENT_TEAM = 3Z8UBML2LU;
+				ENABLE_BITCODE = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScout/Common/YBPBS_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBasketballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -713,10 +688,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketBasketballScout/Common/JPush",
 				);
-				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.hgg.PocketBasketballScouts;
-				PRODUCT_NAME = ConvenientBasketballScout;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.PracticalBasketballScoring;
+				PRODUCT_NAME = PracticalBasketballScoring;
+				PROVISIONING_PROFILE_SPECIFIER = disWeushilanqiubifenPro_20200205;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
