@@ -1,0 +1,49 @@
+//
+//  YWKGAgamePlanSaveTableViewCell.m
+//  wineAwake
+//
+//  Created by bykj on 2019/10/7.
+//  Copyright © 2019 hbc. All rights reserved.
+//
+
+#import "YWKGAgamePlanSaveTableViewCell.h"
+@interface YWKGAgamePlanSaveTableViewCell()
+@property(nonatomic, strong)UIButton *saveButton;//保存按钮
+@end
+@implementation YWKGAgamePlanSaveTableViewCell
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        [self.contentView addSubview:self.saveButton];
+        
+        [self.saveButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.contentView).offset(15);
+            make.leading.equalTo(self.contentView).offset(120);
+            make.height.mas_equalTo(60);
+            make.trailing.equalTo(self.contentView).offset(-120);
+            make.bottom.equalTo(self.contentView).offset(-15);
+        }];
+    }
+    return self;
+}
+- (void)btnClick{
+    if (self.YWKGAgamePlanSaveB) {
+        self.YWKGAgamePlanSaveB(self);
+    }
+}
+#pragma mark - 属性懒加载
+- (UIButton *)saveButton{
+    if (!_saveButton) {
+        _saveButton = [[UIButton alloc] init];
+        [_saveButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_saveButton.titleLabel setFont:[UIFont systemFontOfSize:25]];
+        [_saveButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
+        [_saveButton setBackgroundColor:[UIColor cyanColor]];
+        _saveButton.layer.cornerRadius = 16.0f;
+        _saveButton.layer.masksToBounds = YES;
+        _saveButton.layer.borderWidth = 2.0f;
+        _saveButton.layer.borderColor = [UIColor grayColor].CGColor;
+        [_saveButton addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _saveButton;
+}
+@end
