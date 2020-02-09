@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7233377D23E993A200991083 /* YBPBSNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7233377B23E993A200991083 /* YBPBSNDHTTPClient.m */; };
+		7233377D23E993A200991083 /* WBYBKOKNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7233377B23E993A200991083 /* WBYBKOKNDHTTPClient.m */; };
 		9DB85CFE44BA05559FD42CBB /* Pods_PocketBasketballScout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F6A05CDF360A69D060122F /* Pods_PocketBasketballScout.framework */; };
 		AE6C74AF23824284009329F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6C74AE23824284009329F2 /* Assets.xcassets */; };
 		AE6C74B523824284009329F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C74B423824284009329F2 /* main.m */; };
@@ -16,25 +16,25 @@
 		AE6C7517238265A5009329F2 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C74F0238265A4009329F2 /* NSDictionary+log.m */; };
 		AE6C751D238265A5009329F2 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C74FE238265A4009329F2 /* CalendarTool.m */; };
 		AE6C7522238265A5009329F2 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C7506238265A5009329F2 /* NSArray+log.m */; };
-		AE6C753223826733009329F2 /* MBProgressHUD+YBPBSNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752623826732009329F2 /* MBProgressHUD+YBPBSNJ.m */; };
-		AE6C753323826733009329F2 /* YBPBSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752723826732009329F2 /* YBPBSBaseViewController.m */; };
-		AE6C753423826733009329F2 /* YBPBSHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752923826732009329F2 /* YBPBSHBTool.m */; };
-		AE6C753523826733009329F2 /* YBPBSUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752C23826732009329F2 /* YBPBSUIUtilities.m */; };
-		AE6C753623826733009329F2 /* YBPBSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752E23826733009329F2 /* YBPBSTabBarController.m */; };
-		AE6C753923826822009329F2 /* YBPBSSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753723826822009329F2 /* YBPBSSetViewModel.m */; };
-		AE6C75402382684D009329F2 /* YBPBSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753B2382684D009329F2 /* YBPBSLoginViewController.m */; };
-		AE6C75412382684D009329F2 /* YBPBSMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753D2382684D009329F2 /* YBPBSMineViewController.m */; };
-		AE6C75422382684D009329F2 /* YBPBSPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753F2382684D009329F2 /* YBPBSPasswordChangeViewController.m */; };
-		AE6C754523826862009329F2 /* YBPBSLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754323826862009329F2 /* YBPBSLoginTableViewCell.m */; };
-		AE6C7548238268EA009329F2 /* YBPBSRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C7547238268EA009329F2 /* YBPBSRecordViewController.m */; };
-		AE6C754B238268F5009329F2 /* YBPBSRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754A238268F5009329F2 /* YBPBSRecordTableViewCell.m */; };
-		AE6C754E23826949009329F2 /* YBPBSScorecardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754D23826949009329F2 /* YBPBSScorecardViewController.m */; };
-		AE6C755323826952009329F2 /* YBPBSScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754F23826952009329F2 /* YBPBSScorecardViewModel.m */; };
-		AE6C755423826952009329F2 /* YBPBSScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C755223826952009329F2 /* YBPBSScorecardModel.m */; };
-		AE6C755D2382695D009329F2 /* YBPBSBothTeamsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75562382695D009329F2 /* YBPBSBothTeamsTableViewCell.m */; };
-		AE6C755E2382695D009329F2 /* YBPBSScoringSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75572382695D009329F2 /* YBPBSScoringSaveTableViewCell.m */; };
-		AE6C755F2382695D009329F2 /* YBPBSScoringPartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75582382695D009329F2 /* YBPBSScoringPartTableViewCell.m */; };
-		AE6C75602382695D009329F2 /* YBPBSTimePortionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75592382695D009329F2 /* YBPBSTimePortionTableViewCell.m */; };
+		AE6C753223826733009329F2 /* MBProgressHUD+WBYBKOKNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752623826732009329F2 /* MBProgressHUD+WBYBKOKNJ.m */; };
+		AE6C753323826733009329F2 /* WBYBKOKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752723826732009329F2 /* WBYBKOKBaseViewController.m */; };
+		AE6C753423826733009329F2 /* WBYBKOKHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752923826732009329F2 /* WBYBKOKHBTool.m */; };
+		AE6C753523826733009329F2 /* WBYBKOKUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752C23826732009329F2 /* WBYBKOKUIUtilities.m */; };
+		AE6C753623826733009329F2 /* WBYBKOKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752E23826733009329F2 /* WBYBKOKTabBarController.m */; };
+		AE6C753923826822009329F2 /* WBYBKOKSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753723826822009329F2 /* WBYBKOKSetViewModel.m */; };
+		AE6C75402382684D009329F2 /* WBYBKOKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753B2382684D009329F2 /* WBYBKOKLoginViewController.m */; };
+		AE6C75412382684D009329F2 /* WBYBKOKMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753D2382684D009329F2 /* WBYBKOKMineViewController.m */; };
+		AE6C75422382684D009329F2 /* WBYBKOKPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753F2382684D009329F2 /* WBYBKOKPasswordChangeViewController.m */; };
+		AE6C754523826862009329F2 /* WBYBKOKLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754323826862009329F2 /* WBYBKOKLoginTableViewCell.m */; };
+		AE6C7548238268EA009329F2 /* WBYBKOKRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C7547238268EA009329F2 /* WBYBKOKRecordViewController.m */; };
+		AE6C754B238268F5009329F2 /* WBYBKOKRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754A238268F5009329F2 /* WBYBKOKRecordTableViewCell.m */; };
+		AE6C754E23826949009329F2 /* WBYBKOKScorecardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754D23826949009329F2 /* WBYBKOKScorecardViewController.m */; };
+		AE6C755323826952009329F2 /* WBYBKOKScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754F23826952009329F2 /* WBYBKOKScorecardViewModel.m */; };
+		AE6C755423826952009329F2 /* WBYBKOKScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C755223826952009329F2 /* WBYBKOKScorecardModel.m */; };
+		AE6C755D2382695D009329F2 /* WBYBKOKBothTeamsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75562382695D009329F2 /* WBYBKOKBothTeamsTableViewCell.m */; };
+		AE6C755E2382695D009329F2 /* WBYBKOKScoringSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75572382695D009329F2 /* WBYBKOKScoringSaveTableViewCell.m */; };
+		AE6C755F2382695D009329F2 /* WBYBKOKScoringPartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75582382695D009329F2 /* WBYBKOKScoringPartTableViewCell.m */; };
+		AE6C75602382695D009329F2 /* WBYBKOKTimePortionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75592382695D009329F2 /* WBYBKOKTimePortionTableViewCell.m */; };
 		AECF770A238F75AC00F65475 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7709238F75AC00F65475 /* AVFoundation.framework */; };
 		AECF7712238F75D700F65475 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7711238F75D700F65475 /* CoreLocation.framework */; };
 		AECF7718238F75F600F65475 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7717238F75F600F65475 /* ImageIO.framework */; };
@@ -45,11 +45,11 @@
 
 /* Begin PBXFileReference section */
 		0095D88E6030915DAB7F8149 /* Pods-PocketBasketballScout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBasketballScout.debug.xcconfig"; path = "Target Support Files/Pods-PocketBasketballScout/Pods-PocketBasketballScout.debug.xcconfig"; sourceTree = "<group>"; };
-		7233377B23E993A200991083 /* YBPBSNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSNDHTTPClient.m; sourceTree = "<group>"; };
-		7233377C23E993A200991083 /* YBPBSNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSNDHTTPClient.h; sourceTree = "<group>"; };
+		7233377B23E993A200991083 /* WBYBKOKNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBYBKOKNDHTTPClient.m; sourceTree = "<group>"; };
+		7233377C23E993A200991083 /* WBYBKOKNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKNDHTTPClient.h; sourceTree = "<group>"; };
 		72470C1523EA99DC009817E9 /* PocketBasketballScout.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = PocketBasketballScout.entitlements; path = PocketBasketballScout/PocketBasketballScout.entitlements; sourceTree = "<group>"; };
 		AA94B92244B3E8AE8D1350D2 /* Pods-PocketBasketballScout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBasketballScout.release.xcconfig"; path = "Target Support Files/Pods-PocketBasketballScout/Pods-PocketBasketballScout.release.xcconfig"; sourceTree = "<group>"; };
-		AE6C749F23824280009329F2 /* PracticalBasketballScoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticalBasketballScoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6C749F23824280009329F2 /* efficientBasketballScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = efficientBasketballScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6C74AE23824284009329F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE6C74B323824284009329F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE6C74B423824284009329F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,46 +63,46 @@
 		AE6C74F8238265A4009329F2 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
 		AE6C74FE238265A4009329F2 /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
 		AE6C7506238265A5009329F2 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
-		AE6C752323826732009329F2 /* YBPBSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSTabBarController.h; sourceTree = "<group>"; };
-		AE6C752423826732009329F2 /* YBPBS_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBS_PrefixHeader.pch; sourceTree = "<group>"; };
-		AE6C752623826732009329F2 /* MBProgressHUD+YBPBSNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+YBPBSNJ.m"; sourceTree = "<group>"; };
-		AE6C752723826732009329F2 /* YBPBSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSBaseViewController.m; sourceTree = "<group>"; };
-		AE6C752923826732009329F2 /* YBPBSHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSHBTool.m; sourceTree = "<group>"; };
-		AE6C752A23826732009329F2 /* YBPBSHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSHBTool.h; sourceTree = "<group>"; };
-		AE6C752B23826732009329F2 /* YBPBSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSBaseViewController.h; sourceTree = "<group>"; };
-		AE6C752C23826732009329F2 /* YBPBSUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSUIUtilities.m; sourceTree = "<group>"; };
-		AE6C752D23826732009329F2 /* YBPBSUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSUIUtilities.h; sourceTree = "<group>"; };
-		AE6C752E23826733009329F2 /* YBPBSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSTabBarController.m; sourceTree = "<group>"; };
-		AE6C752F23826733009329F2 /* MBProgressHUD+YBPBSNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+YBPBSNJ.h"; sourceTree = "<group>"; };
-		AE6C753023826733009329F2 /* YBPBSGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSGlobal.h; sourceTree = "<group>"; };
-		AE6C753723826822009329F2 /* YBPBSSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSSetViewModel.m; sourceTree = "<group>"; };
-		AE6C753823826822009329F2 /* YBPBSSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSSetViewModel.h; sourceTree = "<group>"; };
-		AE6C753A2382684D009329F2 /* YBPBSPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSPasswordChangeViewController.h; sourceTree = "<group>"; };
-		AE6C753B2382684D009329F2 /* YBPBSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSLoginViewController.m; sourceTree = "<group>"; };
-		AE6C753C2382684D009329F2 /* YBPBSMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSMineViewController.h; sourceTree = "<group>"; };
-		AE6C753D2382684D009329F2 /* YBPBSMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSMineViewController.m; sourceTree = "<group>"; };
-		AE6C753E2382684D009329F2 /* YBPBSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSLoginViewController.h; sourceTree = "<group>"; };
-		AE6C753F2382684D009329F2 /* YBPBSPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSPasswordChangeViewController.m; sourceTree = "<group>"; };
-		AE6C754323826862009329F2 /* YBPBSLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSLoginTableViewCell.m; sourceTree = "<group>"; };
-		AE6C754423826862009329F2 /* YBPBSLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSLoginTableViewCell.h; sourceTree = "<group>"; };
-		AE6C7546238268EA009329F2 /* YBPBSRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSRecordViewController.h; sourceTree = "<group>"; };
-		AE6C7547238268EA009329F2 /* YBPBSRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSRecordViewController.m; sourceTree = "<group>"; };
-		AE6C7549238268F5009329F2 /* YBPBSRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSRecordTableViewCell.h; sourceTree = "<group>"; };
-		AE6C754A238268F5009329F2 /* YBPBSRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSRecordTableViewCell.m; sourceTree = "<group>"; };
-		AE6C754C23826949009329F2 /* YBPBSScorecardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSScorecardViewController.h; sourceTree = "<group>"; };
-		AE6C754D23826949009329F2 /* YBPBSScorecardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSScorecardViewController.m; sourceTree = "<group>"; };
-		AE6C754F23826952009329F2 /* YBPBSScorecardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSScorecardViewModel.m; sourceTree = "<group>"; };
-		AE6C755023826952009329F2 /* YBPBSScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSScorecardModel.h; sourceTree = "<group>"; };
-		AE6C755123826952009329F2 /* YBPBSScorecardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSScorecardViewModel.h; sourceTree = "<group>"; };
-		AE6C755223826952009329F2 /* YBPBSScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSScorecardModel.m; sourceTree = "<group>"; };
-		AE6C75552382695D009329F2 /* YBPBSTimePortionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSTimePortionTableViewCell.h; sourceTree = "<group>"; };
-		AE6C75562382695D009329F2 /* YBPBSBothTeamsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSBothTeamsTableViewCell.m; sourceTree = "<group>"; };
-		AE6C75572382695D009329F2 /* YBPBSScoringSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSScoringSaveTableViewCell.m; sourceTree = "<group>"; };
-		AE6C75582382695D009329F2 /* YBPBSScoringPartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSScoringPartTableViewCell.m; sourceTree = "<group>"; };
-		AE6C75592382695D009329F2 /* YBPBSTimePortionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPBSTimePortionTableViewCell.m; sourceTree = "<group>"; };
-		AE6C755A2382695D009329F2 /* YBPBSBothTeamsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSBothTeamsTableViewCell.h; sourceTree = "<group>"; };
-		AE6C755B2382695D009329F2 /* YBPBSScoringSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSScoringSaveTableViewCell.h; sourceTree = "<group>"; };
-		AE6C755C2382695D009329F2 /* YBPBSScoringPartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPBSScoringPartTableViewCell.h; sourceTree = "<group>"; };
+		AE6C752323826732009329F2 /* WBYBKOKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKTabBarController.h; sourceTree = "<group>"; };
+		AE6C752423826732009329F2 /* WBYBKOK_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOK_PrefixHeader.pch; sourceTree = "<group>"; };
+		AE6C752623826732009329F2 /* MBProgressHUD+WBYBKOKNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+WBYBKOKNJ.m"; sourceTree = "<group>"; };
+		AE6C752723826732009329F2 /* WBYBKOKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBYBKOKBaseViewController.m; sourceTree = "<group>"; };
+		AE6C752923826732009329F2 /* WBYBKOKHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBYBKOKHBTool.m; sourceTree = "<group>"; };
+		AE6C752A23826732009329F2 /* WBYBKOKHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKHBTool.h; sourceTree = "<group>"; };
+		AE6C752B23826732009329F2 /* WBYBKOKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKBaseViewController.h; sourceTree = "<group>"; };
+		AE6C752C23826732009329F2 /* WBYBKOKUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBYBKOKUIUtilities.m; sourceTree = "<group>"; };
+		AE6C752D23826732009329F2 /* WBYBKOKUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKUIUtilities.h; sourceTree = "<group>"; };
+		AE6C752E23826733009329F2 /* WBYBKOKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBYBKOKTabBarController.m; sourceTree = "<group>"; };
+		AE6C752F23826733009329F2 /* MBProgressHUD+WBYBKOKNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+WBYBKOKNJ.h"; sourceTree = "<group>"; };
+		AE6C753023826733009329F2 /* WBYBKOKGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKGlobal.h; sourceTree = "<group>"; };
+		AE6C753723826822009329F2 /* WBYBKOKSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBYBKOKSetViewModel.m; sourceTree = "<group>"; };
+		AE6C753823826822009329F2 /* WBYBKOKSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKSetViewModel.h; sourceTree = "<group>"; };
+		AE6C753A2382684D009329F2 /* WBYBKOKPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKPasswordChangeViewController.h; sourceTree = "<group>"; };
+		AE6C753B2382684D009329F2 /* WBYBKOKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBYBKOKLoginViewController.m; sourceTree = "<group>"; };
+		AE6C753C2382684D009329F2 /* WBYBKOKMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKMineViewController.h; sourceTree = "<group>"; };
+		AE6C753D2382684D009329F2 /* WBYBKOKMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBYBKOKMineViewController.m; sourceTree = "<group>"; };
+		AE6C753E2382684D009329F2 /* WBYBKOKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKLoginViewController.h; sourceTree = "<group>"; };
+		AE6C753F2382684D009329F2 /* WBYBKOKPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBYBKOKPasswordChangeViewController.m; sourceTree = "<group>"; };
+		AE6C754323826862009329F2 /* WBYBKOKLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBYBKOKLoginTableViewCell.m; sourceTree = "<group>"; };
+		AE6C754423826862009329F2 /* WBYBKOKLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKLoginTableViewCell.h; sourceTree = "<group>"; };
+		AE6C7546238268EA009329F2 /* WBYBKOKRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKRecordViewController.h; sourceTree = "<group>"; };
+		AE6C7547238268EA009329F2 /* WBYBKOKRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBYBKOKRecordViewController.m; sourceTree = "<group>"; };
+		AE6C7549238268F5009329F2 /* WBYBKOKRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKRecordTableViewCell.h; sourceTree = "<group>"; };
+		AE6C754A238268F5009329F2 /* WBYBKOKRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBYBKOKRecordTableViewCell.m; sourceTree = "<group>"; };
+		AE6C754C23826949009329F2 /* WBYBKOKScorecardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKScorecardViewController.h; sourceTree = "<group>"; };
+		AE6C754D23826949009329F2 /* WBYBKOKScorecardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBYBKOKScorecardViewController.m; sourceTree = "<group>"; };
+		AE6C754F23826952009329F2 /* WBYBKOKScorecardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBYBKOKScorecardViewModel.m; sourceTree = "<group>"; };
+		AE6C755023826952009329F2 /* WBYBKOKScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKScorecardModel.h; sourceTree = "<group>"; };
+		AE6C755123826952009329F2 /* WBYBKOKScorecardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKScorecardViewModel.h; sourceTree = "<group>"; };
+		AE6C755223826952009329F2 /* WBYBKOKScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBYBKOKScorecardModel.m; sourceTree = "<group>"; };
+		AE6C75552382695D009329F2 /* WBYBKOKTimePortionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKTimePortionTableViewCell.h; sourceTree = "<group>"; };
+		AE6C75562382695D009329F2 /* WBYBKOKBothTeamsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBYBKOKBothTeamsTableViewCell.m; sourceTree = "<group>"; };
+		AE6C75572382695D009329F2 /* WBYBKOKScoringSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBYBKOKScoringSaveTableViewCell.m; sourceTree = "<group>"; };
+		AE6C75582382695D009329F2 /* WBYBKOKScoringPartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBYBKOKScoringPartTableViewCell.m; sourceTree = "<group>"; };
+		AE6C75592382695D009329F2 /* WBYBKOKTimePortionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBYBKOKTimePortionTableViewCell.m; sourceTree = "<group>"; };
+		AE6C755A2382695D009329F2 /* WBYBKOKBothTeamsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKBothTeamsTableViewCell.h; sourceTree = "<group>"; };
+		AE6C755B2382695D009329F2 /* WBYBKOKScoringSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKScoringSaveTableViewCell.h; sourceTree = "<group>"; };
+		AE6C755C2382695D009329F2 /* WBYBKOKScoringPartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBYBKOKScoringPartTableViewCell.h; sourceTree = "<group>"; };
 		AECF7707238F75A400F65475 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		AECF7709238F75AC00F65475 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AECF770B238F75B600F65475 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -165,7 +165,7 @@
 		AE6C74A023824280009329F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C749F23824280009329F2 /* PracticalBasketballScoring.app */,
+				AE6C749F23824280009329F2 /* efficientBasketballScore.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,8 +215,8 @@
 		AE6C74C7238265A4009329F2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C7546238268EA009329F2 /* YBPBSRecordViewController.h */,
-				AE6C7547238268EA009329F2 /* YBPBSRecordViewController.m */,
+				AE6C7546238268EA009329F2 /* WBYBKOKRecordViewController.h */,
+				AE6C7547238268EA009329F2 /* WBYBKOKRecordViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -224,8 +224,8 @@
 		AE6C74CA238265A4009329F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C7549238268F5009329F2 /* YBPBSRecordTableViewCell.h */,
-				AE6C754A238268F5009329F2 /* YBPBSRecordTableViewCell.m */,
+				AE6C7549238268F5009329F2 /* WBYBKOKRecordTableViewCell.h */,
+				AE6C754A238268F5009329F2 /* WBYBKOKRecordTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -243,10 +243,10 @@
 		AE6C74CE238265A4009329F2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C755023826952009329F2 /* YBPBSScorecardModel.h */,
-				AE6C755223826952009329F2 /* YBPBSScorecardModel.m */,
-				AE6C755123826952009329F2 /* YBPBSScorecardViewModel.h */,
-				AE6C754F23826952009329F2 /* YBPBSScorecardViewModel.m */,
+				AE6C755023826952009329F2 /* WBYBKOKScorecardModel.h */,
+				AE6C755223826952009329F2 /* WBYBKOKScorecardModel.m */,
+				AE6C755123826952009329F2 /* WBYBKOKScorecardViewModel.h */,
+				AE6C754F23826952009329F2 /* WBYBKOKScorecardViewModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -254,8 +254,8 @@
 		AE6C74D3238265A4009329F2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C754C23826949009329F2 /* YBPBSScorecardViewController.h */,
-				AE6C754D23826949009329F2 /* YBPBSScorecardViewController.m */,
+				AE6C754C23826949009329F2 /* WBYBKOKScorecardViewController.h */,
+				AE6C754D23826949009329F2 /* WBYBKOKScorecardViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -263,14 +263,14 @@
 		AE6C74D6238265A4009329F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C755A2382695D009329F2 /* YBPBSBothTeamsTableViewCell.h */,
-				AE6C75562382695D009329F2 /* YBPBSBothTeamsTableViewCell.m */,
-				AE6C755C2382695D009329F2 /* YBPBSScoringPartTableViewCell.h */,
-				AE6C75582382695D009329F2 /* YBPBSScoringPartTableViewCell.m */,
-				AE6C755B2382695D009329F2 /* YBPBSScoringSaveTableViewCell.h */,
-				AE6C75572382695D009329F2 /* YBPBSScoringSaveTableViewCell.m */,
-				AE6C75552382695D009329F2 /* YBPBSTimePortionTableViewCell.h */,
-				AE6C75592382695D009329F2 /* YBPBSTimePortionTableViewCell.m */,
+				AE6C755A2382695D009329F2 /* WBYBKOKBothTeamsTableViewCell.h */,
+				AE6C75562382695D009329F2 /* WBYBKOKBothTeamsTableViewCell.m */,
+				AE6C755C2382695D009329F2 /* WBYBKOKScoringPartTableViewCell.h */,
+				AE6C75582382695D009329F2 /* WBYBKOKScoringPartTableViewCell.m */,
+				AE6C755B2382695D009329F2 /* WBYBKOKScoringSaveTableViewCell.h */,
+				AE6C75572382695D009329F2 /* WBYBKOKScoringSaveTableViewCell.m */,
+				AE6C75552382695D009329F2 /* WBYBKOKTimePortionTableViewCell.h */,
+				AE6C75592382695D009329F2 /* WBYBKOKTimePortionTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -288,8 +288,8 @@
 		AE6C74E0238265A4009329F2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C753823826822009329F2 /* YBPBSSetViewModel.h */,
-				AE6C753723826822009329F2 /* YBPBSSetViewModel.m */,
+				AE6C753823826822009329F2 /* WBYBKOKSetViewModel.h */,
+				AE6C753723826822009329F2 /* WBYBKOKSetViewModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -297,12 +297,12 @@
 		AE6C74E3238265A4009329F2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C753E2382684D009329F2 /* YBPBSLoginViewController.h */,
-				AE6C753B2382684D009329F2 /* YBPBSLoginViewController.m */,
-				AE6C753C2382684D009329F2 /* YBPBSMineViewController.h */,
-				AE6C753D2382684D009329F2 /* YBPBSMineViewController.m */,
-				AE6C753A2382684D009329F2 /* YBPBSPasswordChangeViewController.h */,
-				AE6C753F2382684D009329F2 /* YBPBSPasswordChangeViewController.m */,
+				AE6C753E2382684D009329F2 /* WBYBKOKLoginViewController.h */,
+				AE6C753B2382684D009329F2 /* WBYBKOKLoginViewController.m */,
+				AE6C753C2382684D009329F2 /* WBYBKOKMineViewController.h */,
+				AE6C753D2382684D009329F2 /* WBYBKOKMineViewController.m */,
+				AE6C753A2382684D009329F2 /* WBYBKOKPasswordChangeViewController.h */,
+				AE6C753F2382684D009329F2 /* WBYBKOKPasswordChangeViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -310,8 +310,8 @@
 		AE6C74EA238265A4009329F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C754423826862009329F2 /* YBPBSLoginTableViewCell.h */,
-				AE6C754323826862009329F2 /* YBPBSLoginTableViewCell.m */,
+				AE6C754423826862009329F2 /* WBYBKOKLoginTableViewCell.h */,
+				AE6C754323826862009329F2 /* WBYBKOKLoginTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -319,26 +319,26 @@
 		AE6C74ED238265A4009329F2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				7233377C23E993A200991083 /* YBPBSNDHTTPClient.h */,
-				7233377B23E993A200991083 /* YBPBSNDHTTPClient.m */,
+				7233377C23E993A200991083 /* WBYBKOKNDHTTPClient.h */,
+				7233377B23E993A200991083 /* WBYBKOKNDHTTPClient.m */,
 				AE6C74F6238265A4009329F2 /* NSArray+log.h */,
 				AE6C7506238265A5009329F2 /* NSArray+log.m */,
 				AE6C74F8238265A4009329F2 /* NSDictionary+log.h */,
 				AE6C74F0238265A4009329F2 /* NSDictionary+log.m */,
 				AE6C74F1238265A4009329F2 /* CalendarTool.h */,
 				AE6C74FE238265A4009329F2 /* CalendarTool.m */,
-				AE6C752423826732009329F2 /* YBPBS_PrefixHeader.pch */,
-				AE6C752B23826732009329F2 /* YBPBSBaseViewController.h */,
-				AE6C752723826732009329F2 /* YBPBSBaseViewController.m */,
-				AE6C753023826733009329F2 /* YBPBSGlobal.h */,
-				AE6C752A23826732009329F2 /* YBPBSHBTool.h */,
-				AE6C752923826732009329F2 /* YBPBSHBTool.m */,
-				AE6C752323826732009329F2 /* YBPBSTabBarController.h */,
-				AE6C752E23826733009329F2 /* YBPBSTabBarController.m */,
-				AE6C752D23826732009329F2 /* YBPBSUIUtilities.h */,
-				AE6C752C23826732009329F2 /* YBPBSUIUtilities.m */,
-				AE6C752F23826733009329F2 /* MBProgressHUD+YBPBSNJ.h */,
-				AE6C752623826732009329F2 /* MBProgressHUD+YBPBSNJ.m */,
+				AE6C752423826732009329F2 /* WBYBKOK_PrefixHeader.pch */,
+				AE6C752B23826732009329F2 /* WBYBKOKBaseViewController.h */,
+				AE6C752723826732009329F2 /* WBYBKOKBaseViewController.m */,
+				AE6C753023826733009329F2 /* WBYBKOKGlobal.h */,
+				AE6C752A23826732009329F2 /* WBYBKOKHBTool.h */,
+				AE6C752923826732009329F2 /* WBYBKOKHBTool.m */,
+				AE6C752323826732009329F2 /* WBYBKOKTabBarController.h */,
+				AE6C752E23826733009329F2 /* WBYBKOKTabBarController.m */,
+				AE6C752D23826732009329F2 /* WBYBKOKUIUtilities.h */,
+				AE6C752C23826732009329F2 /* WBYBKOKUIUtilities.m */,
+				AE6C752F23826733009329F2 /* MBProgressHUD+WBYBKOKNJ.h */,
+				AE6C752623826732009329F2 /* MBProgressHUD+WBYBKOKNJ.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -388,7 +388,7 @@
 			);
 			name = PocketBasketballScout;
 			productName = PocketBasketballScout;
-			productReference = AE6C749F23824280009329F2 /* PracticalBasketballScoring.app */;
+			productReference = AE6C749F23824280009329F2 /* efficientBasketballScore.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -486,28 +486,28 @@
 				AE6C74BE2382657C009329F2 /* AppDelegate.m in Sources */,
 				AE6C751D238265A5009329F2 /* CalendarTool.m in Sources */,
 				AE6C74B523824284009329F2 /* main.m in Sources */,
-				AE6C755423826952009329F2 /* YBPBSScorecardModel.m in Sources */,
-				AE6C754523826862009329F2 /* YBPBSLoginTableViewCell.m in Sources */,
-				AE6C755323826952009329F2 /* YBPBSScorecardViewModel.m in Sources */,
-				AE6C753523826733009329F2 /* YBPBSUIUtilities.m in Sources */,
-				AE6C753423826733009329F2 /* YBPBSHBTool.m in Sources */,
-				AE6C753623826733009329F2 /* YBPBSTabBarController.m in Sources */,
-				7233377D23E993A200991083 /* YBPBSNDHTTPClient.m in Sources */,
-				AE6C75402382684D009329F2 /* YBPBSLoginViewController.m in Sources */,
-				AE6C755D2382695D009329F2 /* YBPBSBothTeamsTableViewCell.m in Sources */,
-				AE6C753323826733009329F2 /* YBPBSBaseViewController.m in Sources */,
-				AE6C75602382695D009329F2 /* YBPBSTimePortionTableViewCell.m in Sources */,
-				AE6C754B238268F5009329F2 /* YBPBSRecordTableViewCell.m in Sources */,
+				AE6C755423826952009329F2 /* WBYBKOKScorecardModel.m in Sources */,
+				AE6C754523826862009329F2 /* WBYBKOKLoginTableViewCell.m in Sources */,
+				AE6C755323826952009329F2 /* WBYBKOKScorecardViewModel.m in Sources */,
+				AE6C753523826733009329F2 /* WBYBKOKUIUtilities.m in Sources */,
+				AE6C753423826733009329F2 /* WBYBKOKHBTool.m in Sources */,
+				AE6C753623826733009329F2 /* WBYBKOKTabBarController.m in Sources */,
+				7233377D23E993A200991083 /* WBYBKOKNDHTTPClient.m in Sources */,
+				AE6C75402382684D009329F2 /* WBYBKOKLoginViewController.m in Sources */,
+				AE6C755D2382695D009329F2 /* WBYBKOKBothTeamsTableViewCell.m in Sources */,
+				AE6C753323826733009329F2 /* WBYBKOKBaseViewController.m in Sources */,
+				AE6C75602382695D009329F2 /* WBYBKOKTimePortionTableViewCell.m in Sources */,
+				AE6C754B238268F5009329F2 /* WBYBKOKRecordTableViewCell.m in Sources */,
 				AE6C7517238265A5009329F2 /* NSDictionary+log.m in Sources */,
 				AE6C7522238265A5009329F2 /* NSArray+log.m in Sources */,
-				AE6C7548238268EA009329F2 /* YBPBSRecordViewController.m in Sources */,
-				AE6C755E2382695D009329F2 /* YBPBSScoringSaveTableViewCell.m in Sources */,
-				AE6C753923826822009329F2 /* YBPBSSetViewModel.m in Sources */,
-				AE6C75422382684D009329F2 /* YBPBSPasswordChangeViewController.m in Sources */,
-				AE6C755F2382695D009329F2 /* YBPBSScoringPartTableViewCell.m in Sources */,
-				AE6C75412382684D009329F2 /* YBPBSMineViewController.m in Sources */,
-				AE6C753223826733009329F2 /* MBProgressHUD+YBPBSNJ.m in Sources */,
-				AE6C754E23826949009329F2 /* YBPBSScorecardViewController.m in Sources */,
+				AE6C7548238268EA009329F2 /* WBYBKOKRecordViewController.m in Sources */,
+				AE6C755E2382695D009329F2 /* WBYBKOKScoringSaveTableViewCell.m in Sources */,
+				AE6C753923826822009329F2 /* WBYBKOKSetViewModel.m in Sources */,
+				AE6C75422382684D009329F2 /* WBYBKOKPasswordChangeViewController.m in Sources */,
+				AE6C755F2382695D009329F2 /* WBYBKOKScoringPartTableViewCell.m in Sources */,
+				AE6C75412382684D009329F2 /* WBYBKOKMineViewController.m in Sources */,
+				AE6C753223826733009329F2 /* MBProgressHUD+WBYBKOKNJ.m in Sources */,
+				AE6C754E23826949009329F2 /* WBYBKOKScorecardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,12 +643,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketBasketballScout/PocketBasketballScout.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3Z8UBML2LU;
+				DEVELOPMENT_TEAM = FDW5VQ9SA2;
 				ENABLE_BITCODE = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScout/Common/YBPBS_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScout/Common/WBYBKOK_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBasketballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -659,9 +659,9 @@
 					"$(PROJECT_DIR)/PocketBasketballScout/Common/JPush",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.com.PracticalBasketballScoring;
-				PRODUCT_NAME = PracticalBasketballScoring;
-				PROVISIONING_PROFILE_SPECIFIER = disWeushilanqiubifenPro_20200205;
+				PRODUCT_BUNDLE_IDENTIFIER = windy.efficientBasketballScore;
+				PRODUCT_NAME = efficientBasketballScore;
+				PROVISIONING_PROFILE_SPECIFIER = dev_efficientBasketballScore_pro_20200208;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -673,12 +673,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketBasketballScout/PocketBasketballScout.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3Z8UBML2LU;
+				DEVELOPMENT_TEAM = FDW5VQ9SA2;
 				ENABLE_BITCODE = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScout/Common/YBPBS_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScout/Common/WBYBKOK_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBasketballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -689,9 +689,9 @@
 					"$(PROJECT_DIR)/PocketBasketballScout/Common/JPush",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.com.PracticalBasketballScoring;
-				PRODUCT_NAME = PracticalBasketballScoring;
-				PROVISIONING_PROFILE_SPECIFIER = disWeushilanqiubifenPro_20200205;
+				PRODUCT_BUNDLE_IDENTIFIER = windy.efficientBasketballScore;
+				PRODUCT_NAME = efficientBasketballScore;
+				PROVISIONING_PROFILE_SPECIFIER = dev_efficientBasketballScore_pro_20200208;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

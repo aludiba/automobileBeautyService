@@ -1,0 +1,12 @@
+//
+//  WBYBKOK_PrefixHeader.pch
+//  Simple Diary
+//
+//  Created by bykj on 2019/7/20.
+//  Copyright © 2019 hgg. All rights reserved.
+//
+
+#ifndef WBYBKOK_PrefixHeader_pch
+#define WBYBKOK_PrefixHeader_pch
+#import "WBYBKOKGlobal.h"
+#endif /* WBYBKOK_PrefixHeader_pch */

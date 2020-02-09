@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "YBPBSLoginViewController.h"
-#import "YBPBSNDHTTPClient.h"
+#import "WBYBKOKLoginViewController.h"
+#import "WBYBKOKNDHTTPClient.h"
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
@@ -32,8 +32,8 @@
     return YES;
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application{
-    NSString *URL = @"http://mock-api.com/Rz3yVMnM.mock/YBPBSBasketball";
-    [YBPBSNDHTTPClient YBPBSgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
+    NSString *URL = @"http://mock-api.com/Rz3yVMnM.mock/WBYBKOKBasketball";
+    [WBYBKOKNDHTTPClient WBYBKOKgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
             NSArray *arr = (NSArray *)data;
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[arr lastObject]]];
         } withErrorBlock:^(NSError *error, id errorData) {
@@ -42,7 +42,7 @@
 }
 - (UIViewController *)rootController{
         //进行操作
-        YBPBSTabBarController *tabVC = [YBPBSTabBarController shareInstance];
+        WBYBKOKTabBarController *tabVC = [WBYBKOKTabBarController shareInstance];
         return tabVC;
 }
 - (void)setJPush:(NSDictionary *)launchOptions{
@@ -65,7 +65,7 @@
     // Required
     // init Push
     // notice: 2.1.5 版本的 SDK 新增的注册方法，改成可上报 IDFA，如果没有使用 IDFA 直接传 nil
-    [JPUSHService setupWithOption:launchOptions appKey:@"1fac3a2a266142a56d672471"
+    [JPUSHService setupWithOption:launchOptions appKey:@"4fca0fda0304deee4be06ba6"
                           channel:@"App Store"
                  apsForProduction:1];
 }
