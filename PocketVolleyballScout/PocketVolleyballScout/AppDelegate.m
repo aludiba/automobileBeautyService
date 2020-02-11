@@ -23,8 +23,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self setJPush:launchOptions];
-    [Bmob resetDomain:@"http://pocketvolleyballscore.jd127.cn"];
-    [Bmob registerWithAppKey:@"433c78f96a4eadc43adb74cef6a27b92"];
+    [AVOSCloud setApplicationId:@"mG34aYISSTic5qVtir31dM6N-MdYXbMMI" clientKey:@"oLHtnYLqrERW7UvQ3UcnA3O5"];
+    [AVOSCloud setAllLogsEnabled:YES];
+//    [Bmob resetDomain:@"http://pocketvolleyballscore.jd127.cn"];
+//    [Bmob registerWithAppKey:@"433c78f96a4eadc43adb74cef6a27b92"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [self rootController];
@@ -32,10 +34,10 @@
     return YES;
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application{
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"CVSScout"];
-    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"CVSScout"]]];
-    }];
+//    BmobQuery *bquery = [BmobQuery queryWithClassName:@"CVSScout"];
+//    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+//        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"CVSScout"]]];
+//    }];
 }
 - (UIViewController *)rootController{
         CVSTabBarController *tabVC = [CVSTabBarController shareInstance];
@@ -61,7 +63,7 @@
     // Required
     // init Push
     // notice: 2.1.5 版本的 SDK 新增的注册方法，改成可上报 IDFA，如果没有使用 IDFA 直接传 nil
-    [JPUSHService setupWithOption:launchOptions appKey:@"635df72af461d70784e835cb"
+    [JPUSHService setupWithOption:launchOptions appKey:@"8454513ec98eacc47bd2982d"
                           channel:@"App Store"
                  apsForProduction:1];
 }

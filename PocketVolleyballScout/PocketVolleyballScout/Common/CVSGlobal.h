@@ -21,7 +21,8 @@
 #import "CVSTabBarController.h"
 #import "NSArray+log.h"
 #import "NSDictionary+log.h"
-#import <BmobSDK/Bmob.h>
+//#import <BmobSDK/Bmob.h>
+#import <AVOSCloud/AVOSCloud.h>
 typedef NS_ENUM(NSInteger, scorecardWhichWinType) {
     scorecardWhichWinTypeMain,
     scorecardWhichWinTypeGuest,

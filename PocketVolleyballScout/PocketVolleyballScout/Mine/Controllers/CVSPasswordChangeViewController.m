@@ -75,12 +75,12 @@
         [MBProgressHUD CVSshowReminderText:NSLocalizedString(@"两次密码输入不一致", nil)];
         return;
     }
-        BmobUser *user = [BmobUser currentUser];
+        AVUser *user = [AVUser currentUser];
         NSString *name = user.username;
-        [user updateCurrentUserPasswordWithOldPassword:self.CVSoldPassword newPassword:self.CVSconfirmPassword block:^(BOOL isSuccessful, NSError *error) {
-            if (isSuccessful) {
+        [user updatePassword:self.CVSoldPassword newPassword:self.CVSconfirmPassword block:^(id  _Nullable object, NSError * _Nullable error) {
+            if (!error) {
                 //用新密码登录
-                [BmobUser loginInbackgroundWithAccount:name andPassword:self.CVSconfirmPassword block:^(BmobUser *user, NSError *error) {
+                [AVUser logInWithUsernameInBackground:name password:self.CVSconfirmPassword block:^(AVUser *user, NSError *error) {
                     if (error) {
                         [MBProgressHUD CVSshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
                     } else {

@@ -81,7 +81,7 @@
 }
 #pragma mark - 保存功能
 - (void)CVSsaveLoginJudge{
-    BmobUser *bUser = [BmobUser currentUser];
+    AVUser *bUser = [AVUser currentUser];
         if (bUser) {
             [self CVSsaveAction];
     }else{
@@ -121,11 +121,13 @@
     self.CVSScoreModel.CVSEndTimeString = nowDateString;
     
     NSMutableDictionary *jsonDictionary = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[self.self.CVSScoreModel yy_modelToJSONObject]];
-    BmobObject *diary = [BmobObject objectWithClassName:@"CVSScore"];
-    [diary saveAllWithDictionary:jsonDictionary];
-    BmobUser *author = [BmobUser currentUser];
+    AVObject *diary = [AVObject objectWithClassName:@"CVSScore"];
+    for (NSString *key in jsonDictionary.allKeys) {
+        [diary setObject:[jsonDictionary objectForKey:key]  forKey:key];
+    }
+    AVUser *author = [AVUser currentUser];
     [diary setObject:author forKey:@"author"];
-    [diary saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+    [diary saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
         if (isSuccessful) {
             //创建成功后的动作
             [MBProgressHUD CVSshowReminderText:NSLocalizedString(@"保存成功", nil)];

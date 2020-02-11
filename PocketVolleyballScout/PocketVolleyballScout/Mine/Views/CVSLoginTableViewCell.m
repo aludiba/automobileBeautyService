@@ -94,7 +94,7 @@
         return;
     }
     if (sender.tag == 100) {
-        [BmobUser loginWithUsernameInBackground:self.CVSaccount password:self.CVSpassword block:^(BmobUser *user, NSError *error) {
+        [AVUser logInWithUsernameInBackground:self.CVSaccount password:self.CVSpassword   block:^(AVUser *user, NSError *error) {
             if (user) {
                 [MBProgressHUD CVSshowReminderText:NSLocalizedString(@"登录成功", nil)];
                 if (self.type == 1) {
@@ -120,13 +120,13 @@
             }
         }];
     }else if(sender.tag == 101){
-        BmobUser *bUser = [[BmobUser alloc] init];
+        AVUser *bUser = [[AVUser alloc] init];
         [bUser setUsername:self.CVSaccount];
         [bUser setPassword:self.CVSpassword];
         [bUser signUpInBackgroundWithBlock:^ (BOOL isSuccessful, NSError *error){
             if (isSuccessful){
                 [MBProgressHUD CVSshowReminderText:NSLocalizedString(@"注册成功", nil)];
-                [BmobUser loginWithUsernameInBackground:self.CVSaccount password:self.CVSpassword block:^(BmobUser *user, NSError *error) {
+                [AVUser logInWithUsernameInBackground:self.CVSaccount password:self.CVSpassword block:^(AVUser *user, NSError *error) {
                     if (user) {
                         if (self.type == 1) {
                         CVSTabBarController *tabVC = [CVSTabBarController shareInstance];

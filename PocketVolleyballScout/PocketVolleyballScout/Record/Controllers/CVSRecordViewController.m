@@ -30,7 +30,7 @@
 }
 #pragma mark - actions
 - (void)CVSDeleteData:(CVSScorecardModel *)model{
-    BmobObject *bmobObject = [BmobObject objectWithoutDataWithClassName:@"CVSScore"  objectId:model.CVSObjectId];
+    AVObject *bmobObject = [AVObject objectWithoutDataWithClassName:@"CVSScore"  objectId:model.CVSObjectId];
     [bmobObject deleteInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
     if (isSuccessful) {
          //删除成功后的动作
@@ -45,8 +45,8 @@
     }];
 }
 - (void)CVSLoadData{
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"CVSScore"];
-    BmobUser *author = [BmobUser currentUser];
+    AVQuery *bquery = [AVQuery queryWithClassName:@"CVSScore"];
+    AVUser *author = [AVUser currentUser];
     if (author) {
     [bquery whereKey:@"author" equalTo:author];
     //查找GameScore表的数据
@@ -60,7 +60,7 @@
             [self.CVSDataArray removeAllObjects];
             if (array.count) {
                 for (int i = (int)(array.count - 1); i > -1; i--) {
-                    BmobObject *obj = array[i];
+                    AVObject *obj = array[i];
                     CVSScorecardModel *model = [[CVSScorecardModel alloc] init];
                     model.CVSObjectId = [obj objectForKey:@"objectId"];
                     model.CVSNatureCompetition = [obj objectForKey:@"CVSNatureCompetition"];
