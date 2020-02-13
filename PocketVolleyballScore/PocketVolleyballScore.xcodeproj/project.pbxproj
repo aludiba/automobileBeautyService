@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E73534E0CA45DB73EFC1476 /* Pods_PocketVolleyballScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A0BF5BA5C3FAC5FD918FAD /* Pods_PocketVolleyballScore.framework */; };
 		AE95D231237119A50033E085 /* PVScorecardSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95D230237119A50033E085 /* PVScorecardSaveTableViewCell.m */; };
 		AE95D2342371462B0033E085 /* PVBureauPointsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95D2332371462B0033E085 /* PVBureauPointsModel.m */; };
 		AE95D237237148880033E085 /* PVScoreSummaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95D236237148880033E085 /* PVScoreSummaryTableViewCell.m */; };
@@ -41,8 +42,6 @@
 		AEC1BE70236992FF00091475 /* PVPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE65236992FE00091475 /* PVPasswordChangeViewController.m */; };
 		AEC1BE71236992FF00091475 /* PVSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE69236992FE00091475 /* PVSetTableViewCell.m */; };
 		AEC1BE72236992FF00091475 /* PVLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE6A236992FE00091475 /* PVLoginTableViewCell.m */; };
-		AECF7732238F9B0800F65475 /* jpush-ios-3.2.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF772D238F9B0800F65475 /* jpush-ios-3.2.6.a */; };
-		AECF7733238F9B0800F65475 /* jcore-ios-2.1.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF772F238F9B0800F65475 /* jcore-ios-2.1.4.a */; };
 		AECF7735238F9B2F00F65475 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7734238F9B2F00F65475 /* AdSupport.framework */; };
 		AECF7737238F9B3600F65475 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7736238F9B3600F65475 /* AVFoundation.framework */; };
 		AECF7739238F9B3E00F65475 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7738238F9B3D00F65475 /* CFNetwork.framework */; };
@@ -137,9 +136,6 @@
 		AEC1BE69236992FE00091475 /* PVSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVSetTableViewCell.m; sourceTree = "<group>"; };
 		AEC1BE6A236992FE00091475 /* PVLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVLoginTableViewCell.m; sourceTree = "<group>"; };
 		AEC1BE6B236992FE00091475 /* PVSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVSetTableViewCell.h; sourceTree = "<group>"; };
-		AECF772D238F9B0800F65475 /* jpush-ios-3.2.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.6.a"; sourceTree = "<group>"; };
-		AECF772F238F9B0800F65475 /* jcore-ios-2.1.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.1.4.a"; sourceTree = "<group>"; };
-		AECF7730238F9B0800F65475 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
 		AECF7734238F9B2F00F65475 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		AECF7736238F9B3600F65475 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AECF7738238F9B3D00F65475 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -168,7 +164,6 @@
 			files = (
 				AECF7739238F9B3E00F65475 /* CFNetwork.framework in Frameworks */,
 				AECF7751238F9BB300F65475 /* UIKit.framework in Frameworks */,
-				AECF7732238F9B0800F65475 /* jpush-ios-3.2.6.a in Frameworks */,
 				AECF7741238F9B6700F65475 /* CoreTelephony.framework in Frameworks */,
 				AECF7735238F9B2F00F65475 /* AdSupport.framework in Frameworks */,
 				AECF773F238F9B5E00F65475 /* CoreLocation.framework in Frameworks */,
@@ -184,8 +179,8 @@
 				AECF7757238F9BF800F65475 /* libz.tbd in Frameworks */,
 				AECF7753238F9BBD00F65475 /* UserNotifications.framework in Frameworks */,
 				AECF7749238F9B9100F65475 /* Photos.framework in Frameworks */,
-				AECF7733238F9B0800F65475 /* jcore-ios-2.1.4.a in Frameworks */,
 				AECF7743238F9B6F00F65475 /* Foundation.framework in Frameworks */,
+				0E73534E0CA45DB73EFC1476 /* Pods_PocketVolleyballScore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +252,6 @@
 		AEC1BDF723698E8200091475 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				AECF772B238F9B0800F65475 /* JPush */,
 				AEC1BDF923698E8200091475 /* PV_PrefixHeader.pch */,
 				AEC1BE0823698E8200091475 /* PVGlobal.h */,
 				AEC1BE0323698E8200091475 /* PVHBTool.h */,
@@ -415,16 +409,6 @@
 				AEC1BE69236992FE00091475 /* PVSetTableViewCell.m */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		AECF772B238F9B0800F65475 /* JPush */ = {
-			isa = PBXGroup;
-			children = (
-				AECF772D238F9B0800F65475 /* jpush-ios-3.2.6.a */,
-				AECF772F238F9B0800F65475 /* jcore-ios-2.1.4.a */,
-				AECF7730238F9B0800F65475 /* JPUSHService.h */,
-			);
-			path = JPush;
 			sourceTree = "<group>";
 		};
 		D65D3887A644D991A02B11A7 /* Pods */ = {
@@ -719,10 +703,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketVolleyballScore/PocketVolleyballScore.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Ren Guanfei (9JMTNVWG46)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: JEAN S Q Christ (GRCX8FPBD7)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
-				DEVELOPMENT_TEAM = 9JMTNVWG46;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FDW5VQ9SA2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScore/Common/PV_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketVolleyballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -733,9 +717,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketVolleyballScore/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ConvenientBasketballScoring;
+				PRODUCT_BUNDLE_IDENTIFIER = windy.GameAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = dis_ConvenientBasketballScoring_pro;
+				PROVISIONING_PROFILE_SPECIFIER = dev_GameAlert_pro_20200209;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -747,10 +731,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketVolleyballScore/PocketVolleyballScore.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Ren Guanfei (9JMTNVWG46)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: JEAN S Q Christ (GRCX8FPBD7)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
-				DEVELOPMENT_TEAM = 9JMTNVWG46;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FDW5VQ9SA2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScore/Common/PV_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketVolleyballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -761,9 +745,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketVolleyballScore/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ConvenientBasketballScoring;
+				PRODUCT_BUNDLE_IDENTIFIER = windy.GameAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = dis_ConvenientBasketballScoring_pro;
+				PROVISIONING_PROFILE_SPECIFIER = dev_GameAlert_pro_20200209;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
