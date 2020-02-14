@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "PVLoginViewController.h"
+#import "PVYWKLoginViewController.h"
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
@@ -21,29 +21,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setJPush:launchOptions];
-    [Bmob resetDomain:@"http://pocketvolleyballscore.jd127.cn"];
-    [Bmob registerWithAppKey:@"433c78f96a4eadc43adb74cef6a27b92"];
+    [AVOSCloud setApplicationId:@"mG34aYISSTic5qVtir31dM6N-MdYXbMMI" clientKey:@"oLHtnYLqrERW7UvQ3UcnA3O5"];
+    [AVOSCloud setAllLogsEnabled:YES];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"PVScoreAD"];
-    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"PVScoreAD"]]];
-            self.window.rootViewController = [self rootController];
-            [self.window makeKeyAndVisible];
-    }];
+    self.window.rootViewController = [self rootController];
+    [self.window makeKeyAndVisible];
     return YES;
 }
+- (void)applicationDidBecomeActive:(UIApplication *)application{
+    NSString *URL = @"http://mock-api.com/Rz3yVMnM.mock/PVYWKScore";
+    [PVYWKNDHTTPClient PVYWKgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
+            NSArray *arr = (NSArray *)data;
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[arr lastObject]]];
+        } withErrorBlock:^(NSError *error, id errorData) {
+            
+        }];
+}
 - (UIViewController *)rootController{
-//    BmobUser *bUser = [BmobUser currentUser];
-//    if (bUser) {
-//        进行操作
-        PVTabBarController *tabVC = [PVTabBarController shareInstance];
+        PVYWKTabBarController *tabVC = [PVYWKTabBarController shareInstance];
         return tabVC;
-//    }else{
-//        //对象为空时，可打开用户注册界面
-//        PVLoginViewController *loginVC = [PVLoginViewController shareInstance];
-//        return loginVC;
-//    }
 }
 - (void)setJPush:(NSDictionary *)launchOptions{
     //Required
@@ -65,7 +62,7 @@
     // Required
     // init Push
     // notice: 2.1.5 版本的 SDK 新增的注册方法，改成可上报 IDFA，如果没有使用 IDFA 直接传 nil
-    [JPUSHService setupWithOption:launchOptions appKey:@"2e338e5e76e176f56e499eb7"
+    [JPUSHService setupWithOption:launchOptions appKey:@"8454513ec98eacc47bd2982d"
                           channel:@"App Store"
                  apsForProduction:1];
 }

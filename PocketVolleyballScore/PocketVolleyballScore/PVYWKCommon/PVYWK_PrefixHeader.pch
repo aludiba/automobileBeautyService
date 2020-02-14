@@ -1,0 +1,12 @@
+//
+//  PVYWK_PrefixHeader.pch
+//  Simple Diary
+//
+//  Created by bykj on 2019/7/20.
+//  Copyright © 2019 hgg. All rights reserved.
+//
+
+#ifndef PVYWK_PrefixHeader_pch
+#define PVYWK_PrefixHeader_pch
+#import "PVYWKGlobal.h"
+#endif /* PVYWK_PrefixHeader_pch */

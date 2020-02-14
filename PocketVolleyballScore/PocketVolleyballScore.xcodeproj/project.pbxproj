@@ -8,40 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		0E73534E0CA45DB73EFC1476 /* Pods_PocketVolleyballScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A0BF5BA5C3FAC5FD918FAD /* Pods_PocketVolleyballScore.framework */; };
-		AE95D231237119A50033E085 /* PVScorecardSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95D230237119A50033E085 /* PVScorecardSaveTableViewCell.m */; };
-		AE95D2342371462B0033E085 /* PVBureauPointsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95D2332371462B0033E085 /* PVBureauPointsModel.m */; };
-		AE95D237237148880033E085 /* PVScoreSummaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95D236237148880033E085 /* PVScoreSummaryTableViewCell.m */; };
+		AE8A1DC223F63BC1004FA2F1 /* jpush-extension-ios-1.1.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8A1DBE23F63BC0004FA2F1 /* jpush-extension-ios-1.1.2.a */; };
+		AE8A1DC323F63BC1004FA2F1 /* jpush-ios-3.2.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8A1DBF23F63BC0004FA2F1 /* jpush-ios-3.2.6.a */; };
+		AE95D231237119A50033E085 /* PVYWKScorecardSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95D230237119A50033E085 /* PVYWKScorecardSaveTableViewCell.m */; };
+		AE95D2342371462B0033E085 /* PVYWKBureauPointsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95D2332371462B0033E085 /* PVYWKBureauPointsModel.m */; };
+		AE95D237237148880033E085 /* PVYWKScoreSummaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95D236237148880033E085 /* PVYWKScoreSummaryTableViewCell.m */; };
 		AEC1BDDF2369857200091475 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDDE2369857200091475 /* AppDelegate.m */; };
 		AEC1BDEA2369857700091475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC1BDE92369857700091475 /* Assets.xcassets */; };
 		AEC1BDF02369857700091475 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDEF2369857700091475 /* main.m */; };
-		AEC1BE1223698E8200091475 /* PVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDFA23698E8200091475 /* PVTabBarController.m */; };
-		AEC1BE1323698E8200091475 /* PVUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDFB23698E8200091475 /* PVUIUtilities.m */; };
-		AEC1BE1423698E8200091475 /* PVHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDFC23698E8200091475 /* PVHBTool.m */; };
+		AEC1BE1223698E8200091475 /* PVYWKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDFA23698E8200091475 /* PVYWKTabBarController.m */; };
+		AEC1BE1323698E8200091475 /* PVYWKUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDFB23698E8200091475 /* PVYWKUIUtilities.m */; };
+		AEC1BE1423698E8200091475 /* PVYWKHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDFC23698E8200091475 /* PVYWKHBTool.m */; };
 		AEC1BE1523698E8200091475 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDFD23698E8200091475 /* NSDictionary+log.m */; };
-		AEC1BE1623698E8200091475 /* MBProgressHUD+PVNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDFF23698E8200091475 /* MBProgressHUD+PVNJ.m */; };
-		AEC1BE1723698E8200091475 /* PVNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE0023698E8200091475 /* PVNDHTTPClient.m */; };
-		AEC1BE1823698E8200091475 /* PVBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE0623698E8200091475 /* PVBaseViewController.m */; };
+		AEC1BE1623698E8200091475 /* MBProgressHUD+PVYWKNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BDFF23698E8200091475 /* MBProgressHUD+PVYWKNJ.m */; };
+		AEC1BE1723698E8200091475 /* PVYWKNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE0023698E8200091475 /* PVYWKNDHTTPClient.m */; };
+		AEC1BE1823698E8200091475 /* PVYWKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE0623698E8200091475 /* PVYWKBaseViewController.m */; };
 		AEC1BE1923698E8200091475 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE0923698E8200091475 /* CalendarTool.m */; };
 		AEC1BE1D23698E8200091475 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE1123698E8200091475 /* NSArray+log.m */; };
 		AEC1BE2323698FEE00091475 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEC1BE1F23698FEE00091475 /* Localizable.strings */; };
-		AEC1BE36236990F000091475 /* PVScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE26236990EF00091475 /* PVScorecardViewModel.m */; };
-		AEC1BE37236990F000091475 /* PVScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE27236990EF00091475 /* PVScorecardModel.m */; };
-		AEC1BE38236990F000091475 /* PVScorecardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE2C236990EF00091475 /* PVScorecardViewController.m */; };
-		AEC1BE39236990F000091475 /* PVScorecardTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE31236990F000091475 /* PVScorecardTitleTableViewCell.m */; };
-		AEC1BE3A236990F000091475 /* PVScorecardTimeStatisticsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE32236990F000091475 /* PVScorecardTimeStatisticsTableViewCell.m */; };
-		AEC1BE3B236990F000091475 /* PVScorecardOperationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE33236990F000091475 /* PVScorecardOperationTableViewCell.m */; };
-		AEC1BE3C236990F000091475 /* PVScorecardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE34236990F000091475 /* PVScorecardTableViewCell.m */; };
-		AEC1BE562369925600091475 /* PVRecordDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE502369925600091475 /* PVRecordDetailsViewController.m */; };
-		AEC1BE572369925600091475 /* PVRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC1BE512369925600091475 /* PVRecordViewController.xib */; };
-		AEC1BE582369925600091475 /* PVRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE522369925600091475 /* PVRecordViewController.m */; };
-		AEC1BE592369925600091475 /* PVRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE542369925600091475 /* PVRecordTableViewCell.m */; };
-		AEC1BE6C236992FF00091475 /* PVSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE5C236992FE00091475 /* PVSetViewModel.m */; };
-		AEC1BE6D236992FF00091475 /* PVMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE60236992FE00091475 /* PVMineViewController.m */; };
-		AEC1BE6E236992FF00091475 /* PVLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE62236992FE00091475 /* PVLoginViewController.m */; };
-		AEC1BE6F236992FF00091475 /* PVModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE63236992FE00091475 /* PVModifyNicknameViewController.m */; };
-		AEC1BE70236992FF00091475 /* PVPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE65236992FE00091475 /* PVPasswordChangeViewController.m */; };
-		AEC1BE71236992FF00091475 /* PVSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE69236992FE00091475 /* PVSetTableViewCell.m */; };
-		AEC1BE72236992FF00091475 /* PVLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE6A236992FE00091475 /* PVLoginTableViewCell.m */; };
+		AEC1BE36236990F000091475 /* PVYWKScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE26236990EF00091475 /* PVYWKScorecardViewModel.m */; };
+		AEC1BE37236990F000091475 /* PVYWKScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE27236990EF00091475 /* PVYWKScorecardModel.m */; };
+		AEC1BE38236990F000091475 /* PVYWKScorecardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE2C236990EF00091475 /* PVYWKScorecardViewController.m */; };
+		AEC1BE39236990F000091475 /* PVYWKScorecardTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE31236990F000091475 /* PVYWKScorecardTitleTableViewCell.m */; };
+		AEC1BE3A236990F000091475 /* PVYWKScorecardTimeStatisticsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE32236990F000091475 /* PVYWKScorecardTimeStatisticsTableViewCell.m */; };
+		AEC1BE3B236990F000091475 /* PVYWKScorecardOperationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE33236990F000091475 /* PVYWKScorecardOperationTableViewCell.m */; };
+		AEC1BE3C236990F000091475 /* PVYWKScorecardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE34236990F000091475 /* PVYWKScorecardTableViewCell.m */; };
+		AEC1BE562369925600091475 /* PVYWKRecordDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE502369925600091475 /* PVYWKRecordDetailsViewController.m */; };
+		AEC1BE572369925600091475 /* PVYWKRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC1BE512369925600091475 /* PVYWKRecordViewController.xib */; };
+		AEC1BE582369925600091475 /* PVYWKRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE522369925600091475 /* PVYWKRecordViewController.m */; };
+		AEC1BE592369925600091475 /* PVYWKRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE542369925600091475 /* PVYWKRecordTableViewCell.m */; };
+		AEC1BE6C236992FF00091475 /* PVYWKSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE5C236992FE00091475 /* PVYWKSetViewModel.m */; };
+		AEC1BE6D236992FF00091475 /* PVYWKMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE60236992FE00091475 /* PVYWKMineViewController.m */; };
+		AEC1BE6E236992FF00091475 /* PVYWKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE62236992FE00091475 /* PVYWKLoginViewController.m */; };
+		AEC1BE6F236992FF00091475 /* PVYWKModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE63236992FE00091475 /* PVYWKModifyNicknameViewController.m */; };
+		AEC1BE70236992FF00091475 /* PVYWKPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE65236992FE00091475 /* PVYWKPasswordChangeViewController.m */; };
+		AEC1BE71236992FF00091475 /* PVYWKSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE69236992FE00091475 /* PVYWKSetTableViewCell.m */; };
+		AEC1BE72236992FF00091475 /* PVYWKLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE6A236992FE00091475 /* PVYWKLoginTableViewCell.m */; };
 		AECF7735238F9B2F00F65475 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7734238F9B2F00F65475 /* AdSupport.framework */; };
 		AECF7737238F9B3600F65475 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7736238F9B3600F65475 /* AVFoundation.framework */; };
 		AECF7739238F9B3E00F65475 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7738238F9B3D00F65475 /* CFNetwork.framework */; };
@@ -65,12 +67,15 @@
 /* Begin PBXFileReference section */
 		27CD20C0A6F66DD960E8BEDD /* Pods-PocketVolleyballScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketVolleyballScore.debug.xcconfig"; path = "Target Support Files/Pods-PocketVolleyballScore/Pods-PocketVolleyballScore.debug.xcconfig"; sourceTree = "<group>"; };
 		3E7B142BE856A46822316937 /* Pods-PocketVolleyballScore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketVolleyballScore.release.xcconfig"; path = "Target Support Files/Pods-PocketVolleyballScore/Pods-PocketVolleyballScore.release.xcconfig"; sourceTree = "<group>"; };
-		AE95D22F237119A50033E085 /* PVScorecardSaveTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVScorecardSaveTableViewCell.h; sourceTree = "<group>"; };
-		AE95D230237119A50033E085 /* PVScorecardSaveTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVScorecardSaveTableViewCell.m; sourceTree = "<group>"; };
-		AE95D2322371462B0033E085 /* PVBureauPointsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVBureauPointsModel.h; sourceTree = "<group>"; };
-		AE95D2332371462B0033E085 /* PVBureauPointsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVBureauPointsModel.m; sourceTree = "<group>"; };
-		AE95D235237148880033E085 /* PVScoreSummaryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVScoreSummaryTableViewCell.h; sourceTree = "<group>"; };
-		AE95D236237148880033E085 /* PVScoreSummaryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVScoreSummaryTableViewCell.m; sourceTree = "<group>"; };
+		AE8A1DBE23F63BC0004FA2F1 /* jpush-extension-ios-1.1.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-extension-ios-1.1.2.a"; sourceTree = "<group>"; };
+		AE8A1DBF23F63BC0004FA2F1 /* jpush-ios-3.2.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.6.a"; sourceTree = "<group>"; };
+		AE8A1DC123F63BC0004FA2F1 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		AE95D22F237119A50033E085 /* PVYWKScorecardSaveTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVYWKScorecardSaveTableViewCell.h; sourceTree = "<group>"; };
+		AE95D230237119A50033E085 /* PVYWKScorecardSaveTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVYWKScorecardSaveTableViewCell.m; sourceTree = "<group>"; };
+		AE95D2322371462B0033E085 /* PVYWKBureauPointsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVYWKBureauPointsModel.h; sourceTree = "<group>"; };
+		AE95D2332371462B0033E085 /* PVYWKBureauPointsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVYWKBureauPointsModel.m; sourceTree = "<group>"; };
+		AE95D235237148880033E085 /* PVYWKScoreSummaryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVYWKScoreSummaryTableViewCell.h; sourceTree = "<group>"; };
+		AE95D236237148880033E085 /* PVYWKScoreSummaryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVYWKScoreSummaryTableViewCell.m; sourceTree = "<group>"; };
 		AEC1BDDA2369857200091475 /* PocketVolleyballScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketVolleyballScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC1BDDD2369857200091475 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEC1BDDE2369857200091475 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,64 +83,63 @@
 		AEC1BDEE2369857700091475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEC1BDEF2369857700091475 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AEC1BDF623698A1700091475 /* PocketVolleyballScore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PocketVolleyballScore.entitlements; sourceTree = "<group>"; };
-		AEC1BDF823698E8200091475 /* PVBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVBaseViewController.h; sourceTree = "<group>"; };
-		AEC1BDF923698E8200091475 /* PV_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PV_PrefixHeader.pch; sourceTree = "<group>"; };
-		AEC1BDFA23698E8200091475 /* PVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVTabBarController.m; sourceTree = "<group>"; };
-		AEC1BDFB23698E8200091475 /* PVUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVUIUtilities.m; sourceTree = "<group>"; };
-		AEC1BDFC23698E8200091475 /* PVHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVHBTool.m; sourceTree = "<group>"; };
+		AEC1BDF823698E8200091475 /* PVYWKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKBaseViewController.h; sourceTree = "<group>"; };
+		AEC1BDF923698E8200091475 /* PVYWK_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWK_PrefixHeader.pch; sourceTree = "<group>"; };
+		AEC1BDFA23698E8200091475 /* PVYWKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKTabBarController.m; sourceTree = "<group>"; };
+		AEC1BDFB23698E8200091475 /* PVYWKUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKUIUtilities.m; sourceTree = "<group>"; };
+		AEC1BDFC23698E8200091475 /* PVYWKHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKHBTool.m; sourceTree = "<group>"; };
 		AEC1BDFD23698E8200091475 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
 		AEC1BDFE23698E8200091475 /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
-		AEC1BDFF23698E8200091475 /* MBProgressHUD+PVNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+PVNJ.m"; sourceTree = "<group>"; };
-		AEC1BE0023698E8200091475 /* PVNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVNDHTTPClient.m; sourceTree = "<group>"; };
+		AEC1BDFF23698E8200091475 /* MBProgressHUD+PVYWKNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+PVYWKNJ.m"; sourceTree = "<group>"; };
+		AEC1BE0023698E8200091475 /* PVYWKNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKNDHTTPClient.m; sourceTree = "<group>"; };
 		AEC1BE0123698E8200091475 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
 		AEC1BE0223698E8200091475 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
-		AEC1BE0323698E8200091475 /* PVHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVHBTool.h; sourceTree = "<group>"; };
-		AEC1BE0423698E8200091475 /* PVUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVUIUtilities.h; sourceTree = "<group>"; };
-		AEC1BE0523698E8200091475 /* PVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVTabBarController.h; sourceTree = "<group>"; };
-		AEC1BE0623698E8200091475 /* PVBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVBaseViewController.m; sourceTree = "<group>"; };
-		AEC1BE0723698E8200091475 /* MBProgressHUD+PVNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+PVNJ.h"; sourceTree = "<group>"; };
-		AEC1BE0823698E8200091475 /* PVGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVGlobal.h; sourceTree = "<group>"; };
+		AEC1BE0323698E8200091475 /* PVYWKHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKHBTool.h; sourceTree = "<group>"; };
+		AEC1BE0423698E8200091475 /* PVYWKUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKUIUtilities.h; sourceTree = "<group>"; };
+		AEC1BE0523698E8200091475 /* PVYWKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKTabBarController.h; sourceTree = "<group>"; };
+		AEC1BE0623698E8200091475 /* PVYWKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKBaseViewController.m; sourceTree = "<group>"; };
+		AEC1BE0723698E8200091475 /* MBProgressHUD+PVYWKNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+PVYWKNJ.h"; sourceTree = "<group>"; };
+		AEC1BE0823698E8200091475 /* PVYWKGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKGlobal.h; sourceTree = "<group>"; };
 		AEC1BE0923698E8200091475 /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
-		AEC1BE0A23698E8200091475 /* PVNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVNDHTTPClient.h; sourceTree = "<group>"; };
+		AEC1BE0A23698E8200091475 /* PVYWKNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKNDHTTPClient.h; sourceTree = "<group>"; };
 		AEC1BE1123698E8200091475 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
-		AEC1BE2023698FEE00091475 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		AEC1BE2123698FEE00091475 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AEC1BE2223698FEE00091475 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AEC1BE26236990EF00091475 /* PVScorecardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVScorecardViewModel.m; sourceTree = "<group>"; };
-		AEC1BE27236990EF00091475 /* PVScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVScorecardModel.m; sourceTree = "<group>"; };
-		AEC1BE28236990EF00091475 /* PVScorecardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVScorecardViewModel.h; sourceTree = "<group>"; };
-		AEC1BE29236990EF00091475 /* PVScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVScorecardModel.h; sourceTree = "<group>"; };
-		AEC1BE2B236990EF00091475 /* PVScorecardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVScorecardViewController.h; sourceTree = "<group>"; };
-		AEC1BE2C236990EF00091475 /* PVScorecardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVScorecardViewController.m; sourceTree = "<group>"; };
-		AEC1BE2E236990F000091475 /* PVScorecardTimeStatisticsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVScorecardTimeStatisticsTableViewCell.h; sourceTree = "<group>"; };
-		AEC1BE2F236990F000091475 /* PVScorecardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVScorecardTableViewCell.h; sourceTree = "<group>"; };
-		AEC1BE30236990F000091475 /* PVScorecardOperationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVScorecardOperationTableViewCell.h; sourceTree = "<group>"; };
-		AEC1BE31236990F000091475 /* PVScorecardTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVScorecardTitleTableViewCell.m; sourceTree = "<group>"; };
-		AEC1BE32236990F000091475 /* PVScorecardTimeStatisticsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVScorecardTimeStatisticsTableViewCell.m; sourceTree = "<group>"; };
-		AEC1BE33236990F000091475 /* PVScorecardOperationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVScorecardOperationTableViewCell.m; sourceTree = "<group>"; };
-		AEC1BE34236990F000091475 /* PVScorecardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVScorecardTableViewCell.m; sourceTree = "<group>"; };
-		AEC1BE35236990F000091475 /* PVScorecardTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVScorecardTitleTableViewCell.h; sourceTree = "<group>"; };
-		AEC1BE4E2369925600091475 /* PVRecordDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRecordDetailsViewController.h; sourceTree = "<group>"; };
-		AEC1BE4F2369925600091475 /* PVRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRecordViewController.h; sourceTree = "<group>"; };
-		AEC1BE502369925600091475 /* PVRecordDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVRecordDetailsViewController.m; sourceTree = "<group>"; };
-		AEC1BE512369925600091475 /* PVRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PVRecordViewController.xib; sourceTree = "<group>"; };
-		AEC1BE522369925600091475 /* PVRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVRecordViewController.m; sourceTree = "<group>"; };
-		AEC1BE542369925600091475 /* PVRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVRecordTableViewCell.m; sourceTree = "<group>"; };
-		AEC1BE552369925600091475 /* PVRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRecordTableViewCell.h; sourceTree = "<group>"; };
-		AEC1BE5C236992FE00091475 /* PVSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVSetViewModel.m; sourceTree = "<group>"; };
-		AEC1BE5D236992FE00091475 /* PVSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVSetViewModel.h; sourceTree = "<group>"; };
-		AEC1BE5F236992FE00091475 /* PVModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVModifyNicknameViewController.h; sourceTree = "<group>"; };
-		AEC1BE60236992FE00091475 /* PVMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVMineViewController.m; sourceTree = "<group>"; };
-		AEC1BE61236992FE00091475 /* PVPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVPasswordChangeViewController.h; sourceTree = "<group>"; };
-		AEC1BE62236992FE00091475 /* PVLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVLoginViewController.m; sourceTree = "<group>"; };
-		AEC1BE63236992FE00091475 /* PVModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVModifyNicknameViewController.m; sourceTree = "<group>"; };
-		AEC1BE64236992FE00091475 /* PVMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVMineViewController.h; sourceTree = "<group>"; };
-		AEC1BE65236992FE00091475 /* PVPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVPasswordChangeViewController.m; sourceTree = "<group>"; };
-		AEC1BE66236992FE00091475 /* PVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVLoginViewController.h; sourceTree = "<group>"; };
-		AEC1BE68236992FE00091475 /* PVLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVLoginTableViewCell.h; sourceTree = "<group>"; };
-		AEC1BE69236992FE00091475 /* PVSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVSetTableViewCell.m; sourceTree = "<group>"; };
-		AEC1BE6A236992FE00091475 /* PVLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVLoginTableViewCell.m; sourceTree = "<group>"; };
-		AEC1BE6B236992FE00091475 /* PVSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVSetTableViewCell.h; sourceTree = "<group>"; };
+		AEC1BE26236990EF00091475 /* PVYWKScorecardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKScorecardViewModel.m; sourceTree = "<group>"; };
+		AEC1BE27236990EF00091475 /* PVYWKScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKScorecardModel.m; sourceTree = "<group>"; };
+		AEC1BE28236990EF00091475 /* PVYWKScorecardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKScorecardViewModel.h; sourceTree = "<group>"; };
+		AEC1BE29236990EF00091475 /* PVYWKScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKScorecardModel.h; sourceTree = "<group>"; };
+		AEC1BE2B236990EF00091475 /* PVYWKScorecardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKScorecardViewController.h; sourceTree = "<group>"; };
+		AEC1BE2C236990EF00091475 /* PVYWKScorecardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKScorecardViewController.m; sourceTree = "<group>"; };
+		AEC1BE2E236990F000091475 /* PVYWKScorecardTimeStatisticsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKScorecardTimeStatisticsTableViewCell.h; sourceTree = "<group>"; };
+		AEC1BE2F236990F000091475 /* PVYWKScorecardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKScorecardTableViewCell.h; sourceTree = "<group>"; };
+		AEC1BE30236990F000091475 /* PVYWKScorecardOperationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKScorecardOperationTableViewCell.h; sourceTree = "<group>"; };
+		AEC1BE31236990F000091475 /* PVYWKScorecardTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKScorecardTitleTableViewCell.m; sourceTree = "<group>"; };
+		AEC1BE32236990F000091475 /* PVYWKScorecardTimeStatisticsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKScorecardTimeStatisticsTableViewCell.m; sourceTree = "<group>"; };
+		AEC1BE33236990F000091475 /* PVYWKScorecardOperationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKScorecardOperationTableViewCell.m; sourceTree = "<group>"; };
+		AEC1BE34236990F000091475 /* PVYWKScorecardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKScorecardTableViewCell.m; sourceTree = "<group>"; };
+		AEC1BE35236990F000091475 /* PVYWKScorecardTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKScorecardTitleTableViewCell.h; sourceTree = "<group>"; };
+		AEC1BE4E2369925600091475 /* PVYWKRecordDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKRecordDetailsViewController.h; sourceTree = "<group>"; };
+		AEC1BE4F2369925600091475 /* PVYWKRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKRecordViewController.h; sourceTree = "<group>"; };
+		AEC1BE502369925600091475 /* PVYWKRecordDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKRecordDetailsViewController.m; sourceTree = "<group>"; };
+		AEC1BE512369925600091475 /* PVYWKRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PVYWKRecordViewController.xib; sourceTree = "<group>"; };
+		AEC1BE522369925600091475 /* PVYWKRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKRecordViewController.m; sourceTree = "<group>"; };
+		AEC1BE542369925600091475 /* PVYWKRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKRecordTableViewCell.m; sourceTree = "<group>"; };
+		AEC1BE552369925600091475 /* PVYWKRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKRecordTableViewCell.h; sourceTree = "<group>"; };
+		AEC1BE5C236992FE00091475 /* PVYWKSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKSetViewModel.m; sourceTree = "<group>"; };
+		AEC1BE5D236992FE00091475 /* PVYWKSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKSetViewModel.h; sourceTree = "<group>"; };
+		AEC1BE5F236992FE00091475 /* PVYWKModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKModifyNicknameViewController.h; sourceTree = "<group>"; };
+		AEC1BE60236992FE00091475 /* PVYWKMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKMineViewController.m; sourceTree = "<group>"; };
+		AEC1BE61236992FE00091475 /* PVYWKPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKPasswordChangeViewController.h; sourceTree = "<group>"; };
+		AEC1BE62236992FE00091475 /* PVYWKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKLoginViewController.m; sourceTree = "<group>"; };
+		AEC1BE63236992FE00091475 /* PVYWKModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKModifyNicknameViewController.m; sourceTree = "<group>"; };
+		AEC1BE64236992FE00091475 /* PVYWKMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKMineViewController.h; sourceTree = "<group>"; };
+		AEC1BE65236992FE00091475 /* PVYWKPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKPasswordChangeViewController.m; sourceTree = "<group>"; };
+		AEC1BE66236992FE00091475 /* PVYWKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKLoginViewController.h; sourceTree = "<group>"; };
+		AEC1BE68236992FE00091475 /* PVYWKLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKLoginTableViewCell.h; sourceTree = "<group>"; };
+		AEC1BE69236992FE00091475 /* PVYWKSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKSetTableViewCell.m; sourceTree = "<group>"; };
+		AEC1BE6A236992FE00091475 /* PVYWKLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKLoginTableViewCell.m; sourceTree = "<group>"; };
+		AEC1BE6B236992FE00091475 /* PVYWKSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKSetTableViewCell.h; sourceTree = "<group>"; };
 		AECF7734238F9B2F00F65475 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		AECF7736238F9B3600F65475 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AECF7738238F9B3D00F65475 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -168,7 +172,9 @@
 				AECF7735238F9B2F00F65475 /* AdSupport.framework in Frameworks */,
 				AECF773F238F9B5E00F65475 /* CoreLocation.framework in Frameworks */,
 				AECF774B238F9B9C00F65475 /* QuartzCore.framework in Frameworks */,
+				AE8A1DC323F63BC1004FA2F1 /* jpush-ios-3.2.6.a in Frameworks */,
 				AECF7756238F9BEF00F65475 /* libresolv.tbd in Frameworks */,
+				AE8A1DC223F63BC1004FA2F1 /* jpush-extension-ios-1.1.2.a in Frameworks */,
 				AECF774D238F9BA300F65475 /* Security.framework in Frameworks */,
 				AECF773B238F9B4900F65475 /* CoreFoundation.framework in Frameworks */,
 				AECF773D238F9B5300F65475 /* CoreGraphics.framework in Frameworks */,
@@ -213,6 +219,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AE8A1DBD23F63BC0004FA2F1 /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				AE8A1DBE23F63BC0004FA2F1 /* jpush-extension-ios-1.1.2.a */,
+				AE8A1DBF23F63BC0004FA2F1 /* jpush-ios-3.2.6.a */,
+				AE8A1DC123F63BC0004FA2F1 /* JPUSHService.h */,
+			);
+			path = JPush;
+			sourceTree = "<group>";
+		};
 		AEC1BDD12369857200091475 = {
 			isa = PBXGroup;
 			children = (
@@ -235,11 +251,11 @@
 			isa = PBXGroup;
 			children = (
 				AEC1BDF623698A1700091475 /* PocketVolleyballScore.entitlements */,
-				AEC1BDF723698E8200091475 /* Common */,
-				AEC1BE1E23698FEE00091475 /* Resources */,
-				AEC1BE24236990EF00091475 /* Scorecard */,
-				AEC1BE4C2369925600091475 /* Record */,
-				AEC1BE5A236992FE00091475 /* Mine */,
+				AEC1BDF723698E8200091475 /* PVYWKCommon */,
+				AEC1BE1E23698FEE00091475 /* PVYWKResources */,
+				AEC1BE24236990EF00091475 /* PVYWKScorecard */,
+				AEC1BE4C2369925600091475 /* PVYWKRecord */,
+				AEC1BE5A236992FE00091475 /* PVYWKMine */,
 				AEC1BDDD2369857200091475 /* AppDelegate.h */,
 				AEC1BDDE2369857200091475 /* AppDelegate.m */,
 				AEC1BDE92369857700091475 /* Assets.xcassets */,
@@ -249,166 +265,167 @@
 			path = PocketVolleyballScore;
 			sourceTree = "<group>";
 		};
-		AEC1BDF723698E8200091475 /* Common */ = {
+		AEC1BDF723698E8200091475 /* PVYWKCommon */ = {
 			isa = PBXGroup;
 			children = (
-				AEC1BDF923698E8200091475 /* PV_PrefixHeader.pch */,
-				AEC1BE0823698E8200091475 /* PVGlobal.h */,
-				AEC1BE0323698E8200091475 /* PVHBTool.h */,
-				AEC1BDFC23698E8200091475 /* PVHBTool.m */,
-				AEC1BE0423698E8200091475 /* PVUIUtilities.h */,
-				AEC1BDFB23698E8200091475 /* PVUIUtilities.m */,
+				AE8A1DBD23F63BC0004FA2F1 /* JPush */,
+				AEC1BDF923698E8200091475 /* PVYWK_PrefixHeader.pch */,
+				AEC1BE0823698E8200091475 /* PVYWKGlobal.h */,
+				AEC1BE0323698E8200091475 /* PVYWKHBTool.h */,
+				AEC1BDFC23698E8200091475 /* PVYWKHBTool.m */,
+				AEC1BE0423698E8200091475 /* PVYWKUIUtilities.h */,
+				AEC1BDFB23698E8200091475 /* PVYWKUIUtilities.m */,
 				AEC1BDFE23698E8200091475 /* CalendarTool.h */,
 				AEC1BE0923698E8200091475 /* CalendarTool.m */,
 				AEC1BE0123698E8200091475 /* NSArray+log.h */,
 				AEC1BE1123698E8200091475 /* NSArray+log.m */,
 				AEC1BE0223698E8200091475 /* NSDictionary+log.h */,
 				AEC1BDFD23698E8200091475 /* NSDictionary+log.m */,
-				AEC1BE0723698E8200091475 /* MBProgressHUD+PVNJ.h */,
-				AEC1BDFF23698E8200091475 /* MBProgressHUD+PVNJ.m */,
-				AEC1BE0A23698E8200091475 /* PVNDHTTPClient.h */,
-				AEC1BE0023698E8200091475 /* PVNDHTTPClient.m */,
-				AEC1BDF823698E8200091475 /* PVBaseViewController.h */,
-				AEC1BE0623698E8200091475 /* PVBaseViewController.m */,
-				AEC1BE0523698E8200091475 /* PVTabBarController.h */,
-				AEC1BDFA23698E8200091475 /* PVTabBarController.m */,
+				AEC1BE0723698E8200091475 /* MBProgressHUD+PVYWKNJ.h */,
+				AEC1BDFF23698E8200091475 /* MBProgressHUD+PVYWKNJ.m */,
+				AEC1BE0A23698E8200091475 /* PVYWKNDHTTPClient.h */,
+				AEC1BE0023698E8200091475 /* PVYWKNDHTTPClient.m */,
+				AEC1BDF823698E8200091475 /* PVYWKBaseViewController.h */,
+				AEC1BE0623698E8200091475 /* PVYWKBaseViewController.m */,
+				AEC1BE0523698E8200091475 /* PVYWKTabBarController.h */,
+				AEC1BDFA23698E8200091475 /* PVYWKTabBarController.m */,
 			);
-			path = Common;
+			path = PVYWKCommon;
 			sourceTree = "<group>";
 		};
-		AEC1BE1E23698FEE00091475 /* Resources */ = {
+		AEC1BE1E23698FEE00091475 /* PVYWKResources */ = {
 			isa = PBXGroup;
 			children = (
 				AEC1BE1F23698FEE00091475 /* Localizable.strings */,
 			);
-			path = Resources;
+			path = PVYWKResources;
 			sourceTree = "<group>";
 		};
-		AEC1BE24236990EF00091475 /* Scorecard */ = {
+		AEC1BE24236990EF00091475 /* PVYWKScorecard */ = {
 			isa = PBXGroup;
 			children = (
-				AEC1BE25236990EF00091475 /* Models */,
-				AEC1BE2A236990EF00091475 /* Controllers */,
-				AEC1BE2D236990EF00091475 /* Views */,
+				AEC1BE25236990EF00091475 /* PVYWKModels */,
+				AEC1BE2A236990EF00091475 /* PVYWKControllers */,
+				AEC1BE2D236990EF00091475 /* PVYWKViews */,
 			);
-			name = Scorecard;
-			path = PocketVolleyballScore/Scorecard;
+			name = PVYWKScorecard;
+			path = PocketVolleyballScore/PVYWKScorecard;
 			sourceTree = SOURCE_ROOT;
 		};
-		AEC1BE25236990EF00091475 /* Models */ = {
+		AEC1BE25236990EF00091475 /* PVYWKModels */ = {
 			isa = PBXGroup;
 			children = (
-				AEC1BE28236990EF00091475 /* PVScorecardViewModel.h */,
-				AEC1BE26236990EF00091475 /* PVScorecardViewModel.m */,
-				AEC1BE29236990EF00091475 /* PVScorecardModel.h */,
-				AEC1BE27236990EF00091475 /* PVScorecardModel.m */,
-				AE95D2322371462B0033E085 /* PVBureauPointsModel.h */,
-				AE95D2332371462B0033E085 /* PVBureauPointsModel.m */,
+				AEC1BE28236990EF00091475 /* PVYWKScorecardViewModel.h */,
+				AEC1BE26236990EF00091475 /* PVYWKScorecardViewModel.m */,
+				AEC1BE29236990EF00091475 /* PVYWKScorecardModel.h */,
+				AEC1BE27236990EF00091475 /* PVYWKScorecardModel.m */,
+				AE95D2322371462B0033E085 /* PVYWKBureauPointsModel.h */,
+				AE95D2332371462B0033E085 /* PVYWKBureauPointsModel.m */,
 			);
-			path = Models;
+			path = PVYWKModels;
 			sourceTree = "<group>";
 		};
-		AEC1BE2A236990EF00091475 /* Controllers */ = {
+		AEC1BE2A236990EF00091475 /* PVYWKControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AEC1BE2B236990EF00091475 /* PVScorecardViewController.h */,
-				AEC1BE2C236990EF00091475 /* PVScorecardViewController.m */,
+				AEC1BE2B236990EF00091475 /* PVYWKScorecardViewController.h */,
+				AEC1BE2C236990EF00091475 /* PVYWKScorecardViewController.m */,
 			);
-			path = Controllers;
+			path = PVYWKControllers;
 			sourceTree = "<group>";
 		};
-		AEC1BE2D236990EF00091475 /* Views */ = {
+		AEC1BE2D236990EF00091475 /* PVYWKViews */ = {
 			isa = PBXGroup;
 			children = (
-				AEC1BE35236990F000091475 /* PVScorecardTitleTableViewCell.h */,
-				AEC1BE31236990F000091475 /* PVScorecardTitleTableViewCell.m */,
-				AEC1BE2E236990F000091475 /* PVScorecardTimeStatisticsTableViewCell.h */,
-				AEC1BE32236990F000091475 /* PVScorecardTimeStatisticsTableViewCell.m */,
-				AEC1BE2F236990F000091475 /* PVScorecardTableViewCell.h */,
-				AEC1BE34236990F000091475 /* PVScorecardTableViewCell.m */,
-				AEC1BE30236990F000091475 /* PVScorecardOperationTableViewCell.h */,
-				AEC1BE33236990F000091475 /* PVScorecardOperationTableViewCell.m */,
-				AE95D22F237119A50033E085 /* PVScorecardSaveTableViewCell.h */,
-				AE95D230237119A50033E085 /* PVScorecardSaveTableViewCell.m */,
-				AE95D235237148880033E085 /* PVScoreSummaryTableViewCell.h */,
-				AE95D236237148880033E085 /* PVScoreSummaryTableViewCell.m */,
+				AEC1BE35236990F000091475 /* PVYWKScorecardTitleTableViewCell.h */,
+				AEC1BE31236990F000091475 /* PVYWKScorecardTitleTableViewCell.m */,
+				AEC1BE2E236990F000091475 /* PVYWKScorecardTimeStatisticsTableViewCell.h */,
+				AEC1BE32236990F000091475 /* PVYWKScorecardTimeStatisticsTableViewCell.m */,
+				AEC1BE2F236990F000091475 /* PVYWKScorecardTableViewCell.h */,
+				AEC1BE34236990F000091475 /* PVYWKScorecardTableViewCell.m */,
+				AEC1BE30236990F000091475 /* PVYWKScorecardOperationTableViewCell.h */,
+				AEC1BE33236990F000091475 /* PVYWKScorecardOperationTableViewCell.m */,
+				AE95D22F237119A50033E085 /* PVYWKScorecardSaveTableViewCell.h */,
+				AE95D230237119A50033E085 /* PVYWKScorecardSaveTableViewCell.m */,
+				AE95D235237148880033E085 /* PVYWKScoreSummaryTableViewCell.h */,
+				AE95D236237148880033E085 /* PVYWKScoreSummaryTableViewCell.m */,
 			);
-			path = Views;
+			path = PVYWKViews;
 			sourceTree = "<group>";
 		};
-		AEC1BE4C2369925600091475 /* Record */ = {
+		AEC1BE4C2369925600091475 /* PVYWKRecord */ = {
 			isa = PBXGroup;
 			children = (
-				AEC1BE532369925600091475 /* Views */,
-				AEC1BE4D2369925600091475 /* Controllers */,
+				AEC1BE532369925600091475 /* PVYWKViews */,
+				AEC1BE4D2369925600091475 /* PVYWKControllers */,
 			);
-			path = Record;
+			path = PVYWKRecord;
 			sourceTree = "<group>";
 		};
-		AEC1BE4D2369925600091475 /* Controllers */ = {
+		AEC1BE4D2369925600091475 /* PVYWKControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AEC1BE4F2369925600091475 /* PVRecordViewController.h */,
-				AEC1BE522369925600091475 /* PVRecordViewController.m */,
-				AEC1BE512369925600091475 /* PVRecordViewController.xib */,
-				AEC1BE4E2369925600091475 /* PVRecordDetailsViewController.h */,
-				AEC1BE502369925600091475 /* PVRecordDetailsViewController.m */,
+				AEC1BE4F2369925600091475 /* PVYWKRecordViewController.h */,
+				AEC1BE522369925600091475 /* PVYWKRecordViewController.m */,
+				AEC1BE512369925600091475 /* PVYWKRecordViewController.xib */,
+				AEC1BE4E2369925600091475 /* PVYWKRecordDetailsViewController.h */,
+				AEC1BE502369925600091475 /* PVYWKRecordDetailsViewController.m */,
 			);
-			path = Controllers;
+			path = PVYWKControllers;
 			sourceTree = "<group>";
 		};
-		AEC1BE532369925600091475 /* Views */ = {
+		AEC1BE532369925600091475 /* PVYWKViews */ = {
 			isa = PBXGroup;
 			children = (
-				AEC1BE552369925600091475 /* PVRecordTableViewCell.h */,
-				AEC1BE542369925600091475 /* PVRecordTableViewCell.m */,
+				AEC1BE552369925600091475 /* PVYWKRecordTableViewCell.h */,
+				AEC1BE542369925600091475 /* PVYWKRecordTableViewCell.m */,
 			);
-			path = Views;
+			path = PVYWKViews;
 			sourceTree = "<group>";
 		};
-		AEC1BE5A236992FE00091475 /* Mine */ = {
+		AEC1BE5A236992FE00091475 /* PVYWKMine */ = {
 			isa = PBXGroup;
 			children = (
-				AEC1BE5B236992FE00091475 /* Models */,
-				AEC1BE67236992FE00091475 /* Views */,
-				AEC1BE5E236992FE00091475 /* Controllers */,
+				AEC1BE5B236992FE00091475 /* PVYWKModels */,
+				AEC1BE67236992FE00091475 /* PVYWKViews */,
+				AEC1BE5E236992FE00091475 /* PVYWKControllers */,
 			);
-			path = Mine;
+			path = PVYWKMine;
 			sourceTree = "<group>";
 		};
-		AEC1BE5B236992FE00091475 /* Models */ = {
+		AEC1BE5B236992FE00091475 /* PVYWKModels */ = {
 			isa = PBXGroup;
 			children = (
-				AEC1BE5D236992FE00091475 /* PVSetViewModel.h */,
-				AEC1BE5C236992FE00091475 /* PVSetViewModel.m */,
+				AEC1BE5D236992FE00091475 /* PVYWKSetViewModel.h */,
+				AEC1BE5C236992FE00091475 /* PVYWKSetViewModel.m */,
 			);
-			path = Models;
+			path = PVYWKModels;
 			sourceTree = "<group>";
 		};
-		AEC1BE5E236992FE00091475 /* Controllers */ = {
+		AEC1BE5E236992FE00091475 /* PVYWKControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AEC1BE66236992FE00091475 /* PVLoginViewController.h */,
-				AEC1BE62236992FE00091475 /* PVLoginViewController.m */,
-				AEC1BE64236992FE00091475 /* PVMineViewController.h */,
-				AEC1BE60236992FE00091475 /* PVMineViewController.m */,
-				AEC1BE5F236992FE00091475 /* PVModifyNicknameViewController.h */,
-				AEC1BE63236992FE00091475 /* PVModifyNicknameViewController.m */,
-				AEC1BE61236992FE00091475 /* PVPasswordChangeViewController.h */,
-				AEC1BE65236992FE00091475 /* PVPasswordChangeViewController.m */,
+				AEC1BE66236992FE00091475 /* PVYWKLoginViewController.h */,
+				AEC1BE62236992FE00091475 /* PVYWKLoginViewController.m */,
+				AEC1BE64236992FE00091475 /* PVYWKMineViewController.h */,
+				AEC1BE60236992FE00091475 /* PVYWKMineViewController.m */,
+				AEC1BE5F236992FE00091475 /* PVYWKModifyNicknameViewController.h */,
+				AEC1BE63236992FE00091475 /* PVYWKModifyNicknameViewController.m */,
+				AEC1BE61236992FE00091475 /* PVYWKPasswordChangeViewController.h */,
+				AEC1BE65236992FE00091475 /* PVYWKPasswordChangeViewController.m */,
 			);
-			path = Controllers;
+			path = PVYWKControllers;
 			sourceTree = "<group>";
 		};
-		AEC1BE67236992FE00091475 /* Views */ = {
+		AEC1BE67236992FE00091475 /* PVYWKViews */ = {
 			isa = PBXGroup;
 			children = (
-				AEC1BE68236992FE00091475 /* PVLoginTableViewCell.h */,
-				AEC1BE6A236992FE00091475 /* PVLoginTableViewCell.m */,
-				AEC1BE6B236992FE00091475 /* PVSetTableViewCell.h */,
-				AEC1BE69236992FE00091475 /* PVSetTableViewCell.m */,
+				AEC1BE68236992FE00091475 /* PVYWKLoginTableViewCell.h */,
+				AEC1BE6A236992FE00091475 /* PVYWKLoginTableViewCell.m */,
+				AEC1BE6B236992FE00091475 /* PVYWKSetTableViewCell.h */,
+				AEC1BE69236992FE00091475 /* PVYWKSetTableViewCell.m */,
 			);
-			path = Views;
+			path = PVYWKViews;
 			sourceTree = "<group>";
 		};
 		D65D3887A644D991A02B11A7 /* Pods */ = {
@@ -463,7 +480,6 @@
 			knownRegions = (
 				en,
 				Base,
-				"zh-Hans",
 				ja,
 			);
 			mainGroup = AEC1BDD12369857200091475;
@@ -482,7 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEC1BDEA2369857700091475 /* Assets.xcassets in Resources */,
-				AEC1BE572369925600091475 /* PVRecordViewController.xib in Resources */,
+				AEC1BE572369925600091475 /* PVYWKRecordViewController.xib in Resources */,
 				AEC1BE2323698FEE00091475 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,37 +552,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEC1BE70236992FF00091475 /* PVPasswordChangeViewController.m in Sources */,
-				AEC1BE1623698E8200091475 /* MBProgressHUD+PVNJ.m in Sources */,
-				AE95D237237148880033E085 /* PVScoreSummaryTableViewCell.m in Sources */,
-				AEC1BE3B236990F000091475 /* PVScorecardOperationTableViewCell.m in Sources */,
-				AEC1BE71236992FF00091475 /* PVSetTableViewCell.m in Sources */,
-				AEC1BE38236990F000091475 /* PVScorecardViewController.m in Sources */,
-				AEC1BE582369925600091475 /* PVRecordViewController.m in Sources */,
+				AEC1BE70236992FF00091475 /* PVYWKPasswordChangeViewController.m in Sources */,
+				AEC1BE1623698E8200091475 /* MBProgressHUD+PVYWKNJ.m in Sources */,
+				AE95D237237148880033E085 /* PVYWKScoreSummaryTableViewCell.m in Sources */,
+				AEC1BE3B236990F000091475 /* PVYWKScorecardOperationTableViewCell.m in Sources */,
+				AEC1BE71236992FF00091475 /* PVYWKSetTableViewCell.m in Sources */,
+				AEC1BE38236990F000091475 /* PVYWKScorecardViewController.m in Sources */,
+				AEC1BE582369925600091475 /* PVYWKRecordViewController.m in Sources */,
 				AEC1BE1D23698E8200091475 /* NSArray+log.m in Sources */,
-				AEC1BE72236992FF00091475 /* PVLoginTableViewCell.m in Sources */,
+				AEC1BE72236992FF00091475 /* PVYWKLoginTableViewCell.m in Sources */,
 				AEC1BDDF2369857200091475 /* AppDelegate.m in Sources */,
-				AEC1BE562369925600091475 /* PVRecordDetailsViewController.m in Sources */,
-				AEC1BE1823698E8200091475 /* PVBaseViewController.m in Sources */,
-				AEC1BE6E236992FF00091475 /* PVLoginViewController.m in Sources */,
-				AEC1BE3C236990F000091475 /* PVScorecardTableViewCell.m in Sources */,
-				AEC1BE6C236992FF00091475 /* PVSetViewModel.m in Sources */,
-				AEC1BE1723698E8200091475 /* PVNDHTTPClient.m in Sources */,
-				AEC1BE36236990F000091475 /* PVScorecardViewModel.m in Sources */,
-				AEC1BE1423698E8200091475 /* PVHBTool.m in Sources */,
-				AEC1BE1223698E8200091475 /* PVTabBarController.m in Sources */,
-				AEC1BE1323698E8200091475 /* PVUIUtilities.m in Sources */,
+				AEC1BE562369925600091475 /* PVYWKRecordDetailsViewController.m in Sources */,
+				AEC1BE1823698E8200091475 /* PVYWKBaseViewController.m in Sources */,
+				AEC1BE6E236992FF00091475 /* PVYWKLoginViewController.m in Sources */,
+				AEC1BE3C236990F000091475 /* PVYWKScorecardTableViewCell.m in Sources */,
+				AEC1BE6C236992FF00091475 /* PVYWKSetViewModel.m in Sources */,
+				AEC1BE1723698E8200091475 /* PVYWKNDHTTPClient.m in Sources */,
+				AEC1BE36236990F000091475 /* PVYWKScorecardViewModel.m in Sources */,
+				AEC1BE1423698E8200091475 /* PVYWKHBTool.m in Sources */,
+				AEC1BE1223698E8200091475 /* PVYWKTabBarController.m in Sources */,
+				AEC1BE1323698E8200091475 /* PVYWKUIUtilities.m in Sources */,
 				AEC1BDF02369857700091475 /* main.m in Sources */,
-				AEC1BE39236990F000091475 /* PVScorecardTitleTableViewCell.m in Sources */,
-				AEC1BE3A236990F000091475 /* PVScorecardTimeStatisticsTableViewCell.m in Sources */,
-				AE95D2342371462B0033E085 /* PVBureauPointsModel.m in Sources */,
+				AEC1BE39236990F000091475 /* PVYWKScorecardTitleTableViewCell.m in Sources */,
+				AEC1BE3A236990F000091475 /* PVYWKScorecardTimeStatisticsTableViewCell.m in Sources */,
+				AE95D2342371462B0033E085 /* PVYWKBureauPointsModel.m in Sources */,
 				AEC1BE1523698E8200091475 /* NSDictionary+log.m in Sources */,
-				AEC1BE6D236992FF00091475 /* PVMineViewController.m in Sources */,
+				AEC1BE6D236992FF00091475 /* PVYWKMineViewController.m in Sources */,
 				AEC1BE1923698E8200091475 /* CalendarTool.m in Sources */,
-				AE95D231237119A50033E085 /* PVScorecardSaveTableViewCell.m in Sources */,
-				AEC1BE6F236992FF00091475 /* PVModifyNicknameViewController.m in Sources */,
-				AEC1BE37236990F000091475 /* PVScorecardModel.m in Sources */,
-				AEC1BE592369925600091475 /* PVRecordTableViewCell.m in Sources */,
+				AE95D231237119A50033E085 /* PVYWKScorecardSaveTableViewCell.m in Sources */,
+				AEC1BE6F236992FF00091475 /* PVYWKModifyNicknameViewController.m in Sources */,
+				AEC1BE37236990F000091475 /* PVYWKScorecardModel.m in Sources */,
+				AEC1BE592369925600091475 /* PVYWKRecordTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,7 +592,6 @@
 		AEC1BE1F23698FEE00091475 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AEC1BE2023698FEE00091475 /* zh-Hans */,
 				AEC1BE2123698FEE00091475 /* ja */,
 				AEC1BE2223698FEE00091475 /* en */,
 			);
@@ -707,8 +722,8 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FDW5VQ9SA2;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScore/Common/PV_PrefixHeader.pch";
-				INFOPLIST_FILE = PocketVolleyballScore/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScore/PVYWKCommon/PVYWK_PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/PocketVolleyballScore/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -716,9 +731,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketVolleyballScore/Common/JPush",
+					"$(PROJECT_DIR)/PocketVolleyballScore/PVYWKCommon/JPush",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = windy.GameAlert;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PocketVolleyballScore;
 				PROVISIONING_PROFILE_SPECIFIER = dev_GameAlert_pro_20200209;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -735,8 +752,8 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FDW5VQ9SA2;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScore/Common/PV_PrefixHeader.pch";
-				INFOPLIST_FILE = PocketVolleyballScore/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScore/PVYWKCommon/PVYWK_PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/PocketVolleyballScore/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -744,9 +761,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketVolleyballScore/Common/JPush",
+					"$(PROJECT_DIR)/PocketVolleyballScore/PVYWKCommon/JPush",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = windy.GameAlert;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PocketVolleyballScore;
 				PROVISIONING_PROFILE_SPECIFIER = dev_GameAlert_pro_20200209;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

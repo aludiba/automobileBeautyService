@@ -13,5 +13,7 @@ target 'PocketBasketballScore' do
     pod 'YYModel'
     pod 'IQKeyboardManager'
     pod 'BmobSDK'
+    pod 'JPush', '3.2.4-noidfa'
+    pod 'JCore', '2.1.4-noidfa'
     pod 'JTCalendar'
 end

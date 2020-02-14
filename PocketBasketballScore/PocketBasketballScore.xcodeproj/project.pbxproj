@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A0931D38F62095CD5FD8B7B6 /* Pods_PocketBasketballScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3CBE82C81CFA027D06FCDF /* Pods_PocketBasketballScore.framework */; };
-		AE096C9C2362E383000F37C0 /* jpush-ios-3.2.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE096C972362E383000F37C0 /* jpush-ios-3.2.6.a */; };
-		AE096C9D2362E383000F37C0 /* jcore-ios-2.1.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE096C992362E383000F37C0 /* jcore-ios-2.1.4.a */; };
 		AE096CA02362E3D6000F37C0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE096C9F2362E3D5000F37C0 /* AdSupport.framework */; };
 		AE096CA22362E3DE000F37C0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE096CA12362E3DE000F37C0 /* AVFoundation.framework */; };
 		AE096CA42362E3E7000F37C0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE096CA32362E3E6000F37C0 /* CFNetwork.framework */; };
@@ -62,9 +60,6 @@
 /* Begin PBXFileReference section */
 		3EFBF06AB3193076217CFDE2 /* Pods-PocketBasketballScore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBasketballScore.release.xcconfig"; path = "Target Support Files/Pods-PocketBasketballScore/Pods-PocketBasketballScore.release.xcconfig"; sourceTree = "<group>"; };
 		6D3CBE82C81CFA027D06FCDF /* Pods_PocketBasketballScore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketBasketballScore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE096C972362E383000F37C0 /* jpush-ios-3.2.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.6.a"; sourceTree = "<group>"; };
-		AE096C992362E383000F37C0 /* jcore-ios-2.1.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.1.4.a"; sourceTree = "<group>"; };
-		AE096C9A2362E383000F37C0 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
 		AE096C9E2362E3B8000F37C0 /* PocketBasketballScore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PocketBasketballScore.entitlements; sourceTree = "<group>"; };
 		AE096C9F2362E3D5000F37C0 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		AE096CA12362E3DE000F37C0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -155,7 +150,6 @@
 			files = (
 				AE096CA42362E3E7000F37C0 /* CFNetwork.framework in Frameworks */,
 				AE096CBE2362E4CA000F37C0 /* UIKit.framework in Frameworks */,
-				AE096C9C2362E383000F37C0 /* jpush-ios-3.2.6.a in Frameworks */,
 				AE096CAC2362E412000F37C0 /* CoreTelephony.framework in Frameworks */,
 				AE096CA02362E3D6000F37C0 /* AdSupport.framework in Frameworks */,
 				AE096CAA2362E407000F37C0 /* CoreLocation.framework in Frameworks */,
@@ -172,7 +166,6 @@
 				AE096CC02362E4DB000F37C0 /* UserNotifications.framework in Frameworks */,
 				AE096CC22362E4F4000F37C0 /* libresolv.tbd in Frameworks */,
 				AE096CB62362E4A2000F37C0 /* Photos.framework in Frameworks */,
-				AE096C9D2362E383000F37C0 /* jcore-ios-2.1.4.a in Frameworks */,
 				AE096CAE2362E41D000F37C0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,20 +208,9 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		AE096C952362E383000F37C0 /* JPush */ = {
-			isa = PBXGroup;
-			children = (
-				AE096C972362E383000F37C0 /* jpush-ios-3.2.6.a */,
-				AE096C992362E383000F37C0 /* jcore-ios-2.1.4.a */,
-				AE096C9A2362E383000F37C0 /* JPUSHService.h */,
-			);
-			path = JPush;
-			sourceTree = "<group>";
-		};
 		AE10A0EA236031B5009C7F2C /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				AE096C952362E383000F37C0 /* JPush */,
 				AE10A10323603236009C7F2C /* PB_PrefixHeader.pch */,
 				AE10A10423603236009C7F2C /* PBGlobal.h */,
 				AE10A0FA23603236009C7F2C /* CalendarTool.h */,
@@ -700,10 +682,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketBasketballScore/PocketBasketballScore.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Xu Zhu (V7MPXNZRG8)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: JEAN S Q Christ (GRCX8FPBD7)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CHP7QS3GTL;
+				DEVELOPMENT_TEAM = FDW5VQ9SA2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScore/Common/PB_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBasketballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -715,9 +697,9 @@
 					"$(PROJECT_DIR)/PocketBasketballScore/Common/JPush",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.PocketBasketballScore;
+				PRODUCT_BUNDLE_IDENTIFIER = windy.GameAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = dev_PocketBasketballScore_20191025;
+				PROVISIONING_PROFILE_SPECIFIER = dev_GameAlert_pro_20200209;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -729,10 +711,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketBasketballScore/PocketBasketballScore.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Xu Zhu (V7MPXNZRG8)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: JEAN S Q Christ (GRCX8FPBD7)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CHP7QS3GTL;
+				DEVELOPMENT_TEAM = FDW5VQ9SA2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScore/Common/PB_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBasketballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -744,9 +726,9 @@
 					"$(PROJECT_DIR)/PocketBasketballScore/Common/JPush",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.hb.PocketBasketballScore;
+				PRODUCT_BUNDLE_IDENTIFIER = windy.GameAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = dev_PocketBasketballScore_20191025;
+				PROVISIONING_PROFILE_SPECIFIER = dev_GameAlert_pro_20200209;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
