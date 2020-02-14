@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0E73534E0CA45DB73EFC1476 /* Pods_PocketVolleyballScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A0BF5BA5C3FAC5FD918FAD /* Pods_PocketVolleyballScore.framework */; };
-		AE8A1DC223F63BC1004FA2F1 /* jpush-extension-ios-1.1.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8A1DBE23F63BC0004FA2F1 /* jpush-extension-ios-1.1.2.a */; };
-		AE8A1DC323F63BC1004FA2F1 /* jpush-ios-3.2.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8A1DBF23F63BC0004FA2F1 /* jpush-ios-3.2.6.a */; };
 		AE95D231237119A50033E085 /* PVYWKScorecardSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95D230237119A50033E085 /* PVYWKScorecardSaveTableViewCell.m */; };
 		AE95D2342371462B0033E085 /* PVYWKBureauPointsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95D2332371462B0033E085 /* PVYWKBureauPointsModel.m */; };
 		AE95D237237148880033E085 /* PVYWKScoreSummaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95D236237148880033E085 /* PVYWKScoreSummaryTableViewCell.m */; };
@@ -44,45 +42,30 @@
 		AEC1BE70236992FF00091475 /* PVYWKPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE65236992FE00091475 /* PVYWKPasswordChangeViewController.m */; };
 		AEC1BE71236992FF00091475 /* PVYWKSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE69236992FE00091475 /* PVYWKSetTableViewCell.m */; };
 		AEC1BE72236992FF00091475 /* PVYWKLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1BE6A236992FE00091475 /* PVYWKLoginTableViewCell.m */; };
-		AECF7735238F9B2F00F65475 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7734238F9B2F00F65475 /* AdSupport.framework */; };
 		AECF7737238F9B3600F65475 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7736238F9B3600F65475 /* AVFoundation.framework */; };
-		AECF7739238F9B3E00F65475 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7738238F9B3D00F65475 /* CFNetwork.framework */; };
-		AECF773B238F9B4900F65475 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF773A238F9B4900F65475 /* CoreFoundation.framework */; };
-		AECF773D238F9B5300F65475 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF773C238F9B5300F65475 /* CoreGraphics.framework */; };
 		AECF773F238F9B5E00F65475 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF773E238F9B5E00F65475 /* CoreLocation.framework */; };
-		AECF7741238F9B6700F65475 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7740238F9B6700F65475 /* CoreTelephony.framework */; };
-		AECF7743238F9B6F00F65475 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7742238F9B6F00F65475 /* Foundation.framework */; };
 		AECF7745238F9B7700F65475 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7744238F9B7700F65475 /* ImageIO.framework */; };
 		AECF7747238F9B8600F65475 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7746238F9B8500F65475 /* MobileCoreServices.framework */; };
 		AECF7749238F9B9100F65475 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7748238F9B9100F65475 /* Photos.framework */; };
 		AECF774B238F9B9C00F65475 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF774A238F9B9C00F65475 /* QuartzCore.framework */; };
-		AECF774D238F9BA300F65475 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF774C238F9BA300F65475 /* Security.framework */; };
-		AECF774F238F9BA900F65475 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF774E238F9BA900F65475 /* SystemConfiguration.framework */; };
-		AECF7751238F9BB300F65475 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7750238F9BB300F65475 /* UIKit.framework */; };
-		AECF7753238F9BBD00F65475 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7752238F9BBD00F65475 /* UserNotifications.framework */; };
-		AECF7756238F9BEF00F65475 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7754238F9BCC00F65475 /* libresolv.tbd */; };
-		AECF7757238F9BF800F65475 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7755238F9BD800F65475 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27CD20C0A6F66DD960E8BEDD /* Pods-PocketVolleyballScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketVolleyballScore.debug.xcconfig"; path = "Target Support Files/Pods-PocketVolleyballScore/Pods-PocketVolleyballScore.debug.xcconfig"; sourceTree = "<group>"; };
 		3E7B142BE856A46822316937 /* Pods-PocketVolleyballScore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketVolleyballScore.release.xcconfig"; path = "Target Support Files/Pods-PocketVolleyballScore/Pods-PocketVolleyballScore.release.xcconfig"; sourceTree = "<group>"; };
-		AE8A1DBE23F63BC0004FA2F1 /* jpush-extension-ios-1.1.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-extension-ios-1.1.2.a"; sourceTree = "<group>"; };
-		AE8A1DBF23F63BC0004FA2F1 /* jpush-ios-3.2.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.6.a"; sourceTree = "<group>"; };
-		AE8A1DC123F63BC0004FA2F1 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		AE8A1DC423F66162004FA2F1 /* PocketVolleyballScore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PocketVolleyballScore.entitlements; sourceTree = "<group>"; };
 		AE95D22F237119A50033E085 /* PVYWKScorecardSaveTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVYWKScorecardSaveTableViewCell.h; sourceTree = "<group>"; };
 		AE95D230237119A50033E085 /* PVYWKScorecardSaveTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVYWKScorecardSaveTableViewCell.m; sourceTree = "<group>"; };
 		AE95D2322371462B0033E085 /* PVYWKBureauPointsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVYWKBureauPointsModel.h; sourceTree = "<group>"; };
 		AE95D2332371462B0033E085 /* PVYWKBureauPointsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVYWKBureauPointsModel.m; sourceTree = "<group>"; };
 		AE95D235237148880033E085 /* PVYWKScoreSummaryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVYWKScoreSummaryTableViewCell.h; sourceTree = "<group>"; };
 		AE95D236237148880033E085 /* PVYWKScoreSummaryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVYWKScoreSummaryTableViewCell.m; sourceTree = "<group>"; };
-		AEC1BDDA2369857200091475 /* PocketVolleyballScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketVolleyballScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC1BDDA2369857200091475 /* EfficientVolleyballScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EfficientVolleyballScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC1BDDD2369857200091475 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEC1BDDE2369857200091475 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AEC1BDE92369857700091475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEC1BDEE2369857700091475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEC1BDEF2369857700091475 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AEC1BDF623698A1700091475 /* PocketVolleyballScore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PocketVolleyballScore.entitlements; sourceTree = "<group>"; };
 		AEC1BDF823698E8200091475 /* PVYWKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWKBaseViewController.h; sourceTree = "<group>"; };
 		AEC1BDF923698E8200091475 /* PVYWK_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVYWK_PrefixHeader.pch; sourceTree = "<group>"; };
 		AEC1BDFA23698E8200091475 /* PVYWKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVYWKTabBarController.m; sourceTree = "<group>"; };
@@ -166,26 +149,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AECF7739238F9B3E00F65475 /* CFNetwork.framework in Frameworks */,
-				AECF7751238F9BB300F65475 /* UIKit.framework in Frameworks */,
-				AECF7741238F9B6700F65475 /* CoreTelephony.framework in Frameworks */,
-				AECF7735238F9B2F00F65475 /* AdSupport.framework in Frameworks */,
 				AECF773F238F9B5E00F65475 /* CoreLocation.framework in Frameworks */,
 				AECF774B238F9B9C00F65475 /* QuartzCore.framework in Frameworks */,
-				AE8A1DC323F63BC1004FA2F1 /* jpush-ios-3.2.6.a in Frameworks */,
-				AECF7756238F9BEF00F65475 /* libresolv.tbd in Frameworks */,
-				AE8A1DC223F63BC1004FA2F1 /* jpush-extension-ios-1.1.2.a in Frameworks */,
-				AECF774D238F9BA300F65475 /* Security.framework in Frameworks */,
-				AECF773B238F9B4900F65475 /* CoreFoundation.framework in Frameworks */,
-				AECF773D238F9B5300F65475 /* CoreGraphics.framework in Frameworks */,
 				AECF7737238F9B3600F65475 /* AVFoundation.framework in Frameworks */,
-				AECF774F238F9BA900F65475 /* SystemConfiguration.framework in Frameworks */,
 				AECF7747238F9B8600F65475 /* MobileCoreServices.framework in Frameworks */,
 				AECF7745238F9B7700F65475 /* ImageIO.framework in Frameworks */,
-				AECF7757238F9BF800F65475 /* libz.tbd in Frameworks */,
-				AECF7753238F9BBD00F65475 /* UserNotifications.framework in Frameworks */,
 				AECF7749238F9B9100F65475 /* Photos.framework in Frameworks */,
-				AECF7743238F9B6F00F65475 /* Foundation.framework in Frameworks */,
 				0E73534E0CA45DB73EFC1476 /* Pods_PocketVolleyballScore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,16 +188,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AE8A1DBD23F63BC0004FA2F1 /* JPush */ = {
-			isa = PBXGroup;
-			children = (
-				AE8A1DBE23F63BC0004FA2F1 /* jpush-extension-ios-1.1.2.a */,
-				AE8A1DBF23F63BC0004FA2F1 /* jpush-ios-3.2.6.a */,
-				AE8A1DC123F63BC0004FA2F1 /* JPUSHService.h */,
-			);
-			path = JPush;
-			sourceTree = "<group>";
-		};
 		AEC1BDD12369857200091475 = {
 			isa = PBXGroup;
 			children = (
@@ -242,7 +201,7 @@
 		AEC1BDDB2369857200091475 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AEC1BDDA2369857200091475 /* PocketVolleyballScore.app */,
+				AEC1BDDA2369857200091475 /* EfficientVolleyballScore.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -250,7 +209,7 @@
 		AEC1BDDC2369857200091475 /* PocketVolleyballScore */ = {
 			isa = PBXGroup;
 			children = (
-				AEC1BDF623698A1700091475 /* PocketVolleyballScore.entitlements */,
+				AE8A1DC423F66162004FA2F1 /* PocketVolleyballScore.entitlements */,
 				AEC1BDF723698E8200091475 /* PVYWKCommon */,
 				AEC1BE1E23698FEE00091475 /* PVYWKResources */,
 				AEC1BE24236990EF00091475 /* PVYWKScorecard */,
@@ -268,7 +227,6 @@
 		AEC1BDF723698E8200091475 /* PVYWKCommon */ = {
 			isa = PBXGroup;
 			children = (
-				AE8A1DBD23F63BC0004FA2F1 /* JPush */,
 				AEC1BDF923698E8200091475 /* PVYWK_PrefixHeader.pch */,
 				AEC1BE0823698E8200091475 /* PVYWKGlobal.h */,
 				AEC1BE0323698E8200091475 /* PVYWKHBTool.h */,
@@ -456,7 +414,7 @@
 			);
 			name = PocketVolleyballScore;
 			productName = PocketVolleyballScore;
-			productReference = AEC1BDDA2369857200091475 /* PocketVolleyballScore.app */;
+			productReference = AEC1BDDA2369857200091475 /* EfficientVolleyballScore.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -718,10 +676,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketVolleyballScore/PocketVolleyballScore.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: JEAN S Q Christ (GRCX8FPBD7)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Eleazar Perez (9NWMHUQ853)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FDW5VQ9SA2;
+				DEVELOPMENT_TEAM = 9NWMHUQ853;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScore/PVYWKCommon/PVYWK_PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/PocketVolleyballScore/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -734,9 +692,9 @@
 					"$(PROJECT_DIR)/PocketVolleyballScore/PVYWKCommon/JPush",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = windy.GameAlert;
-				PRODUCT_NAME = PocketVolleyballScore;
-				PROVISIONING_PROFILE_SPECIFIER = dev_GameAlert_pro_20200209;
+				PRODUCT_BUNDLE_IDENTIFIER = windy.EfficientVolleyballScore;
+				PRODUCT_NAME = EfficientVolleyballScore;
+				PROVISIONING_PROFILE_SPECIFIER = disPro_EfficientVolleyballScore_20200214;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -748,10 +706,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketVolleyballScore/PocketVolleyballScore.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: JEAN S Q Christ (GRCX8FPBD7)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Eleazar Perez (9NWMHUQ853)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FDW5VQ9SA2;
+				DEVELOPMENT_TEAM = 9NWMHUQ853;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScore/PVYWKCommon/PVYWK_PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/PocketVolleyballScore/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -764,9 +722,9 @@
 					"$(PROJECT_DIR)/PocketVolleyballScore/PVYWKCommon/JPush",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = windy.GameAlert;
-				PRODUCT_NAME = PocketVolleyballScore;
-				PROVISIONING_PROFILE_SPECIFIER = dev_GameAlert_pro_20200209;
+				PRODUCT_BUNDLE_IDENTIFIER = windy.EfficientVolleyballScore;
+				PRODUCT_NAME = EfficientVolleyballScore;
+				PROVISIONING_PROFILE_SPECIFIER = disPro_EfficientVolleyballScore_20200214;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
