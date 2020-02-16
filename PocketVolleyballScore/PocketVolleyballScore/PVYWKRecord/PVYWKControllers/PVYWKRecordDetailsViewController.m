@@ -112,6 +112,7 @@
 - (UITableView *)PVYWKmainTable{
     if (!_PVYWKmainTable) {
         _PVYWKmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _PVYWKmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
         _PVYWKmainTable.delegate = self;
         _PVYWKmainTable.dataSource = self;
         _PVYWKmainTable.rowHeight = UITableViewAutomaticDimension;

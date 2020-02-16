@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "AFSLoginViewController.h"
+#import "ZLLoginViewController.h"
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
@@ -23,21 +23,26 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self setJPush:launchOptions];
-    [Bmob resetDomain:@"http://convenientscore.jd127.cn"];
-    [Bmob registerWithAppKey:@"3b32beaaae004285519d31da13844710"];
+    [AVOSCloud setApplicationId:@"mG34aYISSTic5qVtir31dM6N-MdYXbMMI" clientKey:@"oLHtnYLqrERW7UvQ3UcnA3O5"];
+    [AVOSCloud setAllLogsEnabled:YES];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"AFSScout"];
-    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"AFSScout"]]];
-            self.window.rootViewController = [self rootController];
-            [self.window makeKeyAndVisible];
-    }];
+    self.window.rootViewController = [self rootController];
+    [self.window makeKeyAndVisible];
     return YES;
+}
+- (void)applicationDidBecomeActive:(UIApplication *)application{
+    NSString *URL = @"http://mock-api.com/Rz3yVMnM.mock/ZLBasketball";
+    [ZLNDHTTPClient ZLgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
+            NSArray *arr = (NSArray *)data;
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[arr lastObject]]];
+    }withErrorBlock:^(NSError *error, id errorData) {
+            
+    }];
 }
 - (UIViewController *)rootController{
         //进行操作
-        AFSTabBarController *tabVC = [AFSTabBarController shareInstance];
+        ZLTabBarController *tabVC = [ZLTabBarController shareInstance];
         return tabVC;
 }
 - (void)setJPush:(NSDictionary *)launchOptions{

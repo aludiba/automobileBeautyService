@@ -11,5 +11,7 @@ target 'ConvenientFootballScore' do
     pod 'MJRefresh'
     pod 'MBProgressHUD'
     pod 'YYModel'
-    pod 'BmobSDK'
+    pod 'AVOSCloud'
+    pod 'JCore', '2.1.4-noidfa'
+    pod 'JPush', '3.2.4-noidfa'
 end

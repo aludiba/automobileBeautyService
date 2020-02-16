@@ -71,19 +71,19 @@
         }];
         [self.PVYWKWithScoreLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.PVYWKScoreALbl.mas_bottom).offset(10);
-            make.leading.equalTo(self.PVYWKBackView).offset(54);
+            make.leading.equalTo(self.PVYWKBackView).offset(27);
             make.trailing.equalTo(self.PVYWKBackView).offset(-16);
             make.height.mas_equalTo(44);
         }];
         [self.PVYWKTotalTimeLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.PVYWKWithScoreLbl.mas_bottom).offset(10);
-            make.leading.equalTo(self.PVYWKBackView).offset(54);
+            make.leading.equalTo(self.PVYWKBackView).offset(27);
             make.trailing.equalTo(self.PVYWKBackView).offset(-16);
             make.height.mas_equalTo(44);
         }];
         [self.PVYWKEndTimeLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.PVYWKTotalTimeLbl.mas_bottom).offset(10);
-            make.leading.equalTo(self.PVYWKBackView).offset(54);
+            make.leading.equalTo(self.PVYWKBackView).offset(27);
             make.trailing.equalTo(self.PVYWKBackView).offset(-16);
             make.height.mas_equalTo(44);
             
@@ -135,7 +135,7 @@
         _PVYWKBackView.layer.masksToBounds = YES;
         _PVYWKBackView.layer.borderWidth = 2.0f;
         _PVYWKBackView.layer.borderColor = [UIColor systemRedColor].CGColor;
-        _PVYWKBackView.backgroundColor = [UIColor systemYellowColor];
+        _PVYWKBackView.backgroundColor = [UIColor systemGreenColor];
     }
     return _PVYWKBackView;
 }

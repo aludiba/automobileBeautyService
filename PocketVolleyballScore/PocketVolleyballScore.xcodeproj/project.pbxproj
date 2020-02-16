@@ -691,7 +691,7 @@
 					"$(PROJECT_DIR)/PocketVolleyballScore/Common/JPush",
 					"$(PROJECT_DIR)/PocketVolleyballScore/PVYWKCommon/JPush",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = windy.EfficientVolleyballScore;
 				PRODUCT_NAME = EfficientVolleyballScore;
 				PROVISIONING_PROFILE_SPECIFIER = disPro_EfficientVolleyballScore_20200214;
@@ -721,7 +721,7 @@
 					"$(PROJECT_DIR)/PocketVolleyballScore/Common/JPush",
 					"$(PROJECT_DIR)/PocketVolleyballScore/PVYWKCommon/JPush",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = windy.EfficientVolleyballScore;
 				PRODUCT_NAME = EfficientVolleyballScore;
 				PROVISIONING_PROFILE_SPECIFIER = disPro_EfficientVolleyballScore_20200214;

@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "WBYBKOKLoginViewController.h"
-#import "WBYBKOKNDHTTPClient.h"
+#import "ZLLoginViewController.h"
+#import "ZLNDHTTPClient.h"
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
@@ -32,17 +32,17 @@
     return YES;
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application{
-    NSString *URL = @"http://mock-api.com/Rz3yVMnM.mock/WBYBKOKBasketball";
-    [WBYBKOKNDHTTPClient WBYBKOKgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
+    NSString *URL = @"http://mock-api.com/Rz3yVMnM.mock/ZLBasketball";
+    [ZLNDHTTPClient ZLgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
             NSArray *arr = (NSArray *)data;
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[arr lastObject]]];
-        } withErrorBlock:^(NSError *error, id errorData) {
+    }withErrorBlock:^(NSError *error, id errorData) {
             
-        }];
+    }];
 }
 - (UIViewController *)rootController{
         //进行操作
-        WBYBKOKTabBarController *tabVC = [WBYBKOKTabBarController shareInstance];
+        ZLTabBarController *tabVC = [ZLTabBarController shareInstance];
         return tabVC;
 }
 - (void)setJPush:(NSDictionary *)launchOptions{
