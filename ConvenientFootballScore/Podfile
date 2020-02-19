@@ -6,6 +6,7 @@ target 'ConvenientFootballScore' do
   use_frameworks!
 
   # Pods for ConvenientFootballScore
+    pod 'VTMagic'
     pod 'Masonry'
     pod 'AFNetworking'
     pod 'MJRefresh'

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <WebKit/WebKit.h>
 #import "ZLLoginViewController.h"
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
@@ -23,19 +24,29 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self setJPush:launchOptions];
-    [AVOSCloud setApplicationId:@"mG34aYISSTic5qVtir31dM6N-MdYXbMMI" clientKey:@"oLHtnYLqrERW7UvQ3UcnA3O5"];
+    [AVOSCloud setApplicationId:@"0megPo6oNflIXCj8bD4SRf1Q-MdYXbMMI" clientKey:@"LLplbKahwrEobgRWQnDW5Y6H"];
     [AVOSCloud setAllLogsEnabled:YES];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [self rootController];
     [self.window makeKeyAndVisible];
+    self.window.backgroundColor = [UIColor whiteColor];
     return YES;
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application{
-    NSString *URL = @"http://mock-api.com/Rz3yVMnM.mock/ZLBasketball";
-    [ZLNDHTTPClient ZLgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
-            NSArray *arr = (NSArray *)data;
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[arr lastObject]]];
+//    NSString *URL = @"http://mock-api.com/jz89Geg4.mock/ZLFootball";
+//    [ZLNDHTTPClient ZLgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
+//        NSArray *arr = (NSArray *)data;
+//        if (arr) {
+//        WKWebView *_webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, ZLWIDTH, ZLHEIGHT)];
+//        [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[arr lastObject]]]];
+//        [self.window addSubview:_webView];
+//        }
+//    }withErrorBlock:^(NSError *error, id errorData) {
+//            
+//    }];
+    NSString *URL1 = @"http://mock-api.com/jz89Geg4.mock/ZLBasketball";
+    [ZLNDHTTPClient ZLgetURLStringNoHUD:URL1 withParam:nil withSuccessBlock:^(id data) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[(NSArray *)data lastObject]]];
     }withErrorBlock:^(NSError *error, id errorData) {
             
     }];
@@ -65,7 +76,7 @@
     // Required
     // init Push
     // notice: 2.1.5 版本的 SDK 新增的注册方法，改成可上报 IDFA，如果没有使用 IDFA 直接传 nil
-    [JPUSHService setupWithOption:launchOptions appKey:@"a87863f8e3e963b219203454"
+    [JPUSHService setupWithOption:launchOptions appKey:@"50f5f868dc22527b8f8a2d7b"
                           channel:@"App Store"
                  apsForProduction:1];
 }

@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		346E9C87ADB01A9A8255FFC5 /* Pods_ConvenientFootballScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9A2A88F0D4A28FA9ADE10B /* Pods_ConvenientFootballScore.framework */; };
+		AE18F18C23FB90B9004B7892 /* ZLScorecardFootballViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE18F18B23FB90B9004B7892 /* ZLScorecardFootballViewController.m */; };
+		AE18F18F23FB90E7004B7892 /* ZLScorecardBasketballViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE18F18E23FB90E7004B7892 /* ZLScorecardBasketballViewController.m */; };
+		AE18F19423FB9F7B004B7892 /* ZLBasketballScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE18F19223FB9F7A004B7892 /* ZLBasketballScorecardModel.m */; };
+		AE18F19523FB9F7B004B7892 /* ZLBasketballScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE18F19323FB9F7B004B7892 /* ZLBasketballScorecardViewModel.m */; };
+		AE18F1AA23FBA07A004B7892 /* ZLBasketballTimePortionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE18F1A223FBA079004B7892 /* ZLBasketballTimePortionTableViewCell.m */; };
+		AE18F1AB23FBA07A004B7892 /* ZLBasketballScoringSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE18F1A523FBA079004B7892 /* ZLBasketballScoringSaveTableViewCell.m */; };
+		AE18F1AC23FBA07A004B7892 /* ZLBasketballBothTeamsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE18F1A723FBA079004B7892 /* ZLBasketballBothTeamsTableViewCell.m */; };
+		AE18F1AD23FBA07A004B7892 /* ZLBasketballScoringPartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE18F1A823FBA079004B7892 /* ZLBasketballScoringPartTableViewCell.m */; };
+		AE18F1B023FBB09D004B7892 /* ZLFootballRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE18F1AF23FBB09D004B7892 /* ZLFootballRecordViewController.m */; };
+		AE18F1B323FBB0D9004B7892 /* ZLBasketballRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE18F1B223FBB0D9004B7892 /* ZLBasketballRecordViewController.m */; };
+		AE18F1B623FBBC19004B7892 /* ZLBasketballRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE18F1B523FBBC19004B7892 /* ZLBasketballRecordTableViewCell.m */; };
 		AE2788E423A71AF1006C700E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2788E323A71AF1006C700E /* AppDelegate.m */; };
 		AE2788EF23A71AF5006C700E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2788EE23A71AF5006C700E /* Assets.xcassets */; };
 		AE2788F523A71AF5006C700E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2788F423A71AF5006C700E /* main.m */; };
@@ -60,7 +71,29 @@
 		722B16C523BAEABD00486381 /* ConvenientFootballScore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConvenientFootballScore.entitlements; sourceTree = "<group>"; };
 		7D9A2A88F0D4A28FA9ADE10B /* Pods_ConvenientFootballScore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConvenientFootballScore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D70A34C6121B4D85107E1B /* Pods-ConvenientFootballScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvenientFootballScore.debug.xcconfig"; path = "Target Support Files/Pods-ConvenientFootballScore/Pods-ConvenientFootballScore.debug.xcconfig"; sourceTree = "<group>"; };
-		AE2788DF23A71AF1006C700E /* EfficientFootballBasketballScores.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EfficientFootballBasketballScores.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE18F18A23FB90B9004B7892 /* ZLScorecardFootballViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLScorecardFootballViewController.h; sourceTree = "<group>"; };
+		AE18F18B23FB90B9004B7892 /* ZLScorecardFootballViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLScorecardFootballViewController.m; sourceTree = "<group>"; };
+		AE18F18D23FB90E7004B7892 /* ZLScorecardBasketballViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLScorecardBasketballViewController.h; sourceTree = "<group>"; };
+		AE18F18E23FB90E7004B7892 /* ZLScorecardBasketballViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLScorecardBasketballViewController.m; sourceTree = "<group>"; };
+		AE18F19023FB9F7A004B7892 /* ZLBasketballScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLBasketballScorecardModel.h; sourceTree = "<group>"; };
+		AE18F19123FB9F7A004B7892 /* ZLBasketballScorecardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLBasketballScorecardViewModel.h; sourceTree = "<group>"; };
+		AE18F19223FB9F7A004B7892 /* ZLBasketballScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLBasketballScorecardModel.m; sourceTree = "<group>"; };
+		AE18F19323FB9F7B004B7892 /* ZLBasketballScorecardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLBasketballScorecardViewModel.m; sourceTree = "<group>"; };
+		AE18F1A223FBA079004B7892 /* ZLBasketballTimePortionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLBasketballTimePortionTableViewCell.m; sourceTree = "<group>"; };
+		AE18F1A323FBA079004B7892 /* ZLBasketballScoringPartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLBasketballScoringPartTableViewCell.h; sourceTree = "<group>"; };
+		AE18F1A423FBA079004B7892 /* ZLBasketballTimePortionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLBasketballTimePortionTableViewCell.h; sourceTree = "<group>"; };
+		AE18F1A523FBA079004B7892 /* ZLBasketballScoringSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLBasketballScoringSaveTableViewCell.m; sourceTree = "<group>"; };
+		AE18F1A623FBA079004B7892 /* ZLBasketballBothTeamsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLBasketballBothTeamsTableViewCell.h; sourceTree = "<group>"; };
+		AE18F1A723FBA079004B7892 /* ZLBasketballBothTeamsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLBasketballBothTeamsTableViewCell.m; sourceTree = "<group>"; };
+		AE18F1A823FBA079004B7892 /* ZLBasketballScoringPartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLBasketballScoringPartTableViewCell.m; sourceTree = "<group>"; };
+		AE18F1A923FBA07A004B7892 /* ZLBasketballScoringSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLBasketballScoringSaveTableViewCell.h; sourceTree = "<group>"; };
+		AE18F1AE23FBB09D004B7892 /* ZLFootballRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLFootballRecordViewController.h; sourceTree = "<group>"; };
+		AE18F1AF23FBB09D004B7892 /* ZLFootballRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLFootballRecordViewController.m; sourceTree = "<group>"; };
+		AE18F1B123FBB0D9004B7892 /* ZLBasketballRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLBasketballRecordViewController.h; sourceTree = "<group>"; };
+		AE18F1B223FBB0D9004B7892 /* ZLBasketballRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLBasketballRecordViewController.m; sourceTree = "<group>"; };
+		AE18F1B423FBBC19004B7892 /* ZLBasketballRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLBasketballRecordTableViewCell.h; sourceTree = "<group>"; };
+		AE18F1B523FBBC19004B7892 /* ZLBasketballRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLBasketballRecordTableViewCell.m; sourceTree = "<group>"; };
+		AE2788DF23A71AF1006C700E /* FootballBasketballScores.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballBasketballScores.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2788E223A71AF1006C700E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE2788E323A71AF1006C700E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AE2788EE23A71AF5006C700E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -189,7 +222,7 @@
 		AE2788E023A71AF1006C700E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE2788DF23A71AF1006C700E /* EfficientFootballBasketballScores.app */,
+				AE2788DF23A71AF1006C700E /* FootballBasketballScores.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,11 +233,11 @@
 				722B16C523BAEABD00486381 /* ConvenientFootballScore.entitlements */,
 				AE2788E223A71AF1006C700E /* AppDelegate.h */,
 				AE2788E323A71AF1006C700E /* AppDelegate.m */,
-				AE27895823A728E0006C700E /* Resources */,
-				AE27893123A7270E006C700E /* Common */,
-				AE27891823A7261B006C700E /* Scorecard */,
-				AE27890E23A72550006C700E /* Record */,
-				AE2788FB23A723F2006C700E /* Mine */,
+				AE27895823A728E0006C700E /* ZLResources */,
+				AE27893123A7270E006C700E /* ZLCommon */,
+				AE27891823A7261B006C700E /* ZLScorecard */,
+				AE27890E23A72550006C700E /* ZLRecord */,
+				AE2788FB23A723F2006C700E /* ZLMine */,
 				AE2788EE23A71AF5006C700E /* Assets.xcassets */,
 				AE2788F323A71AF5006C700E /* Info.plist */,
 				AE2788F423A71AF5006C700E /* main.m */,
@@ -212,26 +245,26 @@
 			path = ConvenientFootballScore;
 			sourceTree = "<group>";
 		};
-		AE2788FB23A723F2006C700E /* Mine */ = {
+		AE2788FB23A723F2006C700E /* ZLMine */ = {
 			isa = PBXGroup;
 			children = (
-				AE2788FC23A723F2006C700E /* Models */,
-				AE27890623A723F2006C700E /* Views */,
-				AE2788FF23A723F2006C700E /* Controllers */,
+				AE2788FC23A723F2006C700E /* ZLModels */,
+				AE27890623A723F2006C700E /* ZLViews */,
+				AE2788FF23A723F2006C700E /* ZLControllers */,
 			);
-			path = Mine;
+			path = ZLMine;
 			sourceTree = "<group>";
 		};
-		AE2788FC23A723F2006C700E /* Models */ = {
+		AE2788FC23A723F2006C700E /* ZLModels */ = {
 			isa = PBXGroup;
 			children = (
 				AE2788FE23A723F2006C700E /* ZLSetViewModel.h */,
 				AE2788FD23A723F2006C700E /* ZLSetViewModel.m */,
 			);
-			path = Models;
+			path = ZLModels;
 			sourceTree = "<group>";
 		};
-		AE2788FF23A723F2006C700E /* Controllers */ = {
+		AE2788FF23A723F2006C700E /* ZLControllers */ = {
 			isa = PBXGroup;
 			children = (
 				AE27890023A723F2006C700E /* ZLMineViewController.h */,
@@ -241,84 +274,98 @@
 				AE27890223A723F2006C700E /* ZLPasswordChangeViewController.h */,
 				AE27890523A723F2006C700E /* ZLPasswordChangeViewController.m */,
 			);
-			path = Controllers;
+			path = ZLControllers;
 			sourceTree = "<group>";
 		};
-		AE27890623A723F2006C700E /* Views */ = {
+		AE27890623A723F2006C700E /* ZLViews */ = {
 			isa = PBXGroup;
 			children = (
 				AE27890823A723F3006C700E /* ZLLoginTableViewCell.h */,
 				AE27890723A723F2006C700E /* ZLLoginTableViewCell.m */,
 			);
-			path = Views;
+			path = ZLViews;
 			sourceTree = "<group>";
 		};
-		AE27890E23A72550006C700E /* Record */ = {
+		AE27890E23A72550006C700E /* ZLRecord */ = {
 			isa = PBXGroup;
 			children = (
-				AE27890F23A72550006C700E /* Models */,
-				AE27891023A72550006C700E /* Controllers */,
-				AE27891323A72550006C700E /* Views */,
+				AE27890F23A72550006C700E /* ZLModels */,
+				AE27891023A72550006C700E /* ZLControllers */,
+				AE27891323A72550006C700E /* ZLViews */,
 			);
-			path = Record;
+			path = ZLRecord;
 			sourceTree = "<group>";
 		};
-		AE27890F23A72550006C700E /* Models */ = {
+		AE27890F23A72550006C700E /* ZLModels */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Models;
+			path = ZLModels;
 			sourceTree = "<group>";
 		};
-		AE27891023A72550006C700E /* Controllers */ = {
+		AE27891023A72550006C700E /* ZLControllers */ = {
 			isa = PBXGroup;
 			children = (
 				AE27891123A72550006C700E /* ZLRecordViewController.h */,
 				AE27891223A72550006C700E /* ZLRecordViewController.m */,
+				AE18F1AE23FBB09D004B7892 /* ZLFootballRecordViewController.h */,
+				AE18F1AF23FBB09D004B7892 /* ZLFootballRecordViewController.m */,
+				AE18F1B123FBB0D9004B7892 /* ZLBasketballRecordViewController.h */,
+				AE18F1B223FBB0D9004B7892 /* ZLBasketballRecordViewController.m */,
 			);
-			path = Controllers;
+			path = ZLControllers;
 			sourceTree = "<group>";
 		};
-		AE27891323A72550006C700E /* Views */ = {
+		AE27891323A72550006C700E /* ZLViews */ = {
 			isa = PBXGroup;
 			children = (
 				AE27891523A72550006C700E /* ZLRecordTableViewCell.h */,
 				AE27891423A72550006C700E /* ZLRecordTableViewCell.m */,
+				AE18F1B423FBBC19004B7892 /* ZLBasketballRecordTableViewCell.h */,
+				AE18F1B523FBBC19004B7892 /* ZLBasketballRecordTableViewCell.m */,
 			);
-			path = Views;
+			path = ZLViews;
 			sourceTree = "<group>";
 		};
-		AE27891823A7261B006C700E /* Scorecard */ = {
+		AE27891823A7261B006C700E /* ZLScorecard */ = {
 			isa = PBXGroup;
 			children = (
-				AE27891923A7261B006C700E /* Models */,
-				AE27891E23A7261B006C700E /* Controllers */,
-				AE27892123A7261B006C700E /* Views */,
+				AE27891923A7261B006C700E /* ZLModels */,
+				AE27891E23A7261B006C700E /* ZLControllers */,
+				AE27892123A7261B006C700E /* ZLViews */,
 			);
-			path = Scorecard;
+			path = ZLScorecard;
 			sourceTree = "<group>";
 		};
-		AE27891923A7261B006C700E /* Models */ = {
+		AE27891923A7261B006C700E /* ZLModels */ = {
 			isa = PBXGroup;
 			children = (
 				AE27891A23A7261B006C700E /* ZLScorecardViewModel.h */,
 				AE27891C23A7261B006C700E /* ZLScorecardViewModel.m */,
 				AE27891D23A7261B006C700E /* ZLScorecardModel.h */,
 				AE27891B23A7261B006C700E /* ZLScorecardModel.m */,
+				AE18F19023FB9F7A004B7892 /* ZLBasketballScorecardModel.h */,
+				AE18F19223FB9F7A004B7892 /* ZLBasketballScorecardModel.m */,
+				AE18F19123FB9F7A004B7892 /* ZLBasketballScorecardViewModel.h */,
+				AE18F19323FB9F7B004B7892 /* ZLBasketballScorecardViewModel.m */,
 			);
-			path = Models;
+			path = ZLModels;
 			sourceTree = "<group>";
 		};
-		AE27891E23A7261B006C700E /* Controllers */ = {
+		AE27891E23A7261B006C700E /* ZLControllers */ = {
 			isa = PBXGroup;
 			children = (
 				AE27891F23A7261B006C700E /* ZLScorecardViewController.h */,
 				AE27892023A7261B006C700E /* ZLScorecardViewController.m */,
+				AE18F18A23FB90B9004B7892 /* ZLScorecardFootballViewController.h */,
+				AE18F18B23FB90B9004B7892 /* ZLScorecardFootballViewController.m */,
+				AE18F18D23FB90E7004B7892 /* ZLScorecardBasketballViewController.h */,
+				AE18F18E23FB90E7004B7892 /* ZLScorecardBasketballViewController.m */,
 			);
-			path = Controllers;
+			path = ZLControllers;
 			sourceTree = "<group>";
 		};
-		AE27892123A7261B006C700E /* Views */ = {
+		AE27892123A7261B006C700E /* ZLViews */ = {
 			isa = PBXGroup;
 			children = (
 				AE27892323A7261B006C700E /* ZLScoringPartTableViewCell.h */,
@@ -329,11 +376,19 @@
 				AE27892223A7261B006C700E /* ZLBothTeamsTableViewCell.m */,
 				AE27892423A7261B006C700E /* ZLScoringSaveTableViewCell.h */,
 				AE27892823A7261B006C700E /* ZLScoringSaveTableViewCell.m */,
+				AE18F1A623FBA079004B7892 /* ZLBasketballBothTeamsTableViewCell.h */,
+				AE18F1A723FBA079004B7892 /* ZLBasketballBothTeamsTableViewCell.m */,
+				AE18F1A323FBA079004B7892 /* ZLBasketballScoringPartTableViewCell.h */,
+				AE18F1A823FBA079004B7892 /* ZLBasketballScoringPartTableViewCell.m */,
+				AE18F1A923FBA07A004B7892 /* ZLBasketballScoringSaveTableViewCell.h */,
+				AE18F1A523FBA079004B7892 /* ZLBasketballScoringSaveTableViewCell.m */,
+				AE18F1A423FBA079004B7892 /* ZLBasketballTimePortionTableViewCell.h */,
+				AE18F1A223FBA079004B7892 /* ZLBasketballTimePortionTableViewCell.m */,
 			);
-			path = Views;
+			path = ZLViews;
 			sourceTree = "<group>";
 		};
-		AE27893123A7270E006C700E /* Common */ = {
+		AE27893123A7270E006C700E /* ZLCommon */ = {
 			isa = PBXGroup;
 			children = (
 				AE27894B23A7270F006C700E /* ZL_PrefixHeader.pch */,
@@ -357,15 +412,15 @@
 				AE27893C23A7270F006C700E /* ZLTabBarController.h */,
 				AE27893523A7270E006C700E /* ZLTabBarController.m */,
 			);
-			path = Common;
+			path = ZLCommon;
 			sourceTree = "<group>";
 		};
-		AE27895823A728E0006C700E /* Resources */ = {
+		AE27895823A728E0006C700E /* ZLResources */ = {
 			isa = PBXGroup;
 			children = (
 				AE27895923A728E0006C700E /* Localizable.strings */,
 			);
-			path = Resources;
+			path = ZLResources;
 			sourceTree = "<group>";
 		};
 		FFEE1289088BB68EE8390401 /* Frameworks */ = {
@@ -413,7 +468,7 @@
 			);
 			name = ConvenientFootballScore;
 			productName = ConvenientFootballScore;
-			productReference = AE2788DF23A71AF1006C700E /* EfficientFootballBasketballScores.app */;
+			productReference = AE2788DF23A71AF1006C700E /* FootballBasketballScores.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -510,30 +565,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE27892C23A7261B006C700E /* ZLScorecardViewController.m in Sources */,
+				AE18F19523FB9F7B004B7892 /* ZLBasketballScorecardViewModel.m in Sources */,
 				AE27895323A7270F006C700E /* CalendarTool.m in Sources */,
+				AE18F1B623FBBC19004B7892 /* ZLBasketballRecordTableViewCell.m in Sources */,
 				AE27895023A7270F006C700E /* ZLUIUtilities.m in Sources */,
+				AE18F1AC23FBA07A004B7892 /* ZLBasketballBothTeamsTableViewCell.m in Sources */,
 				AE27890923A723F3006C700E /* ZLSetViewModel.m in Sources */,
+				AE18F1B023FBB09D004B7892 /* ZLFootballRecordViewController.m in Sources */,
 				AE27892D23A7261B006C700E /* ZLBothTeamsTableViewCell.m in Sources */,
 				AE2788E423A71AF1006C700E /* AppDelegate.m in Sources */,
 				AE27894C23A7270F006C700E /* ZLBaseViewController.m in Sources */,
 				AE27891623A72550006C700E /* ZLRecordViewController.m in Sources */,
 				AE27892B23A7261B006C700E /* ZLScorecardViewModel.m in Sources */,
 				AE27892A23A7261B006C700E /* ZLScorecardModel.m in Sources */,
+				AE18F18F23FB90E7004B7892 /* ZLScorecardBasketballViewController.m in Sources */,
 				AE27892F23A7261B006C700E /* ZLScoringSaveTableViewCell.m in Sources */,
 				AE27895123A7270F006C700E /* MBProgressHUD+ZLNJ.m in Sources */,
+				AE18F19423FB9F7B004B7892 /* ZLBasketballScorecardModel.m in Sources */,
 				AE27890C23A723F3006C700E /* ZLPasswordChangeViewController.m in Sources */,
+				AE18F1B323FBB0D9004B7892 /* ZLBasketballRecordViewController.m in Sources */,
 				AE27891723A72550006C700E /* ZLRecordTableViewCell.m in Sources */,
 				AE2788F523A71AF5006C700E /* main.m in Sources */,
 				AE27890A23A723F3006C700E /* ZLLoginViewController.m in Sources */,
 				AE27892E23A7261B006C700E /* ZLScoringPartTableViewCell.m in Sources */,
+				AE18F1AD23FBA07A004B7892 /* ZLBasketballScoringPartTableViewCell.m in Sources */,
 				AE27893023A7261B006C700E /* ZLTimePortionTableViewCell.m in Sources */,
 				AE27890B23A723F3006C700E /* ZLMineViewController.m in Sources */,
 				AE27894E23A7270F006C700E /* ZLTabBarController.m in Sources */,
+				AE18F18C23FB90B9004B7892 /* ZLScorecardFootballViewController.m in Sources */,
 				AE27895223A7270F006C700E /* ZLHBTool.m in Sources */,
+				AE18F1AB23FBA07A004B7892 /* ZLBasketballScoringSaveTableViewCell.m in Sources */,
 				AE27895723A7270F006C700E /* NSArray+log.m in Sources */,
 				AE27894F23A7270F006C700E /* ZLNDHTTPClient.m in Sources */,
 				AE27890D23A723F3006C700E /* ZLLoginTableViewCell.m in Sources */,
 				AE27894D23A7270F006C700E /* NSDictionary+log.m in Sources */,
+				AE18F1AA23FBA07A004B7892 /* ZLBasketballTimePortionTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,12 +736,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = ConvenientFootballScore/ConvenientFootballScore.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: JEAN S Q Christ (GRCX8FPBD7)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Adam Clark (S955USHW8V)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FDW5VQ9SA2;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = S955USHW8V;
 				ENABLE_BITCODE = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/ConvenientFootballScore/Common/ZL_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ConvenientFootballScore/ZLCommon/ZL_PrefixHeader.pch";
 				INFOPLIST_FILE = ConvenientFootballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -686,9 +752,9 @@
 					"$(PROJECT_DIR)/ConvenientFootballScore/Common/JPush",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = windy.GameAlert;
-				PRODUCT_NAME = EfficientFootballBasketballScores;
-				PROVISIONING_PROFILE_SPECIFIER = dev_GameAlert_pro_20200209;
+				PRODUCT_BUNDLE_IDENTIFIER = windy.EfficientFootballBasketballScores;
+				PRODUCT_NAME = FootballBasketballScores;
+				PROVISIONING_PROFILE_SPECIFIER = disPro_EfficientFootballBasketballScores_20200218;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -700,12 +766,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = ConvenientFootballScore/ConvenientFootballScore.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: JEAN S Q Christ (GRCX8FPBD7)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Adam Clark (S955USHW8V)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FDW5VQ9SA2;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = S955USHW8V;
 				ENABLE_BITCODE = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/ConvenientFootballScore/Common/ZL_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ConvenientFootballScore/ZLCommon/ZL_PrefixHeader.pch";
 				INFOPLIST_FILE = ConvenientFootballScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -716,9 +782,9 @@
 					"$(PROJECT_DIR)/ConvenientFootballScore/Common/JPush",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = windy.GameAlert;
-				PRODUCT_NAME = EfficientFootballBasketballScores;
-				PROVISIONING_PROFILE_SPECIFIER = dev_GameAlert_pro_20200209;
+				PRODUCT_BUNDLE_IDENTIFIER = windy.EfficientFootballBasketballScores;
+				PRODUCT_NAME = FootballBasketballScores;
+				PROVISIONING_PROFILE_SPECIFIER = disPro_EfficientFootballBasketballScores_20200218;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
