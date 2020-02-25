@@ -19,6 +19,7 @@
 		AE18F1B023FBB09D004B7892 /* ZLFootballRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE18F1AF23FBB09D004B7892 /* ZLFootballRecordViewController.m */; };
 		AE18F1B323FBB0D9004B7892 /* ZLBasketballRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE18F1B223FBB0D9004B7892 /* ZLBasketballRecordViewController.m */; };
 		AE18F1B623FBBC19004B7892 /* ZLBasketballRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE18F1B523FBBC19004B7892 /* ZLBasketballRecordTableViewCell.m */; };
+		AE18F1C22404AB60004B7892 /* ZLScorecardDataDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE18F1C12404AB60004B7892 /* ZLScorecardDataDetailViewController.m */; };
 		AE2788E423A71AF1006C700E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2788E323A71AF1006C700E /* AppDelegate.m */; };
 		AE2788EF23A71AF5006C700E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2788EE23A71AF5006C700E /* Assets.xcassets */; };
 		AE2788F523A71AF5006C700E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2788F423A71AF5006C700E /* main.m */; };
@@ -93,6 +94,8 @@
 		AE18F1B223FBB0D9004B7892 /* ZLBasketballRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLBasketballRecordViewController.m; sourceTree = "<group>"; };
 		AE18F1B423FBBC19004B7892 /* ZLBasketballRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLBasketballRecordTableViewCell.h; sourceTree = "<group>"; };
 		AE18F1B523FBBC19004B7892 /* ZLBasketballRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLBasketballRecordTableViewCell.m; sourceTree = "<group>"; };
+		AE18F1C02404AB60004B7892 /* ZLScorecardDataDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLScorecardDataDetailViewController.h; sourceTree = "<group>"; };
+		AE18F1C12404AB60004B7892 /* ZLScorecardDataDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLScorecardDataDetailViewController.m; sourceTree = "<group>"; };
 		AE2788DF23A71AF1006C700E /* FootballBasketballScores.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballBasketballScores.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2788E223A71AF1006C700E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE2788E323A71AF1006C700E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -361,6 +364,8 @@
 				AE18F18B23FB90B9004B7892 /* ZLScorecardFootballViewController.m */,
 				AE18F18D23FB90E7004B7892 /* ZLScorecardBasketballViewController.h */,
 				AE18F18E23FB90E7004B7892 /* ZLScorecardBasketballViewController.m */,
+				AE18F1C02404AB60004B7892 /* ZLScorecardDataDetailViewController.h */,
+				AE18F1C12404AB60004B7892 /* ZLScorecardDataDetailViewController.m */,
 			);
 			path = ZLControllers;
 			sourceTree = "<group>";
@@ -579,6 +584,7 @@
 				AE27892B23A7261B006C700E /* ZLScorecardViewModel.m in Sources */,
 				AE27892A23A7261B006C700E /* ZLScorecardModel.m in Sources */,
 				AE18F18F23FB90E7004B7892 /* ZLScorecardBasketballViewController.m in Sources */,
+				AE18F1C22404AB60004B7892 /* ZLScorecardDataDetailViewController.m in Sources */,
 				AE27892F23A7261B006C700E /* ZLScoringSaveTableViewCell.m in Sources */,
 				AE27895123A7270F006C700E /* MBProgressHUD+ZLNJ.m in Sources */,
 				AE18F19423FB9F7B004B7892 /* ZLBasketballScorecardModel.m in Sources */,
@@ -738,7 +744,7 @@
 				CODE_SIGN_ENTITLEMENTS = ConvenientFootballScore/ConvenientFootballScore.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Adam Clark (S955USHW8V)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S955USHW8V;
 				ENABLE_BITCODE = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ConvenientFootballScore/ZLCommon/ZL_PrefixHeader.pch";
@@ -751,7 +757,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ConvenientFootballScore/Common/JPush",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = windy.EfficientFootballBasketballScores;
 				PRODUCT_NAME = FootballBasketballScores;
 				PROVISIONING_PROFILE_SPECIFIER = disPro_EfficientFootballBasketballScores_20200218;
@@ -768,7 +774,7 @@
 				CODE_SIGN_ENTITLEMENTS = ConvenientFootballScore/ConvenientFootballScore.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Adam Clark (S955USHW8V)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S955USHW8V;
 				ENABLE_BITCODE = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ConvenientFootballScore/ZLCommon/ZL_PrefixHeader.pch";
@@ -781,7 +787,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ConvenientFootballScore/Common/JPush",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = windy.EfficientFootballBasketballScores;
 				PRODUCT_NAME = FootballBasketballScores;
 				PROVISIONING_PROFILE_SPECIFIER = disPro_EfficientFootballBasketballScores_20200218;

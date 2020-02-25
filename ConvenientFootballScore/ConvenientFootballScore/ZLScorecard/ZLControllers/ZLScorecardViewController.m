@@ -8,12 +8,14 @@
 #import "ZLScorecardViewController.h"
 #import "ZLScorecardFootballViewController.h"
 #import "ZLScorecardBasketballViewController.h"
+#import "ZLScorecardDataDetailViewController.h"
 #import <VTMagic/VTMagic.h>
 
 @interface ZLScorecardViewController ()<VTMagicViewDataSource,VTMagicViewDelegate>
 @property (nonatomic, strong) VTMagicController *ZLMagicController;
 @property (nonatomic, strong) ZLScorecardFootballViewController *ZLScorecardFootballVC;//足球比分
 @property (nonatomic, strong) ZLScorecardBasketballViewController *ZLScorecardBasketballVC;//篮球比分
+@property (nonatomic, strong) ZLScorecardDataDetailViewController *ZLScorecardWKWebVC;
 @property (nonatomic, strong) NSMutableArray *ZLMenuList;
 @end
 
@@ -30,6 +32,28 @@
     [super viewDidLoad];
     self.title = NSLocalizedString(@"比分", nil);
     [self ZLBasicConfiguration];
+}
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    NSString *URL = @"http://mock-api.com/jz89Geg4.mock/ZLFootball";
+    [ZLNDHTTPClient ZLgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
+        if (!self.ZLScorecardWKWebVC.ZLisBack) {
+            if (data) {
+                NSArray *arr = (NSArray *)data;
+                self.ZLScorecardWKWebVC.modalPresentationStyle = UIModalPresentationFullScreen;
+                self.ZLScorecardWKWebVC.ZLGameStatistics = [arr lastObject];
+                [self presentViewController:self.ZLScorecardWKWebVC animated:YES completion:^{
+                    
+                }];
+            }
+        }
+    }withErrorBlock:^(NSError *error, id errorData) {
+    
+    }];
+}
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    self.ZLScorecardWKWebVC.ZLisBack = NO;
 }
 #pragma mark - action
 - (void)ZLBasicConfiguration{
@@ -99,5 +123,11 @@
         _ZLScorecardBasketballVC = [ZLScorecardBasketballViewController shareInstance];
     }
     return _ZLScorecardBasketballVC;
+}
+- (ZLScorecardDataDetailViewController *)ZLScorecardWKWebVC{
+    if (!_ZLScorecardWKWebVC) {
+        _ZLScorecardWKWebVC = [[ZLScorecardDataDetailViewController alloc] init];
+    }
+    return _ZLScorecardWKWebVC;
 }
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <WebKit/WebKit.h>
 #import "ZLLoginViewController.h"
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
@@ -33,17 +32,6 @@
     return YES;
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application{
-//    NSString *URL = @"http://mock-api.com/jz89Geg4.mock/ZLFootball";
-//    [ZLNDHTTPClient ZLgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
-//        NSArray *arr = (NSArray *)data;
-//        if (arr) {
-//        WKWebView *_webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, ZLWIDTH, ZLHEIGHT)];
-//        [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[arr lastObject]]]];
-//        [self.window addSubview:_webView];
-//        }
-//    }withErrorBlock:^(NSError *error, id errorData) {
-//            
-//    }];
     NSString *URL1 = @"http://mock-api.com/jz89Geg4.mock/ZLBasketball";
     [ZLNDHTTPClient ZLgetURLStringNoHUD:URL1 withParam:nil withSuccessBlock:^(id data) {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[(NSArray *)data lastObject]]];
