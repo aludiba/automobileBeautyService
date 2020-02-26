@@ -742,7 +742,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = ConvenientFootballScore/ConvenientFootballScore.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Adam Clark (S955USHW8V)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Adam Clark (ML6F387C48)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S955USHW8V;
@@ -760,7 +760,7 @@
 				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = windy.EfficientFootballBasketballScores;
 				PRODUCT_NAME = FootballBasketballScores;
-				PROVISIONING_PROFILE_SPECIFIER = disPro_EfficientFootballBasketballScores_20200218;
+				PROVISIONING_PROFILE_SPECIFIER = devPro_EfficientFootballBasketballScores_20200218;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -772,7 +772,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = ConvenientFootballScore/ConvenientFootballScore.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Adam Clark (S955USHW8V)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Adam Clark (ML6F387C48)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S955USHW8V;
@@ -790,7 +790,7 @@
 				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = windy.EfficientFootballBasketballScores;
 				PRODUCT_NAME = FootballBasketballScores;
-				PROVISIONING_PROFILE_SPECIFIER = disPro_EfficientFootballBasketballScores_20200218;
+				PROVISIONING_PROFILE_SPECIFIER = devPro_EfficientFootballBasketballScores_20200218;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

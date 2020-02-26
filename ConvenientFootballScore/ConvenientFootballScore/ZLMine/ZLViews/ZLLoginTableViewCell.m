@@ -39,9 +39,9 @@
     [self.ZLbackView addSubview:self.ZLregisteredButton];
     
     [self.ZLbackView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.contentView).offset(ZLHeightNavBar);
+        make.top.equalTo(self.contentView).offset(ZLHeightNavBar + 30);
         make.centerX.equalTo(self.contentView);
-        make.width.mas_equalTo(ZLWIDTH - 60);
+        make.width.mas_equalTo(ZLWIDTH - 30);
         make.height.mas_equalTo(343.5);
         make.bottom.equalTo(self.contentView).offset(-(ZLHEIGHT - ZLHeightNavBar - 343.5));
     }];
