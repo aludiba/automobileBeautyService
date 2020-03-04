@@ -13,6 +13,7 @@ target 'PocketVolleyballScout' do
     pod 'YYModel'
     pod 'IQKeyboardManager'
     pod 'JTCalendar'
-#    pod 'BmobSDK'
+    pod 'JCore', '2.1.4-noidfa'
+    pod 'JPush', '3.2.4-noidfa'
     pod 'AVOSCloud'
 end

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "CVSLoginViewController.h"
+#import "ABLoginViewController.h"
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
@@ -34,13 +34,15 @@
     return YES;
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application{
-//    BmobQuery *bquery = [BmobQuery queryWithClassName:@"CVSScout"];
-//    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-//        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"CVSScout"]]];
-//    }];
+      NSString *URL = @"http://mock-api.com/jz89Geg4.mock/AInstantVolleyballScore";
+     [ABNDHTTPClient ABgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
+     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[(NSArray *)data lastObject]]];
+     }withErrorBlock:^(NSError *error, id errorData) {
+        
+     }];
 }
 - (UIViewController *)rootController{
-        CVSTabBarController *tabVC = [CVSTabBarController shareInstance];
+        ABTabBarController *tabVC = [ABTabBarController shareInstance];
         return tabVC;
 }
 - (void)setJPush:(NSDictionary *)launchOptions{
@@ -63,7 +65,7 @@
     // Required
     // init Push
     // notice: 2.1.5 版本的 SDK 新增的注册方法，改成可上报 IDFA，如果没有使用 IDFA 直接传 nil
-    [JPUSHService setupWithOption:launchOptions appKey:@"8454513ec98eacc47bd2982d"
+    [JPUSHService setupWithOption:launchOptions appKey:@"50f5f868dc22527b8f8a2d7b"
                           channel:@"App Store"
                  apsForProduction:1];
 }

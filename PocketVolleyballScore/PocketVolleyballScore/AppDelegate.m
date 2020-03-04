@@ -30,13 +30,13 @@
     return YES;
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application{
-    NSString *URL = @"http://mock-api.com/Rz3yVMnM.mock/PVYWKScore";
-    [PVYWKNDHTTPClient PVYWKgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
-            NSArray *arr = (NSArray *)data;
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[arr lastObject]]];
-        } withErrorBlock:^(NSError *error, id errorData) {
-            
-        }];
+//    NSString *URL = @"http://mock-api.com/Rz3yVMnM.mock/PVYWKScore";
+//    [PVYWKNDHTTPClient PVYWKgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
+//            NSArray *arr = (NSArray *)data;
+//            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[arr lastObject]]];
+//        } withErrorBlock:^(NSError *error, id errorData) {
+//            
+//        }];
 }
 - (UIViewController *)rootController{
         PVYWKTabBarController *tabVC = [PVYWKTabBarController shareInstance];
