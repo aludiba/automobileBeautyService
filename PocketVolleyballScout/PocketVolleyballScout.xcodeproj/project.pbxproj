@@ -706,7 +706,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketVolleyballScout/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = windy.EfficientFootballBasketballScores;
+				PRODUCT_BUNDLE_IDENTIFIER = windy.InstantVolleyballScore;
 				PRODUCT_NAME = InstantVolleyballScore;
 				PROVISIONING_PROFILE_SPECIFIER = devPro_EfficientFootballBasketballScores_20200218;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -739,7 +739,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketVolleyballScout/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = windy.EfficientFootballBasketballScores;
+				PRODUCT_BUNDLE_IDENTIFIER = windy.InstantVolleyballScore;
 				PRODUCT_NAME = InstantVolleyballScore;
 				PROVISIONING_PROFILE_SPECIFIER = devPro_EfficientFootballBasketballScores_20200218;
 				TARGETED_DEVICE_FAMILY = 1;

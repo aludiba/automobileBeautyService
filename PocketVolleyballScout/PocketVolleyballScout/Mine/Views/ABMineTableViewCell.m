@@ -155,7 +155,7 @@
 - (UIView *)ABBackView{
     if (!_ABBackView) {
         _ABBackView = [[UIView alloc] init];
-        _ABBackView.backgroundColor = [UIColor greenColor];
+        _ABBackView.backgroundColor = [UIColor systemGreenColor];
     }
     return _ABBackView;
 }
@@ -216,7 +216,7 @@
         _ABChangePasswordButton.titleLabel.numberOfLines = 0;
         _ABChangePasswordButton.backgroundColor = [UIColor systemPurpleColor];
         _ABChangePasswordButton.layer.masksToBounds = YES;
-        _ABChangePasswordButton.layer.cornerRadius = 4.0f;
+        _ABChangePasswordButton.layer.cornerRadius = 12.0f;
         [_ABChangePasswordButton addTarget:self action:@selector(ABChangePasswordAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _ABChangePasswordButton;
@@ -230,7 +230,7 @@
         _ABSignOutButton.titleLabel.numberOfLines = 0;
         _ABSignOutButton.backgroundColor = [UIColor systemPurpleColor];
         _ABSignOutButton.layer.masksToBounds = YES;
-        _ABSignOutButton.layer.cornerRadius = 4.0f;
+        _ABSignOutButton.layer.cornerRadius = 12.0f;
         [_ABSignOutButton addTarget:self action:@selector(ABSignOutAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _ABSignOutButton;
