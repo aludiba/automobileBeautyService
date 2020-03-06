@@ -1,0 +1,12 @@
+//
+//  CA_PrefixHeader.pch
+//  Simple Diary
+//
+//  Created by bykj on 2019/7/20.
+//  Copyright © 2019 hgg. All rights reserved.
+//
+
+#ifndef CA_PrefixHeader_pch
+#define CA_PrefixHeader_pch
+#import "CAGlobal.h"
+#endif /* CA_PrefixHeader_pch */

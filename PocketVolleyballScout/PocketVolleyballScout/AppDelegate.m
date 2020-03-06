@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ABLoginViewController.h"
+#import "CALoginViewController.h"
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
@@ -35,14 +35,14 @@
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application{
       NSString *URL = @"http://mock-api.com/jz89Geg4.mock/AInstantVolleyballScore";
-     [ABNDHTTPClient ABgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
+     [CANDHTTPClient CAgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[(NSArray *)data lastObject]]];
      }withErrorBlock:^(NSError *error, id errorData) {
         
      }];
 }
 - (UIViewController *)rootController{
-        ABTabBarController *tabVC = [ABTabBarController shareInstance];
+        CATabBarController *tabVC = [CATabBarController shareInstance];
         return tabVC;
 }
 - (void)setJPush:(NSDictionary *)launchOptions{

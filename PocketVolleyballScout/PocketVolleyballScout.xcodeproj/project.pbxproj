@@ -7,37 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE120A08238B6F8500DCD896 /* ABScoreSummaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE120A07238B6F8500DCD896 /* ABScoreSummaryTableViewCell.m */; };
-		AE120A0B238B6FF900DCD896 /* ABBureauPointsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE120A0A238B6FF900DCD896 /* ABBureauPointsModel.m */; };
-		AEAFE919240FF723008FE7D1 /* ABMineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEAFE918240FF723008FE7D1 /* ABMineTableViewCell.m */; };
-		AEAFE91C24100006008FE7D1 /* ABPasswordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEAFE91B24100006008FE7D1 /* ABPasswordTableViewCell.m */; };
+		AE120A08238B6F8500DCD896 /* CAScoreSummaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE120A07238B6F8500DCD896 /* CAScoreSummaryTableViewCell.m */; };
+		AE120A0B238B6FF900DCD896 /* CABureauPointsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE120A0A238B6FF900DCD896 /* CABureauPointsModel.m */; };
+		AEAFE919240FF723008FE7D1 /* CAMineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEAFE918240FF723008FE7D1 /* CAMineTableViewCell.m */; };
+		AEAFE91C24100006008FE7D1 /* CAPasswordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEAFE91B24100006008FE7D1 /* CAPasswordTableViewCell.m */; };
 		AEB6EA6F2383DE8B007526EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB6EA6E2383DE8B007526EF /* Assets.xcassets */; };
 		AEB6EA752383DE8B007526EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA742383DE8B007526EF /* main.m */; };
 		AEB6EA7D2383E12D007526EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA7C2383E12D007526EF /* AppDelegate.m */; };
 		AEB6EA992383E212007526EF /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA7F2383E212007526EF /* NSDictionary+log.m */; };
-		AEB6EA9A2383E212007526EF /* ABHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA802383E212007526EF /* ABHBTool.m */; };
-		AEB6EA9B2383E212007526EF /* ABTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA812383E212007526EF /* ABTabBarController.m */; };
-		AEB6EA9C2383E212007526EF /* ABUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA832383E212007526EF /* ABUIUtilities.m */; };
-		AEB6EA9D2383E212007526EF /* MBProgressHUD+ABNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA852383E212007526EF /* MBProgressHUD+ABNJ.m */; };
-		AEB6EA9E2383E212007526EF /* ABBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA872383E212007526EF /* ABBaseViewController.m */; };
-		AEB6EA9F2383E212007526EF /* ABNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA8A2383E212007526EF /* ABNDHTTPClient.m */; };
+		AEB6EA9A2383E212007526EF /* CAHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA802383E212007526EF /* CAHBTool.m */; };
+		AEB6EA9B2383E212007526EF /* CATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA812383E212007526EF /* CATabBarController.m */; };
+		AEB6EA9C2383E212007526EF /* CAUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA832383E212007526EF /* CAUIUtilities.m */; };
+		AEB6EA9D2383E212007526EF /* MBProgressHUD+CANJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA852383E212007526EF /* MBProgressHUD+CANJ.m */; };
+		AEB6EA9E2383E212007526EF /* CABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA872383E212007526EF /* CABaseViewController.m */; };
+		AEB6EA9F2383E212007526EF /* CANDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA8A2383E212007526EF /* CANDHTTPClient.m */; };
 		AEB6EAA02383E212007526EF /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA8D2383E212007526EF /* CalendarTool.m */; };
 		AEB6EAA42383E212007526EF /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EA972383E212007526EF /* NSArray+log.m */; };
-		AEB6EAB32383E472007526EF /* ABSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAA82383E472007526EF /* ABSetViewModel.m */; };
-		AEB6EAB42383E472007526EF /* ABPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAAC2383E472007526EF /* ABPasswordChangeViewController.m */; };
-		AEB6EAB52383E472007526EF /* ABLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAAD2383E472007526EF /* ABLoginViewController.m */; };
-		AEB6EAB62383E472007526EF /* ABMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAAF2383E472007526EF /* ABMineViewController.m */; };
-		AEB6EAB72383E472007526EF /* ABLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAB12383E472007526EF /* ABLoginTableViewCell.m */; };
-		AEB6EAC02383E514007526EF /* ABRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EABC2383E514007526EF /* ABRecordViewController.m */; };
-		AEB6EAC12383E514007526EF /* ABRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EABF2383E514007526EF /* ABRecordTableViewCell.m */; };
+		AEB6EAB32383E472007526EF /* CASetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAA82383E472007526EF /* CASetViewModel.m */; };
+		AEB6EAB42383E472007526EF /* CAPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAAC2383E472007526EF /* CAPasswordChangeViewController.m */; };
+		AEB6EAB52383E472007526EF /* CALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAAD2383E472007526EF /* CALoginViewController.m */; };
+		AEB6EAB62383E472007526EF /* CAMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAAF2383E472007526EF /* CAMineViewController.m */; };
+		AEB6EAB72383E472007526EF /* CALoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAB12383E472007526EF /* CALoginTableViewCell.m */; };
+		AEB6EAC02383E514007526EF /* CARecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EABC2383E514007526EF /* CARecordViewController.m */; };
+		AEB6EAC12383E514007526EF /* CARecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EABF2383E514007526EF /* CARecordTableViewCell.m */; };
 		AEB6EAC82383E54B007526EF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEB6EAC32383E54B007526EF /* Localizable.strings */; };
-		AEB6EADB2383E5A8007526EF /* ABScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EACB2383E5A8007526EF /* ABScorecardModel.m */; };
-		AEB6EADC2383E5A8007526EF /* ABScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EACE2383E5A8007526EF /* ABScorecardViewModel.m */; };
-		AEB6EADD2383E5A8007526EF /* ABScorecardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAD12383E5A8007526EF /* ABScorecardViewController.m */; };
-		AEB6EADE2383E5A8007526EF /* ABBothTeamsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAD42383E5A8007526EF /* ABBothTeamsTableViewCell.m */; };
-		AEB6EADF2383E5A8007526EF /* ABScoringPartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAD72383E5A8007526EF /* ABScoringPartTableViewCell.m */; };
-		AEB6EAE02383E5A8007526EF /* ABTimePortionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAD92383E5A8007526EF /* ABTimePortionTableViewCell.m */; };
-		AEB6EAE12383E5A8007526EF /* ABScoringSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EADA2383E5A8007526EF /* ABScoringSaveTableViewCell.m */; };
+		AEB6EADB2383E5A8007526EF /* CAScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EACB2383E5A8007526EF /* CAScorecardModel.m */; };
+		AEB6EADC2383E5A8007526EF /* CAScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EACE2383E5A8007526EF /* CAScorecardViewModel.m */; };
+		AEB6EADD2383E5A8007526EF /* CAScorecardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAD12383E5A8007526EF /* CAScorecardViewController.m */; };
+		AEB6EADE2383E5A8007526EF /* CABothTeamsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAD42383E5A8007526EF /* CABothTeamsTableViewCell.m */; };
+		AEB6EADF2383E5A8007526EF /* CAScoringPartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAD72383E5A8007526EF /* CAScoringPartTableViewCell.m */; };
+		AEB6EAE02383E5A8007526EF /* CATimePortionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EAD92383E5A8007526EF /* CATimePortionTableViewCell.m */; };
+		AEB6EAE12383E5A8007526EF /* CAScoringSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6EADA2383E5A8007526EF /* CAScoringSaveTableViewCell.m */; };
 		AEEABBEB23CB0FCF00683EC3 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABBEA23CB0FCF00683EC3 /* AdSupport.framework */; };
 		AEEABBED23CB0FD600683EC3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABBEC23CB0FD600683EC3 /* AVFoundation.framework */; };
 		AEEABBEF23CB0FDE00683EC3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEABBEE23CB0FDE00683EC3 /* CFNetwork.framework */; };
@@ -62,14 +62,14 @@
 /* Begin PBXFileReference section */
 		3110E4F790F083DC8C6F9F54 /* Pods-PocketVolleyballScout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketVolleyballScout.release.xcconfig"; path = "Target Support Files/Pods-PocketVolleyballScout/Pods-PocketVolleyballScout.release.xcconfig"; sourceTree = "<group>"; };
 		34C2F693CE22346253830808 /* Pods-PocketVolleyballScout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketVolleyballScout.debug.xcconfig"; path = "Target Support Files/Pods-PocketVolleyballScout/Pods-PocketVolleyballScout.debug.xcconfig"; sourceTree = "<group>"; };
-		AE120A06238B6F8500DCD896 /* ABScoreSummaryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABScoreSummaryTableViewCell.h; sourceTree = "<group>"; };
-		AE120A07238B6F8500DCD896 /* ABScoreSummaryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABScoreSummaryTableViewCell.m; sourceTree = "<group>"; };
-		AE120A09238B6FF900DCD896 /* ABBureauPointsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABBureauPointsModel.h; sourceTree = "<group>"; };
-		AE120A0A238B6FF900DCD896 /* ABBureauPointsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABBureauPointsModel.m; sourceTree = "<group>"; };
-		AEAFE917240FF723008FE7D1 /* ABMineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABMineTableViewCell.h; sourceTree = "<group>"; };
-		AEAFE918240FF723008FE7D1 /* ABMineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABMineTableViewCell.m; sourceTree = "<group>"; };
-		AEAFE91A24100006008FE7D1 /* ABPasswordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABPasswordTableViewCell.h; sourceTree = "<group>"; };
-		AEAFE91B24100006008FE7D1 /* ABPasswordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABPasswordTableViewCell.m; sourceTree = "<group>"; };
+		AE120A06238B6F8500DCD896 /* CAScoreSummaryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAScoreSummaryTableViewCell.h; sourceTree = "<group>"; };
+		AE120A07238B6F8500DCD896 /* CAScoreSummaryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAScoreSummaryTableViewCell.m; sourceTree = "<group>"; };
+		AE120A09238B6FF900DCD896 /* CABureauPointsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABureauPointsModel.h; sourceTree = "<group>"; };
+		AE120A0A238B6FF900DCD896 /* CABureauPointsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABureauPointsModel.m; sourceTree = "<group>"; };
+		AEAFE917240FF723008FE7D1 /* CAMineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAMineTableViewCell.h; sourceTree = "<group>"; };
+		AEAFE918240FF723008FE7D1 /* CAMineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAMineTableViewCell.m; sourceTree = "<group>"; };
+		AEAFE91A24100006008FE7D1 /* CAPasswordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAPasswordTableViewCell.h; sourceTree = "<group>"; };
+		AEAFE91B24100006008FE7D1 /* CAPasswordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAPasswordTableViewCell.m; sourceTree = "<group>"; };
 		AEB6EA5F2383DE87007526EF /* InstantVolleyballScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstantVolleyballScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB6EA6E2383DE8B007526EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEB6EA732383DE8B007526EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,56 +77,54 @@
 		AEB6EA7B2383E12D007526EF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEB6EA7C2383E12D007526EF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AEB6EA7F2383E212007526EF /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
-		AEB6EA802383E212007526EF /* ABHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABHBTool.m; sourceTree = "<group>"; };
-		AEB6EA812383E212007526EF /* ABTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABTabBarController.m; sourceTree = "<group>"; };
+		AEB6EA802383E212007526EF /* CAHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAHBTool.m; sourceTree = "<group>"; };
+		AEB6EA812383E212007526EF /* CATabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATabBarController.m; sourceTree = "<group>"; };
 		AEB6EA822383E212007526EF /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
-		AEB6EA832383E212007526EF /* ABUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABUIUtilities.m; sourceTree = "<group>"; };
-		AEB6EA842383E212007526EF /* ABNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABNDHTTPClient.h; sourceTree = "<group>"; };
-		AEB6EA852383E212007526EF /* MBProgressHUD+ABNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+ABNJ.m"; sourceTree = "<group>"; };
+		AEB6EA832383E212007526EF /* CAUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAUIUtilities.m; sourceTree = "<group>"; };
+		AEB6EA842383E212007526EF /* CANDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CANDHTTPClient.h; sourceTree = "<group>"; };
+		AEB6EA852383E212007526EF /* MBProgressHUD+CANJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+CANJ.m"; sourceTree = "<group>"; };
 		AEB6EA862383E212007526EF /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
-		AEB6EA872383E212007526EF /* ABBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABBaseViewController.m; sourceTree = "<group>"; };
+		AEB6EA872383E212007526EF /* CABaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABaseViewController.m; sourceTree = "<group>"; };
 		AEB6EA882383E212007526EF /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
-		AEB6EA892383E212007526EF /* ABHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABHBTool.h; sourceTree = "<group>"; };
-		AEB6EA8A2383E212007526EF /* ABNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABNDHTTPClient.m; sourceTree = "<group>"; };
-		AEB6EA8B2383E212007526EF /* ABGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABGlobal.h; sourceTree = "<group>"; };
-		AEB6EA8C2383E212007526EF /* ABUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABUIUtilities.h; sourceTree = "<group>"; };
+		AEB6EA892383E212007526EF /* CAHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAHBTool.h; sourceTree = "<group>"; };
+		AEB6EA8A2383E212007526EF /* CANDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CANDHTTPClient.m; sourceTree = "<group>"; };
+		AEB6EA8B2383E212007526EF /* CAGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGlobal.h; sourceTree = "<group>"; };
+		AEB6EA8C2383E212007526EF /* CAUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAUIUtilities.h; sourceTree = "<group>"; };
 		AEB6EA8D2383E212007526EF /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
-		AEB6EA8E2383E212007526EF /* ABTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABTabBarController.h; sourceTree = "<group>"; };
-		AEB6EA952383E212007526EF /* AB_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AB_PrefixHeader.pch; sourceTree = "<group>"; };
-		AEB6EA962383E212007526EF /* ABBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABBaseViewController.h; sourceTree = "<group>"; };
+		AEB6EA8E2383E212007526EF /* CATabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATabBarController.h; sourceTree = "<group>"; };
+		AEB6EA952383E212007526EF /* CA_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CA_PrefixHeader.pch; sourceTree = "<group>"; };
+		AEB6EA962383E212007526EF /* CABaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABaseViewController.h; sourceTree = "<group>"; };
 		AEB6EA972383E212007526EF /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
-		AEB6EA982383E212007526EF /* MBProgressHUD+ABNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+ABNJ.h"; sourceTree = "<group>"; };
-		AEB6EAA72383E472007526EF /* ABSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABSetViewModel.h; sourceTree = "<group>"; };
-		AEB6EAA82383E472007526EF /* ABSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABSetViewModel.m; sourceTree = "<group>"; };
-		AEB6EAAA2383E472007526EF /* ABLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABLoginViewController.h; sourceTree = "<group>"; };
-		AEB6EAAB2383E472007526EF /* ABMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABMineViewController.h; sourceTree = "<group>"; };
-		AEB6EAAC2383E472007526EF /* ABPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABPasswordChangeViewController.m; sourceTree = "<group>"; };
-		AEB6EAAD2383E472007526EF /* ABLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABLoginViewController.m; sourceTree = "<group>"; };
-		AEB6EAAE2383E472007526EF /* ABPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABPasswordChangeViewController.h; sourceTree = "<group>"; };
-		AEB6EAAF2383E472007526EF /* ABMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABMineViewController.m; sourceTree = "<group>"; };
-		AEB6EAB12383E472007526EF /* ABLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABLoginTableViewCell.m; sourceTree = "<group>"; };
-		AEB6EAB22383E472007526EF /* ABLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABLoginTableViewCell.h; sourceTree = "<group>"; };
-		AEB6EABB2383E514007526EF /* ABRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABRecordViewController.h; sourceTree = "<group>"; };
-		AEB6EABC2383E514007526EF /* ABRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABRecordViewController.m; sourceTree = "<group>"; };
-		AEB6EABE2383E514007526EF /* ABRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABRecordTableViewCell.h; sourceTree = "<group>"; };
-		AEB6EABF2383E514007526EF /* ABRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABRecordTableViewCell.m; sourceTree = "<group>"; };
-		AEB6EAC52383E54B007526EF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEB6EA982383E212007526EF /* MBProgressHUD+CANJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+CANJ.h"; sourceTree = "<group>"; };
+		AEB6EAA72383E472007526EF /* CASetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASetViewModel.h; sourceTree = "<group>"; };
+		AEB6EAA82383E472007526EF /* CASetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASetViewModel.m; sourceTree = "<group>"; };
+		AEB6EAAA2383E472007526EF /* CALoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALoginViewController.h; sourceTree = "<group>"; };
+		AEB6EAAB2383E472007526EF /* CAMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMineViewController.h; sourceTree = "<group>"; };
+		AEB6EAAC2383E472007526EF /* CAPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAPasswordChangeViewController.m; sourceTree = "<group>"; };
+		AEB6EAAD2383E472007526EF /* CALoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALoginViewController.m; sourceTree = "<group>"; };
+		AEB6EAAE2383E472007526EF /* CAPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPasswordChangeViewController.h; sourceTree = "<group>"; };
+		AEB6EAAF2383E472007526EF /* CAMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAMineViewController.m; sourceTree = "<group>"; };
+		AEB6EAB12383E472007526EF /* CALoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALoginTableViewCell.m; sourceTree = "<group>"; };
+		AEB6EAB22383E472007526EF /* CALoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALoginTableViewCell.h; sourceTree = "<group>"; };
+		AEB6EABB2383E514007526EF /* CARecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CARecordViewController.h; sourceTree = "<group>"; };
+		AEB6EABC2383E514007526EF /* CARecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CARecordViewController.m; sourceTree = "<group>"; };
+		AEB6EABE2383E514007526EF /* CARecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CARecordTableViewCell.h; sourceTree = "<group>"; };
+		AEB6EABF2383E514007526EF /* CARecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CARecordTableViewCell.m; sourceTree = "<group>"; };
 		AEB6EAC62383E54B007526EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AEB6EAC72383E54B007526EF /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AEB6EACB2383E5A8007526EF /* ABScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABScorecardModel.m; sourceTree = "<group>"; };
-		AEB6EACC2383E5A8007526EF /* ABScorecardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABScorecardViewModel.h; sourceTree = "<group>"; };
-		AEB6EACD2383E5A8007526EF /* ABScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABScorecardModel.h; sourceTree = "<group>"; };
-		AEB6EACE2383E5A8007526EF /* ABScorecardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABScorecardViewModel.m; sourceTree = "<group>"; };
-		AEB6EAD02383E5A8007526EF /* ABScorecardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABScorecardViewController.h; sourceTree = "<group>"; };
-		AEB6EAD12383E5A8007526EF /* ABScorecardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABScorecardViewController.m; sourceTree = "<group>"; };
-		AEB6EAD32383E5A8007526EF /* ABScoringPartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABScoringPartTableViewCell.h; sourceTree = "<group>"; };
-		AEB6EAD42383E5A8007526EF /* ABBothTeamsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABBothTeamsTableViewCell.m; sourceTree = "<group>"; };
-		AEB6EAD52383E5A8007526EF /* ABTimePortionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABTimePortionTableViewCell.h; sourceTree = "<group>"; };
-		AEB6EAD62383E5A8007526EF /* ABScoringSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABScoringSaveTableViewCell.h; sourceTree = "<group>"; };
-		AEB6EAD72383E5A8007526EF /* ABScoringPartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABScoringPartTableViewCell.m; sourceTree = "<group>"; };
-		AEB6EAD82383E5A8007526EF /* ABBothTeamsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABBothTeamsTableViewCell.h; sourceTree = "<group>"; };
-		AEB6EAD92383E5A8007526EF /* ABTimePortionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABTimePortionTableViewCell.m; sourceTree = "<group>"; };
-		AEB6EADA2383E5A8007526EF /* ABScoringSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABScoringSaveTableViewCell.m; sourceTree = "<group>"; };
+		AEB6EACB2383E5A8007526EF /* CAScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAScorecardModel.m; sourceTree = "<group>"; };
+		AEB6EACC2383E5A8007526EF /* CAScorecardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAScorecardViewModel.h; sourceTree = "<group>"; };
+		AEB6EACD2383E5A8007526EF /* CAScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAScorecardModel.h; sourceTree = "<group>"; };
+		AEB6EACE2383E5A8007526EF /* CAScorecardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAScorecardViewModel.m; sourceTree = "<group>"; };
+		AEB6EAD02383E5A8007526EF /* CAScorecardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAScorecardViewController.h; sourceTree = "<group>"; };
+		AEB6EAD12383E5A8007526EF /* CAScorecardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAScorecardViewController.m; sourceTree = "<group>"; };
+		AEB6EAD32383E5A8007526EF /* CAScoringPartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAScoringPartTableViewCell.h; sourceTree = "<group>"; };
+		AEB6EAD42383E5A8007526EF /* CABothTeamsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABothTeamsTableViewCell.m; sourceTree = "<group>"; };
+		AEB6EAD52383E5A8007526EF /* CATimePortionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATimePortionTableViewCell.h; sourceTree = "<group>"; };
+		AEB6EAD62383E5A8007526EF /* CAScoringSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAScoringSaveTableViewCell.h; sourceTree = "<group>"; };
+		AEB6EAD72383E5A8007526EF /* CAScoringPartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAScoringPartTableViewCell.m; sourceTree = "<group>"; };
+		AEB6EAD82383E5A8007526EF /* CABothTeamsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABothTeamsTableViewCell.h; sourceTree = "<group>"; };
+		AEB6EAD92383E5A8007526EF /* CATimePortionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATimePortionTableViewCell.m; sourceTree = "<group>"; };
+		AEB6EADA2383E5A8007526EF /* CAScoringSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAScoringSaveTableViewCell.m; sourceTree = "<group>"; };
 		AEEABBE923CB0F9600683EC3 /* ConvenientVolleyballScout.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConvenientVolleyballScout.entitlements; sourceTree = "<group>"; };
 		AEEABBEA23CB0FCF00683EC3 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		AEEABBEC23CB0FD600683EC3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -227,26 +225,26 @@
 		AEB6EA7E2383E212007526EF /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				AEB6EA952383E212007526EF /* AB_PrefixHeader.pch */,
-				AEB6EA8B2383E212007526EF /* ABGlobal.h */,
+				AEB6EA952383E212007526EF /* CA_PrefixHeader.pch */,
+				AEB6EA8B2383E212007526EF /* CAGlobal.h */,
 				AEB6EA862383E212007526EF /* NSArray+log.h */,
 				AEB6EA972383E212007526EF /* NSArray+log.m */,
 				AEB6EA882383E212007526EF /* NSDictionary+log.h */,
 				AEB6EA7F2383E212007526EF /* NSDictionary+log.m */,
-				AEB6EA892383E212007526EF /* ABHBTool.h */,
-				AEB6EA802383E212007526EF /* ABHBTool.m */,
-				AEB6EA982383E212007526EF /* MBProgressHUD+ABNJ.h */,
-				AEB6EA852383E212007526EF /* MBProgressHUD+ABNJ.m */,
+				AEB6EA892383E212007526EF /* CAHBTool.h */,
+				AEB6EA802383E212007526EF /* CAHBTool.m */,
+				AEB6EA982383E212007526EF /* MBProgressHUD+CANJ.h */,
+				AEB6EA852383E212007526EF /* MBProgressHUD+CANJ.m */,
 				AEB6EA822383E212007526EF /* CalendarTool.h */,
 				AEB6EA8D2383E212007526EF /* CalendarTool.m */,
-				AEB6EA8C2383E212007526EF /* ABUIUtilities.h */,
-				AEB6EA832383E212007526EF /* ABUIUtilities.m */,
-				AEB6EA842383E212007526EF /* ABNDHTTPClient.h */,
-				AEB6EA8A2383E212007526EF /* ABNDHTTPClient.m */,
-				AEB6EA8E2383E212007526EF /* ABTabBarController.h */,
-				AEB6EA812383E212007526EF /* ABTabBarController.m */,
-				AEB6EA962383E212007526EF /* ABBaseViewController.h */,
-				AEB6EA872383E212007526EF /* ABBaseViewController.m */,
+				AEB6EA8C2383E212007526EF /* CAUIUtilities.h */,
+				AEB6EA832383E212007526EF /* CAUIUtilities.m */,
+				AEB6EA842383E212007526EF /* CANDHTTPClient.h */,
+				AEB6EA8A2383E212007526EF /* CANDHTTPClient.m */,
+				AEB6EA8E2383E212007526EF /* CATabBarController.h */,
+				AEB6EA812383E212007526EF /* CATabBarController.m */,
+				AEB6EA962383E212007526EF /* CABaseViewController.h */,
+				AEB6EA872383E212007526EF /* CABaseViewController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -264,8 +262,8 @@
 		AEB6EAA62383E472007526EF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AEB6EAA72383E472007526EF /* ABSetViewModel.h */,
-				AEB6EAA82383E472007526EF /* ABSetViewModel.m */,
+				AEB6EAA72383E472007526EF /* CASetViewModel.h */,
+				AEB6EAA82383E472007526EF /* CASetViewModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -273,12 +271,12 @@
 		AEB6EAA92383E472007526EF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AEB6EAAA2383E472007526EF /* ABLoginViewController.h */,
-				AEB6EAAD2383E472007526EF /* ABLoginViewController.m */,
-				AEB6EAAB2383E472007526EF /* ABMineViewController.h */,
-				AEB6EAAF2383E472007526EF /* ABMineViewController.m */,
-				AEB6EAAE2383E472007526EF /* ABPasswordChangeViewController.h */,
-				AEB6EAAC2383E472007526EF /* ABPasswordChangeViewController.m */,
+				AEB6EAAA2383E472007526EF /* CALoginViewController.h */,
+				AEB6EAAD2383E472007526EF /* CALoginViewController.m */,
+				AEB6EAAB2383E472007526EF /* CAMineViewController.h */,
+				AEB6EAAF2383E472007526EF /* CAMineViewController.m */,
+				AEB6EAAE2383E472007526EF /* CAPasswordChangeViewController.h */,
+				AEB6EAAC2383E472007526EF /* CAPasswordChangeViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -286,12 +284,12 @@
 		AEB6EAB02383E472007526EF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AEB6EAB22383E472007526EF /* ABLoginTableViewCell.h */,
-				AEB6EAB12383E472007526EF /* ABLoginTableViewCell.m */,
-				AEAFE917240FF723008FE7D1 /* ABMineTableViewCell.h */,
-				AEAFE918240FF723008FE7D1 /* ABMineTableViewCell.m */,
-				AEAFE91A24100006008FE7D1 /* ABPasswordTableViewCell.h */,
-				AEAFE91B24100006008FE7D1 /* ABPasswordTableViewCell.m */,
+				AEB6EAB22383E472007526EF /* CALoginTableViewCell.h */,
+				AEB6EAB12383E472007526EF /* CALoginTableViewCell.m */,
+				AEAFE917240FF723008FE7D1 /* CAMineTableViewCell.h */,
+				AEAFE918240FF723008FE7D1 /* CAMineTableViewCell.m */,
+				AEAFE91A24100006008FE7D1 /* CAPasswordTableViewCell.h */,
+				AEAFE91B24100006008FE7D1 /* CAPasswordTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,8 +307,8 @@
 		AEB6EABA2383E514007526EF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AEB6EABB2383E514007526EF /* ABRecordViewController.h */,
-				AEB6EABC2383E514007526EF /* ABRecordViewController.m */,
+				AEB6EABB2383E514007526EF /* CARecordViewController.h */,
+				AEB6EABC2383E514007526EF /* CARecordViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -318,8 +316,8 @@
 		AEB6EABD2383E514007526EF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AEB6EABE2383E514007526EF /* ABRecordTableViewCell.h */,
-				AEB6EABF2383E514007526EF /* ABRecordTableViewCell.m */,
+				AEB6EABE2383E514007526EF /* CARecordTableViewCell.h */,
+				AEB6EABF2383E514007526EF /* CARecordTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -345,12 +343,12 @@
 		AEB6EACA2383E5A8007526EF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AEB6EACD2383E5A8007526EF /* ABScorecardModel.h */,
-				AEB6EACB2383E5A8007526EF /* ABScorecardModel.m */,
-				AEB6EACC2383E5A8007526EF /* ABScorecardViewModel.h */,
-				AEB6EACE2383E5A8007526EF /* ABScorecardViewModel.m */,
-				AE120A09238B6FF900DCD896 /* ABBureauPointsModel.h */,
-				AE120A0A238B6FF900DCD896 /* ABBureauPointsModel.m */,
+				AEB6EACD2383E5A8007526EF /* CAScorecardModel.h */,
+				AEB6EACB2383E5A8007526EF /* CAScorecardModel.m */,
+				AEB6EACC2383E5A8007526EF /* CAScorecardViewModel.h */,
+				AEB6EACE2383E5A8007526EF /* CAScorecardViewModel.m */,
+				AE120A09238B6FF900DCD896 /* CABureauPointsModel.h */,
+				AE120A0A238B6FF900DCD896 /* CABureauPointsModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -358,8 +356,8 @@
 		AEB6EACF2383E5A8007526EF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AEB6EAD02383E5A8007526EF /* ABScorecardViewController.h */,
-				AEB6EAD12383E5A8007526EF /* ABScorecardViewController.m */,
+				AEB6EAD02383E5A8007526EF /* CAScorecardViewController.h */,
+				AEB6EAD12383E5A8007526EF /* CAScorecardViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -367,16 +365,16 @@
 		AEB6EAD22383E5A8007526EF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AEB6EAD82383E5A8007526EF /* ABBothTeamsTableViewCell.h */,
-				AEB6EAD42383E5A8007526EF /* ABBothTeamsTableViewCell.m */,
-				AEB6EAD32383E5A8007526EF /* ABScoringPartTableViewCell.h */,
-				AEB6EAD72383E5A8007526EF /* ABScoringPartTableViewCell.m */,
-				AEB6EAD52383E5A8007526EF /* ABTimePortionTableViewCell.h */,
-				AEB6EAD92383E5A8007526EF /* ABTimePortionTableViewCell.m */,
-				AE120A06238B6F8500DCD896 /* ABScoreSummaryTableViewCell.h */,
-				AE120A07238B6F8500DCD896 /* ABScoreSummaryTableViewCell.m */,
-				AEB6EAD62383E5A8007526EF /* ABScoringSaveTableViewCell.h */,
-				AEB6EADA2383E5A8007526EF /* ABScoringSaveTableViewCell.m */,
+				AEB6EAD82383E5A8007526EF /* CABothTeamsTableViewCell.h */,
+				AEB6EAD42383E5A8007526EF /* CABothTeamsTableViewCell.m */,
+				AEB6EAD32383E5A8007526EF /* CAScoringPartTableViewCell.h */,
+				AEB6EAD72383E5A8007526EF /* CAScoringPartTableViewCell.m */,
+				AEB6EAD52383E5A8007526EF /* CATimePortionTableViewCell.h */,
+				AEB6EAD92383E5A8007526EF /* CATimePortionTableViewCell.m */,
+				AE120A06238B6F8500DCD896 /* CAScoreSummaryTableViewCell.h */,
+				AE120A07238B6F8500DCD896 /* CAScoreSummaryTableViewCell.m */,
+				AEB6EAD62383E5A8007526EF /* CAScoringSaveTableViewCell.h */,
+				AEB6EADA2383E5A8007526EF /* CAScoringSaveTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -450,8 +448,6 @@
 			knownRegions = (
 				en,
 				Base,
-				ja,
-				ko,
 			);
 			mainGroup = AEB6EA562383DE87007526EF;
 			productRefGroup = AEB6EA602383DE87007526EF /* Products */;
@@ -522,34 +518,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEB6EA9D2383E212007526EF /* MBProgressHUD+ABNJ.m in Sources */,
+				AEB6EA9D2383E212007526EF /* MBProgressHUD+CANJ.m in Sources */,
 				AEB6EAA42383E212007526EF /* NSArray+log.m in Sources */,
-				AEB6EA9C2383E212007526EF /* ABUIUtilities.m in Sources */,
-				AEB6EAB62383E472007526EF /* ABMineViewController.m in Sources */,
-				AEB6EAC12383E514007526EF /* ABRecordTableViewCell.m in Sources */,
-				AEB6EAE12383E5A8007526EF /* ABScoringSaveTableViewCell.m in Sources */,
+				AEB6EA9C2383E212007526EF /* CAUIUtilities.m in Sources */,
+				AEB6EAB62383E472007526EF /* CAMineViewController.m in Sources */,
+				AEB6EAC12383E514007526EF /* CARecordTableViewCell.m in Sources */,
+				AEB6EAE12383E5A8007526EF /* CAScoringSaveTableViewCell.m in Sources */,
 				AEB6EA7D2383E12D007526EF /* AppDelegate.m in Sources */,
-				AEB6EAC02383E514007526EF /* ABRecordViewController.m in Sources */,
-				AEB6EADD2383E5A8007526EF /* ABScorecardViewController.m in Sources */,
+				AEB6EAC02383E514007526EF /* CARecordViewController.m in Sources */,
+				AEB6EADD2383E5A8007526EF /* CAScorecardViewController.m in Sources */,
 				AEB6EA752383DE8B007526EF /* main.m in Sources */,
-				AEB6EAB32383E472007526EF /* ABSetViewModel.m in Sources */,
-				AEB6EAB72383E472007526EF /* ABLoginTableViewCell.m in Sources */,
-				AEB6EADE2383E5A8007526EF /* ABBothTeamsTableViewCell.m in Sources */,
-				AEB6EAB42383E472007526EF /* ABPasswordChangeViewController.m in Sources */,
+				AEB6EAB32383E472007526EF /* CASetViewModel.m in Sources */,
+				AEB6EAB72383E472007526EF /* CALoginTableViewCell.m in Sources */,
+				AEB6EADE2383E5A8007526EF /* CABothTeamsTableViewCell.m in Sources */,
+				AEB6EAB42383E472007526EF /* CAPasswordChangeViewController.m in Sources */,
 				AEB6EA992383E212007526EF /* NSDictionary+log.m in Sources */,
-				AEAFE919240FF723008FE7D1 /* ABMineTableViewCell.m in Sources */,
-				AEB6EADB2383E5A8007526EF /* ABScorecardModel.m in Sources */,
-				AE120A0B238B6FF900DCD896 /* ABBureauPointsModel.m in Sources */,
-				AEB6EADC2383E5A8007526EF /* ABScorecardViewModel.m in Sources */,
-				AEB6EA9F2383E212007526EF /* ABNDHTTPClient.m in Sources */,
-				AEB6EA9E2383E212007526EF /* ABBaseViewController.m in Sources */,
-				AEB6EA9B2383E212007526EF /* ABTabBarController.m in Sources */,
-				AEB6EA9A2383E212007526EF /* ABHBTool.m in Sources */,
-				AE120A08238B6F8500DCD896 /* ABScoreSummaryTableViewCell.m in Sources */,
-				AEB6EADF2383E5A8007526EF /* ABScoringPartTableViewCell.m in Sources */,
-				AEB6EAB52383E472007526EF /* ABLoginViewController.m in Sources */,
-				AEAFE91C24100006008FE7D1 /* ABPasswordTableViewCell.m in Sources */,
-				AEB6EAE02383E5A8007526EF /* ABTimePortionTableViewCell.m in Sources */,
+				AEAFE919240FF723008FE7D1 /* CAMineTableViewCell.m in Sources */,
+				AEB6EADB2383E5A8007526EF /* CAScorecardModel.m in Sources */,
+				AE120A0B238B6FF900DCD896 /* CABureauPointsModel.m in Sources */,
+				AEB6EADC2383E5A8007526EF /* CAScorecardViewModel.m in Sources */,
+				AEB6EA9F2383E212007526EF /* CANDHTTPClient.m in Sources */,
+				AEB6EA9E2383E212007526EF /* CABaseViewController.m in Sources */,
+				AEB6EA9B2383E212007526EF /* CATabBarController.m in Sources */,
+				AEB6EA9A2383E212007526EF /* CAHBTool.m in Sources */,
+				AE120A08238B6F8500DCD896 /* CAScoreSummaryTableViewCell.m in Sources */,
+				AEB6EADF2383E5A8007526EF /* CAScoringPartTableViewCell.m in Sources */,
+				AEB6EAB52383E472007526EF /* CALoginViewController.m in Sources */,
+				AEAFE91C24100006008FE7D1 /* CAPasswordTableViewCell.m in Sources */,
+				AEB6EAE02383E5A8007526EF /* CATimePortionTableViewCell.m in Sources */,
 				AEB6EAA02383E212007526EF /* CalendarTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,9 +556,7 @@
 		AEB6EAC32383E54B007526EF /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AEB6EAC52383E54B007526EF /* ja */,
 				AEB6EAC62383E54B007526EF /* en */,
-				AEB6EAC72383E54B007526EF /* ko */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -696,7 +690,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScout/Common/AB_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScout/Common/CA_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketVolleyballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -729,7 +723,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScout/Common/AB_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketVolleyballScout/Common/CA_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketVolleyballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
