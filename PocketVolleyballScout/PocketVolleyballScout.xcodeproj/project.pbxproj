@@ -687,11 +687,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketVolleyballScout/ConvenientVolleyballScout.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Adam Clark (ML6F387C48)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: MICHAEL PAUL Mccann (78X3898BSG)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S955USHW8V;
-				ENABLE_BITCODE = NO;
+				DEVELOPMENT_TEAM = GFSTRXD44G;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -708,7 +708,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = windy.InstantVolleyballScore;
 				PRODUCT_NAME = InstantVolleyballScore;
-				PROVISIONING_PROFILE_SPECIFIER = devPro_EfficientFootballBasketballScores_20200218;
+				PROVISIONING_PROFILE_SPECIFIER = dev_pro_InstantVolleyballScore_20200305;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -720,11 +720,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketVolleyballScout/ConvenientVolleyballScout.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Adam Clark (ML6F387C48)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: MICHAEL PAUL Mccann (78X3898BSG)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S955USHW8V;
-				ENABLE_BITCODE = NO;
+				DEVELOPMENT_TEAM = GFSTRXD44G;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -741,7 +741,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = windy.InstantVolleyballScore;
 				PRODUCT_NAME = InstantVolleyballScore;
-				PROVISIONING_PROFILE_SPECIFIER = devPro_EfficientFootballBasketballScores_20200218;
+				PROVISIONING_PROFILE_SPECIFIER = dev_pro_InstantVolleyballScore_20200305;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
