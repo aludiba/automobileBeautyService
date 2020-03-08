@@ -25,8 +25,6 @@
     [self setJPush:launchOptions];
     [AVOSCloud setApplicationId:@"mG34aYISSTic5qVtir31dM6N-MdYXbMMI" clientKey:@"oLHtnYLqrERW7UvQ3UcnA3O5"];
     [AVOSCloud setAllLogsEnabled:YES];
-//    [Bmob resetDomain:@"http://pocketvolleyballscore.jd127.cn"];
-//    [Bmob registerWithAppKey:@"433c78f96a4eadc43adb74cef6a27b92"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [self rootController];
@@ -65,7 +63,7 @@
     // Required
     // init Push
     // notice: 2.1.5 版本的 SDK 新增的注册方法，改成可上报 IDFA，如果没有使用 IDFA 直接传 nil
-    [JPUSHService setupWithOption:launchOptions appKey:@"a5fbe5cdda4d3b4e4585e464"
+    [JPUSHService setupWithOption:launchOptions appKey:@"05240bc6e1bcae7614d183e9"
                           channel:@"App Store"
                  apsForProduction:1];
 }

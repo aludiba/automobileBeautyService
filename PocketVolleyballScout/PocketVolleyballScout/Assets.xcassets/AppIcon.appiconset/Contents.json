@@ -33,13 +33,13 @@
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "InstantVolleyball_120.png",
+      "filename" : "120x120LOGO.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "InstantVolleyball_180.png",
+      "filename" : "180x180LOGO.png",
       "scale" : "3x"
     },
     {
@@ -90,7 +90,7 @@
     {
       "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "InstantVolleyball_1024.png",
+      "filename" : "1024x1024LOGO.png",
       "scale" : "1x"
     }
   ],

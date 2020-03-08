@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7233377D23E993A200991083 /* ZLNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7233377B23E993A200991083 /* ZLNDHTTPClient.m */; };
 		9DB85CFE44BA05559FD42CBB /* Pods_PocketBasketballScout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F6A05CDF360A69D060122F /* Pods_PocketBasketballScout.framework */; };
 		AE6C74AF23824284009329F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6C74AE23824284009329F2 /* Assets.xcassets */; };
 		AE6C74B523824284009329F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C74B423824284009329F2 /* main.m */; };
@@ -16,25 +15,25 @@
 		AE6C7517238265A5009329F2 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C74F0238265A4009329F2 /* NSDictionary+log.m */; };
 		AE6C751D238265A5009329F2 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C74FE238265A4009329F2 /* CalendarTool.m */; };
 		AE6C7522238265A5009329F2 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C7506238265A5009329F2 /* NSArray+log.m */; };
-		AE6C753223826733009329F2 /* MBProgressHUD+ZLNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752623826732009329F2 /* MBProgressHUD+ZLNJ.m */; };
-		AE6C753323826733009329F2 /* ZLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752723826732009329F2 /* ZLBaseViewController.m */; };
-		AE6C753423826733009329F2 /* ZLHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752923826732009329F2 /* ZLHBTool.m */; };
-		AE6C753523826733009329F2 /* ZLUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752C23826732009329F2 /* ZLUIUtilities.m */; };
-		AE6C753623826733009329F2 /* ZLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752E23826733009329F2 /* ZLTabBarController.m */; };
-		AE6C753923826822009329F2 /* ZLSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753723826822009329F2 /* ZLSetViewModel.m */; };
-		AE6C75402382684D009329F2 /* ZLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753B2382684D009329F2 /* ZLLoginViewController.m */; };
-		AE6C75412382684D009329F2 /* ZLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753D2382684D009329F2 /* ZLMineViewController.m */; };
-		AE6C75422382684D009329F2 /* ZLPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753F2382684D009329F2 /* ZLPasswordChangeViewController.m */; };
-		AE6C754523826862009329F2 /* ZLLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754323826862009329F2 /* ZLLoginTableViewCell.m */; };
-		AE6C7548238268EA009329F2 /* ZLRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C7547238268EA009329F2 /* ZLRecordViewController.m */; };
-		AE6C754B238268F5009329F2 /* ZLRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754A238268F5009329F2 /* ZLRecordTableViewCell.m */; };
-		AE6C754E23826949009329F2 /* ZLScorecardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754D23826949009329F2 /* ZLScorecardViewController.m */; };
-		AE6C755323826952009329F2 /* ZLScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754F23826952009329F2 /* ZLScorecardViewModel.m */; };
-		AE6C755423826952009329F2 /* ZLScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C755223826952009329F2 /* ZLScorecardModel.m */; };
-		AE6C755D2382695D009329F2 /* ZLBothTeamsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75562382695D009329F2 /* ZLBothTeamsTableViewCell.m */; };
-		AE6C755E2382695D009329F2 /* ZLScoringSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75572382695D009329F2 /* ZLScoringSaveTableViewCell.m */; };
-		AE6C755F2382695D009329F2 /* ZLScoringPartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75582382695D009329F2 /* ZLScoringPartTableViewCell.m */; };
-		AE6C75602382695D009329F2 /* ZLTimePortionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75592382695D009329F2 /* ZLTimePortionTableViewCell.m */; };
+		AE6C753223826733009329F2 /* MBProgressHUD+ADNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752623826732009329F2 /* MBProgressHUD+ADNJ.m */; };
+		AE6C753323826733009329F2 /* ADBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752723826732009329F2 /* ADBaseViewController.m */; };
+		AE6C753423826733009329F2 /* ADHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752923826732009329F2 /* ADHBTool.m */; };
+		AE6C753523826733009329F2 /* ADUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752C23826732009329F2 /* ADUIUtilities.m */; };
+		AE6C753623826733009329F2 /* ADTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C752E23826733009329F2 /* ADTabBarController.m */; };
+		AE6C753923826822009329F2 /* ADSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753723826822009329F2 /* ADSetViewModel.m */; };
+		AE6C75402382684D009329F2 /* ADLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753B2382684D009329F2 /* ADLoginViewController.m */; };
+		AE6C75412382684D009329F2 /* ADMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753D2382684D009329F2 /* ADMineViewController.m */; };
+		AE6C75422382684D009329F2 /* ADPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C753F2382684D009329F2 /* ADPasswordChangeViewController.m */; };
+		AE6C754523826862009329F2 /* ADLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754323826862009329F2 /* ADLoginTableViewCell.m */; };
+		AE6C7548238268EA009329F2 /* ADRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C7547238268EA009329F2 /* ADRecordViewController.m */; };
+		AE6C754B238268F5009329F2 /* ADRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754A238268F5009329F2 /* ADRecordTableViewCell.m */; };
+		AE6C754E23826949009329F2 /* ADScorecardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754D23826949009329F2 /* ADScorecardViewController.m */; };
+		AE6C755323826952009329F2 /* ADScorecardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C754F23826952009329F2 /* ADScorecardViewModel.m */; };
+		AE6C755423826952009329F2 /* ADScorecardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C755223826952009329F2 /* ADScorecardModel.m */; };
+		AE6C755D2382695D009329F2 /* ADBothTeamsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75562382695D009329F2 /* ADBothTeamsTableViewCell.m */; };
+		AE6C755E2382695D009329F2 /* ADScoringSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75572382695D009329F2 /* ADScoringSaveTableViewCell.m */; };
+		AE6C755F2382695D009329F2 /* ADScoringPartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75582382695D009329F2 /* ADScoringPartTableViewCell.m */; };
+		AE6C75602382695D009329F2 /* ADTimePortionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C75592382695D009329F2 /* ADTimePortionTableViewCell.m */; };
 		AECF770A238F75AC00F65475 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7709238F75AC00F65475 /* AVFoundation.framework */; };
 		AECF7712238F75D700F65475 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7711238F75D700F65475 /* CoreLocation.framework */; };
 		AECF7718238F75F600F65475 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECF7717238F75F600F65475 /* ImageIO.framework */; };
@@ -45,17 +44,14 @@
 
 /* Begin PBXFileReference section */
 		0095D88E6030915DAB7F8149 /* Pods-PocketBasketballScout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBasketballScout.debug.xcconfig"; path = "Target Support Files/Pods-PocketBasketballScout/Pods-PocketBasketballScout.debug.xcconfig"; sourceTree = "<group>"; };
-		7233377B23E993A200991083 /* ZLNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLNDHTTPClient.m; sourceTree = "<group>"; };
-		7233377C23E993A200991083 /* ZLNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLNDHTTPClient.h; sourceTree = "<group>"; };
 		72470C1523EA99DC009817E9 /* PocketBasketballScout.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = PocketBasketballScout.entitlements; path = PocketBasketballScout/PocketBasketballScout.entitlements; sourceTree = "<group>"; };
 		AA94B92244B3E8AE8D1350D2 /* Pods-PocketBasketballScout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketBasketballScout.release.xcconfig"; path = "Target Support Files/Pods-PocketBasketballScout/Pods-PocketBasketballScout.release.xcconfig"; sourceTree = "<group>"; };
-		AE6C749F23824280009329F2 /* efficientBasketballScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = efficientBasketballScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6C749F23824280009329F2 /* InstantBasketballScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstantBasketballScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6C74AE23824284009329F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE6C74B323824284009329F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE6C74B423824284009329F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE6C74BC2382657C009329F2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE6C74BD2382657C009329F2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AE6C74C2238265A4009329F2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AE6C74C3238265A4009329F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AE6C74F0238265A4009329F2 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
 		AE6C74F1238265A4009329F2 /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
@@ -63,46 +59,46 @@
 		AE6C74F8238265A4009329F2 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
 		AE6C74FE238265A4009329F2 /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
 		AE6C7506238265A5009329F2 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
-		AE6C752323826732009329F2 /* ZLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLTabBarController.h; sourceTree = "<group>"; };
-		AE6C752423826732009329F2 /* ZL_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZL_PrefixHeader.pch; sourceTree = "<group>"; };
-		AE6C752623826732009329F2 /* MBProgressHUD+ZLNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+ZLNJ.m"; sourceTree = "<group>"; };
-		AE6C752723826732009329F2 /* ZLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLBaseViewController.m; sourceTree = "<group>"; };
-		AE6C752923826732009329F2 /* ZLHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLHBTool.m; sourceTree = "<group>"; };
-		AE6C752A23826732009329F2 /* ZLHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLHBTool.h; sourceTree = "<group>"; };
-		AE6C752B23826732009329F2 /* ZLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLBaseViewController.h; sourceTree = "<group>"; };
-		AE6C752C23826732009329F2 /* ZLUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLUIUtilities.m; sourceTree = "<group>"; };
-		AE6C752D23826732009329F2 /* ZLUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLUIUtilities.h; sourceTree = "<group>"; };
-		AE6C752E23826733009329F2 /* ZLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLTabBarController.m; sourceTree = "<group>"; };
-		AE6C752F23826733009329F2 /* MBProgressHUD+ZLNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+ZLNJ.h"; sourceTree = "<group>"; };
-		AE6C753023826733009329F2 /* ZLGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLGlobal.h; sourceTree = "<group>"; };
-		AE6C753723826822009329F2 /* ZLSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSetViewModel.m; sourceTree = "<group>"; };
-		AE6C753823826822009329F2 /* ZLSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSetViewModel.h; sourceTree = "<group>"; };
-		AE6C753A2382684D009329F2 /* ZLPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPasswordChangeViewController.h; sourceTree = "<group>"; };
-		AE6C753B2382684D009329F2 /* ZLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLLoginViewController.m; sourceTree = "<group>"; };
-		AE6C753C2382684D009329F2 /* ZLMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLMineViewController.h; sourceTree = "<group>"; };
-		AE6C753D2382684D009329F2 /* ZLMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLMineViewController.m; sourceTree = "<group>"; };
-		AE6C753E2382684D009329F2 /* ZLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLLoginViewController.h; sourceTree = "<group>"; };
-		AE6C753F2382684D009329F2 /* ZLPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPasswordChangeViewController.m; sourceTree = "<group>"; };
-		AE6C754323826862009329F2 /* ZLLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLLoginTableViewCell.m; sourceTree = "<group>"; };
-		AE6C754423826862009329F2 /* ZLLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLLoginTableViewCell.h; sourceTree = "<group>"; };
-		AE6C7546238268EA009329F2 /* ZLRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLRecordViewController.h; sourceTree = "<group>"; };
-		AE6C7547238268EA009329F2 /* ZLRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLRecordViewController.m; sourceTree = "<group>"; };
-		AE6C7549238268F5009329F2 /* ZLRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLRecordTableViewCell.h; sourceTree = "<group>"; };
-		AE6C754A238268F5009329F2 /* ZLRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLRecordTableViewCell.m; sourceTree = "<group>"; };
-		AE6C754C23826949009329F2 /* ZLScorecardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLScorecardViewController.h; sourceTree = "<group>"; };
-		AE6C754D23826949009329F2 /* ZLScorecardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLScorecardViewController.m; sourceTree = "<group>"; };
-		AE6C754F23826952009329F2 /* ZLScorecardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLScorecardViewModel.m; sourceTree = "<group>"; };
-		AE6C755023826952009329F2 /* ZLScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLScorecardModel.h; sourceTree = "<group>"; };
-		AE6C755123826952009329F2 /* ZLScorecardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLScorecardViewModel.h; sourceTree = "<group>"; };
-		AE6C755223826952009329F2 /* ZLScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLScorecardModel.m; sourceTree = "<group>"; };
-		AE6C75552382695D009329F2 /* ZLTimePortionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLTimePortionTableViewCell.h; sourceTree = "<group>"; };
-		AE6C75562382695D009329F2 /* ZLBothTeamsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLBothTeamsTableViewCell.m; sourceTree = "<group>"; };
-		AE6C75572382695D009329F2 /* ZLScoringSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLScoringSaveTableViewCell.m; sourceTree = "<group>"; };
-		AE6C75582382695D009329F2 /* ZLScoringPartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLScoringPartTableViewCell.m; sourceTree = "<group>"; };
-		AE6C75592382695D009329F2 /* ZLTimePortionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLTimePortionTableViewCell.m; sourceTree = "<group>"; };
-		AE6C755A2382695D009329F2 /* ZLBothTeamsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLBothTeamsTableViewCell.h; sourceTree = "<group>"; };
-		AE6C755B2382695D009329F2 /* ZLScoringSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLScoringSaveTableViewCell.h; sourceTree = "<group>"; };
-		AE6C755C2382695D009329F2 /* ZLScoringPartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLScoringPartTableViewCell.h; sourceTree = "<group>"; };
+		AE6C752323826732009329F2 /* ADTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTabBarController.h; sourceTree = "<group>"; };
+		AE6C752423826732009329F2 /* AD_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AD_PrefixHeader.pch; sourceTree = "<group>"; };
+		AE6C752623826732009329F2 /* MBProgressHUD+ADNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+ADNJ.m"; sourceTree = "<group>"; };
+		AE6C752723826732009329F2 /* ADBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADBaseViewController.m; sourceTree = "<group>"; };
+		AE6C752923826732009329F2 /* ADHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADHBTool.m; sourceTree = "<group>"; };
+		AE6C752A23826732009329F2 /* ADHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADHBTool.h; sourceTree = "<group>"; };
+		AE6C752B23826732009329F2 /* ADBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADBaseViewController.h; sourceTree = "<group>"; };
+		AE6C752C23826732009329F2 /* ADUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADUIUtilities.m; sourceTree = "<group>"; };
+		AE6C752D23826732009329F2 /* ADUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADUIUtilities.h; sourceTree = "<group>"; };
+		AE6C752E23826733009329F2 /* ADTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADTabBarController.m; sourceTree = "<group>"; };
+		AE6C752F23826733009329F2 /* MBProgressHUD+ADNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+ADNJ.h"; sourceTree = "<group>"; };
+		AE6C753023826733009329F2 /* ADGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADGlobal.h; sourceTree = "<group>"; };
+		AE6C753723826822009329F2 /* ADSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADSetViewModel.m; sourceTree = "<group>"; };
+		AE6C753823826822009329F2 /* ADSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADSetViewModel.h; sourceTree = "<group>"; };
+		AE6C753A2382684D009329F2 /* ADPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPasswordChangeViewController.h; sourceTree = "<group>"; };
+		AE6C753B2382684D009329F2 /* ADLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADLoginViewController.m; sourceTree = "<group>"; };
+		AE6C753C2382684D009329F2 /* ADMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMineViewController.h; sourceTree = "<group>"; };
+		AE6C753D2382684D009329F2 /* ADMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMineViewController.m; sourceTree = "<group>"; };
+		AE6C753E2382684D009329F2 /* ADLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADLoginViewController.h; sourceTree = "<group>"; };
+		AE6C753F2382684D009329F2 /* ADPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPasswordChangeViewController.m; sourceTree = "<group>"; };
+		AE6C754323826862009329F2 /* ADLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADLoginTableViewCell.m; sourceTree = "<group>"; };
+		AE6C754423826862009329F2 /* ADLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADLoginTableViewCell.h; sourceTree = "<group>"; };
+		AE6C7546238268EA009329F2 /* ADRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADRecordViewController.h; sourceTree = "<group>"; };
+		AE6C7547238268EA009329F2 /* ADRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADRecordViewController.m; sourceTree = "<group>"; };
+		AE6C7549238268F5009329F2 /* ADRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADRecordTableViewCell.h; sourceTree = "<group>"; };
+		AE6C754A238268F5009329F2 /* ADRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADRecordTableViewCell.m; sourceTree = "<group>"; };
+		AE6C754C23826949009329F2 /* ADScorecardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADScorecardViewController.h; sourceTree = "<group>"; };
+		AE6C754D23826949009329F2 /* ADScorecardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADScorecardViewController.m; sourceTree = "<group>"; };
+		AE6C754F23826952009329F2 /* ADScorecardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADScorecardViewModel.m; sourceTree = "<group>"; };
+		AE6C755023826952009329F2 /* ADScorecardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADScorecardModel.h; sourceTree = "<group>"; };
+		AE6C755123826952009329F2 /* ADScorecardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADScorecardViewModel.h; sourceTree = "<group>"; };
+		AE6C755223826952009329F2 /* ADScorecardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADScorecardModel.m; sourceTree = "<group>"; };
+		AE6C75552382695D009329F2 /* ADTimePortionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTimePortionTableViewCell.h; sourceTree = "<group>"; };
+		AE6C75562382695D009329F2 /* ADBothTeamsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADBothTeamsTableViewCell.m; sourceTree = "<group>"; };
+		AE6C75572382695D009329F2 /* ADScoringSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADScoringSaveTableViewCell.m; sourceTree = "<group>"; };
+		AE6C75582382695D009329F2 /* ADScoringPartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADScoringPartTableViewCell.m; sourceTree = "<group>"; };
+		AE6C75592382695D009329F2 /* ADTimePortionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADTimePortionTableViewCell.m; sourceTree = "<group>"; };
+		AE6C755A2382695D009329F2 /* ADBothTeamsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADBothTeamsTableViewCell.h; sourceTree = "<group>"; };
+		AE6C755B2382695D009329F2 /* ADScoringSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADScoringSaveTableViewCell.h; sourceTree = "<group>"; };
+		AE6C755C2382695D009329F2 /* ADScoringPartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADScoringPartTableViewCell.h; sourceTree = "<group>"; };
 		AECF7707238F75A400F65475 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		AECF7709238F75AC00F65475 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AECF770B238F75B600F65475 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -165,7 +161,7 @@
 		AE6C74A023824280009329F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C749F23824280009329F2 /* efficientBasketballScore.app */,
+				AE6C749F23824280009329F2 /* InstantBasketballScore.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,8 +211,8 @@
 		AE6C74C7238265A4009329F2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C7546238268EA009329F2 /* ZLRecordViewController.h */,
-				AE6C7547238268EA009329F2 /* ZLRecordViewController.m */,
+				AE6C7546238268EA009329F2 /* ADRecordViewController.h */,
+				AE6C7547238268EA009329F2 /* ADRecordViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -224,8 +220,8 @@
 		AE6C74CA238265A4009329F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C7549238268F5009329F2 /* ZLRecordTableViewCell.h */,
-				AE6C754A238268F5009329F2 /* ZLRecordTableViewCell.m */,
+				AE6C7549238268F5009329F2 /* ADRecordTableViewCell.h */,
+				AE6C754A238268F5009329F2 /* ADRecordTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -243,10 +239,10 @@
 		AE6C74CE238265A4009329F2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C755023826952009329F2 /* ZLScorecardModel.h */,
-				AE6C755223826952009329F2 /* ZLScorecardModel.m */,
-				AE6C755123826952009329F2 /* ZLScorecardViewModel.h */,
-				AE6C754F23826952009329F2 /* ZLScorecardViewModel.m */,
+				AE6C755023826952009329F2 /* ADScorecardModel.h */,
+				AE6C755223826952009329F2 /* ADScorecardModel.m */,
+				AE6C755123826952009329F2 /* ADScorecardViewModel.h */,
+				AE6C754F23826952009329F2 /* ADScorecardViewModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -254,8 +250,8 @@
 		AE6C74D3238265A4009329F2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C754C23826949009329F2 /* ZLScorecardViewController.h */,
-				AE6C754D23826949009329F2 /* ZLScorecardViewController.m */,
+				AE6C754C23826949009329F2 /* ADScorecardViewController.h */,
+				AE6C754D23826949009329F2 /* ADScorecardViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -263,14 +259,14 @@
 		AE6C74D6238265A4009329F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C755A2382695D009329F2 /* ZLBothTeamsTableViewCell.h */,
-				AE6C75562382695D009329F2 /* ZLBothTeamsTableViewCell.m */,
-				AE6C755C2382695D009329F2 /* ZLScoringPartTableViewCell.h */,
-				AE6C75582382695D009329F2 /* ZLScoringPartTableViewCell.m */,
-				AE6C755B2382695D009329F2 /* ZLScoringSaveTableViewCell.h */,
-				AE6C75572382695D009329F2 /* ZLScoringSaveTableViewCell.m */,
-				AE6C75552382695D009329F2 /* ZLTimePortionTableViewCell.h */,
-				AE6C75592382695D009329F2 /* ZLTimePortionTableViewCell.m */,
+				AE6C755A2382695D009329F2 /* ADBothTeamsTableViewCell.h */,
+				AE6C75562382695D009329F2 /* ADBothTeamsTableViewCell.m */,
+				AE6C755C2382695D009329F2 /* ADScoringPartTableViewCell.h */,
+				AE6C75582382695D009329F2 /* ADScoringPartTableViewCell.m */,
+				AE6C755B2382695D009329F2 /* ADScoringSaveTableViewCell.h */,
+				AE6C75572382695D009329F2 /* ADScoringSaveTableViewCell.m */,
+				AE6C75552382695D009329F2 /* ADTimePortionTableViewCell.h */,
+				AE6C75592382695D009329F2 /* ADTimePortionTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -288,8 +284,8 @@
 		AE6C74E0238265A4009329F2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C753823826822009329F2 /* ZLSetViewModel.h */,
-				AE6C753723826822009329F2 /* ZLSetViewModel.m */,
+				AE6C753823826822009329F2 /* ADSetViewModel.h */,
+				AE6C753723826822009329F2 /* ADSetViewModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -297,12 +293,12 @@
 		AE6C74E3238265A4009329F2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C753E2382684D009329F2 /* ZLLoginViewController.h */,
-				AE6C753B2382684D009329F2 /* ZLLoginViewController.m */,
-				AE6C753C2382684D009329F2 /* ZLMineViewController.h */,
-				AE6C753D2382684D009329F2 /* ZLMineViewController.m */,
-				AE6C753A2382684D009329F2 /* ZLPasswordChangeViewController.h */,
-				AE6C753F2382684D009329F2 /* ZLPasswordChangeViewController.m */,
+				AE6C753E2382684D009329F2 /* ADLoginViewController.h */,
+				AE6C753B2382684D009329F2 /* ADLoginViewController.m */,
+				AE6C753C2382684D009329F2 /* ADMineViewController.h */,
+				AE6C753D2382684D009329F2 /* ADMineViewController.m */,
+				AE6C753A2382684D009329F2 /* ADPasswordChangeViewController.h */,
+				AE6C753F2382684D009329F2 /* ADPasswordChangeViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -310,8 +306,8 @@
 		AE6C74EA238265A4009329F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE6C754423826862009329F2 /* ZLLoginTableViewCell.h */,
-				AE6C754323826862009329F2 /* ZLLoginTableViewCell.m */,
+				AE6C754423826862009329F2 /* ADLoginTableViewCell.h */,
+				AE6C754323826862009329F2 /* ADLoginTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -319,26 +315,24 @@
 		AE6C74ED238265A4009329F2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				7233377C23E993A200991083 /* ZLNDHTTPClient.h */,
-				7233377B23E993A200991083 /* ZLNDHTTPClient.m */,
 				AE6C74F6238265A4009329F2 /* NSArray+log.h */,
 				AE6C7506238265A5009329F2 /* NSArray+log.m */,
 				AE6C74F8238265A4009329F2 /* NSDictionary+log.h */,
 				AE6C74F0238265A4009329F2 /* NSDictionary+log.m */,
 				AE6C74F1238265A4009329F2 /* CalendarTool.h */,
 				AE6C74FE238265A4009329F2 /* CalendarTool.m */,
-				AE6C752423826732009329F2 /* ZL_PrefixHeader.pch */,
-				AE6C752B23826732009329F2 /* ZLBaseViewController.h */,
-				AE6C752723826732009329F2 /* ZLBaseViewController.m */,
-				AE6C753023826733009329F2 /* ZLGlobal.h */,
-				AE6C752A23826732009329F2 /* ZLHBTool.h */,
-				AE6C752923826732009329F2 /* ZLHBTool.m */,
-				AE6C752323826732009329F2 /* ZLTabBarController.h */,
-				AE6C752E23826733009329F2 /* ZLTabBarController.m */,
-				AE6C752D23826732009329F2 /* ZLUIUtilities.h */,
-				AE6C752C23826732009329F2 /* ZLUIUtilities.m */,
-				AE6C752F23826733009329F2 /* MBProgressHUD+ZLNJ.h */,
-				AE6C752623826732009329F2 /* MBProgressHUD+ZLNJ.m */,
+				AE6C752423826732009329F2 /* AD_PrefixHeader.pch */,
+				AE6C752B23826732009329F2 /* ADBaseViewController.h */,
+				AE6C752723826732009329F2 /* ADBaseViewController.m */,
+				AE6C753023826733009329F2 /* ADGlobal.h */,
+				AE6C752A23826732009329F2 /* ADHBTool.h */,
+				AE6C752923826732009329F2 /* ADHBTool.m */,
+				AE6C752323826732009329F2 /* ADTabBarController.h */,
+				AE6C752E23826733009329F2 /* ADTabBarController.m */,
+				AE6C752D23826732009329F2 /* ADUIUtilities.h */,
+				AE6C752C23826732009329F2 /* ADUIUtilities.m */,
+				AE6C752F23826733009329F2 /* MBProgressHUD+ADNJ.h */,
+				AE6C752623826732009329F2 /* MBProgressHUD+ADNJ.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -388,7 +382,7 @@
 			);
 			name = PocketBasketballScout;
 			productName = PocketBasketballScout;
-			productReference = AE6C749F23824280009329F2 /* efficientBasketballScore.app */;
+			productReference = AE6C749F23824280009329F2 /* InstantBasketballScore.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -412,7 +406,6 @@
 			knownRegions = (
 				en,
 				Base,
-				ja,
 			);
 			mainGroup = AE6C74962382427F009329F2;
 			productRefGroup = AE6C74A023824280009329F2 /* Products */;
@@ -486,28 +479,27 @@
 				AE6C74BE2382657C009329F2 /* AppDelegate.m in Sources */,
 				AE6C751D238265A5009329F2 /* CalendarTool.m in Sources */,
 				AE6C74B523824284009329F2 /* main.m in Sources */,
-				AE6C755423826952009329F2 /* ZLScorecardModel.m in Sources */,
-				AE6C754523826862009329F2 /* ZLLoginTableViewCell.m in Sources */,
-				AE6C755323826952009329F2 /* ZLScorecardViewModel.m in Sources */,
-				AE6C753523826733009329F2 /* ZLUIUtilities.m in Sources */,
-				AE6C753423826733009329F2 /* ZLHBTool.m in Sources */,
-				AE6C753623826733009329F2 /* ZLTabBarController.m in Sources */,
-				7233377D23E993A200991083 /* ZLNDHTTPClient.m in Sources */,
-				AE6C75402382684D009329F2 /* ZLLoginViewController.m in Sources */,
-				AE6C755D2382695D009329F2 /* ZLBothTeamsTableViewCell.m in Sources */,
-				AE6C753323826733009329F2 /* ZLBaseViewController.m in Sources */,
-				AE6C75602382695D009329F2 /* ZLTimePortionTableViewCell.m in Sources */,
-				AE6C754B238268F5009329F2 /* ZLRecordTableViewCell.m in Sources */,
+				AE6C755423826952009329F2 /* ADScorecardModel.m in Sources */,
+				AE6C754523826862009329F2 /* ADLoginTableViewCell.m in Sources */,
+				AE6C755323826952009329F2 /* ADScorecardViewModel.m in Sources */,
+				AE6C753523826733009329F2 /* ADUIUtilities.m in Sources */,
+				AE6C753423826733009329F2 /* ADHBTool.m in Sources */,
+				AE6C753623826733009329F2 /* ADTabBarController.m in Sources */,
+				AE6C75402382684D009329F2 /* ADLoginViewController.m in Sources */,
+				AE6C755D2382695D009329F2 /* ADBothTeamsTableViewCell.m in Sources */,
+				AE6C753323826733009329F2 /* ADBaseViewController.m in Sources */,
+				AE6C75602382695D009329F2 /* ADTimePortionTableViewCell.m in Sources */,
+				AE6C754B238268F5009329F2 /* ADRecordTableViewCell.m in Sources */,
 				AE6C7517238265A5009329F2 /* NSDictionary+log.m in Sources */,
 				AE6C7522238265A5009329F2 /* NSArray+log.m in Sources */,
-				AE6C7548238268EA009329F2 /* ZLRecordViewController.m in Sources */,
-				AE6C755E2382695D009329F2 /* ZLScoringSaveTableViewCell.m in Sources */,
-				AE6C753923826822009329F2 /* ZLSetViewModel.m in Sources */,
-				AE6C75422382684D009329F2 /* ZLPasswordChangeViewController.m in Sources */,
-				AE6C755F2382695D009329F2 /* ZLScoringPartTableViewCell.m in Sources */,
-				AE6C75412382684D009329F2 /* ZLMineViewController.m in Sources */,
-				AE6C753223826733009329F2 /* MBProgressHUD+ZLNJ.m in Sources */,
-				AE6C754E23826949009329F2 /* ZLScorecardViewController.m in Sources */,
+				AE6C7548238268EA009329F2 /* ADRecordViewController.m in Sources */,
+				AE6C755E2382695D009329F2 /* ADScoringSaveTableViewCell.m in Sources */,
+				AE6C753923826822009329F2 /* ADSetViewModel.m in Sources */,
+				AE6C75422382684D009329F2 /* ADPasswordChangeViewController.m in Sources */,
+				AE6C755F2382695D009329F2 /* ADScoringPartTableViewCell.m in Sources */,
+				AE6C75412382684D009329F2 /* ADMineViewController.m in Sources */,
+				AE6C753223826733009329F2 /* MBProgressHUD+ADNJ.m in Sources */,
+				AE6C754E23826949009329F2 /* ADScorecardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +509,6 @@
 		AE6C74C0238265A4009329F2 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AE6C74C2238265A4009329F2 /* ja */,
 				AE6C74C3238265A4009329F2 /* en */,
 			);
 			name = Localizable.strings;
@@ -643,12 +634,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketBasketballScout/PocketBasketballScout.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: JEAN S Q Christ (GRCX8FPBD7)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Eleazar Perez (9NWMHUQ853)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FDW5VQ9SA2;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 9NWMHUQ853;
 				ENABLE_BITCODE = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScout/Common/ZL_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScout/Common/AD_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBasketballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -659,9 +650,9 @@
 					"$(PROJECT_DIR)/PocketBasketballScout/Common/JPush",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = windy.GameAlert;
-				PRODUCT_NAME = efficientBasketballScore;
-				PROVISIONING_PROFILE_SPECIFIER = dev_GameAlert_pro_20200209;
+				PRODUCT_BUNDLE_IDENTIFIER = windy.BasketballScore;
+				PRODUCT_NAME = InstantBasketballScore;
+				PROVISIONING_PROFILE_SPECIFIER = dis_pro_BasketballScore_20200307;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -673,12 +664,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketBasketballScout/PocketBasketballScout.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: JEAN S Q Christ (GRCX8FPBD7)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Eleazar Perez (9NWMHUQ853)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FDW5VQ9SA2;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 9NWMHUQ853;
 				ENABLE_BITCODE = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScout/Common/ZL_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketBasketballScout/Common/AD_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketBasketballScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -689,9 +680,9 @@
 					"$(PROJECT_DIR)/PocketBasketballScout/Common/JPush",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = windy.GameAlert;
-				PRODUCT_NAME = efficientBasketballScore;
-				PROVISIONING_PROFILE_SPECIFIER = dev_GameAlert_pro_20200209;
+				PRODUCT_BUNDLE_IDENTIFIER = windy.BasketballScore;
+				PRODUCT_NAME = InstantBasketballScore;
+				PROVISIONING_PROFILE_SPECIFIER = dis_pro_BasketballScore_20200307;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

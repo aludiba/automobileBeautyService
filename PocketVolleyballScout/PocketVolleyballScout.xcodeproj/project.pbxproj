@@ -70,7 +70,7 @@
 		AEAFE918240FF723008FE7D1 /* CAMineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAMineTableViewCell.m; sourceTree = "<group>"; };
 		AEAFE91A24100006008FE7D1 /* CAPasswordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAPasswordTableViewCell.h; sourceTree = "<group>"; };
 		AEAFE91B24100006008FE7D1 /* CAPasswordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAPasswordTableViewCell.m; sourceTree = "<group>"; };
-		AEB6EA5F2383DE87007526EF /* InstantVolleyballScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstantVolleyballScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEB6EA5F2383DE87007526EF /* VolleyballScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolleyballScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB6EA6E2383DE8B007526EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEB6EA732383DE8B007526EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEB6EA742383DE8B007526EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -199,7 +199,7 @@
 		AEB6EA602383DE87007526EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AEB6EA5F2383DE87007526EF /* InstantVolleyballScore.app */,
+				AEB6EA5F2383DE87007526EF /* VolleyballScore.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -424,7 +424,7 @@
 			);
 			name = PocketVolleyballScout;
 			productName = PocketVolleyballScout;
-			productReference = AEB6EA5F2383DE87007526EF /* InstantVolleyballScore.app */;
+			productReference = AEB6EA5F2383DE87007526EF /* VolleyballScore.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -681,10 +681,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketVolleyballScout/ConvenientVolleyballScout.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: MICHAEL PAUL Mccann (78X3898BSG)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Murtha James (MRSWW4X797)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GFSTRXD44G;
+				DEVELOPMENT_TEAM = MRSWW4X797;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -700,9 +700,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketVolleyballScout/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = windy.InstantVolleyballScore;
-				PRODUCT_NAME = InstantVolleyballScore;
-				PROVISIONING_PROFILE_SPECIFIER = dev_pro_InstantVolleyballScore_20200305;
+				PRODUCT_BUNDLE_IDENTIFIER = windy.VolleyballScore;
+				PRODUCT_NAME = VolleyballScore;
+				PROVISIONING_PROFILE_SPECIFIER = dis_pro_VolleyballScore_20200306;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -714,10 +714,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketVolleyballScout/ConvenientVolleyballScout.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: MICHAEL PAUL Mccann (78X3898BSG)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Murtha James (MRSWW4X797)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GFSTRXD44G;
+				DEVELOPMENT_TEAM = MRSWW4X797;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -733,9 +733,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketVolleyballScout/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = windy.InstantVolleyballScore;
-				PRODUCT_NAME = InstantVolleyballScore;
-				PROVISIONING_PROFILE_SPECIFIER = dev_pro_InstantVolleyballScore_20200305;
+				PRODUCT_BUNDLE_IDENTIFIER = windy.VolleyballScore;
+				PRODUCT_NAME = VolleyballScore;
+				PROVISIONING_PROFILE_SPECIFIER = dis_pro_VolleyballScore_20200306;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

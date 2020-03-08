@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ZLLoginViewController.h"
-#import "ZLNDHTTPClient.h"
+#import "ADLoginViewController.h"
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
@@ -32,17 +31,11 @@
     return YES;
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application{
-    NSString *URL = @"http://mock-api.com/Rz3yVMnM.mock/ZLBasketball";
-    [ZLNDHTTPClient ZLgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
-            NSArray *arr = (NSArray *)data;
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[arr lastObject]]];
-    }withErrorBlock:^(NSError *error, id errorData) {
-            
-    }];
+    
 }
 - (UIViewController *)rootController{
         //进行操作
-        ZLTabBarController *tabVC = [ZLTabBarController shareInstance];
+        ADTabBarController *tabVC = [ADTabBarController shareInstance];
         return tabVC;
 }
 - (void)setJPush:(NSDictionary *)launchOptions{
@@ -65,7 +58,7 @@
     // Required
     // init Push
     // notice: 2.1.5 版本的 SDK 新增的注册方法，改成可上报 IDFA，如果没有使用 IDFA 直接传 nil
-    [JPUSHService setupWithOption:launchOptions appKey:@"4fca0fda0304deee4be06ba6"
+    [JPUSHService setupWithOption:launchOptions appKey:@"b80146af85f0d65af7e68f4e"
                           channel:@"App Store"
                  apsForProduction:1];
 }
@@ -114,7 +107,7 @@
 //接受处理本地推送
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification NS_AVAILABLE_IOS(4_0) {
     //使用UIAlertView显示推送的消息
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:notification.alertTitle message:notification.alertBody delegate:self cancelButtonTitle:NSLocalizedString(@"确定", nil) otherButtonTitles:nil, nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:notification.alertTitle message:notification.alertBody delegate:self cancelButtonTitle:@"Confirm" otherButtonTitles:nil, nil];
     [alert show];
 }
 @end

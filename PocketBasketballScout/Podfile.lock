@@ -1,20 +1,5 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
-    - AFNetworking/NSURLSession
-  - AVOSCloud (12.1.0)
+  - AVOSCloud (12.0.3)
   - JCore (2.1.4-noidfa)
   - JPush (3.2.4-noidfa):
     - JCore (< 3.0.0, >= 2.0.0)
@@ -24,7 +9,6 @@ PODS:
   - YYModel (1.0.4)
 
 DEPENDENCIES:
-  - AFNetworking
   - AVOSCloud
   - JCore (= 2.1.4-noidfa)
   - JPush (= 3.2.4-noidfa)
@@ -35,7 +19,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - AFNetworking
     - AVOSCloud
     - JCore
     - JPush
@@ -45,8 +28,7 @@ SPEC REPOS:
     - YYModel
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  AVOSCloud: c8f9d789d67dfed10911e23bc1af289c23b108bb
+  AVOSCloud: 33bed804c1f89185ab66a12aa63ef89b2d949c3e
   JCore: 2f15311e6889ab43ed5d629802ef793cac566465
   JPush: 2ff11d3013b360bc1b7da16741027e88f12fe3e6
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -54,6 +36,6 @@ SPEC CHECKSUMS:
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 2088dab1386b48c70606a3144088cfb4bf7bc4c0
+PODFILE CHECKSUM: ff0e7cace0498352a5ee13608d53a10833bf18af
 
 COCOAPODS: 1.7.5
