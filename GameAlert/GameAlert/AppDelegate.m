@@ -37,13 +37,13 @@
     return YES;
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application{
-    NSString *URL = @"http://mock-api.com/Rz3yVMnM.mock/YWKGAGameAlert";
-    [YWKGANDHTTPClient YWKGAgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
-            NSArray *arr = (NSArray *)data;
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[arr lastObject]]];
-        } withErrorBlock:^(NSError *error, id errorData) {
-            
-        }];
+//    NSString *URL = @"http://mock-api.com/Rz3yVMnM.mock/YWKGAGameAlert";
+//    [YWKGANDHTTPClient YWKGAgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
+//            NSArray *arr = (NSArray *)data;
+//            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[arr lastObject]]];
+//        } withErrorBlock:^(NSError *error, id errorData) {
+//            
+//        }];
 }
 - (UIViewController *)rootController{
     AVUser *bUser = [AVUser currentUser];

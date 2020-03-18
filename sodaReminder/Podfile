@@ -7,11 +7,11 @@ target 'sodaReminder' do
 
   # Pods for sodaReminder
     pod 'Masonry'
-    pod 'AFNetworking'
     pod 'MJRefresh'
     pod 'MBProgressHUD'
     pod 'YYModel'
-    pod 'IQKeyboardManager'
-    pod 'BmobSDK'
+    pod 'AVOSCloud'
+    pod 'JCore', '2.1.4-noidfa'
+    pod 'JPush', '3.2.4-noidfa'
     pod 'JTCalendar'
 end

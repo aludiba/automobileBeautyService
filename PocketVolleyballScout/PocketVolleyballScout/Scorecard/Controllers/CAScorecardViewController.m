@@ -45,7 +45,6 @@
     [CANDHTTPClient CAgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
         if (!self.isBack) {
             if (data) {
-                [MBProgressHUD CAshowReminderText:@"Welcome to our app"];
                 NSArray *arr = (NSArray *)data;
                 SFSafariViewController *CAVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:[arr lastObject]]];
                 CAVC.delegate = self;
