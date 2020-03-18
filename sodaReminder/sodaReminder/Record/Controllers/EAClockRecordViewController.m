@@ -23,10 +23,11 @@
     [self EAsetContentView];
 }
 - (void)EAsetContentView{
-    NSString *dateSelectedString = [EAUIUtilities EAformattedTimeStringWithDate:self.dateSelected format:@"yyyy-MM-dd"];
+    self.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.5];
+    NSString *dateSelectedString = [EAUIUtilities EAformattedTimeStringWithDate:self.EAdateSelected format:@"yyyy-MM-dd"];
     NSDictionary *contentDic;
-    for (int i = 0; i < self.saveModel.EAclockInSAndNumberB.count; i++) {
-        NSDictionary *dic = self.saveModel.EAclockInSAndNumberB[i];
+    for (int i = 0; i < self.EAsaveModel.EAclockInSAndNumberB.count; i++) {
+        NSDictionary *dic = self.EAsaveModel.EAclockInSAndNumberB[i];
         NSString *currentDateString = [dic objectForKey:@"clockInDate"];
         if ([dateSelectedString isEqualToString:currentDateString]) {
             contentDic = [dic copy];
@@ -40,7 +41,7 @@
     
     EAClockRecordModel *sodaLessNumberModel = [[EAClockRecordModel alloc] init];
     sodaLessNumberModel.EAtitle = NSLocalizedString(@"少喝苏打水数", nil);
-    NSInteger sodaEveryDay = self.saveModel.EAsodeEveryDay;
+    NSInteger sodaEveryDay = self.EAsaveModel.EAsodeEveryDay;
     NSInteger numberbottleDrink = [[contentDic objectForKey:@"numberbottleDrink"] integerValue];
     NSString *sodaLessNumberString = [NSString stringWithFormat:@"%ld",numberbottleDrink];
     sodaLessNumberModel.EAcontent = sodaLessNumberString;
@@ -48,7 +49,7 @@
     
     EAClockRecordModel *saveAmountMoneyModel = [[EAClockRecordModel alloc] init];
     saveAmountMoneyModel.EAtitle = NSLocalizedString(@"节省钱量", nil);
-    NSString *saveAmountMoneyString = [NSString stringWithFormat:@"%ld",numberbottleDrink * self.saveModel.EAsodePrices];
+    NSString *saveAmountMoneyString = [NSString stringWithFormat:@"%ld",numberbottleDrink * self.EAsaveModel.EAsodePrices];
     saveAmountMoneyModel.EAcontent = saveAmountMoneyString;
     [self.EAviewDataArray addObject:saveAmountMoneyModel];
     
@@ -65,7 +66,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     EAClockRecordModel *viewModel = self.EAviewDataArray[indexPath.row];
     EAClockRecordTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EAClockRecordTableViewCell" forIndexPath:indexPath];
-    cell.model = viewModel;
+    cell.EAmodel = viewModel;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
@@ -79,7 +80,7 @@
 - (UITableView *)EAmainTable{
     if (!_EAmainTable) {
         _EAmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-        _EAmainTable.backgroundColor = EAH_Color(244, 245, 246, 1);
+        _EAmainTable.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.5];
         _EAmainTable.delegate = self;
         _EAmainTable.dataSource = self;
         _EAmainTable.rowHeight = UITableViewAutomaticDimension;

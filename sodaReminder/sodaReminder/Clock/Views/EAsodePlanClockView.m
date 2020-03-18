@@ -8,9 +8,9 @@
 
 #import "EAsodePlanClockView.h"
 @interface EAsodePlanClockView()<UITextFieldDelegate>
-@property(nonatomic, strong)UIView *backView;
-@property(nonatomic, strong)UIView *contentView;
-@property(nonatomic, strong)UIButton *saveButton;
+@property(nonatomic, strong)UIView *EAbackView;
+@property(nonatomic, strong)UIView *EAcontentView;
+@property(nonatomic, strong)UIButton *EAsaveButton;
 @end
 
 @implementation EAsodePlanClockView
@@ -18,39 +18,40 @@
 {
     self = [super init];
     if (self) {
-        [self addSubview:self.backView];
-        [self.backView addSubview:self.contentView];
-        [self.contentView addSubview:self.contentField];
-        [self.contentView addSubview:self.saveButton];
+        [self addSubview:self.EAbackView];
+        [self.EAbackView addSubview:self.EAcontentView];
+        [self.EAcontentView addSubview:self.EAcontentField];
+        [self.EAcontentView addSubview:self.EAsaveButton];
         
-        [self.backView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.EAbackView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self);
             make.top.equalTo(self);
             make.trailing.equalTo(self);
             make.bottom.equalTo(self);
         }];
-        [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.backView).offset(50);
-            make.centerY.equalTo(self.backView).offset(-90);
-            make.trailing.equalTo(self.backView).offset(-50);
+        [self.EAcontentView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.EAbackView).offset(50);
+            make.centerY.equalTo(self.EAbackView).offset(-90);
+            make.trailing.equalTo(self.EAbackView).offset(-50);
             make.height.mas_equalTo(160);
         }];
-        [self.contentField mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(20);
-            make.top.equalTo(self.contentView).offset(25);
-            make.trailing.equalTo(self.contentView).offset(-20);
+        [self.EAcontentField mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.EAcontentView).offset(20);
+            make.top.equalTo(self.EAcontentView).offset(25);
+            make.trailing.equalTo(self.EAcontentView).offset(-20);
             make.height.mas_equalTo(50);
         }];
-        [self.saveButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(50);
-            make.top.equalTo(self.contentField.mas_bottom).offset(25);
-            make.trailing.equalTo(self.contentView).offset(-50);
+        [self.EAsaveButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.EAcontentView).offset(50);
+            make.top.equalTo(self.EAcontentField.mas_bottom).offset(25);
+            make.trailing.equalTo(self.EAcontentView).offset(-50);
             make.height.mas_equalTo(40);
         }];
     }
     return self;
 }
-- (void)btnClick{
+- (void)EAbtnClick{
+    [self.EAcontentField resignFirstResponder];
     self.hidden = YES;
     if (self.EAsodePlanClockSaveB) {
         self.EAsodePlanClockSaveB(self);
@@ -60,47 +61,47 @@
     self.hidden = YES;
 }
 #pragma mark - 属性懒加载
-- (UIView *)backView{
-    if (!_backView) {
-        _backView = [[UIView alloc] init];
-        _backView.backgroundColor = EAH_Color(0, 0, 0, 0.5);
+- (UIView *)EAbackView{
+    if (!_EAbackView) {
+        _EAbackView = [[UIView alloc] init];
+        _EAbackView.backgroundColor = EAH_Color(0, 0, 0, 0.5);
     }
-    return _backView;
+    return _EAbackView;
 }
-- (UIView *)contentView{
-    if (!_contentView) {
-        _contentView = [[UIView alloc] init];
-        _contentView.backgroundColor = [UIColor greenColor];
-        _contentView.layer.cornerRadius = 10.0f;
-        _contentView.layer.masksToBounds = YES;
+- (UIView *)EAcontentView{
+    if (!_EAcontentView) {
+        _EAcontentView = [[UIView alloc] init];
+        _EAcontentView.backgroundColor = [UIColor greenColor];
+        _EAcontentView.layer.cornerRadius = 10.0f;
+        _EAcontentView.layer.masksToBounds = YES;
     }
-    return _contentView;
+    return _EAcontentView;
 }
-- (UITextField *)contentField{
-    if (!_contentField) {
-        _contentField = [[UITextField alloc] init];
-        _contentField.keyboardType = UIKeyboardTypeNumberPad;
-        _contentField.backgroundColor = [UIColor grayColor];
-        _contentField.delegate = self;
-        _contentField.textColor = [UIColor blackColor];
-        _contentField.placeholder = NSLocalizedString(@"   今天喝了几瓶苏打水", nil);
-        _contentField.font = [UIFont systemFontOfSize:16];
-        _contentField.layer.cornerRadius = 8.0f;
-        _contentField.layer.masksToBounds = YES;
+- (UITextField *)EAcontentField{
+    if (!_EAcontentField) {
+        _EAcontentField = [[UITextField alloc] init];
+        _EAcontentField.keyboardType = UIKeyboardTypeNumberPad;
+        _EAcontentField.backgroundColor = [UIColor grayColor];
+        _EAcontentField.delegate = self;
+        _EAcontentField.textColor = [UIColor blackColor];
+        _EAcontentField.placeholder = NSLocalizedString(@"   今天喝了几瓶苏打水", nil);
+        _EAcontentField.font = [UIFont systemFontOfSize:16];
+        _EAcontentField.layer.cornerRadius = 8.0f;
+        _EAcontentField.layer.masksToBounds = YES;
     }
-    return _contentField;
+    return _EAcontentField;
 }
-- (UIButton *)saveButton{
-    if (!_saveButton) {
-        _saveButton = [[UIButton alloc] init];
-        [_saveButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_saveButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
-        [_saveButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
-        [_saveButton setBackgroundColor:[UIColor redColor]];
-        _saveButton.layer.cornerRadius = 8.0f;
-        _saveButton.layer.masksToBounds = YES;
-        [_saveButton addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+- (UIButton *)EAsaveButton{
+    if (!_EAsaveButton) {
+        _EAsaveButton = [[UIButton alloc] init];
+        [_EAsaveButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_EAsaveButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
+        [_EAsaveButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
+        [_EAsaveButton setBackgroundColor:[UIColor redColor]];
+        _EAsaveButton.layer.cornerRadius = 8.0f;
+        _EAsaveButton.layer.masksToBounds = YES;
+        [_EAsaveButton addTarget:self action:@selector(EAbtnClick) forControlEvents:UIControlEventTouchUpInside];
     }
-    return _saveButton;
+    return _EAsaveButton;
 }
 @end

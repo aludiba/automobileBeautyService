@@ -19,6 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = NSLocalizedString(@"修改昵称", nil);
+    self.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.5];
     [self EAsetContent];
 }
 - (void)EAsetContent{
@@ -46,8 +47,8 @@
     [bUser saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
         if (isSuccessful) {
             [MBProgressHUD EAshowReminderText:NSLocalizedString(@"更新成功", nil)];
-            if (self.modifynicknameB) {
-                self.modifynicknameB(self);
+            if (self.EAmodifynicknameB) {
+                self.EAmodifynicknameB(self);
             }
             [self.navigationController popViewControllerAnimated:YES];
         }else{

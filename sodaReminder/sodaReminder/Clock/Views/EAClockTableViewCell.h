@@ -14,9 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^EAClockCellBlock)(EAClockTableViewCell *cell);
 @interface EAClockTableViewCell : UITableViewCell
-@property (nonatomic, strong)EAsodePlanSaveModel *model;
+@property (nonatomic, strong)EAsodePlanSaveModel *EAmodel;
 @property (nonatomic, copy)EAClockCellBlock EAClockCellB;
-@property (nonatomic, assign)NSUInteger selectIndex;
+@property (nonatomic, assign)NSUInteger EAselectIndex;
 @end
 
 NS_ASSUME_NONNULL_END

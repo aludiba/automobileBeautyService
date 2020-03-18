@@ -56,7 +56,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
         }
     });
 }
-+ (EATabBarController *)shareInstance{
++ (EATabBarController *)EAshareInstance{
     static EATabBarController *client;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -66,9 +66,9 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self setContentView];
+    [self EAsetContentView];
 }
-- (void)setContentView{
+- (void)EAsetContentView{
     self.tabBar.barTintColor = [UIColor greenColor];
     self.EAClockVC = [[EAClockViewController alloc] init];
     UINavigationController *EAClock = [[UINavigationController alloc] initWithRootViewController:self.EAClockVC];

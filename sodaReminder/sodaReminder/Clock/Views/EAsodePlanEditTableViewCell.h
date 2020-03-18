@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class EAsodePlanModel;
 
 @interface EAsodePlanEditTableViewCell : UITableViewCell
-@property(nonatomic, strong)EAsodePlanModel *model;
+@property(nonatomic, strong)EAsodePlanModel *EAmodel;
 @end
 
 NS_ASSUME_NONNULL_END

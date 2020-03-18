@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @class EASetViewModel;
 @interface EASetTableViewCell : UITableViewCell
-@property(nonatomic, strong)EASetViewModel *model;
+@property(nonatomic, strong)EASetViewModel *EAmodel;
 @end
 
 NS_ASSUME_NONNULL_END

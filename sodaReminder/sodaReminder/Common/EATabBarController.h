@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class EATabBarController;
 
 @interface EATabBarController : UITabBarController
-+ (EATabBarController *)shareInstance;
++ (EATabBarController *)EAshareInstance;
 
 @end
 

@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface EALoginViewController : EABaseViewController
-+ (EALoginViewController *)shareInstance;
++ (EALoginViewController *)EAshareInstance;
 @end
 
 NS_ASSUME_NONNULL_END

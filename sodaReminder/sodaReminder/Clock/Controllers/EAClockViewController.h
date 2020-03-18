@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface EAClockViewController : EABaseViewController
-- (void)loadData;
+- (void)EAloadData;
 @end
 
 NS_ASSUME_NONNULL_END

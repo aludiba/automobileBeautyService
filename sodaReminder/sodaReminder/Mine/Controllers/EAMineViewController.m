@@ -25,7 +25,7 @@
     [self EAsetContentView];
 }
 - (void)EAsetContentView{
-    self.view.backgroundColor = EAH_Color(242, 242, 242, 1);
+    self.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.5];
     EASetViewModel *viewModel = [[EASetViewModel alloc] init];
     viewModel.EAtitle = NSLocalizedString(@"昵称", nil);
     AVUser *user = [AVUser currentUser];
@@ -57,7 +57,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     EASetViewModel *viewModel = self.EAviewDataArray[indexPath.row];
     EASetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EASetTableViewCell" forIndexPath:indexPath];
-    cell.model = viewModel;
+    cell.EAmodel = viewModel;
     cell.selectionStyle = UITableViewCellSelectionStyleDefault;
     return cell;
 }
@@ -69,7 +69,7 @@
         {
             EAModifyNicknameViewController *mnnVC = [[EAModifyNicknameViewController alloc] init];
             __weak __typeof(self)weakSelf = self;
-            mnnVC.modifynicknameB = ^(EAModifyNicknameViewController * _Nonnull nicknameVC) {
+            mnnVC.EAmodifynicknameB = ^(EAModifyNicknameViewController * _Nonnull nicknameVC) {
                 viewModel.EAcontent = nicknameVC.EAnickname;
                 [weakSelf.EAmainTable reloadData];
             };
@@ -87,7 +87,7 @@
         case 2:
         {
             [AVUser logOut];
-            EALoginViewController *loginVC = [EALoginViewController shareInstance];
+            EALoginViewController *loginVC = [EALoginViewController EAshareInstance];
             UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
             EAKeyWindow.rootViewController = loginVCNav;
         }
@@ -106,7 +106,7 @@
 - (UITableView *)EAmainTable{
     if (!_EAmainTable) {
         _EAmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-        _EAmainTable.backgroundColor = EAH_Color(244, 245, 246, 1);
+        _EAmainTable.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.5];
         _EAmainTable.delegate = self;
         _EAmainTable.dataSource = self;
         _EAmainTable.rowHeight = UITableViewAutomaticDimension;

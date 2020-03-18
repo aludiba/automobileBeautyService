@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @class EAClockRecordModel;
 @interface EAClockRecordTableViewCell : UITableViewCell
-@property(nonatomic, strong)EAClockRecordModel *model;
+@property(nonatomic, strong)EAClockRecordModel *EAmodel;
 @end
 
 NS_ASSUME_NONNULL_END

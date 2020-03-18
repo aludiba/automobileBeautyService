@@ -25,6 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = NSLocalizedString(@"戒苏打水计划", nil);
+    self.view.backgroundColor = [UIColor whiteColor];
     [self EAsetContentView];
 }
 - (void)viewWillAppear:(BOOL)animated{
@@ -35,8 +36,8 @@
     sodaAgesModel.EAtype = 0;
     sodaAgesModel.EAtitle = NSLocalizedString(@"苏打水龄", nil);
     sodaAgesModel.EAunit = NSLocalizedString(@"年", nil);
-    if (self.objectId.length) {
-        sodaAgesModel.EAcontent = [NSString stringWithFormat:@"%ld",self.saveModel.EAsodeAges];
+    if (self.EAobjectId.length) {
+        sodaAgesModel.EAcontent = [NSString stringWithFormat:@"%ld",self.EAsaveModel.EAsodeAges];
     }
     sodaAgesModel.EAdefaultString = NSLocalizedString(@"请输入苏打水龄", nil);
     [self.EAviewDataArray addObject:sodaAgesModel];
@@ -44,8 +45,8 @@
     EAsodePlanModel *timeDrinkModel = [[EAsodePlanModel alloc] init];
     timeDrinkModel.EAtype = 1;
     timeDrinkModel.EAtitle = NSLocalizedString(@"戒苏打水时间", nil);
-    if (self.objectId.length) {
-        timeDrinkModel.EAcontent = [EAUIUtilities EAformattedTimeStringWithDate:self.saveModel.EAtimeGiveSodeDate format:@"yyyy-MM-dd"];
+    if (self.EAobjectId.length) {
+        timeDrinkModel.EAcontent = [EAUIUtilities EAformattedTimeStringWithDate:self.EAsaveModel.EAtimeGiveSodeDate format:@"yyyy-MM-dd"];
     }
     timeDrinkModel.EAdefaultString = NSLocalizedString(@"请选择戒苏打水时间", nil);
     [self.EAviewDataArray addObject:timeDrinkModel];
@@ -53,8 +54,8 @@
     EAsodePlanModel *EAsodeEveryDayModel = [[EAsodePlanModel alloc] init];
     EAsodeEveryDayModel.EAtype = 0;
     EAsodeEveryDayModel.EAtitle = NSLocalizedString(@"每天苏打水量", nil);
-    if (self.objectId.length) {
-        EAsodeEveryDayModel.EAcontent = [NSString stringWithFormat:@"%ld",self.saveModel.EAsodeEveryDay];
+    if (self.EAobjectId.length) {
+        EAsodeEveryDayModel.EAcontent = [NSString stringWithFormat:@"%ld",self.EAsaveModel.EAsodeEveryDay];
     }
     EAsodeEveryDayModel.EAunit = NSLocalizedString(@"瓶", nil);
     EAsodeEveryDayModel.EAdefaultString = NSLocalizedString(@"请输入每天苏打水量", nil);
@@ -63,8 +64,8 @@
     EAsodePlanModel *EAsodePricesModel = [[EAsodePlanModel alloc] init];
     EAsodePricesModel.EAtype = 0;
     EAsodePricesModel.EAtitle = NSLocalizedString(@"苏打水价格", nil);
-    if (self.objectId.length) {
-        EAsodePricesModel.EAcontent = [NSString stringWithFormat:@"%ld",self.saveModel.EAsodePrices];
+    if (self.EAobjectId.length) {
+        EAsodePricesModel.EAcontent = [NSString stringWithFormat:@"%ld",self.EAsaveModel.EAsodePrices];
     }
     EAsodePricesModel.EAunit = NSLocalizedString(@"元/瓶", nil);
     EAsodePricesModel.EAdefaultString = NSLocalizedString(@"请输入苏打水价格", nil);
@@ -90,12 +91,12 @@
     EAsodePlanModel *viewModel = self.EAviewDataArray[indexPath.row];
     if (viewModel.EAtype == 0) {
         EAsodePlanEditTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EAsodePlanEditTableViewCell" forIndexPath:indexPath];
-        cell.model = viewModel;
+        cell.EAmodel = viewModel;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }else if (viewModel.EAtype == 1){
         EAsodePlanDateTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EAsodePlanDateTableViewCell" forIndexPath:indexPath];
-        cell.model = viewModel;
+        cell.EAmodel = viewModel;
         __weak typeof(self) weakSelf = self;
         cell.EAsodePlanDateB = ^(EAsodePlanDateTableViewCell * _Nonnull cell) {
             [weakSelf.EAmainTable reloadData];
@@ -122,22 +123,22 @@
         }else{
             switch (i) {
                 case 0:
-                    self.saveModel.EAsodeAges = [model.EAcontent integerValue];
+                    self.EAsaveModel.EAsodeAges = [model.EAcontent integerValue];
                     break;
                 case 2:
-                self.saveModel.EAsodeEveryDay = [model.EAcontent integerValue];
+                self.EAsaveModel.EAsodeEveryDay = [model.EAcontent integerValue];
                 break;
                 case 3:
-                self.saveModel.EAsodePrices = [model.EAcontent integerValue];
+                self.EAsaveModel.EAsodePrices = [model.EAcontent integerValue];
                 break;
                 default:
                     break;
             }
         }
     }
-    NSMutableDictionary *jsonDictionary = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[self.saveModel yy_modelToJSONObject]];
+    NSMutableDictionary *jsonDictionary = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[self.EAsaveModel yy_modelToJSONObject]];
     [jsonDictionary setObject:[[NSDate alloc] init] forKey:@"EAsaveDate"];
-    if (!self.saveModel.EAclockInSAndNumberB.count) {
+    if (!self.EAsaveModel.EAclockInSAndNumberB.count) {
     NSMutableArray *EAclockInSAndNumberB = [[NSMutableArray alloc] init];
     NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
     NSString *clockInDateString = @"2019-01-01";
@@ -151,8 +152,8 @@
     NSDate *date = [EAUIUtilities EAdateFromString:dateString formate:@"yyyy-MM-dd"];
     [jsonDictionary setObject:date forKey:@"EAtimeGiveSodeDate"];
     NSLog(@"jsonDictionary:%@",jsonDictionary);
-    if (self.objectId.length) {
-        AVObject *diary = [AVObject objectWithClassName:@"EAsodePlan" objectId:self.objectId];
+    if (self.EAobjectId.length) {
+        AVObject *diary = [AVObject objectWithClassName:@"EAsodePlan" objectId:self.EAobjectId];
         for (NSString *key in jsonDictionary.allKeys) {
             [diary setObject:[jsonDictionary objectForKey:key]  forKey:key];
         }
@@ -162,7 +163,7 @@
             if (isSuccessful) {
                 //创建成功后的动作
                 [MBProgressHUD EAshowReminderText:NSLocalizedString(@"更新成功", nil)];
-                [self.superVC loadData];
+                [self.EAsuperVC EAloadData];
                 [self.navigationController popViewControllerAnimated:YES];
             } else if (error){
                 //发生错误后的动作
@@ -184,7 +185,7 @@
         if (isSuccessful) {
             //创建成功后的动作
             [MBProgressHUD EAshowReminderText:NSLocalizedString(@"保存成功", nil)];
-            [self.superVC loadData];
+            [self.EAsuperVC EAloadData];
             [self.navigationController popViewControllerAnimated:YES];
         } else if (error){
             //发生错误后的动作
@@ -198,14 +199,14 @@
     }
 }
 #pragma mark - 属性懒加载
-- (EAsodePlanSaveModel *)saveModel{
-    if (!_saveModel) {
-        _saveModel = [[EAsodePlanSaveModel alloc] init];
-        _saveModel.EAcumulativeNubDays = 0;//累计天数
-        _saveModel.EAaccumulativeBot = 0;//累计少喝瓶数
-        _saveModel.EAcumulativeAmount = 0;//累计少花钱数
+- (EAsodePlanSaveModel *)EAsaveModel{
+    if (!_EAsaveModel) {
+        _EAsaveModel = [[EAsodePlanSaveModel alloc] init];
+        _EAsaveModel.EAcumulativeNubDays = 0;//累计天数
+        _EAsaveModel.EAaccumulativeBot = 0;//累计少喝瓶数
+        _EAsaveModel.EAcumulativeAmount = 0;//累计少花钱数
     }
-    return _saveModel;
+    return _EAsaveModel;
 }
 - (NSMutableArray *)EAviewDataArray{
     if (!_EAviewDataArray) {
@@ -216,7 +217,7 @@
 - (UITableView *)EAmainTable{
     if (!_EAmainTable) {
         _EAmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-        _EAmainTable.backgroundColor = EAH_Color(244, 245, 246, 1);
+        _EAmainTable.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.5];
         _EAmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
         _EAmainTable.delegate = self;
         _EAmainTable.dataSource = self;

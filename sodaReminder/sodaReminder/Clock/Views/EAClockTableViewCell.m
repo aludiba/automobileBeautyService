@@ -17,7 +17,7 @@
 @implementation EAClockTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = EAH_Color(242, 242, 242, 1);
+        self.contentView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.5];
         [self.contentView addSubview:self.EAremindLabel];
         [self.contentView addSubview:self.EAtargetButton];
         [self.contentView addSubview:self.EAclockInButton];
@@ -44,16 +44,16 @@
     }
     return self;
 }
-- (void)setModel:(EAsodePlanSaveModel *)model{
-    _model = model;
-    self.EAremindLabel.text = [NSString stringWithFormat:@"%@%ld%@\n\n%@%ld%@\n%@%ld%@",NSLocalizedString(@"已经", nil),_model.EAcumulativeNubDays,NSLocalizedString(@"天~", nil),NSLocalizedString(@"少喝", nil),_model.EAaccumulativeBot,NSLocalizedString(@"瓶苏打水", nil),NSLocalizedString(@"累计节省", nil),_model.EAcumulativeAmount,NSLocalizedString(@"元", nil)];
+- (void)setEAmodel:(EAsodePlanSaveModel *)EAmodel{
+    _EAmodel = EAmodel;
+    self.EAremindLabel.text = [NSString stringWithFormat:@"%@%ld%@\n\n%@%ld%@\n%@%ld%@",NSLocalizedString(@"已经", nil),_EAmodel.EAcumulativeNubDays,NSLocalizedString(@"天~", nil),NSLocalizedString(@"少喝", nil),_EAmodel.EAaccumulativeBot,NSLocalizedString(@"瓶苏打水", nil),NSLocalizedString(@"累计节省", nil),_EAmodel.EAcumulativeAmount,NSLocalizedString(@"元", nil)];
 }
 #pragma mark - 按钮点击事件
 - (void)EAbtnClick:(UIButton *)sender{
     if (sender.tag == 100) {
-        self.selectIndex = 0;
+        self.EAselectIndex = 0;
     }else if (sender.tag == 101){
-        self.selectIndex = 1;
+        self.EAselectIndex = 1;
     }
     if (self.EAClockCellB) {
         self.EAClockCellB(self);
@@ -63,12 +63,12 @@
 - (UILabel *)EAremindLabel{
     if (!_EAremindLabel) {
         _EAremindLabel = [[UILabel alloc] init];
-        _EAremindLabel.layer.cornerRadius = 32.0f;
+        _EAremindLabel.layer.cornerRadius = 16.0f;
         _EAremindLabel.layer.masksToBounds = YES;
-        _EAremindLabel.textColor = [UIColor blackColor];
+        _EAremindLabel.textColor = [UIColor darkGrayColor];
         _EAremindLabel.font = [UIFont systemFontOfSize:20];
         _EAremindLabel.numberOfLines = 0;
-        _EAremindLabel.backgroundColor = [UIColor grayColor];
+        _EAremindLabel.backgroundColor = [UIColor orangeColor];
         _EAremindLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _EAremindLabel;
@@ -76,9 +76,9 @@
 - (UIButton *)EAtargetButton{
     if (!_EAtargetButton) {
         _EAtargetButton = [[UIButton alloc] init];
-        _EAtargetButton.layer.cornerRadius = 8.0f;
+        _EAtargetButton.layer.cornerRadius = 12.0f;
         _EAtargetButton.layer.masksToBounds = YES;
-        [_EAtargetButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [_EAtargetButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
         _EAtargetButton.titleLabel.font = [UIFont systemFontOfSize:15];
         [_EAtargetButton setBackgroundColor:[UIColor purpleColor]];
         _EAtargetButton.titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -91,11 +91,11 @@
 - (UIButton *)EAclockInButton{
     if (!_EAclockInButton) {
         _EAclockInButton = [[UIButton alloc] init];
-        _EAclockInButton.layer.cornerRadius = 8.0f;
+        _EAclockInButton.layer.cornerRadius = 12.0f;
         _EAclockInButton.layer.masksToBounds = YES;
-        [_EAclockInButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [_EAclockInButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
         _EAclockInButton.titleLabel.font = [UIFont systemFontOfSize:15];
-        [_EAclockInButton setBackgroundColor:[UIColor purpleColor]];
+        [_EAclockInButton setBackgroundColor:[UIColor blueColor]];
         _EAclockInButton.titleLabel.textAlignment = NSTextAlignmentCenter;
         [_EAclockInButton setTitle:NSLocalizedString(@"打卡", nil) forState:UIControlStateNormal];
         _EAclockInButton.tag = 101;

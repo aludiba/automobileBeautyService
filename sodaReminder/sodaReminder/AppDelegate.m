@@ -34,11 +34,11 @@
     AVUser *bUser = [AVUser currentUser];
     if (bUser) {
 //        进行操作
-        EATabBarController *tabVC = [EATabBarController shareInstance];
+        EATabBarController *tabVC = [EATabBarController EAshareInstance];
         return tabVC;
     }else{
         //对象为空时，可打开用户注册界面
-        EALoginViewController *loginVC = [EALoginViewController shareInstance];
+        EALoginViewController *loginVC = [EALoginViewController EAshareInstance];
         return loginVC;
     }
 }

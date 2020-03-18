@@ -13,7 +13,7 @@
 @end
 
 @implementation EALoginViewController
-+ (EALoginViewController *)shareInstance{
++ (EALoginViewController *)EAshareInstance{
     static EALoginViewController *client;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -35,13 +35,13 @@
     self.navigationController.navigationBar.hidden = NO;
 }
 - (void)EAsetContentView{
-    self.view.backgroundColor = EAH_Color(242, 242, 242, 1);
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.EAmainTable];
     [self.EAmainTable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view);
+        make.top.equalTo(self.mas_topLayoutGuideTop);
         make.leading.equalTo(self.view);
         make.trailing.equalTo(self.view);
-        make.bottom.equalTo(self.view);
+        make.bottom.equalTo(self.mas_bottomLayoutGuideBottom);
     }];
 }
 #pragma mark - 属性懒加载
@@ -62,7 +62,7 @@
         _EAmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
         _EAmainTable.delegate = self;
         _EAmainTable.dataSource = self;
-        _EAmainTable.backgroundColor = EAH_Color(242, 242, 242, 1);
+        _EAmainTable.backgroundColor = [UIColor whiteColor];
         _EAmainTable.rowHeight = UITableViewAutomaticDimension;
         _EAmainTable.estimatedRowHeight = 55.0f;
         _EAmainTable.tableHeaderView = [[UIView alloc] init];

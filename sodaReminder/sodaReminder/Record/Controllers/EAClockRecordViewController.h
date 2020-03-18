@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 @class EAsodePlanSaveModel;
 
 @interface EAClockRecordViewController : EABaseViewController
-@property(nonatomic, strong)NSDate *dateSelected;
-@property(nonatomic, strong)EAsodePlanSaveModel *saveModel;
+@property(nonatomic, strong)NSDate *EAdateSelected;
+@property(nonatomic, strong)EAsodePlanSaveModel *EAsaveModel;
 
 @end
 

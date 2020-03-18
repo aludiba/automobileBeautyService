@@ -29,24 +29,24 @@
             make.trailing.equalTo(self.contentView).offset(-16);
             make.top.equalTo(self.contentView).offset(25);
             make.leading.equalTo(self.EAtitleLbl.mas_trailing).offset(10);
-            make.height.mas_equalTo(self.model.EAcontentHeight);
+            make.height.mas_equalTo(self.EAmodel.EAcontentHeight);
             make.bottom.equalTo(self.contentView).offset(-25);
         }];
     }
     return self;
 }
-- (void)setModel:(EAClockRecordModel *)model{
-    _model = model;
-    self.EAtitleLbl.text = _model.EAtitle;
-    if (_model.EAcontent.length) {
-        self.EAcontentLbl.text = _model.EAcontent;
+- (void)setEAmodel:(EAClockRecordModel *)EAmodel{
+    _EAmodel = EAmodel;
+    self.EAtitleLbl.text = _EAmodel.EAtitle;
+    if (_EAmodel.EAcontent.length) {
+        self.EAcontentLbl.text = _EAmodel.EAcontent;
     }else{
         self.EAcontentLbl.text = @"-";
     }
     CGSize size = [self.EAcontentLbl sizeThatFits:CGSizeMake(EAWIDTH - 32 - 100 - 10, MAXFLOAT)];
-    _model.EAcontentHeight = size.height;
+    _EAmodel.EAcontentHeight = size.height;
     [self.EAcontentLbl mas_updateConstraints:^(MASConstraintMaker *make) {
-    make.height.mas_equalTo(self.model.EAcontentHeight);
+    make.height.mas_equalTo(self.EAmodel.EAcontentHeight);
     }];
     [self.EAcontentLbl layoutIfNeeded];
     [self.contentView layoutSubviews];

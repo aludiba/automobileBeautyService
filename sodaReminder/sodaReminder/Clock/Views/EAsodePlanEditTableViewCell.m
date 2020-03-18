@@ -10,117 +10,117 @@
 #import "EAsodePlanModel.h"
 
 @interface EAsodePlanEditTableViewCell()<UITextFieldDelegate>
-@property(nonatomic, strong)UILabel *titleLbl;
-@property(nonatomic, strong)UITextField *editText;
-@property(nonatomic, strong)UILabel *unitLabel;
-@property(nonatomic, strong)UIView *line;
+@property(nonatomic, strong)UILabel *EAtitleLbl;
+@property(nonatomic, strong)UITextField *EAeditText;
+@property(nonatomic, strong)UILabel *EAunitLabel;
+@property(nonatomic, strong)UIView *EAline;
 @end
 @implementation EAsodePlanEditTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = EAH_Color(236, 236, 236, 1);
-        [self.contentView addSubview:self.titleLbl];
-        [self.contentView addSubview:self.editText];
-        [self.contentView addSubview:self.unitLabel];
-        [self.contentView addSubview:self.line];
+        self.contentView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.5];
+        [self.contentView addSubview:self.EAtitleLbl];
+        [self.contentView addSubview:self.EAeditText];
+        [self.contentView addSubview:self.EAunitLabel];
+        [self.contentView addSubview:self.EAline];
         
-        [self.titleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.EAtitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(16);
             make.top.equalTo(self.contentView).offset(25);
             make.width.mas_equalTo(180);
             make.height.mas_equalTo(20);
         }];
-        [self.unitLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.EAunitLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.trailing.equalTo(self.contentView).offset(-16);
             make.top.equalTo(self.contentView).offset(22);
             make.width.mas_equalTo(65);
             make.height.mas_equalTo(20);
         }];
-        [self.editText mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.EAeditText mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.contentView).offset(22);
             make.height.mas_equalTo(20);
-            make.trailing.equalTo(self.unitLabel.mas_leading).offset(-5);
-            make.leading.equalTo(self.titleLbl.mas_trailing).offset(0);
+            make.trailing.equalTo(self.EAunitLabel.mas_leading).offset(-5);
+            make.leading.equalTo(self.EAtitleLbl.mas_trailing).offset(0);
         }];
-        [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.EAline mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(16);
             make.trailing.equalTo(self.contentView);
-            make.top.equalTo(self.editText.mas_bottom).offset(24);
+            make.top.equalTo(self.EAeditText.mas_bottom).offset(24);
             make.height.mas_equalTo(1);
             make.bottom.equalTo(self.contentView);
         }];
     }
     return self;
 }
-- (void)setModel:(EAsodePlanModel *)model{
-    _model = model;
-    self.titleLbl.text = _model.EAtitle;
-    self.unitLabel.text = _model.EAunit;
-    if (_model.EAcontent.length) {
-        self.editText.text = _model.EAcontent;
+- (void)setEAmodel:(EAsodePlanModel *)EAmodel{
+    _EAmodel = EAmodel;
+    self.EAtitleLbl.text = _EAmodel.EAtitle;
+    self.EAunitLabel.text = _EAmodel.EAunit;
+    if (_EAmodel.EAcontent.length) {
+        self.EAeditText.text = _EAmodel.EAcontent;
     }else{
-        self.editText.placeholder = _model.EAdefaultString;
+        self.EAeditText.placeholder = _EAmodel.EAdefaultString;
     }
 }
 #pragma mark - UITextFieldDelegate
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
     if (textField.text.length) {
-        self.model.EAcontent = textField.text;
+        self.EAmodel.EAcontent = textField.text;
     }else{
-        self.editText.placeholder = _model.EAdefaultString;
+        self.EAeditText.placeholder = _EAmodel.EAdefaultString;
     }
     return YES;
 }
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField{
     if (textField.text.length) {
-        self.model.EAcontent = textField.text;
+        self.EAmodel.EAcontent = textField.text;
     }else{
-        self.editText.placeholder = _model.EAdefaultString;
+        self.EAeditText.placeholder = _EAmodel.EAdefaultString;
     }
     return YES;
 }
 - (void)textFieldDidEndEditing:(UITextField *)textField{
     if (textField.text.length) {
-        self.model.EAcontent = textField.text;
+        self.EAmodel.EAcontent = textField.text;
     }else{
-        self.editText.placeholder = _model.EAdefaultString;
+        self.EAeditText.placeholder = _EAmodel.EAdefaultString;
     }
 }
 #pragma mark - 属性懒加载
-- (UILabel *)titleLbl{
-    if (!_titleLbl) {
-        _titleLbl = [[UILabel alloc] init];
-        _titleLbl.textColor = [UIColor blackColor];
-        _titleLbl.font = [UIFont systemFontOfSize:15];
-        _titleLbl.numberOfLines = 0;
+- (UILabel *)EAtitleLbl{
+    if (!_EAtitleLbl) {
+        _EAtitleLbl = [[UILabel alloc] init];
+        _EAtitleLbl.textColor = [UIColor blackColor];
+        _EAtitleLbl.font = [UIFont systemFontOfSize:15];
+        _EAtitleLbl.numberOfLines = 0;
     }
-    return _titleLbl;
+    return _EAtitleLbl;
 }
-- (UITextField *)editText{
-    if (!_editText) {
-        _editText = [[UITextField alloc] init];
-        _editText.delegate = self;
-        _editText.textColor = [UIColor blackColor];
-        _editText.font = [UIFont systemFontOfSize:18];
-        _editText.textAlignment = NSTextAlignmentRight;
+- (UITextField *)EAeditText{
+    if (!_EAeditText) {
+        _EAeditText = [[UITextField alloc] init];
+        _EAeditText.delegate = self;
+        _EAeditText.textColor = [UIColor blackColor];
+        _EAeditText.font = [UIFont systemFontOfSize:18];
+        _EAeditText.textAlignment = NSTextAlignmentRight;
     }
-    return _editText;
+    return _EAeditText;
 }
-- (UILabel *)unitLabel{
-    if (!_unitLabel) {
-        _unitLabel = [[UILabel alloc] init];
-        _unitLabel.textColor = [UIColor blackColor];
-        _unitLabel.font = [UIFont systemFontOfSize:14];
-        _unitLabel.numberOfLines = 0;
-        _unitLabel.textAlignment = NSTextAlignmentRight;
+- (UILabel *)EAunitLabel{
+    if (!_EAunitLabel) {
+        _EAunitLabel = [[UILabel alloc] init];
+        _EAunitLabel.textColor = [UIColor blackColor];
+        _EAunitLabel.font = [UIFont systemFontOfSize:14];
+        _EAunitLabel.numberOfLines = 0;
+        _EAunitLabel.textAlignment = NSTextAlignmentRight;
     }
-    return _unitLabel;
+    return _EAunitLabel;
 }
-- (UIView *)line{
-    if (!_line) {
-        _line = [[UIView alloc] init];
-        _line.backgroundColor = EAH_Color(242, 242, 242, 1);
+- (UIView *)EAline{
+    if (!_EAline) {
+        _EAline = [[UIView alloc] init];
+        _EAline.backgroundColor = [UIColor grayColor];
     }
-    return _line;
+    return _EAline;
 }
 @end

@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class EAsodePlanDateTableViewCell;
 typedef void(^EAsodePlanDateBlock)(EAsodePlanDateTableViewCell *cell);
 @interface EAsodePlanDateTableViewCell : UITableViewCell
-@property(nonatomic, strong)EAsodePlanModel *model;
+@property(nonatomic, strong)EAsodePlanModel *EAmodel;
 @property (nonatomic, copy)EAsodePlanDateBlock EAsodePlanDateB;
 @end
 

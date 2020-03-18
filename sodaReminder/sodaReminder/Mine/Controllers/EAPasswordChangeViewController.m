@@ -26,7 +26,7 @@
     [self EAsetContent];
 }
 - (void)EAsetContent{
-    self.view.backgroundColor = EAH_Color(242, 242, 242, 1);
+    self.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.5];
     [self.view addSubview:self.EAEAoldPasswordTextField];
     [self.view addSubview:self.EAEAcurrentPasswordTextField];
     [self.view addSubview:self.EAEAconfirmPasswordTextField];

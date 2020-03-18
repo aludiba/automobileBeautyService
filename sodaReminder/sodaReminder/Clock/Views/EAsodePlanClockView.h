@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class EAsodePlanClockView;
 typedef void(^EAsodePlanClockSaveBlock)(EAsodePlanClockView *view);
 @interface EAsodePlanClockView : UIView
-@property(nonatomic, strong)UITextField *contentField;
+@property(nonatomic, strong)UITextField *EAcontentField;
 @property (nonatomic, copy)EAsodePlanClockSaveBlock EAsodePlanClockSaveB;
 @end
 

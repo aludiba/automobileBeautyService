@@ -16,7 +16,7 @@
 @implementation EASetTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = EAH_Color(242, 242, 242, 1);
+        self.contentView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.5];
         [self.contentView addSubview:self.EAtitleLbl];
         [self.contentView addSubview:self.EAcontentLbl];
         [self.contentView addSubview:self.EAarrowImgView];
@@ -24,7 +24,7 @@
         [self.EAtitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(20);
             make.top.equalTo(self.contentView).offset(30);
-            make.width.mas_equalTo(EAWIDTH * 0.5 - 20);
+            make.width.mas_equalTo(EAWIDTH * 0.5);
             make.height.mas_equalTo(25);
             make.bottom.equalTo(self.contentView).offset(-30);
         }];
@@ -43,10 +43,10 @@
     }
     return self;
 }
-- (void)setModel:(EASetViewModel *)model{
-    _model = model;
-    self.EAtitleLbl.text = _model.EAtitle;
-    self.EAcontentLbl.text = _model.EAcontent;
+- (void)setEAmodel:(EASetViewModel *)EAmodel{
+    _EAmodel = EAmodel;
+    self.EAtitleLbl.text = _EAmodel.EAtitle;
+    self.EAcontentLbl.text = _EAmodel.EAcontent;
 }
 #pragma mark - 属性懒加载
 - (UILabel *)EAtitleLbl{

@@ -33,12 +33,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = NSLocalizedString(@"日历", nil);
-    // Generate random events sort by date using a dateformatter for the demonstration
-    [self loadData];
-    [self createRandomEvents];
-    [self createMinAndMaxDate];
+    self.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.5];
+    [self EAloadData];
+    [self EAcreateRandomEvents];
+    [self EAcreateMinAndMaxDate];
 }
-- (void)createRandomEvents{
+- (void)EAcreateRandomEvents{
     _eventsByDate = [NSMutableDictionary new];
     for(int i = 0; i < 30; ++i){
         // Generate 30 random dates between now and 60 days later
@@ -51,7 +51,7 @@
         [_eventsByDate[key] addObject:randomDate];
     }
 }
-- (void)createMinAndMaxDate{
+- (void)EAcreateMinAndMaxDate{
     _todayDate = [NSDate date];
     // Min date will be 2 month before today
     _minDate = [self.EAcalendarManager.dateHelper addToDate:_todayDate months:-2];
@@ -65,7 +65,7 @@
     }
     return NO;
 }
-- (void)loadData{
+- (void)EAloadData{
     AVQuery *bquery = [AVQuery queryWithClassName:@"EAsodePlan"];
         AVUser *author = [AVUser currentUser];
         [bquery whereKey:@"author" equalTo:author];
@@ -151,8 +151,8 @@
 //        [self loadData:_dateSelected];
         if (contentDic) {
         EAClockRecordViewController *clockRecordVC = [[EAClockRecordViewController alloc] init];
-        clockRecordVC.dateSelected = _dateSelected;
-            clockRecordVC.saveModel = self.EAsaveModel;
+            clockRecordVC.EAdateSelected = _dateSelected;
+            clockRecordVC.EAsaveModel = self.EAsaveModel;
         clockRecordVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:clockRecordVC animated:YES];
         }else{
@@ -201,32 +201,6 @@
     //    NSLog(@"Previous page loaded");
 }
 #pragma mark - 属性懒加载
-//- (JTCalendarMenuView *)calendarMenuView{
-//    if (!_calendarMenuView) {
-//        _calendarMenuView = [[JTCalendarMenuView alloc] init];
-//        [self.view addSubview:_calendarMenuView];
-//        [_calendarMenuView mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.top.equalTo(self.mas_topLayoutGuideBottom).offset(20);
-//            make.leading.equalTo(self.view);
-//            make.trailing.equalTo(self.view);
-//            make.height.mas_equalTo(20);
-//        }];
-//    }
-//    return _calendarMenuView;
-//}
-//- (JTHorizontalCalendarView *)calendarContentView{
-//    if (!_calendarContentView) {
-//        _calendarContentView = [[JTHorizontalCalendarView alloc] init];
-//        [self.view addSubview:_calendarContentView];
-//        [_calendarContentView mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.top.equalTo(self.calendarMenuView.mas_bottom);
-//            make.leading.equalTo(self.view);
-//            make.trailing.equalTo(self.view);
-//            make.height.mas_equalTo(300);
-//        }];
-//    }
-//    return _calendarContentView;
-//}
 - (EAsodePlanSaveModel *)EAsaveModel{
     if (!_EAsaveModel) {
         _EAsaveModel = [[EAsodePlanSaveModel alloc] init];

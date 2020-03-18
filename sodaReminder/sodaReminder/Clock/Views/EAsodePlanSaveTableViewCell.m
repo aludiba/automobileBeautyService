@@ -8,15 +8,15 @@
 
 #import "EAsodePlanSaveTableViewCell.h"
 @interface EAsodePlanSaveTableViewCell()
-@property(nonatomic, strong)UIButton *saveButton;//保存按钮
+@property(nonatomic, strong)UIButton *EAsaveButton;//保存按钮
 @end
 @implementation EAsodePlanSaveTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = EAH_Color(244, 245, 246, 1);
-        [self.contentView addSubview:self.saveButton];
+        self.contentView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.5];
+        [self.contentView addSubview:self.EAsaveButton];
         
-        [self.saveButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.EAsaveButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.contentView).offset(60);
             make.leading.equalTo(self.contentView).offset(100);
             make.height.mas_equalTo(60);
@@ -26,23 +26,23 @@
     }
     return self;
 }
-- (void)btnClick{
+- (void)EAbtnClick{
     if (self.EAsodePlanSaveB) {
         self.EAsodePlanSaveB(self);
     }
 }
 #pragma mark - 属性懒加载
-- (UIButton *)saveButton{
-    if (!_saveButton) {
-        _saveButton = [[UIButton alloc] init];
-        [_saveButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_saveButton.titleLabel setFont:[UIFont systemFontOfSize:25]];
-        [_saveButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
-        [_saveButton setBackgroundColor:[UIColor yellowColor]];
-        _saveButton.layer.cornerRadius = 16.0f;
-        _saveButton.layer.masksToBounds = YES;
-        [_saveButton addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+- (UIButton *)EAsaveButton{
+    if (!_EAsaveButton) {
+        _EAsaveButton = [[UIButton alloc] init];
+        [_EAsaveButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_EAsaveButton.titleLabel setFont:[UIFont systemFontOfSize:25]];
+        [_EAsaveButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
+        [_EAsaveButton setBackgroundColor:[UIColor purpleColor]];
+        _EAsaveButton.layer.cornerRadius = 16.0f;
+        _EAsaveButton.layer.masksToBounds = YES;
+        [_EAsaveButton addTarget:self action:@selector(EAbtnClick) forControlEvents:UIControlEventTouchUpInside];
     }
-    return _saveButton;
+    return _EAsaveButton;
 }
 @end

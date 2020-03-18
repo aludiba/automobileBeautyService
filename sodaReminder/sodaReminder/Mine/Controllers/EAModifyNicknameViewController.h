@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class EAModifyNicknameViewController;
 typedef void(^modifynicknameBlock)(EAModifyNicknameViewController *EAnicknameVC);
 @interface EAModifyNicknameViewController : EABaseViewController
-@property (nonatomic, copy)modifynicknameBlock modifynicknameB;
+@property (nonatomic, copy)modifynicknameBlock EAmodifynicknameB;
 @property(nonatomic, copy)NSString *EAnickname;
 @end
 

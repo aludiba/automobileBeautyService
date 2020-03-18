@@ -27,7 +27,7 @@
     return self;
 }
 - (void)EAsetContent{
-    self.contentView.backgroundColor = EAH_Color(242, 242, 242, 1);
+    self.contentView.backgroundColor = [UIColor whiteColor];
     [self.contentView addSubview:self.EAbackView];
     [self.EAbackView addSubview:self.EAaccountLable];
     [self.EAbackView addSubview:self.EAaccountTextField];
@@ -39,9 +39,9 @@
     [self.EAbackView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.contentView).offset(EAHeightNavBar);
         make.centerX.equalTo(self.contentView);
-        make.width.mas_equalTo(EAWIDTH - 40);
-        make.height.mas_equalTo(400);
-        make.bottom.equalTo(self.contentView).offset(-(EAHEIGHT - EAHeightNavBar - 50 - 400));
+        make.width.mas_equalTo(EAWIDTH - 25);
+        make.height.mas_equalTo(450);
+        make.bottom.equalTo(self.contentView).offset(-(EAHEIGHT - EAHeightNavBar - 50 - 450));
     }];
     [self.EAaccountLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.EAbackView).offset(50);
@@ -81,7 +81,7 @@
     }];
 }
 #pragma mark - actions
-- (void)btnClick:(UIButton *)sender{
+- (void)EAbtnClick:(UIButton *)sender{
     [self.contentView endEditing:YES];
     if (!self.EAaccount.length) {
         [MBProgressHUD EAshowReminderText:NSLocalizedString(@"请输入账号", nil)];
@@ -95,7 +95,7 @@
         [AVUser logInWithUsernameInBackground:self.EAaccount password:self.EApassword block:^(AVUser *user, NSError *error) {
             if (user) {
                 [MBProgressHUD EAshowReminderText:NSLocalizedString(@"登录成功", nil)];
-                EATabBarController *tabVC = [EATabBarController shareInstance];
+                EATabBarController *tabVC = [EATabBarController EAshareInstance];
                 tabVC.selectedIndex = 0;
                 [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
             }else{
@@ -111,7 +111,7 @@
                 [MBProgressHUD EAshowReminderText:NSLocalizedString(@"注册成功", nil)];
                 [AVUser logInWithUsernameInBackground:self.EAaccount password:self.EApassword block:^(AVUser *user, NSError *error) {
                     if (user) {
-                        EATabBarController *tabVC = [EATabBarController shareInstance];
+                        EATabBarController *tabVC = [EATabBarController EAshareInstance];
                         tabVC.selectedIndex = 0;
                         [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
                     }else{
@@ -149,7 +149,7 @@
         _EAbackView = [[UIView alloc] init];
         _EAbackView.layer.cornerRadius = 20.0f;
         _EAbackView.layer.masksToBounds = YES;
-        _EAbackView.backgroundColor = [UIColor systemBlueColor];
+        _EAbackView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.5];
     }
     return _EAbackView;
 }
@@ -157,7 +157,7 @@
     if (!_EAaccountLable) {
         _EAaccountLable = [[UILabel alloc] init];
         _EAaccountLable.text = NSLocalizedString(@"账号", nil);
-        _EAaccountLable.textColor = [UIColor grayColor];
+        _EAaccountLable.textColor = [UIColor redColor];
         _EAaccountLable.font = [UIFont systemFontOfSize:15];
     }
     return _EAaccountLable;
@@ -178,7 +178,7 @@
     if (!_EApasswordLable) {
         _EApasswordLable = [[UILabel alloc] init];
         _EApasswordLable.text = NSLocalizedString(@"密码", nil);
-        _EApasswordLable.textColor = [UIColor grayColor];
+        _EApasswordLable.textColor = [UIColor redColor];
         _EApasswordLable.font = [UIFont systemFontOfSize:15];
     }
     return _EApasswordLable;
@@ -200,13 +200,13 @@
     if (!_EAloginButton) {
         _EAloginButton = [[UIButton alloc] init];
         _EAloginButton.tag = 100;
-        _EAloginButton.backgroundColor = [UIColor orangeColor];
+        _EAloginButton.backgroundColor = [UIColor purpleColor];
         [_EAloginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_EAloginButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
         _EAloginButton.layer.cornerRadius = 12.0f;
         _EAloginButton.layer.masksToBounds = YES;
         [_EAloginButton setTitle:NSLocalizedString(@"登录", nil) forState:UIControlStateNormal];
-        [_EAloginButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+        [_EAloginButton addTarget:self action:@selector(EAbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _EAloginButton;
 }
@@ -214,13 +214,13 @@
     if (!_EAregisteredButton) {
         _EAregisteredButton = [[UIButton alloc] init];
         _EAregisteredButton.tag = 101;
-        _EAregisteredButton.backgroundColor = [UIColor greenColor];
+        _EAregisteredButton.backgroundColor = [UIColor systemPurpleColor];
         [_EAregisteredButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_EAregisteredButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
         _EAregisteredButton.layer.cornerRadius = 12.0f;
         _EAregisteredButton.layer.masksToBounds = YES;
         [_EAregisteredButton setTitle:NSLocalizedString(@"注册", nil) forState:UIControlStateNormal];
-        [_EAregisteredButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+        [_EAregisteredButton addTarget:self action:@selector(EAbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _EAregisteredButton;
 }

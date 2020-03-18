@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 @class EAsodePlanSaveModel;
 @class EAClockViewController;
 @interface EAsodePlanViewController : EABaseViewController
-@property(nonatomic, weak)EAClockViewController *superVC;
-@property(nonatomic, copy)NSString *objectId;
-@property(nonatomic, strong)EAsodePlanSaveModel *saveModel;
+@property(nonatomic, weak)EAClockViewController *EAsuperVC;
+@property(nonatomic, copy)NSString *EAobjectId;
+@property(nonatomic, strong)EAsodePlanSaveModel *EAsaveModel;
 @end
 
 NS_ASSUME_NONNULL_END
