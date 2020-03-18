@@ -23,10 +23,10 @@
         [self.contentView addSubview:self.EAclockInButton];
         
         [self.EAremindLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(48);
-            make.trailing.equalTo(self.contentView).offset(-48);
+            make.leading.equalTo(self.contentView).offset(24);
+            make.trailing.equalTo(self.contentView).offset(-24);
             make.top.equalTo(self.contentView).offset(100);
-            make.height.mas_equalTo(140);
+            make.height.mas_equalTo(200);
         }];
         [self.EAtargetButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(100);

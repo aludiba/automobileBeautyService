@@ -628,6 +628,7 @@
 				CODE_SIGN_ENTITLEMENTS = sodaReminder/sodaReminder.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 49WP3GYY9K;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/sodaReminder/Common/EA_PrefixHeader.pch";
 				INFOPLIST_FILE = sodaReminder/Info.plist;
@@ -651,6 +652,7 @@
 				CODE_SIGN_ENTITLEMENTS = sodaReminder/sodaReminder.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 49WP3GYY9K;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/sodaReminder/Common/EA_PrefixHeader.pch";
 				INFOPLIST_FILE = sodaReminder/Info.plist;
