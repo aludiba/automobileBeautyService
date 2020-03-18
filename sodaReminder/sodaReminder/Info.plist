@@ -27,6 +27,28 @@
 	</dict>
 	<key>NSCalendarsUsageDescription</key>
 	<string>Allow this application to access your calendar to display details of the day you quit punching in?</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Do you allow this app to use your camera?</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Do you allow this application to access your address book?</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We need to get data about your surroundings from your geographic location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need to get data about your surroundings from your geographic location</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Does this application allow you to use your microphone for voice input?</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>The application requires your permission to save pictures to your album</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Do you allow this application access to your media library?</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Does the application allow speech input using speech recognition?</string>
+	<key>NSSpeechRecognitionUsageDescription - 2</key>
+	<string>Does the application allow speech recognition?</string>
+	<key>Privacy - Location When In Use Usage Description </key>
+	<string>We need to get data about your surroundings from your geographic location</string>
+	<key>Privacy - Microphone Usage Description </key>
+	<string>Does this application allow you to use your microphone?</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
