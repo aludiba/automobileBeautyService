@@ -7,14 +7,11 @@ target 'GameAlert' do
 
   # Pods for GameAlert
     pod 'Masonry'
-    pod 'AFNetworking'
     pod 'MJRefresh'
     pod 'MBProgressHUD'
     pod 'YYModel'
-    pod 'IQKeyboardManager'
-#    pod 'BmobSDK'
-    pod 'JTCalendar'
     pod 'AVOSCloud'
     pod 'JCore', '2.1.4-noidfa'
     pod 'JPush', '3.2.4-noidfa'
+    pod 'JTCalendar'
 end

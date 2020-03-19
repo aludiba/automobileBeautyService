@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "YWKGALoginViewController.h"
+#import "AFLoginViewController.h"
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
@@ -21,39 +21,27 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    [Bmob resetDomain:@"http://gamealert.jd127.cn"];
-//    [Bmob registerWithAppKey:@"16b349e4eb3b7e001d4d3d938fe21ba3"];
     [self setJPush:launchOptions];
-    [AVOSCloud setApplicationId:@"mG34aYISSTic5qVtir31dM6N-MdYXbMMI" clientKey:@"oLHtnYLqrERW7UvQ3UcnA3O5"];
+    [AVOSCloud setApplicationId:@"0megPo6oNflIXCj8bD4SRf1Q-MdYXbMMI" clientKey:@"LLplbKahwrEobgRWQnDW5Y6H"];
     [AVOSCloud setAllLogsEnabled:YES];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [self rootController];
     [self.window makeKeyAndVisible];
-//    BmobQuery *bquery = [BmobQuery queryWithClassName:@"YWKGAgameRemind"];
-//    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-//            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"YWKGAgameRemind"]]];
-//    }];
     return YES;
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application{
-//    NSString *URL = @"http://mock-api.com/Rz3yVMnM.mock/YWKGAGameAlert";
-//    [YWKGANDHTTPClient YWKGAgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
-//            NSArray *arr = (NSArray *)data;
-//            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[arr lastObject]]];
-//        } withErrorBlock:^(NSError *error, id errorData) {
-//            
-//        }];
+
 }
 - (UIViewController *)rootController{
     AVUser *bUser = [AVUser currentUser];
     if (bUser) {
 //        进行操作
-        YWKGATabBarController *tabVC = [YWKGATabBarController shareInstance];
+        AFTabBarController *tabVC = [AFTabBarController shareInstance];
         return tabVC;
     }else{
         //对象为空时，可打开用户注册界面
-        YWKGALoginViewController *loginVC = [YWKGALoginViewController shareInstance];
+        AFLoginViewController *loginVC = [AFLoginViewController AFshareInstance];
         return loginVC;
     }
 }
@@ -77,7 +65,7 @@
     // Required
     // init Push
     // notice: 2.1.5 版本的 SDK 新增的注册方法，改成可上报 IDFA，如果没有使用 IDFA 直接传 nil
-    [JPUSHService setupWithOption:launchOptions appKey:@"8454513ec98eacc47bd2982d"
+    [JPUSHService setupWithOption:launchOptions appKey:@"23e0f099ddcc4e797e93ddd9"
                           channel:@"App Store"
                  apsForProduction:1];
 }
