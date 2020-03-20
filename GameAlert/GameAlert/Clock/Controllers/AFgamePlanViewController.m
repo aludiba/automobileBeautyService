@@ -25,10 +25,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = NSLocalizedString(@"戒游戏计划", nil);
+}
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     [self AFsetContentView];
 }
 - (void)AFsetContentView{
-    self.view.backgroundColor = AFH_Color(24, 50, 62, 1);
     AFgamePlanModel *gameAgesModel = [[AFgamePlanModel alloc] init];
     gameAgesModel.AFtype = 0;
     gameAgesModel.AFtitle = NSLocalizedString(@"游戏龄", nil);
@@ -214,7 +216,7 @@
 - (UITableView *)AFmainTable{
     if (!_AFmainTable) {
         _AFmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-        _AFmainTable.backgroundColor = AFH_Color(24, 50, 62, 1);
+        _AFmainTable.backgroundColor = AFH_Color(44, 77, 93, 0.7);
         _AFmainTable.delegate = self;
         _AFmainTable.dataSource = self;
         _AFmainTable.rowHeight = UITableViewAutomaticDimension;

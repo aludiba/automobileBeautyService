@@ -6,6 +6,7 @@
 //  Copyright © 2019 hgg. All rights reserved.
 //
 #import "AFRecordViewController.h"
+#import "AFLoginViewController.h"
 #import "AFgamePlanSaveModel.h"
 #import "AFClockRecordViewController.h"
 @interface AFRecordViewController ()<JTCalendarDelegate>{
@@ -35,12 +36,14 @@
     self.calendarContentView.backgroundColor = AFH_Color(44, 77, 93, 1);
     self.calendarMenuView.backgroundColor = AFH_Color(44, 77, 93, 1);
     self.title = NSLocalizedString(@"日历", nil);
-    // Generate random events sort by date using a dateformatter for the demonstration
     [self AFloadData];
-    [self createRandomEvents];
-    [self createMinAndMaxDate];
+    [self AFcreateRandomEvents];
+    [self AFcreateMinAndMaxDate];
 }
-- (void)createRandomEvents{
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
+- (void)AFcreateRandomEvents{
     _eventsByDate = [NSMutableDictionary new];
     for(int i = 0; i < 30; ++i){
         // Generate 30 random dates between now and 60 days later
@@ -53,7 +56,7 @@
         [_eventsByDate[key] addObject:randomDate];
     }
 }
-- (void)createMinAndMaxDate{
+- (void)AFcreateMinAndMaxDate{
     _todayDate = [NSDate date];
     // Min date will be 2 month before today
     _minDate = [self.AFcalendarManager.dateHelper addToDate:_todayDate months:-2];
@@ -70,6 +73,7 @@
 - (void)AFloadData{
     AVQuery *bquery = [AVQuery queryWithClassName:@"AFgamePlan"];
         AVUser *author = [AVUser currentUser];
+    if (author) {
         [bquery whereKey:@"author" equalTo:author];
         //查找GameScore表的数据
         __weak typeof(self) weakSelf = self;
@@ -96,6 +100,20 @@
                     }
                }
         }];
+    }else{
+        [MBProgressHUD AFshowReminderText:@"Temporary no data"];
+        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"Warm tip" message:@"Please login first" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"Confirm" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            AFLoginViewController *loginVC = [AFLoginViewController AFshareInstance];
+            loginVC.AFtype = 2;
+            UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+            AFKeyWindow.rootViewController = loginVCNav;
+        }];
+        [alertVC addAction:cancelAction];
+        [alertVC addAction:sureAction];
+        [self presentViewController:alertVC animated:YES completion:nil];
+    }
 }
 #pragma mark - CalendarManager delegate
 // Exemple of implementation of prepareDayView method

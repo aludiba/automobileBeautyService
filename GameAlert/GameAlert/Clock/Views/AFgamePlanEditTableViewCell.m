@@ -17,7 +17,7 @@
 @implementation AFgamePlanEditTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = AFH_Color(24, 50, 62, 1);
+        self.contentView.backgroundColor = AFH_Color(44, 77, 93, 0.7);
         [self.contentView addSubview:self.AFtitleLbl];
         [self.contentView addSubview:self.AFeditText];
         [self.contentView addSubview:self.AFunitLabel];

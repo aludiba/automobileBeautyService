@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AFLoginTableViewCell : UITableViewCell
-
+@property(nonatomic, assign)NSUInteger AFtype;
 @end
 
 NS_ASSUME_NONNULL_END

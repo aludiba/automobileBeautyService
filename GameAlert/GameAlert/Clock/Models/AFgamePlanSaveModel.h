@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign)NSUInteger AFgameEveryDay;//每天打几次
 @property(nonatomic, assign)NSUInteger AFgameLong;//每次打多久
 
-@property(nonatomic, strong)NSMutableArray *AFclockInSAndNumberB;//打卡日期数组以及当天打游戏瓶数
+@property(nonatomic, strong)NSMutableArray *AFclockInSAndNumberB;//打卡日期数组以及当天打游戏次数
 @property(nonatomic, assign)NSUInteger  AFcumulativeNubDays;//累计天数
 @property(nonatomic, assign)NSUInteger  AFaccumulativeGames;//累计少打游戏次数
 @property(nonatomic, assign)NSUInteger  AFcumulativeAmount;//累计少打游戏时间

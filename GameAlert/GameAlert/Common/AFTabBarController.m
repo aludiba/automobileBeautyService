@@ -56,7 +56,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
         }
     });
 }
-+ (AFTabBarController *)shareInstance{
++ (AFTabBarController *)AFshareInstance{
     static AFTabBarController *client;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -66,10 +66,10 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self setContentView];
+    [self AFsetContentView];
 }
-- (void)setContentView{
-    self.AFClockVC = [[AFClockViewController alloc] init];
+- (void)AFsetContentView{
+    self.AFClockVC = [AFClockViewController AFshareInstance];
     UINavigationController *AFClock = [[UINavigationController alloc] initWithRootViewController:self.AFClockVC];
     self.AFClockVC.tabBarItem.title = NSLocalizedString(@"打卡", nil);
     [self.AFClockVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];

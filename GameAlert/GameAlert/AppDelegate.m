@@ -34,16 +34,8 @@
 
 }
 - (UIViewController *)rootController{
-    AVUser *bUser = [AVUser currentUser];
-    if (bUser) {
-//        进行操作
-        AFTabBarController *tabVC = [AFTabBarController shareInstance];
+        AFTabBarController *tabVC = [AFTabBarController AFshareInstance];
         return tabVC;
-    }else{
-        //对象为空时，可打开用户注册界面
-        AFLoginViewController *loginVC = [AFLoginViewController AFshareInstance];
-        return loginVC;
-    }
 }
 - (void)setJPush:(NSDictionary *)launchOptions{
     //Required

@@ -8,6 +8,8 @@
 
 #import "AFLoginTableViewCell.h"
 #import "AFTabBarController.h"
+#import "AFLoginViewController.h"
+#import "AFClockViewController.h"
 @interface AFLoginTableViewCell()<UITextFieldDelegate>
 @property(nonatomic, strong)UIView *AFbackView;
 @property(nonatomic, strong)UILabel *AFaccountLable;
@@ -29,7 +31,7 @@
     return self;
 }
 - (void)AFsetContent{
-    self.contentView.backgroundColor = AFH_Color(44, 77, 93, 1);
+    self.contentView.backgroundColor = AFH_Color(44, 77, 93, 0.5);
     [self.contentView addSubview:self.AFbackView];
     [self.AFbackView addSubview:self.AFaccountLable];
     [self.AFbackView addSubview:self.AFaccountTextField];
@@ -111,9 +113,26 @@
         [AVUser logInWithUsernameInBackground:self.AFaccount password:self.AFpassword block:^(AVUser *user, NSError *error) {
             if (user) {
                 [MBProgressHUD AFshowReminderText:NSLocalizedString(@"登录成功", nil)];
-                AFTabBarController *tabVC = [AFTabBarController shareInstance];
-                tabVC.selectedIndex = 0;
-                [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                if (self.AFtype == 1) {
+                    AFTabBarController *tabVC = [AFTabBarController AFshareInstance];
+                    tabVC.selectedIndex = 0;
+                    [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                    if ([AFClockViewController AFshareInstance].AFselectIndex == 1) {
+                        [[AFClockViewController AFshareInstance] AFsaveAction];
+                    }
+                    AFLoginViewController *loginVC = [AFLoginViewController AFshareInstance];
+                    loginVC.AFtype = 0;
+                }else if (self.AFtype == 2){
+                    AFTabBarController *tabVC = [AFTabBarController AFshareInstance];
+                    tabVC.selectedIndex = 1;
+                    [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                    AFLoginViewController *loginVC = [AFLoginViewController AFshareInstance];
+                    loginVC.AFtype = 0;
+                }else{
+                    AFTabBarController *tabVC = [AFTabBarController AFshareInstance];
+                    tabVC.selectedIndex = 0;
+                    [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                }
             }else{
                 [MBProgressHUD AFshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
             }
@@ -127,9 +146,25 @@
                 [MBProgressHUD AFshowReminderText:NSLocalizedString(@"注册成功", nil)];
                 [AVUser logInWithUsernameInBackground:self.AFaccount password:self.AFpassword block:^(AVUser *user, NSError *error) {
                     if (user) {
-                        AFTabBarController *tabVC = [AFTabBarController shareInstance];
+                        if (self.AFtype == 1) {
+                        AFTabBarController *tabVC = [AFTabBarController AFshareInstance];
                         tabVC.selectedIndex = 0;
                         [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                        if ([AFClockViewController AFshareInstance].AFselectIndex == 1) {
+                            [[AFClockViewController AFshareInstance] AFsaveAction];
+                        }                        AFLoginViewController *loginVC = [AFLoginViewController AFshareInstance];
+                        loginVC.AFtype = 0;
+                        }else if (self.AFtype == 2){
+                            AFTabBarController *tabVC = [AFTabBarController AFshareInstance];
+                            tabVC.selectedIndex = 1;
+                            [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                            AFLoginViewController *loginVC = [AFLoginViewController AFshareInstance];
+                            loginVC.AFtype = 0;
+                        }else{
+                            AFTabBarController *tabVC = [AFTabBarController AFshareInstance];
+                            tabVC.selectedIndex = 0;
+                            [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                        }
                     }else{
                         [MBProgressHUD AFshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
                     }
@@ -165,7 +200,7 @@
         _AFbackView = [[UIView alloc] init];
         _AFbackView.layer.cornerRadius = 8.0f;
         _AFbackView.layer.masksToBounds = YES;
-        _AFbackView.backgroundColor = AFH_Color(44, 77, 93, 1);
+        _AFbackView.backgroundColor = [UIColor clearColor];
     }
     return _AFbackView;
 }

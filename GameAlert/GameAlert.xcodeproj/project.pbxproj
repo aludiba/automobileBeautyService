@@ -650,8 +650,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = GameAlert/GameAlert.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: pinghui xu (T6AB624DTU)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: pinghui xu (8BA6DX5UH9)";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8BA6DX5UH9;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GameAlert/Common/AF_PrefixHeader.pch";
 				INFOPLIST_FILE = GameAlert/Info.plist;
@@ -661,7 +662,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = windy.AlertGame;
 				PRODUCT_NAME = AlertGame;
-				PROVISIONING_PROFILE_SPECIFIER = dev_AlertGame_pro_20200319;
+				PROVISIONING_PROFILE_SPECIFIER = dis_AlertGame_pro_20200319;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -673,8 +674,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = GameAlert/GameAlert.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: pinghui xu (T6AB624DTU)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: pinghui xu (8BA6DX5UH9)";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8BA6DX5UH9;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GameAlert/Common/AF_PrefixHeader.pch";
 				INFOPLIST_FILE = GameAlert/Info.plist;
@@ -684,7 +686,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = windy.AlertGame;
 				PRODUCT_NAME = AlertGame;
-				PROVISIONING_PROFILE_SPECIFIER = dev_AlertGame_pro_20200319;
+				PROVISIONING_PROFILE_SPECIFIER = dis_AlertGame_pro_20200319;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

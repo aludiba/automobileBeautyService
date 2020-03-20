@@ -11,6 +11,7 @@
 #import "AFgamePlanViewController.h"
 #import "AFgamePlanSaveModel.h"
 #import "AFgamePlanClockView.h"
+#import "AFLoginViewController.h"
 @interface AFClockViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, copy)NSString *AFobjectId;
 @property(nonatomic, strong)AFgamePlanSaveModel *AFsaveModel;
@@ -20,7 +21,14 @@
 @end
 
 @implementation AFClockViewController
-
++ (AFClockViewController *)AFshareInstance{
+    static AFClockViewController *client;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        client = [[AFClockViewController allocWithZone:NULL] init];
+    });
+    return client;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -57,7 +65,25 @@
         }
     }];
 }
-- (void)AFsave{
+- (void)AFsaveLoginJudge{
+    AVUser *bUser = [AVUser currentUser];
+        if (bUser) {
+            [self AFsaveAction];
+    }else{
+        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"Warm tip" message:@"Please login first" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"Confirm" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            AFLoginViewController *loginVC = [AFLoginViewController AFshareInstance];
+            loginVC.AFtype = 1;
+            UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+            AFKeyWindow.rootViewController = loginVCNav;
+        }];
+        [alertVC addAction:cancelAction];
+        [alertVC addAction:sureAction];
+        [self presentViewController:alertVC animated:YES completion:nil];
+    }
+}
+- (void)AFsaveAction{
     NSMutableDictionary *jsonDictionary = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[self.AFsaveModel yy_modelToJSONObject]];
     [jsonDictionary setObject:[[NSDate alloc] init] forKey:@"AFsaveDate"];
     NSString *dateString = [AFUIUtilities AFformattedTimeStringWithDate:self.AFsaveModel.AFtimeGiveGameDate format:@"yyyy/MM/dd"];
@@ -104,6 +130,13 @@
     }];
     }
 }
+- (void)AFsave{
+       if (!self.AFsaveModel.AFclockInSAndNumberB){
+        [MBProgressHUD AFshowReminderText:NSLocalizedString(@"请输入今天玩游戏次数", nil)];
+        return;
+      }
+        [self AFsaveLoginJudge];
+}
 - (void)AFsetContentView{
     self.view.backgroundColor = AFH_Color(44, 77, 93, 1);
     [self.AFmainTable reloadData];
@@ -117,13 +150,29 @@
     cell.AFmodel = self.AFsaveModel;
     __weak typeof(self) weakSelf = self;
     cell.AFClockCellB = ^(AFClockTableViewCell * _Nonnull cell) {
+        weakSelf.AFselectIndex = cell.AFselectIndex;
         if (cell.AFselectIndex == 0) {
-            AFgamePlanViewController *AFgamePlanVC = [[AFgamePlanViewController alloc] init];
-            AFgamePlanVC.hidesBottomBarWhenPushed = YES;
-            AFgamePlanVC.AFobjectId = weakSelf.AFobjectId;
-            AFgamePlanVC.AFsaveModel = weakSelf.AFsaveModel;
-            AFgamePlanVC.AFsuperVC = weakSelf;
-            [weakSelf.navigationController pushViewController:AFgamePlanVC animated:YES];
+            AVUser *bUser = [AVUser currentUser];
+            if (bUser) {
+                AFgamePlanViewController *AFgamePlanVC = [[AFgamePlanViewController alloc] init];
+                AFgamePlanVC.hidesBottomBarWhenPushed = YES;
+                AFgamePlanVC.AFobjectId = weakSelf.AFobjectId;
+                AFgamePlanVC.AFsaveModel = weakSelf.AFsaveModel;
+                AFgamePlanVC.AFsuperVC = weakSelf;
+                [weakSelf.navigationController pushViewController:AFgamePlanVC animated:YES];
+            }else{
+            UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"Warm tip" message:@"Please login first" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+            UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"Confirm" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                AFLoginViewController *loginVC = [AFLoginViewController AFshareInstance];
+                loginVC.AFtype = 1;
+                UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+                AFKeyWindow.rootViewController = loginVCNav;
+            }];
+            [alertVC addAction:cancelAction];
+            [alertVC addAction:sureAction];
+            [weakSelf presentViewController:alertVC animated:YES completion:nil];
+            }
         }else if (cell.AFselectIndex == 1){
             if (weakSelf.AFobjectId.length) {
             NSDate *nowDate = [[NSDate alloc] init];

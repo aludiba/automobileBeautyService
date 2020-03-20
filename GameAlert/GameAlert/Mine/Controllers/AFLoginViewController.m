@@ -24,7 +24,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = AFH_Color(44, 77, 93, 1);
     [self AFsetContentView];
 }
 - (void)viewWillAppear:(BOOL)animated{
@@ -41,7 +40,7 @@
         make.top.equalTo(self.mas_topLayoutGuideTop);
         make.leading.equalTo(self.view);
         make.trailing.equalTo(self.view);
-        make.bottom.equalTo(self.mas_bottomLayoutGuideBottom);
+        make.bottom.equalTo(self.view);
     }];
 }
 #pragma mark - 属性懒加载
@@ -50,6 +49,7 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     AFLoginTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AFLoginTableViewCell" forIndexPath:indexPath];
+    cell.AFtype = self.AFtype;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
@@ -57,7 +57,7 @@
 - (UITableView *)AFmainTable{
     if (!_AFmainTable) {
         _AFmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
-        _AFmainTable.backgroundColor = AFH_Color(44, 77, 93, 1);
+        _AFmainTable.backgroundColor = AFH_Color(44, 77, 93, 0.5);
         _AFmainTable.showsVerticalScrollIndicator = NO;
         _AFmainTable.scrollEnabled = NO;
         _AFmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;

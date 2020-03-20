@@ -5,6 +5,7 @@
   Created by bykj on 2019/10/14.
   Copyright © 2019 hbc. All rights reserved.
 */
+"请输入今天玩游戏次数" = "Please enter the number of games played today";
 "详情" = "Particulars";
 "登录" = "Login";
 "注册" = "Registration";

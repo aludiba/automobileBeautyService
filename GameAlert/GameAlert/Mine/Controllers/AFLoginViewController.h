@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AFLoginViewController : AFBaseViewController
+@property(nonatomic, assign)NSUInteger AFtype;
 + (AFLoginViewController *)AFshareInstance;
 @end
 

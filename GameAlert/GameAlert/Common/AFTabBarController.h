@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class AFTabBarController;
 
 @interface AFTabBarController : UITabBarController
-+ (AFTabBarController *)shareInstance;
++ (AFTabBarController *)AFshareInstance;
 
 @end
 
