@@ -8,7 +8,7 @@ target 'ConvenientFootballScore' do
   # Pods for ConvenientFootballScore
     pod 'VTMagic'
     pod 'Masonry'
-    pod 'AFNetworking'
+    pod 'JTCalendar'
     pod 'MJRefresh'
     pod 'MBProgressHUD'
     pod 'YYModel'

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ZLLoginViewController.h"
+#import "GALoginViewController.h"
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
@@ -32,16 +32,11 @@
     return YES;
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application{
-    NSString *URL1 = @"http://mock-api.com/jz89Geg4.mock/ZLBasketball";
-    [ZLNDHTTPClient ZLgetURLStringNoHUD:URL1 withParam:nil withSuccessBlock:^(id data) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[(NSArray *)data lastObject]]];
-    }withErrorBlock:^(NSError *error, id errorData) {
-            
-    }];
+    
 }
 - (UIViewController *)rootController{
         //进行操作
-        ZLTabBarController *tabVC = [ZLTabBarController shareInstance];
+        GATabBarController *tabVC = [GATabBarController shareInstance];
         return tabVC;
 }
 - (void)setJPush:(NSDictionary *)launchOptions{
@@ -64,7 +59,7 @@
     // Required
     // init Push
     // notice: 2.1.5 版本的 SDK 新增的注册方法，改成可上报 IDFA，如果没有使用 IDFA 直接传 nil
-    [JPUSHService setupWithOption:launchOptions appKey:@"50f5f868dc22527b8f8a2d7b"
+    [JPUSHService setupWithOption:launchOptions appKey:@"077342199cffc2636d27277e"
                           channel:@"App Store"
                  apsForProduction:1];
 }
