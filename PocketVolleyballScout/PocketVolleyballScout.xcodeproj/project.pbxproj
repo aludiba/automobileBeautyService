@@ -702,7 +702,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = windy.VolleyballScore;
 				PRODUCT_NAME = VolleyballScore;
-				PROVISIONING_PROFILE_SPECIFIER = dis_pro_VolleyballScore_20200306;
+				PROVISIONING_PROFILE_SPECIFIER = dev_pro_VolleyballScore_20200306;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -735,7 +735,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = windy.VolleyballScore;
 				PRODUCT_NAME = VolleyballScore;
-				PROVISIONING_PROFILE_SPECIFIER = dis_pro_VolleyballScore_20200306;
+				PROVISIONING_PROFILE_SPECIFIER = dev_pro_VolleyballScore_20200306;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
