@@ -58,6 +58,7 @@
     }
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.AFcontentField resignFirstResponder];
     self.hidden = YES;
 }
 #pragma mark - 属性懒加载

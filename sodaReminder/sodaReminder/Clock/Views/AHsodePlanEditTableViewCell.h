@@ -1,0 +1,18 @@
+//
+//  AHsodePlanEditTableViewCell.h
+//  wineAwake
+//
+//  Created by bykj on 2019/10/6.
+//  Copyright © 2019 hbc. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+@class AHsodePlanModel;
+
+@interface AHsodePlanEditTableViewCell : UITableViewCell
+@property(nonatomic, strong)AHsodePlanModel *AHmodel;
+@end
+
+NS_ASSUME_NONNULL_END

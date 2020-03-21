@@ -1,0 +1,12 @@
+//
+//  AH_PrefixHeader.pch
+//  Simple Diary
+//
+//  Created by bykj on 2019/7/20.
+//  Copyright © 2019 hgg. All rights reserved.
+//
+
+#ifndef AH_PrefixHeader_pch
+#define AH_PrefixHeader_pch
+#import "AHGlobal.h"
+#endif /* AH_PrefixHeader_pch */
