@@ -1,0 +1,12 @@
+//
+//  IA_PrefixHeader.pch
+//  Simple Diary
+//
+//  Created by bykj on 2019/7/20.
+//  Copyright © 2019 hgg. All rights reserved.
+//
+
+#ifndef IA_PrefixHeader_pch
+#define IA_PrefixHeader_pch
+#import "IAGlobal.h"
+#endif /* IA_PrefixHeader_pch */

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "PLNLoginViewController.h"
+#import "IALoginViewController.h"
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
@@ -23,8 +23,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self setJPush:launchOptions];
-    [Bmob resetDomain:@"http://goodhabit.jd127.cn"];
-    [Bmob registerWithAppKey:@"df039ce9ff6f2311d96e0abed1cfb43b"];
+    [AVOSCloud setApplicationId:@"mG34aYISSTic5qVtir31dM6N-MdYXbMMI" clientKey:@"oLHtnYLqrERW7UvQ3UcnA3O5"];
+    [AVOSCloud setAllLogsEnabled:YES];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [self rootController];
@@ -32,14 +32,11 @@
     return YES;
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application{
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"PLNVictory"];
-       [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-               [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"PLNVictory"]]];
-       }];
+    
 }
 - (UIViewController *)rootController{
         //进行操作
-        PLNTabBarController *tabVC = [PLNTabBarController shareInstance];
+        IATabBarController *tabVC = [IATabBarController shareInstance];
         return tabVC;
 }
 - (void)setJPush:(NSDictionary *)launchOptions{
