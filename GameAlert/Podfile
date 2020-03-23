@@ -6,6 +6,7 @@ target 'GameAlert' do
   use_frameworks!
 
   # Pods for GameAlert
+    pod 'AFNetworking'
     pod 'Masonry'
     pod 'MJRefresh'
     pod 'MBProgressHUD'

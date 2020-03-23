@@ -632,9 +632,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = sodaReminder/sodaReminder.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 49WP3GYY9K;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/sodaReminder/Common/AH_PrefixHeader.pch";
 				INFOPLIST_FILE = sodaReminder/Info.plist;
@@ -645,7 +645,7 @@
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = windy.sodaReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = dev_sodaReminder_pro_20200318;
+				PROVISIONING_PROFILE_SPECIFIER = dis_sodaReminder_pro_20200318;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -657,9 +657,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = sodaReminder/sodaReminder.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 49WP3GYY9K;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/sodaReminder/Common/AH_PrefixHeader.pch";
 				INFOPLIST_FILE = sodaReminder/Info.plist;
@@ -670,7 +670,7 @@
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = windy.sodaReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = dev_sodaReminder_pro_20200318;
+				PROVISIONING_PROFILE_SPECIFIER = dis_sodaReminder_pro_20200318;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

