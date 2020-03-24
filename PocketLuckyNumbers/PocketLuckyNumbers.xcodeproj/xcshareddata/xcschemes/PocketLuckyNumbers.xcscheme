@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AE9F85B823B5D9C8001442D4"
-               BuildableName = "AbsolutelyGoodNumber.app"
+               BuildableName = "ImmediateNumber.app"
                BlueprintName = "PocketLuckyNumbers"
                ReferencedContainer = "container:PocketLuckyNumbers.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AE9F85B823B5D9C8001442D4"
-            BuildableName = "AbsolutelyGoodNumber.app"
+            BuildableName = "ImmediateNumber.app"
             BlueprintName = "PocketLuckyNumbers"
             ReferencedContainer = "container:PocketLuckyNumbers.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AE9F85B823B5D9C8001442D4"
-            BuildableName = "AbsolutelyGoodNumber.app"
+            BuildableName = "ImmediateNumber.app"
             BlueprintName = "PocketLuckyNumbers"
             ReferencedContainer = "container:PocketLuckyNumbers.xcodeproj">
          </BuildableReference>

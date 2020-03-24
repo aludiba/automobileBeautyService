@@ -640,9 +640,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketLuckyNumbers/PocketLuckyNumbers.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: sanxiang liu (58HCQT4W85)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: zigang shi (WPB9K5JZSZ)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 49WP3GYY9K;
+				DEVELOPMENT_TEAM = WPB9K5JZSZ;
 				ENABLE_BITCODE = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketLuckyNumbers/Common/IA_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketLuckyNumbers/Info.plist;
@@ -654,9 +654,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketLuckyNumbers/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = windy.sodaReminder;
+				PRODUCT_BUNDLE_IDENTIFIER = windy.ImmediateNumber;
 				PRODUCT_NAME = ImmediateNumber;
-				PROVISIONING_PROFILE_SPECIFIER = dev_sodaReminder_pro_20200318;
+				PROVISIONING_PROFILE_SPECIFIER = dis_ImmediateNumber_pro_20200324;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -668,9 +668,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = PocketLuckyNumbers/PocketLuckyNumbers.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: sanxiang liu (58HCQT4W85)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: zigang shi (WPB9K5JZSZ)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 49WP3GYY9K;
+				DEVELOPMENT_TEAM = WPB9K5JZSZ;
 				ENABLE_BITCODE = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PocketLuckyNumbers/Common/IA_PrefixHeader.pch";
 				INFOPLIST_FILE = PocketLuckyNumbers/Info.plist;
@@ -682,9 +682,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PocketLuckyNumbers/Common/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = windy.sodaReminder;
+				PRODUCT_BUNDLE_IDENTIFIER = windy.ImmediateNumber;
 				PRODUCT_NAME = ImmediateNumber;
-				PROVISIONING_PROFILE_SPECIFIER = dev_sodaReminder_pro_20200318;
+				PROVISIONING_PROFILE_SPECIFIER = dis_ImmediateNumber_pro_20200324;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
