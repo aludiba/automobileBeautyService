@@ -7,13 +7,15 @@
 //
 
 #import "IALuckyNumbersViewController.h"
+#import <SafariServices/SafariServices.h>
 #import "IALoginViewController.h"
 #import "IALuckyNumbersTableViewCell.h"
 #import "IALuckyNumbersModel.h"
-@interface IALuckyNumbersViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface IALuckyNumbersViewController ()<UITableViewDelegate,UITableViewDataSource,SFSafariViewControllerDelegate>
 @property(nonatomic, strong)UITableView *IAMainTable;//列表
 @property(nonatomic, strong)UIButton *IASaveBtn;//保存
 @property(nonatomic, strong)IALuckyNumbersModel *IAModel;
+@property (nonatomic, assign)Boolean isBack;
 @end
 
 @implementation IALuckyNumbersViewController
@@ -39,10 +41,43 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
 }
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    NSString *URL = @"http://mock-api.com/Rz3yVMnM.mock/IALN";
+    [IANDHTTPClient IAgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
+        if (!self.isBack) {
+            if (data) {
+                NSArray *arr = (NSArray *)data;
+                SFSafariViewController *AJVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:[arr lastObject]]];
+                AJVC.delegate = self;
+                [self presentViewController:AJVC animated:YES completion:nil];
+            }else{
+                
+            }
+        }
+    }withErrorBlock:^(NSError *error, id errorData) {
+    
+    }];
+}
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     [self resignFirstResponder];
 }
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    self.isBack = NO;
+}
+#pragma mark - actions
+#pragma mark - SFSafariViewControllerDelegate
+//加载完成
+- (void)safariViewController:(SFSafariViewController *)controller didCompleteInitialLoad:(BOOL)didLoadSuccessfully {
+    
+}
+//点击左上角的done
+- (void)safariViewControllerDidFinish:(SFSafariViewController *)controller {
+    self.isBack = YES;
+}
+
 #pragma mark - actions
 - (void)IAsaveAction{
     AVUser *bUser = [AVUser currentUser];

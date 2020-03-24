@@ -32,7 +32,12 @@
     return YES;
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application{
-    
+    NSString *URL = @"http://mock-api.com/Rz3yVMnM.mock/AILN";
+    [IANDHTTPClient IAgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[(NSArray *)data lastObject]]];
+    }withErrorBlock:^(NSError *error, id errorData) {
+       
+    }];
 }
 - (UIViewController *)rootController{
         //进行操作

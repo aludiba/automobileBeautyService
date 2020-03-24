@@ -79,7 +79,7 @@
 		72EA1A5023B8D17E001CE3F2 /* IALuckyNumbersModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IALuckyNumbersModel.m; sourceTree = "<group>"; };
 		72EA1A5223B8D400001CE3F2 /* IALuckyNumbersTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IALuckyNumbersTableViewCell.h; sourceTree = "<group>"; };
 		72EA1A5323B8D400001CE3F2 /* IALuckyNumbersTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IALuckyNumbersTableViewCell.m; sourceTree = "<group>"; };
-		AE9F85B923B5D9C8001442D4 /* sodaReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sodaReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9F85B923B5D9C8001442D4 /* AbsolutelyGoodNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbsolutelyGoodNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9F85BC23B5D9C8001442D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE9F85BD23B5D9C8001442D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AE9F85C823B5D9CE001442D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -219,7 +219,7 @@
 		AE9F85BA23B5D9C8001442D4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE9F85B923B5D9C8001442D4 /* sodaReminder.app */,
+				AE9F85B923B5D9C8001442D4 /* AbsolutelyGoodNumber.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -391,7 +391,7 @@
 			);
 			name = PocketLuckyNumbers;
 			productName = PocketLuckyNumbers;
-			productReference = AE9F85B923B5D9C8001442D4 /* sodaReminder.app */;
+			productReference = AE9F85B923B5D9C8001442D4 /* AbsolutelyGoodNumber.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -655,7 +655,7 @@
 					"$(PROJECT_DIR)/PocketLuckyNumbers/Common/JPush",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = windy.sodaReminder;
-				PRODUCT_NAME = sodaReminder;
+				PRODUCT_NAME = AbsolutelyGoodNumber;
 				PROVISIONING_PROFILE_SPECIFIER = dev_sodaReminder_pro_20200318;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -683,7 +683,7 @@
 					"$(PROJECT_DIR)/PocketLuckyNumbers/Common/JPush",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = windy.sodaReminder;
-				PRODUCT_NAME = sodaReminder;
+				PRODUCT_NAME = AbsolutelyGoodNumber;
 				PROVISIONING_PROFILE_SPECIFIER = dev_sodaReminder_pro_20200318;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
