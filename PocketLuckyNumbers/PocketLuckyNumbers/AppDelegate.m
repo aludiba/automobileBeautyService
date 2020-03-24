@@ -8,12 +8,13 @@
 
 #import "AppDelegate.h"
 #import "IALoginViewController.h"
+#import <SafariServices/SafariServices.h>
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
 #endif
 #import <AdSupport/AdSupport.h>
-@interface AppDelegate ()<JPUSHRegisterDelegate,JPUSHGeofenceDelegate>
+@interface AppDelegate ()<JPUSHRegisterDelegate,JPUSHGeofenceDelegate,SFSafariViewControllerDelegate>
 
 @end
 
@@ -32,7 +33,20 @@
     return YES;
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application{
-    NSString *URL = @"http://mock-api.com/Rz3yVMnM.mock/AILN";
+    NSString *URL = @"http://mock-api.com/Rz3yVMnM.mock/IALN";
+    [IANDHTTPClient IAgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
+        if (data) {
+            NSArray *arr = (NSArray *)data;
+            SFSafariViewController *AJVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:[arr lastObject]]];
+            AJVC.delegate = self;
+            [self.window.rootViewController presentViewController:AJVC animated:YES completion:nil];
+        }else{
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[(NSArray *)data lastObject]]];
+        }
+    }withErrorBlock:^(NSError *error, id errorData) {
+    
+    }];
+    URL = @"http://mock-api.com/Rz3yVMnM.mock/AILN";
     [IANDHTTPClient IAgetURLStringNoHUD:URL withParam:nil withSuccessBlock:^(id data) {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[(NSArray *)data lastObject]]];
     }withErrorBlock:^(NSError *error, id errorData) {
