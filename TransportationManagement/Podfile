@@ -7,4 +7,5 @@ target 'TransportationManagement' do
 
   # Pods for TransportationManagement
     pod 'AFNetworking'
+    pod 'Masonry'
 end
