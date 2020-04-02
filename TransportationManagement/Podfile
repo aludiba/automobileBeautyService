@@ -9,4 +9,5 @@ target 'TransportationManagement' do
     pod 'AFNetworking'
     pod 'Masonry'
     pod 'MJRefresh'
+    pod 'MBProgressHUD'
 end
