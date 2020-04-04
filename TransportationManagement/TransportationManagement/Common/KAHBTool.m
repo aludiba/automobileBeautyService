@@ -9,6 +9,18 @@
 #import "KAHBTool.h"
 
 @implementation KAHBTool
+//去掉字符串所有的换行和空格
++ (NSString *)KAremoveSpaceAndNewline:(NSString *)str{
+
+NSString *temp = [str stringByReplacingOccurrencesOfString:@" " withString:@""];
+
+temp = [temp stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+
+temp = [temp stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+
+return temp;
+
+}
 //得到资源目录（新建的plist文件）
 + (NSString *)getDataSourcePath:(NSString *) sourceName andType:(NSString *) fileType{
     NSString *path = [[NSBundle mainBundle] pathForResource:sourceName ofType:fileType];

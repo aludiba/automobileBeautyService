@@ -25,7 +25,7 @@
         
         [self.KAtitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(16);
-            make.width.mas_equalTo(70);
+            make.width.mas_equalTo(100);
             make.top.equalTo(self.contentView).offset(20);
             make.height.mas_equalTo(24);
         }];

@@ -12,6 +12,7 @@
 #import "KACargoEditableTableViewCell.h"
 
 @interface KACargoAddViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property(nonatomic, strong)KACargoModel *KAModel;
 @property(nonatomic, strong)UITableView *KAmainTable;//列表
 @property(nonatomic, strong)UIButton *KAsaveButton;//保存按钮
 @property(nonatomic, strong)NSMutableArray *KAviewDataArray;//页面数据
@@ -51,7 +52,7 @@
     [self.KAviewDataArray addObject:KACommodityViewModel];
     
     KACargoAddViewModel *KATransportPriceViewModel = [[KACargoAddViewModel alloc] init];
-    KATransportPriceViewModel.KATitle = @"运输价格";
+    KATransportPriceViewModel.KATitle = @"运输价格(元)";
     KATransportPriceViewModel.KADefault = @"请输入运输价格";
     [self.KAviewDataArray addObject:KATransportPriceViewModel];
     [self.KAmainTable reloadData];
@@ -68,7 +69,64 @@
        } completion:nil];
 }
 - (void)saveAction:(UIButton *)sender{
+    for (int i = 0; i < self.KAviewDataArray.count; i++) {
+        KACargoAddViewModel *KAviewModel = self.KAviewDataArray[i];
+        NSString *KAcontentString = [KAHBTool KAremoveSpaceAndNewline:KAviewModel.KAContent];
+        if (!KAcontentString.length) {
+            if (i == 0) {
+                [MBProgressHUD KAshowReminderText:@"请输入地点"];
+                return;
+            }else if (i == 1){
+                [MBProgressHUD KAshowReminderText:@"请输入客户名称"];
+                return;
+            }else if (i == 2){
+                [MBProgressHUD KAshowReminderText:@"请输入货物名称"];
+                return;
+            }else if (i == 3){
+                [MBProgressHUD KAshowReminderText:@"请输入运输价格"];
+                return;
+            }
+        }
+    }
+    KACargoAddViewModel *KAplaceviewModel = self.KAviewDataArray[0];
+    self.KAModel.KAPlace = KAplaceviewModel.KAContent;
+    KACargoAddViewModel *KACustomerviewModel = self.KAviewDataArray[1];
+    self.KAModel.KACustomerName = KACustomerviewModel.KAContent;
+    KACargoAddViewModel *KACommodityviewModel = self.KAviewDataArray[2];
+    self.KAModel.KACommodityName = KACommodityviewModel.KAContent;
+    KACargoAddViewModel *KATransportPriceviewModel = self.KAviewDataArray[3];
+    CGFloat KATransportPrice = [KATransportPriceviewModel.KAContent floatValue];
+    self.KAModel.KATransportPrice = KATransportPrice;
     
+    NSMutableDictionary *jsonDictionary = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[self.KAModel yy_modelToJSONObject]];
+    [jsonDictionary setObject:[[NSDate alloc] init] forKey:@"KADate"];
+    AVUser *author = [AVUser currentUser];
+    AVObject *diary;
+        if (self.type == KACargoTypeWaitReceiving) {
+            diary = [AVObject objectWithClassName:@"KACargoRecordWaitReceiving"];
+        }else if (self.type == KACargoTypeWaitLoading){
+           diary = [AVObject objectWithClassName:@"KACargoRecordWaitLoading"];
+        }else if (self.type == KACargoTypeWaitDelivery){
+            diary = [AVObject objectWithClassName:@"KACargoRecordWaitDelivery"];
+        }else{
+            diary = [AVObject objectWithClassName:@"KACargoRecordCompleted"];
+        }
+        for (NSString *key in jsonDictionary.allKeys) {
+            [diary setObject:[jsonDictionary objectForKey:key]  forKey:key];
+        }
+        [diary setObject:author forKey:@"author"];
+        [diary saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
+            if (isSuccessful) {
+                //创建成功后的动作
+                [MBProgressHUD KAshowReminderText:NSLocalizedString(@"保存成功", nil)];
+                [self.navigationController popToRootViewControllerAnimated:YES];
+            } else if (error){
+                //发生错误后的动作
+                [MBProgressHUD KAshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
+            } else {
+                [MBProgressHUD KAshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
+            }
+        }];
 }
 #pragma mark - UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -110,6 +168,12 @@
     [self.view endEditing:YES];
 }
 #pragma mark - 属性懒加载
+- (KACargoModel *)KAModel{
+    if (!_KAModel) {
+        _KAModel = [[KACargoModel alloc] init];
+    }
+    return _KAModel;
+}
 - (NSMutableArray *)KAviewDataArray{
     if (!_KAviewDataArray) {
         _KAviewDataArray = [[NSMutableArray alloc] init];

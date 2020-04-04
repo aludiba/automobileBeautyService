@@ -11,6 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KAHBTool : NSObject
+//去掉字符串所有的换行和空格
++ (NSString *)KAremoveSpaceAndNewline:(NSString *)str;
 //得到资源目录（新建的plist文件）
 + (NSString *)getDataSourcePath:(NSString *)sourceName andType:(NSString *)fileType;
 //得到documents目录

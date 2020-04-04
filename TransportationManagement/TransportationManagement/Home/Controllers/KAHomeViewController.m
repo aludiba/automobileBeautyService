@@ -8,6 +8,7 @@
 
 #import "KAHomeViewController.h"
 #import "KACargoRecordViewController.h"
+#import "KALoginViewController.h"
 
 @interface KAHomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property(nonatomic, strong)UICollectionView *KACollectionView;
@@ -85,6 +86,8 @@
 #pragma mark - UICollectionViewDelegate
 // 选中某个cell
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    AVUser *bUser = [AVUser currentUser];
+    if (bUser) {
     KACargoRecordViewController *vc = [[KACargoRecordViewController alloc] init];
     if (indexPath.row == 0) {
         vc.type = KACargoTypeWaitReceiving;
@@ -97,6 +100,20 @@
     }
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:NO];
+    }else{
+        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            KALoginViewController *KALoginVC = [[KALoginViewController alloc] init];
+            KALoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
+            [self presentViewController:KALoginVC animated:YES completion:^{
+                
+            }];
+        }];
+        [alertVC addAction:cancelAction];
+        [alertVC addAction:sureAction];
+        [self presentViewController:alertVC animated:YES completion:nil];
+    }
 }
 #pragma mark - 属性懒加载
 - (NSMutableArray *)KADataArray{

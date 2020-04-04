@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, copy)NSString *KAContent;
 @property(nonatomic, copy)NSString *KADefault;
 @property(nonatomic, assign)CGFloat KAEditHeight;
+@property(nonatomic, assign)Boolean isLine;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -29,6 +29,10 @@
 		728507352436102100D3BDF8 /* KACargoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507342436102100D3BDF8 /* KACargoModel.m */; };
 		728507382436134B00D3BDF8 /* KACargoAddViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507372436134B00D3BDF8 /* KACargoAddViewModel.m */; };
 		7285073B24362C4400D3BDF8 /* KACargoEditableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285073A24362C4400D3BDF8 /* KACargoEditableTableViewCell.m */; };
+		7285073E24386A7F00D3BDF8 /* KACargoRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285073D24386A7F00D3BDF8 /* KACargoRecordTableViewCell.m */; };
+		728507412438A60C00D3BDF8 /* KALoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507402438A60C00D3BDF8 /* KALoginTableViewCell.m */; };
+		728507442438C1D700D3BDF8 /* KALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507432438C1D700D3BDF8 /* KALoginViewController.m */; };
+		728507472438C8E100D3BDF8 /* KACargoRecordSuperTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507462438C8E100D3BDF8 /* KACargoRecordSuperTableViewCell.m */; };
 		E7BDC7703E95C58634871974 /* Pods_TransportationManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F639F2312771184B0C56E9 /* Pods_TransportationManagement.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +83,14 @@
 		728507372436134B00D3BDF8 /* KACargoAddViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KACargoAddViewModel.m; sourceTree = "<group>"; };
 		7285073924362C4400D3BDF8 /* KACargoEditableTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KACargoEditableTableViewCell.h; sourceTree = "<group>"; };
 		7285073A24362C4400D3BDF8 /* KACargoEditableTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KACargoEditableTableViewCell.m; sourceTree = "<group>"; };
+		7285073C24386A7E00D3BDF8 /* KACargoRecordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KACargoRecordTableViewCell.h; sourceTree = "<group>"; };
+		7285073D24386A7F00D3BDF8 /* KACargoRecordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KACargoRecordTableViewCell.m; sourceTree = "<group>"; };
+		7285073F2438A60B00D3BDF8 /* KALoginTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KALoginTableViewCell.h; sourceTree = "<group>"; };
+		728507402438A60C00D3BDF8 /* KALoginTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KALoginTableViewCell.m; sourceTree = "<group>"; };
+		728507422438C1D700D3BDF8 /* KALoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KALoginViewController.h; sourceTree = "<group>"; };
+		728507432438C1D700D3BDF8 /* KALoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KALoginViewController.m; sourceTree = "<group>"; };
+		728507452438C8E100D3BDF8 /* KACargoRecordSuperTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KACargoRecordSuperTableViewCell.h; sourceTree = "<group>"; };
+		728507462438C8E100D3BDF8 /* KACargoRecordSuperTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KACargoRecordSuperTableViewCell.m; sourceTree = "<group>"; };
 		C478DEEBE13474D57569AF72 /* Pods-TransportationManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransportationManagement.debug.xcconfig"; path = "Target Support Files/Pods-TransportationManagement/Pods-TransportationManagement.debug.xcconfig"; sourceTree = "<group>"; };
 		D5F639F2312771184B0C56E9 /* Pods_TransportationManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransportationManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -230,6 +242,8 @@
 			children = (
 				728507102435FC3600D3BDF8 /* KAMineViewController.h */,
 				728507112435FC3600D3BDF8 /* KAMineViewController.m */,
+				728507422438C1D700D3BDF8 /* KALoginViewController.h */,
+				728507432438C1D700D3BDF8 /* KALoginViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -237,6 +251,8 @@
 		728506F82435F55800D3BDF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7285073F2438A60B00D3BDF8 /* KALoginTableViewCell.h */,
+				728507402438A60C00D3BDF8 /* KALoginTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -280,6 +296,10 @@
 			children = (
 				7285073924362C4400D3BDF8 /* KACargoEditableTableViewCell.h */,
 				7285073A24362C4400D3BDF8 /* KACargoEditableTableViewCell.m */,
+				728507452438C8E100D3BDF8 /* KACargoRecordSuperTableViewCell.h */,
+				728507462438C8E100D3BDF8 /* KACargoRecordSuperTableViewCell.m */,
+				7285073C24386A7E00D3BDF8 /* KACargoRecordTableViewCell.h */,
+				7285073D24386A7F00D3BDF8 /* KACargoRecordTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -431,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				728506D92435B47B00D3BDF8 /* AppDelegate.m in Sources */,
+				728507412438A60C00D3BDF8 /* KALoginTableViewCell.m in Sources */,
 				728506EA2435B48000D3BDF8 /* main.m in Sources */,
 				728507352436102100D3BDF8 /* KACargoModel.m in Sources */,
 				728507152435FC4A00D3BDF8 /* KARoadViewController.m in Sources */,
@@ -441,6 +462,7 @@
 				7285072C2436016F00D3BDF8 /* KAHBTool.m in Sources */,
 				728507122435FC3600D3BDF8 /* KAMineViewController.m in Sources */,
 				7285073B24362C4400D3BDF8 /* KACargoEditableTableViewCell.m in Sources */,
+				728507442438C1D700D3BDF8 /* KALoginViewController.m in Sources */,
 				7285070F2435FC1E00D3BDF8 /* KAHomeViewController.m in Sources */,
 				7285073224360F9F00D3BDF8 /* KACargoAddViewController.m in Sources */,
 				728507262436016F00D3BDF8 /* KAUIUtilities.m in Sources */,
@@ -448,8 +470,10 @@
 				728507092435F8BC00D3BDF8 /* KATabBarController.m in Sources */,
 				7285072B2436016F00D3BDF8 /* NSArray+log.m in Sources */,
 				728507272436016F00D3BDF8 /* CalendarTool.m in Sources */,
+				7285073E24386A7F00D3BDF8 /* KACargoRecordTableViewCell.m in Sources */,
 				7285072F24360F6200D3BDF8 /* KACargoRecordViewController.m in Sources */,
 				728507292436016F00D3BDF8 /* KANDHTTPClient.m in Sources */,
+				728507472438C8E100D3BDF8 /* KACargoRecordSuperTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

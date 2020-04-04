@@ -11,10 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KACargoModel : NSObject
+@property(nonatomic, copy)NSString *KAobjectId;
 @property(nonatomic, strong)NSDate *KADate;
-@property(nonatomic, strong)NSString *KAPlace;
-@property(nonatomic, strong)NSString *KACustomerName;
-@property(nonatomic, strong)NSString *KACommodityName;
+@property(nonatomic, copy)NSString *KAPlace;
+@property(nonatomic, copy)NSString *KACustomerName;
+@property(nonatomic, copy)NSString *KACommodityName;
 @property(nonatomic, assign)CGFloat KATransportPrice;
 @end
 
