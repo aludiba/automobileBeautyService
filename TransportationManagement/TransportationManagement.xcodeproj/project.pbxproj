@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,24 @@
 		728506E42435B48000D3BDF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 728506E32435B48000D3BDF8 /* Assets.xcassets */; };
 		728506E72435B48000D3BDF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728506E52435B48000D3BDF8 /* LaunchScreen.storyboard */; };
 		728506EA2435B48000D3BDF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 728506E92435B48000D3BDF8 /* main.m */; };
+		728507062435F69B00D3BDF8 /* KABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507052435F69B00D3BDF8 /* KABaseViewController.m */; };
+		728507092435F8BC00D3BDF8 /* KATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507082435F8BC00D3BDF8 /* KATabBarController.m */; };
+		7285070C2435FBEF00D3BDF8 /* KAGasolineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285070B2435FBEF00D3BDF8 /* KAGasolineViewController.m */; };
+		7285070F2435FC1E00D3BDF8 /* KAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285070E2435FC1E00D3BDF8 /* KAHomeViewController.m */; };
+		728507122435FC3600D3BDF8 /* KAMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507112435FC3600D3BDF8 /* KAMineViewController.m */; };
+		728507152435FC4A00D3BDF8 /* KARoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507142435FC4A00D3BDF8 /* KARoadViewController.m */; };
+		728507262436016F00D3BDF8 /* KAUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285071A2436016D00D3BDF8 /* KAUIUtilities.m */; };
+		728507272436016F00D3BDF8 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285071B2436016D00D3BDF8 /* CalendarTool.m */; };
+		728507282436016F00D3BDF8 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285071C2436016D00D3BDF8 /* NSDictionary+log.m */; };
+		728507292436016F00D3BDF8 /* KANDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507202436016E00D3BDF8 /* KANDHTTPClient.m */; };
+		7285072A2436016F00D3BDF8 /* MBProgressHUD+KANJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507212436016E00D3BDF8 /* MBProgressHUD+KANJ.m */; };
+		7285072B2436016F00D3BDF8 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507222436016E00D3BDF8 /* NSArray+log.m */; };
+		7285072C2436016F00D3BDF8 /* KAHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507232436016E00D3BDF8 /* KAHBTool.m */; };
+		7285072F24360F6200D3BDF8 /* KACargoRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285072E24360F6200D3BDF8 /* KACargoRecordViewController.m */; };
+		7285073224360F9F00D3BDF8 /* KACargoAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285073124360F9F00D3BDF8 /* KACargoAddViewController.m */; };
+		728507352436102100D3BDF8 /* KACargoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507342436102100D3BDF8 /* KACargoModel.m */; };
+		728507382436134B00D3BDF8 /* KACargoAddViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507372436134B00D3BDF8 /* KACargoAddViewModel.m */; };
+		7285073B24362C4400D3BDF8 /* KACargoEditableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285073A24362C4400D3BDF8 /* KACargoEditableTableViewCell.m */; };
 		E7BDC7703E95C58634871974 /* Pods_TransportationManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F639F2312771184B0C56E9 /* Pods_TransportationManagement.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +41,44 @@
 		728506E62435B48000D3BDF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		728506E82435B48000D3BDF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		728506E92435B48000D3BDF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		728507042435F69B00D3BDF8 /* KABaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KABaseViewController.h; sourceTree = "<group>"; };
+		728507052435F69B00D3BDF8 /* KABaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KABaseViewController.m; sourceTree = "<group>"; };
+		728507072435F8BC00D3BDF8 /* KATabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KATabBarController.h; sourceTree = "<group>"; };
+		728507082435F8BC00D3BDF8 /* KATabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KATabBarController.m; sourceTree = "<group>"; };
+		7285070A2435FBEF00D3BDF8 /* KAGasolineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAGasolineViewController.h; sourceTree = "<group>"; };
+		7285070B2435FBEF00D3BDF8 /* KAGasolineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAGasolineViewController.m; sourceTree = "<group>"; };
+		7285070D2435FC1E00D3BDF8 /* KAHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAHomeViewController.h; sourceTree = "<group>"; };
+		7285070E2435FC1E00D3BDF8 /* KAHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAHomeViewController.m; sourceTree = "<group>"; };
+		728507102435FC3600D3BDF8 /* KAMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAMineViewController.h; sourceTree = "<group>"; };
+		728507112435FC3600D3BDF8 /* KAMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAMineViewController.m; sourceTree = "<group>"; };
+		728507132435FC4A00D3BDF8 /* KARoadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KARoadViewController.h; sourceTree = "<group>"; };
+		728507142435FC4A00D3BDF8 /* KARoadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KARoadViewController.m; sourceTree = "<group>"; };
+		728507162436012D00D3BDF8 /* KAGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAGlobal.h; sourceTree = "<group>"; };
+		728507172436016C00D3BDF8 /* KANDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KANDHTTPClient.h; sourceTree = "<group>"; };
+		728507182436016C00D3BDF8 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
+		728507192436016C00D3BDF8 /* KAHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAHBTool.h; sourceTree = "<group>"; };
+		7285071A2436016D00D3BDF8 /* KAUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAUIUtilities.m; sourceTree = "<group>"; };
+		7285071B2436016D00D3BDF8 /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
+		7285071C2436016D00D3BDF8 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
+		7285071D2436016D00D3BDF8 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		7285071E2436016D00D3BDF8 /* KA_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KA_PrefixHeader.pch; sourceTree = "<group>"; };
+		7285071F2436016D00D3BDF8 /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
+		728507202436016E00D3BDF8 /* KANDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KANDHTTPClient.m; sourceTree = "<group>"; };
+		728507212436016E00D3BDF8 /* MBProgressHUD+KANJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+KANJ.m"; sourceTree = "<group>"; };
+		728507222436016E00D3BDF8 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		728507232436016E00D3BDF8 /* KAHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAHBTool.m; sourceTree = "<group>"; };
+		728507242436016E00D3BDF8 /* KAUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAUIUtilities.h; sourceTree = "<group>"; };
+		728507252436016F00D3BDF8 /* MBProgressHUD+KANJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+KANJ.h"; sourceTree = "<group>"; };
+		7285072D24360F6200D3BDF8 /* KACargoRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KACargoRecordViewController.h; sourceTree = "<group>"; };
+		7285072E24360F6200D3BDF8 /* KACargoRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KACargoRecordViewController.m; sourceTree = "<group>"; };
+		7285073024360F9F00D3BDF8 /* KACargoAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KACargoAddViewController.h; sourceTree = "<group>"; };
+		7285073124360F9F00D3BDF8 /* KACargoAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KACargoAddViewController.m; sourceTree = "<group>"; };
+		728507332436102100D3BDF8 /* KACargoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KACargoModel.h; sourceTree = "<group>"; };
+		728507342436102100D3BDF8 /* KACargoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KACargoModel.m; sourceTree = "<group>"; };
+		728507362436134A00D3BDF8 /* KACargoAddViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KACargoAddViewModel.h; sourceTree = "<group>"; };
+		728507372436134B00D3BDF8 /* KACargoAddViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KACargoAddViewModel.m; sourceTree = "<group>"; };
+		7285073924362C4400D3BDF8 /* KACargoEditableTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KACargoEditableTableViewCell.h; sourceTree = "<group>"; };
+		7285073A24362C4400D3BDF8 /* KACargoEditableTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KACargoEditableTableViewCell.m; sourceTree = "<group>"; };
 		C478DEEBE13474D57569AF72 /* Pods-TransportationManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransportationManagement.debug.xcconfig"; path = "Target Support Files/Pods-TransportationManagement/Pods-TransportationManagement.debug.xcconfig"; sourceTree = "<group>"; };
 		D5F639F2312771184B0C56E9 /* Pods_TransportationManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransportationManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -45,7 +101,6 @@
 				C478DEEBE13474D57569AF72 /* Pods-TransportationManagement.debug.xcconfig */,
 				461D51084D8B022805E4FEEA /* Pods-TransportationManagement.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -78,6 +133,11 @@
 		728506D62435B47B00D3BDF8 /* TransportationManagement */ = {
 			isa = PBXGroup;
 			children = (
+				728506F02435F55700D3BDF8 /* Common */,
+				728506FD2435F55800D3BDF8 /* Gasoline */,
+				728506F92435F55800D3BDF8 /* Home */,
+				728506F52435F55800D3BDF8 /* Mine */,
+				728506F12435F55800D3BDF8 /* Road */,
 				728506D72435B47B00D3BDF8 /* AppDelegate.h */,
 				728506D82435B47B00D3BDF8 /* AppDelegate.m */,
 				728506E32435B48000D3BDF8 /* Assets.xcassets */,
@@ -86,6 +146,175 @@
 				728506E92435B48000D3BDF8 /* main.m */,
 			);
 			path = TransportationManagement;
+			sourceTree = "<group>";
+		};
+		728506F02435F55700D3BDF8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				728507162436012D00D3BDF8 /* KAGlobal.h */,
+				7285071E2436016D00D3BDF8 /* KA_PrefixHeader.pch */,
+				728507192436016C00D3BDF8 /* KAHBTool.h */,
+				728507232436016E00D3BDF8 /* KAHBTool.m */,
+				728507172436016C00D3BDF8 /* KANDHTTPClient.h */,
+				728507202436016E00D3BDF8 /* KANDHTTPClient.m */,
+				728507242436016E00D3BDF8 /* KAUIUtilities.h */,
+				7285071A2436016D00D3BDF8 /* KAUIUtilities.m */,
+				7285071F2436016D00D3BDF8 /* CalendarTool.h */,
+				7285071B2436016D00D3BDF8 /* CalendarTool.m */,
+				728507252436016F00D3BDF8 /* MBProgressHUD+KANJ.h */,
+				728507212436016E00D3BDF8 /* MBProgressHUD+KANJ.m */,
+				7285071D2436016D00D3BDF8 /* NSArray+log.h */,
+				728507222436016E00D3BDF8 /* NSArray+log.m */,
+				728507182436016C00D3BDF8 /* NSDictionary+log.h */,
+				7285071C2436016D00D3BDF8 /* NSDictionary+log.m */,
+				728507042435F69B00D3BDF8 /* KABaseViewController.h */,
+				728507052435F69B00D3BDF8 /* KABaseViewController.m */,
+				728507072435F8BC00D3BDF8 /* KATabBarController.h */,
+				728507082435F8BC00D3BDF8 /* KATabBarController.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		728506F12435F55800D3BDF8 /* Road */ = {
+			isa = PBXGroup;
+			children = (
+				728506F22435F55800D3BDF8 /* Models */,
+				728506F32435F55800D3BDF8 /* Controllers */,
+				728506F42435F55800D3BDF8 /* Views */,
+			);
+			path = Road;
+			sourceTree = "<group>";
+		};
+		728506F22435F55800D3BDF8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		728506F32435F55800D3BDF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				728507132435FC4A00D3BDF8 /* KARoadViewController.h */,
+				728507142435FC4A00D3BDF8 /* KARoadViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		728506F42435F55800D3BDF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		728506F52435F55800D3BDF8 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				728506F62435F55800D3BDF8 /* Models */,
+				728506F72435F55800D3BDF8 /* Controllers */,
+				728506F82435F55800D3BDF8 /* Views */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		728506F62435F55800D3BDF8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		728506F72435F55800D3BDF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				728507102435FC3600D3BDF8 /* KAMineViewController.h */,
+				728507112435FC3600D3BDF8 /* KAMineViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		728506F82435F55800D3BDF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		728506F92435F55800D3BDF8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				728506FA2435F55800D3BDF8 /* Models */,
+				728506FB2435F55800D3BDF8 /* Controllers */,
+				728506FC2435F55800D3BDF8 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		728506FA2435F55800D3BDF8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				728507332436102100D3BDF8 /* KACargoModel.h */,
+				728507342436102100D3BDF8 /* KACargoModel.m */,
+				728507362436134A00D3BDF8 /* KACargoAddViewModel.h */,
+				728507372436134B00D3BDF8 /* KACargoAddViewModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		728506FB2435F55800D3BDF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7285070D2435FC1E00D3BDF8 /* KAHomeViewController.h */,
+				7285070E2435FC1E00D3BDF8 /* KAHomeViewController.m */,
+				7285072D24360F6200D3BDF8 /* KACargoRecordViewController.h */,
+				7285072E24360F6200D3BDF8 /* KACargoRecordViewController.m */,
+				7285073024360F9F00D3BDF8 /* KACargoAddViewController.h */,
+				7285073124360F9F00D3BDF8 /* KACargoAddViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		728506FC2435F55800D3BDF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7285073924362C4400D3BDF8 /* KACargoEditableTableViewCell.h */,
+				7285073A24362C4400D3BDF8 /* KACargoEditableTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		728506FD2435F55800D3BDF8 /* Gasoline */ = {
+			isa = PBXGroup;
+			children = (
+				728506FE2435F55800D3BDF8 /* Models */,
+				728506FF2435F55800D3BDF8 /* Controllers */,
+				728507002435F55800D3BDF8 /* Views */,
+			);
+			path = Gasoline;
+			sourceTree = "<group>";
+		};
+		728506FE2435F55800D3BDF8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		728506FF2435F55800D3BDF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7285070A2435FBEF00D3BDF8 /* KAGasolineViewController.h */,
+				7285070B2435FBEF00D3BDF8 /* KAGasolineViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		728507002435F55800D3BDF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +432,24 @@
 			files = (
 				728506D92435B47B00D3BDF8 /* AppDelegate.m in Sources */,
 				728506EA2435B48000D3BDF8 /* main.m in Sources */,
+				728507352436102100D3BDF8 /* KACargoModel.m in Sources */,
+				728507152435FC4A00D3BDF8 /* KARoadViewController.m in Sources */,
+				7285072A2436016F00D3BDF8 /* MBProgressHUD+KANJ.m in Sources */,
+				728507382436134B00D3BDF8 /* KACargoAddViewModel.m in Sources */,
+				728507062435F69B00D3BDF8 /* KABaseViewController.m in Sources */,
+				728507282436016F00D3BDF8 /* NSDictionary+log.m in Sources */,
+				7285072C2436016F00D3BDF8 /* KAHBTool.m in Sources */,
+				728507122435FC3600D3BDF8 /* KAMineViewController.m in Sources */,
+				7285073B24362C4400D3BDF8 /* KACargoEditableTableViewCell.m in Sources */,
+				7285070F2435FC1E00D3BDF8 /* KAHomeViewController.m in Sources */,
+				7285073224360F9F00D3BDF8 /* KACargoAddViewController.m in Sources */,
+				728507262436016F00D3BDF8 /* KAUIUtilities.m in Sources */,
+				7285070C2435FBEF00D3BDF8 /* KAGasolineViewController.m in Sources */,
+				728507092435F8BC00D3BDF8 /* KATabBarController.m in Sources */,
+				7285072B2436016F00D3BDF8 /* NSArray+log.m in Sources */,
+				728507272436016F00D3BDF8 /* CalendarTool.m in Sources */,
+				7285072F24360F6200D3BDF8 /* KACargoRecordViewController.m in Sources */,
+				728507292436016F00D3BDF8 /* KANDHTTPClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +582,9 @@
 			baseConfigurationReference = C478DEEBE13474D57569AF72 /* Pods-TransportationManagement.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TransportationManagement/Common/KA_PrefixHeader.pch";
 				INFOPLIST_FILE = TransportationManagement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -343,6 +592,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.TransportationManagement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -352,7 +602,9 @@
 			baseConfigurationReference = 461D51084D8B022805E4FEEA /* Pods-TransportationManagement.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TransportationManagement/Common/KA_PrefixHeader.pch";
 				INFOPLIST_FILE = TransportationManagement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -360,6 +612,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.TransportationManagement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
