@@ -33,6 +33,10 @@
 		728507412438A60C00D3BDF8 /* KALoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507402438A60C00D3BDF8 /* KALoginTableViewCell.m */; };
 		728507442438C1D700D3BDF8 /* KALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507432438C1D700D3BDF8 /* KALoginViewController.m */; };
 		728507472438C8E100D3BDF8 /* KACargoRecordSuperTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507462438C8E100D3BDF8 /* KACargoRecordSuperTableViewCell.m */; };
+		7285074A243AB63600D3BDF8 /* KARoadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72850749243AB63600D3BDF8 /* KARoadModel.m */; };
+		7285074D243AB7CD00D3BDF8 /* KAGasolineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285074C243AB7CD00D3BDF8 /* KAGasolineModel.m */; };
+		72850750243ABBF700D3BDF8 /* KAGasolineAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285074F243ABBF700D3BDF8 /* KAGasolineAddViewController.m */; };
+		72850753243ABF4600D3BDF8 /* KAGasolineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72850752243ABF4600D3BDF8 /* KAGasolineTableViewCell.m */; };
 		E7BDC7703E95C58634871974 /* Pods_TransportationManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F639F2312771184B0C56E9 /* Pods_TransportationManagement.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +95,14 @@
 		728507432438C1D700D3BDF8 /* KALoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KALoginViewController.m; sourceTree = "<group>"; };
 		728507452438C8E100D3BDF8 /* KACargoRecordSuperTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KACargoRecordSuperTableViewCell.h; sourceTree = "<group>"; };
 		728507462438C8E100D3BDF8 /* KACargoRecordSuperTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KACargoRecordSuperTableViewCell.m; sourceTree = "<group>"; };
+		72850748243AB63600D3BDF8 /* KARoadModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KARoadModel.h; sourceTree = "<group>"; };
+		72850749243AB63600D3BDF8 /* KARoadModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KARoadModel.m; sourceTree = "<group>"; };
+		7285074B243AB7CD00D3BDF8 /* KAGasolineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAGasolineModel.h; sourceTree = "<group>"; };
+		7285074C243AB7CD00D3BDF8 /* KAGasolineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAGasolineModel.m; sourceTree = "<group>"; };
+		7285074E243ABBF700D3BDF8 /* KAGasolineAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAGasolineAddViewController.h; sourceTree = "<group>"; };
+		7285074F243ABBF700D3BDF8 /* KAGasolineAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAGasolineAddViewController.m; sourceTree = "<group>"; };
+		72850751243ABF4600D3BDF8 /* KAGasolineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAGasolineTableViewCell.h; sourceTree = "<group>"; };
+		72850752243ABF4600D3BDF8 /* KAGasolineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAGasolineTableViewCell.m; sourceTree = "<group>"; };
 		C478DEEBE13474D57569AF72 /* Pods-TransportationManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransportationManagement.debug.xcconfig"; path = "Target Support Files/Pods-TransportationManagement/Pods-TransportationManagement.debug.xcconfig"; sourceTree = "<group>"; };
 		D5F639F2312771184B0C56E9 /* Pods_TransportationManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransportationManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -200,6 +212,8 @@
 		728506F22435F55800D3BDF8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				72850748243AB63600D3BDF8 /* KARoadModel.h */,
+				72850749243AB63600D3BDF8 /* KARoadModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -317,6 +331,8 @@
 		728506FE2435F55800D3BDF8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7285074B243AB7CD00D3BDF8 /* KAGasolineModel.h */,
+				7285074C243AB7CD00D3BDF8 /* KAGasolineModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -326,6 +342,8 @@
 			children = (
 				7285070A2435FBEF00D3BDF8 /* KAGasolineViewController.h */,
 				7285070B2435FBEF00D3BDF8 /* KAGasolineViewController.m */,
+				7285074E243ABBF700D3BDF8 /* KAGasolineAddViewController.h */,
+				7285074F243ABBF700D3BDF8 /* KAGasolineAddViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -333,6 +351,8 @@
 		728507002435F55800D3BDF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				72850751243ABF4600D3BDF8 /* KAGasolineTableViewCell.h */,
+				72850752243ABF4600D3BDF8 /* KAGasolineTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -461,6 +481,8 @@
 				728507282436016F00D3BDF8 /* NSDictionary+log.m in Sources */,
 				7285072C2436016F00D3BDF8 /* KAHBTool.m in Sources */,
 				728507122435FC3600D3BDF8 /* KAMineViewController.m in Sources */,
+				7285074D243AB7CD00D3BDF8 /* KAGasolineModel.m in Sources */,
+				7285074A243AB63600D3BDF8 /* KARoadModel.m in Sources */,
 				7285073B24362C4400D3BDF8 /* KACargoEditableTableViewCell.m in Sources */,
 				728507442438C1D700D3BDF8 /* KALoginViewController.m in Sources */,
 				7285070F2435FC1E00D3BDF8 /* KAHomeViewController.m in Sources */,
@@ -473,7 +495,9 @@
 				7285073E24386A7F00D3BDF8 /* KACargoRecordTableViewCell.m in Sources */,
 				7285072F24360F6200D3BDF8 /* KACargoRecordViewController.m in Sources */,
 				728507292436016F00D3BDF8 /* KANDHTTPClient.m in Sources */,
+				72850753243ABF4600D3BDF8 /* KAGasolineTableViewCell.m in Sources */,
 				728507472438C8E100D3BDF8 /* KACargoRecordSuperTableViewCell.m in Sources */,
+				72850750243ABBF700D3BDF8 /* KAGasolineAddViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

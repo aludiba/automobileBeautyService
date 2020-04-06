@@ -12,7 +12,6 @@
 #import "KACargoAddViewModel.h"
 #import "KACargoRecordSuperTableViewCell.h"
 @interface KACargoRecordViewController ()<UITableViewDataSource,UITableViewDelegate>
-@property(nonatomic, copy)NSString *KAobjectId;
 @property(nonatomic, strong)UITableView *KAmainTable;//列表
 @property(nonatomic, strong)NSMutableArray *KADataArray;//页面数据
 @property(nonatomic, strong)UIButton *KAaddButton;
