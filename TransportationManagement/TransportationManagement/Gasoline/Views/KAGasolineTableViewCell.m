@@ -39,7 +39,7 @@
         [self.KAdateTitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(16);
             make.top.equalTo(self.contentView).offset(10);
-            make.width.mas_equalTo(80);
+            make.width.mas_equalTo(110);
             make.height.mas_equalTo(16);
         }];
         [self.KAdateContentLbl mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -51,7 +51,7 @@
         [self.KALicensePlateNumberTitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.KAdateTitleLbl.mas_bottom).offset(10);
             make.leading.equalTo(self.contentView).offset(16);
-            make.width.mas_equalTo(80);
+            make.width.mas_equalTo(110);
             make.height.mas_equalTo(16);
         }];
         [self.KALicensePlateNumberContentLbl mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -63,7 +63,7 @@
         [self.KAGasStationLocationTitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.KALicensePlateNumberTitleLbl.mas_bottom).offset(10);
             make.leading.equalTo(self.contentView).offset(16);
-            make.width.mas_equalTo(80);
+            make.width.mas_equalTo(110);
             make.height.mas_equalTo(16);
         }];
         [self.KAGasStationLocationContentLbl mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -75,7 +75,7 @@
         [self.KACostAmountTitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.KAGasStationLocationTitleLbl.mas_bottom).offset(10);
             make.leading.equalTo(self.contentView).offset(16);
-            make.width.mas_equalTo(80);
+            make.width.mas_equalTo(110);
             make.height.mas_equalTo(16);
         }];
         [self.KACostAmountContentLbl mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -87,7 +87,7 @@
         [self.KAFuelTypeTitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.KACostAmountTitleLbl.mas_bottom).offset(10);
             make.leading.equalTo(self.contentView).offset(16);
-            make.width.mas_equalTo(80);
+            make.width.mas_equalTo(110);
             make.height.mas_equalTo(16);
         }];
         [self.KAFuelTypeContentLbl mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -97,7 +97,7 @@
             make.height.mas_equalTo(20);
         }];
         [self.KALine mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.KAFuelTypeContentLbl.mas_bottom);
+            make.top.equalTo(self.KAFuelTypeTitleLbl.mas_bottom);
             make.leading.equalTo(self.contentView);
             make.trailing.equalTo(self.contentView);
             make.height.mas_equalTo(12);

@@ -44,14 +44,14 @@
     [self.contentView addSubview:self.KAregisteredButton];
     
     [self.KAcancelButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.contentView).offset(16);
-        make.top.equalTo(self.contentView).offset(20);
+        make.leading.equalTo(self.contentView).offset(25);
+        make.top.equalTo(self.contentView).offset(30);
         make.width.mas_equalTo(34);
         make.height.mas_equalTo(17);
     }];
     [self.KAaccountLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.contentView).offset(32);
-        make.top.equalTo(self.contentView).offset(60);
+        make.top.equalTo(self.KAcancelButton.mas_bottom).offset(60);
         make.width.mas_equalTo(32);
         make.height.mas_equalTo(16);
     }];

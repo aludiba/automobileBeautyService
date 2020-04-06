@@ -22,7 +22,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
     self.title = @"加油记录";
     AVUser *bUser = [AVUser currentUser];
     if (bUser) {
@@ -96,6 +95,7 @@
     AVUser *bUser = [AVUser currentUser];
     if (bUser) {
         KAGasolineAddViewController *KAaddVC = [[KAGasolineAddViewController alloc] init];
+        KAaddVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:KAaddVC animated:YES];
     }else{
         UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];

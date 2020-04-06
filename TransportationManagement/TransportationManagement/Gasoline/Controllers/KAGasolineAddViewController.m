@@ -182,7 +182,7 @@
         [self.KAsaveButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.view).offset(16);
             make.trailing.equalTo(self.view).offset(-16);
-            make.bottom.equalTo(self.mas_bottomLayoutGuideTop).offset(-5.5);
+            make.bottom.equalTo(self.view).offset(-5.5-KAHeightTabBar);
             make.height.mas_equalTo(44);
         }];
         [self.view addSubview:_KAmainTable];
@@ -190,7 +190,7 @@
             make.top.equalTo(self.mas_topLayoutGuideBottom);
             make.leading.equalTo(self.view);
             make.trailing.equalTo(self.view);
-            make.bottom.equalTo(self.mas_bottomLayoutGuideTop).offset(-55);
+            make.bottom.equalTo(self.view).offset(-55-KAHeightTabBar);
         }];
     }
     return _KAmainTable;
