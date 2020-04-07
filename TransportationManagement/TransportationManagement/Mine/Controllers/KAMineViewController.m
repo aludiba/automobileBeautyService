@@ -64,22 +64,71 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     KAMineModel *KAminemodel = self.KAviewDataArray[indexPath.row];
     if (indexPath.row == 0) {
-        KAModifyNicknameViewController *KAModifyNicknameVC = [[KAModifyNicknameViewController alloc] init];
-        __weak __typeof(self)weakSelf = self;
-        KAModifyNicknameVC.KAmodifynicknameB = ^(KAModifyNicknameViewController * _Nonnull nicknameVC) {
-            KAminemodel.KAcontent = nicknameVC.KAnickname;
-            [weakSelf.KAmainTable reloadData];
-        };
-        KAModifyNicknameVC.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:KAModifyNicknameVC animated:YES];
+
+        AVUser *bUser = [AVUser currentUser];
+           if (bUser) {
+               KAModifyNicknameViewController *KAModifyNicknameVC = [[KAModifyNicknameViewController alloc] init];
+               __weak __typeof(self)weakSelf = self;
+               KAModifyNicknameVC.KAmodifynicknameB = ^(KAModifyNicknameViewController * _Nonnull nicknameVC) {
+                   KAminemodel.KAcontent = nicknameVC.KAnickname;
+                   [weakSelf.KAmainTable reloadData];
+               };
+               KAModifyNicknameVC.hidesBottomBarWhenPushed = YES;
+               [self.navigationController pushViewController:KAModifyNicknameVC animated:YES];
+           }else{
+               UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
+               UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+               UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                   KALoginViewController *KALoginVC = [[KALoginViewController alloc] init];
+                   KALoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
+                   [self presentViewController:KALoginVC animated:YES completion:^{
+                       
+                   }];
+               }];
+               [alertVC addAction:cancelAction];
+               [alertVC addAction:sureAction];
+               [self presentViewController:alertVC animated:YES completion:nil];
+           }
     }else if (indexPath.row == 1){
-        KAPasswordChangeViewController *KAPasswordChangeVC = [[KAPasswordChangeViewController alloc] init];
-        KAPasswordChangeVC.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:KAPasswordChangeVC animated:YES];
+        AVUser *bUser = [AVUser currentUser];
+        if (bUser) {
+            KAPasswordChangeViewController *KAPasswordChangeVC = [[KAPasswordChangeViewController alloc] init];
+            KAPasswordChangeVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:KAPasswordChangeVC animated:YES];
+        }else{
+            UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+            UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                KALoginViewController *KALoginVC = [[KALoginViewController alloc] init];
+                KALoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
+                [self presentViewController:KALoginVC animated:YES completion:^{
+                    
+                }];
+            }];
+            [alertVC addAction:cancelAction];
+            [alertVC addAction:sureAction];
+            [self presentViewController:alertVC animated:YES completion:nil];
+        }
     }else if (indexPath.row == 2){
-        KAproblemFeedbackViewController *KAproblemFeedbackVC = [[KAproblemFeedbackViewController alloc] init];
-        KAproblemFeedbackVC.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:KAproblemFeedbackVC animated:YES];
+        AVUser *bUser = [AVUser currentUser];
+        if (bUser) {
+            KAproblemFeedbackViewController *KAproblemFeedbackVC = [[KAproblemFeedbackViewController alloc] init];
+            KAproblemFeedbackVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:KAproblemFeedbackVC animated:YES];
+        }else{
+            UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+            UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                KALoginViewController *KALoginVC = [[KALoginViewController alloc] init];
+                KALoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
+                [self presentViewController:KALoginVC animated:YES completion:^{
+                    
+                }];
+            }];
+            [alertVC addAction:cancelAction];
+            [alertVC addAction:sureAction];
+            [self presentViewController:alertVC animated:YES completion:nil];
+        }
     }else{
         [AVUser logOut];
         KALoginViewController *KALoginVC = [[KALoginViewController alloc] init];
