@@ -69,7 +69,8 @@
 		7246B898243C58C30031D3A0 /* KAproblemFeedbackModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAproblemFeedbackModel.m; sourceTree = "<group>"; };
 		7246B89A243C59640031D3A0 /* KAproblemFeedbackTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAproblemFeedbackTableViewCell.h; sourceTree = "<group>"; };
 		7246B89B243C59640031D3A0 /* KAproblemFeedbackTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAproblemFeedbackTableViewCell.m; sourceTree = "<group>"; };
-		728506D42435B47B00D3BDF8 /* TransportationManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportationManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7246B89D243C8E590031D3A0 /* TransportationManagement.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TransportationManagement.entitlements; sourceTree = "<group>"; };
+		728506D42435B47B00D3BDF8 /* 即刻运输管理.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "即刻运输管理.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		728506D72435B47B00D3BDF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		728506D82435B47B00D3BDF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		728506E32435B48000D3BDF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -176,7 +177,7 @@
 		728506D52435B47B00D3BDF8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				728506D42435B47B00D3BDF8 /* TransportationManagement.app */,
+				728506D42435B47B00D3BDF8 /* 即刻运输管理.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,6 +185,7 @@
 		728506D62435B47B00D3BDF8 /* TransportationManagement */ = {
 			isa = PBXGroup;
 			children = (
+				7246B89D243C8E590031D3A0 /* TransportationManagement.entitlements */,
 				728506F02435F55700D3BDF8 /* Common */,
 				728506FD2435F55800D3BDF8 /* Gasoline */,
 				728506F92435F55800D3BDF8 /* Home */,
@@ -421,7 +423,7 @@
 			);
 			name = TransportationManagement;
 			productName = TransportationManagement;
-			productReference = 728506D42435B47B00D3BDF8 /* TransportationManagement.app */;
+			productReference = 728506D42435B47B00D3BDF8 /* 即刻运输管理.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -684,8 +686,10 @@
 			baseConfigurationReference = C478DEEBE13474D57569AF72 /* Pods-TransportationManagement.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TransportationManagement/TransportationManagement.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2RTBWZ8CDZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TransportationManagement/Common/KA_PrefixHeader.pch";
 				INFOPLIST_FILE = TransportationManagement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -693,8 +697,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.TransportationManagement;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_NAME = "即刻运输管理";
+				PROVISIONING_PROFILE_SPECIFIER = devPro_TransportationManagement_20200407;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -704,8 +708,10 @@
 			baseConfigurationReference = 461D51084D8B022805E4FEEA /* Pods-TransportationManagement.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TransportationManagement/TransportationManagement.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2RTBWZ8CDZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TransportationManagement/Common/KA_PrefixHeader.pch";
 				INFOPLIST_FILE = TransportationManagement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -713,8 +719,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.TransportationManagement;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_NAME = "即刻运输管理";
+				PROVISIONING_PROFILE_SPECIFIER = devPro_TransportationManagement_20200407;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
