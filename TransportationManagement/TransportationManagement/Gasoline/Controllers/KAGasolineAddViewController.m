@@ -7,6 +7,7 @@
 //
 
 #import "KAGasolineAddViewController.h"
+#import "KAGasolineViewController.h"
 #import "KAGasolineModel.h"
 #import "KACargoAddViewModel.h"
 #import "KACargoEditableTableViewCell.h"
@@ -37,7 +38,7 @@
     [self.KAviewDataArray addObject:KAGasStationLocationViewModel];
     
     KACargoAddViewModel *KACostAmountViewModel = [[KACargoAddViewModel alloc] init];
-    KACostAmountViewModel.KATitle = @"花费金额";
+    KACostAmountViewModel.KATitle = @"花费金额(元)";
     KACostAmountViewModel.KADefault = @"请输入花费金额";
     [self.KAviewDataArray addObject:KACostAmountViewModel];
     
@@ -48,8 +49,7 @@
     
     [self.KAmainTable reloadData];
 }
-- (void)keyboardWillHide:(NSNotification *)note
-{
+- (void)keyboardWillHide:(NSNotification *)note{
 //    self.isDetails = NO;
     //取得键盘弹出时间
     CGFloat duration = [note.userInfo[UIKeyboardAnimationDurationUserInfoKey] floatValue];
@@ -132,6 +132,7 @@
             if (isSuccessful) {
                 //创建成功后的动作
                 [MBProgressHUD KAshowReminderText:NSLocalizedString(@"保存成功", nil)];
+                [self.KASuperVC.KAmainTable.mj_header beginRefreshing];
                 [self.navigationController popToRootViewControllerAnimated:YES];
             } else if (error){
                 //发生错误后的动作

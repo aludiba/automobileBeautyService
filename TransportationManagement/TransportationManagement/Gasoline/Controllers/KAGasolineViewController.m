@@ -12,7 +12,6 @@
 #import "KAGasolineModel.h"
 #import "KAGasolineTableViewCell.h"
 @interface KAGasolineViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic, strong)UITableView *KAmainTable;//列表
 @property(nonatomic, strong)NSMutableArray *KADataArray;//页面数据
 @property(nonatomic, strong)UIButton *KAaddButton;
 @end
@@ -95,6 +94,7 @@
     AVUser *bUser = [AVUser currentUser];
     if (bUser) {
         KAGasolineAddViewController *KAaddVC = [[KAGasolineAddViewController alloc] init];
+        KAaddVC.KASuperVC = self;
         KAaddVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:KAaddVC animated:YES];
     }else{

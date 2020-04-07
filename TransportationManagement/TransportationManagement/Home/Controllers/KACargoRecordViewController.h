@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KACargoRecordViewController : KABaseViewController
+@property(nonatomic, strong)UITableView *KAmainTable;//列表
 @property(nonatomic, assign)KACargoType type;
 @end
 

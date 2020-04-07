@@ -1,61 +1,37 @@
 //
-//  KACargoAddViewController.m
+//  KAproblemFeedbackViewController.m
 //  TransportationManagement
 //
-//  Created by 褚红彪 on 2020/4/2.
+//  Created by 褚红彪 on 2020/4/7.
 //  Copyright © 2020 hb. All rights reserved.
 //
 
-#import "KACargoAddViewController.h"
-#import "KACargoRecordViewController.h"
-#import "KACargoModel.h"
+#import "KAproblemFeedbackViewController.h"
+#import "KAproblemFeedbackModel.h"
 #import "KACargoAddViewModel.h"
-#import "KACargoEditableTableViewCell.h"
-
-@interface KACargoAddViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic, strong)KACargoModel *KAModel;
+#import "KAproblemFeedbackTableViewCell.h"
+@interface KAproblemFeedbackViewController ()<UITableViewDataSource,UITableViewDelegate>
+@property(nonatomic, strong)KAproblemFeedbackModel *KAproblemfeedbackmodel;
 @property(nonatomic, strong)UITableView *KAmainTable;//列表
 @property(nonatomic, strong)UIButton *KAsaveButton;//保存按钮
 @property(nonatomic, strong)NSMutableArray *KAviewDataArray;//页面数据
 @end
 
-@implementation KACargoAddViewController
+@implementation KAproblemFeedbackViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"问题反馈";
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
-    if (self.type == KACargoTypeWaitReceiving) {
-        self.title = @"添加待接货";
-    }else if (self.type == KACargoTypeWaitLoading){
-        self.title = @"添加待装载";
-    }else if (self.type == KACargoTypeWaitDelivery){
-        self.title = @"添加待送达";
-    }else{
-        self.title = @"添加已完成";
-    }
     [self KASetContentView];
 }
 - (void)KASetContentView{
-    KACargoAddViewModel *KAPlaceViewModel = [[KACargoAddViewModel alloc] init];
-    KAPlaceViewModel.KATitle = @"地点";
-    KAPlaceViewModel.KADefault = @"请输入地点";
-    [self.KAviewDataArray addObject:KAPlaceViewModel];
+    KACargoAddViewModel *KAFeedbackViewModel = [[KACargoAddViewModel alloc] init];
+    KAFeedbackViewModel.KATitle = @"反馈内容";
+    KAFeedbackViewModel.KADefault = @"请输入反馈内容";
+    [self.KAviewDataArray addObject:KAFeedbackViewModel];
     
-    KACargoAddViewModel *KACustomerViewModel = [[KACargoAddViewModel alloc] init];
-    KACustomerViewModel.KATitle = @"客户名称";
-    KACustomerViewModel.KADefault = @"请输入客户名称";
-    [self.KAviewDataArray addObject:KACustomerViewModel];
-    
-    KACargoAddViewModel *KACommodityViewModel = [[KACargoAddViewModel alloc] init];
-    KACommodityViewModel.KATitle = @"货物名称";
-    KACommodityViewModel.KADefault = @"请输入货物名称";
-    [self.KAviewDataArray addObject:KACommodityViewModel];
-    
-    KACargoAddViewModel *KATransportPriceViewModel = [[KACargoAddViewModel alloc] init];
-    KATransportPriceViewModel.KATitle = @"运输价格(元)";
-    KATransportPriceViewModel.KADefault = @"请输入运输价格";
-    [self.KAviewDataArray addObject:KATransportPriceViewModel];
     [self.KAmainTable reloadData];
 }
 - (void)keyboardWillHide:(NSNotification *)note
@@ -75,43 +51,17 @@
         NSString *KAcontentString = [KAHBTool KAremoveSpaceAndNewline:KAviewModel.KAContent];
         if (!KAcontentString.length) {
             if (i == 0) {
-                [MBProgressHUD KAshowReminderText:@"请输入地点"];
-                return;
-            }else if (i == 1){
-                [MBProgressHUD KAshowReminderText:@"请输入客户名称"];
-                return;
-            }else if (i == 2){
-                [MBProgressHUD KAshowReminderText:@"请输入货物名称"];
-                return;
-            }else if (i == 3){
-                [MBProgressHUD KAshowReminderText:@"请输入运输价格"];
+                [MBProgressHUD KAshowReminderText:@"请输入反馈内容"];
                 return;
             }
         }
     }
-    KACargoAddViewModel *KAplaceviewModel = self.KAviewDataArray[0];
-    self.KAModel.KAPlace = KAplaceviewModel.KAContent;
-    KACargoAddViewModel *KACustomerviewModel = self.KAviewDataArray[1];
-    self.KAModel.KACustomerName = KACustomerviewModel.KAContent;
-    KACargoAddViewModel *KACommodityviewModel = self.KAviewDataArray[2];
-    self.KAModel.KACommodityName = KACommodityviewModel.KAContent;
-    KACargoAddViewModel *KATransportPriceviewModel = self.KAviewDataArray[3];
-    CGFloat KATransportPrice = [KATransportPriceviewModel.KAContent floatValue];
-    self.KAModel.KATransportPrice = KATransportPrice;
+    KACargoAddViewModel *KAfeedbackviewModel = self.KAviewDataArray[0];
+    self.KAproblemfeedbackmodel.KAcontent = KAfeedbackviewModel.KAContent;
     
-    NSMutableDictionary *jsonDictionary = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[self.KAModel yy_modelToJSONObject]];
-    [jsonDictionary setObject:[[NSDate alloc] init] forKey:@"KADate"];
+    NSMutableDictionary *jsonDictionary = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[self.KAproblemfeedbackmodel yy_modelToJSONObject]];
     AVUser *author = [AVUser currentUser];
-    AVObject *diary;
-        if (self.type == KACargoTypeWaitReceiving) {
-            diary = [AVObject objectWithClassName:@"KACargoRecordWaitReceiving"];
-        }else if (self.type == KACargoTypeWaitLoading){
-           diary = [AVObject objectWithClassName:@"KACargoRecordWaitLoading"];
-        }else if (self.type == KACargoTypeWaitDelivery){
-            diary = [AVObject objectWithClassName:@"KACargoRecordWaitDelivery"];
-        }else{
-            diary = [AVObject objectWithClassName:@"KACargoRecordCompleted"];
-        }
+    AVObject *diary = [AVObject objectWithClassName:@"KAKAproblemFeedback"];
         for (NSString *key in jsonDictionary.allKeys) {
             [diary setObject:[jsonDictionary objectForKey:key]  forKey:key];
         }
@@ -119,8 +69,7 @@
         [diary saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
             if (isSuccessful) {
                 //创建成功后的动作
-                [MBProgressHUD KAshowReminderText:NSLocalizedString(@"保存成功", nil)];
-                [self.KAsuperVC.KAmainTable.mj_header beginRefreshing];
+                [MBProgressHUD KAshowReminderText:NSLocalizedString(@"发送成功", nil)];
                 [self.navigationController popViewControllerAnimated:YES];
             } else if (error){
                 //发生错误后的动作
@@ -136,24 +85,22 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     KACargoAddViewModel *KAViewModel = self.KAviewDataArray[indexPath.row];
-    NSString *KMyCellID = @"KACargoEditableTableViewCell";
+    NSString *KMyCellID = @"KAproblemFeedbackTableViewCell";
     NSString *cellID = [NSString stringWithFormat:@"%@%zd",KMyCellID, indexPath.row];
-    KACargoEditableTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    KAproblemFeedbackTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (!cell) {
-        cell = [[KACargoEditableTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+        cell = [[KAproblemFeedbackTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
     cell.KAViewModel = KAViewModel;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     __weak typeof(self) weakSelf = self;
-    cell.KAeditBlock = ^(KACargoEditableTableViewCell * _Nonnull cell) {
-        if ([KAViewModel.KATitle hasPrefix:@"运输价格"]) {
+    cell.KAeditBlock = ^(KAproblemFeedbackTableViewCell * _Nonnull cell) {
         if (cell.KAcontentHeight > KAViewModel.KAEditHeight) {
         [UIView animateWithDuration:0.2 animations:^{
             CGRect frame = self.view.frame;
-            frame.origin.y = frame.origin.y -  22;
+            frame.origin.y = frame.origin.y - 22;
             self.view.frame = frame;
         }];
-        }
         }
         KAViewModel.KAEditHeight = cell.KAcontentHeight;
         [weakSelf.KAmainTable beginUpdates];
@@ -170,11 +117,11 @@
     [self.view endEditing:YES];
 }
 #pragma mark - 属性懒加载
-- (KACargoModel *)KAModel{
-    if (!_KAModel) {
-        _KAModel = [[KACargoModel alloc] init];
+- (KAproblemFeedbackModel *)KAproblemfeedbackmodel{
+    if (!_KAproblemfeedbackmodel) {
+        _KAproblemfeedbackmodel = [[KAproblemFeedbackModel alloc] init];
     }
-    return _KAModel;
+    return _KAproblemfeedbackmodel;
 }
 - (NSMutableArray *)KAviewDataArray{
     if (!_KAviewDataArray) {
@@ -185,7 +132,6 @@
 - (UITableView *)KAmainTable{
     if (!_KAmainTable) {
         _KAmainTable = [[UITableView alloc] init];
-        _KAmainTable.backgroundColor = KAH_Color(242, 242, 242, 1);
         _KAmainTable.rowHeight = UITableViewAutomaticDimension;
         _KAmainTable.estimatedRowHeight = 48.0f;
         _KAmainTable.dataSource = self;
@@ -223,7 +169,7 @@
         _KAsaveButton.layer.masksToBounds = YES;
         _KAsaveButton.layer.borderColor = KAH_Color(100, 141, 225, 1).CGColor;
         _KAsaveButton.layer.borderWidth = 0.5f;
-        [_KAsaveButton setTitle:@"添加" forState:UIControlStateNormal];
+        [_KAsaveButton setTitle:@"发送" forState:UIControlStateNormal];
         [_KAsaveButton addTarget:self action:@selector(saveAction:) forControlEvents:UIControlEventTouchUpInside];
         [_KAsaveButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_KAsaveButton.titleLabel setFont:[UIFont systemFontOfSize:15]];

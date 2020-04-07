@@ -97,7 +97,7 @@
             make.height.mas_equalTo(20);
         }];
         [self.KALine mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.KAFuelTypeTitleLbl.mas_bottom);
+            make.top.equalTo(self.KAFuelTypeTitleLbl.mas_bottom).offset(10);
             make.leading.equalTo(self.contentView);
             make.trailing.equalTo(self.contentView);
             make.height.mas_equalTo(12);
@@ -190,7 +190,7 @@
         _KAFuelTypeTitleLbl.font = [UIFont systemFontOfSize:15];
         _KAFuelTypeTitleLbl.text = @"加油类型";
     }
-    return _KACostAmountTitleLbl;
+    return _KAFuelTypeTitleLbl;
 }
 - (UILabel *)KAFuelTypeContentLbl{
     if (!_KAFuelTypeContentLbl) {

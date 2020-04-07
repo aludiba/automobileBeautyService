@@ -12,7 +12,6 @@
 #import "KACargoAddViewModel.h"
 #import "KACargoRecordSuperTableViewCell.h"
 @interface KACargoRecordViewController ()<UITableViewDataSource,UITableViewDelegate>
-@property(nonatomic, strong)UITableView *KAmainTable;//列表
 @property(nonatomic, strong)NSMutableArray *KADataArray;//页面数据
 @property(nonatomic, strong)UIButton *KAaddButton;
 @end
@@ -133,6 +132,7 @@
 }
 - (void)KAaddAction:(UIButton *)sender{
     KACargoAddViewController *KAaddVC = [[KACargoAddViewController alloc] init];
+    KAaddVC.KAsuperVC = self;
     KAaddVC.type = self.type;
     [self.navigationController pushViewController:KAaddVC animated:YES];
 }

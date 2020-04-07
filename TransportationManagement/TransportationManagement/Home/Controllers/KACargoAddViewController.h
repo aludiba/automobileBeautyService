@@ -9,8 +9,9 @@
 #import "KABaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class KACargoRecordViewController;
 @interface KACargoAddViewController : KABaseViewController
+@property(nonatomic, strong)KACargoRecordViewController *KAsuperVC;
 @property(nonatomic, assign)KACargoType type;
 @end
 

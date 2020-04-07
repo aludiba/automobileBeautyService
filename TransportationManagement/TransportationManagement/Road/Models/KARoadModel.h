@@ -11,11 +11,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KARoadModel : NSObject
+@property(nonatomic, copy)NSString *KAobjectId;
+@property(nonatomic, strong)NSDate *KADate;
 @property(nonatomic, copy)NSString *KALicensePlateNumber;//车牌号
 @property(nonatomic, copy)NSString *KADriverName;//司机名称
 @property(nonatomic, copy)NSString *KASituation;//情况
 @property(nonatomic, assign)NSUInteger KAPluggingLength;//已堵时长
-@property(nonatomic, copy)NSString *KALocation;//情况
+@property(nonatomic, copy)NSString *KALocation;//位置
 @end
 
 NS_ASSUME_NONNULL_END

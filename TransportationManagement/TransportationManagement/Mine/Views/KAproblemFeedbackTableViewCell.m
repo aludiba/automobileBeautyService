@@ -1,55 +1,56 @@
 //
-//  KACargoEditableTableViewCell.m
+//  KAproblemFeedbackTableViewCell.m
 //  TransportationManagement
 //
-//  Created by 褚红彪 on 2020/4/2.
+//  Created by 褚红彪 on 2020/4/7.
 //  Copyright © 2020 hb. All rights reserved.
 //
 
-#import "KACargoEditableTableViewCell.h"
+#import "KAproblemFeedbackTableViewCell.h"
 #import "KACargoAddViewModel.h"
 
-@interface KACargoEditableTableViewCell()<UITextViewDelegate>
+@interface KAproblemFeedbackTableViewCell()<UITextViewDelegate>
 @property(nonatomic, strong)UITextView *KAeditableView;
 @property(nonatomic, strong)UILabel *KAtitleLbl;
 @property(nonatomic, strong)UILabel *KAhiddenLbl;
-@property(nonatomic, strong)UIView *KAline;
+//@property(nonatomic, strong)UIView *KAline;
 @end
-@implementation KACargoEditableTableViewCell
+@implementation KAproblemFeedbackTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self.contentView addSubview:self.KAtitleLbl];
         [self.contentView addSubview:self.KAeditableView];
         [self.KAeditableView addSubview:self.KAhiddenLbl];
-        [self.contentView addSubview:self.KAline];
+//        [self.contentView addSubview:self.KAline];
         
         [self.KAtitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.contentView).offset(16);
-            make.width.mas_equalTo(120);
+            make.trailing.equalTo(self.contentView).offset(-16);
             make.top.equalTo(self.contentView).offset(20);
             make.height.mas_equalTo(24);
         }];
         [self.KAeditableView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.contentView).offset(12.5);
+            make.top.equalTo(self.KAtitleLbl.mas_bottom).offset(15);
             
-            make.leading.equalTo(self.KAtitleLbl.mas_trailing).offset(8);
+            make.leading.equalTo(self.contentView).offset(16);
             make.trailing.equalTo(self.contentView).offset(-16);
-            make.height.mas_greaterThanOrEqualTo(22);
+            make.height.mas_greaterThanOrEqualTo(110);
+        make.bottom.equalTo(self.contentView.mas_bottom).offset(-12.5);
         }];
         [self.KAhiddenLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerY.equalTo(self.KAeditableView);
+            make.top.equalTo(self.KAeditableView).offset(6);
             
-            make.leading.equalTo(self.KAeditableView).offset(4);
-            make.trailing.equalTo(self.KAeditableView);
+            make.leading.equalTo(self.KAeditableView).offset(6);
+            make.trailing.equalTo(self.KAeditableView).offset(-6);
             make.height.mas_equalTo(18);
         }];
-        [self.KAline mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.KAeditableView.mas_bottom).offset(11.5);
-            make.leading.equalTo(self.contentView);
-            make.trailing.equalTo(self.contentView);
-            make.height.mas_equalTo(1);
-            make.bottom.equalTo(self.contentView.mas_bottom);
-        }];
+//        [self.KAline mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.top.equalTo(self.KAeditableView.mas_bottom).offset(11.5);
+//            make.leading.equalTo(self.contentView);
+//            make.trailing.equalTo(self.contentView);
+//            make.height.mas_equalTo(1);
+//            make.bottom.equalTo(self.contentView.mas_bottom);
+//        }];
     }
     return self;
 }
@@ -89,8 +90,10 @@
     textView.bounds = bounds;
     self.KAViewModel.KAContent = textView.text;
     self.KAcontentHeight = size.height;
-    if (self.KAeditBlock) {
-        self.KAeditBlock(self);
+    if (self.KAcontentHeight > 110) {
+        if (self.KAeditBlock) {
+            self.KAeditBlock(self);
+        }
     }
 }
 - (BOOL)textViewShouldBeginEditing:(UITextView *)textView{
@@ -126,7 +129,7 @@
 - (UILabel *)KAtitleLbl{
     if (!_KAtitleLbl) {
         _KAtitleLbl = [[UILabel alloc] init];
-        _KAtitleLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:17];
+        _KAtitleLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:18];
         _KAtitleLbl.textColor = [UIColor blackColor];
     }
     return _KAtitleLbl;
@@ -134,7 +137,7 @@
 - (UILabel *)KAhiddenLbl{
     if (!_KAhiddenLbl) {
         _KAhiddenLbl = [[UILabel alloc] init];
-        _KAhiddenLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:17];
+        _KAhiddenLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:18];
         _KAhiddenLbl.textColor = [UIColor colorWithRed:168/255.0 green:172/255.0 blue:182/255.0 alpha:1/1.0];
     }
     return _KAhiddenLbl;
@@ -143,19 +146,22 @@
     if (!_KAeditableView) {
         _KAeditableView = [[UITextView alloc] init];
         _KAeditableView.delegate = self;
-        _KAeditableView.font = [UIFont fontWithName:@"PingFangSC-Regular" size:17];
+        _KAeditableView.font = [UIFont fontWithName:@"PingFangSC-Regular" size:20];
         _KAeditableView.textColor = [UIColor colorWithRed:19/255.0 green:29/255.0 blue:50/255.0 alpha:1/1.0];
+        _KAeditableView.layer.cornerRadius = 8.0f;
+        _KAeditableView.layer.masksToBounds = YES;
+        _KAeditableView.layer.borderColor = [UIColor grayColor].CGColor;
+        _KAeditableView.layer.borderWidth = 1.5f;
         _KAeditableView.scrollEnabled = NO;
         [_KAeditableView sizeToFit];
     }
     return _KAeditableView;
 }
-- (UIView *)KAline{
-    if (!_KAline) {
-        _KAline = [[UIView alloc] init];
-        _KAline.backgroundColor = KAH_Color(226, 228, 232, 1);
-    }
-    return _KAline;
-}
-
+//- (UIView *)KAline{
+//    if (!_KAline) {
+//        _KAline = [[UIView alloc] init];
+//        _KAline.backgroundColor = KAH_Color(226, 228, 232, 1);
+//    }
+//    return _KAline;
+//}
 @end

@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KARoadViewController : KABaseViewController
-
+@property(nonatomic, strong)UITableView *KAmainTable;//列表
 @end
 
 NS_ASSUME_NONNULL_END
