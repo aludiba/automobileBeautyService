@@ -687,7 +687,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TransportationManagement/TransportationManagement.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2RTBWZ8CDZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TransportationManagement/Common/KA_PrefixHeader.pch";
@@ -698,7 +698,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.TransportationManagement;
 				PRODUCT_NAME = "即刻运输管理";
-				PROVISIONING_PROFILE_SPECIFIER = devPro_TransportationManagement_20200407;
+				PROVISIONING_PROFILE_SPECIFIER = disPro_TransportationManagement_20200407;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -709,7 +709,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TransportationManagement/TransportationManagement.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2RTBWZ8CDZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TransportationManagement/Common/KA_PrefixHeader.pch";
@@ -720,7 +720,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.TransportationManagement;
 				PRODUCT_NAME = "即刻运输管理";
-				PROVISIONING_PROFILE_SPECIFIER = devPro_TransportationManagement_20200407;
+				PROVISIONING_PROFILE_SPECIFIER = disPro_TransportationManagement_20200407;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
