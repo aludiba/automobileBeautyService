@@ -1,0 +1,6 @@
+framework module Pods_TruckDriverManagement {
+  umbrella header "Pods-TruckDriverManagement-umbrella.h"
+
+  export *
+  module * { export * }
+}

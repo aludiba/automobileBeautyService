@@ -7,24 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B889EE260D74F0B1D4A6423 /* Pods_TruckDriverManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2A8B3F9C5ABFB16CC6FC81 /* Pods_TruckDriverManagement.framework */; };
 		72F82FEC2449965C00FDAC81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F82FEB2449965C00FDAC81 /* AppDelegate.m */; };
-		72F82FEF2449965C00FDAC81 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F82FEE2449965C00FDAC81 /* SceneDelegate.m */; };
-		72F82FF22449965C00FDAC81 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F82FF12449965C00FDAC81 /* ViewController.m */; };
-		72F82FF52449965C00FDAC81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F82FF32449965C00FDAC81 /* Main.storyboard */; };
 		72F82FF72449965F00FDAC81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F82FF62449965F00FDAC81 /* Assets.xcassets */; };
 		72F82FFA2449965F00FDAC81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F82FF82449965F00FDAC81 /* LaunchScreen.storyboard */; };
 		72F82FFD2449965F00FDAC81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F82FFC2449965F00FDAC81 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		469CB003F76F331F14AEA6BA /* Pods-TruckDriverManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruckDriverManagement.debug.xcconfig"; path = "Target Support Files/Pods-TruckDriverManagement/Pods-TruckDriverManagement.debug.xcconfig"; sourceTree = "<group>"; };
+		4B0CF0498F73DD98385AEDAF /* Pods-TruckDriverManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruckDriverManagement.release.xcconfig"; path = "Target Support Files/Pods-TruckDriverManagement/Pods-TruckDriverManagement.release.xcconfig"; sourceTree = "<group>"; };
+		6A2A8B3F9C5ABFB16CC6FC81 /* Pods_TruckDriverManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TruckDriverManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F82FE72449965C00FDAC81 /* TruckDriverManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruckDriverManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F82FEA2449965C00FDAC81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		72F82FEB2449965C00FDAC81 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		72F82FED2449965C00FDAC81 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		72F82FEE2449965C00FDAC81 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		72F82FF02449965C00FDAC81 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		72F82FF12449965C00FDAC81 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		72F82FF42449965C00FDAC81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72F82FF62449965F00FDAC81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72F82FF92449965F00FDAC81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72F82FFB2449965F00FDAC81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B889EE260D74F0B1D4A6423 /* Pods_TruckDriverManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +44,8 @@
 			children = (
 				72F82FE92449965C00FDAC81 /* TruckDriverManagement */,
 				72F82FE82449965C00FDAC81 /* Products */,
+				88D6457ACB5BC38EBBF81039 /* Pods */,
+				7ED78289D217D31CC263F135 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,19 +60,168 @@
 		72F82FE92449965C00FDAC81 /* TruckDriverManagement */ = {
 			isa = PBXGroup;
 			children = (
+				72F8300F244999CD00FDAC81 /* ALCommon */,
+				72F83010244999CD00FDAC81 /* ALGasoline */,
+				72F83003244999CC00FDAC81 /* ALHome */,
+				72F83007244999CC00FDAC81 /* ALMine */,
+				72F8300B244999CD00FDAC81 /* ALRoad */,
 				72F82FEA2449965C00FDAC81 /* AppDelegate.h */,
 				72F82FEB2449965C00FDAC81 /* AppDelegate.m */,
-				72F82FED2449965C00FDAC81 /* SceneDelegate.h */,
-				72F82FEE2449965C00FDAC81 /* SceneDelegate.m */,
-				72F82FF02449965C00FDAC81 /* ViewController.h */,
-				72F82FF12449965C00FDAC81 /* ViewController.m */,
-				72F82FF32449965C00FDAC81 /* Main.storyboard */,
 				72F82FF62449965F00FDAC81 /* Assets.xcassets */,
 				72F82FF82449965F00FDAC81 /* LaunchScreen.storyboard */,
 				72F82FFB2449965F00FDAC81 /* Info.plist */,
 				72F82FFC2449965F00FDAC81 /* main.m */,
 			);
 			path = TruckDriverManagement;
+			sourceTree = "<group>";
+		};
+		72F83003244999CC00FDAC81 /* ALHome */ = {
+			isa = PBXGroup;
+			children = (
+				72F83004244999CC00FDAC81 /* ALViews */,
+				72F83005244999CC00FDAC81 /* ALModels */,
+				72F83006244999CC00FDAC81 /* ALControllers */,
+			);
+			path = ALHome;
+			sourceTree = "<group>";
+		};
+		72F83004244999CC00FDAC81 /* ALViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ALViews;
+			sourceTree = "<group>";
+		};
+		72F83005244999CC00FDAC81 /* ALModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ALModels;
+			sourceTree = "<group>";
+		};
+		72F83006244999CC00FDAC81 /* ALControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ALControllers;
+			sourceTree = "<group>";
+		};
+		72F83007244999CC00FDAC81 /* ALMine */ = {
+			isa = PBXGroup;
+			children = (
+				72F83008244999CC00FDAC81 /* ALViews */,
+				72F83009244999CC00FDAC81 /* ALModels */,
+				72F8300A244999CC00FDAC81 /* ALControllers */,
+			);
+			path = ALMine;
+			sourceTree = "<group>";
+		};
+		72F83008244999CC00FDAC81 /* ALViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ALViews;
+			sourceTree = "<group>";
+		};
+		72F83009244999CC00FDAC81 /* ALModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ALModels;
+			sourceTree = "<group>";
+		};
+		72F8300A244999CC00FDAC81 /* ALControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ALControllers;
+			sourceTree = "<group>";
+		};
+		72F8300B244999CD00FDAC81 /* ALRoad */ = {
+			isa = PBXGroup;
+			children = (
+				72F8300C244999CD00FDAC81 /* ALViews */,
+				72F8300D244999CD00FDAC81 /* ALModels */,
+				72F8300E244999CD00FDAC81 /* ALControllers */,
+			);
+			path = ALRoad;
+			sourceTree = "<group>";
+		};
+		72F8300C244999CD00FDAC81 /* ALViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ALViews;
+			sourceTree = "<group>";
+		};
+		72F8300D244999CD00FDAC81 /* ALModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ALModels;
+			sourceTree = "<group>";
+		};
+		72F8300E244999CD00FDAC81 /* ALControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ALControllers;
+			sourceTree = "<group>";
+		};
+		72F8300F244999CD00FDAC81 /* ALCommon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ALCommon;
+			sourceTree = "<group>";
+		};
+		72F83010244999CD00FDAC81 /* ALGasoline */ = {
+			isa = PBXGroup;
+			children = (
+				72F83011244999CD00FDAC81 /* ALViews */,
+				72F83012244999CD00FDAC81 /* ALModels */,
+				72F83013244999CD00FDAC81 /* ALControllers */,
+			);
+			path = ALGasoline;
+			sourceTree = "<group>";
+		};
+		72F83011244999CD00FDAC81 /* ALViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ALViews;
+			sourceTree = "<group>";
+		};
+		72F83012244999CD00FDAC81 /* ALModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ALModels;
+			sourceTree = "<group>";
+		};
+		72F83013244999CD00FDAC81 /* ALControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ALControllers;
+			sourceTree = "<group>";
+		};
+		7ED78289D217D31CC263F135 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A2A8B3F9C5ABFB16CC6FC81 /* Pods_TruckDriverManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88D6457ACB5BC38EBBF81039 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				469CB003F76F331F14AEA6BA /* Pods-TruckDriverManagement.debug.xcconfig */,
+				4B0CF0498F73DD98385AEDAF /* Pods-TruckDriverManagement.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72F830002449965F00FDAC81 /* Build configuration list for PBXNativeTarget "TruckDriverManagement" */;
 			buildPhases = (
+				6A0EDAB6EF4678FFEA1A033A /* [CP] Check Pods Manifest.lock */,
 				72F82FE32449965C00FDAC81 /* Sources */,
 				72F82FE42449965C00FDAC81 /* Frameworks */,
 				72F82FE52449965C00FDAC81 /* Resources */,
+				89D874EE773B72B709ED32FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,35 +285,66 @@
 			files = (
 				72F82FFA2449965F00FDAC81 /* LaunchScreen.storyboard in Resources */,
 				72F82FF72449965F00FDAC81 /* Assets.xcassets in Resources */,
-				72F82FF52449965C00FDAC81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A0EDAB6EF4678FFEA1A033A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TruckDriverManagement-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89D874EE773B72B709ED32FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TruckDriverManagement/Pods-TruckDriverManagement-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TruckDriverManagement/Pods-TruckDriverManagement-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TruckDriverManagement/Pods-TruckDriverManagement-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		72F82FE32449965C00FDAC81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72F82FF22449965C00FDAC81 /* ViewController.m in Sources */,
 				72F82FEC2449965C00FDAC81 /* AppDelegate.m in Sources */,
 				72F82FFD2449965F00FDAC81 /* main.m in Sources */,
-				72F82FEF2449965C00FDAC81 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		72F82FF32449965C00FDAC81 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				72F82FF42449965C00FDAC81 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		72F82FF82449965F00FDAC81 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +468,7 @@
 		};
 		72F830012449965F00FDAC81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 469CB003F76F331F14AEA6BA /* Pods-TruckDriverManagement.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,12 +479,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.TruckDriverManagement.TruckDriverManagement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		72F830022449965F00FDAC81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B0CF0498F73DD98385AEDAF /* Pods-TruckDriverManagement.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -313,7 +496,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.TruckDriverManagement.TruckDriverManagement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
