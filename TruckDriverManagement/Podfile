@@ -7,4 +7,6 @@ target 'TruckDriverManagement' do
 
   # Pods for TruckDriverManagement
     pod 'Masonry'
+    pod 'MJRefresh'
+    pod 'MBProgressHUD'
 end
