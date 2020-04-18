@@ -33,13 +33,13 @@
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "yunshusiji 120.png",
+      "filename" : "120 logo.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "yunshusiji 180.png",
+      "filename" : "180 logo.png",
       "scale" : "3x"
     },
     {
@@ -90,7 +90,7 @@
     {
       "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "yunshusiji 1024.png",
+      "filename" : "1024 LOGO.png",
       "scale" : "1x"
     }
   ],
