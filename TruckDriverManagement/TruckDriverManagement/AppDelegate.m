@@ -31,7 +31,18 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application{
     AVQuery *bquery = [AVQuery queryWithClassName:@"ALTruckDriverManagement"];
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[(NSDictionary *)[array lastObject] objectForKey:@"TDM"]]];
+        if (error) {
+            [MBProgressHUD ALshowMessage:@"请稍后再试"];
+        }else{
+        UIWindow *window = [[UIApplication sharedApplication].delegate window];
+        MBProgressHUD *hud = [[MBProgressHUD alloc] init];
+        hud.label.text = @"无网络连接";
+        [window addSubview:hud];
+        [hud showAnimated:YES];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[array lastObject] objectForKey:@"TDM"]] options:NULL completionHandler:^(BOOL success) {
+            [hud hideAnimated:YES];
+        }];
+        }
     }];
 }
 - (UIViewController *)rootController{
