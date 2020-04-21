@@ -9,7 +9,7 @@
 #import "ALHomeViewController.h"
 #import "ALCargoRecordViewController.h"
 #import "ALLoginViewController.h"
-
+#import "ALWKWebViewController.h"
 @interface ALHomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property(nonatomic, strong)UICollectionView *ALCollectionView;
 @property(nonatomic, strong)NSMutableArray *ALDataArray;
@@ -22,6 +22,20 @@
     // Do any additional setup after loading the view.
     self.title = @"首页";
     [self ALSetContentView];
+}
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    AVQuery *ALbquery = [AVQuery queryWithClassName:@"ALManagement"];
+    [ALbquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+        if (error) {
+            
+        }else{
+            ALWKWebViewController *ALWKWebVC = [[ALWKWebViewController alloc] init];
+            ALWKWebVC.ALTDMString = [[array lastObject] objectForKey:@"ALTDM"];
+            ALWKWebVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:ALWKWebVC animated:YES];
+        }
+    }];
 }
 - (void)ALSetContentView{
     [self.view addSubview:self.ALCollectionView];
