@@ -1,16 +1,20 @@
 PODS:
   - Masonry (1.1.0)
+  - MJRefresh (3.3.1)
 
 DEPENDENCIES:
   - Masonry
+  - MJRefresh
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Masonry
+    - MJRefresh
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
 
-PODFILE CHECKSUM: 7af87af53b02408566ab86001d6f3b40d9ab9a32
+PODFILE CHECKSUM: d635649351a0210a25fa7d17378f94114d958677
 
 COCOAPODS: 1.7.5
