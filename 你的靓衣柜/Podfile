@@ -9,4 +9,5 @@ target '你的靓衣柜' do
     pod 'Masonry'
     pod 'MJRefresh'
     pod 'MBProgressHUD'
+    pod 'YYModel'
 end
