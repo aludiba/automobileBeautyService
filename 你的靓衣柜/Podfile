@@ -10,4 +10,5 @@ target '你的靓衣柜' do
     pod 'MJRefresh'
     pod 'MBProgressHUD'
     pod 'YYModel'
+    pod 'AVOSCloud'
 end
