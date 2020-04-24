@@ -10,4 +10,5 @@ target 'YourNiceWardrobe' do
     pod 'MJRefresh'
     pod 'MBProgressHUD'
     pod 'YYModel'
+    pod 'AVOSCloud'
 end
