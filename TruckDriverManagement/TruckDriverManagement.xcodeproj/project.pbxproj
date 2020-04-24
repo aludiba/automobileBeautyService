@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1B889EE260D74F0B1D4A6423 /* Pods_TruckDriverManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2A8B3F9C5ABFB16CC6FC81 /* Pods_TruckDriverManagement.framework */; };
-		726F53B8244E7DC6006CFBE3 /* ALWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F53B7244E7DC6006CFBE3 /* ALWKWebViewController.m */; };
 		72F82FEC2449965C00FDAC81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F82FEB2449965C00FDAC81 /* AppDelegate.m */; };
 		72F82FF72449965F00FDAC81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F82FF62449965F00FDAC81 /* Assets.xcassets */; };
 		72F82FFA2449965F00FDAC81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F82FF82449965F00FDAC81 /* LaunchScreen.storyboard */; };
@@ -53,10 +52,8 @@
 		469CB003F76F331F14AEA6BA /* Pods-TruckDriverManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruckDriverManagement.debug.xcconfig"; path = "Target Support Files/Pods-TruckDriverManagement/Pods-TruckDriverManagement.debug.xcconfig"; sourceTree = "<group>"; };
 		4B0CF0498F73DD98385AEDAF /* Pods-TruckDriverManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruckDriverManagement.release.xcconfig"; path = "Target Support Files/Pods-TruckDriverManagement/Pods-TruckDriverManagement.release.xcconfig"; sourceTree = "<group>"; };
 		6A2A8B3F9C5ABFB16CC6FC81 /* Pods_TruckDriverManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TruckDriverManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		726F53B6244E7DC6006CFBE3 /* ALWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWKWebViewController.h; sourceTree = "<group>"; };
-		726F53B7244E7DC6006CFBE3 /* ALWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWKWebViewController.m; sourceTree = "<group>"; };
 		727670F4244AEE50003DF466 /* 卡车司机管理.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "卡车司机管理.entitlements"; sourceTree = "<group>"; };
-		72F82FE72449965C00FDAC81 /* 卡车司机管理.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "卡车司机管理.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F82FE72449965C00FDAC81 /* 汽车司机管理.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "汽车司机管理.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F82FEA2449965C00FDAC81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		72F82FEB2449965C00FDAC81 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		72F82FF62449965F00FDAC81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -160,7 +157,7 @@
 		72F82FE82449965C00FDAC81 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				72F82FE72449965C00FDAC81 /* 卡车司机管理.app */,
+				72F82FE72449965C00FDAC81 /* 汽车司机管理.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -227,8 +224,6 @@
 				72F830632449B08700FDAC81 /* ALCargoRecordViewController.m */,
 				72F830652449B08700FDAC81 /* ALHomeViewController.h */,
 				72F830612449B08700FDAC81 /* ALHomeViewController.m */,
-				726F53B6244E7DC6006CFBE3 /* ALWKWebViewController.h */,
-				726F53B7244E7DC6006CFBE3 /* ALWKWebViewController.m */,
 			);
 			path = ALControllers;
 			sourceTree = "<group>";
@@ -423,7 +418,7 @@
 			);
 			name = TruckDriverManagement;
 			productName = TruckDriverManagement;
-			productReference = 72F82FE72449965C00FDAC81 /* 卡车司机管理.app */;
+			productReference = 72F82FE72449965C00FDAC81 /* 汽车司机管理.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -548,7 +543,6 @@
 				72F830982449B3AA00FDAC81 /* ALRoadModel.m in Sources */,
 				72F8304A2449AAED00FDAC81 /* NSArray+log.m in Sources */,
 				72F830482449AAED00FDAC81 /* ALHBTool.m in Sources */,
-				726F53B8244E7DC6006CFBE3 /* ALWKWebViewController.m in Sources */,
 				72F830872449B26500FDAC81 /* ALMineTableViewCell.m in Sources */,
 				72F8305F2449AFBA00FDAC81 /* ALCargoAddViewModel.m in Sources */,
 				72F82FFD2449965F00FDAC81 /* main.m in Sources */,
@@ -687,9 +681,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "TruckDriverManagement/卡车司机管理.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = L3Z7Z7JY5A;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TruckDriverManagement/ALCommon/AL_PrefixHeader.pch";
 				INFOPLIST_FILE = TruckDriverManagement/Info.plist;
@@ -698,8 +692,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.TruckDriverManagement;
-				PRODUCT_NAME = "卡车司机管理";
-				PROVISIONING_PROFILE_SPECIFIER = disPro_TruckDriverManagement_20200418;
+				PRODUCT_NAME = "汽车司机管理";
+				PROVISIONING_PROFILE_SPECIFIER = devPro_TruckDriverManagement_20200418;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -710,9 +704,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "TruckDriverManagement/卡车司机管理.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = L3Z7Z7JY5A;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TruckDriverManagement/ALCommon/AL_PrefixHeader.pch";
 				INFOPLIST_FILE = TruckDriverManagement/Info.plist;
@@ -721,8 +715,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.TruckDriverManagement;
-				PRODUCT_NAME = "卡车司机管理";
-				PROVISIONING_PROFILE_SPECIFIER = disPro_TruckDriverManagement_20200418;
+				PRODUCT_NAME = "汽车司机管理";
+				PROVISIONING_PROFILE_SPECIFIER = devPro_TruckDriverManagement_20200418;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
