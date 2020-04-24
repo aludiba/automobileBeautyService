@@ -210,6 +210,10 @@ This application makes use of the following third party libraries:
 
 Copyright jpush.cn
 
+## JPush
+
+Copyright jiguang.cn
+
 ## MBProgressHUD
 
 Copyright © 2009-2016 Matej Bukovinski
