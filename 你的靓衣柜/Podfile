@@ -7,4 +7,5 @@ target '你的靓衣柜' do
 
   # Pods for 你的靓衣柜
     pod 'Masonry'
+    pod 'MJRefresh'
 end
