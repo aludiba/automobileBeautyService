@@ -8,4 +8,5 @@ target 'YourNiceWardrobe' do
   # Pods for YourNiceWardrobe
     pod 'Masonry'
     pod 'MJRefresh'
+    pod 'MBProgressHUD'
 end
