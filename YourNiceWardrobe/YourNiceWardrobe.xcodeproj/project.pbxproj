@@ -10,17 +10,57 @@
 		726F53EF2452FB10006CFBE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F53EE2452FB10006CFBE3 /* AppDelegate.m */; };
 		726F53FD2452FB17006CFBE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726F53FB2452FB17006CFBE3 /* LaunchScreen.storyboard */; };
 		726F54002452FB17006CFBE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F53FF2452FB17006CFBE3 /* main.m */; };
+		726F54182453D35E006CFBE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726F54172453D35E006CFBE3 /* Assets.xcassets */; };
+		726F541B2453D599006CFBE3 /* BCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54192453D599006CFBE3 /* BCBaseViewController.m */; };
+		726F541F2453D675006CFBE3 /* BCHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F541D2453D675006CFBE3 /* BCHBTool.m */; };
+		726F54232453D78D006CFBE3 /* BCUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54212453D78C006CFBE3 /* BCUIUtilities.m */; };
+		726F542D2453D813006CFBE3 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54282453D812006CFBE3 /* CalendarTool.m */; };
+		726F542E2453D813006CFBE3 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F542A2453D813006CFBE3 /* NSDictionary+log.m */; };
+		726F542F2453D813006CFBE3 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F542B2453D813006CFBE3 /* NSArray+log.m */; };
+		726F54322453D8E5006CFBE3 /* BCWardrobeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54312453D8E5006CFBE3 /* BCWardrobeViewController.m */; };
+		726F54352453D8FB006CFBE3 /* BCDailyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54342453D8FB006CFBE3 /* BCDailyViewController.m */; };
+		726F54382453D90A006CFBE3 /* BCDressUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54372453D90A006CFBE3 /* BCDressUpViewController.m */; };
+		726F543B2453D91B006CFBE3 /* BCMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F543A2453D91B006CFBE3 /* BCMineViewController.m */; };
+		726F543E2453D94B006CFBE3 /* BCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F543D2453D94B006CFBE3 /* BCTabBarController.m */; };
+		726F54412453DD2A006CFBE3 /* MBProgressHUD+BCNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F543F2453DD2A006CFBE3 /* MBProgressHUD+BCNJ.m */; };
 		DB500E0B1A2D0571170C24C0 /* Pods_YourNiceWardrobe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8FA422BD42A56A05E42EB8 /* Pods_YourNiceWardrobe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C85C5A4E695EF43E58B1AB2 /* Pods-YourNiceWardrobe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourNiceWardrobe.debug.xcconfig"; path = "Target Support Files/Pods-YourNiceWardrobe/Pods-YourNiceWardrobe.debug.xcconfig"; sourceTree = "<group>"; };
-		726F53EA2452FB10006CFBE3 /* YourNiceWardrobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourNiceWardrobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		726F53EA2452FB10006CFBE3 /* 你的靓衣柜.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "你的靓衣柜.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		726F53ED2452FB10006CFBE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		726F53EE2452FB10006CFBE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		726F53FC2452FB17006CFBE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		726F53FE2452FB17006CFBE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		726F53FF2452FB17006CFBE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		726F54172453D35E006CFBE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		726F54192453D599006CFBE3 /* BCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCBaseViewController.m; sourceTree = "<group>"; };
+		726F541A2453D599006CFBE3 /* BCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCBaseViewController.h; sourceTree = "<group>"; };
+		726F541C2453D62F006CFBE3 /* BCGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCGlobal.h; sourceTree = "<group>"; };
+		726F541D2453D675006CFBE3 /* BCHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCHBTool.m; sourceTree = "<group>"; };
+		726F541E2453D675006CFBE3 /* BCHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCHBTool.h; sourceTree = "<group>"; };
+		726F54202453D6A4006CFBE3 /* BC_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BC_PrefixHeader.pch; sourceTree = "<group>"; };
+		726F54212453D78C006CFBE3 /* BCUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCUIUtilities.m; sourceTree = "<group>"; };
+		726F54222453D78C006CFBE3 /* BCUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCUIUtilities.h; sourceTree = "<group>"; };
+		726F54252453D811006CFBE3 /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
+		726F54262453D812006CFBE3 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		726F54282453D812006CFBE3 /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
+		726F54292453D812006CFBE3 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
+		726F542A2453D813006CFBE3 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
+		726F542B2453D813006CFBE3 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		726F54302453D8E5006CFBE3 /* BCWardrobeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCWardrobeViewController.h; sourceTree = "<group>"; };
+		726F54312453D8E5006CFBE3 /* BCWardrobeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCWardrobeViewController.m; sourceTree = "<group>"; };
+		726F54332453D8FB006CFBE3 /* BCDailyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDailyViewController.h; sourceTree = "<group>"; };
+		726F54342453D8FB006CFBE3 /* BCDailyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDailyViewController.m; sourceTree = "<group>"; };
+		726F54362453D90A006CFBE3 /* BCDressUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDressUpViewController.h; sourceTree = "<group>"; };
+		726F54372453D90A006CFBE3 /* BCDressUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDressUpViewController.m; sourceTree = "<group>"; };
+		726F54392453D91B006CFBE3 /* BCMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCMineViewController.h; sourceTree = "<group>"; };
+		726F543A2453D91B006CFBE3 /* BCMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCMineViewController.m; sourceTree = "<group>"; };
+		726F543C2453D94B006CFBE3 /* BCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCTabBarController.h; sourceTree = "<group>"; };
+		726F543D2453D94B006CFBE3 /* BCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCTabBarController.m; sourceTree = "<group>"; };
+		726F543F2453DD2A006CFBE3 /* MBProgressHUD+BCNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+BCNJ.m"; sourceTree = "<group>"; };
+		726F54402453DD2A006CFBE3 /* MBProgressHUD+BCNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+BCNJ.h"; sourceTree = "<group>"; };
 		90A01011D19B676206758AFB /* Pods-YourNiceWardrobe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourNiceWardrobe.release.xcconfig"; path = "Target Support Files/Pods-YourNiceWardrobe/Pods-YourNiceWardrobe.release.xcconfig"; sourceTree = "<group>"; };
 		AF8FA422BD42A56A05E42EB8 /* Pods_YourNiceWardrobe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourNiceWardrobe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -67,7 +107,7 @@
 		726F53EB2452FB10006CFBE3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				726F53EA2452FB10006CFBE3 /* YourNiceWardrobe.app */,
+				726F53EA2452FB10006CFBE3 /* 你的靓衣柜.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,11 +117,174 @@
 			children = (
 				726F53ED2452FB10006CFBE3 /* AppDelegate.h */,
 				726F53EE2452FB10006CFBE3 /* AppDelegate.m */,
+				726F54162453D2F1006CFBE3 /* BCCommon */,
+				726F540A2453D2BF006CFBE3 /* BCDaily */,
+				726F54122453D2C0006CFBE3 /* BCDressUp */,
+				726F540E2453D2C0006CFBE3 /* BCMine */,
+				726F54062453D2BF006CFBE3 /* BCWardrobe */,
 				726F53FB2452FB17006CFBE3 /* LaunchScreen.storyboard */,
 				726F53FE2452FB17006CFBE3 /* Info.plist */,
 				726F53FF2452FB17006CFBE3 /* main.m */,
+				726F54172453D35E006CFBE3 /* Assets.xcassets */,
 			);
 			path = YourNiceWardrobe;
+			sourceTree = "<group>";
+		};
+		726F54062453D2BF006CFBE3 /* BCWardrobe */ = {
+			isa = PBXGroup;
+			children = (
+				726F54072453D2BF006CFBE3 /* BCViews */,
+				726F54082453D2BF006CFBE3 /* BCModels */,
+				726F54092453D2BF006CFBE3 /* BCControllers */,
+			);
+			path = BCWardrobe;
+			sourceTree = "<group>";
+		};
+		726F54072453D2BF006CFBE3 /* BCViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BCViews;
+			sourceTree = "<group>";
+		};
+		726F54082453D2BF006CFBE3 /* BCModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BCModels;
+			sourceTree = "<group>";
+		};
+		726F54092453D2BF006CFBE3 /* BCControllers */ = {
+			isa = PBXGroup;
+			children = (
+				726F54302453D8E5006CFBE3 /* BCWardrobeViewController.h */,
+				726F54312453D8E5006CFBE3 /* BCWardrobeViewController.m */,
+			);
+			path = BCControllers;
+			sourceTree = "<group>";
+		};
+		726F540A2453D2BF006CFBE3 /* BCDaily */ = {
+			isa = PBXGroup;
+			children = (
+				726F540B2453D2C0006CFBE3 /* BCViews */,
+				726F540C2453D2C0006CFBE3 /* BCModels */,
+				726F540D2453D2C0006CFBE3 /* BCControllers */,
+			);
+			path = BCDaily;
+			sourceTree = "<group>";
+		};
+		726F540B2453D2C0006CFBE3 /* BCViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BCViews;
+			sourceTree = "<group>";
+		};
+		726F540C2453D2C0006CFBE3 /* BCModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BCModels;
+			sourceTree = "<group>";
+		};
+		726F540D2453D2C0006CFBE3 /* BCControllers */ = {
+			isa = PBXGroup;
+			children = (
+				726F54332453D8FB006CFBE3 /* BCDailyViewController.h */,
+				726F54342453D8FB006CFBE3 /* BCDailyViewController.m */,
+			);
+			path = BCControllers;
+			sourceTree = "<group>";
+		};
+		726F540E2453D2C0006CFBE3 /* BCMine */ = {
+			isa = PBXGroup;
+			children = (
+				726F540F2453D2C0006CFBE3 /* BCViews */,
+				726F54102453D2C0006CFBE3 /* BCModels */,
+				726F54112453D2C0006CFBE3 /* BCControllers */,
+			);
+			path = BCMine;
+			sourceTree = "<group>";
+		};
+		726F540F2453D2C0006CFBE3 /* BCViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BCViews;
+			sourceTree = "<group>";
+		};
+		726F54102453D2C0006CFBE3 /* BCModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BCModels;
+			sourceTree = "<group>";
+		};
+		726F54112453D2C0006CFBE3 /* BCControllers */ = {
+			isa = PBXGroup;
+			children = (
+				726F54392453D91B006CFBE3 /* BCMineViewController.h */,
+				726F543A2453D91B006CFBE3 /* BCMineViewController.m */,
+			);
+			path = BCControllers;
+			sourceTree = "<group>";
+		};
+		726F54122453D2C0006CFBE3 /* BCDressUp */ = {
+			isa = PBXGroup;
+			children = (
+				726F54132453D2C0006CFBE3 /* BCViews */,
+				726F54142453D2C0006CFBE3 /* BCModels */,
+				726F54152453D2C0006CFBE3 /* BCControllers */,
+			);
+			path = BCDressUp;
+			sourceTree = "<group>";
+		};
+		726F54132453D2C0006CFBE3 /* BCViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BCViews;
+			sourceTree = "<group>";
+		};
+		726F54142453D2C0006CFBE3 /* BCModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BCModels;
+			sourceTree = "<group>";
+		};
+		726F54152453D2C0006CFBE3 /* BCControllers */ = {
+			isa = PBXGroup;
+			children = (
+				726F54362453D90A006CFBE3 /* BCDressUpViewController.h */,
+				726F54372453D90A006CFBE3 /* BCDressUpViewController.m */,
+			);
+			path = BCControllers;
+			sourceTree = "<group>";
+		};
+		726F54162453D2F1006CFBE3 /* BCCommon */ = {
+			isa = PBXGroup;
+			children = (
+				726F54202453D6A4006CFBE3 /* BC_PrefixHeader.pch */,
+				726F541C2453D62F006CFBE3 /* BCGlobal.h */,
+				726F541E2453D675006CFBE3 /* BCHBTool.h */,
+				726F541D2453D675006CFBE3 /* BCHBTool.m */,
+				726F54222453D78C006CFBE3 /* BCUIUtilities.h */,
+				726F54212453D78C006CFBE3 /* BCUIUtilities.m */,
+				726F54252453D811006CFBE3 /* CalendarTool.h */,
+				726F54282453D812006CFBE3 /* CalendarTool.m */,
+				726F54402453DD2A006CFBE3 /* MBProgressHUD+BCNJ.h */,
+				726F543F2453DD2A006CFBE3 /* MBProgressHUD+BCNJ.m */,
+				726F54262453D812006CFBE3 /* NSArray+log.h */,
+				726F542B2453D813006CFBE3 /* NSArray+log.m */,
+				726F54292453D812006CFBE3 /* NSDictionary+log.h */,
+				726F542A2453D813006CFBE3 /* NSDictionary+log.m */,
+				726F541A2453D599006CFBE3 /* BCBaseViewController.h */,
+				726F54192453D599006CFBE3 /* BCBaseViewController.m */,
+				726F543C2453D94B006CFBE3 /* BCTabBarController.h */,
+				726F543D2453D94B006CFBE3 /* BCTabBarController.m */,
+			);
+			path = BCCommon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,7 +306,7 @@
 			);
 			name = YourNiceWardrobe;
 			productName = YourNiceWardrobe;
-			productReference = 726F53EA2452FB10006CFBE3 /* YourNiceWardrobe.app */;
+			productReference = 726F53EA2452FB10006CFBE3 /* 你的靓衣柜.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -143,6 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				726F54182453D35E006CFBE3 /* Assets.xcassets in Resources */,
 				726F53FD2452FB17006CFBE3 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,7 +401,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				726F53EF2452FB10006CFBE3 /* AppDelegate.m in Sources */,
+				726F542E2453D813006CFBE3 /* NSDictionary+log.m in Sources */,
+				726F543E2453D94B006CFBE3 /* BCTabBarController.m in Sources */,
+				726F541B2453D599006CFBE3 /* BCBaseViewController.m in Sources */,
+				726F541F2453D675006CFBE3 /* BCHBTool.m in Sources */,
 				726F54002452FB17006CFBE3 /* main.m in Sources */,
+				726F54382453D90A006CFBE3 /* BCDressUpViewController.m in Sources */,
+				726F542F2453D813006CFBE3 /* NSArray+log.m in Sources */,
+				726F54412453DD2A006CFBE3 /* MBProgressHUD+BCNJ.m in Sources */,
+				726F54322453D8E5006CFBE3 /* BCWardrobeViewController.m in Sources */,
+				726F54352453D8FB006CFBE3 /* BCDailyViewController.m in Sources */,
+				726F54232453D78D006CFBE3 /* BCUIUtilities.m in Sources */,
+				726F542D2453D813006CFBE3 /* CalendarTool.m in Sources */,
+				726F543B2453D91B006CFBE3 /* BCMineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,13 +547,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YourNiceWardrobe/BCCommon/BC_PrefixHeader.pch";
 				INFOPLIST_FILE = YourNiceWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.windy.yourWardrobe.YourNiceWardrobe;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.windy.YourNiceWardrobe;
+				PRODUCT_NAME = "你的靓衣柜";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -348,13 +565,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YourNiceWardrobe/BCCommon/BC_PrefixHeader.pch";
 				INFOPLIST_FILE = YourNiceWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.windy.yourWardrobe.YourNiceWardrobe;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.windy.YourNiceWardrobe;
+				PRODUCT_NAME = "你的靓衣柜";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
