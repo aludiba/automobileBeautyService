@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		722D8967245EF7230062B886 /* BCWardrobeAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722D8966245EF7230062B886 /* BCWardrobeAddViewController.m */; };
+		722D896A245EFB010062B886 /* BCWardrobeAddModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 722D8969245EFB010062B886 /* BCWardrobeAddModel.m */; };
+		722D896D245F09BA0062B886 /* BCWardrobeAddTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 722D896C245F09BA0062B886 /* BCWardrobeAddTableViewCell.m */; };
 		726F53EF2452FB10006CFBE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F53EE2452FB10006CFBE3 /* AppDelegate.m */; };
 		726F53FD2452FB17006CFBE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726F53FB2452FB17006CFBE3 /* LaunchScreen.storyboard */; };
 		726F54002452FB17006CFBE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F53FF2452FB17006CFBE3 /* main.m */; };
@@ -28,6 +31,12 @@
 
 /* Begin PBXFileReference section */
 		1C85C5A4E695EF43E58B1AB2 /* Pods-YourNiceWardrobe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourNiceWardrobe.debug.xcconfig"; path = "Target Support Files/Pods-YourNiceWardrobe/Pods-YourNiceWardrobe.debug.xcconfig"; sourceTree = "<group>"; };
+		722D8965245EF7230062B886 /* BCWardrobeAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCWardrobeAddViewController.h; sourceTree = "<group>"; };
+		722D8966245EF7230062B886 /* BCWardrobeAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCWardrobeAddViewController.m; sourceTree = "<group>"; };
+		722D8968245EFB010062B886 /* BCWardrobeAddModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCWardrobeAddModel.h; sourceTree = "<group>"; };
+		722D8969245EFB010062B886 /* BCWardrobeAddModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCWardrobeAddModel.m; sourceTree = "<group>"; };
+		722D896B245F09BA0062B886 /* BCWardrobeAddTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCWardrobeAddTableViewCell.h; sourceTree = "<group>"; };
+		722D896C245F09BA0062B886 /* BCWardrobeAddTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCWardrobeAddTableViewCell.m; sourceTree = "<group>"; };
 		726F53EA2452FB10006CFBE3 /* 你的靓衣柜.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "你的靓衣柜.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		726F53ED2452FB10006CFBE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		726F53EE2452FB10006CFBE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -143,6 +152,8 @@
 		726F54072453D2BF006CFBE3 /* BCViews */ = {
 			isa = PBXGroup;
 			children = (
+				722D896B245F09BA0062B886 /* BCWardrobeAddTableViewCell.h */,
+				722D896C245F09BA0062B886 /* BCWardrobeAddTableViewCell.m */,
 			);
 			path = BCViews;
 			sourceTree = "<group>";
@@ -150,6 +161,8 @@
 		726F54082453D2BF006CFBE3 /* BCModels */ = {
 			isa = PBXGroup;
 			children = (
+				722D8968245EFB010062B886 /* BCWardrobeAddModel.h */,
+				722D8969245EFB010062B886 /* BCWardrobeAddModel.m */,
 			);
 			path = BCModels;
 			sourceTree = "<group>";
@@ -159,6 +172,8 @@
 			children = (
 				726F54302453D8E5006CFBE3 /* BCWardrobeViewController.h */,
 				726F54312453D8E5006CFBE3 /* BCWardrobeViewController.m */,
+				722D8965245EF7230062B886 /* BCWardrobeAddViewController.h */,
+				722D8966245EF7230062B886 /* BCWardrobeAddViewController.m */,
 			);
 			path = BCControllers;
 			sourceTree = "<group>";
@@ -402,7 +417,10 @@
 			files = (
 				726F53EF2452FB10006CFBE3 /* AppDelegate.m in Sources */,
 				726F542E2453D813006CFBE3 /* NSDictionary+log.m in Sources */,
+				722D8967245EF7230062B886 /* BCWardrobeAddViewController.m in Sources */,
+				722D896D245F09BA0062B886 /* BCWardrobeAddTableViewCell.m in Sources */,
 				726F543E2453D94B006CFBE3 /* BCTabBarController.m in Sources */,
+				722D896A245EFB010062B886 /* BCWardrobeAddModel.m in Sources */,
 				726F541B2453D599006CFBE3 /* BCBaseViewController.m in Sources */,
 				726F541F2453D675006CFBE3 /* BCHBTool.m in Sources */,
 				726F54002452FB17006CFBE3 /* main.m in Sources */,

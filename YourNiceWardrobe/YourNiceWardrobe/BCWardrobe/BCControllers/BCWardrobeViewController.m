@@ -7,6 +7,7 @@
 //
 
 #import "BCWardrobeViewController.h"
+#import "BCWardrobeAddViewController.h"
 
 @interface BCWardrobeViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic, strong)NSMutableArray *BCDataArray;
@@ -59,14 +60,22 @@
 }
 #pragma mark - actions
 - (void)BCaddAction:(UIButton *)sender{
-    UIAlertController *BCalertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *BCcancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-    UIAlertAction *BCsureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        
-    }];
-    [BCalertVC addAction:BCcancelAction];
-    [BCalertVC addAction:BCsureAction];
-    [self presentViewController:BCalertVC animated:YES completion:nil];
+//    AVUser *BCUser = [AVUser currentUser];
+//    if (BCUser) {
+        BCWardrobeAddViewController *BCWardrobeAddVC = [[BCWardrobeAddViewController alloc] init];
+        BCWardrobeAddVC.BCsuperVC = self;
+        BCWardrobeAddVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:BCWardrobeAddVC animated:YES];
+//    }else{
+//    UIAlertController *BCalertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
+//    UIAlertAction *BCcancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+//    UIAlertAction *BCsureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        
+//    }];
+//    [BCalertVC addAction:BCcancelAction];
+//    [BCalertVC addAction:BCsureAction];
+//    [self presentViewController:BCalertVC animated:YES completion:nil];
+//    }
 }
 #pragma mark - 属性懒加载
 - (UIView *)BCBackView{
