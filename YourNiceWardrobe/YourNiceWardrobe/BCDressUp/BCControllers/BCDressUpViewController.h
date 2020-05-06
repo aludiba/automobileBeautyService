@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BCDressUpViewController : BCBaseViewController
-
+@property(nonatomic, strong)UITableView *BCmainTable;//列表
 @end
 
 NS_ASSUME_NONNULL_END

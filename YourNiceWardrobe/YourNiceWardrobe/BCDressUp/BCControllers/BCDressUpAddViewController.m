@@ -1,25 +1,25 @@
 //
-//  BCWardrobeAddViewController.m
+//  BCDressUpAddViewController.m
 //  YourNiceWardrobe
 //
-//  Created by 褚红彪 on 2020/5/3.
+//  Created by 褚红彪 on 2020/5/6.
 //  Copyright © 2020 hb. All rights reserved.
 //
 
-#import "BCWardrobeAddViewController.h"
-#import "BCWardrobeAddTableViewCell.h"
-#import "BCWardrobeAddModel.h"
-#import "BCWardrobeViewController.h"
-#import "BCWardrobeModel.h"
+#import "BCDressUpAddViewController.h"
+#import "BCDressUpViewController.h"
+#import "BCDressUpAddTableViewCell.h"
+#import "BCDressUpAddModel.h"
+#import "BCDressUpModel.h"
 
-@interface BCWardrobeAddViewController ()<UITableViewDataSource,UITableViewDelegate>
-@property(nonatomic, strong)BCWardrobeModel *BCModel;
+@interface BCDressUpAddViewController ()<UITableViewDataSource,UITableViewDelegate>
+@property(nonatomic, strong)BCDressUpModel *BCModel;
 @property(nonatomic, strong)NSMutableArray *BCViewDataArray;
 @property(nonatomic, strong)UIButton *BCsaveButton;//保存按钮
 @property(nonatomic, strong)UITableView *BCmainTable;//列表
 @end
 
-@implementation BCWardrobeAddViewController
+@implementation BCDressUpAddViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,7 +28,6 @@
     [self BCsetContentView];
 }
 - (void)BCkeyboardWillHide:(NSNotification *)BCnote{
-//    self.isDetails = NO;
     //取得键盘弹出时间
     CGFloat BCduration = [BCnote.userInfo[UIKeyboardAnimationDurationUserInfoKey] floatValue];
     //取得键盘高度
@@ -44,59 +43,35 @@
     self.navigationItem.rightBarButtonItem = BCsaveButton;
 }
 - (void)BCsetContentView{
-    BCWardrobeAddModel *BCtypesViewModel = [[BCWardrobeAddModel alloc] init];
-    BCtypesViewModel.BCTitle = @"类型:";
-    BCtypesViewModel.BCDefault = @"请输入类型";
-    [self.BCViewDataArray addObject:BCtypesViewModel];
-    
-    BCWardrobeAddModel *BCnumberViewModel = [[BCWardrobeAddModel alloc] init];
-    BCnumberViewModel.BCTitle = @"尺码:";
-    BCnumberViewModel.BCDefault = @"请输入尺码数";
-    [self.BCViewDataArray addObject:BCnumberViewModel];
-    
-    BCWardrobeAddModel *BCstorageViewModel = [[BCWardrobeAddModel alloc] init];
-    BCstorageViewModel.BCTitle = @"储存位置:";
-    BCstorageViewModel.BCDefault = @"请输入储存位置";
-    [self.BCViewDataArray addObject:BCstorageViewModel];
-    
-    BCWardrobeAddModel *BCpurchasetimeViewModel = [[BCWardrobeAddModel alloc] init];
-    BCpurchasetimeViewModel.BCTitle = @"购买时间:";
-    BCpurchasetimeViewModel.BCDefault = @"请输入购买时间";
-    [self.BCViewDataArray addObject:BCpurchasetimeViewModel];
-    
+    BCDressUpAddModel *BCViewModel = [[BCDressUpAddModel alloc] init];
+    BCViewModel.BCDefault = @"请输入打扮穿搭内容";
+    [self.BCViewDataArray addObject:BCViewModel];
     [self.BCmainTable reloadData];
 }
 - (void)BCsaveAction:(UIButton *)sender{
     for (int i = 0; i < self.BCViewDataArray.count; i++) {
-        BCWardrobeAddModel *BCviewModel = self.BCViewDataArray[i];
+        BCDressUpAddModel *BCviewModel = self.BCViewDataArray[i];
+        NSString *BCtitleString = [BCHBTool BCremoveSpaceAndNewline:BCviewModel.BCTitle];
         NSString *BCcontentString = [BCHBTool BCremoveSpaceAndNewline:BCviewModel.BCContent];
+        if (!BCtitleString.length) {
+            if (i == 0) {
+                [MBProgressHUD BCshowReminderText:@"请输入打扮穿搭标题"];
+                return;
+            }
+        }
         if (!BCcontentString.length) {
             if (i == 0) {
-                [MBProgressHUD BCshowReminderText:@"请输入类型"];
-                return;
-            }else if (i == 1){
-                [MBProgressHUD BCshowReminderText:@"请输入尺码数"];
-                return;
-            }else if (i == 2){
-                [MBProgressHUD BCshowReminderText:@"请输入储存位置"];
-                return;
-            }else if (i == 3){
-                [MBProgressHUD BCshowReminderText:@"请输入购买时间"];
+                [MBProgressHUD BCshowReminderText:@"请输入打扮穿搭内容"];
                 return;
             }
         }
     }
-    BCWardrobeAddModel *BCtypesviewModel = self.BCViewDataArray[0];
-    self.BCModel.BCtypes = BCtypesviewModel.BCContent;
-    BCWardrobeAddModel *BCnumberviewModel = self.BCViewDataArray[1];
-    self.BCModel.BCnumber = BCnumberviewModel.BCContent;
-    BCWardrobeAddModel *BCstorageviewModel = self.BCViewDataArray[2];
-    self.BCModel.BCstorage = BCstorageviewModel.BCContent;
-    BCWardrobeAddModel *BCpurchasetimeviewModel = self.BCViewDataArray[3];
-    self.BCModel.BCpurchasetime = BCpurchasetimeviewModel.BCContent;
+    BCDressUpAddModel *BCviewModel = self.BCViewDataArray[0];
+    self.BCModel.BCTitle = BCviewModel.BCTitle;
+    self.BCModel.BCContent = BCviewModel.BCContent;
     NSMutableDictionary *BCjsonDictionary = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[self.BCModel yy_modelToJSONObject]];
     AVUser *BCauthor = [AVUser currentUser];
-    AVObject *BCdiary = [AVObject objectWithClassName:@"BCWardrobe"];
+    AVObject *BCdiary = [AVObject objectWithClassName:@"BCDressUp"];
     for (NSString *BCkey in BCjsonDictionary.allKeys) {
         [BCdiary setObject:[BCjsonDictionary objectForKey:BCkey]  forKey:BCkey];
     }
@@ -104,7 +79,7 @@
     [BCdiary saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
         if (isSuccessful) {
             //创建成功后的动作
-            [MBProgressHUD BCshowReminderText:NSLocalizedString(@"保存成功", nil)];
+            [MBProgressHUD BCshowReminderText:@"保存成功"];
             [self.BCsuperVC.BCmainTable.mj_header beginRefreshing];
             [self.navigationController popToRootViewControllerAnimated:YES];
         } else if (error){
@@ -120,25 +95,23 @@
     return self.BCViewDataArray.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    BCWardrobeAddModel *BCViewModel = self.BCViewDataArray[indexPath.row];
-    NSString *BCKMyCellID = @"BCWardrobeAddTableViewCell";
+    BCDressUpAddModel *BCViewModel = self.BCViewDataArray[indexPath.row];
+    NSString *BCKMyCellID = @"BCDressUpAddTableViewCell";
     NSString *BCcellID = [NSString stringWithFormat:@"%@%zd",BCKMyCellID, indexPath.row];
-    BCWardrobeAddTableViewCell *BCcell = [tableView dequeueReusableCellWithIdentifier:BCcellID];
+    BCDressUpAddTableViewCell *BCcell = [tableView dequeueReusableCellWithIdentifier:BCcellID];
     if (!BCcell) {
-        BCcell = [[BCWardrobeAddTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:BCcellID];
+        BCcell = [[BCDressUpAddTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:BCcellID];
     }
     BCcell.BCViewModel = BCViewModel;
     BCcell.selectionStyle = UITableViewCellSelectionStyleNone;
     __weak typeof(self) weakSelf = self;
-    BCcell.BCeditBlock = ^(BCWardrobeAddTableViewCell * _Nonnull cell) {
-        if ([BCViewModel.BCTitle hasPrefix:@"购买时间"]) {
+    BCcell.BCeditBlock = ^(BCDressUpAddTableViewCell * _Nonnull cell) {
         if (BCcell.BCcontentHeight > BCViewModel.BCEditHeight) {
         [UIView animateWithDuration:0.2 animations:^{
             CGRect BCframe = self.view.frame;
             BCframe.origin.y = BCframe.origin.y -  22;
             self.view.frame = BCframe;
         }];
-        }
         }
         BCViewModel.BCEditHeight = cell.BCcontentHeight;
         [weakSelf.BCmainTable beginUpdates];
@@ -155,9 +128,9 @@
     [self.view endEditing:YES];
 }
 #pragma mark - 属性懒加载
-- (BCWardrobeModel *)BCModel{
+- (BCDressUpModel *)BCModel{
     if (!_BCModel) {
-        _BCModel = [[BCWardrobeModel alloc] init];
+        _BCModel = [[BCDressUpModel alloc] init];
     }
     return _BCModel;
 }
@@ -192,12 +165,14 @@
         [self.view addGestureRecognizer:BCpanGesture];
         [self.view addSubview:_BCmainTable];
         [_BCmainTable mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.mas_topLayoutGuideBottom);
+            make.top.equalTo(self.view);
             make.leading.equalTo(self.view);
             make.trailing.equalTo(self.view);
             make.bottom.equalTo(self.view);
         }];
+        
     }
     return _BCmainTable;
 }
+
 @end
