@@ -7,4 +7,5 @@ target 'SupermarketOperationAssistant' do
 
   # Pods for SupermarketOperationAssistant
     pod 'Masonry'
+    pod 'MJRefresh'
 end
