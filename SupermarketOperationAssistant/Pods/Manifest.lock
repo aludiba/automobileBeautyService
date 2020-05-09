@@ -1,4 +1,5 @@
 PODS:
+  - AVOSCloud (12.1.0)
   - JCore (2.1.4-noidfa)
   - JPush (3.2.4-noidfa):
     - JCore (< 3.0.0, >= 2.0.0)
@@ -8,6 +9,7 @@ PODS:
   - YYModel (1.0.4)
 
 DEPENDENCIES:
+  - AVOSCloud
   - JCore (= 2.1.4-noidfa)
   - JPush (= 3.2.4-noidfa)
   - Masonry
@@ -17,6 +19,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AVOSCloud
     - JCore
     - JPush
     - Masonry
@@ -25,6 +28,7 @@ SPEC REPOS:
     - YYModel
 
 SPEC CHECKSUMS:
+  AVOSCloud: c8f9d789d67dfed10911e23bc1af289c23b108bb
   JCore: 2f15311e6889ab43ed5d629802ef793cac566465
   JPush: 2ff11d3013b360bc1b7da16741027e88f12fe3e6
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -32,6 +36,6 @@ SPEC CHECKSUMS:
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 8b58d162e7a0b7d85a5ff7d45a6ee08793aa454d
+PODFILE CHECKSUM: 4f8de46edcccff664895124f28c1f687508ba783
 
 COCOAPODS: 1.7.5
