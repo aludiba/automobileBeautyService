@@ -25,7 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(BCkeyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
-    self.title = @"Add";
+    self.title = @"添加";
     [self BCsetContentView];
 }
 - (void)BCkeyboardWillHide:(NSNotification *)BCnote{

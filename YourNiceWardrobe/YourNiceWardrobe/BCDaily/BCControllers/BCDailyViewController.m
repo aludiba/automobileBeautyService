@@ -14,6 +14,8 @@
 
 @interface BCDailyViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic, strong)NSMutableArray *BCDataArray;
+@property(nonatomic, strong)UIView *BCBackView;
+@property(nonatomic, strong)UIImageView *BCdailyImgView;//日常
 @property(nonatomic, strong)UIButton *BCaddButton;
 @end
 
@@ -125,6 +127,20 @@
     }
 }
 #pragma mark - 属性懒加载
+- (UIView *)BCBackView{
+    if (!_BCBackView) {
+        _BCBackView = [[UIView alloc] init];
+        _BCBackView.backgroundColor = BCH_Color(246, 246, 246, 1);
+    }
+    return _BCBackView;
+}
+- (UIImageView *)BCdailyImgView{
+    if (!_BCdailyImgView) {
+        _BCdailyImgView = [[UIImageView alloc] init];
+        _BCdailyImgView.image = [UIImage imageNamed:@"daily"];
+    }
+    return _BCdailyImgView;
+}
 - (UIButton *)BCaddButton{
     if (!_BCaddButton) {
         _BCaddButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
@@ -148,9 +164,24 @@
         _BCmainTable.delegate = self;
         _BCmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
         [_BCmainTable registerClass:[BCDailyTableViewCell class] forCellReuseIdentifier:@"BCDailyTableViewCell"];
+        [self.view addSubview:self.BCBackView];
+        [self.BCBackView mas_makeConstraints:^(MASConstraintMaker *make) {
+           make.top.equalTo(self.view).offset(BCHeightNavBar);
+            make.leading.equalTo(self.view);
+            make.trailing.equalTo(self.view);
+            make.height.mas_equalTo(140);
+        }];
+        [self.BCBackView addSubview:self.BCdailyImgView];
+        [self.BCdailyImgView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.BCBackView).offset(20);
+            make.centerX.equalTo(self.BCBackView);
+            make.width.mas_equalTo(100);
+            make.height.mas_equalTo(100);
+        }];
         [self.view addSubview:_BCmainTable];
         [_BCmainTable mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.mas_topLayoutGuideBottom);
+            make.top.equalTo(self.BCBackView.mas_bottom);
+
             make.leading.equalTo(self.view);
             make.trailing.equalTo(self.view);
         make.bottom.equalTo(self.view).offset(-BCHeightTabBar);

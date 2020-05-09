@@ -11,7 +11,6 @@
 #import "BCWardrobeTableViewCell.h"
 #import "BCLoginViewController.h"
 #import "BCWardrobeModel.h"
-
 @interface BCWardrobeViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic, strong)NSMutableArray *BCDataArray;
 @property(nonatomic, strong)UIView *BCBackView;
@@ -187,7 +186,7 @@
         [_BCmainTable registerClass:[BCWardrobeTableViewCell class] forCellReuseIdentifier:@"BCWardrobeTableViewCell"];
         [self.view addSubview:_BCmainTable];
         [_BCmainTable mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.BCcoatImgView.mas_bottom);
+            make.top.equalTo(self.BCBackView.mas_bottom);
             make.leading.equalTo(self.view);
             make.trailing.equalTo(self.view);
         make.bottom.equalTo(self.view).offset(-BCHeightTabBar);

@@ -24,6 +24,12 @@
 		726501A32463044400387A90 /* BCDressUpAddModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501A22463044400387A90 /* BCDressUpAddModel.m */; };
 		726501A62463045F00387A90 /* BCDressUpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501A52463045F00387A90 /* BCDressUpModel.m */; };
 		726501A92463095A00387A90 /* BCDressUpTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501A82463095A00387A90 /* BCDressUpTableViewCell.m */; };
+		726501B02464334000387A90 /* BCproblemFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501AB2464333F00387A90 /* BCproblemFeedbackViewController.m */; };
+		726501B12464334000387A90 /* BCPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501AD2464334000387A90 /* BCPasswordChangeViewController.m */; };
+		726501B22464334000387A90 /* BCModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501AE2464334000387A90 /* BCModifyNicknameViewController.m */; };
+		726501B5246433A700387A90 /* BCproblemFeedbackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501B3246433A600387A90 /* BCproblemFeedbackModel.m */; };
+		726501B82464340A00387A90 /* BCproblemFeedbackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501B72464340A00387A90 /* BCproblemFeedbackTableViewCell.m */; };
+		726501BE2464446200387A90 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501BC2464446200387A90 /* Reachability.m */; };
 		726F53EF2452FB10006CFBE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F53EE2452FB10006CFBE3 /* AppDelegate.m */; };
 		726F53FD2452FB17006CFBE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726F53FB2452FB17006CFBE3 /* LaunchScreen.storyboard */; };
 		726F54002452FB17006CFBE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F53FF2452FB17006CFBE3 /* main.m */; };
@@ -79,6 +85,19 @@
 		726501A52463045F00387A90 /* BCDressUpModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDressUpModel.m; sourceTree = "<group>"; };
 		726501A72463095A00387A90 /* BCDressUpTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDressUpTableViewCell.h; sourceTree = "<group>"; };
 		726501A82463095A00387A90 /* BCDressUpTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDressUpTableViewCell.m; sourceTree = "<group>"; };
+		726501AA2464333F00387A90 /* BCproblemFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCproblemFeedbackViewController.h; sourceTree = "<group>"; };
+		726501AB2464333F00387A90 /* BCproblemFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCproblemFeedbackViewController.m; sourceTree = "<group>"; };
+		726501AC2464334000387A90 /* BCModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCModifyNicknameViewController.h; sourceTree = "<group>"; };
+		726501AD2464334000387A90 /* BCPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCPasswordChangeViewController.m; sourceTree = "<group>"; };
+		726501AE2464334000387A90 /* BCModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCModifyNicknameViewController.m; sourceTree = "<group>"; };
+		726501AF2464334000387A90 /* BCPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCPasswordChangeViewController.h; sourceTree = "<group>"; };
+		726501B3246433A600387A90 /* BCproblemFeedbackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCproblemFeedbackModel.m; sourceTree = "<group>"; };
+		726501B4246433A700387A90 /* BCproblemFeedbackModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCproblemFeedbackModel.h; sourceTree = "<group>"; };
+		726501B62464340A00387A90 /* BCproblemFeedbackTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCproblemFeedbackTableViewCell.h; sourceTree = "<group>"; };
+		726501B72464340A00387A90 /* BCproblemFeedbackTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCproblemFeedbackTableViewCell.m; sourceTree = "<group>"; };
+		726501B924643F8600387A90 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		726501BC2464446200387A90 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		726501BD2464446200387A90 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		726F53EA2452FB10006CFBE3 /* 你的靓衣柜.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "你的靓衣柜.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		726F53ED2452FB10006CFBE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		726F53EE2452FB10006CFBE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -131,6 +150,7 @@
 		4F1724AFB416B4A835E194AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				726501B924643F8600387A90 /* SystemConfiguration.framework */,
 				AF8FA422BD42A56A05E42EB8 /* Pods_YourNiceWardrobe.framework */,
 			);
 			name = Frameworks;
@@ -282,6 +302,8 @@
 			children = (
 				722EE64D2460164300E64984 /* BCLoginTableViewCell.h */,
 				722EE64E2460164300E64984 /* BCLoginTableViewCell.m */,
+				726501B62464340A00387A90 /* BCproblemFeedbackTableViewCell.h */,
+				726501B72464340A00387A90 /* BCproblemFeedbackTableViewCell.m */,
 			);
 			path = BCViews;
 			sourceTree = "<group>";
@@ -289,6 +311,8 @@
 		726F54102453D2C0006CFBE3 /* BCModels */ = {
 			isa = PBXGroup;
 			children = (
+				726501B4246433A700387A90 /* BCproblemFeedbackModel.h */,
+				726501B3246433A600387A90 /* BCproblemFeedbackModel.m */,
 			);
 			path = BCModels;
 			sourceTree = "<group>";
@@ -296,6 +320,12 @@
 		726F54112453D2C0006CFBE3 /* BCControllers */ = {
 			isa = PBXGroup;
 			children = (
+				726501AC2464334000387A90 /* BCModifyNicknameViewController.h */,
+				726501AE2464334000387A90 /* BCModifyNicknameViewController.m */,
+				726501AF2464334000387A90 /* BCPasswordChangeViewController.h */,
+				726501AD2464334000387A90 /* BCPasswordChangeViewController.m */,
+				726501AA2464333F00387A90 /* BCproblemFeedbackViewController.h */,
+				726501AB2464333F00387A90 /* BCproblemFeedbackViewController.m */,
 				726F54392453D91B006CFBE3 /* BCMineViewController.h */,
 				726F543A2453D91B006CFBE3 /* BCMineViewController.m */,
 				722EE64A2460161D00E64984 /* BCLoginViewController.h */,
@@ -352,6 +382,8 @@
 			children = (
 				726F54202453D6A4006CFBE3 /* BC_PrefixHeader.pch */,
 				726F541C2453D62F006CFBE3 /* BCGlobal.h */,
+				726501BD2464446200387A90 /* Reachability.h */,
+				726501BC2464446200387A90 /* Reachability.m */,
 				726F541E2453D675006CFBE3 /* BCHBTool.h */,
 				726F541D2453D675006CFBE3 /* BCHBTool.m */,
 				726F54222453D78C006CFBE3 /* BCUIUtilities.h */,
@@ -487,8 +519,11 @@
 			files = (
 				726F53EF2452FB10006CFBE3 /* AppDelegate.m in Sources */,
 				726501A02462FD5B00387A90 /* BCDressUpAddTableViewCell.m in Sources */,
+				726501B5246433A700387A90 /* BCproblemFeedbackModel.m in Sources */,
+				726501B02464334000387A90 /* BCproblemFeedbackViewController.m in Sources */,
 				726F542E2453D813006CFBE3 /* NSDictionary+log.m in Sources */,
 				722D8967245EF7230062B886 /* BCWardrobeAddViewController.m in Sources */,
+				726501BE2464446200387A90 /* Reachability.m in Sources */,
 				722D896D245F09BA0062B886 /* BCWardrobeAddTableViewCell.m in Sources */,
 				726F543E2453D94B006CFBE3 /* BCTabBarController.m in Sources */,
 				722D896A245EFB010062B886 /* BCWardrobeAddModel.m in Sources */,
@@ -496,6 +531,8 @@
 				7265018E24604F5B00387A90 /* BCDailyAddViewController.m in Sources */,
 				726F541F2453D675006CFBE3 /* BCHBTool.m in Sources */,
 				726501972460505500387A90 /* BCDailyModel.m in Sources */,
+				726501B22464334000387A90 /* BCModifyNicknameViewController.m in Sources */,
+				726501B82464340A00387A90 /* BCproblemFeedbackTableViewCell.m in Sources */,
 				726F54002452FB17006CFBE3 /* main.m in Sources */,
 				726F54382453D90A006CFBE3 /* BCDressUpViewController.m in Sources */,
 				726F542F2453D813006CFBE3 /* NSArray+log.m in Sources */,
@@ -509,6 +546,7 @@
 				7265018B24603DAE00387A90 /* BCWardrobeModel.m in Sources */,
 				726F54232453D78D006CFBE3 /* BCUIUtilities.m in Sources */,
 				726501A62463045F00387A90 /* BCDressUpModel.m in Sources */,
+				726501B12464334000387A90 /* BCPasswordChangeViewController.m in Sources */,
 				726501A92463095A00387A90 /* BCDressUpTableViewCell.m in Sources */,
 				7265019D2462FCC100387A90 /* BCDressUpAddViewController.m in Sources */,
 				722EE64C2460161D00E64984 /* BCLoginViewController.m in Sources */,
@@ -583,7 +621,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -635,7 +673,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -648,7 +686,9 @@
 			baseConfigurationReference = 1C85C5A4E695EF43E58B1AB2 /* Pods-YourNiceWardrobe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YourNiceWardrobe/BCCommon/BC_PrefixHeader.pch";
 				INFOPLIST_FILE = YourNiceWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -657,6 +697,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.windy.YourNiceWardrobe;
 				PRODUCT_NAME = "你的靓衣柜";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -666,7 +707,9 @@
 			baseConfigurationReference = 90A01011D19B676206758AFB /* Pods-YourNiceWardrobe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YourNiceWardrobe/BCCommon/BC_PrefixHeader.pch";
 				INFOPLIST_FILE = YourNiceWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -675,6 +718,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.windy.YourNiceWardrobe;
 				PRODUCT_NAME = "你的靓衣柜";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
