@@ -37,7 +37,6 @@
 		726F541B2453D599006CFBE3 /* BCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54192453D599006CFBE3 /* BCBaseViewController.m */; };
 		726F541F2453D675006CFBE3 /* BCHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F541D2453D675006CFBE3 /* BCHBTool.m */; };
 		726F54232453D78D006CFBE3 /* BCUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54212453D78C006CFBE3 /* BCUIUtilities.m */; };
-		726F542D2453D813006CFBE3 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54282453D812006CFBE3 /* CalendarTool.m */; };
 		726F542E2453D813006CFBE3 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F542A2453D813006CFBE3 /* NSDictionary+log.m */; };
 		726F542F2453D813006CFBE3 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F542B2453D813006CFBE3 /* NSArray+log.m */; };
 		726F54322453D8E5006CFBE3 /* BCWardrobeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54312453D8E5006CFBE3 /* BCWardrobeViewController.m */; };
@@ -113,9 +112,7 @@
 		726F54202453D6A4006CFBE3 /* BC_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BC_PrefixHeader.pch; sourceTree = "<group>"; };
 		726F54212453D78C006CFBE3 /* BCUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCUIUtilities.m; sourceTree = "<group>"; };
 		726F54222453D78C006CFBE3 /* BCUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCUIUtilities.h; sourceTree = "<group>"; };
-		726F54252453D811006CFBE3 /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
 		726F54262453D812006CFBE3 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
-		726F54282453D812006CFBE3 /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
 		726F54292453D812006CFBE3 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
 		726F542A2453D813006CFBE3 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
 		726F542B2453D813006CFBE3 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
@@ -388,8 +385,6 @@
 				726F541D2453D675006CFBE3 /* BCHBTool.m */,
 				726F54222453D78C006CFBE3 /* BCUIUtilities.h */,
 				726F54212453D78C006CFBE3 /* BCUIUtilities.m */,
-				726F54252453D811006CFBE3 /* CalendarTool.h */,
-				726F54282453D812006CFBE3 /* CalendarTool.m */,
 				726F54402453DD2A006CFBE3 /* MBProgressHUD+BCNJ.h */,
 				726F543F2453DD2A006CFBE3 /* MBProgressHUD+BCNJ.m */,
 				726F54262453D812006CFBE3 /* NSArray+log.h */,
@@ -551,7 +546,6 @@
 				7265019D2462FCC100387A90 /* BCDressUpAddViewController.m in Sources */,
 				722EE64C2460161D00E64984 /* BCLoginViewController.m in Sources */,
 				7265019A246057D500387A90 /* BCDailyTableViewCell.m in Sources */,
-				726F542D2453D813006CFBE3 /* CalendarTool.m in Sources */,
 				726501942460503000387A90 /* BCDailyAddModel.m in Sources */,
 				726F543B2453D91B006CFBE3 /* BCMineViewController.m in Sources */,
 			);

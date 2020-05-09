@@ -1,0 +1,12 @@
+//
+//  EB_PrefixHeader.pch
+//  Simple Diary
+//
+//  Created by bykj on 2019/7/20.
+//  Copyright © 2019 hgg. EBl rights reserved.
+//
+
+#ifndef EB_PrefixHeader_pch
+#define EB_PrefixHeader_pch
+#import "EBGlobal.h"
+#endif /* EB_PrefixHeader_pch */
