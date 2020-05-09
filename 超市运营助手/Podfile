@@ -8,4 +8,5 @@ target '超市运营助手' do
   # Pods for 超市运营助手
     pod 'Masonry'
     pod 'MJRefresh'
+    pod 'MBProgressHUD'
 end
