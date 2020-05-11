@@ -3,18 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		69F14141C4B5B6BE7E402A20 /* Pods_SupermarketOperationAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333A4C0235B5208BAF9FE3CB /* Pods_SupermarketOperationAssistant.framework */; };
 		7265021D2466E18B00387A90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265021C2466E18B00387A90 /* AppDelegate.m */; };
-		726502202466E18B00387A90 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265021F2466E18B00387A90 /* SceneDelegate.m */; };
-		726502232466E18B00387A90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726502222466E18B00387A90 /* ViewController.m */; };
-		726502262466E18B00387A90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726502242466E18B00387A90 /* Main.storyboard */; };
 		726502282466E18E00387A90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726502272466E18E00387A90 /* Assets.xcassets */; };
 		7265022B2466E18E00387A90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726502292466E18E00387A90 /* LaunchScreen.storyboard */; };
 		7265022E2466E18E00387A90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265022D2466E18E00387A90 /* main.m */; };
+		726502572466E8F700387A90 /* EBHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265023D2466E8F600387A90 /* EBHBTool.m */; };
+		726502582466E8F700387A90 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265023E2466E8F600387A90 /* Reachability.m */; };
+		726502592466E8F700387A90 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265023F2466E8F600387A90 /* NSDictionary+log.m */; };
+		7265025A2466E8F700387A90 /* MBProgressHUD+EBNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 726502402466E8F600387A90 /* MBProgressHUD+EBNJ.m */; };
+		7265025B2466E8F700387A90 /* EBUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 726502412466E8F600387A90 /* EBUIUtilities.m */; };
+		7265025C2466E8F700387A90 /* EBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726502422466E8F600387A90 /* EBTabBarController.m */; };
+		7265025D2466E8F700387A90 /* EBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265024B2466E8F600387A90 /* EBBaseViewController.m */; };
+		7265025E2466E8F700387A90 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265024E2466E8F600387A90 /* NSArray+log.m */; };
+		726502612466EAE000387A90 /* EBColleaguesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726502602466EAE000387A90 /* EBColleaguesViewController.m */; };
+		726502642466EB0400387A90 /* EBProductInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726502632466EB0400387A90 /* EBProductInformationViewController.m */; };
+		726502672466EB1700387A90 /* EBPurchaseStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726502662466EB1700387A90 /* EBPurchaseStatusViewController.m */; };
+		7265026A2466EB2E00387A90 /* EBSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726502692466EB2E00387A90 /* EBSettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +31,36 @@
 		726502182466E18B00387A90 /* SupermarketOperationAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SupermarketOperationAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7265021B2466E18B00387A90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7265021C2466E18B00387A90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7265021E2466E18B00387A90 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		7265021F2466E18B00387A90 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		726502212466E18B00387A90 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		726502222466E18B00387A90 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		726502252466E18B00387A90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		726502272466E18E00387A90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7265022A2466E18E00387A90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7265022C2466E18E00387A90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7265022D2466E18E00387A90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7265023D2466E8F600387A90 /* EBHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBHBTool.m; sourceTree = "<group>"; };
+		7265023E2466E8F600387A90 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		7265023F2466E8F600387A90 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
+		726502402466E8F600387A90 /* MBProgressHUD+EBNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+EBNJ.m"; sourceTree = "<group>"; };
+		726502412466E8F600387A90 /* EBUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBUIUtilities.m; sourceTree = "<group>"; };
+		726502422466E8F600387A90 /* EBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBTabBarController.m; sourceTree = "<group>"; };
+		726502432466E8F600387A90 /* EBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBBaseViewController.h; sourceTree = "<group>"; };
+		726502442466E8F600387A90 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		726502452466E8F600387A90 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
+		726502462466E8F600387A90 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		726502472466E8F600387A90 /* EBHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBHBTool.h; sourceTree = "<group>"; };
+		726502482466E8F600387A90 /* EBGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBGlobal.h; sourceTree = "<group>"; };
+		726502492466E8F600387A90 /* MBProgressHUD+EBNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+EBNJ.h"; sourceTree = "<group>"; };
+		7265024A2466E8F600387A90 /* EB_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EB_PrefixHeader.pch; sourceTree = "<group>"; };
+		7265024B2466E8F600387A90 /* EBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBBaseViewController.m; sourceTree = "<group>"; };
+		7265024C2466E8F600387A90 /* EBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBTabBarController.h; sourceTree = "<group>"; };
+		7265024D2466E8F600387A90 /* EBUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBUIUtilities.h; sourceTree = "<group>"; };
+		7265024E2466E8F600387A90 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		7265025F2466EAE000387A90 /* EBColleaguesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBColleaguesViewController.h; sourceTree = "<group>"; };
+		726502602466EAE000387A90 /* EBColleaguesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBColleaguesViewController.m; sourceTree = "<group>"; };
+		726502622466EB0400387A90 /* EBProductInformationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBProductInformationViewController.h; sourceTree = "<group>"; };
+		726502632466EB0400387A90 /* EBProductInformationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBProductInformationViewController.m; sourceTree = "<group>"; };
+		726502652466EB1700387A90 /* EBPurchaseStatusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBPurchaseStatusViewController.h; sourceTree = "<group>"; };
+		726502662466EB1700387A90 /* EBPurchaseStatusViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBPurchaseStatusViewController.m; sourceTree = "<group>"; };
+		726502682466EB2E00387A90 /* EBSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBSettingViewController.h; sourceTree = "<group>"; };
+		726502692466EB2E00387A90 /* EBSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBSettingViewController.m; sourceTree = "<group>"; };
 		872D4AA74D4B28EBFF537E9F /* Pods-SupermarketOperationAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SupermarketOperationAssistant.release.xcconfig"; path = "Target Support Files/Pods-SupermarketOperationAssistant/Pods-SupermarketOperationAssistant.release.xcconfig"; sourceTree = "<group>"; };
 		9E48FBE0DC24FAF10CE9CBC2 /* Pods-SupermarketOperationAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SupermarketOperationAssistant.debug.xcconfig"; path = "Target Support Files/Pods-SupermarketOperationAssistant/Pods-SupermarketOperationAssistant.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,7 +83,6 @@
 				9E48FBE0DC24FAF10CE9CBC2 /* Pods-SupermarketOperationAssistant.debug.xcconfig */,
 				872D4AA74D4B28EBFF537E9F /* Pods-SupermarketOperationAssistant.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,17 +117,174 @@
 			children = (
 				7265021B2466E18B00387A90 /* AppDelegate.h */,
 				7265021C2466E18B00387A90 /* AppDelegate.m */,
-				7265021E2466E18B00387A90 /* SceneDelegate.h */,
-				7265021F2466E18B00387A90 /* SceneDelegate.m */,
-				726502212466E18B00387A90 /* ViewController.h */,
-				726502222466E18B00387A90 /* ViewController.m */,
-				726502242466E18B00387A90 /* Main.storyboard */,
+				7265023C2466E8F600387A90 /* EBCommon */,
+				726502382466E8F600387A90 /* EBColleagues */,
+				726502532466E8F600387A90 /* EBProductInformation */,
+				726502342466E8F600387A90 /* EBPurchaseStatus */,
+				7265024F2466E8F600387A90 /* EBSetting */,
 				726502272466E18E00387A90 /* Assets.xcassets */,
 				726502292466E18E00387A90 /* LaunchScreen.storyboard */,
 				7265022C2466E18E00387A90 /* Info.plist */,
 				7265022D2466E18E00387A90 /* main.m */,
 			);
 			path = SupermarketOperationAssistant;
+			sourceTree = "<group>";
+		};
+		726502342466E8F600387A90 /* EBPurchaseStatus */ = {
+			isa = PBXGroup;
+			children = (
+				726502352466E8F600387A90 /* EBModels */,
+				726502362466E8F600387A90 /* EBViews */,
+				726502372466E8F600387A90 /* EBControllers */,
+			);
+			path = EBPurchaseStatus;
+			sourceTree = "<group>";
+		};
+		726502352466E8F600387A90 /* EBModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EBModels;
+			sourceTree = "<group>";
+		};
+		726502362466E8F600387A90 /* EBViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EBViews;
+			sourceTree = "<group>";
+		};
+		726502372466E8F600387A90 /* EBControllers */ = {
+			isa = PBXGroup;
+			children = (
+				726502652466EB1700387A90 /* EBPurchaseStatusViewController.h */,
+				726502662466EB1700387A90 /* EBPurchaseStatusViewController.m */,
+			);
+			path = EBControllers;
+			sourceTree = "<group>";
+		};
+		726502382466E8F600387A90 /* EBColleagues */ = {
+			isa = PBXGroup;
+			children = (
+				726502392466E8F600387A90 /* EBModels */,
+				7265023A2466E8F600387A90 /* EBViews */,
+				7265023B2466E8F600387A90 /* EBControllers */,
+			);
+			path = EBColleagues;
+			sourceTree = "<group>";
+		};
+		726502392466E8F600387A90 /* EBModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EBModels;
+			sourceTree = "<group>";
+		};
+		7265023A2466E8F600387A90 /* EBViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EBViews;
+			sourceTree = "<group>";
+		};
+		7265023B2466E8F600387A90 /* EBControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7265025F2466EAE000387A90 /* EBColleaguesViewController.h */,
+				726502602466EAE000387A90 /* EBColleaguesViewController.m */,
+			);
+			path = EBControllers;
+			sourceTree = "<group>";
+		};
+		7265023C2466E8F600387A90 /* EBCommon */ = {
+			isa = PBXGroup;
+			children = (
+				7265024A2466E8F600387A90 /* EB_PrefixHeader.pch */,
+				726502482466E8F600387A90 /* EBGlobal.h */,
+				726502472466E8F600387A90 /* EBHBTool.h */,
+				7265023D2466E8F600387A90 /* EBHBTool.m */,
+				726502462466E8F600387A90 /* Reachability.h */,
+				7265023E2466E8F600387A90 /* Reachability.m */,
+				7265024D2466E8F600387A90 /* EBUIUtilities.h */,
+				726502412466E8F600387A90 /* EBUIUtilities.m */,
+				726502442466E8F600387A90 /* NSArray+log.h */,
+				7265024E2466E8F600387A90 /* NSArray+log.m */,
+				726502452466E8F600387A90 /* NSDictionary+log.h */,
+				7265023F2466E8F600387A90 /* NSDictionary+log.m */,
+				726502492466E8F600387A90 /* MBProgressHUD+EBNJ.h */,
+				726502402466E8F600387A90 /* MBProgressHUD+EBNJ.m */,
+				7265024C2466E8F600387A90 /* EBTabBarController.h */,
+				726502422466E8F600387A90 /* EBTabBarController.m */,
+				726502432466E8F600387A90 /* EBBaseViewController.h */,
+				7265024B2466E8F600387A90 /* EBBaseViewController.m */,
+			);
+			path = EBCommon;
+			sourceTree = "<group>";
+		};
+		7265024F2466E8F600387A90 /* EBSetting */ = {
+			isa = PBXGroup;
+			children = (
+				726502502466E8F600387A90 /* EBModels */,
+				726502512466E8F600387A90 /* EBViews */,
+				726502522466E8F600387A90 /* EBControllers */,
+			);
+			path = EBSetting;
+			sourceTree = "<group>";
+		};
+		726502502466E8F600387A90 /* EBModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EBModels;
+			sourceTree = "<group>";
+		};
+		726502512466E8F600387A90 /* EBViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EBViews;
+			sourceTree = "<group>";
+		};
+		726502522466E8F600387A90 /* EBControllers */ = {
+			isa = PBXGroup;
+			children = (
+				726502682466EB2E00387A90 /* EBSettingViewController.h */,
+				726502692466EB2E00387A90 /* EBSettingViewController.m */,
+			);
+			path = EBControllers;
+			sourceTree = "<group>";
+		};
+		726502532466E8F600387A90 /* EBProductInformation */ = {
+			isa = PBXGroup;
+			children = (
+				726502542466E8F600387A90 /* EBModels */,
+				726502552466E8F600387A90 /* EBViews */,
+				726502562466E8F700387A90 /* EBControllers */,
+			);
+			path = EBProductInformation;
+			sourceTree = "<group>";
+		};
+		726502542466E8F600387A90 /* EBModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EBModels;
+			sourceTree = "<group>";
+		};
+		726502552466E8F600387A90 /* EBViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EBViews;
+			sourceTree = "<group>";
+		};
+		726502562466E8F700387A90 /* EBControllers */ = {
+			isa = PBXGroup;
+			children = (
+				726502622466EB0400387A90 /* EBProductInformationViewController.h */,
+				726502632466EB0400387A90 /* EBProductInformationViewController.m */,
+			);
+			path = EBControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +348,6 @@
 			files = (
 				7265022B2466E18E00387A90 /* LaunchScreen.storyboard in Resources */,
 				726502282466E18E00387A90 /* Assets.xcassets in Resources */,
-				726502262466E18B00387A90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,24 +400,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				726502232466E18B00387A90 /* ViewController.m in Sources */,
 				7265021D2466E18B00387A90 /* AppDelegate.m in Sources */,
+				7265025E2466E8F700387A90 /* NSArray+log.m in Sources */,
 				7265022E2466E18E00387A90 /* main.m in Sources */,
-				726502202466E18B00387A90 /* SceneDelegate.m in Sources */,
+				7265025A2466E8F700387A90 /* MBProgressHUD+EBNJ.m in Sources */,
+				726502642466EB0400387A90 /* EBProductInformationViewController.m in Sources */,
+				726502582466E8F700387A90 /* Reachability.m in Sources */,
+				726502592466E8F700387A90 /* NSDictionary+log.m in Sources */,
+				726502612466EAE000387A90 /* EBColleaguesViewController.m in Sources */,
+				7265025B2466E8F700387A90 /* EBUIUtilities.m in Sources */,
+				7265025C2466E8F700387A90 /* EBTabBarController.m in Sources */,
+				7265026A2466EB2E00387A90 /* EBSettingViewController.m in Sources */,
+				726502572466E8F700387A90 /* EBHBTool.m in Sources */,
+				7265025D2466E8F700387A90 /* EBBaseViewController.m in Sources */,
+				726502672466EB1700387A90 /* EBPurchaseStatusViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		726502242466E18B00387A90 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				726502252466E18B00387A90 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		726502292466E18E00387A90 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -360,6 +547,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SupermarketOperationAssistant/EBCommon/EB_PrefixHeader.pch";
 				INFOPLIST_FILE = SupermarketOperationAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -377,6 +565,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SupermarketOperationAssistant/EBCommon/EB_PrefixHeader.pch";
 				INFOPLIST_FILE = SupermarketOperationAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
