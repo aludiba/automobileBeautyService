@@ -43,8 +43,8 @@
         [_EBbackButton setImage:[UIImage imageNamed:@"EBbtn_back"] forState:UIControlStateNormal];
         _EBbackButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [_EBbackButton addTarget:self action:@selector(EBbackButtonAction) forControlEvents:UIControlEventTouchUpInside];
-        UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:_EBbackButton];
-        self.navigationItem.leftBarButtonItem = backItem;
+        UIBarButtonItem *EBbackItem = [[UIBarButtonItem alloc] initWithCustomView:_EBbackButton];
+        self.navigationItem.leftBarButtonItem = EBbackItem;
     }
 }
 - (UIStatusBarStyle)preferredStatusBarStyle {

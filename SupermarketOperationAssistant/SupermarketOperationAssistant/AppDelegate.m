@@ -15,6 +15,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [AVOSCloud setApplicationId:@"tx1s7sLytcOjvdhlTSYTyvah-MdYXbMMI" clientKey:@"nFq2uoXE8w4OjEzI2yomLohK"];
     self.EBwindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.EBwindow.backgroundColor = [UIColor whiteColor];
     self.EBwindow.rootViewController = [self EBrootController];

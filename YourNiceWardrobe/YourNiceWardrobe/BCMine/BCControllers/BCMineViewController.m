@@ -16,7 +16,7 @@
 @property(nonatomic, strong)NSMutableArray *BCDataArray;
 @property(nonatomic, strong)UICollectionView *BCCollectionView;
 @property(nonatomic, strong)UIView *BCBackView;
-@property(nonatomic, strong)UIImageView *BChatImgView;//日常
+@property(nonatomic, strong)UIImageView *BChatImgView;//头像
 @end
 
 @implementation BCMineViewController
@@ -80,19 +80,19 @@
 }
 // 返回cell内容
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *title = self.BCDataArray[indexPath.row];
+    NSString *BCtitle = self.BCDataArray[indexPath.row];
     // 创建cell (重用)
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"UICollectionViewCell" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor systemBlueColor];
-    cell.layer.cornerRadius = 60.0f;
-    cell.layer.masksToBounds = YES;
-    UILabel *label = [[UILabel alloc] initWithFrame:cell.bounds];
-    label.textAlignment = NSTextAlignmentCenter;
-    label.font = [UIFont systemFontOfSize:28];
-    label.text = title;
-    label.textColor = [UIColor blackColor];
-    [cell addSubview:label];
-    return cell;
+    UICollectionViewCell *BCcell = [collectionView dequeueReusableCellWithReuseIdentifier:@"UICollectionViewCell" forIndexPath:indexPath];
+    BCcell.backgroundColor = [UIColor systemBlueColor];
+    BCcell.layer.cornerRadius = 60.0f;
+    BCcell.layer.masksToBounds = YES;
+    UILabel *BClabel = [[UILabel alloc] initWithFrame:BCcell.bounds];
+    BClabel.textAlignment = NSTextAlignmentCenter;
+    BClabel.font = [UIFont systemFontOfSize:28];
+    BClabel.text = BCtitle;
+    BClabel.textColor = [UIColor blackColor];
+    [BCcell addSubview:BClabel];
+    return BCcell;
 }
 #pragma mark - UICollectionViewDelegate
 // 选中某个cell
@@ -184,11 +184,11 @@
 - (UICollectionView *)BCCollectionView{
     if (!_BCCollectionView) {
         // 创建FlowLayout
-        UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+        UICollectionViewFlowLayout *BCflowLayout = [[UICollectionViewFlowLayout alloc] init];
         // 垂直方向滑动
-        flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+        BCflowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
         // 创建collectionView
-        _BCCollectionView = [[UICollectionView alloc] initWithFrame:CGRectNull collectionViewLayout:flowLayout];
+        _BCCollectionView = [[UICollectionView alloc] initWithFrame:CGRectNull collectionViewLayout:BCflowLayout];
         _BCCollectionView.delegate = self;
         _BCCollectionView.dataSource = self;
         // 其他属性

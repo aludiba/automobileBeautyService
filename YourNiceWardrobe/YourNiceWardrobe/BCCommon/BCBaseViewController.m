@@ -43,8 +43,8 @@
         [_BCbackButton setImage:[UIImage imageNamed:@"BCbtn_back"] forState:UIControlStateNormal];
         _BCbackButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [_BCbackButton addTarget:self action:@selector(BCbackButtonAction) forControlEvents:UIControlEventTouchUpInside];
-        UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:_BCbackButton];
-        self.navigationItem.leftBarButtonItem = backItem;
+        UIBarButtonItem *BCbackItem = [[UIBarButtonItem alloc] initWithCustomView:_BCbackButton];
+        self.navigationItem.leftBarButtonItem = BCbackItem;
     }
 }
 - (UIStatusBarStyle)preferredStatusBarStyle {

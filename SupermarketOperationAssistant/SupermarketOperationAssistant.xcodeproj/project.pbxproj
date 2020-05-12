@@ -24,11 +24,13 @@
 		726502642466EB0400387A90 /* EBProductInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726502632466EB0400387A90 /* EBProductInformationViewController.m */; };
 		726502672466EB1700387A90 /* EBPurchaseStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726502662466EB1700387A90 /* EBPurchaseStatusViewController.m */; };
 		7265026A2466EB2E00387A90 /* EBSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726502692466EB2E00387A90 /* EBSettingViewController.m */; };
+		7265026D246A958600387A90 /* EBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265026C246A958600387A90 /* EBLoginViewController.m */; };
+		72650270246A966800387A90 /* EBLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265026F246A966800387A90 /* EBLoginTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		333A4C0235B5208BAF9FE3CB /* Pods_SupermarketOperationAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SupermarketOperationAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		726502182466E18B00387A90 /* SupermarketOperationAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SupermarketOperationAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		726502182466E18B00387A90 /* 超市运营助手.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "超市运营助手.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7265021B2466E18B00387A90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7265021C2466E18B00387A90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		726502272466E18E00387A90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +63,10 @@
 		726502662466EB1700387A90 /* EBPurchaseStatusViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBPurchaseStatusViewController.m; sourceTree = "<group>"; };
 		726502682466EB2E00387A90 /* EBSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBSettingViewController.h; sourceTree = "<group>"; };
 		726502692466EB2E00387A90 /* EBSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBSettingViewController.m; sourceTree = "<group>"; };
+		7265026B246A958600387A90 /* EBLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBLoginViewController.h; sourceTree = "<group>"; };
+		7265026C246A958600387A90 /* EBLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBLoginViewController.m; sourceTree = "<group>"; };
+		7265026E246A966800387A90 /* EBLoginTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBLoginTableViewCell.h; sourceTree = "<group>"; };
+		7265026F246A966800387A90 /* EBLoginTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBLoginTableViewCell.m; sourceTree = "<group>"; };
 		872D4AA74D4B28EBFF537E9F /* Pods-SupermarketOperationAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SupermarketOperationAssistant.release.xcconfig"; path = "Target Support Files/Pods-SupermarketOperationAssistant/Pods-SupermarketOperationAssistant.release.xcconfig"; sourceTree = "<group>"; };
 		9E48FBE0DC24FAF10CE9CBC2 /* Pods-SupermarketOperationAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SupermarketOperationAssistant.debug.xcconfig"; path = "Target Support Files/Pods-SupermarketOperationAssistant/Pods-SupermarketOperationAssistant.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,7 +113,7 @@
 		726502192466E18B00387A90 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				726502182466E18B00387A90 /* SupermarketOperationAssistant.app */,
+				726502182466E18B00387A90 /* 超市运营助手.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -241,6 +247,8 @@
 		726502512466E8F600387A90 /* EBViews */ = {
 			isa = PBXGroup;
 			children = (
+				7265026E246A966800387A90 /* EBLoginTableViewCell.h */,
+				7265026F246A966800387A90 /* EBLoginTableViewCell.m */,
 			);
 			path = EBViews;
 			sourceTree = "<group>";
@@ -250,6 +258,8 @@
 			children = (
 				726502682466EB2E00387A90 /* EBSettingViewController.h */,
 				726502692466EB2E00387A90 /* EBSettingViewController.m */,
+				7265026B246A958600387A90 /* EBLoginViewController.h */,
+				7265026C246A958600387A90 /* EBLoginViewController.m */,
 			);
 			path = EBControllers;
 			sourceTree = "<group>";
@@ -306,7 +316,7 @@
 			);
 			name = SupermarketOperationAssistant;
 			productName = SupermarketOperationAssistant;
-			productReference = 726502182466E18B00387A90 /* SupermarketOperationAssistant.app */;
+			productReference = 726502182466E18B00387A90 /* 超市运营助手.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -400,9 +410,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7265026D246A958600387A90 /* EBLoginViewController.m in Sources */,
 				7265021D2466E18B00387A90 /* AppDelegate.m in Sources */,
 				7265025E2466E8F700387A90 /* NSArray+log.m in Sources */,
 				7265022E2466E18E00387A90 /* main.m in Sources */,
+				72650270246A966800387A90 /* EBLoginTableViewCell.m in Sources */,
 				7265025A2466E8F700387A90 /* MBProgressHUD+EBNJ.m in Sources */,
 				726502642466EB0400387A90 /* EBProductInformationViewController.m in Sources */,
 				726502582466E8F700387A90 /* Reachability.m in Sources */,
@@ -553,8 +565,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.SupermarketOperationAssistant.SupermarketOperationAssistant;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.SupermarketOperationAssistant;
+				PRODUCT_NAME = "超市运营助手";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -571,8 +583,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.SupermarketOperationAssistant.SupermarketOperationAssistant;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.SupermarketOperationAssistant;
+				PRODUCT_NAME = "超市运营助手";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
