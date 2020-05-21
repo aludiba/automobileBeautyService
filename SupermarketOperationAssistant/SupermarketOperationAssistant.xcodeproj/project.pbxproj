@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		69F14141C4B5B6BE7E402A20 /* Pods_SupermarketOperationAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333A4C0235B5208BAF9FE3CB /* Pods_SupermarketOperationAssistant.framework */; };
+		72123F3924762653002095E6 /* EBPurchaseStatusAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72123F3824762653002095E6 /* EBPurchaseStatusAddViewController.m */; };
+		72123F3C24762A57002095E6 /* EBPurchaseStatusAddModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72123F3B24762A57002095E6 /* EBPurchaseStatusAddModel.m */; };
+		72123F3F24762D2D002095E6 /* EBPurchaseStatusTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72123F3E24762D2D002095E6 /* EBPurchaseStatusTableViewCell.m */; };
+		72123F422476349A002095E6 /* EBPurchaseStatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72123F412476349A002095E6 /* EBPurchaseStatusModel.m */; };
+		72123F4524763C19002095E6 /* EBPurchaseStatusListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72123F4424763C19002095E6 /* EBPurchaseStatusListTableViewCell.m */; };
 		7265021D2466E18B00387A90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265021C2466E18B00387A90 /* AppDelegate.m */; };
 		726502282466E18E00387A90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726502272466E18E00387A90 /* Assets.xcassets */; };
 		7265022B2466E18E00387A90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726502292466E18E00387A90 /* LaunchScreen.storyboard */; };
@@ -30,6 +35,16 @@
 
 /* Begin PBXFileReference section */
 		333A4C0235B5208BAF9FE3CB /* Pods_SupermarketOperationAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SupermarketOperationAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72123F3724762653002095E6 /* EBPurchaseStatusAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBPurchaseStatusAddViewController.h; sourceTree = "<group>"; };
+		72123F3824762653002095E6 /* EBPurchaseStatusAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBPurchaseStatusAddViewController.m; sourceTree = "<group>"; };
+		72123F3A24762A57002095E6 /* EBPurchaseStatusAddModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBPurchaseStatusAddModel.h; sourceTree = "<group>"; };
+		72123F3B24762A57002095E6 /* EBPurchaseStatusAddModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBPurchaseStatusAddModel.m; sourceTree = "<group>"; };
+		72123F3D24762D2D002095E6 /* EBPurchaseStatusTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBPurchaseStatusTableViewCell.h; sourceTree = "<group>"; };
+		72123F3E24762D2D002095E6 /* EBPurchaseStatusTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBPurchaseStatusTableViewCell.m; sourceTree = "<group>"; };
+		72123F402476349A002095E6 /* EBPurchaseStatusModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBPurchaseStatusModel.h; sourceTree = "<group>"; };
+		72123F412476349A002095E6 /* EBPurchaseStatusModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBPurchaseStatusModel.m; sourceTree = "<group>"; };
+		72123F4324763C19002095E6 /* EBPurchaseStatusListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBPurchaseStatusListTableViewCell.h; sourceTree = "<group>"; };
+		72123F4424763C19002095E6 /* EBPurchaseStatusListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBPurchaseStatusListTableViewCell.m; sourceTree = "<group>"; };
 		726502182466E18B00387A90 /* SupermarketOperationAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SupermarketOperationAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7265021B2466E18B00387A90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7265021C2466E18B00387A90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -149,6 +164,10 @@
 		726502352466E8F600387A90 /* EBModels */ = {
 			isa = PBXGroup;
 			children = (
+				72123F3A24762A57002095E6 /* EBPurchaseStatusAddModel.h */,
+				72123F3B24762A57002095E6 /* EBPurchaseStatusAddModel.m */,
+				72123F402476349A002095E6 /* EBPurchaseStatusModel.h */,
+				72123F412476349A002095E6 /* EBPurchaseStatusModel.m */,
 			);
 			path = EBModels;
 			sourceTree = "<group>";
@@ -156,6 +175,10 @@
 		726502362466E8F600387A90 /* EBViews */ = {
 			isa = PBXGroup;
 			children = (
+				72123F3D24762D2D002095E6 /* EBPurchaseStatusTableViewCell.h */,
+				72123F3E24762D2D002095E6 /* EBPurchaseStatusTableViewCell.m */,
+				72123F4324763C19002095E6 /* EBPurchaseStatusListTableViewCell.h */,
+				72123F4424763C19002095E6 /* EBPurchaseStatusListTableViewCell.m */,
 			);
 			path = EBViews;
 			sourceTree = "<group>";
@@ -165,6 +188,8 @@
 			children = (
 				726502652466EB1700387A90 /* EBPurchaseStatusViewController.h */,
 				726502662466EB1700387A90 /* EBPurchaseStatusViewController.m */,
+				72123F3724762653002095E6 /* EBPurchaseStatusAddViewController.h */,
+				72123F3824762653002095E6 /* EBPurchaseStatusAddViewController.m */,
 			);
 			path = EBControllers;
 			sourceTree = "<group>";
@@ -411,17 +436,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				7265026D246A958600387A90 /* EBLoginViewController.m in Sources */,
+				72123F3C24762A57002095E6 /* EBPurchaseStatusAddModel.m in Sources */,
 				7265021D2466E18B00387A90 /* AppDelegate.m in Sources */,
+				72123F4524763C19002095E6 /* EBPurchaseStatusListTableViewCell.m in Sources */,
 				7265025E2466E8F700387A90 /* NSArray+log.m in Sources */,
 				7265022E2466E18E00387A90 /* main.m in Sources */,
 				72650270246A966800387A90 /* EBLoginTableViewCell.m in Sources */,
 				7265025A2466E8F700387A90 /* MBProgressHUD+EBNJ.m in Sources */,
 				726502642466EB0400387A90 /* EBProductInformationViewController.m in Sources */,
 				726502582466E8F700387A90 /* Reachability.m in Sources */,
+				72123F422476349A002095E6 /* EBPurchaseStatusModel.m in Sources */,
 				726502592466E8F700387A90 /* NSDictionary+log.m in Sources */,
 				726502612466EAE000387A90 /* EBColleaguesViewController.m in Sources */,
+				72123F3F24762D2D002095E6 /* EBPurchaseStatusTableViewCell.m in Sources */,
 				7265025B2466E8F700387A90 /* EBUIUtilities.m in Sources */,
 				7265025C2466E8F700387A90 /* EBTabBarController.m in Sources */,
+				72123F3924762653002095E6 /* EBPurchaseStatusAddViewController.m in Sources */,
 				7265026A2466EB2E00387A90 /* EBSettingViewController.m in Sources */,
 				726502572466E8F700387A90 /* EBHBTool.m in Sources */,
 				7265025D2466E8F700387A90 /* EBBaseViewController.m in Sources */,
