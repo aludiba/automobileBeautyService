@@ -30,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		333A4C0235B5208BAF9FE3CB /* Pods_SupermarketOperationAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SupermarketOperationAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		726502182466E18B00387A90 /* 超市运营助手.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "超市运营助手.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		726502182466E18B00387A90 /* SupermarketOperationAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SupermarketOperationAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7265021B2466E18B00387A90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7265021C2466E18B00387A90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		726502272466E18E00387A90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		726502192466E18B00387A90 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				726502182466E18B00387A90 /* 超市运营助手.app */,
+				726502182466E18B00387A90 /* SupermarketOperationAssistant.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 			);
 			name = SupermarketOperationAssistant;
 			productName = SupermarketOperationAssistant;
-			productReference = 726502182466E18B00387A90 /* 超市运营助手.app */;
+			productReference = 726502182466E18B00387A90 /* SupermarketOperationAssistant.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -566,7 +566,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.SupermarketOperationAssistant;
-				PRODUCT_NAME = "超市运营助手";
+				PRODUCT_NAME = SupermarketOperationAssistant;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -584,7 +584,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.SupermarketOperationAssistant;
-				PRODUCT_NAME = "超市运营助手";
+				PRODUCT_NAME = SupermarketOperationAssistant;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
