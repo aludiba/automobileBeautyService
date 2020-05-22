@@ -9,7 +9,6 @@
 #import "EBProductInformationTableViewCell.h"
 #import "EBProductInformationModel.h"
 #import "EBProductInformationViewController.h"
-#import "EBPurchaseStatusModel.h"
 
 @interface EBProductInformationTableViewCell()
 @property(nonatomic, strong)UILabel *EBcategoryTitleLbl;//类别标题
@@ -88,20 +87,20 @@
     self.EBpurchasetimeContentLbl.text = _EBProductInformationmodel.EBpurchasetime;
 }
 - (void)EBdelete:(UIButton *)EBdeleteBtn{
-    UIAlertController *EBalertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *EEBancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-    UIAlertAction *EBsureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertController *EBalertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提醒", nil) message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *EEBancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *EBsureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         AVObject *EBdiary = [AVObject objectWithClassName:@"EBProductInformation" objectId:self.EBProductInformationmodel.EBobjectId];
         __weak typeof(self) weakSelf = self;
         [EBdiary deleteInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
         if (isSuccessful) {
              //删除成功后的动作
-            [MBProgressHUD EBshowReminderText:@"删除成功"];
-            if (self.EBeditBlock) {
-                self.EBeditBlock(self);
+            [MBProgressHUD EBshowReminderText:NSLocalizedString(@"删除成功", nil)];
+            if (weakSelf.EBeditBlock) {
+                weakSelf.EBeditBlock(self);
             }
         }else {
-            [MBProgressHUD EBshowReminderText:@"请稍后重试"];
+            [MBProgressHUD EBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
         }
         }];
     }];
@@ -132,7 +131,8 @@
         _EBdeliveryaddressTitleLbl = [[UILabel alloc] init];
         _EBdeliveryaddressTitleLbl.textColor = [UIColor orangeColor];
         _EBdeliveryaddressTitleLbl.font = [UIFont systemFontOfSize:15];
-        _EBdeliveryaddressTitleLbl.text = @"交货地址:";
+        _EBdeliveryaddressTitleLbl.text = 
+        NSLocalizedString(@"交货地址:", nil);
     }
     return _EBdeliveryaddressTitleLbl;
 }

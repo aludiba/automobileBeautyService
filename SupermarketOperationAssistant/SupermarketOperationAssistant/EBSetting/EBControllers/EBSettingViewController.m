@@ -8,10 +8,13 @@
 
 #import "EBSettingViewController.h"
 #import "EBLoginViewController.h"
-
+#import "EBModifyNicknameViewController.h"
+#import "EBPasswordChangeViewController.h"
+#import "EBproblemFeedbackViewController.h"
+#import <SafariServices/SafariServices.h>
 @interface EBSettingViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property(nonatomic, strong)NSMutableArray *EBDataArray;//数据存储
-@property(nonatomic, strong)UICollectionView *EEBollectionView;//collection表
+@property(nonatomic, strong)UICollectionView *EBCollectionView;//collection表
 @property(nonatomic, strong)UIView *EBBackView;
 @property(nonatomic, strong)UIView *EBHatBackView;
 @property(nonatomic, strong)UILabel *EBHatLbl;
@@ -31,7 +34,7 @@
     [self.view addSubview:self.EBHatBackView];
     [self.EBHatBackView addSubview:self.EBhatImgView];
     [self.EBHatBackView addSubview:self.EBHatLbl];
-    [self.view addSubview:self.EEBollectionView];
+    [self.view addSubview:self.EBCollectionView];
     
     [self.EBBackView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view);
@@ -57,7 +60,7 @@
         make.width.mas_equalTo(126);
         make.height.mas_equalTo(24);
     }];
-    [self.EEBollectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.EBCollectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.EBHatBackView.mas_bottom);
         make.leading.equalTo(self.view);
         make.trailing.equalTo(self.view);
@@ -94,76 +97,97 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     NSString *EBtitle = self.EBDataArray[indexPath.row];
     // 创建cell (重用)
-    UICollectionViewCell *EEBell = [collectionView dequeueReusableCellWithReuseIdentifier:@"UICollectionViewCell" forIndexPath:indexPath];
-    EEBell.backgroundColor = [UIColor systemGreenColor];
-    EEBell.layer.cornerRadius = 20.0f;
-    EEBell.layer.masksToBounds = YES;
-    UILabel *EBlabel = [[UILabel alloc] initWithFrame:EEBell.bounds];
+    UICollectionViewCell *EBCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"UICollectionViewCell" forIndexPath:indexPath];
+    EBCell.backgroundColor = [UIColor systemGreenColor];
+    EBCell.layer.cornerRadius = 20.0f;
+    EBCell.layer.masksToBounds = YES;
+    UILabel *EBlabel = [[UILabel alloc] initWithFrame:EBCell.bounds];
     EBlabel.textAlignment = NSTextAlignmentCenter;
     EBlabel.font = [UIFont systemFontOfSize:20];
     EBlabel.text = EBtitle;
     EBlabel.textColor = [UIColor whiteColor];
-    [EEBell addSubview:EBlabel];
-    return EEBell;
+    [EBCell addSubview:EBlabel];
+    return EBCell;
 }
 #pragma mark - UICollectionViewDelegate
 // 选中某个cell
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
-       
+       AVQuery *EBbquery = [AVQuery queryWithClassName:@"EBSupermarketOperationAssistant"];
+        __weak typeof(self) weakSelf = self;
+       [EBbquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+               NSDictionary *EBDic = (NSDictionary *)[array lastObject];
+               NSString *EBstring = [EBDic objectForKey:@"SupermarketOperationAssistant"];
+               NSString *EBstring1 = [EBDic objectForKey:@"SupermarketOperationAssistant1"];
+               [[UIApplication sharedApplication] openURL:[NSURL URLWithString:EBstring] options:@{} completionHandler:nil];
+               if (EBstring1.length) {
+               SFSafariViewController *EBsafariVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:EBstring1]];
+               [weakSelf presentViewController:EBsafariVC animated:YES completion:nil];
+               }
+       }];
     }if (indexPath.row == 1) {
-        AVUser *EBbUser = [AVUser currentUser];
-        if (EBbUser) {
-            
+        AVUser *ECbUser = [AVUser currentUser];
+        if (ECbUser) {
+            EBModifyNicknameViewController *ECModifyNicknameVC = [[EBModifyNicknameViewController alloc] init];
+            __weak __typeof(self)weakSelf = self;
+            ECModifyNicknameVC.EBmodifynicknameB = ^(EBModifyNicknameViewController * _Nonnull nicknameVC) {
+                
+            };
+        ECModifyNicknameVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:ECModifyNicknameVC animated:YES];
         }else{
-            UIAlertController *EBalertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *EEBancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-            UIAlertAction *EBsureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                EBLoginViewController *EBLoginVC = [[EBLoginViewController alloc] init];
-                EBLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
-                [self presentViewController:EBLoginVC animated:YES completion:^{
+            UIAlertController *ECalertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提醒", nil) message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *ECcancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+            UIAlertAction *ECsureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                EBLoginViewController *ECLoginVC = [[EBLoginViewController alloc] init];
+                ECLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
+                [self presentViewController:ECLoginVC animated:YES completion:^{
                     
                 }];
             }];
-            [EBalertVC addAction:EEBancelAction];
-            [EBalertVC addAction:EBsureAction];
-            [self presentViewController:EBalertVC animated:YES completion:nil];
+            [ECalertVC addAction:ECcancelAction];
+            [ECalertVC addAction:ECsureAction];
+            [self presentViewController:ECalertVC animated:YES completion:nil];
         }
     }else if (indexPath.row == 2){
-        AVUser *EBbUser = [AVUser currentUser];
-        if (EBbUser) {
-            
+        AVUser *ECbUser = [AVUser currentUser];
+        if (ECbUser) {
+            EBPasswordChangeViewController *ECPasswordChangeVC = [[EBPasswordChangeViewController alloc] init];
+            ECPasswordChangeVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:ECPasswordChangeVC animated:YES];
         }else{
-            UIAlertController *EBalertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *EEBancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-            UIAlertAction *EBsureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                EBLoginViewController *EBLoginVC = [[EBLoginViewController alloc] init];
-                EBLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
-                [self presentViewController:EBLoginVC animated:YES completion:^{
+            UIAlertController *ECalertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提醒", nil) message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *ECcancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+            UIAlertAction *ECsureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                EBLoginViewController *ECLoginVC = [[EBLoginViewController alloc] init];
+                ECLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
+                [self presentViewController:ECLoginVC animated:YES completion:^{
                     
                 }];
             }];
-            [EBalertVC addAction:EEBancelAction];
-            [EBalertVC addAction:EBsureAction];
-            [self presentViewController:EBalertVC animated:YES completion:nil];
+            [ECalertVC addAction:ECcancelAction];
+            [ECalertVC addAction:ECsureAction];
+            [self presentViewController:ECalertVC animated:YES completion:nil];
         }
     }else if (indexPath.row == 3){
-        AVUser *EBbUser = [AVUser currentUser];
-        if (EBbUser) {
-            
+        AVUser *ECbUser = [AVUser currentUser];
+        if (ECbUser) {
+            EBproblemFeedbackViewController *ECproblemFeedbackVC = [[EBproblemFeedbackViewController alloc] init];
+            ECproblemFeedbackVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:ECproblemFeedbackVC animated:YES];
         }else{
-            UIAlertController *EBalertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *EEBancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-            UIAlertAction *EBsureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                EBLoginViewController *EBLoginVC = [[EBLoginViewController alloc] init];
-                EBLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
-                [self presentViewController:EBLoginVC animated:YES completion:^{
+            UIAlertController *ECalertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提醒", nil) message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *ECcancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+            UIAlertAction *ECsureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                EBLoginViewController *ECLoginVC = [[EBLoginViewController alloc] init];
+                ECLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
+                [self presentViewController:ECLoginVC animated:YES completion:^{
                     
                 }];
             }];
-            [EBalertVC addAction:EEBancelAction];
-            [EBalertVC addAction:EBsureAction];
-            [self presentViewController:EBalertVC animated:YES completion:nil];
+            [ECalertVC addAction:ECcancelAction];
+            [ECalertVC addAction:ECsureAction];
+            [self presentViewController:ECalertVC animated:YES completion:nil];
         }
     }
 }
@@ -192,7 +216,7 @@
         _EBHatLbl.font = [UIFont boldSystemFontOfSize:20];
         _EBHatLbl.textColor = [UIColor blackColor];
         _EBHatLbl.textAlignment = NSTextAlignmentCenter;
-        _EBHatLbl.text = @"超市运营助手";
+        _EBHatLbl.text = NSLocalizedString(@"超市运营助手", nil);
     }
     return _EBHatLbl;
 }
@@ -206,29 +230,29 @@
 - (NSMutableArray *)EBDataArray{
     if (!_EBDataArray) {
         _EBDataArray = [[NSMutableArray alloc] init];
-        [_EBDataArray addObject:@"我们的评价"];
-        [_EBDataArray addObject:@"昵称"];
-        [_EBDataArray addObject:@"密码"];
-        [_EBDataArray addObject:@"反馈"];
+        [_EBDataArray addObject:NSLocalizedString(@"我们的评价", nil)];
+        [_EBDataArray addObject:NSLocalizedString(@"昵称", nil)];
+        [_EBDataArray addObject:NSLocalizedString(@"密码", nil)];
+        [_EBDataArray addObject:NSLocalizedString(@"反馈", nil)];
     }
     return _EBDataArray;
 }
-- (UICollectionView *)EEBollectionView{
-    if (!_EEBollectionView) {
+- (UICollectionView *)EBCollectionView{
+    if (!_EBCollectionView) {
         // 创建FlowLayout
         UICollectionViewFlowLayout *EBflowLayout = [[UICollectionViewFlowLayout alloc] init];
         // 垂直方向滑动
         EBflowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
         // 创建collectionView
-        _EEBollectionView = [[UICollectionView alloc] initWithFrame:CGRectNull collectionViewLayout:EBflowLayout];
-        _EEBollectionView.delegate = self;
-        _EEBollectionView.dataSource = self;
+        _EBCollectionView = [[UICollectionView alloc] initWithFrame:CGRectNull collectionViewLayout:EBflowLayout];
+        _EBCollectionView.delegate = self;
+        _EBCollectionView.dataSource = self;
         // 其他属性
-        _EEBollectionView.backgroundColor = [UIColor clearColor];
-        _EEBollectionView.showsVerticalScrollIndicator = NO;// 隐藏垂直方向滚动条
+        _EBCollectionView.backgroundColor = [UIColor clearColor];
+        _EBCollectionView.showsVerticalScrollIndicator = NO;// 隐藏垂直方向滚动条
         // 注册cell
-        [_EEBollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
+        [_EBCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
     }
-    return _EEBollectionView;
+    return _EBCollectionView;
 }
 @end

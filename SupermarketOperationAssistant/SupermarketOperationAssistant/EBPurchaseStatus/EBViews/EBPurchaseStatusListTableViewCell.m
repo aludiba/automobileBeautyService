@@ -85,20 +85,20 @@
     self.EBpurchasetimeContentLbl.text = _EBPurchaseStatusmodel.EBpurchasetime;
 }
 - (void)EBdelete:(UIButton *)EBdeleteBtn{
-    UIAlertController *EBalertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *EEBancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-    UIAlertAction *EBsureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertController *EBalertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提醒", nil) message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *EEBancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *EBsureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         AVObject *EBdiary = [AVObject objectWithClassName:@"EBPurchaseStatus" objectId:self.EBPurchaseStatusmodel.EBobjectId];
         __weak typeof(self) weakSelf = self;
         [EBdiary deleteInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
         if (isSuccessful) {
              //删除成功后的动作
-            [MBProgressHUD EBshowReminderText:@"删除成功"];
-            if (self.EBeditBlock) {
-                self.EBeditBlock(self);
+            [MBProgressHUD EBshowReminderText:NSLocalizedString(@"删除成功", nil)];
+            if (weakSelf.EBeditBlock) {
+                weakSelf.EBeditBlock(self);
             }
         }else {
-            [MBProgressHUD EBshowReminderText:@"请稍后重试"];
+            [MBProgressHUD EBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
         }
         }];
     }];

@@ -37,6 +37,16 @@
 		7265026A2466EB2E00387A90 /* EBSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726502692466EB2E00387A90 /* EBSettingViewController.m */; };
 		7265026D246A958600387A90 /* EBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265026C246A958600387A90 /* EBLoginViewController.m */; };
 		72650270246A966800387A90 /* EBLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265026F246A966800387A90 /* EBLoginTableViewCell.m */; };
+		72DEB3CC2477D78C00185084 /* EBColleaguesAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DEB3CB2477D78C00185084 /* EBColleaguesAddViewController.m */; };
+		72DEB3CF2477D81300185084 /* EBColleaguesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DEB3CE2477D81300185084 /* EBColleaguesModel.m */; };
+		72DEB3D22477D88200185084 /* EBColleaguesAddModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DEB3D12477D88200185084 /* EBColleaguesAddModel.m */; };
+		72DEB3D52477D94F00185084 /* EBColleaguesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DEB3D42477D94F00185084 /* EBColleaguesTableViewCell.m */; };
+		72DEB3D82477DA2500185084 /* EBColleaguesAddTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DEB3D72477DA2500185084 /* EBColleaguesAddTableViewCell.m */; };
+		72DEB3DB2477E9F500185084 /* EBproblemFeedbackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DEB3D92477E9F400185084 /* EBproblemFeedbackTableViewCell.m */; };
+		72DEB3DE2477EA4A00185084 /* EBproblemFeedbackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DEB3DD2477EA4A00185084 /* EBproblemFeedbackModel.m */; };
+		72DEB3E52477EA9500185084 /* EBModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DEB3E02477EA9400185084 /* EBModifyNicknameViewController.m */; };
+		72DEB3E62477EA9500185084 /* EBPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DEB3E22477EA9400185084 /* EBPasswordChangeViewController.m */; };
+		72DEB3E72477EA9500185084 /* EBproblemFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DEB3E42477EA9400185084 /* EBproblemFeedbackViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +113,26 @@
 		7265026C246A958600387A90 /* EBLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBLoginViewController.m; sourceTree = "<group>"; };
 		7265026E246A966800387A90 /* EBLoginTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBLoginTableViewCell.h; sourceTree = "<group>"; };
 		7265026F246A966800387A90 /* EBLoginTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBLoginTableViewCell.m; sourceTree = "<group>"; };
+		72DEB3CA2477D78C00185084 /* EBColleaguesAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBColleaguesAddViewController.h; sourceTree = "<group>"; };
+		72DEB3CB2477D78C00185084 /* EBColleaguesAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBColleaguesAddViewController.m; sourceTree = "<group>"; };
+		72DEB3CD2477D81300185084 /* EBColleaguesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBColleaguesModel.h; sourceTree = "<group>"; };
+		72DEB3CE2477D81300185084 /* EBColleaguesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBColleaguesModel.m; sourceTree = "<group>"; };
+		72DEB3D02477D88200185084 /* EBColleaguesAddModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBColleaguesAddModel.h; sourceTree = "<group>"; };
+		72DEB3D12477D88200185084 /* EBColleaguesAddModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBColleaguesAddModel.m; sourceTree = "<group>"; };
+		72DEB3D32477D94F00185084 /* EBColleaguesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBColleaguesTableViewCell.h; sourceTree = "<group>"; };
+		72DEB3D42477D94F00185084 /* EBColleaguesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBColleaguesTableViewCell.m; sourceTree = "<group>"; };
+		72DEB3D62477DA2500185084 /* EBColleaguesAddTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBColleaguesAddTableViewCell.h; sourceTree = "<group>"; };
+		72DEB3D72477DA2500185084 /* EBColleaguesAddTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBColleaguesAddTableViewCell.m; sourceTree = "<group>"; };
+		72DEB3D92477E9F400185084 /* EBproblemFeedbackTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBproblemFeedbackTableViewCell.m; sourceTree = "<group>"; };
+		72DEB3DA2477E9F400185084 /* EBproblemFeedbackTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBproblemFeedbackTableViewCell.h; sourceTree = "<group>"; };
+		72DEB3DC2477EA4900185084 /* EBproblemFeedbackModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBproblemFeedbackModel.h; sourceTree = "<group>"; };
+		72DEB3DD2477EA4A00185084 /* EBproblemFeedbackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBproblemFeedbackModel.m; sourceTree = "<group>"; };
+		72DEB3DF2477EA9400185084 /* EBModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBModifyNicknameViewController.h; sourceTree = "<group>"; };
+		72DEB3E02477EA9400185084 /* EBModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBModifyNicknameViewController.m; sourceTree = "<group>"; };
+		72DEB3E12477EA9400185084 /* EBproblemFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBproblemFeedbackViewController.h; sourceTree = "<group>"; };
+		72DEB3E22477EA9400185084 /* EBPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBPasswordChangeViewController.m; sourceTree = "<group>"; };
+		72DEB3E32477EA9400185084 /* EBPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBPasswordChangeViewController.h; sourceTree = "<group>"; };
+		72DEB3E42477EA9400185084 /* EBproblemFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBproblemFeedbackViewController.m; sourceTree = "<group>"; };
 		872D4AA74D4B28EBFF537E9F /* Pods-SupermarketOperationAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SupermarketOperationAssistant.release.xcconfig"; path = "Target Support Files/Pods-SupermarketOperationAssistant/Pods-SupermarketOperationAssistant.release.xcconfig"; sourceTree = "<group>"; };
 		9E48FBE0DC24FAF10CE9CBC2 /* Pods-SupermarketOperationAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SupermarketOperationAssistant.debug.xcconfig"; path = "Target Support Files/Pods-SupermarketOperationAssistant/Pods-SupermarketOperationAssistant.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -228,6 +258,10 @@
 		726502392466E8F600387A90 /* EBModels */ = {
 			isa = PBXGroup;
 			children = (
+				72DEB3CD2477D81300185084 /* EBColleaguesModel.h */,
+				72DEB3CE2477D81300185084 /* EBColleaguesModel.m */,
+				72DEB3D02477D88200185084 /* EBColleaguesAddModel.h */,
+				72DEB3D12477D88200185084 /* EBColleaguesAddModel.m */,
 			);
 			path = EBModels;
 			sourceTree = "<group>";
@@ -235,6 +269,10 @@
 		7265023A2466E8F600387A90 /* EBViews */ = {
 			isa = PBXGroup;
 			children = (
+				72DEB3D32477D94F00185084 /* EBColleaguesTableViewCell.h */,
+				72DEB3D42477D94F00185084 /* EBColleaguesTableViewCell.m */,
+				72DEB3D62477DA2500185084 /* EBColleaguesAddTableViewCell.h */,
+				72DEB3D72477DA2500185084 /* EBColleaguesAddTableViewCell.m */,
 			);
 			path = EBViews;
 			sourceTree = "<group>";
@@ -244,6 +282,8 @@
 			children = (
 				7265025F2466EAE000387A90 /* EBColleaguesViewController.h */,
 				726502602466EAE000387A90 /* EBColleaguesViewController.m */,
+				72DEB3CA2477D78C00185084 /* EBColleaguesAddViewController.h */,
+				72DEB3CB2477D78C00185084 /* EBColleaguesAddViewController.m */,
 			);
 			path = EBControllers;
 			sourceTree = "<group>";
@@ -287,6 +327,8 @@
 		726502502466E8F600387A90 /* EBModels */ = {
 			isa = PBXGroup;
 			children = (
+				72DEB3DC2477EA4900185084 /* EBproblemFeedbackModel.h */,
+				72DEB3DD2477EA4A00185084 /* EBproblemFeedbackModel.m */,
 			);
 			path = EBModels;
 			sourceTree = "<group>";
@@ -294,6 +336,8 @@
 		726502512466E8F600387A90 /* EBViews */ = {
 			isa = PBXGroup;
 			children = (
+				72DEB3DA2477E9F400185084 /* EBproblemFeedbackTableViewCell.h */,
+				72DEB3D92477E9F400185084 /* EBproblemFeedbackTableViewCell.m */,
 				7265026E246A966800387A90 /* EBLoginTableViewCell.h */,
 				7265026F246A966800387A90 /* EBLoginTableViewCell.m */,
 			);
@@ -303,6 +347,12 @@
 		726502522466E8F600387A90 /* EBControllers */ = {
 			isa = PBXGroup;
 			children = (
+				72DEB3DF2477EA9400185084 /* EBModifyNicknameViewController.h */,
+				72DEB3E02477EA9400185084 /* EBModifyNicknameViewController.m */,
+				72DEB3E32477EA9400185084 /* EBPasswordChangeViewController.h */,
+				72DEB3E22477EA9400185084 /* EBPasswordChangeViewController.m */,
+				72DEB3E12477EA9400185084 /* EBproblemFeedbackViewController.h */,
+				72DEB3E42477EA9400185084 /* EBproblemFeedbackViewController.m */,
 				726502682466EB2E00387A90 /* EBSettingViewController.h */,
 				726502692466EB2E00387A90 /* EBSettingViewController.m */,
 				7265026B246A958600387A90 /* EBLoginViewController.h */,
@@ -474,12 +524,16 @@
 				7265026D246A958600387A90 /* EBLoginViewController.m in Sources */,
 				72123F3C24762A57002095E6 /* EBPurchaseStatusAddModel.m in Sources */,
 				7265021D2466E18B00387A90 /* AppDelegate.m in Sources */,
+				72DEB3E72477EA9500185084 /* EBproblemFeedbackViewController.m in Sources */,
 				72123F4524763C19002095E6 /* EBPurchaseStatusListTableViewCell.m in Sources */,
 				72123F48247768F0002095E6 /* EBProductInformationAddViewController.m in Sources */,
 				7265025E2466E8F700387A90 /* NSArray+log.m in Sources */,
 				7265022E2466E18E00387A90 /* main.m in Sources */,
 				72650270246A966800387A90 /* EBLoginTableViewCell.m in Sources */,
 				7265025A2466E8F700387A90 /* MBProgressHUD+EBNJ.m in Sources */,
+				72DEB3D82477DA2500185084 /* EBColleaguesAddTableViewCell.m in Sources */,
+				72DEB3CF2477D81300185084 /* EBColleaguesModel.m in Sources */,
+				72DEB3CC2477D78C00185084 /* EBColleaguesAddViewController.m in Sources */,
 				726502642466EB0400387A90 /* EBProductInformationViewController.m in Sources */,
 				726502582466E8F700387A90 /* Reachability.m in Sources */,
 				72123F422476349A002095E6 /* EBPurchaseStatusModel.m in Sources */,
@@ -489,10 +543,16 @@
 				72123F3F24762D2D002095E6 /* EBPurchaseStatusTableViewCell.m in Sources */,
 				7265025B2466E8F700387A90 /* EBUIUtilities.m in Sources */,
 				7265025C2466E8F700387A90 /* EBTabBarController.m in Sources */,
+				72DEB3E52477EA9500185084 /* EBModifyNicknameViewController.m in Sources */,
+				72DEB3DB2477E9F500185084 /* EBproblemFeedbackTableViewCell.m in Sources */,
 				72123F4E24776BA8002095E6 /* EBProductInformationAddModel.m in Sources */,
+				72DEB3D52477D94F00185084 /* EBColleaguesTableViewCell.m in Sources */,
+				72DEB3D22477D88200185084 /* EBColleaguesAddModel.m in Sources */,
+				72DEB3DE2477EA4A00185084 /* EBproblemFeedbackModel.m in Sources */,
 				72123F3924762653002095E6 /* EBPurchaseStatusAddViewController.m in Sources */,
 				72123F4B24776B92002095E6 /* EBProductInformationModel.m in Sources */,
 				7265026A2466EB2E00387A90 /* EBSettingViewController.m in Sources */,
+				72DEB3E62477EA9500185084 /* EBPasswordChangeViewController.m in Sources */,
 				726502572466E8F700387A90 /* EBHBTool.m in Sources */,
 				7265025D2466E8F700387A90 /* EBBaseViewController.m in Sources */,
 				726502672466EB1700387A90 /* EBPurchaseStatusViewController.m in Sources */,

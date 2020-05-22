@@ -104,22 +104,22 @@
 - (void)EBbtnClick:(UIButton *)EBsender{
     [self.contentView endEditing:YES];
     if (!self.EBaccount.length) {
-        [MBProgressHUD EBshowReminderText:@"请输入账号"];
+        [MBProgressHUD EBshowReminderText:NSLocalizedString(@"请输入账号", nil)];
         return;
     }
     if (!self.EBpassword.length) {
-        [MBProgressHUD EBshowReminderText:@"请输入密码"];
+        [MBProgressHUD EBshowReminderText:NSLocalizedString(@"请输入密码", nil)];
         return;
     }
     if (EBsender.tag == 100) {
         [AVUser logInWithUsernameInBackground:self.EBaccount password:self.EBpassword block:^(AVUser * _Nullable user, NSError * _Nullable error) {
             if (user) {
-                [MBProgressHUD EBshowReminderText:@"登陆成功"];
+                [MBProgressHUD EBshowReminderText:NSLocalizedString(@"登陆成功", nil)];
                 [self.EBSuperVC dismissViewControllerAnimated:YES completion:^{
                     
                 }];
             } else {
-                [MBProgressHUD EBshowReminderText:@"请稍后重试"];
+                [MBProgressHUD EBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
             }
         }];
     }else{
@@ -128,7 +128,7 @@
         [EBUser setPassword:self.EBpassword];
         [EBUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
             if (succeeded) {
-                [MBProgressHUD EBshowReminderText:@"注册成功"];
+                [MBProgressHUD EBshowReminderText:NSLocalizedString(@"注册成功", nil)];
                 [AVUser logInWithUsernameInBackground:self.EBaccount password:self.EBpassword block:^(AVUser * _Nullable user, NSError * _Nullable error) {
                     if (user) {
                         [self.EBSuperVC dismissViewControllerAnimated:YES completion:^{
@@ -176,7 +176,7 @@
 - (UILabel *)EBaccountLable{
     if (!_EBaccountLable) {
         _EBaccountLable = [[UILabel alloc] init];
-        _EBaccountLable.text = @"账号:";
+        _EBaccountLable.text = NSLocalizedString(@"账号:", nil);
         _EBaccountLable.textColor = [UIColor orangeColor];
         _EBaccountLable.font = [UIFont systemFontOfSize:20];
     }
@@ -190,7 +190,7 @@
         _EBaccountTextField.delegate = self;
         _EBaccountTextField.textColor = [UIColor blackColor];
         _EBaccountTextField.font = [UIFont systemFontOfSize:23];
-        _EBaccountTextField.placeholder = @"请输入账号";
+        _EBaccountTextField.placeholder = NSLocalizedString(@"请输入账号", nil);
     }
     return _EBaccountTextField;
 }
@@ -204,7 +204,7 @@
 - (UILabel *)EBpasswordLable{
     if (!_EBpasswordLable) {
         _EBpasswordLable = [[UILabel alloc] init];
-        _EBpasswordLable.text = @"密码:";
+        _EBpasswordLable.text = NSLocalizedString(@"密码:", nil);
         _EBpasswordLable.textColor = [UIColor orangeColor];
         _EBpasswordLable.font = [UIFont systemFontOfSize:20];
     }
@@ -218,7 +218,7 @@
         _EBpasswordTextField.delegate = self;
         _EBpasswordTextField.textColor = [UIColor blackColor];
         _EBpasswordTextField.font = [UIFont systemFontOfSize:23];
-        _EBpasswordTextField.placeholder = @"请输入密码";
+        _EBpasswordTextField.placeholder = NSLocalizedString(@"请输入密码", nil);
         _EBpasswordTextField.secureTextEntry = YES;
     }
     return _EBpasswordTextField;
@@ -239,7 +239,7 @@
         [_EBloginButton.titleLabel setFont:[UIFont systemFontOfSize:23]];
         _EBloginButton.layer.cornerRadius = 10.0f;
         _EBloginButton.layer.masksToBounds = YES;
-        [_EBloginButton setTitle:@"登录" forState:UIControlStateNormal];
+        [_EBloginButton setTitle:NSLocalizedString(@"登录", nil) forState:UIControlStateNormal];
         [_EBloginButton addTarget:self action:@selector(EBbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _EBloginButton;
@@ -253,7 +253,7 @@
         [_EBregisteredButton.titleLabel setFont:[UIFont systemFontOfSize:23]];
         _EBregisteredButton.layer.cornerRadius = 10.0f;
         _EBregisteredButton.layer.masksToBounds = YES;
-        [_EBregisteredButton setTitle:@"注册" forState:UIControlStateNormal];
+        [_EBregisteredButton setTitle:NSLocalizedString(@"注册", nil) forState:UIControlStateNormal];
         [_EBregisteredButton addTarget:self action:@selector(EBbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _EBregisteredButton;

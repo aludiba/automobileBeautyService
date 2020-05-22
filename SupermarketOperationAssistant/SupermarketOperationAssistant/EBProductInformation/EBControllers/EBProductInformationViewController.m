@@ -58,9 +58,9 @@
         EBaddVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:EBaddVC animated:YES];
     }else{
-        UIAlertController *EBalertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *EEBancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-        UIAlertAction *EBsureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertController *EBalertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提醒", nil) message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *EEBancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction *EBsureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             EBLoginViewController *EBLoginVC = [[EBLoginViewController alloc] init];
             EBLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
             [self presentViewController:EBLoginVC animated:YES completion:^{
@@ -81,7 +81,7 @@
     [EBbquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
                if (error) {
                    [weakSelf.EBmainTable.mj_header endRefreshing];
-                   [MBProgressHUD EBshowReminderText:@"请稍后重试"];
+                   [MBProgressHUD EBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
                }else{
                    if (array.count) {
                    for (int i = (int)(array.count - 1); i > -1; i--) {
@@ -97,7 +97,7 @@
                     [weakSelf.EBmainTable reloadData];
                    }else{
                        [weakSelf.EBmainTable.mj_header endRefreshing];
-                       [MBProgressHUD EBshowReminderText:@"暂无数据"];
+                       [MBProgressHUD EBshowReminderText:NSLocalizedString(@"暂无数据", nil)];
                    }
               }
            }];

@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(EBkeyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
-    self.title = @"添加";
+    self.title = NSLocalizedString(@"添加", nil);
     [self EBsetContentView];
 }
 - (void)EBkeyboardWillHide:(NSNotification *)EBnote{
@@ -45,17 +45,17 @@
 - (void)EBsetContentView{
     EBProductInformationAddModel *EBcategoryViewModel = [[EBProductInformationAddModel alloc] init];
     EBcategoryViewModel.EBTitle = NSLocalizedString(@"类别:", nil);
-    EBcategoryViewModel.EBDefault = @"请输入类别";
+    EBcategoryViewModel.EBDefault = NSLocalizedString(@"请输入类别", nil);
     [self.EBViewDataArray addObject:EBcategoryViewModel];
     
     EBProductInformationAddModel *EBdeliveryaddressViewModel = [[EBProductInformationAddModel alloc] init];
-    EBdeliveryaddressViewModel.EBTitle = @"交货地址:";
-    EBdeliveryaddressViewModel.EBDefault = @"请输入交货地址";
+    EBdeliveryaddressViewModel.EBTitle = NSLocalizedString(@"交货地址:", nil);
+    EBdeliveryaddressViewModel.EBDefault = NSLocalizedString(@"请输入交货地址", nil);
     [self.EBViewDataArray addObject:EBdeliveryaddressViewModel];
     
     EBProductInformationAddModel *EBpurchasetimeViewModel = [[EBProductInformationAddModel alloc] init];
     EBpurchasetimeViewModel.EBTitle = NSLocalizedString(@"购买时间:", nil);
-    EBpurchasetimeViewModel.EBDefault = @"请输入购买时间";
+    EBpurchasetimeViewModel.EBDefault = NSLocalizedString(@"请输入购买时间", nil);
     [self.EBViewDataArray addObject:EBpurchasetimeViewModel];
     
     [self.EBmainTable reloadData];
@@ -66,13 +66,13 @@
         NSString *EBcontentString = [EBHBTool EBremoveSpaceAndNewline:EBviewModel.EBContent];
         if (!EBcontentString.length) {
             if (i == 0) {
-                [MBProgressHUD EBshowReminderText:@"请输入类别"];
+                [MBProgressHUD EBshowReminderText:NSLocalizedString(@"请输入类别", nil)];
                 return;
             }else if (i == 1){
-                [MBProgressHUD EBshowReminderText:@"请输入数量"];
+                [MBProgressHUD EBshowReminderText:NSLocalizedString(@"请输入数量", nil)];
                 return;
             }else if (i == 2){
-                [MBProgressHUD EBshowReminderText:@"请输入购买时间"];
+                [MBProgressHUD EBshowReminderText:NSLocalizedString(@"请输入购买时间", nil)];
                 return;
             }
         }
@@ -99,9 +99,9 @@
             [self.navigationController popToRootViewControllerAnimated:YES];
         } else if (error){
             //发生错误后的动作
-            [MBProgressHUD EBshowReminderText:@"请稍后重试"];
+            [MBProgressHUD EBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
         } else {
-            [MBProgressHUD EBshowReminderText:@"请稍后重试"];
+            [MBProgressHUD EBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
         }
     }];
 }
@@ -160,7 +160,7 @@
 - (UIButton *)EBsaveButton{
     if (!_EBsaveButton) {
         _EBsaveButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
-        [_EBsaveButton setTitle:@"保存" forState:UIControlStateNormal];
+        [_EBsaveButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
         [_EBsaveButton addTarget:self action:@selector(EBsaveAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _EBsaveButton;
