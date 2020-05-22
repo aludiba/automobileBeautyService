@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface EBProductInformationViewController : EBBaseViewController
-
+@property(nonatomic, strong)UITableView *EBmainTable;//列表
 @end
 
 NS_ASSUME_NONNULL_END

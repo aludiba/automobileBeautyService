@@ -1,20 +1,20 @@
 //
-//  EBPurchaseStatusTableViewCell.m
+//  EBProductInformationAddTableViewCell.m
 //  SupermarketOperationAssistant
 //
-//  Created by 褚红彪 on 2020/5/21.
-//  Copyright © 2020 HEB. All rights reserved.
+//  Created by 褚红彪 on 2020/5/22.
+//  Copyright © 2020 HBC. All rights reserved.
 //
 
-#import "EBPurchaseStatusTableViewCell.h"
-#import "EBPurchaseStatusAddModel.h"
-@interface EBPurchaseStatusTableViewCell()<UITextViewDelegate> 
+#import "EBProductInformationAddTableViewCell.h"
+#import "EBProductInformationAddModel.h"
+@interface EBProductInformationAddTableViewCell()<UITextViewDelegate> 
 @property(nonatomic, strong)UITextView *EBeditableView;
 @property(nonatomic, strong)UILabel *EBtitleLbl;
 @property(nonatomic, strong)UILabel *EBhiddenLbl;
 @property(nonatomic, strong)UIView *EBline;
 @end
-@implementation EBPurchaseStatusTableViewCell
+@implementation EBProductInformationAddTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self.contentView addSubview:self.EBtitleLbl];
@@ -52,7 +52,7 @@
     }
     return self;
 }
-- (void)setEBViewModel:(EBPurchaseStatusAddModel *)EBViewModel{
+- (void)setEBViewModel:(EBProductInformationAddModel *)EBViewModel{
     _EBViewModel = EBViewModel;
     if ([_EBViewModel.EBTitle length]){
         self.EBtitleLbl.text = _EBViewModel.EBTitle;

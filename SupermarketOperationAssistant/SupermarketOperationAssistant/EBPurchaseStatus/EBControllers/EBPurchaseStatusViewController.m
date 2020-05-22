@@ -112,7 +112,7 @@
     EBcell.EBsuperVC = self;
     __weak typeof(self) weakSelf = self;
     EBcell.EBeditBlock = ^(EBPurchaseStatusListTableViewCell * _Nonnull cell) {
-        __weak typeof(self) strongSelf = self;
+        __weak typeof(self) strongSelf = weakSelf;
         [strongSelf.EBDataArray removeObject:EBmodel];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     };
