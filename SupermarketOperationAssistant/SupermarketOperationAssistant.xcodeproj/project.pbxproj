@@ -18,6 +18,7 @@
 		72123F4E24776BA8002095E6 /* EBProductInformationAddModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72123F4D24776BA8002095E6 /* EBProductInformationAddModel.m */; };
 		72123F5124776C1E002095E6 /* EBProductInformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72123F5024776C1E002095E6 /* EBProductInformationTableViewCell.m */; };
 		72123F5424776D6F002095E6 /* EBProductInformationAddTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72123F5324776D6F002095E6 /* EBProductInformationAddTableViewCell.m */; };
+		72123F712477934A002095E6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72123F6F2477934A002095E6 /* Localizable.strings */; };
 		7265021D2466E18B00387A90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265021C2466E18B00387A90 /* AppDelegate.m */; };
 		726502282466E18E00387A90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726502272466E18E00387A90 /* Assets.xcassets */; };
 		7265022B2466E18E00387A90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726502292466E18E00387A90 /* LaunchScreen.storyboard */; };
@@ -60,6 +61,11 @@
 		72123F5024776C1E002095E6 /* EBProductInformationTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBProductInformationTableViewCell.m; sourceTree = "<group>"; };
 		72123F5224776D6F002095E6 /* EBProductInformationAddTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBProductInformationAddTableViewCell.h; sourceTree = "<group>"; };
 		72123F5324776D6F002095E6 /* EBProductInformationAddTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBProductInformationAddTableViewCell.m; sourceTree = "<group>"; };
+		72123F6D247792ED002095E6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		72123F6E24779306002095E6 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		72123F702477934A002095E6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		72123F722477934E002095E6 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		72123F7324779350002095E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		726502182466E18B00387A90 /* SupermarketOperationAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SupermarketOperationAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7265021B2466E18B00387A90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7265021C2466E18B00387A90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -245,6 +251,7 @@
 		7265023C2466E8F600387A90 /* EBCommon */ = {
 			isa = PBXGroup;
 			children = (
+				72123F6F2477934A002095E6 /* Localizable.strings */,
 				7265024A2466E8F600387A90 /* EB_PrefixHeader.pch */,
 				726502482466E8F600387A90 /* EBGlobal.h */,
 				726502472466E8F600387A90 /* EBHBTool.h */,
@@ -390,6 +397,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				ko,
 			);
 			mainGroup = 7265020F2466E18B00387A90;
 			productRefGroup = 726502192466E18B00387A90 /* Products */;
@@ -407,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7265022B2466E18E00387A90 /* LaunchScreen.storyboard in Resources */,
+				72123F712477934A002095E6 /* Localizable.strings in Resources */,
 				726502282466E18E00387A90 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,10 +502,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		72123F6F2477934A002095E6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72123F702477934A002095E6 /* zh-Hans */,
+				72123F722477934E002095E6 /* ko */,
+				72123F7324779350002095E6 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		726502292466E18E00387A90 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7265022A2466E18E00387A90 /* Base */,
+				72123F6D247792ED002095E6 /* zh-Hans */,
+				72123F6E24779306002095E6 /* ko */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -507,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -553,7 +576,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -565,6 +588,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -605,7 +629,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

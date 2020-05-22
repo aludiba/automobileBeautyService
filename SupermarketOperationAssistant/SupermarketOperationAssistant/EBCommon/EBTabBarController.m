@@ -73,7 +73,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
 - (void)EBsetContentView{
     self.EBPurchaseStatusVC = [[EBPurchaseStatusViewController alloc] init];
     UINavigationController *EBPurchaseStatus = [[UINavigationController alloc] initWithRootViewController:self.EBPurchaseStatusVC];
-    self.EBPurchaseStatusVC.tabBarItem.title = @"购买状态";
+    self.EBPurchaseStatusVC.tabBarItem.title = NSLocalizedString(@"购买状态", nil);
     [self.EBPurchaseStatusVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
     [self.EBPurchaseStatusVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
     self.EBPurchaseStatusVC.tabBarItem.image = [[UIImage imageNamed:@"EBtab_PurchaseStatus_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -81,7 +81,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     
     self.EBProductInformationVC = [[EBProductInformationViewController alloc] init];
     UINavigationController *EBProductInformationVC = [[UINavigationController alloc] initWithRootViewController:self.EBProductInformationVC];
-    self.EBProductInformationVC.tabBarItem.title = @"产品信息";
+    self.EBProductInformationVC.tabBarItem.title = NSLocalizedString(@"产品信息", nil);
     [self.EBProductInformationVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
     [self.EBProductInformationVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
     self.EBProductInformationVC.tabBarItem.image = [[UIImage imageNamed:@"EBtab_ProductInformation_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -89,7 +89,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     
     self.EBColleaguesVC = [[EBColleaguesViewController alloc] init];
     UINavigationController *EBColleaguesVC = [[UINavigationController alloc] initWithRootViewController:self.EBColleaguesVC];
-    self.EBColleaguesVC.tabBarItem.title = @"同事们";
+    self.EBColleaguesVC.tabBarItem.title = NSLocalizedString(@"同事们", nil);
     [self.EBColleaguesVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
     [self.EBColleaguesVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
     self.EBColleaguesVC.tabBarItem.image = [[UIImage imageNamed:@"EBtab_Colleagues_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -97,7 +97,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     
     self.EBSettingVC = [[EBSettingViewController alloc] init];
     UINavigationController *EBSettingVC = [[UINavigationController alloc] initWithRootViewController:self.EBSettingVC];
-    self.EBSettingVC.tabBarItem.title = @"设置";
+    self.EBSettingVC.tabBarItem.title = NSLocalizedString(@"设置", nil);
     [self.EBSettingVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
     [self.EBSettingVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
     self.EBSettingVC.tabBarItem.image = [[UIImage imageNamed:@"EBtab_Setting_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

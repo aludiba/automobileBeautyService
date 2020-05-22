@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"购买状态";
+    self.title = NSLocalizedString(@"购买状态", nil);
     [self EBsetcontentView];
 }
 - (void)EB_setupNavigationItems{

@@ -44,7 +44,7 @@
 }
 - (void)EBsetContentView{
     EBProductInformationAddModel *EBcategoryViewModel = [[EBProductInformationAddModel alloc] init];
-    EBcategoryViewModel.EBTitle = @"类别:";
+    EBcategoryViewModel.EBTitle = NSLocalizedString(@"类别:", nil);
     EBcategoryViewModel.EBDefault = @"请输入类别";
     [self.EBViewDataArray addObject:EBcategoryViewModel];
     
@@ -54,7 +54,7 @@
     [self.EBViewDataArray addObject:EBdeliveryaddressViewModel];
     
     EBProductInformationAddModel *EBpurchasetimeViewModel = [[EBProductInformationAddModel alloc] init];
-    EBpurchasetimeViewModel.EBTitle = @"购买时间:";
+    EBpurchasetimeViewModel.EBTitle = NSLocalizedString(@"购买时间:", nil);
     EBpurchasetimeViewModel.EBDefault = @"请输入购买时间";
     [self.EBViewDataArray addObject:EBpurchasetimeViewModel];
     
@@ -121,7 +121,7 @@
     EBcell.selectionStyle = UITableViewCellSelectionStyleNone;
     __weak typeof(self) weakSelf = self;
     EBcell.EBeditBlock = ^(EBProductInformationAddTableViewCell * _Nonnull cell) {
-        if ([EBViewModel.EBTitle hasPrefix:@"购买时间"]) {
+        if ([EBViewModel.EBTitle hasPrefix:NSLocalizedString(@"购买时间:", nil)]) {
         if (EBcell.EBcontentHeight > EBViewModel.EBEditHeight) {
         [UIView animateWithDuration:0.2 animations:^{
             CGRect EBframe = self.view.frame;

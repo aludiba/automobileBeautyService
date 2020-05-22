@@ -44,17 +44,17 @@
 }
 - (void)EBsetContentView{
     EBPurchaseStatusAddModel *EBcategoryViewModel = [[EBPurchaseStatusAddModel alloc] init];
-    EBcategoryViewModel.EBTitle = @"类别:";
+    EBcategoryViewModel.EBTitle = NSLocalizedString(@"类别:", nil);
     EBcategoryViewModel.EBDefault = @"请输入类别";
     [self.EBViewDataArray addObject:EBcategoryViewModel];
     
     EBPurchaseStatusAddModel *EBquantityViewModel = [[EBPurchaseStatusAddModel alloc] init];
-    EBquantityViewModel.EBTitle = @"数量:";
+    EBquantityViewModel.EBTitle = NSLocalizedString(@"数量:", nil);
     EBquantityViewModel.EBDefault = @"请输入数量";
     [self.EBViewDataArray addObject:EBquantityViewModel];
     
     EBPurchaseStatusAddModel *EBpurchasetimeViewModel = [[EBPurchaseStatusAddModel alloc] init];
-    EBpurchasetimeViewModel.EBTitle = @"购买时间:";
+    EBpurchasetimeViewModel.EBTitle = NSLocalizedString(@"购买时间:", nil);
     EBpurchasetimeViewModel.EBDefault = @"请输入购买时间";
     [self.EBViewDataArray addObject:EBpurchasetimeViewModel];
     

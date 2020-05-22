@@ -115,7 +115,7 @@
         _EBcategoryTitleLbl = [[UILabel alloc] init];
         _EBcategoryTitleLbl.textColor = [UIColor orangeColor];
         _EBcategoryTitleLbl.font = [UIFont systemFontOfSize:15];
-        _EBcategoryTitleLbl.text = @"类别:";
+        _EBcategoryTitleLbl.text = NSLocalizedString(@"类别:", nil);
     }
     return _EBcategoryTitleLbl;
 }
@@ -149,7 +149,7 @@
         _EBpurchasetimeTitleLbl = [[UILabel alloc] init];
         _EBpurchasetimeTitleLbl.textColor = [UIColor orangeColor];
         _EBpurchasetimeTitleLbl.font = [UIFont systemFontOfSize:15];
-        _EBpurchasetimeTitleLbl.text = @"购买时间:";
+        _EBpurchasetimeTitleLbl.text = NSLocalizedString(@"购买时间:", nil);
     }
     return _EBpurchasetimeTitleLbl;
 }
@@ -167,7 +167,7 @@
         _EBdeleteBtn.backgroundColor = [UIColor systemRedColor];
         _EBdeleteBtn.layer.cornerRadius = 4.0f;
         _EBdeleteBtn.layer.masksToBounds = YES;
-        [_EBdeleteBtn setTitle:@"删除" forState:UIControlStateNormal];
+        [_EBdeleteBtn setTitle:NSLocalizedString(@"删除", nil) forState:UIControlStateNormal];
         [_EBdeleteBtn setTitleColor:[UIColor systemOrangeColor] forState:UIControlStateNormal];
         _EBdeleteBtn.titleLabel.font = [UIFont systemFontOfSize:17];
         [_EBdeleteBtn addTarget:self action:@selector(EBdelete:) forControlEvents:UIControlEventTouchUpInside];
