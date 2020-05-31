@@ -113,6 +113,7 @@
 		7265026C246A958600387A90 /* EBLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBLoginViewController.m; sourceTree = "<group>"; };
 		7265026E246A966800387A90 /* EBLoginTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBLoginTableViewCell.h; sourceTree = "<group>"; };
 		7265026F246A966800387A90 /* EBLoginTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBLoginTableViewCell.m; sourceTree = "<group>"; };
+		7290ED9824835F7A0087D43B /* SupermarketOperationAssistant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SupermarketOperationAssistant.entitlements; sourceTree = "<group>"; };
 		72DEB3CA2477D78C00185084 /* EBColleaguesAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBColleaguesAddViewController.h; sourceTree = "<group>"; };
 		72DEB3CB2477D78C00185084 /* EBColleaguesAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBColleaguesAddViewController.m; sourceTree = "<group>"; };
 		72DEB3CD2477D81300185084 /* EBColleaguesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBColleaguesModel.h; sourceTree = "<group>"; };
@@ -187,6 +188,7 @@
 		7265021A2466E18B00387A90 /* SupermarketOperationAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				7290ED9824835F7A0087D43B /* SupermarketOperationAssistant.entitlements */,
 				7265021B2466E18B00387A90 /* AppDelegate.h */,
 				7265021C2466E18B00387A90 /* AppDelegate.m */,
 				7265023C2466E8F600387A90 /* EBCommon */,
@@ -702,7 +704,9 @@
 			baseConfigurationReference = 9E48FBE0DC24FAF10CE9CBC2 /* Pods-SupermarketOperationAssistant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SupermarketOperationAssistant/SupermarketOperationAssistant.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SupermarketOperationAssistant/EBCommon/EB_PrefixHeader.pch";
 				INFOPLIST_FILE = SupermarketOperationAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -711,7 +715,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.SupermarketOperationAssistant;
 				PRODUCT_NAME = SupermarketOperationAssistant;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -720,7 +724,9 @@
 			baseConfigurationReference = 872D4AA74D4B28EBFF537E9F /* Pods-SupermarketOperationAssistant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SupermarketOperationAssistant/SupermarketOperationAssistant.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SupermarketOperationAssistant/EBCommon/EB_PrefixHeader.pch";
 				INFOPLIST_FILE = SupermarketOperationAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -729,7 +735,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.SupermarketOperationAssistant;
 				PRODUCT_NAME = SupermarketOperationAssistant;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
