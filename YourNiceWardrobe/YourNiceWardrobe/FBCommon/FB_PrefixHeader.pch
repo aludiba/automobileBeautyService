@@ -1,0 +1,12 @@
+//
+//  FB_PrefixHeader.pch
+//  Simple Diary
+//
+//  Created by bykj on 2019/7/20.
+//  Copyright © 2019 hgg. FBl rights reserved.
+//
+
+#ifndef FB_PrefixHeader_pch
+#define FB_PrefixHeader_pch
+#import "FBGlobal.h"
+#endif /* FB_PrefixHeader_pch */

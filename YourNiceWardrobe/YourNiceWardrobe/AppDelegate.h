@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-@property (strong, nonatomic)UIWindow *BCwindow;
+@property (strong, nonatomic)UIWindow *FBwindow;
 @end
 

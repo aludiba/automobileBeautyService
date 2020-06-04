@@ -7,94 +7,94 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		722D8967245EF7230062B886 /* BCWardrobeAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722D8966245EF7230062B886 /* BCWardrobeAddViewController.m */; };
-		722D896A245EFB010062B886 /* BCWardrobeAddModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 722D8969245EFB010062B886 /* BCWardrobeAddModel.m */; };
-		722D896D245F09BA0062B886 /* BCWardrobeAddTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 722D896C245F09BA0062B886 /* BCWardrobeAddTableViewCell.m */; };
-		722D8970245FB21B0062B886 /* BCWardrobeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 722D896F245FB21B0062B886 /* BCWardrobeTableViewCell.m */; };
-		722EE64C2460161D00E64984 /* BCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722EE64B2460161D00E64984 /* BCLoginViewController.m */; };
-		722EE64F2460164300E64984 /* BCLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 722EE64E2460164300E64984 /* BCLoginTableViewCell.m */; };
-		7265018B24603DAE00387A90 /* BCWardrobeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265018A24603DAE00387A90 /* BCWardrobeModel.m */; };
-		7265018E24604F5B00387A90 /* BCDailyAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265018D24604F5B00387A90 /* BCDailyAddViewController.m */; };
-		7265019124604FF500387A90 /* BCDailyAddVTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265019024604FF500387A90 /* BCDailyAddVTableViewCell.m */; };
-		726501942460503000387A90 /* BCDailyAddModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501932460503000387A90 /* BCDailyAddModel.m */; };
-		726501972460505500387A90 /* BCDailyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501962460505500387A90 /* BCDailyModel.m */; };
-		7265019A246057D500387A90 /* BCDailyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72650199246057D500387A90 /* BCDailyTableViewCell.m */; };
-		7265019D2462FCC100387A90 /* BCDressUpAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265019C2462FCC100387A90 /* BCDressUpAddViewController.m */; };
-		726501A02462FD5B00387A90 /* BCDressUpAddTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265019F2462FD5B00387A90 /* BCDressUpAddTableViewCell.m */; };
-		726501A32463044400387A90 /* BCDressUpAddModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501A22463044400387A90 /* BCDressUpAddModel.m */; };
-		726501A62463045F00387A90 /* BCDressUpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501A52463045F00387A90 /* BCDressUpModel.m */; };
-		726501A92463095A00387A90 /* BCDressUpTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501A82463095A00387A90 /* BCDressUpTableViewCell.m */; };
-		726501B02464334000387A90 /* BCproblemFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501AB2464333F00387A90 /* BCproblemFeedbackViewController.m */; };
-		726501B12464334000387A90 /* BCPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501AD2464334000387A90 /* BCPasswordChangeViewController.m */; };
-		726501B22464334000387A90 /* BCModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501AE2464334000387A90 /* BCModifyNicknameViewController.m */; };
-		726501B5246433A700387A90 /* BCproblemFeedbackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501B3246433A600387A90 /* BCproblemFeedbackModel.m */; };
-		726501B82464340A00387A90 /* BCproblemFeedbackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501B72464340A00387A90 /* BCproblemFeedbackTableViewCell.m */; };
+		722D8967245EF7230062B886 /* FBWardrobeAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722D8966245EF7230062B886 /* FBWardrobeAddViewController.m */; };
+		722D896A245EFB010062B886 /* FBWardrobeAddModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 722D8969245EFB010062B886 /* FBWardrobeAddModel.m */; };
+		722D896D245F09BA0062B886 /* FBWardrobeAddTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 722D896C245F09BA0062B886 /* FBWardrobeAddTableViewCell.m */; };
+		722D8970245FB21B0062B886 /* FBWardrobeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 722D896F245FB21B0062B886 /* FBWardrobeTableViewCell.m */; };
+		722EE64C2460161D00E64984 /* FBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722EE64B2460161D00E64984 /* FBLoginViewController.m */; };
+		722EE64F2460164300E64984 /* FBLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 722EE64E2460164300E64984 /* FBLoginTableViewCell.m */; };
+		7265018B24603DAE00387A90 /* FBWardrobeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265018A24603DAE00387A90 /* FBWardrobeModel.m */; };
+		7265018E24604F5B00387A90 /* FBDailyAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265018D24604F5B00387A90 /* FBDailyAddViewController.m */; };
+		7265019124604FF500387A90 /* FBDailyAddVTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265019024604FF500387A90 /* FBDailyAddVTableViewCell.m */; };
+		726501942460503000387A90 /* FBDailyAddModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501932460503000387A90 /* FBDailyAddModel.m */; };
+		726501972460505500387A90 /* FBDailyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501962460505500387A90 /* FBDailyModel.m */; };
+		7265019A246057D500387A90 /* FBDailyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72650199246057D500387A90 /* FBDailyTableViewCell.m */; };
+		7265019D2462FCC100387A90 /* FBDressUpAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265019C2462FCC100387A90 /* FBDressUpAddViewController.m */; };
+		726501A02462FD5B00387A90 /* FBDressUpAddTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265019F2462FD5B00387A90 /* FBDressUpAddTableViewCell.m */; };
+		726501A32463044400387A90 /* FBDressUpAddModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501A22463044400387A90 /* FBDressUpAddModel.m */; };
+		726501A62463045F00387A90 /* FBDressUpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501A52463045F00387A90 /* FBDressUpModel.m */; };
+		726501A92463095A00387A90 /* FBDressUpTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501A82463095A00387A90 /* FBDressUpTableViewCell.m */; };
+		726501B02464334000387A90 /* FBproblemFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501AB2464333F00387A90 /* FBproblemFeedbackViewController.m */; };
+		726501B12464334000387A90 /* FBPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501AD2464334000387A90 /* FBPasswordChangeViewController.m */; };
+		726501B22464334000387A90 /* FBModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501AE2464334000387A90 /* FBModifyNicknameViewController.m */; };
+		726501B5246433A700387A90 /* FBproblemFeedbackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501B3246433A600387A90 /* FBproblemFeedbackModel.m */; };
+		726501B82464340A00387A90 /* FBproblemFeedbackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501B72464340A00387A90 /* FBproblemFeedbackTableViewCell.m */; };
 		726501BE2464446200387A90 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 726501BC2464446200387A90 /* Reachability.m */; };
 		726F53EF2452FB10006CFBE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F53EE2452FB10006CFBE3 /* AppDelegate.m */; };
 		726F53FD2452FB17006CFBE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726F53FB2452FB17006CFBE3 /* LaunchScreen.storyboard */; };
 		726F54002452FB17006CFBE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F53FF2452FB17006CFBE3 /* main.m */; };
 		726F54182453D35E006CFBE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726F54172453D35E006CFBE3 /* Assets.xcassets */; };
-		726F541B2453D599006CFBE3 /* BCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54192453D599006CFBE3 /* BCBaseViewController.m */; };
-		726F541F2453D675006CFBE3 /* BCHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F541D2453D675006CFBE3 /* BCHBTool.m */; };
-		726F54232453D78D006CFBE3 /* BCUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54212453D78C006CFBE3 /* BCUIUtilities.m */; };
+		726F541B2453D599006CFBE3 /* FBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54192453D599006CFBE3 /* FBBaseViewController.m */; };
+		726F541F2453D675006CFBE3 /* FBHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F541D2453D675006CFBE3 /* FBHBTool.m */; };
+		726F54232453D78D006CFBE3 /* FBUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54212453D78C006CFBE3 /* FBUIUtilities.m */; };
 		726F542E2453D813006CFBE3 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F542A2453D813006CFBE3 /* NSDictionary+log.m */; };
 		726F542F2453D813006CFBE3 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F542B2453D813006CFBE3 /* NSArray+log.m */; };
-		726F54322453D8E5006CFBE3 /* BCWardrobeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54312453D8E5006CFBE3 /* BCWardrobeViewController.m */; };
-		726F54352453D8FB006CFBE3 /* BCDailyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54342453D8FB006CFBE3 /* BCDailyViewController.m */; };
-		726F54382453D90A006CFBE3 /* BCDressUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54372453D90A006CFBE3 /* BCDressUpViewController.m */; };
-		726F543B2453D91B006CFBE3 /* BCMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F543A2453D91B006CFBE3 /* BCMineViewController.m */; };
-		726F543E2453D94B006CFBE3 /* BCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F543D2453D94B006CFBE3 /* BCTabBarController.m */; };
-		726F54412453DD2A006CFBE3 /* MBProgressHUD+BCNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F543F2453DD2A006CFBE3 /* MBProgressHUD+BCNJ.m */; };
+		726F54322453D8E5006CFBE3 /* FBWardrobeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54312453D8E5006CFBE3 /* FBWardrobeViewController.m */; };
+		726F54352453D8FB006CFBE3 /* FBDailyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54342453D8FB006CFBE3 /* FBDailyViewController.m */; };
+		726F54382453D90A006CFBE3 /* FBDressUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F54372453D90A006CFBE3 /* FBDressUpViewController.m */; };
+		726F543B2453D91B006CFBE3 /* FBMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F543A2453D91B006CFBE3 /* FBMineViewController.m */; };
+		726F543E2453D94B006CFBE3 /* FBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F543D2453D94B006CFBE3 /* FBTabBarController.m */; };
+		726F54412453DD2A006CFBE3 /* MBProgressHUD+FBNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 726F543F2453DD2A006CFBE3 /* MBProgressHUD+FBNJ.m */; };
 		DB500E0B1A2D0571170C24C0 /* Pods_YourNiceWardrobe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8FA422BD42A56A05E42EB8 /* Pods_YourNiceWardrobe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C85C5A4E695EF43E58B1AB2 /* Pods-YourNiceWardrobe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourNiceWardrobe.debug.xcconfig"; path = "Target Support Files/Pods-YourNiceWardrobe/Pods-YourNiceWardrobe.debug.xcconfig"; sourceTree = "<group>"; };
-		722D8965245EF7230062B886 /* BCWardrobeAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCWardrobeAddViewController.h; sourceTree = "<group>"; };
-		722D8966245EF7230062B886 /* BCWardrobeAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCWardrobeAddViewController.m; sourceTree = "<group>"; };
-		722D8968245EFB010062B886 /* BCWardrobeAddModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCWardrobeAddModel.h; sourceTree = "<group>"; };
-		722D8969245EFB010062B886 /* BCWardrobeAddModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCWardrobeAddModel.m; sourceTree = "<group>"; };
-		722D896B245F09BA0062B886 /* BCWardrobeAddTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCWardrobeAddTableViewCell.h; sourceTree = "<group>"; };
-		722D896C245F09BA0062B886 /* BCWardrobeAddTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCWardrobeAddTableViewCell.m; sourceTree = "<group>"; };
-		722D896E245FB21B0062B886 /* BCWardrobeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCWardrobeTableViewCell.h; sourceTree = "<group>"; };
-		722D896F245FB21B0062B886 /* BCWardrobeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCWardrobeTableViewCell.m; sourceTree = "<group>"; };
-		722EE64A2460161D00E64984 /* BCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLoginViewController.h; sourceTree = "<group>"; };
-		722EE64B2460161D00E64984 /* BCLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLoginViewController.m; sourceTree = "<group>"; };
-		722EE64D2460164300E64984 /* BCLoginTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLoginTableViewCell.h; sourceTree = "<group>"; };
-		722EE64E2460164300E64984 /* BCLoginTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLoginTableViewCell.m; sourceTree = "<group>"; };
+		722D8965245EF7230062B886 /* FBWardrobeAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBWardrobeAddViewController.h; sourceTree = "<group>"; };
+		722D8966245EF7230062B886 /* FBWardrobeAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBWardrobeAddViewController.m; sourceTree = "<group>"; };
+		722D8968245EFB010062B886 /* FBWardrobeAddModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBWardrobeAddModel.h; sourceTree = "<group>"; };
+		722D8969245EFB010062B886 /* FBWardrobeAddModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBWardrobeAddModel.m; sourceTree = "<group>"; };
+		722D896B245F09BA0062B886 /* FBWardrobeAddTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBWardrobeAddTableViewCell.h; sourceTree = "<group>"; };
+		722D896C245F09BA0062B886 /* FBWardrobeAddTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBWardrobeAddTableViewCell.m; sourceTree = "<group>"; };
+		722D896E245FB21B0062B886 /* FBWardrobeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBWardrobeTableViewCell.h; sourceTree = "<group>"; };
+		722D896F245FB21B0062B886 /* FBWardrobeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBWardrobeTableViewCell.m; sourceTree = "<group>"; };
+		722EE64A2460161D00E64984 /* FBLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBLoginViewController.h; sourceTree = "<group>"; };
+		722EE64B2460161D00E64984 /* FBLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBLoginViewController.m; sourceTree = "<group>"; };
+		722EE64D2460164300E64984 /* FBLoginTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBLoginTableViewCell.h; sourceTree = "<group>"; };
+		722EE64E2460164300E64984 /* FBLoginTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBLoginTableViewCell.m; sourceTree = "<group>"; };
 		72568225247376640087B90A /* YourBeautifulWardrobe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YourBeautifulWardrobe.entitlements; sourceTree = "<group>"; };
-		7265018924603DAE00387A90 /* BCWardrobeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCWardrobeModel.h; sourceTree = "<group>"; };
-		7265018A24603DAE00387A90 /* BCWardrobeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCWardrobeModel.m; sourceTree = "<group>"; };
-		7265018C24604F5B00387A90 /* BCDailyAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDailyAddViewController.h; sourceTree = "<group>"; };
-		7265018D24604F5B00387A90 /* BCDailyAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDailyAddViewController.m; sourceTree = "<group>"; };
-		7265018F24604FF500387A90 /* BCDailyAddVTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDailyAddVTableViewCell.h; sourceTree = "<group>"; };
-		7265019024604FF500387A90 /* BCDailyAddVTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDailyAddVTableViewCell.m; sourceTree = "<group>"; };
-		726501922460503000387A90 /* BCDailyAddModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDailyAddModel.h; sourceTree = "<group>"; };
-		726501932460503000387A90 /* BCDailyAddModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDailyAddModel.m; sourceTree = "<group>"; };
-		726501952460505500387A90 /* BCDailyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDailyModel.h; sourceTree = "<group>"; };
-		726501962460505500387A90 /* BCDailyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDailyModel.m; sourceTree = "<group>"; };
-		72650198246057D500387A90 /* BCDailyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDailyTableViewCell.h; sourceTree = "<group>"; };
-		72650199246057D500387A90 /* BCDailyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDailyTableViewCell.m; sourceTree = "<group>"; };
-		7265019B2462FCC100387A90 /* BCDressUpAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDressUpAddViewController.h; sourceTree = "<group>"; };
-		7265019C2462FCC100387A90 /* BCDressUpAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDressUpAddViewController.m; sourceTree = "<group>"; };
-		7265019E2462FD5B00387A90 /* BCDressUpAddTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDressUpAddTableViewCell.h; sourceTree = "<group>"; };
-		7265019F2462FD5B00387A90 /* BCDressUpAddTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDressUpAddTableViewCell.m; sourceTree = "<group>"; };
-		726501A12463044400387A90 /* BCDressUpAddModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDressUpAddModel.h; sourceTree = "<group>"; };
-		726501A22463044400387A90 /* BCDressUpAddModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDressUpAddModel.m; sourceTree = "<group>"; };
-		726501A42463045F00387A90 /* BCDressUpModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDressUpModel.h; sourceTree = "<group>"; };
-		726501A52463045F00387A90 /* BCDressUpModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDressUpModel.m; sourceTree = "<group>"; };
-		726501A72463095A00387A90 /* BCDressUpTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDressUpTableViewCell.h; sourceTree = "<group>"; };
-		726501A82463095A00387A90 /* BCDressUpTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDressUpTableViewCell.m; sourceTree = "<group>"; };
-		726501AA2464333F00387A90 /* BCproblemFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCproblemFeedbackViewController.h; sourceTree = "<group>"; };
-		726501AB2464333F00387A90 /* BCproblemFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCproblemFeedbackViewController.m; sourceTree = "<group>"; };
-		726501AC2464334000387A90 /* BCModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCModifyNicknameViewController.h; sourceTree = "<group>"; };
-		726501AD2464334000387A90 /* BCPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCPasswordChangeViewController.m; sourceTree = "<group>"; };
-		726501AE2464334000387A90 /* BCModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCModifyNicknameViewController.m; sourceTree = "<group>"; };
-		726501AF2464334000387A90 /* BCPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCPasswordChangeViewController.h; sourceTree = "<group>"; };
-		726501B3246433A600387A90 /* BCproblemFeedbackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCproblemFeedbackModel.m; sourceTree = "<group>"; };
-		726501B4246433A700387A90 /* BCproblemFeedbackModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCproblemFeedbackModel.h; sourceTree = "<group>"; };
-		726501B62464340A00387A90 /* BCproblemFeedbackTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCproblemFeedbackTableViewCell.h; sourceTree = "<group>"; };
-		726501B72464340A00387A90 /* BCproblemFeedbackTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCproblemFeedbackTableViewCell.m; sourceTree = "<group>"; };
+		7265018924603DAE00387A90 /* FBWardrobeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBWardrobeModel.h; sourceTree = "<group>"; };
+		7265018A24603DAE00387A90 /* FBWardrobeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBWardrobeModel.m; sourceTree = "<group>"; };
+		7265018C24604F5B00387A90 /* FBDailyAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDailyAddViewController.h; sourceTree = "<group>"; };
+		7265018D24604F5B00387A90 /* FBDailyAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDailyAddViewController.m; sourceTree = "<group>"; };
+		7265018F24604FF500387A90 /* FBDailyAddVTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDailyAddVTableViewCell.h; sourceTree = "<group>"; };
+		7265019024604FF500387A90 /* FBDailyAddVTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDailyAddVTableViewCell.m; sourceTree = "<group>"; };
+		726501922460503000387A90 /* FBDailyAddModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDailyAddModel.h; sourceTree = "<group>"; };
+		726501932460503000387A90 /* FBDailyAddModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDailyAddModel.m; sourceTree = "<group>"; };
+		726501952460505500387A90 /* FBDailyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDailyModel.h; sourceTree = "<group>"; };
+		726501962460505500387A90 /* FBDailyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDailyModel.m; sourceTree = "<group>"; };
+		72650198246057D500387A90 /* FBDailyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDailyTableViewCell.h; sourceTree = "<group>"; };
+		72650199246057D500387A90 /* FBDailyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDailyTableViewCell.m; sourceTree = "<group>"; };
+		7265019B2462FCC100387A90 /* FBDressUpAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDressUpAddViewController.h; sourceTree = "<group>"; };
+		7265019C2462FCC100387A90 /* FBDressUpAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDressUpAddViewController.m; sourceTree = "<group>"; };
+		7265019E2462FD5B00387A90 /* FBDressUpAddTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDressUpAddTableViewCell.h; sourceTree = "<group>"; };
+		7265019F2462FD5B00387A90 /* FBDressUpAddTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDressUpAddTableViewCell.m; sourceTree = "<group>"; };
+		726501A12463044400387A90 /* FBDressUpAddModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDressUpAddModel.h; sourceTree = "<group>"; };
+		726501A22463044400387A90 /* FBDressUpAddModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDressUpAddModel.m; sourceTree = "<group>"; };
+		726501A42463045F00387A90 /* FBDressUpModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDressUpModel.h; sourceTree = "<group>"; };
+		726501A52463045F00387A90 /* FBDressUpModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDressUpModel.m; sourceTree = "<group>"; };
+		726501A72463095A00387A90 /* FBDressUpTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDressUpTableViewCell.h; sourceTree = "<group>"; };
+		726501A82463095A00387A90 /* FBDressUpTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDressUpTableViewCell.m; sourceTree = "<group>"; };
+		726501AA2464333F00387A90 /* FBproblemFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBproblemFeedbackViewController.h; sourceTree = "<group>"; };
+		726501AB2464333F00387A90 /* FBproblemFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBproblemFeedbackViewController.m; sourceTree = "<group>"; };
+		726501AC2464334000387A90 /* FBModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBModifyNicknameViewController.h; sourceTree = "<group>"; };
+		726501AD2464334000387A90 /* FBPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBPasswordChangeViewController.m; sourceTree = "<group>"; };
+		726501AE2464334000387A90 /* FBModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBModifyNicknameViewController.m; sourceTree = "<group>"; };
+		726501AF2464334000387A90 /* FBPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBPasswordChangeViewController.h; sourceTree = "<group>"; };
+		726501B3246433A600387A90 /* FBproblemFeedbackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBproblemFeedbackModel.m; sourceTree = "<group>"; };
+		726501B4246433A700387A90 /* FBproblemFeedbackModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBproblemFeedbackModel.h; sourceTree = "<group>"; };
+		726501B62464340A00387A90 /* FBproblemFeedbackTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBproblemFeedbackTableViewCell.h; sourceTree = "<group>"; };
+		726501B72464340A00387A90 /* FBproblemFeedbackTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBproblemFeedbackTableViewCell.m; sourceTree = "<group>"; };
 		726501B924643F8600387A90 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		726501BC2464446200387A90 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		726501BD2464446200387A90 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -105,30 +105,30 @@
 		726F53FE2452FB17006CFBE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		726F53FF2452FB17006CFBE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		726F54172453D35E006CFBE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		726F54192453D599006CFBE3 /* BCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCBaseViewController.m; sourceTree = "<group>"; };
-		726F541A2453D599006CFBE3 /* BCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCBaseViewController.h; sourceTree = "<group>"; };
-		726F541C2453D62F006CFBE3 /* BCGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCGlobal.h; sourceTree = "<group>"; };
-		726F541D2453D675006CFBE3 /* BCHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCHBTool.m; sourceTree = "<group>"; };
-		726F541E2453D675006CFBE3 /* BCHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCHBTool.h; sourceTree = "<group>"; };
-		726F54202453D6A4006CFBE3 /* BC_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BC_PrefixHeader.pch; sourceTree = "<group>"; };
-		726F54212453D78C006CFBE3 /* BCUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCUIUtilities.m; sourceTree = "<group>"; };
-		726F54222453D78C006CFBE3 /* BCUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCUIUtilities.h; sourceTree = "<group>"; };
+		726F54192453D599006CFBE3 /* FBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBBaseViewController.m; sourceTree = "<group>"; };
+		726F541A2453D599006CFBE3 /* FBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBBaseViewController.h; sourceTree = "<group>"; };
+		726F541C2453D62F006CFBE3 /* FBGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBGlobal.h; sourceTree = "<group>"; };
+		726F541D2453D675006CFBE3 /* FBHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBHBTool.m; sourceTree = "<group>"; };
+		726F541E2453D675006CFBE3 /* FBHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBHBTool.h; sourceTree = "<group>"; };
+		726F54202453D6A4006CFBE3 /* FB_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FB_PrefixHeader.pch; sourceTree = "<group>"; };
+		726F54212453D78C006CFBE3 /* FBUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBUIUtilities.m; sourceTree = "<group>"; };
+		726F54222453D78C006CFBE3 /* FBUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBUIUtilities.h; sourceTree = "<group>"; };
 		726F54262453D812006CFBE3 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
 		726F54292453D812006CFBE3 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
 		726F542A2453D813006CFBE3 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
 		726F542B2453D813006CFBE3 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
-		726F54302453D8E5006CFBE3 /* BCWardrobeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCWardrobeViewController.h; sourceTree = "<group>"; };
-		726F54312453D8E5006CFBE3 /* BCWardrobeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCWardrobeViewController.m; sourceTree = "<group>"; };
-		726F54332453D8FB006CFBE3 /* BCDailyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDailyViewController.h; sourceTree = "<group>"; };
-		726F54342453D8FB006CFBE3 /* BCDailyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDailyViewController.m; sourceTree = "<group>"; };
-		726F54362453D90A006CFBE3 /* BCDressUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDressUpViewController.h; sourceTree = "<group>"; };
-		726F54372453D90A006CFBE3 /* BCDressUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDressUpViewController.m; sourceTree = "<group>"; };
-		726F54392453D91B006CFBE3 /* BCMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCMineViewController.h; sourceTree = "<group>"; };
-		726F543A2453D91B006CFBE3 /* BCMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCMineViewController.m; sourceTree = "<group>"; };
-		726F543C2453D94B006CFBE3 /* BCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCTabBarController.h; sourceTree = "<group>"; };
-		726F543D2453D94B006CFBE3 /* BCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCTabBarController.m; sourceTree = "<group>"; };
-		726F543F2453DD2A006CFBE3 /* MBProgressHUD+BCNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+BCNJ.m"; sourceTree = "<group>"; };
-		726F54402453DD2A006CFBE3 /* MBProgressHUD+BCNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+BCNJ.h"; sourceTree = "<group>"; };
+		726F54302453D8E5006CFBE3 /* FBWardrobeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBWardrobeViewController.h; sourceTree = "<group>"; };
+		726F54312453D8E5006CFBE3 /* FBWardrobeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBWardrobeViewController.m; sourceTree = "<group>"; };
+		726F54332453D8FB006CFBE3 /* FBDailyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDailyViewController.h; sourceTree = "<group>"; };
+		726F54342453D8FB006CFBE3 /* FBDailyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDailyViewController.m; sourceTree = "<group>"; };
+		726F54362453D90A006CFBE3 /* FBDressUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDressUpViewController.h; sourceTree = "<group>"; };
+		726F54372453D90A006CFBE3 /* FBDressUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDressUpViewController.m; sourceTree = "<group>"; };
+		726F54392453D91B006CFBE3 /* FBMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBMineViewController.h; sourceTree = "<group>"; };
+		726F543A2453D91B006CFBE3 /* FBMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBMineViewController.m; sourceTree = "<group>"; };
+		726F543C2453D94B006CFBE3 /* FBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTabBarController.h; sourceTree = "<group>"; };
+		726F543D2453D94B006CFBE3 /* FBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTabBarController.m; sourceTree = "<group>"; };
+		726F543F2453DD2A006CFBE3 /* MBProgressHUD+FBNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+FBNJ.m"; sourceTree = "<group>"; };
+		726F54402453DD2A006CFBE3 /* MBProgressHUD+FBNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+FBNJ.h"; sourceTree = "<group>"; };
 		90A01011D19B676206758AFB /* Pods-YourNiceWardrobe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourNiceWardrobe.release.xcconfig"; path = "Target Support Files/Pods-YourNiceWardrobe/Pods-YourNiceWardrobe.release.xcconfig"; sourceTree = "<group>"; };
 		AF8FA422BD42A56A05E42EB8 /* Pods_YourNiceWardrobe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourNiceWardrobe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -187,11 +187,11 @@
 				72568225247376640087B90A /* YourBeautifulWardrobe.entitlements */,
 				726F53ED2452FB10006CFBE3 /* AppDelegate.h */,
 				726F53EE2452FB10006CFBE3 /* AppDelegate.m */,
-				726F54162453D2F1006CFBE3 /* BCCommon */,
-				726F540A2453D2BF006CFBE3 /* BCDaily */,
-				726F54122453D2C0006CFBE3 /* BCDressUp */,
-				726F540E2453D2C0006CFBE3 /* BCMine */,
-				726F54062453D2BF006CFBE3 /* BCWardrobe */,
+				726F54162453D2F1006CFBE3 /* FBCommon */,
+				726F540A2453D2BF006CFBE3 /* FBDaily */,
+				726F54122453D2C0006CFBE3 /* FBDressUp */,
+				726F540E2453D2C0006CFBE3 /* FBMine */,
+				726F54062453D2BF006CFBE3 /* FBWardrobe */,
 				726F53FB2452FB17006CFBE3 /* LaunchScreen.storyboard */,
 				726F53FE2452FB17006CFBE3 /* Info.plist */,
 				726F53FF2452FB17006CFBE3 /* main.m */,
@@ -200,205 +200,205 @@
 			path = YourNiceWardrobe;
 			sourceTree = "<group>";
 		};
-		726F54062453D2BF006CFBE3 /* BCWardrobe */ = {
+		726F54062453D2BF006CFBE3 /* FBWardrobe */ = {
 			isa = PBXGroup;
 			children = (
-				726F54072453D2BF006CFBE3 /* BCViews */,
-				726F54082453D2BF006CFBE3 /* BCModels */,
-				726F54092453D2BF006CFBE3 /* BCControllers */,
+				726F54072453D2BF006CFBE3 /* FBViews */,
+				726F54082453D2BF006CFBE3 /* FBModels */,
+				726F54092453D2BF006CFBE3 /* FBControllers */,
 			);
-			path = BCWardrobe;
+			path = FBWardrobe;
 			sourceTree = "<group>";
 		};
-		726F54072453D2BF006CFBE3 /* BCViews */ = {
+		726F54072453D2BF006CFBE3 /* FBViews */ = {
 			isa = PBXGroup;
 			children = (
-				722D896B245F09BA0062B886 /* BCWardrobeAddTableViewCell.h */,
-				722D896C245F09BA0062B886 /* BCWardrobeAddTableViewCell.m */,
-				722D896E245FB21B0062B886 /* BCWardrobeTableViewCell.h */,
-				722D896F245FB21B0062B886 /* BCWardrobeTableViewCell.m */,
+				722D896B245F09BA0062B886 /* FBWardrobeAddTableViewCell.h */,
+				722D896C245F09BA0062B886 /* FBWardrobeAddTableViewCell.m */,
+				722D896E245FB21B0062B886 /* FBWardrobeTableViewCell.h */,
+				722D896F245FB21B0062B886 /* FBWardrobeTableViewCell.m */,
 			);
-			path = BCViews;
+			path = FBViews;
 			sourceTree = "<group>";
 		};
-		726F54082453D2BF006CFBE3 /* BCModels */ = {
+		726F54082453D2BF006CFBE3 /* FBModels */ = {
 			isa = PBXGroup;
 			children = (
-				722D8968245EFB010062B886 /* BCWardrobeAddModel.h */,
-				722D8969245EFB010062B886 /* BCWardrobeAddModel.m */,
-				7265018924603DAE00387A90 /* BCWardrobeModel.h */,
-				7265018A24603DAE00387A90 /* BCWardrobeModel.m */,
+				722D8968245EFB010062B886 /* FBWardrobeAddModel.h */,
+				722D8969245EFB010062B886 /* FBWardrobeAddModel.m */,
+				7265018924603DAE00387A90 /* FBWardrobeModel.h */,
+				7265018A24603DAE00387A90 /* FBWardrobeModel.m */,
 			);
-			path = BCModels;
+			path = FBModels;
 			sourceTree = "<group>";
 		};
-		726F54092453D2BF006CFBE3 /* BCControllers */ = {
+		726F54092453D2BF006CFBE3 /* FBControllers */ = {
 			isa = PBXGroup;
 			children = (
-				726F54302453D8E5006CFBE3 /* BCWardrobeViewController.h */,
-				726F54312453D8E5006CFBE3 /* BCWardrobeViewController.m */,
-				722D8965245EF7230062B886 /* BCWardrobeAddViewController.h */,
-				722D8966245EF7230062B886 /* BCWardrobeAddViewController.m */,
+				726F54302453D8E5006CFBE3 /* FBWardrobeViewController.h */,
+				726F54312453D8E5006CFBE3 /* FBWardrobeViewController.m */,
+				722D8965245EF7230062B886 /* FBWardrobeAddViewController.h */,
+				722D8966245EF7230062B886 /* FBWardrobeAddViewController.m */,
 			);
-			path = BCControllers;
+			path = FBControllers;
 			sourceTree = "<group>";
 		};
-		726F540A2453D2BF006CFBE3 /* BCDaily */ = {
+		726F540A2453D2BF006CFBE3 /* FBDaily */ = {
 			isa = PBXGroup;
 			children = (
-				726F540B2453D2C0006CFBE3 /* BCViews */,
-				726F540C2453D2C0006CFBE3 /* BCModels */,
-				726F540D2453D2C0006CFBE3 /* BCControllers */,
+				726F540B2453D2C0006CFBE3 /* FBViews */,
+				726F540C2453D2C0006CFBE3 /* FBModels */,
+				726F540D2453D2C0006CFBE3 /* FBControllers */,
 			);
-			path = BCDaily;
+			path = FBDaily;
 			sourceTree = "<group>";
 		};
-		726F540B2453D2C0006CFBE3 /* BCViews */ = {
+		726F540B2453D2C0006CFBE3 /* FBViews */ = {
 			isa = PBXGroup;
 			children = (
-				7265018F24604FF500387A90 /* BCDailyAddVTableViewCell.h */,
-				7265019024604FF500387A90 /* BCDailyAddVTableViewCell.m */,
-				72650198246057D500387A90 /* BCDailyTableViewCell.h */,
-				72650199246057D500387A90 /* BCDailyTableViewCell.m */,
+				7265018F24604FF500387A90 /* FBDailyAddVTableViewCell.h */,
+				7265019024604FF500387A90 /* FBDailyAddVTableViewCell.m */,
+				72650198246057D500387A90 /* FBDailyTableViewCell.h */,
+				72650199246057D500387A90 /* FBDailyTableViewCell.m */,
 			);
-			path = BCViews;
+			path = FBViews;
 			sourceTree = "<group>";
 		};
-		726F540C2453D2C0006CFBE3 /* BCModels */ = {
+		726F540C2453D2C0006CFBE3 /* FBModels */ = {
 			isa = PBXGroup;
 			children = (
-				726501922460503000387A90 /* BCDailyAddModel.h */,
-				726501932460503000387A90 /* BCDailyAddModel.m */,
-				726501952460505500387A90 /* BCDailyModel.h */,
-				726501962460505500387A90 /* BCDailyModel.m */,
+				726501922460503000387A90 /* FBDailyAddModel.h */,
+				726501932460503000387A90 /* FBDailyAddModel.m */,
+				726501952460505500387A90 /* FBDailyModel.h */,
+				726501962460505500387A90 /* FBDailyModel.m */,
 			);
-			path = BCModels;
+			path = FBModels;
 			sourceTree = "<group>";
 		};
-		726F540D2453D2C0006CFBE3 /* BCControllers */ = {
+		726F540D2453D2C0006CFBE3 /* FBControllers */ = {
 			isa = PBXGroup;
 			children = (
-				726F54332453D8FB006CFBE3 /* BCDailyViewController.h */,
-				726F54342453D8FB006CFBE3 /* BCDailyViewController.m */,
-				7265018C24604F5B00387A90 /* BCDailyAddViewController.h */,
-				7265018D24604F5B00387A90 /* BCDailyAddViewController.m */,
+				726F54332453D8FB006CFBE3 /* FBDailyViewController.h */,
+				726F54342453D8FB006CFBE3 /* FBDailyViewController.m */,
+				7265018C24604F5B00387A90 /* FBDailyAddViewController.h */,
+				7265018D24604F5B00387A90 /* FBDailyAddViewController.m */,
 			);
-			path = BCControllers;
+			path = FBControllers;
 			sourceTree = "<group>";
 		};
-		726F540E2453D2C0006CFBE3 /* BCMine */ = {
+		726F540E2453D2C0006CFBE3 /* FBMine */ = {
 			isa = PBXGroup;
 			children = (
-				726F540F2453D2C0006CFBE3 /* BCViews */,
-				726F54102453D2C0006CFBE3 /* BCModels */,
-				726F54112453D2C0006CFBE3 /* BCControllers */,
+				726F540F2453D2C0006CFBE3 /* FBViews */,
+				726F54102453D2C0006CFBE3 /* FBModels */,
+				726F54112453D2C0006CFBE3 /* FBControllers */,
 			);
-			path = BCMine;
+			path = FBMine;
 			sourceTree = "<group>";
 		};
-		726F540F2453D2C0006CFBE3 /* BCViews */ = {
+		726F540F2453D2C0006CFBE3 /* FBViews */ = {
 			isa = PBXGroup;
 			children = (
-				722EE64D2460164300E64984 /* BCLoginTableViewCell.h */,
-				722EE64E2460164300E64984 /* BCLoginTableViewCell.m */,
-				726501B62464340A00387A90 /* BCproblemFeedbackTableViewCell.h */,
-				726501B72464340A00387A90 /* BCproblemFeedbackTableViewCell.m */,
+				722EE64D2460164300E64984 /* FBLoginTableViewCell.h */,
+				722EE64E2460164300E64984 /* FBLoginTableViewCell.m */,
+				726501B62464340A00387A90 /* FBproblemFeedbackTableViewCell.h */,
+				726501B72464340A00387A90 /* FBproblemFeedbackTableViewCell.m */,
 			);
-			path = BCViews;
+			path = FBViews;
 			sourceTree = "<group>";
 		};
-		726F54102453D2C0006CFBE3 /* BCModels */ = {
+		726F54102453D2C0006CFBE3 /* FBModels */ = {
 			isa = PBXGroup;
 			children = (
-				726501B4246433A700387A90 /* BCproblemFeedbackModel.h */,
-				726501B3246433A600387A90 /* BCproblemFeedbackModel.m */,
+				726501B4246433A700387A90 /* FBproblemFeedbackModel.h */,
+				726501B3246433A600387A90 /* FBproblemFeedbackModel.m */,
 			);
-			path = BCModels;
+			path = FBModels;
 			sourceTree = "<group>";
 		};
-		726F54112453D2C0006CFBE3 /* BCControllers */ = {
+		726F54112453D2C0006CFBE3 /* FBControllers */ = {
 			isa = PBXGroup;
 			children = (
-				726501AC2464334000387A90 /* BCModifyNicknameViewController.h */,
-				726501AE2464334000387A90 /* BCModifyNicknameViewController.m */,
-				726501AF2464334000387A90 /* BCPasswordChangeViewController.h */,
-				726501AD2464334000387A90 /* BCPasswordChangeViewController.m */,
-				726501AA2464333F00387A90 /* BCproblemFeedbackViewController.h */,
-				726501AB2464333F00387A90 /* BCproblemFeedbackViewController.m */,
-				726F54392453D91B006CFBE3 /* BCMineViewController.h */,
-				726F543A2453D91B006CFBE3 /* BCMineViewController.m */,
-				722EE64A2460161D00E64984 /* BCLoginViewController.h */,
-				722EE64B2460161D00E64984 /* BCLoginViewController.m */,
+				726501AC2464334000387A90 /* FBModifyNicknameViewController.h */,
+				726501AE2464334000387A90 /* FBModifyNicknameViewController.m */,
+				726501AF2464334000387A90 /* FBPasswordChangeViewController.h */,
+				726501AD2464334000387A90 /* FBPasswordChangeViewController.m */,
+				726501AA2464333F00387A90 /* FBproblemFeedbackViewController.h */,
+				726501AB2464333F00387A90 /* FBproblemFeedbackViewController.m */,
+				726F54392453D91B006CFBE3 /* FBMineViewController.h */,
+				726F543A2453D91B006CFBE3 /* FBMineViewController.m */,
+				722EE64A2460161D00E64984 /* FBLoginViewController.h */,
+				722EE64B2460161D00E64984 /* FBLoginViewController.m */,
 			);
-			path = BCControllers;
+			path = FBControllers;
 			sourceTree = "<group>";
 		};
-		726F54122453D2C0006CFBE3 /* BCDressUp */ = {
+		726F54122453D2C0006CFBE3 /* FBDressUp */ = {
 			isa = PBXGroup;
 			children = (
-				726F54132453D2C0006CFBE3 /* BCViews */,
-				726F54142453D2C0006CFBE3 /* BCModels */,
-				726F54152453D2C0006CFBE3 /* BCControllers */,
+				726F54132453D2C0006CFBE3 /* FBViews */,
+				726F54142453D2C0006CFBE3 /* FBModels */,
+				726F54152453D2C0006CFBE3 /* FBControllers */,
 			);
-			path = BCDressUp;
+			path = FBDressUp;
 			sourceTree = "<group>";
 		};
-		726F54132453D2C0006CFBE3 /* BCViews */ = {
+		726F54132453D2C0006CFBE3 /* FBViews */ = {
 			isa = PBXGroup;
 			children = (
-				7265019E2462FD5B00387A90 /* BCDressUpAddTableViewCell.h */,
-				7265019F2462FD5B00387A90 /* BCDressUpAddTableViewCell.m */,
-				726501A72463095A00387A90 /* BCDressUpTableViewCell.h */,
-				726501A82463095A00387A90 /* BCDressUpTableViewCell.m */,
+				7265019E2462FD5B00387A90 /* FBDressUpAddTableViewCell.h */,
+				7265019F2462FD5B00387A90 /* FBDressUpAddTableViewCell.m */,
+				726501A72463095A00387A90 /* FBDressUpTableViewCell.h */,
+				726501A82463095A00387A90 /* FBDressUpTableViewCell.m */,
 			);
-			path = BCViews;
+			path = FBViews;
 			sourceTree = "<group>";
 		};
-		726F54142453D2C0006CFBE3 /* BCModels */ = {
+		726F54142453D2C0006CFBE3 /* FBModels */ = {
 			isa = PBXGroup;
 			children = (
-				726501A12463044400387A90 /* BCDressUpAddModel.h */,
-				726501A22463044400387A90 /* BCDressUpAddModel.m */,
-				726501A42463045F00387A90 /* BCDressUpModel.h */,
-				726501A52463045F00387A90 /* BCDressUpModel.m */,
+				726501A12463044400387A90 /* FBDressUpAddModel.h */,
+				726501A22463044400387A90 /* FBDressUpAddModel.m */,
+				726501A42463045F00387A90 /* FBDressUpModel.h */,
+				726501A52463045F00387A90 /* FBDressUpModel.m */,
 			);
-			path = BCModels;
+			path = FBModels;
 			sourceTree = "<group>";
 		};
-		726F54152453D2C0006CFBE3 /* BCControllers */ = {
+		726F54152453D2C0006CFBE3 /* FBControllers */ = {
 			isa = PBXGroup;
 			children = (
-				726F54362453D90A006CFBE3 /* BCDressUpViewController.h */,
-				726F54372453D90A006CFBE3 /* BCDressUpViewController.m */,
-				7265019B2462FCC100387A90 /* BCDressUpAddViewController.h */,
-				7265019C2462FCC100387A90 /* BCDressUpAddViewController.m */,
+				726F54362453D90A006CFBE3 /* FBDressUpViewController.h */,
+				726F54372453D90A006CFBE3 /* FBDressUpViewController.m */,
+				7265019B2462FCC100387A90 /* FBDressUpAddViewController.h */,
+				7265019C2462FCC100387A90 /* FBDressUpAddViewController.m */,
 			);
-			path = BCControllers;
+			path = FBControllers;
 			sourceTree = "<group>";
 		};
-		726F54162453D2F1006CFBE3 /* BCCommon */ = {
+		726F54162453D2F1006CFBE3 /* FBCommon */ = {
 			isa = PBXGroup;
 			children = (
-				726F54202453D6A4006CFBE3 /* BC_PrefixHeader.pch */,
-				726F541C2453D62F006CFBE3 /* BCGlobal.h */,
+				726F54202453D6A4006CFBE3 /* FB_PrefixHeader.pch */,
+				726F541C2453D62F006CFBE3 /* FBGlobal.h */,
 				726501BD2464446200387A90 /* Reachability.h */,
 				726501BC2464446200387A90 /* Reachability.m */,
-				726F541E2453D675006CFBE3 /* BCHBTool.h */,
-				726F541D2453D675006CFBE3 /* BCHBTool.m */,
-				726F54222453D78C006CFBE3 /* BCUIUtilities.h */,
-				726F54212453D78C006CFBE3 /* BCUIUtilities.m */,
-				726F54402453DD2A006CFBE3 /* MBProgressHUD+BCNJ.h */,
-				726F543F2453DD2A006CFBE3 /* MBProgressHUD+BCNJ.m */,
+				726F541E2453D675006CFBE3 /* FBHBTool.h */,
+				726F541D2453D675006CFBE3 /* FBHBTool.m */,
+				726F54222453D78C006CFBE3 /* FBUIUtilities.h */,
+				726F54212453D78C006CFBE3 /* FBUIUtilities.m */,
+				726F54402453DD2A006CFBE3 /* MBProgressHUD+FBNJ.h */,
+				726F543F2453DD2A006CFBE3 /* MBProgressHUD+FBNJ.m */,
 				726F54262453D812006CFBE3 /* NSArray+log.h */,
 				726F542B2453D813006CFBE3 /* NSArray+log.m */,
 				726F54292453D812006CFBE3 /* NSDictionary+log.h */,
 				726F542A2453D813006CFBE3 /* NSDictionary+log.m */,
-				726F541A2453D599006CFBE3 /* BCBaseViewController.h */,
-				726F54192453D599006CFBE3 /* BCBaseViewController.m */,
-				726F543C2453D94B006CFBE3 /* BCTabBarController.h */,
-				726F543D2453D94B006CFBE3 /* BCTabBarController.m */,
+				726F541A2453D599006CFBE3 /* FBBaseViewController.h */,
+				726F54192453D599006CFBE3 /* FBBaseViewController.m */,
+				726F543C2453D94B006CFBE3 /* FBTabBarController.h */,
+				726F543D2453D94B006CFBE3 /* FBTabBarController.m */,
 			);
-			path = BCCommon;
+			path = FBCommon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,41 +515,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				726F53EF2452FB10006CFBE3 /* AppDelegate.m in Sources */,
-				726501A02462FD5B00387A90 /* BCDressUpAddTableViewCell.m in Sources */,
-				726501B5246433A700387A90 /* BCproblemFeedbackModel.m in Sources */,
-				726501B02464334000387A90 /* BCproblemFeedbackViewController.m in Sources */,
+				726501A02462FD5B00387A90 /* FBDressUpAddTableViewCell.m in Sources */,
+				726501B5246433A700387A90 /* FBproblemFeedbackModel.m in Sources */,
+				726501B02464334000387A90 /* FBproblemFeedbackViewController.m in Sources */,
 				726F542E2453D813006CFBE3 /* NSDictionary+log.m in Sources */,
-				722D8967245EF7230062B886 /* BCWardrobeAddViewController.m in Sources */,
+				722D8967245EF7230062B886 /* FBWardrobeAddViewController.m in Sources */,
 				726501BE2464446200387A90 /* Reachability.m in Sources */,
-				722D896D245F09BA0062B886 /* BCWardrobeAddTableViewCell.m in Sources */,
-				726F543E2453D94B006CFBE3 /* BCTabBarController.m in Sources */,
-				722D896A245EFB010062B886 /* BCWardrobeAddModel.m in Sources */,
-				726F541B2453D599006CFBE3 /* BCBaseViewController.m in Sources */,
-				7265018E24604F5B00387A90 /* BCDailyAddViewController.m in Sources */,
-				726F541F2453D675006CFBE3 /* BCHBTool.m in Sources */,
-				726501972460505500387A90 /* BCDailyModel.m in Sources */,
-				726501B22464334000387A90 /* BCModifyNicknameViewController.m in Sources */,
-				726501B82464340A00387A90 /* BCproblemFeedbackTableViewCell.m in Sources */,
+				722D896D245F09BA0062B886 /* FBWardrobeAddTableViewCell.m in Sources */,
+				726F543E2453D94B006CFBE3 /* FBTabBarController.m in Sources */,
+				722D896A245EFB010062B886 /* FBWardrobeAddModel.m in Sources */,
+				726F541B2453D599006CFBE3 /* FBBaseViewController.m in Sources */,
+				7265018E24604F5B00387A90 /* FBDailyAddViewController.m in Sources */,
+				726F541F2453D675006CFBE3 /* FBHBTool.m in Sources */,
+				726501972460505500387A90 /* FBDailyModel.m in Sources */,
+				726501B22464334000387A90 /* FBModifyNicknameViewController.m in Sources */,
+				726501B82464340A00387A90 /* FBproblemFeedbackTableViewCell.m in Sources */,
 				726F54002452FB17006CFBE3 /* main.m in Sources */,
-				726F54382453D90A006CFBE3 /* BCDressUpViewController.m in Sources */,
+				726F54382453D90A006CFBE3 /* FBDressUpViewController.m in Sources */,
 				726F542F2453D813006CFBE3 /* NSArray+log.m in Sources */,
-				726F54412453DD2A006CFBE3 /* MBProgressHUD+BCNJ.m in Sources */,
-				722D8970245FB21B0062B886 /* BCWardrobeTableViewCell.m in Sources */,
-				726F54322453D8E5006CFBE3 /* BCWardrobeViewController.m in Sources */,
-				7265019124604FF500387A90 /* BCDailyAddVTableViewCell.m in Sources */,
-				726501A32463044400387A90 /* BCDressUpAddModel.m in Sources */,
-				722EE64F2460164300E64984 /* BCLoginTableViewCell.m in Sources */,
-				726F54352453D8FB006CFBE3 /* BCDailyViewController.m in Sources */,
-				7265018B24603DAE00387A90 /* BCWardrobeModel.m in Sources */,
-				726F54232453D78D006CFBE3 /* BCUIUtilities.m in Sources */,
-				726501A62463045F00387A90 /* BCDressUpModel.m in Sources */,
-				726501B12464334000387A90 /* BCPasswordChangeViewController.m in Sources */,
-				726501A92463095A00387A90 /* BCDressUpTableViewCell.m in Sources */,
-				7265019D2462FCC100387A90 /* BCDressUpAddViewController.m in Sources */,
-				722EE64C2460161D00E64984 /* BCLoginViewController.m in Sources */,
-				7265019A246057D500387A90 /* BCDailyTableViewCell.m in Sources */,
-				726501942460503000387A90 /* BCDailyAddModel.m in Sources */,
-				726F543B2453D91B006CFBE3 /* BCMineViewController.m in Sources */,
+				726F54412453DD2A006CFBE3 /* MBProgressHUD+FBNJ.m in Sources */,
+				722D8970245FB21B0062B886 /* FBWardrobeTableViewCell.m in Sources */,
+				726F54322453D8E5006CFBE3 /* FBWardrobeViewController.m in Sources */,
+				7265019124604FF500387A90 /* FBDailyAddVTableViewCell.m in Sources */,
+				726501A32463044400387A90 /* FBDressUpAddModel.m in Sources */,
+				722EE64F2460164300E64984 /* FBLoginTableViewCell.m in Sources */,
+				726F54352453D8FB006CFBE3 /* FBDailyViewController.m in Sources */,
+				7265018B24603DAE00387A90 /* FBWardrobeModel.m in Sources */,
+				726F54232453D78D006CFBE3 /* FBUIUtilities.m in Sources */,
+				726501A62463045F00387A90 /* FBDressUpModel.m in Sources */,
+				726501B12464334000387A90 /* FBPasswordChangeViewController.m in Sources */,
+				726501A92463095A00387A90 /* FBDressUpTableViewCell.m in Sources */,
+				7265019D2462FCC100387A90 /* FBDressUpAddViewController.m in Sources */,
+				722EE64C2460161D00E64984 /* FBLoginViewController.m in Sources */,
+				7265019A246057D500387A90 /* FBDailyTableViewCell.m in Sources */,
+				726501942460503000387A90 /* FBDailyAddModel.m in Sources */,
+				726F543B2453D91B006CFBE3 /* FBMineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
