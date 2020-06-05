@@ -22,7 +22,7 @@
 }
 - (void)FBsetContentView{
     [self.view addSubview:self.FBmainTable];
-    self.FBmainTable.backgroundColor = [UIColor blueColor];
+    self.FBmainTable.backgroundColor = [UIColor cyanColor];
     [self.FBmainTable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.mas_topLayoutGuideBottom);
         make.leading.equalTo(self.view);

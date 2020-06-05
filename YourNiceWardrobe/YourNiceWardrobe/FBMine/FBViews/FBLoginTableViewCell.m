@@ -30,6 +30,7 @@
     return self;
 }
 - (void)FBsetContentView{
+    self.contentView.backgroundColor = [UIColor cyanColor];
     [self.contentView addSubview:self.FBcancelButton];
     [self.contentView addSubview:self.FBaccountLable];
     [self.contentView addSubview:self.FBaccountTextField];
@@ -41,8 +42,8 @@
     [self.contentView addSubview:self.FBregisteredButton];
     
     [self.FBcancelButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.trailing.equalTo(self.contentView).offset(-16);
-        make.top.equalTo(self.contentView).offset(16);
+        make.trailing.equalTo(self.contentView).offset(-48);
+        make.top.equalTo(self.contentView).offset(48);
         make.width.mas_equalTo(15);
         make.height.mas_equalTo(15);
     }];
@@ -59,7 +60,7 @@
         make.height.mas_equalTo(22);
     }];
     [self.FBline mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.contentView).offset(16);
+        make.leading.equalTo(self.contentView).offset(0);
         make.top.equalTo(self.FBaccountTextField.mas_bottom).offset(20);
         make.trailing.equalTo(self.contentView);
         make.height.mas_equalTo(1);
@@ -77,22 +78,22 @@
         make.height.mas_equalTo(22);
     }];
     [self.FBline1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.contentView).offset(16);
+        make.leading.equalTo(self.contentView).offset(0);
         make.top.equalTo(self.FBpasswordTextField.mas_bottom).offset(20);
         make.trailing.equalTo(self.contentView);
         make.height.mas_equalTo(1);
     }];
     [self.FBloginButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.FBline1.mas_bottom).offset(30);
-        make.leading.equalTo(self.contentView).offset(64);
-        make.trailing.equalTo(self.contentView).offset(-64);
-        make.height.mas_equalTo(40);
+        make.top.equalTo(self.FBline1.mas_bottom).offset(45);
+        make.leading.equalTo(self.contentView).offset(76);
+        make.trailing.equalTo(self.contentView).offset(-76);
+        make.height.mas_equalTo(45);
     }];
     [self.FBregisteredButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.FBloginButton.mas_bottom).offset(20);
-        make.leading.equalTo(self.contentView).offset(64);
-        make.trailing.equalTo(self.contentView).offset(-64);
-        make.height.mas_equalTo(40);
+        make.top.equalTo(self.FBloginButton.mas_bottom).offset(30);
+        make.leading.equalTo(self.contentView).offset(76);
+        make.trailing.equalTo(self.contentView).offset(-76);
+        make.height.mas_equalTo(45);
         make.bottom.equalTo(self.contentView).offset(-16);
     }];
 }
@@ -178,7 +179,7 @@
     if (!_FBaccountLable) {
         _FBaccountLable = [[UILabel alloc] init];
         _FBaccountLable.text = @"账号:";
-        _FBaccountLable.textColor = [UIColor systemBlueColor];
+        _FBaccountLable.textColor = [UIColor systemGreenColor];
         _FBaccountLable.font = [UIFont systemFontOfSize:18];
     }
     return _FBaccountLable;
@@ -206,7 +207,7 @@
     if (!_FBpasswordLable) {
         _FBpasswordLable = [[UILabel alloc] init];
         _FBpasswordLable.text = @"密码:";
-        _FBpasswordLable.textColor = [UIColor systemBlueColor];
+        _FBpasswordLable.textColor = [UIColor systemGreenColor];
         _FBpasswordLable.font = [UIFont systemFontOfSize:18];
     }
     return _FBpasswordLable;
@@ -236,9 +237,9 @@
         _FBloginButton = [[UIButton alloc] init];
         _FBloginButton.tag = 100;
         _FBloginButton.backgroundColor = [UIColor blueColor];
-        [_FBloginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_FBloginButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_FBloginButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
-        _FBloginButton.layer.cornerRadius = 6.0f;
+        _FBloginButton.layer.cornerRadius = 4.0f;
         _FBloginButton.layer.masksToBounds = YES;
         [_FBloginButton setTitle:@"登录" forState:UIControlStateNormal];
         [_FBloginButton addTarget:self action:@selector(FBbtnClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -249,10 +250,10 @@
     if (!_FBregisteredButton) {
         _FBregisteredButton = [[UIButton alloc] init];
         _FBregisteredButton.tag = 101;
-        _FBregisteredButton.backgroundColor = [UIColor redColor];
-        [_FBregisteredButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        _FBregisteredButton.backgroundColor = [UIColor blueColor];
+        [_FBregisteredButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_FBregisteredButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
-        _FBregisteredButton.layer.cornerRadius = 6.0f;
+        _FBregisteredButton.layer.cornerRadius = 4.0f;
         _FBregisteredButton.layer.masksToBounds = YES;
         [_FBregisteredButton setTitle:@"注册" forState:UIControlStateNormal];
         [_FBregisteredButton addTarget:self action:@selector(FBbtnClick:) forControlEvents:UIControlEventTouchUpInside];

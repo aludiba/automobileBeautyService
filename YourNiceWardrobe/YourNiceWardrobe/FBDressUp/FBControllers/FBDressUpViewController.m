@@ -161,7 +161,7 @@
 - (UIImageView *)FBdressUpImgView{
     if (!_FBdressUpImgView) {
         _FBdressUpImgView = [[UIImageView alloc] init];
-        _FBdressUpImgView.image = [UIImage imageNamed:@"dressUp"];
+        _FBdressUpImgView.image = [UIImage imageNamed:@"FBdressUp"];
     }
     return _FBdressUpImgView;
 }

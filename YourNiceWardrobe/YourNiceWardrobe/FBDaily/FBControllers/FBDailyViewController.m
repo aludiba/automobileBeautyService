@@ -137,7 +137,7 @@
 - (UIImageView *)FBdailyImgView{
     if (!_FBdailyImgView) {
         _FBdailyImgView = [[UIImageView alloc] init];
-        _FBdailyImgView.image = [UIImage imageNamed:@"daily"];
+        _FBdailyImgView.image = [UIImage imageNamed:@"FBdaily"];
     }
     return _FBdailyImgView;
 }

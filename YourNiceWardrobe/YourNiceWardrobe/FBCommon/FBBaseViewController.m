@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBar.barTintColor = [UIColor purpleColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor cyanColor];
     [self FB_setupNavigationItems];
 }
 - (void)viewWillAppear:(BOOL)animated{
@@ -31,7 +31,7 @@
     UILabel *FBtitleLabel = [[UILabel alloc] init];
     FBtitleLabel.textAlignment = NSTextAlignmentCenter;
     FBtitleLabel.font = [UIFont boldSystemFontOfSize:20.0f];
-    FBtitleLabel.textColor = [UIColor whiteColor];
+    FBtitleLabel.textColor = [UIColor blackColor];
     FBtitleLabel.text = title;
     [FBtitleLabel sizeToFit];
     self.navigationItem.titleView = FBtitleLabel;

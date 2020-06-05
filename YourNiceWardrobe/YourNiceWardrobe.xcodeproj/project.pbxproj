@@ -683,19 +683,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = YourNiceWardrobe/YourBeautifulWardrobe.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Jin  hua Qi (295PH49WVH)";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 295PH49WVH;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/YourNiceWardrobe/BCCommon/BC_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YourNiceWardrobe/FBCommon/FB_PrefixHeader.pch";
 				INFOPLIST_FILE = YourNiceWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.YourNiceWardrobe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.YourNiceWardrobes;
 				PRODUCT_NAME = YourBeautifulWardrobe;
-				PROVISIONING_PROFILE_SPECIFIER = dis_YourBeautifulWardrobe_20200519;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -706,19 +706,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = YourNiceWardrobe/YourBeautifulWardrobe.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Jin  hua Qi (295PH49WVH)";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 295PH49WVH;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/YourNiceWardrobe/BCCommon/BC_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YourNiceWardrobe/FBCommon/FB_PrefixHeader.pch";
 				INFOPLIST_FILE = YourNiceWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.YourNiceWardrobe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.YourNiceWardrobes;
 				PRODUCT_NAME = YourBeautifulWardrobe;
-				PROVISIONING_PROFILE_SPECIFIER = dis_YourBeautifulWardrobe_20200519;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

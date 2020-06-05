@@ -209,7 +209,7 @@
 - (UIImageView *)FBhatImgView{
     if (!_FBhatImgView) {
         _FBhatImgView = [[UIImageView alloc] init];
-        _FBhatImgView.image = [UIImage imageNamed:@"hat"];
+        _FBhatImgView.image = [UIImage imageNamed:@"FBhat"];
     }
     return _FBhatImgView;
 }

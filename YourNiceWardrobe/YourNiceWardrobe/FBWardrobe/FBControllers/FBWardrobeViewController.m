@@ -157,7 +157,7 @@
 - (UIImageView *)FBcoatImgView{
     if (!_FBcoatImgView) {
         _FBcoatImgView = [[UIImageView alloc] init];
-        _FBcoatImgView.image = [UIImage imageNamed:@"coat"];
+        _FBcoatImgView.image = [UIImage imageNamed:@"FBcoat"];
     }
     return _FBcoatImgView;
 }
