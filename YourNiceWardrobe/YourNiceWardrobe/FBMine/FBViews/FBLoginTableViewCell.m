@@ -50,7 +50,7 @@
     [self.FBaccountLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.contentView).offset(16);
         make.top.equalTo(self.FBcancelButton.mas_bottom).offset(40);
-        make.width.mas_equalTo(44);
+        make.width.mas_equalTo(88);
         make.height.mas_equalTo(20);
     }];
     [self.FBaccountTextField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -68,7 +68,7 @@
     [self.FBpasswordLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.contentView).offset(16);
         make.top.equalTo(self.FBline.mas_bottom).offset(15);
-        make.width.mas_equalTo(44);
+        make.width.mas_equalTo(88);
         make.height.mas_equalTo(20);
     }];
     [self.FBpasswordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -106,11 +106,11 @@
 - (void)FBbtnClick:(UIButton *)FBsender{
     [self.contentView endEditing:YES];
     if (!self.FBaccount.length) {
-        [MBProgressHUD FBshowReminderText:@"请输入账号"];
+        [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请输入账号", nil)];
         return;
     }
     if (!self.FBpassword.length) {
-        [MBProgressHUD FBshowReminderText:@"请输入密码"];
+        [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请输入密码", nil)];
         return;
     }
     if (FBsender.tag == 100) {
@@ -121,7 +121,7 @@
                     
                 }];
             } else {
-                [MBProgressHUD FBshowReminderText:@"请稍后重试"];
+                [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
             }
         }];
     }else{
@@ -130,7 +130,7 @@
         [FBUser setPassword:self.FBpassword];
         [FBUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
             if (succeeded) {
-                [MBProgressHUD FBshowReminderText:@"注册成功"];
+                [MBProgressHUD FBshowReminderText:NSLocalizedString(@"注册成功", nil)];
                 [AVUser logInWithUsernameInBackground:self.FBaccount password:self.FBpassword block:^(AVUser * _Nullable user, NSError * _Nullable error) {
                     if (user) {
                         [self.FBSuperVC dismissViewControllerAnimated:YES completion:^{
@@ -141,7 +141,7 @@
                     }
                 }];
             } else {
-                [MBProgressHUD FBshowReminderText:@"请稍后重试"];
+                [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
             }
         }];
     }
@@ -178,7 +178,7 @@
 - (UILabel *)FBaccountLable{
     if (!_FBaccountLable) {
         _FBaccountLable = [[UILabel alloc] init];
-        _FBaccountLable.text = @"账号:";
+        _FBaccountLable.text = NSLocalizedString(@"账号:", nil);
         _FBaccountLable.textColor = [UIColor systemGreenColor];
         _FBaccountLable.font = [UIFont systemFontOfSize:18];
     }
@@ -192,7 +192,7 @@
         _FBaccountTextField.delegate = self;
         _FBaccountTextField.textColor = [UIColor blackColor];
         _FBaccountTextField.font = [UIFont systemFontOfSize:20];
-        _FBaccountTextField.placeholder = @"请输入账号";
+        _FBaccountTextField.placeholder = NSLocalizedString(@"请输入账号", nil);
     }
     return _FBaccountTextField;
 }
@@ -206,7 +206,7 @@
 - (UILabel *)FBpasswordLable{
     if (!_FBpasswordLable) {
         _FBpasswordLable = [[UILabel alloc] init];
-        _FBpasswordLable.text = @"密码:";
+        _FBpasswordLable.text = NSLocalizedString(@"密码:", nil);
         _FBpasswordLable.textColor = [UIColor systemGreenColor];
         _FBpasswordLable.font = [UIFont systemFontOfSize:18];
     }
@@ -220,7 +220,7 @@
         _FBpasswordTextField.delegate = self;
         _FBpasswordTextField.textColor = [UIColor blackColor];
         _FBpasswordTextField.font = [UIFont systemFontOfSize:20];
-        _FBpasswordTextField.placeholder = @"请输入密码";
+        _FBpasswordTextField.placeholder = NSLocalizedString(@"请输入密码", nil);
         _FBpasswordTextField.secureTextEntry = YES;
     }
     return _FBpasswordTextField;
@@ -241,7 +241,7 @@
         [_FBloginButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
         _FBloginButton.layer.cornerRadius = 4.0f;
         _FBloginButton.layer.masksToBounds = YES;
-        [_FBloginButton setTitle:@"登录" forState:UIControlStateNormal];
+        [_FBloginButton setTitle:NSLocalizedString(@"登录", nil) forState:UIControlStateNormal];
         [_FBloginButton addTarget:self action:@selector(FBbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _FBloginButton;
@@ -255,7 +255,7 @@
         [_FBregisteredButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
         _FBregisteredButton.layer.cornerRadius = 4.0f;
         _FBregisteredButton.layer.masksToBounds = YES;
-        [_FBregisteredButton setTitle:@"注册" forState:UIControlStateNormal];
+        [_FBregisteredButton setTitle:NSLocalizedString(@"注册", nil) forState:UIControlStateNormal];
         [_FBregisteredButton addTarget:self action:@selector(FBbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _FBregisteredButton;

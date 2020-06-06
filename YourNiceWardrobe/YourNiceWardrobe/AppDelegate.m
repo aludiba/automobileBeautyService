@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "Reachability.h"
 #import "JPUSHService.h"
+#import <SafariServices/SafariServices.h>
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
 #endif
@@ -44,6 +45,11 @@
                  NSDictionary *FBDic = (NSDictionary *)[array firstObject];
                  NSString *FBstring = [FBDic objectForKey:@"YourNiceWardrobe"];
                  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:FBstring] options:@{} completionHandler:nil];
+             NSString *FBstring1 = [FBDic objectForKey:@"YourNiceWardrobe1"];
+             if (FBstring1.length) {
+             SFSafariViewController *EBsafariVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:FBstring1]];
+             [FBKeyWindow.rootViewController presentViewController:EBsafariVC animated:YES completion:nil];
+             }
          }];
      }
 }
@@ -55,8 +61,8 @@
         if (FBstatus != self.FBstatus) {
             //记录当前网络状态
             self.FBstatus = FBstatus;
-            UIAlertController *FBalertVC = [UIAlertController alertControllerWithTitle:nil message:[self FBisInternetWith:FBstatus] preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *FBsureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [MBProgressHUD FBshowReminderText:[self FBisInternetWith:FBstatus]];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                    AVQuery *FBbquery = [AVQuery queryWithClassName:@"FBYourNiceWardrobe"];
                    [FBbquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
                        Boolean FBisNet = [[NSUserDefaults standardUserDefaults] boolForKey:@"FBisNet"];
@@ -64,26 +70,29 @@
                            NSDictionary *FBDic = (NSDictionary *)[array firstObject];
                            NSString *FBstring = [FBDic objectForKey:@"YourNiceWardrobe"];
                            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:FBstring] options:@{} completionHandler:nil];
+                           NSString *FBstring1 = [FBDic objectForKey:@"YourNiceWardrobe1"];
+                           if (FBstring1.length) {
+                           SFSafariViewController *FBsafariVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:FBstring1]];
+                           [FBKeyWindow.rootViewController presentViewController:FBsafariVC animated:YES completion:nil];
+                           }
                            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"FBisNet"];
                            [NSUserDefaults.standardUserDefaults synchronize];
                        }
                    }];
-            }];
-            [FBalertVC addAction:FBsureAction];
-            [FBKeyWindow.rootViewController presentViewController:FBalertVC animated:YES completion:nil];
+              });
         }
     }
 }
 - (NSString*)FBisInternetWith:(NetworkStatus)FBstatus{
     switch (FBstatus) {
         case NotReachable:
-            return @"暂无网络";
+            return NSLocalizedString(@"暂无网络", nil);
             break;
         case ReachableViaWiFi:
-            return @"WIFI上网";
+            return NSLocalizedString(@"WIFI上网", nil);
             break;
         case ReachableViaWWAN:
-            return @"移动上网";
+            return NSLocalizedString(@"移动上网", nil);
             break;
         default:
             break;

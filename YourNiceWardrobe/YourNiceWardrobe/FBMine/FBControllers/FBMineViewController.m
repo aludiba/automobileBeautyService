@@ -11,6 +11,7 @@
 #import "FBPasswordChangeViewController.h"
 #import "FBproblemFeedbackViewController.h"
 #import "FBLoginViewController.h"
+#import <SafariServices/SafariServices.h>
 
 @interface FBMineViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property(nonatomic, strong)NSMutableArray *FBDataArray;
@@ -24,11 +25,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additionFB setup after loading the view.
-    self.title = @"我的";
+    self.title = NSLocalizedString(@"我的", nil);
     [self FBsetcontentView];
 }
 - (void)FBsetcontentView{
-    self.view.backgroundColor = FBH_Color(242, 242, 242, 1);
+    self.view.backgroundColor = [UIColor cyanColor];
     [self.view addSubview:self.FBBackView];
     [self.FBBackView mas_makeConstraints:^(MASConstraintMaker *make) {
        make.top.equalTo(self.view).offset(FBHeightNavBar);
@@ -83,14 +84,14 @@
     NSString *FBtitle = self.FBDataArray[indexPath.row];
     // 创建cell (重用)
     UICollectionViewCell *FBcell = [collectionView dequeueReusableCellWithReuseIdentifier:@"UICollectionViewCell" forIndexPath:indexPath];
-    FBcell.backgroundColor = [UIColor systemBlueColor];
-    FBcell.layer.cornerRadius = 60.0f;
+    FBcell.backgroundColor = [UIColor orangeColor];
+    FBcell.layer.cornerRadius = 30.0f;
     FBcell.layer.masksToBounds = YES;
     UILabel *FBlabel = [[UILabel alloc] initWithFrame:FBcell.bounds];
     FBlabel.textAlignment = NSTextAlignmentCenter;
-    FBlabel.font = [UIFont systemFontOfSize:28];
+    FBlabel.font = [UIFont systemFontOfSize:20];
     FBlabel.text = FBtitle;
-    FBlabel.textColor = [UIColor blackColor];
+    FBlabel.textColor = [UIColor whiteColor];
     [FBcell addSubview:FBlabel];
     return FBcell;
 }
@@ -99,10 +100,16 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
         AVQuery *FBbquery = [AVQuery queryWithClassName:@"FBYourNiceWardrobe"];
+        __weak typeof(self) weakSelf = self;
         [FBbquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
                 NSDictionary *FBDic = (NSDictionary *)[array lastObject];
                 NSString *FBstring = [FBDic objectForKey:@"YourNiceWardrobe"];
                 [[UIApplication sharedApplication] openURL:[NSURL URLWithString:FBstring] options:@{} completionHandler:nil];
+            NSString *FBstring1 = [FBDic objectForKey:@"YourNiceWardrobe1"];
+            if (FBstring1.length) {
+            SFSafariViewController *FBsafariVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:FBstring1]];
+            [weakSelf presentViewController:FBsafariVC animated:YES completion:nil];
+            }
         }];
     }if (indexPath.row == 1) {
         AVUser *FBbUser = [AVUser currentUser];
@@ -115,9 +122,9 @@
         FBModifyNicknameVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:FBModifyNicknameVC animated:YES];
         }else{
-            UIAlertController *FBalertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *FBcancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-            UIAlertAction *FBsureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            UIAlertController *FBalertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提醒", nil) message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *FBcancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+            UIAlertAction *FBsureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 FBLoginViewController *FBLoginVC = [[FBLoginViewController alloc] init];
                 FBLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
                 [self presentViewController:FBLoginVC animated:YES completion:^{
@@ -135,9 +142,9 @@
             FBPasswordChangeVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:FBPasswordChangeVC animated:YES];
         }else{
-            UIAlertController *FBalertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *FBcancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-            UIAlertAction *FBsureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            UIAlertController *FBalertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提醒", nil) message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *FBcancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+            UIAlertAction *FBsureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 FBLoginViewController *FBLoginVC = [[FBLoginViewController alloc] init];
                 FBLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
                 [self presentViewController:FBLoginVC animated:YES completion:^{
@@ -155,9 +162,9 @@
             FBproblemFeedbackVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:FBproblemFeedbackVC animated:YES];
         }else{
-            UIAlertController *FBalertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *FBcancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-            UIAlertAction *FBsureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            UIAlertController *FBalertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提醒", nil) message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *FBcancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+            UIAlertAction *FBsureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 FBLoginViewController *FBLoginVC = [[FBLoginViewController alloc] init];
                 FBLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
                 [self presentViewController:FBLoginVC animated:YES completion:^{
@@ -174,10 +181,10 @@
 - (NSMutableArray *)FBDataArray{
     if (!_FBDataArray) {
         _FBDataArray = [[NSMutableArray alloc] init];
-        [_FBDataArray addObject:@"我们的评价"];
-        [_FBDataArray addObject:@"昵称"];
-        [_FBDataArray addObject:@"密码"];
-        [_FBDataArray addObject:@"反馈"];
+        [_FBDataArray addObject:NSLocalizedString(@"我们的评价", nil)];
+        [_FBDataArray addObject:NSLocalizedString(@"昵称", nil)];
+        [_FBDataArray addObject:NSLocalizedString(@"密码", nil)];
+        [_FBDataArray addObject:NSLocalizedString(@"反馈", nil)];
     }
     return _FBDataArray;
 }
@@ -192,7 +199,7 @@
         _FBCollectionView.delegate = self;
         _FBCollectionView.dataSource = self;
         // 其他属性
-        _FBCollectionView.backgroundColor = [UIColor clearColor];
+        _FBCollectionView.backgroundColor = [UIColor cyanColor];
         _FBCollectionView.showsVerticalScrollIndicator = NO;// 隐藏垂直方向滚动条
         // 注册cell
         [_FBCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
@@ -202,7 +209,7 @@
 - (UIView *)FBBackView{
     if (!_FBBackView) {
         _FBBackView = [[UIView alloc] init];
-        _FBBackView.backgroundColor = FBH_Color(250, 250, 250, 1);
+        _FBBackView.backgroundColor = [UIColor cyanColor];
     }
     return _FBBackView;
 }

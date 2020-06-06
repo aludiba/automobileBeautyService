@@ -46,7 +46,7 @@
         }];
         [self.FBline mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.FBeditableView.mas_bottom).offset(11.5);
-            make.leading.equalTo(self.contentView).offset(16);
+            make.leading.equalTo(self.contentView).offset(0);
             make.trailing.equalTo(self.contentView);
             make.height.mas_equalTo(1);
             make.bottom.equalTo(self.contentView.mas_bottom);
@@ -128,7 +128,7 @@
     if (!_FBtitleLbl) {
         _FBtitleLbl = [[UILabel alloc] init];
         _FBtitleLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:17];
-        _FBtitleLbl.textColor = [UIColor blackColor];
+        _FBtitleLbl.textColor = [UIColor orangeColor];
     }
     return _FBtitleLbl;
 }
@@ -145,7 +145,7 @@
         _FBeditableView = [[UITextView alloc] init];
         _FBeditableView.delegate = self;
         _FBeditableView.font = [UIFont fontWithName:@"PingFangSC-Regular" size:17];
-        _FBeditableView.textColor = [UIColor colorWithRed:19/255.0 green:29/255.0 blue:50/255.0 alpha:1/1.0];
+        _FBeditableView.textColor = [UIColor blackColor];
         _FBeditableView.scrollEnabled = NO;
         [_FBeditableView sizeToFit];
     }

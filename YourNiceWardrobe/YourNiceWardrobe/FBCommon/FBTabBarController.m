@@ -74,7 +74,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
 - (void)FBsetContentView{
     self.FBWardrobeVC = [[FBWardrobeViewController alloc] init];
     UINavigationController *FBWardrobe = [[UINavigationController alloc] initWithRootViewController:self.FBWardrobeVC];
-    self.FBWardrobeVC.tabBarItem.title = @"衣柜";
+    self.FBWardrobeVC.tabBarItem.title = NSLocalizedString(@"衣柜", nil);
     [self.FBWardrobeVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
     [self.FBWardrobeVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
     self.FBWardrobeVC.tabBarItem.image = [[UIImage imageNamed:@"FBtab_wardrobe_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -82,7 +82,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     
     self.FBDressUpVC = [[FBDressUpViewController alloc] init];
     UINavigationController *FBDressUpVC = [[UINavigationController alloc] initWithRootViewController:self.FBDressUpVC];
-    self.FBDressUpVC.tabBarItem.title = @"打扮";
+    self.FBDressUpVC.tabBarItem.title = NSLocalizedString(@"打扮", nil);
     [self.FBDressUpVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
     [self.FBDressUpVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
     self.FBDressUpVC.tabBarItem.image = [[UIImage imageNamed:@"FBtab_dressup_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -90,7 +90,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     
     self.FBDailyVC = [[FBDailyViewController alloc] init];
     UINavigationController *FBDailyVC = [[UINavigationController alloc] initWithRootViewController:self.FBDailyVC];
-    self.FBDailyVC.tabBarItem.title = @"日常";
+    self.FBDailyVC.tabBarItem.title = NSLocalizedString(@"日常", nil);
     [self.FBDailyVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
     [self.FBDailyVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
     self.FBDailyVC.tabBarItem.image = [[UIImage imageNamed:@"FBtab_daily_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -98,7 +98,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     
     self.FBMineVC = [[FBMineViewController alloc] init];
     UINavigationController *FBMineVC = [[UINavigationController alloc] initWithRootViewController:self.FBMineVC];
-    self.FBMineVC.tabBarItem.title = @"我的";
+    self.FBMineVC.tabBarItem.title = NSLocalizedString(@"我的", nil);
     [self.FBMineVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
     [self.FBMineVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
     self.FBMineVC.tabBarItem.image = [[UIImage imageNamed:@"FBtab_mine_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

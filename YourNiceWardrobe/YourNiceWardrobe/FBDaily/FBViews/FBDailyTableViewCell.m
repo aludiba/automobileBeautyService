@@ -65,7 +65,7 @@
 - (UILabel *)FBDateLbl{
     if (!_FBDateLbl) {
         _FBDateLbl = [[UILabel alloc] init];
-        _FBDateLbl.textColor = [UIColor blueColor];
+        _FBDateLbl.textColor = [UIColor orangeColor];
         _FBDateLbl.font = [UIFont systemFontOfSize:20];
     }
     return _FBDateLbl;

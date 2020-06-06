@@ -14,7 +14,6 @@
 @property(nonatomic, strong)UITextField *FBtitleContentTextField;
 @property(nonatomic, strong)UITextView *FBcontentTextView;
 @property(nonatomic, strong)UILabel *FBhiddenLbl;
-@property(nonatomic, strong)UIView *FBline;
 @end
 @implementation FBDressUpAddTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -23,7 +22,6 @@
         [self.contentView addSubview:self.FBtitleContentTextField];
         [self.contentView addSubview:self.FBcontentTextView];
         [self.FBcontentTextView addSubview:self.FBhiddenLbl];
-        [self.contentView addSubview:self.FBline];
 
         [self.FBtitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.contentView).offset(12);
@@ -43,6 +41,7 @@
             make.leading.equalTo(self.contentView).offset(16);
             make.trailing.equalTo(self.contentView).offset(-16);
             make.height.mas_greaterThanOrEqualTo(176);
+            make.bottom.equalTo(self.contentView).offset(-12);
         }];
         [self.FBhiddenLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.FBcontentTextView).offset(4);
@@ -50,13 +49,6 @@
             make.leading.equalTo(self.FBcontentTextView).offset(4);
             make.trailing.equalTo(self.FBcontentTextView);
             make.height.mas_equalTo(18);
-        }];
-        [self.FBline mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.FBcontentTextView.mas_bottom).offset(11.5);
-            make.leading.equalTo(self.contentView);
-            make.trailing.equalTo(self.contentView);
-            make.height.mas_equalTo(1);
-            make.bottom.equalTo(self.contentView.mas_bottom);
         }];
     }
     return self;
@@ -139,9 +131,9 @@
 - (UILabel *)FBtitleLbl{
     if (!_FBtitleLbl) {
         _FBtitleLbl = [[UILabel alloc] init];
-        _FBtitleLbl.textColor = [UIColor blueColor];
+        _FBtitleLbl.textColor = [UIColor orangeColor];
         _FBtitleLbl.font = [UIFont systemFontOfSize:15];
-        _FBtitleLbl.text = @"标题:";
+        _FBtitleLbl.text = @"title:";
     }
     return _FBtitleLbl;
 }
@@ -151,7 +143,7 @@
         _FBtitleContentTextField.delegate = self;
         _FBtitleContentTextField.textColor = [UIColor blackColor];
         _FBtitleContentTextField.font = [UIFont systemFontOfSize:16];
-        _FBtitleContentTextField.placeholder = @"请输入打扮穿搭标题";
+        _FBtitleContentTextField.placeholder = NSLocalizedString(@"请输入穿搭标题", nil);
     }
     return _FBtitleContentTextField;
 }
@@ -171,17 +163,10 @@
         _FBcontentTextView.layer.masksToBounds = YES;
         _FBcontentTextView.delegate = self;
         _FBcontentTextView.font = [UIFont fontWithName:@"PingFangSC-Regular" size:17];
-        _FBcontentTextView.textColor = [UIColor colorWithRed:19/255.0 green:29/255.0 blue:50/255.0 alpha:1/1.0];
+        _FBcontentTextView.textColor = [UIColor blackColor];
         _FBcontentTextView.scrollEnabled = NO;
         [_FBcontentTextView sizeToFit];
     }
     return _FBcontentTextView;
-}
-- (UIView *)FBline{
-    if (!_FBline) {
-        _FBline = [[UIView alloc] init];
-        _FBline.backgroundColor = FBH_Color(226, 228, 232, 1);
-    }
-    return _FBline;
 }
 @end

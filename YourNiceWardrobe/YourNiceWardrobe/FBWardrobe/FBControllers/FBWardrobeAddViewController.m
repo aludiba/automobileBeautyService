@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(FBkeyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
-    self.title = @"添加";
+    self.title = NSLocalizedString(@"添加", nil);
     [self FBsetContentView];
 }
 - (void)FBkeyboardWillHide:(NSNotification *)FBnote{
@@ -45,23 +45,23 @@
 }
 - (void)FBsetContentView{
     FBWardrobeAddModel *FBtypesViewModel = [[FBWardrobeAddModel alloc] init];
-    FBtypesViewModel.FBTitle = @"类型:";
-    FBtypesViewModel.FBDefault = @"请输入类型";
+    FBtypesViewModel.FBTitle = NSLocalizedString(@"类型:", nil);
+    FBtypesViewModel.FBDefault = NSLocalizedString(@"请输入类型", nil);
     [self.FBViewDataArray addObject:FBtypesViewModel];
     
     FBWardrobeAddModel *FBnumberViewModel = [[FBWardrobeAddModel alloc] init];
-    FBnumberViewModel.FBTitle = @"尺码:";
-    FBnumberViewModel.FBDefault = @"请输入尺码数";
+    FBnumberViewModel.FBTitle = NSLocalizedString(@"尺码:", nil);
+    FBnumberViewModel.FBDefault = NSLocalizedString(@"请输入尺码数", nil);
     [self.FBViewDataArray addObject:FBnumberViewModel];
     
     FBWardrobeAddModel *FBstorageViewModel = [[FBWardrobeAddModel alloc] init];
-    FBstorageViewModel.FBTitle = @"储存位置:";
-    FBstorageViewModel.FBDefault = @"请输入储存位置";
+    FBstorageViewModel.FBTitle = NSLocalizedString(@"储存位置:", nil);
+    FBstorageViewModel.FBDefault = NSLocalizedString(@"请输入储存位置", nil);
     [self.FBViewDataArray addObject:FBstorageViewModel];
     
     FBWardrobeAddModel *FBpurchasetimeViewModel = [[FBWardrobeAddModel alloc] init];
-    FBpurchasetimeViewModel.FBTitle = @"购买时间:";
-    FBpurchasetimeViewModel.FBDefault = @"请输入购买时间";
+    FBpurchasetimeViewModel.FBTitle = NSLocalizedString(@"购买时间:", nil);
+    FBpurchasetimeViewModel.FBDefault = NSLocalizedString(@"请输入购买时间", nil);
     [self.FBViewDataArray addObject:FBpurchasetimeViewModel];
     
     [self.FBmainTable reloadData];
@@ -72,16 +72,16 @@
         NSString *FBcontentString = [FBHBTool FBremoveSpaceAndNewline:FBviewModel.FBContent];
         if (!FBcontentString.length) {
             if (i == 0) {
-                [MBProgressHUD FBshowReminderText:@"请输入类型"];
+                [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请输入类型", nil)];
                 return;
             }else if (i == 1){
-                [MBProgressHUD FBshowReminderText:@"请输入尺码数"];
+                [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请输入尺码数", nil)];
                 return;
             }else if (i == 2){
-                [MBProgressHUD FBshowReminderText:@"请输入储存位置"];
+                [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请输入储存位置", nil)];
                 return;
             }else if (i == 3){
-                [MBProgressHUD FBshowReminderText:@"请输入购买时间"];
+                [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请输入购买时间", nil)];
                 return;
             }
         }
@@ -109,9 +109,9 @@
             [self.navigationController popToRootViewControllerAnimated:YES];
         } else if (error){
             //发生错误后的动作
-            [MBProgressHUD FBshowReminderText:@"请稍后重试"];
+            [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
         } else {
-            [MBProgressHUD FBshowReminderText:@"请稍后重试"];
+            [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
         }
     }];
 }
@@ -131,7 +131,7 @@
     FBcell.selectionStyle = UITableViewCellSelectionStyleNone;
     __weak typeof(self) weakSelf = self;
     FBcell.FBeditBlock = ^(FBWardrobeAddTableViewCell * _Nonnull cell) {
-        if ([FBViewModel.FBTitle hasPrefix:@"购买时间"]) {
+        if ([FBViewModel.FBTitle hasPrefix:NSLocalizedString(@"购买时间", nil)]) {
         if (FBcell.FBcontentHeight > FBViewModel.FBEditHeight) {
         [UIView animateWithDuration:0.2 animations:^{
             CGRect FBframe = self.view.frame;
@@ -170,7 +170,8 @@
 - (UIButton *)FBsaveButton{
     if (!_FBsaveButton) {
         _FBsaveButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
-        [_FBsaveButton setTitle:@"保存" forState:UIControlStateNormal];
+        [_FBsaveButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+        [_FBsaveButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
         [_FBsaveButton addTarget:self action:@selector(FBsaveAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _FBsaveButton;

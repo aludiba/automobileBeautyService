@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"密码修改";
+    self.title = NSLocalizedString(@"密码修改", nil);
     [self FBsetContent];
 }
 - (void)FBsetContent{
@@ -60,19 +60,19 @@
 - (void)FBbtnClick:(UIButton *)sender{
     [self.view endEditing:YES];
     if (!self.FBoldPassword.length) {
-        [MBProgressHUD FBshowReminderText:@"请输入旧密码"];
+        [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请输入旧密码", nil)];
         return;
     }
     if (!self.FBcurrentPassword.length) {
-        [MBProgressHUD FBshowReminderText:@"请输入新密码"];
+        [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请输入新密码", nil)];
         return;
     }
     if (!self.FBconfirmPassword.length) {
-        [MBProgressHUD FBshowReminderText:@"请确认密码"];
+        [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请确认密码", nil)];
         return;
     }
     if (![self.FBcurrentPassword isEqualToString:self.FBconfirmPassword]) {
-        [MBProgressHUD FBshowReminderText:@"两次密码输入不一致"];
+        [MBProgressHUD FBshowReminderText:NSLocalizedString(@"两次密码输入不一致", nil)];
         return;
     }
         AVUser *user = [AVUser currentUser];
@@ -84,12 +84,12 @@
                     if (error) {
                         [MBProgressHUD FBshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
                     } else {
-                        [MBProgressHUD FBshowReminderText:@"密码修改成功"];
+                        [MBProgressHUD FBshowReminderText:NSLocalizedString(@"密码修改成功", nil)];
                         [self.navigationController popViewControllerAnimated:YES];
                     }
                 }];
             } else {
-                [MBProgressHUD FBshowReminderText:@"请稍后重试"];
+                [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
             }
         }];
 }
@@ -134,10 +134,10 @@
         _FBFBoldPasswordTextField.layer.cornerRadius = 16.0f;
         _FBFBoldPasswordTextField.layer.masksToBounds = YES;
         _FBFBoldPasswordTextField.layer.borderWidth = 1.0f;
-        _FBFBoldPasswordTextField.layer.borderColor = [UIColor systemPurpleColor].CGColor;
+        _FBFBoldPasswordTextField.layer.borderColor = [UIColor orangeColor].CGColor;
         _FBFBoldPasswordTextField.tag = 100;
         _FBFBoldPasswordTextField.delegate = self;
-        _FBFBoldPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",@"输入旧密码"];
+        _FBFBoldPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",NSLocalizedString(@"输入旧密码", nil)];
         _FBFBoldPasswordTextField.textColor = [UIColor blackColor];
         _FBFBoldPasswordTextField.font = [UIFont systemFontOfSize:20];
     }
@@ -151,10 +151,10 @@
     _FBFBcurrentPasswordTextField.layer.cornerRadius = 16.0f;
     _FBFBcurrentPasswordTextField.layer.masksToBounds = YES;
         _FBFBcurrentPasswordTextField.layer.borderWidth = 1.0f;
-        _FBFBcurrentPasswordTextField.layer.borderColor = [UIColor systemPurpleColor].CGColor;
+        _FBFBcurrentPasswordTextField.layer.borderColor = [UIColor orangeColor].CGColor;
         _FBFBcurrentPasswordTextField.tag = 101;
         _FBFBcurrentPasswordTextField.delegate = self;
-        _FBFBcurrentPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",@"输入新密码"];
+        _FBFBcurrentPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",NSLocalizedString(@"输入新密码", nil)];
         _FBFBcurrentPasswordTextField.textColor = [UIColor blackColor];
         _FBFBcurrentPasswordTextField.font = [UIFont systemFontOfSize:20];
     }
@@ -168,10 +168,10 @@
         _FBFBconfirmPasswordTextField.layer.cornerRadius = 16.0f;
         _FBFBconfirmPasswordTextField.layer.masksToBounds = YES;
             _FBFBconfirmPasswordTextField.layer.borderWidth = 1.0f;
-            _FBFBconfirmPasswordTextField.layer.borderColor = [UIColor systemPurpleColor].CGColor;
+            _FBFBconfirmPasswordTextField.layer.borderColor = [UIColor orangeColor].CGColor;
         _FBFBconfirmPasswordTextField.tag = 102;
         _FBFBconfirmPasswordTextField.delegate = self;
-        _FBFBconfirmPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",@"确认密码"];
+        _FBFBconfirmPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",NSLocalizedString(@"确认密码", nil)];
         _FBFBconfirmPasswordTextField.textColor = [UIColor blackColor];
         _FBFBconfirmPasswordTextField.font = [UIFont systemFontOfSize:20];
     }
@@ -180,11 +180,11 @@
 - (UIButton *)FBsureButton{
     if (!_FBsureButton) {
         _FBsureButton = [[UIButton alloc] init];
-        _FBsureButton.backgroundColor = [UIColor blueColor];
+        _FBsureButton.backgroundColor = [UIColor orangeColor];
         _FBsureButton.layer.cornerRadius = 8.0f;
         _FBsureButton.layer.masksToBounds = YES;
-        [_FBsureButton setTitle:@"保存" forState:UIControlStateNormal];
-        [_FBsureButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_FBsureButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
+        [_FBsureButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_FBsureButton.titleLabel setFont:[UIFont systemFontOfSize:17]];
         [_FBsureButton addTarget:self action:@selector(FBbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }

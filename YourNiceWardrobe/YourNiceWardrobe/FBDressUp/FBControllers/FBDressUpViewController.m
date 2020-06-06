@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"打扮";
+    self.title = NSLocalizedString(@"打扮", nil);
     [self FBsetcontentView];
 }
 - (void)FB_setupNavigationItems{
@@ -32,7 +32,7 @@
     self.navigationItem.rightBarButtonItem = FBaddItem;
 }
 - (void)FBsetcontentView{
-    self.view.backgroundColor = FBH_Color(242, 242, 242, 1);
+    self.view.backgroundColor = [UIColor cyanColor];
     [self.view addSubview:self.FBBackView];
     [self.FBBackView mas_makeConstraints:^(MASConstraintMaker *make) {
        make.top.equalTo(self.view).offset(FBHeightNavBar);
@@ -57,9 +57,9 @@
         FBaddVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:FBaddVC animated:YES];
     }else{
-        UIAlertController *FBalertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *FBcancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-        UIAlertAction *FBsureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertController *FBalertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提醒", nil) message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *FBcancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction *FBsureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             FBLoginViewController *FBLoginVC = [[FBLoginViewController alloc] init];
             FBLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
             [self presentViewController:FBLoginVC animated:YES completion:^{
@@ -80,7 +80,7 @@
     [FBbquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
                if (error) {
                    [weakSelf.FBmainTable.mj_header endRefreshing];
-                   [MBProgressHUD FBshowReminderText:@"请稍后重试"];
+                   [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
                }else{
                    if (array.count) {
                    for (int i = (int)(array.count - 1); i > -1; i--) {
@@ -95,7 +95,7 @@
                     [weakSelf.FBmainTable reloadData];
                    }else{
                        [weakSelf.FBmainTable.mj_header endRefreshing];
-                       [MBProgressHUD FBshowReminderText:@"暂无数据"];
+                       [MBProgressHUD FBshowReminderText:NSLocalizedString(@"暂无数据", nil)];
                    }
               }
            }];
@@ -106,10 +106,10 @@
     [FBdiary deleteInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
     if (isSuccessful) {
          //删除成功后的动作
-        [MBProgressHUD FBshowReminderText:@"删除成功"];
+        [MBProgressHUD FBshowReminderText:NSLocalizedString(@"删除成功", nil)];
         [weakSelf.FBDataArray removeObject:FBmodel];
     }else {
-        [MBProgressHUD FBshowReminderText:@"请稍后重试"];
+        [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
     }
     }];
 }
@@ -132,7 +132,7 @@
     return UITableViewCellEditingStyleDelete;
 }
 -(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath{
-   return @"删除";
+   return NSLocalizedString(@"删除", nil);
 }
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     FBDressUpModel *FBmodel = self.FBDataArray[indexPath.row];
@@ -154,7 +154,7 @@
 - (UIView *)FBBackView{
     if (!_FBBackView) {
         _FBBackView = [[UIView alloc] init];
-        _FBBackView.backgroundColor = FBH_Color(246, 246, 246, 1);
+        _FBBackView.backgroundColor = [UIColor cyanColor];
     }
     return _FBBackView;
 }
@@ -174,6 +174,7 @@
 - (UITableView *)FBmainTable{
     if (!_FBmainTable) {
         _FBmainTable = [[UITableView alloc] init];
+        _FBmainTable.backgroundColor = [UIColor cyanColor];
         _FBmainTable.rowHeight = UITableViewAutomaticDimension;
         _FBmainTable.estimatedRowHeight = 48.0f;
         _FBmainTable.dataSource = self;

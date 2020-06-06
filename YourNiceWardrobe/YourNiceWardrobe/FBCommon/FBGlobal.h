@@ -19,7 +19,9 @@
 #import "NSArray+log.h"
 #import "NSDictionary+log.h"
 #import <AVOSCloud/AVOSCloud.h>
+#import <tingyunApp/NBSAppAgent.h>
 //多语言调用
+#define TingYunAPPKey @"9efb6a11cd3f4ba4b0182718541643a9"
 #define NSLocalizedString(key, comment) [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
 /**颜色*/
 #define FBH_Color(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]

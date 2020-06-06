@@ -40,13 +40,13 @@
 #pragma mark - actions
 - (void)setFBdressUpModel:(FBDressUpModel *)FBdressUpModel{
     _FBdressUpModel = FBdressUpModel;
-    self.FBTipsLbl.text = [NSString stringWithFormat:@"穿搭标题：%@",_FBdressUpModel.FBTitle];
+    self.FBTipsLbl.text = [NSString stringWithFormat:@"%@ %@",NSLocalizedString(@"穿搭标题:", nil),_FBdressUpModel.FBTitle];
     CGSize FBSize = [self.FBTipsLbl sizeThatFits:CGSizeMake(FBWIDTH - 32, MAXFLOAT)];
     [self.FBTipsLbl mas_updateConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(FBSize.height);
     }];
     [self.FBTipsLbl layoutIfNeeded];
-    self.FBContentLbl.text = [NSString stringWithFormat:@"穿搭内容：%@",_FBdressUpModel.FBContent];
+    self.FBContentLbl.text = [NSString stringWithFormat:@"%@ %@",@"Wear a content:",_FBdressUpModel.FBContent];
     FBSize = [self.FBContentLbl sizeThatFits:CGSizeMake(FBWIDTH - 32, MAXFLOAT)];
     [self.FBContentLbl mas_updateConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(FBSize.height);
@@ -58,7 +58,7 @@
 - (UILabel *)FBTipsLbl{
     if (!_FBTipsLbl) {
         _FBTipsLbl = [[UILabel alloc] init];
-        _FBTipsLbl.textColor = [UIColor systemBlueColor];
+        _FBTipsLbl.textColor = [UIColor orangeColor];
         _FBTipsLbl.font = [UIFont systemFontOfSize:16];
         _FBTipsLbl.numberOfLines = 0;
         [_FBTipsLbl sizeToFit];
@@ -68,10 +68,10 @@
 - (UILabel *)FBContentLbl{
     if (!_FBContentLbl) {
         _FBContentLbl = [[UILabel alloc] init];
-        _FBContentLbl.backgroundColor = [UIColor grayColor];
+        _FBContentLbl.backgroundColor = FBH_Color(242, 242, 242, 1);
         _FBContentLbl.layer.cornerRadius = 6.0f;
         _FBContentLbl.layer.masksToBounds = YES;
-        _FBContentLbl.textColor = [UIColor whiteColor];
+        _FBContentLbl.textColor = [UIColor blackColor];
         _FBContentLbl.font = [UIFont systemFontOfSize:18];
         _FBContentLbl.numberOfLines = 0;
         [_FBContentLbl sizeToFit];

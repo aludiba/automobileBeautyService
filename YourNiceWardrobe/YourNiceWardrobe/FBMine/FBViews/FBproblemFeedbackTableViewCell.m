@@ -123,7 +123,7 @@
     if (!_FBtitleLbl) {
         _FBtitleLbl = [[UILabel alloc] init];
         _FBtitleLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:19];
-        _FBtitleLbl.textColor = [UIColor blueColor];
+        _FBtitleLbl.textColor = [UIColor orangeColor];
     }
     return _FBtitleLbl;
 }
@@ -143,7 +143,7 @@
         _FBeditableView.textColor = [UIColor blackColor];
         _FBeditableView.layer.cornerRadius = 16.0f;
         _FBeditableView.layer.masksToBounds = YES;
-        _FBeditableView.layer.borderColor = [UIColor systemPurpleColor].CGColor;
+        _FBeditableView.layer.borderColor = [UIColor orangeColor].CGColor;
         _FBeditableView.layer.borderWidth = 1.5f;
         _FBeditableView.scrollEnabled = NO;
         [_FBeditableView sizeToFit];

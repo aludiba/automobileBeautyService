@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additionFB setup after loading the view.
-    self.title = @"修改昵称";
+    self.title = NSLocalizedString(@"修改昵称", nil);
     [self FBsetContent];
 }
 - (void)FBsetContent{
@@ -51,7 +51,7 @@
             }
             [self.navigationController popViewControllerAnimated:YES];
         }else{
-            [MBProgressHUD FBshowReminderText:@"请稍后重试"];
+            [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
         }
     }];
 }
@@ -76,10 +76,10 @@
         _FBconfirmNickNameTextField.layer.cornerRadius = 16.0f;
         _FBconfirmNickNameTextField.layer.masksToBounds = YES;
         _FBconfirmNickNameTextField.layer.borderWidth = 1.0f;
-        _FBconfirmNickNameTextField.layer.borderColor = [UIColor systemPurpleColor].CGColor;
+        _FBconfirmNickNameTextField.layer.borderColor = [UIColor orangeColor].CGColor;
         _FBconfirmNickNameTextField.tag = 102;
         _FBconfirmNickNameTextField.delegate = self;
-        _FBconfirmNickNameTextField.placeholder = [NSString stringWithFormat:@"请输入昵称"];
+        _FBconfirmNickNameTextField.placeholder = [NSString stringWithFormat:NSLocalizedString(@"请输入昵称", nil)];
         _FBconfirmNickNameTextField.textColor = [UIColor blackColor];
         _FBconfirmNickNameTextField.font = [UIFont systemFontOfSize:20];
         AVUser *user = [AVUser currentUser];
@@ -93,11 +93,11 @@
 - (UIButton *)FBsureButton{
     if (!_FBsureButton) {
         _FBsureButton = [[UIButton alloc] init];
-        _FBsureButton.backgroundColor = [UIColor blueColor];
+        _FBsureButton.backgroundColor = [UIColor orangeColor];
         _FBsureButton.layer.cornerRadius = 8.0f;
         _FBsureButton.layer.masksToBounds = YES;
-        [_FBsureButton setTitle:@"保存" forState:UIControlStateNormal];
-        [_FBsureButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_FBsureButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
+        [_FBsureButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_FBsureButton.titleLabel setFont:[UIFont systemFontOfSize:17]];
         [_FBsureButton addTarget:self action:@selector(FBbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }

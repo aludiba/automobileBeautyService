@@ -75,7 +75,7 @@
             make.height.mas_equalTo(21);
         }];
         [self.FBLine mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.FBpurchasetimeContentLbl.mas_bottom).offset(11); make.leading.equalTo(self.contentView).offset(16);
+            make.top.equalTo(self.FBpurchasetimeContentLbl.mas_bottom).offset(11); make.leading.equalTo(self.contentView).offset(0);
             make.trailing.equalTo(self.contentView);
             make.height.mas_equalTo(1);
             make.bottom.equalTo(self.contentView);
@@ -95,16 +95,16 @@
 - (UILabel *)FBtypesTitleLbl{
     if (!_FBtypesTitleLbl) {
         _FBtypesTitleLbl = [[UILabel alloc] init];
-        _FBtypesTitleLbl.textColor = [UIColor blueColor];
+        _FBtypesTitleLbl.textColor = [UIColor orangeColor];
         _FBtypesTitleLbl.font = [UIFont systemFontOfSize:15];
-        _FBtypesTitleLbl.text = @"类型:";
+        _FBtypesTitleLbl.text = NSLocalizedString(@"类型:", nil);
     }
     return _FBtypesTitleLbl;
 }
 - (UILabel *)FBtypesContentLbl{
     if (!_FBtypesContentLbl) {
         _FBtypesContentLbl = [[UILabel alloc] init];
-        _FBtypesContentLbl.textColor = [UIColor darkGrayColor];
+        _FBtypesContentLbl.textColor = [UIColor blueColor];
         _FBtypesContentLbl.font = [UIFont systemFontOfSize:18];
     }
     return _FBtypesContentLbl;
@@ -112,16 +112,16 @@
 - (UILabel *)FBnumberTitleLbl{
     if (!_FBnumberTitleLbl) {
         _FBnumberTitleLbl = [[UILabel alloc] init];
-        _FBnumberTitleLbl.textColor = [UIColor blueColor];
+        _FBnumberTitleLbl.textColor = [UIColor orangeColor];
         _FBnumberTitleLbl.font = [UIFont systemFontOfSize:15];
-        _FBnumberTitleLbl.text = @"尺码:";
+        _FBnumberTitleLbl.text = NSLocalizedString(@"尺码:", nil);
     }
     return _FBnumberTitleLbl;
 }
 - (UILabel *)FBnumberContentLbl{
     if (!_FBnumberContentLbl) {
         _FBnumberContentLbl = [[UILabel alloc] init];
-        _FBnumberContentLbl.textColor = [UIColor darkGrayColor];
+        _FBnumberContentLbl.textColor = [UIColor blueColor];
         _FBnumberContentLbl.font = [UIFont systemFontOfSize:18];
     }
     return _FBnumberContentLbl;
@@ -129,16 +129,16 @@
 - (UILabel *)FBstorageTitleLbl{
     if (!_FBstorageTitleLbl) {
         _FBstorageTitleLbl = [[UILabel alloc] init];
-        _FBstorageTitleLbl.textColor = [UIColor blueColor];
+        _FBstorageTitleLbl.textColor = [UIColor orangeColor];
         _FBstorageTitleLbl.font = [UIFont systemFontOfSize:15];
-        _FBstorageTitleLbl.text = @"储存位置:";
+        _FBstorageTitleLbl.text = NSLocalizedString(@"储存位置:", nil);
     }
     return _FBstorageTitleLbl;
 }
 - (UILabel *)FBstorageContentLbl{
     if (!_FBstorageContentLbl) {
         _FBstorageContentLbl = [[UILabel alloc] init];
-        _FBstorageContentLbl.textColor = [UIColor darkGrayColor];
+        _FBstorageContentLbl.textColor = [UIColor blueColor];
         _FBstorageContentLbl.font = [UIFont systemFontOfSize:18];
     }
     return _FBstorageContentLbl;
@@ -146,16 +146,16 @@
 - (UILabel *)FBpurchasetimeTitleLbl{
     if (!_FBpurchasetimeTitleLbl) {
         _FBpurchasetimeTitleLbl = [[UILabel alloc] init];
-        _FBpurchasetimeTitleLbl.textColor = [UIColor blueColor];
+        _FBpurchasetimeTitleLbl.textColor = [UIColor orangeColor];
         _FBpurchasetimeTitleLbl.font = [UIFont systemFontOfSize:15];
-        _FBpurchasetimeTitleLbl.text = @"购买时间:";
+        _FBpurchasetimeTitleLbl.text = NSLocalizedString(@"购买时间:", nil);
     }
     return _FBpurchasetimeTitleLbl;
 }
 - (UILabel *)FBpurchasetimeContentLbl{
     if (!_FBpurchasetimeContentLbl) {
         _FBpurchasetimeContentLbl = [[UILabel alloc] init];
-        _FBpurchasetimeContentLbl.textColor = [UIColor darkGrayColor];
+        _FBpurchasetimeContentLbl.textColor = [UIColor blueColor];
         _FBpurchasetimeContentLbl.font = [UIFont systemFontOfSize:18];
     }
     return _FBpurchasetimeContentLbl;

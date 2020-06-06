@@ -22,14 +22,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additionFB setup after loading the view.
-    self.title = @"问题反馈";
+    self.title = NSLocalizedString(@"问题反馈", nil);
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(FBkeyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
     [self FBSetContentView];
 }
 - (void)FBSetContentView{
     FBDressUpAddModel *FBFeedbackViewModel = [[FBDressUpAddModel alloc] init];
-    FBFeedbackViewModel.FBTitle = @"反馈内容";
-    FBFeedbackViewModel.FBDefault = @"请输入反馈内容";
+    FBFeedbackViewModel.FBTitle = NSLocalizedString(@"反馈内容", nil);
+    FBFeedbackViewModel.FBDefault = NSLocalizedString(@"请输入反馈内容", nil);
     [self.FBviewDataArray addObject:FBFeedbackViewModel];
     
     [self.FBmainTable reloadData];
@@ -51,7 +51,7 @@
         NSString *FBcontentString = [FBHBTool FBremoveSpaceAndNewline:FBviewModel.FBContent];
         if (!FBcontentString.length) {
             if (i == 0) {
-                [MBProgressHUD FBshowReminderText:@"请输入反馈内容"];
+                [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请输入反馈内容", nil)];
                 return;
             }
         }
@@ -69,13 +69,13 @@
         [FBdiary saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
             if (isSuccessful) {
                 //创建成功后的动作
-                [MBProgressHUD FBshowReminderText:@"发送成功"];
+                [MBProgressHUD FBshowReminderText:NSLocalizedString(@"发送成功", nil)];
                 [self.navigationController popViewControllerAnimated:YES];
             } else if (error){
                 //发生错误后的动作
-                [MBProgressHUD FBshowReminderText:@"请稍后重试"];
+                [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
             } else {
-                [MBProgressHUD FBshowReminderText:@"请稍后重试"];
+                [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
             }
         }];
 }
@@ -164,12 +164,12 @@
 - (UIButton *)FBsaveButton{
     if (!_FBsaveButton) {
         _FBsaveButton = [[UIButton alloc] init];
-        _FBsaveButton.backgroundColor = [UIColor blueColor];
+        _FBsaveButton.backgroundColor = [UIColor orangeColor];
         _FBsaveButton.layer.cornerRadius = 8.0f;
         _FBsaveButton.layer.masksToBounds = YES;
-        [_FBsaveButton setTitle:@"发送" forState:UIControlStateNormal];
+        [_FBsaveButton setTitle:NSLocalizedString(@"发送", nil) forState:UIControlStateNormal];
         [_FBsaveButton addTarget:self action:@selector(FBsaveAction:) forControlEvents:UIControlEventTouchUpInside];
-        [_FBsaveButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_FBsaveButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_FBsaveButton.titleLabel setFont:[UIFont systemFontOfSize:17]];
     }
     return _FBsaveButton;

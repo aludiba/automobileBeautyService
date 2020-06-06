@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(FBkeyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
-    self.title = @"添加";
+    self.title = NSLocalizedString(@"添加", nil);
     [self FBsetContentView];
 }
 - (void)FBkeyboardWillHide:(NSNotification *)FBnote{
@@ -44,7 +44,7 @@
 }
 - (void)FBsetContentView{
     FBDressUpAddModel *FBViewModel = [[FBDressUpAddModel alloc] init];
-    FBViewModel.FBDefault = @"请输入打扮穿搭内容";
+    FBViewModel.FBDefault = NSLocalizedString(@"请输入穿搭内容", nil);
     [self.FBViewDataArray addObject:FBViewModel];
     [self.FBmainTable reloadData];
 }
@@ -55,13 +55,13 @@
         NSString *FBcontentString = [FBHBTool FBremoveSpaceAndNewline:FBviewModel.FBContent];
         if (!FBtitleString.length) {
             if (i == 0) {
-                [MBProgressHUD FBshowReminderText:@"请输入打扮穿搭标题"];
+                [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请输入穿搭标题", nil)];
                 return;
             }
         }
         if (!FBcontentString.length) {
             if (i == 0) {
-                [MBProgressHUD FBshowReminderText:@"请输入打扮穿搭内容"];
+                [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请输入穿搭内容", nil)];
                 return;
             }
         }
@@ -79,14 +79,14 @@
     [FBdiary saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
         if (isSuccessful) {
             //创建成功后的动作
-            [MBProgressHUD FBshowReminderText:@"保存成功"];
+            [MBProgressHUD FBshowReminderText:NSLocalizedString(@"保存成功", nil)];
             [self.FBsuperVC.FBmainTable.mj_header beginRefreshing];
             [self.navigationController popToRootViewControllerAnimated:YES];
         } else if (error){
             //发生错误后的动作
-            [MBProgressHUD FBshowReminderText:@"请稍后重试"];
+            [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
         } else {
-            [MBProgressHUD FBshowReminderText:@"请稍后重试"];
+            [MBProgressHUD FBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
         }
     }];
 }
@@ -143,7 +143,8 @@
 - (UIButton *)FBsaveButton{
     if (!_FBsaveButton) {
         _FBsaveButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
-        [_FBsaveButton setTitle:@"保存" forState:UIControlStateNormal];
+        [_FBsaveButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+        [_FBsaveButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
         [_FBsaveButton addTarget:self action:@selector(FBsaveAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _FBsaveButton;

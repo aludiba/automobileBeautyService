@@ -120,7 +120,7 @@
         _FBeditableView.backgroundColor = FBH_Color(242, 242, 242, 1);
         _FBeditableView.delegate = self;
         _FBeditableView.font = [UIFont fontWithName:@"PingFangSC-Regular" size:20];
-        _FBeditableView.textColor = [UIColor colorWithRed:19/255.0 green:29/255.0 blue:50/255.0 alpha:1/1.0];
+        _FBeditableView.textColor = [UIColor blackColor];
         _FBeditableView.scrollEnabled = NO;
         [_FBeditableView sizeToFit];
     }
