@@ -702,19 +702,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = YourNiceWardrobe/YourBeautifulWardrobe.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 295PH49WVH;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: JEAN S Q Christ (FDW5VQ9SA2)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FDW5VQ9SA2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YourNiceWardrobe/FBCommon/FB_PrefixHeader.pch";
 				INFOPLIST_FILE = YourNiceWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.HomeClothingManagement;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = usa.HomeClothingManagement;
 				PRODUCT_NAME = HomeClothingManagement;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = dis_HomeClothingManagement_20200606;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -725,19 +725,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = YourNiceWardrobe/YourBeautifulWardrobe.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 295PH49WVH;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: JEAN S Q Christ (FDW5VQ9SA2)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FDW5VQ9SA2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YourNiceWardrobe/FBCommon/FB_PrefixHeader.pch";
 				INFOPLIST_FILE = YourNiceWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.HomeClothingManagement;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = usa.HomeClothingManagement;
 				PRODUCT_NAME = HomeClothingManagement;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = dis_HomeClothingManagement_20200606;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
