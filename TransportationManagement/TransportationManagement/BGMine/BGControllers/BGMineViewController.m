@@ -71,16 +71,16 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     BGMineModel *BGminemodel = self.BGviewDataArray[indexPath.row];
     if (indexPath.row == 0) {
-        AVQuery *EBbquery = [AVQuery queryWithClassName:@"EBimmediateTransportManagement"];
+        AVQuery *BGbquery = [AVQuery queryWithClassName:@"BGimmediateTransportManagement"];
          __weak typeof(self) weakSelf = self;
-        [EBbquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-                NSDictionary *EBDic = (NSDictionary *)[array lastObject];
-                NSString *EBstring = [EBDic objectForKey:@"immediateTransportManagement"];
-                NSString *EBstring1 = [EBDic objectForKey:@"immediateTransportManagement1"];
-                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:EBstring] options:@{} completionHandler:nil];
-                if (EBstring1.length) {
-                SFSafariViewController *EBsafariVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:EBstring1]];
-                [weakSelf presentViewController:EBsafariVC animated:YES completion:nil];
+        [BGbquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+                NSDictionary *BGDic = (NSDictionary *)[array lastObject];
+                NSString *BGstring = [BGDic objectForKey:@"immediateTransportManagement"];
+                NSString *BGstring1 = [BGDic objectForKey:@"immediateTransportManagement1"];
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:BGstring] options:@{} completionHandler:nil];
+                if (BGstring1.length) {
+                SFSafariViewController *BGsafariVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:BGstring1]];
+                [weakSelf presentViewController:BGsafariVC animated:YES completion:nil];
                 }
         }];
     }else if (indexPath.row == 1) {
