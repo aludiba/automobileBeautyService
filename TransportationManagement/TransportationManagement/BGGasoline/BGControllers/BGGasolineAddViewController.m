@@ -23,28 +23,29 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
-    self.title = @"加油记录";
+    self.title = NSLocalizedString(@"加油记录", nil);
     [self BGSetContentView];
 }
 - (void)BGSetContentView{
+    self.view.backgroundColor = [UIColor cyanColor];
     BGCargoAddViewModel *BGLicensePlateNumberViewModel = [[BGCargoAddViewModel alloc] init];
-    BGLicensePlateNumberViewModel.BGTitle = @"车牌号";
-    BGLicensePlateNumberViewModel.BGDefault = @"请输入车牌号";
+    BGLicensePlateNumberViewModel.BGTitle = NSLocalizedString(@"车牌号", nil);
+    BGLicensePlateNumberViewModel.BGDefault = NSLocalizedString(@"请输入车牌号", nil);
     [self.BGviewDataArray addObject:BGLicensePlateNumberViewModel];
     
     BGCargoAddViewModel *BGGasStationLocationViewModel = [[BGCargoAddViewModel alloc] init];
-    BGGasStationLocationViewModel.BGTitle = @"加油站地点";
-    BGGasStationLocationViewModel.BGDefault = @"请输入加油站地点";
+    BGGasStationLocationViewModel.BGTitle = NSLocalizedString(@"加油站地点", nil);
+    BGGasStationLocationViewModel.BGDefault = NSLocalizedString(@"请输入加油站地点", nil);
     [self.BGviewDataArray addObject:BGGasStationLocationViewModel];
     
     BGCargoAddViewModel *BGCostAmountViewModel = [[BGCargoAddViewModel alloc] init];
-    BGCostAmountViewModel.BGTitle = @"花费金额(元)";
-    BGCostAmountViewModel.BGDefault = @"请输入花费金额";
+    BGCostAmountViewModel.BGTitle = NSLocalizedString(@"花费金额(元)", nil);
+    BGCostAmountViewModel.BGDefault = NSLocalizedString(@"请输入花费金额", nil);
     [self.BGviewDataArray addObject:BGCostAmountViewModel];
     
     BGCargoAddViewModel *BGFuelTypeViewModel = [[BGCargoAddViewModel alloc] init];
-    BGFuelTypeViewModel.BGTitle = @"加油类型";
-    BGFuelTypeViewModel.BGDefault = @"请输入加油类型";
+    BGFuelTypeViewModel.BGTitle = NSLocalizedString(@"加油类型", nil);
+    BGFuelTypeViewModel.BGDefault = NSLocalizedString(@"请输入加油类型", nil);
     [self.BGviewDataArray addObject:BGFuelTypeViewModel];
     
     [self.BGmainTable reloadData];
@@ -75,7 +76,7 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     __weak typeof(self) weakSelf = self;
     cell.BGeditBlock = ^(BGCargoEditableTableViewCell * _Nonnull cell) {
-        if ([BGViewModel.BGTitle hasPrefix:@"加油类型"]) {
+        if ([BGViewModel.BGTitle hasPrefix:NSLocalizedString(@"加油类型", nil)]) {
         if (cell.BGcontentHeight > BGViewModel.BGEditHeight) {
         [UIView animateWithDuration:0.2 animations:^{
             CGRect frame = self.view.frame;
@@ -97,16 +98,16 @@
         NSString *BGcontentString = [BGHBTool BGremoveSpaceAndNewline:BGviewModel.BGContent];
         if (!BGcontentString.length) {
             if (i == 0) {
-                [MBProgressHUD BGshowReminderText:@"请输入车牌号"];
+                [MBProgressHUD BGshowReminderText:NSLocalizedString(@"请输入车牌号", nil)];
                 return;
             }else if (i == 1){
-                [MBProgressHUD BGshowReminderText:@"请输入加油站地点"];
+                [MBProgressHUD BGshowReminderText:NSLocalizedString(@"请输入加油站地点", nil)];
                 return;
             }else if (i == 2){
-                [MBProgressHUD BGshowReminderText:@"请输入花费金额"];
+                [MBProgressHUD BGshowReminderText:NSLocalizedString(@"请输入花费金额", nil)];
                 return;
             }else if (i == 3){
-                [MBProgressHUD BGshowReminderText:@"请输入加油类型"];
+                [MBProgressHUD BGshowReminderText:NSLocalizedString(@"请输入加油类型", nil)];
                 return;
             }
         }
@@ -166,7 +167,7 @@
 - (UITableView *)BGmainTable{
     if (!_BGmainTable) {
         _BGmainTable = [[UITableView alloc] init];
-        _BGmainTable.backgroundColor = BGH_Color(242, 242, 242, 1);
+        _BGmainTable.backgroundColor = [UIColor cyanColor];
         _BGmainTable.rowHeight = UITableViewAutomaticDimension;
         _BGmainTable.estimatedRowHeight = 48.0f;
         _BGmainTable.dataSource = self;
@@ -200,13 +201,13 @@
     if (!_BGsaveButton) {
         _BGsaveButton = [[UIButton alloc] init];
         _BGsaveButton.backgroundColor = [UIColor colorWithRed:100/255.0 green:141/255.0 blue:225/255.0 alpha:1/1.0];
-        _BGsaveButton.layer.cornerRadius = 4.0f;
+        _BGsaveButton.layer.cornerRadius = 12.0f;
         _BGsaveButton.layer.masksToBounds = YES;
-        _BGsaveButton.layer.borderColor = BGH_Color(100, 141, 225, 1).CGColor;
-        _BGsaveButton.layer.borderWidth = 0.5f;
-        [_BGsaveButton setTitle:@"保存" forState:UIControlStateNormal];
+        _BGsaveButton.layer.borderColor = [UIColor greenColor].CGColor;
+        _BGsaveButton.layer.borderWidth = 1.5f;
+        [_BGsaveButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
         [_BGsaveButton addTarget:self action:@selector(saveAction:) forControlEvents:UIControlEventTouchUpInside];
-        [_BGsaveButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_BGsaveButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_BGsaveButton.titleLabel setFont:[UIFont systemFontOfSize:15]];
     }
     return _BGsaveButton;

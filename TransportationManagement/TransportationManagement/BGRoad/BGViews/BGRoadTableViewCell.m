@@ -27,6 +27,7 @@
 @implementation BGRoadTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.BGdateTitleLbl];
         [self.contentView addSubview:self.BGdateContentLbl];
         [self.contentView addSubview:self.BGLicensePlateNumberTitleLbl];
@@ -126,7 +127,7 @@
 #pragma mark - actions
 - (void)setBGRoadmodel:(BGRoadModel *)BGRoadmodel{
     _BGRoadmodel = BGRoadmodel;
-    self.BGdateContentLbl.text = [BGUIUtilities BGformattedTimeStringWithDate:_BGRoadmodel.BGDate format:@"yyyy年MM月dd日"];
+    self.BGdateContentLbl.text = [BGUIUtilities BGformattedTimeStringWithDate:_BGRoadmodel.BGDate format:@"yyyy-MM-dd"];
     self.BGLicensePlateNumberContentLbl.text = _BGRoadmodel.BGLicensePlateNumber;
     self.BGDriverNameContentLbl.text = _BGRoadmodel.BGDriverName;
     self.BGSituationContentLbl.text = _BGRoadmodel.BGSituation;
@@ -137,9 +138,9 @@
 - (UILabel *)BGdateTitleLbl{
     if (!_BGdateTitleLbl) {
         _BGdateTitleLbl = [[UILabel alloc] init];
-        _BGdateTitleLbl.textColor = [UIColor grayColor];
+        _BGdateTitleLbl.textColor = [UIColor blueColor];
         _BGdateTitleLbl.font = [UIFont systemFontOfSize:15];
-        _BGdateTitleLbl.text = @"创建日期";
+        _BGdateTitleLbl.text = NSLocalizedString(@"创建日期", nil);
     }
     return _BGdateTitleLbl;
 }
@@ -154,9 +155,9 @@
 - (UILabel *)BGLicensePlateNumberTitleLbl{
     if (!_BGLicensePlateNumberTitleLbl) {
         _BGLicensePlateNumberTitleLbl = [[UILabel alloc] init];
-        _BGLicensePlateNumberTitleLbl.textColor = [UIColor grayColor];
+        _BGLicensePlateNumberTitleLbl.textColor = [UIColor blueColor];
         _BGLicensePlateNumberTitleLbl.font = [UIFont systemFontOfSize:15];
-        _BGLicensePlateNumberTitleLbl.text = @"车牌号";
+        _BGLicensePlateNumberTitleLbl.text = NSLocalizedString(@"车牌号", nil);
     }
     return _BGLicensePlateNumberTitleLbl;
 }
@@ -171,9 +172,9 @@
 - (UILabel *)BGDriverNameTitleLbl{
     if (!_BGDriverNameTitleLbl) {
         _BGDriverNameTitleLbl = [[UILabel alloc] init];
-        _BGDriverNameTitleLbl.textColor = [UIColor grayColor];
+        _BGDriverNameTitleLbl.textColor = [UIColor blueColor];
         _BGDriverNameTitleLbl.font = [UIFont systemFontOfSize:15];
-        _BGDriverNameTitleLbl.text = @"司机名称";
+        _BGDriverNameTitleLbl.text = NSLocalizedString(@"司机名称", nil);
     }
     return _BGDriverNameTitleLbl;
 }
@@ -188,9 +189,9 @@
 - (UILabel *)BGSituationTitleLbl{
     if (!_BGSituationTitleLbl) {
         _BGSituationTitleLbl = [[UILabel alloc] init];
-        _BGSituationTitleLbl.textColor = [UIColor grayColor];
+        _BGSituationTitleLbl.textColor = [UIColor blueColor];
         _BGSituationTitleLbl.font = [UIFont systemFontOfSize:15];
-        _BGSituationTitleLbl.text = @"情况";
+        _BGSituationTitleLbl.text = NSLocalizedString(@"情况", nil);
     }
     return _BGSituationTitleLbl;
 }
@@ -205,9 +206,9 @@
 - (UILabel *)BGPluggingLengthTitleLbl{
     if (!_BGPluggingLengthTitleLbl) {
         _BGPluggingLengthTitleLbl = [[UILabel alloc] init];
-        _BGPluggingLengthTitleLbl.textColor = [UIColor grayColor];
+        _BGPluggingLengthTitleLbl.textColor = [UIColor blueColor];
         _BGPluggingLengthTitleLbl.font = [UIFont systemFontOfSize:15];
-        _BGPluggingLengthTitleLbl.text = @"已堵时长(小时)";
+        _BGPluggingLengthTitleLbl.text = NSLocalizedString(@"已堵时长(小时)", nil);
     }
     return _BGPluggingLengthTitleLbl;
 }
@@ -222,9 +223,9 @@
 - (UILabel *)BGLocationTitleLbl{
     if (!_BGLocationTitleLbl) {
         _BGLocationTitleLbl = [[UILabel alloc] init];
-        _BGLocationTitleLbl.textColor = [UIColor grayColor];
+        _BGLocationTitleLbl.textColor = [UIColor blueColor];
         _BGLocationTitleLbl.font = [UIFont systemFontOfSize:15];
-        _BGLocationTitleLbl.text = @"位置";
+        _BGLocationTitleLbl.text = NSLocalizedString(@"位置", nil);
     }
     return _BGLocationTitleLbl;
 }
@@ -239,7 +240,7 @@
 - (UIView *)BGLine{
     if (!_BGLine) {
         _BGLine = [[UIView alloc] init];
-        _BGLine.backgroundColor = BGH_Color(242, 242, 242, 1);
+        _BGLine.backgroundColor = [UIColor whiteColor];
     }
     return _BGLine;
 }

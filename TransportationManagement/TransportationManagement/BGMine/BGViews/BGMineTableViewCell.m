@@ -17,6 +17,7 @@
 @implementation BGMineTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.BGTitleLbl];
         [self.contentView addSubview:self.BGcontentLbl];
         [self.contentView addSubview:self.BGImgView];
@@ -42,9 +43,9 @@
         }];
         [self.BGLine mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.BGTitleLbl.mas_bottom).offset(14);
-            make.leading.equalTo(self.contentView).offset(16);
+            make.leading.equalTo(self.contentView).offset(0);
             make.height.mas_equalTo(1);
-            make.trailing.equalTo(self.contentView).offset(-16);
+            make.trailing.equalTo(self.contentView).offset(0);
             make.bottom.equalTo(self.contentView);
         }];
     }
@@ -59,7 +60,7 @@
 - (UILabel *)BGTitleLbl{
     if (!_BGTitleLbl) {
         _BGTitleLbl = [[UILabel alloc] init];
-        _BGTitleLbl.textColor = [UIColor grayColor];
+        _BGTitleLbl.textColor = [UIColor systemBlueColor];
         _BGTitleLbl.font = [UIFont systemFontOfSize:20];
     }
     return _BGTitleLbl;
@@ -67,7 +68,7 @@
 - (UILabel *)BGcontentLbl{
     if (!_BGcontentLbl) {
         _BGcontentLbl = [[UILabel alloc] init];
-        _BGcontentLbl.textColor = [UIColor blackColor];
+        _BGcontentLbl.textColor = [UIColor grayColor];
         _BGcontentLbl.font = [UIFont systemFontOfSize:22];
     }
     return _BGcontentLbl;
@@ -82,7 +83,7 @@
 - (UIView *)BGLine{
     if (!_BGLine) {
         _BGLine = [[UIView alloc] init];
-        _BGLine.backgroundColor = BGH_Color(242, 242, 242, 1);
+        _BGLine.backgroundColor = BGH_Color(236, 236, 236, 1);
     }
     return _BGLine;
 }

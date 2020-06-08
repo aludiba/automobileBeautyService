@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor cyanColor];
     [self BG_setupNavigationItems];
 }
 - (void)viewWillAppear:(BOOL)animated{
@@ -30,8 +30,8 @@
     self.navigationItem.title = @"";
     UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.textAlignment = NSTextAlignmentCenter;
-    titleLabel.font = [UIFont boldSystemFontOfSize:20.0f];
-    titleLabel.textColor = [UIColor whiteColor];
+    titleLabel.font = [UIFont boldSystemFontOfSize:22.0f];
+    titleLabel.textColor = [UIColor blackColor];
     titleLabel.text = title;
     [titleLabel sizeToFit];
     self.navigationItem.titleView = titleLabel;

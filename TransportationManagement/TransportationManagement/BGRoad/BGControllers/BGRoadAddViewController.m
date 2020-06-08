@@ -23,33 +23,34 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
-    self.title = @"路况延时";
+    self.title = NSLocalizedString(@"路况延时", nil);
     [self BGSetContentView];
 }
 - (void)BGSetContentView{
+    self.view.backgroundColor = [UIColor cyanColor];
     BGCargoAddViewModel *BGLicensePlateNumberViewModel = [[BGCargoAddViewModel alloc] init];
-    BGLicensePlateNumberViewModel.BGTitle = @"车牌号";
-    BGLicensePlateNumberViewModel.BGDefault = @"请输入车牌号";
+    BGLicensePlateNumberViewModel.BGTitle = NSLocalizedString(@"车牌号", nil);
+    BGLicensePlateNumberViewModel.BGDefault = NSLocalizedString(@"请输入车牌号", nil);
     [self.BGviewDataArray addObject:BGLicensePlateNumberViewModel];
     
     BGCargoAddViewModel *BGDriverNameViewModel = [[BGCargoAddViewModel alloc] init];
-    BGDriverNameViewModel.BGTitle = @"司机名称";
-    BGDriverNameViewModel.BGDefault = @"请输入司机名称";
+    BGDriverNameViewModel.BGTitle = NSLocalizedString(@"司机名称", nil);
+    BGDriverNameViewModel.BGDefault = NSLocalizedString(@"请输入司机名称", nil);
     [self.BGviewDataArray addObject:BGDriverNameViewModel];
     
     BGCargoAddViewModel *BGsituationViewModel = [[BGCargoAddViewModel alloc] init];
-    BGsituationViewModel.BGTitle = @"情况";
-    BGsituationViewModel.BGDefault = @"请输入情况";
+    BGsituationViewModel.BGTitle = NSLocalizedString(@"情况", nil);
+    BGsituationViewModel.BGDefault = NSLocalizedString(@"请输入情况", nil);
     [self.BGviewDataArray addObject:BGsituationViewModel];
     
     BGCargoAddViewModel *BGplugginglengthViewModel = [[BGCargoAddViewModel alloc] init];
-    BGplugginglengthViewModel.BGTitle = @"已堵时长(小时)";
-    BGplugginglengthViewModel.BGDefault = @"请输入已堵时长";
+    BGplugginglengthViewModel.BGTitle = NSLocalizedString(@"已堵时长(小时)", nil);
+    BGplugginglengthViewModel.BGDefault = NSLocalizedString(@"请输入已堵时长", nil);
     [self.BGviewDataArray addObject:BGplugginglengthViewModel];
     
     BGCargoAddViewModel *BGlocationViewModel = [[BGCargoAddViewModel alloc] init];
-    BGlocationViewModel.BGTitle = @"位置";
-    BGlocationViewModel.BGDefault = @"请输入位置";
+    BGlocationViewModel.BGTitle = NSLocalizedString(@"位置", nil);
+    BGlocationViewModel.BGDefault = NSLocalizedString(@"请输入位置", nil);
     [self.BGviewDataArray addObject:BGlocationViewModel];
     
     [self.BGmainTable reloadData];
@@ -80,7 +81,7 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     __weak typeof(self) weakSelf = self;
     cell.BGeditBlock = ^(BGCargoEditableTableViewCell * _Nonnull cell) {
-        if ([BGViewModel.BGTitle hasPrefix:@"位置"]) {
+        if ([BGViewModel.BGTitle hasPrefix:NSLocalizedString(@"位置", nil)]) {
         if (cell.BGcontentHeight > BGViewModel.BGEditHeight) {
         [UIView animateWithDuration:0.2 animations:^{
             CGRect frame = self.view.frame;
@@ -102,19 +103,19 @@
         NSString *BGcontentString = [BGHBTool BGremoveSpaceAndNewline:BGviewModel.BGContent];
         if (!BGcontentString.length) {
             if (i == 0) {
-                [MBProgressHUD BGshowReminderText:@"请输入车牌号"];
+                [MBProgressHUD BGshowReminderText:NSLocalizedString(@"请输入车牌号", nil)];
                 return;
             }else if (i == 1){
-                [MBProgressHUD BGshowReminderText:@"请输入司机名称"];
+                [MBProgressHUD BGshowReminderText:NSLocalizedString(@"请输入司机名称", nil)];
                 return;
             }else if (i == 2){
-                [MBProgressHUD BGshowReminderText:@"请输入情况"];
+                [MBProgressHUD BGshowReminderText:NSLocalizedString(@"请输入情况", nil)];
                 return;
             }else if (i == 3){
-                [MBProgressHUD BGshowReminderText:@"请输入已堵时长"];
+                [MBProgressHUD BGshowReminderText:NSLocalizedString(@"请输入已堵时长", nil)];
                 return;
             }else if (i == 4){
-                [MBProgressHUD BGshowReminderText:@"请输入位置"];
+                [MBProgressHUD BGshowReminderText:NSLocalizedString(@"请输入位置", nil)];
                 return;
             }
         }
@@ -176,7 +177,7 @@
 - (UITableView *)BGmainTable{
     if (!_BGmainTable) {
         _BGmainTable = [[UITableView alloc] init];
-        _BGmainTable.backgroundColor = BGH_Color(242, 242, 242, 1);
+        _BGmainTable.backgroundColor = [UIColor cyanColor];
         _BGmainTable.rowHeight = UITableViewAutomaticDimension;
         _BGmainTable.estimatedRowHeight = 48.0f;
         _BGmainTable.dataSource = self;
@@ -210,11 +211,11 @@
     if (!_BGsaveButton) {
         _BGsaveButton = [[UIButton alloc] init];
         _BGsaveButton.backgroundColor = [UIColor colorWithRed:100/255.0 green:141/255.0 blue:225/255.0 alpha:1/1.0];
-        _BGsaveButton.layer.cornerRadius = 4.0f;
+        _BGsaveButton.layer.cornerRadius = 12.0f;
         _BGsaveButton.layer.masksToBounds = YES;
-        _BGsaveButton.layer.borderColor = BGH_Color(100, 141, 225, 1).CGColor;
-        _BGsaveButton.layer.borderWidth = 0.5f;
-        [_BGsaveButton setTitle:@"保存" forState:UIControlStateNormal];
+        _BGsaveButton.layer.borderColor = [UIColor greenColor].CGColor;
+        _BGsaveButton.layer.borderWidth = 1.5f;
+        [_BGsaveButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
         [_BGsaveButton addTarget:self action:@selector(saveAction:) forControlEvents:UIControlEventTouchUpInside];
         [_BGsaveButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_BGsaveButton.titleLabel setFont:[UIFont systemFontOfSize:15]];

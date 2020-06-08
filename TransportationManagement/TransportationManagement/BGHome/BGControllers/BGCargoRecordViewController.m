@@ -20,14 +20,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor cyanColor];
     if (self.type == BGCargoTypeWaitReceiving) {
-        self.title = @"待接货";
+        self.title = NSLocalizedString(@"待接货", nil);
     }else if (self.type == BGCargoTypeWaitLoading){
-        self.title = @"待装载";
+        self.title = NSLocalizedString(@"待装载", nil);
     }else if (self.type == BGCargoTypeWaitDelivery){
-        self.title = @"待送达";
+        self.title = NSLocalizedString(@"待送达", nil);
     }else{
-        self.title = @"已完成";
+        self.title = NSLocalizedString(@"已完成", nil);
     }
     [self.BGmainTable.mj_header beginRefreshing];
 }
@@ -154,7 +155,7 @@
 - (UITableView *)BGmainTable{
     if (!_BGmainTable) {
         _BGmainTable = [[UITableView alloc] init];
-        _BGmainTable.backgroundColor = BGH_Color(242, 242, 242, 1);
+        _BGmainTable.backgroundColor = [UIColor cyanColor];
         _BGmainTable.rowHeight = UITableViewAutomaticDimension;
         _BGmainTable.estimatedRowHeight = 48.0f;
         _BGmainTable.dataSource = self;

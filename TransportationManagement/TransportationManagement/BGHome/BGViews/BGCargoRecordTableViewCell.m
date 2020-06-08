@@ -16,6 +16,7 @@
 @implementation BGCargoRecordTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.BGtitleLbl];
         [self.contentView addSubview:self.BGcontentLbl];
         [self.contentView addSubview:self.BGline];
@@ -33,7 +34,7 @@
             make.height.mas_equalTo(60);
         }];
         [self.BGline mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView);
+            make.leading.equalTo(self.contentView).offset(16);
             make.trailing.equalTo(self.contentView);
             make.top.equalTo(self.BGtitleLbl.mas_bottom).offset(14);
             make.height.mas_equalTo(1);
@@ -58,7 +59,7 @@
     if (!_BGtitleLbl) {
         _BGtitleLbl = [[UILabel alloc] init];
         _BGtitleLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
-        _BGtitleLbl.textColor = [UIColor colorWithRed:19/255.0 green:29/255.0 blue:50/255.0 alpha:1/1.0];
+        _BGtitleLbl.textColor = [UIColor blueColor];
         _BGtitleLbl.numberOfLines = 2;
     }
     return _BGtitleLbl;

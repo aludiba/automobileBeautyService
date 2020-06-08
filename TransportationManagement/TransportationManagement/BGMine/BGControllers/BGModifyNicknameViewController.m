@@ -18,10 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"修改昵称";
+    self.title = NSLocalizedString(@"修改昵称", nil);
     [self BGsetContent];
 }
 - (void)BGsetContent{
+    self.view.backgroundColor = [UIColor cyanColor];
     [self.view addSubview:self.BGconfirmNickNameTextField];
     [self.view addSubview:self.BGsureButton];
     
@@ -73,13 +74,13 @@
     if (!_BGconfirmNickNameTextField) {
         _BGconfirmNickNameTextField = [[UITextField alloc] init];
         _BGconfirmNickNameTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _BGconfirmNickNameTextField.layer.cornerRadius = 4.0f;
+        _BGconfirmNickNameTextField.layer.cornerRadius = 12.0f;
         _BGconfirmNickNameTextField.layer.masksToBounds = YES;
-        _BGconfirmNickNameTextField.layer.borderWidth = 1.0f;
-        _BGconfirmNickNameTextField.layer.borderColor = [UIColor grayColor].CGColor;
+        _BGconfirmNickNameTextField.layer.borderWidth = 1.5f;
+        _BGconfirmNickNameTextField.layer.borderColor = [UIColor greenColor].CGColor;
         _BGconfirmNickNameTextField.tag = 102;
         _BGconfirmNickNameTextField.delegate = self;
-        _BGconfirmNickNameTextField.placeholder = [NSString stringWithFormat:@"请输入昵称"];
+        _BGconfirmNickNameTextField.placeholder = [NSString stringWithFormat:NSLocalizedString(@"请输入昵称", nil)];
         _BGconfirmNickNameTextField.textColor = [UIColor blackColor];
         _BGconfirmNickNameTextField.font = [UIFont systemFontOfSize:20];
         AVUser *user = [AVUser currentUser];
@@ -94,12 +95,12 @@
     if (!_BGsureButton) {
         _BGsureButton = [[UIButton alloc] init];
         _BGsureButton.backgroundColor = [UIColor colorWithRed:100/255.0 green:141/255.0 blue:225/255.0 alpha:1/1.0];
-        _BGsureButton.layer.cornerRadius = 4.0f;
+        _BGsureButton.layer.cornerRadius = 12.0f;
         _BGsureButton.layer.masksToBounds = YES;
-        _BGsureButton.layer.borderColor = BGH_Color(100, 141, 225, 1).CGColor;
-        _BGsureButton.layer.borderWidth = 0.5f;
-        [_BGsureButton setTitle:@"保存" forState:UIControlStateNormal];
-        [_BGsureButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _BGsureButton.layer.borderColor = [UIColor greenColor].CGColor;
+        _BGsureButton.layer.borderWidth = 1.5f;
+        [_BGsureButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
+        [_BGsureButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_BGsureButton.titleLabel setFont:[UIFont systemFontOfSize:15]];
         [_BGsureButton addTarget:self action:@selector(BGbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }

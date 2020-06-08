@@ -24,6 +24,7 @@
 @implementation BGGasolineTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.BGdateTitleLbl];
         [self.contentView addSubview:self.BGdateContentLbl];
         [self.contentView addSubview:self.BGLicensePlateNumberTitleLbl];
@@ -108,7 +109,7 @@
 }
 - (void)setBGGasolinemodel:(BGGasolineModel *)BGGasolinemodel{
     _BGGasolinemodel = BGGasolinemodel;
-    self.BGdateContentLbl.text = [BGUIUtilities BGformattedTimeStringWithDate:_BGGasolinemodel.BGDate format:@"yyyy年MM月dd日"];
+    self.BGdateContentLbl.text = [BGUIUtilities BGformattedTimeStringWithDate:_BGGasolinemodel.BGDate format:@"yyyy-MM-dd"];
     self.BGLicensePlateNumberContentLbl.text = _BGGasolinemodel.BGLicensePlateNumber;
     self.BGGasStationLocationContentLbl.text = _BGGasolinemodel.BGGasStationLocation;
     self.BGCostAmountContentLbl.text = [NSString stringWithFormat:@"%ld",_BGGasolinemodel.BGCostAmount];
@@ -118,9 +119,9 @@
 - (UILabel *)BGdateTitleLbl{
     if (!_BGdateTitleLbl) {
         _BGdateTitleLbl = [[UILabel alloc] init];
-        _BGdateTitleLbl.textColor = [UIColor grayColor];
+        _BGdateTitleLbl.textColor = [UIColor blueColor];
         _BGdateTitleLbl.font = [UIFont systemFontOfSize:15];
-        _BGdateTitleLbl.text = @"创建日期";
+        _BGdateTitleLbl.text = NSLocalizedString(@"创建日期", nil);
     }
     return _BGdateTitleLbl;
 }
@@ -135,9 +136,9 @@
 - (UILabel *)BGLicensePlateNumberTitleLbl{
     if (!_BGLicensePlateNumberTitleLbl) {
         _BGLicensePlateNumberTitleLbl = [[UILabel alloc] init];
-        _BGLicensePlateNumberTitleLbl.textColor = [UIColor grayColor];
+        _BGLicensePlateNumberTitleLbl.textColor = [UIColor blueColor];
         _BGLicensePlateNumberTitleLbl.font = [UIFont systemFontOfSize:15];
-        _BGLicensePlateNumberTitleLbl.text = @"车牌号";
+        _BGLicensePlateNumberTitleLbl.text = NSLocalizedString(@"车牌号", nil);
     }
     return _BGLicensePlateNumberTitleLbl;
 }
@@ -152,9 +153,9 @@
 - (UILabel *)BGGasStationLocationTitleLbl{
     if (!_BGGasStationLocationTitleLbl) {
         _BGGasStationLocationTitleLbl = [[UILabel alloc] init];
-        _BGGasStationLocationTitleLbl.textColor = [UIColor grayColor];
+        _BGGasStationLocationTitleLbl.textColor = [UIColor blueColor];
         _BGGasStationLocationTitleLbl.font = [UIFont systemFontOfSize:15];
-        _BGGasStationLocationTitleLbl.text = @"加油站地点";
+        _BGGasStationLocationTitleLbl.text = NSLocalizedString(@"加油站地点", nil);
     }
     return _BGGasStationLocationTitleLbl;
 }
@@ -169,9 +170,9 @@
 - (UILabel *)BGCostAmountTitleLbl{
     if (!_BGCostAmountTitleLbl) {
         _BGCostAmountTitleLbl = [[UILabel alloc] init];
-        _BGCostAmountTitleLbl.textColor = [UIColor grayColor];
+        _BGCostAmountTitleLbl.textColor = [UIColor blueColor];
         _BGCostAmountTitleLbl.font = [UIFont systemFontOfSize:15];
-        _BGCostAmountTitleLbl.text = @"花费金额（元）";
+        _BGCostAmountTitleLbl.text = NSLocalizedString(@"花费金额(元)", nil);
     }
     return _BGCostAmountTitleLbl;
 }
@@ -186,9 +187,9 @@
 - (UILabel *)BGFuelTypeTitleLbl{
     if (!_BGFuelTypeTitleLbl) {
         _BGFuelTypeTitleLbl = [[UILabel alloc] init];
-        _BGFuelTypeTitleLbl.textColor = [UIColor grayColor];
+        _BGFuelTypeTitleLbl.textColor = [UIColor blueColor];
         _BGFuelTypeTitleLbl.font = [UIFont systemFontOfSize:15];
-        _BGFuelTypeTitleLbl.text = @"加油类型";
+        _BGFuelTypeTitleLbl.text = NSLocalizedString(@"加油类型", nil);
     }
     return _BGFuelTypeTitleLbl;
 }
@@ -203,7 +204,7 @@
 - (UIView *)BGLine{
     if (!_BGLine) {
         _BGLine = [[UIView alloc] init];
-        _BGLine.backgroundColor = BGH_Color(242, 242, 242, 1);
+        _BGLine.backgroundColor = [UIColor whiteColor];
     }
     return _BGLine;
 }

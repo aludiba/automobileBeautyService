@@ -21,14 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"加油记录";
+    self.title = NSLocalizedString(@"加油记录", nil);
+    self.view.backgroundColor = [UIColor cyanColor];
     AVUser *bUser = [AVUser currentUser];
     if (bUser) {
         [self.BGmainTable.mj_header beginRefreshing];
     }else{
-        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提醒", nil) message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             BGLoginViewController *BGLoginVC = [[BGLoginViewController alloc] init];
             BGLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
             [self presentViewController:BGLoginVC animated:YES completion:^{
@@ -98,9 +99,9 @@
         BGaddVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:BGaddVC animated:YES];
     }else{
-        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提醒", nil) message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             BGLoginViewController *BGLoginVC = [[BGLoginViewController alloc] init];
             BGLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
             [self presentViewController:BGLoginVC animated:YES completion:^{
@@ -158,7 +159,7 @@
 - (UITableView *)BGmainTable{
     if (!_BGmainTable) {
         _BGmainTable = [[UITableView alloc] init];
-        _BGmainTable.backgroundColor = BGH_Color(242, 242, 242, 1);
+        _BGmainTable.backgroundColor = [UIColor cyanColor];
         _BGmainTable.rowHeight = UITableViewAutomaticDimension;
         _BGmainTable.estimatedRowHeight = 48.0f;
         _BGmainTable.dataSource = self;

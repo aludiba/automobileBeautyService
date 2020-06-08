@@ -24,12 +24,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"我的";
+    self.title = NSLocalizedString(@"我的", nil);
     [self BGSetContentView];
 }
 - (void)BGSetContentView{
+    self.view.backgroundColor = [UIColor cyanColor];
     BGMineModel *BGnicknameViewModel = [[BGMineModel alloc] init];
-    BGnicknameViewModel.BGtitle = @"昵称";
+    BGnicknameViewModel.BGtitle = NSLocalizedString(@"昵称", nil);
     AVUser *user = [AVUser currentUser];
     if ([[user objectForKey:@"username"] length]) {
         BGnicknameViewModel.BGcontent = [user objectForKey:@"username"];
@@ -37,15 +38,15 @@
     [self.BGviewDataArray addObject:BGnicknameViewModel];
     
     BGMineModel *BGpasswordViewModel = [[BGMineModel alloc] init];
-    BGpasswordViewModel.BGtitle = @"密码";
+    BGpasswordViewModel.BGtitle = NSLocalizedString(@"密码", nil);
     [self.BGviewDataArray addObject:BGpasswordViewModel];
     
     BGMineModel *BGFeedbackViewModel = [[BGMineModel alloc] init];
-    BGFeedbackViewModel.BGtitle = @"问题反馈";
+    BGFeedbackViewModel.BGtitle = NSLocalizedString(@"问题反馈", nil);
     [self.BGviewDataArray addObject:BGFeedbackViewModel];
     
     BGMineModel *BGloginViewModel = [[BGMineModel alloc] init];
-    BGloginViewModel.BGtitle = @"登录&退出";
+    BGloginViewModel.BGtitle = NSLocalizedString(@"登录&退出", nil);
     [self.BGviewDataArray addObject:BGloginViewModel];
     
     [self.BGmainTable reloadData];
@@ -76,9 +77,9 @@
                BGModifyNicknameVC.hidesBottomBarWhenPushed = YES;
                [self.navigationController pushViewController:BGModifyNicknameVC animated:YES];
            }else{
-               UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
-               UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-               UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+               UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提醒", nil) message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+               UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+               UIAlertAction *sureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                    BGLoginViewController *BGLoginVC = [[BGLoginViewController alloc] init];
                    BGLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
                    [self presentViewController:BGLoginVC animated:YES completion:^{
@@ -96,9 +97,9 @@
             BGPasswordChangeVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:BGPasswordChangeVC animated:YES];
         }else{
-            UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-            UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提醒", nil) message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+            UIAlertAction *sureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 BGLoginViewController *BGLoginVC = [[BGLoginViewController alloc] init];
                 BGLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
                 [self presentViewController:BGLoginVC animated:YES completion:^{
@@ -116,9 +117,9 @@
             BGproblemFeedbackVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:BGproblemFeedbackVC animated:YES];
         }else{
-            UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-            UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提醒", nil) message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+            UIAlertAction *sureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 BGLoginViewController *BGLoginVC = [[BGLoginViewController alloc] init];
                 BGLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
                 [self presentViewController:BGLoginVC animated:YES completion:^{
@@ -148,7 +149,7 @@
 - (UITableView *)BGmainTable{
     if (!_BGmainTable) {
         _BGmainTable = [[UITableView alloc] init];
-        _BGmainTable.backgroundColor = BGH_Color(242, 242, 242, 1);
+        _BGmainTable.backgroundColor = [UIColor cyanColor];
         _BGmainTable.rowHeight = UITableViewAutomaticDimension;
         _BGmainTable.estimatedRowHeight = 48.0f;
         _BGmainTable.dataSource = self;

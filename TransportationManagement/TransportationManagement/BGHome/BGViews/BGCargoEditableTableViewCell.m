@@ -18,6 +18,7 @@
 @implementation BGCargoEditableTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.BGtitleLbl];
         [self.contentView addSubview:self.BGeditableView];
         [self.BGeditableView addSubview:self.BGhiddenLbl];
@@ -45,7 +46,7 @@
         }];
         [self.BGline mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.BGeditableView.mas_bottom).offset(11.5);
-            make.leading.equalTo(self.contentView);
+            make.leading.equalTo(self.contentView).offset(16);
             make.trailing.equalTo(self.contentView);
             make.height.mas_equalTo(1);
             make.bottom.equalTo(self.contentView.mas_bottom);
@@ -127,7 +128,7 @@
     if (!_BGtitleLbl) {
         _BGtitleLbl = [[UILabel alloc] init];
         _BGtitleLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:17];
-        _BGtitleLbl.textColor = [UIColor blackColor];
+        _BGtitleLbl.textColor = [UIColor blueColor];
     }
     return _BGtitleLbl;
 }
@@ -142,6 +143,7 @@
 - (UITextView *)BGeditableView{
     if (!_BGeditableView) {
         _BGeditableView = [[UITextView alloc] init];
+        _BGeditableView.backgroundColor = [UIColor cyanColor];
         _BGeditableView.delegate = self;
         _BGeditableView.font = [UIFont fontWithName:@"PingFangSC-Regular" size:17];
         _BGeditableView.textColor = [UIColor colorWithRed:19/255.0 green:29/255.0 blue:50/255.0 alpha:1/1.0];

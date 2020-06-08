@@ -18,35 +18,36 @@
 @implementation BGCargoRecordSuperTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        
+        self.contentView.backgroundColor = [UIColor cyanColor];
     }
     return self;
 }
 - (void)setBGmodel:(BGCargoModel *)BGmodel{
     _BGmodel = BGmodel;
+    [self.BGviewDataArray removeAllObjects];
     BGCargoAddViewModel *BGtimeViewModel = [[BGCargoAddViewModel alloc] init];
-    BGtimeViewModel.BGTitle = @"创建时间";
-    NSString *BGTimeString = [BGUIUtilities BGformattedTimeStringWithDate:_BGmodel.BGDate format:@"yyyy年MM月dd日"];
+    BGtimeViewModel.BGTitle = NSLocalizedString(@"创建时间", nil);
+    NSString *BGTimeString = [BGUIUtilities BGformattedTimeStringWithDate:_BGmodel.BGDate format:@"yyyy-MM-dd"];
     BGtimeViewModel.BGContent = BGTimeString;
     [self.BGviewDataArray addObject:BGtimeViewModel];
     
     BGCargoAddViewModel *BGPlaceViewModel = [[BGCargoAddViewModel alloc] init];
-    BGPlaceViewModel.BGTitle = @"地点";
+    BGPlaceViewModel.BGTitle = NSLocalizedString(@"地点", nil);
     BGPlaceViewModel.BGContent = _BGmodel.BGPlace;
     [self.BGviewDataArray addObject:BGPlaceViewModel];
     
     BGCargoAddViewModel *BGCustomerViewModel = [[BGCargoAddViewModel alloc] init];
-    BGCustomerViewModel.BGTitle = @"客户名称";
+    BGCustomerViewModel.BGTitle = NSLocalizedString(@"客户名称", nil);
     BGCustomerViewModel.BGContent = _BGmodel.BGCustomerName;
     [self.BGviewDataArray addObject:BGCustomerViewModel];
     
     BGCargoAddViewModel *BGCommodityViewModel = [[BGCargoAddViewModel alloc] init];
-    BGCommodityViewModel.BGTitle = @"货物名称";
+    BGCommodityViewModel.BGTitle = NSLocalizedString(@"货物名称", nil);
     BGCommodityViewModel.BGContent = _BGmodel.BGCommodityName;
     [self.BGviewDataArray addObject:BGCommodityViewModel];
     
     BGCargoAddViewModel *BGTransportPriceViewModel = [[BGCargoAddViewModel alloc] init];
-    BGTransportPriceViewModel.BGTitle = @"运输价格(元)";
+    BGTransportPriceViewModel.BGTitle = NSLocalizedString(@"运输价格(元)", nil);
     BGTransportPriceViewModel.BGContent = [NSString stringWithFormat:@"%.2lf",_BGmodel.BGTransportPrice];
     [self.BGviewDataArray addObject:BGTransportPriceViewModel];
             
@@ -71,7 +72,7 @@
     BGCargoAddViewModel *BGModel = self.BGviewDataArray[indexPath.row];
     if (BGModel.isLine) {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
-        cell.backgroundColor = BGH_Color(242, 242, 242, 1);
+        cell.backgroundColor = [UIColor whiteColor];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }else{
@@ -90,7 +91,7 @@
 - (UITableView *)BGmainTable{
     if (!_BGmainTable) {
         _BGmainTable = [[UITableView alloc] init];
-        _BGmainTable.backgroundColor = BGH_Color(242, 242, 242, 1);
+        _BGmainTable.backgroundColor = [UIColor cyanColor];
         _BGmainTable.rowHeight = UITableViewAutomaticDimension;
         _BGmainTable.estimatedRowHeight = 48.0f;
         _BGmainTable.dataSource = self;

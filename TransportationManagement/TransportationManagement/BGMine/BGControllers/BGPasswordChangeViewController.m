@@ -22,10 +22,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"密码修改";
+    self.title = NSLocalizedString(@"密码修改", nil);
     [self BGsetContent];
 }
 - (void)BGsetContent{
+    self.view.backgroundColor = [UIColor cyanColor];
     [self.view addSubview:self.BGBGoldPasswordTextField];
     [self.view addSubview:self.BGBGcurrentPasswordTextField];
     [self.view addSubview:self.BGBGconfirmPasswordTextField];
@@ -60,19 +61,19 @@
 - (void)BGbtnClick:(UIButton *)sender{
     [self.view endEditing:YES];
     if (!self.BGoldPassword.length) {
-        [MBProgressHUD BGshowReminderText:@"请输入旧密码"];
+        [MBProgressHUD BGshowReminderText:NSLocalizedString(@"请输入旧密码", nil)];
         return;
     }
     if (!self.BGcurrentPassword.length) {
-        [MBProgressHUD BGshowReminderText:@"请输入新密码"];
+        [MBProgressHUD BGshowReminderText:NSLocalizedString(@"请输入新密码", nil)];
         return;
     }
     if (!self.BGconfirmPassword.length) {
-        [MBProgressHUD BGshowReminderText:@"请确认密码"];
+        [MBProgressHUD BGshowReminderText:NSLocalizedString(@"请确认密码", nil)];
         return;
     }
     if (![self.BGcurrentPassword isEqualToString:self.BGconfirmPassword]) {
-        [MBProgressHUD BGshowReminderText:@"两次密码输入不一致"];
+        [MBProgressHUD BGshowReminderText:NSLocalizedString(@"两次密码输入不一致", nil)];
         return;
     }
         AVUser *user = [AVUser currentUser];
@@ -84,7 +85,7 @@
                     if (error) {
                         [MBProgressHUD BGshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
                     } else {
-                        [MBProgressHUD BGshowReminderText:@"密码修改成功"];
+                        [MBProgressHUD BGshowReminderText:NSLocalizedString(@"密码修改成功", nil)];
                         [self.navigationController popViewControllerAnimated:YES];
                     }
                 }];
@@ -131,13 +132,13 @@
         _BGBGoldPasswordTextField = [[UITextField alloc] init];
         _BGBGoldPasswordTextField.secureTextEntry = YES;
         _BGBGoldPasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _BGBGoldPasswordTextField.layer.cornerRadius = 2.0f;
+        _BGBGoldPasswordTextField.layer.cornerRadius = 12.0f;
         _BGBGoldPasswordTextField.layer.masksToBounds = YES;
-        _BGBGoldPasswordTextField.layer.borderWidth = 1.0f;
-        _BGBGoldPasswordTextField.layer.borderColor = [UIColor grayColor].CGColor;
+        _BGBGoldPasswordTextField.layer.borderWidth = 1.5f;
+        _BGBGoldPasswordTextField.layer.borderColor = [UIColor greenColor].CGColor;
         _BGBGoldPasswordTextField.tag = 100;
         _BGBGoldPasswordTextField.delegate = self;
-        _BGBGoldPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",@"输入旧密码"];
+        _BGBGoldPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",NSLocalizedString(@"请输入旧密码", nil)];
         _BGBGoldPasswordTextField.textColor = [UIColor blackColor];
         _BGBGoldPasswordTextField.font = [UIFont systemFontOfSize:20];
     }
@@ -148,13 +149,13 @@
         _BGBGcurrentPasswordTextField = [[UITextField alloc] init];
         _BGBGcurrentPasswordTextField.secureTextEntry = YES;
         _BGBGcurrentPasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-    _BGBGcurrentPasswordTextField.layer.cornerRadius = 2.0f;
+    _BGBGcurrentPasswordTextField.layer.cornerRadius = 12.0f;
     _BGBGcurrentPasswordTextField.layer.masksToBounds = YES;
-        _BGBGcurrentPasswordTextField.layer.borderWidth = 1.0f;
-        _BGBGcurrentPasswordTextField.layer.borderColor = [UIColor grayColor].CGColor;
+        _BGBGcurrentPasswordTextField.layer.borderWidth = 1.5f;
+        _BGBGcurrentPasswordTextField.layer.borderColor = [UIColor greenColor].CGColor;
         _BGBGcurrentPasswordTextField.tag = 101;
         _BGBGcurrentPasswordTextField.delegate = self;
-        _BGBGcurrentPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",@"输入新密码"];
+        _BGBGcurrentPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",NSLocalizedString(@"请输入新密码", nil)];
         _BGBGcurrentPasswordTextField.textColor = [UIColor blackColor];
         _BGBGcurrentPasswordTextField.font = [UIFont systemFontOfSize:20];
     }
@@ -165,13 +166,13 @@
         _BGBGconfirmPasswordTextField = [[UITextField alloc] init];
         _BGBGconfirmPasswordTextField.secureTextEntry = YES;
         _BGBGconfirmPasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        _BGBGconfirmPasswordTextField.layer.cornerRadius = 2.0f;
+        _BGBGconfirmPasswordTextField.layer.cornerRadius = 12.0f;
         _BGBGconfirmPasswordTextField.layer.masksToBounds = YES;
-            _BGBGconfirmPasswordTextField.layer.borderWidth = 1.0f;
-            _BGBGconfirmPasswordTextField.layer.borderColor = [UIColor grayColor].CGColor;
+            _BGBGconfirmPasswordTextField.layer.borderWidth = 1.5f;
+            _BGBGconfirmPasswordTextField.layer.borderColor = [UIColor greenColor].CGColor;
         _BGBGconfirmPasswordTextField.tag = 102;
         _BGBGconfirmPasswordTextField.delegate = self;
-        _BGBGconfirmPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",@"确认密码"];
+        _BGBGconfirmPasswordTextField.placeholder = [NSString stringWithFormat:@"  %@",NSLocalizedString(@"确认密码", nil)];
         _BGBGconfirmPasswordTextField.textColor = [UIColor blackColor];
         _BGBGconfirmPasswordTextField.font = [UIFont systemFontOfSize:20];
     }
@@ -181,12 +182,12 @@
     if (!_BGsureButton) {
         _BGsureButton = [[UIButton alloc] init];
         _BGsureButton.backgroundColor = [UIColor colorWithRed:100/255.0 green:141/255.0 blue:225/255.0 alpha:1/1.0];
-        _BGsureButton.layer.cornerRadius = 4.0f;
+        _BGsureButton.layer.cornerRadius = 12.0f;
         _BGsureButton.layer.masksToBounds = YES;
-        _BGsureButton.layer.borderColor = BGH_Color(100, 141, 225, 1).CGColor;
-        _BGsureButton.layer.borderWidth = 0.5f;
-        [_BGsureButton setTitle:@"保存" forState:UIControlStateNormal];
-        [_BGsureButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _BGsureButton.layer.borderColor = [UIColor greenColor].CGColor;
+        _BGsureButton.layer.borderWidth = 1.5f;
+        [_BGsureButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
+        [_BGsureButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_BGsureButton.titleLabel setFont:[UIFont systemFontOfSize:15]];
         [_BGsureButton addTarget:self action:@selector(BGbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }

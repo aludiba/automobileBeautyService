@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"首页";
+    self.title = NSLocalizedString(@"首页", nil);
     [self BGSetContentView];
 }
 - (void)BGSetContentView{
@@ -40,7 +40,7 @@
 }
 // 返回cell之间行间隙
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
-    return 30;
+    return 60;
 }
 // 返回cell之间列间隙
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
@@ -65,19 +65,19 @@
     // 创建cell (重用)
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"UICollectionViewCell" forIndexPath:indexPath];
     if (indexPath.row == 0) {
-        cell.backgroundColor = [UIColor redColor];
+        cell.backgroundColor = [UIColor blueColor];
     }else if (indexPath.row == 1){
-        cell.backgroundColor = [UIColor orangeColor];
+        cell.backgroundColor = [UIColor purpleColor];
     }else if (indexPath.row == 2){
-        cell.backgroundColor = [UIColor yellowColor];
+        cell.backgroundColor = [UIColor systemBlueColor];
     }else{
-        cell.backgroundColor = [UIColor greenColor];
+        cell.backgroundColor = [UIColor systemPurpleColor];
     }
-    cell.layer.cornerRadius = 8.0f;
+    cell.layer.cornerRadius = 16.0f;
     cell.layer.masksToBounds = YES;
     UILabel *label = [[UILabel alloc] initWithFrame:cell.bounds];
     label.textAlignment = NSTextAlignmentCenter;
-    label.font = [UIFont boldSystemFontOfSize:30];
+    label.font = [UIFont boldSystemFontOfSize:22];
     label.text = title;
     label.textColor = [UIColor whiteColor];
     [cell addSubview:label];
@@ -101,9 +101,9 @@
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:NO];
     }else{
-        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提醒", nil) message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             BGLoginViewController *BGLoginVC = [[BGLoginViewController alloc] init];
             BGLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
             [self presentViewController:BGLoginVC animated:YES completion:^{
@@ -119,10 +119,10 @@
 - (NSMutableArray *)BGDataArray{
     if (!_BGDataArray) {
         _BGDataArray = [[NSMutableArray alloc] init];
-        [_BGDataArray addObject:@"待接货"];
-        [_BGDataArray addObject:@"待装载"];
-        [_BGDataArray addObject:@"待送达"];
-        [_BGDataArray addObject:@"已完成"];
+        [_BGDataArray addObject:NSLocalizedString(@"待接货", nil)];
+        [_BGDataArray addObject:NSLocalizedString(@"待装载", nil)];
+        [_BGDataArray addObject:NSLocalizedString(@"待送达", nil)];
+        [_BGDataArray addObject:NSLocalizedString(@"已完成", nil)];
     }
     return _BGDataArray;
 }

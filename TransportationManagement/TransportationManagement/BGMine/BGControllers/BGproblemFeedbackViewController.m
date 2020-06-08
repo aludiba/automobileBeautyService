@@ -22,14 +22,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"问题反馈";
+    self.title = NSLocalizedString(@"问题反馈", nil);
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
     [self BGSetContentView];
 }
 - (void)BGSetContentView{
+    self.view.backgroundColor = [UIColor cyanColor];
     BGCargoAddViewModel *BGFeedbackViewModel = [[BGCargoAddViewModel alloc] init];
-    BGFeedbackViewModel.BGTitle = @"反馈内容";
-    BGFeedbackViewModel.BGDefault = @"请输入反馈内容";
+    BGFeedbackViewModel.BGTitle = NSLocalizedString(@"反馈内容", nil);
+    BGFeedbackViewModel.BGDefault = NSLocalizedString(@"请输入反馈内容", nil);
     [self.BGviewDataArray addObject:BGFeedbackViewModel];
     
     [self.BGmainTable reloadData];
@@ -51,7 +52,7 @@
         NSString *BGcontentString = [BGHBTool BGremoveSpaceAndNewline:BGviewModel.BGContent];
         if (!BGcontentString.length) {
             if (i == 0) {
-                [MBProgressHUD BGshowReminderText:@"请输入反馈内容"];
+                [MBProgressHUD BGshowReminderText:NSLocalizedString(@"请输入反馈内容", nil)];
                 return;
             }
         }
@@ -132,6 +133,7 @@
 - (UITableView *)BGmainTable{
     if (!_BGmainTable) {
         _BGmainTable = [[UITableView alloc] init];
+        _BGmainTable.backgroundColor = [UIColor cyanColor];
         _BGmainTable.rowHeight = UITableViewAutomaticDimension;
         _BGmainTable.estimatedRowHeight = 48.0f;
         _BGmainTable.dataSource = self;
@@ -165,13 +167,13 @@
     if (!_BGsaveButton) {
         _BGsaveButton = [[UIButton alloc] init];
         _BGsaveButton.backgroundColor = [UIColor colorWithRed:100/255.0 green:141/255.0 blue:225/255.0 alpha:1/1.0];
-        _BGsaveButton.layer.cornerRadius = 4.0f;
+        _BGsaveButton.layer.cornerRadius = 12.0f;
         _BGsaveButton.layer.masksToBounds = YES;
-        _BGsaveButton.layer.borderColor = BGH_Color(100, 141, 225, 1).CGColor;
-        _BGsaveButton.layer.borderWidth = 0.5f;
-        [_BGsaveButton setTitle:@"发送" forState:UIControlStateNormal];
+        _BGsaveButton.layer.borderColor = [UIColor greenColor].CGColor;
+        _BGsaveButton.layer.borderWidth = 1.5f;
+        [_BGsaveButton setTitle:NSLocalizedString(@"发送", nil) forState:UIControlStateNormal];
         [_BGsaveButton addTarget:self action:@selector(saveAction:) forControlEvents:UIControlEventTouchUpInside];
-        [_BGsaveButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_BGsaveButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_BGsaveButton.titleLabel setFont:[UIFont systemFontOfSize:15]];
     }
     return _BGsaveButton;

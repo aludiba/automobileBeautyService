@@ -18,6 +18,7 @@
 @implementation BGproblemFeedbackTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.BGtitleLbl];
         [self.contentView addSubview:self.BGeditableView];
         [self.BGeditableView addSubview:self.BGhiddenLbl];

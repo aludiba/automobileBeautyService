@@ -26,35 +26,36 @@
     // Do any additional setup after loading the view.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
     if (self.type == BGCargoTypeWaitReceiving) {
-        self.title = @"添加待接货";
+        self.title = NSLocalizedString(@"添加待接货", nil);
     }else if (self.type == BGCargoTypeWaitLoading){
-        self.title = @"添加待装载";
+        self.title = NSLocalizedString(@"添加待装载", nil);
     }else if (self.type == BGCargoTypeWaitDelivery){
-        self.title = @"添加待送达";
+        self.title = NSLocalizedString(@"添加待送达", nil);
     }else{
-        self.title = @"添加已完成";
+        self.title = NSLocalizedString(@"添加已完成", nil);
     }
     [self BGSetContentView];
 }
 - (void)BGSetContentView{
+    self.view.backgroundColor = [UIColor cyanColor];
     BGCargoAddViewModel *BGPlaceViewModel = [[BGCargoAddViewModel alloc] init];
-    BGPlaceViewModel.BGTitle = @"地点";
-    BGPlaceViewModel.BGDefault = @"请输入地点";
+    BGPlaceViewModel.BGTitle = NSLocalizedString(@"地点", nil);
+    BGPlaceViewModel.BGDefault = NSLocalizedString(@"请输入地点", nil);
     [self.BGviewDataArray addObject:BGPlaceViewModel];
     
     BGCargoAddViewModel *BGCustomerViewModel = [[BGCargoAddViewModel alloc] init];
-    BGCustomerViewModel.BGTitle = @"客户名称";
-    BGCustomerViewModel.BGDefault = @"请输入客户名称";
+    BGCustomerViewModel.BGTitle = NSLocalizedString(@"客户名称", nil);
+    BGCustomerViewModel.BGDefault = NSLocalizedString(@"请输入客户名称", nil);
     [self.BGviewDataArray addObject:BGCustomerViewModel];
     
     BGCargoAddViewModel *BGCommodityViewModel = [[BGCargoAddViewModel alloc] init];
-    BGCommodityViewModel.BGTitle = @"货物名称";
-    BGCommodityViewModel.BGDefault = @"请输入货物名称";
+    BGCommodityViewModel.BGTitle = NSLocalizedString(@"货物名称", nil);
+    BGCommodityViewModel.BGDefault = NSLocalizedString(@"请输入货物名称", nil);
     [self.BGviewDataArray addObject:BGCommodityViewModel];
     
     BGCargoAddViewModel *BGTransportPriceViewModel = [[BGCargoAddViewModel alloc] init];
-    BGTransportPriceViewModel.BGTitle = @"运输价格(元)";
-    BGTransportPriceViewModel.BGDefault = @"请输入运输价格";
+    BGTransportPriceViewModel.BGTitle = NSLocalizedString(@"运输价格(元)", nil);
+    BGTransportPriceViewModel.BGDefault = NSLocalizedString(@"请输入运输价格", nil);
     [self.BGviewDataArray addObject:BGTransportPriceViewModel];
     [self.BGmainTable reloadData];
 }
@@ -75,16 +76,16 @@
         NSString *BGcontentString = [BGHBTool BGremoveSpaceAndNewline:BGviewModel.BGContent];
         if (!BGcontentString.length) {
             if (i == 0) {
-                [MBProgressHUD BGshowReminderText:@"请输入地点"];
+                [MBProgressHUD BGshowReminderText:NSLocalizedString(@"请输入地点", nil)];
                 return;
             }else if (i == 1){
-                [MBProgressHUD BGshowReminderText:@"请输入客户名称"];
+                [MBProgressHUD BGshowReminderText:NSLocalizedString(@"请输入客户名称", nil)];
                 return;
             }else if (i == 2){
-                [MBProgressHUD BGshowReminderText:@"请输入货物名称"];
+                [MBProgressHUD BGshowReminderText:NSLocalizedString(@"请输入货物名称", nil)];
                 return;
             }else if (i == 3){
-                [MBProgressHUD BGshowReminderText:@"请输入运输价格"];
+                [MBProgressHUD BGshowReminderText:NSLocalizedString(@"请输入运输价格", nil)];
                 return;
             }
         }
@@ -146,7 +147,7 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     __weak typeof(self) weakSelf = self;
     cell.BGeditBlock = ^(BGCargoEditableTableViewCell * _Nonnull cell) {
-        if ([BGViewModel.BGTitle hasPrefix:@"运输价格"]) {
+        if ([BGViewModel.BGTitle hasPrefix:NSLocalizedString(@"运输价格(元)", nil)]) {
         if (cell.BGcontentHeight > BGViewModel.BGEditHeight) {
         [UIView animateWithDuration:0.2 animations:^{
             CGRect frame = self.view.frame;
@@ -185,7 +186,7 @@
 - (UITableView *)BGmainTable{
     if (!_BGmainTable) {
         _BGmainTable = [[UITableView alloc] init];
-        _BGmainTable.backgroundColor = BGH_Color(242, 242, 242, 1);
+        _BGmainTable.backgroundColor = [UIColor cyanColor];
         _BGmainTable.rowHeight = UITableViewAutomaticDimension;
         _BGmainTable.estimatedRowHeight = 48.0f;
         _BGmainTable.dataSource = self;
@@ -219,13 +220,13 @@
     if (!_BGsaveButton) {
         _BGsaveButton = [[UIButton alloc] init];
         _BGsaveButton.backgroundColor = [UIColor colorWithRed:100/255.0 green:141/255.0 blue:225/255.0 alpha:1/1.0];
-        _BGsaveButton.layer.cornerRadius = 4.0f;
+        _BGsaveButton.layer.cornerRadius = 12.0f;
         _BGsaveButton.layer.masksToBounds = YES;
-        _BGsaveButton.layer.borderColor = BGH_Color(100, 141, 225, 1).CGColor;
-        _BGsaveButton.layer.borderWidth = 0.5f;
-        [_BGsaveButton setTitle:@"添加" forState:UIControlStateNormal];
+        _BGsaveButton.layer.borderColor = [UIColor greenColor].CGColor;
+        _BGsaveButton.layer.borderWidth = 1.5f;
+        [_BGsaveButton setTitle:NSLocalizedString(@"添加", nil) forState:UIControlStateNormal];
         [_BGsaveButton addTarget:self action:@selector(saveAction:) forControlEvents:UIControlEventTouchUpInside];
-        [_BGsaveButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_BGsaveButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_BGsaveButton.titleLabel setFont:[UIFont systemFontOfSize:15]];
     }
     return _BGsaveButton;

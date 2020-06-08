@@ -33,6 +33,7 @@
     return self;
 }
 - (void)BGsetContentView{
+    self.contentView.backgroundColor = [UIColor cyanColor];
     [self.contentView addSubview:self.BGcancelButton];
     [self.contentView addSubview:self.BGaccountLable];
     [self.contentView addSubview:self.BGaccountTextField];
@@ -44,15 +45,15 @@
     [self.contentView addSubview:self.BGregisteredButton];
     
     [self.BGcancelButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.contentView).offset(25);
+        make.trailing.equalTo(self.contentView).offset(-25);
         make.top.equalTo(self.contentView).offset(30);
-        make.width.mas_equalTo(34);
+        make.width.mas_equalTo(50);
         make.height.mas_equalTo(17);
     }];
     [self.BGaccountLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.contentView).offset(32);
         make.top.equalTo(self.BGcancelButton.mas_bottom).offset(60);
-        make.width.mas_equalTo(32);
+        make.width.mas_equalTo(66);
         make.height.mas_equalTo(16);
     }];
     [self.BGaccountTextField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -70,7 +71,7 @@
     [self.BGpasswordLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.contentView).offset(32);
         make.top.equalTo(self.BGline.mas_bottom).offset(15);
-        make.width.mas_equalTo(32);
+        make.width.mas_equalTo(66);
         make.height.mas_equalTo(16);
     }];
     [self.BGpasswordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -127,11 +128,11 @@
 - (void)BGbtnClick:(UIButton *)sender{
     [self.contentView endEditing:YES];
     if (!self.BGaccount.length) {
-        [MBProgressHUD BGshowReminderText:@"请输入账号"];
+        [MBProgressHUD BGshowReminderText:NSLocalizedString(@"请输入账号", nil)];
         return;
     }
     if (!self.BGpassword.length) {
-        [MBProgressHUD BGshowReminderText:@"请输入密码"];
+        [MBProgressHUD BGshowReminderText:NSLocalizedString(@"确认密码", nil)];
         return;
     }
     if (sender.tag == 100) {
@@ -151,7 +152,7 @@
         [bUser setPassword:self.BGpassword];
         [bUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
             if (succeeded) {
-                [MBProgressHUD BGshowReminderText:@"注册成功"];
+                [MBProgressHUD BGshowReminderText:NSLocalizedString(@"注册成功", nil)];
                 [AVUser logInWithUsernameInBackground:self.BGaccount password:self.BGpassword block:^(AVUser * _Nullable user, NSError * _Nullable error) {
                     if (user) {
                         [self.BGSuperVC dismissViewControllerAnimated:YES completion:^{
@@ -173,7 +174,7 @@
         _BGcancelButton = [[UIButton alloc] init];
         [_BGcancelButton.titleLabel setFont:[UIFont systemFontOfSize:16]];
         [_BGcancelButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_BGcancelButton setTitle:@"取消" forState:UIControlStateNormal];
+        [_BGcancelButton setTitle:NSLocalizedString(@"取消", nil) forState:UIControlStateNormal];
         [_BGcancelButton addTarget:self action:@selector(BGcancelClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return _BGcancelButton;
@@ -181,7 +182,7 @@
 - (UILabel *)BGaccountLable{
     if (!_BGaccountLable) {
         _BGaccountLable = [[UILabel alloc] init];
-        _BGaccountLable.text = @"账号";
+        _BGaccountLable.text = NSLocalizedString(@"账号", nil);
         _BGaccountLable.textColor = [UIColor grayColor];
         _BGaccountLable.font = [UIFont systemFontOfSize:15];
     }
@@ -195,7 +196,7 @@
         _BGaccountTextField.delegate = self;
         _BGaccountTextField.textColor = [UIColor blackColor];
         _BGaccountTextField.font = [UIFont systemFontOfSize:20];
-        _BGaccountTextField.placeholder = @"请输入账号";
+        _BGaccountTextField.placeholder = NSLocalizedString(@"请输入账号", nil);
     }
     return _BGaccountTextField;
 }
@@ -209,7 +210,7 @@
 - (UILabel *)BGpasswordLable{
     if (!_BGpasswordLable) {
         _BGpasswordLable = [[UILabel alloc] init];
-        _BGpasswordLable.text = @"密码";
+        _BGpasswordLable.text = NSLocalizedString(@"密码", nil);
         _BGpasswordLable.textColor = [UIColor grayColor];
         _BGpasswordLable.font = [UIFont systemFontOfSize:15];
     }
@@ -223,7 +224,7 @@
         _BGpasswordTextField.delegate = self;
         _BGpasswordTextField.textColor = [UIColor blackColor];
         _BGpasswordTextField.font = [UIFont systemFontOfSize:20];
-        _BGpasswordTextField.placeholder = @"请输入密码";
+        _BGpasswordTextField.placeholder = NSLocalizedString(@"请输入密码", nil);
         _BGpasswordTextField.secureTextEntry = YES;
     }
     return _BGpasswordTextField;
@@ -244,7 +245,7 @@
         [_BGloginButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
         _BGloginButton.layer.cornerRadius = 6.0f;
         _BGloginButton.layer.masksToBounds = YES;
-        [_BGloginButton setTitle:@"登录" forState:UIControlStateNormal];
+        [_BGloginButton setTitle:NSLocalizedString(@"登录", nil) forState:UIControlStateNormal];
         [_BGloginButton addTarget:self action:@selector(BGbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _BGloginButton;
@@ -253,12 +254,12 @@
     if (!_BGregisteredButton) {
         _BGregisteredButton = [[UIButton alloc] init];
         _BGregisteredButton.tag = 101;
-        _BGregisteredButton.backgroundColor = [UIColor greenColor];
-        [_BGregisteredButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        _BGregisteredButton.backgroundColor = [UIColor whiteColor];
+        [_BGregisteredButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         [_BGregisteredButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
         _BGregisteredButton.layer.cornerRadius = 6.0f;
         _BGregisteredButton.layer.masksToBounds = YES;
-        [_BGregisteredButton setTitle:@"注册" forState:UIControlStateNormal];
+        [_BGregisteredButton setTitle:NSLocalizedString(@"注册", nil) forState:UIControlStateNormal];
         [_BGregisteredButton addTarget:self action:@selector(BGbtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _BGregisteredButton;

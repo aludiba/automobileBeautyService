@@ -74,7 +74,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
 - (void)BGsetContentView{
     self.BGHomeVC = [[BGHomeViewController alloc] init];
     UINavigationController *BGHome = [[UINavigationController alloc] initWithRootViewController:self.BGHomeVC];
-    self.BGHomeVC.tabBarItem.title = @"首页";
+    self.BGHomeVC.tabBarItem.title = NSLocalizedString(@"首页", nil);
     [self.BGHomeVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
     [self.BGHomeVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
     self.BGHomeVC.tabBarItem.image = [[UIImage imageNamed:@"BGtab_home_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -82,7 +82,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     
     self.BGRoadVC = [[BGRoadViewController alloc] init];
     UINavigationController *BGRoadVC = [[UINavigationController alloc] initWithRootViewController:self.BGRoadVC];
-    self.BGRoadVC.tabBarItem.title = @"路况延时";
+    self.BGRoadVC.tabBarItem.title = NSLocalizedString(@"路况延时", nil);
     [self.BGRoadVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
     [self.BGRoadVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
     self.BGRoadVC.tabBarItem.image = [[UIImage imageNamed:@"BGtab_road_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -90,7 +90,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     
     self.BGGasolineVC = [[BGGasolineViewController alloc] init];
     UINavigationController *BGGasolineVC = [[UINavigationController alloc] initWithRootViewController:self.BGGasolineVC];
-    self.BGGasolineVC.tabBarItem.title = @"加油记录";
+    self.BGGasolineVC.tabBarItem.title = NSLocalizedString(@"加油记录", nil);
     [self.BGGasolineVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
     [self.BGGasolineVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
     self.BGGasolineVC.tabBarItem.image = [[UIImage imageNamed:@"BGtab_gasoline_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -98,7 +98,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
     
     self.BGMineVC = [[BGMineViewController alloc] init];
     UINavigationController *BGMineVC = [[UINavigationController alloc] initWithRootViewController:self.BGMineVC];
-    self.BGMineVC.tabBarItem.title = @"我的";
+    self.BGMineVC.tabBarItem.title = NSLocalizedString(@"我的", nil);
     [self.BGMineVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]} forState:UIControlStateSelected];
     [self.BGMineVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:0.66 green:0.67 blue:0.71 alpha:1.00]} forState:UIControlStateNormal];
     self.BGMineVC.tabBarItem.image = [[UIImage imageNamed:@"BGtab_mine_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

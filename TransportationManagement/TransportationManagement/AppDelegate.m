@@ -22,7 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self setJPush:launchOptions];
-//    [AVOSCloud setApplicationId:@"0megPo6oNflIXCj8bD4SRf1Q-MdYXbMMI" clientKey:@"LLplbBGhwrEobgRWQnDW5Y6H"];
+    [AVOSCloud setApplicationId:@"H15qlfDi1SLCxryYbbjf7snN-MdYXbMMI" clientKey:@"nVywofsCh2sUR6MVqbIhRQnt"];
     self.BGwindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.BGwindow.backgroundColor = [UIColor whiteColor];
     self.BGwindow.rootViewController = [self rootController];

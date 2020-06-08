@@ -21,6 +21,7 @@
     [self BGsetContentView];
 }
 - (void)BGsetContentView{
+    self.view.backgroundColor = [UIColor cyanColor];
     [self.view addSubview:self.BGmainTable];
     [self.BGmainTable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.mas_topLayoutGuideBottom);
@@ -51,6 +52,7 @@
 - (UITableView *)BGmainTable{
     if (!_BGmainTable) {
         _BGmainTable = [[UITableView alloc] init];
+        _BGmainTable.backgroundColor = [UIColor cyanColor];
         _BGmainTable.showsVerticalScrollIndicator = NO;
         _BGmainTable.scrollEnabled = NO;
         _BGmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
