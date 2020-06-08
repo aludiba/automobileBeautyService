@@ -7,130 +7,127 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7246B884243C31C00031D3A0 /* KARoadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7246B883243C31C00031D3A0 /* KARoadTableViewCell.m */; };
-		7246B887243C3C1F0031D3A0 /* KARoadAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7246B886243C3C1F0031D3A0 /* KARoadAddViewController.m */; };
-		7246B88A243C4C0D0031D3A0 /* KAMineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7246B889243C4C0D0031D3A0 /* KAMineTableViewCell.m */; };
-		7246B88D243C4C6A0031D3A0 /* KAMineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7246B88C243C4C6A0031D3A0 /* KAMineModel.m */; };
-		7246B890243C51E10031D3A0 /* KAModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7246B88F243C51E10031D3A0 /* KAModifyNicknameViewController.m */; };
-		7246B893243C51F60031D3A0 /* KAPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7246B892243C51F60031D3A0 /* KAPasswordChangeViewController.m */; };
-		7246B896243C58A00031D3A0 /* KAproblemFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7246B895243C58A00031D3A0 /* KAproblemFeedbackViewController.m */; };
-		7246B899243C58C30031D3A0 /* KAproblemFeedbackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7246B898243C58C30031D3A0 /* KAproblemFeedbackModel.m */; };
-		7246B89C243C59640031D3A0 /* KAproblemFeedbackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7246B89B243C59640031D3A0 /* KAproblemFeedbackTableViewCell.m */; };
+		7246B884243C31C00031D3A0 /* BGRoadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7246B883243C31C00031D3A0 /* BGRoadTableViewCell.m */; };
+		7246B887243C3C1F0031D3A0 /* BGRoadAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7246B886243C3C1F0031D3A0 /* BGRoadAddViewController.m */; };
+		7246B88A243C4C0D0031D3A0 /* BGMineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7246B889243C4C0D0031D3A0 /* BGMineTableViewCell.m */; };
+		7246B88D243C4C6A0031D3A0 /* BGMineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7246B88C243C4C6A0031D3A0 /* BGMineModel.m */; };
+		7246B890243C51E10031D3A0 /* BGModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7246B88F243C51E10031D3A0 /* BGModifyNicknameViewController.m */; };
+		7246B893243C51F60031D3A0 /* BGPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7246B892243C51F60031D3A0 /* BGPasswordChangeViewController.m */; };
+		7246B896243C58A00031D3A0 /* BGproblemFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7246B895243C58A00031D3A0 /* BGproblemFeedbackViewController.m */; };
+		7246B899243C58C30031D3A0 /* BGproblemFeedbackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7246B898243C58C30031D3A0 /* BGproblemFeedbackModel.m */; };
+		7246B89C243C59640031D3A0 /* BGproblemFeedbackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7246B89B243C59640031D3A0 /* BGproblemFeedbackTableViewCell.m */; };
 		728506D92435B47B00D3BDF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 728506D82435B47B00D3BDF8 /* AppDelegate.m */; };
 		728506E42435B48000D3BDF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 728506E32435B48000D3BDF8 /* Assets.xcassets */; };
 		728506E72435B48000D3BDF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728506E52435B48000D3BDF8 /* LaunchScreen.storyboard */; };
 		728506EA2435B48000D3BDF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 728506E92435B48000D3BDF8 /* main.m */; };
-		728507062435F69B00D3BDF8 /* KABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507052435F69B00D3BDF8 /* KABaseViewController.m */; };
-		728507092435F8BC00D3BDF8 /* KATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507082435F8BC00D3BDF8 /* KATabBarController.m */; };
-		7285070C2435FBEF00D3BDF8 /* KAGasolineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285070B2435FBEF00D3BDF8 /* KAGasolineViewController.m */; };
-		7285070F2435FC1E00D3BDF8 /* KAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285070E2435FC1E00D3BDF8 /* KAHomeViewController.m */; };
-		728507122435FC3600D3BDF8 /* KAMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507112435FC3600D3BDF8 /* KAMineViewController.m */; };
-		728507152435FC4A00D3BDF8 /* KARoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507142435FC4A00D3BDF8 /* KARoadViewController.m */; };
-		728507262436016F00D3BDF8 /* KAUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285071A2436016D00D3BDF8 /* KAUIUtilities.m */; };
+		728507062435F69B00D3BDF8 /* BGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507052435F69B00D3BDF8 /* BGBaseViewController.m */; };
+		728507092435F8BC00D3BDF8 /* BGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507082435F8BC00D3BDF8 /* BGTabBarController.m */; };
+		7285070C2435FBEF00D3BDF8 /* BGGasolineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285070B2435FBEF00D3BDF8 /* BGGasolineViewController.m */; };
+		7285070F2435FC1E00D3BDF8 /* BGHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285070E2435FC1E00D3BDF8 /* BGHomeViewController.m */; };
+		728507122435FC3600D3BDF8 /* BGMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507112435FC3600D3BDF8 /* BGMineViewController.m */; };
+		728507152435FC4A00D3BDF8 /* BGRoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507142435FC4A00D3BDF8 /* BGRoadViewController.m */; };
+		728507262436016F00D3BDF8 /* BGUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285071A2436016D00D3BDF8 /* BGUIUtilities.m */; };
 		728507272436016F00D3BDF8 /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285071B2436016D00D3BDF8 /* CalendarTool.m */; };
 		728507282436016F00D3BDF8 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285071C2436016D00D3BDF8 /* NSDictionary+log.m */; };
-		728507292436016F00D3BDF8 /* KANDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507202436016E00D3BDF8 /* KANDHTTPClient.m */; };
-		7285072A2436016F00D3BDF8 /* MBProgressHUD+KANJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507212436016E00D3BDF8 /* MBProgressHUD+KANJ.m */; };
+		7285072A2436016F00D3BDF8 /* MBProgressHUD+BGNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507212436016E00D3BDF8 /* MBProgressHUD+BGNJ.m */; };
 		7285072B2436016F00D3BDF8 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507222436016E00D3BDF8 /* NSArray+log.m */; };
-		7285072C2436016F00D3BDF8 /* KAHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507232436016E00D3BDF8 /* KAHBTool.m */; };
-		7285072F24360F6200D3BDF8 /* KACargoRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285072E24360F6200D3BDF8 /* KACargoRecordViewController.m */; };
-		7285073224360F9F00D3BDF8 /* KACargoAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285073124360F9F00D3BDF8 /* KACargoAddViewController.m */; };
-		728507352436102100D3BDF8 /* KACargoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507342436102100D3BDF8 /* KACargoModel.m */; };
-		728507382436134B00D3BDF8 /* KACargoAddViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507372436134B00D3BDF8 /* KACargoAddViewModel.m */; };
-		7285073B24362C4400D3BDF8 /* KACargoEditableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285073A24362C4400D3BDF8 /* KACargoEditableTableViewCell.m */; };
-		7285073E24386A7F00D3BDF8 /* KACargoRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285073D24386A7F00D3BDF8 /* KACargoRecordTableViewCell.m */; };
-		728507412438A60C00D3BDF8 /* KALoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507402438A60C00D3BDF8 /* KALoginTableViewCell.m */; };
-		728507442438C1D700D3BDF8 /* KALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507432438C1D700D3BDF8 /* KALoginViewController.m */; };
-		728507472438C8E100D3BDF8 /* KACargoRecordSuperTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507462438C8E100D3BDF8 /* KACargoRecordSuperTableViewCell.m */; };
-		7285074A243AB63600D3BDF8 /* KARoadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72850749243AB63600D3BDF8 /* KARoadModel.m */; };
-		7285074D243AB7CD00D3BDF8 /* KAGasolineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285074C243AB7CD00D3BDF8 /* KAGasolineModel.m */; };
-		72850750243ABBF700D3BDF8 /* KAGasolineAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285074F243ABBF700D3BDF8 /* KAGasolineAddViewController.m */; };
-		72850753243ABF4600D3BDF8 /* KAGasolineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72850752243ABF4600D3BDF8 /* KAGasolineTableViewCell.m */; };
+		7285072C2436016F00D3BDF8 /* BGHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507232436016E00D3BDF8 /* BGHBTool.m */; };
+		7285072F24360F6200D3BDF8 /* BGCargoRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285072E24360F6200D3BDF8 /* BGCargoRecordViewController.m */; };
+		7285073224360F9F00D3BDF8 /* BGCargoAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285073124360F9F00D3BDF8 /* BGCargoAddViewController.m */; };
+		728507352436102100D3BDF8 /* BGCargoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507342436102100D3BDF8 /* BGCargoModel.m */; };
+		728507382436134B00D3BDF8 /* BGCargoAddViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507372436134B00D3BDF8 /* BGCargoAddViewModel.m */; };
+		7285073B24362C4400D3BDF8 /* BGCargoEditableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285073A24362C4400D3BDF8 /* BGCargoEditableTableViewCell.m */; };
+		7285073E24386A7F00D3BDF8 /* BGCargoRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285073D24386A7F00D3BDF8 /* BGCargoRecordTableViewCell.m */; };
+		728507412438A60C00D3BDF8 /* BGLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507402438A60C00D3BDF8 /* BGLoginTableViewCell.m */; };
+		728507442438C1D700D3BDF8 /* BGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507432438C1D700D3BDF8 /* BGLoginViewController.m */; };
+		728507472438C8E100D3BDF8 /* BGCargoRecordSuperTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 728507462438C8E100D3BDF8 /* BGCargoRecordSuperTableViewCell.m */; };
+		7285074A243AB63600D3BDF8 /* BGRoadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72850749243AB63600D3BDF8 /* BGRoadModel.m */; };
+		7285074D243AB7CD00D3BDF8 /* BGGasolineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285074C243AB7CD00D3BDF8 /* BGGasolineModel.m */; };
+		72850750243ABBF700D3BDF8 /* BGGasolineAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285074F243ABBF700D3BDF8 /* BGGasolineAddViewController.m */; };
+		72850753243ABF4600D3BDF8 /* BGGasolineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72850752243ABF4600D3BDF8 /* BGGasolineTableViewCell.m */; };
 		E7BDC7703E95C58634871974 /* Pods_TransportationManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F639F2312771184B0C56E9 /* Pods_TransportationManagement.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		461D51084D8B022805E4FEEA /* Pods-TransportationManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransportationManagement.release.xcconfig"; path = "Target Support Files/Pods-TransportationManagement/Pods-TransportationManagement.release.xcconfig"; sourceTree = "<group>"; };
-		7246B882243C31C00031D3A0 /* KARoadTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KARoadTableViewCell.h; sourceTree = "<group>"; };
-		7246B883243C31C00031D3A0 /* KARoadTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KARoadTableViewCell.m; sourceTree = "<group>"; };
-		7246B885243C3C1F0031D3A0 /* KARoadAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KARoadAddViewController.h; sourceTree = "<group>"; };
-		7246B886243C3C1F0031D3A0 /* KARoadAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KARoadAddViewController.m; sourceTree = "<group>"; };
-		7246B888243C4C0D0031D3A0 /* KAMineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAMineTableViewCell.h; sourceTree = "<group>"; };
-		7246B889243C4C0D0031D3A0 /* KAMineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAMineTableViewCell.m; sourceTree = "<group>"; };
-		7246B88B243C4C6A0031D3A0 /* KAMineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAMineModel.h; sourceTree = "<group>"; };
-		7246B88C243C4C6A0031D3A0 /* KAMineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAMineModel.m; sourceTree = "<group>"; };
-		7246B88E243C51E10031D3A0 /* KAModifyNicknameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAModifyNicknameViewController.h; sourceTree = "<group>"; };
-		7246B88F243C51E10031D3A0 /* KAModifyNicknameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAModifyNicknameViewController.m; sourceTree = "<group>"; };
-		7246B891243C51F60031D3A0 /* KAPasswordChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAPasswordChangeViewController.h; sourceTree = "<group>"; };
-		7246B892243C51F60031D3A0 /* KAPasswordChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAPasswordChangeViewController.m; sourceTree = "<group>"; };
-		7246B894243C58A00031D3A0 /* KAproblemFeedbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAproblemFeedbackViewController.h; sourceTree = "<group>"; };
-		7246B895243C58A00031D3A0 /* KAproblemFeedbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAproblemFeedbackViewController.m; sourceTree = "<group>"; };
-		7246B897243C58C30031D3A0 /* KAproblemFeedbackModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAproblemFeedbackModel.h; sourceTree = "<group>"; };
-		7246B898243C58C30031D3A0 /* KAproblemFeedbackModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAproblemFeedbackModel.m; sourceTree = "<group>"; };
-		7246B89A243C59640031D3A0 /* KAproblemFeedbackTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAproblemFeedbackTableViewCell.h; sourceTree = "<group>"; };
-		7246B89B243C59640031D3A0 /* KAproblemFeedbackTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAproblemFeedbackTableViewCell.m; sourceTree = "<group>"; };
+		7246B882243C31C00031D3A0 /* BGRoadTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGRoadTableViewCell.h; sourceTree = "<group>"; };
+		7246B883243C31C00031D3A0 /* BGRoadTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGRoadTableViewCell.m; sourceTree = "<group>"; };
+		7246B885243C3C1F0031D3A0 /* BGRoadAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGRoadAddViewController.h; sourceTree = "<group>"; };
+		7246B886243C3C1F0031D3A0 /* BGRoadAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGRoadAddViewController.m; sourceTree = "<group>"; };
+		7246B888243C4C0D0031D3A0 /* BGMineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGMineTableViewCell.h; sourceTree = "<group>"; };
+		7246B889243C4C0D0031D3A0 /* BGMineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGMineTableViewCell.m; sourceTree = "<group>"; };
+		7246B88B243C4C6A0031D3A0 /* BGMineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGMineModel.h; sourceTree = "<group>"; };
+		7246B88C243C4C6A0031D3A0 /* BGMineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGMineModel.m; sourceTree = "<group>"; };
+		7246B88E243C51E10031D3A0 /* BGModifyNicknameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGModifyNicknameViewController.h; sourceTree = "<group>"; };
+		7246B88F243C51E10031D3A0 /* BGModifyNicknameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGModifyNicknameViewController.m; sourceTree = "<group>"; };
+		7246B891243C51F60031D3A0 /* BGPasswordChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGPasswordChangeViewController.h; sourceTree = "<group>"; };
+		7246B892243C51F60031D3A0 /* BGPasswordChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGPasswordChangeViewController.m; sourceTree = "<group>"; };
+		7246B894243C58A00031D3A0 /* BGproblemFeedbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGproblemFeedbackViewController.h; sourceTree = "<group>"; };
+		7246B895243C58A00031D3A0 /* BGproblemFeedbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGproblemFeedbackViewController.m; sourceTree = "<group>"; };
+		7246B897243C58C30031D3A0 /* BGproblemFeedbackModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGproblemFeedbackModel.h; sourceTree = "<group>"; };
+		7246B898243C58C30031D3A0 /* BGproblemFeedbackModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGproblemFeedbackModel.m; sourceTree = "<group>"; };
+		7246B89A243C59640031D3A0 /* BGproblemFeedbackTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGproblemFeedbackTableViewCell.h; sourceTree = "<group>"; };
+		7246B89B243C59640031D3A0 /* BGproblemFeedbackTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGproblemFeedbackTableViewCell.m; sourceTree = "<group>"; };
 		7246B89D243C8E590031D3A0 /* TransportationManagement.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TransportationManagement.entitlements; sourceTree = "<group>"; };
-		728506D42435B47B00D3BDF8 /* 即刻运输管理.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "即刻运输管理.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		728506D42435B47B00D3BDF8 /* immediateTransportManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = immediateTransportManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		728506D72435B47B00D3BDF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		728506D82435B47B00D3BDF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		728506E32435B48000D3BDF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		728506E62435B48000D3BDF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		728506E82435B48000D3BDF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		728506E92435B48000D3BDF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		728507042435F69B00D3BDF8 /* KABaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KABaseViewController.h; sourceTree = "<group>"; };
-		728507052435F69B00D3BDF8 /* KABaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KABaseViewController.m; sourceTree = "<group>"; };
-		728507072435F8BC00D3BDF8 /* KATabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KATabBarController.h; sourceTree = "<group>"; };
-		728507082435F8BC00D3BDF8 /* KATabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KATabBarController.m; sourceTree = "<group>"; };
-		7285070A2435FBEF00D3BDF8 /* KAGasolineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAGasolineViewController.h; sourceTree = "<group>"; };
-		7285070B2435FBEF00D3BDF8 /* KAGasolineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAGasolineViewController.m; sourceTree = "<group>"; };
-		7285070D2435FC1E00D3BDF8 /* KAHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAHomeViewController.h; sourceTree = "<group>"; };
-		7285070E2435FC1E00D3BDF8 /* KAHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAHomeViewController.m; sourceTree = "<group>"; };
-		728507102435FC3600D3BDF8 /* KAMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAMineViewController.h; sourceTree = "<group>"; };
-		728507112435FC3600D3BDF8 /* KAMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAMineViewController.m; sourceTree = "<group>"; };
-		728507132435FC4A00D3BDF8 /* KARoadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KARoadViewController.h; sourceTree = "<group>"; };
-		728507142435FC4A00D3BDF8 /* KARoadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KARoadViewController.m; sourceTree = "<group>"; };
-		728507162436012D00D3BDF8 /* KAGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAGlobal.h; sourceTree = "<group>"; };
-		728507172436016C00D3BDF8 /* KANDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KANDHTTPClient.h; sourceTree = "<group>"; };
+		728507042435F69B00D3BDF8 /* BGBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGBaseViewController.h; sourceTree = "<group>"; };
+		728507052435F69B00D3BDF8 /* BGBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGBaseViewController.m; sourceTree = "<group>"; };
+		728507072435F8BC00D3BDF8 /* BGTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGTabBarController.h; sourceTree = "<group>"; };
+		728507082435F8BC00D3BDF8 /* BGTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGTabBarController.m; sourceTree = "<group>"; };
+		7285070A2435FBEF00D3BDF8 /* BGGasolineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGGasolineViewController.h; sourceTree = "<group>"; };
+		7285070B2435FBEF00D3BDF8 /* BGGasolineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGGasolineViewController.m; sourceTree = "<group>"; };
+		7285070D2435FC1E00D3BDF8 /* BGHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGHomeViewController.h; sourceTree = "<group>"; };
+		7285070E2435FC1E00D3BDF8 /* BGHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGHomeViewController.m; sourceTree = "<group>"; };
+		728507102435FC3600D3BDF8 /* BGMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGMineViewController.h; sourceTree = "<group>"; };
+		728507112435FC3600D3BDF8 /* BGMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGMineViewController.m; sourceTree = "<group>"; };
+		728507132435FC4A00D3BDF8 /* BGRoadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGRoadViewController.h; sourceTree = "<group>"; };
+		728507142435FC4A00D3BDF8 /* BGRoadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGRoadViewController.m; sourceTree = "<group>"; };
+		728507162436012D00D3BDF8 /* BGGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGGlobal.h; sourceTree = "<group>"; };
 		728507182436016C00D3BDF8 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
-		728507192436016C00D3BDF8 /* KAHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAHBTool.h; sourceTree = "<group>"; };
-		7285071A2436016D00D3BDF8 /* KAUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAUIUtilities.m; sourceTree = "<group>"; };
+		728507192436016C00D3BDF8 /* BGHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGHBTool.h; sourceTree = "<group>"; };
+		7285071A2436016D00D3BDF8 /* BGUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGUIUtilities.m; sourceTree = "<group>"; };
 		7285071B2436016D00D3BDF8 /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
 		7285071C2436016D00D3BDF8 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
 		7285071D2436016D00D3BDF8 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
-		7285071E2436016D00D3BDF8 /* KA_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KA_PrefixHeader.pch; sourceTree = "<group>"; };
+		7285071E2436016D00D3BDF8 /* BG_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BG_PrefixHeader.pch; sourceTree = "<group>"; };
 		7285071F2436016D00D3BDF8 /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
-		728507202436016E00D3BDF8 /* KANDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KANDHTTPClient.m; sourceTree = "<group>"; };
-		728507212436016E00D3BDF8 /* MBProgressHUD+KANJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+KANJ.m"; sourceTree = "<group>"; };
+		728507212436016E00D3BDF8 /* MBProgressHUD+BGNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+BGNJ.m"; sourceTree = "<group>"; };
 		728507222436016E00D3BDF8 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
-		728507232436016E00D3BDF8 /* KAHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAHBTool.m; sourceTree = "<group>"; };
-		728507242436016E00D3BDF8 /* KAUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAUIUtilities.h; sourceTree = "<group>"; };
-		728507252436016F00D3BDF8 /* MBProgressHUD+KANJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+KANJ.h"; sourceTree = "<group>"; };
-		7285072D24360F6200D3BDF8 /* KACargoRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KACargoRecordViewController.h; sourceTree = "<group>"; };
-		7285072E24360F6200D3BDF8 /* KACargoRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KACargoRecordViewController.m; sourceTree = "<group>"; };
-		7285073024360F9F00D3BDF8 /* KACargoAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KACargoAddViewController.h; sourceTree = "<group>"; };
-		7285073124360F9F00D3BDF8 /* KACargoAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KACargoAddViewController.m; sourceTree = "<group>"; };
-		728507332436102100D3BDF8 /* KACargoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KACargoModel.h; sourceTree = "<group>"; };
-		728507342436102100D3BDF8 /* KACargoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KACargoModel.m; sourceTree = "<group>"; };
-		728507362436134A00D3BDF8 /* KACargoAddViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KACargoAddViewModel.h; sourceTree = "<group>"; };
-		728507372436134B00D3BDF8 /* KACargoAddViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KACargoAddViewModel.m; sourceTree = "<group>"; };
-		7285073924362C4400D3BDF8 /* KACargoEditableTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KACargoEditableTableViewCell.h; sourceTree = "<group>"; };
-		7285073A24362C4400D3BDF8 /* KACargoEditableTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KACargoEditableTableViewCell.m; sourceTree = "<group>"; };
-		7285073C24386A7E00D3BDF8 /* KACargoRecordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KACargoRecordTableViewCell.h; sourceTree = "<group>"; };
-		7285073D24386A7F00D3BDF8 /* KACargoRecordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KACargoRecordTableViewCell.m; sourceTree = "<group>"; };
-		7285073F2438A60B00D3BDF8 /* KALoginTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KALoginTableViewCell.h; sourceTree = "<group>"; };
-		728507402438A60C00D3BDF8 /* KALoginTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KALoginTableViewCell.m; sourceTree = "<group>"; };
-		728507422438C1D700D3BDF8 /* KALoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KALoginViewController.h; sourceTree = "<group>"; };
-		728507432438C1D700D3BDF8 /* KALoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KALoginViewController.m; sourceTree = "<group>"; };
-		728507452438C8E100D3BDF8 /* KACargoRecordSuperTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KACargoRecordSuperTableViewCell.h; sourceTree = "<group>"; };
-		728507462438C8E100D3BDF8 /* KACargoRecordSuperTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KACargoRecordSuperTableViewCell.m; sourceTree = "<group>"; };
-		72850748243AB63600D3BDF8 /* KARoadModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KARoadModel.h; sourceTree = "<group>"; };
-		72850749243AB63600D3BDF8 /* KARoadModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KARoadModel.m; sourceTree = "<group>"; };
-		7285074B243AB7CD00D3BDF8 /* KAGasolineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAGasolineModel.h; sourceTree = "<group>"; };
-		7285074C243AB7CD00D3BDF8 /* KAGasolineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAGasolineModel.m; sourceTree = "<group>"; };
-		7285074E243ABBF700D3BDF8 /* KAGasolineAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAGasolineAddViewController.h; sourceTree = "<group>"; };
-		7285074F243ABBF700D3BDF8 /* KAGasolineAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAGasolineAddViewController.m; sourceTree = "<group>"; };
-		72850751243ABF4600D3BDF8 /* KAGasolineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAGasolineTableViewCell.h; sourceTree = "<group>"; };
-		72850752243ABF4600D3BDF8 /* KAGasolineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAGasolineTableViewCell.m; sourceTree = "<group>"; };
+		728507232436016E00D3BDF8 /* BGHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGHBTool.m; sourceTree = "<group>"; };
+		728507242436016E00D3BDF8 /* BGUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGUIUtilities.h; sourceTree = "<group>"; };
+		728507252436016F00D3BDF8 /* MBProgressHUD+BGNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+BGNJ.h"; sourceTree = "<group>"; };
+		7285072D24360F6200D3BDF8 /* BGCargoRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGCargoRecordViewController.h; sourceTree = "<group>"; };
+		7285072E24360F6200D3BDF8 /* BGCargoRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGCargoRecordViewController.m; sourceTree = "<group>"; };
+		7285073024360F9F00D3BDF8 /* BGCargoAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGCargoAddViewController.h; sourceTree = "<group>"; };
+		7285073124360F9F00D3BDF8 /* BGCargoAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGCargoAddViewController.m; sourceTree = "<group>"; };
+		728507332436102100D3BDF8 /* BGCargoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGCargoModel.h; sourceTree = "<group>"; };
+		728507342436102100D3BDF8 /* BGCargoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGCargoModel.m; sourceTree = "<group>"; };
+		728507362436134A00D3BDF8 /* BGCargoAddViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGCargoAddViewModel.h; sourceTree = "<group>"; };
+		728507372436134B00D3BDF8 /* BGCargoAddViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGCargoAddViewModel.m; sourceTree = "<group>"; };
+		7285073924362C4400D3BDF8 /* BGCargoEditableTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGCargoEditableTableViewCell.h; sourceTree = "<group>"; };
+		7285073A24362C4400D3BDF8 /* BGCargoEditableTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGCargoEditableTableViewCell.m; sourceTree = "<group>"; };
+		7285073C24386A7E00D3BDF8 /* BGCargoRecordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGCargoRecordTableViewCell.h; sourceTree = "<group>"; };
+		7285073D24386A7F00D3BDF8 /* BGCargoRecordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGCargoRecordTableViewCell.m; sourceTree = "<group>"; };
+		7285073F2438A60B00D3BDF8 /* BGLoginTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGLoginTableViewCell.h; sourceTree = "<group>"; };
+		728507402438A60C00D3BDF8 /* BGLoginTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGLoginTableViewCell.m; sourceTree = "<group>"; };
+		728507422438C1D700D3BDF8 /* BGLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGLoginViewController.h; sourceTree = "<group>"; };
+		728507432438C1D700D3BDF8 /* BGLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGLoginViewController.m; sourceTree = "<group>"; };
+		728507452438C8E100D3BDF8 /* BGCargoRecordSuperTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGCargoRecordSuperTableViewCell.h; sourceTree = "<group>"; };
+		728507462438C8E100D3BDF8 /* BGCargoRecordSuperTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGCargoRecordSuperTableViewCell.m; sourceTree = "<group>"; };
+		72850748243AB63600D3BDF8 /* BGRoadModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGRoadModel.h; sourceTree = "<group>"; };
+		72850749243AB63600D3BDF8 /* BGRoadModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGRoadModel.m; sourceTree = "<group>"; };
+		7285074B243AB7CD00D3BDF8 /* BGGasolineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGGasolineModel.h; sourceTree = "<group>"; };
+		7285074C243AB7CD00D3BDF8 /* BGGasolineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGGasolineModel.m; sourceTree = "<group>"; };
+		7285074E243ABBF700D3BDF8 /* BGGasolineAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGGasolineAddViewController.h; sourceTree = "<group>"; };
+		7285074F243ABBF700D3BDF8 /* BGGasolineAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGGasolineAddViewController.m; sourceTree = "<group>"; };
+		72850751243ABF4600D3BDF8 /* BGGasolineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGGasolineTableViewCell.h; sourceTree = "<group>"; };
+		72850752243ABF4600D3BDF8 /* BGGasolineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGGasolineTableViewCell.m; sourceTree = "<group>"; };
 		C478DEEBE13474D57569AF72 /* Pods-TransportationManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransportationManagement.debug.xcconfig"; path = "Target Support Files/Pods-TransportationManagement/Pods-TransportationManagement.debug.xcconfig"; sourceTree = "<group>"; };
 		D5F639F2312771184B0C56E9 /* Pods_TransportationManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransportationManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -177,7 +174,7 @@
 		728506D52435B47B00D3BDF8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				728506D42435B47B00D3BDF8 /* 即刻运输管理.app */,
+				728506D42435B47B00D3BDF8 /* immediateTransportManagement.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,11 +183,11 @@
 			isa = PBXGroup;
 			children = (
 				7246B89D243C8E590031D3A0 /* TransportationManagement.entitlements */,
-				728506F02435F55700D3BDF8 /* Common */,
-				728506FD2435F55800D3BDF8 /* Gasoline */,
-				728506F92435F55800D3BDF8 /* Home */,
-				728506F52435F55800D3BDF8 /* Mine */,
-				728506F12435F55800D3BDF8 /* Road */,
+				728506F02435F55700D3BDF8 /* BGCommon */,
+				728506FD2435F55800D3BDF8 /* BGGasoline */,
+				728506F92435F55800D3BDF8 /* BGHome */,
+				728506F52435F55800D3BDF8 /* BGMine */,
+				728506F12435F55800D3BDF8 /* BGRoad */,
 				728506D72435B47B00D3BDF8 /* AppDelegate.h */,
 				728506D82435B47B00D3BDF8 /* AppDelegate.m */,
 				728506E32435B48000D3BDF8 /* Assets.xcassets */,
@@ -201,207 +198,205 @@
 			path = TransportationManagement;
 			sourceTree = "<group>";
 		};
-		728506F02435F55700D3BDF8 /* Common */ = {
+		728506F02435F55700D3BDF8 /* BGCommon */ = {
 			isa = PBXGroup;
 			children = (
-				728507162436012D00D3BDF8 /* KAGlobal.h */,
-				7285071E2436016D00D3BDF8 /* KA_PrefixHeader.pch */,
-				728507192436016C00D3BDF8 /* KAHBTool.h */,
-				728507232436016E00D3BDF8 /* KAHBTool.m */,
-				728507172436016C00D3BDF8 /* KANDHTTPClient.h */,
-				728507202436016E00D3BDF8 /* KANDHTTPClient.m */,
-				728507242436016E00D3BDF8 /* KAUIUtilities.h */,
-				7285071A2436016D00D3BDF8 /* KAUIUtilities.m */,
+				728507162436012D00D3BDF8 /* BGGlobal.h */,
+				7285071E2436016D00D3BDF8 /* BG_PrefixHeader.pch */,
+				728507192436016C00D3BDF8 /* BGHBTool.h */,
+				728507232436016E00D3BDF8 /* BGHBTool.m */,
+				728507242436016E00D3BDF8 /* BGUIUtilities.h */,
+				7285071A2436016D00D3BDF8 /* BGUIUtilities.m */,
 				7285071F2436016D00D3BDF8 /* CalendarTool.h */,
 				7285071B2436016D00D3BDF8 /* CalendarTool.m */,
-				728507252436016F00D3BDF8 /* MBProgressHUD+KANJ.h */,
-				728507212436016E00D3BDF8 /* MBProgressHUD+KANJ.m */,
+				728507252436016F00D3BDF8 /* MBProgressHUD+BGNJ.h */,
+				728507212436016E00D3BDF8 /* MBProgressHUD+BGNJ.m */,
 				7285071D2436016D00D3BDF8 /* NSArray+log.h */,
 				728507222436016E00D3BDF8 /* NSArray+log.m */,
 				728507182436016C00D3BDF8 /* NSDictionary+log.h */,
 				7285071C2436016D00D3BDF8 /* NSDictionary+log.m */,
-				728507042435F69B00D3BDF8 /* KABaseViewController.h */,
-				728507052435F69B00D3BDF8 /* KABaseViewController.m */,
-				728507072435F8BC00D3BDF8 /* KATabBarController.h */,
-				728507082435F8BC00D3BDF8 /* KATabBarController.m */,
+				728507042435F69B00D3BDF8 /* BGBaseViewController.h */,
+				728507052435F69B00D3BDF8 /* BGBaseViewController.m */,
+				728507072435F8BC00D3BDF8 /* BGTabBarController.h */,
+				728507082435F8BC00D3BDF8 /* BGTabBarController.m */,
 			);
-			path = Common;
+			path = BGCommon;
 			sourceTree = "<group>";
 		};
-		728506F12435F55800D3BDF8 /* Road */ = {
+		728506F12435F55800D3BDF8 /* BGRoad */ = {
 			isa = PBXGroup;
 			children = (
-				728506F22435F55800D3BDF8 /* Models */,
-				728506F32435F55800D3BDF8 /* Controllers */,
-				728506F42435F55800D3BDF8 /* Views */,
+				728506F22435F55800D3BDF8 /* BGModels */,
+				728506F32435F55800D3BDF8 /* BGControllers */,
+				728506F42435F55800D3BDF8 /* BGViews */,
 			);
-			path = Road;
+			path = BGRoad;
 			sourceTree = "<group>";
 		};
-		728506F22435F55800D3BDF8 /* Models */ = {
+		728506F22435F55800D3BDF8 /* BGModels */ = {
 			isa = PBXGroup;
 			children = (
-				72850748243AB63600D3BDF8 /* KARoadModel.h */,
-				72850749243AB63600D3BDF8 /* KARoadModel.m */,
+				72850748243AB63600D3BDF8 /* BGRoadModel.h */,
+				72850749243AB63600D3BDF8 /* BGRoadModel.m */,
 			);
-			path = Models;
+			path = BGModels;
 			sourceTree = "<group>";
 		};
-		728506F32435F55800D3BDF8 /* Controllers */ = {
+		728506F32435F55800D3BDF8 /* BGControllers */ = {
 			isa = PBXGroup;
 			children = (
-				728507132435FC4A00D3BDF8 /* KARoadViewController.h */,
-				728507142435FC4A00D3BDF8 /* KARoadViewController.m */,
-				7246B885243C3C1F0031D3A0 /* KARoadAddViewController.h */,
-				7246B886243C3C1F0031D3A0 /* KARoadAddViewController.m */,
+				728507132435FC4A00D3BDF8 /* BGRoadViewController.h */,
+				728507142435FC4A00D3BDF8 /* BGRoadViewController.m */,
+				7246B885243C3C1F0031D3A0 /* BGRoadAddViewController.h */,
+				7246B886243C3C1F0031D3A0 /* BGRoadAddViewController.m */,
 			);
-			path = Controllers;
+			path = BGControllers;
 			sourceTree = "<group>";
 		};
-		728506F42435F55800D3BDF8 /* Views */ = {
+		728506F42435F55800D3BDF8 /* BGViews */ = {
 			isa = PBXGroup;
 			children = (
-				7246B882243C31C00031D3A0 /* KARoadTableViewCell.h */,
-				7246B883243C31C00031D3A0 /* KARoadTableViewCell.m */,
+				7246B882243C31C00031D3A0 /* BGRoadTableViewCell.h */,
+				7246B883243C31C00031D3A0 /* BGRoadTableViewCell.m */,
 			);
-			path = Views;
+			path = BGViews;
 			sourceTree = "<group>";
 		};
-		728506F52435F55800D3BDF8 /* Mine */ = {
+		728506F52435F55800D3BDF8 /* BGMine */ = {
 			isa = PBXGroup;
 			children = (
-				728506F62435F55800D3BDF8 /* Models */,
-				728506F72435F55800D3BDF8 /* Controllers */,
-				728506F82435F55800D3BDF8 /* Views */,
+				728506F62435F55800D3BDF8 /* BGModels */,
+				728506F72435F55800D3BDF8 /* BGControllers */,
+				728506F82435F55800D3BDF8 /* BGViews */,
 			);
-			path = Mine;
+			path = BGMine;
 			sourceTree = "<group>";
 		};
-		728506F62435F55800D3BDF8 /* Models */ = {
+		728506F62435F55800D3BDF8 /* BGModels */ = {
 			isa = PBXGroup;
 			children = (
-				7246B88B243C4C6A0031D3A0 /* KAMineModel.h */,
-				7246B88C243C4C6A0031D3A0 /* KAMineModel.m */,
-				7246B897243C58C30031D3A0 /* KAproblemFeedbackModel.h */,
-				7246B898243C58C30031D3A0 /* KAproblemFeedbackModel.m */,
+				7246B88B243C4C6A0031D3A0 /* BGMineModel.h */,
+				7246B88C243C4C6A0031D3A0 /* BGMineModel.m */,
+				7246B897243C58C30031D3A0 /* BGproblemFeedbackModel.h */,
+				7246B898243C58C30031D3A0 /* BGproblemFeedbackModel.m */,
 			);
-			path = Models;
+			path = BGModels;
 			sourceTree = "<group>";
 		};
-		728506F72435F55800D3BDF8 /* Controllers */ = {
+		728506F72435F55800D3BDF8 /* BGControllers */ = {
 			isa = PBXGroup;
 			children = (
-				728507102435FC3600D3BDF8 /* KAMineViewController.h */,
-				728507112435FC3600D3BDF8 /* KAMineViewController.m */,
-				728507422438C1D700D3BDF8 /* KALoginViewController.h */,
-				728507432438C1D700D3BDF8 /* KALoginViewController.m */,
-				7246B88E243C51E10031D3A0 /* KAModifyNicknameViewController.h */,
-				7246B88F243C51E10031D3A0 /* KAModifyNicknameViewController.m */,
-				7246B891243C51F60031D3A0 /* KAPasswordChangeViewController.h */,
-				7246B892243C51F60031D3A0 /* KAPasswordChangeViewController.m */,
-				7246B894243C58A00031D3A0 /* KAproblemFeedbackViewController.h */,
-				7246B895243C58A00031D3A0 /* KAproblemFeedbackViewController.m */,
+				728507102435FC3600D3BDF8 /* BGMineViewController.h */,
+				728507112435FC3600D3BDF8 /* BGMineViewController.m */,
+				728507422438C1D700D3BDF8 /* BGLoginViewController.h */,
+				728507432438C1D700D3BDF8 /* BGLoginViewController.m */,
+				7246B88E243C51E10031D3A0 /* BGModifyNicknameViewController.h */,
+				7246B88F243C51E10031D3A0 /* BGModifyNicknameViewController.m */,
+				7246B891243C51F60031D3A0 /* BGPasswordChangeViewController.h */,
+				7246B892243C51F60031D3A0 /* BGPasswordChangeViewController.m */,
+				7246B894243C58A00031D3A0 /* BGproblemFeedbackViewController.h */,
+				7246B895243C58A00031D3A0 /* BGproblemFeedbackViewController.m */,
 			);
-			path = Controllers;
+			path = BGControllers;
 			sourceTree = "<group>";
 		};
-		728506F82435F55800D3BDF8 /* Views */ = {
+		728506F82435F55800D3BDF8 /* BGViews */ = {
 			isa = PBXGroup;
 			children = (
-				7285073F2438A60B00D3BDF8 /* KALoginTableViewCell.h */,
-				728507402438A60C00D3BDF8 /* KALoginTableViewCell.m */,
-				7246B888243C4C0D0031D3A0 /* KAMineTableViewCell.h */,
-				7246B889243C4C0D0031D3A0 /* KAMineTableViewCell.m */,
-				7246B89A243C59640031D3A0 /* KAproblemFeedbackTableViewCell.h */,
-				7246B89B243C59640031D3A0 /* KAproblemFeedbackTableViewCell.m */,
+				7285073F2438A60B00D3BDF8 /* BGLoginTableViewCell.h */,
+				728507402438A60C00D3BDF8 /* BGLoginTableViewCell.m */,
+				7246B888243C4C0D0031D3A0 /* BGMineTableViewCell.h */,
+				7246B889243C4C0D0031D3A0 /* BGMineTableViewCell.m */,
+				7246B89A243C59640031D3A0 /* BGproblemFeedbackTableViewCell.h */,
+				7246B89B243C59640031D3A0 /* BGproblemFeedbackTableViewCell.m */,
 			);
-			path = Views;
+			path = BGViews;
 			sourceTree = "<group>";
 		};
-		728506F92435F55800D3BDF8 /* Home */ = {
+		728506F92435F55800D3BDF8 /* BGHome */ = {
 			isa = PBXGroup;
 			children = (
-				728506FA2435F55800D3BDF8 /* Models */,
-				728506FB2435F55800D3BDF8 /* Controllers */,
-				728506FC2435F55800D3BDF8 /* Views */,
+				728506FA2435F55800D3BDF8 /* BGModels */,
+				728506FB2435F55800D3BDF8 /* BGControllers */,
+				728506FC2435F55800D3BDF8 /* BGViews */,
 			);
-			path = Home;
+			path = BGHome;
 			sourceTree = "<group>";
 		};
-		728506FA2435F55800D3BDF8 /* Models */ = {
+		728506FA2435F55800D3BDF8 /* BGModels */ = {
 			isa = PBXGroup;
 			children = (
-				728507332436102100D3BDF8 /* KACargoModel.h */,
-				728507342436102100D3BDF8 /* KACargoModel.m */,
-				728507362436134A00D3BDF8 /* KACargoAddViewModel.h */,
-				728507372436134B00D3BDF8 /* KACargoAddViewModel.m */,
+				728507332436102100D3BDF8 /* BGCargoModel.h */,
+				728507342436102100D3BDF8 /* BGCargoModel.m */,
+				728507362436134A00D3BDF8 /* BGCargoAddViewModel.h */,
+				728507372436134B00D3BDF8 /* BGCargoAddViewModel.m */,
 			);
-			path = Models;
+			path = BGModels;
 			sourceTree = "<group>";
 		};
-		728506FB2435F55800D3BDF8 /* Controllers */ = {
+		728506FB2435F55800D3BDF8 /* BGControllers */ = {
 			isa = PBXGroup;
 			children = (
-				7285070D2435FC1E00D3BDF8 /* KAHomeViewController.h */,
-				7285070E2435FC1E00D3BDF8 /* KAHomeViewController.m */,
-				7285072D24360F6200D3BDF8 /* KACargoRecordViewController.h */,
-				7285072E24360F6200D3BDF8 /* KACargoRecordViewController.m */,
-				7285073024360F9F00D3BDF8 /* KACargoAddViewController.h */,
-				7285073124360F9F00D3BDF8 /* KACargoAddViewController.m */,
+				7285070D2435FC1E00D3BDF8 /* BGHomeViewController.h */,
+				7285070E2435FC1E00D3BDF8 /* BGHomeViewController.m */,
+				7285072D24360F6200D3BDF8 /* BGCargoRecordViewController.h */,
+				7285072E24360F6200D3BDF8 /* BGCargoRecordViewController.m */,
+				7285073024360F9F00D3BDF8 /* BGCargoAddViewController.h */,
+				7285073124360F9F00D3BDF8 /* BGCargoAddViewController.m */,
 			);
-			path = Controllers;
+			path = BGControllers;
 			sourceTree = "<group>";
 		};
-		728506FC2435F55800D3BDF8 /* Views */ = {
+		728506FC2435F55800D3BDF8 /* BGViews */ = {
 			isa = PBXGroup;
 			children = (
-				7285073924362C4400D3BDF8 /* KACargoEditableTableViewCell.h */,
-				7285073A24362C4400D3BDF8 /* KACargoEditableTableViewCell.m */,
-				728507452438C8E100D3BDF8 /* KACargoRecordSuperTableViewCell.h */,
-				728507462438C8E100D3BDF8 /* KACargoRecordSuperTableViewCell.m */,
-				7285073C24386A7E00D3BDF8 /* KACargoRecordTableViewCell.h */,
-				7285073D24386A7F00D3BDF8 /* KACargoRecordTableViewCell.m */,
+				7285073924362C4400D3BDF8 /* BGCargoEditableTableViewCell.h */,
+				7285073A24362C4400D3BDF8 /* BGCargoEditableTableViewCell.m */,
+				728507452438C8E100D3BDF8 /* BGCargoRecordSuperTableViewCell.h */,
+				728507462438C8E100D3BDF8 /* BGCargoRecordSuperTableViewCell.m */,
+				7285073C24386A7E00D3BDF8 /* BGCargoRecordTableViewCell.h */,
+				7285073D24386A7F00D3BDF8 /* BGCargoRecordTableViewCell.m */,
 			);
-			path = Views;
+			path = BGViews;
 			sourceTree = "<group>";
 		};
-		728506FD2435F55800D3BDF8 /* Gasoline */ = {
+		728506FD2435F55800D3BDF8 /* BGGasoline */ = {
 			isa = PBXGroup;
 			children = (
-				728506FE2435F55800D3BDF8 /* Models */,
-				728506FF2435F55800D3BDF8 /* Controllers */,
-				728507002435F55800D3BDF8 /* Views */,
+				728506FE2435F55800D3BDF8 /* BGModels */,
+				728506FF2435F55800D3BDF8 /* BGControllers */,
+				728507002435F55800D3BDF8 /* BGViews */,
 			);
-			path = Gasoline;
+			path = BGGasoline;
 			sourceTree = "<group>";
 		};
-		728506FE2435F55800D3BDF8 /* Models */ = {
+		728506FE2435F55800D3BDF8 /* BGModels */ = {
 			isa = PBXGroup;
 			children = (
-				7285074B243AB7CD00D3BDF8 /* KAGasolineModel.h */,
-				7285074C243AB7CD00D3BDF8 /* KAGasolineModel.m */,
+				7285074B243AB7CD00D3BDF8 /* BGGasolineModel.h */,
+				7285074C243AB7CD00D3BDF8 /* BGGasolineModel.m */,
 			);
-			path = Models;
+			path = BGModels;
 			sourceTree = "<group>";
 		};
-		728506FF2435F55800D3BDF8 /* Controllers */ = {
+		728506FF2435F55800D3BDF8 /* BGControllers */ = {
 			isa = PBXGroup;
 			children = (
-				7285070A2435FBEF00D3BDF8 /* KAGasolineViewController.h */,
-				7285070B2435FBEF00D3BDF8 /* KAGasolineViewController.m */,
-				7285074E243ABBF700D3BDF8 /* KAGasolineAddViewController.h */,
-				7285074F243ABBF700D3BDF8 /* KAGasolineAddViewController.m */,
+				7285070A2435FBEF00D3BDF8 /* BGGasolineViewController.h */,
+				7285070B2435FBEF00D3BDF8 /* BGGasolineViewController.m */,
+				7285074E243ABBF700D3BDF8 /* BGGasolineAddViewController.h */,
+				7285074F243ABBF700D3BDF8 /* BGGasolineAddViewController.m */,
 			);
-			path = Controllers;
+			path = BGControllers;
 			sourceTree = "<group>";
 		};
-		728507002435F55800D3BDF8 /* Views */ = {
+		728507002435F55800D3BDF8 /* BGViews */ = {
 			isa = PBXGroup;
 			children = (
-				72850751243ABF4600D3BDF8 /* KAGasolineTableViewCell.h */,
-				72850752243ABF4600D3BDF8 /* KAGasolineTableViewCell.m */,
+				72850751243ABF4600D3BDF8 /* BGGasolineTableViewCell.h */,
+				72850752243ABF4600D3BDF8 /* BGGasolineTableViewCell.m */,
 			);
-			path = Views;
+			path = BGViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,7 +418,7 @@
 			);
 			name = TransportationManagement;
 			productName = TransportationManagement;
-			productReference = 728506D42435B47B00D3BDF8 /* 即刻运输管理.app */;
+			productReference = 728506D42435B47B00D3BDF8 /* immediateTransportManagement.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -518,42 +513,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				728506D92435B47B00D3BDF8 /* AppDelegate.m in Sources */,
-				728507412438A60C00D3BDF8 /* KALoginTableViewCell.m in Sources */,
+				728507412438A60C00D3BDF8 /* BGLoginTableViewCell.m in Sources */,
 				728506EA2435B48000D3BDF8 /* main.m in Sources */,
-				7246B884243C31C00031D3A0 /* KARoadTableViewCell.m in Sources */,
-				728507352436102100D3BDF8 /* KACargoModel.m in Sources */,
-				728507152435FC4A00D3BDF8 /* KARoadViewController.m in Sources */,
-				7285072A2436016F00D3BDF8 /* MBProgressHUD+KANJ.m in Sources */,
-				728507382436134B00D3BDF8 /* KACargoAddViewModel.m in Sources */,
-				728507062435F69B00D3BDF8 /* KABaseViewController.m in Sources */,
+				7246B884243C31C00031D3A0 /* BGRoadTableViewCell.m in Sources */,
+				728507352436102100D3BDF8 /* BGCargoModel.m in Sources */,
+				728507152435FC4A00D3BDF8 /* BGRoadViewController.m in Sources */,
+				7285072A2436016F00D3BDF8 /* MBProgressHUD+BGNJ.m in Sources */,
+				728507382436134B00D3BDF8 /* BGCargoAddViewModel.m in Sources */,
+				728507062435F69B00D3BDF8 /* BGBaseViewController.m in Sources */,
 				728507282436016F00D3BDF8 /* NSDictionary+log.m in Sources */,
-				7246B88A243C4C0D0031D3A0 /* KAMineTableViewCell.m in Sources */,
-				7246B89C243C59640031D3A0 /* KAproblemFeedbackTableViewCell.m in Sources */,
-				7285072C2436016F00D3BDF8 /* KAHBTool.m in Sources */,
-				728507122435FC3600D3BDF8 /* KAMineViewController.m in Sources */,
-				7285074D243AB7CD00D3BDF8 /* KAGasolineModel.m in Sources */,
-				7246B896243C58A00031D3A0 /* KAproblemFeedbackViewController.m in Sources */,
-				7246B88D243C4C6A0031D3A0 /* KAMineModel.m in Sources */,
-				7285074A243AB63600D3BDF8 /* KARoadModel.m in Sources */,
-				7285073B24362C4400D3BDF8 /* KACargoEditableTableViewCell.m in Sources */,
-				728507442438C1D700D3BDF8 /* KALoginViewController.m in Sources */,
-				7246B893243C51F60031D3A0 /* KAPasswordChangeViewController.m in Sources */,
-				7285070F2435FC1E00D3BDF8 /* KAHomeViewController.m in Sources */,
-				7285073224360F9F00D3BDF8 /* KACargoAddViewController.m in Sources */,
-				728507262436016F00D3BDF8 /* KAUIUtilities.m in Sources */,
-				7246B890243C51E10031D3A0 /* KAModifyNicknameViewController.m in Sources */,
-				7285070C2435FBEF00D3BDF8 /* KAGasolineViewController.m in Sources */,
-				7246B887243C3C1F0031D3A0 /* KARoadAddViewController.m in Sources */,
-				728507092435F8BC00D3BDF8 /* KATabBarController.m in Sources */,
+				7246B88A243C4C0D0031D3A0 /* BGMineTableViewCell.m in Sources */,
+				7246B89C243C59640031D3A0 /* BGproblemFeedbackTableViewCell.m in Sources */,
+				7285072C2436016F00D3BDF8 /* BGHBTool.m in Sources */,
+				728507122435FC3600D3BDF8 /* BGMineViewController.m in Sources */,
+				7285074D243AB7CD00D3BDF8 /* BGGasolineModel.m in Sources */,
+				7246B896243C58A00031D3A0 /* BGproblemFeedbackViewController.m in Sources */,
+				7246B88D243C4C6A0031D3A0 /* BGMineModel.m in Sources */,
+				7285074A243AB63600D3BDF8 /* BGRoadModel.m in Sources */,
+				7285073B24362C4400D3BDF8 /* BGCargoEditableTableViewCell.m in Sources */,
+				728507442438C1D700D3BDF8 /* BGLoginViewController.m in Sources */,
+				7246B893243C51F60031D3A0 /* BGPasswordChangeViewController.m in Sources */,
+				7285070F2435FC1E00D3BDF8 /* BGHomeViewController.m in Sources */,
+				7285073224360F9F00D3BDF8 /* BGCargoAddViewController.m in Sources */,
+				728507262436016F00D3BDF8 /* BGUIUtilities.m in Sources */,
+				7246B890243C51E10031D3A0 /* BGModifyNicknameViewController.m in Sources */,
+				7285070C2435FBEF00D3BDF8 /* BGGasolineViewController.m in Sources */,
+				7246B887243C3C1F0031D3A0 /* BGRoadAddViewController.m in Sources */,
+				728507092435F8BC00D3BDF8 /* BGTabBarController.m in Sources */,
 				7285072B2436016F00D3BDF8 /* NSArray+log.m in Sources */,
 				728507272436016F00D3BDF8 /* CalendarTool.m in Sources */,
-				7285073E24386A7F00D3BDF8 /* KACargoRecordTableViewCell.m in Sources */,
-				7285072F24360F6200D3BDF8 /* KACargoRecordViewController.m in Sources */,
-				728507292436016F00D3BDF8 /* KANDHTTPClient.m in Sources */,
-				72850753243ABF4600D3BDF8 /* KAGasolineTableViewCell.m in Sources */,
-				728507472438C8E100D3BDF8 /* KACargoRecordSuperTableViewCell.m in Sources */,
-				7246B899243C58C30031D3A0 /* KAproblemFeedbackModel.m in Sources */,
-				72850750243ABBF700D3BDF8 /* KAGasolineAddViewController.m in Sources */,
+				7285073E24386A7F00D3BDF8 /* BGCargoRecordTableViewCell.m in Sources */,
+				7285072F24360F6200D3BDF8 /* BGCargoRecordViewController.m in Sources */,
+				72850753243ABF4600D3BDF8 /* BGGasolineTableViewCell.m in Sources */,
+				728507472438C8E100D3BDF8 /* BGCargoRecordSuperTableViewCell.m in Sources */,
+				7246B899243C58C30031D3A0 /* BGproblemFeedbackModel.m in Sources */,
+				72850750243ABBF700D3BDF8 /* BGGasolineAddViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,7 +615,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -673,7 +667,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -687,18 +681,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TransportationManagement/TransportationManagement.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 2RTBWZ8CDZ;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/TransportationManagement/Common/KA_PrefixHeader.pch";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 295PH49WVH;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TransportationManagement/BGCommon/BG_PrefixHeader.pch";
 				INFOPLIST_FILE = TransportationManagement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.TransportationManagement;
-				PRODUCT_NAME = "即刻运输管理";
-				PROVISIONING_PROFILE_SPECIFIER = disPro_TransportationManagement_20200407;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.immediateTransportManagement;
+				PRODUCT_NAME = immediateTransportManagement;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -709,18 +703,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TransportationManagement/TransportationManagement.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 2RTBWZ8CDZ;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/TransportationManagement/Common/KA_PrefixHeader.pch";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 295PH49WVH;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TransportationManagement/BGCommon/BG_PrefixHeader.pch";
 				INFOPLIST_FILE = TransportationManagement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.TransportationManagement;
-				PRODUCT_NAME = "即刻运输管理";
-				PROVISIONING_PROFILE_SPECIFIER = disPro_TransportationManagement_20200407;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.immediateTransportManagement;
+				PRODUCT_NAME = immediateTransportManagement;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

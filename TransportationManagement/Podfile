@@ -6,7 +6,6 @@ target 'TransportationManagement' do
   use_frameworks!
 
   # Pods for TransportationManagement
-    pod 'AFNetworking'
     pod 'Masonry'
     pod 'MJRefresh'
     pod 'MBProgressHUD'
