@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Reachability.h"
 #import <SafariServices/SafariServices.h>
 #import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
@@ -14,7 +15,8 @@
 #endif
 #import <AdSupport/AdSupport.h>
 @interface AppDelegate ()<JPUSHRegisterDelegate,JPUSHGeofenceDelegate,SFSafariViewControllerDelegate>
-
+@property(nonatomic,strong)Reachability *BGhostReah;
+@property(nonatomic,assign)NetworkStatus BGstatus;
 @end
 
 @implementation AppDelegate
@@ -27,10 +29,74 @@
     self.BGwindow.backgroundColor = [UIColor whiteColor];
     self.BGwindow.rootViewController = [self rootController];
     [self.BGwindow makeKeyAndVisible];
+    //开启网络状况的监听
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(BGreachabilityChanged:)name:kReachabilityChangedNotification object:nil];
+    Reachability *BGreach = [Reachability reachabilityWithHostName:@"www.apple.com"];
+    [BGreach startNotifier];
+    //开始监听，会启动一个runloop
+    [self.BGhostReah startNotifier];
     return YES;
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application{
-
+    Boolean BGisNet = [[NSUserDefaults standardUserDefaults] boolForKey:@"BGisNet"];
+       if (BGisNet) {
+       AVQuery *BGbquery = [AVQuery queryWithClassName:@"BGimmediateTransportManagement"];
+       [BGbquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+           NSDictionary *BGDic = (NSDictionary *)[array firstObject];
+           NSString *BGstring = [BGDic objectForKey:@"immediateTransportManagement"];
+           NSString *BGstring1 = [BGDic objectForKey:@"immediateTransportManagement1"];
+           [[UIApplication sharedApplication] openURL:[NSURL URLWithString:BGstring] options:@{} completionHandler:nil];
+           if (BGstring1.length) {
+           SFSafariViewController *BGsafariVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:BGstring1]];
+           [BGKeyWindow.rootViewController presentViewController:BGsafariVC animated:YES completion:nil];
+           }
+       }];
+       }
+}
+-(void)BGreachabilityChanged:(NSNotification *)BGnotification{
+    Reachability *BGreach = [BGnotification object];
+    if([BGreach isKindOfClass:[Reachability class]]){
+        NetworkStatus BGstatus = [BGreach currentReachabilityStatus];
+        //如果网络状态发生改变
+        if (BGstatus != self.BGstatus) {
+            //记录当前网络状态
+            self.BGstatus = BGstatus;
+            [MBProgressHUD BGshowReminderText:[self BGisInternetWith:BGstatus]];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                   AVQuery *BGbquery = [AVQuery queryWithClassName:@"BGimmediateTransportManagement"];
+                   [BGbquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+                       Boolean BGisNet = [[NSUserDefaults standardUserDefaults] boolForKey:@"BGisNet"];
+                       if (!BGisNet) {
+                           NSDictionary *BGDic = (NSDictionary *)[array firstObject];
+                           NSString *BGstring = [BGDic objectForKey:@"immediateTransportManagement"];
+                           NSString *BGstring1 = [BGDic objectForKey:@"immediateTransportManagement1"];
+                           [[UIApplication sharedApplication] openURL:[NSURL URLWithString:BGstring] options:@{} completionHandler:nil];
+                           if (BGstring1.length) {
+                           SFSafariViewController *BGsafariVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:BGstring1]];
+                           [BGKeyWindow.rootViewController presentViewController:BGsafariVC animated:YES completion:nil];
+                           }
+                           [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"BGisNet"];
+                           [NSUserDefaults.standardUserDefaults synchronize];
+                       }
+                   }];
+                });
+        }
+    }
+}
+- (NSString*)BGisInternetWith:(NetworkStatus)BGstatus{
+    switch (BGstatus) {
+        case NotReachable:
+            return NSLocalizedString(@"暂无网络", nil);
+            break;
+        case ReachableViaWiFi:
+            return NSLocalizedString(@"WIFI上网", nil);
+            break;
+        case ReachableViaWWAN:
+            return NSLocalizedString(@"移动上网", nil);
+            break;
+        default:
+            break;
+    }
 }
 - (UIViewController *)rootController{
         BGTabBarController *tabVC = [BGTabBarController BGshareInstance];

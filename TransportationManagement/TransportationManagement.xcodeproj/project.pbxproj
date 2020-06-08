@@ -46,6 +46,7 @@
 		72850750243ABBF700D3BDF8 /* BGGasolineAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285074F243ABBF700D3BDF8 /* BGGasolineAddViewController.m */; };
 		72850753243ABF4600D3BDF8 /* BGGasolineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72850752243ABF4600D3BDF8 /* BGGasolineTableViewCell.m */; };
 		CE1D4273248E0FE900E101BF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE1D4275248E0FE900E101BF /* Localizable.strings */; };
+		CE1D4279248E47EB00E101BF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1D4278248E47EB00E101BF /* Reachability.m */; };
 		E7BDC7703E95C58634871974 /* Pods_TransportationManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F639F2312771184B0C56E9 /* Pods_TransportationManagement.framework */; };
 /* End PBXBuildFile section */
 
@@ -133,6 +134,8 @@
 		CE1D4270248E0F7100E101BF /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		CE1D4274248E0FE900E101BF /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CE1D4276248E0FF300E101BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE1D4277248E47EA00E101BF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CE1D4278248E47EB00E101BF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		D5F639F2312771184B0C56E9 /* Pods_TransportationManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransportationManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -208,6 +211,8 @@
 				CE1D4275248E0FE900E101BF /* Localizable.strings */,
 				728507162436012D00D3BDF8 /* BGGlobal.h */,
 				7285071E2436016D00D3BDF8 /* BG_PrefixHeader.pch */,
+				CE1D4277248E47EA00E101BF /* Reachability.h */,
+				CE1D4278248E47EB00E101BF /* Reachability.m */,
 				728507192436016C00D3BDF8 /* BGHBTool.h */,
 				728507232436016E00D3BDF8 /* BGHBTool.m */,
 				728507242436016E00D3BDF8 /* BGUIUtilities.h */,
@@ -525,6 +530,7 @@
 				7246B884243C31C00031D3A0 /* BGRoadTableViewCell.m in Sources */,
 				728507352436102100D3BDF8 /* BGCargoModel.m in Sources */,
 				728507152435FC4A00D3BDF8 /* BGRoadViewController.m in Sources */,
+				CE1D4279248E47EB00E101BF /* Reachability.m in Sources */,
 				7285072A2436016F00D3BDF8 /* MBProgressHUD+BGNJ.m in Sources */,
 				728507382436134B00D3BDF8 /* BGCargoAddViewModel.m in Sources */,
 				728507062435F69B00D3BDF8 /* BGBaseViewController.m in Sources */,

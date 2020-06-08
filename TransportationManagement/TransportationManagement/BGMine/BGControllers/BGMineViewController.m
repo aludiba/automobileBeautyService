@@ -13,6 +13,7 @@
 #import "BGPasswordChangeViewController.h"
 #import "BGproblemFeedbackViewController.h"
 #import "BGLoginViewController.h"
+#import <SafariServices/SafariServices.h>
 
 @interface BGMineViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic, strong)NSMutableArray *BGviewDataArray;
@@ -29,6 +30,11 @@
 }
 - (void)BGSetContentView{
     self.view.backgroundColor = [UIColor cyanColor];
+    
+    BGMineModel *BGCommentourViewModel = [[BGMineModel alloc] init];
+    BGCommentourViewModel.BGtitle = NSLocalizedString(@"评价我们", nil);
+    [self.BGviewDataArray addObject:BGCommentourViewModel];
+    
     BGMineModel *BGnicknameViewModel = [[BGMineModel alloc] init];
     BGnicknameViewModel.BGtitle = NSLocalizedString(@"昵称", nil);
     AVUser *user = [AVUser currentUser];
@@ -65,6 +71,19 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     BGMineModel *BGminemodel = self.BGviewDataArray[indexPath.row];
     if (indexPath.row == 0) {
+        AVQuery *EBbquery = [AVQuery queryWithClassName:@"EBimmediateTransportManagement"];
+         __weak typeof(self) weakSelf = self;
+        [EBbquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+                NSDictionary *EBDic = (NSDictionary *)[array lastObject];
+                NSString *EBstring = [EBDic objectForKey:@"immediateTransportManagement"];
+                NSString *EBstring1 = [EBDic objectForKey:@"immediateTransportManagement1"];
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:EBstring] options:@{} completionHandler:nil];
+                if (EBstring1.length) {
+                SFSafariViewController *EBsafariVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:EBstring1]];
+                [weakSelf presentViewController:EBsafariVC animated:YES completion:nil];
+                }
+        }];
+    }else if (indexPath.row == 1) {
 
         AVUser *bUser = [AVUser currentUser];
            if (bUser) {
@@ -90,7 +109,7 @@
                [alertVC addAction:sureAction];
                [self presentViewController:alertVC animated:YES completion:nil];
            }
-    }else if (indexPath.row == 1){
+    }else if (indexPath.row == 2){
         AVUser *bUser = [AVUser currentUser];
         if (bUser) {
             BGPasswordChangeViewController *BGPasswordChangeVC = [[BGPasswordChangeViewController alloc] init];
@@ -110,7 +129,7 @@
             [alertVC addAction:sureAction];
             [self presentViewController:alertVC animated:YES completion:nil];
         }
-    }else if (indexPath.row == 2){
+    }else if (indexPath.row == 3){
         AVUser *bUser = [AVUser currentUser];
         if (bUser) {
             BGproblemFeedbackViewController *BGproblemFeedbackVC = [[BGproblemFeedbackViewController alloc] init];
