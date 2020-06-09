@@ -43,8 +43,12 @@ leanCloud账号:windy_chengcai@163.com 密码:Abc123456
 维护网站:https://www.thundersoft.com
 device:37895fc01704ab54e7fd4538bb907bf8866f0eb9
 
-https://apps.apple.com/cn/app/HomeClothingManagement/id1517216232
+https://apps.apple.com/cn/app/immediateTransportManagement/id1517534790
 
+
+Apple ID
+为您的 App 自动生成的 ID。
+1517534790
 
 
 司机记载自己运输活动的好帮手！
@@ -52,3 +56,9 @@ https://apps.apple.com/cn/app/HomeClothingManagement/id1517216232
 (1)可记载司机的待接货、待装载、待送达以及待完成货物的情况；
 (2)可记载司机运输过程中路况延时的情况；
 (3)可记载司机的加油情况。
+
+Drivers record their own transport activities a good helper!
+Transportation records road conditions and refuels
+(1) The driver's conditions of goods to be received, loaded, delivered and completed can be recorded;
+(2) It can record the delay of road conditions in the process of transportation;
+(3) The driver's refueling can be recorded.
