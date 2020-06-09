@@ -9,12 +9,22 @@
 /* Begin PBXBuildFile section */
 		A0D7589F5F61E312883E5A00 /* Pods_GoodLifeAndGoodHabits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C14FDA1E2DC2F02D684BADE /* Pods_GoodLifeAndGoodHabits.framework */; };
 		CE6655F5248F3930001924E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6655F4248F3930001924E6 /* AppDelegate.m */; };
-		CE6655F8248F3930001924E6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6655F7248F3930001924E6 /* SceneDelegate.m */; };
-		CE6655FB248F3930001924E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6655FA248F3930001924E6 /* ViewController.m */; };
-		CE6655FE248F3930001924E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6655FC248F3930001924E6 /* Main.storyboard */; };
 		CE665600248F3934001924E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6655FF248F3934001924E6 /* Assets.xcassets */; };
 		CE665603248F3934001924E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE665601248F3934001924E6 /* LaunchScreen.storyboard */; };
 		CE665606248F3934001924E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE665605248F3934001924E6 /* main.m */; };
+		CE665643248F53EF001924E6 /* MBProgressHUD+JBNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = CE665635248F53EE001924E6 /* MBProgressHUD+JBNJ.m */; };
+		CE665644248F53EF001924E6 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CE665636248F53EE001924E6 /* Reachability.m */; };
+		CE665645248F53EF001924E6 /* JBHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE665637248F53EE001924E6 /* JBHBTool.m */; };
+		CE665646248F53EF001924E6 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = CE665638248F53EE001924E6 /* NSDictionary+log.m */; };
+		CE665647248F53EF001924E6 /* JBUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CE66563B248F53EE001924E6 /* JBUIUtilities.m */; };
+		CE665648248F53EF001924E6 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = CE66563E248F53EE001924E6 /* NSArray+log.m */; };
+		CE66564B248F6015001924E6 /* JBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE66564A248F6015001924E6 /* JBBaseViewController.m */; };
+		CE66564E248F6061001924E6 /* JBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE66564D248F6061001924E6 /* JBTabBarController.m */; };
+		CE665651248F63AB001924E6 /* JBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE665650248F63AB001924E6 /* JBHomeViewController.m */; };
+		CE665654248F63BD001924E6 /* JBHabitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE665653248F63BD001924E6 /* JBHabitViewController.m */; };
+		CE665657248F63D1001924E6 /* JBMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE665656248F63D1001924E6 /* JBMoreViewController.m */; };
+		CE66565D248F72E8001924E6 /* JBMineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE66565C248F72E8001924E6 /* JBMineModel.m */; };
+		CE665660248F735A001924E6 /* JBMineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE66565E248F735A001924E6 /* JBMineTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,15 +33,38 @@
 		CE6655F0248F3930001924E6 /* GoodLife&GoodHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoodLife&GoodHabits.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6655F3248F3930001924E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE6655F4248F3930001924E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CE6655F6248F3930001924E6 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		CE6655F7248F3930001924E6 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		CE6655F9248F3930001924E6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CE6655FA248F3930001924E6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CE6655FD248F3930001924E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE6655FF248F3934001924E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE665602248F3934001924E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE665604248F3934001924E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE665605248F3934001924E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE665635248F53EE001924E6 /* MBProgressHUD+JBNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+JBNJ.m"; sourceTree = "<group>"; };
+		CE665636248F53EE001924E6 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CE665637248F53EE001924E6 /* JBHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBHBTool.m; sourceTree = "<group>"; };
+		CE665638248F53EE001924E6 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
+		CE665639248F53EE001924E6 /* JBHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBHBTool.h; sourceTree = "<group>"; };
+		CE66563A248F53EE001924E6 /* MBProgressHUD+JBNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+JBNJ.h"; sourceTree = "<group>"; };
+		CE66563B248F53EE001924E6 /* JBUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBUIUtilities.m; sourceTree = "<group>"; };
+		CE66563C248F53EE001924E6 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
+		CE66563D248F53EE001924E6 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CE66563E248F53EE001924E6 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		CE66563F248F53EE001924E6 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		CE665640248F53EE001924E6 /* JB_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JB_PrefixHeader.pch; sourceTree = "<group>"; };
+		CE665641248F53EF001924E6 /* JBUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBUIUtilities.h; sourceTree = "<group>"; };
+		CE665642248F53EF001924E6 /* JBGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBGlobal.h; sourceTree = "<group>"; };
+		CE665649248F6015001924E6 /* JBBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBBaseViewController.h; sourceTree = "<group>"; };
+		CE66564A248F6015001924E6 /* JBBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBBaseViewController.m; sourceTree = "<group>"; };
+		CE66564C248F6061001924E6 /* JBTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBTabBarController.h; sourceTree = "<group>"; };
+		CE66564D248F6061001924E6 /* JBTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBTabBarController.m; sourceTree = "<group>"; };
+		CE66564F248F63AB001924E6 /* JBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBHomeViewController.h; sourceTree = "<group>"; };
+		CE665650248F63AB001924E6 /* JBHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBHomeViewController.m; sourceTree = "<group>"; };
+		CE665652248F63BD001924E6 /* JBHabitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBHabitViewController.h; sourceTree = "<group>"; };
+		CE665653248F63BD001924E6 /* JBHabitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBHabitViewController.m; sourceTree = "<group>"; };
+		CE665655248F63D1001924E6 /* JBMoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBMoreViewController.h; sourceTree = "<group>"; };
+		CE665656248F63D1001924E6 /* JBMoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBMoreViewController.m; sourceTree = "<group>"; };
+		CE66565B248F72E8001924E6 /* JBMineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBMineModel.h; sourceTree = "<group>"; };
+		CE66565C248F72E8001924E6 /* JBMineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBMineModel.m; sourceTree = "<group>"; };
+		CE66565E248F735A001924E6 /* JBMineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBMineTableViewCell.m; sourceTree = "<group>"; };
+		CE66565F248F735A001924E6 /* JBMineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBMineTableViewCell.h; sourceTree = "<group>"; };
 		E8F733AD417744BD02301F77 /* Pods-GoodLifeAndGoodHabits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodLifeAndGoodHabits.debug.xcconfig"; path = "Target Support Files/Pods-GoodLifeAndGoodHabits/Pods-GoodLifeAndGoodHabits.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,17 +120,144 @@
 			children = (
 				CE6655F3248F3930001924E6 /* AppDelegate.h */,
 				CE6655F4248F3930001924E6 /* AppDelegate.m */,
-				CE6655F6248F3930001924E6 /* SceneDelegate.h */,
-				CE6655F7248F3930001924E6 /* SceneDelegate.m */,
-				CE6655F9248F3930001924E6 /* ViewController.h */,
-				CE6655FA248F3930001924E6 /* ViewController.m */,
-				CE6655FC248F3930001924E6 /* Main.storyboard */,
+				CE665620248F5098001924E6 /* JBCommon */,
+				CE66561C248F5098001924E6 /* JBHome */,
+				CE665618248F5098001924E6 /* JBHabit */,
+				CE665614248F5098001924E6 /* JBMore */,
 				CE6655FF248F3934001924E6 /* Assets.xcassets */,
 				CE665601248F3934001924E6 /* LaunchScreen.storyboard */,
 				CE665604248F3934001924E6 /* Info.plist */,
 				CE665605248F3934001924E6 /* main.m */,
 			);
 			path = GoodLifeAndGoodHabits;
+			sourceTree = "<group>";
+		};
+		CE665614248F5098001924E6 /* JBMore */ = {
+			isa = PBXGroup;
+			children = (
+				CE665615248F5098001924E6 /* JBModels */,
+				CE665617248F5098001924E6 /* JBViews */,
+				CE665616248F5098001924E6 /* JBControllers */,
+			);
+			path = JBMore;
+			sourceTree = "<group>";
+		};
+		CE665615248F5098001924E6 /* JBModels */ = {
+			isa = PBXGroup;
+			children = (
+				CE66565B248F72E8001924E6 /* JBMineModel.h */,
+				CE66565C248F72E8001924E6 /* JBMineModel.m */,
+			);
+			path = JBModels;
+			sourceTree = "<group>";
+		};
+		CE665616248F5098001924E6 /* JBControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE665655248F63D1001924E6 /* JBMoreViewController.h */,
+				CE665656248F63D1001924E6 /* JBMoreViewController.m */,
+			);
+			path = JBControllers;
+			sourceTree = "<group>";
+		};
+		CE665617248F5098001924E6 /* JBViews */ = {
+			isa = PBXGroup;
+			children = (
+				CE66565F248F735A001924E6 /* JBMineTableViewCell.h */,
+				CE66565E248F735A001924E6 /* JBMineTableViewCell.m */,
+			);
+			path = JBViews;
+			sourceTree = "<group>";
+		};
+		CE665618248F5098001924E6 /* JBHabit */ = {
+			isa = PBXGroup;
+			children = (
+				CE665619248F5098001924E6 /* JBModels */,
+				CE66561B248F5098001924E6 /* JBViews */,
+				CE66561A248F5098001924E6 /* JBControllers */,
+			);
+			path = JBHabit;
+			sourceTree = "<group>";
+		};
+		CE665619248F5098001924E6 /* JBModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JBModels;
+			sourceTree = "<group>";
+		};
+		CE66561A248F5098001924E6 /* JBControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE665652248F63BD001924E6 /* JBHabitViewController.h */,
+				CE665653248F63BD001924E6 /* JBHabitViewController.m */,
+			);
+			path = JBControllers;
+			sourceTree = "<group>";
+		};
+		CE66561B248F5098001924E6 /* JBViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JBViews;
+			sourceTree = "<group>";
+		};
+		CE66561C248F5098001924E6 /* JBHome */ = {
+			isa = PBXGroup;
+			children = (
+				CE66561D248F5098001924E6 /* JBModels */,
+				CE66561F248F5098001924E6 /* JBViews */,
+				CE66561E248F5098001924E6 /* JBControllers */,
+			);
+			path = JBHome;
+			sourceTree = "<group>";
+		};
+		CE66561D248F5098001924E6 /* JBModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JBModels;
+			sourceTree = "<group>";
+		};
+		CE66561E248F5098001924E6 /* JBControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE66564F248F63AB001924E6 /* JBHomeViewController.h */,
+				CE665650248F63AB001924E6 /* JBHomeViewController.m */,
+			);
+			path = JBControllers;
+			sourceTree = "<group>";
+		};
+		CE66561F248F5098001924E6 /* JBViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JBViews;
+			sourceTree = "<group>";
+		};
+		CE665620248F5098001924E6 /* JBCommon */ = {
+			isa = PBXGroup;
+			children = (
+				CE665640248F53EE001924E6 /* JB_PrefixHeader.pch */,
+				CE665642248F53EF001924E6 /* JBGlobal.h */,
+				CE665639248F53EE001924E6 /* JBHBTool.h */,
+				CE665637248F53EE001924E6 /* JBHBTool.m */,
+				CE665641248F53EF001924E6 /* JBUIUtilities.h */,
+				CE66563B248F53EE001924E6 /* JBUIUtilities.m */,
+				CE66563A248F53EE001924E6 /* MBProgressHUD+JBNJ.h */,
+				CE665635248F53EE001924E6 /* MBProgressHUD+JBNJ.m */,
+				CE66563F248F53EE001924E6 /* NSArray+log.h */,
+				CE66563E248F53EE001924E6 /* NSArray+log.m */,
+				CE66563C248F53EE001924E6 /* NSDictionary+log.h */,
+				CE665638248F53EE001924E6 /* NSDictionary+log.m */,
+				CE66563D248F53EE001924E6 /* Reachability.h */,
+				CE665636248F53EE001924E6 /* Reachability.m */,
+				CE665649248F6015001924E6 /* JBBaseViewController.h */,
+				CE66564A248F6015001924E6 /* JBBaseViewController.m */,
+				CE66564C248F6061001924E6 /* JBTabBarController.h */,
+				CE66564D248F6061001924E6 /* JBTabBarController.m */,
+			);
+			path = JBCommon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,7 +321,6 @@
 			files = (
 				CE665603248F3934001924E6 /* LaunchScreen.storyboard in Resources */,
 				CE665600248F3934001924E6 /* Assets.xcassets in Resources */,
-				CE6655FE248F3930001924E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,24 +373,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE6655FB248F3930001924E6 /* ViewController.m in Sources */,
+				CE665645248F53EF001924E6 /* JBHBTool.m in Sources */,
+				CE66564E248F6061001924E6 /* JBTabBarController.m in Sources */,
 				CE6655F5248F3930001924E6 /* AppDelegate.m in Sources */,
+				CE66564B248F6015001924E6 /* JBBaseViewController.m in Sources */,
+				CE665651248F63AB001924E6 /* JBHomeViewController.m in Sources */,
+				CE665654248F63BD001924E6 /* JBHabitViewController.m in Sources */,
 				CE665606248F3934001924E6 /* main.m in Sources */,
-				CE6655F8248F3930001924E6 /* SceneDelegate.m in Sources */,
+				CE66565D248F72E8001924E6 /* JBMineModel.m in Sources */,
+				CE665644248F53EF001924E6 /* Reachability.m in Sources */,
+				CE665643248F53EF001924E6 /* MBProgressHUD+JBNJ.m in Sources */,
+				CE665657248F63D1001924E6 /* JBMoreViewController.m in Sources */,
+				CE665648248F53EF001924E6 /* NSArray+log.m in Sources */,
+				CE665660248F735A001924E6 /* JBMineTableViewCell.m in Sources */,
+				CE665647248F53EF001924E6 /* JBUIUtilities.m in Sources */,
+				CE665646248F53EF001924E6 /* NSDictionary+log.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE6655FC248F3930001924E6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE6655FD248F3930001924E6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE665601248F3934001924E6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -360,6 +522,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 295PH49WVH;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GoodLifeAndGoodHabits/JBCommon/JB_PrefixHeader.pch";
 				INFOPLIST_FILE = GoodLifeAndGoodHabits/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,6 +541,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 295PH49WVH;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GoodLifeAndGoodHabits/JBCommon/JB_PrefixHeader.pch";
 				INFOPLIST_FILE = GoodLifeAndGoodHabits/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,0 +1,12 @@
+//
+//  JB_PrefixHeader.pch
+//  Simple Diary
+//
+//  Created by bykj on 2019/7/20.
+//  Copyright © 2019 hgg. All rights reserved.
+//
+
+#ifndef JB_PrefixHeader_pch
+#define JB_PrefixHeader_pch
+#import "JBGlobal.h"
+#endif /* JB_PrefixHeader_pch */
