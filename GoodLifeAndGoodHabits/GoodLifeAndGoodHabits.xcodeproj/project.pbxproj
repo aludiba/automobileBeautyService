@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE6655F0248F3930001924E6 /* GoodLifeAndGoodHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodLifeAndGoodHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE6655F0248F3930001924E6 /* GoodLife&GoodHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoodLife&GoodHabits.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6655F3248F3930001924E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE6655F4248F3930001924E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CE6655F6248F3930001924E6 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 		CE6655F1248F3930001924E6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE6655F0248F3930001924E6 /* GoodLifeAndGoodHabits.app */,
+				CE6655F0248F3930001924E6 /* GoodLife&GoodHabits.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,7 +93,7 @@
 			);
 			name = GoodLifeAndGoodHabits;
 			productName = GoodLifeAndGoodHabits;
-			productReference = CE6655F0248F3930001924E6 /* GoodLifeAndGoodHabits.app */;
+			productReference = CE6655F0248F3930001924E6 /* GoodLife&GoodHabits.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -296,7 +296,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hongbiao.GoodLifeAndGoodHabits;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "GoodLife&GoodHabits";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -312,7 +312,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hongbiao.GoodLifeAndGoodHabits;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "GoodLife&GoodHabits";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
