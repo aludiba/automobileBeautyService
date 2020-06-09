@@ -8,4 +8,5 @@ target 'GoodLifeAndGoodHabits' do
   # Pods for GoodLifeAndGoodHabits
     pod 'Masonry'
     pod 'MJRefresh'
+    pod 'MBProgressHUD'
 end
