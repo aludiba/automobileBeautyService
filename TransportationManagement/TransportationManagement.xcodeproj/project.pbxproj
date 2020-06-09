@@ -715,7 +715,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.immediateTransportManagement;
+				PRODUCT_BUNDLE_IDENTIFIER = yong.immediateTransportManagement;
 				PRODUCT_NAME = immediateTransportManagement;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -737,7 +737,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.immediateTransportManagement;
+				PRODUCT_BUNDLE_IDENTIFIER = yong.immediateTransportManagement;
 				PRODUCT_NAME = immediateTransportManagement;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
