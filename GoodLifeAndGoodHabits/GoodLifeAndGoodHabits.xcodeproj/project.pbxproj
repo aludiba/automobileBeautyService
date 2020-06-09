@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0D7589F5F61E312883E5A00 /* Pods_GoodLifeAndGoodHabits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C14FDA1E2DC2F02D684BADE /* Pods_GoodLifeAndGoodHabits.framework */; };
 		CE6655F5248F3930001924E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6655F4248F3930001924E6 /* AppDelegate.m */; };
 		CE6655F8248F3930001924E6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6655F7248F3930001924E6 /* SceneDelegate.m */; };
 		CE6655FB248F3930001924E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6655FA248F3930001924E6 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46C1DB1587E283DDEF772BA8 /* Pods-GoodLifeAndGoodHabits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodLifeAndGoodHabits.release.xcconfig"; path = "Target Support Files/Pods-GoodLifeAndGoodHabits/Pods-GoodLifeAndGoodHabits.release.xcconfig"; sourceTree = "<group>"; };
+		8C14FDA1E2DC2F02D684BADE /* Pods_GoodLifeAndGoodHabits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodLifeAndGoodHabits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6655F0248F3930001924E6 /* GoodLife&GoodHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoodLife&GoodHabits.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6655F3248F3930001924E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE6655F4248F3930001924E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		CE665602248F3934001924E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE665604248F3934001924E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE665605248F3934001924E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8F733AD417744BD02301F77 /* Pods-GoodLifeAndGoodHabits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodLifeAndGoodHabits.debug.xcconfig"; path = "Target Support Files/Pods-GoodLifeAndGoodHabits/Pods-GoodLifeAndGoodHabits.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D7589F5F61E312883E5A00 /* Pods_GoodLifeAndGoodHabits.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93900A2C2DA23A6D93A422A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C14FDA1E2DC2F02D684BADE /* Pods_GoodLifeAndGoodHabits.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3EE071DA86F9E32CAB1BCF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8F733AD417744BD02301F77 /* Pods-GoodLifeAndGoodHabits.debug.xcconfig */,
+				46C1DB1587E283DDEF772BA8 /* Pods-GoodLifeAndGoodHabits.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE6655E7248F3930001924E6 = {
 			isa = PBXGroup;
 			children = (
 				CE6655F2248F3930001924E6 /* GoodLifeAndGoodHabits */,
 				CE6655F1248F3930001924E6 /* Products */,
+				B3EE071DA86F9E32CAB1BCF1 /* Pods */,
+				93900A2C2DA23A6D93A422A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE665609248F3934001924E6 /* Build configuration list for PBXNativeTarget "GoodLifeAndGoodHabits" */;
 			buildPhases = (
+				AB03AEAD71726DF53D82135A /* [CP] Check Pods Manifest.lock */,
 				CE6655EC248F3930001924E6 /* Sources */,
 				CE6655ED248F3930001924E6 /* Frameworks */,
 				CE6655EE248F3930001924E6 /* Resources */,
+				21A7F40FCDB96D3D7ACC2000 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21A7F40FCDB96D3D7ACC2000 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodLifeAndGoodHabits/Pods-GoodLifeAndGoodHabits-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodLifeAndGoodHabits/Pods-GoodLifeAndGoodHabits-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoodLifeAndGoodHabits/Pods-GoodLifeAndGoodHabits-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB03AEAD71726DF53D82135A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoodLifeAndGoodHabits-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE6655EC248F3930001924E6 /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		CE66560A248F3934001924E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8F733AD417744BD02301F77 /* Pods-GoodLifeAndGoodHabits.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,12 +367,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hongbiao.GoodLifeAndGoodHabits;
 				PRODUCT_NAME = "GoodLife&GoodHabits";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CE66560B248F3934001924E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46C1DB1587E283DDEF772BA8 /* Pods-GoodLifeAndGoodHabits.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -313,7 +384,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hongbiao.GoodLifeAndGoodHabits;
 				PRODUCT_NAME = "GoodLife&GoodHabits";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
