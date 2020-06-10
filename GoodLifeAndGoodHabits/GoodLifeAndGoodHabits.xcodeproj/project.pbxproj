@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A0D7589F5F61E312883E5A00 /* Pods_GoodLifeAndGoodHabits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C14FDA1E2DC2F02D684BADE /* Pods_GoodLifeAndGoodHabits.framework */; };
+		CE4346A62490740F00BF2C41 /* JBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4346A52490740F00BF2C41 /* JBLoginViewController.m */; };
+		CE4346A92490743000BF2C41 /* JBLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4346A82490743000BF2C41 /* JBLoginTableViewCell.m */; };
+		CE4346B02490828500BF2C41 /* JBModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4346AA2490828400BF2C41 /* JBModifyNicknameViewController.m */; };
+		CE4346B12490828500BF2C41 /* JBproblemFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4346AC2490828500BF2C41 /* JBproblemFeedbackViewController.m */; };
+		CE4346B22490828500BF2C41 /* JBPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4346AF2490828500BF2C41 /* JBPasswordChangeViewController.m */; };
+		CE4346B52490835900BF2C41 /* JBproblemFeedbackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4346B42490835900BF2C41 /* JBproblemFeedbackModel.m */; };
+		CE4346B82490861100BF2C41 /* JBCargoAddViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4346B72490861100BF2C41 /* JBCargoAddViewModel.m */; };
+		CE4346BE249086A600BF2C41 /* JBproblemFeedbackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4346BC249086A600BF2C41 /* JBproblemFeedbackTableViewCell.m */; };
 		CE6655F5248F3930001924E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6655F4248F3930001924E6 /* AppDelegate.m */; };
 		CE665600248F3934001924E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6655FF248F3934001924E6 /* Assets.xcassets */; };
 		CE665603248F3934001924E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE665601248F3934001924E6 /* LaunchScreen.storyboard */; };
@@ -30,6 +38,22 @@
 /* Begin PBXFileReference section */
 		46C1DB1587E283DDEF772BA8 /* Pods-GoodLifeAndGoodHabits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodLifeAndGoodHabits.release.xcconfig"; path = "Target Support Files/Pods-GoodLifeAndGoodHabits/Pods-GoodLifeAndGoodHabits.release.xcconfig"; sourceTree = "<group>"; };
 		8C14FDA1E2DC2F02D684BADE /* Pods_GoodLifeAndGoodHabits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodLifeAndGoodHabits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4346A42490740F00BF2C41 /* JBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLoginViewController.h; sourceTree = "<group>"; };
+		CE4346A52490740F00BF2C41 /* JBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLoginViewController.m; sourceTree = "<group>"; };
+		CE4346A72490743000BF2C41 /* JBLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLoginTableViewCell.h; sourceTree = "<group>"; };
+		CE4346A82490743000BF2C41 /* JBLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLoginTableViewCell.m; sourceTree = "<group>"; };
+		CE4346AA2490828400BF2C41 /* JBModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBModifyNicknameViewController.m; sourceTree = "<group>"; };
+		CE4346AB2490828400BF2C41 /* JBproblemFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBproblemFeedbackViewController.h; sourceTree = "<group>"; };
+		CE4346AC2490828500BF2C41 /* JBproblemFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBproblemFeedbackViewController.m; sourceTree = "<group>"; };
+		CE4346AD2490828500BF2C41 /* JBPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBPasswordChangeViewController.h; sourceTree = "<group>"; };
+		CE4346AE2490828500BF2C41 /* JBModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBModifyNicknameViewController.h; sourceTree = "<group>"; };
+		CE4346AF2490828500BF2C41 /* JBPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBPasswordChangeViewController.m; sourceTree = "<group>"; };
+		CE4346B32490835800BF2C41 /* JBproblemFeedbackModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBproblemFeedbackModel.h; sourceTree = "<group>"; };
+		CE4346B42490835900BF2C41 /* JBproblemFeedbackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBproblemFeedbackModel.m; sourceTree = "<group>"; };
+		CE4346B62490861100BF2C41 /* JBCargoAddViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBCargoAddViewModel.h; sourceTree = "<group>"; };
+		CE4346B72490861100BF2C41 /* JBCargoAddViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBCargoAddViewModel.m; sourceTree = "<group>"; };
+		CE4346BC249086A600BF2C41 /* JBproblemFeedbackTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBproblemFeedbackTableViewCell.m; sourceTree = "<group>"; };
+		CE4346BD249086A600BF2C41 /* JBproblemFeedbackTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBproblemFeedbackTableViewCell.h; sourceTree = "<group>"; };
 		CE6655F0248F3930001924E6 /* GoodLife&GoodHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoodLife&GoodHabits.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6655F3248F3930001924E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE6655F4248F3930001924E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -145,8 +169,12 @@
 		CE665615248F5098001924E6 /* JBModels */ = {
 			isa = PBXGroup;
 			children = (
+				CE4346B62490861100BF2C41 /* JBCargoAddViewModel.h */,
+				CE4346B72490861100BF2C41 /* JBCargoAddViewModel.m */,
 				CE66565B248F72E8001924E6 /* JBMineModel.h */,
 				CE66565C248F72E8001924E6 /* JBMineModel.m */,
+				CE4346B32490835800BF2C41 /* JBproblemFeedbackModel.h */,
+				CE4346B42490835900BF2C41 /* JBproblemFeedbackModel.m */,
 			);
 			path = JBModels;
 			sourceTree = "<group>";
@@ -154,6 +182,14 @@
 		CE665616248F5098001924E6 /* JBControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE4346AE2490828500BF2C41 /* JBModifyNicknameViewController.h */,
+				CE4346AA2490828400BF2C41 /* JBModifyNicknameViewController.m */,
+				CE4346AD2490828500BF2C41 /* JBPasswordChangeViewController.h */,
+				CE4346AF2490828500BF2C41 /* JBPasswordChangeViewController.m */,
+				CE4346AB2490828400BF2C41 /* JBproblemFeedbackViewController.h */,
+				CE4346AC2490828500BF2C41 /* JBproblemFeedbackViewController.m */,
+				CE4346A42490740F00BF2C41 /* JBLoginViewController.h */,
+				CE4346A52490740F00BF2C41 /* JBLoginViewController.m */,
 				CE665655248F63D1001924E6 /* JBMoreViewController.h */,
 				CE665656248F63D1001924E6 /* JBMoreViewController.m */,
 			);
@@ -163,6 +199,10 @@
 		CE665617248F5098001924E6 /* JBViews */ = {
 			isa = PBXGroup;
 			children = (
+				CE4346BD249086A600BF2C41 /* JBproblemFeedbackTableViewCell.h */,
+				CE4346BC249086A600BF2C41 /* JBproblemFeedbackTableViewCell.m */,
+				CE4346A72490743000BF2C41 /* JBLoginTableViewCell.h */,
+				CE4346A82490743000BF2C41 /* JBLoginTableViewCell.m */,
 				CE66565F248F735A001924E6 /* JBMineTableViewCell.h */,
 				CE66565E248F735A001924E6 /* JBMineTableViewCell.m */,
 			);
@@ -379,15 +419,23 @@
 				CE66564B248F6015001924E6 /* JBBaseViewController.m in Sources */,
 				CE665651248F63AB001924E6 /* JBHomeViewController.m in Sources */,
 				CE665654248F63BD001924E6 /* JBHabitViewController.m in Sources */,
+				CE4346B22490828500BF2C41 /* JBPasswordChangeViewController.m in Sources */,
+				CE4346A62490740F00BF2C41 /* JBLoginViewController.m in Sources */,
 				CE665606248F3934001924E6 /* main.m in Sources */,
 				CE66565D248F72E8001924E6 /* JBMineModel.m in Sources */,
 				CE665644248F53EF001924E6 /* Reachability.m in Sources */,
 				CE665643248F53EF001924E6 /* MBProgressHUD+JBNJ.m in Sources */,
 				CE665657248F63D1001924E6 /* JBMoreViewController.m in Sources */,
+				CE4346B02490828500BF2C41 /* JBModifyNicknameViewController.m in Sources */,
 				CE665648248F53EF001924E6 /* NSArray+log.m in Sources */,
 				CE665660248F735A001924E6 /* JBMineTableViewCell.m in Sources */,
+				CE4346BE249086A600BF2C41 /* JBproblemFeedbackTableViewCell.m in Sources */,
+				CE4346B12490828500BF2C41 /* JBproblemFeedbackViewController.m in Sources */,
 				CE665647248F53EF001924E6 /* JBUIUtilities.m in Sources */,
+				CE4346B52490835900BF2C41 /* JBproblemFeedbackModel.m in Sources */,
+				CE4346B82490861100BF2C41 /* JBCargoAddViewModel.m in Sources */,
 				CE665646248F53EF001924E6 /* NSDictionary+log.m in Sources */,
+				CE4346A92490743000BF2C41 /* JBLoginTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

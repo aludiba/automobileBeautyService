@@ -67,7 +67,7 @@
 - (UILabel *)JBcontentLbl{
     if (!_JBcontentLbl) {
         _JBcontentLbl = [[UILabel alloc] init];
-        _JBcontentLbl.textColor = [UIColor grayColor];
+        _JBcontentLbl.textColor = [UIColor darkGrayColor];
         _JBcontentLbl.font = [UIFont systemFontOfSize:22];
     }
     return _JBcontentLbl;
