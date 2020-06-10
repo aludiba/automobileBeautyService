@@ -16,6 +16,7 @@
 		CE4346B52490835900BF2C41 /* JBproblemFeedbackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4346B42490835900BF2C41 /* JBproblemFeedbackModel.m */; };
 		CE4346B82490861100BF2C41 /* JBCargoAddViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4346B72490861100BF2C41 /* JBCargoAddViewModel.m */; };
 		CE4346BE249086A600BF2C41 /* JBproblemFeedbackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4346BC249086A600BF2C41 /* JBproblemFeedbackTableViewCell.m */; };
+		CE4346C12490A42000BF2C41 /* JBLifeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4346C02490A42000BF2C41 /* JBLifeModel.m */; };
 		CE6655F5248F3930001924E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6655F4248F3930001924E6 /* AppDelegate.m */; };
 		CE665600248F3934001924E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6655FF248F3934001924E6 /* Assets.xcassets */; };
 		CE665603248F3934001924E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE665601248F3934001924E6 /* LaunchScreen.storyboard */; };
@@ -54,6 +55,8 @@
 		CE4346B72490861100BF2C41 /* JBCargoAddViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBCargoAddViewModel.m; sourceTree = "<group>"; };
 		CE4346BC249086A600BF2C41 /* JBproblemFeedbackTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBproblemFeedbackTableViewCell.m; sourceTree = "<group>"; };
 		CE4346BD249086A600BF2C41 /* JBproblemFeedbackTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBproblemFeedbackTableViewCell.h; sourceTree = "<group>"; };
+		CE4346BF2490A42000BF2C41 /* JBLifeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBLifeModel.h; sourceTree = "<group>"; };
+		CE4346C02490A42000BF2C41 /* JBLifeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBLifeModel.m; sourceTree = "<group>"; };
 		CE6655F0248F3930001924E6 /* GoodLife&GoodHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoodLife&GoodHabits.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6655F3248F3930001924E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE6655F4248F3930001924E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -255,6 +258,8 @@
 		CE66561D248F5098001924E6 /* JBModels */ = {
 			isa = PBXGroup;
 			children = (
+				CE4346BF2490A42000BF2C41 /* JBLifeModel.h */,
+				CE4346C02490A42000BF2C41 /* JBLifeModel.m */,
 			);
 			path = JBModels;
 			sourceTree = "<group>";
@@ -426,6 +431,7 @@
 				CE665644248F53EF001924E6 /* Reachability.m in Sources */,
 				CE665643248F53EF001924E6 /* MBProgressHUD+JBNJ.m in Sources */,
 				CE665657248F63D1001924E6 /* JBMoreViewController.m in Sources */,
+				CE4346C12490A42000BF2C41 /* JBLifeModel.m in Sources */,
 				CE4346B02490828500BF2C41 /* JBModifyNicknameViewController.m in Sources */,
 				CE665648248F53EF001924E6 /* NSArray+log.m in Sources */,
 				CE665660248F735A001924E6 /* JBMineTableViewCell.m in Sources */,

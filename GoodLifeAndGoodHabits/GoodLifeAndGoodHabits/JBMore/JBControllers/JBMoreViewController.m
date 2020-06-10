@@ -160,7 +160,7 @@
     NSURL *JBurlToShare = [NSURL URLWithString:@"https://apps.apple.com/cn/app/SupermarketOperationAssistant/id1516138753"];
     NSArray *JBactivityItems =@[JBurlToShare];
     UIActivityViewController *JBactivityViewController = [[UIActivityViewController alloc] initWithActivityItems:JBactivityItems applicationActivities:nil];
-    JBactivityViewController.excludedActivityTypes =@[UIActivityTypePostToFacebook,UIActivityTypePostToTwitter, UIActivityTypePostToWeibo,UIActivityTypeMessage,UIActivityTypeMail,
+    JBactivityViewController.excludedActivityTypes = @[UIActivityTypePostToFacebook,UIActivityTypePostToTwitter, UIActivityTypePostToWeibo,UIActivityTypeMessage,UIActivityTypeMail,
 
     UIActivityTypePrint,UIActivityTypeCopyToPasteboard,
 
