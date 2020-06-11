@@ -13,7 +13,7 @@
 @implementation JBHomeHeaderView
 - (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = JBH_Color(242, 242, 242, 1);
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.JBTitleLbl];
         
         [self.JBTitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {

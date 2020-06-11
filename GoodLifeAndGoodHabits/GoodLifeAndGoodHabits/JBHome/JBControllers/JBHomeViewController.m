@@ -26,6 +26,7 @@
     [self JBsetContentView];
 }
 - (void)JBsetContentView{
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.JBHeadImgView];
     [self.JBHeadImgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view);
@@ -64,7 +65,9 @@
                        JBmodel.JBNoteDateString = [JBobj objectForKey:@"JBNoteDateString"];
                        JBmodel.JBTitle = [JBobj objectForKey:@"JBTitle"];
                        JBmodel.JBContent = [JBobj objectForKey:@"JBContent"];
-                       [JBTempDateArray addObject:[JBobj objectForKey:@"JBNoteDateString"]];
+                       if (![JBTempDateArray containsObject:[JBobj objectForKey:@"JBNoteDateString"]]) {
+                           [JBTempDateArray addObject:[JBobj objectForKey:@"JBNoteDateString"]];
+                       }
                        [JBTempDataArray addObject:JBmodel];
                    }
                        for (int i = 0; i < JBTempDateArray.count; i++) {
@@ -95,6 +98,7 @@
 }
 - (void)JBaddAction:(UIButton *)JBsender{
     JBHomeAddNoteViewController *JBHomeAddNoteVC = [[JBHomeAddNoteViewController alloc] init];
+    JBHomeAddNoteVC.JBsuperVC = self;
     JBHomeAddNoteVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:JBHomeAddNoteVC animated:YES];
 }
@@ -123,6 +127,7 @@
     JBLifeModel *JBmodel = JBData[indexPath.row];
     JBHomeTableViewCell *JBCell = [tableView dequeueReusableCellWithIdentifier:@"JBHomeTableViewCell" forIndexPath:indexPath];
     JBCell.JBlifemodel = JBmodel;
+    JBCell.selectionStyle = UITableViewCellSelectionStyleNone;
     return JBCell;
 }
 -(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -167,10 +172,11 @@
 - (UITableView *)JBmainTable{
     if (!_JBmainTable) {
         _JBmainTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, JBWIDTH, JBHEIGHT) style:UITableViewStyleGrouped];
+        _JBmainTable.backgroundColor = [UIColor whiteColor];
         _JBmainTable.rowHeight = UITableViewAutomaticDimension;
         _JBmainTable.estimatedRowHeight = 55.0f;
         _JBmainTable.sectionHeaderHeight = UITableViewAutomaticDimension;
-        _JBmainTable.estimatedSectionHeaderHeight = 30.0f;
+        _JBmainTable.estimatedSectionHeaderHeight = 40.0f;
         _JBmainTable.dataSource = self;
         _JBmainTable.delegate = self;
         _JBmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;

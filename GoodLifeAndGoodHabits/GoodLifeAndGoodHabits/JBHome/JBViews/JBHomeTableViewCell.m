@@ -38,6 +38,11 @@
         make.height.mas_equalTo(20);
         make.bottom.equalTo(self.contentView).offset(-12);
     }];
+    self.contentView.layer.masksToBounds = YES;
+    self.contentView.layer.cornerRadius = 16.0f;
+    self.contentView.layer.borderColor = [UIColor blueColor].CGColor;
+    self.contentView.layer.borderWidth = 0.5f;
+    self.contentView.backgroundColor = JBH_Color(242, 242, 242, 1);
 }
 - (void)setJBlifemodel:(JBLifeModel *)JBlifemodel{
     _JBlifemodel = JBlifemodel;
