@@ -37,6 +37,8 @@
 		CEE995322491C35500A910FF /* JBHomeAddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE995312491C35500A910FF /* JBHomeAddNoteViewController.m */; };
 		CEE995352491C4EF00A910FF /* JBHomeAddNoteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE995342491C4EF00A910FF /* JBHomeAddNoteTableViewCell.m */; };
 		CEE995382491C50400A910FF /* JBLifeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE995372491C50400A910FF /* JBLifeViewModel.m */; };
+		CEE9953B2491E40900A910FF /* JBHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE9953A2491E40900A910FF /* JBHomeTableViewCell.m */; };
+		CEE9953E2491F77000A910FF /* JBHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE9953D2491F77000A910FF /* JBHomeHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +103,10 @@
 		CEE995342491C4EF00A910FF /* JBHomeAddNoteTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBHomeAddNoteTableViewCell.m; sourceTree = "<group>"; };
 		CEE995362491C50400A910FF /* JBLifeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBLifeViewModel.h; sourceTree = "<group>"; };
 		CEE995372491C50400A910FF /* JBLifeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBLifeViewModel.m; sourceTree = "<group>"; };
+		CEE995392491E40900A910FF /* JBHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBHomeTableViewCell.h; sourceTree = "<group>"; };
+		CEE9953A2491E40900A910FF /* JBHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBHomeTableViewCell.m; sourceTree = "<group>"; };
+		CEE9953C2491F77000A910FF /* JBHomeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBHomeHeaderView.h; sourceTree = "<group>"; };
+		CEE9953D2491F77000A910FF /* JBHomeHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBHomeHeaderView.m; sourceTree = "<group>"; };
 		E8F733AD417744BD02301F77 /* Pods-GoodLifeAndGoodHabits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodLifeAndGoodHabits.debug.xcconfig"; path = "Target Support Files/Pods-GoodLifeAndGoodHabits/Pods-GoodLifeAndGoodHabits.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -291,6 +297,10 @@
 			children = (
 				CEE995332491C4EF00A910FF /* JBHomeAddNoteTableViewCell.h */,
 				CEE995342491C4EF00A910FF /* JBHomeAddNoteTableViewCell.m */,
+				CEE995392491E40900A910FF /* JBHomeTableViewCell.h */,
+				CEE9953A2491E40900A910FF /* JBHomeTableViewCell.m */,
+				CEE9953C2491F77000A910FF /* JBHomeHeaderView.h */,
+				CEE9953D2491F77000A910FF /* JBHomeHeaderView.m */,
 			);
 			path = JBViews;
 			sourceTree = "<group>";
@@ -449,12 +459,14 @@
 				CE665657248F63D1001924E6 /* JBMoreViewController.m in Sources */,
 				CEE995382491C50400A910FF /* JBLifeViewModel.m in Sources */,
 				CE4346C12490A42000BF2C41 /* JBLifeModel.m in Sources */,
+				CEE9953B2491E40900A910FF /* JBHomeTableViewCell.m in Sources */,
 				CE4346B02490828500BF2C41 /* JBModifyNicknameViewController.m in Sources */,
 				CE665648248F53EF001924E6 /* NSArray+log.m in Sources */,
 				CE665660248F735A001924E6 /* JBMineTableViewCell.m in Sources */,
 				CE4346BE249086A600BF2C41 /* JBproblemFeedbackTableViewCell.m in Sources */,
 				CE4346B12490828500BF2C41 /* JBproblemFeedbackViewController.m in Sources */,
 				CE665647248F53EF001924E6 /* JBUIUtilities.m in Sources */,
+				CEE9953E2491F77000A910FF /* JBHomeHeaderView.m in Sources */,
 				CE4346B52490835900BF2C41 /* JBproblemFeedbackModel.m in Sources */,
 				CEE995352491C4EF00A910FF /* JBHomeAddNoteTableViewCell.m in Sources */,
 				CE4346B82490861100BF2C41 /* JBCargoAddViewModel.m in Sources */,

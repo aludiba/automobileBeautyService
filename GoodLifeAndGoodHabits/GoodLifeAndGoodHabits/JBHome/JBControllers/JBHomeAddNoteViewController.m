@@ -70,6 +70,9 @@
     JBLifeViewModel *JBviewModel = self.JBViewDataArray[0];
     self.JBlifemodel.JBTitle = JBviewModel.JBTitle;
     self.JBlifemodel.JBContent = JBviewModel.JBContent;
+    NSDate *JBNowDate = [[NSDate alloc] init];
+    NSString *JBNowDateString = [JBUIUtilities JBformattedTimeStringWithDate:JBNowDate format:@"yyyy-MM-dd"];
+    self.JBlifemodel.JBNoteDateString = JBNowDateString;
     NSMutableDictionary *JBjsonDictionary = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[self.JBlifemodel yy_modelToJSONObject]];
     AVUser *JBauthor = [AVUser currentUser];
     AVObject *JBdiary = [AVObject objectWithClassName:@"JBGoodLife"];
