@@ -8,10 +8,10 @@
 
 #import "JBHomeViewController.h"
 #import "JBLifeModel.h"
+#import "JBHomeAddNoteViewController.h"
 
 @interface JBHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UIImageView *JBHeadImgView;//头图片
-@property(nonatomic, strong)UITableView *JBmainTable;//列表
 @property(nonatomic, strong)NSMutableArray *JBDataArray;//页面数据
 @property(nonatomic, strong)UIButton *JBaddButton;
 @end
@@ -48,7 +48,9 @@
     
 }
 - (void)JBaddAction:(UIButton *)JBsender{
-    NSLog(@"新增~~~");
+    JBHomeAddNoteViewController *JBHomeAddNoteVC = [[JBHomeAddNoteViewController alloc] init];
+    JBHomeAddNoteVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:JBHomeAddNoteVC animated:YES];
 }
 #pragma mark - UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

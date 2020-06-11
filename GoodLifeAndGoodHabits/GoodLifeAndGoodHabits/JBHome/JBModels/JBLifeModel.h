@@ -11,7 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JBLifeModel : NSObject
-
+@property(nonatomic, copy)NSString *JBobjectId;
+@property(nonatomic, copy)NSString *JBTitle;
+@property(nonatomic, copy)NSString *JBContent;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JBHomeViewController : JBBaseViewController
-
+@property(nonatomic, strong)UITableView *JBmainTable;//列表
 @end
 
 NS_ASSUME_NONNULL_END
