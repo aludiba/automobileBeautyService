@@ -39,6 +39,7 @@
 		CEE995382491C50400A910FF /* JBLifeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE995372491C50400A910FF /* JBLifeViewModel.m */; };
 		CEE9953B2491E40900A910FF /* JBHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE9953A2491E40900A910FF /* JBHomeTableViewCell.m */; };
 		CEE9953E2491F77000A910FF /* JBHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE9953D2491F77000A910FF /* JBHomeHeaderView.m */; };
+		CEE9955B2493276100A910FF /* JBHabitChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE9955A2493276100A910FF /* JBHabitChildViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +108,8 @@
 		CEE9953A2491E40900A910FF /* JBHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBHomeTableViewCell.m; sourceTree = "<group>"; };
 		CEE9953C2491F77000A910FF /* JBHomeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBHomeHeaderView.h; sourceTree = "<group>"; };
 		CEE9953D2491F77000A910FF /* JBHomeHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBHomeHeaderView.m; sourceTree = "<group>"; };
+		CEE995592493276100A910FF /* JBHabitChildViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBHabitChildViewController.h; sourceTree = "<group>"; };
+		CEE9955A2493276100A910FF /* JBHabitChildViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBHabitChildViewController.m; sourceTree = "<group>"; };
 		E8F733AD417744BD02301F77 /* Pods-GoodLifeAndGoodHabits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodLifeAndGoodHabits.debug.xcconfig"; path = "Target Support Files/Pods-GoodLifeAndGoodHabits/Pods-GoodLifeAndGoodHabits.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -249,6 +252,8 @@
 			children = (
 				CE665652248F63BD001924E6 /* JBHabitViewController.h */,
 				CE665653248F63BD001924E6 /* JBHabitViewController.m */,
+				CEE995592493276100A910FF /* JBHabitChildViewController.h */,
+				CEE9955A2493276100A910FF /* JBHabitChildViewController.m */,
 			);
 			path = JBControllers;
 			sourceTree = "<group>";
@@ -459,6 +464,7 @@
 				CE665657248F63D1001924E6 /* JBMoreViewController.m in Sources */,
 				CEE995382491C50400A910FF /* JBLifeViewModel.m in Sources */,
 				CE4346C12490A42000BF2C41 /* JBLifeModel.m in Sources */,
+				CEE9955B2493276100A910FF /* JBHabitChildViewController.m in Sources */,
 				CEE9953B2491E40900A910FF /* JBHomeTableViewCell.m in Sources */,
 				CE4346B02490828500BF2C41 /* JBModifyNicknameViewController.m in Sources */,
 				CE665648248F53EF001924E6 /* NSArray+log.m in Sources */,
