@@ -49,10 +49,12 @@
 #define JBHeightNavBar ((JBIS_IPHONE_X==YES || JBIS_IPHONE_Xr ==YES || JBIS_IPHONE_Xs== YES || JBIS_IPHONE_Xs_Max== YES) ? 88.0 : 64.0)
 #define JBHeightTabBar ((JBIS_IPHONE_X==YES || JBIS_IPHONE_Xr ==YES || JBIS_IPHONE_Xs == YES || JBIS_IPHONE_Xs_Max== YES) ? 83.0 : 49.0)
 #define JBHeightNavContentBar ((JBIS_IPHONE_X == YES || JBIS_IPHONE_Xr ==YES || JBIS_IPHONE_Xs == YES || JBIS_IPHONE_Xs_Max == YES)?34.0f: 0)
-typedef NS_ENUM(NSInteger, JBCargoType) {
-    JBCargoTypeWaitReceiving,
-    JBCargoTypeWaitLoading,
-    JBCargoTypeWaitDelivery,
-    JBCargoTypeCompleted,
+
+typedef NS_ENUM(NSInteger, JBHabitChildType) {
+    JBHabitChildTypeAll,
+    JBHabitChildTypeMotion,
+    JBHabitChildTypeReadBook,
+    JBHabitChildTypeMusicalInstruments,
+    JBHabitChildTypeOthers,
 };
 #endif /* JBglobal_h */

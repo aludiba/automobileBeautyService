@@ -8,7 +8,7 @@
 
 #import "JBHabitChildViewController.h"
 
-@interface JBHabitChildViewController ()
+@interface JBHabitChildViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
 
