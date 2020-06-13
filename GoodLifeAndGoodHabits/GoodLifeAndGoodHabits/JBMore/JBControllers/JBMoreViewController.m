@@ -82,8 +82,8 @@
                 [[UIApplication sharedApplication] openURL:[NSURL URLWithString:JBstring] options:@{} completionHandler:nil];
         }];
     }else if (indexPath.row == 2) {
-        AVUser *bUser = [AVUser currentUser];
-           if (bUser) {
+        AVUser *JBbUser = [AVUser currentUser];
+           if (JBbUser) {
               JBModifyNicknameViewController *JBModifyNicknameVC = [[JBModifyNicknameViewController alloc] init];
               __weak __typeof(self)weakSelf = self;
               JBModifyNicknameVC.JBmodifynicknameB = ^(JBModifyNicknameViewController * _Nonnull nicknameVC) {
@@ -107,8 +107,8 @@
                [self presentViewController:alertVC animated:YES completion:nil];
            }
     }else if (indexPath.row == 3){
-        AVUser *bUser = [AVUser currentUser];
-        if (bUser) {
+        AVUser *JBbUser = [AVUser currentUser];
+        if (JBbUser) {
             JBPasswordChangeViewController *JBPasswordChangeVC = [[JBPasswordChangeViewController alloc] init];
             JBPasswordChangeVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:JBPasswordChangeVC animated:YES];
@@ -127,8 +127,8 @@
             [self presentViewController:alertVC animated:YES completion:nil];
         }
     }else if (indexPath.row == 4){
-        AVUser *bUser = [AVUser currentUser];
-        if (bUser) {
+        AVUser *JBbUser = [AVUser currentUser];
+        if (JBbUser) {
             JBproblemFeedbackViewController *JBproblemFeedbackVC = [[JBproblemFeedbackViewController alloc] init];
             JBproblemFeedbackVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:JBproblemFeedbackVC animated:YES];
@@ -223,7 +223,7 @@
             make.top.equalTo(self.JJBoodLifeAndGoodHabitsImgView.mas_bottom).offset(20);
             make.leading.equalTo(self.view);
             make.trailing.equalTo(self.view);
-            make.bottom.equalTo(self.view);
+            make.bottom.equalTo(self.view).offset(-JBHeightTabBar);
         }];
     }
     return _JBmainTable;

@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JBHabitModel : NSObject
+@property(nonatomic, copy)NSString *JBobjectId;
 @property(nonatomic, assign)JBHabitChildType JBType;
 @property(nonatomic, copy)NSString *JBPlanTime;
 @property(nonatomic, copy)NSString *JBComment;

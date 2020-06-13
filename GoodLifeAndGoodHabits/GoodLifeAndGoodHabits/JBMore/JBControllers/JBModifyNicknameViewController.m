@@ -41,9 +41,9 @@
 #pragma mark - actions
 - (void)JBbtnClick:(UIButton *)sender{
     [self.view endEditing:YES];
-    AVUser *bUser = [AVUser currentUser];
-    [bUser setObject:self.JBnickname forKey:@"username"];
-    [bUser saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
+    AVUser *JBbUser = [AVUser currentUser];
+    [JBbUser setObject:self.JBnickname forKey:@"username"];
+    [JBbUser saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
         if (isSuccessful) {
             [MBProgressHUD JBshowReminderText:@"更新成功"];
             if (self.JBmodifynicknameB) {

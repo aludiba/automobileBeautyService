@@ -17,6 +17,9 @@
 		CE4346B82490861100BF2C41 /* JBCargoAddViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4346B72490861100BF2C41 /* JBCargoAddViewModel.m */; };
 		CE4346BE249086A600BF2C41 /* JBproblemFeedbackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4346BC249086A600BF2C41 /* JBproblemFeedbackTableViewCell.m */; };
 		CE4346C12490A42000BF2C41 /* JBLifeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4346C02490A42000BF2C41 /* JBLifeModel.m */; };
+		CE55D9F02494674F00F2EF37 /* JBHabitAddSelectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE55D9EF2494674F00F2EF37 /* JBHabitAddSelectTableViewCell.m */; };
+		CE55D9FC2494AAB300F2EF37 /* CDZPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = CE55D9FA2494AAB300F2EF37 /* CDZPicker.m */; };
+		CE55D9FF2494B3CD00F2EF37 /* JBHabitChildTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE55D9FE2494B3CD00F2EF37 /* JBHabitChildTableViewCell.m */; };
 		CE6655F5248F3930001924E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6655F4248F3930001924E6 /* AppDelegate.m */; };
 		CE665600248F3934001924E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6655FF248F3934001924E6 /* Assets.xcassets */; };
 		CE665603248F3934001924E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE665601248F3934001924E6 /* LaunchScreen.storyboard */; };
@@ -34,6 +37,7 @@
 		CE665657248F63D1001924E6 /* JBMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE665656248F63D1001924E6 /* JBMoreViewController.m */; };
 		CE66565D248F72E8001924E6 /* JBMineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE66565C248F72E8001924E6 /* JBMineModel.m */; };
 		CE665660248F735A001924E6 /* JBMineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE66565E248F735A001924E6 /* JBMineTableViewCell.m */; };
+		CE6C188C249517CF0075F603 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE6C188E249517CF0075F603 /* Localizable.strings */; };
 		CEE995322491C35500A910FF /* JBHomeAddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE995312491C35500A910FF /* JBHomeAddNoteViewController.m */; };
 		CEE995352491C4EF00A910FF /* JBHomeAddNoteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE995342491C4EF00A910FF /* JBHomeAddNoteTableViewCell.m */; };
 		CEE995382491C50400A910FF /* JBLifeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE995372491C50400A910FF /* JBLifeViewModel.m */; };
@@ -67,6 +71,12 @@
 		CE4346BD249086A600BF2C41 /* JBproblemFeedbackTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBproblemFeedbackTableViewCell.h; sourceTree = "<group>"; };
 		CE4346BF2490A42000BF2C41 /* JBLifeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBLifeModel.h; sourceTree = "<group>"; };
 		CE4346C02490A42000BF2C41 /* JBLifeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBLifeModel.m; sourceTree = "<group>"; };
+		CE55D9EE2494674F00F2EF37 /* JBHabitAddSelectTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBHabitAddSelectTableViewCell.h; sourceTree = "<group>"; };
+		CE55D9EF2494674F00F2EF37 /* JBHabitAddSelectTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBHabitAddSelectTableViewCell.m; sourceTree = "<group>"; };
+		CE55D9FA2494AAB300F2EF37 /* CDZPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDZPicker.m; sourceTree = "<group>"; };
+		CE55D9FB2494AAB300F2EF37 /* CDZPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDZPicker.h; sourceTree = "<group>"; };
+		CE55D9FD2494B3CD00F2EF37 /* JBHabitChildTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBHabitChildTableViewCell.h; sourceTree = "<group>"; };
+		CE55D9FE2494B3CD00F2EF37 /* JBHabitChildTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBHabitChildTableViewCell.m; sourceTree = "<group>"; };
 		CE6655F0248F3930001924E6 /* GoodLife&GoodHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoodLife&GoodHabits.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6655F3248F3930001924E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE6655F4248F3930001924E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -102,6 +112,9 @@
 		CE66565C248F72E8001924E6 /* JBMineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBMineModel.m; sourceTree = "<group>"; };
 		CE66565E248F735A001924E6 /* JBMineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBMineTableViewCell.m; sourceTree = "<group>"; };
 		CE66565F248F735A001924E6 /* JBMineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBMineTableViewCell.h; sourceTree = "<group>"; };
+		CE6C1889249517970075F603 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		CE6C188D249517CF0075F603 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CE6C188F249517D60075F603 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CEE995302491C35500A910FF /* JBHomeAddNoteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBHomeAddNoteViewController.h; sourceTree = "<group>"; };
 		CEE995312491C35500A910FF /* JBHomeAddNoteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBHomeAddNoteViewController.m; sourceTree = "<group>"; };
 		CEE995332491C4EF00A910FF /* JBHomeAddNoteTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBHomeAddNoteTableViewCell.h; sourceTree = "<group>"; };
@@ -152,6 +165,15 @@
 				46C1DB1587E283DDEF772BA8 /* Pods-GoodLifeAndGoodHabits.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE55D9F92494AAB300F2EF37 /* CDZPicker */ = {
+			isa = PBXGroup;
+			children = (
+				CE55D9FA2494AAB300F2EF37 /* CDZPicker.m */,
+				CE55D9FB2494AAB300F2EF37 /* CDZPicker.h */,
+			);
+			path = CDZPicker;
 			sourceTree = "<group>";
 		};
 		CE6655E7248F3930001924E6 = {
@@ -281,6 +303,10 @@
 			children = (
 				CEE995652493417A00A910FF /* JBHabitAddEditorTableViewCell.h */,
 				CEE995662493417A00A910FF /* JBHabitAddEditorTableViewCell.m */,
+				CE55D9EE2494674F00F2EF37 /* JBHabitAddSelectTableViewCell.h */,
+				CE55D9EF2494674F00F2EF37 /* JBHabitAddSelectTableViewCell.m */,
+				CE55D9FD2494B3CD00F2EF37 /* JBHabitChildTableViewCell.h */,
+				CE55D9FE2494B3CD00F2EF37 /* JBHabitChildTableViewCell.m */,
 			);
 			path = JBViews;
 			sourceTree = "<group>";
@@ -333,6 +359,8 @@
 		CE665620248F5098001924E6 /* JBCommon */ = {
 			isa = PBXGroup;
 			children = (
+				CE6C188E249517CF0075F603 /* Localizable.strings */,
+				CE55D9F92494AAB300F2EF37 /* CDZPicker */,
 				CE665640248F53EE001924E6 /* JB_PrefixHeader.pch */,
 				CE665642248F53EF001924E6 /* JBGlobal.h */,
 				CE665639248F53EE001924E6 /* JBHBTool.h */,
@@ -398,6 +426,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"en-GB",
 			);
 			mainGroup = CE6655E7248F3930001924E6;
 			productRefGroup = CE6655F1248F3930001924E6 /* Products */;
@@ -415,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE665603248F3934001924E6 /* LaunchScreen.storyboard in Resources */,
+				CE6C188C249517CF0075F603 /* Localizable.strings in Resources */,
 				CE665600248F3934001924E6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +502,7 @@
 				CE66564E248F6061001924E6 /* JBTabBarController.m in Sources */,
 				CE6655F5248F3930001924E6 /* AppDelegate.m in Sources */,
 				CEE995672493417A00A910FF /* JBHabitAddEditorTableViewCell.m in Sources */,
+				CE55D9F02494674F00F2EF37 /* JBHabitAddSelectTableViewCell.m in Sources */,
 				CE66564B248F6015001924E6 /* JBBaseViewController.m in Sources */,
 				CE665651248F63AB001924E6 /* JBHomeViewController.m in Sources */,
 				CE665654248F63BD001924E6 /* JBHabitViewController.m in Sources */,
@@ -484,6 +515,7 @@
 				CE665643248F53EF001924E6 /* MBProgressHUD+JBNJ.m in Sources */,
 				CE665657248F63D1001924E6 /* JBMoreViewController.m in Sources */,
 				CEE99561249340D800A910FF /* JBHabitModel.m in Sources */,
+				CE55D9FC2494AAB300F2EF37 /* CDZPicker.m in Sources */,
 				CEE99564249340E900A910FF /* JBHabitViewModel.m in Sources */,
 				CEE995382491C50400A910FF /* JBLifeViewModel.m in Sources */,
 				CE4346C12490A42000BF2C41 /* JBLifeModel.m in Sources */,
@@ -496,6 +528,7 @@
 				CE4346BE249086A600BF2C41 /* JBproblemFeedbackTableViewCell.m in Sources */,
 				CE4346B12490828500BF2C41 /* JBproblemFeedbackViewController.m in Sources */,
 				CE665647248F53EF001924E6 /* JBUIUtilities.m in Sources */,
+				CE55D9FF2494B3CD00F2EF37 /* JBHabitChildTableViewCell.m in Sources */,
 				CEE9953E2491F77000A910FF /* JBHomeHeaderView.m in Sources */,
 				CE4346B52490835900BF2C41 /* JBproblemFeedbackModel.m in Sources */,
 				CEE995352491C4EF00A910FF /* JBHomeAddNoteTableViewCell.m in Sources */,
@@ -512,8 +545,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				CE665602248F3934001924E6 /* Base */,
+				CE6C1889249517970075F603 /* en-GB */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CE6C188E249517CF0075F603 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE6C188D249517CF0075F603 /* en-GB */,
+				CE6C188F249517D60075F603 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -523,6 +566,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -569,7 +613,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -581,6 +625,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -621,7 +666,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -634,8 +679,10 @@
 			baseConfigurationReference = E8F733AD417744BD02301F77 /* Pods-GoodLifeAndGoodHabits.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 295PH49WVH;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Haot Lin (52R75QP6B4)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = R387SZBJM2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GoodLifeAndGoodHabits/JBCommon/JB_PrefixHeader.pch";
 				INFOPLIST_FILE = GoodLifeAndGoodHabits/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -644,6 +691,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hongbiao.GoodLifeAndGoodHabits;
 				PRODUCT_NAME = "GoodLife&GoodHabits";
+				PROVISIONING_PROFILE_SPECIFIER = dev_GoodLifeAndGoodHabits_pro_20200613;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -653,8 +701,10 @@
 			baseConfigurationReference = 46C1DB1587E283DDEF772BA8 /* Pods-GoodLifeAndGoodHabits.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 295PH49WVH;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Haot Lin (52R75QP6B4)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = R387SZBJM2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GoodLifeAndGoodHabits/JBCommon/JB_PrefixHeader.pch";
 				INFOPLIST_FILE = GoodLifeAndGoodHabits/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -663,6 +713,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hongbiao.GoodLifeAndGoodHabits;
 				PRODUCT_NAME = "GoodLife&GoodHabits";
+				PROVISIONING_PROFILE_SPECIFIER = dev_GoodLifeAndGoodHabits_pro_20200613;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

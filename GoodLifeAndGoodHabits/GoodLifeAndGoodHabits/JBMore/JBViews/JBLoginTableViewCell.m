@@ -131,10 +131,10 @@
             }
         }];
     }else{
-        AVUser *bUser = [[AVUser alloc] init];
-        [bUser setUsername:self.JBaccount];
-        [bUser setPassword:self.JBpassword];
-        [bUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+        AVUser *JBbUser = [[AVUser alloc] init];
+        [JBbUser setUsername:self.JBaccount];
+        [JBbUser setPassword:self.JBpassword];
+        [JBbUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
             if (succeeded) {
                 [MBProgressHUD JBshowReminderText:NSLocalizedString(@"注册成功", nil)];
                 [AVUser logInWithUsernameInBackground:self.JBaccount password:self.JBpassword block:^(AVUser * _Nullable user, NSError * _Nullable error) {

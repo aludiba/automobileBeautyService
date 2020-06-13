@@ -9,9 +9,12 @@
 #import "JBBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
+@class JBHabitViewController;
 @interface JBHabitChildViewController : JBBaseViewController
-@property(nonatomic, assign)JBHabitChildType JBType;
+@property(nonatomic, weak)JBHabitViewController *JBsuperVC;
+@property(nonatomic, assign)JBHabitChildType JBHabitType;
 @property(nonatomic, strong)UITableView *JBMainTable;
+- (void)JBLoadData;
 @end
 
 NS_ASSUME_NONNULL_END

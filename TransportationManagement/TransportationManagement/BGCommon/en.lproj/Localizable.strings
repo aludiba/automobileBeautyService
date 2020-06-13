@@ -46,6 +46,7 @@
 "请输入花费金额" = "Please enter the cost amount";
 "加油类型" = "Fuel type";
 "请输入加油类型" = "Please enter the fuel type";
+
 "昵称" = "nickname";
 "修改昵称" = "Modify the nickname";
 "请输入昵称" = "Please enter a nickname";
@@ -59,6 +60,7 @@
 "请输入反馈内容" = "Please enter feedback";
 "发送" = "send";
 "登录&退出" = "Logon";
+
 "登录成功" = "Login successful";
 "取消" = "cancel";
 "账号" = "account";
@@ -76,4 +78,5 @@
 "暂无网络" = "No network";
 "WIFI上网" = "WIFI Internet access";
 "移动上网" = "Mobile Internet";
+"分享App" = "Share the App";
 "评价我们" = "Comment on our";

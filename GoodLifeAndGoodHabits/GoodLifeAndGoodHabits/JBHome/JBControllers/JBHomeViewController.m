@@ -7,6 +7,7 @@
 //
 
 #import "JBHomeViewController.h"
+#import "JBLoginViewController.h"
 #import "JBLifeModel.h"
 #import "JBHomeAddNoteViewController.h"
 #import "JBHomeHeaderView.h"
@@ -94,13 +95,40 @@
            }];
 }
 - (void)JBDeleteData:(JBLifeModel *)JBmodel{
-    
+    AVObject *JBdiary = [AVObject objectWithClassName:@"JBGoodLife" objectId:JBmodel.JBobjectId];
+    __weak typeof(self) weakSelf = self;
+    [JBdiary deleteInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+    if (isSuccessful) {
+         //删除成功后的动作
+        [MBProgressHUD JBshowReminderText:NSLocalizedString(@"删除成功", nil)];
+        [strongSelf.JBDataArray removeObject:JBmodel];
+    }else {
+        [MBProgressHUD JBshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
+    }
+    }];
 }
 - (void)JBaddAction:(UIButton *)JBsender{
-    JBHomeAddNoteViewController *JBHomeAddNoteVC = [[JBHomeAddNoteViewController alloc] init];
-    JBHomeAddNoteVC.JBsuperVC = self;
-    JBHomeAddNoteVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:JBHomeAddNoteVC animated:YES];
+    AVUser *JBbUser = [AVUser currentUser];
+    if (JBbUser) {
+        JBHomeAddNoteViewController *JBHomeAddNoteVC = [[JBHomeAddNoteViewController alloc] init];
+        JBHomeAddNoteVC.JBsuperVC = self;
+        JBHomeAddNoteVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:JBHomeAddNoteVC animated:YES];
+    }else{
+        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提醒", nil) message:NSLocalizedString(@"请先登录", nil) preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            JBLoginViewController *JBLoginVC = [[JBLoginViewController alloc] init];
+            JBLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
+            [self presentViewController:JBLoginVC animated:YES completion:^{
+                
+            }];
+        }];
+        [alertVC addAction:cancelAction];
+        [alertVC addAction:sureAction];
+        [self presentViewController:alertVC animated:YES completion:nil];
+    }
 }
 #pragma mark - UITableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -140,11 +168,13 @@
    return NSLocalizedString(@"删除", nil);
 }
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
-    JBLifeModel *JBModel = self.JBDataArray[indexPath.row];
+    NSMutableDictionary *JBDic = self.JBDataArray[indexPath.section];
+    NSMutableArray *JBData = [JBDic objectForKey:@"JBData"];
+    JBLifeModel *JBmodel = JBData[indexPath.row];
     if(editingStyle == UITableViewCellEditingStyleDelete){
-       [self.JBDataArray removeObjectAtIndex:indexPath.row];
-       [self JBDeleteData:JBModel];
-       [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+       [JBData removeObjectAtIndex:indexPath.row];
+        [self JBDeleteData:JBmodel];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
 }
 #pragma mark - 属性懒加载

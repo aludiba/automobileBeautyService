@@ -35,7 +35,7 @@
         make.top.equalTo(self.JBTitleLbl.mas_bottom).offset(15);
         make.leading.equalTo(self.contentView).offset(16);
         make.trailing.equalTo(self.contentView).offset(-16);
-        make.height.mas_equalTo(20);
+        make.height.mas_equalTo(JBHEIGHT);
         make.bottom.equalTo(self.contentView).offset(-12);
     }];
     self.contentView.layer.masksToBounds = YES;
@@ -48,6 +48,12 @@
     _JBlifemodel = JBlifemodel;
     self.JBTitleLbl.text = _JBlifemodel.JBTitle;
     self.JBContentLbl.text = _JBlifemodel.JBContent;
+    CGSize JBSize = [self.JBContentLbl sizeThatFits:CGSizeMake(JBWIDTH - 32, MAXFLOAT)];
+    [self.JBContentLbl mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(JBSize.height);
+    }];
+    [self.JBContentLbl layoutIfNeeded];
+    [self.contentView layoutSubviews];
 }
 #pragma mark - 属性懒加载
 - (UILabel *)JBTitleLbl{
@@ -64,6 +70,7 @@
         _JBContentLbl = [[UILabel alloc] init];
         _JBContentLbl.textColor = [UIColor purpleColor];
         _JBContentLbl.font = [UIFont systemFontOfSize:18];
+        _JBContentLbl.numberOfLines = 0;
         [_JBContentLbl sizeToFit];
     }
     return _JBContentLbl;

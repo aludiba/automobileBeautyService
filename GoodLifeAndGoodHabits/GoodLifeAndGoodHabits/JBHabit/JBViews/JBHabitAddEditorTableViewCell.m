@@ -12,6 +12,7 @@
 @interface JBHabitAddEditorTableViewCell()<UITextViewDelegate>
 @property(nonatomic, strong)UITextView *JBeditableView;
 @property(nonatomic, strong)UILabel *JBhiddenLbl;
+@property(nonatomic, strong)UIView *JBLine;
 @end
 @implementation JBHabitAddEditorTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -20,19 +21,17 @@
         [self.JBeditableView addSubview:self.JBhiddenLbl];
         
         [self.JBeditableView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.contentView.mas_bottom).offset(12.5);
-            
-            make.leading.equalTo(self.contentView).offset(16);
-            make.trailing.equalTo(self.contentView).offset(-16);
-            make.height.mas_greaterThanOrEqualTo(110);
-        make.bottom.equalTo(self.contentView.mas_bottom).offset(-12.5);
+            make.top.equalTo(self.contentView).offset(12.5);
+            make.leading.equalTo(self.contentView).offset(20);
+            make.trailing.equalTo(self.contentView).offset(-20);
+            make.height.mas_greaterThanOrEqualTo(22);
+            make.bottom.equalTo(self.contentView.mas_bottom).offset(-12.5);
         }];
         [self.JBhiddenLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.JBeditableView).offset(6);
-            
             make.leading.equalTo(self.JBeditableView).offset(6);
             make.trailing.equalTo(self.JBeditableView).offset(-6);
-            make.height.mas_equalTo(18);
+            make.top.equalTo(self.JBeditableView.mas_bottom).offset(-6);
         }];
     }
     return self;
@@ -51,6 +50,11 @@
         self.JBeditableView.text = @"";
         self.JBhiddenLbl.hidden = NO;
     }
+    if (self.JBViewModel.JBhabitviewtype == JBHabitViewTypeEditNum) {
+        self.JBeditableView.keyboardType = UIKeyboardTypeNumberPad;
+    }else if (self.JBViewModel.JBhabitviewtype == JBHabitViewTypeEditString) {
+        self.JBeditableView.keyboardType = UIKeyboardTypeDefault;
+    }
 }
 #pragma mark - UITextViewDelegate
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
@@ -68,10 +72,8 @@
     textView.bounds = bounds;
     self.JBViewModel.JBContent = textView.text;
     self.JBcontentHeight = size.height;
-    if (self.JBcontentHeight > 110) {
-        if (self.JBeditBlock) {
-            self.JBeditBlock(self);
-        }
+    if (self.JBeditBlock) {
+        self.JBeditBlock(self);
     }
 }
 - (BOOL)textViewShouldBeginEditing:(UITextView *)textView{
@@ -117,7 +119,7 @@
         _JBeditableView = [[UITextView alloc] init];
         _JBeditableView.delegate = self;
         _JBeditableView.font = [UIFont fontWithName:@"PingFangSC-Regular" size:20];
-        _JBeditableView.textColor = [UIColor redColor];
+        _JBeditableView.textColor = [UIColor blackColor];
         _JBeditableView.layer.cornerRadius = 8.0f;
         _JBeditableView.layer.masksToBounds = YES;
         _JBeditableView.layer.borderColor = [UIColor grayColor].CGColor;
@@ -126,5 +128,12 @@
         [_JBeditableView sizeToFit];
     }
     return _JBeditableView;
+}
+- (UIView *)JBLine{
+    if (!_JBLine) {
+        _JBLine = [[UIView alloc] init];
+        _JBLine.backgroundColor = JBH_Color(242, 242, 242, 1);
+    }
+    return _JBLine;
 }
 @end

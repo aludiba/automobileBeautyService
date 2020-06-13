@@ -9,8 +9,14 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+typedef NS_ENUM(NSInteger, JBHabitViewType) {
+    JBHabitViewTypeSelect,
+    JBHabitViewTypeEditNum,
+    JBHabitViewTypeEditString,
+};
 @interface JBHabitViewModel : NSObject
+@property(nonatomic, assign)JBHabitChildType JBHabitType;
+@property(nonatomic, assign)JBHabitViewType JBhabitviewtype;
 @property(nonatomic, copy)NSString *JBTitle;
 @property(nonatomic, copy)NSString *JBContent;
 @property(nonatomic, copy)NSString *JBDefault;
