@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B60A6DDE0EBECFAE8314CB85 /* Pods_MacroSports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365881A90FFC260438753439 /* Pods_MacroSports.framework */; };
+		CEDC03AB24B0319800105C18 /* LBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03AA24B0319800105C18 /* LBBaseViewController.m */; };
+		CEDC03AE24B0339700105C18 /* LBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03AD24B0339700105C18 /* LBHomeViewController.m */; };
+		CEDC03B124B035A800105C18 /* LBSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03B024B035A800105C18 /* LBSetViewController.m */; };
+		CEDC03B424B035B800105C18 /* LBStopwatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03B324B035B800105C18 /* LBStopwatchViewController.m */; };
+		CEDC03B724B035C900105C18 /* LBTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03B624B035C900105C18 /* LBTeamViewController.m */; };
+		CEDC03C524B040B600105C18 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03B824B040B500105C18 /* Reachability.m */; };
+		CEDC03C624B040B600105C18 /* LBUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03BC24B040B600105C18 /* LBUIUtilities.m */; };
+		CEDC03C724B040B600105C18 /* LBHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03BD24B040B600105C18 /* LBHBTool.m */; };
+		CEDC03C824B040B600105C18 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03C024B040B600105C18 /* NSDictionary+log.m */; };
+		CEDC03C924B040B600105C18 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03C224B040B600105C18 /* NSArray+log.m */; };
+		CEDC03CA24B040B600105C18 /* MBProgressHUD+LBNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03C324B040B600105C18 /* MBProgressHUD+LBNJ.m */; };
+		CEDC03CE24B0468500105C18 /* LBHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03CD24B0468500105C18 /* LBHomeHeaderView.m */; };
+		CEDC03D124B0469E00105C18 /* LBHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03D024B0469E00105C18 /* LBHomeTableViewCell.m */; };
+		CEDC0C6124B085700017CE0C /* LBCreateGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC0C6024B085700017CE0C /* LBCreateGameViewController.m */; };
+		CEDC0C6424B0868E0017CE0C /* LBMoreGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC0C6324B0868E0017CE0C /* LBMoreGamesViewController.m */; };
+		CEDC0C6724B08FDB0017CE0C /* LBTeamAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC0C6624B08FDB0017CE0C /* LBTeamAddViewController.m */; };
+		CEDC0C6A24B0920B0017CE0C /* LBTeamAddTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC0C6924B0920B0017CE0C /* LBTeamAddTableViewCell.m */; };
+		CEDC0C6D24B09CDC0017CE0C /* LBTeamAddTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC0C6C24B09CDC0017CE0C /* LBTeamAddTitleTableViewCell.m */; };
+		CEDC0C7024B0A7B70017CE0C /* LBTeamAddViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC0C6F24B0A7B70017CE0C /* LBTeamAddViewModel.m */; };
+		CEDCE0C224AAF4B800105C18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDCE0C124AAF4B800105C18 /* AppDelegate.m */; };
+		CEDCE0CD24AAF4BE00105C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDCE0CC24AAF4BE00105C18 /* Assets.xcassets */; };
+		CEDCE0D024AAF4BE00105C18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDCE0CE24AAF4BE00105C18 /* LaunchScreen.storyboard */; };
+		CEDCE0D324AAF4BE00105C18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDCE0D224AAF4BE00105C18 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		365881A90FFC260438753439 /* Pods_MacroSports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacroSports.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDC03A924B0319800105C18 /* LBBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBBaseViewController.h; sourceTree = "<group>"; };
+		CEDC03AA24B0319800105C18 /* LBBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBBaseViewController.m; sourceTree = "<group>"; };
+		CEDC03AC24B0339700105C18 /* LBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBHomeViewController.h; sourceTree = "<group>"; };
+		CEDC03AD24B0339700105C18 /* LBHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBHomeViewController.m; sourceTree = "<group>"; };
+		CEDC03AF24B035A800105C18 /* LBSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBSetViewController.h; sourceTree = "<group>"; };
+		CEDC03B024B035A800105C18 /* LBSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBSetViewController.m; sourceTree = "<group>"; };
+		CEDC03B224B035B800105C18 /* LBStopwatchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBStopwatchViewController.h; sourceTree = "<group>"; };
+		CEDC03B324B035B800105C18 /* LBStopwatchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBStopwatchViewController.m; sourceTree = "<group>"; };
+		CEDC03B524B035C900105C18 /* LBTeamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBTeamViewController.h; sourceTree = "<group>"; };
+		CEDC03B624B035C900105C18 /* LBTeamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBTeamViewController.m; sourceTree = "<group>"; };
+		CEDC03B824B040B500105C18 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CEDC03B924B040B600105C18 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
+		CEDC03BA24B040B600105C18 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CEDC03BB24B040B600105C18 /* LBHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBHBTool.h; sourceTree = "<group>"; };
+		CEDC03BC24B040B600105C18 /* LBUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBUIUtilities.m; sourceTree = "<group>"; };
+		CEDC03BD24B040B600105C18 /* LBHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBHBTool.m; sourceTree = "<group>"; };
+		CEDC03BE24B040B600105C18 /* LBGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBGlobal.h; sourceTree = "<group>"; };
+		CEDC03BF24B040B600105C18 /* MBProgressHUD+LBNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+LBNJ.h"; sourceTree = "<group>"; };
+		CEDC03C024B040B600105C18 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
+		CEDC03C124B040B600105C18 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		CEDC03C224B040B600105C18 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		CEDC03C324B040B600105C18 /* MBProgressHUD+LBNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+LBNJ.m"; sourceTree = "<group>"; };
+		CEDC03C424B040B600105C18 /* LBUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBUIUtilities.h; sourceTree = "<group>"; };
+		CEDC03CB24B040E800105C18 /* LB_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LB_PrefixHeader.pch; sourceTree = "<group>"; };
+		CEDC03CC24B0468500105C18 /* LBHomeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBHomeHeaderView.h; sourceTree = "<group>"; };
+		CEDC03CD24B0468500105C18 /* LBHomeHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBHomeHeaderView.m; sourceTree = "<group>"; };
+		CEDC03CF24B0469E00105C18 /* LBHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBHomeTableViewCell.h; sourceTree = "<group>"; };
+		CEDC03D024B0469E00105C18 /* LBHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBHomeTableViewCell.m; sourceTree = "<group>"; };
+		CEDC0C5F24B085700017CE0C /* LBCreateGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBCreateGameViewController.h; sourceTree = "<group>"; };
+		CEDC0C6024B085700017CE0C /* LBCreateGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBCreateGameViewController.m; sourceTree = "<group>"; };
+		CEDC0C6224B0868E0017CE0C /* LBMoreGamesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBMoreGamesViewController.h; sourceTree = "<group>"; };
+		CEDC0C6324B0868E0017CE0C /* LBMoreGamesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBMoreGamesViewController.m; sourceTree = "<group>"; };
+		CEDC0C6524B08FDB0017CE0C /* LBTeamAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBTeamAddViewController.h; sourceTree = "<group>"; };
+		CEDC0C6624B08FDB0017CE0C /* LBTeamAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBTeamAddViewController.m; sourceTree = "<group>"; };
+		CEDC0C6824B0920B0017CE0C /* LBTeamAddTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBTeamAddTableViewCell.h; sourceTree = "<group>"; };
+		CEDC0C6924B0920B0017CE0C /* LBTeamAddTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBTeamAddTableViewCell.m; sourceTree = "<group>"; };
+		CEDC0C6B24B09CDC0017CE0C /* LBTeamAddTitleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBTeamAddTitleTableViewCell.h; sourceTree = "<group>"; };
+		CEDC0C6C24B09CDC0017CE0C /* LBTeamAddTitleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBTeamAddTitleTableViewCell.m; sourceTree = "<group>"; };
+		CEDC0C6E24B0A7B70017CE0C /* LBTeamAddViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBTeamAddViewModel.h; sourceTree = "<group>"; };
+		CEDC0C6F24B0A7B70017CE0C /* LBTeamAddViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBTeamAddViewModel.m; sourceTree = "<group>"; };
+		CEDCE0BD24AAF4B800105C18 /* MacroSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacroSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDCE0C024AAF4B800105C18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEDCE0C124AAF4B800105C18 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEDCE0CC24AAF4BE00105C18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEDCE0CF24AAF4BE00105C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEDCE0D124AAF4BE00105C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEDCE0D224AAF4BE00105C18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E0F61D9A70C01B46292E9A9C /* Pods-MacroSports.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacroSports.release.xcconfig"; path = "Target Support Files/Pods-MacroSports/Pods-MacroSports.release.xcconfig"; sourceTree = "<group>"; };
+		F3809600C10C80A90A8AC081 /* Pods-MacroSports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacroSports.debug.xcconfig"; path = "Target Support Files/Pods-MacroSports/Pods-MacroSports.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEDCE0BA24AAF4B800105C18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60A6DDE0EBECFAE8314CB85 /* Pods_MacroSports.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		137A5FE7FA6C63C88CCD1DEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3809600C10C80A90A8AC081 /* Pods-MacroSports.debug.xcconfig */,
+				E0F61D9A70C01B46292E9A9C /* Pods-MacroSports.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		593ED1D9ABEF8583CCA11684 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				365881A90FFC260438753439 /* Pods_MacroSports.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEDC039424B0275700105C18 /* LBHome */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC039524B0275700105C18 /* LBControllers */,
+				CEDC039624B0275700105C18 /* LBModels */,
+				CEDC039724B0275700105C18 /* LBViews */,
+			);
+			path = LBHome;
+			sourceTree = SOURCE_ROOT;
+		};
+		CEDC039524B0275700105C18 /* LBControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC03AC24B0339700105C18 /* LBHomeViewController.h */,
+				CEDC03AD24B0339700105C18 /* LBHomeViewController.m */,
+				CEDC0C6224B0868E0017CE0C /* LBMoreGamesViewController.h */,
+				CEDC0C6324B0868E0017CE0C /* LBMoreGamesViewController.m */,
+			);
+			path = LBControllers;
+			sourceTree = "<group>";
+		};
+		CEDC039624B0275700105C18 /* LBModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LBModels;
+			sourceTree = "<group>";
+		};
+		CEDC039724B0275700105C18 /* LBViews */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC03CC24B0468500105C18 /* LBHomeHeaderView.h */,
+				CEDC03CD24B0468500105C18 /* LBHomeHeaderView.m */,
+				CEDC03CF24B0469E00105C18 /* LBHomeTableViewCell.h */,
+				CEDC03D024B0469E00105C18 /* LBHomeTableViewCell.m */,
+			);
+			path = LBViews;
+			sourceTree = "<group>";
+		};
+		CEDC039824B0275700105C18 /* LBStopwatch */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC039924B0275700105C18 /* LBControllers */,
+				CEDC039A24B0275700105C18 /* LBModels */,
+				CEDC039B24B0275700105C18 /* LBViews */,
+			);
+			path = LBStopwatch;
+			sourceTree = SOURCE_ROOT;
+		};
+		CEDC039924B0275700105C18 /* LBControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC03B224B035B800105C18 /* LBStopwatchViewController.h */,
+				CEDC03B324B035B800105C18 /* LBStopwatchViewController.m */,
+			);
+			path = LBControllers;
+			sourceTree = "<group>";
+		};
+		CEDC039A24B0275700105C18 /* LBModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LBModels;
+			sourceTree = "<group>";
+		};
+		CEDC039B24B0275700105C18 /* LBViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LBViews;
+			sourceTree = "<group>";
+		};
+		CEDC039C24B0275700105C18 /* LBTeam */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC039D24B0275700105C18 /* LBControllers */,
+				CEDC039E24B0275700105C18 /* LBModels */,
+				CEDC039F24B0275700105C18 /* LBViews */,
+			);
+			path = LBTeam;
+			sourceTree = SOURCE_ROOT;
+		};
+		CEDC039D24B0275700105C18 /* LBControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC03B524B035C900105C18 /* LBTeamViewController.h */,
+				CEDC03B624B035C900105C18 /* LBTeamViewController.m */,
+				CEDC0C6524B08FDB0017CE0C /* LBTeamAddViewController.h */,
+				CEDC0C6624B08FDB0017CE0C /* LBTeamAddViewController.m */,
+			);
+			path = LBControllers;
+			sourceTree = "<group>";
+		};
+		CEDC039E24B0275700105C18 /* LBModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC0C6E24B0A7B70017CE0C /* LBTeamAddViewModel.h */,
+				CEDC0C6F24B0A7B70017CE0C /* LBTeamAddViewModel.m */,
+			);
+			path = LBModels;
+			sourceTree = "<group>";
+		};
+		CEDC039F24B0275700105C18 /* LBViews */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC0C6B24B09CDC0017CE0C /* LBTeamAddTitleTableViewCell.h */,
+				CEDC0C6C24B09CDC0017CE0C /* LBTeamAddTitleTableViewCell.m */,
+				CEDC0C6824B0920B0017CE0C /* LBTeamAddTableViewCell.h */,
+				CEDC0C6924B0920B0017CE0C /* LBTeamAddTableViewCell.m */,
+			);
+			path = LBViews;
+			sourceTree = "<group>";
+		};
+		CEDC03A024B0275700105C18 /* LBSet */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC03A124B0275700105C18 /* LBControllers */,
+				CEDC03A224B0275700105C18 /* LBModels */,
+				CEDC03A324B0275700105C18 /* LBViews */,
+			);
+			path = LBSet;
+			sourceTree = SOURCE_ROOT;
+		};
+		CEDC03A124B0275700105C18 /* LBControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC03AF24B035A800105C18 /* LBSetViewController.h */,
+				CEDC03B024B035A800105C18 /* LBSetViewController.m */,
+			);
+			path = LBControllers;
+			sourceTree = "<group>";
+		};
+		CEDC03A224B0275700105C18 /* LBModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LBModels;
+			sourceTree = "<group>";
+		};
+		CEDC03A324B0275700105C18 /* LBViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LBViews;
+			sourceTree = "<group>";
+		};
+		CEDC03A424B0275700105C18 /* LBCreateGame */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC03A524B0275700105C18 /* LBControllers */,
+				CEDC03A624B0275700105C18 /* LBModels */,
+				CEDC03A724B0275700105C18 /* LBViews */,
+			);
+			path = LBCreateGame;
+			sourceTree = SOURCE_ROOT;
+		};
+		CEDC03A524B0275700105C18 /* LBControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC0C5F24B085700017CE0C /* LBCreateGameViewController.h */,
+				CEDC0C6024B085700017CE0C /* LBCreateGameViewController.m */,
+			);
+			path = LBControllers;
+			sourceTree = "<group>";
+		};
+		CEDC03A624B0275700105C18 /* LBModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LBModels;
+			sourceTree = "<group>";
+		};
+		CEDC03A724B0275700105C18 /* LBViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LBViews;
+			sourceTree = "<group>";
+		};
+		CEDC03A824B0283700105C18 /* LBCommon */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC03CB24B040E800105C18 /* LB_PrefixHeader.pch */,
+				CEDC03BE24B040B600105C18 /* LBGlobal.h */,
+				CEDC03BB24B040B600105C18 /* LBHBTool.h */,
+				CEDC03BD24B040B600105C18 /* LBHBTool.m */,
+				CEDC03C424B040B600105C18 /* LBUIUtilities.h */,
+				CEDC03BC24B040B600105C18 /* LBUIUtilities.m */,
+				CEDC03BF24B040B600105C18 /* MBProgressHUD+LBNJ.h */,
+				CEDC03C324B040B600105C18 /* MBProgressHUD+LBNJ.m */,
+				CEDC03C124B040B600105C18 /* NSArray+log.h */,
+				CEDC03C224B040B600105C18 /* NSArray+log.m */,
+				CEDC03B924B040B600105C18 /* NSDictionary+log.h */,
+				CEDC03C024B040B600105C18 /* NSDictionary+log.m */,
+				CEDC03BA24B040B600105C18 /* Reachability.h */,
+				CEDC03B824B040B500105C18 /* Reachability.m */,
+				CEDC03A924B0319800105C18 /* LBBaseViewController.h */,
+				CEDC03AA24B0319800105C18 /* LBBaseViewController.m */,
+			);
+			path = LBCommon;
+			sourceTree = SOURCE_ROOT;
+		};
+		CEDCE0B424AAF4B800105C18 = {
+			isa = PBXGroup;
+			children = (
+				CEDCE0BF24AAF4B800105C18 /* MacroSports */,
+				CEDCE0BE24AAF4B800105C18 /* Products */,
+				137A5FE7FA6C63C88CCD1DEE /* Pods */,
+				593ED1D9ABEF8583CCA11684 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEDCE0BE24AAF4B800105C18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEDCE0BD24AAF4B800105C18 /* MacroSports.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEDCE0BF24AAF4B800105C18 /* MacroSports */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC03A824B0283700105C18 /* LBCommon */,
+				CEDC03A424B0275700105C18 /* LBCreateGame */,
+				CEDC039424B0275700105C18 /* LBHome */,
+				CEDC03A024B0275700105C18 /* LBSet */,
+				CEDC039824B0275700105C18 /* LBStopwatch */,
+				CEDC039C24B0275700105C18 /* LBTeam */,
+				CEDCE0C024AAF4B800105C18 /* AppDelegate.h */,
+				CEDCE0C124AAF4B800105C18 /* AppDelegate.m */,
+				CEDCE0CC24AAF4BE00105C18 /* Assets.xcassets */,
+				CEDCE0CE24AAF4BE00105C18 /* LaunchScreen.storyboard */,
+				CEDCE0D124AAF4BE00105C18 /* Info.plist */,
+				CEDCE0D224AAF4BE00105C18 /* main.m */,
+			);
+			path = MacroSports;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEDCE0BC24AAF4B800105C18 /* MacroSports */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDCE0D624AAF4BE00105C18 /* Build configuration list for PBXNativeTarget "MacroSports" */;
+			buildPhases = (
+				686B1CD007ECCC6246F99061 /* [CP] Check Pods Manifest.lock */,
+				CEDCE0B924AAF4B800105C18 /* Sources */,
+				CEDCE0BA24AAF4B800105C18 /* Frameworks */,
+				CEDCE0BB24AAF4B800105C18 /* Resources */,
+				D790D4493D2E502142A3B940 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacroSports;
+			productName = MacroSports;
+			productReference = CEDCE0BD24AAF4B800105C18 /* MacroSports.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEDCE0B524AAF4B800105C18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = macro;
+				TargetAttributes = {
+					CEDCE0BC24AAF4B800105C18 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = CEDCE0B824AAF4B800105C18 /* Build configuration list for PBXProject "MacroSports" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEDCE0B424AAF4B800105C18;
+			productRefGroup = CEDCE0BE24AAF4B800105C18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEDCE0BC24AAF4B800105C18 /* MacroSports */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEDCE0BB24AAF4B800105C18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDCE0D024AAF4BE00105C18 /* LaunchScreen.storyboard in Resources */,
+				CEDCE0CD24AAF4BE00105C18 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		686B1CD007ECCC6246F99061 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MacroSports-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D790D4493D2E502142A3B940 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MacroSports/Pods-MacroSports-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MacroSports/Pods-MacroSports-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MacroSports/Pods-MacroSports-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEDCE0B924AAF4B800105C18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDC03C624B040B600105C18 /* LBUIUtilities.m in Sources */,
+				CEDC03C724B040B600105C18 /* LBHBTool.m in Sources */,
+				CEDC0C6124B085700017CE0C /* LBCreateGameViewController.m in Sources */,
+				CEDC0C6D24B09CDC0017CE0C /* LBTeamAddTitleTableViewCell.m in Sources */,
+				CEDC03B424B035B800105C18 /* LBStopwatchViewController.m in Sources */,
+				CEDC03AB24B0319800105C18 /* LBBaseViewController.m in Sources */,
+				CEDC03CE24B0468500105C18 /* LBHomeHeaderView.m in Sources */,
+				CEDC03C824B040B600105C18 /* NSDictionary+log.m in Sources */,
+				CEDC03D124B0469E00105C18 /* LBHomeTableViewCell.m in Sources */,
+				CEDC03CA24B040B600105C18 /* MBProgressHUD+LBNJ.m in Sources */,
+				CEDC03C524B040B600105C18 /* Reachability.m in Sources */,
+				CEDC03B724B035C900105C18 /* LBTeamViewController.m in Sources */,
+				CEDCE0C224AAF4B800105C18 /* AppDelegate.m in Sources */,
+				CEDCE0D324AAF4BE00105C18 /* main.m in Sources */,
+				CEDC03C924B040B600105C18 /* NSArray+log.m in Sources */,
+				CEDC03B124B035A800105C18 /* LBSetViewController.m in Sources */,
+				CEDC0C6424B0868E0017CE0C /* LBMoreGamesViewController.m in Sources */,
+				CEDC03AE24B0339700105C18 /* LBHomeViewController.m in Sources */,
+				CEDC0C6724B08FDB0017CE0C /* LBTeamAddViewController.m in Sources */,
+				CEDC0C6A24B0920B0017CE0C /* LBTeamAddTableViewCell.m in Sources */,
+				CEDC0C7024B0A7B70017CE0C /* LBTeamAddViewModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEDCE0CE24AAF4BE00105C18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEDCE0CF24AAF4BE00105C18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEDCE0D424AAF4BE00105C18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CEDCE0D524AAF4BE00105C18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEDCE0D724AAF4BE00105C18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3809600C10C80A90A8AC081 /* Pods-MacroSports.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = /Users/user/Desktop/HuJiaoFenApp/APPs/MacroSports/LBCommon/LB_PrefixHeader.pch;
+				INFOPLIST_FILE = MacroSports/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.MAO.MacroSports;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CEDCE0D824AAF4BE00105C18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0F61D9A70C01B46292E9A9C /* Pods-MacroSports.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = /Users/user/Desktop/HuJiaoFenApp/APPs/MacroSports/LBCommon/LB_PrefixHeader.pch;
+				INFOPLIST_FILE = MacroSports/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.MAO.MacroSports;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEDCE0B824AAF4B800105C18 /* Build configuration list for PBXProject "MacroSports" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDCE0D424AAF4BE00105C18 /* Debug */,
+				CEDCE0D524AAF4BE00105C18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDCE0D624AAF4BE00105C18 /* Build configuration list for PBXNativeTarget "MacroSports" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDCE0D724AAF4BE00105C18 /* Debug */,
+				CEDCE0D824AAF4BE00105C18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEDCE0B524AAF4B800105C18 /* Project object */;
+}

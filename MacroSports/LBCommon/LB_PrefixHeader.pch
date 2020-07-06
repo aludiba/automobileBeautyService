@@ -1,0 +1,12 @@
+//
+//  LB_PrefixHeader.pch
+//  Simple Diary
+//
+//  Created by bykj on 2019/7/20.
+//  Copyright © 2019 hgg. LBl rights reserved.
+//
+
+#ifndef LB_PrefixHeader_pch
+#define LB_PrefixHeader_pch
+#import "LBGlobal.h"
+#endif /* LB_PrefixHeader_pch */
