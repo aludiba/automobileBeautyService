@@ -17,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [AVOSCloud setApplicationId:@"H15qlfDi1SLCxryYbbjf7snN-MdYXbMMI" clientKey:@"nVywofsCh2sUR6MVqbIhRQnt"];
     self.LBwindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.LBwindow.backgroundColor = [UIColor whiteColor];
     self.LBwindow.rootViewController = [self LBrootController];

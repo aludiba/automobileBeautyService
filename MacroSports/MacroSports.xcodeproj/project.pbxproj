@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72C8DA4324B360AC00239310 /* LBSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C8DA4224B360AC00239310 /* LBSetTableViewCell.m */; };
+		72C8DA4624B362ED00239310 /* LBSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C8DA4524B362ED00239310 /* LBSetViewModel.m */; };
 		B60A6DDE0EBECFAE8314CB85 /* Pods_MacroSports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365881A90FFC260438753439 /* Pods_MacroSports.framework */; };
 		CEDC03AB24B0319800105C18 /* LBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03AA24B0319800105C18 /* LBBaseViewController.m */; };
 		CEDC03AE24B0339700105C18 /* LBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03AD24B0339700105C18 /* LBHomeViewController.m */; };
@@ -35,6 +37,10 @@
 
 /* Begin PBXFileReference section */
 		365881A90FFC260438753439 /* Pods_MacroSports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacroSports.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72C8DA4124B360AC00239310 /* LBSetTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBSetTableViewCell.h; sourceTree = "<group>"; };
+		72C8DA4224B360AC00239310 /* LBSetTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBSetTableViewCell.m; sourceTree = "<group>"; };
+		72C8DA4424B362ED00239310 /* LBSetViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBSetViewModel.h; sourceTree = "<group>"; };
+		72C8DA4524B362ED00239310 /* LBSetViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBSetViewModel.m; sourceTree = "<group>"; };
 		CEDC03A924B0319800105C18 /* LBBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBBaseViewController.h; sourceTree = "<group>"; };
 		CEDC03AA24B0319800105C18 /* LBBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBBaseViewController.m; sourceTree = "<group>"; };
 		CEDC03AC24B0339700105C18 /* LBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBHomeViewController.h; sourceTree = "<group>"; };
@@ -250,6 +256,8 @@
 		CEDC03A224B0275700105C18 /* LBModels */ = {
 			isa = PBXGroup;
 			children = (
+				72C8DA4424B362ED00239310 /* LBSetViewModel.h */,
+				72C8DA4524B362ED00239310 /* LBSetViewModel.m */,
 			);
 			path = LBModels;
 			sourceTree = "<group>";
@@ -257,6 +265,8 @@
 		CEDC03A324B0275700105C18 /* LBViews */ = {
 			isa = PBXGroup;
 			children = (
+				72C8DA4124B360AC00239310 /* LBSetTableViewCell.h */,
+				72C8DA4224B360AC00239310 /* LBSetTableViewCell.m */,
 			);
 			path = LBViews;
 			sourceTree = "<group>";
@@ -473,6 +483,7 @@
 				CEDC0C6D24B09CDC0017CE0C /* LBTeamAddTitleTableViewCell.m in Sources */,
 				CEDC03B424B035B800105C18 /* LBStopwatchViewController.m in Sources */,
 				CEDC03AB24B0319800105C18 /* LBBaseViewController.m in Sources */,
+				72C8DA4624B362ED00239310 /* LBSetViewModel.m in Sources */,
 				CEDC03CE24B0468500105C18 /* LBHomeHeaderView.m in Sources */,
 				CEDC03C824B040B600105C18 /* NSDictionary+log.m in Sources */,
 				CEDC03D124B0469E00105C18 /* LBHomeTableViewCell.m in Sources */,
@@ -483,6 +494,7 @@
 				CEDCE0D324AAF4BE00105C18 /* main.m in Sources */,
 				CEDC03C924B040B600105C18 /* NSArray+log.m in Sources */,
 				CEDC03B124B035A800105C18 /* LBSetViewController.m in Sources */,
+				72C8DA4324B360AC00239310 /* LBSetTableViewCell.m in Sources */,
 				CEDC0C6424B0868E0017CE0C /* LBMoreGamesViewController.m in Sources */,
 				CEDC03AE24B0339700105C18 /* LBHomeViewController.m in Sources */,
 				CEDC0C6724B08FDB0017CE0C /* LBTeamAddViewController.m in Sources */,
@@ -621,7 +633,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				GCC_PREFIX_HEADER = /Users/user/Desktop/HuJiaoFenApp/APPs/MacroSports/LBCommon/LB_PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LBCommon/LB_PrefixHeader.pch";
 				INFOPLIST_FILE = MacroSports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -639,7 +651,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				GCC_PREFIX_HEADER = /Users/user/Desktop/HuJiaoFenApp/APPs/MacroSports/LBCommon/LB_PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LBCommon/LB_PrefixHeader.pch";
 				INFOPLIST_FILE = MacroSports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

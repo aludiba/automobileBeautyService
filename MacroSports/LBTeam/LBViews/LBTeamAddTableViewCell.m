@@ -32,7 +32,7 @@
 - (void)LBSetContentLayout{
     [self.LBtitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.contentView).offset(16);
-        make.width.mas_equalTo(90);
+        make.width.mas_equalTo(100);
         make.top.equalTo(self.contentView).offset(20);
         make.height.mas_equalTo(24);
     }];
