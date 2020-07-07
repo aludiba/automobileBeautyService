@@ -7,10 +7,15 @@
 //
 
 #import "LBLoginViewController.h"
+#import "LBLoginModel.h"
+#import "LBLoginTextCell.h"
+#import "LBLoginActionTableViewCell.h"
 
 @interface LBLoginViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UIButton *LBCloseBtn;
 @property(nonatomic, strong)UITableView *LBmainTable;
+@property(nonatomic, strong)LBLoginModel *LBloginmodel;
+@property(nonatomic, assign)NSInteger LBIndexAction;
 @end
 
 @implementation LBLoginViewController
@@ -44,7 +49,31 @@
 }
 #pragma mark - UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 0;
+    return 3;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {
+        LBLoginTextCell *LBCell = [tableView dequeueReusableCellWithIdentifier:@"LBLoginTextCell" forIndexPath:indexPath];
+        LBCell.LBlogintype = LBLoginTypeAccount;
+        LBCell.LBModel = self.LBloginmodel;
+        LBCell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return LBCell;
+    }else if (indexPath.row == 1){
+        LBLoginTextCell *LBCell = [tableView dequeueReusableCellWithIdentifier:@"LBLoginTextCell" forIndexPath:indexPath];
+        LBCell.LBlogintype = LBLoginTypePassword;
+        LBCell.LBModel = self.LBloginmodel;
+        LBCell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return LBCell;
+    }else{
+       LBLoginActionTableViewCell *LBCell = [tableView dequeueReusableCellWithIdentifier:@"LBLoginActionTableViewCell" forIndexPath:indexPath];
+        LBCell.selectionStyle = UITableViewCellSelectionStyleNone;
+        LBWeakSelf(self);
+        LBCell.LBLoginActionB = ^(LBLoginActionTableViewCell * _Nonnull LBcell) {
+            LBStrongSelf(self);
+            self.LBIndexAction = LBcell.LBIndex;
+        };
+        return LBCell;
+    }
 }
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
@@ -55,6 +84,16 @@
     [self.view endEditing:YES];
 }
 #pragma mark - 属性懒加载
+- (LBLoginModel *)LBloginmodel{
+    if (!_LBloginmodel) {
+        _LBloginmodel = [[LBLoginModel alloc] init];
+        _LBloginmodel.LBAccountTitle = @"账号：";
+        _LBloginmodel.LBAccountDefault = @"请输入账号";
+        _LBloginmodel.LBPasswordTitle = @"密码：";
+        _LBloginmodel.LBPasswordDefault = @"请输入密码";
+    }
+    return _LBloginmodel;
+}
 - (UIButton *)LBCloseBtn{
     if (!_LBCloseBtn) {
         _LBCloseBtn = [[UIButton alloc] init];
@@ -76,6 +115,8 @@
         _LBmainTable.estimatedRowHeight = 55.0f;
         _LBmainTable.tableHeaderView = [[UIView alloc] init];
         _LBmainTable.tableFooterView = [[UIView alloc] init];
+        [_LBmainTable registerClass:[LBLoginTextCell class] forCellReuseIdentifier:@"LBLoginTextCell"];
+        [_LBmainTable registerClass:[LBLoginActionTableViewCell class] forCellReuseIdentifier:@"LBLoginActionTableViewCell"];
         UITapGestureRecognizer *LBsingleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(LBcloseKeyboard:)];
         LBsingleTapGesture.numberOfTapsRequired = 1;
         LBsingleTapGesture.cancelsTouchesInView = NO;

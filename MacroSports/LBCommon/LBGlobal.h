@@ -21,6 +21,8 @@
 //多语言调用
 #define TingYunAPPKey @"9eLB6a11cd3f4ba4b0182718541643a9"
 #define NSLocalizedString(key, comment) [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
+#define LBWeakSelf(type)  __weak typeof(type) weak##type = type;
+#define LBStrongSelf(type)  __strong typeof(type) type = weak##type;
 /**颜色*/
 #define LBH_Color(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
 #define LBKeyWindow [UIApplication sharedApplication].keyWindow
@@ -49,10 +51,4 @@
 #define LBHeightNavBar ((LBIS_IPHONE_X==YES || LBIS_IPHONE_Xr ==YES || LBIS_IPHONE_Xs== YES || LBIS_IPHONE_Xs_Max== YES) ? 88.0 : 64.0)
 #define LBHeightTabBar ((LBIS_IPHONE_X==YES || LBIS_IPHONE_Xr ==YES || LBIS_IPHONE_Xs == YES || LBIS_IPHONE_Xs_Max== YES) ? 83.0 : 49.0)
 #define LBHeightNavContentBar ((LBIS_IPHONE_X == YES || LBIS_IPHONE_Xr ==YES || LBIS_IPHONE_Xs == YES || LBIS_IPHONE_Xs_Max == YES)?34.0f: 0)
-typedef NS_ENUM(NSInteger, LBCargoType) {
-    LBCargoTypeWaitReceiving,
-    LBCargoTypeWaitLoading,
-    LBCargoTypeWaitDelivery,
-    LBCargoTypeCompleted,
-};
 #endif /* ALglobal_h */

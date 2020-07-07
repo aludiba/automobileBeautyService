@@ -7,6 +7,7 @@
 //
 
 #import "LBLoginTextCell.h"
+#import "LBLoginModel.h"
 
 @interface LBLoginTextCell ()<UITextFieldDelegate>
 @property(nonatomic, strong)UILabel *LBTitleLbl;
@@ -28,18 +29,52 @@
     [self.contentView addSubview:self.LBLine];
     
     [self.LBTitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.contentView).offset(16);
+        make.leading.equalTo(self.contentView).offset(64);
         make.centerY.equalTo(self.contentView);
         make.width.mas_equalTo(60);
         make.height.mas_equalTo(20);
     }];
     [self.LBTextFld mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.LBTitleLbl.mas_trailing);
-        make.trailing.equalTo(self.contentView).offset(-16);
-        make.top.equalTo(self.contentView).offset(5);
+        make.leading.equalTo(self.LBTitleLbl.mas_trailing).offset(16);
+        make.trailing.equalTo(self.contentView).offset(-32);
+        make.top.equalTo(self.contentView).offset(30);
         make.height.mas_equalTo(22);
-        make.bottom.equalTo(self.contentView).offset(-5);
+        make.bottom.equalTo(self.contentView).offset(-30);
     }];
+    [self.LBLine mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.contentView).offset(32);
+        make.bottom.equalTo(self.contentView);
+        make.trailing.equalTo(self.contentView).offset(-32);
+        make.height.mas_equalTo(1);
+    }];
+}
+- (void)setLBModel:(LBLoginModel *)LBModel{
+    _LBModel = LBModel;
+    if (self.LBlogintype == LBLoginTypeAccount) {
+        self.LBTextFld.text = _LBModel.LBAccount;
+        self.LBTitleLbl.text = _LBModel.LBAccountTitle;
+        self.LBTextFld.placeholder = _LBModel.LBAccountDefault;
+    }else{
+        self.LBTextFld.text = _LBModel.LBPassword;
+        self.LBTitleLbl.text = _LBModel.LBPasswordTitle;
+        self.LBTextFld.placeholder = _LBModel.LBPasswordDefault;
+    }
+}
+#pragma mark - UITextFieldDelegate
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    if (self.LBlogintype == LBLoginTypeAccount) {
+        self.LBModel.LBAccount = textField.text;
+    }else{
+        self.LBModel.LBPassword = textField.text;
+    }
+    return YES;
+}
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+    if (self.LBlogintype == LBLoginTypeAccount) {
+        self.LBModel.LBAccount = textField.text;
+    }else{
+        self.LBModel.LBPassword = textField.text;
+    }
 }
 #pragma mark - 属性懒加载
 - (UILabel *)LBTitleLbl{
@@ -63,7 +98,7 @@
 - (UIView *)LBLine{
     if (!_LBLine) {
         _LBLine = [[UIView alloc] init];
-        _LBLine.backgroundColor = LBH_Color(242, 242, 242, 1);
+        _LBLine.backgroundColor = LBH_Color(242, 242, 242, 242);
     }
     return _LBLine;
 }
