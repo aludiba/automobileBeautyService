@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AEFF88FD23497B2B00B81B11"
-               BuildableName = "PocketWineRemind.app"
+               BuildableName = "WineTimelyRemind.app"
                BlueprintName = "wineAwake"
                ReferencedContainer = "container:wineAwake.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AEFF88FD23497B2B00B81B11"
-            BuildableName = "PocketWineRemind.app"
+            BuildableName = "WineTimelyRemind.app"
             BlueprintName = "wineAwake"
             ReferencedContainer = "container:wineAwake.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AEFF88FD23497B2B00B81B11"
-            BuildableName = "PocketWineRemind.app"
+            BuildableName = "WineTimelyRemind.app"
             BlueprintName = "wineAwake"
             ReferencedContainer = "container:wineAwake.xcodeproj">
          </BuildableReference>

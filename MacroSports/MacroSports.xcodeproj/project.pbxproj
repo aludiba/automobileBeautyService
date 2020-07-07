@@ -11,6 +11,8 @@
 		72C8DA4624B362ED00239310 /* LBSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C8DA4524B362ED00239310 /* LBSetViewModel.m */; };
 		B60A6DDE0EBECFAE8314CB85 /* Pods_MacroSports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365881A90FFC260438753439 /* Pods_MacroSports.framework */; };
 		CE0A605A24B4407F009F76C6 /* LBAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A605924B4407F009F76C6 /* LBAboutUsViewController.m */; };
+		CE0A605D24B444BF009F76C6 /* LBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A605C24B444BF009F76C6 /* LBLoginViewController.m */; };
+		CE0A606024B44A52009F76C6 /* LBLoginTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A605F24B44A52009F76C6 /* LBLoginTextCell.m */; };
 		CEDC03AB24B0319800105C18 /* LBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03AA24B0319800105C18 /* LBBaseViewController.m */; };
 		CEDC03AE24B0339700105C18 /* LBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03AD24B0339700105C18 /* LBHomeViewController.m */; };
 		CEDC03B124B035A800105C18 /* LBSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03B024B035A800105C18 /* LBSetViewController.m */; };
@@ -44,6 +46,10 @@
 		72C8DA4524B362ED00239310 /* LBSetViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBSetViewModel.m; sourceTree = "<group>"; };
 		CE0A605824B4407F009F76C6 /* LBAboutUsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBAboutUsViewController.h; sourceTree = "<group>"; };
 		CE0A605924B4407F009F76C6 /* LBAboutUsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBAboutUsViewController.m; sourceTree = "<group>"; };
+		CE0A605B24B444BF009F76C6 /* LBLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBLoginViewController.h; sourceTree = "<group>"; };
+		CE0A605C24B444BF009F76C6 /* LBLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBLoginViewController.m; sourceTree = "<group>"; };
+		CE0A605E24B44A52009F76C6 /* LBLoginTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBLoginTextCell.h; sourceTree = "<group>"; };
+		CE0A605F24B44A52009F76C6 /* LBLoginTextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBLoginTextCell.m; sourceTree = "<group>"; };
 		CEDC03A924B0319800105C18 /* LBBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBBaseViewController.h; sourceTree = "<group>"; };
 		CEDC03AA24B0319800105C18 /* LBBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBBaseViewController.m; sourceTree = "<group>"; };
 		CEDC03AC24B0339700105C18 /* LBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBHomeViewController.h; sourceTree = "<group>"; };
@@ -254,6 +260,8 @@
 				CEDC03B024B035A800105C18 /* LBSetViewController.m */,
 				CE0A605824B4407F009F76C6 /* LBAboutUsViewController.h */,
 				CE0A605924B4407F009F76C6 /* LBAboutUsViewController.m */,
+				CE0A605B24B444BF009F76C6 /* LBLoginViewController.h */,
+				CE0A605C24B444BF009F76C6 /* LBLoginViewController.m */,
 			);
 			path = LBControllers;
 			sourceTree = "<group>";
@@ -272,6 +280,8 @@
 			children = (
 				72C8DA4124B360AC00239310 /* LBSetTableViewCell.h */,
 				72C8DA4224B360AC00239310 /* LBSetTableViewCell.m */,
+				CE0A605E24B44A52009F76C6 /* LBLoginTextCell.h */,
+				CE0A605F24B44A52009F76C6 /* LBLoginTextCell.m */,
 			);
 			path = LBViews;
 			sourceTree = "<group>";
@@ -488,6 +498,7 @@
 				CEDC0C6D24B09CDC0017CE0C /* LBTeamAddTitleTableViewCell.m in Sources */,
 				CE0A605A24B4407F009F76C6 /* LBAboutUsViewController.m in Sources */,
 				CEDC03B424B035B800105C18 /* LBStopwatchViewController.m in Sources */,
+				CE0A606024B44A52009F76C6 /* LBLoginTextCell.m in Sources */,
 				CEDC03AB24B0319800105C18 /* LBBaseViewController.m in Sources */,
 				72C8DA4624B362ED00239310 /* LBSetViewModel.m in Sources */,
 				CEDC03CE24B0468500105C18 /* LBHomeHeaderView.m in Sources */,
@@ -496,6 +507,7 @@
 				CEDC03CA24B040B600105C18 /* MBProgressHUD+LBNJ.m in Sources */,
 				CEDC03C524B040B600105C18 /* Reachability.m in Sources */,
 				CEDC03B724B035C900105C18 /* LBTeamViewController.m in Sources */,
+				CE0A605D24B444BF009F76C6 /* LBLoginViewController.m in Sources */,
 				CEDCE0C224AAF4B800105C18 /* AppDelegate.m in Sources */,
 				CEDCE0D324AAF4BE00105C18 /* main.m in Sources */,
 				CEDC03C924B040B600105C18 /* NSArray+log.m in Sources */,

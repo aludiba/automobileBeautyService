@@ -10,6 +10,7 @@
 #import "LBSetTableViewCell.h"
 #import "LBSetViewModel.h"
 #import "LBAboutUsViewController.h"
+#import "LBLoginViewController.h"
 @interface LBSetViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)NSMutableArray *LBViewDataArray;
 @property(nonatomic, strong)UIImageView *LBmainImgView;
@@ -67,7 +68,11 @@
     }else if (indexPath.row == 2){
         
     }else{
-        
+        LBLoginViewController *LBLoginVC = [[LBLoginViewController alloc] init];
+        LBLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
+        [self presentViewController:LBLoginVC animated:NO completion:^{
+            
+        }];
     }
 }
 #pragma mark - UIScrollViewDelegate
