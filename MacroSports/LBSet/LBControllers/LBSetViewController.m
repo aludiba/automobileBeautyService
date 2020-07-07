@@ -9,6 +9,7 @@
 #import "LBSetViewController.h"
 #import "LBSetTableViewCell.h"
 #import "LBSetViewModel.h"
+#import "LBAboutUsViewController.h"
 @interface LBSetViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)NSMutableArray *LBViewDataArray;
 @property(nonatomic, strong)UIImageView *LBmainImgView;
@@ -58,7 +59,16 @@
     return LBCell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    if (indexPath.row == 0) {
+        LBAboutUsViewController *LBAboutUsVC = [[LBAboutUsViewController alloc] init];
+        [self.navigationController pushViewController:LBAboutUsVC animated:YES];
+    }else if (indexPath.row == 1){
+        
+    }else if (indexPath.row == 2){
+        
+    }else{
+        
+    }
 }
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{

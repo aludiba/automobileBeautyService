@@ -10,6 +10,7 @@
 		72C8DA4324B360AC00239310 /* LBSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C8DA4224B360AC00239310 /* LBSetTableViewCell.m */; };
 		72C8DA4624B362ED00239310 /* LBSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C8DA4524B362ED00239310 /* LBSetViewModel.m */; };
 		B60A6DDE0EBECFAE8314CB85 /* Pods_MacroSports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365881A90FFC260438753439 /* Pods_MacroSports.framework */; };
+		CE0A605A24B4407F009F76C6 /* LBAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A605924B4407F009F76C6 /* LBAboutUsViewController.m */; };
 		CEDC03AB24B0319800105C18 /* LBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03AA24B0319800105C18 /* LBBaseViewController.m */; };
 		CEDC03AE24B0339700105C18 /* LBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03AD24B0339700105C18 /* LBHomeViewController.m */; };
 		CEDC03B124B035A800105C18 /* LBSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03B024B035A800105C18 /* LBSetViewController.m */; };
@@ -41,6 +42,8 @@
 		72C8DA4224B360AC00239310 /* LBSetTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBSetTableViewCell.m; sourceTree = "<group>"; };
 		72C8DA4424B362ED00239310 /* LBSetViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBSetViewModel.h; sourceTree = "<group>"; };
 		72C8DA4524B362ED00239310 /* LBSetViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBSetViewModel.m; sourceTree = "<group>"; };
+		CE0A605824B4407F009F76C6 /* LBAboutUsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBAboutUsViewController.h; sourceTree = "<group>"; };
+		CE0A605924B4407F009F76C6 /* LBAboutUsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBAboutUsViewController.m; sourceTree = "<group>"; };
 		CEDC03A924B0319800105C18 /* LBBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBBaseViewController.h; sourceTree = "<group>"; };
 		CEDC03AA24B0319800105C18 /* LBBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBBaseViewController.m; sourceTree = "<group>"; };
 		CEDC03AC24B0339700105C18 /* LBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBHomeViewController.h; sourceTree = "<group>"; };
@@ -249,6 +252,8 @@
 			children = (
 				CEDC03AF24B035A800105C18 /* LBSetViewController.h */,
 				CEDC03B024B035A800105C18 /* LBSetViewController.m */,
+				CE0A605824B4407F009F76C6 /* LBAboutUsViewController.h */,
+				CE0A605924B4407F009F76C6 /* LBAboutUsViewController.m */,
 			);
 			path = LBControllers;
 			sourceTree = "<group>";
@@ -481,6 +486,7 @@
 				CEDC03C724B040B600105C18 /* LBHBTool.m in Sources */,
 				CEDC0C6124B085700017CE0C /* LBCreateGameViewController.m in Sources */,
 				CEDC0C6D24B09CDC0017CE0C /* LBTeamAddTitleTableViewCell.m in Sources */,
+				CE0A605A24B4407F009F76C6 /* LBAboutUsViewController.m in Sources */,
 				CEDC03B424B035B800105C18 /* LBStopwatchViewController.m in Sources */,
 				CEDC03AB24B0319800105C18 /* LBBaseViewController.m in Sources */,
 				72C8DA4624B362ED00239310 /* LBSetViewModel.m in Sources */,
