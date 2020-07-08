@@ -9,10 +9,9 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-@class LBTeamAddTitleTableViewCell;
-typedef void(^LBTeamAddTitleBlock)(LBTeamAddTitleTableViewCell *cell);
+@class LBTeamModel;
 @interface LBTeamAddTitleTableViewCell : UITableViewCell
-@property(nonatomic, copy)LBTeamAddTitleBlock LBTeamAddTitleB;
+@property(nonatomic, strong)LBTeamModel *LBteammodel;
 @end
 
 NS_ASSUME_NONNULL_END

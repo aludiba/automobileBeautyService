@@ -7,6 +7,9 @@
 //
 
 #import "LBTeamAddTitleTableViewCell.h"
+#import "LBTeamModel.h"
+#import "NSString+LB.h"
+
 @interface LBTeamAddTitleTableViewCell()<UITextFieldDelegate>
 @property(nonatomic, strong)UILabel *LBTitleLbl;
 @property(nonatomic, strong)UITextField *LBContentTextField;
@@ -40,6 +43,18 @@
         make.height.mas_equalTo(40);
         make.bottom.equalTo(self.contentView).offset(-10);
     }];
+}
+#pragma mark - UITextFieldDelegate
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    NSString *LBstring = textField.text;
+    LBstring = [LBstring LBremoveSpaceAndNewline];
+    self.LBteammodel.LBteamName = LBstring;
+    return YES;
+}
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+    NSString *LBstring = textField.text;
+    LBstring = [LBstring LBremoveSpaceAndNewline];
+    self.LBteammodel.LBteamName = LBstring;
 }
 #pragma mark - 属性懒加载
 - (UILabel *)LBTitleLbl{

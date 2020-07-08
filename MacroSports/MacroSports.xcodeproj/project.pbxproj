@@ -21,6 +21,7 @@
 		CE0A607224B570A8009F76C6 /* LBFeedbackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A607124B570A8009F76C6 /* LBFeedbackModel.m */; };
 		CE0A607524B58750009F76C6 /* LBFeedbackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A607424B58750009F76C6 /* LBFeedbackTableViewCell.m */; };
 		CE0A607824B59BCA009F76C6 /* LBTeamModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A607724B59BCA009F76C6 /* LBTeamModel.m */; };
+		CE8E556924B5BCA50071F875 /* LBTeamListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E556824B5BCA50071F875 /* LBTeamListTableViewCell.m */; };
 		CEDC03AB24B0319800105C18 /* LBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03AA24B0319800105C18 /* LBBaseViewController.m */; };
 		CEDC03AE24B0339700105C18 /* LBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03AD24B0339700105C18 /* LBHomeViewController.m */; };
 		CEDC03B124B035A800105C18 /* LBSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03B024B035A800105C18 /* LBSetViewController.m */; };
@@ -74,6 +75,8 @@
 		CE0A607424B58750009F76C6 /* LBFeedbackTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBFeedbackTableViewCell.m; sourceTree = "<group>"; };
 		CE0A607624B59BCA009F76C6 /* LBTeamModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBTeamModel.h; sourceTree = "<group>"; };
 		CE0A607724B59BCA009F76C6 /* LBTeamModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBTeamModel.m; sourceTree = "<group>"; };
+		CE8E556724B5BCA50071F875 /* LBTeamListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBTeamListTableViewCell.h; sourceTree = "<group>"; };
+		CE8E556824B5BCA50071F875 /* LBTeamListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBTeamListTableViewCell.m; sourceTree = "<group>"; };
 		CEDC03A924B0319800105C18 /* LBBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBBaseViewController.h; sourceTree = "<group>"; };
 		CEDC03AA24B0319800105C18 /* LBBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBBaseViewController.m; sourceTree = "<group>"; };
 		CEDC03AC24B0339700105C18 /* LBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBHomeViewController.h; sourceTree = "<group>"; };
@@ -265,6 +268,8 @@
 				CEDC0C6C24B09CDC0017CE0C /* LBTeamAddTitleTableViewCell.m */,
 				CEDC0C6824B0920B0017CE0C /* LBTeamAddTableViewCell.h */,
 				CEDC0C6924B0920B0017CE0C /* LBTeamAddTableViewCell.m */,
+				CE8E556724B5BCA50071F875 /* LBTeamListTableViewCell.h */,
+				CE8E556824B5BCA50071F875 /* LBTeamListTableViewCell.m */,
 			);
 			path = LBViews;
 			sourceTree = "<group>";
@@ -556,6 +561,7 @@
 				CE0A606924B5603A009F76C6 /* NSString+LB.m in Sources */,
 				CEDCE0C224AAF4B800105C18 /* AppDelegate.m in Sources */,
 				CEDCE0D324AAF4BE00105C18 /* main.m in Sources */,
+				CE8E556924B5BCA50071F875 /* LBTeamListTableViewCell.m in Sources */,
 				CEDC03C924B040B600105C18 /* NSArray+log.m in Sources */,
 				CEDC03B124B035A800105C18 /* LBSetViewController.m in Sources */,
 				72C8DA4324B360AC00239310 /* LBSetTableViewCell.m in Sources */,

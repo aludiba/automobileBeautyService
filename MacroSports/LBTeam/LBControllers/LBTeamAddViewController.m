@@ -60,8 +60,35 @@
         make.height.mas_equalTo(60);
     }];
 }
-- (void)LBAddAction:(UIButton *)sender{
-    NSLog(@"添加球队~~~");
+- (void)LBAddTeamAction:(UIButton *)sender{
+    [self.view endEditing:YES];
+    if (!self.LBteammodel.LBteamName.length) {
+        [MBProgressHUD LBshowReminderText:@"请输入队伍名称"];
+        return;
+    }
+    if (!self.LBteammodel.LBnote.length) {
+        [MBProgressHUD LBshowReminderText:@"请输入备注"];
+        return;
+    }
+    NSMutableDictionary *LBjsonDictionary = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[self.LBteammodel yy_modelToJSONObject]];
+    AVUser *LBauthor = [AVUser currentUser];
+    AVObject *LBdataList = [AVObject objectWithClassName:@"LBteamList"];
+        for (NSString *key in LBjsonDictionary.allKeys) {
+            [LBdataList setObject:[LBjsonDictionary objectForKey:key]  forKey:key];
+        }
+        [LBdataList setObject:LBauthor forKey:@"author"];
+        [LBdataList saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
+            if (isSuccessful) {
+                //创建成功后的动作
+                [MBProgressHUD LBshowReminderText:@"添加成功"];
+                [self.navigationController popViewControllerAnimated:YES];
+            } else if (error){
+                //发生错误后的动作
+                [MBProgressHUD LBshowReminderText:@"请稍后重试"];
+            } else {
+                [MBProgressHUD LBshowReminderText:@"请稍后重试"];
+            }
+        }];
 }
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
@@ -82,6 +109,7 @@
     if (indexPath.row == 0) {
         LBTeamAddTitleTableViewCell *LBCell = [tableView dequeueReusableCellWithIdentifier:@"LBTeamAddTitleTableViewCell" forIndexPath:indexPath];
         LBCell.selectionStyle = UITableViewCellSelectionStyleNone;
+        LBCell.LBteammodel = self.LBteammodel;
         return LBCell;
     }else{
         NSString *LBKMyCellID = @"LBTeamAddTableViewCell";
@@ -92,8 +120,9 @@
         }
         LBcell.LBViewModel = self.LBTeamAddviewmodel;
         LBcell.selectionStyle = UITableViewCellSelectionStyleNone;
-        __weak typeof(self) weakSelf = self;
+        LBWeakSelf(self);
         LBcell.LBTeamAddTableEditB = ^(LBTeamAddTableViewCell * _Nonnull cell) {
+            LBStrongSelf(self);
             if (LBcell.LBcontentHeight > self.LBTeamAddviewmodel.LBEditHeight) {
             [UIView animateWithDuration:0.2 animations:^{
                 CGRect LBframe = self.view.frame;
@@ -102,8 +131,9 @@
             }];
             }
             self.LBTeamAddviewmodel.LBEditHeight = cell.LBcontentHeight;
-            [weakSelf.LBmainTable beginUpdates];
-            [weakSelf.LBmainTable endUpdates];
+            self.LBteammodel.LBnote = self.LBTeamAddviewmodel.LBContent;
+            [self.LBmainTable beginUpdates];
+            [self.LBmainTable endUpdates];
         };
         return LBcell;
     }
@@ -142,7 +172,7 @@
         [_LBAddBtn setTitle:@"添加球队" forState:UIControlStateNormal];
         _LBAddBtn.layer.cornerRadius = 8.0f;
         _LBAddBtn.layer.masksToBounds = YES;
-        [_LBAddBtn addTarget:self action:@selector(LBAddAction:) forControlEvents:UIControlEventTouchUpInside];
+        [_LBAddBtn addTarget:self action:@selector(LBAddTeamAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _LBAddBtn;
 }
