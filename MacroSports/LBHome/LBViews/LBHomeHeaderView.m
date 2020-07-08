@@ -39,6 +39,7 @@
 }
 #pragma mark - actions
 - (void)setContentView{
+    self.contentView.backgroundColor = [UIColor whiteColor];
     [self.contentView addSubview:self.LBHeaderImgView];
     [self.contentView addSubview:self.LBTeamBtn];
     [self.LBTeamBtn addSubview:self.LBTeamLbl];

@@ -22,6 +22,8 @@
 		CE0A607524B58750009F76C6 /* LBFeedbackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A607424B58750009F76C6 /* LBFeedbackTableViewCell.m */; };
 		CE0A607824B59BCA009F76C6 /* LBTeamModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A607724B59BCA009F76C6 /* LBTeamModel.m */; };
 		CE8E556924B5BCA50071F875 /* LBTeamListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E556824B5BCA50071F875 /* LBTeamListTableViewCell.m */; };
+		CE8E556C24B5D1C60071F875 /* LBGameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E556B24B5D1C60071F875 /* LBGameTableViewCell.m */; };
+		CE8E556F24B5D1E10071F875 /* LBGameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E556E24B5D1E10071F875 /* LBGameModel.m */; };
 		CEDC03AB24B0319800105C18 /* LBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03AA24B0319800105C18 /* LBBaseViewController.m */; };
 		CEDC03AE24B0339700105C18 /* LBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03AD24B0339700105C18 /* LBHomeViewController.m */; };
 		CEDC03B124B035A800105C18 /* LBSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03B024B035A800105C18 /* LBSetViewController.m */; };
@@ -77,6 +79,10 @@
 		CE0A607724B59BCA009F76C6 /* LBTeamModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBTeamModel.m; sourceTree = "<group>"; };
 		CE8E556724B5BCA50071F875 /* LBTeamListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBTeamListTableViewCell.h; sourceTree = "<group>"; };
 		CE8E556824B5BCA50071F875 /* LBTeamListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBTeamListTableViewCell.m; sourceTree = "<group>"; };
+		CE8E556A24B5D1C60071F875 /* LBGameTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LBGameTableViewCell.h; path = LBTeam/LBViews/LBGameTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		CE8E556B24B5D1C60071F875 /* LBGameTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LBGameTableViewCell.m; path = LBTeam/LBViews/LBGameTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		CE8E556D24B5D1E10071F875 /* LBGameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LBGameModel.h; path = LBTeam/LBViews/LBGameModel.h; sourceTree = SOURCE_ROOT; };
+		CE8E556E24B5D1E10071F875 /* LBGameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LBGameModel.m; path = LBTeam/LBViews/LBGameModel.m; sourceTree = SOURCE_ROOT; };
 		CEDC03A924B0319800105C18 /* LBBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBBaseViewController.h; sourceTree = "<group>"; };
 		CEDC03AA24B0319800105C18 /* LBBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBBaseViewController.m; sourceTree = "<group>"; };
 		CEDC03AC24B0339700105C18 /* LBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBHomeViewController.h; sourceTree = "<group>"; };
@@ -351,6 +357,8 @@
 		CEDC03A624B0275700105C18 /* LBModels */ = {
 			isa = PBXGroup;
 			children = (
+				CE8E556D24B5D1E10071F875 /* LBGameModel.h */,
+				CE8E556E24B5D1E10071F875 /* LBGameModel.m */,
 			);
 			path = LBModels;
 			sourceTree = "<group>";
@@ -358,6 +366,8 @@
 		CEDC03A724B0275700105C18 /* LBViews */ = {
 			isa = PBXGroup;
 			children = (
+				CE8E556A24B5D1C60071F875 /* LBGameTableViewCell.h */,
+				CE8E556B24B5D1C60071F875 /* LBGameTableViewCell.m */,
 			);
 			path = LBViews;
 			sourceTree = "<group>";
@@ -556,12 +566,14 @@
 				CEDC03CA24B040B600105C18 /* MBProgressHUD+LBNJ.m in Sources */,
 				CEDC03C524B040B600105C18 /* Reachability.m in Sources */,
 				CE0A607224B570A8009F76C6 /* LBFeedbackModel.m in Sources */,
+				CE8E556C24B5D1C60071F875 /* LBGameTableViewCell.m in Sources */,
 				CEDC03B724B035C900105C18 /* LBTeamViewController.m in Sources */,
 				CE0A605D24B444BF009F76C6 /* LBLoginViewController.m in Sources */,
 				CE0A606924B5603A009F76C6 /* NSString+LB.m in Sources */,
 				CEDCE0C224AAF4B800105C18 /* AppDelegate.m in Sources */,
 				CEDCE0D324AAF4BE00105C18 /* main.m in Sources */,
 				CE8E556924B5BCA50071F875 /* LBTeamListTableViewCell.m in Sources */,
+				CE8E556F24B5D1E10071F875 /* LBGameModel.m in Sources */,
 				CEDC03C924B040B600105C18 /* NSArray+log.m in Sources */,
 				CEDC03B124B035A800105C18 /* LBSetViewController.m in Sources */,
 				72C8DA4324B360AC00239310 /* LBSetTableViewCell.m in Sources */,
