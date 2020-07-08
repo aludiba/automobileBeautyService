@@ -37,11 +37,11 @@
 }
 - (void)LBloadDataAction{
     AVUser *LBauthor = [AVUser currentUser];
-    AVQuery *LBbquery = [AVQuery queryWithClassName:@"LBteamList"];
-    [LBbquery whereKey:@"author" equalTo:LBauthor];
+    AVQuery *LBdataList = [AVQuery queryWithClassName:@"LBteamList"];
+    [LBdataList whereKey:@"author" equalTo:LBauthor];
     __weak typeof(self) weakSelf = self;
     [self.LBdataArray removeAllObjects];
-    [LBbquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+    [LBdataList findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
                if (error) {
                    [weakSelf.LBmainTable.mj_header endRefreshing];
                    [MBProgressHUD LBshowReminderText:@"请稍后重试"];
@@ -65,7 +65,18 @@
            }];
 }
 - (void)LBdeleteDataAction:(LBTeamModel *)LBteammodel{
-    
+    AVObject *LBdataList = [AVObject objectWithClassName:@"LBteamList" objectId:LBteammodel.LBobjectId];
+    LBWeakSelf(self);
+    [LBdataList deleteInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
+        LBStrongSelf(self);
+    if (isSuccessful) {
+         //删除成功后的动作
+        [MBProgressHUD LBshowReminderText:@"删除成功"];
+        [self.LBdataArray removeObject:LBteammodel];
+    }else {
+        [MBProgressHUD LBshowReminderText:@"请稍后重试"];
+    }
+    }];
 }
 #pragma mark - UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
