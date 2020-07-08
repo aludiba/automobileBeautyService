@@ -36,7 +36,7 @@
         make.top.equalTo(self.contentView).offset(15);
         make.leading.equalTo(self.LBTitleLbl.mas_trailing);
         make.trailing.equalTo(self.contentView).offset(-16);
-        make.height.mas_equalTo(30);
+        make.height.mas_equalTo(36);
         make.bottom.equalTo(self.contentView).offset(-15);
     }];
 }

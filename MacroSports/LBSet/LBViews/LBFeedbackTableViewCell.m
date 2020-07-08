@@ -34,7 +34,7 @@
         make.leading.equalTo(self.contentView).offset(16);
         make.trailing.equalTo(self.contentView).offset(-16);
         make.top.equalTo(self.LBtitleLbl.mas_bottom).offset(20);
-        make.height.mas_equalTo(200);
+        make.height.mas_equalTo(220);
         make.bottom.equalTo(self.contentView).offset(-30);
     }];
 }
@@ -42,6 +42,15 @@
     _LBfeedbackmodel = LBfeedbackmodel;
     if (_LBfeedbackmodel.LBFeedback) {
         self.LBtitleLbl.text = _LBfeedbackmodel.LBFeedback;
+    }
+}
+#pragma mark - UITextViewDelegate
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    return YES;
+}
+- (void)textViewDidChange:(UITextView *)textView {
+    if (textView.text) {
+        self.LBfeedbackmodel.LBFeedbackContent = textView.text;
     }
 }
 #pragma mark - 属性懒加载
