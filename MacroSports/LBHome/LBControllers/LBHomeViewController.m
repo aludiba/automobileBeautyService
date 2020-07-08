@@ -15,6 +15,7 @@
 #import "LBStopwatchViewController.h"
 #import "LBCreateGameViewController.h"
 #import "LBMoreGamesViewController.h"
+#import "LBLoginViewController.h"
 @interface LBHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UIButton *LBSetBtn;//设置按钮
 @property(nonatomic, strong)UITableView *LBmainTable;//列表
@@ -67,21 +68,66 @@
     LBHomeHeaderView *LBHeader = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"LBHomeHeaderView"];
     LBHeader.LBHeaderActionBlock = ^(LBHomeHeaderView * _Nonnull header) {
         if (header.LBIndex == 99) {
-            NSLog(@"球队~~~");
+            AVUser *LBbUser = [AVUser currentUser];
+            if (LBbUser) {
             LBTeamViewController *LBTeamVC = [[LBTeamViewController alloc] init];
             [self.navigationController pushViewController:LBTeamVC animated:YES];
+            }else{
+                UIAlertController *LBalertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
+                    UIAlertAction *LBcancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+                    UIAlertAction *LBsureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                        LBLoginViewController *LBLoginVC = [[LBLoginViewController alloc] init];
+                        LBLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
+                        [self presentViewController:LBLoginVC animated:YES completion:^{
+                            
+                        }];
+                    }];
+                    [LBalertVC addAction:LBcancelAction];
+                    [LBalertVC addAction:LBsureAction];
+                    [self presentViewController:LBalertVC animated:YES completion:nil];
+                }
         }else if (header.LBIndex == 100){
             NSLog(@"秒表~~~");
             LBStopwatchViewController *LBStopwatchVC = [[LBStopwatchViewController alloc] init];
             [self.navigationController pushViewController:LBStopwatchVC animated:YES];
         }else if (header.LBIndex == 101){
-            NSLog(@"创建比赛~~~");
+            AVUser *LBbUser = [AVUser currentUser];
+            if (LBbUser) {
             LBCreateGameViewController *LBCreateGameVC = [[LBCreateGameViewController alloc] init];
             [self.navigationController pushViewController:LBCreateGameVC animated:YES];
+            }else{
+                UIAlertController *LBalertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
+                    UIAlertAction *LBcancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+                    UIAlertAction *LBsureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                        LBLoginViewController *LBLoginVC = [[LBLoginViewController alloc] init];
+                        LBLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
+                        [self presentViewController:LBLoginVC animated:YES completion:^{
+                            
+                        }];
+                    }];
+                    [LBalertVC addAction:LBcancelAction];
+                    [LBalertVC addAction:LBsureAction];
+                    [self presentViewController:LBalertVC animated:YES completion:nil];
+                }
         }else{
-            NSLog(@"更多比赛~~~");
+            AVUser *LBbUser = [AVUser currentUser];
+             if (LBbUser) {
             LBMoreGamesViewController *LBMoreGamesVC = [[LBMoreGamesViewController alloc] init];
-            [self.navigationController pushViewController:LBMoreGamesVC animated:YES];
+             [self.navigationController pushViewController:LBMoreGamesVC animated:YES];
+             }else{
+                 UIAlertController *LBalertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
+                     UIAlertAction *LBcancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+                     UIAlertAction *LBsureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                         LBLoginViewController *LBLoginVC = [[LBLoginViewController alloc] init];
+                         LBLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
+                         [self presentViewController:LBLoginVC animated:YES completion:^{
+                             
+                         }];
+                     }];
+                     [LBalertVC addAction:LBcancelAction];
+                     [LBalertVC addAction:LBsureAction];
+                     [self presentViewController:LBalertVC animated:YES completion:nil];
+                 }
         }
     };
     return LBHeader;

@@ -7,18 +7,11 @@
 //
 
 #import "LBTeamListTableViewCell.h"
+#import "LBTeamModel.h"
+@interface LBTeamListTableViewCell()
 
+@end
 @implementation LBTeamListTableViewCell
-
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
+#pragma mark - 属性懒加载
 
 @end

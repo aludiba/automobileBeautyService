@@ -53,8 +53,24 @@
 }
 #pragma mark - 意见反馈
 - (void)LBfeedbackAction{
+    AVUser *LBbUser = [AVUser currentUser];
+    if (LBbUser) {
     LBFeedbackViewController *LBFeedbackVC = [[LBFeedbackViewController alloc] init];
     [self.navigationController pushViewController:LBFeedbackVC animated:YES];
+    }else{
+        UIAlertController *LBalertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *LBcancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+            UIAlertAction *LBsureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                LBLoginViewController *LBLoginVC = [[LBLoginViewController alloc] init];
+                LBLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
+                [self presentViewController:LBLoginVC animated:YES completion:^{
+                    
+                }];
+            }];
+            [LBalertVC addAction:LBcancelAction];
+            [LBalertVC addAction:LBsureAction];
+            [self presentViewController:LBalertVC animated:YES completion:nil];
+        }
 }
 #pragma mark - 分享
 - (void)LBDqdshareAction{
@@ -67,6 +83,7 @@
 }
 #pragma mark - 退出登录
 - (void)LBlogOutAction{
+    [AVUser logOut];
     LBLoginViewController *LBLoginVC = [[LBLoginViewController alloc] init];
     LBLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:LBLoginVC animated:NO completion:^{

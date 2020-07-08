@@ -8,9 +8,13 @@
 
 #import "LBTeamViewController.h"
 #import "LBTeamAddViewController.h"
+#import "LBTeamListTableViewCell.h"
+#import "LBTeamModel.h"
 
-@interface LBTeamViewController ()
+@interface LBTeamViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UIButton *LBAddBtn;
+@property(nonatomic, strong)NSMutableArray *LBdataArray;
+@property(nonatomic, strong)UITableView *LBmainTable;
 @end
 
 @implementation LBTeamViewController
@@ -27,9 +31,11 @@
 }
 #pragma mark - actions
 - (void)LBRightButtonAction{
-    NSLog(@"新增球队~~~");
     LBTeamAddViewController *LBTeamAddVC = [[LBTeamAddViewController alloc] init];
     [self.navigationController pushViewController:LBTeamAddVC animated:YES];
+}
+- (void)LBloadDataAction{
+    
 }
 #pragma mark - 属性懒加载
 - (UIButton *)LBAddBtn{
@@ -39,5 +45,31 @@
         [_LBAddBtn addTarget:self action:@selector(LBRightButtonAction) forControlEvents:UIControlEventTouchUpInside];
     }
     return _LBAddBtn;
+}
+- (NSMutableArray *)LBdataArray{
+    if (!_LBdataArray) {
+        _LBdataArray = [[NSMutableArray alloc] init];
+    }
+    return _LBdataArray;
+}
+- (UITableView *)LBmainTable{
+    if (!_LBmainTable) {
+        _LBmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+        _LBmainTable.rowHeight = UITableViewAutomaticDimension;
+        _LBmainTable.estimatedRowHeight = 48.0f;
+        _LBmainTable.dataSource = self;
+        _LBmainTable.delegate = self;
+        _LBmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
+        [_LBmainTable registerClass:[LBTeamListTableViewCell class] forCellReuseIdentifier:@"LBTeamListTableViewCell"];
+        _LBmainTable.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(LBloadDataAction)];
+        [self.view addSubview:_LBmainTable];
+        [_LBmainTable mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.view);
+            make.top.equalTo(self.mas_topLayoutGuideBottom);
+            make.trailing.equalTo(self.view);
+            make.bottom.equalTo(self.view);
+        }];
+    }
+    return _LBmainTable;
 }
 @end

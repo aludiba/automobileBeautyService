@@ -51,10 +51,12 @@
 - (void)setLBModel:(LBLoginModel *)LBModel{
     _LBModel = LBModel;
     if (self.LBlogintype == LBLoginTypeAccount) {
+        self.LBTextFld.secureTextEntry = NO;
         self.LBTextFld.text = _LBModel.LBAccount;
         self.LBTitleLbl.text = _LBModel.LBAccountTitle;
         self.LBTextFld.placeholder = _LBModel.LBAccountDefault;
     }else{
+        self.LBTextFld.secureTextEntry = YES;
         self.LBTextFld.text = _LBModel.LBPassword;
         self.LBTitleLbl.text = _LBModel.LBPasswordTitle;
         self.LBTextFld.placeholder = _LBModel.LBPasswordDefault;
