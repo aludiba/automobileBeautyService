@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LBTeamModel : NSObject
+@property(nonatomic, copy)NSString *LBobjectId;
 @property(nonatomic, copy)NSString *LBteamName;
 @property(nonatomic, copy)NSString *LBnote;
 @end

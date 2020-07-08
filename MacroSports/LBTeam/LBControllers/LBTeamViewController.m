@@ -14,7 +14,6 @@
 @interface LBTeamViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UIButton *LBAddBtn;
 @property(nonatomic, strong)NSMutableArray *LBdataArray;
-@property(nonatomic, strong)UITableView *LBmainTable;
 @end
 
 @implementation LBTeamViewController
@@ -23,6 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"球队";
+    [self.LBmainTable.mj_header beginRefreshing];
 }
 - (void)LB_setupNavigationItems{
     [super LB_setupNavigationItems];
@@ -32,10 +32,69 @@
 #pragma mark - actions
 - (void)LBRightButtonAction{
     LBTeamAddViewController *LBTeamAddVC = [[LBTeamAddViewController alloc] init];
+    LBTeamAddVC.LBsuperVC = self;
     [self.navigationController pushViewController:LBTeamAddVC animated:YES];
 }
 - (void)LBloadDataAction{
+    AVUser *LBauthor = [AVUser currentUser];
+    AVQuery *LBbquery = [AVQuery queryWithClassName:@"LBteamList"];
+    [LBbquery whereKey:@"author" equalTo:LBauthor];
+    __weak typeof(self) weakSelf = self;
+    [self.LBdataArray removeAllObjects];
+    [LBbquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+               if (error) {
+                   [weakSelf.LBmainTable.mj_header endRefreshing];
+                   [MBProgressHUD LBshowReminderText:@"请稍后重试"];
+               }else{
+                   if (array.count) {
+                   for (int i = (int)(array.count - 1); i > -1; i--) {
+                       AVObject *LBobj = array[i];
+                       LBTeamModel *LBmodel = [[LBTeamModel alloc] init];
+                       LBmodel.LBobjectId = [LBobj objectId];
+                       LBmodel.LBteamName = [LBobj objectForKey:@"LBteamName"];
+                       LBmodel.LBnote = [LBobj objectForKey:@"LBnote"];
+                       [self.LBdataArray addObject:LBmodel];
+                   }
+                    [weakSelf.LBmainTable.mj_header endRefreshing];
+                    [weakSelf.LBmainTable reloadData];
+                   }else{
+                       [weakSelf.LBmainTable.mj_header endRefreshing];
+                       [MBProgressHUD LBshowReminderText:@"暂无数据"];
+                   }
+              }
+           }];
+}
+- (void)LBdeleteDataAction:(LBTeamModel *)LBteammodel{
     
+}
+#pragma mark - UITableViewDelegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.LBdataArray.count;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    LBTeamModel *LBteamodel = self.LBdataArray[indexPath.row];
+    LBTeamListTableViewCell *LBcell = [tableView dequeueReusableCellWithIdentifier:@"LBTeamListTableViewCell" forIndexPath:indexPath];
+    LBcell.selectionStyle = UITableViewCellSelectionStyleNone;
+    LBcell.LBteammodel = LBteamodel;
+    return LBcell;
+}
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return YES;
+}
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return UITableViewCellEditingStyleDelete;
+}
+-(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath{
+   return @"删除";
+}
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    LBTeamModel *LBmodel = self.LBdataArray[indexPath.row];
+    if(editingStyle == UITableViewCellEditingStyleDelete){
+        [self.LBdataArray removeObjectAtIndex:indexPath.row];
+        [self LBdeleteDataAction:LBmodel];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
 }
 #pragma mark - 属性懒加载
 - (UIButton *)LBAddBtn{
@@ -54,7 +113,7 @@
 }
 - (UITableView *)LBmainTable{
     if (!_LBmainTable) {
-        _LBmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+        _LBmainTable = [[UITableView alloc] init];
         _LBmainTable.rowHeight = UITableViewAutomaticDimension;
         _LBmainTable.estimatedRowHeight = 48.0f;
         _LBmainTable.dataSource = self;

@@ -11,6 +11,7 @@
 #import "LBTeamAddTableViewCell.h"
 #import "LBTeamAddViewModel.h"
 #import "LBTeamModel.h"
+#import "LBTeamViewController.h"
 
 @interface LBTeamAddViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UITableView *LBmainTable;//列表
@@ -81,6 +82,7 @@
             if (isSuccessful) {
                 //创建成功后的动作
                 [MBProgressHUD LBshowReminderText:@"添加成功"];
+                [self.LBsuperVC.LBmainTable.mj_header beginRefreshing];
                 [self.navigationController popViewControllerAnimated:YES];
             } else if (error){
                 //发生错误后的动作

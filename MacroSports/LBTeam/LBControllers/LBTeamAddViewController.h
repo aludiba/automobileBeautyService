@@ -9,9 +9,9 @@
 #import "LBBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class LBTeamViewController;
 @interface LBTeamAddViewController : LBBaseViewController
-
+@property(nonatomic, strong)LBTeamViewController *LBsuperVC;
 @end
 
 NS_ASSUME_NONNULL_END

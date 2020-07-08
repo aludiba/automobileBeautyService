@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LBTeamViewController : LBBaseViewController
-
+@property(nonatomic, strong)UITableView *LBmainTable;
 @end
 
 NS_ASSUME_NONNULL_END

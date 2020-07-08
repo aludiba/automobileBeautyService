@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @class LBTeamModel;
 @interface LBTeamListTableViewCell : UITableViewCell
-
+@property(nonatomic, strong)LBTeamModel *LBteammodel;
 @end
 
 NS_ASSUME_NONNULL_END
