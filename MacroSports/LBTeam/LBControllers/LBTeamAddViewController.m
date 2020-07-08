@@ -10,12 +10,13 @@
 #import "LBTeamAddTitleTableViewCell.h"
 #import "LBTeamAddTableViewCell.h"
 #import "LBTeamAddViewModel.h"
+#import "LBTeamModel.h"
 
 @interface LBTeamAddViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UITableView *LBmainTable;//列表
 @property(nonatomic, strong)UIButton *LBAddBtn;//添加按钮
 @property(nonatomic, strong)LBTeamAddViewModel *LBTeamAddviewmodel;//添加按钮
-
+@property(nonatomic, strong)LBTeamModel *LBteammodel;//队伍数据模型
 @end
 
 @implementation LBTeamAddViewController
@@ -152,5 +153,11 @@
         _LBTeamAddviewmodel.LBDefault = @"请输入备注";
     }
     return _LBTeamAddviewmodel;
+}
+- (LBTeamModel *)LBteammodel{
+    if (!_LBteammodel) {
+        _LBteammodel = [[LBTeamModel alloc] init];
+    }
+    return _LBteammodel;
 }
 @end
