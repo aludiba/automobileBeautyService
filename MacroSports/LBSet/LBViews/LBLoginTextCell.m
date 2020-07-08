@@ -8,7 +8,7 @@
 
 #import "LBLoginTextCell.h"
 #import "LBLoginModel.h"
-
+#import "NSString+LB.h"
 @interface LBLoginTextCell ()<UITextFieldDelegate>
 @property(nonatomic, strong)UILabel *LBTitleLbl;
 @property(nonatomic, strong)UITextField *LBTextFld;
@@ -62,18 +62,22 @@
 }
 #pragma mark - UITextFieldDelegate
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    NSString *LBstring = textField.text;
+    LBstring = [LBstring LBremoveSpaceAndNewline];
     if (self.LBlogintype == LBLoginTypeAccount) {
-        self.LBModel.LBAccount = textField.text;
+        self.LBModel.LBAccount = LBstring;
     }else{
-        self.LBModel.LBPassword = textField.text;
+        self.LBModel.LBPassword = LBstring;
     }
     return YES;
 }
 - (void)textFieldDidEndEditing:(UITextField *)textField{
+    NSString *LBstring = textField.text;
+    LBstring = [LBstring LBremoveSpaceAndNewline];
     if (self.LBlogintype == LBLoginTypeAccount) {
-        self.LBModel.LBAccount = textField.text;
+        self.LBModel.LBAccount = LBstring;
     }else{
-        self.LBModel.LBPassword = textField.text;
+        self.LBModel.LBPassword = LBstring;
     }
 }
 #pragma mark - 属性懒加载

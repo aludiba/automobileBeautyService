@@ -15,6 +15,8 @@
 		CE0A606024B44A52009F76C6 /* LBLoginTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A605F24B44A52009F76C6 /* LBLoginTextCell.m */; };
 		CE0A606324B454A7009F76C6 /* LBLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A606224B454A7009F76C6 /* LBLoginModel.m */; };
 		CE0A606624B48265009F76C6 /* LBLoginActionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A606524B48265009F76C6 /* LBLoginActionTableViewCell.m */; };
+		CE0A606924B5603A009F76C6 /* NSString+LB.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A606824B5603A009F76C6 /* NSString+LB.m */; };
+		CE0A606C24B56A7B009F76C6 /* LBFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A606B24B56A7B009F76C6 /* LBFeedbackViewController.m */; };
 		CEDC03AB24B0319800105C18 /* LBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03AA24B0319800105C18 /* LBBaseViewController.m */; };
 		CEDC03AE24B0339700105C18 /* LBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03AD24B0339700105C18 /* LBHomeViewController.m */; };
 		CEDC03B124B035A800105C18 /* LBSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03B024B035A800105C18 /* LBSetViewController.m */; };
@@ -56,6 +58,10 @@
 		CE0A606224B454A7009F76C6 /* LBLoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBLoginModel.m; sourceTree = "<group>"; };
 		CE0A606424B48265009F76C6 /* LBLoginActionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBLoginActionTableViewCell.h; sourceTree = "<group>"; };
 		CE0A606524B48265009F76C6 /* LBLoginActionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBLoginActionTableViewCell.m; sourceTree = "<group>"; };
+		CE0A606724B5603A009F76C6 /* NSString+LB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LB.h"; sourceTree = "<group>"; };
+		CE0A606824B5603A009F76C6 /* NSString+LB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LB.m"; sourceTree = "<group>"; };
+		CE0A606A24B56A7B009F76C6 /* LBFeedbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBFeedbackViewController.h; sourceTree = "<group>"; };
+		CE0A606B24B56A7B009F76C6 /* LBFeedbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBFeedbackViewController.m; sourceTree = "<group>"; };
 		CEDC03A924B0319800105C18 /* LBBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBBaseViewController.h; sourceTree = "<group>"; };
 		CEDC03AA24B0319800105C18 /* LBBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBBaseViewController.m; sourceTree = "<group>"; };
 		CEDC03AC24B0339700105C18 /* LBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBHomeViewController.h; sourceTree = "<group>"; };
@@ -96,7 +102,7 @@
 		CEDC0C6C24B09CDC0017CE0C /* LBTeamAddTitleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBTeamAddTitleTableViewCell.m; sourceTree = "<group>"; };
 		CEDC0C6E24B0A7B70017CE0C /* LBTeamAddViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBTeamAddViewModel.h; sourceTree = "<group>"; };
 		CEDC0C6F24B0A7B70017CE0C /* LBTeamAddViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBTeamAddViewModel.m; sourceTree = "<group>"; };
-		CEDCE0BD24AAF4B800105C18 /* MacroSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacroSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDCE0BD24AAF4B800105C18 /* 董俅谛-宏体育.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "董俅谛-宏体育.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDCE0C024AAF4B800105C18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEDCE0C124AAF4B800105C18 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CEDCE0CC24AAF4BE00105C18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -266,6 +272,8 @@
 				CEDC03B024B035A800105C18 /* LBSetViewController.m */,
 				CE0A605824B4407F009F76C6 /* LBAboutUsViewController.h */,
 				CE0A605924B4407F009F76C6 /* LBAboutUsViewController.m */,
+				CE0A606A24B56A7B009F76C6 /* LBFeedbackViewController.h */,
+				CE0A606B24B56A7B009F76C6 /* LBFeedbackViewController.m */,
 				CE0A605B24B444BF009F76C6 /* LBLoginViewController.h */,
 				CE0A605C24B444BF009F76C6 /* LBLoginViewController.m */,
 			);
@@ -348,6 +356,8 @@
 				CEDC03B824B040B500105C18 /* Reachability.m */,
 				CEDC03A924B0319800105C18 /* LBBaseViewController.h */,
 				CEDC03AA24B0319800105C18 /* LBBaseViewController.m */,
+				CE0A606724B5603A009F76C6 /* NSString+LB.h */,
+				CE0A606824B5603A009F76C6 /* NSString+LB.m */,
 			);
 			path = LBCommon;
 			sourceTree = SOURCE_ROOT;
@@ -365,7 +375,7 @@
 		CEDCE0BE24AAF4B800105C18 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEDCE0BD24AAF4B800105C18 /* MacroSports.app */,
+				CEDCE0BD24AAF4B800105C18 /* 董俅谛-宏体育.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -408,7 +418,7 @@
 			);
 			name = MacroSports;
 			productName = MacroSports;
-			productReference = CEDCE0BD24AAF4B800105C18 /* MacroSports.app */;
+			productReference = CEDCE0BD24AAF4B800105C18 /* 董俅谛-宏体育.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -505,6 +515,7 @@
 				CEDC03C624B040B600105C18 /* LBUIUtilities.m in Sources */,
 				CEDC03C724B040B600105C18 /* LBHBTool.m in Sources */,
 				CEDC0C6124B085700017CE0C /* LBCreateGameViewController.m in Sources */,
+				CE0A606C24B56A7B009F76C6 /* LBFeedbackViewController.m in Sources */,
 				CEDC0C6D24B09CDC0017CE0C /* LBTeamAddTitleTableViewCell.m in Sources */,
 				CE0A605A24B4407F009F76C6 /* LBAboutUsViewController.m in Sources */,
 				CEDC03B424B035B800105C18 /* LBStopwatchViewController.m in Sources */,
@@ -518,6 +529,7 @@
 				CEDC03C524B040B600105C18 /* Reachability.m in Sources */,
 				CEDC03B724B035C900105C18 /* LBTeamViewController.m in Sources */,
 				CE0A605D24B444BF009F76C6 /* LBLoginViewController.m in Sources */,
+				CE0A606924B5603A009F76C6 /* NSString+LB.m in Sources */,
 				CEDCE0C224AAF4B800105C18 /* AppDelegate.m in Sources */,
 				CEDCE0D324AAF4BE00105C18 /* main.m in Sources */,
 				CEDC03C924B040B600105C18 /* NSArray+log.m in Sources */,
@@ -670,7 +682,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.MAO.MacroSports;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "董俅谛-宏体育";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -688,7 +700,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.MAO.MacroSports;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "董俅谛-宏体育";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

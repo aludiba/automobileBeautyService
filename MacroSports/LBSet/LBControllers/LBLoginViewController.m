@@ -47,6 +47,39 @@
         
     }];
 }
+- (void)LBloginAction{
+    [AVUser logInWithUsernameInBackground:self.LBloginmodel.LBAccount password:self.LBloginmodel.LBPassword block:^(AVUser * _Nullable user, NSError * _Nullable error) {
+        if (user) {
+            [MBProgressHUD LBshowReminderText:@"登陆成功"];
+            [self dismissViewControllerAnimated:YES completion:^{
+                
+            }];
+        } else {
+            [MBProgressHUD LBshowReminderText:@"请稍后重试"];
+        }
+    }];
+}
+- (void)LBregistered{
+    AVUser *LBUser = [[AVUser alloc] init];
+    [LBUser setUsername:self.LBloginmodel.LBAccount];
+    [LBUser setPassword:self.LBloginmodel.LBPassword];
+    [LBUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+        if (succeeded) {
+            [MBProgressHUD LBshowReminderText:@"注册成功"];
+            [AVUser logInWithUsernameInBackground:self.LBloginmodel.LBAccount password:self.LBloginmodel.LBPassword block:^(AVUser * _Nullable user, NSError * _Nullable error) {
+                if (user) {
+                    [self dismissViewControllerAnimated:YES completion:^{
+                                       
+                    }];
+                } else {
+                    [MBProgressHUD LBshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
+                }
+            }];
+        } else {
+            [MBProgressHUD LBshowReminderText:@"请稍后重试"];
+        }
+    }];
+}
 #pragma mark - UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 3;
@@ -71,6 +104,20 @@
         LBCell.LBLoginActionB = ^(LBLoginActionTableViewCell * _Nonnull LBcell) {
             LBStrongSelf(self);
             self.LBIndexAction = LBcell.LBIndex;
+            [self.view endEditing:YES];
+            if (!self.LBloginmodel.LBAccount.length) {
+                [MBProgressHUD LBshowReminderText:@"请输入账号"];
+                return;
+            }
+            if (!self.LBloginmodel.LBPassword.length) {
+                [MBProgressHUD LBshowReminderText:@"请输入密码"];
+                return;
+            }
+            if (self.LBIndexAction == 99) {
+                [self LBloginAction];
+            }else{
+                [self LBregistered];
+            }
         };
         return LBCell;
     }

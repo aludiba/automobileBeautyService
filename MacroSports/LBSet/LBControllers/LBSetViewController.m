@@ -10,6 +10,7 @@
 #import "LBSetTableViewCell.h"
 #import "LBSetViewModel.h"
 #import "LBAboutUsViewController.h"
+#import "LBFeedbackViewController.h"
 #import "LBLoginViewController.h"
 @interface LBSetViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)NSMutableArray *LBViewDataArray;
@@ -45,6 +46,33 @@
     
     [self.LBmainTable reloadData];
 }
+#pragma mark - 关于我们
+- (void)LBaboutUsAction{
+    LBAboutUsViewController *LBAboutUsVC = [[LBAboutUsViewController alloc] init];
+    [self.navigationController pushViewController:LBAboutUsVC animated:YES];
+}
+#pragma mark - 意见反馈
+- (void)LBfeedbackAction{
+    LBFeedbackViewController *LBFeedbackVC = [[LBFeedbackViewController alloc] init];
+    [self.navigationController pushViewController:LBFeedbackVC animated:YES];
+}
+#pragma mark - 分享
+- (void)LBDqdshareAction{
+    AVQuery *LBfenxiang = [AVQuery queryWithClassName:@"LBfenxiang"];
+    [LBfenxiang findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+        NSDictionary *LBDic = (NSDictionary *)[array firstObject];
+        NSString *LBstring = [LBDic objectForKey:@"LBDqdshare"];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:LBstring] options:@{} completionHandler:nil];
+    }];
+}
+#pragma mark - 退出登录
+- (void)LBlogOutAction{
+    LBLoginViewController *LBLoginVC = [[LBLoginViewController alloc] init];
+    LBLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:LBLoginVC animated:NO completion:^{
+        
+    }];
+}
 #pragma mark - UITableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -61,18 +89,13 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
-        LBAboutUsViewController *LBAboutUsVC = [[LBAboutUsViewController alloc] init];
-        [self.navigationController pushViewController:LBAboutUsVC animated:YES];
+        [self LBaboutUsAction];
     }else if (indexPath.row == 1){
-        
+        [self LBfeedbackAction];
     }else if (indexPath.row == 2){
-        
+        [self LBDqdshareAction];
     }else{
-        LBLoginViewController *LBLoginVC = [[LBLoginViewController alloc] init];
-        LBLoginVC.modalPresentationStyle = UIModalPresentationFullScreen;
-        [self presentViewController:LBLoginVC animated:NO completion:^{
-            
-        }];
+        [self LBlogOutAction];
     }
 }
 #pragma mark - UIScrollViewDelegate
