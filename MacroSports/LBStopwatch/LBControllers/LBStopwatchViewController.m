@@ -16,6 +16,12 @@
 @property(nonatomic, strong)UIButton *LBendBtn;//结束
 @property(nonatomic, strong)UIButton *LBsuspendedBtn;//暂停
 @property(nonatomic, strong)UIButton *LBstartBtn;//开始
+@property(nonatomic, strong)NSTimer *LBtimer;//计时器
+@property(nonatomic, assign)NSInteger LBpercens;//毫秒
+@property(nonatomic, assign)NSInteger LBseconds;//秒
+@property(nonatomic, assign)NSInteger LBminus;//分
+@property(nonatomic, strong)NSDate *LBpauseTimeDate;//暂停时间
+@property(nonatomic, assign)Boolean LBisPause;//是否暂停
 @end
 
 @implementation LBStopwatchViewController
@@ -79,14 +85,53 @@
 }
 - (void)LBbtnAction:(UIButton *)sender{
     if (sender.tag == 99) {
-        NSLog(@"开始~~~");
+        if (self.LBisPause) {
+            [self.LBtimer setFireDate:self.LBpauseTimeDate];
+        }else{
+            [self.LBtimer setFireDate:[NSDate distantPast]];
+        }
+        self.LBisPause = NO;
+        self.LBpauseTimeDate = nil;
     }else if(sender.tag == 100){
-        NSLog(@"暂停~~~");
+        self.LBpauseTimeDate = [NSDate date];
+        self.LBisPause = YES;
+        [self.LBtimer setFireDate:[NSDate distantFuture]];
     }else{
-        NSLog(@"结束~~~");
+        [self.LBtimer setFireDate:[NSDate distantFuture]];
+        self.LBminus = 0;
+        self.LBseconds = 0;
+        self.LBpercens = 0;
+        self.LBstopwatchContentLbl.text = [NSString stringWithFormat:@"%02ld:%02ld.%02ld",(long)self.LBminus,(long)self.LBseconds,(long)self.LBpercens];
+        self.LBisPause = NO;
+        self.LBpauseTimeDate = nil;
     }
 }
+- (void)LBstartTimer{
+    self.LBpercens++;
+    //每过100毫秒，就让秒+1，然后让毫秒归零
+    if (self.LBpercens == 100) {
+        self.LBseconds++;
+        self.LBpercens = 0;
+    }
+    if (self.LBseconds == 60) {
+        self.LBminus++;
+        self.LBseconds = 0;
+    }
+    //让不断变量的时间数据进行显示到label上面
+    self.LBstopwatchContentLbl.text = [NSString stringWithFormat:@"%02ld:%02ld.%02ld",(long)self.LBminus,(long)self.LBseconds,(long)self.LBpercens];
+}
+- (void)dealloc{
+    [self.LBtimer invalidate];
+    self.LBtimer = nil;
+}
 #pragma mark - 属性懒加载
+- (NSTimer *)LBtimer{
+    if (!_LBtimer) {
+        _LBtimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(LBstartTimer) userInfo:nil repeats:YES];
+        [_LBtimer setFireDate:[NSDate distantFuture]];
+    }
+    return _LBtimer;
+}
 - (UIScrollView *)LBscrollView{
     if (!_LBscrollView) {
         _LBscrollView = [[UIScrollView alloc] init];
@@ -119,7 +164,7 @@
         _LBstopwatchContentLbl.textColor = [UIColor blackColor];
         _LBstopwatchContentLbl.font = [UIFont systemFontOfSize:50];
         _LBstopwatchContentLbl.backgroundColor = [UIColor clearColor];
-        _LBstopwatchContentLbl.text = @"00:00:00";
+        _LBstopwatchContentLbl.text = @"00:00.00";
     }
     return _LBstopwatchContentLbl;
 }
