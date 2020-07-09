@@ -45,33 +45,33 @@
     [self.LBstopwatchBgdView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.LBtransitionView).offset(50);
         make.centerX.equalTo(self.LBtransitionView);
-        make.width.mas_equalTo(120);
-        make.height.mas_equalTo(120);
+        make.width.mas_equalTo(LBWIDTH - 60);
+        make.height.mas_equalTo(LBWIDTH - 60);
     }];
     [self.LBstopwatchContentLbl mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.LBstopwatchBgdView);
         make.centerY.equalTo(self.LBstopwatchBgdView);
-        make.width.mas_equalTo(120);
-        make.height.mas_equalTo(22);
+        make.width.mas_equalTo(LBWIDTH - 60);
+        make.height.mas_equalTo(55);
     }];
-    CGFloat LBspacingX = (LBWIDTH - 50 * 3) * 0.25;
+    CGFloat LBspacingX = (LBWIDTH - 60 * 3) * 0.25;
     [self.LBendBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.LBstopwatchBgdView.mas_bottom).offset(40);
+        make.top.equalTo(self.LBstopwatchBgdView.mas_bottom).offset(50);
         make.leading.equalTo(self.LBscrollView).offset(LBspacingX);
-        make.width.mas_equalTo(50);
-        make.height.mas_equalTo(50);
+        make.width.mas_equalTo(60);
+        make.height.mas_equalTo(60);
     }];
     [self.LBsuspendedBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.LBstopwatchBgdView.mas_bottom).offset(40);
+        make.top.equalTo(self.LBstopwatchBgdView.mas_bottom).offset(50);
         make.leading.equalTo(self.LBendBtn.mas_trailing).offset(LBspacingX);
-        make.width.mas_equalTo(50);
-        make.height.mas_equalTo(50);
+        make.width.mas_equalTo(60);
+        make.height.mas_equalTo(60);
     }];
     [self.LBstartBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.LBstopwatchBgdView.mas_bottom).offset(40);
+        make.top.equalTo(self.LBstopwatchBgdView.mas_bottom).offset(50);
         make.leading.equalTo(self.LBsuspendedBtn.mas_trailing).offset(LBspacingX);
-        make.width.mas_equalTo(50);
-        make.height.mas_equalTo(50);
+        make.width.mas_equalTo(60);
+        make.height.mas_equalTo(60);
     }];
     [self.LBtransitionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(self.LBsuspendedBtn.mas_bottom).offset(10);
@@ -107,7 +107,7 @@
     if (!_LBstopwatchBgdView) {
         _LBstopwatchBgdView = [[UIView alloc] init];
         _LBstopwatchBgdView.backgroundColor = [UIColor greenColor];
-        _LBstopwatchBgdView.layer.cornerRadius = 59.5f;
+        _LBstopwatchBgdView.layer.cornerRadius = (LBWIDTH - 60) * 0.5 - 0.5;
         _LBstopwatchBgdView.layer.masksToBounds = YES;
     }
     return _LBstopwatchBgdView;
@@ -117,7 +117,7 @@
         _LBstopwatchContentLbl = [[UILabel alloc] init];
         _LBstopwatchContentLbl.textAlignment = NSTextAlignmentCenter;
         _LBstopwatchContentLbl.textColor = [UIColor blackColor];
-        _LBstopwatchContentLbl.font = [UIFont systemFontOfSize:20];
+        _LBstopwatchContentLbl.font = [UIFont systemFontOfSize:50];
         _LBstopwatchContentLbl.backgroundColor = [UIColor clearColor];
         _LBstopwatchContentLbl.text = @"00:00:00";
     }
@@ -129,7 +129,7 @@
         [_LBendBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_LBendBtn setBackgroundColor:[UIColor redColor]];
         [_LBendBtn.titleLabel setFont:[UIFont systemFontOfSize:15]];
-        _LBendBtn.layer.cornerRadius = 24.5f;
+        _LBendBtn.layer.cornerRadius = 29.5f;
         _LBendBtn.layer.masksToBounds = YES;
         _LBendBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
         [_LBendBtn setTitle:@"结束" forState:UIControlStateNormal];
@@ -144,7 +144,7 @@
         [_LBsuspendedBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_LBsuspendedBtn setBackgroundColor:[UIColor orangeColor]];
         [_LBsuspendedBtn.titleLabel setFont:[UIFont systemFontOfSize:15]];
-        _LBsuspendedBtn.layer.cornerRadius = 24.5f;
+        _LBsuspendedBtn.layer.cornerRadius = 29.5f;
         _LBsuspendedBtn.layer.masksToBounds = YES;
         _LBsuspendedBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
         [_LBsuspendedBtn setTitle:@"暂停" forState:UIControlStateNormal];
@@ -159,7 +159,7 @@
         [_LBstartBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_LBstartBtn setBackgroundColor:[UIColor yellowColor]];
         [_LBstartBtn.titleLabel setFont:[UIFont systemFontOfSize:15]];
-        _LBstartBtn.layer.cornerRadius = 24.5f;
+        _LBstartBtn.layer.cornerRadius = 29.5f;
         _LBstartBtn.layer.masksToBounds = YES;
         _LBstartBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
         [_LBstartBtn setTitle:@"开始" forState:UIControlStateNormal];
