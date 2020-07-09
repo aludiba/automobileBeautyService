@@ -9,8 +9,13 @@
 #import "LBBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class LBTeamModel;
+@class LBTeamViewController;
+typedef void(^LBteamSelectBlock)(LBTeamViewController *cell);
 @interface LBTeamViewController : LBBaseViewController
+@property(nonatomic, copy)LBteamSelectBlock LBteamSelectB;
+@property(nonatomic, strong)LBTeamModel *LBSelectteammodel;
+@property(nonatomic, assign)Boolean LBisSelect;
 @property(nonatomic, strong)UITableView *LBmainTable;
 @end
 

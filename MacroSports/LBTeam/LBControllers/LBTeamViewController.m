@@ -89,6 +89,16 @@
     LBcell.LBteammodel = LBteamodel;
     return LBcell;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    LBTeamModel *LBteamodel = self.LBdataArray[indexPath.row];
+    if (self.LBisSelect) {
+        self.LBSelectteammodel = LBteamodel;
+        if (self.LBteamSelectB) {
+            self.LBteamSelectB(self);
+        }
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
 -(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
     
     return YES;
