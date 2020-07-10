@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,15 @@
 		CE0E053F24B81E0C005D8042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0E053E24B81E0C005D8042 /* Assets.xcassets */; };
 		CE0E054224B81E0C005D8042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0E054024B81E0C005D8042 /* LaunchScreen.storyboard */; };
 		CE0E054524B81E0C005D8042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0E054424B81E0C005D8042 /* main.m */; };
+		CE0E056624B8434B005D8042 /* NSString+BM.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0E055524B8434A005D8042 /* NSString+BM.m */; };
+		CE0E056724B8434B005D8042 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0E055624B8434A005D8042 /* Reachability.m */; };
+		CE0E056824B8434B005D8042 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0E055924B8434A005D8042 /* NSArray+log.m */; };
+		CE0E056924B8434B005D8042 /* BMHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0E055B24B8434A005D8042 /* BMHBTool.m */; };
+		CE0E056A24B8434B005D8042 /* BMUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0E055D24B8434A005D8042 /* BMUIUtilities.m */; };
+		CE0E056B24B8434B005D8042 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0E056124B8434A005D8042 /* NSDictionary+log.m */; };
+		CE0E056C24B8434B005D8042 /* BMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0E056224B8434B005D8042 /* BMBaseViewController.m */; };
+		CE0E056D24B8434B005D8042 /* MBProgressHUD+BMNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0E056524B8434B005D8042 /* MBProgressHUD+BMNJ.m */; };
+		CE0E057024B84484005D8042 /* BMScoringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0E056F24B84484005D8042 /* BMScoringViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +34,26 @@
 		CE0E054124B81E0C005D8042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE0E054324B81E0C005D8042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE0E054424B81E0C005D8042 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE0E055424B8434A005D8042 /* BMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMBaseViewController.h; sourceTree = "<group>"; };
+		CE0E055524B8434A005D8042 /* NSString+BM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BM.m"; sourceTree = "<group>"; };
+		CE0E055624B8434A005D8042 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CE0E055724B8434A005D8042 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CE0E055824B8434A005D8042 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		CE0E055924B8434A005D8042 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		CE0E055A24B8434A005D8042 /* BMGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMGlobal.h; sourceTree = "<group>"; };
+		CE0E055B24B8434A005D8042 /* BMHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMHBTool.m; sourceTree = "<group>"; };
+		CE0E055C24B8434A005D8042 /* MBProgressHUD+BMNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+BMNJ.h"; sourceTree = "<group>"; };
+		CE0E055D24B8434A005D8042 /* BMUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMUIUtilities.m; sourceTree = "<group>"; };
+		CE0E055E24B8434A005D8042 /* BM_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_PrefixHeader.pch; sourceTree = "<group>"; };
+		CE0E055F24B8434A005D8042 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
+		CE0E056024B8434A005D8042 /* NSString+BM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BM.h"; sourceTree = "<group>"; };
+		CE0E056124B8434A005D8042 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
+		CE0E056224B8434B005D8042 /* BMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMBaseViewController.m; sourceTree = "<group>"; };
+		CE0E056324B8434B005D8042 /* BMHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMHBTool.h; sourceTree = "<group>"; };
+		CE0E056424B8434B005D8042 /* BMUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMUIUtilities.h; sourceTree = "<group>"; };
+		CE0E056524B8434B005D8042 /* MBProgressHUD+BMNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+BMNJ.m"; sourceTree = "<group>"; };
+		CE0E056E24B84484005D8042 /* BMScoringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMScoringViewController.h; sourceTree = "<group>"; };
+		CE0E056F24B84484005D8042 /* BMScoringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMScoringViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +82,6 @@
 				A17BAFB81DE16BEA40F247F8 /* Pods-HeyGameScoreboard.debug.xcconfig */,
 				3CF885702B4DFD07EFB9D7DD /* Pods-HeyGameScoreboard.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -78,9 +106,9 @@
 		CE0E053124B81E08005D8042 /* HeyGameScoreboard */ = {
 			isa = PBXGroup;
 			children = (
-				CE0E055324B83F29005D8042 /* MBCommon */,
-				CE0E054B24B83F29005D8042 /* MBScoring */,
-				CE0E054F24B83F29005D8042 /* MBSet */,
+				CE0E055324B83F29005D8042 /* BMCommon */,
+				CE0E054B24B83F29005D8042 /* BMScoring */,
+				CE0E054F24B83F29005D8042 /* BMSet */,
 				CE0E053224B81E08005D8042 /* AppDelegate.h */,
 				CE0E053324B81E08005D8042 /* AppDelegate.m */,
 				CE0E053E24B81E0C005D8042 /* Assets.xcassets */,
@@ -91,73 +119,93 @@
 			path = HeyGameScoreboard;
 			sourceTree = "<group>";
 		};
-		CE0E054B24B83F29005D8042 /* MBScoring */ = {
+		CE0E054B24B83F29005D8042 /* BMScoring */ = {
 			isa = PBXGroup;
 			children = (
-				CE0E054C24B83F29005D8042 /* MBControllers */,
-				CE0E054D24B83F29005D8042 /* MBModels */,
-				CE0E054E24B83F29005D8042 /* MBViews */,
+				CE0E054C24B83F29005D8042 /* BMControllers */,
+				CE0E054D24B83F29005D8042 /* BMModels */,
+				CE0E054E24B83F29005D8042 /* BMViews */,
 			);
-			path = MBScoring;
+			path = BMScoring;
 			sourceTree = "<group>";
 		};
-		CE0E054C24B83F29005D8042 /* MBControllers */ = {
+		CE0E054C24B83F29005D8042 /* BMControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE0E056E24B84484005D8042 /* BMScoringViewController.h */,
+				CE0E056F24B84484005D8042 /* BMScoringViewController.m */,
 			);
-			path = MBControllers;
+			path = BMControllers;
 			sourceTree = "<group>";
 		};
-		CE0E054D24B83F29005D8042 /* MBModels */ = {
+		CE0E054D24B83F29005D8042 /* BMModels */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = MBModels;
+			path = BMModels;
 			sourceTree = "<group>";
 		};
-		CE0E054E24B83F29005D8042 /* MBViews */ = {
+		CE0E054E24B83F29005D8042 /* BMViews */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = MBViews;
+			path = BMViews;
 			sourceTree = "<group>";
 		};
-		CE0E054F24B83F29005D8042 /* MBSet */ = {
+		CE0E054F24B83F29005D8042 /* BMSet */ = {
 			isa = PBXGroup;
 			children = (
-				CE0E055024B83F29005D8042 /* MBControllers */,
-				CE0E055124B83F29005D8042 /* MBModels */,
-				CE0E055224B83F29005D8042 /* MBViews */,
+				CE0E055024B83F29005D8042 /* BMControllers */,
+				CE0E055124B83F29005D8042 /* BMModels */,
+				CE0E055224B83F29005D8042 /* BMViews */,
 			);
-			path = MBSet;
+			path = BMSet;
 			sourceTree = "<group>";
 		};
-		CE0E055024B83F29005D8042 /* MBControllers */ = {
+		CE0E055024B83F29005D8042 /* BMControllers */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = MBControllers;
+			path = BMControllers;
 			sourceTree = "<group>";
 		};
-		CE0E055124B83F29005D8042 /* MBModels */ = {
+		CE0E055124B83F29005D8042 /* BMModels */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = MBModels;
+			path = BMModels;
 			sourceTree = "<group>";
 		};
-		CE0E055224B83F29005D8042 /* MBViews */ = {
+		CE0E055224B83F29005D8042 /* BMViews */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = MBViews;
+			path = BMViews;
 			sourceTree = "<group>";
 		};
-		CE0E055324B83F29005D8042 /* MBCommon */ = {
+		CE0E055324B83F29005D8042 /* BMCommon */ = {
 			isa = PBXGroup;
 			children = (
+				CE0E055E24B8434A005D8042 /* BM_PrefixHeader.pch */,
+				CE0E055424B8434A005D8042 /* BMBaseViewController.h */,
+				CE0E056224B8434B005D8042 /* BMBaseViewController.m */,
+				CE0E055A24B8434A005D8042 /* BMGlobal.h */,
+				CE0E056324B8434B005D8042 /* BMHBTool.h */,
+				CE0E055B24B8434A005D8042 /* BMHBTool.m */,
+				CE0E056424B8434B005D8042 /* BMUIUtilities.h */,
+				CE0E055D24B8434A005D8042 /* BMUIUtilities.m */,
+				CE0E055C24B8434A005D8042 /* MBProgressHUD+BMNJ.h */,
+				CE0E056524B8434B005D8042 /* MBProgressHUD+BMNJ.m */,
+				CE0E055824B8434A005D8042 /* NSArray+log.h */,
+				CE0E055924B8434A005D8042 /* NSArray+log.m */,
+				CE0E055F24B8434A005D8042 /* NSDictionary+log.h */,
+				CE0E056124B8434A005D8042 /* NSDictionary+log.m */,
+				CE0E056024B8434A005D8042 /* NSString+BM.h */,
+				CE0E055524B8434A005D8042 /* NSString+BM.m */,
+				CE0E055724B8434A005D8042 /* Reachability.h */,
+				CE0E055624B8434A005D8042 /* Reachability.m */,
 			);
-			path = MBCommon;
+			path = BMCommon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +321,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0E057024B84484005D8042 /* BMScoringViewController.m in Sources */,
+				CE0E056C24B8434B005D8042 /* BMBaseViewController.m in Sources */,
+				CE0E056D24B8434B005D8042 /* MBProgressHUD+BMNJ.m in Sources */,
 				CE0E053424B81E08005D8042 /* AppDelegate.m in Sources */,
+				CE0E056B24B8434B005D8042 /* NSDictionary+log.m in Sources */,
+				CE0E056924B8434B005D8042 /* BMHBTool.m in Sources */,
+				CE0E056824B8434B005D8042 /* NSArray+log.m in Sources */,
+				CE0E056624B8434B005D8042 /* NSString+BM.m in Sources */,
+				CE0E056724B8434B005D8042 /* Reachability.m in Sources */,
+				CE0E056A24B8434B005D8042 /* BMUIUtilities.m in Sources */,
 				CE0E054524B81E0C005D8042 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HeyGameScoreboard/BMCommon/BM_PrefixHeader.pch";
 				INFOPLIST_FILE = HeyGameScoreboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -425,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HeyGameScoreboard/BMCommon/BM_PrefixHeader.pch";
 				INFOPLIST_FILE = HeyGameScoreboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
