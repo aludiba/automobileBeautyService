@@ -8,5 +8,6 @@ target 'HeyGameScoreboard' do
   # Pods for HeyGameScoreboard
     pod 'Masonry'
     pod 'MJRefresh'
+    pod 'MBProgressHUD'
 
 end
