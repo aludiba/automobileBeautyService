@@ -123,7 +123,7 @@
 		CEDC0C6C24B09CDC0017CE0C /* LBTeamAddTitleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBTeamAddTitleTableViewCell.m; sourceTree = "<group>"; };
 		CEDC0C6E24B0A7B70017CE0C /* LBTeamAddViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBTeamAddViewModel.h; sourceTree = "<group>"; };
 		CEDC0C6F24B0A7B70017CE0C /* LBTeamAddViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBTeamAddViewModel.m; sourceTree = "<group>"; };
-		CEDCE0BD24AAF4B800105C18 /* 董俅谛-宏体育.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "董俅谛-宏体育.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDCE0BD24AAF4B800105C18 /* 宏体育.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "宏体育.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDCE0C024AAF4B800105C18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEDCE0C124AAF4B800105C18 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CEDCE0CC24AAF4BE00105C18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -410,7 +410,7 @@
 		CEDCE0BE24AAF4B800105C18 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEDCE0BD24AAF4B800105C18 /* 董俅谛-宏体育.app */,
+				CEDCE0BD24AAF4B800105C18 /* 宏体育.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -453,7 +453,7 @@
 			);
 			name = MacroSports;
 			productName = MacroSports;
-			productReference = CEDCE0BD24AAF4B800105C18 /* 董俅谛-宏体育.app */;
+			productReference = CEDCE0BD24AAF4B800105C18 /* 宏体育.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -651,7 +651,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -703,7 +703,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -716,7 +716,10 @@
 			baseConfigurationReference = F3809600C10C80A90A8AC081 /* Pods-MacroSports.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Cong Huar Deng (SW52XJPVH5)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 3Y2M5332P3;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LBCommon/LB_PrefixHeader.pch";
 				INFOPLIST_FILE = MacroSports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -724,7 +727,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.MAO.MacroSports;
-				PRODUCT_NAME = "董俅谛-宏体育";
+				PRODUCT_NAME = "宏体育";
+				PROVISIONING_PROFILE_SPECIFIER = dev_pro_MacroSports_20200710;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -734,7 +738,10 @@
 			baseConfigurationReference = E0F61D9A70C01B46292E9A9C /* Pods-MacroSports.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Cong Huar Deng (SW52XJPVH5)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 3Y2M5332P3;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LBCommon/LB_PrefixHeader.pch";
 				INFOPLIST_FILE = MacroSports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -742,7 +749,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.MAO.MacroSports;
-				PRODUCT_NAME = "董俅谛-宏体育";
+				PRODUCT_NAME = "宏体育";
+				PROVISIONING_PROFILE_SPECIFIER = dev_pro_MacroSports_20200710;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

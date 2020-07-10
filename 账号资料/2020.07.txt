@@ -18,6 +18,12 @@ device:37895fc01704ab54e7fd4538bb907bf8866f0eb9
 
 https://apps.apple.com/cn/app/HomeClothingManagement/id1517216232
 
-APP:
+Apple ID
+1522996630
 名称:宏体育
 账号:dqd 密码：Dqd123@
+宏体育-您足球比赛信息录入的好帮手！
+体育 足球 赛事 信息 录入
+1、创建参赛球队信息；
+2、记录比赛信息；
+3、秒表-满足您的计时需求。
