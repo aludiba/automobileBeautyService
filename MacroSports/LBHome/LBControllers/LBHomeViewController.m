@@ -14,7 +14,7 @@
 #import "LBTeamViewController.h"
 #import "LBStopwatchViewController.h"
 #import "LBCreateGameViewController.h"
-#import "LBMoreGamesViewController.h"
+#import "LBGameListViewController.h"
 #import "LBLoginViewController.h"
 #import "LBGameTableViewCell.h"
 #import "LBGameModel.h"
@@ -77,8 +77,11 @@
                        AVObject *LBobj = array[i];
                        LBGameModel *LBmodel = [[LBGameModel alloc] init];
                        LBmodel.LBobjectId = [LBobj objectId];
-//                       LBmodel.LBteamName = [LBobj objectForKey:@"LBteamName"];
-//                       LBmodel.LBnote = [LBobj objectForKey:@"LBnote"];
+                       LBmodel.LBaTeamName = [LBobj objectForKey:@"LBaTeamName"];
+                       LBmodel.LBaTeamScore = [LBobj objectForKey:@"LBaTeamScore"];
+                       LBmodel.LBbTeamName = [LBobj objectForKey:@"LBbTeamName"];
+                       LBmodel.LBbTeamScore = [LBobj objectForKey:@"LBbTeamScore"];
+                       LBmodel.LBendDateTime = [LBobj objectForKey:@"LBendDateTime"];
                        [self.LBdataArray addObject:LBmodel];
                    }
                     [weakSelf.LBmainTable.mj_header endRefreshing];
@@ -159,7 +162,7 @@
         }else{
             AVUser *LBbUser = [AVUser currentUser];
              if (LBbUser) {
-            LBMoreGamesViewController *LBMoreGamesVC = [[LBMoreGamesViewController alloc] init];
+            LBGameListViewController *LBMoreGamesVC = [[LBGameListViewController alloc] init];
              [self.navigationController pushViewController:LBMoreGamesVC animated:YES];
              }else{
                  UIAlertController *LBalertVC = [UIAlertController alertControllerWithTitle:@"提醒" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
@@ -220,7 +223,7 @@
 }
 - (UITableView *)LBmainTable{
     if (!_LBmainTable) {
-        _LBmainTable = [[UITableView alloc] init];
+        _LBmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
         _LBmainTable.backgroundColor = [UIColor whiteColor];
         _LBmainTable.rowHeight = UITableViewAutomaticDimension;
         _LBmainTable.estimatedRowHeight = 48.0f;

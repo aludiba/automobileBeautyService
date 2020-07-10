@@ -9,6 +9,7 @@
 #import "LBCreateGameViewController.h"
 #import "LBTeamViewController.h"
 #import "LBTeamModel.h"
+#import "LBGameModel.h"
 
 @interface LBCreateGameViewController ()
 @property(nonatomic, strong)UIScrollView *LBscrollView;//秒表功能背景
@@ -24,18 +25,28 @@
 @property(nonatomic, strong)UIView *LBplanPartitionView;//计分区
 @property(nonatomic, strong)UIButton *LBaAddBtn;//a球队加分
 @property(nonatomic, strong)UILabel *LBaAddLbl;//a球队得分显示
+@property(nonatomic, assign)NSInteger LBaTeamScore;
 @property(nonatomic, strong)UIButton *LBaReductionBtn;//a球队减分
 @property(nonatomic, strong)UILabel *LBVSLbl;//vs标记
 @property(nonatomic, strong)UIButton *LBbAddBtn;//b球队加分
 @property(nonatomic, strong)UILabel *LBbAddLbl;//b球队得分显示
+@property(nonatomic, assign)NSInteger LBbTeamScore;
 @property(nonatomic, strong)UIButton *LBbReductionBtn;//b球队减分
 
 @property(nonatomic, strong)UIButton *LBstartGameBtn;//开始比赛
+@property(nonatomic, assign)Boolean LBisStart;
 @property(nonatomic, strong)UIButton *LBpauseGameBtn;//暂停比赛
 @property(nonatomic, strong)UIButton *LBendGameBtn;//结束比赛
 
 @property(nonatomic, strong)LBTeamModel *LBteamAmodel;
 @property(nonatomic, strong)LBTeamModel *LBteamBmodel;
+
+@property(nonatomic, strong)NSTimer *LBtimer;//计时器
+@property(nonatomic, assign)NSInteger LBseconds;//秒
+@property(nonatomic, assign)NSInteger LBminus;//分
+@property(nonatomic, assign)NSInteger LBhours;//毫秒
+@property(nonatomic, strong)NSDate *LBpauseTimeDate;//暂停时间
+@property(nonatomic, assign)Boolean LBisPause;//是否暂停
 @end
 
 @implementation LBCreateGameViewController
@@ -204,28 +215,149 @@
         [self.navigationController pushViewController:LBTeamVC animated:YES];
     }else if(sender.tag == 99){
         NSLog(@"球队a加一分~");
-
+        if (!self.LBteamAmodel.LBteamName.length || !self.LBteamBmodel.LBteamName.length) {
+            [MBProgressHUD LBshowReminderText:@"请选择球队"];
+            return;
+            }
+        if (self.LBisStart) {
+        self.LBaTeamScore++;
+        self.LBaAddLbl.text = [NSString stringWithFormat:@"%ld",self.LBaTeamScore];
+        }
     }else if(sender.tag == 100){
         NSLog(@"球队a减一分~");
-
+        if (!self.LBteamAmodel.LBteamName.length || !self.LBteamBmodel.LBteamName.length) {
+            [MBProgressHUD LBshowReminderText:@"请选择球队"];
+            return;
+            }
+        if (self.LBisStart) {
+        self.LBaTeamScore--;
+        self.LBaAddLbl.text = [NSString stringWithFormat:@"%ld",self.LBaTeamScore];
+        }
     }else if(sender.tag == 101){
         NSLog(@"球队b加一分~");
-
+        if (!self.LBteamAmodel.LBteamName.length || !self.LBteamBmodel.LBteamName.length) {
+            [MBProgressHUD LBshowReminderText:@"请选择球队"];
+            return;
+            }
+        if (self.LBisStart) {
+        self.LBbTeamScore++;
+        self.LBbAddLbl.text = [NSString stringWithFormat:@"%ld",self.LBbTeamScore];
+        }
     }else if(sender.tag == 102){
         NSLog(@"球队b减一分~");
+        if (!self.LBteamAmodel.LBteamName.length || !self.LBteamBmodel.LBteamName.length) {
+            [MBProgressHUD LBshowReminderText:@"请选择球队"];
 
+             return;
+        }
+        if (self.LBisStart) {
+        self.LBbTeamScore--;
+        self.LBbAddLbl.text = [NSString stringWithFormat:@"%ld",self.LBbTeamScore];
+        }
     }else if(sender.tag == 103){
         NSLog(@"开始比赛~");
-
+        if (!self.LBteamAmodel.LBteamName.length || !self.LBteamBmodel.LBteamName.length) {
+        [MBProgressHUD LBshowReminderText:@"请选择球队"];
+        return;
+        }
+        self.LBisStart = YES;
+        if (self.LBisPause) {
+            [self.LBtimer setFireDate:self.LBpauseTimeDate];
+        }else{
+            [self.LBtimer setFireDate:[NSDate distantPast]];
+        }
+        self.LBisPause = NO;
+        self.LBpauseTimeDate = nil;
     }else if(sender.tag == 104){
         NSLog(@"暂停比赛~");
-
+        if (!self.LBteamAmodel.LBteamName.length || !self.LBteamBmodel.LBteamName.length) {
+        [MBProgressHUD LBshowReminderText:@"请选择球队"];
+        return;
+        }
+        self.LBisStart = NO;
+        self.LBpauseTimeDate = [NSDate date];
+        self.LBisPause = YES;
+        [self.LBtimer setFireDate:[NSDate distantFuture]];
     }else if(sender.tag == 105){
         NSLog(@"结束比赛~");
-
+        if (!self.LBteamAmodel.LBteamName.length || !self.LBteamBmodel.LBteamName.length) {
+        [MBProgressHUD LBshowReminderText:@"请选择球队"];
+        return;
+        }
+        self.LBisStart = NO;
+        [self.LBtimer setFireDate:[NSDate distantFuture]];
+        self.LBhours = 0;
+        self.LBminus = 0;
+        self.LBseconds = 0;
+        self.LBtimerLbl.text = [NSString stringWithFormat:@"%02ld:%02ld:%02ld",(long)self.LBhours,(long)self.LBminus,(long)self.LBseconds];
+        self.LBisPause = NO;
+        self.LBpauseTimeDate = nil;
+        //保存比赛结果
+        [self LBsaveAction];
+        self.LBaTeamScore = 0;
+        self.LBbTeamScore = 0;
+        self.LBaAddLbl.text = @"0";
+        self.LBbAddLbl.text = @"0";
     }
 }
+- (void)LBstartTimer{
+    self.LBseconds++;
+    //每过60秒，就让分·+1，然后让秒归零
+    if (self.LBseconds == 60) {
+        self.LBminus++;
+        self.LBseconds = 0;
+    }
+    if (self.LBminus == 60) {
+        self.LBhours++;
+        self.LBminus = 0;
+    }
+    //让不断变量的时间数据进行显示到label上面
+    self.LBtimerLbl.text = [NSString stringWithFormat:@"%02ld:%02ld:%02ld",(long)self.LBhours,(long)self.LBminus,(long)self.LBseconds];
+}
+- (void)LBsaveAction{
+    LBGameModel *LBgamemodel = [[LBGameModel alloc] init];
+    NSDate *LBendDateTime = [[NSDate alloc] init];
+    // 实例化NSDateFormatter
+    NSDateFormatter *LBformatter = [[NSDateFormatter alloc] init];
+    // 设置日期格式
+    [LBformatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *LBendDateTimeString = [LBformatter stringFromDate:LBendDateTime];
+    LBgamemodel.LBendDateTime = LBendDateTimeString;
+    LBgamemodel.LBaTeamName = self.LBteamAmodel.LBteamName;
+    LBgamemodel.LBbTeamName = self.LBteamBmodel.LBteamName;
+    LBgamemodel.LBaTeamScore = [NSString stringWithFormat:@"%ld",self.LBaTeamScore];
+    LBgamemodel.LBbTeamScore = [NSString stringWithFormat:@"%ld",self.LBbTeamScore];
+    NSMutableDictionary *LBjsonDictionary = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[LBgamemodel yy_modelToJSONObject]];
+    AVUser *LBauthor = [AVUser currentUser];
+    AVObject *LBdataList = [AVObject objectWithClassName:@"LBgameList"];
+        for (NSString *key in LBjsonDictionary.allKeys) {
+            [LBdataList setObject:[LBjsonDictionary objectForKey:key]  forKey:key];
+        }
+        [LBdataList setObject:LBauthor forKey:@"author"];
+        [LBdataList saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
+            if (isSuccessful) {
+                [MBProgressHUD LBshowReminderText:@"保存成功"];
+                [self.navigationController popViewControllerAnimated:YES];
+            } else if (error){
+                //发生错误后的动作
+                [MBProgressHUD LBshowReminderText:@"请稍后重试"];
+            } else {
+                [MBProgressHUD LBshowReminderText:@"请稍后重试"];
+            }
+        }];
+}
+- (void)dealloc{
+    [self.LBtimer invalidate];
+    self.LBtimer = nil;
+}
 #pragma mark - 属性懒加载
+- (NSTimer *)LBtimer{
+    if (!_LBtimer) {
+        _LBtimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(LBstartTimer) userInfo:nil repeats:YES];
+        [_LBtimer setFireDate:[NSDate distantFuture]];
+    }
+    return _LBtimer;
+}
 - (UIScrollView *)LBscrollView{
     if (!_LBscrollView) {
         _LBscrollView = [[UIScrollView alloc] init];

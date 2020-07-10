@@ -16,6 +16,7 @@
 @property(nonatomic, strong)UIButton *LBendBtn;//结束
 @property(nonatomic, strong)UIButton *LBsuspendedBtn;//暂停
 @property(nonatomic, strong)UIButton *LBstartBtn;//开始
+
 @property(nonatomic, strong)NSTimer *LBtimer;//计时器
 @property(nonatomic, assign)NSInteger LBpercens;//毫秒
 @property(nonatomic, assign)NSInteger LBseconds;//秒

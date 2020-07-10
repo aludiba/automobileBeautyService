@@ -12,5 +12,5 @@ device:37895fc01704ab54e7fd4538bb907bf8866f0eb9
 https://apps.apple.com/cn/app/HomeClothingManagement/id1517216232
 
 APP:
-名称:董俅谛-宏体育
+名称:宏体育
 账号:dqd 密码：Dqd123@

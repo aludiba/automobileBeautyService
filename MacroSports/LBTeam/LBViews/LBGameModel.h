@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LBGameModel : NSObject
 @property(nonatomic, copy)NSString *LBobjectId;
+@property(nonatomic, copy)NSString *LBendDateTime;
+@property(nonatomic, copy)NSString *LBaTeamName;
+@property(nonatomic, copy)NSString *LBbTeamName;
+@property(nonatomic, copy)NSString *LBaTeamScore;
+@property(nonatomic, copy)NSString *LBbTeamScore;
 @end
 
 NS_ASSUME_NONNULL_END
