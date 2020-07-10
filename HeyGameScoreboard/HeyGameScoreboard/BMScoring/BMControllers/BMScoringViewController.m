@@ -246,6 +246,14 @@
 
     }
 }
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    [self.view endEditing:YES];
+}
+#pragma mark - 关闭键盘
+- (void)BMcloseKeyboard:(UITapGestureRecognizer *)recognizer{
+    [self.view endEditing:YES];
+}
 #pragma mark - 属性懒加载
 - (NSTimer *)BMtimer{
     if (!_BMtimer) {
@@ -267,6 +275,13 @@
     if (!_BMtransitionView) {
         _BMtransitionView = [[UIView alloc] init];
         _BMtransitionView.backgroundColor = [UIColor whiteColor];
+        UITapGestureRecognizer *BMsingleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(BMcloseKeyboard:)];
+        BMsingleTapGesture.numberOfTapsRequired = 1;
+        BMsingleTapGesture.cancelsTouchesInView = NO;
+        [_BMtransitionView addGestureRecognizer:BMsingleTapGesture];
+        [self.view addGestureRecognizer:BMsingleTapGesture];
+        UIPanGestureRecognizer *BMpanGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(BMcloseKeyboard:)];
+        [self.view addGestureRecognizer:BMpanGesture];
     }
     return _BMtransitionView;
 }
