@@ -27,7 +27,7 @@
 		3CF885702B4DFD07EFB9D7DD /* Pods-HeyGameScoreboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyGameScoreboard.release.xcconfig"; path = "Target Support Files/Pods-HeyGameScoreboard/Pods-HeyGameScoreboard.release.xcconfig"; sourceTree = "<group>"; };
 		823ED12469CF95989EF2D3AF /* Pods_HeyGameScoreboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeyGameScoreboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17BAFB81DE16BEA40F247F8 /* Pods-HeyGameScoreboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyGameScoreboard.debug.xcconfig"; path = "Target Support Files/Pods-HeyGameScoreboard/Pods-HeyGameScoreboard.debug.xcconfig"; sourceTree = "<group>"; };
-		CE0E052F24B81E08005D8042 /* HeyGameScoreboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeyGameScoreboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0E052F24B81E08005D8042 /* 嗨比赛计分牌.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "嗨比赛计分牌.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0E053224B81E08005D8042 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE0E053324B81E08005D8042 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CE0E053E24B81E0C005D8042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 		CE0E053024B81E08005D8042 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE0E052F24B81E08005D8042 /* HeyGameScoreboard.app */,
+				CE0E052F24B81E08005D8042 /* 嗨比赛计分牌.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -227,7 +227,7 @@
 			);
 			name = HeyGameScoreboard;
 			productName = HeyGameScoreboard;
-			productReference = CE0E052F24B81E08005D8042 /* HeyGameScoreboard.app */;
+			productReference = CE0E052F24B81E08005D8042 /* 嗨比赛计分牌.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -472,7 +472,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Hey.GameScoreboard;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "嗨比赛计分牌";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -490,7 +490,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Hey.GameScoreboard;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "嗨比赛计分牌";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
