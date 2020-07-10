@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		125F9BEC87C1A318D8069A00 /* Pods_HeyGameScoreboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823ED12469CF95989EF2D3AF /* Pods_HeyGameScoreboard.framework */; };
 		CE0E053424B81E08005D8042 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0E053324B81E08005D8042 /* AppDelegate.m */; };
 		CE0E053F24B81E0C005D8042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0E053E24B81E0C005D8042 /* Assets.xcassets */; };
 		CE0E054224B81E0C005D8042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0E054024B81E0C005D8042 /* LaunchScreen.storyboard */; };
@@ -14,6 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CF885702B4DFD07EFB9D7DD /* Pods-HeyGameScoreboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyGameScoreboard.release.xcconfig"; path = "Target Support Files/Pods-HeyGameScoreboard/Pods-HeyGameScoreboard.release.xcconfig"; sourceTree = "<group>"; };
+		823ED12469CF95989EF2D3AF /* Pods_HeyGameScoreboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeyGameScoreboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A17BAFB81DE16BEA40F247F8 /* Pods-HeyGameScoreboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyGameScoreboard.debug.xcconfig"; path = "Target Support Files/Pods-HeyGameScoreboard/Pods-HeyGameScoreboard.debug.xcconfig"; sourceTree = "<group>"; };
 		CE0E052F24B81E08005D8042 /* HeyGameScoreboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeyGameScoreboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0E053224B81E08005D8042 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE0E053324B81E08005D8042 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,17 +32,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				125F9BEC87C1A318D8069A00 /* Pods_HeyGameScoreboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16AF1BCE44EF5D655C9485CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				823ED12469CF95989EF2D3AF /* Pods_HeyGameScoreboard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		366782E6E1B535E9A55F4A1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A17BAFB81DE16BEA40F247F8 /* Pods-HeyGameScoreboard.debug.xcconfig */,
+				3CF885702B4DFD07EFB9D7DD /* Pods-HeyGameScoreboard.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE0E052624B81E08005D8042 = {
 			isa = PBXGroup;
 			children = (
 				CE0E053124B81E08005D8042 /* HeyGameScoreboard */,
 				CE0E053024B81E08005D8042 /* Products */,
+				366782E6E1B535E9A55F4A1D /* Pods */,
+				16AF1BCE44EF5D655C9485CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE0E054824B81E0C005D8042 /* Build configuration list for PBXNativeTarget "HeyGameScoreboard" */;
 			buildPhases = (
+				FFB4A7113425EFF15FB82B34 /* [CP] Check Pods Manifest.lock */,
 				CE0E052B24B81E08005D8042 /* Sources */,
 				CE0E052C24B81E08005D8042 /* Frameworks */,
 				CE0E052D24B81E08005D8042 /* Resources */,
+				006F0EC440E1DF562376E96E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,6 +225,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		006F0EC440E1DF562376E96E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HeyGameScoreboard/Pods-HeyGameScoreboard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HeyGameScoreboard/Pods-HeyGameScoreboard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HeyGameScoreboard/Pods-HeyGameScoreboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFB4A7113425EFF15FB82B34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeyGameScoreboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE0E052B24B81E08005D8042 /* Sources */ = {
@@ -335,6 +404,7 @@
 		};
 		CE0E054924B81E0C005D8042 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A17BAFB81DE16BEA40F247F8 /* Pods-HeyGameScoreboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -351,6 +421,7 @@
 		};
 		CE0E054A24B81E0C005D8042 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CF885702B4DFD07EFB9D7DD /* Pods-HeyGameScoreboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
