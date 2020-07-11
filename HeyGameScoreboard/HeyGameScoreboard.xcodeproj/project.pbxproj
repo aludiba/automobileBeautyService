@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		125F9BEC87C1A318D8069A00 /* Pods_HeyGameScoreboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823ED12469CF95989EF2D3AF /* Pods_HeyGameScoreboard.framework */; };
+		CE06277524B9555900939D27 /* BMHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE06277424B9555900939D27 /* BMHistoryViewController.m */; };
+		CE06277824B958D500939D27 /* UIImage+BMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE06277724B958D500939D27 /* UIImage+BMExtension.m */; };
+		CE06277B24B95BCA00939D27 /* BMScoringModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE06277A24B95BCA00939D27 /* BMScoringModel.m */; };
+		CE06277E24B95F1800939D27 /* BMHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE06277D24B95F1800939D27 /* BMHistoryTableViewCell.m */; };
+		CE06278224B96E1300939D27 /* PLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE06278124B96E1300939D27 /* PLWebViewController.m */; };
 		CE0E053424B81E08005D8042 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0E053324B81E08005D8042 /* AppDelegate.m */; };
 		CE0E053F24B81E0C005D8042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0E053E24B81E0C005D8042 /* Assets.xcassets */; };
 		CE0E054224B81E0C005D8042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0E054024B81E0C005D8042 /* LaunchScreen.storyboard */; };
@@ -27,6 +32,18 @@
 		3CF885702B4DFD07EFB9D7DD /* Pods-HeyGameScoreboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyGameScoreboard.release.xcconfig"; path = "Target Support Files/Pods-HeyGameScoreboard/Pods-HeyGameScoreboard.release.xcconfig"; sourceTree = "<group>"; };
 		823ED12469CF95989EF2D3AF /* Pods_HeyGameScoreboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeyGameScoreboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17BAFB81DE16BEA40F247F8 /* Pods-HeyGameScoreboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyGameScoreboard.debug.xcconfig"; path = "Target Support Files/Pods-HeyGameScoreboard/Pods-HeyGameScoreboard.debug.xcconfig"; sourceTree = "<group>"; };
+		CE06277324B9555900939D27 /* BMHistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMHistoryViewController.h; sourceTree = "<group>"; };
+		CE06277424B9555900939D27 /* BMHistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMHistoryViewController.m; sourceTree = "<group>"; };
+		CE06277624B958D500939D27 /* UIImage+BMExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+BMExtension.h"; sourceTree = "<group>"; };
+		CE06277724B958D500939D27 /* UIImage+BMExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BMExtension.m"; sourceTree = "<group>"; };
+		CE06277924B95BCA00939D27 /* BMScoringModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMScoringModel.h; sourceTree = "<group>"; };
+		CE06277A24B95BCA00939D27 /* BMScoringModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMScoringModel.m; sourceTree = "<group>"; };
+		CE06277C24B95F1800939D27 /* BMHistoryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMHistoryTableViewCell.h; sourceTree = "<group>"; };
+		CE06277D24B95F1800939D27 /* BMHistoryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMHistoryTableViewCell.m; sourceTree = "<group>"; };
+		CE06277F24B96E1300939D27 /* PLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLWebViewController.h; sourceTree = "<group>"; };
+		CE06278024B96E1300939D27 /* FitFunSystemTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitFunSystemTool.h; sourceTree = "<group>"; };
+		CE06278124B96E1300939D27 /* PLWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLWebViewController.m; sourceTree = "<group>"; };
+		CE06278324B9852900939D27 /* 嗨比赛计分牌.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "嗨比赛计分牌.entitlements"; sourceTree = "<group>"; };
 		CE0E052F24B81E08005D8042 /* 嗨比赛计分牌.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "嗨比赛计分牌.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0E053224B81E08005D8042 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE0E053324B81E08005D8042 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -106,6 +123,7 @@
 		CE0E053124B81E08005D8042 /* HeyGameScoreboard */ = {
 			isa = PBXGroup;
 			children = (
+				CE06278324B9852900939D27 /* 嗨比赛计分牌.entitlements */,
 				CE0E055324B83F29005D8042 /* BMCommon */,
 				CE0E054B24B83F29005D8042 /* BMScoring */,
 				CE0E054F24B83F29005D8042 /* BMSet */,
@@ -134,6 +152,8 @@
 			children = (
 				CE0E056E24B84484005D8042 /* BMScoringViewController.h */,
 				CE0E056F24B84484005D8042 /* BMScoringViewController.m */,
+				CE06277324B9555900939D27 /* BMHistoryViewController.h */,
+				CE06277424B9555900939D27 /* BMHistoryViewController.m */,
 			);
 			path = BMControllers;
 			sourceTree = "<group>";
@@ -141,6 +161,8 @@
 		CE0E054D24B83F29005D8042 /* BMModels */ = {
 			isa = PBXGroup;
 			children = (
+				CE06277924B95BCA00939D27 /* BMScoringModel.h */,
+				CE06277A24B95BCA00939D27 /* BMScoringModel.m */,
 			);
 			path = BMModels;
 			sourceTree = "<group>";
@@ -148,6 +170,8 @@
 		CE0E054E24B83F29005D8042 /* BMViews */ = {
 			isa = PBXGroup;
 			children = (
+				CE06277C24B95F1800939D27 /* BMHistoryTableViewCell.h */,
+				CE06277D24B95F1800939D27 /* BMHistoryTableViewCell.m */,
 			);
 			path = BMViews;
 			sourceTree = "<group>";
@@ -187,6 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				CE0E055E24B8434A005D8042 /* BM_PrefixHeader.pch */,
+				CE06278024B96E1300939D27 /* FitFunSystemTool.h */,
+				CE06277F24B96E1300939D27 /* PLWebViewController.h */,
+				CE06278124B96E1300939D27 /* PLWebViewController.m */,
 				CE0E055424B8434A005D8042 /* BMBaseViewController.h */,
 				CE0E056224B8434B005D8042 /* BMBaseViewController.m */,
 				CE0E055A24B8434A005D8042 /* BMGlobal.h */,
@@ -202,6 +229,8 @@
 				CE0E056124B8434A005D8042 /* NSDictionary+log.m */,
 				CE0E056024B8434A005D8042 /* NSString+BM.h */,
 				CE0E055524B8434A005D8042 /* NSString+BM.m */,
+				CE06277624B958D500939D27 /* UIImage+BMExtension.h */,
+				CE06277724B958D500939D27 /* UIImage+BMExtension.m */,
 				CE0E055724B8434A005D8042 /* Reachability.h */,
 				CE0E055624B8434A005D8042 /* Reachability.m */,
 			);
@@ -322,13 +351,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0E057024B84484005D8042 /* BMScoringViewController.m in Sources */,
+				CE06277824B958D500939D27 /* UIImage+BMExtension.m in Sources */,
 				CE0E056C24B8434B005D8042 /* BMBaseViewController.m in Sources */,
+				CE06277E24B95F1800939D27 /* BMHistoryTableViewCell.m in Sources */,
 				CE0E056D24B8434B005D8042 /* MBProgressHUD+BMNJ.m in Sources */,
 				CE0E053424B81E08005D8042 /* AppDelegate.m in Sources */,
 				CE0E056B24B8434B005D8042 /* NSDictionary+log.m in Sources */,
+				CE06277B24B95BCA00939D27 /* BMScoringModel.m in Sources */,
 				CE0E056924B8434B005D8042 /* BMHBTool.m in Sources */,
+				CE06278224B96E1300939D27 /* PLWebViewController.m in Sources */,
 				CE0E056824B8434B005D8042 /* NSArray+log.m in Sources */,
 				CE0E056624B8434B005D8042 /* NSString+BM.m in Sources */,
+				CE06277524B9555900939D27 /* BMHistoryViewController.m in Sources */,
 				CE0E056724B8434B005D8042 /* Reachability.m in Sources */,
 				CE0E056A24B8434B005D8042 /* BMUIUtilities.m in Sources */,
 				CE0E054524B81E0C005D8042 /* main.m in Sources */,
@@ -464,7 +498,11 @@
 			baseConfigurationReference = A17BAFB81DE16BEA40F247F8 /* Pods-HeyGameScoreboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "HeyGameScoreboard/嗨比赛计分牌.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: liang fan (UGRRM3576A)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = UGRRM3576A;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HeyGameScoreboard/BMCommon/BM_PrefixHeader.pch";
 				INFOPLIST_FILE = HeyGameScoreboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -473,6 +511,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Hey.GameScoreboard;
 				PRODUCT_NAME = "嗨比赛计分牌";
+				PROVISIONING_PROFILE_SPECIFIER = dis_GameScoreboard;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -482,7 +521,11 @@
 			baseConfigurationReference = 3CF885702B4DFD07EFB9D7DD /* Pods-HeyGameScoreboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "HeyGameScoreboard/嗨比赛计分牌.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: liang fan (UGRRM3576A)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = UGRRM3576A;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HeyGameScoreboard/BMCommon/BM_PrefixHeader.pch";
 				INFOPLIST_FILE = HeyGameScoreboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -491,6 +534,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Hey.GameScoreboard;
 				PRODUCT_NAME = "嗨比赛计分牌";
+				PROVISIONING_PROFILE_SPECIFIER = dis_GameScoreboard;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
