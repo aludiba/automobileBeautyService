@@ -23,54 +23,54 @@
 }
 - (void)setCDdataArray:(NSMutableArray *)CDdataArray{
     _CDdataArray = CDdataArray;
-    for (UIButton *sender in self.CDviewDataArray) {
-        [sender removeFromSuperview];
+    for (UIButton *CDsender in self.CDviewDataArray) {
+        [CDsender removeFromSuperview];
     }
     [self.CDviewDataArray removeAllObjects];
     if (_CDdataArray.count) {
-    CGFloat leadingX = 16;
-    CGFloat marginX = 10;
-    CGFloat height = 30;
-    CGFloat widthFront = 0;
-    UIButton *lastbBtn;
+    CGFloat CDleadingX = 16;
+    CGFloat CDmarginX = 10;
+    CGFloat CDheight = 30;
+    CGFloat CDwidthFront = 0;
+    UIButton *CDlastbBtn;
     for (int i = 0; i < _CDdataArray.count; i++) {
-        NSMutableDictionary *dic = _CDdataArray[i];
-        NSUInteger CDperiodCode = [[dic objectForKey:@"sectionCode"] integerValue];
-        NSString *section = [dic objectForKey:@"section"];
-        UIButton *btn = [[UIButton alloc] init];
-        [btn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-        [btn.titleLabel setFont:[UIFont systemFontOfSize:15]];
-        [btn setTitle:[NSString stringWithFormat:@"   %@   ",section] forState:UIControlStateNormal];
-        btn.tag = CDperiodCode;
-        btn.layer.cornerRadius = 14.0f;
-        btn.layer.masksToBounds = YES;
+        NSMutableDictionary *CDdic = _CDdataArray[i];
+        NSUInteger CDperiodCode = [[CDdic objectForKey:@"sectionCode"] integerValue];
+        NSString *CDsection = [CDdic objectForKey:@"section"];
+        UIButton *CDbtn = [[UIButton alloc] init];
+        [CDbtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        [CDbtn.titleLabel setFont:[UIFont systemFontOfSize:15]];
+        [CDbtn setTitle:[NSString stringWithFormat:@"   %@   ",CDsection] forState:UIControlStateNormal];
+        CDbtn.tag = CDperiodCode;
+        CDbtn.layer.cornerRadius = 14.0f;
+        CDbtn.layer.masksToBounds = YES;
         if (i == 0) {
-            btn.backgroundColor = [UIColor grayColor];
-            [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+            CDbtn.backgroundColor = [UIColor grayColor];
+            [CDbtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         }else{
-            btn.backgroundColor = CDH_Color(242, 242, 242, 1);
-            [btn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+            CDbtn.backgroundColor = CDH_Color(242, 242, 242, 1);
+            [CDbtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         }
-        [btn addTarget:self action:@selector(CDbtnClick:) forControlEvents:UIControlEventTouchUpInside];
-        CGSize size = [btn sizeThatFits:CGSizeMake(MAXFLOAT, 60)];
-        CGFloat width = size.width;
-        [self.contentView addSubview:btn];
-        [self.CDviewDataArray addObject:btn];
-        [btn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(leadingX + i * (marginX + widthFront));
+        [CDbtn addTarget:self action:@selector(CDbtnClick:) forControlEvents:UIControlEventTouchUpInside];
+        CGSize CDsize = [CDbtn sizeThatFits:CGSizeMake(MAXFLOAT, 60)];
+        CGFloat CDwidth = CDsize.width;
+        [self.contentView addSubview:CDbtn];
+        [self.CDviewDataArray addObject:CDbtn];
+        [CDbtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.contentView).offset(CDleadingX + i * (CDmarginX + CDwidthFront));
             make.top.equalTo(self.contentView).offset(20);
-            make.width.mas_equalTo(width);
-            make.height.mas_equalTo(height);
+            make.width.mas_equalTo(CDwidth);
+            make.height.mas_equalTo(CDheight);
         }];
-        widthFront = width;
+        CDwidthFront = CDwidth;
         if (i == self.CDdataArray.count - 1) {
-            lastbBtn = btn;
+            CDlastbBtn = CDbtn;
         }
     }
     [self.contentView addSubview:self.CDline];
     [self.CDline mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.contentView);
-        make.top.equalTo(lastbBtn.mas_bottom).offset(20);
+        make.top.equalTo(CDlastbBtn.mas_bottom).offset(20);
         make.trailing.equalTo(self.contentView);
         make.height.mas_equalTo(1);
         make.bottom.equalTo(self.contentView);
@@ -84,39 +84,30 @@
 }
 - (void)CDadjustColor{
     for (int i = 0; i < self.CDviewDataArray.count; i++) {
-           UIButton *btn = self.CDviewDataArray[i];
-           if (btn.tag != self.CDselectIndex) {
-           btn.backgroundColor = CDH_Color(242, 242, 242, 1);
-           [btn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+           UIButton *CDbtn = self.CDviewDataArray[i];
+           if (CDbtn.tag != self.CDselectIndex) {
+           CDbtn.backgroundColor = CDH_Color(242, 242, 242, 1);
+           [CDbtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
            }else{
-               btn.backgroundColor = [UIColor grayColor];
-               [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+               CDbtn.backgroundColor = [UIColor grayColor];
+               [CDbtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
            }
        }
 }
 - (void)CDbtnClick:(UIButton *)sender{
-    NSInteger tag = sender.tag;
-    self.CDselectIndex = tag;
-//    sender.backgroundColor = [UIColor grayColor];
-//    [sender setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-//    for (int i = 0; i < self.CDviewDataArray.count; i++) {
-//        UIButton *btn = self.CDviewDataArray[i];
-//        if (btn.tag != tag) {
-//        btn.backgroundColor = CDH_Color(242, 242, 242, 1);
-//        [btn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-//        }
-//    }
-    self.CDperiodCode = tag;
+    NSInteger CDtag = sender.tag;
+    self.CDselectIndex = CDtag;
+    self.CDperiodCode = CDtag;
     for (int i = 0; i < self.CDdataArray.count; i++) {
-        NSMutableDictionary *dic = self.CDdataArray[i];
-        NSUInteger sectionCode = [[dic objectForKey:@"sectionCode"] integerValue];
-        if (self.CDperiodCode == sectionCode) {
-            self.currentDataArray = [dic objectForKey:@"data"];
+        NSMutableDictionary *CDdic = self.CDdataArray[i];
+        NSUInteger CDsectionCode = [[CDdic objectForKey:@"sectionCode"] integerValue];
+        if (self.CDperiodCode == CDsectionCode) {
+            self.CDcurrentDataArray = [CDdic objectForKey:@"data"];
             break;
         }
     }
-    if (self.selectSectionB) {
-        self.selectSectionB(self);
+    if (self.CDselectSectionB) {
+        self.CDselectSectionB(self);
     }
 }
 #pragma mark - 属性懒加载

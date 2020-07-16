@@ -22,24 +22,24 @@
     [AVOSCloud setApplicationId:@"mG34aYISSTic5qVtir31dM6N-MdYXbMMI" clientKey:@"oLHtnYLqrERW7UvQ3UcnA3O5"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    AVQuery *bquery = [AVQuery queryWithClassName:@"CDPocketHabits"];
-    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-        
-           self.window.rootViewController = [self rootController];
-           [self.window makeKeyAndVisible];
-    }];
+    self.window.rootViewController = [self CDrootController];
+    [self.window makeKeyAndVisible];
+//    AVQuery *CDbquery = [AVQuery queryWithClassName:@"CDPocketHabits"];
+//    [CDbquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+//
+//    }];
     return YES;
 }
-- (UIViewController *)rootController{
-    AVUser *bUser = [AVUser currentUser];
-    if (bUser) {
+- (UIViewController *)CDrootController{
+    AVUser *CDUser = [AVUser currentUser];
+    if (CDUser) {
         //进行操作
-        CDTabBarViewController *tabVC = [CDTabBarViewController CDshareInstance];
-        return tabVC;
+        CDTabBarViewController *CDtabVC = [CDTabBarViewController CDshareInstance];
+        return CDtabVC;
     }else{
         //对象为空时，可打开用户注册界面
-        CDLoginViewController *loginVC = [CDLoginViewController CDshareInstance];
-        return loginVC;
+        CDLoginViewController *CDloginVC = [CDLoginViewController CDshareInstance];
+        return CDloginVC;
     }
 }
 @end

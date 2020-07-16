@@ -75,12 +75,12 @@
         [MBProgressHUD CDshowReminderText:NSLocalizedString(@"两次密码输入不一致", nil)];
         return;
     }
-    AVUser *user = [AVUser currentUser];
-    NSString *name = user.username;
-    [user updatePassword:self.CDoldPassword newPassword:self.CDconfirmPassword block:^(id  _Nullable object, NSError * _Nullable error) {
+    AVUser *CDuser = [AVUser currentUser];
+    NSString *CDname = CDuser.username;
+    [CDuser updatePassword:self.CDoldPassword newPassword:self.CDconfirmPassword block:^(id  _Nullable object, NSError * _Nullable error) {
         if (!error) {
             //用新密码登录
-            [AVUser logInWithUsernameInBackground:name password:self.CDconfirmPassword block:^(AVUser * _Nullable user, NSError * _Nullable error) {
+            [AVUser logInWithUsernameInBackground:CDname password:self.CDconfirmPassword block:^(AVUser * _Nullable user, NSError * _Nullable error) {
                 if (error) {
                     [MBProgressHUD CDshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
                 } else {

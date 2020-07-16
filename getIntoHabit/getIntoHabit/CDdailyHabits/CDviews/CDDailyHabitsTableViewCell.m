@@ -33,7 +33,7 @@
         
         [self.CDbackView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.contentView).offset(5);
-make.leading.equalTo(self.contentView).offset(16);
+            make.leading.equalTo(self.contentView).offset(16);
             make.trailing.equalTo(self.contentView).offset(-16);
             make.bottom.equalTo(self.contentView).offset(-5);
         }];
@@ -65,11 +65,11 @@ make.leading.equalTo(self.contentView).offset(16);
     }
     return self;
 }
-- (void)setModel:(CDGuideModel *)model{
-    _model = model;
-    self.CDcontentImageView.image = [UIImage imageNamed:_model.CDimageContent];
-    self.CDcontentLabel.text = _model.content;
-    self.CDclockLabel.text = [NSString stringWithFormat:@"%ld %@",_model.CDclockContinuouslyNumber,NSLocalizedString(@"天", nil)];
+- (void)setCDmodel:(CDGuideModel *)CDmodel{
+    _CDmodel = CDmodel;
+    self.CDcontentImageView.image = [UIImage imageNamed:_CDmodel.CDimageContent];
+    self.CDcontentLabel.text = _CDmodel.content;
+    self.CDclockLabel.text = [NSString stringWithFormat:@"%ld %@",_CDmodel.CDclockContinuouslyNumber,NSLocalizedString(@"天", nil)];
 }
 #pragma mark - 属性懒加载
 - (UIView *)CDbackView{

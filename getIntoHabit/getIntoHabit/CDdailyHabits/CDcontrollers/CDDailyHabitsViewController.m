@@ -32,16 +32,16 @@
 }
 - (void)CD_setupNavigationItems{
     [super CD_setupNavigationItems];
-    UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.CDaddHbbitButton];
-    self.navigationItem.rightBarButtonItem = rightButtonItem;
+    UIBarButtonItem *CDrightButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.CDaddHbbitButton];
+    self.navigationItem.rightBarButtonItem = CDrightButtonItem;
 }
 - (void)CDloadData{
        self.CDselectIndex = 0;
-       AVQuery *bquery = [AVQuery queryWithClassName:@"CDClockProjects"];
-       AVUser *author = [AVUser currentUser];
-       [bquery whereKey:@"author" equalTo:author];
+       AVQuery *CDquery = [AVQuery queryWithClassName:@"CDClockProjects"];
+       AVUser *CDauthor = [AVUser currentUser];
+       [CDquery whereKey:@"author" equalTo:CDauthor];
        __weak typeof(self) weakSelf = self;
-       [bquery findObjectsInBackgroundWithBlock:^(NSArray *CDarray, NSError *error) {
+       [CDquery findObjectsInBackgroundWithBlock:^(NSArray *CDarray, NSError *error) {
            if (error) {
                [self.CDmainTable.mj_header endRefreshing];
                [MBProgressHUD CDshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
@@ -49,42 +49,42 @@
                [self.CDmainTable.mj_header endRefreshing];
                if (CDarray.count) {
                    [weakSelf.CDdataArray removeAllObjects];
-                   AVObject *obj = [CDarray lastObject];
-                   NSArray *CDdataArray = [obj objectForKey:@"data"];
+                   AVObject *CDobj = [CDarray lastObject];
+                   NSArray *CDdataArray = [CDobj objectForKey:@"data"];
                    self.CDarray = [CDdataArray copy];
                    for (int i = 0; i < self.CDarray.count; i++) {
-                       NSDictionary *dic = self.CDarray[i];
-                       CDGuideModel *model = [CDGuideModel yy_modelWithDictionary:dic];
-                       Boolean isAddSection = YES;
-                       for (NSMutableDictionary *dic in self.CDdataArray) {
-                           NSString *sectionString = [dic objectForKey:@"section"];
-                           if ([sectionString isEqualToString:model.CDperiodTimeString]) {
-                               isAddSection = NO;
+                       NSDictionary *CDdic = self.CDarray[i];
+                       CDGuideModel *CDmodel = [CDGuideModel yy_modelWithDictionary:CDdic];
+                       Boolean CDisAddSection = YES;
+                       for (NSMutableDictionary *CDdic in self.CDdataArray) {
+                           NSString *CDsectionString = [CDdic objectForKey:@"section"];
+                           if ([CDsectionString isEqualToString:CDmodel.CDperiodTimeString]) {
+                               CDisAddSection = NO;
                            }
                        }
-                       if (isAddSection) {
-                           NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
-                           [dic setObject:model.CDperiodTimeString forKey:@"section"];
-                           [dic setObject:[NSNumber numberWithInteger:model.CDperiodCode] forKey:@"sectionCode"];
+                       if (CDisAddSection) {
+                           NSMutableDictionary *CDdic = [[NSMutableDictionary alloc] init];
+                           [CDdic setObject:CDmodel.CDperiodTimeString forKey:@"section"];
+                           [CDdic setObject:[NSNumber numberWithInteger:CDmodel.CDperiodCode] forKey:@"sectionCode"];
                            NSMutableArray *CDdataArray = [[NSMutableArray alloc] init];
-                           [dic setObject:CDdataArray forKey:@"data"];
-                           [CDdataArray addObject:model];
-                           [self.CDdataArray addObject:dic];
+                           [CDdic setObject:CDdataArray forKey:@"data"];
+                           [CDdataArray addObject:CDmodel];
+                           [self.CDdataArray addObject:CDdic];
                        }else{
-                           NSMutableDictionary *DIC;
-                           for (NSMutableDictionary *dic in self.CDdataArray) {
-                               NSString *sectionString = [dic objectForKey:@"section"];
-                               if ([sectionString isEqualToString:model.CDperiodTimeString]) {
-                                   DIC = dic;
+                           NSMutableDictionary *CDDIC;
+                           for (NSMutableDictionary *CDdic in self.CDdataArray) {
+                               NSString *CDsectionString = [CDdic objectForKey:@"section"];
+                               if ([CDsectionString isEqualToString:CDmodel.CDperiodTimeString]) {
+                                  CDDIC = CDdic;
                                }
                            }
-                           NSMutableArray *CDdataArray = [DIC objectForKey:@"data"];
-                           [CDdataArray addObject:model];
+                           NSMutableArray *CDdataArray = [CDDIC objectForKey:@"data"];
+                           [CDdataArray addObject:CDmodel];
                        }
                    }
-                   NSMutableDictionary *dic = [self.CDdataArray firstObject];
-                      NSMutableArray *dataArr = [dic objectForKey:@"data"];
-                    self.CDcurrentDataArray = dataArr;
+                   NSMutableDictionary *CDdic = [self.CDdataArray firstObject];
+                      NSMutableArray *CDdataArr = [CDdic objectForKey:@"data"];
+                    self.CDcurrentDataArray = CDdataArr;
                    [self.CDmainTable reloadData];
                }else{
                    [self.CDmainTable.mj_header endRefreshing];
@@ -94,25 +94,25 @@
        }];
 }
 - (void)CDdataUpdate{
-    AVObject *clockProjects = [AVObject objectWithClassName:@"CDClockProjects"];
-    AVUser *author = [AVUser currentUser];
-    [clockProjects setObject:author forKey:@"author"];
-    NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+    AVObject *CDclockProjects = [AVObject objectWithClassName:@"CDClockProjects"];
+    AVUser *CDauthor = [AVUser currentUser];
+    [CDclockProjects setObject:CDauthor forKey:@"author"];
+    NSMutableArray *CDtempArray = [[NSMutableArray alloc] init];
     for (int i = 0; i < self.CDdataArray.count; i++) {
-        NSMutableDictionary *dic = self.CDdataArray[i];
-        NSArray *dataA = [dic objectForKey:@"data"];
-        for (int j = 0; j < dataA.count; j++) {
-            CDGuideModel *model = dataA[j];
-            NSMutableDictionary *DIC = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[model yy_modelToJSONObject]];
-            [tempArray addObject:DIC];
+        NSMutableDictionary *CDdic = self.CDdataArray[i];
+        NSArray *CDdataA = [CDdic objectForKey:@"data"];
+        for (int j = 0; j < CDdataA.count; j++) {
+            CDGuideModel *CDmodel = CDdataA[j];
+            NSMutableDictionary *CDDIC = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[CDmodel yy_modelToJSONObject]];
+            [CDtempArray addObject:CDDIC];
         }
     }
-    NSMutableDictionary *tempDic = [[NSMutableDictionary alloc] init];
-    [tempDic setObject:tempArray forKey:@"data"];
-    for (NSString *key in tempDic.allKeys) {
-        [clockProjects setObject:[tempDic objectForKey:key]  forKey:key];
+    NSMutableDictionary *CDtempDic = [[NSMutableDictionary alloc] init];
+    [CDtempDic setObject:CDtempArray forKey:@"data"];
+    for (NSString *CDkey in CDtempDic.allKeys) {
+        [CDclockProjects setObject:[CDtempDic objectForKey:CDkey]  forKey:CDkey];
     }
-    [clockProjects saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
+    [CDclockProjects saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
             if (isSuccessful) {
                   [MBProgressHUD CDshowReminderText:NSLocalizedString(@"删除成功", nil)];
                 [self CDloadData];
@@ -135,8 +135,8 @@
     [CDheaderView CDadjustColor];
     self.CDheaderView = CDheaderView;
     __weak typeof(self) weakSelf = self;
-    CDheaderView.selectSectionB = ^(CDDailyHabitsTableViewHeaderView * _Nonnull habitsHeaderView) {
-        weakSelf.CDcurrentDataArray = habitsHeaderView.currentDataArray;
+    CDheaderView.CDselectSectionB = ^(CDDailyHabitsTableViewHeaderView * _Nonnull habitsHeaderView) {
+        weakSelf.CDcurrentDataArray = habitsHeaderView.CDcurrentDataArray;
         weakSelf.CDselectIndex = habitsHeaderView.CDselectIndex;
         [weakSelf.CDmainTable reloadData];
     };
@@ -146,11 +146,11 @@
     return self.CDcurrentDataArray.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    CDGuideModel *model = [self.CDcurrentDataArray objectAtIndex:indexPath.row];
-    CDDailyHabitsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CDDailyHabitsTableViewCell" forIndexPath:indexPath];
-    cell.model = model;
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    return cell;
+    CDGuideModel *CDmodel = [self.CDcurrentDataArray objectAtIndex:indexPath.row];
+    CDDailyHabitsTableViewCell *CDcell = [tableView dequeueReusableCellWithIdentifier:@"CDDailyHabitsTableViewCell" forIndexPath:indexPath];
+    CDcell.CDmodel = CDmodel;
+    CDcell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return CDcell;
 }
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     // 先删除数据源
@@ -160,11 +160,11 @@
     [self CDdataUpdate];
 }
 - (void)addHabits{
-    CDGuideViewController *guideVC = [[CDGuideViewController alloc] init];
-    guideVC.CDsuperHabitsVC = self;
-    guideVC.CDselectIndex = 1;
-    guideVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:guideVC animated:YES];
+    CDGuideViewController *CDguideVC = [[CDGuideViewController alloc] init];
+    CDguideVC.CDsuperHabitsVC = self;
+    CDguideVC.CDselectIndex = 1;
+    CDguideVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:CDguideVC animated:YES];
 }
 #pragma mark - 属性懒加载
 - (NSMutableArray *)CDdataArray{

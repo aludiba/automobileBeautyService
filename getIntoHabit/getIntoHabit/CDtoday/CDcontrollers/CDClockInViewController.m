@@ -28,8 +28,8 @@
     [self CDsetContentView];
 }
 - (void)CDsetContentView{
-    UIBarButtonItem *finishItem = [[UIBarButtonItem alloc] initWithCustomView:self.CDallLogButton];
-    self.navigationItem.rightBarButtonItem = finishItem;
+    UIBarButtonItem *CDfinishItem = [[UIBarButtonItem alloc] initWithCustomView:self.CDallLogButton];
+    self.navigationItem.rightBarButtonItem = CDfinishItem;
     
     [self.view addSubview:self.CDclockInDateLabel];
     [self.view addSubview:self.CDprojectImgView];
@@ -67,106 +67,106 @@
         make.width.mas_equalTo(60);
         make.height.mas_equalTo(30);
     }];
-    NSDate *nowDate = [[NSDate alloc] init];
-    NSString *nowDateString = [NSString stringWithFormat:@" %@ ",[CDUIUtilities CDformattedTimeStringWithDate:nowDate format:@"yyyy-MM-dd HH:mm"]];
-    self.CDclockInDateLabel.text = nowDateString;
+    NSDate *CDnowDate = [[NSDate alloc] init];
+    NSString *CDnowDateString = [NSString stringWithFormat:@" %@ ",[CDUIUtilities CDformattedTimeStringWithDate:CDnowDate format:@"yyyy-MM-dd HH:mm"]];
+    self.CDclockInDateLabel.text = CDnowDateString;
 }
 #pragma mark - 数据模型设置
 - (void)setModel:(CDGuideModel *)model{
     _model = model;
     self.CDprojectImgView.image = [UIImage imageNamed:_model.CDimageContent];
     self.CDprojectLabel.text = _model.content;
-    NSDate *nowDate = [[NSDate alloc] init];
-    NSString *nowDateString = [CDUIUtilities CDformattedTimeStringWithDate:nowDate format:@"yyyy-MM-dd"];
+    NSDate *CDnowDate = [[NSDate alloc] init];
+    NSString *CDnowDateString = [CDUIUtilities CDformattedTimeStringWithDate:CDnowDate format:@"yyyy-MM-dd"];
     if (self.model.CDpunchArray.count) {
-        NSMutableArray *puchArray = [[NSMutableArray alloc] initWithArray:self.model.CDpunchArray];
-        for (int i = 0; i < puchArray.count; i++) {
-            CDGuideClockInformationModel *model = puchArray[i];
-            NSString *CDclockDateString = [CDUIUtilities CDformattedTimeStringWithDate:model.CDclockDate format:@"yyyy-MM-dd"];
-            NSLog(@"CDclockDateString:%@,nowDateString:%@",CDclockDateString,nowDateString);
-            if ([CDclockDateString isEqualToString:nowDateString]) {
-                self.CDclockInLogTextView.text = model.CDclockLogContent;
+        NSMutableArray *CDpuchArray = [[NSMutableArray alloc] initWithArray:self.model.CDpunchArray];
+        for (int i = 0; i < CDpuchArray.count; i++) {
+            CDGuideClockInformationModel *CDmodel = CDpuchArray[i];
+            NSString *CDclockDateString = [CDUIUtilities CDformattedTimeStringWithDate:CDmodel.CDclockDate format:@"yyyy-MM-dd"];
+            NSLog(@"CDclockDateString:%@,nowDateString:%@",CDclockDateString,CDnowDateString);
+            if ([CDclockDateString isEqualToString:CDnowDateString]) {
+                self.CDclockInLogTextView.text = CDmodel.CDclockLogContent;
             }
         }
     }
 }
 #pragma mark - actions
 - (void)CDallLogAction{
-    CDAllClockLogsViewController *vc = [[CDAllClockLogsViewController alloc] init];
-    vc.data = self.CDdataArray;
-    vc.model = self.model;
-    [self.navigationController pushViewController:vc animated:YES];
+    CDAllClockLogsViewController *CDvc = [[CDAllClockLogsViewController alloc] init];
+    CDvc.data = self.CDdataArray;
+    CDvc.model = self.model;
+    [self.navigationController pushViewController:CDvc animated:YES];
 }
 - (void)CDsaveAction{
     if (!self.CDclockInLogTextView.text.length) {
         [MBProgressHUD CDshowReminderText:NSLocalizedString(@"请输入日志", nil)];
         return;
     }
-    NSDate *nowDate = [[NSDate alloc] init];
-    NSString *nowDateString = [CDUIUtilities CDformattedTimeStringWithDate:nowDate format:@"yyyy-MM-dd"];
+    NSDate *CDnowDate = [[NSDate alloc] init];
+    NSString *CDnowDateString = [CDUIUtilities CDformattedTimeStringWithDate:CDnowDate format:@"yyyy-MM-dd"];
     if (!self.model.CDpunchArray.count) {
-        NSMutableArray *puchArray = [[NSMutableArray alloc] init];
-        CDGuideClockInformationModel *model = [[CDGuideClockInformationModel alloc] init];
-        model.CDclockDate = nowDate;
-        model.CDclockLogContent = self.CDclockInLogTextView.text;
-        [puchArray addObject: model];
-        self.model.CDpunchArray = puchArray;
-        self.model.CDlastClockDate = [CDUIUtilities CDdateFromString:nowDateString formate:@"yyyy-MM-dd"];
+        NSMutableArray *CDpuchArray = [[NSMutableArray alloc] init];
+        CDGuideClockInformationModel *CDmodel = [[CDGuideClockInformationModel alloc] init];
+        CDmodel.CDclockDate = CDnowDate;
+        CDmodel.CDclockLogContent = self.CDclockInLogTextView.text;
+        [CDpuchArray addObject: CDmodel];
+        self.model.CDpunchArray = CDpuchArray;
+        self.model.CDlastClockDate = [CDUIUtilities CDdateFromString:CDnowDateString formate:@"yyyy-MM-dd"];
         self.model.CDclockContinuouslyNumber = 1;
     }else{
-        NSMutableArray *puchArray = [[NSMutableArray alloc] initWithArray:self.model.CDpunchArray];
-        Boolean isNewClock = YES;
-        for (int i = 0; i < puchArray.count; i++) {
-            CDGuideClockInformationModel *model = puchArray[i];
-            NSString *CDclockDateString = [CDUIUtilities CDformattedTimeStringWithDate:model.CDclockDate format:@"yyyy-MM-dd"];
-            if ([CDclockDateString isEqualToString:nowDateString]) {
-                model.CDclockLogContent = self.CDclockInLogTextView.text;
-                model.CDclockDate = nowDate;
-                isNewClock = NO;
+        NSMutableArray *CDpuchArray = [[NSMutableArray alloc] initWithArray:self.model.CDpunchArray];
+        Boolean CDisNewClock = YES;
+        for (int i = 0; i < CDpuchArray.count; i++) {
+            CDGuideClockInformationModel *CDmodel = CDpuchArray[i];
+            NSString *CDclockDateString = [CDUIUtilities CDformattedTimeStringWithDate:CDmodel.CDclockDate format:@"yyyy-MM-dd"];
+            if ([CDclockDateString isEqualToString:CDnowDateString]) {
+                CDmodel.CDclockLogContent = self.CDclockInLogTextView.text;
+                CDmodel.CDclockDate = CDnowDate;
+                CDisNewClock = NO;
             }
         }
-        if (isNewClock == YES) {
-            CDGuideClockInformationModel *model = [[CDGuideClockInformationModel alloc] init];
-            model.CDclockDate = nowDate;
-            model.CDclockLogContent = self.CDclockInLogTextView.text;
-            [puchArray addObject: model];
+        if (CDisNewClock == YES) {
+            CDGuideClockInformationModel *CDmodel = [[CDGuideClockInformationModel alloc] init];
+            CDmodel.CDclockDate = CDnowDate;
+            CDmodel.CDclockLogContent = self.CDclockInLogTextView.text;
+            [CDpuchArray addObject: CDmodel];
         }
-        self.model.CDpunchArray = [puchArray copy];
-        NSCalendar *calendar = [NSCalendar currentCalendar];
-        NSCalendarUnit unit = NSCalendarUnitDay;//只比较天数差异
+        self.model.CDpunchArray = [CDpuchArray copy];
+        NSCalendar *CDcalendar = [NSCalendar currentCalendar];
+        NSCalendarUnit CDunit = NSCalendarUnitDay;//只比较天数差异
         //比较的结果是NSDateComponents类对象
-        NSDateComponents *delta = [calendar components:unit fromDate:self.model.CDlastClockDate toDate:nowDate options:0];
-        self.model.CDlastClockDate = [CDUIUtilities CDdateFromString:nowDateString formate:@"yyyy-MM-dd"];
-        if (delta.day >= 1 && delta.day < 2) {
+        NSDateComponents *CDdelta = [CDcalendar components:CDunit fromDate:self.model.CDlastClockDate toDate:CDnowDate options:0];
+        self.model.CDlastClockDate = [CDUIUtilities CDdateFromString:CDnowDateString formate:@"yyyy-MM-dd"];
+        if (CDdelta.day >= 1 && CDdelta.day < 2) {
             self.model.CDclockContinuouslyNumber += 1;
-        }else if (delta.day >= 2){
+        }else if (CDdelta.day >= 2){
             self.model.CDclockContinuouslyNumber = 1;
         }
     }
-    NSMutableArray *selectArray = [[NSMutableArray alloc] init];
+    NSMutableArray *CDselectArray = [[NSMutableArray alloc] init];
     for (int i = 0; i < self.CDdataArray.count; i++) {
-        NSDictionary *dic = self.CDdataArray[i];
-        NSMutableArray *CDdataArray = [dic objectForKey:@"data"];
+        NSDictionary *CDdic = self.CDdataArray[i];
+        NSMutableArray *CDdataArray = [CDdic objectForKey:@"data"];
         for (int j = 0; j < CDdataArray.count; j++) {
-            CDGuideModel *model = CDdataArray[j];
-            [selectArray addObject:model];
+            CDGuideModel *CDmodel = CDdataArray[j];
+            [CDselectArray addObject:CDmodel];
         }
     }
-    AVObject *clockProjects = [AVObject objectWithClassName:@"CDClockProjects"];
-    AVUser *author = [AVUser currentUser];
-    [clockProjects setObject:author forKey:@"author"];
-    NSMutableArray *tempArray = [[NSMutableArray alloc] init];
-    for (int i = 0; i < selectArray.count; i++) {
-        CDGuideModel *model = selectArray[i];
-        NSMutableDictionary *dic = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[model yy_modelToJSONObject]];
-        [tempArray addObject:dic];
+    AVObject *CDclockProjects = [AVObject objectWithClassName:@"CDClockProjects"];
+    AVUser *CDauthor = [AVUser currentUser];
+    [CDclockProjects setObject:CDauthor forKey:@"author"];
+    NSMutableArray *CDtempArray = [[NSMutableArray alloc] init];
+    for (int i = 0; i < CDselectArray.count; i++) {
+        CDGuideModel *CDmodel = CDselectArray[i];
+        NSMutableDictionary *CDdic = [[NSMutableDictionary alloc] initWithDictionary:(NSDictionary *)[CDmodel yy_modelToJSONObject]];
+        [CDtempArray addObject:CDdic];
     }
-    NSMutableDictionary *tempDic = [[NSMutableDictionary alloc] init];
-    [tempDic setObject:tempArray forKey:@"data"];
-    for (NSString *key in tempDic.allKeys) {
-        [clockProjects setObject:[tempDic objectForKey:key]  forKey:key];
+    NSMutableDictionary *CDtempDic = [[NSMutableDictionary alloc] init];
+    [CDtempDic setObject:CDtempArray forKey:@"data"];
+    for (NSString *CDkey in CDtempDic.allKeys) {
+        [CDclockProjects setObject:[CDtempDic objectForKey:CDkey]  forKey:CDkey];
     }
-    [clockProjects saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
+    [CDclockProjects saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
             if (isSuccessful) {
                   [MBProgressHUD CDshowReminderText:NSLocalizedString(@"设置成功", nil)];
                 [self.CDsuperVC CDloadData];

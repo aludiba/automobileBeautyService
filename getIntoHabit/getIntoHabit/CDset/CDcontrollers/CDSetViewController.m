@@ -77,7 +77,7 @@
             CDModifyNicknameViewController *mnnVC = [[CDModifyNicknameViewController alloc] init];
             __weak __typeof(self)weakSelf = self;
             mnnVC.CDmodifyNicknameB = ^(CDModifyNicknameViewController * _Nonnull nicknameVC) {
-                viewModel.content = nicknameVC.nickname;
+                viewModel.content = nicknameVC.CDnickname;
                 [weakSelf.CDmainTable reloadData];
             };
             mnnVC.hidesBottomBarWhenPushed = YES;

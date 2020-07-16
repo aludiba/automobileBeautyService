@@ -26,7 +26,7 @@
 - (void)CDbackButtonAction{
     [self.navigationController popViewControllerAnimated:YES];
 }
-- (void)setTitle:(NSString *)title {
+- (void)setTitle:(NSString *)title{
     self.navigationItem.title = @"";
     UILabel *CDtitleLabel = [[UILabel alloc] init];
     CDtitleLabel.textAlignment = NSTextAlignmentCenter;
@@ -43,8 +43,8 @@
         [_CDbackButton setImage:[UIImage imageNamed:@"CDbtn_back"] forState:UIControlStateNormal];
         _CDbackButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [_CDbackButton addTarget:self action:@selector(CDbackButtonAction) forControlEvents:UIControlEventTouchUpInside];
-        UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:_CDbackButton];
-        self.navigationItem.leftBarButtonItem = backItem;
+        UIBarButtonItem *CDbackItem = [[UIBarButtonItem alloc] initWithCustomView:_CDbackButton];
+        self.navigationItem.leftBarButtonItem = CDbackItem;
     }
 }
 - (UIStatusBarStyle)preferredStatusBarStyle {

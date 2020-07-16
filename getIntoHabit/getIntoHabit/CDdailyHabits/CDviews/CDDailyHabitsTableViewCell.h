@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @class CDGuideModel;
 @interface CDDailyHabitsTableViewCell : UITableViewCell
-@property(nonatomic, strong)CDGuideModel *model;
+@property(nonatomic, strong)CDGuideModel *CDmodel;
 @end
 
 NS_ASSUME_NONNULL_END

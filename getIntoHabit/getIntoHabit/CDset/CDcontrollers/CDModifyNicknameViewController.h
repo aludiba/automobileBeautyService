@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef void(^CDmodifyNicknameBlock)(CDModifyNicknameViewController *nicknameVC);
 @interface CDModifyNicknameViewController : CDBaseViewController
 @property (nonatomic, copy)CDmodifyNicknameBlock CDmodifyNicknameB;
-@property(nonatomic, copy)NSString *nickname;
+@property(nonatomic, copy)NSString *CDnickname;
 @end
 
 NS_ASSUME_NONNULL_END

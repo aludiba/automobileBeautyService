@@ -13,7 +13,7 @@
 #import "CDClockInViewController.h"
 @interface CDTodayViewController ()<UICollectionViewDelegateFlowLayout,UICollectionViewDelegate,UICollectionViewDataSource>
 @property(nonatomic, strong)NSMutableArray *CDdataArray;
-@property(nonatomic, strong)UICollectionView *collectionView;
+@property(nonatomic, strong)UICollectionView *CDcollectionView;
 @end
 
 @implementation CDTodayViewController
@@ -25,47 +25,47 @@
     [self CDloadData];
 }
 - (void)CDloadData{
-    AVQuery *bquery = [AVQuery queryWithClassName:@"CDClockProjects"];
-    AVUser *author = [AVUser currentUser];
-    [bquery whereKey:@"author" equalTo:author];
+    AVQuery *CDquery = [AVQuery queryWithClassName:@"CDClockProjects"];
+    AVUser *CDauthor = [AVUser currentUser];
+    [CDquery whereKey:@"author" equalTo:CDauthor];
     __weak typeof(self) weakSelf = self;
-    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+    [CDquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
         if (error) {
-            [weakSelf.collectionView.mj_header endRefreshing];
+            [weakSelf.CDcollectionView.mj_header endRefreshing];
             [MBProgressHUD CDshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
         }else{
-            [weakSelf.collectionView.mj_header endRefreshing];
+            [weakSelf.CDcollectionView.mj_header endRefreshing];
             if (array.count) {
                 [weakSelf.CDdataArray removeAllObjects];
-                AVObject *obj = [array lastObject];
-                NSArray *CDdataArray = [obj objectForKey:@"data"];
+                AVObject *CDobj = [array lastObject];
+                NSArray *CDdataArray = [CDobj objectForKey:@"data"];
                 for (int i = 0; i < CDdataArray.count; i++) {
-                    NSDictionary *dic = CDdataArray[i];
-                    CDGuideModel *model = [CDGuideModel yy_modelWithDictionary:dic];
-                    Boolean isAddSection = YES;
-                    for (NSMutableDictionary *dic in self.CDdataArray) {
-                        NSString *sectionString = [dic objectForKey:@"section"];
-                        if ([sectionString isEqualToString:model.CDperiodTimeString]) {
-                            isAddSection = NO;
+                    NSDictionary *CDdic = CDdataArray[i];
+                    CDGuideModel *CDmodel = [CDGuideModel yy_modelWithDictionary:CDdic];
+                    Boolean CDisAddSection = YES;
+                    for (NSMutableDictionary *CDdic in self.CDdataArray) {
+                        NSString *CDsectionString = [CDdic objectForKey:@"section"];
+                        if ([CDsectionString isEqualToString:CDmodel.CDperiodTimeString]) {
+                            CDisAddSection = NO;
                         }
                     }
-                    if (isAddSection) {
-                        NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
-                        [dic setObject:model.CDperiodTimeString forKey:@"section"];
+                    if (CDisAddSection) {
+                        NSMutableDictionary *CDdic = [[NSMutableDictionary alloc] init];
+                        [CDdic setObject:CDmodel.CDperiodTimeString forKey:@"section"];
                         NSMutableArray *CDdataArray = [[NSMutableArray alloc] init];
-                        [dic setObject:CDdataArray forKey:@"data"];
-                        [CDdataArray addObject:model];
-                        [weakSelf.CDdataArray addObject:dic];
+                        [CDdic setObject:CDdataArray forKey:@"data"];
+                        [CDdataArray addObject:CDmodel];
+                        [weakSelf.CDdataArray addObject:CDdic];
                     }else{
-                        NSMutableDictionary *DIC;
-                        for (NSMutableDictionary *dic in weakSelf.CDdataArray) {
-                            NSString *sectionString = [dic objectForKey:@"section"];
-                            if ([sectionString isEqualToString:model.CDperiodTimeString]) {
-                                DIC = dic;
+                        NSMutableDictionary *CDDIC;
+                        for (NSMutableDictionary *CDdic in weakSelf.CDdataArray) {
+                            NSString *CDsectionString = [CDdic objectForKey:@"section"];
+                            if ([CDsectionString isEqualToString:CDmodel.CDperiodTimeString]) {
+                                CDDIC = CDdic;
                             }
                         }
-                        NSMutableArray *CDdataArray = [DIC objectForKey:@"data"];
-                        [CDdataArray addObject:model];
+                        NSMutableArray *CDdataArray = [CDDIC objectForKey:@"data"];
+                        [CDdataArray addObject:CDmodel];
                     }
                 }
                 if (weakSelf.CDdataArray.count) {
@@ -74,14 +74,14 @@
                     [MBProgressHUD CDshowReminderText:NSLocalizedString(@"暂无数据", nil)];
                 }
             }else{
-                [self.collectionView.mj_header endRefreshing];
+                [self.CDcollectionView.mj_header endRefreshing];
                 [MBProgressHUD CDshowReminderText:NSLocalizedString(@"请稍后重试", nil)];
             }
         }
     }];
 }
 - (void)collectionViewReload{
-    [self.collectionView reloadData];
+    [self.CDcollectionView reloadData];
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
     return CGSizeMake(CDWIDTH, 50);
@@ -92,13 +92,13 @@
 }
 // 返回cell之间行间隙
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
-    CGFloat maginX = (CDWIDTH - 3 * 100) / 4;
-    return maginX * 0.7;
+    CGFloat CDmaginX = (CDWIDTH - 3 * 100) / 4;
+    return CDmaginX * 0.7;
 }
 // 返回cell之间列间隙
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
-    CGFloat maginX = (CDWIDTH - 3 * 100) / 4;
-    return maginX;
+    CGFloat CDmaginX = (CDWIDTH - 3 * 100) / 4;
+    return CDmaginX;
 }
 // 设置上左下右边界缩进
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
@@ -111,45 +111,45 @@
 }
 // 返回cell个数
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    NSDictionary *dic = self.CDdataArray[section];
-    NSArray *array = [dic objectForKey:@"data"];
-    return array.count;
+    NSDictionary *CDdic = self.CDdataArray[section];
+    NSArray *CDarray = [CDdic objectForKey:@"data"];
+    return CDarray.count;
 }
 // 返回cell内容
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSDictionary *dic = self.CDdataArray[indexPath.section];
-    NSArray *array = [dic objectForKey:@"data"];
-    CDGuideModel *model = array[indexPath.row];
-    CDTodayClockInCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CDTodayClockInCollectionViewCell" forIndexPath:indexPath];
-    cell.model = model;
-    return cell;
+    NSDictionary *CDdic = self.CDdataArray[indexPath.section];
+    NSArray *CDarray = [CDdic objectForKey:@"data"];
+    CDGuideModel *CDmodel = CDarray[indexPath.row];
+    CDTodayClockInCollectionViewCell *CDcell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CDTodayClockInCollectionViewCell" forIndexPath:indexPath];
+    CDcell.model = CDmodel;
+    return CDcell;
 }
 // 返回Header/Footer内容
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {          // Header视图
         // 从复用队列中获取HooterView
-        CDGuideCollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"CDGuideCollectionReusableView" forIndexPath:indexPath];
-        NSDictionary *dic = self.CDdataArray[indexPath.section];
-        NSString *title = [dic objectForKey:@"section"];
-        headerView.CDtitleString = title;
+        CDGuideCollectionReusableView *CDheaderView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"CDGuideCollectionReusableView" forIndexPath:indexPath];
+        NSDictionary *CDdic = self.CDdataArray[indexPath.section];
+        NSString *CDtitle = [CDdic objectForKey:@"section"];
+        CDheaderView.CDtitleString = CDtitle;
         // 返回HooterView
-        return headerView;
+        return CDheaderView;
     }else if ([kind isEqualToString:UICollectionElementKindSectionFooter]) {
         return nil;
     }
     return nil;
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSDictionary *dic = self.CDdataArray[indexPath.section];
-    NSArray *array = [dic objectForKey:@"data"];
-    CDGuideModel *model = array[indexPath.row];
-    CDClockInViewController *clockInVC = [[CDClockInViewController alloc] init];
-    clockInVC.model = model;
-    clockInVC.CDdataArray = self.CDdataArray;
-    clockInVC.CDsuperVC = self;
-    clockInVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:clockInVC animated:YES];
+    NSDictionary *CDdic = self.CDdataArray[indexPath.section];
+    NSArray *CDarray = [CDdic objectForKey:@"data"];
+    CDGuideModel *CDmodel = CDarray[indexPath.row];
+    CDClockInViewController *CDclockInVC = [[CDClockInViewController alloc] init];
+    CDclockInVC.model = CDmodel;
+    CDclockInVC.CDdataArray = self.CDdataArray;
+    CDclockInVC.CDsuperVC = self;
+    CDclockInVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:CDclockInVC animated:YES];
 }
 #pragma mark - 属性懒加载
 - (NSMutableArray *)CDdataArray{
@@ -158,32 +158,32 @@
     }
     return _CDdataArray;
 }
-- (UICollectionView *)collectionView{
-    if (!_collectionView) {
+- (UICollectionView *)CDcollectionView{
+    if (!_CDcollectionView) {
         // 创建FlowLayout
         UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
         // 垂直方向滑动
         flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
         // 创建collectionView
         CGRect frame = CGRectMake(0, CDHeightNavBar, CDWIDTH, CDHEICDT);
-        _collectionView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:flowLayout];
+        _CDcollectionView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:flowLayout];
         // 设置代理
-        _collectionView.delegate = self;
-        _collectionView.dataSource = self;
+        _CDcollectionView.delegate = self;
+        _CDcollectionView.dataSource = self;
         // 其他属性
-        _collectionView.backgroundColor = [UIColor clearColor];
-        _collectionView.showsVerticalScrollIndicator = NO;// 隐藏垂直方向滚动条
-        [_collectionView registerClass:[CDTodayClockInCollectionViewCell class] forCellWithReuseIdentifier:@"CDTodayClockInCollectionViewCell"];
-        [_collectionView registerClass:[CDGuideCollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"CDGuideCollectionReusableView"];
-        _collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(CDloadData)];
-        [self.view addSubview:_collectionView];
-        [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        _CDcollectionView.backgroundColor = [UIColor clearColor];
+        _CDcollectionView.showsVerticalScrollIndicator = NO;// 隐藏垂直方向滚动条
+        [_CDcollectionView registerClass:[CDTodayClockInCollectionViewCell class] forCellWithReuseIdentifier:@"CDTodayClockInCollectionViewCell"];
+        [_CDcollectionView registerClass:[CDGuideCollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"CDGuideCollectionReusableView"];
+        _CDcollectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(CDloadData)];
+        [self.view addSubview:_CDcollectionView];
+        [_CDcollectionView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.mas_topLayoutGuideBottom).offset(20);
             make.leading.equalTo(self.view);
             make.trailing.equalTo(self.view);
             make.bottom.equalTo(self.view).offset(-CDHeightNavContentBar);
         }];
     }
-    return _collectionView;
+    return _CDcollectionView;
 }
 @end

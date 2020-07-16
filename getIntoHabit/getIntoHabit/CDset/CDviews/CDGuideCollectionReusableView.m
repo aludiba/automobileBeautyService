@@ -27,9 +27,9 @@
 - (void)setCDtitleString:(NSString *)CDtitleString{
     _CDtitleString = CDtitleString;
     self.CDtitleLbl.text = [NSString stringWithFormat:@"   %@   ",_CDtitleString];
-    CGSize size = [self.CDtitleLbl sizeThatFits:CGSizeMake(MAXFLOAT, 30)];
+    CGSize CDsize = [self.CDtitleLbl sizeThatFits:CGSizeMake(MAXFLOAT, 30)];
     [self.CDtitleLbl mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.width.mas_equalTo(size.width);
+        make.width.mas_equalTo(CDsize.width);
     }];
     [self.CDtitleLbl layoutIfNeeded];
     [self layoutSubviews];

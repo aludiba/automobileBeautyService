@@ -16,8 +16,8 @@ typedef void(^selectSectionBlock)(CDDailyHabitsTableViewHeaderView *habitsHeader
 @property(nonatomic, assign)NSUInteger CDperiodCode;
 @property(nonatomic, strong)NSArray *dataA;
 @property(nonatomic, strong)NSMutableArray *CDdataArray;
-@property(nonatomic, strong)NSMutableArray *currentDataArray;
-@property(nonatomic, strong)selectSectionBlock selectSectionB;
+@property(nonatomic, strong)NSMutableArray *CDcurrentDataArray;
+@property(nonatomic, strong)selectSectionBlock CDselectSectionB;
 - (void)CDadjustColor;
 @end
 

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -141,7 +141,6 @@
 				8702563F71C1F0BF06C41C09 /* Pods-getIntoHabit.debug.xcconfig */,
 				799830386E2D71EA9CF12B76 /* Pods-getIntoHabit.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -195,15 +194,15 @@
 			isa = PBXGroup;
 			children = (
 				CE5CC5E224C01A5B00527D9D /* CDLoginViewController.h */,
-				CE5CC5E324C01A5B00527D9D /* CDModifyNicknameViewController.m */,
-				CE5CC5E424C01A5B00527D9D /* CDSetViewController.m */,
-				CE5CC5E524C01A5B00527D9D /* CDGuideViewController.m */,
-				CE5CC5E624C01A5B00527D9D /* CDPasswordChangeViewController.m */,
 				CE5CC5E724C01A5B00527D9D /* CDLoginViewController.m */,
-				CE5CC5E824C01A5B00527D9D /* CDSetViewController.h */,
 				CE5CC5E924C01A5C00527D9D /* CDModifyNicknameViewController.h */,
-				CE5CC5EA24C01A5C00527D9D /* CDGuideViewController.h */,
+				CE5CC5E324C01A5B00527D9D /* CDModifyNicknameViewController.m */,
 				CE5CC5EB24C01A5C00527D9D /* CDPasswordChangeViewController.h */,
+				CE5CC5E624C01A5B00527D9D /* CDPasswordChangeViewController.m */,
+				CE5CC5E824C01A5B00527D9D /* CDSetViewController.h */,
+				CE5CC5E424C01A5B00527D9D /* CDSetViewController.m */,
+				CE5CC5EA24C01A5C00527D9D /* CDGuideViewController.h */,
+				CE5CC5E524C01A5B00527D9D /* CDGuideViewController.m */,
 			);
 			path = CDcontrollers;
 			sourceTree = "<group>";
@@ -212,12 +211,12 @@
 			isa = PBXGroup;
 			children = (
 				CE5CC5ED24C01A5C00527D9D /* CDGuideCollectionReusableView.h */,
+				CE5CC5F224C01A5C00527D9D /* CDGuideCollectionReusableView.m */,
 				CE5CC5EE24C01A5C00527D9D /* CDGuidePromptView.h */,
+				CE5CC5F124C01A5C00527D9D /* CDGuidePromptView.m */,
+				CE5CC5F324C01A5C00527D9D /* CDSetTableViewCell.h */,
 				CE5CC5EF24C01A5C00527D9D /* CDSetTableViewCell.m */,
 				CE5CC5F024C01A5C00527D9D /* CDGuideCollectionViewCell.h */,
-				CE5CC5F124C01A5C00527D9D /* CDGuidePromptView.m */,
-				CE5CC5F224C01A5C00527D9D /* CDGuideCollectionReusableView.m */,
-				CE5CC5F324C01A5C00527D9D /* CDSetTableViewCell.h */,
 				CE5CC5F424C01A5C00527D9D /* CDGuideCollectionViewCell.m */,
 			);
 			path = CDviews;
@@ -226,12 +225,12 @@
 		CE5CC5F524C01A5C00527D9D /* CDmodels */ = {
 			isa = PBXGroup;
 			children = (
+				CE5CC5F924C01A5C00527D9D /* CDGuideClockInformationModel.h */,
 				CE5CC5F624C01A5C00527D9D /* CDGuideClockInformationModel.m */,
 				CE5CC5F724C01A5C00527D9D /* CDGuideModel.h */,
-				CE5CC5F824C01A5C00527D9D /* CDSetViewModel.h */,
-				CE5CC5F924C01A5C00527D9D /* CDGuideClockInformationModel.h */,
-				CE5CC5FA24C01A5C00527D9D /* CDSetViewModel.m */,
 				CE5CC5FB24C01A5C00527D9D /* CDGuideModel.m */,
+				CE5CC5F824C01A5C00527D9D /* CDSetViewModel.h */,
+				CE5CC5FA24C01A5C00527D9D /* CDSetViewModel.m */,
 			);
 			path = CDmodels;
 			sourceTree = "<group>";
@@ -258,9 +257,9 @@
 			isa = PBXGroup;
 			children = (
 				CE5CC60124C01A5C00527D9D /* CDDailyHabitsTableViewHeaderView.h */,
-				CE5CC60224C01A5C00527D9D /* CDDailyHabitsTableViewCell.m */,
 				CE5CC60324C01A5C00527D9D /* CDDailyHabitsTableViewHeaderView.m */,
 				CE5CC60424C01A5C00527D9D /* CDDailyHabitsTableViewCell.h */,
+				CE5CC60224C01A5C00527D9D /* CDDailyHabitsTableViewCell.m */,
 			);
 			path = CDviews;
 			sourceTree = "<group>";
@@ -268,24 +267,24 @@
 		CE5CC60524C01A5C00527D9D /* CDcommon */ = {
 			isa = PBXGroup;
 			children = (
-				CE5CC60624C01A5C00527D9D /* CDBaseViewController.m */,
-				CE5CC60724C01A5C00527D9D /* NSDictionary+log.m */,
-				CE5CC60824C01A5C00527D9D /* CalendarTool.h */,
-				CE5CC60924C01A5C00527D9D /* CDUIUtilities.h */,
-				CE5CC60A24C01A5C00527D9D /* MBProgressHUD+CDNJ.m */,
-				CE5CC60B24C01A5C00527D9D /* CDHBTool.h */,
-				CE5CC60C24C01A5C00527D9D /* CDTabBarViewController.m */,
-				CE5CC60D24C01A5C00527D9D /* CDglobal.h */,
-				CE5CC60E24C01A5C00527D9D /* NSArray+log.h */,
-				CE5CC60F24C01A5C00527D9D /* NSDictionary+log.h */,
-				CE5CC61024C01A5C00527D9D /* CDBaseViewController.h */,
-				CE5CC61124C01A5C00527D9D /* CDUIUtilities.m */,
-				CE5CC61224C01A5C00527D9D /* CalendarTool.m */,
-				CE5CC61324C01A5C00527D9D /* CDTabBarViewController.h */,
-				CE5CC61424C01A5C00527D9D /* CDHBTool.m */,
-				CE5CC61524C01A5C00527D9D /* MBProgressHUD+CDNJ.h */,
 				CE5CC61624C01A5C00527D9D /* PocketHabits_PrefixHeader.pch */,
+				CE5CC60D24C01A5C00527D9D /* CDglobal.h */,
+				CE5CC60B24C01A5C00527D9D /* CDHBTool.h */,
+				CE5CC61424C01A5C00527D9D /* CDHBTool.m */,
+				CE5CC61324C01A5C00527D9D /* CDTabBarViewController.h */,
+				CE5CC60C24C01A5C00527D9D /* CDTabBarViewController.m */,
+				CE5CC61024C01A5C00527D9D /* CDBaseViewController.h */,
+				CE5CC60624C01A5C00527D9D /* CDBaseViewController.m */,
+				CE5CC60F24C01A5C00527D9D /* NSDictionary+log.h */,
+				CE5CC60724C01A5C00527D9D /* NSDictionary+log.m */,
+				CE5CC60E24C01A5C00527D9D /* NSArray+log.h */,
 				CE5CC61724C01A5C00527D9D /* NSArray+log.m */,
+				CE5CC60824C01A5C00527D9D /* CalendarTool.h */,
+				CE5CC61224C01A5C00527D9D /* CalendarTool.m */,
+				CE5CC60924C01A5C00527D9D /* CDUIUtilities.h */,
+				CE5CC61124C01A5C00527D9D /* CDUIUtilities.m */,
+				CE5CC61524C01A5C00527D9D /* MBProgressHUD+CDNJ.h */,
+				CE5CC60A24C01A5C00527D9D /* MBProgressHUD+CDNJ.m */,
 			);
 			path = CDcommon;
 			sourceTree = "<group>";
@@ -303,11 +302,11 @@
 			isa = PBXGroup;
 			children = (
 				CE5CC61A24C01A5C00527D9D /* CDAllClockLogsViewController.h */,
-				CE5CC61B24C01A5C00527D9D /* CDTodayViewController.h */,
-				CE5CC61C24C01A5C00527D9D /* CDClockInViewController.m */,
 				CE5CC61D24C01A5C00527D9D /* CDAllClockLogsViewController.m */,
-				CE5CC61E24C01A5C00527D9D /* CDClockInViewController.h */,
+				CE5CC61B24C01A5C00527D9D /* CDTodayViewController.h */,
 				CE5CC61F24C01A5C00527D9D /* CDTodayViewController.m */,
+				CE5CC61E24C01A5C00527D9D /* CDClockInViewController.h */,
+				CE5CC61C24C01A5C00527D9D /* CDClockInViewController.m */,
 			);
 			path = CDcontrollers;
 			sourceTree = "<group>";
@@ -316,8 +315,8 @@
 			isa = PBXGroup;
 			children = (
 				CE5CC62124C01A5C00527D9D /* CDTodayClockInCollectionViewCell.h */,
-				CE5CC62224C01A5C00527D9D /* CDAllClockLogsViewCellTableViewCell.h */,
 				CE5CC62324C01A5C00527D9D /* CDTodayClockInCollectionViewCell.m */,
+				CE5CC62224C01A5C00527D9D /* CDAllClockLogsViewCellTableViewCell.h */,
 				CE5CC62424C01A5C00527D9D /* CDAllClockLogsViewCellTableViewCell.m */,
 			);
 			path = CDviews;

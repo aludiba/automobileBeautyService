@@ -41,9 +41,9 @@
 #pragma mark - actions
 - (void)CDbtnClick:(UIButton *)sender{
     [self.view endEditing:YES];
-    AVUser *bUser = [AVUser currentUser];
-    [bUser setObject:self.nickname forKey:@"username"];
-    [bUser saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
+    AVUser *CDUser = [AVUser currentUser];
+    [CDUser setObject:self.CDnickname forKey:@"username"];
+    [CDUser saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
         if (isSuccessful) {
             [MBProgressHUD CDshowReminderText:NSLocalizedString(@"更新成功", nil)];
             if (self.CDmodifyNicknameB) {
@@ -56,14 +56,14 @@
     }];
 }
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
-    self.nickname = textField.text;
+    self.CDnickname = textField.text;
     return YES;
 }
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
-    self.nickname = textField.text;
+    self.CDnickname = textField.text;
 }
 - (void)textFieldDidEndEditing:(UITextField *)textField{
-    self.nickname = textField.text;
+    self.CDnickname = textField.text;
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
@@ -85,7 +85,7 @@
         AVUser *user = [AVUser currentUser];
         if ([[user objectForKey:@"username"] length]) {
             _CDconfirmNickNameTextField.text = [user objectForKey:@"username"];
-            self.nickname = [user objectForKey:@"username"];
+            self.CDnickname = [user objectForKey:@"username"];
         }
     }
     return _CDconfirmNickNameTextField;

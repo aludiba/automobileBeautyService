@@ -35,11 +35,11 @@
     return self.CDdataArray.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    CDGuideClockInformationModel *model = self.CDdataArray[indexPath.row];
-    CDAllClockLogsViewCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CDAllClockLogsViewCellTableViewCell" forIndexPath:indexPath];
-    cell.model = model;
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    return cell;
+    CDGuideClockInformationModel *CDmodel = self.CDdataArray[indexPath.row];
+    CDAllClockLogsViewCellTableViewCell *CDcell = [tableView dequeueReusableCellWithIdentifier:@"CDAllClockLogsViewCellTableViewCell" forIndexPath:indexPath];
+    CDcell.model = CDmodel;
+    CDcell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return CDcell;
 }
 #pragma mark - 属性懒加载
 - (NSMutableArray *)CDdataArray{

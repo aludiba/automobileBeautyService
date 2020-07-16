@@ -65,17 +65,17 @@
         make.trailing.equalTo(self.CDbackView).offset(-30);
         make.height.mas_equalTo(21);
     }];
-    UIView *line = [[UIView alloc] init];
-    line.backgroundColor = [UIColor grayColor];
-    [self.CDbackView addSubview:line];
-    [line mas_makeConstraints:^(MASConstraintMaker *make) {
+    UIView *CDline = [[UIView alloc] init];
+    CDline.backgroundColor = [UIColor grayColor];
+    [self.CDbackView addSubview:CDline];
+    [CDline mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.CDbackView).offset(25);
         make.trailing.equalTo(self.CDbackView).offset(-25);
-    make.top.equalTo(self.CDCDaccountTextField.mas_bottom).offset(10);
+        make.top.equalTo(self.CDCDaccountTextField.mas_bottom).offset(10);
         make.height.mas_equalTo(0.5);
     }];
     [self.CDCDpasswordLable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(line.mas_bottom).offset(24);
+        make.top.equalTo(CDline.mas_bottom).offset(24);
         make.leading.equalTo(self.CDbackView).offset(31.5);
         make.width.mas_equalTo(70);
         make.height.mas_equalTo(21);
@@ -86,25 +86,25 @@
         make.trailing.equalTo(self.CDbackView).offset(-30);
         make.height.mas_equalTo(21);
     }];
-    UIView *line1 = [[UIView alloc] init];
-    line1.backgroundColor = [UIColor grayColor];
-    [self.CDbackView addSubview:line1];
-    [line1 mas_makeConstraints:^(MASConstraintMaker *make) {
+    UIView *CDline1 = [[UIView alloc] init];
+    CDline1.backgroundColor = [UIColor grayColor];
+    [self.CDbackView addSubview:CDline1];
+    [CDline1 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.CDbackView).offset(25);
         make.trailing.equalTo(self.CDbackView).offset(-25);
-    make.top.equalTo(self.CDCDpasswordTextField.mas_bottom).offset(10);
+        make.top.equalTo(self.CDCDpasswordTextField.mas_bottom).offset(10);
         make.height.mas_equalTo(0.5);
     }];
     [self.CDloginButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.CDbackView).offset(26.5);
         make.trailing.equalTo(self.CDbackView).offset(-26.5);
-        make.top.equalTo(line1.mas_bottom).offset(45);
+        make.top.equalTo(CDline1.mas_bottom).offset(45);
         make.height.mas_equalTo(44);
     }];
     [self.CDregisteredButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.CDbackView).offset(26.5);
         make.trailing.equalTo(self.CDbackView).offset(-26.5);
-    make.top.equalTo(self.CDloginButton.mas_bottom).offset(20);
+        make.top.equalTo(self.CDloginButton.mas_bottom).offset(20);
         make.height.mas_equalTo(44);
     }];
 }
@@ -136,17 +136,17 @@
                 }
              }];
             }else if(sender.tag == 101){
-                AVUser *bUser = [[AVUser alloc] init];
-                [bUser setUsername:self.CDaccount];
-                [bUser setPassword:self.CDpassword];
-                [bUser signUpInBackgroundWithBlock:^ (BOOL isSuccessful, NSError *error){
+                AVUser *CDUser = [[AVUser alloc] init];
+                [CDUser setUsername:self.CDaccount];
+                [CDUser setPassword:self.CDpassword];
+                [CDUser signUpInBackgroundWithBlock:^ (BOOL isSuccessful, NSError *error){
                 if (isSuccessful){
                     [MBProgressHUD CDshowReminderText:NSLocalizedString(@"注册成功", nil)];
                     [AVUser logInWithUsernameInBackground:self.CDaccount password:self.CDpassword block:^(AVUser * _Nullable user, NSError * _Nullable error) {
                         if (user) {
-                            CDTabBarViewController *tabVC = [CDTabBarViewController CDshareInstance];
-                            tabVC.selectedIndex = 0;
-                            [[UIApplication sharedApplication].delegate window].rootViewController = tabVC;
+                            CDTabBarViewController *CDtabVC = [CDTabBarViewController CDshareInstance];
+                            CDtabVC.selectedIndex = 0;
+                            [[UIApplication sharedApplication].delegate window].rootViewController = CDtabVC;
                         }else{
                             [MBProgressHUD CDshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
                         }

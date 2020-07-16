@@ -66,7 +66,7 @@
 }
 - (void)setContentView{
     self.CDtodayVC = [[CDTodayViewController alloc] init];
-    UINavigationController *diary = [[UINavigationController alloc] initWithRootViewController:self.CDtodayVC];
+    UINavigationController *CDdiary = [[UINavigationController alloc] initWithRootViewController:self.CDtodayVC];
     self.CDtodayVC.tabBarItem.title = NSLocalizedString(@"今天", nil);
     self.CDtodayVC.tabBarItem.image = [[UIImage imageNamed:@"CDtab_today_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.CDtodayVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"CDtab_today_active"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -74,7 +74,7 @@
     [self.CDtodayVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor grayColor]} forState:UIControlStateNormal];
     
     self.CDdailyHabitsVC = [[CDDailyHabitsViewController alloc] init];
-    UINavigationController *mine = [[UINavigationController alloc] initWithRootViewController:self.CDdailyHabitsVC];
+    UINavigationController *CDmine = [[UINavigationController alloc] initWithRootViewController:self.CDdailyHabitsVC];
     self.CDdailyHabitsVC.tabBarItem.title = NSLocalizedString(@"日常习惯", nil);
     self.CDdailyHabitsVC.tabBarItem.image = [[UIImage imageNamed:@"CDtab_dailyHabits_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.CDdailyHabitsVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"CDtab_dailyHabits_active"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -82,15 +82,15 @@
     [self.CDdailyHabitsVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor grayColor]} forState:UIControlStateNormal];
     
     self.CDsetVC = [[CDSetViewController alloc] init];
-    UINavigationController *set = [[UINavigationController alloc] initWithRootViewController:self.CDsetVC];
+    UINavigationController *CDset = [[UINavigationController alloc] initWithRootViewController:self.CDsetVC];
     self.CDsetVC.tabBarItem.title = NSLocalizedString(@"设置", nil);
     self.CDsetVC.tabBarItem.image = [[UIImage imageNamed:@"CDtab_set_default"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.CDsetVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"CDtab_set_active"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [self.CDsetVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor blackColor]} forState:UIControlStateSelected];
     [self.CDsetVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor grayColor]} forState:UIControlStateNormal];
     
-    NSArray *arrControllers = [NSArray arrayWithObjects:diary,mine,set,nil];
-    self.viewControllers = arrControllers;
+    NSArray *CDarrControllers = [NSArray arrayWithObjects:CDdiary,CDmine,CDset,nil];
+    self.viewControllers = CDarrControllers;
     [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -4)];
     [[UITabBar appearance] setBackgroundColor:CDH_Color(237, 242, 242, 1)];
 }

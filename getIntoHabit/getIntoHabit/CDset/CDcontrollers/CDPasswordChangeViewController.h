@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CDPasswordChangeViewController : CDBaseViewController
-@property(nonatomic, copy)NSString *userName;
+@property(nonatomic, copy)NSString *CDuserName;
 @end
 
 NS_ASSUME_NONNULL_END
