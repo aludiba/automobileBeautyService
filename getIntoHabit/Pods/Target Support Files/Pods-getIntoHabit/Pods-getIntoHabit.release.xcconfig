@@ -1,0 +1,10 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AVOSCloud" "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManager" "${PODS_CONFIGURATION_BUILD_DIR}/JTCalendar" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "${PODS_CONFIGURATION_BUILD_DIR}/YYModel" "${PODS_CONFIGURATION_BUILD_DIR}/YYText"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AVOSCloud/AVOSCloud.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManager/IQKeyboardManager.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/JTCalendar/JTCalendar.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD/MBProgressHUD.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh/MJRefresh.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YYModel/YYModel.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YYText/YYText.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_LDFLAGS = $(inherited) -l"sqlite3" -framework "AVOSCloud" -framework "Accelerate" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreText" -framework "Foundation" -framework "IQKeyboardManager" -framework "JTCalendar" -framework "MBProgressHUD" -framework "MJRefresh" -framework "Masonry" -framework "MobileCoreServices" -framework "QuartzCore" -framework "UIKit" -framework "YYModel" -framework "YYText"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A771949F713E9B3B4B241AA9 /* Pods_getIntoHabit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A4CA38443F1BBBFA804CBDE /* Pods_getIntoHabit.framework */; };
 		CE5CC5C924C0195E00527D9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC5C824C0195E00527D9D /* AppDelegate.m */; };
 		CE5CC5D424C0195F00527D9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5CC5D324C0195F00527D9D /* Assets.xcassets */; };
 		CE5CC5D724C0195F00527D9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5CC5D524C0195F00527D9D /* LaunchScreen.storyboard */; };
@@ -44,6 +45,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A4CA38443F1BBBFA804CBDE /* Pods_getIntoHabit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_getIntoHabit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		799830386E2D71EA9CF12B76 /* Pods-getIntoHabit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-getIntoHabit.release.xcconfig"; path = "Target Support Files/Pods-getIntoHabit/Pods-getIntoHabit.release.xcconfig"; sourceTree = "<group>"; };
+		8702563F71C1F0BF06C41C09 /* Pods-getIntoHabit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-getIntoHabit.debug.xcconfig"; path = "Target Support Files/Pods-getIntoHabit/Pods-getIntoHabit.debug.xcconfig"; sourceTree = "<group>"; };
 		CE5CC5C424C0195E00527D9D /* getIntoHabit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = getIntoHabit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5CC5C724C0195E00527D9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE5CC5C824C0195E00527D9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -124,17 +128,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A771949F713E9B3B4B241AA9 /* Pods_getIntoHabit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2DB14196463FA44BB55884C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8702563F71C1F0BF06C41C09 /* Pods-getIntoHabit.debug.xcconfig */,
+				799830386E2D71EA9CF12B76 /* Pods-getIntoHabit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE5CC5BB24C0195E00527D9D = {
 			isa = PBXGroup;
 			children = (
 				CE5CC5C624C0195E00527D9D /* getIntoHabit */,
 				CE5CC5C524C0195E00527D9D /* Products */,
+				B2DB14196463FA44BB55884C /* Pods */,
+				E9FB2894C3600481B6BD761F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -315,6 +332,14 @@
 			path = CDresources;
 			sourceTree = "<group>";
 		};
+		E9FB2894C3600481B6BD761F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A4CA38443F1BBBFA804CBDE /* Pods_getIntoHabit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -322,9 +347,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE5CC5DD24C0195F00527D9D /* Build configuration list for PBXNativeTarget "getIntoHabit" */;
 			buildPhases = (
+				94149B82851F7A860CB4ADCD /* [CP] Check Pods Manifest.lock */,
 				CE5CC5C024C0195E00527D9D /* Sources */,
 				CE5CC5C124C0195E00527D9D /* Frameworks */,
 				CE5CC5C224C0195E00527D9D /* Resources */,
+				9682FE51A5C9ECDC30855E60 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -383,6 +410,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94149B82851F7A860CB4ADCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-getIntoHabit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9682FE51A5C9ECDC30855E60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-getIntoHabit/Pods-getIntoHabit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-getIntoHabit/Pods-getIntoHabit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-getIntoHabit/Pods-getIntoHabit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE5CC5C024C0195E00527D9D /* Sources */ = {
@@ -570,6 +639,7 @@
 		};
 		CE5CC5DE24C0195F00527D9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8702563F71C1F0BF06C41C09 /* Pods-getIntoHabit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -587,6 +657,7 @@
 		};
 		CE5CC5DF24C0195F00527D9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 799830386E2D71EA9CF12B76 /* Pods-getIntoHabit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
