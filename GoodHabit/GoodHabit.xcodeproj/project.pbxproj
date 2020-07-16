@@ -8,49 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		44174B98EC156E8AE26A0351 /* Pods_GoodHabit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78D571AABE2191F4793A4F9 /* Pods_GoodHabit.framework */; };
-		72263EEC2338F23E00F54FFD /* PHAllClockLogsViewCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72263EEB2338F23E00F54FFD /* PHAllClockLogsViewCellTableViewCell.m */; };
-		72263EEF2338FC1900F54FFD /* PHAllClockLogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72263EEE2338FC1900F54FFD /* PHAllClockLogsViewController.m */; };
 		723CBB11232C86BE0095EC7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB10232C86BE0095EC7C /* AppDelegate.m */; };
 		723CBB19232C86C20095EC7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723CBB18232C86C20095EC7C /* Assets.xcassets */; };
 		723CBB1F232C86C20095EC7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB1E232C86C20095EC7C /* main.m */; };
-		723CBB58232CABF40095EC7C /* JTCalendarSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB35232CABF40095EC7C /* JTCalendarSettings.m */; };
-		723CBB59232CABF40095EC7C /* JTDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB36232CABF40095EC7C /* JTDateHelper.m */; };
-		723CBB5A232CABF40095EC7C /* JTCalendarScrollManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB3C232CABF40095EC7C /* JTCalendarScrollManager.m */; };
-		723CBB5B232CABF40095EC7C /* JTCalendarDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB3D232CABF40095EC7C /* JTCalendarDelegateManager.m */; };
-		723CBB5C232CABF40095EC7C /* JTCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB3F232CABF40095EC7C /* JTCalendarManager.m */; };
-		723CBB5D232CABF40095EC7C /* JTVerticalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB44232CABF40095EC7C /* JTVerticalCalendarView.m */; };
-		723CBB5E232CABF40095EC7C /* JTCalendarWeekDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB47232CABF40095EC7C /* JTCalendarWeekDayView.m */; };
-		723CBB5F232CABF40095EC7C /* JTHorizontalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB49232CABF40095EC7C /* JTHorizontalCalendarView.m */; };
-		723CBB60232CABF40095EC7C /* JTCalendarWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB4A232CABF40095EC7C /* JTCalendarWeekView.m */; };
-		723CBB61232CABF40095EC7C /* JTCalendarDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB4C232CABF40095EC7C /* JTCalendarDayView.m */; };
-		723CBB62232CABF40095EC7C /* JTCalendarPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB4D232CABF40095EC7C /* JTCalendarPageView.m */; };
-		723CBB63232CABF40095EC7C /* JTCalendarMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB4F232CABF40095EC7C /* JTCalendarMenuView.m */; };
-		723CBB69232CAF700095EC7C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 723CBB6B232CAF700095EC7C /* Localizable.strings */; };
-		723CBB72232CAFA40095EC7C /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB70232CAFA40095EC7C /* NSArray+log.m */; };
-		723CBB73232CAFA40095EC7C /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB71232CAFA40095EC7C /* NSDictionary+log.m */; };
-		723CBB76232CAFC60095EC7C /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB75232CAFC60095EC7C /* CalendarTool.m */; };
-		723CBB7C232CB0580095EC7C /* PHHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB7B232CB0580095EC7C /* PHHBTool.m */; };
-		723CBB7F232CB0A70095EC7C /* PHUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB7E232CB0A70095EC7C /* PHUIUtilities.m */; };
-		723CBB82232CB0FD0095EC7C /* MBProgressHUD+PHNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB81232CB0FD0095EC7C /* MBProgressHUD+PHNJ.m */; };
-		723CBB85232CB1390095EC7C /* PHNDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB84232CB1380095EC7C /* PHNDHTTPClient.m */; };
-		723CBB8A232CB71E0095EC7C /* PHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB89232CB71E0095EC7C /* PHBaseViewController.m */; };
-		723CBB8D232CB8CC0095EC7C /* PHTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB8C232CB8CC0095EC7C /* PHTodayViewController.m */; };
-		723CBB90232CB8EC0095EC7C /* PHDailyHabitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB8F232CB8EC0095EC7C /* PHDailyHabitsViewController.m */; };
-		723CBB93232CB9010095EC7C /* PHSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB92232CB9010095EC7C /* PHSetViewController.m */; };
-		723CBB96232CB9930095EC7C /* PHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB95232CB9930095EC7C /* PHTabBarViewController.m */; };
-		723CBB99232CC5120095EC7C /* PHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CBB98232CC5120095EC7C /* PHLoginViewController.m */; };
-		729D0B8F232E142600D88267 /* PHGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B8E232E142600D88267 /* PHGuideViewController.m */; };
-		729D0B92232E15AE00D88267 /* PHGuidePromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B91232E15AE00D88267 /* PHGuidePromptView.m */; };
-		729D0B95232E20B600D88267 /* PHGuideCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B94232E20B600D88267 /* PHGuideCollectionReusableView.m */; };
-		729D0B98232E20F400D88267 /* PHGuideCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B97232E20F400D88267 /* PHGuideCollectionViewCell.m */; };
-		729D0B9B232E28F600D88267 /* PHGuideModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D0B9A232E28F600D88267 /* PHGuideModel.m */; };
-		72A2978F2336039E004EE230 /* PHGuideClockInformationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2978E2336039E004EE230 /* PHGuideClockInformationModel.m */; };
-		72A2979223360F1E004EE230 /* PHModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2979123360F1E004EE230 /* PHModifyNicknameViewController.m */; };
-		72A297952336116B004EE230 /* PHPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A297942336116B004EE230 /* PHPasswordChangeViewController.m */; };
-		72A29798233618E4004EE230 /* PHSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A29797233618E4004EE230 /* PHSetTableViewCell.m */; };
-		72A2979B23361A9D004EE230 /* PHSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2979A23361A9D004EE230 /* PHSetViewModel.m */; };
-		72A2979E23362AB9004EE230 /* PHTodayClockInCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2979D23362AB9004EE230 /* PHTodayClockInCollectionViewCell.m */; };
-		72A297A123363D24004EE230 /* PHClockInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A297A023363D24004EE230 /* PHClockInViewController.m */; };
 		AE361CAC233F7A0100702F40 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CAB233F7A0100702F40 /* AdSupport.framework */; };
 		AE361CAE233F7A0B00702F40 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CAD233F7A0B00702F40 /* AVFoundation.framework */; };
 		AE361CB0233F7A1600702F40 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CAF233F7A1600702F40 /* CFNetwork.framework */; };
@@ -68,109 +28,46 @@
 		AE361CCF233F7B1000702F40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CCE233F7B1000702F40 /* UIKit.framework */; };
 		AE361CD1233F7B1900702F40 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CD0233F7B1900702F40 /* UserNotifications.framework */; };
 		AE361CD9233F818D00702F40 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE361CBF233F7A9300702F40 /* libresolv.tbd */; };
-		AEB6B1312340625800265045 /* InfoPlist.Strings in Resources */ = {isa = PBXBuildFile; fileRef = AEB6B1332340625800265045 /* InfoPlist.Strings */; };
-		AEBA658A233B367200B37FED /* PHDailyHabitsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBA6589233B367200B37FED /* PHDailyHabitsTableViewCell.m */; };
-		AEBA658D233B3F7600B37FED /* PHDailyHabitsTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBA658C233B3F7600B37FED /* PHDailyHabitsTableViewHeaderView.m */; };
+		CE5CC53524C0031800527D9D /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC52324C0031800527D9D /* NSDictionary+log.m */; };
+		CE5CC53924C0031800527D9D /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC52E24C0031800527D9D /* CalendarTool.m */; };
+		CE5CC53B24C0031800527D9D /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC53224C0031800527D9D /* NSArray+log.m */; };
+		CE5CC54824C0041800527D9D /* CDTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC53D24C0041700527D9D /* CDTabBarViewController.m */; };
+		CE5CC54924C0041800527D9D /* CDUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC54124C0041700527D9D /* CDUIUtilities.m */; };
+		CE5CC54A24C0041800527D9D /* CDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC54524C0041800527D9D /* CDBaseViewController.m */; };
+		CE5CC54B24C0041800527D9D /* CDHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC54624C0041800527D9D /* CDHBTool.m */; };
+		CE5CC54C24C0041800527D9D /* MBProgressHUD+CDNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC54724C0041800527D9D /* MBProgressHUD+CDNJ.m */; };
+		CE5CC55B24C0057B00527D9D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE5CC54E24C0057B00527D9D /* Localizable.strings */; };
+		CE5CC55C24C0057B00527D9D /* InfoPlist.Strings in Resources */ = {isa = PBXBuildFile; fileRef = CE5CC55024C0057B00527D9D /* InfoPlist.Strings */; };
+		CE5CC56B24C005FA00527D9D /* CDClockInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC56224C005FA00527D9D /* CDClockInViewController.m */; };
+		CE5CC56C24C005FA00527D9D /* CDAllClockLogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC56324C005FA00527D9D /* CDAllClockLogsViewController.m */; };
+		CE5CC56D24C005FA00527D9D /* CDTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC56524C005FA00527D9D /* CDTodayViewController.m */; };
+		CE5CC56E24C005FA00527D9D /* CDTodayClockInCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC56924C005FA00527D9D /* CDTodayClockInCollectionViewCell.m */; };
+		CE5CC56F24C005FA00527D9D /* CDAllClockLogsViewCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC56A24C005FA00527D9D /* CDAllClockLogsViewCellTableViewCell.m */; };
+		CE5CC59E24C0082A00527D9D /* CDModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC58524C0082900527D9D /* CDModifyNicknameViewController.m */; };
+		CE5CC59F24C0082A00527D9D /* CDSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC58624C0082900527D9D /* CDSetViewController.m */; };
+		CE5CC5A024C0082A00527D9D /* CDGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC58724C0082900527D9D /* CDGuideViewController.m */; };
+		CE5CC5A124C0082A00527D9D /* CDPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC58824C0082900527D9D /* CDPasswordChangeViewController.m */; };
+		CE5CC5A224C0082A00527D9D /* CDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC58924C0082900527D9D /* CDLoginViewController.m */; };
+		CE5CC5A324C0082A00527D9D /* CDSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC59124C0082A00527D9D /* CDSetTableViewCell.m */; };
+		CE5CC5A424C0082A00527D9D /* CDGuidePromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC59324C0082A00527D9D /* CDGuidePromptView.m */; };
+		CE5CC5A524C0082A00527D9D /* CDGuideCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC59424C0082A00527D9D /* CDGuideCollectionReusableView.m */; };
+		CE5CC5A624C0082A00527D9D /* CDGuideCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC59624C0082A00527D9D /* CDGuideCollectionViewCell.m */; };
+		CE5CC5A724C0082A00527D9D /* CDGuideClockInformationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC59824C0082A00527D9D /* CDGuideClockInformationModel.m */; };
+		CE5CC5A824C0082A00527D9D /* CDSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC59C24C0082A00527D9D /* CDSetViewModel.m */; };
+		CE5CC5A924C0082A00527D9D /* CDGuideModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC59D24C0082A00527D9D /* CDGuideModel.m */; };
+		CE5CC5B624C00AB600527D9D /* CDDailyHabitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC5B024C00AB600527D9D /* CDDailyHabitsViewController.m */; };
+		CE5CC5B724C00AB600527D9D /* CDDailyHabitsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC5B324C00AB600527D9D /* CDDailyHabitsTableViewCell.m */; };
+		CE5CC5B824C00AB600527D9D /* CDDailyHabitsTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC5B424C00AB600527D9D /* CDDailyHabitsTableViewHeaderView.m */; };
+		CE5CC5BA24C00C6F00527D9D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5CC5B924C00C6F00527D9D /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		72263EEA2338F23E00F54FFD /* PHAllClockLogsViewCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHAllClockLogsViewCellTableViewCell.h; sourceTree = "<group>"; };
-		72263EEB2338F23E00F54FFD /* PHAllClockLogsViewCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHAllClockLogsViewCellTableViewCell.m; sourceTree = "<group>"; };
-		72263EED2338FC1900F54FFD /* PHAllClockLogsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHAllClockLogsViewController.h; sourceTree = "<group>"; };
-		72263EEE2338FC1900F54FFD /* PHAllClockLogsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHAllClockLogsViewController.m; sourceTree = "<group>"; };
 		723CBB0C232C86BE0095EC7C /* PocketHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		723CBB0F232C86BE0095EC7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		723CBB10232C86BE0095EC7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		723CBB18232C86C20095EC7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		723CBB1D232C86C20095EC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		723CBB1E232C86C20095EC7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		723CBB35232CABF40095EC7C /* JTCalendarSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarSettings.m; sourceTree = "<group>"; };
-		723CBB36232CABF40095EC7C /* JTDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDateHelper.m; sourceTree = "<group>"; };
-		723CBB37232CABF40095EC7C /* JTCalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarManager.h; sourceTree = "<group>"; };
-		723CBB38232CABF40095EC7C /* JTCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendar.h; sourceTree = "<group>"; };
-		723CBB3A232CABF40095EC7C /* JTCalendarDelegateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDelegateManager.h; sourceTree = "<group>"; };
-		723CBB3B232CABF40095EC7C /* JTCalendarScrollManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarScrollManager.h; sourceTree = "<group>"; };
-		723CBB3C232CABF40095EC7C /* JTCalendarScrollManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarScrollManager.m; sourceTree = "<group>"; };
-		723CBB3D232CABF40095EC7C /* JTCalendarDelegateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarDelegateManager.m; sourceTree = "<group>"; };
-		723CBB3E232CABF40095EC7C /* JTCalendarSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarSettings.h; sourceTree = "<group>"; };
-		723CBB3F232CABF40095EC7C /* JTCalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarManager.m; sourceTree = "<group>"; };
-		723CBB40232CABF40095EC7C /* JTDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDateHelper.h; sourceTree = "<group>"; };
-		723CBB41232CABF40095EC7C /* JTCalendarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDelegate.h; sourceTree = "<group>"; };
-		723CBB43232CABF40095EC7C /* JTCalendarDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDayView.h; sourceTree = "<group>"; };
-		723CBB44232CABF40095EC7C /* JTVerticalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTVerticalCalendarView.m; sourceTree = "<group>"; };
-		723CBB45232CABF40095EC7C /* JTCalendarWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeekView.h; sourceTree = "<group>"; };
-		723CBB46232CABF40095EC7C /* JTCalendarPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarPageView.h; sourceTree = "<group>"; };
-		723CBB47232CABF40095EC7C /* JTCalendarWeekDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarWeekDayView.m; sourceTree = "<group>"; };
-		723CBB48232CABF40095EC7C /* JTCalendarMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarMenuView.h; sourceTree = "<group>"; };
-		723CBB49232CABF40095EC7C /* JTHorizontalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTHorizontalCalendarView.m; sourceTree = "<group>"; };
-		723CBB4A232CABF40095EC7C /* JTCalendarWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarWeekView.m; sourceTree = "<group>"; };
-		723CBB4B232CABF40095EC7C /* JTVerticalCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTVerticalCalendarView.h; sourceTree = "<group>"; };
-		723CBB4C232CABF40095EC7C /* JTCalendarDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarDayView.m; sourceTree = "<group>"; };
-		723CBB4D232CABF40095EC7C /* JTCalendarPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarPageView.m; sourceTree = "<group>"; };
-		723CBB4E232CABF40095EC7C /* JTHorizontalCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTHorizontalCalendarView.h; sourceTree = "<group>"; };
-		723CBB4F232CABF40095EC7C /* JTCalendarMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarMenuView.m; sourceTree = "<group>"; };
-		723CBB50232CABF40095EC7C /* JTCalendarWeekDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeekDayView.h; sourceTree = "<group>"; };
-		723CBB52232CABF40095EC7C /* JTCalendarWeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeek.h; sourceTree = "<group>"; };
-		723CBB53232CABF40095EC7C /* JTContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTContent.h; sourceTree = "<group>"; };
-		723CBB54232CABF40095EC7C /* JTCalendarPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarPage.h; sourceTree = "<group>"; };
-		723CBB55232CABF40095EC7C /* JTCalendarWeekDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeekDay.h; sourceTree = "<group>"; };
-		723CBB56232CABF40095EC7C /* JTCalendarDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDay.h; sourceTree = "<group>"; };
-		723CBB57232CABF40095EC7C /* JTMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTMenu.h; sourceTree = "<group>"; };
-		723CBB6A232CAF700095EC7C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		723CBB6C232CAF720095EC7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		723CBB6D232CAF740095EC7C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
-		723CBB6E232CAFA40095EC7C /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
-		723CBB6F232CAFA40095EC7C /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
-		723CBB70232CAFA40095EC7C /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
-		723CBB71232CAFA40095EC7C /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
-		723CBB74232CAFC60095EC7C /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
-		723CBB75232CAFC60095EC7C /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
-		723CBB7A232CB0580095EC7C /* PHHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHHBTool.h; sourceTree = "<group>"; };
-		723CBB7B232CB0580095EC7C /* PHHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHHBTool.m; sourceTree = "<group>"; };
-		723CBB7D232CB0A70095EC7C /* PHUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHUIUtilities.h; sourceTree = "<group>"; };
-		723CBB7E232CB0A70095EC7C /* PHUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHUIUtilities.m; sourceTree = "<group>"; };
-		723CBB80232CB0FD0095EC7C /* MBProgressHUD+PHNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+PHNJ.h"; sourceTree = "<group>"; };
-		723CBB81232CB0FD0095EC7C /* MBProgressHUD+PHNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+PHNJ.m"; sourceTree = "<group>"; };
-		723CBB83232CB1380095EC7C /* PHNDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHNDHTTPClient.h; sourceTree = "<group>"; };
-		723CBB84232CB1380095EC7C /* PHNDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHNDHTTPClient.m; sourceTree = "<group>"; };
-		723CBB86232CB1650095EC7C /* PHglobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHglobal.h; sourceTree = "<group>"; };
-		723CBB87232CB31F0095EC7C /* PocketHabits_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PocketHabits_PrefixHeader.pch; sourceTree = "<group>"; };
-		723CBB88232CB71E0095EC7C /* PHBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHBaseViewController.h; sourceTree = "<group>"; };
-		723CBB89232CB71E0095EC7C /* PHBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHBaseViewController.m; sourceTree = "<group>"; };
-		723CBB8B232CB8CC0095EC7C /* PHTodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHTodayViewController.h; sourceTree = "<group>"; };
-		723CBB8C232CB8CC0095EC7C /* PHTodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHTodayViewController.m; sourceTree = "<group>"; };
-		723CBB8E232CB8EC0095EC7C /* PHDailyHabitsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHDailyHabitsViewController.h; sourceTree = "<group>"; };
-		723CBB8F232CB8EC0095EC7C /* PHDailyHabitsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHDailyHabitsViewController.m; sourceTree = "<group>"; };
-		723CBB91232CB9010095EC7C /* PHSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHSetViewController.h; sourceTree = "<group>"; };
-		723CBB92232CB9010095EC7C /* PHSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHSetViewController.m; sourceTree = "<group>"; };
-		723CBB94232CB9930095EC7C /* PHTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHTabBarViewController.h; sourceTree = "<group>"; };
-		723CBB95232CB9930095EC7C /* PHTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHTabBarViewController.m; sourceTree = "<group>"; };
-		723CBB97232CC5120095EC7C /* PHLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHLoginViewController.h; sourceTree = "<group>"; };
-		723CBB98232CC5120095EC7C /* PHLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHLoginViewController.m; sourceTree = "<group>"; };
-		729D0B8D232E142600D88267 /* PHGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHGuideViewController.h; sourceTree = "<group>"; };
-		729D0B8E232E142600D88267 /* PHGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHGuideViewController.m; sourceTree = "<group>"; };
-		729D0B90232E15AE00D88267 /* PHGuidePromptView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHGuidePromptView.h; sourceTree = "<group>"; };
-		729D0B91232E15AE00D88267 /* PHGuidePromptView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHGuidePromptView.m; sourceTree = "<group>"; };
-		729D0B93232E20B600D88267 /* PHGuideCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHGuideCollectionReusableView.h; sourceTree = "<group>"; };
-		729D0B94232E20B600D88267 /* PHGuideCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHGuideCollectionReusableView.m; sourceTree = "<group>"; };
-		729D0B96232E20F400D88267 /* PHGuideCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHGuideCollectionViewCell.h; sourceTree = "<group>"; };
-		729D0B97232E20F400D88267 /* PHGuideCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHGuideCollectionViewCell.m; sourceTree = "<group>"; };
-		729D0B99232E28F600D88267 /* PHGuideModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHGuideModel.h; sourceTree = "<group>"; };
-		729D0B9A232E28F600D88267 /* PHGuideModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHGuideModel.m; sourceTree = "<group>"; };
-		72A2978D2336039E004EE230 /* PHGuideClockInformationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHGuideClockInformationModel.h; sourceTree = "<group>"; };
-		72A2978E2336039E004EE230 /* PHGuideClockInformationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHGuideClockInformationModel.m; sourceTree = "<group>"; };
-		72A2979023360F1E004EE230 /* PHModifyNicknameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHModifyNicknameViewController.h; sourceTree = "<group>"; };
-		72A2979123360F1E004EE230 /* PHModifyNicknameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHModifyNicknameViewController.m; sourceTree = "<group>"; };
-		72A297932336116B004EE230 /* PHPasswordChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHPasswordChangeViewController.h; sourceTree = "<group>"; };
-		72A297942336116B004EE230 /* PHPasswordChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHPasswordChangeViewController.m; sourceTree = "<group>"; };
-		72A29796233618E4004EE230 /* PHSetTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHSetTableViewCell.h; sourceTree = "<group>"; };
-		72A29797233618E4004EE230 /* PHSetTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHSetTableViewCell.m; sourceTree = "<group>"; };
-		72A2979923361A9D004EE230 /* PHSetViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHSetViewModel.h; sourceTree = "<group>"; };
-		72A2979A23361A9D004EE230 /* PHSetViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHSetViewModel.m; sourceTree = "<group>"; };
-		72A2979C23362AB9004EE230 /* PHTodayClockInCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHTodayClockInCollectionViewCell.h; sourceTree = "<group>"; };
-		72A2979D23362AB9004EE230 /* PHTodayClockInCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHTodayClockInCollectionViewCell.m; sourceTree = "<group>"; };
-		72A2979F23363D24004EE230 /* PHClockInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHClockInViewController.h; sourceTree = "<group>"; };
-		72A297A023363D24004EE230 /* PHClockInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHClockInViewController.m; sourceTree = "<group>"; };
 		AE361CAB233F7A0100702F40 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		AE361CAD233F7A0B00702F40 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AE361CAF233F7A1600702F40 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -195,18 +92,76 @@
 		AE361CCE233F7B1000702F40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AE361CD0233F7B1900702F40 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		AEB6B12D23405C2A00265045 /* GoodHabit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoodHabit.entitlements; sourceTree = "<group>"; };
-		AEB6B12E23405DFC00265045 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		AEB6B1322340625800265045 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.Strings; sourceTree = "<group>"; };
-		AEB6B1342340627100265045 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.Strings"; sourceTree = "<group>"; };
-		AEB6B1352340627600265045 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.Strings"; sourceTree = "<group>"; };
-		AEB6B1362340627700265045 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.Strings; sourceTree = "<group>"; };
-		AEBA6588233B367200B37FED /* PHDailyHabitsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHDailyHabitsTableViewCell.h; sourceTree = "<group>"; };
-		AEBA6589233B367200B37FED /* PHDailyHabitsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHDailyHabitsTableViewCell.m; sourceTree = "<group>"; };
-		AEBA658B233B3F7600B37FED /* PHDailyHabitsTableViewHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHDailyHabitsTableViewHeaderView.h; sourceTree = "<group>"; };
-		AEBA658C233B3F7600B37FED /* PHDailyHabitsTableViewHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHDailyHabitsTableViewHeaderView.m; sourceTree = "<group>"; };
 		B0CF5393719874A4A8A5E22A /* Pods-GoodHabit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabit.debug.xcconfig"; path = "Target Support Files/Pods-GoodHabit/Pods-GoodHabit.debug.xcconfig"; sourceTree = "<group>"; };
 		B78D571AABE2191F4793A4F9 /* Pods_GoodHabit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodHabit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6DB6FF8EAB5DD241505741 /* Pods-GoodHabit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabit.release.xcconfig"; path = "Target Support Files/Pods-GoodHabit/Pods-GoodHabit.release.xcconfig"; sourceTree = "<group>"; };
+		CE5CC52324C0031800527D9D /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
+		CE5CC52424C0031800527D9D /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
+		CE5CC52924C0031800527D9D /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		CE5CC52B24C0031800527D9D /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
+		CE5CC52E24C0031800527D9D /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
+		CE5CC53024C0031800527D9D /* PocketHabits_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocketHabits_PrefixHeader.pch; sourceTree = "<group>"; };
+		CE5CC53224C0031800527D9D /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		CE5CC53D24C0041700527D9D /* CDTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTabBarViewController.m; sourceTree = "<group>"; };
+		CE5CC53E24C0041700527D9D /* CDTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTabBarViewController.h; sourceTree = "<group>"; };
+		CE5CC53F24C0041700527D9D /* CDglobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDglobal.h; sourceTree = "<group>"; };
+		CE5CC54024C0041700527D9D /* CDUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDUIUtilities.h; sourceTree = "<group>"; };
+		CE5CC54124C0041700527D9D /* CDUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDUIUtilities.m; sourceTree = "<group>"; };
+		CE5CC54224C0041700527D9D /* MBProgressHUD+CDNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+CDNJ.h"; sourceTree = "<group>"; };
+		CE5CC54324C0041700527D9D /* CDHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDHBTool.h; sourceTree = "<group>"; };
+		CE5CC54424C0041800527D9D /* CDBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDBaseViewController.h; sourceTree = "<group>"; };
+		CE5CC54524C0041800527D9D /* CDBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDBaseViewController.m; sourceTree = "<group>"; };
+		CE5CC54624C0041800527D9D /* CDHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDHBTool.m; sourceTree = "<group>"; };
+		CE5CC54724C0041800527D9D /* MBProgressHUD+CDNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+CDNJ.m"; sourceTree = "<group>"; };
+		CE5CC54F24C0057B00527D9D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CE5CC55124C0057B00527D9D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.Strings"; sourceTree = "<group>"; };
+		CE5CC55224C0057B00527D9D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE5CC55324C0057B00527D9D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.Strings; sourceTree = "<group>"; };
+		CE5CC55424C0057B00527D9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE5CC55524C0057B00527D9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.Strings; sourceTree = "<group>"; };
+		CE5CC55624C0057B00527D9D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CE5CC55724C0057B00527D9D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.Strings"; sourceTree = "<group>"; };
+		CE5CC56024C005FA00527D9D /* CDAllClockLogsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAllClockLogsViewController.h; sourceTree = "<group>"; };
+		CE5CC56124C005FA00527D9D /* CDTodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTodayViewController.h; sourceTree = "<group>"; };
+		CE5CC56224C005FA00527D9D /* CDClockInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDClockInViewController.m; sourceTree = "<group>"; };
+		CE5CC56324C005FA00527D9D /* CDAllClockLogsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAllClockLogsViewController.m; sourceTree = "<group>"; };
+		CE5CC56424C005FA00527D9D /* CDClockInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDClockInViewController.h; sourceTree = "<group>"; };
+		CE5CC56524C005FA00527D9D /* CDTodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTodayViewController.m; sourceTree = "<group>"; };
+		CE5CC56724C005FA00527D9D /* CDTodayClockInCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTodayClockInCollectionViewCell.h; sourceTree = "<group>"; };
+		CE5CC56824C005FA00527D9D /* CDAllClockLogsViewCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAllClockLogsViewCellTableViewCell.h; sourceTree = "<group>"; };
+		CE5CC56924C005FA00527D9D /* CDTodayClockInCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTodayClockInCollectionViewCell.m; sourceTree = "<group>"; };
+		CE5CC56A24C005FA00527D9D /* CDAllClockLogsViewCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAllClockLogsViewCellTableViewCell.m; sourceTree = "<group>"; };
+		CE5CC58424C0082900527D9D /* CDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDLoginViewController.h; sourceTree = "<group>"; };
+		CE5CC58524C0082900527D9D /* CDModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDModifyNicknameViewController.m; sourceTree = "<group>"; };
+		CE5CC58624C0082900527D9D /* CDSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSetViewController.m; sourceTree = "<group>"; };
+		CE5CC58724C0082900527D9D /* CDGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGuideViewController.m; sourceTree = "<group>"; };
+		CE5CC58824C0082900527D9D /* CDPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDPasswordChangeViewController.m; sourceTree = "<group>"; };
+		CE5CC58924C0082900527D9D /* CDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDLoginViewController.m; sourceTree = "<group>"; };
+		CE5CC58A24C0082900527D9D /* CDSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSetViewController.h; sourceTree = "<group>"; };
+		CE5CC58B24C0082900527D9D /* CDModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDModifyNicknameViewController.h; sourceTree = "<group>"; };
+		CE5CC58C24C0082900527D9D /* CDGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGuideViewController.h; sourceTree = "<group>"; };
+		CE5CC58D24C0082900527D9D /* CDPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPasswordChangeViewController.h; sourceTree = "<group>"; };
+		CE5CC58F24C0082A00527D9D /* CDGuideCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGuideCollectionReusableView.h; sourceTree = "<group>"; };
+		CE5CC59024C0082A00527D9D /* CDGuidePromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGuidePromptView.h; sourceTree = "<group>"; };
+		CE5CC59124C0082A00527D9D /* CDSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSetTableViewCell.m; sourceTree = "<group>"; };
+		CE5CC59224C0082A00527D9D /* CDGuideCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGuideCollectionViewCell.h; sourceTree = "<group>"; };
+		CE5CC59324C0082A00527D9D /* CDGuidePromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGuidePromptView.m; sourceTree = "<group>"; };
+		CE5CC59424C0082A00527D9D /* CDGuideCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGuideCollectionReusableView.m; sourceTree = "<group>"; };
+		CE5CC59524C0082A00527D9D /* CDSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSetTableViewCell.h; sourceTree = "<group>"; };
+		CE5CC59624C0082A00527D9D /* CDGuideCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGuideCollectionViewCell.m; sourceTree = "<group>"; };
+		CE5CC59824C0082A00527D9D /* CDGuideClockInformationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGuideClockInformationModel.m; sourceTree = "<group>"; };
+		CE5CC59924C0082A00527D9D /* CDGuideModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGuideModel.h; sourceTree = "<group>"; };
+		CE5CC59A24C0082A00527D9D /* CDSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSetViewModel.h; sourceTree = "<group>"; };
+		CE5CC59B24C0082A00527D9D /* CDGuideClockInformationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGuideClockInformationModel.h; sourceTree = "<group>"; };
+		CE5CC59C24C0082A00527D9D /* CDSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSetViewModel.m; sourceTree = "<group>"; };
+		CE5CC59D24C0082A00527D9D /* CDGuideModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGuideModel.m; sourceTree = "<group>"; };
+		CE5CC5AF24C00AB600527D9D /* CDDailyHabitsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDDailyHabitsViewController.h; sourceTree = "<group>"; };
+		CE5CC5B024C00AB600527D9D /* CDDailyHabitsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDDailyHabitsViewController.m; sourceTree = "<group>"; };
+		CE5CC5B224C00AB600527D9D /* CDDailyHabitsTableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDDailyHabitsTableViewHeaderView.h; sourceTree = "<group>"; };
+		CE5CC5B324C00AB600527D9D /* CDDailyHabitsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDDailyHabitsTableViewCell.m; sourceTree = "<group>"; };
+		CE5CC5B424C00AB600527D9D /* CDDailyHabitsTableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDDailyHabitsTableViewHeaderView.m; sourceTree = "<group>"; };
+		CE5CC5B524C00AB600527D9D /* CDDailyHabitsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDDailyHabitsTableViewCell.h; sourceTree = "<group>"; };
+		CE5CC5B924C00C6F00527D9D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,233 +246,19 @@
 			isa = PBXGroup;
 			children = (
 				AEB6B12D23405C2A00265045 /* GoodHabit.entitlements */,
-				723CBB27232CABA10095EC7C /* common */,
-				723CBB26232CABA10095EC7C /* resources */,
-				723CBB28232CABA10095EC7C /* today */,
-				723CBB2C232CABA20095EC7C /* dailyHabits */,
-				723CBB30232CABA20095EC7C /* set */,
+				CE5CC52224C0031800527D9D /* CDcommon */,
+				CE5CC54D24C0057B00527D9D /* CDresources */,
+				CE5CC5AD24C00AB600527D9D /* CDdailyHabits */,
+				CE5CC55E24C005FA00527D9D /* CDtoday */,
+				CE5CC58224C0082900527D9D /* CDset */,
 				723CBB0F232C86BE0095EC7C /* AppDelegate.h */,
 				723CBB10232C86BE0095EC7C /* AppDelegate.m */,
+				CE5CC5B924C00C6F00527D9D /* Launch Screen.storyboard */,
 				723CBB18232C86C20095EC7C /* Assets.xcassets */,
 				723CBB1D232C86C20095EC7C /* Info.plist */,
 				723CBB1E232C86C20095EC7C /* main.m */,
 			);
 			path = GoodHabit;
-			sourceTree = "<group>";
-		};
-		723CBB26232CABA10095EC7C /* resources */ = {
-			isa = PBXGroup;
-			children = (
-				723CBB6B232CAF700095EC7C /* Localizable.strings */,
-				723CBB34232CABF40095EC7C /* JTCalendar */,
-				AEB6B1332340625800265045 /* InfoPlist.Strings */,
-			);
-			path = resources;
-			sourceTree = "<group>";
-		};
-		723CBB27232CABA10095EC7C /* common */ = {
-			isa = PBXGroup;
-			children = (
-				723CBB87232CB31F0095EC7C /* PocketHabits_PrefixHeader.pch */,
-				723CBB86232CB1650095EC7C /* PHglobal.h */,
-				723CBB6E232CAFA40095EC7C /* NSArray+log.h */,
-				723CBB70232CAFA40095EC7C /* NSArray+log.m */,
-				723CBB6F232CAFA40095EC7C /* NSDictionary+log.h */,
-				723CBB71232CAFA40095EC7C /* NSDictionary+log.m */,
-				723CBB74232CAFC60095EC7C /* CalendarTool.h */,
-				723CBB75232CAFC60095EC7C /* CalendarTool.m */,
-				723CBB7A232CB0580095EC7C /* PHHBTool.h */,
-				723CBB7B232CB0580095EC7C /* PHHBTool.m */,
-				723CBB7D232CB0A70095EC7C /* PHUIUtilities.h */,
-				723CBB7E232CB0A70095EC7C /* PHUIUtilities.m */,
-				723CBB80232CB0FD0095EC7C /* MBProgressHUD+PHNJ.h */,
-				723CBB81232CB0FD0095EC7C /* MBProgressHUD+PHNJ.m */,
-				723CBB83232CB1380095EC7C /* PHNDHTTPClient.h */,
-				723CBB84232CB1380095EC7C /* PHNDHTTPClient.m */,
-				723CBB88232CB71E0095EC7C /* PHBaseViewController.h */,
-				723CBB89232CB71E0095EC7C /* PHBaseViewController.m */,
-				723CBB94232CB9930095EC7C /* PHTabBarViewController.h */,
-				723CBB95232CB9930095EC7C /* PHTabBarViewController.m */,
-			);
-			path = common;
-			sourceTree = "<group>";
-		};
-		723CBB28232CABA10095EC7C /* today */ = {
-			isa = PBXGroup;
-			children = (
-				723CBB29232CABA20095EC7C /* models */,
-				723CBB2B232CABA20095EC7C /* views */,
-				723CBB2A232CABA20095EC7C /* controllers */,
-			);
-			path = today;
-			sourceTree = "<group>";
-		};
-		723CBB29232CABA20095EC7C /* models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = models;
-			sourceTree = "<group>";
-		};
-		723CBB2A232CABA20095EC7C /* controllers */ = {
-			isa = PBXGroup;
-			children = (
-				723CBB8B232CB8CC0095EC7C /* PHTodayViewController.h */,
-				723CBB8C232CB8CC0095EC7C /* PHTodayViewController.m */,
-				72A2979F23363D24004EE230 /* PHClockInViewController.h */,
-				72A297A023363D24004EE230 /* PHClockInViewController.m */,
-				72263EED2338FC1900F54FFD /* PHAllClockLogsViewController.h */,
-				72263EEE2338FC1900F54FFD /* PHAllClockLogsViewController.m */,
-			);
-			path = controllers;
-			sourceTree = "<group>";
-		};
-		723CBB2B232CABA20095EC7C /* views */ = {
-			isa = PBXGroup;
-			children = (
-				72A2979C23362AB9004EE230 /* PHTodayClockInCollectionViewCell.h */,
-				72A2979D23362AB9004EE230 /* PHTodayClockInCollectionViewCell.m */,
-				72263EEA2338F23E00F54FFD /* PHAllClockLogsViewCellTableViewCell.h */,
-				72263EEB2338F23E00F54FFD /* PHAllClockLogsViewCellTableViewCell.m */,
-			);
-			path = views;
-			sourceTree = "<group>";
-		};
-		723CBB2C232CABA20095EC7C /* dailyHabits */ = {
-			isa = PBXGroup;
-			children = (
-				AEBA6586233B363F00B37FED /* models */,
-				AEBA6587233B363F00B37FED /* views */,
-				723CBB2E232CABA20095EC7C /* controllers */,
-			);
-			path = dailyHabits;
-			sourceTree = "<group>";
-		};
-		723CBB2E232CABA20095EC7C /* controllers */ = {
-			isa = PBXGroup;
-			children = (
-				723CBB8E232CB8EC0095EC7C /* PHDailyHabitsViewController.h */,
-				723CBB8F232CB8EC0095EC7C /* PHDailyHabitsViewController.m */,
-			);
-			path = controllers;
-			sourceTree = "<group>";
-		};
-		723CBB30232CABA20095EC7C /* set */ = {
-			isa = PBXGroup;
-			children = (
-				723CBB31232CABA20095EC7C /* models */,
-				723CBB33232CABA20095EC7C /* views */,
-				723CBB32232CABA20095EC7C /* controllers */,
-			);
-			path = set;
-			sourceTree = "<group>";
-		};
-		723CBB31232CABA20095EC7C /* models */ = {
-			isa = PBXGroup;
-			children = (
-				729D0B99232E28F600D88267 /* PHGuideModel.h */,
-				729D0B9A232E28F600D88267 /* PHGuideModel.m */,
-				72A2978D2336039E004EE230 /* PHGuideClockInformationModel.h */,
-				72A2978E2336039E004EE230 /* PHGuideClockInformationModel.m */,
-				72A2979923361A9D004EE230 /* PHSetViewModel.h */,
-				72A2979A23361A9D004EE230 /* PHSetViewModel.m */,
-			);
-			path = models;
-			sourceTree = "<group>";
-		};
-		723CBB32232CABA20095EC7C /* controllers */ = {
-			isa = PBXGroup;
-			children = (
-				729D0B8D232E142600D88267 /* PHGuideViewController.h */,
-				729D0B8E232E142600D88267 /* PHGuideViewController.m */,
-				723CBB91232CB9010095EC7C /* PHSetViewController.h */,
-				723CBB92232CB9010095EC7C /* PHSetViewController.m */,
-				72A2979023360F1E004EE230 /* PHModifyNicknameViewController.h */,
-				72A2979123360F1E004EE230 /* PHModifyNicknameViewController.m */,
-				72A297932336116B004EE230 /* PHPasswordChangeViewController.h */,
-				72A297942336116B004EE230 /* PHPasswordChangeViewController.m */,
-				723CBB97232CC5120095EC7C /* PHLoginViewController.h */,
-				723CBB98232CC5120095EC7C /* PHLoginViewController.m */,
-			);
-			path = controllers;
-			sourceTree = "<group>";
-		};
-		723CBB33232CABA20095EC7C /* views */ = {
-			isa = PBXGroup;
-			children = (
-				729D0B90232E15AE00D88267 /* PHGuidePromptView.h */,
-				729D0B91232E15AE00D88267 /* PHGuidePromptView.m */,
-				729D0B93232E20B600D88267 /* PHGuideCollectionReusableView.h */,
-				729D0B94232E20B600D88267 /* PHGuideCollectionReusableView.m */,
-				729D0B96232E20F400D88267 /* PHGuideCollectionViewCell.h */,
-				729D0B97232E20F400D88267 /* PHGuideCollectionViewCell.m */,
-				72A29796233618E4004EE230 /* PHSetTableViewCell.h */,
-				72A29797233618E4004EE230 /* PHSetTableViewCell.m */,
-			);
-			path = views;
-			sourceTree = "<group>";
-		};
-		723CBB34232CABF40095EC7C /* JTCalendar */ = {
-			isa = PBXGroup;
-			children = (
-				723CBB35232CABF40095EC7C /* JTCalendarSettings.m */,
-				723CBB36232CABF40095EC7C /* JTDateHelper.m */,
-				723CBB37232CABF40095EC7C /* JTCalendarManager.h */,
-				723CBB38232CABF40095EC7C /* JTCalendar.h */,
-				723CBB39232CABF40095EC7C /* Managers */,
-				723CBB3E232CABF40095EC7C /* JTCalendarSettings.h */,
-				723CBB3F232CABF40095EC7C /* JTCalendarManager.m */,
-				723CBB40232CABF40095EC7C /* JTDateHelper.h */,
-				723CBB41232CABF40095EC7C /* JTCalendarDelegate.h */,
-				723CBB42232CABF40095EC7C /* Views */,
-				723CBB51232CABF40095EC7C /* Protocols */,
-			);
-			path = JTCalendar;
-			sourceTree = "<group>";
-		};
-		723CBB39232CABF40095EC7C /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				723CBB3A232CABF40095EC7C /* JTCalendarDelegateManager.h */,
-				723CBB3B232CABF40095EC7C /* JTCalendarScrollManager.h */,
-				723CBB3C232CABF40095EC7C /* JTCalendarScrollManager.m */,
-				723CBB3D232CABF40095EC7C /* JTCalendarDelegateManager.m */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		723CBB42232CABF40095EC7C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				723CBB43232CABF40095EC7C /* JTCalendarDayView.h */,
-				723CBB44232CABF40095EC7C /* JTVerticalCalendarView.m */,
-				723CBB45232CABF40095EC7C /* JTCalendarWeekView.h */,
-				723CBB46232CABF40095EC7C /* JTCalendarPageView.h */,
-				723CBB47232CABF40095EC7C /* JTCalendarWeekDayView.m */,
-				723CBB48232CABF40095EC7C /* JTCalendarMenuView.h */,
-				723CBB49232CABF40095EC7C /* JTHorizontalCalendarView.m */,
-				723CBB4A232CABF40095EC7C /* JTCalendarWeekView.m */,
-				723CBB4B232CABF40095EC7C /* JTVerticalCalendarView.h */,
-				723CBB4C232CABF40095EC7C /* JTCalendarDayView.m */,
-				723CBB4D232CABF40095EC7C /* JTCalendarPageView.m */,
-				723CBB4E232CABF40095EC7C /* JTHorizontalCalendarView.h */,
-				723CBB4F232CABF40095EC7C /* JTCalendarMenuView.m */,
-				723CBB50232CABF40095EC7C /* JTCalendarWeekDayView.h */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		723CBB51232CABF40095EC7C /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				723CBB52232CABF40095EC7C /* JTCalendarWeek.h */,
-				723CBB53232CABF40095EC7C /* JTContent.h */,
-				723CBB54232CABF40095EC7C /* JTCalendarPage.h */,
-				723CBB55232CABF40095EC7C /* JTCalendarWeekDay.h */,
-				723CBB56232CABF40095EC7C /* JTCalendarDay.h */,
-				723CBB57232CABF40095EC7C /* JTMenu.h */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		A62101394C1AC522CB2A3ECD /* Pods */ = {
@@ -529,22 +270,157 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		AEBA6586233B363F00B37FED /* models */ = {
+		CE5CC52224C0031800527D9D /* CDcommon */ = {
 			isa = PBXGroup;
 			children = (
+				CE5CC53024C0031800527D9D /* PocketHabits_PrefixHeader.pch */,
+				CE5CC53F24C0041700527D9D /* CDglobal.h */,
+				CE5CC52B24C0031800527D9D /* NSDictionary+log.h */,
+				CE5CC52324C0031800527D9D /* NSDictionary+log.m */,
+				CE5CC52924C0031800527D9D /* NSArray+log.h */,
+				CE5CC53224C0031800527D9D /* NSArray+log.m */,
+				CE5CC52424C0031800527D9D /* CalendarTool.h */,
+				CE5CC52E24C0031800527D9D /* CalendarTool.m */,
+				CE5CC54424C0041800527D9D /* CDBaseViewController.h */,
+				CE5CC54524C0041800527D9D /* CDBaseViewController.m */,
+				CE5CC54324C0041700527D9D /* CDHBTool.h */,
+				CE5CC54624C0041800527D9D /* CDHBTool.m */,
+				CE5CC53E24C0041700527D9D /* CDTabBarViewController.h */,
+				CE5CC53D24C0041700527D9D /* CDTabBarViewController.m */,
+				CE5CC54024C0041700527D9D /* CDUIUtilities.h */,
+				CE5CC54124C0041700527D9D /* CDUIUtilities.m */,
+				CE5CC54224C0041700527D9D /* MBProgressHUD+CDNJ.h */,
+				CE5CC54724C0041800527D9D /* MBProgressHUD+CDNJ.m */,
 			);
-			path = models;
+			path = CDcommon;
 			sourceTree = "<group>";
 		};
-		AEBA6587233B363F00B37FED /* views */ = {
+		CE5CC54D24C0057B00527D9D /* CDresources */ = {
 			isa = PBXGroup;
 			children = (
-				AEBA6588233B367200B37FED /* PHDailyHabitsTableViewCell.h */,
-				AEBA6589233B367200B37FED /* PHDailyHabitsTableViewCell.m */,
-				AEBA658B233B3F7600B37FED /* PHDailyHabitsTableViewHeaderView.h */,
-				AEBA658C233B3F7600B37FED /* PHDailyHabitsTableViewHeaderView.m */,
+				CE5CC54E24C0057B00527D9D /* Localizable.strings */,
+				CE5CC55024C0057B00527D9D /* InfoPlist.Strings */,
 			);
-			path = views;
+			name = CDresources;
+			path = GoodHabit/CDresources;
+			sourceTree = SOURCE_ROOT;
+		};
+		CE5CC55E24C005FA00527D9D /* CDtoday */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC55F24C005FA00527D9D /* CDcontrollers */,
+				CE5CC56624C005FA00527D9D /* CDviews */,
+			);
+			path = CDtoday;
+			sourceTree = "<group>";
+		};
+		CE5CC55F24C005FA00527D9D /* CDcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC56024C005FA00527D9D /* CDAllClockLogsViewController.h */,
+				CE5CC56324C005FA00527D9D /* CDAllClockLogsViewController.m */,
+				CE5CC56124C005FA00527D9D /* CDTodayViewController.h */,
+				CE5CC56524C005FA00527D9D /* CDTodayViewController.m */,
+				CE5CC56424C005FA00527D9D /* CDClockInViewController.h */,
+				CE5CC56224C005FA00527D9D /* CDClockInViewController.m */,
+			);
+			path = CDcontrollers;
+			sourceTree = "<group>";
+		};
+		CE5CC56624C005FA00527D9D /* CDviews */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC56724C005FA00527D9D /* CDTodayClockInCollectionViewCell.h */,
+				CE5CC56924C005FA00527D9D /* CDTodayClockInCollectionViewCell.m */,
+				CE5CC56824C005FA00527D9D /* CDAllClockLogsViewCellTableViewCell.h */,
+				CE5CC56A24C005FA00527D9D /* CDAllClockLogsViewCellTableViewCell.m */,
+			);
+			path = CDviews;
+			sourceTree = "<group>";
+		};
+		CE5CC58224C0082900527D9D /* CDset */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC58324C0082900527D9D /* CDcontrollers */,
+				CE5CC58E24C0082A00527D9D /* CDviews */,
+				CE5CC59724C0082A00527D9D /* CDmodels */,
+			);
+			path = CDset;
+			sourceTree = "<group>";
+		};
+		CE5CC58324C0082900527D9D /* CDcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC58424C0082900527D9D /* CDLoginViewController.h */,
+				CE5CC58924C0082900527D9D /* CDLoginViewController.m */,
+				CE5CC58B24C0082900527D9D /* CDModifyNicknameViewController.h */,
+				CE5CC58524C0082900527D9D /* CDModifyNicknameViewController.m */,
+				CE5CC58A24C0082900527D9D /* CDSetViewController.h */,
+				CE5CC58624C0082900527D9D /* CDSetViewController.m */,
+				CE5CC58C24C0082900527D9D /* CDGuideViewController.h */,
+				CE5CC58724C0082900527D9D /* CDGuideViewController.m */,
+				CE5CC58D24C0082900527D9D /* CDPasswordChangeViewController.h */,
+				CE5CC58824C0082900527D9D /* CDPasswordChangeViewController.m */,
+			);
+			path = CDcontrollers;
+			sourceTree = "<group>";
+		};
+		CE5CC58E24C0082A00527D9D /* CDviews */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC58F24C0082A00527D9D /* CDGuideCollectionReusableView.h */,
+				CE5CC59424C0082A00527D9D /* CDGuideCollectionReusableView.m */,
+				CE5CC59024C0082A00527D9D /* CDGuidePromptView.h */,
+				CE5CC59324C0082A00527D9D /* CDGuidePromptView.m */,
+				CE5CC59524C0082A00527D9D /* CDSetTableViewCell.h */,
+				CE5CC59124C0082A00527D9D /* CDSetTableViewCell.m */,
+				CE5CC59224C0082A00527D9D /* CDGuideCollectionViewCell.h */,
+				CE5CC59624C0082A00527D9D /* CDGuideCollectionViewCell.m */,
+			);
+			path = CDviews;
+			sourceTree = "<group>";
+		};
+		CE5CC59724C0082A00527D9D /* CDmodels */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC59924C0082A00527D9D /* CDGuideModel.h */,
+				CE5CC59D24C0082A00527D9D /* CDGuideModel.m */,
+				CE5CC59B24C0082A00527D9D /* CDGuideClockInformationModel.h */,
+				CE5CC59824C0082A00527D9D /* CDGuideClockInformationModel.m */,
+				CE5CC59A24C0082A00527D9D /* CDSetViewModel.h */,
+				CE5CC59C24C0082A00527D9D /* CDSetViewModel.m */,
+			);
+			path = CDmodels;
+			sourceTree = "<group>";
+		};
+		CE5CC5AD24C00AB600527D9D /* CDdailyHabits */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC5AE24C00AB600527D9D /* CDcontrollers */,
+				CE5CC5B124C00AB600527D9D /* CDviews */,
+			);
+			name = CDdailyHabits;
+			path = GoodHabit/CDdailyHabits;
+			sourceTree = SOURCE_ROOT;
+		};
+		CE5CC5AE24C00AB600527D9D /* CDcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC5AF24C00AB600527D9D /* CDDailyHabitsViewController.h */,
+				CE5CC5B024C00AB600527D9D /* CDDailyHabitsViewController.m */,
+			);
+			path = CDcontrollers;
+			sourceTree = "<group>";
+		};
+		CE5CC5B124C00AB600527D9D /* CDviews */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC5B224C00AB600527D9D /* CDDailyHabitsTableViewHeaderView.h */,
+				CE5CC5B424C00AB600527D9D /* CDDailyHabitsTableViewHeaderView.m */,
+				CE5CC5B524C00AB600527D9D /* CDDailyHabitsTableViewCell.h */,
+				CE5CC5B324C00AB600527D9D /* CDDailyHabitsTableViewCell.m */,
+			);
+			path = CDviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -609,9 +485,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5CC55C24C0057B00527D9D /* InfoPlist.Strings in Resources */,
 				723CBB19232C86C20095EC7C /* Assets.xcassets in Resources */,
-				723CBB69232CAF700095EC7C /* Localizable.strings in Resources */,
-				AEB6B1312340625800265045 /* InfoPlist.Strings in Resources */,
+				CE5CC5BA24C00C6F00527D9D /* Launch Screen.storyboard in Resources */,
+				CE5CC55B24C0057B00527D9D /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,73 +541,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				723CBB5A232CABF40095EC7C /* JTCalendarScrollManager.m in Sources */,
-				723CBB85232CB1390095EC7C /* PHNDHTTPClient.m in Sources */,
-				723CBB96232CB9930095EC7C /* PHTabBarViewController.m in Sources */,
-				723CBB73232CAFA40095EC7C /* NSDictionary+log.m in Sources */,
-				723CBB82232CB0FD0095EC7C /* MBProgressHUD+PHNJ.m in Sources */,
-				AEBA658D233B3F7600B37FED /* PHDailyHabitsTableViewHeaderView.m in Sources */,
-				72263EEF2338FC1900F54FFD /* PHAllClockLogsViewController.m in Sources */,
-				723CBB5E232CABF40095EC7C /* JTCalendarWeekDayView.m in Sources */,
-				723CBB8A232CB71E0095EC7C /* PHBaseViewController.m in Sources */,
-				72263EEC2338F23E00F54FFD /* PHAllClockLogsViewCellTableViewCell.m in Sources */,
-				723CBB5C232CABF40095EC7C /* JTCalendarManager.m in Sources */,
-				723CBB90232CB8EC0095EC7C /* PHDailyHabitsViewController.m in Sources */,
-				723CBB5B232CABF40095EC7C /* JTCalendarDelegateManager.m in Sources */,
-				723CBB5F232CABF40095EC7C /* JTHorizontalCalendarView.m in Sources */,
-				72A2978F2336039E004EE230 /* PHGuideClockInformationModel.m in Sources */,
-				72A2979223360F1E004EE230 /* PHModifyNicknameViewController.m in Sources */,
-				723CBB8D232CB8CC0095EC7C /* PHTodayViewController.m in Sources */,
-				729D0B8F232E142600D88267 /* PHGuideViewController.m in Sources */,
-				72A2979E23362AB9004EE230 /* PHTodayClockInCollectionViewCell.m in Sources */,
-				723CBB59232CABF40095EC7C /* JTDateHelper.m in Sources */,
-				723CBB93232CB9010095EC7C /* PHSetViewController.m in Sources */,
-				723CBB72232CAFA40095EC7C /* NSArray+log.m in Sources */,
-				72A2979B23361A9D004EE230 /* PHSetViewModel.m in Sources */,
-				723CBB58232CABF40095EC7C /* JTCalendarSettings.m in Sources */,
-				723CBB99232CC5120095EC7C /* PHLoginViewController.m in Sources */,
-				723CBB5D232CABF40095EC7C /* JTVerticalCalendarView.m in Sources */,
+				CE5CC56E24C005FA00527D9D /* CDTodayClockInCollectionViewCell.m in Sources */,
+				CE5CC5A224C0082A00527D9D /* CDLoginViewController.m in Sources */,
+				CE5CC5A424C0082A00527D9D /* CDGuidePromptView.m in Sources */,
+				CE5CC5A724C0082A00527D9D /* CDGuideClockInformationModel.m in Sources */,
+				CE5CC53524C0031800527D9D /* NSDictionary+log.m in Sources */,
+				CE5CC54824C0041800527D9D /* CDTabBarViewController.m in Sources */,
+				CE5CC59F24C0082A00527D9D /* CDSetViewController.m in Sources */,
+				CE5CC54924C0041800527D9D /* CDUIUtilities.m in Sources */,
+				CE5CC5B624C00AB600527D9D /* CDDailyHabitsViewController.m in Sources */,
+				CE5CC5A924C0082A00527D9D /* CDGuideModel.m in Sources */,
+				CE5CC56D24C005FA00527D9D /* CDTodayViewController.m in Sources */,
+				CE5CC53924C0031800527D9D /* CalendarTool.m in Sources */,
+				CE5CC5A124C0082A00527D9D /* CDPasswordChangeViewController.m in Sources */,
+				CE5CC5A324C0082A00527D9D /* CDSetTableViewCell.m in Sources */,
 				723CBB1F232C86C20095EC7C /* main.m in Sources */,
-				723CBB63232CABF40095EC7C /* JTCalendarMenuView.m in Sources */,
-				72A297952336116B004EE230 /* PHPasswordChangeViewController.m in Sources */,
-				723CBB76232CAFC60095EC7C /* CalendarTool.m in Sources */,
-				723CBB60232CABF40095EC7C /* JTCalendarWeekView.m in Sources */,
-				AEBA658A233B367200B37FED /* PHDailyHabitsTableViewCell.m in Sources */,
-				72A29798233618E4004EE230 /* PHSetTableViewCell.m in Sources */,
-				723CBB7C232CB0580095EC7C /* PHHBTool.m in Sources */,
-				723CBB62232CABF40095EC7C /* JTCalendarPageView.m in Sources */,
-				729D0B98232E20F400D88267 /* PHGuideCollectionViewCell.m in Sources */,
-				729D0B92232E15AE00D88267 /* PHGuidePromptView.m in Sources */,
+				CE5CC54A24C0041800527D9D /* CDBaseViewController.m in Sources */,
+				CE5CC56C24C005FA00527D9D /* CDAllClockLogsViewController.m in Sources */,
+				CE5CC5A024C0082A00527D9D /* CDGuideViewController.m in Sources */,
+				CE5CC5A524C0082A00527D9D /* CDGuideCollectionReusableView.m in Sources */,
+				CE5CC54C24C0041800527D9D /* MBProgressHUD+CDNJ.m in Sources */,
+				CE5CC56B24C005FA00527D9D /* CDClockInViewController.m in Sources */,
+				CE5CC5A624C0082A00527D9D /* CDGuideCollectionViewCell.m in Sources */,
+				CE5CC54B24C0041800527D9D /* CDHBTool.m in Sources */,
 				723CBB11232C86BE0095EC7C /* AppDelegate.m in Sources */,
-				723CBB61232CABF40095EC7C /* JTCalendarDayView.m in Sources */,
-				729D0B9B232E28F600D88267 /* PHGuideModel.m in Sources */,
-				72A297A123363D24004EE230 /* PHClockInViewController.m in Sources */,
-				723CBB7F232CB0A70095EC7C /* PHUIUtilities.m in Sources */,
-				729D0B95232E20B600D88267 /* PHGuideCollectionReusableView.m in Sources */,
+				CE5CC5A824C0082A00527D9D /* CDSetViewModel.m in Sources */,
+				CE5CC56F24C005FA00527D9D /* CDAllClockLogsViewCellTableViewCell.m in Sources */,
+				CE5CC5B724C00AB600527D9D /* CDDailyHabitsTableViewCell.m in Sources */,
+				CE5CC5B824C00AB600527D9D /* CDDailyHabitsTableViewHeaderView.m in Sources */,
+				CE5CC59E24C0082A00527D9D /* CDModifyNicknameViewController.m in Sources */,
+				CE5CC53B24C0031800527D9D /* NSArray+log.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		723CBB6B232CAF700095EC7C /* Localizable.strings */ = {
+		CE5CC54E24C0057B00527D9D /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				723CBB6A232CAF700095EC7C /* zh-Hans */,
-				723CBB6C232CAF720095EC7C /* en */,
-				723CBB6D232CAF740095EC7C /* ja */,
-				AEB6B12E23405DFC00265045 /* zh-Hant */,
+				CE5CC54F24C0057B00527D9D /* zh-Hans */,
+				CE5CC55224C0057B00527D9D /* ja */,
+				CE5CC55424C0057B00527D9D /* en */,
+				CE5CC55624C0057B00527D9D /* zh-Hant */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		AEB6B1332340625800265045 /* InfoPlist.Strings */ = {
+		CE5CC55024C0057B00527D9D /* InfoPlist.Strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AEB6B1322340625800265045 /* ja */,
-				AEB6B1342340627100265045 /* zh-Hant */,
-				AEB6B1352340627600265045 /* zh-Hans */,
-				AEB6B1362340627700265045 /* en */,
+				CE5CC55124C0057B00527D9D /* zh-Hans */,
+				CE5CC55324C0057B00527D9D /* ja */,
+				CE5CC55524C0057B00527D9D /* en */,
+				CE5CC55724C0057B00527D9D /* zh-Hant */,
 			);
 			name = InfoPlist.Strings;
 			sourceTree = "<group>";
@@ -861,7 +725,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				GCC_PREFIX_HEADER = "$(SRCROOT)/GoodHabit/Common/PocketHabits_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GoodHabit/CDCommon/PocketHabits_PrefixHeader.pch";
 				INFOPLIST_FILE = GoodHabit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -871,6 +735,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoodHabit/resources/JPush",
+					"$(PROJECT_DIR)/GoodHabit/CDresources/JPush",
 				);
 				MARKETING_VERSION = 1.02;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketHabits;
@@ -891,7 +756,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				GCC_PREFIX_HEADER = "$(SRCROOT)/GoodHabit/Common/PocketHabits_PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GoodHabit/CDCommon/PocketHabits_PrefixHeader.pch";
 				INFOPLIST_FILE = GoodHabit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -901,6 +766,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoodHabit/resources/JPush",
+					"$(PROJECT_DIR)/GoodHabit/CDresources/JPush",
 				);
 				MARKETING_VERSION = 1.02;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgg.PocketHabits;

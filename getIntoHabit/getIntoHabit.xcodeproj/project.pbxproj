@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE5CC5C924C0195E00527D9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC5C824C0195E00527D9D /* AppDelegate.m */; };
+		CE5CC5D424C0195F00527D9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5CC5D324C0195F00527D9D /* Assets.xcassets */; };
+		CE5CC5D724C0195F00527D9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5CC5D524C0195F00527D9D /* LaunchScreen.storyboard */; };
+		CE5CC5DA24C0195F00527D9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC5D924C0195F00527D9D /* main.m */; };
+		CE5CC63024C01A5C00527D9D /* CDModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC5E324C01A5B00527D9D /* CDModifyNicknameViewController.m */; };
+		CE5CC63124C01A5C00527D9D /* CDSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC5E424C01A5B00527D9D /* CDSetViewController.m */; };
+		CE5CC63224C01A5C00527D9D /* CDGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC5E524C01A5B00527D9D /* CDGuideViewController.m */; };
+		CE5CC63324C01A5C00527D9D /* CDPasswordChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC5E624C01A5B00527D9D /* CDPasswordChangeViewController.m */; };
+		CE5CC63424C01A5C00527D9D /* CDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC5E724C01A5B00527D9D /* CDLoginViewController.m */; };
+		CE5CC63524C01A5C00527D9D /* CDSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC5EF24C01A5C00527D9D /* CDSetTableViewCell.m */; };
+		CE5CC63624C01A5C00527D9D /* CDGuidePromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC5F124C01A5C00527D9D /* CDGuidePromptView.m */; };
+		CE5CC63724C01A5C00527D9D /* CDGuideCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC5F224C01A5C00527D9D /* CDGuideCollectionReusableView.m */; };
+		CE5CC63824C01A5C00527D9D /* CDGuideCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC5F424C01A5C00527D9D /* CDGuideCollectionViewCell.m */; };
+		CE5CC63924C01A5C00527D9D /* CDGuideClockInformationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC5F624C01A5C00527D9D /* CDGuideClockInformationModel.m */; };
+		CE5CC63A24C01A5C00527D9D /* CDSetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC5FA24C01A5C00527D9D /* CDSetViewModel.m */; };
+		CE5CC63B24C01A5C00527D9D /* CDGuideModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC5FB24C01A5C00527D9D /* CDGuideModel.m */; };
+		CE5CC63C24C01A5C00527D9D /* CDDailyHabitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC5FF24C01A5C00527D9D /* CDDailyHabitsViewController.m */; };
+		CE5CC63D24C01A5C00527D9D /* CDDailyHabitsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC60224C01A5C00527D9D /* CDDailyHabitsTableViewCell.m */; };
+		CE5CC63E24C01A5C00527D9D /* CDDailyHabitsTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC60324C01A5C00527D9D /* CDDailyHabitsTableViewHeaderView.m */; };
+		CE5CC63F24C01A5C00527D9D /* CDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC60624C01A5C00527D9D /* CDBaseViewController.m */; };
+		CE5CC64024C01A5C00527D9D /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC60724C01A5C00527D9D /* NSDictionary+log.m */; };
+		CE5CC64124C01A5C00527D9D /* MBProgressHUD+CDNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC60A24C01A5C00527D9D /* MBProgressHUD+CDNJ.m */; };
+		CE5CC64224C01A5C00527D9D /* CDTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC60C24C01A5C00527D9D /* CDTabBarViewController.m */; };
+		CE5CC64324C01A5C00527D9D /* CDUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC61124C01A5C00527D9D /* CDUIUtilities.m */; };
+		CE5CC64424C01A5C00527D9D /* CalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC61224C01A5C00527D9D /* CalendarTool.m */; };
+		CE5CC64524C01A5C00527D9D /* CDHBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC61424C01A5C00527D9D /* CDHBTool.m */; };
+		CE5CC64624C01A5C00527D9D /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC61724C01A5C00527D9D /* NSArray+log.m */; };
+		CE5CC64724C01A5C00527D9D /* CDClockInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC61C24C01A5C00527D9D /* CDClockInViewController.m */; };
+		CE5CC64824C01A5C00527D9D /* CDAllClockLogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC61D24C01A5C00527D9D /* CDAllClockLogsViewController.m */; };
+		CE5CC64924C01A5C00527D9D /* CDTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC61F24C01A5C00527D9D /* CDTodayViewController.m */; };
+		CE5CC64A24C01A5C00527D9D /* CDTodayClockInCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC62324C01A5C00527D9D /* CDTodayClockInCollectionViewCell.m */; };
+		CE5CC64B24C01A5C00527D9D /* CDAllClockLogsViewCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC62424C01A5C00527D9D /* CDAllClockLogsViewCellTableViewCell.m */; };
+		CE5CC64C24C01A5C00527D9D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE5CC62624C01A5C00527D9D /* Localizable.strings */; };
+		CE5CC64D24C01A5C00527D9D /* InfoPlist.Strings in Resources */ = {isa = PBXBuildFile; fileRef = CE5CC62824C01A5C00527D9D /* InfoPlist.Strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE5CC5C424C0195E00527D9D /* getIntoHabit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = getIntoHabit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5CC5C724C0195E00527D9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE5CC5C824C0195E00527D9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE5CC5D324C0195F00527D9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE5CC5D624C0195F00527D9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE5CC5D824C0195F00527D9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5CC5D924C0195F00527D9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE5CC5E224C01A5B00527D9D /* CDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDLoginViewController.h; sourceTree = "<group>"; };
+		CE5CC5E324C01A5B00527D9D /* CDModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDModifyNicknameViewController.m; sourceTree = "<group>"; };
+		CE5CC5E424C01A5B00527D9D /* CDSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSetViewController.m; sourceTree = "<group>"; };
+		CE5CC5E524C01A5B00527D9D /* CDGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGuideViewController.m; sourceTree = "<group>"; };
+		CE5CC5E624C01A5B00527D9D /* CDPasswordChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDPasswordChangeViewController.m; sourceTree = "<group>"; };
+		CE5CC5E724C01A5B00527D9D /* CDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDLoginViewController.m; sourceTree = "<group>"; };
+		CE5CC5E824C01A5B00527D9D /* CDSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSetViewController.h; sourceTree = "<group>"; };
+		CE5CC5E924C01A5C00527D9D /* CDModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDModifyNicknameViewController.h; sourceTree = "<group>"; };
+		CE5CC5EA24C01A5C00527D9D /* CDGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGuideViewController.h; sourceTree = "<group>"; };
+		CE5CC5EB24C01A5C00527D9D /* CDPasswordChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPasswordChangeViewController.h; sourceTree = "<group>"; };
+		CE5CC5ED24C01A5C00527D9D /* CDGuideCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGuideCollectionReusableView.h; sourceTree = "<group>"; };
+		CE5CC5EE24C01A5C00527D9D /* CDGuidePromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGuidePromptView.h; sourceTree = "<group>"; };
+		CE5CC5EF24C01A5C00527D9D /* CDSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSetTableViewCell.m; sourceTree = "<group>"; };
+		CE5CC5F024C01A5C00527D9D /* CDGuideCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGuideCollectionViewCell.h; sourceTree = "<group>"; };
+		CE5CC5F124C01A5C00527D9D /* CDGuidePromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGuidePromptView.m; sourceTree = "<group>"; };
+		CE5CC5F224C01A5C00527D9D /* CDGuideCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGuideCollectionReusableView.m; sourceTree = "<group>"; };
+		CE5CC5F324C01A5C00527D9D /* CDSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSetTableViewCell.h; sourceTree = "<group>"; };
+		CE5CC5F424C01A5C00527D9D /* CDGuideCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGuideCollectionViewCell.m; sourceTree = "<group>"; };
+		CE5CC5F624C01A5C00527D9D /* CDGuideClockInformationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGuideClockInformationModel.m; sourceTree = "<group>"; };
+		CE5CC5F724C01A5C00527D9D /* CDGuideModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGuideModel.h; sourceTree = "<group>"; };
+		CE5CC5F824C01A5C00527D9D /* CDSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSetViewModel.h; sourceTree = "<group>"; };
+		CE5CC5F924C01A5C00527D9D /* CDGuideClockInformationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGuideClockInformationModel.h; sourceTree = "<group>"; };
+		CE5CC5FA24C01A5C00527D9D /* CDSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSetViewModel.m; sourceTree = "<group>"; };
+		CE5CC5FB24C01A5C00527D9D /* CDGuideModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGuideModel.m; sourceTree = "<group>"; };
+		CE5CC5FE24C01A5C00527D9D /* CDDailyHabitsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDDailyHabitsViewController.h; sourceTree = "<group>"; };
+		CE5CC5FF24C01A5C00527D9D /* CDDailyHabitsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDDailyHabitsViewController.m; sourceTree = "<group>"; };
+		CE5CC60124C01A5C00527D9D /* CDDailyHabitsTableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDDailyHabitsTableViewHeaderView.h; sourceTree = "<group>"; };
+		CE5CC60224C01A5C00527D9D /* CDDailyHabitsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDDailyHabitsTableViewCell.m; sourceTree = "<group>"; };
+		CE5CC60324C01A5C00527D9D /* CDDailyHabitsTableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDDailyHabitsTableViewHeaderView.m; sourceTree = "<group>"; };
+		CE5CC60424C01A5C00527D9D /* CDDailyHabitsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDDailyHabitsTableViewCell.h; sourceTree = "<group>"; };
+		CE5CC60624C01A5C00527D9D /* CDBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDBaseViewController.m; sourceTree = "<group>"; };
+		CE5CC60724C01A5C00527D9D /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
+		CE5CC60824C01A5C00527D9D /* CalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTool.h; sourceTree = "<group>"; };
+		CE5CC60924C01A5C00527D9D /* CDUIUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDUIUtilities.h; sourceTree = "<group>"; };
+		CE5CC60A24C01A5C00527D9D /* MBProgressHUD+CDNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+CDNJ.m"; sourceTree = "<group>"; };
+		CE5CC60B24C01A5C00527D9D /* CDHBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDHBTool.h; sourceTree = "<group>"; };
+		CE5CC60C24C01A5C00527D9D /* CDTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTabBarViewController.m; sourceTree = "<group>"; };
+		CE5CC60D24C01A5C00527D9D /* CDglobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDglobal.h; sourceTree = "<group>"; };
+		CE5CC60E24C01A5C00527D9D /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		CE5CC60F24C01A5C00527D9D /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
+		CE5CC61024C01A5C00527D9D /* CDBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDBaseViewController.h; sourceTree = "<group>"; };
+		CE5CC61124C01A5C00527D9D /* CDUIUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDUIUtilities.m; sourceTree = "<group>"; };
+		CE5CC61224C01A5C00527D9D /* CalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTool.m; sourceTree = "<group>"; };
+		CE5CC61324C01A5C00527D9D /* CDTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTabBarViewController.h; sourceTree = "<group>"; };
+		CE5CC61424C01A5C00527D9D /* CDHBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDHBTool.m; sourceTree = "<group>"; };
+		CE5CC61524C01A5C00527D9D /* MBProgressHUD+CDNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+CDNJ.h"; sourceTree = "<group>"; };
+		CE5CC61624C01A5C00527D9D /* PocketHabits_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocketHabits_PrefixHeader.pch; sourceTree = "<group>"; };
+		CE5CC61724C01A5C00527D9D /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		CE5CC61A24C01A5C00527D9D /* CDAllClockLogsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAllClockLogsViewController.h; sourceTree = "<group>"; };
+		CE5CC61B24C01A5C00527D9D /* CDTodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTodayViewController.h; sourceTree = "<group>"; };
+		CE5CC61C24C01A5C00527D9D /* CDClockInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDClockInViewController.m; sourceTree = "<group>"; };
+		CE5CC61D24C01A5C00527D9D /* CDAllClockLogsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAllClockLogsViewController.m; sourceTree = "<group>"; };
+		CE5CC61E24C01A5C00527D9D /* CDClockInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDClockInViewController.h; sourceTree = "<group>"; };
+		CE5CC61F24C01A5C00527D9D /* CDTodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTodayViewController.m; sourceTree = "<group>"; };
+		CE5CC62124C01A5C00527D9D /* CDTodayClockInCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTodayClockInCollectionViewCell.h; sourceTree = "<group>"; };
+		CE5CC62224C01A5C00527D9D /* CDAllClockLogsViewCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAllClockLogsViewCellTableViewCell.h; sourceTree = "<group>"; };
+		CE5CC62324C01A5C00527D9D /* CDTodayClockInCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTodayClockInCollectionViewCell.m; sourceTree = "<group>"; };
+		CE5CC62424C01A5C00527D9D /* CDAllClockLogsViewCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAllClockLogsViewCellTableViewCell.m; sourceTree = "<group>"; };
+		CE5CC62724C01A5C00527D9D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CE5CC62924C01A5C00527D9D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.Strings"; sourceTree = "<group>"; };
+		CE5CC62A24C01A5C00527D9D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE5CC62B24C01A5C00527D9D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.Strings; sourceTree = "<group>"; };
+		CE5CC62C24C01A5C00527D9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE5CC62D24C01A5C00527D9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.Strings; sourceTree = "<group>"; };
+		CE5CC62E24C01A5C00527D9D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CE5CC62F24C01A5C00527D9D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.Strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE5CC5C124C0195E00527D9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE5CC5BB24C0195E00527D9D = {
+			isa = PBXGroup;
+			children = (
+				CE5CC5C624C0195E00527D9D /* getIntoHabit */,
+				CE5CC5C524C0195E00527D9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE5CC5C524C0195E00527D9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC5C424C0195E00527D9D /* getIntoHabit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE5CC5C624C0195E00527D9D /* getIntoHabit */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC60524C01A5C00527D9D /* CDcommon */,
+				CE5CC5FC24C01A5C00527D9D /* CDdailyHabits */,
+				CE5CC62524C01A5C00527D9D /* CDresources */,
+				CE5CC5E024C01A5B00527D9D /* CDset */,
+				CE5CC61824C01A5C00527D9D /* CDtoday */,
+				CE5CC5C724C0195E00527D9D /* AppDelegate.h */,
+				CE5CC5C824C0195E00527D9D /* AppDelegate.m */,
+				CE5CC5D324C0195F00527D9D /* Assets.xcassets */,
+				CE5CC5D524C0195F00527D9D /* LaunchScreen.storyboard */,
+				CE5CC5D824C0195F00527D9D /* Info.plist */,
+				CE5CC5D924C0195F00527D9D /* main.m */,
+			);
+			path = getIntoHabit;
+			sourceTree = "<group>";
+		};
+		CE5CC5E024C01A5B00527D9D /* CDset */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC5E124C01A5B00527D9D /* CDcontrollers */,
+				CE5CC5EC24C01A5C00527D9D /* CDviews */,
+				CE5CC5F524C01A5C00527D9D /* CDmodels */,
+			);
+			path = CDset;
+			sourceTree = "<group>";
+		};
+		CE5CC5E124C01A5B00527D9D /* CDcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC5E224C01A5B00527D9D /* CDLoginViewController.h */,
+				CE5CC5E324C01A5B00527D9D /* CDModifyNicknameViewController.m */,
+				CE5CC5E424C01A5B00527D9D /* CDSetViewController.m */,
+				CE5CC5E524C01A5B00527D9D /* CDGuideViewController.m */,
+				CE5CC5E624C01A5B00527D9D /* CDPasswordChangeViewController.m */,
+				CE5CC5E724C01A5B00527D9D /* CDLoginViewController.m */,
+				CE5CC5E824C01A5B00527D9D /* CDSetViewController.h */,
+				CE5CC5E924C01A5C00527D9D /* CDModifyNicknameViewController.h */,
+				CE5CC5EA24C01A5C00527D9D /* CDGuideViewController.h */,
+				CE5CC5EB24C01A5C00527D9D /* CDPasswordChangeViewController.h */,
+			);
+			path = CDcontrollers;
+			sourceTree = "<group>";
+		};
+		CE5CC5EC24C01A5C00527D9D /* CDviews */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC5ED24C01A5C00527D9D /* CDGuideCollectionReusableView.h */,
+				CE5CC5EE24C01A5C00527D9D /* CDGuidePromptView.h */,
+				CE5CC5EF24C01A5C00527D9D /* CDSetTableViewCell.m */,
+				CE5CC5F024C01A5C00527D9D /* CDGuideCollectionViewCell.h */,
+				CE5CC5F124C01A5C00527D9D /* CDGuidePromptView.m */,
+				CE5CC5F224C01A5C00527D9D /* CDGuideCollectionReusableView.m */,
+				CE5CC5F324C01A5C00527D9D /* CDSetTableViewCell.h */,
+				CE5CC5F424C01A5C00527D9D /* CDGuideCollectionViewCell.m */,
+			);
+			path = CDviews;
+			sourceTree = "<group>";
+		};
+		CE5CC5F524C01A5C00527D9D /* CDmodels */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC5F624C01A5C00527D9D /* CDGuideClockInformationModel.m */,
+				CE5CC5F724C01A5C00527D9D /* CDGuideModel.h */,
+				CE5CC5F824C01A5C00527D9D /* CDSetViewModel.h */,
+				CE5CC5F924C01A5C00527D9D /* CDGuideClockInformationModel.h */,
+				CE5CC5FA24C01A5C00527D9D /* CDSetViewModel.m */,
+				CE5CC5FB24C01A5C00527D9D /* CDGuideModel.m */,
+			);
+			path = CDmodels;
+			sourceTree = "<group>";
+		};
+		CE5CC5FC24C01A5C00527D9D /* CDdailyHabits */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC5FD24C01A5C00527D9D /* CDcontrollers */,
+				CE5CC60024C01A5C00527D9D /* CDviews */,
+			);
+			path = CDdailyHabits;
+			sourceTree = "<group>";
+		};
+		CE5CC5FD24C01A5C00527D9D /* CDcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC5FE24C01A5C00527D9D /* CDDailyHabitsViewController.h */,
+				CE5CC5FF24C01A5C00527D9D /* CDDailyHabitsViewController.m */,
+			);
+			path = CDcontrollers;
+			sourceTree = "<group>";
+		};
+		CE5CC60024C01A5C00527D9D /* CDviews */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC60124C01A5C00527D9D /* CDDailyHabitsTableViewHeaderView.h */,
+				CE5CC60224C01A5C00527D9D /* CDDailyHabitsTableViewCell.m */,
+				CE5CC60324C01A5C00527D9D /* CDDailyHabitsTableViewHeaderView.m */,
+				CE5CC60424C01A5C00527D9D /* CDDailyHabitsTableViewCell.h */,
+			);
+			path = CDviews;
+			sourceTree = "<group>";
+		};
+		CE5CC60524C01A5C00527D9D /* CDcommon */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC60624C01A5C00527D9D /* CDBaseViewController.m */,
+				CE5CC60724C01A5C00527D9D /* NSDictionary+log.m */,
+				CE5CC60824C01A5C00527D9D /* CalendarTool.h */,
+				CE5CC60924C01A5C00527D9D /* CDUIUtilities.h */,
+				CE5CC60A24C01A5C00527D9D /* MBProgressHUD+CDNJ.m */,
+				CE5CC60B24C01A5C00527D9D /* CDHBTool.h */,
+				CE5CC60C24C01A5C00527D9D /* CDTabBarViewController.m */,
+				CE5CC60D24C01A5C00527D9D /* CDglobal.h */,
+				CE5CC60E24C01A5C00527D9D /* NSArray+log.h */,
+				CE5CC60F24C01A5C00527D9D /* NSDictionary+log.h */,
+				CE5CC61024C01A5C00527D9D /* CDBaseViewController.h */,
+				CE5CC61124C01A5C00527D9D /* CDUIUtilities.m */,
+				CE5CC61224C01A5C00527D9D /* CalendarTool.m */,
+				CE5CC61324C01A5C00527D9D /* CDTabBarViewController.h */,
+				CE5CC61424C01A5C00527D9D /* CDHBTool.m */,
+				CE5CC61524C01A5C00527D9D /* MBProgressHUD+CDNJ.h */,
+				CE5CC61624C01A5C00527D9D /* PocketHabits_PrefixHeader.pch */,
+				CE5CC61724C01A5C00527D9D /* NSArray+log.m */,
+			);
+			path = CDcommon;
+			sourceTree = "<group>";
+		};
+		CE5CC61824C01A5C00527D9D /* CDtoday */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC61924C01A5C00527D9D /* CDcontrollers */,
+				CE5CC62024C01A5C00527D9D /* CDviews */,
+			);
+			path = CDtoday;
+			sourceTree = "<group>";
+		};
+		CE5CC61924C01A5C00527D9D /* CDcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC61A24C01A5C00527D9D /* CDAllClockLogsViewController.h */,
+				CE5CC61B24C01A5C00527D9D /* CDTodayViewController.h */,
+				CE5CC61C24C01A5C00527D9D /* CDClockInViewController.m */,
+				CE5CC61D24C01A5C00527D9D /* CDAllClockLogsViewController.m */,
+				CE5CC61E24C01A5C00527D9D /* CDClockInViewController.h */,
+				CE5CC61F24C01A5C00527D9D /* CDTodayViewController.m */,
+			);
+			path = CDcontrollers;
+			sourceTree = "<group>";
+		};
+		CE5CC62024C01A5C00527D9D /* CDviews */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC62124C01A5C00527D9D /* CDTodayClockInCollectionViewCell.h */,
+				CE5CC62224C01A5C00527D9D /* CDAllClockLogsViewCellTableViewCell.h */,
+				CE5CC62324C01A5C00527D9D /* CDTodayClockInCollectionViewCell.m */,
+				CE5CC62424C01A5C00527D9D /* CDAllClockLogsViewCellTableViewCell.m */,
+			);
+			path = CDviews;
+			sourceTree = "<group>";
+		};
+		CE5CC62524C01A5C00527D9D /* CDresources */ = {
+			isa = PBXGroup;
+			children = (
+				CE5CC62624C01A5C00527D9D /* Localizable.strings */,
+				CE5CC62824C01A5C00527D9D /* InfoPlist.Strings */,
+			);
+			path = CDresources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE5CC5C324C0195E00527D9D /* getIntoHabit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5CC5DD24C0195F00527D9D /* Build configuration list for PBXNativeTarget "getIntoHabit" */;
+			buildPhases = (
+				CE5CC5C024C0195E00527D9D /* Sources */,
+				CE5CC5C124C0195E00527D9D /* Frameworks */,
+				CE5CC5C224C0195E00527D9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = getIntoHabit;
+			productName = getIntoHabit;
+			productReference = CE5CC5C424C0195E00527D9D /* getIntoHabit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE5CC5BC24C0195E00527D9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = chu;
+				TargetAttributes = {
+					CE5CC5C324C0195E00527D9D = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = CE5CC5BF24C0195E00527D9D /* Build configuration list for PBXProject "getIntoHabit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+				ja,
+				"zh-Hant",
+			);
+			mainGroup = CE5CC5BB24C0195E00527D9D;
+			productRefGroup = CE5CC5C524C0195E00527D9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE5CC5C324C0195E00527D9D /* getIntoHabit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE5CC5C224C0195E00527D9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5CC5D724C0195F00527D9D /* LaunchScreen.storyboard in Resources */,
+				CE5CC64D24C01A5C00527D9D /* InfoPlist.Strings in Resources */,
+				CE5CC64C24C01A5C00527D9D /* Localizable.strings in Resources */,
+				CE5CC5D424C0195F00527D9D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE5CC5C024C0195E00527D9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5CC64A24C01A5C00527D9D /* CDTodayClockInCollectionViewCell.m in Sources */,
+				CE5CC63F24C01A5C00527D9D /* CDBaseViewController.m in Sources */,
+				CE5CC63424C01A5C00527D9D /* CDLoginViewController.m in Sources */,
+				CE5CC63C24C01A5C00527D9D /* CDDailyHabitsViewController.m in Sources */,
+				CE5CC64324C01A5C00527D9D /* CDUIUtilities.m in Sources */,
+				CE5CC64524C01A5C00527D9D /* CDHBTool.m in Sources */,
+				CE5CC5C924C0195E00527D9D /* AppDelegate.m in Sources */,
+				CE5CC63224C01A5C00527D9D /* CDGuideViewController.m in Sources */,
+				CE5CC63024C01A5C00527D9D /* CDModifyNicknameViewController.m in Sources */,
+				CE5CC64424C01A5C00527D9D /* CalendarTool.m in Sources */,
+				CE5CC64924C01A5C00527D9D /* CDTodayViewController.m in Sources */,
+				CE5CC64124C01A5C00527D9D /* MBProgressHUD+CDNJ.m in Sources */,
+				CE5CC63624C01A5C00527D9D /* CDGuidePromptView.m in Sources */,
+				CE5CC63924C01A5C00527D9D /* CDGuideClockInformationModel.m in Sources */,
+				CE5CC63824C01A5C00527D9D /* CDGuideCollectionViewCell.m in Sources */,
+				CE5CC63124C01A5C00527D9D /* CDSetViewController.m in Sources */,
+				CE5CC63524C01A5C00527D9D /* CDSetTableViewCell.m in Sources */,
+				CE5CC63B24C01A5C00527D9D /* CDGuideModel.m in Sources */,
+				CE5CC64024C01A5C00527D9D /* NSDictionary+log.m in Sources */,
+				CE5CC64824C01A5C00527D9D /* CDAllClockLogsViewController.m in Sources */,
+				CE5CC63A24C01A5C00527D9D /* CDSetViewModel.m in Sources */,
+				CE5CC63324C01A5C00527D9D /* CDPasswordChangeViewController.m in Sources */,
+				CE5CC64724C01A5C00527D9D /* CDClockInViewController.m in Sources */,
+				CE5CC63E24C01A5C00527D9D /* CDDailyHabitsTableViewHeaderView.m in Sources */,
+				CE5CC5DA24C0195F00527D9D /* main.m in Sources */,
+				CE5CC64624C01A5C00527D9D /* NSArray+log.m in Sources */,
+				CE5CC63724C01A5C00527D9D /* CDGuideCollectionReusableView.m in Sources */,
+				CE5CC64B24C01A5C00527D9D /* CDAllClockLogsViewCellTableViewCell.m in Sources */,
+				CE5CC63D24C01A5C00527D9D /* CDDailyHabitsTableViewCell.m in Sources */,
+				CE5CC64224C01A5C00527D9D /* CDTabBarViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE5CC5D524C0195F00527D9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE5CC5D624C0195F00527D9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CE5CC62624C01A5C00527D9D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE5CC62724C01A5C00527D9D /* zh-Hans */,
+				CE5CC62A24C01A5C00527D9D /* ja */,
+				CE5CC62C24C01A5C00527D9D /* en */,
+				CE5CC62E24C01A5C00527D9D /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CE5CC62824C01A5C00527D9D /* InfoPlist.Strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE5CC62924C01A5C00527D9D /* zh-Hans */,
+				CE5CC62B24C01A5C00527D9D /* ja */,
+				CE5CC62D24C01A5C00527D9D /* en */,
+				CE5CC62F24C01A5C00527D9D /* zh-Hant */,
+			);
+			name = InfoPlist.Strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE5CC5DB24C0195F00527D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE5CC5DC24C0195F00527D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE5CC5DE24C0195F00527D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/getIntoHabit/CDCommon/PocketHabits_PrefixHeader.pch";
+				INFOPLIST_FILE = getIntoHabit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hongbiao.getIntoHabit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CE5CC5DF24C0195F00527D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/getIntoHabit/CDCommon/PocketHabits_PrefixHeader.pch";
+				INFOPLIST_FILE = getIntoHabit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hongbiao.getIntoHabit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE5CC5BF24C0195E00527D9D /* Build configuration list for PBXProject "getIntoHabit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5CC5DB24C0195F00527D9D /* Debug */,
+				CE5CC5DC24C0195F00527D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5CC5DD24C0195F00527D9D /* Build configuration list for PBXNativeTarget "getIntoHabit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5CC5DE24C0195F00527D9D /* Debug */,
+				CE5CC5DF24C0195F00527D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE5CC5BC24C0195E00527D9D /* Project object */;
+}

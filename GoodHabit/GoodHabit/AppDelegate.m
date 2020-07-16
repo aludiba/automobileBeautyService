@@ -7,9 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import "PHLoginViewController.h"
-#import "PHGuideViewController.h"
-#import "PHTabBarViewController.h"
+#import "CDLoginViewController.h"
+#import "CDGuideViewController.h"
+#import "CDTabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,31 +19,26 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [Bmob resetDomain:@"http://goodhabit.jd127.cn"];
-    [Bmob registerWithAppKey:@"df039ce9ff6f2311d96e0abed1cfb43b"];
+    [AVOSCloud setApplicationId:@"mG34aYISSTic5qVtir31dM6N-MdYXbMMI" clientKey:@"oLHtnYLqrERW7UvQ3UcnA3O5"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"PHPocketHabits"];
+    AVQuery *bquery = [AVQuery queryWithClassName:@"CDPocketHabits"];
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-        [PHNDHTTPClient PHgetURLStringNoHUD:[[array lastObject] objectForKey:@"PHPocketHabits"] withParam:nil withSuccessBlock:^(id data) {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[(NSDictionary *)data objectForKey:@"Url"]]];
-            } withErrorBlock:^(NSError *error, id errorData) {
-               
-            }];
+        
            self.window.rootViewController = [self rootController];
            [self.window makeKeyAndVisible];
     }];
     return YES;
 }
 - (UIViewController *)rootController{
-    BmobUser *bUser = [BmobUser currentUser];
+    AVUser *bUser = [AVUser currentUser];
     if (bUser) {
         //进行操作
-        PHTabBarViewController *tabVC = [PHTabBarViewController PHshareInstance];
+        CDTabBarViewController *tabVC = [CDTabBarViewController CDshareInstance];
         return tabVC;
     }else{
         //对象为空时，可打开用户注册界面
-        PHLoginViewController *loginVC = [PHLoginViewController PHshareInstance];
+        CDLoginViewController *loginVC = [CDLoginViewController CDshareInstance];
         return loginVC;
     }
 }
