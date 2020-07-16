@@ -199,7 +199,7 @@
 - (UIButton *)CDaddHbbitButton{
     if (!_CDaddHbbitButton) {
         _CDaddHbbitButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
-        [_CDaddHbbitButton setImage:[UIImage imageNamed:@"btn_new_add"] forState:UIControlStateNormal];
+        [_CDaddHbbitButton setImage:[UIImage imageNamed:@"CDbtn_new_add"] forState:UIControlStateNormal];
         [_CDaddHbbitButton addTarget:self action:@selector(addHabits) forControlEvents:UIControlEventTouchUpInside];
     }
     return _CDaddHbbitButton;

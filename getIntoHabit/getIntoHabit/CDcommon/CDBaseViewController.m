@@ -40,7 +40,7 @@
     if (self.navigationController && self.navigationController.viewControllers.count > 1) {
         self.navigationItem.hidesBackButton = YES;
         _CDbackButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
-        [_CDbackButton setImage:[UIImage imageNamed:@"btn_back"] forState:UIControlStateNormal];
+        [_CDbackButton setImage:[UIImage imageNamed:@"CDbtn_back"] forState:UIControlStateNormal];
         _CDbackButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [_CDbackButton addTarget:self action:@selector(CDbackButtonAction) forControlEvents:UIControlEventTouchUpInside];
         UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:_CDbackButton];
