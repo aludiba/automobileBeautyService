@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor cyanColor];
     self.title = NSLocalizedString(@"今天", nil);
     [self CDloadData];
 }
@@ -171,7 +172,7 @@
         _CDcollectionView.delegate = self;
         _CDcollectionView.dataSource = self;
         // 其他属性
-        _CDcollectionView.backgroundColor = [UIColor clearColor];
+        _CDcollectionView.backgroundColor = [UIColor cyanColor];
         _CDcollectionView.showsVerticalScrollIndicator = NO;// 隐藏垂直方向滚动条
         [_CDcollectionView registerClass:[CDTodayClockInCollectionViewCell class] forCellWithReuseIdentifier:@"CDTodayClockInCollectionViewCell"];
         [_CDcollectionView registerClass:[CDGuideCollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"CDGuideCollectionReusableView"];

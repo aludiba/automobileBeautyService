@@ -17,32 +17,33 @@
 @implementation CDAllClockLogsViewCellTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.CDdateLabel];
         [self.contentView addSubview:self.CDcontentLbl];
         [self.contentView addSubview:self.CDrightImgView];
         [self.contentView addSubview:self.CDline];
         
         [self.CDdateLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.contentView).offset(15);
-            make.leading.equalTo(self.contentView).offset(16);
+            make.top.equalTo(self.contentView).offset(20);
+            make.leading.equalTo(self.contentView).offset(20);
             make.width.mas_equalTo(120);
             make.height.mas_equalTo(24);
         }];
         [self.CDrightImgView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.CDdateLabel.mas_trailing).offset(5);
+            make.leading.equalTo(self.CDdateLabel.mas_trailing).offset(15);
             make.centerY.equalTo(self.CDdateLabel);
             make.width.mas_equalTo(21);
             make.height.mas_equalTo(21);
         }];
         [self.CDcontentLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.CDdateLabel.mas_bottom).offset(15);
-            make.leading.equalTo(self.contentView).offset(16);
-            make.trailing.equalTo(self.contentView).offset(-16);
+            make.leading.equalTo(self.contentView).offset(20);
+            make.trailing.equalTo(self.contentView).offset(-20);
             make.height.mas_equalTo(CDHEICDT * 0.5);
-            make.bottom.equalTo(self.contentView).offset(-15);
+            make.bottom.equalTo(self.contentView).offset(-20);
         }];
         [self.CDline mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.CDcontentLbl.mas_bottom).offset(14);
+            make.top.equalTo(self.CDcontentLbl.mas_bottom).offset(19);
             make.leading.equalTo(self.contentView).offset(16);
             make.width.mas_equalTo(CDWIDTH - 16);
             make.height.mas_equalTo(1);
@@ -65,13 +66,13 @@
 - (UILabel *)CDdateLabel{
     if (!_CDdateLabel) {
         _CDdateLabel = [[UILabel alloc] init];
-        _CDdateLabel.textColor = [UIColor blackColor];
+        _CDdateLabel.textColor = [UIColor systemBlueColor];
         _CDdateLabel.font = [UIFont systemFontOfSize:18];
         _CDdateLabel.textAlignment = NSTextAlignmentCenter;
-        _CDdateLabel.layer.cornerRadius = 8.0f;
+        _CDdateLabel.layer.cornerRadius = 10.0f;
         _CDdateLabel.layer.masksToBounds = YES;
         _CDdateLabel.layer.borderColor = [UIColor blackColor].CGColor;
-        _CDdateLabel.layer.borderWidth = 1.5f;
+        _CDdateLabel.layer.borderWidth = 2.0f;
         _CDdateLabel.backgroundColor = [UIColor greenColor];
         [_CDdateLabel sizeToFit];
     }
@@ -81,7 +82,7 @@
     if (!_CDcontentLbl) {
         _CDcontentLbl = [[UILabel alloc] init];
         _CDcontentLbl.textColor = [UIColor blackColor];
-        _CDcontentLbl.font = [UIFont systemFontOfSize:16];
+        _CDcontentLbl.font = [UIFont systemFontOfSize:18];
         _CDcontentLbl.numberOfLines = 0;
         [_CDcontentLbl sizeToFit];
     }

@@ -25,34 +25,34 @@
     [self CDsetContent];
 }
 - (void)CDsetContent{
-    self.view.backgroundColor = CDH_Color(244, 245, 246, 1);
+    self.view.backgroundColor = [UIColor cyanColor];
     [self.view addSubview:self.CDCDoldPasswordTextField];
     [self.view addSubview:self.CDCDcurrentPasswordTextField];
     [self.view addSubview:self.CDconfirmpasswordTextField];
     [self.view addSubview:self.CDsureButton];
     
     [self.CDCDoldPasswordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.view).offset(15);
-        make.trailing.equalTo(self.view).offset(-15);
-        make.top.equalTo(self.mas_topLayoutGuideBottom).offset(20);
+        make.leading.equalTo(self.view).offset(20);
+        make.trailing.equalTo(self.view).offset(-20);
+        make.top.equalTo(self.mas_topLayoutGuideBottom).offset(50);
         make.height.mas_equalTo(44);
     }];
     [self.CDCDcurrentPasswordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.view).offset(15);
-        make.trailing.equalTo(self.view).offset(-15);
-        make.top.equalTo(self.CDCDoldPasswordTextField.mas_bottom).offset(20);
+        make.leading.equalTo(self.view).offset(20);
+        make.trailing.equalTo(self.view).offset(-20);
+        make.top.equalTo(self.CDCDoldPasswordTextField.mas_bottom).offset(30);
         make.height.mas_equalTo(44);
     }];
     [self.CDconfirmpasswordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.view).offset(15);
-        make.trailing.equalTo(self.view).offset(-15);
-        make.top.equalTo(self.CDCDcurrentPasswordTextField.mas_bottom).offset(20);
+        make.leading.equalTo(self.view).offset(20);
+        make.trailing.equalTo(self.view).offset(-20);
+        make.top.equalTo(self.CDCDcurrentPasswordTextField.mas_bottom).offset(30);
         make.height.mas_equalTo(44);
     }];
     [self.CDsureButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.view).offset(26.5);
-        make.trailing.equalTo(self.view).offset(-26.5);
-        make.top.equalTo(self.CDconfirmpasswordTextField.mas_bottom).offset(30);
+        make.leading.equalTo(self.view).offset(40);
+        make.trailing.equalTo(self.view).offset(-40);
+        make.top.equalTo(self.CDconfirmpasswordTextField.mas_bottom).offset(50);
         make.height.mas_equalTo(44);
     }];
 }
@@ -132,8 +132,8 @@
         _CDCDoldPasswordTextField.secureTextEntry = YES;
         _CDCDoldPasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
         _CDCDoldPasswordTextField.layer.borderColor = [UIColor grayColor].CGColor;
-        _CDCDoldPasswordTextField.layer.borderWidth = 0.5f;
-        _CDCDoldPasswordTextField.layer.cornerRadius = 4.0f;
+        _CDCDoldPasswordTextField.layer.borderWidth = 1.0f;
+        _CDCDoldPasswordTextField.layer.cornerRadius = 8.0f;
         _CDCDoldPasswordTextField.layer.masksToBounds = YES;
         _CDCDoldPasswordTextField.tag = 100;
         _CDCDoldPasswordTextField.delegate = self;
@@ -149,8 +149,8 @@
         _CDCDcurrentPasswordTextField.secureTextEntry = YES;
         _CDCDcurrentPasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
         _CDCDcurrentPasswordTextField.layer.borderColor = [UIColor grayColor].CGColor;
-        _CDCDcurrentPasswordTextField.layer.borderWidth = 0.5f;
-        _CDCDcurrentPasswordTextField.layer.cornerRadius = 4.0f;
+        _CDCDcurrentPasswordTextField.layer.borderWidth = 1.0f;
+        _CDCDcurrentPasswordTextField.layer.cornerRadius = 8.0f;
         _CDCDcurrentPasswordTextField.layer.masksToBounds = YES;
         _CDCDcurrentPasswordTextField.tag = 101;
         _CDCDcurrentPasswordTextField.delegate = self;
@@ -166,8 +166,8 @@
         _CDconfirmpasswordTextField.secureTextEntry = YES;
         _CDconfirmpasswordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
         _CDconfirmpasswordTextField.layer.borderColor = [UIColor grayColor].CGColor;
-        _CDconfirmpasswordTextField.layer.borderWidth = 0.5f;
-        _CDconfirmpasswordTextField.layer.cornerRadius = 4.0f;
+        _CDconfirmpasswordTextField.layer.borderWidth = 1.0f;
+        _CDconfirmpasswordTextField.layer.cornerRadius = 8.0f;
         _CDconfirmpasswordTextField.layer.masksToBounds = YES;
         _CDconfirmpasswordTextField.tag = 102;
         _CDconfirmpasswordTextField.delegate = self;
@@ -183,7 +183,7 @@
         _CDsureButton.backgroundColor = [UIColor blueColor];
         [_CDsureButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_CDsureButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
-        _CDsureButton.layer.cornerRadius = 4.0f;
+        _CDsureButton.layer.cornerRadius = 8.0f;
         _CDsureButton.layer.masksToBounds = YES;
         [_CDsureButton setTitle:NSLocalizedString(@"确定", nil) forState:UIControlStateNormal];
         [_CDsureButton addTarget:self action:@selector(CDbtnClick:) forControlEvents:UIControlEventTouchUpInside];

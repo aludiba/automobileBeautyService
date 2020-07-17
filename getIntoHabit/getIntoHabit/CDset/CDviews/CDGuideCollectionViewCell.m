@@ -18,7 +18,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.contentView.backgroundColor = [UIColor whiteColor];
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.CDcontentImgView];
         [self.contentView addSubview:self.CDcontentLabel];
         

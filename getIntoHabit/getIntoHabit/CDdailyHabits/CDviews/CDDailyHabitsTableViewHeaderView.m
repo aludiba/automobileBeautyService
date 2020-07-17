@@ -17,7 +17,7 @@
 @implementation CDDailyHabitsTableViewHeaderView
 - (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = [UIColor whiteColor];
+        self.contentView.backgroundColor = [UIColor cyanColor];
     }
     return self;
 }
@@ -33,6 +33,8 @@
     CGFloat CDheight = 30;
     CGFloat CDwidthFront = 0;
     UIButton *CDlastbBtn;
+    UIButton *CDtempBtn;
+
     for (int i = 0; i < _CDdataArray.count; i++) {
         NSMutableDictionary *CDdic = _CDdataArray[i];
         NSUInteger CDperiodCode = [[CDdic objectForKey:@"sectionCode"] integerValue];
@@ -57,7 +59,11 @@
         [self.contentView addSubview:CDbtn];
         [self.CDviewDataArray addObject:CDbtn];
         [CDbtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(CDleadingX + i * (CDmarginX + CDwidthFront));
+            if (i == 0) {
+                make.leading.equalTo(self.contentView).offset(CDleadingX);
+            }else{
+                make.leading.equalTo(CDtempBtn.mas_trailing).offset(CDmarginX);
+            }
             make.top.equalTo(self.contentView).offset(20);
             make.width.mas_equalTo(CDwidth);
             make.height.mas_equalTo(CDheight);
@@ -66,6 +72,7 @@
         if (i == self.CDdataArray.count - 1) {
             CDlastbBtn = CDbtn;
         }
+        CDtempBtn = CDbtn;
     }
     [self.contentView addSubview:self.CDline];
     [self.CDline mas_makeConstraints:^(MASConstraintMaker *make) {

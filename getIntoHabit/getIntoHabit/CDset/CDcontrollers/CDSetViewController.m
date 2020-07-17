@@ -120,7 +120,7 @@
 - (UITableView *)CDmainTable{
     if (!_CDmainTable) {
         _CDmainTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-        _CDmainTable.backgroundColor = CDH_Color(244, 245, 246, 1);
+        _CDmainTable.backgroundColor = [UIColor cyanColor];
         _CDmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
         _CDmainTable.delegate = self;
         _CDmainTable.dataSource = self;

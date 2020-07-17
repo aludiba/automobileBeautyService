@@ -32,10 +32,8 @@
     [super viewWillAppear:animated];
     if (self.CDselectIndex == 0) {
         self.CDbackButton.hidden = YES;
-//        self.CDpromptView.hidden = NO;
     }else{
         self.CDbackButton.hidden = NO;
-//        self.CDpromptView.hidden = YES;
     }
 }
 - (void)CD_setupNavigationItems {
@@ -55,6 +53,7 @@
 
 #pragma mark - actions
 - (void)CDsetContentView{
+    self.view.backgroundColor = [UIColor cyanColor];
     [self.view addSubview:self.CDpromptView];
     [self.CDpromptView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.view).offset(30);
@@ -430,12 +429,12 @@
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {          // Header视图
-        // 从复用队列中获取HooterView
+        // 从复用队列中获取HeaderView
         CDGuideCollectionReusableView *CDheaderView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"CDGuideCollectionReusableView" forIndexPath:indexPath];
         NSDictionary *CDdic = self.CDdataArray[indexPath.section];
         NSString *CDtitle = [CDdic objectForKey:@"sectionTitle"];
         CDheaderView.CDtitleString = CDtitle;
-        // 返回HooterView
+        // 返回HeaderView
         return CDheaderView;
     }else if ([kind isEqualToString:UICollectionElementKindSectionFooter]) {
         return nil;
@@ -514,7 +513,7 @@
         _CDcollectionView.delegate = self;
         _CDcollectionView.dataSource = self;
         // 其他属性
-        _CDcollectionView.backgroundColor = [UIColor clearColor];
+        _CDcollectionView.backgroundColor = [UIColor cyanColor];
         _CDcollectionView.showsVerticalScrollIndicator = NO;// 隐藏垂直方向滚动条
         [_CDcollectionView registerClass:[CDGuideCollectionViewCell class] forCellWithReuseIdentifier:@"CDGuideCollectionViewCell"];
         [_CDcollectionView registerClass:[CDGuideCollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"CDGuideCollectionReusableView"];
@@ -537,10 +536,10 @@
 - (UIButton *)CDsureButton{
     if (!_CDsureButton) {
         _CDsureButton = [[UIButton alloc] init];
-        _CDsureButton.backgroundColor = CDH_Color(242, 242, 242, 1);
-        _CDsureButton.layer.cornerRadius = 6.0f;
+        _CDsureButton.backgroundColor = [UIColor blueColor];
+        _CDsureButton.layer.cornerRadius = 8.0f;
         _CDsureButton.layer.masksToBounds = YES;
-        [_CDsureButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        [_CDsureButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_CDsureButton setTitle:NSLocalizedString(@"确定", nil) forState:UIControlStateNormal];
         [_CDsureButton.titleLabel setFont:[UIFont systemFontOfSize:15]];
         [_CDsureButton addTarget:self action:@selector(CDsureBtnClick) forControlEvents:UIControlEventTouchUpInside];

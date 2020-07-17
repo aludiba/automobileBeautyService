@@ -24,6 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = NSLocalizedString(@"日常习惯", nil);
+    self.view.backgroundColor = [UIColor cyanColor];
     [self CDloadData];
 }
 - (void)viewWillAppear:(BOOL)animated{
@@ -176,6 +177,7 @@
 - (UITableView *)CDmainTable{
     if (!_CDmainTable) {
         _CDmainTable = [[UITableView alloc] init];
+        _CDmainTable.backgroundColor = [UIColor cyanColor];
         _CDmainTable.delegate = self;
         _CDmainTable.dataSource = self;
         _CDmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;

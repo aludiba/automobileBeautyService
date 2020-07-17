@@ -51,6 +51,7 @@
 - (UITableView *)CDmainTable{
     if (!_CDmainTable) {
         _CDmainTable = [[UITableView alloc] init];
+        _CDmainTable.backgroundColor = [UIColor cyanColor];
         _CDmainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
         _CDmainTable.delegate = self;
         _CDmainTable.dataSource = self;
@@ -59,7 +60,7 @@
         [_CDmainTable registerClass:[CDAllClockLogsViewCellTableViewCell class] forCellReuseIdentifier:@"CDAllClockLogsViewCellTableViewCell"];
         [self.view addSubview:_CDmainTable];
         [_CDmainTable mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.mas_topLayoutGuideBottom).offset(15);
+            make.top.equalTo(self.mas_topLayoutGuideBottom).offset(0);
             make.leading.equalTo(self.view);
             make.trailing.equalTo(self.view);
             make.bottom.equalTo(self.view);

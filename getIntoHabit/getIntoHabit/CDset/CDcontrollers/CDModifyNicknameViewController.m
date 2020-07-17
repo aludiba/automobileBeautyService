@@ -21,20 +21,20 @@
     [self CDsetContent];
 }
 - (void)CDsetContent{
-    self.view.backgroundColor = CDH_Color(244, 245, 246, 1);
+    self.view.backgroundColor = [UIColor cyanColor];
     [self.view addSubview:self.CDconfirmNickNameTextField];
     [self.view addSubview:self.CDsureButton];
     
     [self.CDconfirmNickNameTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.view).offset(15);
-        make.trailing.equalTo(self.view).offset(-15);
-        make.top.equalTo(self.mas_topLayoutGuideBottom).offset(20);
+        make.leading.equalTo(self.view).offset(20);
+        make.trailing.equalTo(self.view).offset(-20);
+        make.top.equalTo(self.mas_topLayoutGuideBottom).offset(50);
         make.height.mas_equalTo(44);
     }];
     [self.CDsureButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.view).offset(26.5);
-        make.trailing.equalTo(self.view).offset(-26.5);
-        make.top.equalTo(self.CDconfirmNickNameTextField.mas_bottom).offset(30);
+        make.leading.equalTo(self.view).offset(40);
+        make.trailing.equalTo(self.view).offset(-40);
+        make.top.equalTo(self.CDconfirmNickNameTextField.mas_bottom).offset(50);
         make.height.mas_equalTo(44);
     }];
 }
@@ -74,8 +74,8 @@
         _CDconfirmNickNameTextField = [[UITextField alloc] init];
         _CDconfirmNickNameTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
         _CDconfirmNickNameTextField.layer.borderColor = [UIColor grayColor].CGColor;
-        _CDconfirmNickNameTextField.layer.borderWidth = 0.5f;
-        _CDconfirmNickNameTextField.layer.cornerRadius = 4.0f;
+        _CDconfirmNickNameTextField.layer.borderWidth = 1.0f;
+        _CDconfirmNickNameTextField.layer.cornerRadius = 8.0f;
         _CDconfirmNickNameTextField.layer.masksToBounds = YES;
         _CDconfirmNickNameTextField.tag = 102;
         _CDconfirmNickNameTextField.delegate = self;
@@ -96,7 +96,7 @@
         _CDsureButton.backgroundColor = [UIColor blueColor];
         [_CDsureButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_CDsureButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
-        _CDsureButton.layer.cornerRadius = 4.0f;
+        _CDsureButton.layer.cornerRadius = 8.0f;
         _CDsureButton.layer.masksToBounds = YES;
         [_CDsureButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
         [_CDsureButton addTarget:self action:@selector(CDbtnClick:) forControlEvents:UIControlEventTouchUpInside];

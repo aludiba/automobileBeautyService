@@ -11,6 +11,7 @@
 
 @interface CDTodayClockInCollectionViewCell()
 @property(nonatomic, strong)UIImageView *CDclockInImgView;//打卡提醒
+@property(nonatomic, strong)UIView *CDprojectBackView;
 @property(nonatomic, strong)UIImageView *CDprojectImgView;//打卡项目图
 @property(nonatomic, strong)UILabel *CDprojectLabel;//打卡项目名称
 @property(nonatomic, strong)UILabel *CDclockContinuouslyInformationLabel;//该项目连续打卡天数
@@ -21,10 +22,16 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self.contentView addSubview:self.CDclockInImgView];
+        [self.contentView addSubview:self.CDprojectBackView];
         [self.contentView addSubview:self.CDprojectImgView];
         [self.contentView addSubview:self.CDprojectLabel];
         [self.contentView addSubview:self.CDclockContinuouslyInformationLabel];
-
+        [self.CDprojectBackView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.contentView);
+            make.centerX.equalTo(self.contentView);
+            make.width.mas_equalTo(82);
+            make.height.mas_equalTo(50);
+        }];
         [self.CDprojectImgView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.contentView);
             make.centerX.equalTo(self.contentView);
@@ -46,7 +53,7 @@
         [self.CDclockContinuouslyInformationLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.CDprojectLabel.mas_bottom);
             make.centerX.equalTo(self.contentView);
-            make.width.mas_equalTo(48);
+            make.width.mas_equalTo(82);
             make.height.mas_equalTo(12);
         }];
     }
@@ -71,6 +78,13 @@
     }
     return _CDclockInImgView;
 }
+- (UIView *)CDprojectBackView{
+    if (!_CDprojectBackView) {
+        _CDprojectBackView = [[UIView alloc] init];
+        _CDprojectBackView.backgroundColor = [UIColor whiteColor];
+    }
+    return _CDprojectBackView;
+}
 - (UIImageView *)CDprojectImgView{
     if (!_CDprojectImgView) {
         _CDprojectImgView = [[UIImageView alloc] init];
@@ -80,6 +94,7 @@
 - (UILabel *)CDprojectLabel{
     if (!_CDprojectLabel) {
         _CDprojectLabel = [[UILabel alloc] init];
+        _CDprojectLabel.backgroundColor = [UIColor cyanColor];
         _CDprojectLabel.textColor = [UIColor blackColor];
         _CDprojectLabel.font = [UIFont systemFontOfSize:13];
         _CDprojectLabel.backgroundColor = [UIColor whiteColor];
@@ -92,6 +107,7 @@
 - (UILabel *)CDclockContinuouslyInformationLabel{
     if (!_CDclockContinuouslyInformationLabel) {
         _CDclockContinuouslyInformationLabel = [[UILabel alloc] init];
+        _CDclockContinuouslyInformationLabel.backgroundColor = [UIColor cyanColor];
         _CDclockContinuouslyInformationLabel.textColor = [UIColor grayColor];
         _CDclockContinuouslyInformationLabel.font = [UIFont systemFontOfSize:11];
         _CDclockContinuouslyInformationLabel.backgroundColor = [UIColor whiteColor];

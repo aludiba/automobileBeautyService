@@ -27,7 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor cyanColor];
     [self CDsetContent];
 }
 + (CDLoginViewController *)CDshareInstance{
@@ -66,11 +66,11 @@
         make.height.mas_equalTo(21);
     }];
     UIView *CDline = [[UIView alloc] init];
-    CDline.backgroundColor = [UIColor grayColor];
+    CDline.backgroundColor = [UIColor systemGrayColor];
     [self.CDbackView addSubview:CDline];
     [CDline mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.CDbackView).offset(25);
-        make.trailing.equalTo(self.CDbackView).offset(-25);
+        make.leading.equalTo(self.CDbackView).offset(16);
+        make.trailing.equalTo(self.CDbackView).offset(0);
         make.top.equalTo(self.CDCDaccountTextField.mas_bottom).offset(10);
         make.height.mas_equalTo(0.5);
     }];
@@ -87,11 +87,11 @@
         make.height.mas_equalTo(21);
     }];
     UIView *CDline1 = [[UIView alloc] init];
-    CDline1.backgroundColor = [UIColor grayColor];
+    CDline1.backgroundColor = [UIColor systemGrayColor];
     [self.CDbackView addSubview:CDline1];
     [CDline1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.CDbackView).offset(25);
-        make.trailing.equalTo(self.CDbackView).offset(-25);
+        make.leading.equalTo(self.CDbackView).offset(16);
+        make.trailing.equalTo(self.CDbackView).offset(0);
         make.top.equalTo(self.CDCDpasswordTextField.mas_bottom).offset(10);
         make.height.mas_equalTo(0.5);
     }];
@@ -180,11 +180,11 @@
 - (UIView *)CDbackView{
     if (!_CDbackView) {
         _CDbackView = [[UIView alloc] init];
-        _CDbackView.backgroundColor = CDH_Color(242, 242, 242, 1);
-        _CDbackView.layer.cornerRadius = 5.0f;
+        _CDbackView.backgroundColor = CDH_Color(246, 246, 246, 1);
+        _CDbackView.layer.cornerRadius = 8.0f;
         _CDbackView.layer.masksToBounds = YES;
-        _CDbackView.layer.borderColor = [UIColor grayColor].CGColor;
-        _CDbackView.layer.borderWidth = 1.0f;
+        _CDbackView.layer.borderColor = [UIColor systemRedColor].CGColor;
+        _CDbackView.layer.borderWidth = 1.5f;
     }
     return _CDbackView;
 }
@@ -192,7 +192,7 @@
     if (!_CDCDaccountLable) {
         _CDCDaccountLable = [[UILabel alloc] init];
         _CDCDaccountLable.text = NSLocalizedString(@"账号", nil);
-        _CDCDaccountLable.textColor = [UIColor blackColor];
+        _CDCDaccountLable.textColor = [UIColor systemGreenColor];
         _CDCDaccountLable.font = [UIFont systemFontOfSize:15];
     }
     return _CDCDaccountLable;
@@ -212,7 +212,7 @@
     if (!_CDCDpasswordLable) {
         _CDCDpasswordLable = [[UILabel alloc] init];
         _CDCDpasswordLable.text = NSLocalizedString(@"密码", nil);
-        _CDCDpasswordLable.textColor = [UIColor blackColor];
+        _CDCDpasswordLable.textColor = [UIColor systemBlueColor];
         _CDCDpasswordLable.font = [UIFont systemFontOfSize:15];
     }
     return _CDCDpasswordLable;
@@ -236,7 +236,7 @@
         _CDloginButton.backgroundColor = [UIColor blueColor];
         [_CDloginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_CDloginButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
-        _CDloginButton.layer.cornerRadius = 4.0f;
+        _CDloginButton.layer.cornerRadius = 6.0f;
         _CDloginButton.layer.masksToBounds = YES;
         [_CDloginButton setTitle:NSLocalizedString(@"登录", nil) forState:UIControlStateNormal];
         [_CDloginButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -250,7 +250,7 @@
         _CDregisteredButton.backgroundColor = [UIColor whiteColor];
         [_CDregisteredButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_CDregisteredButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
-        _CDregisteredButton.layer.cornerRadius = 4.0f;
+        _CDregisteredButton.layer.cornerRadius = 6.0f;
         _CDregisteredButton.layer.masksToBounds = YES;
         [_CDregisteredButton setTitle:NSLocalizedString(@"注册", nil) forState:UIControlStateNormal];
         [_CDregisteredButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];

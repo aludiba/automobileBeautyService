@@ -18,7 +18,7 @@
 @implementation CDSetTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = CDH_Color(244, 245, 246, 1);
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.CDtitleLbl];
         [self.contentView addSubview:self.CDcontentLbl];
         [self.contentView addSubview:self.CDarrowImgView];
@@ -44,7 +44,7 @@
             make.height.mas_equalTo(16);
         }];
         [self.CDline mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView);
+            make.leading.equalTo(self.contentView).offset(16);
             make.trailing.equalTo(self.contentView);
             make.height.mas_equalTo(1);
             make.bottom.equalTo(self.contentView);
@@ -84,7 +84,7 @@
 - (UIView *)CDline{
     if (!_CDline) {
         _CDline = [[UIView alloc] init];
-        _CDline.backgroundColor = CDH_Color(216, 218, 219, 1);
+        _CDline.backgroundColor = CDH_Color(242, 242, 242, 1);
     }
     return _CDline;
 }

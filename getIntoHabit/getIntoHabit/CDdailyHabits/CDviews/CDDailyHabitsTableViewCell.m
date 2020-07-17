@@ -18,13 +18,13 @@
 @implementation CDDailyHabitsTableViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = CDH_Color(107, 208, 227, 1);
+        self.contentView.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.CDbackView];
         self.CDbackView.backgroundColor = [UIColor whiteColor];
-        self.CDbackView.layer.cornerRadius = 8.0f;
+        self.CDbackView.layer.cornerRadius = 16.0f;
         self.CDbackView.layer.masksToBounds = YES;
-        self.CDbackView.layer.borderColor = [UIColor blackColor].CGColor;
-        self.CDbackView.layer.borderWidth = 2.0f;
+        self.CDbackView.layer.borderColor = [UIColor greenColor].CGColor;
+        self.CDbackView.layer.borderWidth = 2.5f;
         
         [self.CDbackView addSubview:self.CDcontentImageView];
         [self.CDbackView addSubview:self.CDcontentLabel];
@@ -58,7 +58,7 @@
         [self.CDpromptLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.CDclockLabel.mas_bottom).offset(5);
             make.trailing.equalTo(self.CDbackView).offset(-16);
-            make.width.mas_equalTo(80);
+            make.width.mas_equalTo(120);
             make.height.mas_equalTo(15);
             make.bottom.equalTo(self.CDbackView).offset(-10);
         }];

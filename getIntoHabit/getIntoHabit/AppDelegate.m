@@ -24,10 +24,6 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [self CDrootController];
     [self.window makeKeyAndVisible];
-//    AVQuery *CDbquery = [AVQuery queryWithClassName:@"CDPocketHabits"];
-//    [CDbquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-//
-//    }];
     return YES;
 }
 - (UIViewController *)CDrootController{

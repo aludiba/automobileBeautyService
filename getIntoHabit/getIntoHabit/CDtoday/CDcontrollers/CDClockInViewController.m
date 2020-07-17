@@ -12,6 +12,7 @@
 #import "CDAllClockLogsViewController.h"
 @interface CDClockInViewController ()<UITextViewDelegate>
 @property(nonatomic, strong)UILabel *CDclockInDateLabel;
+@property(nonatomic, strong)UIView *CDprojectBackView;
 @property(nonatomic, strong)UIImageView *CDprojectImgView;
 @property(nonatomic, strong)UILabel *CDprojectLabel;
 @property(nonatomic, strong)UITextView *CDclockInLogTextView;
@@ -28,10 +29,12 @@
     [self CDsetContentView];
 }
 - (void)CDsetContentView{
+    self.view.backgroundColor = [UIColor cyanColor];
     UIBarButtonItem *CDfinishItem = [[UIBarButtonItem alloc] initWithCustomView:self.CDallLogButton];
     self.navigationItem.rightBarButtonItem = CDfinishItem;
     
     [self.view addSubview:self.CDclockInDateLabel];
+    [self.view addSubview:self.CDprojectBackView];
     [self.view addSubview:self.CDprojectImgView];
     [self.view addSubview:self.CDprojectLabel];
     [self.view addSubview:self.CDclockInLogTextView];
@@ -42,6 +45,12 @@
         make.trailing.equalTo(self.view).offset(-15);
         make.width.mas_equalTo(140);
         make.height.mas_equalTo(40);
+    }];
+    [self.CDprojectBackView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.CDclockInDateLabel.mas_bottom).offset(20);
+        make.centerX.equalTo(self.view);
+        make.width.mas_equalTo(82);
+        make.height.mas_equalTo(50);
     }];
     [self.CDprojectImgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.CDclockInDateLabel.mas_bottom).offset(20);
@@ -182,15 +191,22 @@
 - (UILabel *)CDclockInDateLabel{
     if (!_CDclockInDateLabel) {
         _CDclockInDateLabel = [[UILabel alloc] init];
-        _CDclockInDateLabel.backgroundColor = CDH_Color(242, 242, 242, 1);
+        _CDclockInDateLabel.backgroundColor = [UIColor greenColor];
         _CDclockInDateLabel.textColor = [UIColor blackColor];
-        _CDclockInDateLabel.font = [UIFont systemFontOfSize:14];
+        _CDclockInDateLabel.font = [UIFont systemFontOfSize:15];
         _CDclockInDateLabel.textAlignment = NSTextAlignmentCenter;
-        _CDclockInDateLabel.layer.cornerRadius = 4.0f;
+        _CDclockInDateLabel.layer.cornerRadius = 8.0f;
         _CDclockInDateLabel.layer.masksToBounds = YES;
         _CDclockInDateLabel.numberOfLines = 0;
     }
     return _CDclockInDateLabel;
+}
+- (UIView *)CDprojectBackView{
+    if (!_CDprojectBackView) {
+        _CDprojectBackView = [[UIView alloc] init];
+        _CDprojectBackView.backgroundColor = [UIColor whiteColor];
+    }
+    return _CDprojectBackView;
 }
 - (UIImageView *)CDprojectImgView{
     if (!_CDprojectImgView) {
@@ -213,11 +229,11 @@
     if (!_CDclockInLogTextView) {
         _CDclockInLogTextView = [[UITextView alloc] init];
         _CDclockInLogTextView.delegate = self;
-        _CDclockInLogTextView.backgroundColor = CDH_Color(242, 242, 242, 1);
-        _CDclockInLogTextView.layer.cornerRadius = 8.0f;
+        _CDclockInLogTextView.backgroundColor = [UIColor grayColor];
+        _CDclockInLogTextView.layer.cornerRadius = 16.0f;
         _CDclockInLogTextView.layer.masksToBounds = YES;
         _CDclockInLogTextView.textColor = [UIColor blackColor];
-        _CDclockInLogTextView.font = [UIFont systemFontOfSize:18];
+        _CDclockInLogTextView.font = [UIFont systemFontOfSize:25];
         [_CDclockInLogTextView sizeToFit];
     }
     return _CDclockInLogTextView;
@@ -226,10 +242,10 @@
     if (!_CDsaveButton) {
         _CDsaveButton = [[UIButton alloc] init];
         [_CDsaveButton setTitle:NSLocalizedString(@"保存", nil) forState:UIControlStateNormal];
-        _CDsaveButton.backgroundColor = [UIColor grayColor];
-        _CDsaveButton.layer.cornerRadius = 15.0f;
+        _CDsaveButton.backgroundColor = [UIColor blueColor];
+        _CDsaveButton.layer.cornerRadius = 8.0f;
         _CDsaveButton.layer.masksToBounds = YES;
-        [_CDsaveButton.titleLabel setFont:[UIFont systemFontOfSize:15]];
+        [_CDsaveButton.titleLabel setFont:[UIFont systemFontOfSize:16]];
         [_CDsaveButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_CDsaveButton addTarget:self action:@selector(CDsaveAction) forControlEvents:UIControlEventTouchUpInside];
     }
