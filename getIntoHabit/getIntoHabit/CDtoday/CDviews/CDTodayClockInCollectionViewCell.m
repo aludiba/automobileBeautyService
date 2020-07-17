@@ -40,7 +40,7 @@
         }];
         [self.CDclockInImgView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.contentView);
-            make.trailing.equalTo(self.contentView);
+            make.leading.equalTo(self.CDprojectBackView.mas_trailing).offset(5);
             make.width.mas_equalTo(16);
             make.height.mas_equalTo(16);
         }];

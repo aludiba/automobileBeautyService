@@ -5,6 +5,7 @@
   Created by 褚红彪 on 2019/9/14.
   Copyright © 2019 hb. All rights reserved.
 */
+"请先挑选3个习惯来开始" = "Pick 3 habits to start with";
 "昵称" = "nickname";
 "请输入账号" = "Please enter your account number";
 "请输入密码" = "Please enter password";

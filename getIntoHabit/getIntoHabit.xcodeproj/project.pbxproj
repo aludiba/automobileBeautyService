@@ -48,7 +48,7 @@
 		6A4CA38443F1BBBFA804CBDE /* Pods_getIntoHabit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_getIntoHabit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		799830386E2D71EA9CF12B76 /* Pods-getIntoHabit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-getIntoHabit.release.xcconfig"; path = "Target Support Files/Pods-getIntoHabit/Pods-getIntoHabit.release.xcconfig"; sourceTree = "<group>"; };
 		8702563F71C1F0BF06C41C09 /* Pods-getIntoHabit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-getIntoHabit.debug.xcconfig"; path = "Target Support Files/Pods-getIntoHabit/Pods-getIntoHabit.debug.xcconfig"; sourceTree = "<group>"; };
-		CE5CC5C424C0195E00527D9D /* getIntoHabit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = getIntoHabit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5CC5C424C0195E00527D9D /* GetIntoGoodHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetIntoGoodHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5CC5C724C0195E00527D9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE5CC5C824C0195E00527D9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CE5CC5D324C0195F00527D9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		CE5CC5C524C0195E00527D9D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE5CC5C424C0195E00527D9D /* getIntoHabit.app */,
+				CE5CC5C424C0195E00527D9D /* GetIntoGoodHabits.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -358,7 +358,7 @@
 			);
 			name = getIntoHabit;
 			productName = getIntoHabit;
-			productReference = CE5CC5C424C0195E00527D9D /* getIntoHabit.app */;
+			productReference = CE5CC5C424C0195E00527D9D /* GetIntoGoodHabits.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -648,8 +648,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hongbiao.getIntoHabit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = hongbiao.getIntoGoodHabits;
+				PRODUCT_NAME = GetIntoGoodHabits;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -666,8 +666,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hongbiao.getIntoHabit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = hongbiao.getIntoGoodHabits;
+				PRODUCT_NAME = GetIntoGoodHabits;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
