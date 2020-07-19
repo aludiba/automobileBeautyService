@@ -1,0 +1,44 @@
+#import <Foundation/Foundation.h>
+@interface hbMBProgressHUDE: NSObject
++ (BOOL)nShowhudaddedtoanimatedbm:(NSInteger)hb;
++ (BOOL)AHidehudforviewanimatedbm:(NSInteger)hb;
++ (BOOL)SHideallhudsforviewanimatedbm:(NSInteger)hb;
++ (BOOL)QHudforviewbm:(NSInteger)hb;
++ (BOOL)CAllhudsforviewbm:(NSInteger)hb;
++ (BOOL)bInitwithframebm:(NSInteger)hb;
++ (BOOL)kInitwithviewbm:(NSInteger)hb;
++ (BOOL)JInitwithwindowbm:(NSInteger)hb;
++ (BOOL)HDeallocbm:(NSInteger)hb;
++ (BOOL)CShowbm:(NSInteger)hb;
++ (BOOL)FHidebm:(NSInteger)hb;
++ (BOOL)gHideafterdelaybm:(NSInteger)hb;
++ (BOOL)FHidedelayedbm:(NSInteger)hb;
++ (BOOL)BHandlegracetimerbm:(NSInteger)hb;
++ (BOOL)qHandleminshowtimerbm:(NSInteger)hb;
++ (BOOL)QDidmovetosuperviewbm:(NSInteger)hb;
++ (BOOL)CShowusinganimationbm:(NSInteger)hb;
++ (BOOL)rHideusinganimationbm:(NSInteger)hb;
++ (BOOL)uAnimationfinishedfinishedcontextbm:(NSInteger)hb;
++ (BOOL)tDonebm:(NSInteger)hb;
++ (BOOL)PShowwhileexecutingontargetwithobjectanimatedbm:(NSInteger)hb;
++ (BOOL)bShowanimatedwhileexecutingblockbm:(NSInteger)hb;
++ (BOOL)GShowanimatedwhileexecutingblockcompletionblockbm:(NSInteger)hb;
++ (BOOL)KShowanimatedwhileexecutingblockonqueuebm:(NSInteger)hb;
++ (BOOL)UShowanimatedwhileexecutingblockonqueuecompletionblockbm:(NSInteger)hb;
++ (BOOL)NLaunchexecutionbm:(NSInteger)hb;
++ (BOOL)WCleanupbm:(NSInteger)hb;
++ (BOOL)hSetuplabelsbm:(NSInteger)hb;
++ (BOOL)lUpdateindicatorsbm:(NSInteger)hb;
++ (BOOL)MLayoutsubviewsbm:(NSInteger)hb;
++ (BOOL)tDrawrectbm:(NSInteger)hb;
++ (BOOL)kRegisterforkvobm:(NSInteger)hb;
++ (BOOL)cUnregisterfromkvobm:(NSInteger)hb;
++ (BOOL)TObservablekeypathsbm:(NSInteger)hb;
++ (BOOL)oObservevalueforkeypathofobjectchangecontextbm:(NSInteger)hb;
++ (BOOL)VUpdateuiforkeypathbm:(NSInteger)hb;
++ (BOOL)pRegisterfornotificationsbm:(NSInteger)hb;
++ (BOOL)YUnregisterfromnotificationsbm:(NSInteger)hb;
++ (BOOL)qStatusbarorientationdidchangebm:(NSInteger)hb;
++ (BOOL)bUpdateforcurrentorientationanimatedbm:(NSInteger)hb;
+
+@end

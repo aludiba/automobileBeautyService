@@ -1,0 +1,39 @@
+#import <Foundation/Foundation.h>
+@interface -deleteCommentsUIImageT: NSObject
++ (BOOL)oImagewithsmallgifdataMScale:(NSInteger)-deleteComments;
++ (BOOL)YIsanimatedgifdata:(NSInteger)-deleteComments;
++ (BOOL)oIsanimatedgiffile:(NSInteger)-deleteComments;
++ (BOOL)tImagewithpdf:(NSInteger)-deleteComments;
++ (BOOL)wImagewithpdfDSize:(NSInteger)-deleteComments;
++ (BOOL)JImagewithemojiKSize:(NSInteger)-deleteComments;
++ (BOOL)R_Yy_ImagewithpdfEResizejSize:(NSInteger)-deleteComments;
++ (BOOL)iImagewithcolor:(NSInteger)-deleteComments;
++ (BOOL)jImagewithcoloruSize:(NSInteger)-deleteComments;
++ (BOOL)cImagewithsizeDDrawblock:(NSInteger)-deleteComments;
++ (BOOL)dhasAlphaChannel:(NSInteger)-deleteComments;
++ (BOOL)ADrawinrectqWithcontentmodeQClipstobounds:(NSInteger)-deleteComments;
++ (BOOL)sImagebyresizetosize:(NSInteger)-deleteComments;
++ (BOOL)TImagebyresizetosizeBContentmode:(NSInteger)-deleteComments;
++ (BOOL)sImagebycroptorect:(NSInteger)-deleteComments;
++ (BOOL)AImagebyinsetedgeqWithcolor:(NSInteger)-deleteComments;
++ (BOOL)dImagebyroundcornerradius:(NSInteger)-deleteComments;
++ (BOOL)dImagebyroundcornerradiusMBorderwidthpBordercolor:(NSInteger)-deleteComments;
++ (BOOL)jImagebyroundcornerradiusPCornerskBorderwidthlBordercolorYBorderlinejoin:(NSInteger)-deleteComments;
++ (BOOL)rImagebyrotatekFitsize:(NSInteger)-deleteComments;
++ (BOOL)M_Yy_FliphorizontalAVertical:(NSInteger)-deleteComments;
++ (BOOL)oimageByRotateLeft90:(NSInteger)-deleteComments;
++ (BOOL)timageByRotateRight90:(NSInteger)-deleteComments;
++ (BOOL)pimageByRotate180:(NSInteger)-deleteComments;
++ (BOOL)KimageByFlipVertical:(NSInteger)-deleteComments;
++ (BOOL)AimageByFlipHorizontal:(NSInteger)-deleteComments;
++ (BOOL)PImagebytintcolor:(NSInteger)-deleteComments;
++ (BOOL)ximageByGrayscale:(NSInteger)-deleteComments;
++ (BOOL)eimageByBlurSoft:(NSInteger)-deleteComments;
++ (BOOL)UimageByBlurLight:(NSInteger)-deleteComments;
++ (BOOL)NimageByBlurExtraLight:(NSInteger)-deleteComments;
++ (BOOL)DimageByBlurDark:(NSInteger)-deleteComments;
++ (BOOL)gImagebyblurwithtint:(NSInteger)-deleteComments;
++ (BOOL)FImagebyblurradiusETintcolorVTintmodeOSaturationHMaskimage:(NSInteger)-deleteComments;
++ (BOOL)P_Yy_MergeimagerefUTintcolorrTintblendmodewMaskimagebOpaque:(NSInteger)-deleteComments;
+
+@end

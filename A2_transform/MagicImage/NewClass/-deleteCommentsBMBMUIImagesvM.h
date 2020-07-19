@@ -1,0 +1,39 @@
+#import <Foundation/Foundation.h>
+@interface -deleteCommentsBMBMUIImagesvM: NSObject
++ (BOOL)NTaimagewithsmallgifdataiscale:(NSInteger)-deleteComments;
++ (BOOL)sFxisanimatedgifdata:(NSInteger)-deleteComments;
++ (BOOL)wSvisanimatedgiffile:(NSInteger)-deleteComments;
++ (BOOL)OEfimagewithpdf:(NSInteger)-deleteComments;
++ (BOOL)hLkimagewithpdfesize:(NSInteger)-deleteComments;
++ (BOOL)pAvimagewithemojijsize:(NSInteger)-deleteComments;
++ (BOOL)oNs_Yy_Imagewithpdfgresizedsize:(NSInteger)-deleteComments;
++ (BOOL)KTiimagewithcolor:(NSInteger)-deleteComments;
++ (BOOL)rSsimagewithcolorrsize:(NSInteger)-deleteComments;
++ (BOOL)GWkimagewithsizegdrawblock:(NSInteger)-deleteComments;
++ (BOOL)APxhasalphachannel:(NSInteger)-deleteComments;
++ (BOOL)DTmdrawinrectswithcontentmodefclipstobounds:(NSInteger)-deleteComments;
++ (BOOL)SYkimagebyresizetosize:(NSInteger)-deleteComments;
++ (BOOL)nYlimagebyresizetosizetcontentmode:(NSInteger)-deleteComments;
++ (BOOL)AQtimagebycroptorect:(NSInteger)-deleteComments;
++ (BOOL)MOfimagebyinsetedgebwithcolor:(NSInteger)-deleteComments;
++ (BOOL)qFvimagebyroundcornerradius:(NSInteger)-deleteComments;
++ (BOOL)xMeimagebyroundcornerradiuslborderwidthhbordercolor:(NSInteger)-deleteComments;
++ (BOOL)COvimagebyroundcornerradiusicornersqborderwidthibordercolorhborderlinejoin:(NSInteger)-deleteComments;
++ (BOOL)FJfimagebyrotateofitsize:(NSInteger)-deleteComments;
++ (BOOL)JWk_Yy_Fliphorizontalovertical:(NSInteger)-deleteComments;
++ (BOOL)cQuimagebyrotateleft90:(NSInteger)-deleteComments;
++ (BOOL)FVnimagebyrotateright90:(NSInteger)-deleteComments;
++ (BOOL)YImimagebyrotate180:(NSInteger)-deleteComments;
++ (BOOL)ULrimagebyflipvertical:(NSInteger)-deleteComments;
++ (BOOL)MNnimagebyfliphorizontal:(NSInteger)-deleteComments;
++ (BOOL)jLwimagebytintcolor:(NSInteger)-deleteComments;
++ (BOOL)dUfimagebygrayscale:(NSInteger)-deleteComments;
++ (BOOL)pHoimagebyblursoft:(NSInteger)-deleteComments;
++ (BOOL)xNximagebyblurlight:(NSInteger)-deleteComments;
++ (BOOL)qNbimagebyblurextralight:(NSInteger)-deleteComments;
++ (BOOL)YHsimagebyblurdark:(NSInteger)-deleteComments;
++ (BOOL)KXnimagebyblurwithtint:(NSInteger)-deleteComments;
++ (BOOL)xYrimagebyblurradiusztintcolorbtintmodensaturationpmaskimage:(NSInteger)-deleteComments;
++ (BOOL)nNy_Yy_Mergeimagerefbtintcolorntintblendmodejmaskimagefopaque:(NSInteger)-deleteComments;
+
+@end

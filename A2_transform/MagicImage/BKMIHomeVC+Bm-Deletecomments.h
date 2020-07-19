@@ -1,0 +1,49 @@
+#import <UIKit/UIKit.h>
+#import "BKMIHomeVC.h"
+#import "BKMIHomeView.h"
+#import "QMBaseNavigationController.h"
+#import "QMCameraViewController.h"
+#import "BKMIHomeSectionOneCell.h"
+#import "BKMIHomeSectionTowCell.h"
+#import "SDCycleScrollView.h"
+#import "BKMIHomeHeaderView.h"
+#import "BKMIHomeModel.h"
+#import "BKMIBaseTypeVC.h"
+#import "QMPhotoEffectViewController.h"
+#import <Photos/Photos.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+#import "BKMIStickerDetailVC.h"
+#import "BKMITagsVC.h"
+#import "BKMIFilterDetailVC.h"
+#import "BKMIHomeVC+Bm.h"
+
+@interface BKMIHomeVC (Bm-Deletecomments)
++ (BOOL)BKtableViewBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)BKdataArrayBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)BKbannaerArrayBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)viewWillAppearBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)viewWillDisappearBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)viewDidLoadBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)BKloginOutBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)BKcreateHeaderViewBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)BKloadDataBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)BKshopBtnClickedBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)tableViewNumberofrowsinsectionBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)numberOfSectionsInTableViewBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)tableViewCellforrowatindexpathBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)tableViewDidselectrowatindexpathBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)BKcanUsePhotoBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)alertViewClickedbuttonatindexBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imagePickerControllerDidCancelBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imagePickerControllerDidfinishpickingmediawithinfoBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)tableViewHeightforrowatindexpathBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)tableViewViewforheaderinsectionBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)BKsenderActionBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)tableViewViewforfooterinsectionBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)tableViewHeightforheaderinsectionBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)tableViewHeightforfooterinsectionBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)customCollectionViewCellClassForCycleScrollViewBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setupCustomCellForindexCyclescrollviewBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)cycleScrollViewDidselectitematindexBm-Deletecomments:(NSInteger)-deleteComments;
+
+@end

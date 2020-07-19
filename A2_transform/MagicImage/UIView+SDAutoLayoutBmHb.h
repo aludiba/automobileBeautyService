@@ -1,0 +1,51 @@
+#import <UIKit/UIKit.h>
+#import "UIView+SDAutoLayout.h"
+#import "UITableView+SDAutoTableViewCellHeight.h"
+#import <objc/runtime.h>
+#import "UIView+SDAutoLayoutBm.h"
+
+@interface UIView (SDAutoLayoutBmHb)
++ (BOOL)loadBmHb:(NSInteger)hb;
++ (BOOL)autoLayoutModelsArrayBmHb:(NSInteger)hb;
++ (BOOL)fixedWidthBmHb:(NSInteger)hb;
++ (BOOL)setFixedWidthBmHb:(NSInteger)hb;
++ (BOOL)fixedHeightBmHb:(NSInteger)hb;
++ (BOOL)setFixedHeightBmHb:(NSInteger)hb;
++ (BOOL)autoHeightRatioValueBmHb:(NSInteger)hb;
++ (BOOL)setAutoHeightRatioValueBmHb:(NSInteger)hb;
++ (BOOL)autoWidthRatioValueBmHb:(NSInteger)hb;
++ (BOOL)setAutoWidthRatioValueBmHb:(NSInteger)hb;
++ (BOOL)sd_maxWidthBmHb:(NSInteger)hb;
++ (BOOL)setSd_maxWidthBmHb:(NSInteger)hb;
++ (BOOL)useCellFrameCacheWithIndexPathTableviewBmHb:(NSInteger)hb;
++ (BOOL)sd_tableViewBmHb:(NSInteger)hb;
++ (BOOL)setSd_tableViewBmHb:(NSInteger)hb;
++ (BOOL)sd_indexPathBmHb:(NSInteger)hb;
++ (BOOL)setSd_indexPathBmHb:(NSInteger)hb;
++ (BOOL)ownLayoutModelBmHb:(NSInteger)hb;
++ (BOOL)setOwnLayoutModelBmHb:(NSInteger)hb;
++ (BOOL)sd_layoutBmHb:(NSInteger)hb;
++ (BOOL)sd_resetLayoutBmHb:(NSInteger)hb;
++ (BOOL)sd_resetNewLayoutBmHb:(NSInteger)hb;
++ (BOOL)sd_isClosingAutoLayoutBmHb:(NSInteger)hb;
++ (BOOL)setSd_closeAutoLayoutBmHb:(NSInteger)hb;
++ (BOOL)removeFromSuperviewAndClearAutoLayoutSettingsBmHb:(NSInteger)hb;
++ (BOOL)sd_clearAutoLayoutSettingsBmHb:(NSInteger)hb;
++ (BOOL)sd_clearExtraAutoLayoutItemsBmHb:(NSInteger)hb;
++ (BOOL)sd_clearViewFrameCacheBmHb:(NSInteger)hb;
++ (BOOL)sd_clearSubviewsAutoLayoutFrameCachesBmHb:(NSInteger)hb;
++ (BOOL)sd_layoutSubviewsBmHb:(NSInteger)hb;
++ (BOOL)sd_layoutSubviewsHandleBmHb:(NSInteger)hb;
++ (BOOL)sd_resizeWithModelBmHb:(NSInteger)hb;
++ (BOOL)layoutAutoHeightWidthViewModelBmHb:(NSInteger)hb;
++ (BOOL)layoutAutoWidthWidthViewModelBmHb:(NSInteger)hb;
++ (BOOL)layoutWidthWithViewModelBmHb:(NSInteger)hb;
++ (BOOL)layoutHeightWithViewModelBmHb:(NSInteger)hb;
++ (BOOL)layoutLeftWithViewModelBmHb:(NSInteger)hb;
++ (BOOL)layoutRightWithViewModelBmHb:(NSInteger)hb;
++ (BOOL)layoutTopWithViewModelBmHb:(NSInteger)hb;
++ (BOOL)layoutBottomWithViewModelBmHb:(NSInteger)hb;
++ (BOOL)setupCornerRadiusWithViewModelBmHb:(NSInteger)hb;
++ (BOOL)addAutoLayoutModelBmHb:(NSInteger)hb;
+
+@end

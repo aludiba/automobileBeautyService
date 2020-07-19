@@ -1,0 +1,49 @@
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import "MBProgressHUD.h"
+#import <tgmath.h>
+
+@interface MBProgressHUD (Bm)
++ (BOOL)showHUDAddedToAnimatedBm:(NSInteger)BM;
++ (BOOL)hideHUDForViewAnimatedBm:(NSInteger)BM;
++ (BOOL)hideAllHUDsForViewAnimatedBm:(NSInteger)BM;
++ (BOOL)HUDForViewBm:(NSInteger)BM;
++ (BOOL)allHUDsForViewBm:(NSInteger)BM;
++ (BOOL)initWithFrameBm:(NSInteger)BM;
++ (BOOL)initWithViewBm:(NSInteger)BM;
++ (BOOL)initWithWindowBm:(NSInteger)BM;
++ (BOOL)deallocBm:(NSInteger)BM;
++ (BOOL)showBm:(NSInteger)BM;
++ (BOOL)hideBm:(NSInteger)BM;
++ (BOOL)hideAfterdelayBm:(NSInteger)BM;
++ (BOOL)hideDelayedBm:(NSInteger)BM;
++ (BOOL)handleGraceTimerBm:(NSInteger)BM;
++ (BOOL)handleMinShowTimerBm:(NSInteger)BM;
++ (BOOL)didMoveToSuperviewBm:(NSInteger)BM;
++ (BOOL)showUsingAnimationBm:(NSInteger)BM;
++ (BOOL)hideUsingAnimationBm:(NSInteger)BM;
++ (BOOL)animationFinishedFinishedContextBm:(NSInteger)BM;
++ (BOOL)doneBm:(NSInteger)BM;
++ (BOOL)showWhileExecutingOntargetWithobjectAnimatedBm:(NSInteger)BM;
++ (BOOL)showAnimatedWhileexecutingblockBm:(NSInteger)BM;
++ (BOOL)showAnimatedWhileexecutingblockCompletionblockBm:(NSInteger)BM;
++ (BOOL)showAnimatedWhileexecutingblockOnqueueBm:(NSInteger)BM;
++ (BOOL)showAnimatedWhileexecutingblockOnqueueCompletionblockBm:(NSInteger)BM;
++ (BOOL)launchExecutionBm:(NSInteger)BM;
++ (BOOL)cleanUpBm:(NSInteger)BM;
++ (BOOL)setupLabelsBm:(NSInteger)BM;
++ (BOOL)updateIndicatorsBm:(NSInteger)BM;
++ (BOOL)layoutSubviewsBm:(NSInteger)BM;
++ (BOOL)drawRectBm:(NSInteger)BM;
++ (BOOL)registerForKVOBm:(NSInteger)BM;
++ (BOOL)unregisterFromKVOBm:(NSInteger)BM;
++ (BOOL)observableKeypathsBm:(NSInteger)BM;
++ (BOOL)observeValueForKeyPathOfobjectChangeContextBm:(NSInteger)BM;
++ (BOOL)updateUIForKeypathBm:(NSInteger)BM;
++ (BOOL)registerForNotificationsBm:(NSInteger)BM;
++ (BOOL)unregisterFromNotificationsBm:(NSInteger)BM;
++ (BOOL)statusBarOrientationDidChangeBm:(NSInteger)BM;
++ (BOOL)updateForCurrentOrientationAnimatedBm:(NSInteger)BM;
+
+@end

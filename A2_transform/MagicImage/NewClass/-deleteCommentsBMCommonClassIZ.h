@@ -1,0 +1,40 @@
+#import <Foundation/Foundation.h>
+@interface -deleteCommentsBMCommonClassIZ: NSObject
++ (BOOL)NOdeleteallcacheandcookiebm:(NSInteger)-deleteComments;
++ (BOOL)SYdeletewebcachebm:(NSInteger)-deleteComments;
++ (BOOL)dUhtmlstrtraslatenormalstrwithhtmlwithfontwithcolorbm:(NSInteger)-deleteComments;
++ (BOOL)ZTendrefreshingbm:(NSInteger)-deleteComments;
++ (BOOL)qCnowhitespacestringbm:(NSInteger)-deleteComments;
++ (BOOL)XWconverttojsondatabm:(NSInteger)-deleteComments;
++ (BOOL)URdictionarywithjsonstringbm:(NSInteger)-deleteComments;
++ (BOOL)iIstringcontrainsemojibm:(NSInteger)-deleteComments;
++ (BOOL)APclipimagescaletosizebm:(NSInteger)-deleteComments;
++ (BOOL)nBclipimageviewwithcornertypewithsizebm:(NSInteger)-deleteComments;
++ (BOOL)MVtimeformattedbm:(NSInteger)-deleteComments;
++ (BOOL)aJreadstamptimestringbm:(NSInteger)-deleteComments;
++ (BOOL)uOreadweekdaybm:(NSInteger)-deleteComments;
++ (BOOL)iNreadcurrenttimestringbm:(NSInteger)-deleteComments;
++ (BOOL)GEgetcurrenttimesbm:(NSInteger)-deleteComments;
++ (BOOL)bAreadbeforeseventimestringcurrentimewithtypebm:(NSInteger)-deleteComments;
++ (BOOL)PMreadafterseventimestringwithcurrenttimewithztypebm:(NSInteger)-deleteComments;
++ (BOOL)pAreadweekdaywithbm:(NSInteger)-deleteComments;
++ (BOOL)NSgetdaysfromtobm:(NSInteger)-deleteComments;
++ (BOOL)PVstringtodatebm:(NSInteger)-deleteComments;
++ (BOOL)sXtimestamptostringbm:(NSInteger)-deleteComments;
++ (BOOL)wJtimestampmaxtostringbm:(NSInteger)-deleteComments;
++ (BOOL)eSstringfromparametersbm:(NSInteger)-deleteComments;
++ (BOOL)fImd5Bm:(NSInteger)-deleteComments;
++ (BOOL)ZOcolorwithhexstringbm:(NSInteger)-deleteComments;
++ (BOOL)JOisblankstringbm:(NSInteger)-deleteComments;
++ (BOOL)hIgetimagewithbgcolorbm:(NSInteger)-deleteComments;
++ (BOOL)GEtextwidthbystringsizefontlayoutwidthspacewidthbm:(NSInteger)-deleteComments;
++ (BOOL)PJsetbasictitlehometitlechangetitlecolorsizeisboldbm:(NSInteger)-deleteComments;
++ (BOOL)UWsettitlecolorbm:(NSInteger)-deleteComments;
++ (BOOL)GDsettitlelinespacetextspacebm:(NSInteger)-deleteComments;
++ (BOOL)pJgettopcurrentviewcontrollerbm:(NSInteger)-deleteComments;
++ (BOOL)HWviewcontrollerfromviewbm:(NSInteger)-deleteComments;
++ (BOOL)PQgetcurrentvcbm:(NSInteger)-deleteComments;
++ (BOOL)uJtopviewcontrollerwithrootviewcontrollerbm:(NSInteger)-deleteComments;
++ (BOOL)PJcompressoriginalimagetomaxdatasizekbytesbm:(NSInteger)-deleteComments;
+
+@end

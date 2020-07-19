@@ -1,0 +1,50 @@
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import "MBProgressHUD.h"
+#import <tgmath.h>
+#import "MBProgressHUD+Bm.h"
+
+@interface MBProgressHUD (BmHb)
++ (BOOL)showHUDAddedToAnimatedBmHb:(NSInteger)hb;
++ (BOOL)hideHUDForViewAnimatedBmHb:(NSInteger)hb;
++ (BOOL)hideAllHUDsForViewAnimatedBmHb:(NSInteger)hb;
++ (BOOL)HUDForViewBmHb:(NSInteger)hb;
++ (BOOL)allHUDsForViewBmHb:(NSInteger)hb;
++ (BOOL)initWithFrameBmHb:(NSInteger)hb;
++ (BOOL)initWithViewBmHb:(NSInteger)hb;
++ (BOOL)initWithWindowBmHb:(NSInteger)hb;
++ (BOOL)deallocBmHb:(NSInteger)hb;
++ (BOOL)showBmHb:(NSInteger)hb;
++ (BOOL)hideBmHb:(NSInteger)hb;
++ (BOOL)hideAfterdelayBmHb:(NSInteger)hb;
++ (BOOL)hideDelayedBmHb:(NSInteger)hb;
++ (BOOL)handleGraceTimerBmHb:(NSInteger)hb;
++ (BOOL)handleMinShowTimerBmHb:(NSInteger)hb;
++ (BOOL)didMoveToSuperviewBmHb:(NSInteger)hb;
++ (BOOL)showUsingAnimationBmHb:(NSInteger)hb;
++ (BOOL)hideUsingAnimationBmHb:(NSInteger)hb;
++ (BOOL)animationFinishedFinishedContextBmHb:(NSInteger)hb;
++ (BOOL)doneBmHb:(NSInteger)hb;
++ (BOOL)showWhileExecutingOntargetWithobjectAnimatedBmHb:(NSInteger)hb;
++ (BOOL)showAnimatedWhileexecutingblockBmHb:(NSInteger)hb;
++ (BOOL)showAnimatedWhileexecutingblockCompletionblockBmHb:(NSInteger)hb;
++ (BOOL)showAnimatedWhileexecutingblockOnqueueBmHb:(NSInteger)hb;
++ (BOOL)showAnimatedWhileexecutingblockOnqueueCompletionblockBmHb:(NSInteger)hb;
++ (BOOL)launchExecutionBmHb:(NSInteger)hb;
++ (BOOL)cleanUpBmHb:(NSInteger)hb;
++ (BOOL)setupLabelsBmHb:(NSInteger)hb;
++ (BOOL)updateIndicatorsBmHb:(NSInteger)hb;
++ (BOOL)layoutSubviewsBmHb:(NSInteger)hb;
++ (BOOL)drawRectBmHb:(NSInteger)hb;
++ (BOOL)registerForKVOBmHb:(NSInteger)hb;
++ (BOOL)unregisterFromKVOBmHb:(NSInteger)hb;
++ (BOOL)observableKeypathsBmHb:(NSInteger)hb;
++ (BOOL)observeValueForKeyPathOfobjectChangeContextBmHb:(NSInteger)hb;
++ (BOOL)updateUIForKeypathBmHb:(NSInteger)hb;
++ (BOOL)registerForNotificationsBmHb:(NSInteger)hb;
++ (BOOL)unregisterFromNotificationsBmHb:(NSInteger)hb;
++ (BOOL)statusBarOrientationDidChangeBmHb:(NSInteger)hb;
++ (BOOL)updateForCurrentOrientationAnimatedBmHb:(NSInteger)hb;
+
+@end

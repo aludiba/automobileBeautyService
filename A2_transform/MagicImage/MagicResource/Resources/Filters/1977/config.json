@@ -1,0 +1,8 @@
+{
+  "fragment" : "fragment.glsl",
+  "icon" : "1977.jpg",
+  "name" : "Sweet",
+  "images" : [
+    "image_1.png"
+  ]
+}

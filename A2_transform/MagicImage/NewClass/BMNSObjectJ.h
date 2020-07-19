@@ -1,0 +1,40 @@
+#import <Foundation/Foundation.h>
+@interface BMNSObjectJ: NSObject
++ (BOOL)eSetkeyvaluesbm:(NSInteger)BM;
++ (BOOL)ASetkeyvalueserrorbm:(NSInteger)BM;
++ (BOOL)gSetkeyvaluescontextbm:(NSInteger)BM;
++ (BOOL)MSetkeyvaluescontexterrorbm:(NSInteger)BM;
++ (BOOL)fReferencereplacedkeywhencreatingkeyvaluesbm:(NSInteger)BM;
++ (BOOL)FKeyvaluesbm:(NSInteger)BM;
++ (BOOL)LKeyvalueswitherrorbm:(NSInteger)BM;
++ (BOOL)pKeyvalueswithkeysbm:(NSInteger)BM;
++ (BOOL)yKeyvalueswithkeyserrorbm:(NSInteger)BM;
++ (BOOL)mKeyvalueswithignoredkeysbm:(NSInteger)BM;
++ (BOOL)LKeyvalueswithignoredkeyserrorbm:(NSInteger)BM;
++ (BOOL)RKeyvaluesarraywithobjectarraybm:(NSInteger)BM;
++ (BOOL)LKeyvaluesarraywithobjectarrayerrorbm:(NSInteger)BM;
++ (BOOL)qKeyvaluesarraywithobjectarraykeysbm:(NSInteger)BM;
++ (BOOL)JKeyvaluesarraywithobjectarraykeyserrorbm:(NSInteger)BM;
++ (BOOL)GKeyvaluesarraywithobjectarrayignoredkeysbm:(NSInteger)BM;
++ (BOOL)ZKeyvaluesarraywithobjectarrayignoredkeyserrorbm:(NSInteger)BM;
++ (BOOL)tObjectwithkeyvaluesbm:(NSInteger)BM;
++ (BOOL)kObjectwithkeyvalueserrorbm:(NSInteger)BM;
++ (BOOL)BObjectwithkeyvaluescontextbm:(NSInteger)BM;
++ (BOOL)jObjectwithkeyvaluescontexterrorbm:(NSInteger)BM;
++ (BOOL)DObjectwithfilenamebm:(NSInteger)BM;
++ (BOOL)MObjectwithfilenameerrorbm:(NSInteger)BM;
++ (BOOL)MObjectwithfilebm:(NSInteger)BM;
++ (BOOL)IObjectwithfileerrorbm:(NSInteger)BM;
++ (BOOL)vObjectarraywithkeyvaluesarraybm:(NSInteger)BM;
++ (BOOL)tObjectarraywithkeyvaluesarrayerrorbm:(NSInteger)BM;
++ (BOOL)IObjectarraywithkeyvaluesarraycontextbm:(NSInteger)BM;
++ (BOOL)iObjectarraywithkeyvaluesarraycontexterrorbm:(NSInteger)BM;
++ (BOOL)eObjectarraywithfilenamebm:(NSInteger)BM;
++ (BOOL)XObjectarraywithfilenameerrorbm:(NSInteger)BM;
++ (BOOL)nObjectarraywithfilebm:(NSInteger)BM;
++ (BOOL)CObjectarraywithfileerrorbm:(NSInteger)BM;
++ (BOOL)iJsondatabm:(NSInteger)BM;
++ (BOOL)MJsonobjectbm:(NSInteger)BM;
++ (BOOL)nJsonstringbm:(NSInteger)BM;
+
+@end

@@ -1,0 +1,44 @@
+#import <Foundation/Foundation.h>
+@interface BMBMMBProgressHUDaT: NSObject
++ (BOOL)XAshowhudaddedtoanimatedbm:(NSInteger)BM;
++ (BOOL)PHhidehudforviewanimatedbm:(NSInteger)BM;
++ (BOOL)PVhideallhudsforviewanimatedbm:(NSInteger)BM;
++ (BOOL)KVhudforviewbm:(NSInteger)BM;
++ (BOOL)xPallhudsforviewbm:(NSInteger)BM;
++ (BOOL)OKinitwithframebm:(NSInteger)BM;
++ (BOOL)sLinitwithviewbm:(NSInteger)BM;
++ (BOOL)QOinitwithwindowbm:(NSInteger)BM;
++ (BOOL)oEdeallocbm:(NSInteger)BM;
++ (BOOL)FVshowbm:(NSInteger)BM;
++ (BOOL)BAhidebm:(NSInteger)BM;
++ (BOOL)wEhideafterdelaybm:(NSInteger)BM;
++ (BOOL)uQhidedelayedbm:(NSInteger)BM;
++ (BOOL)yQhandlegracetimerbm:(NSInteger)BM;
++ (BOOL)ZLhandleminshowtimerbm:(NSInteger)BM;
++ (BOOL)hUdidmovetosuperviewbm:(NSInteger)BM;
++ (BOOL)oOshowusinganimationbm:(NSInteger)BM;
++ (BOOL)kOhideusinganimationbm:(NSInteger)BM;
++ (BOOL)QGanimationfinishedfinishedcontextbm:(NSInteger)BM;
++ (BOOL)IFdonebm:(NSInteger)BM;
++ (BOOL)LUshowwhileexecutingontargetwithobjectanimatedbm:(NSInteger)BM;
++ (BOOL)TDshowanimatedwhileexecutingblockbm:(NSInteger)BM;
++ (BOOL)bMshowanimatedwhileexecutingblockcompletionblockbm:(NSInteger)BM;
++ (BOOL)MJshowanimatedwhileexecutingblockonqueuebm:(NSInteger)BM;
++ (BOOL)GWshowanimatedwhileexecutingblockonqueuecompletionblockbm:(NSInteger)BM;
++ (BOOL)BHlaunchexecutionbm:(NSInteger)BM;
++ (BOOL)dQcleanupbm:(NSInteger)BM;
++ (BOOL)cIsetuplabelsbm:(NSInteger)BM;
++ (BOOL)WAupdateindicatorsbm:(NSInteger)BM;
++ (BOOL)pVlayoutsubviewsbm:(NSInteger)BM;
++ (BOOL)jTdrawrectbm:(NSInteger)BM;
++ (BOOL)XVregisterforkvobm:(NSInteger)BM;
++ (BOOL)cTunregisterfromkvobm:(NSInteger)BM;
++ (BOOL)vYobservablekeypathsbm:(NSInteger)BM;
++ (BOOL)hGobservevalueforkeypathofobjectchangecontextbm:(NSInteger)BM;
++ (BOOL)ZHupdateuiforkeypathbm:(NSInteger)BM;
++ (BOOL)lOregisterfornotificationsbm:(NSInteger)BM;
++ (BOOL)WAunregisterfromnotificationsbm:(NSInteger)BM;
++ (BOOL)RKstatusbarorientationdidchangebm:(NSInteger)BM;
++ (BOOL)wYupdateforcurrentorientationanimatedbm:(NSInteger)BM;
+
+@end

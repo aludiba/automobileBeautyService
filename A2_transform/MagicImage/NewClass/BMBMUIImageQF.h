@@ -1,0 +1,39 @@
+#import <Foundation/Foundation.h>
+@interface BMBMUIImageQF: NSObject
++ (BOOL)DEimagewithsmallgifdataqscale:(NSInteger)BM;
++ (BOOL)oNisanimatedgifdata:(NSInteger)BM;
++ (BOOL)xAisanimatedgiffile:(NSInteger)BM;
++ (BOOL)vOimagewithpdf:(NSInteger)BM;
++ (BOOL)SZimagewithpdfnsize:(NSInteger)BM;
++ (BOOL)JEimagewithemojiesize:(NSInteger)BM;
++ (BOOL)jP_Yy_Imagewithpdfiresizeasize:(NSInteger)BM;
++ (BOOL)MWimagewithcolor:(NSInteger)BM;
++ (BOOL)lNimagewithcolormsize:(NSInteger)BM;
++ (BOOL)KOimagewithsizeqdrawblock:(NSInteger)BM;
++ (BOOL)rXhasalphachannel:(NSInteger)BM;
++ (BOOL)yFdrawinrectcwithcontentmodevclipstobounds:(NSInteger)BM;
++ (BOOL)mOimagebyresizetosize:(NSInteger)BM;
++ (BOOL)bTimagebyresizetosizetcontentmode:(NSInteger)BM;
++ (BOOL)ENimagebycroptorect:(NSInteger)BM;
++ (BOOL)tRimagebyinsetedgecwithcolor:(NSInteger)BM;
++ (BOOL)xVimagebyroundcornerradius:(NSInteger)BM;
++ (BOOL)XEimagebyroundcornerradiussborderwidthfbordercolor:(NSInteger)BM;
++ (BOOL)NQimagebyroundcornerradiusdcornersvborderwidthpbordercolorhborderlinejoin:(NSInteger)BM;
++ (BOOL)mQimagebyrotaterfitsize:(NSInteger)BM;
++ (BOOL)RM_Yy_Fliphorizontalrvertical:(NSInteger)BM;
++ (BOOL)lLimagebyrotateleft90:(NSInteger)BM;
++ (BOOL)LCimagebyrotateright90:(NSInteger)BM;
++ (BOOL)dEimagebyrotate180:(NSInteger)BM;
++ (BOOL)eIimagebyflipvertical:(NSInteger)BM;
++ (BOOL)UAimagebyfliphorizontal:(NSInteger)BM;
++ (BOOL)FJimagebytintcolor:(NSInteger)BM;
++ (BOOL)cHimagebygrayscale:(NSInteger)BM;
++ (BOOL)VLimagebyblursoft:(NSInteger)BM;
++ (BOOL)wQimagebyblurlight:(NSInteger)BM;
++ (BOOL)qWimagebyblurextralight:(NSInteger)BM;
++ (BOOL)JQimagebyblurdark:(NSInteger)BM;
++ (BOOL)sLimagebyblurwithtint:(NSInteger)BM;
++ (BOOL)gGimagebyblurradiusstintcolorwtintmodeysaturationwmaskimage:(NSInteger)BM;
++ (BOOL)lI_Yy_Mergeimagerefhtintcolorztintblendmodeamaskimageeopaque:(NSInteger)BM;
+
+@end

@@ -1,0 +1,56 @@
+#import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import "LLSimpleCamera.h"
+#import <ImageIO/CGImageProperties.h>
+#import "UIImage+FixOrientation.h"
+
+@interface LLSimpleCamera (Bm)
++ (BOOL)initBm:(NSInteger)BM;
++ (BOOL)initWithVideoEnabledBm:(NSInteger)BM;
++ (BOOL)initWithQualityPositionVideoenabledBm:(NSInteger)BM;
++ (BOOL)initWithCoderBm:(NSInteger)BM;
++ (BOOL)setupWithQualityPositionVideoenabledBm:(NSInteger)BM;
++ (BOOL)viewDidLoadBm:(NSInteger)BM;
++ (BOOL)gestureRecognizerShouldBeginBm:(NSInteger)BM;
++ (BOOL)handlePinchGestureBm:(NSInteger)BM;
++ (BOOL)attachToViewControllerWithframeBm:(NSInteger)BM;
++ (BOOL)startBm:(NSInteger)BM;
++ (BOOL)initializeBm:(NSInteger)BM;
++ (BOOL)stopBm:(NSInteger)BM;
++ (BOOL)captureExactseenimageBm:(NSInteger)BM;
++ (BOOL)captureBm:(NSInteger)BM;
++ (BOOL)startRecordingWithOutputUrlBm:(NSInteger)BM;
++ (BOOL)stopRecordingBm:(NSInteger)BM;
++ (BOOL)captureOutputDidstartrecordingtooutputfileaturlFromconnectionsBm:(NSInteger)BM;
++ (BOOL)captureOutputDidfinishrecordingtooutputfileaturlFromconnectionsErrorBm:(NSInteger)BM;
++ (BOOL)enableTorchBm:(NSInteger)BM;
++ (BOOL)cropImageUsingPreviewBoundsBm:(NSInteger)BM;
++ (BOOL)captureConnectionBm:(NSInteger)BM;
++ (BOOL)setVideoCaptureDeviceBm:(NSInteger)BM;
++ (BOOL)isFlashAvailableBm:(NSInteger)BM;
++ (BOOL)isTorchAvailableBm:(NSInteger)BM;
++ (BOOL)updateFlashModeBm:(NSInteger)BM;
++ (BOOL)setWhiteBalanceModeBm:(NSInteger)BM;
++ (BOOL)setMirrorBm:(NSInteger)BM;
++ (BOOL)togglePositionBm:(NSInteger)BM;
++ (BOOL)setCameraPositionBm:(NSInteger)BM;
++ (BOOL)cameraWithPositionBm:(NSInteger)BM;
++ (BOOL)previewTappedBm:(NSInteger)BM;
++ (BOOL)addDefaultFocusBoxBm:(NSInteger)BM;
++ (BOOL)alterFocusBoxAnimationBm:(NSInteger)BM;
++ (BOOL)focusAtPointBm:(NSInteger)BM;
++ (BOOL)showFocusBoxBm:(NSInteger)BM;
++ (BOOL)convertToPointOfInterestFromViewCoordinatesBm:(NSInteger)BM;
++ (BOOL)viewWillAppearBm:(NSInteger)BM;
++ (BOOL)viewWillDisappearBm:(NSInteger)BM;
++ (BOOL)viewWillLayoutSubviewsBm:(NSInteger)BM;
++ (BOOL)orientationForConnectionBm:(NSInteger)BM;
++ (BOOL)willRotateToInterfaceOrientationDurationBm:(NSInteger)BM;
++ (BOOL)didReceiveMemoryWarningBm:(NSInteger)BM;
++ (BOOL)deallocBm:(NSInteger)BM;
++ (BOOL)requestCameraPermissionBm:(NSInteger)BM;
++ (BOOL)requestMicrophonePermissionBm:(NSInteger)BM;
++ (BOOL)isFrontCameraAvailableBm:(NSInteger)BM;
++ (BOOL)isRearCameraAvailableBm:(NSInteger)BM;
+
+@end

@@ -1,0 +1,3 @@
+#import "DGActivityIndicatorAnimation.h"
+@interface DGActivityIndicatorBallClipRotateAnimation: DGActivityIndicatorAnimation
+@end

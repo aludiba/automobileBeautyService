@@ -1,0 +1,51 @@
+#import <UIKit/UIKit.h>
+#import "Constants.h"
+#import "QMCameraViewController.h"
+#import "QMPhotoClipViewController.h"
+#import "QMPhotoEffectViewController.h"
+#import "RTImagePickerViewController.h"
+#import "UIColor+Additions.h"
+#import "QMCameraSettingViewController.h"
+#import <Photos/Photos.h>
+#import <TOCropViewController.h>
+#import <GPUImage.h>
+#import <Masonry.h>
+#import "QMShakeButton.h"
+#import "CKStillCamera.h"
+#import "CKStillCameraPreview.h"
+#import "PHAsset+Latest.h"
+#import "QMCameraRatioSuspensionView.h"
+#import "QMCameraFlashSuspensionView.h"
+#import "QMCameraFilterView.h"
+#import "QMImageFilter.h"
+#import "QMPhotoDisplayViewController.h"
+#import "UIImage+Rotate.h"
+#import "UIImage+Clip.h"
+#import "QMCameraFocusView.h"
+#import "QMProgressHUD.h"
+#import "QMCameraViewController+Bm.h"
+
+@interface QMCameraViewController (BmBm)
++ (BOOL)viewDidLoadBmBm:(NSInteger)BM;
++ (BOOL)viewDidAppearBmBm:(NSInteger)BM;
++ (BOOL)prefersStatusBarHiddenBmBm:(NSInteger)BM;
++ (BOOL)preferredStatusBarStyleBmBm:(NSInteger)BM;
++ (BOOL)setupVarBmBm:(NSInteger)BM;
++ (BOOL)setupUIBmBm:(NSInteger)BM;
++ (BOOL)setupCameraBmBm:(NSInteger)BM;
++ (BOOL)startCameraCaptureBmBm:(NSInteger)BM;
++ (BOOL)stopCameraCaptureBmBm:(NSInteger)BM;
++ (BOOL)choseImageFromPhotoLibraryBmBm:(NSInteger)BM;
++ (BOOL)asyncLoadLatestImageFromPhotoLibBmBm:(NSInteger)BM;
++ (BOOL)fixImageOrientationCompletionblockBmBm:(NSInteger)BM;
++ (BOOL)setCameraRatioBmBm:(NSInteger)BM;
++ (BOOL)ratioSuspensionViewBmBm:(NSInteger)BM;
++ (BOOL)flashSuspensionViewBmBm:(NSInteger)BM;
++ (BOOL)cameraFilterViewBmBm:(NSInteger)BM;
++ (BOOL)cameraFocusViewBmBm:(NSInteger)BM;
++ (BOOL)rt_imagePickerControllerDidfinishpickingimagesBmBm:(NSInteger)BM;
++ (BOOL)rt_imagePickerControllerDidCancelBmBm:(NSInteger)BM;
++ (BOOL)rt_imagePickerControllerDidselectassetBmBm:(NSInteger)BM;
++ (BOOL)cropViewControllerDidcroptoimageWithrectAngleBmBm:(NSInteger)BM;
+
+@end

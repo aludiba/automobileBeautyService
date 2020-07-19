@@ -1,0 +1,51 @@
+#import <Foundation/Foundation.h>
+#import "BMGPUImageFilterm.h"
+
+@interface BMGPUImageFilterm (-Deletecomments)
++ (BOOL)JInitwithvertexshaderfromstringfragmentshaderfromstringbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)PInitwithfragmentshaderfromstringbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)LInitwithfragmentshaderfromfilebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)FInitbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)HInitializeattributesbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)LSetupfilterforsizebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)PDeallocbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)oUsenextframeforimagecapturebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)nNewcgimagefromcurrentlyprocessedoutputbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)eSizeoffbobm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)WTexturecoordinatesforrotationbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ORendertotexturewithverticestexturecoordinatesbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)qInformtargetsaboutnewframeattimebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)yOutputframesizebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ZSetbackgroundcolorredgreenbluealphabm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)cSetintegerforuniformnamebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)qSetfloatforuniformnamebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)dSetsizeforuniformnamebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)zSetpointforuniformnamebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)GSetfloatvec3Foruniformnamebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)mSetfloatvec4Foruniformbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)XSetfloatarraylengthforuniformbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)hSetmatrix3Fforuniformprogrambm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)wSetmatrix4Fforuniformprogrambm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)uSetfloatforuniformprogrambm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)bSetpointforuniformprogrambm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)tSetsizeforuniformprogrambm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)jSetvec3Foruniformprogrambm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)RSetvec4Foruniformprogrambm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ESetfloatarraylengthforuniformprogrambm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)FSetintegerforuniformprogrambm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)pSetandexecuteuniformstatecallbackatindexforprogramtoblockbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)SSetuniformsforprogramatindexbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)jNewframereadyattimeatindexbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)nNextavailabletextureindexbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)USetinputframebufferatindexbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)dRotatedsizeforindexbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)rRotatedpointforrotationbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)wSetinputsizeatindexbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)TSetinputrotationatindexbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)kForceprocessingatsizebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)OForceprocessingatsizerespectingaspectratiobm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)WMaximumoutputsizebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)BEndprocessingbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)mWantsmonochromeinputbm-Deletecomments:(NSInteger)-deleteComments;
+
+@end

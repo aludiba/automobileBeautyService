@@ -1,0 +1,51 @@
+#import <Foundation/Foundation.h>
+#import "BMBMIQKeyboardManagerSM.h"
+
+@interface BMBMIQKeyboardManagerSM (-Deletecomments)
++ (BOOL)dGload-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)zIinit-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)nWsharedmanager-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)vUdealloc-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)CXsetenable-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)NCprivateisenabled-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)uIsetkeyboarddistancefromtextfield-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)RAsetshouldresignontouchoutside-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)UKprivateshouldresignontouchoutside-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)fJsetmoveddistance-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)tIsetenableautotoolbar-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)MTprivateisenableautotoolbar-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)NSkeywindow-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)aVoptimizedadjustposition-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)RTadjustposition-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)kSrestoreposition-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)gGreloadlayoutifneeded-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)rBkeyboardwillshow-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)RAkeyboarddidshow-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)HXkeyboardwillhide-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)IPkeyboarddidhide-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)uBtextfieldviewdidbeginediting-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sDtextfieldviewdidendediting-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)VGwillchangestatusbarorientation-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)vRtaprecognized-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ACgesturerecognizercshouldrecognizesimultaneouslywithgesturerecognizer-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)KRgesturerecognizerrshouldreceivetouch-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)IFresignfirstresponder-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)PWcangoprevious-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)PMcangonext-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)TGgoprevious-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)qLgonext-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)vRresponderviews-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)EBaddtoolbarifrequired-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)EZremovetoolbarifrequired-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)WJreloadinputviews-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)IGpreviousaction-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)aEnextaction-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ASdoneaction-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)jYregistertextfieldviewclassodidbegineditingnotificationnamendidendeditingnotificationname-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)hNunregistertextfieldviewclasshdidbegineditingnotificationnameididendeditingnotificationname-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)rIregisterallnotifications-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)vRunregisterallnotifications-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)JXshowlog-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)gYshowlogqindentation-Deletecomments:(NSInteger)-deleteComments;
+
+@end

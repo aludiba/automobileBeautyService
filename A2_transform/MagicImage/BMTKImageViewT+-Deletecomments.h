@@ -1,0 +1,56 @@
+#import <Foundation/Foundation.h>
+#import "BMTKImageViewT.h"
+
+@interface BMTKImageViewT (-Deletecomments)
++ (BOOL)VInitwithframe-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)zInitwithcoder-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)DcommonInit-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)adealloc-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)hsetUp-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ZbindPanGestures-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)BHandlecropareapinch-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)nHandlecropareapan-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)uHandlemidpan-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)KHandlecornerpan-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)bresetCornersOnCropAreaFrameChanged-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)HresetCropAreaOnCornersFrameChanged-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)dresetMinSpaceIfNeeded-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)qresetCropTransparentArea-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ZresetCornersOnSizeChanged-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)JcreateCorners-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)zcreateMidLines-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)TremoveMidLines-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)MresetMidLines-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)FresetImageView-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)MresetCropAreaByAspectRatio-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)fResetcropareabyscalefactor-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)MSetinitialscalefactor-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ccornerMargin-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)MSetmaskcolor-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)uSetminspace-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)QSettocropimage-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ESetneedscalecrop-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)CSetcropareacrosslinewidth-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)mSetcropareacrosslinecolor-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)FSetcropareamidlinewidth-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)RSetcropareamidlineheight-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ESetcropareamidlinecolor-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)JSetcropareaborderlinewidth-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)LSetcropareaborderlinecolor-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)kSetcropareacornerlinecolor-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)jSetcropareacornerlinewidth-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)rSetcropareacornerwidth-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)bSetcropareacornerheight-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)USetcropaspectratio-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)fSetshowmidlines-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)hSetshowcrosslines-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)lSetcornerborderinimage-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)TSetframe-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)HSetcenter-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)uObservevalueforkeypathqOfobjectaChangeNContext-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)Lrotate-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)pshow-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)Ohide-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ecurrentCroppedImage-Deletecomments:(NSInteger)-deleteComments;
+
+@end

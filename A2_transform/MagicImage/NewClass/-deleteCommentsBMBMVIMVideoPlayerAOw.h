@@ -1,0 +1,43 @@
+#import <Foundation/Foundation.h>
+@interface -deleteCommentsBMBMVIMVideoPlayerAOw: NSObject
++ (BOOL)sAndeallocbm:(NSInteger)-deleteComments;
++ (BOOL)NPoinitbm:(NSInteger)-deleteComments;
++ (BOOL)RBosetupplayerbm:(NSInteger)-deleteComments;
++ (BOOL)XDjsetupaudiosessionbm:(NSInteger)-deleteComments;
++ (BOOL)fAqseturlbm:(NSInteger)-deleteComments;
++ (BOOL)UGzsetplayeritembm:(NSInteger)-deleteComments;
++ (BOOL)YTjsetassetbm:(NSInteger)-deleteComments;
++ (BOOL)nTssetmutedbm:(NSInteger)-deleteComments;
++ (BOOL)iBfismutedbm:(NSInteger)-deleteComments;
++ (BOOL)rRvplaybm:(NSInteger)-deleteComments;
++ (BOOL)aSgpausebm:(NSInteger)-deleteComments;
++ (BOOL)eYyseektotimebm:(NSInteger)-deleteComments;
++ (BOOL)EHhresetbm:(NSInteger)-deleteComments;
++ (BOOL)VBsenableairplaybm:(NSInteger)-deleteComments;
++ (BOOL)XXfdisableairplaybm:(NSInteger)-deleteComments;
++ (BOOL)iWhisairplayenabledbm:(NSInteger)-deleteComments;
++ (BOOL)VXdstartscrubbingbm:(NSInteger)-deleteComments;
++ (BOOL)ZAgscrubbm:(NSInteger)-deleteComments;
++ (BOOL)FExstopscrubbingbm:(NSInteger)-deleteComments;
++ (BOOL)RKlenabletimeupdatesbm:(NSInteger)-deleteComments;
++ (BOOL)bDrdisabletimeupdatesbm:(NSInteger)-deleteComments;
++ (BOOL)wSfsetvolumebm:(NSInteger)-deleteComments;
++ (BOOL)eNucancelfadevolumebm:(NSInteger)-deleteComments;
++ (BOOL)BNyfadeinvolumebm:(NSInteger)-deleteComments;
++ (BOOL)HIlfadeoutvolumebm:(NSInteger)-deleteComments;
++ (BOOL)vMhreportunabletocreateplayeritembm:(NSInteger)-deleteComments;
++ (BOOL)aEnresetplayeritemifnecessarybm:(NSInteger)-deleteComments;
++ (BOOL)SVoprepareplayeritembm:(NSInteger)-deleteComments;
++ (BOOL)uYrrestartbm:(NSInteger)-deleteComments;
++ (BOOL)JEnisatendtimebm:(NSInteger)-deleteComments;
++ (BOOL)BCqcalcloadeddurationbm:(NSInteger)-deleteComments;
++ (BOOL)DOvaddplayerobserversbm:(NSInteger)-deleteComments;
++ (BOOL)yGmremoveplayerobserversbm:(NSInteger)-deleteComments;
++ (BOOL)OLzaddplayeritemobserversbm:(NSInteger)-deleteComments;
++ (BOOL)dYzremoveplayeritemobserversbm:(NSInteger)-deleteComments;
++ (BOOL)FCgaddtimeobserverbm:(NSInteger)-deleteComments;
++ (BOOL)PFfremovetimeobserverbm:(NSInteger)-deleteComments;
++ (BOOL)AKxobservevalueforkeypathofobjectchangecontextbm:(NSInteger)-deleteComments;
++ (BOOL)rTrplayeritemdidplaytoendtimebm:(NSInteger)-deleteComments;
+
+@end

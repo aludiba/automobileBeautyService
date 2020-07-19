@@ -1,0 +1,51 @@
+#import <Foundation/Foundation.h>
+#import "BMNSDataB.h"
+
+@interface BMNSDataB (Bm)
++ (BOOL)CMd2StringbmBm:(NSInteger)BM;
++ (BOOL)SMd2DatabmBm:(NSInteger)BM;
++ (BOOL)YMd4StringbmBm:(NSInteger)BM;
++ (BOOL)CMd4DatabmBm:(NSInteger)BM;
++ (BOOL)yMd5StringbmBm:(NSInteger)BM;
++ (BOOL)sMd5DatabmBm:(NSInteger)BM;
++ (BOOL)bSha1StringbmBm:(NSInteger)BM;
++ (BOOL)wSha1DatabmBm:(NSInteger)BM;
++ (BOOL)qSha224StringbmBm:(NSInteger)BM;
++ (BOOL)kSha224DatabmBm:(NSInteger)BM;
++ (BOOL)qSha256StringbmBm:(NSInteger)BM;
++ (BOOL)zSha256DatabmBm:(NSInteger)BM;
++ (BOOL)ESha384StringbmBm:(NSInteger)BM;
++ (BOOL)HSha384DatabmBm:(NSInteger)BM;
++ (BOOL)xSha512StringbmBm:(NSInteger)BM;
++ (BOOL)NSha512DatabmBm:(NSInteger)BM;
++ (BOOL)ZHmacstringusingalgwithkeybmBm:(NSInteger)BM;
++ (BOOL)dHmacdatausingalgwithkeybmBm:(NSInteger)BM;
++ (BOOL)JHmacmd5StringwithkeybmBm:(NSInteger)BM;
++ (BOOL)HHmacmd5DatawithkeybmBm:(NSInteger)BM;
++ (BOOL)VHmacsha1StringwithkeybmBm:(NSInteger)BM;
++ (BOOL)aHmacsha1DatawithkeybmBm:(NSInteger)BM;
++ (BOOL)WHmacsha224StringwithkeybmBm:(NSInteger)BM;
++ (BOOL)lHmacsha224DatawithkeybmBm:(NSInteger)BM;
++ (BOOL)EHmacsha256StringwithkeybmBm:(NSInteger)BM;
++ (BOOL)IHmacsha256DatawithkeybmBm:(NSInteger)BM;
++ (BOOL)oHmacsha384StringwithkeybmBm:(NSInteger)BM;
++ (BOOL)THmacsha384DatawithkeybmBm:(NSInteger)BM;
++ (BOOL)BHmacsha512StringwithkeybmBm:(NSInteger)BM;
++ (BOOL)THmacsha512DatawithkeybmBm:(NSInteger)BM;
++ (BOOL)lCrc32StringbmBm:(NSInteger)BM;
++ (BOOL)dCrc32BmBm:(NSInteger)BM;
++ (BOOL)oAes256EncryptwithkeyivbmBm:(NSInteger)BM;
++ (BOOL)xAes256DecryptwithkeyivbmBm:(NSInteger)BM;
++ (BOOL)VUtf8StringbmBm:(NSInteger)BM;
++ (BOOL)BHexstringbmBm:(NSInteger)BM;
++ (BOOL)kDatawithhexstringbmBm:(NSInteger)BM;
++ (BOOL)zBase64EncodedstringbmBm:(NSInteger)BM;
++ (BOOL)IDatawithbase64EncodedstringbmBm:(NSInteger)BM;
++ (BOOL)sJsonvaluedecodedbmBm:(NSInteger)BM;
++ (BOOL)mGzipinflatebmBm:(NSInteger)BM;
++ (BOOL)RGzipdeflatebmBm:(NSInteger)BM;
++ (BOOL)cZlibinflatebmBm:(NSInteger)BM;
++ (BOOL)zZlibdeflatebmBm:(NSInteger)BM;
++ (BOOL)fDatanamedbmBm:(NSInteger)BM;
+
+@end

@@ -1,0 +1,55 @@
+#import <Foundation/Foundation.h>
+#import "BMSDCycleScrollViewO.h"
+
+@interface BMSDCycleScrollViewO (-Deletecomments)
++ (BOOL)sInitwithframebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)jAwakefromnibbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)CInitializationbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)JCyclescrollviewwithframeimagenamesgroupbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)HCyclescrollviewwithframeshouldinfiniteloopimagenamesgroupbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)TCyclescrollviewwithframeimageurlstringsgroupbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)XCyclescrollviewwithframedelegateplaceholderimagebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ySetupmainviewbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)lSetdelegatebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)tSetplaceholderimagebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)aSetpagecontroldotsizebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)aSetshowpagecontrolbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)lSetcurrentpagedotcolorbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)bSetpagedotcolorbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)DSetcurrentpagedotimagebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)pSetpagedotimagebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)iSetcustompagecontroldotimageiscurrentpagedotbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)PSetinfiniteloopbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)BSetautoscrollbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)LSetscrolldirectionbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)qSetautoscrolltimeintervalbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ISetpagecontrolstylebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)NSetimagepathsgroupbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)kSetimageurlstringsgroupbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)fSetlocalizationimagenamesgroupbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)vSettitlesgroupbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)BDisablescrollgesturebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)oSetuptimerbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)nInvalidatetimerbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)dSetuppagecontrolbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)PAutomaticscrollbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)iScrolltoindexbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)TCurrentindexbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)JPagecontrolindexwithcurrentcellindexbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)JClearcachebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)xClearimagescachebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ELayoutsubviewsbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sWillmovetosuperviewbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)WDeallocbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)aAdjustwhencontrollerviewwillapperabm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)BCollectionviewnumberofitemsinsectionbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)jCollectionviewcellforitematindexpathbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)JCollectionviewdidselectitematindexpathbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)gScrollviewdidscrollbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)tScrollviewwillbegindraggingbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)CScrollviewdidenddraggingwilldeceleratebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)qScrollviewdidenddeceleratingbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)JScrollviewdidendscrollinganimationbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)tMakescrollviewscrolltoindexbm-Deletecomments:(NSInteger)-deleteComments;
+
+@end

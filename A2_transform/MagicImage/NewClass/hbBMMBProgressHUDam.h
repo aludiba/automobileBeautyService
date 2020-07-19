@@ -1,0 +1,44 @@
+#import <Foundation/Foundation.h>
+@interface hbBMMBProgressHUDam: NSObject
++ (BOOL)OAshowhudaddedtoanimatedbmbm:(NSInteger)hb;
++ (BOOL)VHhidehudforviewanimatedbmbm:(NSInteger)hb;
++ (BOOL)VVhideallhudsforviewanimatedbmbm:(NSInteger)hb;
++ (BOOL)MVhudforviewbmbm:(NSInteger)hb;
++ (BOOL)FPallhudsforviewbmbm:(NSInteger)hb;
++ (BOOL)OKinitwithframebmbm:(NSInteger)hb;
++ (BOOL)xLinitwithviewbmbm:(NSInteger)hb;
++ (BOOL)COinitwithwindowbmbm:(NSInteger)hb;
++ (BOOL)BEdeallocbmbm:(NSInteger)hb;
++ (BOOL)bVshowbmbm:(NSInteger)hb;
++ (BOOL)wAhidebmbm:(NSInteger)hb;
++ (BOOL)oEhideafterdelaybmbm:(NSInteger)hb;
++ (BOOL)pQhidedelayedbmbm:(NSInteger)hb;
++ (BOOL)aQhandlegracetimerbmbm:(NSInteger)hb;
++ (BOOL)PLhandleminshowtimerbmbm:(NSInteger)hb;
++ (BOOL)jUdidmovetosuperviewbmbm:(NSInteger)hb;
++ (BOOL)HOshowusinganimationbmbm:(NSInteger)hb;
++ (BOOL)oOhideusinganimationbmbm:(NSInteger)hb;
++ (BOOL)xGanimationfinishedfinishedcontextbmbm:(NSInteger)hb;
++ (BOOL)lFdonebmbm:(NSInteger)hb;
++ (BOOL)EUshowwhileexecutingontargetwithobjectanimatedbmbm:(NSInteger)hb;
++ (BOOL)JDshowanimatedwhileexecutingblockbmbm:(NSInteger)hb;
++ (BOOL)lMshowanimatedwhileexecutingblockcompletionblockbmbm:(NSInteger)hb;
++ (BOOL)AJshowanimatedwhileexecutingblockonqueuebmbm:(NSInteger)hb;
++ (BOOL)lWshowanimatedwhileexecutingblockonqueuecompletionblockbmbm:(NSInteger)hb;
++ (BOOL)VHlaunchexecutionbmbm:(NSInteger)hb;
++ (BOOL)aQcleanupbmbm:(NSInteger)hb;
++ (BOOL)fIsetuplabelsbmbm:(NSInteger)hb;
++ (BOOL)yAupdateindicatorsbmbm:(NSInteger)hb;
++ (BOOL)RVlayoutsubviewsbmbm:(NSInteger)hb;
++ (BOOL)gTdrawrectbmbm:(NSInteger)hb;
++ (BOOL)UVregisterforkvobmbm:(NSInteger)hb;
++ (BOOL)XTunregisterfromkvobmbm:(NSInteger)hb;
++ (BOOL)GYobservablekeypathsbmbm:(NSInteger)hb;
++ (BOOL)iGobservevalueforkeypathofobjectchangecontextbmbm:(NSInteger)hb;
++ (BOOL)tHupdateuiforkeypathbmbm:(NSInteger)hb;
++ (BOOL)zOregisterfornotificationsbmbm:(NSInteger)hb;
++ (BOOL)QAunregisterfromnotificationsbmbm:(NSInteger)hb;
++ (BOOL)jKstatusbarorientationdidchangebmbm:(NSInteger)hb;
++ (BOOL)PYupdateforcurrentorientationanimatedbmbm:(NSInteger)hb;
+
+@end

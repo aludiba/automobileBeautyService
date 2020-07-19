@@ -1,0 +1,52 @@
+#import <UIKit/UIKit.h>
+#import "RTImagePickerUtils.h"
+#import "RTAssetCollectionViewController.h"
+#import <Photos/Photos.h>
+#import "RTImagePickerViewController.h"
+#import "RTAssetCollectionViewCell.h"
+#import "RTVideoIndicatorView.h"
+#import "RTAlbumTableViewCell.h"
+#import "RTImagePickerTitleButton.h"
+#import "RTImagePickerNavigationController.h"
+#import "RTImagePickerUnauthorizedView.h"
+#import "UIView+Geometry.h"
+#import "RTAssetCollectionViewController+Bm.h"
+
+@interface RTAssetCollectionViewController (BmBm)
++ (BOOL)viewDidLoadBmBm:(NSInteger)BM;
++ (BOOL)viewWillAppearBmBm:(NSInteger)BM;
++ (BOOL)scrollToBottomAnimatedBmBm:(NSInteger)BM;
++ (BOOL)viewWillDisappearBmBm:(NSInteger)BM;
++ (BOOL)viewDidAppearBmBm:(NSInteger)BM;
++ (BOOL)viewWillTransitionToSizeWithtransitioncoordinatorBmBm:(NSInteger)BM;
++ (BOOL)deallocBmBm:(NSInteger)BM;
++ (BOOL)setAssetCollectionBmBm:(NSInteger)BM;
++ (BOOL)imageManagerBmBm:(NSInteger)BM;
++ (BOOL)isAutoDeselectEnabledBmBm:(NSInteger)BM;
++ (BOOL)setupToolBarViewBmBm:(NSInteger)BM;
++ (BOOL)updateFetchRequestBmBm:(NSInteger)BM;
++ (BOOL)isMinimumSelectionLimitFulfilledBmBm:(NSInteger)BM;
++ (BOOL)isMaximumSelectionLimitReachedBmBm:(NSInteger)BM;
++ (BOOL)resetCachedAssetsBmBm:(NSInteger)BM;
++ (BOOL)updateCachedAssetsBmBm:(NSInteger)BM;
++ (BOOL)assetsAtIndexPathsBmBm:(NSInteger)BM;
++ (BOOL)photoLibraryDidChangeBmBm:(NSInteger)BM;
++ (BOOL)scrollViewDidScrollBmBm:(NSInteger)BM;
++ (BOOL)numberOfSectionsInCollectionViewBmBm:(NSInteger)BM;
++ (BOOL)collectionViewNumberofitemsinsectionBmBm:(NSInteger)BM;
++ (BOOL)collectionViewCellforitematindexpathBmBm:(NSInteger)BM;
++ (BOOL)collectionViewShouldselectitematindexpathBmBm:(NSInteger)BM;
++ (BOOL)collectionViewDidselectitematindexpathBmBm:(NSInteger)BM;
++ (BOOL)collectionViewDiddeselectitematindexpathBmBm:(NSInteger)BM;
++ (BOOL)collectionViewViewforsupplementaryelementofkindAtindexpathBmBm:(NSInteger)BM;
++ (BOOL)collectionViewLayoutSizeforitematindexpathBmBm:(NSInteger)BM;
++ (BOOL)updateAssetCollectionsBmBm:(NSInteger)BM;
++ (BOOL)titleButtonPressedBmBm:(NSInteger)BM;
++ (BOOL)numberOfSectionsInTableViewBmBm:(NSInteger)BM;
++ (BOOL)tableViewNumberofrowsinsectionBmBm:(NSInteger)BM;
++ (BOOL)tableViewHeightforrowatindexpathBmBm:(NSInteger)BM;
++ (BOOL)tableViewDidselectrowatindexpathBmBm:(NSInteger)BM;
++ (BOOL)tableViewCellforrowatindexpathBmBm:(NSInteger)BM;
++ (BOOL)UnAuthorizedViewHiddenBmBm:(NSInteger)BM;
+
+@end

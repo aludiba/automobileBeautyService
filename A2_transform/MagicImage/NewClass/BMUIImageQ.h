@@ -1,0 +1,39 @@
+#import <Foundation/Foundation.h>
+@interface BMUIImageq: NSObject
++ (BOOL)OImagewithsmallgifdatascalebmbm:(NSInteger)BM;
++ (BOOL)VIsanimatedgifdatabmbm:(NSInteger)BM;
++ (BOOL)eIsanimatedgiffilebmbm:(NSInteger)BM;
++ (BOOL)ZImagewithpdfbmbm:(NSInteger)BM;
++ (BOOL)mImagewithpdfsizebmbm:(NSInteger)BM;
++ (BOOL)JImagewithemojisizebmbm:(NSInteger)BM;
++ (BOOL)u_Yy_Imagewithpdfresizesizebmbm:(NSInteger)BM;
++ (BOOL)kImagewithcolorbmbm:(NSInteger)BM;
++ (BOOL)fImagewithcolorsizebmbm:(NSInteger)BM;
++ (BOOL)fImagewithsizedrawblockbmbm:(NSInteger)BM;
++ (BOOL)XHasalphachannelbmbm:(NSInteger)BM;
++ (BOOL)MDrawinrectwithcontentmodeclipstoboundsbmbm:(NSInteger)BM;
++ (BOOL)zImagebyresizetosizebmbm:(NSInteger)BM;
++ (BOOL)CImagebyresizetosizecontentmodebmbm:(NSInteger)BM;
++ (BOOL)MImagebycroptorectbmbm:(NSInteger)BM;
++ (BOOL)YImagebyinsetedgewithcolorbmbm:(NSInteger)BM;
++ (BOOL)fImagebyroundcornerradiusbmbm:(NSInteger)BM;
++ (BOOL)HImagebyroundcornerradiusborderwidthbordercolorbmbm:(NSInteger)BM;
++ (BOOL)sImagebyroundcornerradiuscornersborderwidthbordercolorborderlinejoinbmbm:(NSInteger)BM;
++ (BOOL)CImagebyrotatefitsizebmbm:(NSInteger)BM;
++ (BOOL)c_Yy_Fliphorizontalverticalbmbm:(NSInteger)BM;
++ (BOOL)GImagebyrotateleft90Bmbm:(NSInteger)BM;
++ (BOOL)OImagebyrotateright90Bmbm:(NSInteger)BM;
++ (BOOL)kImagebyrotate180Bmbm:(NSInteger)BM;
++ (BOOL)bImagebyflipverticalbmbm:(NSInteger)BM;
++ (BOOL)zImagebyfliphorizontalbmbm:(NSInteger)BM;
++ (BOOL)nImagebytintcolorbmbm:(NSInteger)BM;
++ (BOOL)fImagebygrayscalebmbm:(NSInteger)BM;
++ (BOOL)NImagebyblursoftbmbm:(NSInteger)BM;
++ (BOOL)SImagebyblurlightbmbm:(NSInteger)BM;
++ (BOOL)hImagebyblurextralightbmbm:(NSInteger)BM;
++ (BOOL)nImagebyblurdarkbmbm:(NSInteger)BM;
++ (BOOL)EImagebyblurwithtintbmbm:(NSInteger)BM;
++ (BOOL)JImagebyblurradiustintcolortintmodesaturationmaskimagebmbm:(NSInteger)BM;
++ (BOOL)z_Yy_Mergeimagereftintcolortintblendmodemaskimageopaquebmbm:(NSInteger)BM;
+
+@end

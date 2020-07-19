@@ -1,0 +1,49 @@
+#import <Foundation/Foundation.h>
+#import "BMBMSDImageCacheFu.h"
+
+@interface BMBMSDImageCacheFu (-Deletecomments)
++ (BOOL)HAsharedimagecache-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)IZinit-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)MHinitwithnamespace-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)dIinitwithnamespacevdiskcachedirectory-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)TRdealloc-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)WTaddreadonlycachepath-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)rZcachepathforkeyxinpath-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)eFdefaultcachepathforkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)LIcachedfilenameforkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)QKmakediskcachepath-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)TPstoreimagetforkeywcompletion-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)DWstoreimagelforkeyttodisklcompletion-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)dYstoreimagelimagedatatforkeywtodiskqcompletion-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)FVstoreimagedatatodiskpforkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)wM_Storeimagedatatodiskaforkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)gUdiskimageexistswithkeyfcompletion-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ETdiskimagedataexistswithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)fB_Diskimagedataexistswithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)yTdiskimagedataforkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)WSimagefrommemorycacheforkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)hRimagefromdiskcacheforkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)JXimagefromcacheforkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ZTdiskimagedatabysearchingallpathsforkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)jAdiskimageforkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)NYdiskimageforkeypdata-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)bRdiskimageforkeytdatasoptions-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)OAscaledimageforkeylimage-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)YYquerycacheoperationforkeygdone-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)QHquerycacheoperationforkeyhoptionsxdone-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)SLremoveimageforkeyiwithcompletion-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)xBremoveimageforkeybfromdiskqwithcompletion-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)XRsetmaxmemorycost-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)TEmaxmemorycost-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)KJmaxmemorycountlimit-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)jGsetmaxmemorycountlimit-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)nKclearmemory-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)xScleardiskoncompletion-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)BPdeleteoldfiles-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)XNdeleteoldfileswithcompletionblock-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)pUbackgrounddeleteoldfiles-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)oAgetsize-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)NSgetdiskcount-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)hXcalculatesizewithcompletionblock-Deletecomments:(NSInteger)-deleteComments;
+
+@end

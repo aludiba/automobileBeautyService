@@ -1,0 +1,51 @@
+#import <UIKit/UIKit.h>
+#import "UIView+SDAutoLayout.h"
+#import "UITableView+SDAutoTableViewCellHeight.h"
+#import <objc/runtime.h>
+#import "UIView+SDAutoLayoutBm.h"
+
+@interface UIView (SDAutoLayoutBm-Deletecomments)
++ (BOOL)loadBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)autoLayoutModelsArrayBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)fixedWidthBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setFixedWidthBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)fixedHeightBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setFixedHeightBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)autoHeightRatioValueBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setAutoHeightRatioValueBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)autoWidthRatioValueBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setAutoWidthRatioValueBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sd_maxWidthBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setSd_maxWidthBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)useCellFrameCacheWithIndexPathTableviewBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sd_tableViewBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setSd_tableViewBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sd_indexPathBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setSd_indexPathBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ownLayoutModelBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setOwnLayoutModelBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sd_layoutBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sd_resetLayoutBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sd_resetNewLayoutBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sd_isClosingAutoLayoutBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setSd_closeAutoLayoutBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)removeFromSuperviewAndClearAutoLayoutSettingsBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sd_clearAutoLayoutSettingsBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sd_clearExtraAutoLayoutItemsBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sd_clearViewFrameCacheBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sd_clearSubviewsAutoLayoutFrameCachesBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sd_layoutSubviewsBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sd_layoutSubviewsHandleBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sd_resizeWithModelBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)layoutAutoHeightWidthViewModelBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)layoutAutoWidthWidthViewModelBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)layoutWidthWithViewModelBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)layoutHeightWithViewModelBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)layoutLeftWithViewModelBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)layoutRightWithViewModelBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)layoutTopWithViewModelBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)layoutBottomWithViewModelBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setupCornerRadiusWithViewModelBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addAutoLayoutModelBm-Deletecomments:(NSInteger)-deleteComments;
+
+@end

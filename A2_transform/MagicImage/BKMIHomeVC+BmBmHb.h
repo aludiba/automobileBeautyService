@@ -1,0 +1,50 @@
+#import <UIKit/UIKit.h>
+#import "BKMIHomeVC.h"
+#import "BKMIHomeView.h"
+#import "QMBaseNavigationController.h"
+#import "QMCameraViewController.h"
+#import "BKMIHomeSectionOneCell.h"
+#import "BKMIHomeSectionTowCell.h"
+#import "SDCycleScrollView.h"
+#import "BKMIHomeHeaderView.h"
+#import "BKMIHomeModel.h"
+#import "BKMIBaseTypeVC.h"
+#import "QMPhotoEffectViewController.h"
+#import <Photos/Photos.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+#import "BKMIStickerDetailVC.h"
+#import "BKMITagsVC.h"
+#import "BKMIFilterDetailVC.h"
+#import "BKMIHomeVC+Bm.h"
+#import "BKMIHomeVC+BmBm.h"
+
+@interface BKMIHomeVC (BmBmHb)
++ (BOOL)BKtableViewBmBmHb:(NSInteger)hb;
++ (BOOL)BKdataArrayBmBmHb:(NSInteger)hb;
++ (BOOL)BKbannaerArrayBmBmHb:(NSInteger)hb;
++ (BOOL)viewWillAppearBmBmHb:(NSInteger)hb;
++ (BOOL)viewWillDisappearBmBmHb:(NSInteger)hb;
++ (BOOL)viewDidLoadBmBmHb:(NSInteger)hb;
++ (BOOL)BKloginOutBmBmHb:(NSInteger)hb;
++ (BOOL)BKcreateHeaderViewBmBmHb:(NSInteger)hb;
++ (BOOL)BKloadDataBmBmHb:(NSInteger)hb;
++ (BOOL)BKshopBtnClickedBmBmHb:(NSInteger)hb;
++ (BOOL)tableViewNumberofrowsinsectionBmBmHb:(NSInteger)hb;
++ (BOOL)numberOfSectionsInTableViewBmBmHb:(NSInteger)hb;
++ (BOOL)tableViewCellforrowatindexpathBmBmHb:(NSInteger)hb;
++ (BOOL)tableViewDidselectrowatindexpathBmBmHb:(NSInteger)hb;
++ (BOOL)BKcanUsePhotoBmBmHb:(NSInteger)hb;
++ (BOOL)alertViewClickedbuttonatindexBmBmHb:(NSInteger)hb;
++ (BOOL)imagePickerControllerDidCancelBmBmHb:(NSInteger)hb;
++ (BOOL)imagePickerControllerDidfinishpickingmediawithinfoBmBmHb:(NSInteger)hb;
++ (BOOL)tableViewHeightforrowatindexpathBmBmHb:(NSInteger)hb;
++ (BOOL)tableViewViewforheaderinsectionBmBmHb:(NSInteger)hb;
++ (BOOL)BKsenderActionBmBmHb:(NSInteger)hb;
++ (BOOL)tableViewViewforfooterinsectionBmBmHb:(NSInteger)hb;
++ (BOOL)tableViewHeightforheaderinsectionBmBmHb:(NSInteger)hb;
++ (BOOL)tableViewHeightforfooterinsectionBmBmHb:(NSInteger)hb;
++ (BOOL)customCollectionViewCellClassForCycleScrollViewBmBmHb:(NSInteger)hb;
++ (BOOL)setupCustomCellForindexCyclescrollviewBmBmHb:(NSInteger)hb;
++ (BOOL)cycleScrollViewDidselectitematindexBmBmHb:(NSInteger)hb;
+
+@end

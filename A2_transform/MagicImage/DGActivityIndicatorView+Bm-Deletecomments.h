@@ -1,0 +1,54 @@
+#import <UIKit/UIKit.h>
+#import "DGActivityIndicatorView.h"
+#import "DGActivityIndicatorNineDotsAnimation.h"
+#import "DGActivityIndicatorTriplePulseAnimation.h"
+#import "DGActivityIndicatorFiveDotsAnimation.h"
+#import "DGActivityIndicatorRotatingSquaresAnimation.h"
+#import "DGActivityIndicatorDoubleBounceAnimation.h"
+#import "DGActivityIndicatorTwoDotsAnimation.h"
+#import "DGActivityIndicatorThreeDotsAnimation.h"
+#import "DGActivityIndicatorBallPulseAnimation.h"
+#import "DGActivityIndicatorBallClipRotateAnimation.h"
+#import "DGActivityIndicatorBallClipRotatePulseAnimation.h"
+#import "DGActivityIndicatorBallClipRotateMultipleAnimation.h"
+#import "DGActivityIndicatorBallRotateAnimation.h"
+#import "DGActivityIndicatorBallZigZagAnimation.h"
+#import "DGActivityIndicatorBallZigZagDeflectAnimation.h"
+#import "DGActivityIndicatorBallTrianglePathAnimation.h"
+#import "DGActivityIndicatorBallScaleAnimation.h"
+#import "DGActivityIndicatorLineScaleAnimation.h"
+#import "DGActivityIndicatorLineScalePartyAnimation.h"
+#import "DGActivityIndicatorBallScaleMultipleAnimation.h"
+#import "DGActivityIndicatorBallPulseSyncAnimation.h"
+#import "DGActivityIndicatorBallBeatAnimation.h"
+#import "DGActivityIndicatorLineScalePulseOutAnimation.h"
+#import "DGActivityIndicatorLineScalePulseOutRapidAnimation.h"
+#import "DGActivityIndicatorBallScaleRippleAnimation.h"
+#import "DGActivityIndicatorBallScaleRippleMultipleAnimation.h"
+#import "DGActivityIndicatorTriangleSkewSpinAnimation.h"
+#import "DGActivityIndicatorBallGridBeatAnimation.h"
+#import "DGActivityIndicatorBallGridPulseAnimation.h"
+#import "DGActivityIndicatorRotatingSandglassAnimation.h"
+#import "DGActivityIndicatorRotatingTrigonAnimation.h"
+#import "DGActivityIndicatorTripleRingsAnimation.h"
+#import "DGActivityIndicatorCookieTerminatorAnimation.h"
+#import "DGActivityIndicatorBallSpinFadeLoader.h"
+#import "DGActivityIndicatorView+Bm.h"
+
+@interface DGActivityIndicatorView (Bm-Deletecomments)
++ (BOOL)initWithCoderBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)initWithTypeBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)initWithTypeTintcolorBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)initWithTypeTintcolorSizeBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)commonInitBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setupAnimationBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)startAnimatingBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)stopAnimatingBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setTypeBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setSizeBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setTintColorBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)activityIndicatorAnimationForAnimationTypeBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)layoutSubviewsBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)intrinsicContentSizeBm-Deletecomments:(NSInteger)-deleteComments;
+
+@end

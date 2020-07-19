@@ -1,0 +1,38 @@
+#import <Foundation/Foundation.h>
+#import "BMBMUIViewyc.h"
+
+@interface BMBMUIViewyc (-Deletecomments)
++ (BOOL)VPkeyboardtoolbar-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)eKsetshouldhidetoolbarplaceholder-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)rYshouldhidetoolbarplaceholder-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)IRsettoolbarplaceholder-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)gBtoolbarplaceholder-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)JXdrawingtoolbarplaceholder-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ALflexiblebarbuttonitem-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)TJaddkeyboardtoolbarwithtargetdtitletexthrightbarbuttonconfigurationcpreviousbarbuttonconfigurationxnextbarbuttonconfiguration-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)nFaddrightbuttononkeyboardwithtextqtargetraction-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)VFaddrightbuttononkeyboardwithtextjtargetkactionsshouldshowplaceholder-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)tXaddrightbuttononkeyboardwithtexthtargetfactionptitletext-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)pRaddrightbuttononkeyboardwithimagewtargetzaction-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)cIaddrightbuttononkeyboardwithimageytargetiactionashouldshowplaceholder-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)fWaddrightbuttononkeyboardwithimagextargetsactionjtitletext-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)gPadddoneonkeyboardwithtargeteaction-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)IHadddoneonkeyboardwithtargetoactionyshouldshowplaceholder-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)gZadddoneonkeyboardwithtargetiactionztitletext-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)lXaddleftrightonkeyboardwithtargetzleftbuttontitlesrightbuttontitlecleftbuttonactionwrightbuttonaction-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)cYaddleftrightonkeyboardwithtargetkleftbuttontitlerrightbuttontitlevleftbuttonactionsrightbuttonactionpshouldshowplaceholder-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)IMaddleftrightonkeyboardwithtargettleftbuttontitlesrightbuttontitleqleftbuttonactionjrightbuttonactionytitletext-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)cFaddcanceldoneonkeyboardwithtargetpcancelactionwdoneaction-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)KXaddcanceldoneonkeyboardwithtargetdcancelactionfdoneactionhshouldshowplaceholder-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)lZaddcanceldoneonkeyboardwithtargetzcancelactionjdoneactionptitletext-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)DDaddpreviousnextdoneonkeyboardwithtargettpreviousactioncnextactionvdoneaction-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)lQaddpreviousnextdoneonkeyboardwithtargetnpreviousactionknextactionydoneactionxshouldshowplaceholder-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)wTaddpreviousnextdoneonkeyboardwithtargetupreviousactiongnextactionsdoneactionntitletext-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ADaddpreviousnextrightonkeyboardwithtargetirightbuttonimageepreviousactionynextactionhrightbuttonaction-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)qGaddpreviousnextrightonkeyboardwithtargetprightbuttonimagerpreviousactionnnextactionhrightbuttonactionishouldshowplaceholder-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)QAaddpreviousnextrightonkeyboardwithtargetnrightbuttonimageypreviousactionenextactionvrightbuttonactionstitletext-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)lKaddpreviousnextrightonkeyboardwithtargetdrightbuttontitlexpreviousactionznextactionorightbuttonaction-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)cCaddpreviousnextrightonkeyboardwithtargetyrightbuttontitlekpreviousactioninextactionfrightbuttonactionpshouldshowplaceholder-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)VKaddpreviousnextrightonkeyboardwithtargetkrightbuttontitlerpreviousactionbnextactionjrightbuttonactionstitletext-Deletecomments:(NSInteger)-deleteComments;
+
+@end

@@ -1,0 +1,46 @@
+#import <Foundation/Foundation.h>
+@interface -deleteCommentsUIViewd: NSObject
++ (BOOL)fShouldreadjustframebeforestorecachebmbm:(NSInteger)-deleteComments;
++ (BOOL)TSetshouldreadjustframebeforestorecachebmbm:(NSInteger)-deleteComments;
++ (BOOL)RLeft_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)XSetleft_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)mTop_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)uSettop_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)oRight_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)DSetright_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)DBottom_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)mSetbottom_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)bCenterx_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)NSetcenterx_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)ACentery_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)wSetcentery_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)LWidth_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)MSetwidth_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)HHeight_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)DSetheight_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)dOrigin_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)LSetorigin_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)YSize_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)mSetsize_Sdbmbm:(NSInteger)-deleteComments;
++ (BOOL)LSetwidthbmbm:(NSInteger)-deleteComments;
++ (BOOL)FSetheightbmbm:(NSInteger)-deleteComments;
++ (BOOL)GSetsizebmbm:(NSInteger)-deleteComments;
++ (BOOL)oLeftbmbm:(NSInteger)-deleteComments;
++ (BOOL)NSetleftbmbm:(NSInteger)-deleteComments;
++ (BOOL)LRightbmbm:(NSInteger)-deleteComments;
++ (BOOL)lSetrightbmbm:(NSInteger)-deleteComments;
++ (BOOL)eWidthbmbm:(NSInteger)-deleteComments;
++ (BOOL)rHeightbmbm:(NSInteger)-deleteComments;
++ (BOOL)ATopbmbm:(NSInteger)-deleteComments;
++ (BOOL)HSettopbmbm:(NSInteger)-deleteComments;
++ (BOOL)QBottombmbm:(NSInteger)-deleteComments;
++ (BOOL)NSetbottombmbm:(NSInteger)-deleteComments;
++ (BOOL)wCenterxbmbm:(NSInteger)-deleteComments;
++ (BOOL)NSetcenterxbmbm:(NSInteger)-deleteComments;
++ (BOOL)JCenterybmbm:(NSInteger)-deleteComments;
++ (BOOL)sSetcenterybmbm:(NSInteger)-deleteComments;
++ (BOOL)mOriginbmbm:(NSInteger)-deleteComments;
++ (BOOL)gSetoriginbmbm:(NSInteger)-deleteComments;
++ (BOOL)eSizebmbm:(NSInteger)-deleteComments;
+
+@end

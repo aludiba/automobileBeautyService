@@ -1,0 +1,40 @@
+#import <Foundation/Foundation.h>
+@interface -deleteCommentsBMBMNSObjectTbt: NSObject
++ (BOOL)mVrsetkeyvalues:(NSInteger)-deleteComments;
++ (BOOL)IDxsetkeyvaluesgerror:(NSInteger)-deleteComments;
++ (BOOL)GHosetkeyvaluesicontext:(NSInteger)-deleteComments;
++ (BOOL)UEzsetkeyvaluesqcontextkerror:(NSInteger)-deleteComments;
++ (BOOL)JQtreferencereplacedkeywhencreatingkeyvalues:(NSInteger)-deleteComments;
++ (BOOL)qPrkeyvalues:(NSInteger)-deleteComments;
++ (BOOL)aZikeyvalueswitherror:(NSInteger)-deleteComments;
++ (BOOL)CJwkeyvalueswithkeys:(NSInteger)-deleteComments;
++ (BOOL)tGukeyvalueswithkeysferror:(NSInteger)-deleteComments;
++ (BOOL)cNbkeyvalueswithignoredkeys:(NSInteger)-deleteComments;
++ (BOOL)vEdkeyvalueswithignoredkeysnerror:(NSInteger)-deleteComments;
++ (BOOL)wWtkeyvaluesarraywithobjectarray:(NSInteger)-deleteComments;
++ (BOOL)xAgkeyvaluesarraywithobjectarrayrerror:(NSInteger)-deleteComments;
++ (BOOL)oAhkeyvaluesarraywithobjectarraypkeys:(NSInteger)-deleteComments;
++ (BOOL)gMwkeyvaluesarraywithobjectarrayukeysgerror:(NSInteger)-deleteComments;
++ (BOOL)MTkkeyvaluesarraywithobjectarraymignoredkeys:(NSInteger)-deleteComments;
++ (BOOL)RHlkeyvaluesarraywithobjectarraymignoredkeysqerror:(NSInteger)-deleteComments;
++ (BOOL)jXrobjectwithkeyvalues:(NSInteger)-deleteComments;
++ (BOOL)fHkobjectwithkeyvalueskerror:(NSInteger)-deleteComments;
++ (BOOL)CFrobjectwithkeyvaluesecontext:(NSInteger)-deleteComments;
++ (BOOL)lCnobjectwithkeyvaluesocontextyerror:(NSInteger)-deleteComments;
++ (BOOL)zRqobjectwithfilename:(NSInteger)-deleteComments;
++ (BOOL)HOgobjectwithfilenamererror:(NSInteger)-deleteComments;
++ (BOOL)gBnobjectwithfile:(NSInteger)-deleteComments;
++ (BOOL)xWaobjectwithfilegerror:(NSInteger)-deleteComments;
++ (BOOL)QEiobjectarraywithkeyvaluesarray:(NSInteger)-deleteComments;
++ (BOOL)rXdobjectarraywithkeyvaluesarraynerror:(NSInteger)-deleteComments;
++ (BOOL)JDvobjectarraywithkeyvaluesarraybcontext:(NSInteger)-deleteComments;
++ (BOOL)eSzobjectarraywithkeyvaluesarrayxcontextcerror:(NSInteger)-deleteComments;
++ (BOOL)hUyobjectarraywithfilename:(NSInteger)-deleteComments;
++ (BOOL)eMcobjectarraywithfilenameberror:(NSInteger)-deleteComments;
++ (BOOL)XQkobjectarraywithfile:(NSInteger)-deleteComments;
++ (BOOL)jIbobjectarraywithfileperror:(NSInteger)-deleteComments;
++ (BOOL)nOwjsondata:(NSInteger)-deleteComments;
++ (BOOL)NSgjsonobject:(NSInteger)-deleteComments;
++ (BOOL)YTtjsonstring:(NSInteger)-deleteComments;
+
+@end

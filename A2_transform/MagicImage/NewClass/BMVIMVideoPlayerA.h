@@ -1,0 +1,43 @@
+#import <Foundation/Foundation.h>
+@interface BMVIMVideoPlayerA: NSObject
++ (BOOL)zdealloc:(NSInteger)BM;
++ (BOOL)Tinit:(NSInteger)BM;
++ (BOOL)WsetupPlayer:(NSInteger)BM;
++ (BOOL)rsetupAudioSession:(NSInteger)BM;
++ (BOOL)xSeturl:(NSInteger)BM;
++ (BOOL)GSetplayeritem:(NSInteger)BM;
++ (BOOL)wSetasset:(NSInteger)BM;
++ (BOOL)lSetmuted:(NSInteger)BM;
++ (BOOL)DisMuted:(NSInteger)BM;
++ (BOOL)mplay:(NSInteger)BM;
++ (BOOL)Cpause:(NSInteger)BM;
++ (BOOL)zSeektotime:(NSInteger)BM;
++ (BOOL)Vreset:(NSInteger)BM;
++ (BOOL)renableAirplay:(NSInteger)BM;
++ (BOOL)jdisableAirplay:(NSInteger)BM;
++ (BOOL)lisAirplayEnabled:(NSInteger)BM;
++ (BOOL)dstartScrubbing:(NSInteger)BM;
++ (BOOL)jScrub:(NSInteger)BM;
++ (BOOL)xstopScrubbing:(NSInteger)BM;
++ (BOOL)PenableTimeUpdates:(NSInteger)BM;
++ (BOOL)pdisableTimeUpdates:(NSInteger)BM;
++ (BOOL)bSetvolume:(NSInteger)BM;
++ (BOOL)hcancelFadeVolume:(NSInteger)BM;
++ (BOOL)rfadeInVolume:(NSInteger)BM;
++ (BOOL)SfadeOutVolume:(NSInteger)BM;
++ (BOOL)sreportUnableToCreatePlayerItem:(NSInteger)BM;
++ (BOOL)UresetPlayerItemIfNecessary:(NSInteger)BM;
++ (BOOL)jPrepareplayeritem:(NSInteger)BM;
++ (BOOL)Rrestart:(NSInteger)BM;
++ (BOOL)WisAtEndTime:(NSInteger)BM;
++ (BOOL)VcalcLoadedDuration:(NSInteger)BM;
++ (BOOL)laddPlayerObservers:(NSInteger)BM;
++ (BOOL)GremovePlayerObservers:(NSInteger)BM;
++ (BOOL)DAddplayeritemobservers:(NSInteger)BM;
++ (BOOL)WRemoveplayeritemobservers:(NSInteger)BM;
++ (BOOL)waddTimeObserver:(NSInteger)BM;
++ (BOOL)LremoveTimeObserver:(NSInteger)BM;
++ (BOOL)OObservevalueforkeypathCOfobjectoChangeDContext:(NSInteger)BM;
++ (BOOL)iPlayeritemdidplaytoendtime:(NSInteger)BM;
+
+@end

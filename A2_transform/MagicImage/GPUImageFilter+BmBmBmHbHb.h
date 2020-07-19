@@ -1,0 +1,57 @@
+#import "GPUImageOutput.h"
+#import "GPUImageFilter.h"
+#import "GPUImagePicture.h"
+#import <AVFoundation/AVFoundation.h>
+#import "GPUImageFilter+Bm.h"
+#import "GPUImageFilter+BmBm.h"
+#import "GPUImageFilter+BmBmBm.h"
+#import "GPUImageFilter+BmBmBmHb.h"
+
+@interface GPUImageFilter (BmBmBmHbHb)
++ (BOOL)initWithVertexShaderFromStringFragmentshaderfromstringBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)initWithFragmentShaderFromStringBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)initWithFragmentShaderFromFileBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)initBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)initializeAttributesBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setupFilterForSizeBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)deallocBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)useNextFrameForImageCaptureBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)newCGImageFromCurrentlyProcessedOutputBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)sizeOfFBOBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)textureCoordinatesForRotationBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)renderToTextureWithVerticesTexturecoordinatesBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)informTargetsAboutNewFrameAtTimeBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)outputFrameSizeBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setBackgroundColorRedGreenBlueAlphaBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setIntegerForuniformnameBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setFloatForuniformnameBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setSizeForuniformnameBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setPointForuniformnameBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setFloatVec3ForuniformnameBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setFloatVec4ForuniformBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setFloatArrayLengthForuniformBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setMatrix3fForuniformProgramBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setMatrix4fForuniformProgramBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setFloatForuniformProgramBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setPointForuniformProgramBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setSizeForuniformProgramBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setVec3ForuniformProgramBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setVec4ForuniformProgramBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setFloatArrayLengthForuniformProgramBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setIntegerForuniformProgramBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setAndExecuteUniformStateCallbackAtIndexForprogramToblockBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setUniformsForProgramAtIndexBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)newFrameReadyAtTimeAtindexBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)nextAvailableTextureIndexBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setInputFramebufferAtindexBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)rotatedSizeForindexBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)rotatedPointForrotationBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setInputSizeAtindexBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)setInputRotationAtindexBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)forceProcessingAtSizeBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)forceProcessingAtSizeRespectingAspectRatioBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)maximumOutputSizeBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)endProcessingBmBmBmHbHb:(NSInteger)hb;
++ (BOOL)wantsMonochromeInputBmBmBmHbHb:(NSInteger)hb;
+
+@end

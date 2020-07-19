@@ -1,0 +1,40 @@
+#import <Foundation/Foundation.h>
+@interface hbBMNSObjectTx: NSObject
++ (BOOL)TRsetkeyvaluesbm:(NSInteger)hb;
++ (BOOL)yXsetkeyvaluesgerrorbm:(NSInteger)hb;
++ (BOOL)LOsetkeyvaluesicontextbm:(NSInteger)hb;
++ (BOOL)LZsetkeyvaluesqcontextkerrorbm:(NSInteger)hb;
++ (BOOL)bTreferencereplacedkeywhencreatingkeyvaluesbm:(NSInteger)hb;
++ (BOOL)gRkeyvaluesbm:(NSInteger)hb;
++ (BOOL)jIkeyvalueswitherrorbm:(NSInteger)hb;
++ (BOOL)XWkeyvalueswithkeysbm:(NSInteger)hb;
++ (BOOL)jUkeyvalueswithkeysferrorbm:(NSInteger)hb;
++ (BOOL)dBkeyvalueswithignoredkeysbm:(NSInteger)hb;
++ (BOOL)hDkeyvalueswithignoredkeysnerrorbm:(NSInteger)hb;
++ (BOOL)uTkeyvaluesarraywithobjectarraybm:(NSInteger)hb;
++ (BOOL)vGkeyvaluesarraywithobjectarrayrerrorbm:(NSInteger)hb;
++ (BOOL)THkeyvaluesarraywithobjectarraypkeysbm:(NSInteger)hb;
++ (BOOL)QWkeyvaluesarraywithobjectarrayukeysgerrorbm:(NSInteger)hb;
++ (BOOL)yKkeyvaluesarraywithobjectarraymignoredkeysbm:(NSInteger)hb;
++ (BOOL)eLkeyvaluesarraywithobjectarraymignoredkeysqerrorbm:(NSInteger)hb;
++ (BOOL)nRobjectwithkeyvaluesbm:(NSInteger)hb;
++ (BOOL)NKobjectwithkeyvalueskerrorbm:(NSInteger)hb;
++ (BOOL)DRobjectwithkeyvaluesecontextbm:(NSInteger)hb;
++ (BOOL)rNobjectwithkeyvaluesocontextyerrorbm:(NSInteger)hb;
++ (BOOL)eQobjectwithfilenamebm:(NSInteger)hb;
++ (BOOL)XGobjectwithfilenamererrorbm:(NSInteger)hb;
++ (BOOL)vNobjectwithfilebm:(NSInteger)hb;
++ (BOOL)GAobjectwithfilegerrorbm:(NSInteger)hb;
++ (BOOL)fIobjectarraywithkeyvaluesarraybm:(NSInteger)hb;
++ (BOOL)MDobjectarraywithkeyvaluesarraynerrorbm:(NSInteger)hb;
++ (BOOL)KVobjectarraywithkeyvaluesarraybcontextbm:(NSInteger)hb;
++ (BOOL)SZobjectarraywithkeyvaluesarrayxcontextcerrorbm:(NSInteger)hb;
++ (BOOL)RYobjectarraywithfilenamebm:(NSInteger)hb;
++ (BOOL)UCobjectarraywithfilenameberrorbm:(NSInteger)hb;
++ (BOOL)WKobjectarraywithfilebm:(NSInteger)hb;
++ (BOOL)fBobjectarraywithfileperrorbm:(NSInteger)hb;
++ (BOOL)TWjsondatabm:(NSInteger)hb;
++ (BOOL)OGjsonobjectbm:(NSInteger)hb;
++ (BOOL)pTjsonstringbm:(NSInteger)hb;
+
+@end

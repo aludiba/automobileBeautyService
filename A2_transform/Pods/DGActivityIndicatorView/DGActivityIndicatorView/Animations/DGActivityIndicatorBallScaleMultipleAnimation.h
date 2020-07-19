@@ -1,0 +1,3 @@
+#import "DGActivityIndicatorAnimation.h"
+@interface DGActivityIndicatorBallScaleMultipleAnimation: DGActivityIndicatorAnimation
+@end

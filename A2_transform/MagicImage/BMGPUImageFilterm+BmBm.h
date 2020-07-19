@@ -1,0 +1,52 @@
+#import <Foundation/Foundation.h>
+#import "BMGPUImageFilterm.h"
+#import "BMGPUImageFilterm+Bm.h"
+
+@interface BMGPUImageFilterm (BmBm)
++ (BOOL)JInitwithvertexshaderfromstringfragmentshaderfromstringbmBmBm:(NSInteger)BM;
++ (BOOL)PInitwithfragmentshaderfromstringbmBmBm:(NSInteger)BM;
++ (BOOL)LInitwithfragmentshaderfromfilebmBmBm:(NSInteger)BM;
++ (BOOL)FInitbmBmBm:(NSInteger)BM;
++ (BOOL)HInitializeattributesbmBmBm:(NSInteger)BM;
++ (BOOL)LSetupfilterforsizebmBmBm:(NSInteger)BM;
++ (BOOL)PDeallocbmBmBm:(NSInteger)BM;
++ (BOOL)oUsenextframeforimagecapturebmBmBm:(NSInteger)BM;
++ (BOOL)nNewcgimagefromcurrentlyprocessedoutputbmBmBm:(NSInteger)BM;
++ (BOOL)eSizeoffbobmBmBm:(NSInteger)BM;
++ (BOOL)WTexturecoordinatesforrotationbmBmBm:(NSInteger)BM;
++ (BOOL)ORendertotexturewithverticestexturecoordinatesbmBmBm:(NSInteger)BM;
++ (BOOL)qInformtargetsaboutnewframeattimebmBmBm:(NSInteger)BM;
++ (BOOL)yOutputframesizebmBmBm:(NSInteger)BM;
++ (BOOL)ZSetbackgroundcolorredgreenbluealphabmBmBm:(NSInteger)BM;
++ (BOOL)cSetintegerforuniformnamebmBmBm:(NSInteger)BM;
++ (BOOL)qSetfloatforuniformnamebmBmBm:(NSInteger)BM;
++ (BOOL)dSetsizeforuniformnamebmBmBm:(NSInteger)BM;
++ (BOOL)zSetpointforuniformnamebmBmBm:(NSInteger)BM;
++ (BOOL)GSetfloatvec3ForuniformnamebmBmBm:(NSInteger)BM;
++ (BOOL)mSetfloatvec4ForuniformbmBmBm:(NSInteger)BM;
++ (BOOL)XSetfloatarraylengthforuniformbmBmBm:(NSInteger)BM;
++ (BOOL)hSetmatrix3FforuniformprogrambmBmBm:(NSInteger)BM;
++ (BOOL)wSetmatrix4FforuniformprogrambmBmBm:(NSInteger)BM;
++ (BOOL)uSetfloatforuniformprogrambmBmBm:(NSInteger)BM;
++ (BOOL)bSetpointforuniformprogrambmBmBm:(NSInteger)BM;
++ (BOOL)tSetsizeforuniformprogrambmBmBm:(NSInteger)BM;
++ (BOOL)jSetvec3ForuniformprogrambmBmBm:(NSInteger)BM;
++ (BOOL)RSetvec4ForuniformprogrambmBmBm:(NSInteger)BM;
++ (BOOL)ESetfloatarraylengthforuniformprogrambmBmBm:(NSInteger)BM;
++ (BOOL)FSetintegerforuniformprogrambmBmBm:(NSInteger)BM;
++ (BOOL)pSetandexecuteuniformstatecallbackatindexforprogramtoblockbmBmBm:(NSInteger)BM;
++ (BOOL)SSetuniformsforprogramatindexbmBmBm:(NSInteger)BM;
++ (BOOL)jNewframereadyattimeatindexbmBmBm:(NSInteger)BM;
++ (BOOL)nNextavailabletextureindexbmBmBm:(NSInteger)BM;
++ (BOOL)USetinputframebufferatindexbmBmBm:(NSInteger)BM;
++ (BOOL)dRotatedsizeforindexbmBmBm:(NSInteger)BM;
++ (BOOL)rRotatedpointforrotationbmBmBm:(NSInteger)BM;
++ (BOOL)wSetinputsizeatindexbmBmBm:(NSInteger)BM;
++ (BOOL)TSetinputrotationatindexbmBmBm:(NSInteger)BM;
++ (BOOL)kForceprocessingatsizebmBmBm:(NSInteger)BM;
++ (BOOL)OForceprocessingatsizerespectingaspectratiobmBmBm:(NSInteger)BM;
++ (BOOL)WMaximumoutputsizebmBmBm:(NSInteger)BM;
++ (BOOL)BEndprocessingbmBmBm:(NSInteger)BM;
++ (BOOL)mWantsmonochromeinputbmBmBm:(NSInteger)BM;
+
+@end

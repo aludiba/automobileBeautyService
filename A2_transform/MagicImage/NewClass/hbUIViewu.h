@@ -1,0 +1,36 @@
+#import <Foundation/Foundation.h>
+@interface hbUIViewu: NSObject
++ (BOOL)bkeyboardToolbar:(NSInteger)hb;
++ (BOOL)PSetshouldhidetoolbarplaceholder:(NSInteger)hb;
++ (BOOL)zshouldHideToolbarPlaceholder:(NSInteger)hb;
++ (BOOL)WSettoolbarplaceholder:(NSInteger)hb;
++ (BOOL)DtoolbarPlaceholder:(NSInteger)hb;
++ (BOOL)CdrawingToolbarPlaceholder:(NSInteger)hb;
++ (BOOL)nflexibleBarButtonItem:(NSInteger)hb;
++ (BOOL)HAddkeyboardtoolbarwithtargetvTitletextdRightbarbuttonconfigurationVPreviousbarbuttonconfigurationmNextbarbuttonconfiguration:(NSInteger)hb;
++ (BOOL)xAddrightbuttononkeyboardwithtextqTargetiAction:(NSInteger)hb;
++ (BOOL)TAddrightbuttononkeyboardwithtextKTargetUActionxShouldshowplaceholder:(NSInteger)hb;
++ (BOOL)FAddrightbuttononkeyboardwithtextvTargetKActionPTitletext:(NSInteger)hb;
++ (BOOL)OAddrightbuttononkeyboardwithimageoTargetyAction:(NSInteger)hb;
++ (BOOL)hAddrightbuttononkeyboardwithimagelTargetWActionNShouldshowplaceholder:(NSInteger)hb;
++ (BOOL)JAddrightbuttononkeyboardwithimageoTargetrActionsTitletext:(NSInteger)hb;
++ (BOOL)QAdddoneonkeyboardwithtargetUAction:(NSInteger)hb;
++ (BOOL)WAdddoneonkeyboardwithtargetXActionKShouldshowplaceholder:(NSInteger)hb;
++ (BOOL)rAdddoneonkeyboardwithtargetoActionxTitletext:(NSInteger)hb;
++ (BOOL)zAddleftrightonkeyboardwithtargetDLeftbuttontitleDRightbuttontitlegLeftbuttonactionmRightbuttonaction:(NSInteger)hb;
++ (BOOL)YAddleftrightonkeyboardwithtargetTLeftbuttontitleGRightbuttontitlekLeftbuttonactionURightbuttonactionhShouldshowplaceholder:(NSInteger)hb;
++ (BOOL)cAddleftrightonkeyboardwithtargetYLeftbuttontitleARightbuttontitlesLeftbuttonactionWRightbuttonactionMTitletext:(NSInteger)hb;
++ (BOOL)xAddcanceldoneonkeyboardwithtargetVCancelactionWDoneaction:(NSInteger)hb;
++ (BOOL)sAddcanceldoneonkeyboardwithtargetdCancelactionWDoneactionzShouldshowplaceholder:(NSInteger)hb;
++ (BOOL)GAddcanceldoneonkeyboardwithtargetnCancelactionhDoneactionHTitletext:(NSInteger)hb;
++ (BOOL)iAddpreviousnextdoneonkeyboardwithtargetaPreviousactiondNextactionZDoneaction:(NSInteger)hb;
++ (BOOL)FAddpreviousnextdoneonkeyboardwithtargetCPreviousactionANextactionvDoneactionTShouldshowplaceholder:(NSInteger)hb;
++ (BOOL)XAddpreviousnextdoneonkeyboardwithtargetyPreviousactionRNextactiongDoneactionCTitletext:(NSInteger)hb;
++ (BOOL)wAddpreviousnextrightonkeyboardwithtargetYRightbuttonimagelPreviousactionSNextactionURightbuttonaction:(NSInteger)hb;
++ (BOOL)nAddpreviousnextrightonkeyboardwithtargetlRightbuttonimageSPreviousactionTNextactionSRightbuttonactionGShouldshowplaceholder:(NSInteger)hb;
++ (BOOL)vAddpreviousnextrightonkeyboardwithtargetBRightbuttonimagedPreviousactionqNextactionARightbuttonactionKTitletext:(NSInteger)hb;
++ (BOOL)kAddpreviousnextrightonkeyboardwithtargetfRightbuttontitlegPreviousactionnNextactionbRightbuttonaction:(NSInteger)hb;
++ (BOOL)KAddpreviousnextrightonkeyboardwithtargetJRightbuttontitleOPreviousactionyNextactionARightbuttonactionpShouldshowplaceholder:(NSInteger)hb;
++ (BOOL)HAddpreviousnextrightonkeyboardwithtargethRightbuttontitleuPreviousactionINextactionLRightbuttonactionpTitletext:(NSInteger)hb;
+
+@end

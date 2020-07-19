@@ -1,0 +1,21 @@
+install!'cocoapods',:deterministic_uuids=>false
+#source 'https://github.com/CocoaPods/Specs.git'
+platform:ios,'9.0'
+target 'MagicImage' do
+pod 'GPUImage'
+pod 'DGActivityIndicatorView'
+pod 'ReactiveObjC'
+pod 'YYModel'
+pod 'YYCategories'
+pod 'Masonry'
+pod 'TOCropViewController'
+pod 'AFNetworking'
+pod 'MJExtension'
+pod 'YCPopover'
+pod 'MJRefresh'
+pod 'FSTextView'
+pod 'MBProgressHUD'
+pod 'SDAutoLayout'
+pod 'SDWebImage'
+pod 'SDCycleScrollView'
+end

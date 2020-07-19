@@ -1,0 +1,9 @@
+#import "GPUImage3x3TextureSamplingFilter.h"
+#import "GPUImageWeakPixelInclusionFilter.h"
+#import "GPUImageWeakPixelInclusionFilter+Bm.h"
+#import "GPUImageWeakPixelInclusionFilter+BmBm.h"
+
+@interface GPUImageWeakPixelInclusionFilter (BmBmBm)
++ (BOOL)initBmBmBm:(NSInteger)BM;
+
+@end

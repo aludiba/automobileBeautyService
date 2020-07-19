@@ -1,0 +1,8 @@
+{
+  "fragment" : "fragment.glsl",
+  "icon" : "abao.jpg",
+  "name" : "Teenage girl",
+  "images" : [
+    "image_1.png"
+  ]
+}

@@ -1,0 +1,44 @@
+#import <Foundation/Foundation.h>
+@interface -deleteCommentsBMMBProgressHUDan: NSObject
++ (BOOL)YAshowhudaddedtoanimatedbm:(NSInteger)-deleteComments;
++ (BOOL)NHhidehudforviewanimatedbm:(NSInteger)-deleteComments;
++ (BOOL)EVhideallhudsforviewanimatedbm:(NSInteger)-deleteComments;
++ (BOOL)VVhudforviewbm:(NSInteger)-deleteComments;
++ (BOOL)aPallhudsforviewbm:(NSInteger)-deleteComments;
++ (BOOL)tKinitwithframebm:(NSInteger)-deleteComments;
++ (BOOL)PLinitwithviewbm:(NSInteger)-deleteComments;
++ (BOOL)vOinitwithwindowbm:(NSInteger)-deleteComments;
++ (BOOL)cEdeallocbm:(NSInteger)-deleteComments;
++ (BOOL)DVshowbm:(NSInteger)-deleteComments;
++ (BOOL)AAhidebm:(NSInteger)-deleteComments;
++ (BOOL)OEhideafterdelaybm:(NSInteger)-deleteComments;
++ (BOOL)FQhidedelayedbm:(NSInteger)-deleteComments;
++ (BOOL)sQhandlegracetimerbm:(NSInteger)-deleteComments;
++ (BOOL)NLhandleminshowtimerbm:(NSInteger)-deleteComments;
++ (BOOL)aUdidmovetosuperviewbm:(NSInteger)-deleteComments;
++ (BOOL)gOshowusinganimationbm:(NSInteger)-deleteComments;
++ (BOOL)XOhideusinganimationbm:(NSInteger)-deleteComments;
++ (BOOL)hGanimationfinishedfinishedcontextbm:(NSInteger)-deleteComments;
++ (BOOL)oFdonebm:(NSInteger)-deleteComments;
++ (BOOL)eUshowwhileexecutingontargetwithobjectanimatedbm:(NSInteger)-deleteComments;
++ (BOOL)VDshowanimatedwhileexecutingblockbm:(NSInteger)-deleteComments;
++ (BOOL)fMshowanimatedwhileexecutingblockcompletionblockbm:(NSInteger)-deleteComments;
++ (BOOL)OJshowanimatedwhileexecutingblockonqueuebm:(NSInteger)-deleteComments;
++ (BOOL)eWshowanimatedwhileexecutingblockonqueuecompletionblockbm:(NSInteger)-deleteComments;
++ (BOOL)DHlaunchexecutionbm:(NSInteger)-deleteComments;
++ (BOOL)EQcleanupbm:(NSInteger)-deleteComments;
++ (BOOL)rIsetuplabelsbm:(NSInteger)-deleteComments;
++ (BOOL)eAupdateindicatorsbm:(NSInteger)-deleteComments;
++ (BOOL)WVlayoutsubviewsbm:(NSInteger)-deleteComments;
++ (BOOL)ZTdrawrectbm:(NSInteger)-deleteComments;
++ (BOOL)XVregisterforkvobm:(NSInteger)-deleteComments;
++ (BOOL)zTunregisterfromkvobm:(NSInteger)-deleteComments;
++ (BOOL)LYobservablekeypathsbm:(NSInteger)-deleteComments;
++ (BOOL)VGobservevalueforkeypathofobjectchangecontextbm:(NSInteger)-deleteComments;
++ (BOOL)UHupdateuiforkeypathbm:(NSInteger)-deleteComments;
++ (BOOL)uOregisterfornotificationsbm:(NSInteger)-deleteComments;
++ (BOOL)NAunregisterfromnotificationsbm:(NSInteger)-deleteComments;
++ (BOOL)pKstatusbarorientationdidchangebm:(NSInteger)-deleteComments;
++ (BOOL)sYupdateforcurrentorientationanimatedbm:(NSInteger)-deleteComments;
+
+@end

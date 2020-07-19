@@ -1,0 +1,39 @@
+#import <Foundation/Foundation.h>
+@interface hbUIImagec: NSObject
++ (BOOL)dImagewithsmallgifdatascalehb:(NSInteger)hb;
++ (BOOL)oIsanimatedgifdatahb:(NSInteger)hb;
++ (BOOL)FIsanimatedgiffilehb:(NSInteger)hb;
++ (BOOL)IImagewithpdfhb:(NSInteger)hb;
++ (BOOL)qImagewithpdfsizehb:(NSInteger)hb;
++ (BOOL)TImagewithemojisizehb:(NSInteger)hb;
++ (BOOL)C_Yy_Imagewithpdfresizesizehb:(NSInteger)hb;
++ (BOOL)vImagewithcolorhb:(NSInteger)hb;
++ (BOOL)zImagewithcolorsizehb:(NSInteger)hb;
++ (BOOL)xImagewithsizedrawblockhb:(NSInteger)hb;
++ (BOOL)rHasalphachannelhb:(NSInteger)hb;
++ (BOOL)jDrawinrectwithcontentmodeclipstoboundshb:(NSInteger)hb;
++ (BOOL)NImagebyresizetosizehb:(NSInteger)hb;
++ (BOOL)qImagebyresizetosizecontentmodehb:(NSInteger)hb;
++ (BOOL)SImagebycroptorecthb:(NSInteger)hb;
++ (BOOL)nImagebyinsetedgewithcolorhb:(NSInteger)hb;
++ (BOOL)lImagebyroundcornerradiushb:(NSInteger)hb;
++ (BOOL)FImagebyroundcornerradiusborderwidthbordercolorhb:(NSInteger)hb;
++ (BOOL)uImagebyroundcornerradiuscornersborderwidthbordercolorborderlinejoinhb:(NSInteger)hb;
++ (BOOL)nImagebyrotatefitsizehb:(NSInteger)hb;
++ (BOOL)l_Yy_Fliphorizontalverticalhb:(NSInteger)hb;
++ (BOOL)IImagebyrotateleft90Hb:(NSInteger)hb;
++ (BOOL)EImagebyrotateright90Hb:(NSInteger)hb;
++ (BOOL)RImagebyrotate180Hb:(NSInteger)hb;
++ (BOOL)gImagebyflipverticalhb:(NSInteger)hb;
++ (BOOL)UImagebyfliphorizontalhb:(NSInteger)hb;
++ (BOOL)mImagebytintcolorhb:(NSInteger)hb;
++ (BOOL)XImagebygrayscalehb:(NSInteger)hb;
++ (BOOL)hImagebyblursofthb:(NSInteger)hb;
++ (BOOL)mImagebyblurlighthb:(NSInteger)hb;
++ (BOOL)PImagebyblurextralighthb:(NSInteger)hb;
++ (BOOL)AImagebyblurdarkhb:(NSInteger)hb;
++ (BOOL)pImagebyblurwithtinthb:(NSInteger)hb;
++ (BOOL)HImagebyblurradiustintcolortintmodesaturationmaskimagehb:(NSInteger)hb;
++ (BOOL)S_Yy_Mergeimagereftintcolortintblendmodemaskimageopaquehb:(NSInteger)hb;
+
+@end

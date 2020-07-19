@@ -1,0 +1,46 @@
+#import <Foundation/Foundation.h>
+@interface hbUIViewe: NSObject
++ (BOOL)hLoadbm:(NSInteger)hb;
++ (BOOL)wAutolayoutmodelsarraybm:(NSInteger)hb;
++ (BOOL)zFixedwidthbm:(NSInteger)hb;
++ (BOOL)kSetfixedwidthbm:(NSInteger)hb;
++ (BOOL)lFixedheightbm:(NSInteger)hb;
++ (BOOL)nSetfixedheightbm:(NSInteger)hb;
++ (BOOL)BAutoheightratiovaluebm:(NSInteger)hb;
++ (BOOL)WSetautoheightratiovaluebm:(NSInteger)hb;
++ (BOOL)KAutowidthratiovaluebm:(NSInteger)hb;
++ (BOOL)ISetautowidthratiovaluebm:(NSInteger)hb;
++ (BOOL)dSd_Maxwidthbm:(NSInteger)hb;
++ (BOOL)sSetsd_Maxwidthbm:(NSInteger)hb;
++ (BOOL)WUsecellframecachewithindexpathtableviewbm:(NSInteger)hb;
++ (BOOL)OSd_Tableviewbm:(NSInteger)hb;
++ (BOOL)fSetsd_Tableviewbm:(NSInteger)hb;
++ (BOOL)fSd_Indexpathbm:(NSInteger)hb;
++ (BOOL)tSetsd_Indexpathbm:(NSInteger)hb;
++ (BOOL)TOwnlayoutmodelbm:(NSInteger)hb;
++ (BOOL)pSetownlayoutmodelbm:(NSInteger)hb;
++ (BOOL)wSd_Layoutbm:(NSInteger)hb;
++ (BOOL)cSd_Resetlayoutbm:(NSInteger)hb;
++ (BOOL)gSd_Resetnewlayoutbm:(NSInteger)hb;
++ (BOOL)USd_Isclosingautolayoutbm:(NSInteger)hb;
++ (BOOL)MSetsd_Closeautolayoutbm:(NSInteger)hb;
++ (BOOL)JRemovefromsuperviewandclearautolayoutsettingsbm:(NSInteger)hb;
++ (BOOL)RSd_Clearautolayoutsettingsbm:(NSInteger)hb;
++ (BOOL)tSd_Clearextraautolayoutitemsbm:(NSInteger)hb;
++ (BOOL)VSd_Clearviewframecachebm:(NSInteger)hb;
++ (BOOL)RSd_Clearsubviewsautolayoutframecachesbm:(NSInteger)hb;
++ (BOOL)pSd_Layoutsubviewsbm:(NSInteger)hb;
++ (BOOL)ySd_Layoutsubviewshandlebm:(NSInteger)hb;
++ (BOOL)eSd_Resizewithmodelbm:(NSInteger)hb;
++ (BOOL)oLayoutautoheightwidthviewmodelbm:(NSInteger)hb;
++ (BOOL)OLayoutautowidthwidthviewmodelbm:(NSInteger)hb;
++ (BOOL)HLayoutwidthwithviewmodelbm:(NSInteger)hb;
++ (BOOL)BLayoutheightwithviewmodelbm:(NSInteger)hb;
++ (BOOL)rLayoutleftwithviewmodelbm:(NSInteger)hb;
++ (BOOL)RLayoutrightwithviewmodelbm:(NSInteger)hb;
++ (BOOL)RLayouttopwithviewmodelbm:(NSInteger)hb;
++ (BOOL)rLayoutbottomwithviewmodelbm:(NSInteger)hb;
++ (BOOL)XSetupcornerradiuswithviewmodelbm:(NSInteger)hb;
++ (BOOL)dAddautolayoutmodelbm:(NSInteger)hb;
+
+@end

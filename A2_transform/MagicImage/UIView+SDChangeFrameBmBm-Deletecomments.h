@@ -1,0 +1,52 @@
+#import <UIKit/UIKit.h>
+#import "UIView+SDAutoLayout.h"
+#import "UITableView+SDAutoTableViewCellHeight.h"
+#import <objc/runtime.h>
+#import "UIView+SDChangeFrameBm.h"
+#import "UIView+SDChangeFrameBmBm.h"
+
+@interface UIView (SDChangeFrameBmBm-Deletecomments)
++ (BOOL)shouldReadjustFrameBeforeStoreCacheBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setShouldReadjustFrameBeforeStoreCacheBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)left_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setLeft_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)top_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setTop_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)right_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setRight_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)bottom_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setBottom_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)centerX_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setCenterX_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)centerY_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setCenterY_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)width_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setWidth_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)height_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setHeight_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)origin_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setOrigin_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)size_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setSize_sdBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setWidthBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setHeightBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setSizeBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)leftBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setLeftBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)rightBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setRightBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)widthBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)heightBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)topBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setTopBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)bottomBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setBottomBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)centerXBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setCenterXBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)centerYBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setCenterYBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)originBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setOriginBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sizeBmBm-Deletecomments:(NSInteger)-deleteComments;
+
+@end

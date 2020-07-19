@@ -1,0 +1,55 @@
+#import <Foundation/Foundation.h>
+#import "BMSDCycleScrollViewY.h"
+
+@interface BMSDCycleScrollViewY (Bm)
++ (BOOL)aInitwithframeBm:(NSInteger)BM;
++ (BOOL)pawakeFromNibBm:(NSInteger)BM;
++ (BOOL)rinitializationBm:(NSInteger)BM;
++ (BOOL)uCyclescrollviewwithframeyImagenamesgroupBm:(NSInteger)BM;
++ (BOOL)HCyclescrollviewwithframebShouldinfiniteloopDImagenamesgroupBm:(NSInteger)BM;
++ (BOOL)zCyclescrollviewwithframeiImageurlstringsgroupBm:(NSInteger)BM;
++ (BOOL)gCyclescrollviewwithframesDelegateDPlaceholderimageBm:(NSInteger)BM;
++ (BOOL)FsetupMainViewBm:(NSInteger)BM;
++ (BOOL)lSetdelegateBm:(NSInteger)BM;
++ (BOOL)WSetplaceholderimageBm:(NSInteger)BM;
++ (BOOL)USetpagecontroldotsizeBm:(NSInteger)BM;
++ (BOOL)ESetshowpagecontrolBm:(NSInteger)BM;
++ (BOOL)MSetcurrentpagedotcolorBm:(NSInteger)BM;
++ (BOOL)WSetpagedotcolorBm:(NSInteger)BM;
++ (BOOL)HSetcurrentpagedotimageBm:(NSInteger)BM;
++ (BOOL)nSetpagedotimageBm:(NSInteger)BM;
++ (BOOL)USetcustompagecontroldotimagejIscurrentpagedotBm:(NSInteger)BM;
++ (BOOL)JSetinfiniteloopBm:(NSInteger)BM;
++ (BOOL)GSetautoscrollBm:(NSInteger)BM;
++ (BOOL)GSetscrolldirectionBm:(NSInteger)BM;
++ (BOOL)aSetautoscrolltimeintervalBm:(NSInteger)BM;
++ (BOOL)JSetpagecontrolstyleBm:(NSInteger)BM;
++ (BOOL)CSetimagepathsgroupBm:(NSInteger)BM;
++ (BOOL)USetimageurlstringsgroupBm:(NSInteger)BM;
++ (BOOL)ZSetlocalizationimagenamesgroupBm:(NSInteger)BM;
++ (BOOL)PSettitlesgroupBm:(NSInteger)BM;
++ (BOOL)VdisableScrollGestureBm:(NSInteger)BM;
++ (BOOL)rsetupTimerBm:(NSInteger)BM;
++ (BOOL)yinvalidateTimerBm:(NSInteger)BM;
++ (BOOL)zsetupPageControlBm:(NSInteger)BM;
++ (BOOL)RautomaticScrollBm:(NSInteger)BM;
++ (BOOL)MScrolltoindexBm:(NSInteger)BM;
++ (BOOL)ocurrentIndexBm:(NSInteger)BM;
++ (BOOL)xPagecontrolindexwithcurrentcellindexBm:(NSInteger)BM;
++ (BOOL)oclearCacheBm:(NSInteger)BM;
++ (BOOL)XclearImagesCacheBm:(NSInteger)BM;
++ (BOOL)OlayoutSubviewsBm:(NSInteger)BM;
++ (BOOL)NWillmovetosuperviewBm:(NSInteger)BM;
++ (BOOL)edeallocBm:(NSInteger)BM;
++ (BOOL)RadjustWhenControllerViewWillApperaBm:(NSInteger)BM;
++ (BOOL)WCollectionviewyNumberofitemsinsectionBm:(NSInteger)BM;
++ (BOOL)RCollectionviewwCellforitematindexpathBm:(NSInteger)BM;
++ (BOOL)uCollectionviewDDidselectitematindexpathBm:(NSInteger)BM;
++ (BOOL)WScrollviewdidscrollBm:(NSInteger)BM;
++ (BOOL)xScrollviewwillbegindraggingBm:(NSInteger)BM;
++ (BOOL)eScrollviewdidenddraggingSWilldecelerateBm:(NSInteger)BM;
++ (BOOL)IScrollviewdidenddeceleratingBm:(NSInteger)BM;
++ (BOOL)oScrollviewdidendscrollinganimationBm:(NSInteger)BM;
++ (BOOL)dMakescrollviewscrolltoindexBm:(NSInteger)BM;
+
+@end

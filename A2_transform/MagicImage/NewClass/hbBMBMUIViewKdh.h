@@ -1,0 +1,36 @@
+#import <Foundation/Foundation.h>
+@interface hbBMBMUIViewKdh: NSObject
++ (BOOL)GJdkeyboardtoolbarbmbmhb:(NSInteger)hb;
++ (BOOL)JTfsetshouldhidetoolbarplaceholderbmbmhb:(NSInteger)hb;
++ (BOOL)rFbshouldhidetoolbarplaceholderbmbmhb:(NSInteger)hb;
++ (BOOL)fIbsettoolbarplaceholderbmbmhb:(NSInteger)hb;
++ (BOOL)hCbtoolbarplaceholderbmbmhb:(NSInteger)hb;
++ (BOOL)ZRrdrawingtoolbarplaceholderbmbmhb:(NSInteger)hb;
++ (BOOL)dYcflexiblebarbuttonitembmbmhb:(NSInteger)hb;
++ (BOOL)vToaddkeyboardtoolbarwithtargettitletextrightbarbuttonconfigurationpreviousbarbuttonconfigurationnextbarbuttonconfigurationbmbmhb:(NSInteger)hb;
++ (BOOL)KWqaddrightbuttononkeyboardwithtexttargetactionbmbmhb:(NSInteger)hb;
++ (BOOL)ZYoaddrightbuttononkeyboardwithtexttargetactionshouldshowplaceholderbmbmhb:(NSInteger)hb;
++ (BOOL)EMvaddrightbuttononkeyboardwithtexttargetactiontitletextbmbmhb:(NSInteger)hb;
++ (BOOL)NYbaddrightbuttononkeyboardwithimagetargetactionbmbmhb:(NSInteger)hb;
++ (BOOL)BZxaddrightbuttononkeyboardwithimagetargetactionshouldshowplaceholderbmbmhb:(NSInteger)hb;
++ (BOOL)wEzaddrightbuttononkeyboardwithimagetargetactiontitletextbmbmhb:(NSInteger)hb;
++ (BOOL)BZhadddoneonkeyboardwithtargetactionbmbmhb:(NSInteger)hb;
++ (BOOL)YHtadddoneonkeyboardwithtargetactionshouldshowplaceholderbmbmhb:(NSInteger)hb;
++ (BOOL)vPnadddoneonkeyboardwithtargetactiontitletextbmbmhb:(NSInteger)hb;
++ (BOOL)NMiaddleftrightonkeyboardwithtargetleftbuttontitlerightbuttontitleleftbuttonactionrightbuttonactionbmbmhb:(NSInteger)hb;
++ (BOOL)BKbaddleftrightonkeyboardwithtargetleftbuttontitlerightbuttontitleleftbuttonactionrightbuttonactionshouldshowplaceholderbmbmhb:(NSInteger)hb;
++ (BOOL)pHfaddleftrightonkeyboardwithtargetleftbuttontitlerightbuttontitleleftbuttonactionrightbuttonactiontitletextbmbmhb:(NSInteger)hb;
++ (BOOL)RUcaddcanceldoneonkeyboardwithtargetcancelactiondoneactionbmbmhb:(NSInteger)hb;
++ (BOOL)TDtaddcanceldoneonkeyboardwithtargetcancelactiondoneactionshouldshowplaceholderbmbmhb:(NSInteger)hb;
++ (BOOL)KKqaddcanceldoneonkeyboardwithtargetcancelactiondoneactiontitletextbmbmhb:(NSInteger)hb;
++ (BOOL)uGzaddpreviousnextdoneonkeyboardwithtargetpreviousactionnextactiondoneactionbmbmhb:(NSInteger)hb;
++ (BOOL)HZeaddpreviousnextdoneonkeyboardwithtargetpreviousactionnextactiondoneactionshouldshowplaceholderbmbmhb:(NSInteger)hb;
++ (BOOL)oEcaddpreviousnextdoneonkeyboardwithtargetpreviousactionnextactiondoneactiontitletextbmbmhb:(NSInteger)hb;
++ (BOOL)OKzaddpreviousnextrightonkeyboardwithtargetrightbuttonimagepreviousactionnextactionrightbuttonactionbmbmhb:(NSInteger)hb;
++ (BOOL)eCraddpreviousnextrightonkeyboardwithtargetrightbuttonimagepreviousactionnextactionrightbuttonactionshouldshowplaceholderbmbmhb:(NSInteger)hb;
++ (BOOL)oJdaddpreviousnextrightonkeyboardwithtargetrightbuttonimagepreviousactionnextactionrightbuttonactiontitletextbmbmhb:(NSInteger)hb;
++ (BOOL)sYzaddpreviousnextrightonkeyboardwithtargetrightbuttontitlepreviousactionnextactionrightbuttonactionbmbmhb:(NSInteger)hb;
++ (BOOL)hYfaddpreviousnextrightonkeyboardwithtargetrightbuttontitlepreviousactionnextactionrightbuttonactionshouldshowplaceholderbmbmhb:(NSInteger)hb;
++ (BOOL)dSvaddpreviousnextrightonkeyboardwithtargetrightbuttontitlepreviousactionnextactionrightbuttonactiontitletextbmbmhb:(NSInteger)hb;
+
+@end

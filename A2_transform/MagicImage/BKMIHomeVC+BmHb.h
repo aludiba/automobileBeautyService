@@ -1,0 +1,49 @@
+#import <UIKit/UIKit.h>
+#import "BKMIHomeVC.h"
+#import "BKMIHomeView.h"
+#import "QMBaseNavigationController.h"
+#import "QMCameraViewController.h"
+#import "BKMIHomeSectionOneCell.h"
+#import "BKMIHomeSectionTowCell.h"
+#import "SDCycleScrollView.h"
+#import "BKMIHomeHeaderView.h"
+#import "BKMIHomeModel.h"
+#import "BKMIBaseTypeVC.h"
+#import "QMPhotoEffectViewController.h"
+#import <Photos/Photos.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+#import "BKMIStickerDetailVC.h"
+#import "BKMITagsVC.h"
+#import "BKMIFilterDetailVC.h"
+#import "BKMIHomeVC+Bm.h"
+
+@interface BKMIHomeVC (BmHb)
++ (BOOL)BKtableViewBmHb:(NSInteger)hb;
++ (BOOL)BKdataArrayBmHb:(NSInteger)hb;
++ (BOOL)BKbannaerArrayBmHb:(NSInteger)hb;
++ (BOOL)viewWillAppearBmHb:(NSInteger)hb;
++ (BOOL)viewWillDisappearBmHb:(NSInteger)hb;
++ (BOOL)viewDidLoadBmHb:(NSInteger)hb;
++ (BOOL)BKloginOutBmHb:(NSInteger)hb;
++ (BOOL)BKcreateHeaderViewBmHb:(NSInteger)hb;
++ (BOOL)BKloadDataBmHb:(NSInteger)hb;
++ (BOOL)BKshopBtnClickedBmHb:(NSInteger)hb;
++ (BOOL)tableViewNumberofrowsinsectionBmHb:(NSInteger)hb;
++ (BOOL)numberOfSectionsInTableViewBmHb:(NSInteger)hb;
++ (BOOL)tableViewCellforrowatindexpathBmHb:(NSInteger)hb;
++ (BOOL)tableViewDidselectrowatindexpathBmHb:(NSInteger)hb;
++ (BOOL)BKcanUsePhotoBmHb:(NSInteger)hb;
++ (BOOL)alertViewClickedbuttonatindexBmHb:(NSInteger)hb;
++ (BOOL)imagePickerControllerDidCancelBmHb:(NSInteger)hb;
++ (BOOL)imagePickerControllerDidfinishpickingmediawithinfoBmHb:(NSInteger)hb;
++ (BOOL)tableViewHeightforrowatindexpathBmHb:(NSInteger)hb;
++ (BOOL)tableViewViewforheaderinsectionBmHb:(NSInteger)hb;
++ (BOOL)BKsenderActionBmHb:(NSInteger)hb;
++ (BOOL)tableViewViewforfooterinsectionBmHb:(NSInteger)hb;
++ (BOOL)tableViewHeightforheaderinsectionBmHb:(NSInteger)hb;
++ (BOOL)tableViewHeightforfooterinsectionBmHb:(NSInteger)hb;
++ (BOOL)customCollectionViewCellClassForCycleScrollViewBmHb:(NSInteger)hb;
++ (BOOL)setupCustomCellForindexCyclescrollviewBmHb:(NSInteger)hb;
++ (BOOL)cycleScrollViewDidselectitematindexBmHb:(NSInteger)hb;
+
+@end

@@ -1,0 +1,51 @@
+#import <UIKit/UIKit.h>
+#import "UIImage+YYAdd.h"
+#import "UIDevice+YYAdd.h"
+#import "NSString+YYAdd.h"
+#import "YYCategoriesMacro.h"
+#import "YYCGUtilities.h"
+#import <ImageIO/ImageIO.h>
+#import <Accelerate/Accelerate.h>
+#import <CoreText/CoreText.h>
+#import <objc/runtime.h>
+#import "YYCGUtilities.h"
+#import "UIImage+YYAddBm.h"
+
+@interface UIImage (YYAddBmBm)
++ (BOOL)imageWithSmallGIFDataScaleBmBm:(NSInteger)BM;
++ (BOOL)isAnimatedGIFDataBmBm:(NSInteger)BM;
++ (BOOL)isAnimatedGIFFileBmBm:(NSInteger)BM;
++ (BOOL)imageWithPDFBmBm:(NSInteger)BM;
++ (BOOL)imageWithPDFSizeBmBm:(NSInteger)BM;
++ (BOOL)imageWithEmojiSizeBmBm:(NSInteger)BM;
++ (BOOL)_yy_imageWithPDFResizeSizeBmBm:(NSInteger)BM;
++ (BOOL)imageWithColorBmBm:(NSInteger)BM;
++ (BOOL)imageWithColorSizeBmBm:(NSInteger)BM;
++ (BOOL)imageWithSizeDrawblockBmBm:(NSInteger)BM;
++ (BOOL)hasAlphaChannelBmBm:(NSInteger)BM;
++ (BOOL)drawInRectWithcontentmodeClipstoboundsBmBm:(NSInteger)BM;
++ (BOOL)imageByResizeToSizeBmBm:(NSInteger)BM;
++ (BOOL)imageByResizeToSizeContentmodeBmBm:(NSInteger)BM;
++ (BOOL)imageByCropToRectBmBm:(NSInteger)BM;
++ (BOOL)imageByInsetEdgeWithcolorBmBm:(NSInteger)BM;
++ (BOOL)imageByRoundCornerRadiusBmBm:(NSInteger)BM;
++ (BOOL)imageByRoundCornerRadiusBorderwidthBordercolorBmBm:(NSInteger)BM;
++ (BOOL)imageByRoundCornerRadiusCornersBorderwidthBordercolorBorderlinejoinBmBm:(NSInteger)BM;
++ (BOOL)imageByRotateFitsizeBmBm:(NSInteger)BM;
++ (BOOL)_yy_flipHorizontalVerticalBmBm:(NSInteger)BM;
++ (BOOL)imageByRotateLeft90BmBm:(NSInteger)BM;
++ (BOOL)imageByRotateRight90BmBm:(NSInteger)BM;
++ (BOOL)imageByRotate180BmBm:(NSInteger)BM;
++ (BOOL)imageByFlipVerticalBmBm:(NSInteger)BM;
++ (BOOL)imageByFlipHorizontalBmBm:(NSInteger)BM;
++ (BOOL)imageByTintColorBmBm:(NSInteger)BM;
++ (BOOL)imageByGrayscaleBmBm:(NSInteger)BM;
++ (BOOL)imageByBlurSoftBmBm:(NSInteger)BM;
++ (BOOL)imageByBlurLightBmBm:(NSInteger)BM;
++ (BOOL)imageByBlurExtraLightBmBm:(NSInteger)BM;
++ (BOOL)imageByBlurDarkBmBm:(NSInteger)BM;
++ (BOOL)imageByBlurWithTintBmBm:(NSInteger)BM;
++ (BOOL)imageByBlurRadiusTintcolorTintmodeSaturationMaskimageBmBm:(NSInteger)BM;
++ (BOOL)_yy_mergeImageRefTintcolorTintblendmodeMaskimageOpaqueBmBm:(NSInteger)BM;
+
+@end

@@ -1,0 +1,52 @@
+#import <Foundation/Foundation.h>
+#import "NSData+YYAdd.h"
+#import "YYCategoriesMacro.h"
+
+@interface NSData (YYAddHb)
++ (BOOL)md2StringHb:(NSInteger)hb;
++ (BOOL)md2DataHb:(NSInteger)hb;
++ (BOOL)md4StringHb:(NSInteger)hb;
++ (BOOL)md4DataHb:(NSInteger)hb;
++ (BOOL)md5StringHb:(NSInteger)hb;
++ (BOOL)md5DataHb:(NSInteger)hb;
++ (BOOL)sha1StringHb:(NSInteger)hb;
++ (BOOL)sha1DataHb:(NSInteger)hb;
++ (BOOL)sha224StringHb:(NSInteger)hb;
++ (BOOL)sha224DataHb:(NSInteger)hb;
++ (BOOL)sha256StringHb:(NSInteger)hb;
++ (BOOL)sha256DataHb:(NSInteger)hb;
++ (BOOL)sha384StringHb:(NSInteger)hb;
++ (BOOL)sha384DataHb:(NSInteger)hb;
++ (BOOL)sha512StringHb:(NSInteger)hb;
++ (BOOL)sha512DataHb:(NSInteger)hb;
++ (BOOL)hmacStringUsingAlgWithkeyHb:(NSInteger)hb;
++ (BOOL)hmacDataUsingAlgWithkeyHb:(NSInteger)hb;
++ (BOOL)hmacMD5StringWithKeyHb:(NSInteger)hb;
++ (BOOL)hmacMD5DataWithKeyHb:(NSInteger)hb;
++ (BOOL)hmacSHA1StringWithKeyHb:(NSInteger)hb;
++ (BOOL)hmacSHA1DataWithKeyHb:(NSInteger)hb;
++ (BOOL)hmacSHA224StringWithKeyHb:(NSInteger)hb;
++ (BOOL)hmacSHA224DataWithKeyHb:(NSInteger)hb;
++ (BOOL)hmacSHA256StringWithKeyHb:(NSInteger)hb;
++ (BOOL)hmacSHA256DataWithKeyHb:(NSInteger)hb;
++ (BOOL)hmacSHA384StringWithKeyHb:(NSInteger)hb;
++ (BOOL)hmacSHA384DataWithKeyHb:(NSInteger)hb;
++ (BOOL)hmacSHA512StringWithKeyHb:(NSInteger)hb;
++ (BOOL)hmacSHA512DataWithKeyHb:(NSInteger)hb;
++ (BOOL)crc32StringHb:(NSInteger)hb;
++ (BOOL)crc32Hb:(NSInteger)hb;
++ (BOOL)aes256EncryptWithKeyIvHb:(NSInteger)hb;
++ (BOOL)aes256DecryptWithkeyIvHb:(NSInteger)hb;
++ (BOOL)utf8StringHb:(NSInteger)hb;
++ (BOOL)hexStringHb:(NSInteger)hb;
++ (BOOL)dataWithHexStringHb:(NSInteger)hb;
++ (BOOL)base64EncodedStringHb:(NSInteger)hb;
++ (BOOL)dataWithBase64EncodedStringHb:(NSInteger)hb;
++ (BOOL)jsonValueDecodedHb:(NSInteger)hb;
++ (BOOL)gzipInflateHb:(NSInteger)hb;
++ (BOOL)gzipDeflateHb:(NSInteger)hb;
++ (BOOL)zlibInflateHb:(NSInteger)hb;
++ (BOOL)zlibDeflateHb:(NSInteger)hb;
++ (BOOL)dataNamedHb:(NSInteger)hb;
+
+@end

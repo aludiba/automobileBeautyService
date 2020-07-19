@@ -1,0 +1,54 @@
+#import <Foundation/Foundation.h>
+#import "SDWebImageCompat.h"
+#import "SDImageCacheConfig.h"
+#import "SDImageCache.h"
+#import <CommonCrypto/CommonDigest.h>
+#import "NSImage+WebCache.h"
+#import "SDWebImageCodersManager.h"
+
+@interface SDImageCache (Bm)
++ (BOOL)sharedImageCacheBm:(NSInteger)BM;
++ (BOOL)initBm:(NSInteger)BM;
++ (BOOL)initWithNamespaceBm:(NSInteger)BM;
++ (BOOL)initWithNamespaceDiskcachedirectoryBm:(NSInteger)BM;
++ (BOOL)deallocBm:(NSInteger)BM;
++ (BOOL)addReadOnlyCachePathBm:(NSInteger)BM;
++ (BOOL)cachePathForKeyInpathBm:(NSInteger)BM;
++ (BOOL)defaultCachePathForKeyBm:(NSInteger)BM;
++ (BOOL)cachedFileNameForKeyBm:(NSInteger)BM;
++ (BOOL)makeDiskCachePathBm:(NSInteger)BM;
++ (BOOL)storeImageForkeyCompletionBm:(NSInteger)BM;
++ (BOOL)storeImageForkeyTodiskCompletionBm:(NSInteger)BM;
++ (BOOL)storeImageImagedataForkeyTodiskCompletionBm:(NSInteger)BM;
++ (BOOL)storeImageDataToDiskForkeyBm:(NSInteger)BM;
++ (BOOL)_storeImageDataToDiskForkeyBm:(NSInteger)BM;
++ (BOOL)diskImageExistsWithKeyCompletionBm:(NSInteger)BM;
++ (BOOL)diskImageDataExistsWithKeyBm:(NSInteger)BM;
++ (BOOL)_diskImageDataExistsWithKeyBm:(NSInteger)BM;
++ (BOOL)diskImageDataForKeyBm:(NSInteger)BM;
++ (BOOL)imageFromMemoryCacheForKeyBm:(NSInteger)BM;
++ (BOOL)imageFromDiskCacheForKeyBm:(NSInteger)BM;
++ (BOOL)imageFromCacheForKeyBm:(NSInteger)BM;
++ (BOOL)diskImageDataBySearchingAllPathsForKeyBm:(NSInteger)BM;
++ (BOOL)diskImageForKeyBm:(NSInteger)BM;
++ (BOOL)diskImageForKeyDataBm:(NSInteger)BM;
++ (BOOL)diskImageForKeyDataOptionsBm:(NSInteger)BM;
++ (BOOL)scaledImageForKeyImageBm:(NSInteger)BM;
++ (BOOL)queryCacheOperationForKeyDoneBm:(NSInteger)BM;
++ (BOOL)queryCacheOperationForKeyOptionsDoneBm:(NSInteger)BM;
++ (BOOL)removeImageForKeyWithcompletionBm:(NSInteger)BM;
++ (BOOL)removeImageForKeyFromdiskWithcompletionBm:(NSInteger)BM;
++ (BOOL)setMaxMemoryCostBm:(NSInteger)BM;
++ (BOOL)maxMemoryCostBm:(NSInteger)BM;
++ (BOOL)maxMemoryCountLimitBm:(NSInteger)BM;
++ (BOOL)setMaxMemoryCountLimitBm:(NSInteger)BM;
++ (BOOL)clearMemoryBm:(NSInteger)BM;
++ (BOOL)clearDiskOnCompletionBm:(NSInteger)BM;
++ (BOOL)deleteOldFilesBm:(NSInteger)BM;
++ (BOOL)deleteOldFilesWithCompletionBlockBm:(NSInteger)BM;
++ (BOOL)backgroundDeleteOldFilesBm:(NSInteger)BM;
++ (BOOL)getSizeBm:(NSInteger)BM;
++ (BOOL)getDiskCountBm:(NSInteger)BM;
++ (BOOL)calculateSizeWithCompletionBlockBm:(NSInteger)BM;
+
+@end

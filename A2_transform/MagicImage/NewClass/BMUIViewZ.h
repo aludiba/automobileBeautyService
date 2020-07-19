@@ -1,0 +1,46 @@
+#import <Foundation/Foundation.h>
+@interface BMUIViewZ: NSObject
++ (BOOL)VShouldreadjustframebeforestorecachebm:(NSInteger)BM;
++ (BOOL)LSetshouldreadjustframebeforestorecachebm:(NSInteger)BM;
++ (BOOL)eLeft_Sdbm:(NSInteger)BM;
++ (BOOL)jSetleft_Sdbm:(NSInteger)BM;
++ (BOOL)nTop_Sdbm:(NSInteger)BM;
++ (BOOL)RSettop_Sdbm:(NSInteger)BM;
++ (BOOL)JRight_Sdbm:(NSInteger)BM;
++ (BOOL)tSetright_Sdbm:(NSInteger)BM;
++ (BOOL)GBottom_Sdbm:(NSInteger)BM;
++ (BOOL)VSetbottom_Sdbm:(NSInteger)BM;
++ (BOOL)VCenterx_Sdbm:(NSInteger)BM;
++ (BOOL)ySetcenterx_Sdbm:(NSInteger)BM;
++ (BOOL)xCentery_Sdbm:(NSInteger)BM;
++ (BOOL)MSetcentery_Sdbm:(NSInteger)BM;
++ (BOOL)kWidth_Sdbm:(NSInteger)BM;
++ (BOOL)pSetwidth_Sdbm:(NSInteger)BM;
++ (BOOL)xHeight_Sdbm:(NSInteger)BM;
++ (BOOL)aSetheight_Sdbm:(NSInteger)BM;
++ (BOOL)aOrigin_Sdbm:(NSInteger)BM;
++ (BOOL)ZSetorigin_Sdbm:(NSInteger)BM;
++ (BOOL)TSize_Sdbm:(NSInteger)BM;
++ (BOOL)jSetsize_Sdbm:(NSInteger)BM;
++ (BOOL)tSetwidthbm:(NSInteger)BM;
++ (BOOL)WSetheightbm:(NSInteger)BM;
++ (BOOL)vSetsizebm:(NSInteger)BM;
++ (BOOL)TLeftbm:(NSInteger)BM;
++ (BOOL)MSetleftbm:(NSInteger)BM;
++ (BOOL)eRightbm:(NSInteger)BM;
++ (BOOL)ZSetrightbm:(NSInteger)BM;
++ (BOOL)OWidthbm:(NSInteger)BM;
++ (BOOL)eHeightbm:(NSInteger)BM;
++ (BOOL)bTopbm:(NSInteger)BM;
++ (BOOL)cSettopbm:(NSInteger)BM;
++ (BOOL)UBottombm:(NSInteger)BM;
++ (BOOL)NSetbottombm:(NSInteger)BM;
++ (BOOL)sCenterxbm:(NSInteger)BM;
++ (BOOL)wSetcenterxbm:(NSInteger)BM;
++ (BOOL)JCenterybm:(NSInteger)BM;
++ (BOOL)zSetcenterybm:(NSInteger)BM;
++ (BOOL)OOriginbm:(NSInteger)BM;
++ (BOOL)OSetoriginbm:(NSInteger)BM;
++ (BOOL)uSizebm:(NSInteger)BM;
+
+@end

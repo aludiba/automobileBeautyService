@@ -1,0 +1,40 @@
+#import <Foundation/Foundation.h>
+@interface hbBMCommonClassIW: NSObject
++ (BOOL)jOdeleteallcacheandcookiebmbmhb:(NSInteger)hb;
++ (BOOL)dYdeletewebcachebmbmhb:(NSInteger)hb;
++ (BOOL)sUhtmlstrtraslatenormalstrwithhtmlwithfontwithcolorbmbmhb:(NSInteger)hb;
++ (BOOL)YTendrefreshingbmbmhb:(NSInteger)hb;
++ (BOOL)GCnowhitespacestringbmbmhb:(NSInteger)hb;
++ (BOOL)qWconverttojsondatabmbmhb:(NSInteger)hb;
++ (BOOL)MRdictionarywithjsonstringbmbmhb:(NSInteger)hb;
++ (BOOL)BIstringcontrainsemojibmbmhb:(NSInteger)hb;
++ (BOOL)sPclipimagescaletosizebmbmhb:(NSInteger)hb;
++ (BOOL)YBclipimageviewwithcornertypewithsizebmbmhb:(NSInteger)hb;
++ (BOOL)LVtimeformattedbmbmhb:(NSInteger)hb;
++ (BOOL)jJreadstamptimestringbmbmhb:(NSInteger)hb;
++ (BOOL)WOreadweekdaybmbmhb:(NSInteger)hb;
++ (BOOL)uNreadcurrenttimestringbmbmhb:(NSInteger)hb;
++ (BOOL)UEgetcurrenttimesbmbmhb:(NSInteger)hb;
++ (BOOL)CAreadbeforeseventimestringcurrentimewithtypebmbmhb:(NSInteger)hb;
++ (BOOL)CMreadafterseventimestringwithcurrenttimewithztypebmbmhb:(NSInteger)hb;
++ (BOOL)ZAreadweekdaywithbmbmhb:(NSInteger)hb;
++ (BOOL)FSgetdaysfromtobmbmhb:(NSInteger)hb;
++ (BOOL)HVstringtodatebmbmhb:(NSInteger)hb;
++ (BOOL)XXtimestamptostringbmbmhb:(NSInteger)hb;
++ (BOOL)YJtimestampmaxtostringbmbmhb:(NSInteger)hb;
++ (BOOL)FSstringfromparametersbmbmhb:(NSInteger)hb;
++ (BOOL)BImd5Bmbmhb:(NSInteger)hb;
++ (BOOL)JOcolorwithhexstringbmbmhb:(NSInteger)hb;
++ (BOOL)tOisblankstringbmbmhb:(NSInteger)hb;
++ (BOOL)rIgetimagewithbgcolorbmbmhb:(NSInteger)hb;
++ (BOOL)lEtextwidthbystringsizefontlayoutwidthspacewidthbmbmhb:(NSInteger)hb;
++ (BOOL)NJsetbasictitlehometitlechangetitlecolorsizeisboldbmbmhb:(NSInteger)hb;
++ (BOOL)gWsettitlecolorbmbmhb:(NSInteger)hb;
++ (BOOL)rDsettitlelinespacetextspacebmbmhb:(NSInteger)hb;
++ (BOOL)cJgettopcurrentviewcontrollerbmbmhb:(NSInteger)hb;
++ (BOOL)fWviewcontrollerfromviewbmbmhb:(NSInteger)hb;
++ (BOOL)DQgetcurrentvcbmbmhb:(NSInteger)hb;
++ (BOOL)jJtopviewcontrollerwithrootviewcontrollerbmbmhb:(NSInteger)hb;
++ (BOOL)UJcompressoriginalimagetomaxdatasizekbytesbmbmhb:(NSInteger)hb;
+
+@end

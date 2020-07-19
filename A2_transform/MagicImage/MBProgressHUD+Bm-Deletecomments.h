@@ -1,0 +1,50 @@
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import "MBProgressHUD.h"
+#import <tgmath.h>
+#import "MBProgressHUD+Bm.h"
+
+@interface MBProgressHUD (Bm-Deletecomments)
++ (BOOL)showHUDAddedToAnimatedBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)hideHUDForViewAnimatedBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)hideAllHUDsForViewAnimatedBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)HUDForViewBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)allHUDsForViewBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)initWithFrameBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)initWithViewBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)initWithWindowBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)deallocBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)showBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)hideBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)hideAfterdelayBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)hideDelayedBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)handleGraceTimerBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)handleMinShowTimerBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)didMoveToSuperviewBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)showUsingAnimationBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)hideUsingAnimationBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)animationFinishedFinishedContextBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)doneBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)showWhileExecutingOntargetWithobjectAnimatedBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)showAnimatedWhileexecutingblockBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)showAnimatedWhileexecutingblockCompletionblockBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)showAnimatedWhileexecutingblockOnqueueBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)showAnimatedWhileexecutingblockOnqueueCompletionblockBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)launchExecutionBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)cleanUpBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setupLabelsBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)updateIndicatorsBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)layoutSubviewsBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)drawRectBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)registerForKVOBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)unregisterFromKVOBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)observableKeypathsBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)observeValueForKeyPathOfobjectChangeContextBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)updateUIForKeypathBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)registerForNotificationsBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)unregisterFromNotificationsBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)statusBarOrientationDidChangeBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)updateForCurrentOrientationAnimatedBm-Deletecomments:(NSInteger)-deleteComments;
+
+@end

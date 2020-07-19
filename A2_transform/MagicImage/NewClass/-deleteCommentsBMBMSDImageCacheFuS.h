@@ -1,0 +1,47 @@
+#import <Foundation/Foundation.h>
+@interface -deleteCommentsBMBMSDImageCacheFuS: NSObject
++ (BOOL)aHasharedimagecache:(NSInteger)-deleteComments;
++ (BOOL)iIzinit:(NSInteger)-deleteComments;
++ (BOOL)jMhinitwithnamespace:(NSInteger)-deleteComments;
++ (BOOL)uDiinitwithnamespacevdiskcachedirectory:(NSInteger)-deleteComments;
++ (BOOL)fTrdealloc:(NSInteger)-deleteComments;
++ (BOOL)sWtaddreadonlycachepath:(NSInteger)-deleteComments;
++ (BOOL)mRzcachepathforkeyxinpath:(NSInteger)-deleteComments;
++ (BOOL)DEfdefaultcachepathforkey:(NSInteger)-deleteComments;
++ (BOOL)xLicachedfilenameforkey:(NSInteger)-deleteComments;
++ (BOOL)HQkmakediskcachepath:(NSInteger)-deleteComments;
++ (BOOL)DTpstoreimagetforkeywcompletion:(NSInteger)-deleteComments;
++ (BOOL)IDwstoreimagelforkeyttodisklcompletion:(NSInteger)-deleteComments;
++ (BOOL)WDystoreimagelimagedatatforkeywtodiskqcompletion:(NSInteger)-deleteComments;
++ (BOOL)OFvstoreimagedatatodiskpforkey:(NSInteger)-deleteComments;
++ (BOOL)SWm_Storeimagedatatodiskaforkey:(NSInteger)-deleteComments;
++ (BOOL)wGudiskimageexistswithkeyfcompletion:(NSInteger)-deleteComments;
++ (BOOL)HEtdiskimagedataexistswithkey:(NSInteger)-deleteComments;
++ (BOOL)dFb_Diskimagedataexistswithkey:(NSInteger)-deleteComments;
++ (BOOL)qYtdiskimagedataforkey:(NSInteger)-deleteComments;
++ (BOOL)pWsimagefrommemorycacheforkey:(NSInteger)-deleteComments;
++ (BOOL)iHrimagefromdiskcacheforkey:(NSInteger)-deleteComments;
++ (BOOL)vJximagefromcacheforkey:(NSInteger)-deleteComments;
++ (BOOL)mZtdiskimagedatabysearchingallpathsforkey:(NSInteger)-deleteComments;
++ (BOOL)wJadiskimageforkey:(NSInteger)-deleteComments;
++ (BOOL)tNydiskimageforkeypdata:(NSInteger)-deleteComments;
++ (BOOL)yBrdiskimageforkeytdatasoptions:(NSInteger)-deleteComments;
++ (BOOL)lOascaledimageforkeylimage:(NSInteger)-deleteComments;
++ (BOOL)WYyquerycacheoperationforkeygdone:(NSInteger)-deleteComments;
++ (BOOL)QQhquerycacheoperationforkeyhoptionsxdone:(NSInteger)-deleteComments;
++ (BOOL)WSlremoveimageforkeyiwithcompletion:(NSInteger)-deleteComments;
++ (BOOL)IXbremoveimageforkeybfromdiskqwithcompletion:(NSInteger)-deleteComments;
++ (BOOL)uXrsetmaxmemorycost:(NSInteger)-deleteComments;
++ (BOOL)JTemaxmemorycost:(NSInteger)-deleteComments;
++ (BOOL)SKjmaxmemorycountlimit:(NSInteger)-deleteComments;
++ (BOOL)pJgsetmaxmemorycountlimit:(NSInteger)-deleteComments;
++ (BOOL)rNkclearmemory:(NSInteger)-deleteComments;
++ (BOOL)sXscleardiskoncompletion:(NSInteger)-deleteComments;
++ (BOOL)tBpdeleteoldfiles:(NSInteger)-deleteComments;
++ (BOOL)fXndeleteoldfileswithcompletionblock:(NSInteger)-deleteComments;
++ (BOOL)PPubackgrounddeleteoldfiles:(NSInteger)-deleteComments;
++ (BOOL)oOagetsize:(NSInteger)-deleteComments;
++ (BOOL)zNsgetdiskcount:(NSInteger)-deleteComments;
++ (BOOL)SHxcalculatesizewithcompletionblock:(NSInteger)-deleteComments;
+
+@end

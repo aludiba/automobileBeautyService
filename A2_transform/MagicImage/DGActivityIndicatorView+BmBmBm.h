@@ -1,0 +1,55 @@
+#import <UIKit/UIKit.h>
+#import "DGActivityIndicatorView.h"
+#import "DGActivityIndicatorNineDotsAnimation.h"
+#import "DGActivityIndicatorTriplePulseAnimation.h"
+#import "DGActivityIndicatorFiveDotsAnimation.h"
+#import "DGActivityIndicatorRotatingSquaresAnimation.h"
+#import "DGActivityIndicatorDoubleBounceAnimation.h"
+#import "DGActivityIndicatorTwoDotsAnimation.h"
+#import "DGActivityIndicatorThreeDotsAnimation.h"
+#import "DGActivityIndicatorBallPulseAnimation.h"
+#import "DGActivityIndicatorBallClipRotateAnimation.h"
+#import "DGActivityIndicatorBallClipRotatePulseAnimation.h"
+#import "DGActivityIndicatorBallClipRotateMultipleAnimation.h"
+#import "DGActivityIndicatorBallRotateAnimation.h"
+#import "DGActivityIndicatorBallZigZagAnimation.h"
+#import "DGActivityIndicatorBallZigZagDeflectAnimation.h"
+#import "DGActivityIndicatorBallTrianglePathAnimation.h"
+#import "DGActivityIndicatorBallScaleAnimation.h"
+#import "DGActivityIndicatorLineScaleAnimation.h"
+#import "DGActivityIndicatorLineScalePartyAnimation.h"
+#import "DGActivityIndicatorBallScaleMultipleAnimation.h"
+#import "DGActivityIndicatorBallPulseSyncAnimation.h"
+#import "DGActivityIndicatorBallBeatAnimation.h"
+#import "DGActivityIndicatorLineScalePulseOutAnimation.h"
+#import "DGActivityIndicatorLineScalePulseOutRapidAnimation.h"
+#import "DGActivityIndicatorBallScaleRippleAnimation.h"
+#import "DGActivityIndicatorBallScaleRippleMultipleAnimation.h"
+#import "DGActivityIndicatorTriangleSkewSpinAnimation.h"
+#import "DGActivityIndicatorBallGridBeatAnimation.h"
+#import "DGActivityIndicatorBallGridPulseAnimation.h"
+#import "DGActivityIndicatorRotatingSandglassAnimation.h"
+#import "DGActivityIndicatorRotatingTrigonAnimation.h"
+#import "DGActivityIndicatorTripleRingsAnimation.h"
+#import "DGActivityIndicatorCookieTerminatorAnimation.h"
+#import "DGActivityIndicatorBallSpinFadeLoader.h"
+#import "DGActivityIndicatorView+Bm.h"
+#import "DGActivityIndicatorView+BmBm.h"
+
+@interface DGActivityIndicatorView (BmBmBm)
++ (BOOL)initWithCoderBmBmBm:(NSInteger)BM;
++ (BOOL)initWithTypeBmBmBm:(NSInteger)BM;
++ (BOOL)initWithTypeTintcolorBmBmBm:(NSInteger)BM;
++ (BOOL)initWithTypeTintcolorSizeBmBmBm:(NSInteger)BM;
++ (BOOL)commonInitBmBmBm:(NSInteger)BM;
++ (BOOL)setupAnimationBmBmBm:(NSInteger)BM;
++ (BOOL)startAnimatingBmBmBm:(NSInteger)BM;
++ (BOOL)stopAnimatingBmBmBm:(NSInteger)BM;
++ (BOOL)setTypeBmBmBm:(NSInteger)BM;
++ (BOOL)setSizeBmBmBm:(NSInteger)BM;
++ (BOOL)setTintColorBmBmBm:(NSInteger)BM;
++ (BOOL)activityIndicatorAnimationForAnimationTypeBmBmBm:(NSInteger)BM;
++ (BOOL)layoutSubviewsBmBmBm:(NSInteger)BM;
++ (BOOL)intrinsicContentSizeBmBmBm:(NSInteger)BM;
+
+@end

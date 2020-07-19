@@ -1,0 +1,53 @@
+#import <Foundation/Foundation.h>
+#import "BMBMLLSimpleCamerakX.h"
+
+@interface BMBMLLSimpleCamerakX (-Deletecomments)
++ (BOOL)XDinitbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)SPinitwithvideoenabledbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)YMinitwithqualitypositionvideoenabledbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)hUinitwithcoderbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)mAsetupwithqualitypositionvideoenabledbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)eGviewdidloadbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)cZgesturerecognizershouldbeginbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)XThandlepinchgesturebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ZAattachtoviewcontrollerwithframebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)iZstartbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)hWinitializebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)uMstopbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)dIcaptureexactseenimagebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)VOcapturebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)RUstartrecordingwithoutputurlbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)UOstoprecordingbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)QDcaptureoutputdidstartrecordingtooutputfileaturlfromconnectionsbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)aXcaptureoutputdidfinishrecordingtooutputfileaturlfromconnectionserrorbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)VFenabletorchbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)uQcropimageusingpreviewboundsbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)TQcaptureconnectionbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sYsetvideocapturedevicebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)bEisflashavailablebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)UUistorchavailablebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)TDupdateflashmodebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)rEsetwhitebalancemodebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)FIsetmirrorbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)VKtogglepositionbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sCsetcamerapositionbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)nEcamerawithpositionbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)YLpreviewtappedbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)xVadddefaultfocusboxbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ZRalterfocusboxanimationbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)fJfocusatpointbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)oGshowfocusboxbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)WKconverttopointofinterestfromviewcoordinatesbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)PHviewwillappearbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)PRviewwilldisappearbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)LTviewwilllayoutsubviewsbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)xForientationforconnectionbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)cCwillrotatetointerfaceorientationdurationbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)dRdidreceivememorywarningbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)AQdeallocbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)xXrequestcamerapermissionbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)IQrequestmicrophonepermissionbm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)gUisfrontcameraavailablebm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)KHisrearcameraavailablebm-Deletecomments:(NSInteger)-deleteComments;
+
+@end

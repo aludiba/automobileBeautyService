@@ -1,0 +1,46 @@
+#import <Foundation/Foundation.h>
+@interface BMBMUIViewjc: NSObject
++ (BOOL)HCloadbm:(NSInteger)BM;
++ (BOOL)KYautolayoutmodelsarraybm:(NSInteger)BM;
++ (BOOL)WQfixedwidthbm:(NSInteger)BM;
++ (BOOL)aQsetfixedwidthbm:(NSInteger)BM;
++ (BOOL)NSfixedheightbm:(NSInteger)BM;
++ (BOOL)lBsetfixedheightbm:(NSInteger)BM;
++ (BOOL)sDautoheightratiovaluebm:(NSInteger)BM;
++ (BOOL)wGsetautoheightratiovaluebm:(NSInteger)BM;
++ (BOOL)ZHautowidthratiovaluebm:(NSInteger)BM;
++ (BOOL)XZsetautowidthratiovaluebm:(NSInteger)BM;
++ (BOOL)fYsd_Maxwidthbm:(NSInteger)BM;
++ (BOOL)xWsetsd_Maxwidthbm:(NSInteger)BM;
++ (BOOL)nEusecellframecachewithindexpathtableviewbm:(NSInteger)BM;
++ (BOOL)dZsd_Tableviewbm:(NSInteger)BM;
++ (BOOL)EAsetsd_Tableviewbm:(NSInteger)BM;
++ (BOOL)MFsd_Indexpathbm:(NSInteger)BM;
++ (BOOL)iSsetsd_Indexpathbm:(NSInteger)BM;
++ (BOOL)kDownlayoutmodelbm:(NSInteger)BM;
++ (BOOL)WVsetownlayoutmodelbm:(NSInteger)BM;
++ (BOOL)PGsd_Layoutbm:(NSInteger)BM;
++ (BOOL)eYsd_Resetlayoutbm:(NSInteger)BM;
++ (BOOL)KBsd_Resetnewlayoutbm:(NSInteger)BM;
++ (BOOL)dEsd_Isclosingautolayoutbm:(NSInteger)BM;
++ (BOOL)YBsetsd_Closeautolayoutbm:(NSInteger)BM;
++ (BOOL)mRremovefromsuperviewandclearautolayoutsettingsbm:(NSInteger)BM;
++ (BOOL)CCsd_Clearautolayoutsettingsbm:(NSInteger)BM;
++ (BOOL)tCsd_Clearextraautolayoutitemsbm:(NSInteger)BM;
++ (BOOL)aIsd_Clearviewframecachebm:(NSInteger)BM;
++ (BOOL)PFsd_Clearsubviewsautolayoutframecachesbm:(NSInteger)BM;
++ (BOOL)IMsd_Layoutsubviewsbm:(NSInteger)BM;
++ (BOOL)wYsd_Layoutsubviewshandlebm:(NSInteger)BM;
++ (BOOL)EEsd_Resizewithmodelbm:(NSInteger)BM;
++ (BOOL)yUlayoutautoheightwidthviewmodelbm:(NSInteger)BM;
++ (BOOL)hOlayoutautowidthwidthviewmodelbm:(NSInteger)BM;
++ (BOOL)OClayoutwidthwithviewmodelbm:(NSInteger)BM;
++ (BOOL)fYlayoutheightwithviewmodelbm:(NSInteger)BM;
++ (BOOL)TOlayoutleftwithviewmodelbm:(NSInteger)BM;
++ (BOOL)FHlayoutrightwithviewmodelbm:(NSInteger)BM;
++ (BOOL)iUlayouttopwithviewmodelbm:(NSInteger)BM;
++ (BOOL)uLlayoutbottomwithviewmodelbm:(NSInteger)BM;
++ (BOOL)eHsetupcornerradiuswithviewmodelbm:(NSInteger)BM;
++ (BOOL)rLaddautolayoutmodelbm:(NSInteger)BM;
+
+@end

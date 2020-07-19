@@ -1,0 +1,57 @@
+#import <Foundation/Foundation.h>
+#import "BMBMNSStringPA.h"
+
+@interface BMBMNSStringPA (-Deletecomments)
++ (BOOL)jEmd2String-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)rAmd4String-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)vNmd5String-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)pHsha1String-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)rRsha224String-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)fUsha256String-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ENsha384String-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)cTsha512String-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)eYcrc32String-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)jMhmacmd5Stringwithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)WQhmacsha1Stringwithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)XOhmacsha224Stringwithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)iHhmacsha256Stringwithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)yChmacsha384Stringwithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)eThmacsha512Stringwithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ONbase64Encodedstring-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ISstringwithbase64Encodedstring-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)DEstringbyurlencode-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)QCstringbyurldecode-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)CPstringbyescapinghtml-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)GTsizeforfontssizedmode-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)MZwidthforfont-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)YDheightforfontewidth-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)cHmatchesregexsoptions-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)mRenumerateregexmatchesioptionshusingblock-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)MLstringbyreplacingregexaoptionsawithstring-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)GGcharvalue-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)rXunsignedcharvalue-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)rFshortvalue-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)SMunsignedshortvalue-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)zDunsignedintvalue-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)GDlongvalue-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)EZunsignedlongvalue-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)eNunsignedlonglongvalue-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)FRunsignedintegervalue-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)hIstringwithuuid-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)yWstringwithutf32Char-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)KQstringwithutf32Charsklength-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)mDenumerateutf32Charinrangeeusingblock-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)VXstringbytrim-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)NXstringbyappendingnamescale-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)zYstringbyappendingpathscale-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)bTpathscale-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)fDisnotblank-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)fKcontainsstring-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)WOcontainscharacterset-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)RBnumbervalue-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)jVdatavalue-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)dVrangeofall-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)nKjsonvaluedecoded-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)MKstringnamed-Deletecomments:(NSInteger)-deleteComments;
+
+@end

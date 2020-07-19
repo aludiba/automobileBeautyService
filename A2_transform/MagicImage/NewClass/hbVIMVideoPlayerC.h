@@ -1,0 +1,43 @@
+#import <Foundation/Foundation.h>
+@interface hbVIMVideoPlayerC: NSObject
++ (BOOL)CDeallocbmbm:(NSInteger)hb;
++ (BOOL)EInitbmbm:(NSInteger)hb;
++ (BOOL)ASetupplayerbmbm:(NSInteger)hb;
++ (BOOL)zSetupaudiosessionbmbm:(NSInteger)hb;
++ (BOOL)rSeturlbmbm:(NSInteger)hb;
++ (BOOL)qSetplayeritembmbm:(NSInteger)hb;
++ (BOOL)CSetassetbmbm:(NSInteger)hb;
++ (BOOL)BSetmutedbmbm:(NSInteger)hb;
++ (BOOL)rIsmutedbmbm:(NSInteger)hb;
++ (BOOL)ePlaybmbm:(NSInteger)hb;
++ (BOOL)wPausebmbm:(NSInteger)hb;
++ (BOOL)XSeektotimebmbm:(NSInteger)hb;
++ (BOOL)AResetbmbm:(NSInteger)hb;
++ (BOOL)NEnableairplaybmbm:(NSInteger)hb;
++ (BOOL)ADisableairplaybmbm:(NSInteger)hb;
++ (BOOL)aIsairplayenabledbmbm:(NSInteger)hb;
++ (BOOL)AStartscrubbingbmbm:(NSInteger)hb;
++ (BOOL)sScrubbmbm:(NSInteger)hb;
++ (BOOL)JStopscrubbingbmbm:(NSInteger)hb;
++ (BOOL)zEnabletimeupdatesbmbm:(NSInteger)hb;
++ (BOOL)CDisabletimeupdatesbmbm:(NSInteger)hb;
++ (BOOL)BSetvolumebmbm:(NSInteger)hb;
++ (BOOL)ICancelfadevolumebmbm:(NSInteger)hb;
++ (BOOL)BFadeinvolumebmbm:(NSInteger)hb;
++ (BOOL)LFadeoutvolumebmbm:(NSInteger)hb;
++ (BOOL)gReportunabletocreateplayeritembmbm:(NSInteger)hb;
++ (BOOL)aResetplayeritemifnecessarybmbm:(NSInteger)hb;
++ (BOOL)JPrepareplayeritembmbm:(NSInteger)hb;
++ (BOOL)aRestartbmbm:(NSInteger)hb;
++ (BOOL)hIsatendtimebmbm:(NSInteger)hb;
++ (BOOL)aCalcloadeddurationbmbm:(NSInteger)hb;
++ (BOOL)CAddplayerobserversbmbm:(NSInteger)hb;
++ (BOOL)bRemoveplayerobserversbmbm:(NSInteger)hb;
++ (BOOL)EAddplayeritemobserversbmbm:(NSInteger)hb;
++ (BOOL)ORemoveplayeritemobserversbmbm:(NSInteger)hb;
++ (BOOL)jAddtimeobserverbmbm:(NSInteger)hb;
++ (BOOL)HRemovetimeobserverbmbm:(NSInteger)hb;
++ (BOOL)KObservevalueforkeypathofobjectchangecontextbmbm:(NSInteger)hb;
++ (BOOL)jPlayeritemdidplaytoendtimebmbm:(NSInteger)hb;
+
+@end

@@ -1,0 +1,51 @@
+#import <Foundation/Foundation.h>
+#import "BMGPUImageFiltery.h"
+
+@interface BMGPUImageFiltery (Bm)
++ (BOOL)TInitwithvertexshaderfromstringeFragmentshaderfromstringBm:(NSInteger)BM;
++ (BOOL)iInitwithfragmentshaderfromstringBm:(NSInteger)BM;
++ (BOOL)KInitwithfragmentshaderfromfileBm:(NSInteger)BM;
++ (BOOL)cinitBm:(NSInteger)BM;
++ (BOOL)SinitializeAttributesBm:(NSInteger)BM;
++ (BOOL)XSetupfilterforsizeBm:(NSInteger)BM;
++ (BOOL)jdeallocBm:(NSInteger)BM;
++ (BOOL)huseNextFrameForImageCaptureBm:(NSInteger)BM;
++ (BOOL)HnewCGImageFromCurrentlyProcessedOutputBm:(NSInteger)BM;
++ (BOOL)AsizeOfFBOBm:(NSInteger)BM;
++ (BOOL)JTexturecoordinatesforrotationBm:(NSInteger)BM;
++ (BOOL)gRendertotexturewithverticesSTexturecoordinatesBm:(NSInteger)BM;
++ (BOOL)XInformtargetsaboutnewframeattimeBm:(NSInteger)BM;
++ (BOOL)YoutputFrameSizeBm:(NSInteger)BM;
++ (BOOL)OSetbackgroundcolorredKGreenaBlueeAlphaBm:(NSInteger)BM;
++ (BOOL)BSetintegerIForuniformnameBm:(NSInteger)BM;
++ (BOOL)YSetfloatxForuniformnameBm:(NSInteger)BM;
++ (BOOL)gSetsizeJForuniformnameBm:(NSInteger)BM;
++ (BOOL)rSetpointeForuniformnameBm:(NSInteger)BM;
++ (BOOL)USetfloatvec3FForuniformnameBm:(NSInteger)BM;
++ (BOOL)XSetfloatvec4YForuniformBm:(NSInteger)BM;
++ (BOOL)YSetfloatarraySLengthvForuniformBm:(NSInteger)BM;
++ (BOOL)nSetmatrix3FpForuniformrProgramBm:(NSInteger)BM;
++ (BOOL)bSetmatrix4FEForuniformoProgramBm:(NSInteger)BM;
++ (BOOL)USetfloatTForuniformPProgramBm:(NSInteger)BM;
++ (BOOL)XSetpointLForuniformbProgramBm:(NSInteger)BM;
++ (BOOL)qSetsizeTForuniformLProgramBm:(NSInteger)BM;
++ (BOOL)BSetvec3YForuniformjProgramBm:(NSInteger)BM;
++ (BOOL)jSetvec4hForuniformyProgramBm:(NSInteger)BM;
++ (BOOL)cSetfloatarrayCLengthtForuniformjProgramBm:(NSInteger)BM;
++ (BOOL)ISetintegercForuniformoProgramBm:(NSInteger)BM;
++ (BOOL)jSetandexecuteuniformstatecallbackatindexEForprogramGToblockBm:(NSInteger)BM;
++ (BOOL)HSetuniformsforprogramatindexBm:(NSInteger)BM;
++ (BOOL)hNewframereadyattimezAtindexBm:(NSInteger)BM;
++ (BOOL)bnextAvailableTextureIndexBm:(NSInteger)BM;
++ (BOOL)jSetinputframebufferoAtindexBm:(NSInteger)BM;
++ (BOOL)YRotatedsizeeForindexBm:(NSInteger)BM;
++ (BOOL)dRotatedpointHForrotationBm:(NSInteger)BM;
++ (BOOL)NSetinputsizeAAtindexBm:(NSInteger)BM;
++ (BOOL)uSetinputrotationjAtindexBm:(NSInteger)BM;
++ (BOOL)yForceprocessingatsizeBm:(NSInteger)BM;
++ (BOOL)HForceprocessingatsizerespectingaspectratioBm:(NSInteger)BM;
++ (BOOL)PmaximumOutputSizeBm:(NSInteger)BM;
++ (BOOL)HendProcessingBm:(NSInteger)BM;
++ (BOOL)iwantsMonochromeInputBm:(NSInteger)BM;
+
+@end

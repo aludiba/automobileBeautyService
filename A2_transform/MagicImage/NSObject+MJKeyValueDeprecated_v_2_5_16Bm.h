@@ -1,0 +1,53 @@
+#import <Foundation/Foundation.h>
+#import "MJExtensionConst.h"
+#import <CoreData/CoreData.h>
+#import "MJProperty.h"
+#import "NSObject+MJKeyValue.h"
+#import "NSObject+MJProperty.h"
+#import "NSString+MJExtension.h"
+#import "MJProperty.h"
+#import "MJPropertyType.h"
+#import "MJExtensionConst.h"
+#import "MJFoundation.h"
+#import "NSString+MJExtension.h"
+#import "NSObject+MJClass.h"
+
+@interface NSObject (MJKeyValueDeprecated_v_2_5_16Bm)
++ (BOOL)setKeyValuesBm:(NSInteger)BM;
++ (BOOL)setKeyValuesErrorBm:(NSInteger)BM;
++ (BOOL)setKeyValuesContextBm:(NSInteger)BM;
++ (BOOL)setKeyValuesContextErrorBm:(NSInteger)BM;
++ (BOOL)referenceReplacedKeyWhenCreatingKeyValuesBm:(NSInteger)BM;
++ (BOOL)keyValuesBm:(NSInteger)BM;
++ (BOOL)keyValuesWithErrorBm:(NSInteger)BM;
++ (BOOL)keyValuesWithKeysBm:(NSInteger)BM;
++ (BOOL)keyValuesWithKeysErrorBm:(NSInteger)BM;
++ (BOOL)keyValuesWithIgnoredKeysBm:(NSInteger)BM;
++ (BOOL)keyValuesWithIgnoredKeysErrorBm:(NSInteger)BM;
++ (BOOL)keyValuesArrayWithObjectArrayBm:(NSInteger)BM;
++ (BOOL)keyValuesArrayWithObjectArrayErrorBm:(NSInteger)BM;
++ (BOOL)keyValuesArrayWithObjectArrayKeysBm:(NSInteger)BM;
++ (BOOL)keyValuesArrayWithObjectArrayKeysErrorBm:(NSInteger)BM;
++ (BOOL)keyValuesArrayWithObjectArrayIgnoredkeysBm:(NSInteger)BM;
++ (BOOL)keyValuesArrayWithObjectArrayIgnoredkeysErrorBm:(NSInteger)BM;
++ (BOOL)objectWithKeyValuesBm:(NSInteger)BM;
++ (BOOL)objectWithKeyValuesErrorBm:(NSInteger)BM;
++ (BOOL)objectWithKeyValuesContextBm:(NSInteger)BM;
++ (BOOL)objectWithKeyValuesContextErrorBm:(NSInteger)BM;
++ (BOOL)objectWithFilenameBm:(NSInteger)BM;
++ (BOOL)objectWithFilenameErrorBm:(NSInteger)BM;
++ (BOOL)objectWithFileBm:(NSInteger)BM;
++ (BOOL)objectWithFileErrorBm:(NSInteger)BM;
++ (BOOL)objectArrayWithKeyValuesArrayBm:(NSInteger)BM;
++ (BOOL)objectArrayWithKeyValuesArrayErrorBm:(NSInteger)BM;
++ (BOOL)objectArrayWithKeyValuesArrayContextBm:(NSInteger)BM;
++ (BOOL)objectArrayWithKeyValuesArrayContextErrorBm:(NSInteger)BM;
++ (BOOL)objectArrayWithFilenameBm:(NSInteger)BM;
++ (BOOL)objectArrayWithFilenameErrorBm:(NSInteger)BM;
++ (BOOL)objectArrayWithFileBm:(NSInteger)BM;
++ (BOOL)objectArrayWithFileErrorBm:(NSInteger)BM;
++ (BOOL)JSONDataBm:(NSInteger)BM;
++ (BOOL)JSONObjectBm:(NSInteger)BM;
++ (BOOL)JSONStringBm:(NSInteger)BM;
+
+@end

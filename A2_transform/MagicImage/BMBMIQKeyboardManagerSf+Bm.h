@@ -1,0 +1,51 @@
+#import <Foundation/Foundation.h>
+#import "BMBMIQKeyboardManagerSf.h"
+
+@interface BMBMIQKeyboardManagerSf (Bm)
++ (BOOL)GGloadBm:(NSInteger)BM;
++ (BOOL)kIinitBm:(NSInteger)BM;
++ (BOOL)XWsharedmanagerBm:(NSInteger)BM;
++ (BOOL)DUdeallocBm:(NSInteger)BM;
++ (BOOL)UXsetenableBm:(NSInteger)BM;
++ (BOOL)FCprivateisenabledBm:(NSInteger)BM;
++ (BOOL)lIsetkeyboarddistancefromtextfieldBm:(NSInteger)BM;
++ (BOOL)JAsetshouldresignontouchoutsideBm:(NSInteger)BM;
++ (BOOL)xKprivateshouldresignontouchoutsideBm:(NSInteger)BM;
++ (BOOL)kJsetmoveddistanceBm:(NSInteger)BM;
++ (BOOL)jIsetenableautotoolbarBm:(NSInteger)BM;
++ (BOOL)WTprivateisenableautotoolbarBm:(NSInteger)BM;
++ (BOOL)VSkeywindowBm:(NSInteger)BM;
++ (BOOL)mVoptimizedadjustpositionBm:(NSInteger)BM;
++ (BOOL)DTadjustpositionBm:(NSInteger)BM;
++ (BOOL)gSrestorepositionBm:(NSInteger)BM;
++ (BOOL)AGreloadlayoutifneededBm:(NSInteger)BM;
++ (BOOL)xBkeyboardwillshowBm:(NSInteger)BM;
++ (BOOL)xAkeyboarddidshowBm:(NSInteger)BM;
++ (BOOL)QXkeyboardwillhideBm:(NSInteger)BM;
++ (BOOL)PPkeyboarddidhideBm:(NSInteger)BM;
++ (BOOL)ZBtextfieldviewdidbegineditingBm:(NSInteger)BM;
++ (BOOL)LDtextfieldviewdidendeditingBm:(NSInteger)BM;
++ (BOOL)SGwillchangestatusbarorientationBm:(NSInteger)BM;
++ (BOOL)vRtaprecognizedBm:(NSInteger)BM;
++ (BOOL)mCgesturerecognizercshouldrecognizesimultaneouslywithgesturerecognizerBm:(NSInteger)BM;
++ (BOOL)WRgesturerecognizerrshouldreceivetouchBm:(NSInteger)BM;
++ (BOOL)JFresignfirstresponderBm:(NSInteger)BM;
++ (BOOL)qWcangopreviousBm:(NSInteger)BM;
++ (BOOL)vMcangonextBm:(NSInteger)BM;
++ (BOOL)fGgopreviousBm:(NSInteger)BM;
++ (BOOL)ULgonextBm:(NSInteger)BM;
++ (BOOL)wRresponderviewsBm:(NSInteger)BM;
++ (BOOL)FBaddtoolbarifrequiredBm:(NSInteger)BM;
++ (BOOL)fZremovetoolbarifrequiredBm:(NSInteger)BM;
++ (BOOL)nJreloadinputviewsBm:(NSInteger)BM;
++ (BOOL)gGpreviousactionBm:(NSInteger)BM;
++ (BOOL)KEnextactionBm:(NSInteger)BM;
++ (BOOL)kSdoneactionBm:(NSInteger)BM;
++ (BOOL)kYregistertextfieldviewclassodidbegineditingnotificationnamendidendeditingnotificationnameBm:(NSInteger)BM;
++ (BOOL)nNunregistertextfieldviewclasshdidbegineditingnotificationnameididendeditingnotificationnameBm:(NSInteger)BM;
++ (BOOL)PIregisterallnotificationsBm:(NSInteger)BM;
++ (BOOL)gRunregisterallnotificationsBm:(NSInteger)BM;
++ (BOOL)HXshowlogBm:(NSInteger)BM;
++ (BOOL)UYshowlogqindentationBm:(NSInteger)BM;
+
+@end

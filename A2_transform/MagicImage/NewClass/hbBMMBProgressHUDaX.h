@@ -1,0 +1,44 @@
+#import <Foundation/Foundation.h>
+@interface hbBMMBProgressHUDaX: NSObject
++ (BOOL)LAshowhudaddedtoanimatedbmbmhb:(NSInteger)hb;
++ (BOOL)KHhidehudforviewanimatedbmbmhb:(NSInteger)hb;
++ (BOOL)tVhideallhudsforviewanimatedbmbmhb:(NSInteger)hb;
++ (BOOL)WVhudforviewbmbmhb:(NSInteger)hb;
++ (BOOL)yPallhudsforviewbmbmhb:(NSInteger)hb;
++ (BOOL)xKinitwithframebmbmhb:(NSInteger)hb;
++ (BOOL)LLinitwithviewbmbmhb:(NSInteger)hb;
++ (BOOL)dOinitwithwindowbmbmhb:(NSInteger)hb;
++ (BOOL)KEdeallocbmbmhb:(NSInteger)hb;
++ (BOOL)nVshowbmbmhb:(NSInteger)hb;
++ (BOOL)sAhidebmbmhb:(NSInteger)hb;
++ (BOOL)NEhideafterdelaybmbmhb:(NSInteger)hb;
++ (BOOL)xQhidedelayedbmbmhb:(NSInteger)hb;
++ (BOOL)VQhandlegracetimerbmbmhb:(NSInteger)hb;
++ (BOOL)iLhandleminshowtimerbmbmhb:(NSInteger)hb;
++ (BOOL)FUdidmovetosuperviewbmbmhb:(NSInteger)hb;
++ (BOOL)rOshowusinganimationbmbmhb:(NSInteger)hb;
++ (BOOL)LOhideusinganimationbmbmhb:(NSInteger)hb;
++ (BOOL)zGanimationfinishedfinishedcontextbmbmhb:(NSInteger)hb;
++ (BOOL)FFdonebmbmhb:(NSInteger)hb;
++ (BOOL)eUshowwhileexecutingontargetwithobjectanimatedbmbmhb:(NSInteger)hb;
++ (BOOL)DDshowanimatedwhileexecutingblockbmbmhb:(NSInteger)hb;
++ (BOOL)lMshowanimatedwhileexecutingblockcompletionblockbmbmhb:(NSInteger)hb;
++ (BOOL)EJshowanimatedwhileexecutingblockonqueuebmbmhb:(NSInteger)hb;
++ (BOOL)nWshowanimatedwhileexecutingblockonqueuecompletionblockbmbmhb:(NSInteger)hb;
++ (BOOL)RHlaunchexecutionbmbmhb:(NSInteger)hb;
++ (BOOL)wQcleanupbmbmhb:(NSInteger)hb;
++ (BOOL)aIsetuplabelsbmbmhb:(NSInteger)hb;
++ (BOOL)CAupdateindicatorsbmbmhb:(NSInteger)hb;
++ (BOOL)FVlayoutsubviewsbmbmhb:(NSInteger)hb;
++ (BOOL)mTdrawrectbmbmhb:(NSInteger)hb;
++ (BOOL)PVregisterforkvobmbmhb:(NSInteger)hb;
++ (BOOL)RTunregisterfromkvobmbmhb:(NSInteger)hb;
++ (BOOL)TYobservablekeypathsbmbmhb:(NSInteger)hb;
++ (BOOL)eGobservevalueforkeypathofobjectchangecontextbmbmhb:(NSInteger)hb;
++ (BOOL)GHupdateuiforkeypathbmbmhb:(NSInteger)hb;
++ (BOOL)VOregisterfornotificationsbmbmhb:(NSInteger)hb;
++ (BOOL)UAunregisterfromnotificationsbmbmhb:(NSInteger)hb;
++ (BOOL)cKstatusbarorientationdidchangebmbmhb:(NSInteger)hb;
++ (BOOL)HYupdateforcurrentorientationanimatedbmbmhb:(NSInteger)hb;
+
+@end

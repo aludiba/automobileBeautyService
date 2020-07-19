@@ -1,0 +1,51 @@
+#import <Foundation/Foundation.h>
+#import "BMBMNSDataep.h"
+
+@interface BMBMNSDataep (Bm)
++ (BOOL)wPmd2StringBm:(NSInteger)BM;
++ (BOOL)NDmd2DataBm:(NSInteger)BM;
++ (BOOL)AXmd4StringBm:(NSInteger)BM;
++ (BOOL)QWmd4DataBm:(NSInteger)BM;
++ (BOOL)aQmd5StringBm:(NSInteger)BM;
++ (BOOL)GKmd5DataBm:(NSInteger)BM;
++ (BOOL)bMsha1StringBm:(NSInteger)BM;
++ (BOOL)CPsha1DataBm:(NSInteger)BM;
++ (BOOL)oPsha224StringBm:(NSInteger)BM;
++ (BOOL)CZsha224DataBm:(NSInteger)BM;
++ (BOOL)DQsha256StringBm:(NSInteger)BM;
++ (BOOL)zKsha256DataBm:(NSInteger)BM;
++ (BOOL)mGsha384StringBm:(NSInteger)BM;
++ (BOOL)yMsha384DataBm:(NSInteger)BM;
++ (BOOL)FQsha512StringBm:(NSInteger)BM;
++ (BOOL)TRsha512DataBm:(NSInteger)BM;
++ (BOOL)KFhmacstringusingalgtwithkeyBm:(NSInteger)BM;
++ (BOOL)ZDhmacdatausingalgiwithkeyBm:(NSInteger)BM;
++ (BOOL)lDhmacmd5StringwithkeyBm:(NSInteger)BM;
++ (BOOL)fBhmacmd5DatawithkeyBm:(NSInteger)BM;
++ (BOOL)cLhmacsha1StringwithkeyBm:(NSInteger)BM;
++ (BOOL)DKhmacsha1DatawithkeyBm:(NSInteger)BM;
++ (BOOL)IShmacsha224StringwithkeyBm:(NSInteger)BM;
++ (BOOL)UJhmacsha224DatawithkeyBm:(NSInteger)BM;
++ (BOOL)APhmacsha256StringwithkeyBm:(NSInteger)BM;
++ (BOOL)RAhmacsha256DatawithkeyBm:(NSInteger)BM;
++ (BOOL)kRhmacsha384StringwithkeyBm:(NSInteger)BM;
++ (BOOL)qNhmacsha384DatawithkeyBm:(NSInteger)BM;
++ (BOOL)aKhmacsha512StringwithkeyBm:(NSInteger)BM;
++ (BOOL)sDhmacsha512DatawithkeyBm:(NSInteger)BM;
++ (BOOL)rOcrc32StringBm:(NSInteger)BM;
++ (BOOL)EHcrc32Bm:(NSInteger)BM;
++ (BOOL)LIaes256EncryptwithkeysivBm:(NSInteger)BM;
++ (BOOL)bPaes256DecryptwithkeyjivBm:(NSInteger)BM;
++ (BOOL)QLutf8StringBm:(NSInteger)BM;
++ (BOOL)gIhexstringBm:(NSInteger)BM;
++ (BOOL)rFdatawithhexstringBm:(NSInteger)BM;
++ (BOOL)RLbase64EncodedstringBm:(NSInteger)BM;
++ (BOOL)GVdatawithbase64EncodedstringBm:(NSInteger)BM;
++ (BOOL)fJjsonvaluedecodedBm:(NSInteger)BM;
++ (BOOL)VLgzipinflateBm:(NSInteger)BM;
++ (BOOL)xIgzipdeflateBm:(NSInteger)BM;
++ (BOOL)RGzlibinflateBm:(NSInteger)BM;
++ (BOOL)BVzlibdeflateBm:(NSInteger)BM;
++ (BOOL)bYdatanamedBm:(NSInteger)BM;
+
+@end

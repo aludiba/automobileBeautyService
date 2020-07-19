@@ -1,0 +1,40 @@
+#import <Foundation/Foundation.h>
+@interface BMBMCommonClassIY: NSObject
++ (BOOL)UOdeleteallcacheandcookiebm:(NSInteger)BM;
++ (BOOL)pYdeletewebcachebm:(NSInteger)BM;
++ (BOOL)IUhtmlstrtraslatenormalstrwithhtmlwithfontwithcolorbm:(NSInteger)BM;
++ (BOOL)GTendrefreshingbm:(NSInteger)BM;
++ (BOOL)hCnowhitespacestringbm:(NSInteger)BM;
++ (BOOL)cWconverttojsondatabm:(NSInteger)BM;
++ (BOOL)DRdictionarywithjsonstringbm:(NSInteger)BM;
++ (BOOL)jIstringcontrainsemojibm:(NSInteger)BM;
++ (BOOL)CPclipimagescaletosizebm:(NSInteger)BM;
++ (BOOL)XBclipimageviewwithcornertypewithsizebm:(NSInteger)BM;
++ (BOOL)rVtimeformattedbm:(NSInteger)BM;
++ (BOOL)KJreadstamptimestringbm:(NSInteger)BM;
++ (BOOL)fOreadweekdaybm:(NSInteger)BM;
++ (BOOL)aNreadcurrenttimestringbm:(NSInteger)BM;
++ (BOOL)rEgetcurrenttimesbm:(NSInteger)BM;
++ (BOOL)IAreadbeforeseventimestringcurrentimewithtypebm:(NSInteger)BM;
++ (BOOL)uMreadafterseventimestringwithcurrenttimewithztypebm:(NSInteger)BM;
++ (BOOL)iAreadweekdaywithbm:(NSInteger)BM;
++ (BOOL)QSgetdaysfromtobm:(NSInteger)BM;
++ (BOOL)uVstringtodatebm:(NSInteger)BM;
++ (BOOL)tXtimestamptostringbm:(NSInteger)BM;
++ (BOOL)EJtimestampmaxtostringbm:(NSInteger)BM;
++ (BOOL)QSstringfromparametersbm:(NSInteger)BM;
++ (BOOL)tImd5Bm:(NSInteger)BM;
++ (BOOL)DOcolorwithhexstringbm:(NSInteger)BM;
++ (BOOL)MOisblankstringbm:(NSInteger)BM;
++ (BOOL)uIgetimagewithbgcolorbm:(NSInteger)BM;
++ (BOOL)WEtextwidthbystringsizefontlayoutwidthspacewidthbm:(NSInteger)BM;
++ (BOOL)mJsetbasictitlehometitlechangetitlecolorsizeisboldbm:(NSInteger)BM;
++ (BOOL)hWsettitlecolorbm:(NSInteger)BM;
++ (BOOL)XDsettitlelinespacetextspacebm:(NSInteger)BM;
++ (BOOL)vJgettopcurrentviewcontrollerbm:(NSInteger)BM;
++ (BOOL)pWviewcontrollerfromviewbm:(NSInteger)BM;
++ (BOOL)uQgetcurrentvcbm:(NSInteger)BM;
++ (BOOL)EJtopviewcontrollerwithrootviewcontrollerbm:(NSInteger)BM;
++ (BOOL)JJcompressoriginalimagetomaxdatasizekbytesbm:(NSInteger)BM;
+
+@end

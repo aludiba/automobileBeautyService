@@ -1,0 +1,51 @@
+#import <UIKit/UIKit.h>
+#import "RTImagePickerUtils.h"
+#import "RTAssetCollectionViewController.h"
+#import <Photos/Photos.h>
+#import "RTImagePickerViewController.h"
+#import "RTAssetCollectionViewCell.h"
+#import "RTVideoIndicatorView.h"
+#import "RTAlbumTableViewCell.h"
+#import "RTImagePickerTitleButton.h"
+#import "RTImagePickerNavigationController.h"
+#import "RTImagePickerUnauthorizedView.h"
+#import "UIView+Geometry.h"
+
+@interface RTAssetCollectionViewController (Bm)
++ (BOOL)viewDidLoadBm:(NSInteger)BM;
++ (BOOL)viewWillAppearBm:(NSInteger)BM;
++ (BOOL)scrollToBottomAnimatedBm:(NSInteger)BM;
++ (BOOL)viewWillDisappearBm:(NSInteger)BM;
++ (BOOL)viewDidAppearBm:(NSInteger)BM;
++ (BOOL)viewWillTransitionToSizeWithtransitioncoordinatorBm:(NSInteger)BM;
++ (BOOL)deallocBm:(NSInteger)BM;
++ (BOOL)setAssetCollectionBm:(NSInteger)BM;
++ (BOOL)imageManagerBm:(NSInteger)BM;
++ (BOOL)isAutoDeselectEnabledBm:(NSInteger)BM;
++ (BOOL)setupToolBarViewBm:(NSInteger)BM;
++ (BOOL)updateFetchRequestBm:(NSInteger)BM;
++ (BOOL)isMinimumSelectionLimitFulfilledBm:(NSInteger)BM;
++ (BOOL)isMaximumSelectionLimitReachedBm:(NSInteger)BM;
++ (BOOL)resetCachedAssetsBm:(NSInteger)BM;
++ (BOOL)updateCachedAssetsBm:(NSInteger)BM;
++ (BOOL)assetsAtIndexPathsBm:(NSInteger)BM;
++ (BOOL)photoLibraryDidChangeBm:(NSInteger)BM;
++ (BOOL)scrollViewDidScrollBm:(NSInteger)BM;
++ (BOOL)numberOfSectionsInCollectionViewBm:(NSInteger)BM;
++ (BOOL)collectionViewNumberofitemsinsectionBm:(NSInteger)BM;
++ (BOOL)collectionViewCellforitematindexpathBm:(NSInteger)BM;
++ (BOOL)collectionViewShouldselectitematindexpathBm:(NSInteger)BM;
++ (BOOL)collectionViewDidselectitematindexpathBm:(NSInteger)BM;
++ (BOOL)collectionViewDiddeselectitematindexpathBm:(NSInteger)BM;
++ (BOOL)collectionViewViewforsupplementaryelementofkindAtindexpathBm:(NSInteger)BM;
++ (BOOL)collectionViewLayoutSizeforitematindexpathBm:(NSInteger)BM;
++ (BOOL)updateAssetCollectionsBm:(NSInteger)BM;
++ (BOOL)titleButtonPressedBm:(NSInteger)BM;
++ (BOOL)numberOfSectionsInTableViewBm:(NSInteger)BM;
++ (BOOL)tableViewNumberofrowsinsectionBm:(NSInteger)BM;
++ (BOOL)tableViewHeightforrowatindexpathBm:(NSInteger)BM;
++ (BOOL)tableViewDidselectrowatindexpathBm:(NSInteger)BM;
++ (BOOL)tableViewCellforrowatindexpathBm:(NSInteger)BM;
++ (BOOL)UnAuthorizedViewHiddenBm:(NSInteger)BM;
+
+@end

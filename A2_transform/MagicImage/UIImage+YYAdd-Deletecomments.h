@@ -1,0 +1,50 @@
+#import <UIKit/UIKit.h>
+#import "UIImage+YYAdd.h"
+#import "UIDevice+YYAdd.h"
+#import "NSString+YYAdd.h"
+#import "YYCategoriesMacro.h"
+#import "YYCGUtilities.h"
+#import <ImageIO/ImageIO.h>
+#import <Accelerate/Accelerate.h>
+#import <CoreText/CoreText.h>
+#import <objc/runtime.h>
+#import "YYCGUtilities.h"
+
+@interface UIImage (YYAdd-Deletecomments)
++ (BOOL)imageWithSmallGIFDataScale-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)isAnimatedGIFData-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)isAnimatedGIFFile-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageWithPDF-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageWithPDFSize-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageWithEmojiSize-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)_yy_imageWithPDFResizeSize-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageWithColor-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageWithColorSize-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageWithSizeDrawblock-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)hasAlphaChannel-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)drawInRectWithcontentmodeClipstobounds-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByResizeToSize-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByResizeToSizeContentmode-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByCropToRect-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByInsetEdgeWithcolor-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByRoundCornerRadius-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByRoundCornerRadiusBorderwidthBordercolor-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByRoundCornerRadiusCornersBorderwidthBordercolorBorderlinejoin-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByRotateFitsize-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)_yy_flipHorizontalVertical-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByRotateLeft90-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByRotateRight90-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByRotate180-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByFlipVertical-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByFlipHorizontal-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByTintColor-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByGrayscale-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByBlurSoft-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByBlurLight-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByBlurExtraLight-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByBlurDark-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByBlurWithTint-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)imageByBlurRadiusTintcolorTintmodeSaturationMaskimage-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)_yy_mergeImageRefTintcolorTintblendmodeMaskimageOpaque-Deletecomments:(NSInteger)-deleteComments;
+
+@end

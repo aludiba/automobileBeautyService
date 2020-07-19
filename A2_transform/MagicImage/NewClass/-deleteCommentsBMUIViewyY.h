@@ -1,0 +1,36 @@
+#import <Foundation/Foundation.h>
+@interface -deleteCommentsBMUIViewyY: NSObject
++ (BOOL)wPkeyboardtoolbar:(NSInteger)-deleteComments;
++ (BOOL)wKsetshouldhidetoolbarplaceholder:(NSInteger)-deleteComments;
++ (BOOL)SYshouldhidetoolbarplaceholder:(NSInteger)-deleteComments;
++ (BOOL)bRsettoolbarplaceholder:(NSInteger)-deleteComments;
++ (BOOL)ABtoolbarplaceholder:(NSInteger)-deleteComments;
++ (BOOL)fXdrawingtoolbarplaceholder:(NSInteger)-deleteComments;
++ (BOOL)nLflexiblebarbuttonitem:(NSInteger)-deleteComments;
++ (BOOL)GJaddkeyboardtoolbarwithtargetdtitletexthrightbarbuttonconfigurationcpreviousbarbuttonconfigurationxnextbarbuttonconfiguration:(NSInteger)-deleteComments;
++ (BOOL)IFaddrightbuttononkeyboardwithtextqtargetraction:(NSInteger)-deleteComments;
++ (BOOL)JFaddrightbuttononkeyboardwithtextjtargetkactionsshouldshowplaceholder:(NSInteger)-deleteComments;
++ (BOOL)PXaddrightbuttononkeyboardwithtexthtargetfactionptitletext:(NSInteger)-deleteComments;
++ (BOOL)pRaddrightbuttononkeyboardwithimagewtargetzaction:(NSInteger)-deleteComments;
++ (BOOL)LIaddrightbuttononkeyboardwithimageytargetiactionashouldshowplaceholder:(NSInteger)-deleteComments;
++ (BOOL)uWaddrightbuttononkeyboardwithimagextargetsactionjtitletext:(NSInteger)-deleteComments;
++ (BOOL)oPadddoneonkeyboardwithtargeteaction:(NSInteger)-deleteComments;
++ (BOOL)YHadddoneonkeyboardwithtargetoactionyshouldshowplaceholder:(NSInteger)-deleteComments;
++ (BOOL)gZadddoneonkeyboardwithtargetiactionztitletext:(NSInteger)-deleteComments;
++ (BOOL)RXaddleftrightonkeyboardwithtargetzleftbuttontitlesrightbuttontitlecleftbuttonactionwrightbuttonaction:(NSInteger)-deleteComments;
++ (BOOL)nYaddleftrightonkeyboardwithtargetkleftbuttontitlerrightbuttontitlevleftbuttonactionsrightbuttonactionpshouldshowplaceholder:(NSInteger)-deleteComments;
++ (BOOL)zMaddleftrightonkeyboardwithtargettleftbuttontitlesrightbuttontitleqleftbuttonactionjrightbuttonactionytitletext:(NSInteger)-deleteComments;
++ (BOOL)sFaddcanceldoneonkeyboardwithtargetpcancelactionwdoneaction:(NSInteger)-deleteComments;
++ (BOOL)gXaddcanceldoneonkeyboardwithtargetdcancelactionfdoneactionhshouldshowplaceholder:(NSInteger)-deleteComments;
++ (BOOL)JZaddcanceldoneonkeyboardwithtargetzcancelactionjdoneactionptitletext:(NSInteger)-deleteComments;
++ (BOOL)KDaddpreviousnextdoneonkeyboardwithtargettpreviousactioncnextactionvdoneaction:(NSInteger)-deleteComments;
++ (BOOL)tQaddpreviousnextdoneonkeyboardwithtargetnpreviousactionknextactionydoneactionxshouldshowplaceholder:(NSInteger)-deleteComments;
++ (BOOL)mTaddpreviousnextdoneonkeyboardwithtargetupreviousactiongnextactionsdoneactionntitletext:(NSInteger)-deleteComments;
++ (BOOL)bDaddpreviousnextrightonkeyboardwithtargetirightbuttonimageepreviousactionynextactionhrightbuttonaction:(NSInteger)-deleteComments;
++ (BOOL)XGaddpreviousnextrightonkeyboardwithtargetprightbuttonimagerpreviousactionnnextactionhrightbuttonactionishouldshowplaceholder:(NSInteger)-deleteComments;
++ (BOOL)CAaddpreviousnextrightonkeyboardwithtargetnrightbuttonimageypreviousactionenextactionvrightbuttonactionstitletext:(NSInteger)-deleteComments;
++ (BOOL)lKaddpreviousnextrightonkeyboardwithtargetdrightbuttontitlexpreviousactionznextactionorightbuttonaction:(NSInteger)-deleteComments;
++ (BOOL)GCaddpreviousnextrightonkeyboardwithtargetyrightbuttontitlekpreviousactioninextactionfrightbuttonactionpshouldshowplaceholder:(NSInteger)-deleteComments;
++ (BOOL)LKaddpreviousnextrightonkeyboardwithtargetkrightbuttontitlerpreviousactionbnextactionjrightbuttonactionstitletext:(NSInteger)-deleteComments;
+
+@end

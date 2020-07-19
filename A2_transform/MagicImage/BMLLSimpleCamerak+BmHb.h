@@ -1,0 +1,54 @@
+#import <Foundation/Foundation.h>
+#import "BMLLSimpleCamerak.h"
+#import "BMLLSimpleCamerak+Bm.h"
+
+@interface BMLLSimpleCamerak (BmHb)
++ (BOOL)dInitbmBmHb:(NSInteger)hb;
++ (BOOL)pInitwithvideoenabledbmBmHb:(NSInteger)hb;
++ (BOOL)mInitwithqualitypositionvideoenabledbmBmHb:(NSInteger)hb;
++ (BOOL)UInitwithcoderbmBmHb:(NSInteger)hb;
++ (BOOL)ASetupwithqualitypositionvideoenabledbmBmHb:(NSInteger)hb;
++ (BOOL)gViewdidloadbmBmHb:(NSInteger)hb;
++ (BOOL)ZGesturerecognizershouldbeginbmBmHb:(NSInteger)hb;
++ (BOOL)THandlepinchgesturebmBmHb:(NSInteger)hb;
++ (BOOL)aAttachtoviewcontrollerwithframebmBmHb:(NSInteger)hb;
++ (BOOL)zStartbmBmHb:(NSInteger)hb;
++ (BOOL)wInitializebmBmHb:(NSInteger)hb;
++ (BOOL)mStopbmBmHb:(NSInteger)hb;
++ (BOOL)iCaptureexactseenimagebmBmHb:(NSInteger)hb;
++ (BOOL)oCapturebmBmHb:(NSInteger)hb;
++ (BOOL)UStartrecordingwithoutputurlbmBmHb:(NSInteger)hb;
++ (BOOL)oStoprecordingbmBmHb:(NSInteger)hb;
++ (BOOL)DCaptureoutputdidstartrecordingtooutputfileaturlfromconnectionsbmBmHb:(NSInteger)hb;
++ (BOOL)xCaptureoutputdidfinishrecordingtooutputfileaturlfromconnectionserrorbmBmHb:(NSInteger)hb;
++ (BOOL)fEnabletorchbmBmHb:(NSInteger)hb;
++ (BOOL)QCropimageusingpreviewboundsbmBmHb:(NSInteger)hb;
++ (BOOL)QCaptureconnectionbmBmHb:(NSInteger)hb;
++ (BOOL)ySetvideocapturedevicebmBmHb:(NSInteger)hb;
++ (BOOL)EIsflashavailablebmBmHb:(NSInteger)hb;
++ (BOOL)uIstorchavailablebmBmHb:(NSInteger)hb;
++ (BOOL)dUpdateflashmodebmBmHb:(NSInteger)hb;
++ (BOOL)eSetwhitebalancemodebmBmHb:(NSInteger)hb;
++ (BOOL)iSetmirrorbmBmHb:(NSInteger)hb;
++ (BOOL)KTogglepositionbmBmHb:(NSInteger)hb;
++ (BOOL)cSetcamerapositionbmBmHb:(NSInteger)hb;
++ (BOOL)ECamerawithpositionbmBmHb:(NSInteger)hb;
++ (BOOL)LPreviewtappedbmBmHb:(NSInteger)hb;
++ (BOOL)VAdddefaultfocusboxbmBmHb:(NSInteger)hb;
++ (BOOL)RAlterfocusboxanimationbmBmHb:(NSInteger)hb;
++ (BOOL)jFocusatpointbmBmHb:(NSInteger)hb;
++ (BOOL)GShowfocusboxbmBmHb:(NSInteger)hb;
++ (BOOL)kConverttopointofinterestfromviewcoordinatesbmBmHb:(NSInteger)hb;
++ (BOOL)hViewwillappearbmBmHb:(NSInteger)hb;
++ (BOOL)RViewwilldisappearbmBmHb:(NSInteger)hb;
++ (BOOL)tViewwilllayoutsubviewsbmBmHb:(NSInteger)hb;
++ (BOOL)FOrientationforconnectionbmBmHb:(NSInteger)hb;
++ (BOOL)CWillrotatetointerfaceorientationdurationbmBmHb:(NSInteger)hb;
++ (BOOL)RDidreceivememorywarningbmBmHb:(NSInteger)hb;
++ (BOOL)QDeallocbmBmHb:(NSInteger)hb;
++ (BOOL)xRequestcamerapermissionbmBmHb:(NSInteger)hb;
++ (BOOL)QRequestmicrophonepermissionbmBmHb:(NSInteger)hb;
++ (BOOL)UIsfrontcameraavailablebmBmHb:(NSInteger)hb;
++ (BOOL)hIsrearcameraavailablebmBmHb:(NSInteger)hb;
+
+@end

@@ -1,0 +1,51 @@
+#import "IQToolbar.h"
+#import <UIKit/UIView.h>
+#import <UIKit/UIImage.h>
+#import "IQUIView+IQKeyboardToolbar.h"
+#import "IQKeyboardManagerConstantsInternal.h"
+#import "IQKeyboardManager.h"
+#import <objc/runtime.h>
+#import <Foundation/NSData.h>
+#import <UIKit/UIImage.h>
+#import <UIKit/UILabel.h>
+#import <UIKit/UIScreen.h>
+#import <UIKit/UIAccessibility.h>
+#import "UIView+IQToolbarAdditionBm.h"
+#import "UIView+IQToolbarAdditionBmBm.h"
+#import "UIView+IQToolbarAdditionBmBmBm.h"
+
+@interface UIView (IQToolbarAdditionBmBmBmHb)
++ (BOOL)keyboardToolbarBmBmBmHb:(NSInteger)hb;
++ (BOOL)setShouldHideToolbarPlaceholderBmBmBmHb:(NSInteger)hb;
++ (BOOL)shouldHideToolbarPlaceholderBmBmBmHb:(NSInteger)hb;
++ (BOOL)setToolbarPlaceholderBmBmBmHb:(NSInteger)hb;
++ (BOOL)toolbarPlaceholderBmBmBmHb:(NSInteger)hb;
++ (BOOL)drawingToolbarPlaceholderBmBmBmHb:(NSInteger)hb;
++ (BOOL)flexibleBarButtonItemBmBmBmHb:(NSInteger)hb;
++ (BOOL)addKeyboardToolbarWithTargetTitletextRightbarbuttonconfigurationPreviousbarbuttonconfigurationNextbarbuttonconfigurationBmBmBmHb:(NSInteger)hb;
++ (BOOL)addRightButtonOnKeyboardWithTextTargetActionBmBmBmHb:(NSInteger)hb;
++ (BOOL)addRightButtonOnKeyboardWithTextTargetActionShouldshowplaceholderBmBmBmHb:(NSInteger)hb;
++ (BOOL)addRightButtonOnKeyboardWithTextTargetActionTitletextBmBmBmHb:(NSInteger)hb;
++ (BOOL)addRightButtonOnKeyboardWithImageTargetActionBmBmBmHb:(NSInteger)hb;
++ (BOOL)addRightButtonOnKeyboardWithImageTargetActionShouldshowplaceholderBmBmBmHb:(NSInteger)hb;
++ (BOOL)addRightButtonOnKeyboardWithImageTargetActionTitletextBmBmBmHb:(NSInteger)hb;
++ (BOOL)addDoneOnKeyboardWithTargetActionBmBmBmHb:(NSInteger)hb;
++ (BOOL)addDoneOnKeyboardWithTargetActionShouldshowplaceholderBmBmBmHb:(NSInteger)hb;
++ (BOOL)addDoneOnKeyboardWithTargetActionTitletextBmBmBmHb:(NSInteger)hb;
++ (BOOL)addLeftRightOnKeyboardWithTargetLeftbuttontitleRightbuttontitleLeftbuttonactionRightbuttonactionBmBmBmHb:(NSInteger)hb;
++ (BOOL)addLeftRightOnKeyboardWithTargetLeftbuttontitleRightbuttontitleLeftbuttonactionRightbuttonactionShouldshowplaceholderBmBmBmHb:(NSInteger)hb;
++ (BOOL)addLeftRightOnKeyboardWithTargetLeftbuttontitleRightbuttontitleLeftbuttonactionRightbuttonactionTitletextBmBmBmHb:(NSInteger)hb;
++ (BOOL)addCancelDoneOnKeyboardWithTargetCancelactionDoneactionBmBmBmHb:(NSInteger)hb;
++ (BOOL)addCancelDoneOnKeyboardWithTargetCancelactionDoneactionShouldshowplaceholderBmBmBmHb:(NSInteger)hb;
++ (BOOL)addCancelDoneOnKeyboardWithTargetCancelactionDoneactionTitletextBmBmBmHb:(NSInteger)hb;
++ (BOOL)addPreviousNextDoneOnKeyboardWithTargetPreviousactionNextactionDoneactionBmBmBmHb:(NSInteger)hb;
++ (BOOL)addPreviousNextDoneOnKeyboardWithTargetPreviousactionNextactionDoneactionShouldshowplaceholderBmBmBmHb:(NSInteger)hb;
++ (BOOL)addPreviousNextDoneOnKeyboardWithTargetPreviousactionNextactionDoneactionTitletextBmBmBmHb:(NSInteger)hb;
++ (BOOL)addPreviousNextRightOnKeyboardWithTargetRightbuttonimagePreviousactionNextactionRightbuttonactionBmBmBmHb:(NSInteger)hb;
++ (BOOL)addPreviousNextRightOnKeyboardWithTargetRightbuttonimagePreviousactionNextactionRightbuttonactionShouldshowplaceholderBmBmBmHb:(NSInteger)hb;
++ (BOOL)addPreviousNextRightOnKeyboardWithTargetRightbuttonimagePreviousactionNextactionRightbuttonactionTitletextBmBmBmHb:(NSInteger)hb;
++ (BOOL)addPreviousNextRightOnKeyboardWithTargetRightbuttontitlePreviousactionNextactionRightbuttonactionBmBmBmHb:(NSInteger)hb;
++ (BOOL)addPreviousNextRightOnKeyboardWithTargetRightbuttontitlePreviousactionNextactionRightbuttonactionShouldshowplaceholderBmBmBmHb:(NSInteger)hb;
++ (BOOL)addPreviousNextRightOnKeyboardWithTargetRightbuttontitlePreviousactionNextactionRightbuttonactionTitletextBmBmBmHb:(NSInteger)hb;
+
+@end

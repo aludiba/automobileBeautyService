@@ -1,0 +1,57 @@
+#import <Foundation/Foundation.h>
+#import "BMNSStringP.h"
+
+@interface BMNSStringP (Bm)
++ (BOOL)Emd2StringBm:(NSInteger)BM;
++ (BOOL)amd4StringBm:(NSInteger)BM;
++ (BOOL)Nmd5StringBm:(NSInteger)BM;
++ (BOOL)Hsha1StringBm:(NSInteger)BM;
++ (BOOL)rsha224StringBm:(NSInteger)BM;
++ (BOOL)Usha256StringBm:(NSInteger)BM;
++ (BOOL)Nsha384StringBm:(NSInteger)BM;
++ (BOOL)tsha512StringBm:(NSInteger)BM;
++ (BOOL)Ycrc32StringBm:(NSInteger)BM;
++ (BOOL)mHmacmd5StringwithkeyBm:(NSInteger)BM;
++ (BOOL)QHmacsha1StringwithkeyBm:(NSInteger)BM;
++ (BOOL)oHmacsha224StringwithkeyBm:(NSInteger)BM;
++ (BOOL)HHmacsha256StringwithkeyBm:(NSInteger)BM;
++ (BOOL)CHmacsha384StringwithkeyBm:(NSInteger)BM;
++ (BOOL)tHmacsha512StringwithkeyBm:(NSInteger)BM;
++ (BOOL)nbase64EncodedStringBm:(NSInteger)BM;
++ (BOOL)SStringwithbase64EncodedstringBm:(NSInteger)BM;
++ (BOOL)EstringByURLEncodeBm:(NSInteger)BM;
++ (BOOL)cstringByURLDecodeBm:(NSInteger)BM;
++ (BOOL)PstringByEscapingHTMLBm:(NSInteger)BM;
++ (BOOL)TSizeforfontSSizedModeBm:(NSInteger)BM;
++ (BOOL)zWidthforfontBm:(NSInteger)BM;
++ (BOOL)dHeightforfontEWidthBm:(NSInteger)BM;
++ (BOOL)HMatchesregexSOptionsBm:(NSInteger)BM;
++ (BOOL)rEnumerateregexmatchesIOptionshUsingblockBm:(NSInteger)BM;
++ (BOOL)lStringbyreplacingregexaOptionsaWithstringBm:(NSInteger)BM;
++ (BOOL)gcharValueBm:(NSInteger)BM;
++ (BOOL)xunsignedCharValueBm:(NSInteger)BM;
++ (BOOL)FshortValueBm:(NSInteger)BM;
++ (BOOL)MunsignedShortValueBm:(NSInteger)BM;
++ (BOOL)DunsignedIntValueBm:(NSInteger)BM;
++ (BOOL)dlongValueBm:(NSInteger)BM;
++ (BOOL)ZunsignedLongValueBm:(NSInteger)BM;
++ (BOOL)NunsignedLongLongValueBm:(NSInteger)BM;
++ (BOOL)runsignedIntegerValueBm:(NSInteger)BM;
++ (BOOL)IstringWithUUIDBm:(NSInteger)BM;
++ (BOOL)wStringwithutf32CharBm:(NSInteger)BM;
++ (BOOL)QStringwithutf32CharskLengthBm:(NSInteger)BM;
++ (BOOL)DEnumerateutf32CharinrangeeUsingblockBm:(NSInteger)BM;
++ (BOOL)XstringByTrimBm:(NSInteger)BM;
++ (BOOL)xStringbyappendingnamescaleBm:(NSInteger)BM;
++ (BOOL)yStringbyappendingpathscaleBm:(NSInteger)BM;
++ (BOOL)tpathScaleBm:(NSInteger)BM;
++ (BOOL)DisNotBlankBm:(NSInteger)BM;
++ (BOOL)kContainsstringBm:(NSInteger)BM;
++ (BOOL)oContainscharactersetBm:(NSInteger)BM;
++ (BOOL)BnumberValueBm:(NSInteger)BM;
++ (BOOL)vdataValueBm:(NSInteger)BM;
++ (BOOL)vrangeOfAllBm:(NSInteger)BM;
++ (BOOL)KjsonValueDecodedBm:(NSInteger)BM;
++ (BOOL)kStringnamedBm:(NSInteger)BM;
+
+@end

@@ -1,0 +1,51 @@
+#import <Foundation/Foundation.h>
+#import "BMNSDatae.h"
+
+@interface BMNSDatae (-Deletecomments)
++ (BOOL)pmd2String-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)Dmd2Data-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)xmd4String-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)Wmd4Data-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)qmd5String-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)kmd5Data-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)msha1String-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)Psha1Data-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)psha224String-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)zsha224Data-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)Qsha256String-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ksha256Data-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)gsha384String-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)Msha384Data-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)Qsha512String-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)Rsha512Data-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)fHmacstringusingalgTWithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)DHmacdatausingalgIWithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)dHmacmd5Stringwithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)bHmacmd5Datawithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)LHmacsha1Stringwithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)KHmacsha1Datawithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)sHmacsha224Stringwithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)jHmacsha224Datawithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)PHmacsha256Stringwithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)AHmacsha256Datawithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)rHmacsha384Stringwithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)nHmacsha384Datawithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)KHmacsha512Stringwithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)DHmacsha512Datawithkey-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ocrc32String-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)Hcrc32-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)iAes256EncryptwithkeysIv-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)pAes256DecryptwithkeyjIv-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)lutf8String-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)ihexString-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)fDatawithhexstring-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)lbase64EncodedString-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)VDatawithbase64Encodedstring-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)JjsonValueDecoded-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)LgzipInflate-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)igzipDeflate-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)GzlibInflate-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)vzlibDeflate-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)YDatanamed-Deletecomments:(NSInteger)-deleteComments;
+
+@end

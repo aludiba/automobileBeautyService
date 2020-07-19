@@ -1,0 +1,47 @@
+//
+//  MagicImage.pch
+//  MagicImage
+//
+//  Created by MagicImage on 2019/4/25.
+//  Copyright © 2019 April. All rights reserved.
+//
+
+#ifndef MagicImage_pch
+#define MagicImage_pch
+#import <MBProgressHUD/MBProgressHUD.h>
+//#import "SDAutoLayout.h"
+#import <SDAutoLayout/SDAutoLayout.h>
+#import "MBProgressHUD+JDragon.h"
+#import "MJExtension.h"
+#import "LSHttpParameter.h"
+//#import "MIHttpEnclosureTool.h"
+#import "MIHttpTool.h"
+//#import "UIImageView+WebCache.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "MJRefresh.h"
+#import "CommonClass.h"
+#import "asd.h"
+//#import "baseHeader.h"
+#define LSBaseUrl @"http://api.zhewo.top"
+//#define LSBaseUrl @"http://192.168.0.101"
+#define KWeakSelf(type)     __weak typeof(type) weak##type = type;
+
+#define ScreenWidth        [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight       [UIScreen mainScreen].bounds.size.height
+#define PEImage(name)      [UIImage imageNamed:name]
+#define UserDefaults       [NSUserDefaults standardUserDefaults]
+#define NotifiCenter       [NSNotificationCenter defaultCenter]
+
+#define RGB(r,g,b)         [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define iphone_X            ([UIScreen mainScreen].bounds.size.height==812.0f)
+#define NavBarHeight       (iphone_X ? 88 : 64)
+#define TabBarHeight       49
+#define StatusBarHeight    (iphone_X ? 44 : 20)
+#define ScareValue(vlaue,screen)  vlaue*(screen/(screen==ScreenWidth?375.0f:667.0f))
+#define FontSize(vlaue,screen)  [UIFont systemFontOfSize:ScareValue(vlaue,screen)]
+#define FontBoldSize(vlaue,screen)  [UIFont boldSystemFontOfSize:ScareValue(vlaue,screen)]
+#define UserDefaults [NSUserDefaults standardUserDefaults]
+#define UserId [UserDefaults objectForKey:@"user_id"]
+
+#define LSFontSize(vlaue,screen)  [UIFont systemFontOfSize:ScareValue(vlaue,screen)]
+#endif /* MagicImage_pch */

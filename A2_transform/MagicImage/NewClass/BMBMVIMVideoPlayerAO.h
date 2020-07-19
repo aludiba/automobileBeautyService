@@ -1,0 +1,43 @@
+#import <Foundation/Foundation.h>
+@interface BMBMVIMVideoPlayerAO: NSObject
++ (BOOL)ANdeallocbm:(NSInteger)BM;
++ (BOOL)POinitbm:(NSInteger)BM;
++ (BOOL)bOsetupplayerbm:(NSInteger)BM;
++ (BOOL)dJsetupaudiosessionbm:(NSInteger)BM;
++ (BOOL)aQseturlbm:(NSInteger)BM;
++ (BOOL)gZsetplayeritembm:(NSInteger)BM;
++ (BOOL)tJsetassetbm:(NSInteger)BM;
++ (BOOL)tSsetmutedbm:(NSInteger)BM;
++ (BOOL)BFismutedbm:(NSInteger)BM;
++ (BOOL)RVplaybm:(NSInteger)BM;
++ (BOOL)SGpausebm:(NSInteger)BM;
++ (BOOL)yYseektotimebm:(NSInteger)BM;
++ (BOOL)hHresetbm:(NSInteger)BM;
++ (BOOL)bSenableairplaybm:(NSInteger)BM;
++ (BOOL)XFdisableairplaybm:(NSInteger)BM;
++ (BOOL)WHisairplayenabledbm:(NSInteger)BM;
++ (BOOL)XDstartscrubbingbm:(NSInteger)BM;
++ (BOOL)AGscrubbm:(NSInteger)BM;
++ (BOOL)eXstopscrubbingbm:(NSInteger)BM;
++ (BOOL)KLenabletimeupdatesbm:(NSInteger)BM;
++ (BOOL)dRdisabletimeupdatesbm:(NSInteger)BM;
++ (BOOL)sFsetvolumebm:(NSInteger)BM;
++ (BOOL)NUcancelfadevolumebm:(NSInteger)BM;
++ (BOOL)nYfadeinvolumebm:(NSInteger)BM;
++ (BOOL)iLfadeoutvolumebm:(NSInteger)BM;
++ (BOOL)mHreportunabletocreateplayeritembm:(NSInteger)BM;
++ (BOOL)ENresetplayeritemifnecessarybm:(NSInteger)BM;
++ (BOOL)vOprepareplayeritembm:(NSInteger)BM;
++ (BOOL)yRrestartbm:(NSInteger)BM;
++ (BOOL)ENisatendtimebm:(NSInteger)BM;
++ (BOOL)cQcalcloadeddurationbm:(NSInteger)BM;
++ (BOOL)oVaddplayerobserversbm:(NSInteger)BM;
++ (BOOL)GMremoveplayerobserversbm:(NSInteger)BM;
++ (BOOL)lZaddplayeritemobserversbm:(NSInteger)BM;
++ (BOOL)YZremoveplayeritemobserversbm:(NSInteger)BM;
++ (BOOL)CGaddtimeobserverbm:(NSInteger)BM;
++ (BOOL)FFremovetimeobserverbm:(NSInteger)BM;
++ (BOOL)KXobservevalueforkeypathofobjectchangecontextbm:(NSInteger)BM;
++ (BOOL)tRplayeritemdidplaytoendtimebm:(NSInteger)BM;
+
+@end

@@ -1,0 +1,95 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - DGActivityIndicatorView (2.1.1)
+  - FSTextView (1.8)
+  - GPUImage (0.1.7)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJExtension (3.2.1)
+  - MJRefresh (3.4.3)
+  - ReactiveObjC (3.1.0)
+  - SDAutoLayout (2.2.1)
+  - SDCycleScrollView (1.80):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.8.0):
+    - SDWebImage/Core (= 5.8.0)
+  - SDWebImage/Core (5.8.0)
+  - TOCropViewController (2.3.8)
+  - YCPopover (1.2.0)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking
+  - DGActivityIndicatorView
+  - FSTextView
+  - GPUImage
+  - Masonry
+  - MBProgressHUD
+  - MJExtension
+  - MJRefresh
+  - ReactiveObjC
+  - SDAutoLayout
+  - SDCycleScrollView
+  - SDWebImage
+  - TOCropViewController
+  - YCPopover
+  - YYCategories
+  - YYModel
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - DGActivityIndicatorView
+    - FSTextView
+    - GPUImage
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - ReactiveObjC
+    - SDAutoLayout
+    - SDCycleScrollView
+    - SDWebImage
+    - TOCropViewController
+    - YCPopover
+    - YYCategories
+    - YYModel
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
+  FSTextView: 9e2ca07bb6bb0fb7e77b49b2717adf81f3c620b5
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+  SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
+  SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
+  SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
+  TOCropViewController: 0a075f02c253e88095143bbac7b013fc6fba5090
+  YCPopover: a11e06b685e9cddaa10e8f1bb3c1ba5bb52d719e
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: e5353d91b39113593dbc30c6482f571ba9a4648f
+
+COCOAPODS: 1.9.2

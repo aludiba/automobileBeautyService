@@ -1,0 +1,52 @@
+#import <Foundation/Foundation.h>
+#import "BMBMIQKeyboardManagerSf.h"
+#import "BMBMIQKeyboardManagerSf+Bm.h"
+
+@interface BMBMIQKeyboardManagerSf (BmHb)
++ (BOOL)GGloadBmHb:(NSInteger)hb;
++ (BOOL)kIinitBmHb:(NSInteger)hb;
++ (BOOL)XWsharedmanagerBmHb:(NSInteger)hb;
++ (BOOL)DUdeallocBmHb:(NSInteger)hb;
++ (BOOL)UXsetenableBmHb:(NSInteger)hb;
++ (BOOL)FCprivateisenabledBmHb:(NSInteger)hb;
++ (BOOL)lIsetkeyboarddistancefromtextfieldBmHb:(NSInteger)hb;
++ (BOOL)JAsetshouldresignontouchoutsideBmHb:(NSInteger)hb;
++ (BOOL)xKprivateshouldresignontouchoutsideBmHb:(NSInteger)hb;
++ (BOOL)kJsetmoveddistanceBmHb:(NSInteger)hb;
++ (BOOL)jIsetenableautotoolbarBmHb:(NSInteger)hb;
++ (BOOL)WTprivateisenableautotoolbarBmHb:(NSInteger)hb;
++ (BOOL)VSkeywindowBmHb:(NSInteger)hb;
++ (BOOL)mVoptimizedadjustpositionBmHb:(NSInteger)hb;
++ (BOOL)DTadjustpositionBmHb:(NSInteger)hb;
++ (BOOL)gSrestorepositionBmHb:(NSInteger)hb;
++ (BOOL)AGreloadlayoutifneededBmHb:(NSInteger)hb;
++ (BOOL)xBkeyboardwillshowBmHb:(NSInteger)hb;
++ (BOOL)xAkeyboarddidshowBmHb:(NSInteger)hb;
++ (BOOL)QXkeyboardwillhideBmHb:(NSInteger)hb;
++ (BOOL)PPkeyboarddidhideBmHb:(NSInteger)hb;
++ (BOOL)ZBtextfieldviewdidbegineditingBmHb:(NSInteger)hb;
++ (BOOL)LDtextfieldviewdidendeditingBmHb:(NSInteger)hb;
++ (BOOL)SGwillchangestatusbarorientationBmHb:(NSInteger)hb;
++ (BOOL)vRtaprecognizedBmHb:(NSInteger)hb;
++ (BOOL)mCgesturerecognizercshouldrecognizesimultaneouslywithgesturerecognizerBmHb:(NSInteger)hb;
++ (BOOL)WRgesturerecognizerrshouldreceivetouchBmHb:(NSInteger)hb;
++ (BOOL)JFresignfirstresponderBmHb:(NSInteger)hb;
++ (BOOL)qWcangopreviousBmHb:(NSInteger)hb;
++ (BOOL)vMcangonextBmHb:(NSInteger)hb;
++ (BOOL)fGgopreviousBmHb:(NSInteger)hb;
++ (BOOL)ULgonextBmHb:(NSInteger)hb;
++ (BOOL)wRresponderviewsBmHb:(NSInteger)hb;
++ (BOOL)FBaddtoolbarifrequiredBmHb:(NSInteger)hb;
++ (BOOL)fZremovetoolbarifrequiredBmHb:(NSInteger)hb;
++ (BOOL)nJreloadinputviewsBmHb:(NSInteger)hb;
++ (BOOL)gGpreviousactionBmHb:(NSInteger)hb;
++ (BOOL)KEnextactionBmHb:(NSInteger)hb;
++ (BOOL)kSdoneactionBmHb:(NSInteger)hb;
++ (BOOL)kYregistertextfieldviewclassodidbegineditingnotificationnamendidendeditingnotificationnameBmHb:(NSInteger)hb;
++ (BOOL)nNunregistertextfieldviewclasshdidbegineditingnotificationnameididendeditingnotificationnameBmHb:(NSInteger)hb;
++ (BOOL)PIregisterallnotificationsBmHb:(NSInteger)hb;
++ (BOOL)gRunregisterallnotificationsBmHb:(NSInteger)hb;
++ (BOOL)HXshowlogBmHb:(NSInteger)hb;
++ (BOOL)UYshowlogqindentationBmHb:(NSInteger)hb;
+
+@end

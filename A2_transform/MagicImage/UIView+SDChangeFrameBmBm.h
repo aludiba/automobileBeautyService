@@ -1,0 +1,51 @@
+#import <UIKit/UIKit.h>
+#import "UIView+SDAutoLayout.h"
+#import "UITableView+SDAutoTableViewCellHeight.h"
+#import <objc/runtime.h>
+#import "UIView+SDChangeFrameBm.h"
+
+@interface UIView (SDChangeFrameBmBm)
++ (BOOL)shouldReadjustFrameBeforeStoreCacheBmBm:(NSInteger)BM;
++ (BOOL)setShouldReadjustFrameBeforeStoreCacheBmBm:(NSInteger)BM;
++ (BOOL)left_sdBmBm:(NSInteger)BM;
++ (BOOL)setLeft_sdBmBm:(NSInteger)BM;
++ (BOOL)top_sdBmBm:(NSInteger)BM;
++ (BOOL)setTop_sdBmBm:(NSInteger)BM;
++ (BOOL)right_sdBmBm:(NSInteger)BM;
++ (BOOL)setRight_sdBmBm:(NSInteger)BM;
++ (BOOL)bottom_sdBmBm:(NSInteger)BM;
++ (BOOL)setBottom_sdBmBm:(NSInteger)BM;
++ (BOOL)centerX_sdBmBm:(NSInteger)BM;
++ (BOOL)setCenterX_sdBmBm:(NSInteger)BM;
++ (BOOL)centerY_sdBmBm:(NSInteger)BM;
++ (BOOL)setCenterY_sdBmBm:(NSInteger)BM;
++ (BOOL)width_sdBmBm:(NSInteger)BM;
++ (BOOL)setWidth_sdBmBm:(NSInteger)BM;
++ (BOOL)height_sdBmBm:(NSInteger)BM;
++ (BOOL)setHeight_sdBmBm:(NSInteger)BM;
++ (BOOL)origin_sdBmBm:(NSInteger)BM;
++ (BOOL)setOrigin_sdBmBm:(NSInteger)BM;
++ (BOOL)size_sdBmBm:(NSInteger)BM;
++ (BOOL)setSize_sdBmBm:(NSInteger)BM;
++ (BOOL)setWidthBmBm:(NSInteger)BM;
++ (BOOL)setHeightBmBm:(NSInteger)BM;
++ (BOOL)setSizeBmBm:(NSInteger)BM;
++ (BOOL)leftBmBm:(NSInteger)BM;
++ (BOOL)setLeftBmBm:(NSInteger)BM;
++ (BOOL)rightBmBm:(NSInteger)BM;
++ (BOOL)setRightBmBm:(NSInteger)BM;
++ (BOOL)widthBmBm:(NSInteger)BM;
++ (BOOL)heightBmBm:(NSInteger)BM;
++ (BOOL)topBmBm:(NSInteger)BM;
++ (BOOL)setTopBmBm:(NSInteger)BM;
++ (BOOL)bottomBmBm:(NSInteger)BM;
++ (BOOL)setBottomBmBm:(NSInteger)BM;
++ (BOOL)centerXBmBm:(NSInteger)BM;
++ (BOOL)setCenterXBmBm:(NSInteger)BM;
++ (BOOL)centerYBmBm:(NSInteger)BM;
++ (BOOL)setCenterYBmBm:(NSInteger)BM;
++ (BOOL)originBmBm:(NSInteger)BM;
++ (BOOL)setOriginBmBm:(NSInteger)BM;
++ (BOOL)sizeBmBm:(NSInteger)BM;
+
+@end

@@ -1,0 +1,50 @@
+#import <UIKit/UIKit.h>
+#import "UIImage+YYAdd.h"
+#import "UIDevice+YYAdd.h"
+#import "NSString+YYAdd.h"
+#import "YYCategoriesMacro.h"
+#import "YYCGUtilities.h"
+#import <ImageIO/ImageIO.h>
+#import <Accelerate/Accelerate.h>
+#import <CoreText/CoreText.h>
+#import <objc/runtime.h>
+#import "YYCGUtilities.h"
+
+@interface UIImage (YYAddHb)
++ (BOOL)imageWithSmallGIFDataScaleHb:(NSInteger)hb;
++ (BOOL)isAnimatedGIFDataHb:(NSInteger)hb;
++ (BOOL)isAnimatedGIFFileHb:(NSInteger)hb;
++ (BOOL)imageWithPDFHb:(NSInteger)hb;
++ (BOOL)imageWithPDFSizeHb:(NSInteger)hb;
++ (BOOL)imageWithEmojiSizeHb:(NSInteger)hb;
++ (BOOL)_yy_imageWithPDFResizeSizeHb:(NSInteger)hb;
++ (BOOL)imageWithColorHb:(NSInteger)hb;
++ (BOOL)imageWithColorSizeHb:(NSInteger)hb;
++ (BOOL)imageWithSizeDrawblockHb:(NSInteger)hb;
++ (BOOL)hasAlphaChannelHb:(NSInteger)hb;
++ (BOOL)drawInRectWithcontentmodeClipstoboundsHb:(NSInteger)hb;
++ (BOOL)imageByResizeToSizeHb:(NSInteger)hb;
++ (BOOL)imageByResizeToSizeContentmodeHb:(NSInteger)hb;
++ (BOOL)imageByCropToRectHb:(NSInteger)hb;
++ (BOOL)imageByInsetEdgeWithcolorHb:(NSInteger)hb;
++ (BOOL)imageByRoundCornerRadiusHb:(NSInteger)hb;
++ (BOOL)imageByRoundCornerRadiusBorderwidthBordercolorHb:(NSInteger)hb;
++ (BOOL)imageByRoundCornerRadiusCornersBorderwidthBordercolorBorderlinejoinHb:(NSInteger)hb;
++ (BOOL)imageByRotateFitsizeHb:(NSInteger)hb;
++ (BOOL)_yy_flipHorizontalVerticalHb:(NSInteger)hb;
++ (BOOL)imageByRotateLeft90Hb:(NSInteger)hb;
++ (BOOL)imageByRotateRight90Hb:(NSInteger)hb;
++ (BOOL)imageByRotate180Hb:(NSInteger)hb;
++ (BOOL)imageByFlipVerticalHb:(NSInteger)hb;
++ (BOOL)imageByFlipHorizontalHb:(NSInteger)hb;
++ (BOOL)imageByTintColorHb:(NSInteger)hb;
++ (BOOL)imageByGrayscaleHb:(NSInteger)hb;
++ (BOOL)imageByBlurSoftHb:(NSInteger)hb;
++ (BOOL)imageByBlurLightHb:(NSInteger)hb;
++ (BOOL)imageByBlurExtraLightHb:(NSInteger)hb;
++ (BOOL)imageByBlurDarkHb:(NSInteger)hb;
++ (BOOL)imageByBlurWithTintHb:(NSInteger)hb;
++ (BOOL)imageByBlurRadiusTintcolorTintmodeSaturationMaskimageHb:(NSInteger)hb;
++ (BOOL)_yy_mergeImageRefTintcolorTintblendmodeMaskimageOpaqueHb:(NSInteger)hb;
+
+@end

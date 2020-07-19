@@ -1,0 +1,50 @@
+#import "IQToolbar.h"
+#import <UIKit/UIView.h>
+#import <UIKit/UIImage.h>
+#import "IQUIView+IQKeyboardToolbar.h"
+#import "IQKeyboardManagerConstantsInternal.h"
+#import "IQKeyboardManager.h"
+#import <objc/runtime.h>
+#import <Foundation/NSData.h>
+#import <UIKit/UIImage.h>
+#import <UIKit/UILabel.h>
+#import <UIKit/UIScreen.h>
+#import <UIKit/UIAccessibility.h>
+#import "UIView+IQToolbarAdditionBm.h"
+#import "UIView+IQToolbarAdditionBmBm.h"
+
+@interface UIView (IQToolbarAdditionBmBm-Deletecomments)
++ (BOOL)keyboardToolbarBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setShouldHideToolbarPlaceholderBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)shouldHideToolbarPlaceholderBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)setToolbarPlaceholderBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)toolbarPlaceholderBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)drawingToolbarPlaceholderBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)flexibleBarButtonItemBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addKeyboardToolbarWithTargetTitletextRightbarbuttonconfigurationPreviousbarbuttonconfigurationNextbarbuttonconfigurationBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addRightButtonOnKeyboardWithTextTargetActionBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addRightButtonOnKeyboardWithTextTargetActionShouldshowplaceholderBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addRightButtonOnKeyboardWithTextTargetActionTitletextBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addRightButtonOnKeyboardWithImageTargetActionBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addRightButtonOnKeyboardWithImageTargetActionShouldshowplaceholderBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addRightButtonOnKeyboardWithImageTargetActionTitletextBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addDoneOnKeyboardWithTargetActionBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addDoneOnKeyboardWithTargetActionShouldshowplaceholderBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addDoneOnKeyboardWithTargetActionTitletextBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addLeftRightOnKeyboardWithTargetLeftbuttontitleRightbuttontitleLeftbuttonactionRightbuttonactionBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addLeftRightOnKeyboardWithTargetLeftbuttontitleRightbuttontitleLeftbuttonactionRightbuttonactionShouldshowplaceholderBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addLeftRightOnKeyboardWithTargetLeftbuttontitleRightbuttontitleLeftbuttonactionRightbuttonactionTitletextBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addCancelDoneOnKeyboardWithTargetCancelactionDoneactionBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addCancelDoneOnKeyboardWithTargetCancelactionDoneactionShouldshowplaceholderBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addCancelDoneOnKeyboardWithTargetCancelactionDoneactionTitletextBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addPreviousNextDoneOnKeyboardWithTargetPreviousactionNextactionDoneactionBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addPreviousNextDoneOnKeyboardWithTargetPreviousactionNextactionDoneactionShouldshowplaceholderBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addPreviousNextDoneOnKeyboardWithTargetPreviousactionNextactionDoneactionTitletextBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addPreviousNextRightOnKeyboardWithTargetRightbuttonimagePreviousactionNextactionRightbuttonactionBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addPreviousNextRightOnKeyboardWithTargetRightbuttonimagePreviousactionNextactionRightbuttonactionShouldshowplaceholderBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addPreviousNextRightOnKeyboardWithTargetRightbuttonimagePreviousactionNextactionRightbuttonactionTitletextBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addPreviousNextRightOnKeyboardWithTargetRightbuttontitlePreviousactionNextactionRightbuttonactionBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addPreviousNextRightOnKeyboardWithTargetRightbuttontitlePreviousactionNextactionRightbuttonactionShouldshowplaceholderBmBm-Deletecomments:(NSInteger)-deleteComments;
++ (BOOL)addPreviousNextRightOnKeyboardWithTargetRightbuttontitlePreviousactionNextactionRightbuttonactionTitletextBmBm-Deletecomments:(NSInteger)-deleteComments;
+
+@end

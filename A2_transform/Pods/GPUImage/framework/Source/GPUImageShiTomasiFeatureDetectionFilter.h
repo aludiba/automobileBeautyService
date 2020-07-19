@@ -1,0 +1,3 @@
+#import "GPUImageHarrisCornerDetectionFilter.h"
+@interface GPUImageShiTomasiFeatureDetectionFilter : GPUImageHarrisCornerDetectionFilter
+@end

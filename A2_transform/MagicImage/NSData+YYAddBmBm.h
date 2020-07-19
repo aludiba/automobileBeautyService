@@ -1,0 +1,53 @@
+#import <Foundation/Foundation.h>
+#import "NSData+YYAdd.h"
+#import "YYCategoriesMacro.h"
+#import "NSData+YYAddBm.h"
+
+@interface NSData (YYAddBmBm)
++ (BOOL)md2StringBmBm:(NSInteger)BM;
++ (BOOL)md2DataBmBm:(NSInteger)BM;
++ (BOOL)md4StringBmBm:(NSInteger)BM;
++ (BOOL)md4DataBmBm:(NSInteger)BM;
++ (BOOL)md5StringBmBm:(NSInteger)BM;
++ (BOOL)md5DataBmBm:(NSInteger)BM;
++ (BOOL)sha1StringBmBm:(NSInteger)BM;
++ (BOOL)sha1DataBmBm:(NSInteger)BM;
++ (BOOL)sha224StringBmBm:(NSInteger)BM;
++ (BOOL)sha224DataBmBm:(NSInteger)BM;
++ (BOOL)sha256StringBmBm:(NSInteger)BM;
++ (BOOL)sha256DataBmBm:(NSInteger)BM;
++ (BOOL)sha384StringBmBm:(NSInteger)BM;
++ (BOOL)sha384DataBmBm:(NSInteger)BM;
++ (BOOL)sha512StringBmBm:(NSInteger)BM;
++ (BOOL)sha512DataBmBm:(NSInteger)BM;
++ (BOOL)hmacStringUsingAlgWithkeyBmBm:(NSInteger)BM;
++ (BOOL)hmacDataUsingAlgWithkeyBmBm:(NSInteger)BM;
++ (BOOL)hmacMD5StringWithKeyBmBm:(NSInteger)BM;
++ (BOOL)hmacMD5DataWithKeyBmBm:(NSInteger)BM;
++ (BOOL)hmacSHA1StringWithKeyBmBm:(NSInteger)BM;
++ (BOOL)hmacSHA1DataWithKeyBmBm:(NSInteger)BM;
++ (BOOL)hmacSHA224StringWithKeyBmBm:(NSInteger)BM;
++ (BOOL)hmacSHA224DataWithKeyBmBm:(NSInteger)BM;
++ (BOOL)hmacSHA256StringWithKeyBmBm:(NSInteger)BM;
++ (BOOL)hmacSHA256DataWithKeyBmBm:(NSInteger)BM;
++ (BOOL)hmacSHA384StringWithKeyBmBm:(NSInteger)BM;
++ (BOOL)hmacSHA384DataWithKeyBmBm:(NSInteger)BM;
++ (BOOL)hmacSHA512StringWithKeyBmBm:(NSInteger)BM;
++ (BOOL)hmacSHA512DataWithKeyBmBm:(NSInteger)BM;
++ (BOOL)crc32StringBmBm:(NSInteger)BM;
++ (BOOL)crc32BmBm:(NSInteger)BM;
++ (BOOL)aes256EncryptWithKeyIvBmBm:(NSInteger)BM;
++ (BOOL)aes256DecryptWithkeyIvBmBm:(NSInteger)BM;
++ (BOOL)utf8StringBmBm:(NSInteger)BM;
++ (BOOL)hexStringBmBm:(NSInteger)BM;
++ (BOOL)dataWithHexStringBmBm:(NSInteger)BM;
++ (BOOL)base64EncodedStringBmBm:(NSInteger)BM;
++ (BOOL)dataWithBase64EncodedStringBmBm:(NSInteger)BM;
++ (BOOL)jsonValueDecodedBmBm:(NSInteger)BM;
++ (BOOL)gzipInflateBmBm:(NSInteger)BM;
++ (BOOL)gzipDeflateBmBm:(NSInteger)BM;
++ (BOOL)zlibInflateBmBm:(NSInteger)BM;
++ (BOOL)zlibDeflateBmBm:(NSInteger)BM;
++ (BOOL)dataNamedBmBm:(NSInteger)BM;
+
+@end
