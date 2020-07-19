@@ -641,7 +641,9 @@
 			baseConfigurationReference = 8702563F71C1F0BF06C41C09 /* Pods-getIntoHabit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: min lei (25ARXG8H6Z)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 25ARXG8H6Z;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/getIntoHabit/CDCommon/PocketHabits_PrefixHeader.pch";
 				INFOPLIST_FILE = getIntoHabit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -650,6 +652,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hongbiao.getIntoGoodHabits;
 				PRODUCT_NAME = GetIntoGoodHabits;
+				PROVISIONING_PROFILE_SPECIFIER = dis_GetIntoGoodHabits_pro_20200718;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -659,7 +662,9 @@
 			baseConfigurationReference = 799830386E2D71EA9CF12B76 /* Pods-getIntoHabit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: min lei (25ARXG8H6Z)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 25ARXG8H6Z;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/getIntoHabit/CDCommon/PocketHabits_PrefixHeader.pch";
 				INFOPLIST_FILE = getIntoHabit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -668,6 +673,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hongbiao.getIntoGoodHabits;
 				PRODUCT_NAME = GetIntoGoodHabits;
+				PROVISIONING_PROFILE_SPECIFIER = dis_GetIntoGoodHabits_pro_20200718;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
