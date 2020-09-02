@@ -915,8 +915,8 @@
 		04019F4A24908438007FB925 /* Keychain */ = {
 			isa = PBXGroup;
 			children = (
-				04019F4B24908438007FB925 /* SFHFKeychainUtils.m */,
 				04019F4C24908438007FB925 /* SFHFKeychainUtils.h */,
+				04019F4B24908438007FB925 /* SFHFKeychainUtils.m */,
 			);
 			path = Keychain;
 			sourceTree = "<group>";
@@ -928,7 +928,6 @@
 				04019F6824908438007FB925 /* RTResources */,
 				04019F8124908438007FB925 /* Utils */,
 				04019F8424908438007FB925 /* Controller */,
-				04019F9124908438007FB925 /* View */,
 			);
 			path = RTImagePicker;
 			sourceTree = "<group>";
@@ -947,8 +946,8 @@
 			isa = PBXGroup;
 			children = (
 				04019F5024908438007FB925 /* VIMVideoPlayer.h */,
-				04019F5124908438007FB925 /* VIMVideoPlayerView.h */,
 				04019F5224908438007FB925 /* VIMVideoPlayer.m */,
+				04019F5124908438007FB925 /* VIMVideoPlayerView.h */,
 				04019F5324908438007FB925 /* VIMVideoPlayerView.m */,
 			);
 			path = VIMVideoPlayer;
@@ -957,20 +956,20 @@
 		04019F5424908438007FB925 /* PhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				04019F5F24908438007FB925 /* RTImagePickerPhotoProtocol.h */,
 				04019F5524908438007FB925 /* RTImagePickerPhotoBrowserPrivate.h */,
+				04019F5C24908438007FB925 /* UIImage+RTImagePickerPhotoBrowser.h */,
 				04019F5624908438007FB925 /* UIImage+RTImagePickerPhotoBrowser.m */,
+				04019F5B24908438007FB925 /* RTImagePickerTapDetectingImageView.h */,
+				04019F6124908438007FB925 /* RTImagePickerTapDetectingImageView.m */,
+				04019F5D24908438007FB925 /* RTImagePickerTapDetectingView.h */,
 				04019F5724908438007FB925 /* RTImagePickerTapDetectingView.m */,
 				04019F5824908438007FB925 /* RTImagePickerPhoto.h */,
-				04019F5924908438007FB925 /* RTImagePickerPhotoBrowser.h */,
-				04019F5A24908438007FB925 /* RTImagePickerZoomingScrollView.m */,
-				04019F5B24908438007FB925 /* RTImagePickerTapDetectingImageView.h */,
-				04019F5C24908438007FB925 /* UIImage+RTImagePickerPhotoBrowser.h */,
-				04019F5D24908438007FB925 /* RTImagePickerTapDetectingView.h */,
-				04019F5E24908438007FB925 /* RTImagePickerPhotoBrowser.m */,
-				04019F5F24908438007FB925 /* RTImagePickerPhotoProtocol.h */,
 				04019F6024908438007FB925 /* RTImagePickerPhoto.m */,
-				04019F6124908438007FB925 /* RTImagePickerTapDetectingImageView.m */,
+				04019F5924908438007FB925 /* RTImagePickerPhotoBrowser.h */,
+				04019F5E24908438007FB925 /* RTImagePickerPhotoBrowser.m */,
 				04019F6224908438007FB925 /* RTImagePickerZoomingScrollView.h */,
+				04019F5A24908438007FB925 /* RTImagePickerZoomingScrollView.m */,
 			);
 			path = PhotoBrowser;
 			sourceTree = "<group>";
@@ -979,8 +978,8 @@
 			isa = PBXGroup;
 			children = (
 				04019F6424908438007FB925 /* LLSimpleCamera.h */,
-				04019F6524908438007FB925 /* UIImage+FixOrientation.h */,
 				04019F6624908438007FB925 /* LLSimpleCamera.m */,
+				04019F6524908438007FB925 /* UIImage+FixOrientation.h */,
 				04019F6724908438007FB925 /* UIImage+FixOrientation.m */,
 			);
 			path = LLSimpleCamera;
@@ -1030,17 +1029,18 @@
 			isa = PBXGroup;
 			children = (
 				04019F8524908438007FB925 /* RTCameraPreviewViewController.h */,
-				04019F8624908438007FB925 /* RTCameraViewController.h */,
-				04019F8724908438007FB925 /* RTAssetCollectionViewController.h */,
-				04019F8824908438007FB925 /* RTImagePickerViewController.h */,
-				04019F8924908438007FB925 /* RTImagePickerNavigationController.m */,
-				04019F8A24908438007FB925 /* RTShortVideoViewController.h */,
 				04019F8B24908438007FB925 /* RTCameraPreviewViewController.m */,
+				04019F8624908438007FB925 /* RTCameraViewController.h */,
 				04019F8C24908438007FB925 /* RTCameraViewController.m */,
+				04019F8724908438007FB925 /* RTAssetCollectionViewController.h */,
 				04019F8D24908438007FB925 /* RTAssetCollectionViewController.m */,
-				04019F8E24908438007FB925 /* RTShortVideoViewController.m */,
+				04019F8824908438007FB925 /* RTImagePickerViewController.h */,
 				04019F8F24908438007FB925 /* RTImagePickerViewController.m */,
 				04019F9024908438007FB925 /* RTImagePickerNavigationController.h */,
+				04019F8924908438007FB925 /* RTImagePickerNavigationController.m */,
+				04019F8A24908438007FB925 /* RTShortVideoViewController.h */,
+				04019F8E24908438007FB925 /* RTShortVideoViewController.m */,
+				04019F9124908438007FB925 /* View */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1048,23 +1048,23 @@
 		04019F9124908438007FB925 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				04019F9224908438007FB925 /* RTVideoIconView.m */,
-				04019F9324908438007FB925 /* RTAlbumTableViewCell.m */,
-				04019F9424908438007FB925 /* RTImagePickerTitleButton.m */,
-				04019F9524908438007FB925 /* RTImagePickerUnauthorizedView.m */,
 				04019F9624908438007FB925 /* RTVideoIndicatorView.h */,
+				04019F9F24908438007FB925 /* RTVideoIndicatorView.m */,
+				04019F9D24908438007FB925 /* RTVideoIconView.h */,
+				04019F9224908438007FB925 /* RTVideoIconView.m */,
+				04019F9C24908438007FB925 /* RTAlbumTableViewCell.h */,
+				04019F9324908438007FB925 /* RTAlbumTableViewCell.m */,
+				04019F9B24908438007FB925 /* RTImagePickerTitleButton.h */,
+				04019F9424908438007FB925 /* RTImagePickerTitleButton.m */,
+				04019FA024908438007FB925 /* RTImagePickerUnauthorizedView.h */,
+				04019F9524908438007FB925 /* RTImagePickerUnauthorizedView.m */,
 				04019F9724908438007FB925 /* RTImagePickerToolbarView.h */,
+				04019F9E24908438007FB925 /* RTImagePickerToolbarView.m */,
 				04019F9824908438007FB925 /* RTImagePicker.storyboard */,
 				04019F9924908438007FB925 /* RTCheckMarkView.h */,
-				04019F9A24908438007FB925 /* RTAssetCollectionViewCell.h */,
-				04019F9B24908438007FB925 /* RTImagePickerTitleButton.h */,
-				04019F9C24908438007FB925 /* RTAlbumTableViewCell.h */,
-				04019F9D24908438007FB925 /* RTVideoIconView.h */,
-				04019F9E24908438007FB925 /* RTImagePickerToolbarView.m */,
-				04019F9F24908438007FB925 /* RTVideoIndicatorView.m */,
-				04019FA024908438007FB925 /* RTImagePickerUnauthorizedView.h */,
-				04019FA124908438007FB925 /* RTAssetCollectionViewCell.m */,
 				04019FA224908438007FB925 /* RTCheckMarkView.m */,
+				04019F9A24908438007FB925 /* RTAssetCollectionViewCell.h */,
+				04019FA124908438007FB925 /* RTAssetCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1342,7 +1342,6 @@
 			isa = PBXGroup;
 			children = (
 				0401A09624908439007FB925 /* UIImage */,
-				0401A0C02490843A007FB925 /* PHAsset */,
 				0401A0C32490843A007FB925 /* UIColor */,
 				0401A0C62490843A007FB925 /* UIView */,
 				0401A0CB2490843A007FB925 /* UIImageView */,
@@ -1353,47 +1352,48 @@
 		0401A09624908439007FB925 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
-				0401A09724908439007FB925 /* UIImage+backgroundImage.m */,
-				0401A09824908439007FB925 /* UIImage+fill.m */,
-				0401A09924908439007FB925 /* UIImage+Mask.m */,
-				0401A09A24908439007FB925 /* UIImage+Clip.h */,
-				0401A09B24908439007FB925 /* UIImage+SubImage.m */,
-				0401A09C24908439007FB925 /* UIImage+Blur.m */,
-				0401A09D24908439007FB925 /* UIImage+Text.m */,
-				0401A09E24908439007FB925 /* UIImage+BoxBlur.m */,
-				0401A09F24908439007FB925 /* UIImage+Color.h */,
-				0401A0A024908439007FB925 /* UIImage+ImageEffects.h */,
-				0401A0A124908439007FB925 /* UIImage+ImageWithCorner.m */,
-				0401A0A224908439007FB925 /* UIImage+Rotate.h */,
-				0401A0A324908439007FB925 /* UIImage+watermark.m */,
-				0401A0A424908439007FB925 /* UIImage+MaskShape.m */,
-				0401A0A524908439007FB925 /* UIImage+Mosaic.h */,
-				0401A0A624908439007FB925 /* UIImage+DrawImage.h */,
-				0401A0A724908439007FB925 /* UIImage+RoundedCorner.h */,
-				0401A0A824908439007FB925 /* UIImage+Resize.h */,
-				0401A0A924908439007FB925 /* UIImage+animatedGIF.h */,
-				0401A0AA24908439007FB925 /* UIImage+Alpha.h */,
-				0401A0AB24908439007FB925 /* UIImage+SubImage.h */,
-				0401A0AC24908439007FB925 /* UIImage+Clip.m */,
-				0401A0AD24908439007FB925 /* UIImage+Mask.h */,
-				0401A0AE24908439007FB925 /* UIImage+fill.h */,
 				0401A0AF24908439007FB925 /* ColorMatrix.h */,
 				0401A0B024908439007FB925 /* UIImage+backgroundImage.h */,
-				0401A0B124908439007FB925 /* UIImage+Text.h */,
-				0401A0B224908439007FB925 /* UIImage+BoxBlur.h */,
+				0401A09724908439007FB925 /* UIImage+backgroundImage.m */,
+				0401A0AE24908439007FB925 /* UIImage+fill.h */,
+				0401A09824908439007FB925 /* UIImage+fill.m */,
+				0401A0AD24908439007FB925 /* UIImage+Mask.h */,
+				0401A09924908439007FB925 /* UIImage+Mask.m */,
+				0401A09A24908439007FB925 /* UIImage+Clip.h */,
+				0401A0AC24908439007FB925 /* UIImage+Clip.m */,
+				0401A0AB24908439007FB925 /* UIImage+SubImage.h */,
+				0401A09B24908439007FB925 /* UIImage+SubImage.m */,
 				0401A0B324908439007FB925 /* UIImage+Blur.h */,
-				0401A0B424908439007FB925 /* UIImage+DrawImage.m */,
-				0401A0B524908439007FB925 /* UIImage+Mosaic.m */,
-				0401A0B624908439007FB925 /* UIImage+watermark.h */,
-				0401A0B724908439007FB925 /* UIImage+MaskShape.h */,
-				0401A0B824908439007FB925 /* UIImage+Rotate.m */,
-				0401A0B924908439007FB925 /* UIImage+ImageWithCorner.h */,
-				0401A0BA24908439007FB925 /* UIImage+ImageEffects.m */,
+				0401A09C24908439007FB925 /* UIImage+Blur.m */,
+				0401A0B124908439007FB925 /* UIImage+Text.h */,
+				0401A09D24908439007FB925 /* UIImage+Text.m */,
+				0401A0B224908439007FB925 /* UIImage+BoxBlur.h */,
+				0401A09E24908439007FB925 /* UIImage+BoxBlur.m */,
+				0401A09F24908439007FB925 /* UIImage+Color.h */,
 				0401A0BB24908439007FB925 /* UIImage+Color.m */,
-				0401A0BC24908439007FB925 /* UIImage+Alpha.m */,
-				0401A0BD24908439007FB925 /* UIImage+animatedGIF.m */,
+				0401A0A024908439007FB925 /* UIImage+ImageEffects.h */,
+				0401A0BA24908439007FB925 /* UIImage+ImageEffects.m */,
+				0401A0B924908439007FB925 /* UIImage+ImageWithCorner.h */,
+				0401A0A124908439007FB925 /* UIImage+ImageWithCorner.m */,
+				0401A0A224908439007FB925 /* UIImage+Rotate.h */,
+				0401A0B824908439007FB925 /* UIImage+Rotate.m */,
+				0401A0B624908439007FB925 /* UIImage+watermark.h */,
+				0401A0A324908439007FB925 /* UIImage+watermark.m */,
+				0401A0B724908439007FB925 /* UIImage+MaskShape.h */,
+				0401A0A424908439007FB925 /* UIImage+MaskShape.m */,
+				0401A0A524908439007FB925 /* UIImage+Mosaic.h */,
+				0401A0B524908439007FB925 /* UIImage+Mosaic.m */,
+				0401A0A624908439007FB925 /* UIImage+DrawImage.h */,
+				0401A0B424908439007FB925 /* UIImage+DrawImage.m */,
+				0401A0A724908439007FB925 /* UIImage+RoundedCorner.h */,
 				0401A0BE2490843A007FB925 /* UIImage+RoundedCorner.m */,
+				0401A0A824908439007FB925 /* UIImage+Resize.h */,
 				0401A0BF2490843A007FB925 /* UIImage+Resize.m */,
+				0401A0A924908439007FB925 /* UIImage+animatedGIF.h */,
+				0401A0BD24908439007FB925 /* UIImage+animatedGIF.m */,
+				0401A0AA24908439007FB925 /* UIImage+Alpha.h */,
+				0401A0BC24908439007FB925 /* UIImage+Alpha.m */,
+				0401A0C02490843A007FB925 /* PHAsset */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -1410,8 +1410,8 @@
 		0401A0C32490843A007FB925 /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
-				0401A0C42490843A007FB925 /* UIColor+Additions.m */,
 				0401A0C52490843A007FB925 /* UIColor+Additions.h */,
+				0401A0C42490843A007FB925 /* UIColor+Additions.m */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -1420,9 +1420,9 @@
 			isa = PBXGroup;
 			children = (
 				0401A0C72490843A007FB925 /* UIView+Size.h */,
-				0401A0C82490843A007FB925 /* UIView+Geometry.m */,
-				0401A0C92490843A007FB925 /* UIView+Geometry.h */,
 				0401A0CA2490843A007FB925 /* UIView+Size.m */,
+				0401A0C92490843A007FB925 /* UIView+Geometry.h */,
+				0401A0C82490843A007FB925 /* UIView+Geometry.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1430,8 +1430,8 @@
 		0401A0CB2490843A007FB925 /* UIImageView */ = {
 			isa = PBXGroup;
 			children = (
-				0401A0CC2490843A007FB925 /* UIImageView+GraudatedAnimation.m */,
 				0401A0CD2490843A007FB925 /* UIImageView+GraudatedAnimation.h */,
+				0401A0CC2490843A007FB925 /* UIImageView+GraudatedAnimation.m */,
 			);
 			path = UIImageView;
 			sourceTree = "<group>";
@@ -2060,11 +2060,11 @@
 		EDD9F14B2279736700AC1E98 /* YWebImage */ = {
 			isa = PBXGroup;
 			children = (
+				EDD9F14F2279736700AC1E98 /* YWebDownManager.h */,
 				EDD9F14C2279736700AC1E98 /* YWebDownManager.m */,
+				EDD9F1502279736700AC1E98 /* YWebDataHandle.h */,
 				EDD9F14D2279736700AC1E98 /* YWebDataHandle.m */,
 				EDD9F14E2279736700AC1E98 /* YWebFileManager.h */,
-				EDD9F14F2279736700AC1E98 /* YWebDownManager.h */,
-				EDD9F1502279736700AC1E98 /* YWebDataHandle.h */,
 				EDD9F1512279736700AC1E98 /* YWebFileManager.m */,
 			);
 			path = YWebImage;
@@ -2082,21 +2082,21 @@
 		EDD9F1682279B73300AC1E98 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				EDD9F16F2279B73300AC1E98 /* SDProgressView.h */,
 				EDD9F1692279B73300AC1E98 /* SDPieProgressView.h */,
+				EDD9F1712279B73300AC1E98 /* SDPieProgressView.m */,
 				EDD9F16A2279B73300AC1E98 /* SDBaseProgressView.h */,
+				EDD9F1722279B73300AC1E98 /* SDBaseProgressView.m */,
+				EDD9F1762279B73300AC1E98 /* SDRotationLoopProgressView.h */,
 				EDD9F16B2279B73300AC1E98 /* SDRotationLoopProgressView.m */,
+				EDD9F1752279B73300AC1E98 /* SDBallProgressView.h */,
 				EDD9F16C2279B73300AC1E98 /* SDBallProgressView.m */,
+				EDD9F1732279B73300AC1E98 /* SDLoopProgressView.h */,
 				EDD9F16D2279B73300AC1E98 /* SDLoopProgressView.m */,
 				EDD9F16E2279B73300AC1E98 /* SDPieLoopProgressView.h */,
-				EDD9F16F2279B73300AC1E98 /* SDProgressView.h */,
-				EDD9F1702279B73300AC1E98 /* SDTransparentPieProgressView.m */,
-				EDD9F1712279B73300AC1E98 /* SDPieProgressView.m */,
-				EDD9F1722279B73300AC1E98 /* SDBaseProgressView.m */,
-				EDD9F1732279B73300AC1E98 /* SDLoopProgressView.h */,
 				EDD9F1742279B73300AC1E98 /* SDPieLoopProgressView.m */,
-				EDD9F1752279B73300AC1E98 /* SDBallProgressView.h */,
-				EDD9F1762279B73300AC1E98 /* SDRotationLoopProgressView.h */,
 				EDD9F1772279B73300AC1E98 /* SDTransparentPieProgressView.h */,
+				EDD9F1702279B73300AC1E98 /* SDTransparentPieProgressView.m */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
