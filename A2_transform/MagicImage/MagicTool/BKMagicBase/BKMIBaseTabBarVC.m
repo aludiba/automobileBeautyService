@@ -22,15 +22,15 @@
 - (void)BKinitWithChildController{
     BKMIHomeVC * BKhomeVC = [[BKMIHomeVC alloc] init];
     [BKhomeVC.tabBarItem setTitle:@"Home"];
-    [BKhomeVC.tabBarItem setImage:[UIImage imageNamed:@"PEHome"]];
-    [BKhomeVC.tabBarItem setSelectedImage:[[UIImage imageNamed:@"PEHome_s"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    [BKhomeVC.tabBarItem setImage:[UIImage imageNamed:@"LCDHome"]];
+    [BKhomeVC.tabBarItem setSelectedImage:[[UIImage imageNamed:@"LCDHome_s"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     BKMIBaseNavigationC  *BKhomeNV = [[BKMIBaseNavigationC alloc] initWithRootViewController:BKhomeVC];
     [BKhomeNV.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -3)];
     [self.BKchildArray addObject:BKhomeNV];
     BKMIMoreVC * BKmoreVC = [[BKMIMoreVC alloc] init];
     [BKmoreVC.tabBarItem setTitle:@"More"];
-    [BKmoreVC.tabBarItem setImage:[UIImage imageNamed:@"PEMore"]];
-    [BKmoreVC.tabBarItem setSelectedImage:[[UIImage imageNamed:@"PEMore_s"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    [BKmoreVC.tabBarItem setImage:[UIImage imageNamed:@"LCDMore"]];
+    [BKmoreVC.tabBarItem setSelectedImage:[[UIImage imageNamed:@"LCDMore_s"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     BKMIBaseNavigationC *BKmoreNV = [[BKMIBaseNavigationC alloc] initWithRootViewController:BKmoreVC];
     [BKmoreNV.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -3)];
     [self.BKchildArray addObject:BKmoreNV];
