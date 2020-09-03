@@ -13,7 +13,8 @@
 - (UITableView *)BKtableView{
     if (!_BKtableView) {
         _BKtableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
-        _BKtableView.backgroundColor = RGB(242, 242, 242);
+        _BKtableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _BKtableView.backgroundColor = [UIColor cyanColor];
         _BKtableView.delegate = self;
         _BKtableView.dataSource = self;
     }
@@ -29,7 +30,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = RGB(242, 242, 242);
+    self.view.backgroundColor = [UIColor cyanColor];
     [self.view addSubview:self.BKtableView];
     self.BKtableView.sd_layout
     .leftEqualToView(self.view)
@@ -40,9 +41,9 @@
     self.BKheaderView = BKheaderView;
     [BKheaderView BKupdateViews];
     if (@available(iOS 9.0, *)) {
-        BKheaderView.backgroundColor = [UIColor systemGreenColor];
+        BKheaderView.backgroundColor = [UIColor systemPurpleColor];
     } else {
-        BKheaderView.backgroundColor = [UIColor greenColor];
+        BKheaderView.backgroundColor = [UIColor purpleColor];
     }
     BKheaderView.block = ^{
         if (!UserId) {
@@ -53,14 +54,14 @@
     };
     self.BKtableView.tableHeaderView = BKheaderView;
     UILabel *BKbottomLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 40)];
-    BKbottomLabel.textColor = UIColor.grayColor;
+    BKbottomLabel.textColor = [UIColor purpleColor];
     BKbottomLabel.textAlignment = NSTextAlignmentCenter;
-    BKbottomLabel.font = [UIFont systemFontOfSize:12];
+    BKbottomLabel.font = [UIFont boldSystemFontOfSize:16];
     NSDictionary *BKinfoDictionary = [[NSBundle mainBundle] infoDictionary];
     BKbottomLabel.text = [NSString stringWithFormat:@"Version:%@",[BKinfoDictionary objectForKey:@"CFBundleShortVersionString"]];
     self.BKtableView.tableFooterView = BKbottomLabel;
     self.BKtitleArray = @[@[@"Feed Back",@"Contact Us",@"Share"],@[@"Terms Of Service",@"Privacy Policy"]];
-    self.BKimageArray = @[@[@"feed",@"contact",@"share"],@[@"termsOfService",@"privacyPolicy"]];
+    self.BKimageArray = @[@[@"LCD_feed",@"LCD_contact",@"LCD_share"],@[@"LCD_Arrow",@"LCD_Arrow"]];
     [NotifiCenter addObserver:self selector:@selector(BKloadData) name:@"loginSuccess" object:nil];
 }
 - (void)BKloadData{
@@ -78,6 +79,7 @@
         BKcell = [[BKMIMoreCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"BKcell"];
     }
     BKcell.BKtitleLabel.text = self.BKtitleArray[BKindexPath.section][BKindexPath.row];
+    BKcell.BKarrowView.image = LCDImage(self.BKimageArray[BKindexPath.section][BKindexPath.row]);
     return BKcell;
 }
 - (void)tableView:(UITableView *)BKtableView didSelectRowAtIndexPath:(NSIndexPath *)BKindexPath{
@@ -117,7 +119,7 @@
     return [UIView new];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 10;
+    return 30;
 }
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
     return [UIView new];

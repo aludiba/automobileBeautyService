@@ -18,7 +18,7 @@
             UIView * BKbgView = [[UIView alloc] initWithFrame:CGRectMake((BKi%2) * BKw, (BKi / 2) * BKh, BKw, BKh)];
             [self addSubview:BKbgView];
             
-            UIImageView *BKiconImageView = [[UIImageView alloc] initWithImage:PEImage(@"")];
+            UIImageView *BKiconImageView = [[UIImageView alloc] initWithImage:LCDImage(@"")];
             BKiconImageView.backgroundColor = BKcolorArray[BKi];
             BKiconImageView.layer.cornerRadius = 6;
             BKiconImageView.tag = 100 + BKi;
@@ -69,7 +69,7 @@
             .centerYEqualToView(BKiconImageView).offset(10)
             .autoHeightRatio(0);
             [BKcontentLabel setSingleLineAutoResizeWithMaxWidth:180];
-            UIImageView *BKleftImageView = [[UIImageView alloc] initWithImage:PEImage(BKimageArray[BKi])];
+            UIImageView *BKleftImageView = [[UIImageView alloc] initWithImage:LCDImage(BKimageArray[BKi])];
             BKleftImageView.layer.cornerRadius = 5;
             BKleftImageView.layer.masksToBounds = YES;
             [BKiconImageView addSubview:BKleftImageView];
@@ -79,7 +79,7 @@
             .widthIs(ScareValue(55, ScreenWidth))
             .heightEqualToWidth();
             if (BKi == 0) {
-                UIImageView *BKhotImageView = [[UIImageView alloc] initWithImage:PEImage(@"c")];
+                UIImageView *BKhotImageView = [[UIImageView alloc] initWithImage:LCDImage(@"c")];
                 [BKbgView addSubview:BKhotImageView];
                 BKhotImageView.sd_layout
                 .rightSpaceToView(BKbgView, 7)

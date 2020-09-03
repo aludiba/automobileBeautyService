@@ -14,13 +14,17 @@
         .centerYEqualToView(self.contentView)
         .autoHeightRatio(0);
         [self.BKtitleLabel setSingleLineAutoResizeWithMaxWidth:180];
-        UIImageView *BKarrowView = [[UIImageView alloc] initWithImage:PEImage(@"PEArrow")];
-        [self.contentView addSubview:BKarrowView];
-        BKarrowView.sd_layout
+        self.BKarrowView = [[UIImageView alloc] init];
+        [self.contentView addSubview:self.BKarrowView];
+        self.BKarrowView.sd_layout
         .rightSpaceToView(self.contentView, 15)
         .centerYEqualToView(self.contentView)
         .widthEqualToHeight()
         .heightIs(20);
+        UIView *BKLine = [[UIView alloc] init];
+        BKLine.backgroundColor = RGB(240, 240, 240);
+        [self.contentView addSubview:BKLine];
+        BKLine.sd_layout.rightEqualToView(self.contentView).leftEqualToView(self.contentView).bottomEqualToView(self.contentView).heightIs(1);
     }
     return self;
 }

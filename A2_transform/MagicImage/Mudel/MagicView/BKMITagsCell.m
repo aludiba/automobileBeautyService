@@ -35,7 +35,7 @@
         .centerYEqualToView(BKbgImageView)
         .autoHeightRatio(0);
         [self.BKtitleLabel setSingleLineAutoResizeWithMaxWidth:ScreenWidth];
-        UIImageView * BKarrowImageView = [[UIImageView alloc] initWithImage:PEImage(@"PEArrow")];
+        UIImageView * BKarrowImageView = [[UIImageView alloc] initWithImage:LCDImage(@"PEArrow")];
         [BKbgImageView addSubview:BKarrowImageView];
         BKarrowImageView.sd_layout
         .rightSpaceToView(BKbgImageView, 5)

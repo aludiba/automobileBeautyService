@@ -62,7 +62,7 @@
         make.bottom.equalTo(BKuserView.mas_bottom).with.offset(0);
     }];
     BKbgImgView1.alpha = 1;
-    BKbgImgView1.image = PEImage(@"box");
+    BKbgImgView1.image = LCDImage(@"box");
     UIImageView *BKiconImgView1 = [[UIImageView alloc] init];
     [BKuserView addSubview:BKiconImgView1];
     [BKiconImgView1 mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -71,7 +71,7 @@
         make.size.mas_equalTo(CGSizeMake(15.5, 18));
     }];
     BKiconImgView1.alpha = 1;
-    BKiconImgView1.image = PEImage(@"user");
+    BKiconImgView1.image = LCDImage(@"user");
     self.BKusrName = [[UITextField alloc] init];
     [BKuserView addSubview:self.BKusrName];
     [self.BKusrName mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -106,7 +106,7 @@
         make.bottom.equalTo(BKpasswordView.mas_bottom).with.offset(0);
     }];
     BKbgImgView2.alpha = 1;
-    BKbgImgView2.image = PEImage(@"box");
+    BKbgImgView2.image = LCDImage(@"box");
     UIImageView *BKiconImgView2 = [[UIImageView alloc] init];
     [BKpasswordView addSubview:BKiconImgView2];
     [BKiconImgView2 mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -115,7 +115,7 @@
         make.size.mas_equalTo(CGSizeMake(16, 17));
     }];
     BKiconImgView2.alpha = 1;
-    BKiconImgView2.image = PEImage(@"password");
+    BKiconImgView2.image = LCDImage(@"password");
     self.BKusrPwd = [[UITextField alloc] init];
     [BKpasswordView addSubview:self.BKusrPwd];
     [self.BKusrPwd mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -9,7 +9,7 @@
 @implementation BKMIBaseTabBarVC
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tabBar.backgroundColor=[UIColor whiteColor];
+    self.tabBar.backgroundColor = [UIColor whiteColor];
     self.BKchildArray=[NSMutableArray array];
     self.BKtabBarButtonArray=[NSMutableArray array];
     for (UIView *BKtabBarButton in self.tabBar.subviews){
@@ -27,6 +27,7 @@
     BKMIBaseNavigationC  *BKhomeNV = [[BKMIBaseNavigationC alloc] initWithRootViewController:BKhomeVC];
     [BKhomeNV.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -3)];
     [self.BKchildArray addObject:BKhomeNV];
+    
     BKMIMoreVC * BKmoreVC = [[BKMIMoreVC alloc] init];
     [BKmoreVC.tabBarItem setTitle:@"More"];
     [BKmoreVC.tabBarItem setImage:[UIImage imageNamed:@"LCDMore"]];

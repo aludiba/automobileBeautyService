@@ -51,7 +51,7 @@
             .topEqualToView(BKbgView)
             .rightSpaceToView(BKbgView, 0)
             .bottomEqualToView(BKbgView);
-            UIImageView * BKiconImageView = [[UIImageView  alloc] initWithImage:PEImage(BKimageArray[BKi])];
+            UIImageView * BKiconImageView = [[UIImageView  alloc] initWithImage:LCDImage(BKimageArray[BKi])];
             [BKoneView addSubview:BKiconImageView];
             BKiconImageView.sd_layout
             .rightSpaceToView(BKoneView, 15)

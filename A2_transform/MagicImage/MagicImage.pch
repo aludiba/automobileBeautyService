@@ -28,15 +28,34 @@
 
 #define ScreenWidth        [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight       [UIScreen mainScreen].bounds.size.height
-#define PEImage(name)      [UIImage imageNamed:name]
+#define LCDImage(name)      [UIImage imageNamed:name]
 #define UserDefaults       [NSUserDefaults standardUserDefaults]
 #define NotifiCenter       [NSNotificationCenter defaultCenter]
 
 #define RGB(r,g,b)         [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
-#define iphone_X            ([UIScreen mainScreen].bounds.size.height==812.0f)
-#define NavBarHeight       (iphone_X ? 88 : 64)
+#define iphone_X            ([UIScreen mainScreen].bounds.size.height==812.0f )
+//判断是否是ipad
+#define LCDisPad ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+#define LCDkiPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) && !LCDisPad : NO)
+//判断iPhone5系列
+#define LCDkiPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) && !LCDisPad : NO)
+//判断iPhone6系列
+#define LCDkiPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) && !LCDisPad : NO)
+//判断iphone6+系列
+#define LCDkiPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) && !LCDisPad : NO)
+//判断iPhoneX
+#define LCDIS_IPHONE_X ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) && !LCDisPad : NO)
+//判断iPHoneXr
+#define LCDIS_IPHONE_Xr ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) && !LCDisPad : NO)
+//判断iPhoneXs
+#define LCDIS_IPHONE_Xs ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) && !LCDisPad : NO)
+//判断iPhoneXs Max
+#define LCDIS_IPHONE_Xs_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) && !LCDisPad : NO)
+//iPhoneX系列
+#define LCDISIPHONEX ((LCDIS_IPHONE_X==YES || LCDIS_IPHONE_Xr ==YES || LCDIS_IPHONE_Xs== YES || LCDIS_IPHONE_Xs_Max== YES) ? YES : NO)
+#define NavBarHeight       (LCDISIPHONEX ? 88 : 64)
 #define TabBarHeight       49
-#define StatusBarHeight    (iphone_X ? 44 : 20)
+#define StatusBarHeight    (LCDISIPHONEX ? 44 : 20)
 #define ScareValue(vlaue,screen)  vlaue*(screen/(screen==ScreenWidth?375.0f:667.0f))
 #define FontSize(vlaue,screen)  [UIFont systemFontOfSize:ScareValue(vlaue,screen)]
 #define FontBoldSize(vlaue,screen)  [UIFont boldSystemFontOfSize:ScareValue(vlaue,screen)]

@@ -7,7 +7,7 @@
 @implementation BKMIMoreHeaderView
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
-        self.BKiconImageView = [[UIImageView alloc] initWithImage:PEImage(@"")];
+        self.BKiconImageView = [[UIImageView alloc] initWithImage:LCDImage(@"")];
         self.BKiconImageView.layer.cornerRadius = 30;
         self.BKiconImageView.layer.masksToBounds = YES;
         [self addSubview:self.BKiconImageView];
@@ -32,7 +32,7 @@
         .centerYEqualToView(self.BKiconImageView)
         .autoHeightRatio(0)
         .rightSpaceToView(self, 50);
-        self.BKarrowImageView = [[UIImageView alloc] initWithImage:PEImage(@"PEArrow")];
+        self.BKarrowImageView = [[UIImageView alloc] initWithImage:LCDImage(@"PEArrow")];
         self.BKarrowImageView.hidden = YES;
         [self addSubview:self.BKarrowImageView];
         self.BKarrowImageView.sd_layout
@@ -51,11 +51,11 @@
 - (void)BKupdateViews{
     if (UserId) {
         self.BKnickLabel.text = [UserDefaults objectForKey:@"nickName"];
-        self.BKiconImageView.image = PEImage(@"logo");
+        self.BKiconImageView.image = LCDImage(@"logo");
         self.BKarrowImageView.hidden = YES;
     }else{
         self.BKnickLabel.text = @"No Login";
-        self.BKiconImageView.image = PEImage(@"logo");
+        self.BKiconImageView.image = LCDImage(@"logo");
         self.BKarrowImageView.hidden = YES;
     }
 }
