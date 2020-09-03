@@ -37,6 +37,7 @@
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    [self platoonCharacters:@"abcdef"];
 }
 - (void)setContentView{
     [self.view addSubview:self.LBmainTable];
@@ -48,6 +49,53 @@
         make.trailing.equalTo(self.view);
         make.bottom.equalTo(self.view);
     }];
+}
+//传入一个字符串打印出所有位数组合可能不可出现重复
+- (void)platoonCharacters:(NSString *)str{
+    NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+    for (int i = 0; i < str.length; i++) {
+        NSString *tempStr = [str substringWithRange:NSMakeRange(i, 1)];
+        [tempArray addObject:tempStr];
+    }
+    NSMutableArray *compositeStringArray = [[NSMutableArray alloc] init];
+    int number = print(tempArray.count);
+    Boolean subtract = NO;
+    for (int j = 0; j < number; j++) {
+        NSMutableString *mString = [[NSMutableString alloc] init];
+        NSMutableArray *randomNumberArray = [[NSMutableArray alloc] init];
+        for (int i = 0; i < tempArray.count; i++) {
+             int tempA = [self getRandomNumber:0 to:(tempArray.count - 1)];
+            NSNumber *num = [NSNumber numberWithInt:tempA];
+            NSString *charStr;
+            if ([randomNumberArray containsObject:num]) {
+                i--;
+            }else{
+                [randomNumberArray addObject:num];
+                charStr = tempArray[tempA];
+                [mString appendString:charStr];
+            }
+        }
+        if ([compositeStringArray containsObject:mString]) {
+            if (!subtract) {
+                j--;
+            }
+            subtract = YES;
+        }else{
+            [compositeStringArray addObject:mString];
+            subtract = NO;
+        }
+    }
+}
+//指定范围内的随机数
+-(int)getRandomNumber:(int)from to:(int)to{
+    return (int)(from + (arc4random() % (to - from + 1)));
+}
+int print(int n){
+    if (n == 0||n == 1) {
+        return 1;
+    }else{
+        return n * print(n-1);
+    }
 }
 - (void)LB_setupNavigationItems {
     self.LBSetBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
