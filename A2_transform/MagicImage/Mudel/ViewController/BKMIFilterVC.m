@@ -39,7 +39,7 @@
     }
 }
 - (void)BKloadData{
-    [MIHttpTool Post:PicList parameters:@{@"pic_type":@(1),@"type":@(2)} success:^(id BKresponseObject) {
+    [MIHttpTool Post:PicList parameters:@{@"pic_type":@(1),@"type":@(1)} success:^(id BKresponseObject) {
         NSLog(@"BKresponseObject:%@",BKresponseObject);
         if ([BKresponseObject[@"status"] integerValue] == 1) {
             for (NSInteger i = 0; i<[BKresponseObject[@"data"] count]; i++) {

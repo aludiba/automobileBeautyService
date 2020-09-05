@@ -20,7 +20,7 @@
             
             UIImageView *BKiconImageView = [[UIImageView alloc] initWithImage:LCDImage(@"")];
             BKiconImageView.backgroundColor = BKcolorArray[BKi];
-            BKiconImageView.layer.cornerRadius = 6;
+            BKiconImageView.layer.cornerRadius = 10;
             BKiconImageView.tag = 100 + BKi;
             BKiconImageView.userInteractionEnabled = YES;
             UITapGestureRecognizer *BKtap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(BKtap:)];
@@ -32,22 +32,14 @@
             .bottomSpaceToView(BKbgView, 0)
             .topSpaceToView(BKbgView, 18);
             if (BKi == 0) {
-                [BKiconImageView setBackgroundColor:BKColor];
-//                [BKColorsArray addObject:BKColor];
-            }else if (BKi == 1){
-                [BKiconImageView setBackgroundColor:BKColor1];
-//                [BKColorsArray addObject:BKColor1];
-            }else if (BKi == 2){
-                [BKiconImageView setBackgroundColor:BKColor2];
-//                [BKColorsArray addObject:BKColor2];
-            }else if (BKi == 3){
                 [BKiconImageView setBackgroundColor:BKColor3];
-//                [BKColorsArray addObject:BKColor3];
+            }else if (BKi == 1){
+                [BKiconImageView setBackgroundColor:BKColor2];
+            }else if (BKi == 2){
+                [BKiconImageView setBackgroundColor:BKColor1];
+            }else if (BKi == 3){
+                [BKiconImageView setBackgroundColor:BKColor];
             }
-//            UIColor *BKColor4 = [UIColor colorWithHexString:@"#8C1BAB"];
-//            UIColor *BKColor5 = [UIColor colorWithHexString:@"#28C76F"];
-//            UIImage *bgImg = [UIImage gradientColorImageFromColors:BKColorsArray  gradientType:GradientTypeLeftToRight imgSize:CGSizeMake(ScreenWidth - 10,(ScreenWidth-20)*3/5)];
-//            [BKiconImageView setBackgroundColor:[UIColor colorWithPatternImage:bgImg]];
             
             UILabel *BKtitleLabel = [[UILabel alloc] init];
             BKtitleLabel.font = FontBoldSize(18, ScreenWidth);

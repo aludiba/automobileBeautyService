@@ -122,7 +122,7 @@
     [BKbackBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.height.mas_equalTo(30);
         make.left.mas_equalTo(15);
-        make.top.mas_equalTo(BKtopBarButtonMargin);
+        make.top.mas_equalTo(StatusBarHeight);
     }];
     UIView *BKbottomSlide = [[UIView alloc] initWithFrame:CGRectZero];
     BKbottomSlide.backgroundColor = [UIColor colorWithRed:36/255.0 green:36/255.0 blue:36/255.0 alpha:255];
@@ -210,12 +210,13 @@
             make.width.height.mas_equalTo(25);
         }];
     }else{
+        
     }
 }
 - (void)BKsetupGPUPicture
 {
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-       _BKpicture = [[GPUImagePicture alloc] initWithImage:_BKimage];
+        self->_BKpicture = [[GPUImagePicture alloc] initWithImage:self->_BKimage];
     });
 }
 #pragma mark - 滤镜

@@ -33,7 +33,7 @@
         _BKcollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, ScreenHeight/4, ScreenWidth, ScreenHeight*3/4-NavBarHeight) collectionViewLayout:BKlayout];
         _BKcollectionView.delegate = self;
         _BKcollectionView.dataSource = self;
-        _BKcollectionView.backgroundColor = [UIColor whiteColor];
+        _BKcollectionView.backgroundColor = [UIColor cyanColor];
         [_BKcollectionView registerClass:[BKMIStickerDetailCell class] forCellWithReuseIdentifier:@"cellId1"];
         [self.view addSubview:_BKcollectionView];
         _BKcollectionView.backgroundColor = UIColor.groupTableViewBackgroundColor;
@@ -55,7 +55,7 @@
 }
 - (void)BKaddTopView{
     UIView *BKtopView =  [[UIView alloc] init];
-    BKtopView.backgroundColor = UIColor.whiteColor;
+    BKtopView.backgroundColor = UIColor.cyanColor;
     [self.view addSubview:BKtopView];
     BKtopView.sd_layout
     .leftEqualToView(self.view)
@@ -64,7 +64,8 @@
     .heightIs(ScreenHeight/4);
     UIImageView *BKheaderImageView = [[UIImageView alloc] init];
     self.BKheaderImageView = BKheaderImageView;
-    BKheaderImageView.layer.cornerRadius = 8;
+    self.BKheaderImageView.backgroundColor = UIColor.cyanColor;
+    BKheaderImageView.layer.cornerRadius = 16;
     BKheaderImageView.layer.masksToBounds = YES;
     if (self.BKtype == 1 ) {
         [BKheaderImageView sd_setImageWithURL:[NSURL URLWithString:self.BKmodel.pic_url_z]];
@@ -100,15 +101,20 @@
     [BKpriceLabel setSingleLineAutoResizeWithMaxWidth:ScreenWidth/2];
     UIButton *BKbuyBtn = [[UIButton alloc] init];
     self.BKbuyBtn = BKbuyBtn;
+    if (@available(iOS 9.0, *)) {
+        self.BKbuyBtn.backgroundColor = [UIColor systemPurpleColor];
+    } else {
+        self.BKbuyBtn.backgroundColor = [UIColor purpleColor];
+    }
     [BKbuyBtn setTitle:@"DownLoad" forState:UIControlStateNormal];
-    [BKbuyBtn setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
-    BKbuyBtn.layer.cornerRadius = 6;
+    [BKbuyBtn setTitleColor:UIColor.redColor forState:UIControlStateNormal];
+    BKbuyBtn.layer.cornerRadius = 16;
     BKbuyBtn.layer.masksToBounds = YES;
     [BKbuyBtn addTarget:self action:@selector(BKbtnClicked:) forControlEvents:UIControlEventTouchUpInside];
     [BKtopView addSubview:BKbuyBtn];
     BKbuyBtn.sd_layout
-    .leftSpaceToView(BKtopView, 25)
-    .rightSpaceToView(BKtopView, 25)
+    .leftSpaceToView(BKtopView, 50)
+    .rightSpaceToView(BKtopView, 50)
     .topSpaceToView(BKheaderImageView, 15)
     .heightIs(45);
     NSFileManager *BKfileManager = [NSFileManager new];
@@ -144,7 +150,17 @@
     }else{
         BKuser_id = @"";
     }
-    [MIHttpTool Post:PicList parameters:@{@"pic_type":@(6),@"type":@(BKtype),@"id":self.BKpId,@"user_id":BKuser_id} success:^(id BKresponseObject) {
+    NSNumber *picTypeNumber;
+    if ([self.BKpId isEqualToString:@"120"]) {
+        picTypeNumber = @(3);
+    }else if ([self.BKpId isEqualToString:@"136"]){
+        picTypeNumber = @(4);
+    }else if ([self.BKpId isEqualToString:@"152"]){
+        picTypeNumber = @(5);
+    }else{
+        picTypeNumber = @(2);
+    }
+    [MIHttpTool Post:PicList parameters:@{@"pic_type":picTypeNumber,@"type":@(BKtype),@"id":self.BKpId,@"user_id":BKuser_id} success:^(id BKresponseObject) {
         NSLog(@"sticker:%@",BKresponseObject);
         if ([BKresponseObject[@"status"] integerValue] == 1) {
             for (NSDictionary *BKdict in BKresponseObject[@"data"]) {
@@ -178,8 +194,6 @@
         [self presentViewController:BKnavi animated:YES completion:nil];
         return;
     }
-//    BKMIStoreVC *BKstoreVC = [[BKMIStoreVC alloc] init];
-//    [self.navigationController pushViewController:BKstoreVC animated:YES];
 }
 - (void)BKbtnClicked:(UIButton *)BKsender{
     if ([BKsender.titleLabel.text isEqualToString:@"Download"]) {
@@ -247,6 +261,7 @@
         [[UIApplication sharedApplication] openURL:BKurl];
     }
 }
+#pragma mark - UIImagePickerControllerDelegate
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)BKpicker{
     [BKpicker dismissViewControllerAnimated:YES completion:nil];
 }
@@ -280,7 +295,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)BKcollectionView cellForItemAtIndexPath:(NSIndexPath *)BKindexPath{
     static NSString *BKidentify = @"cellId1";
     BKMIStickerDetailCell *BKcell = [BKcollectionView dequeueReusableCellWithReuseIdentifier:BKidentify forIndexPath:BKindexPath];
-    BKcell.backgroundColor = UIColor.groupTableViewBackgroundColor;
+    BKcell.backgroundColor = [UIColor cyanColor];
     BKcell.BKpicUrl = self.BKdataArray[BKindexPath.row];
     return BKcell;
 }

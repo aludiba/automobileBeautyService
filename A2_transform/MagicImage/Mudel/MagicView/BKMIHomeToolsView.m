@@ -15,6 +15,8 @@
         UIColor *BKColor5 = [UIColor colorWithHexString:@"#28C76F"];
         for (NSInteger BKi = 0; BKi < 2; BKi++) {
             UIView *BKbgView = [[UIView alloc] init];
+            BKbgView.layer.cornerRadius = 6.0f;
+            BKbgView.layer.masksToBounds = YES;
             BKbgView.userInteractionEnabled = YES;
             BKbgView.tag = 104 + BKi;
             UITapGestureRecognizer *BKtap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(BKtap:)];
@@ -31,18 +33,11 @@
             .topEqualToView(self)
             .widthIs(BKw - 10)
             .heightIs(BKh);
-            
-//            UIColor *BKColor = [UIColor colorWithHexString:@"#EA5455"];
-//            UIColor *BKColor1 = [UIColor colorWithHexString:@"#7367F0"];
-//            UIColor *BKColor2 = [UIColor colorWithHexString:@"#F6416C"];
-//            UIColor *BKColor3 = [UIColor colorWithHexString:@"#F8D800"];
             if (BKi == 0) {
-                 [BKbgView setBackgroundColor:BKColor4];
+                 [BKbgView setBackgroundColor:BKColor5];
             }else{
-                [BKbgView setBackgroundColor:BKColor5];
+                [BKbgView setBackgroundColor:BKColor4];
             }
-//            UIImage *bgImg = [UIImage gradientColorImageFromColors:@[BKColor,BKColor1,BKColor2,BKColor3,BKColor4,BKColor5] gradientType:GradientTypeLeftToRight imgSize:CGSizeMake(ScreenWidth - 10,(ScreenWidth-20)*3/5)];
-//            [BKbgView setBackgroundColor:[UIColor colorWithPatternImage:bgImg]];
             
             UIView * BKoneView = [[UIView alloc] init];
             [BKbgView addSubview:BKoneView];

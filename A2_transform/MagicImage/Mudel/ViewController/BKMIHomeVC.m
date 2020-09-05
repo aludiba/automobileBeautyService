@@ -31,7 +31,7 @@
 - (UITableView *)BKtableView{
     if (!_BKtableView) {
         _BKtableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
-        _BKtableView.backgroundColor = RGB(242, 242, 242);
+        _BKtableView.backgroundColor = [UIColor cyanColor];
         _BKtableView.delegate = self;
         _BKtableView.dataSource = self;
         _BKtableView.separatorStyle= UITableViewCellSeparatorStyleNone;
@@ -60,14 +60,14 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = RGB(242, 242, 242);
+    self.view.backgroundColor = [UIColor cyanColor];
     [self.view addSubview:self.BKtableView];
     self.BKtableView.sd_layout
     .leftEqualToView(self.view)
     .rightEqualToView(self.view)
     .topEqualToView(self.view).offset(-StatusBarHeight)
     .bottomEqualToView(self.view);
-     self.BKbannerImageArr = @[@"http://api.zhewo.top/static/new/pic/type_6/1.png",@"http://api.zhewo.top/static/new/pic/type_6/2.png",@"http://api.zhewo.top/static/new/pic/type_6/3.png"];
+     self.BKbannerImageArr = @[@"http://api.zhewo.top/static/new/pic/type_3/1.png",@"http://api.zhewo.top/static/new/pic/type_4/2.png",@"http://api.zhewo.top/static/new/pic/type_5/3.png"];
     [self BKloadData];
     [self BKcreateHeaderView];
     [NotifiCenter addObserver:self selector:@selector(BKloadData) name:@"loginSuccess" object:nil];
@@ -77,12 +77,12 @@
     [self BKloadData];
 }
 - (void)BKcreateHeaderView{
-    UIView *BKbgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight/2-40)];
-    BKbgView.backgroundColor = UIColor.whiteColor;
+    UIView *BKbgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight/2 - 40)];
+    BKbgView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:BKbgView];
     self.BKtableView.tableHeaderView = BKbgView;
     UIView *BKcolorView = [[UIView alloc] init];
-    BKcolorView.backgroundColor = RGB(242, 242, 242);
+    BKcolorView.backgroundColor = [UIColor cyanColor];
     [BKbgView addSubview:BKcolorView];
     BKcolorView.sd_layout
     .leftEqualToView(BKbgView)
@@ -90,15 +90,15 @@
     .topEqualToView(BKbgView)
     .bottomSpaceToView(BKbgView, 5);
     CGFloat BKh = 0;
-    if (iphone_X || ScreenWidth == 414) {
+    if (LCDISIPHONEX || ScreenWidth == 414) {
         BKh = StatusBarHeight;
     }else{
-        BKh = StatusBarHeight+15;
+        BKh = StatusBarHeight + 15;
     }
     UILabel *BKcontentLabel = [[UILabel alloc] init];
     BKcontentLabel.font = FontBoldSize(25, ScreenWidth);
-    BKcontentLabel.text = @"PHOTO EDIT";
-    BKcontentLabel.textColor = UIColor.blackColor;
+    BKcontentLabel.text = @"Photo Edit";
+    BKcontentLabel.textColor = [UIColor purpleColor];
     [BKbgView addSubview:BKcontentLabel];
     BKcontentLabel.sd_layout
     .leftSpaceToView(BKbgView, 15)
@@ -106,11 +106,11 @@
     .autoHeightRatio(0);
     [BKcontentLabel setSingleLineAutoResizeWithMaxWidth:ScreenWidth];
     UIButton *BKshopBtn = [[UIButton alloc] init];
-    [BKshopBtn setTitle:@"SHOP" forState:UIControlStateNormal];
-    [BKshopBtn setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
-    [BKshopBtn setBackgroundColor:[UIColor blueColor]];
-    BKshopBtn.titleLabel.font = FontBoldSize(12, ScreenWidth);
-    BKshopBtn.layer.cornerRadius = 4;
+    [BKshopBtn setTitle:@"Shop" forState:UIControlStateNormal];
+    [BKshopBtn setTitleColor:UIColor.blueColor forState:UIControlStateNormal];
+    [BKshopBtn setBackgroundColor:[UIColor systemRedColor]];
+    BKshopBtn.titleLabel.font = FontBoldSize(13, ScreenWidth);
+    BKshopBtn.layer.cornerRadius = 8;
     BKshopBtn.layer.masksToBounds = YES;
     [BKshopBtn addTarget:self action:@selector(BKshopBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
     [BKbgView addSubview:BKshopBtn];
@@ -120,7 +120,7 @@
     .widthIs(50)
     .heightIs(25);
     _BKbannerView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 55, ScreenWidth, 120) delegate:self placeholderImage:[UIImage imageNamed:@"placeholder"]];
-    _BKbannerView.backgroundColor = UIColor.clearColor;
+    _BKbannerView.backgroundColor = [UIColor cyanColor];
     _BKbannerView.localizationImageNamesGroup = self.BKbannerImageArr;
     [BKbgView addSubview:_BKbannerView];
     _BKbannerView.sd_layout
@@ -132,15 +132,10 @@
 - (void)BKloadData{
     NSDictionary *BKdict;
     if (UserId) {
-        BKdict = @{@"pic_type":@(6),@"type":@(1),@"is_hot":@(2),@"user_id":UserId};
+        BKdict = @{@"pic_type":@(5),@"type":@(1),@"is_hot":@(2),@"user_id":UserId};
     }else{
-        BKdict = @{@"pic_type":@(6),@"type":@(1),@"is_hot":@(2)};
+        BKdict = @{@"pic_type":@(5),@"type":@(1),@"is_hot":@(2)};
     }
-//    if (UserId) {
-//        BKdict = @{@"pic_type":@(6),@"type":@(1),@"user_id":UserId};
-//    }else{
-//        BKdict = @{@"pic_type":@(6),@"type":@(1)};
-//    }
     [MIHttpTool Post:PicList parameters:BKdict success:^(id BKresponseObject) {
         NSLog(@"BKresponseObject:%@",BKresponseObject);
         if ([BKresponseObject[@"status"] integerValue] == 1) {
@@ -170,9 +165,9 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)BKtableView cellForRowAtIndexPath:(NSIndexPath *)BKindexPath{
     if (BKindexPath.section == 0) {
-        BKMIHomeSectionOneCell *BKcell = [BKtableView dequeueReusableCellWithIdentifier:@"BKcell"];
+        BKMIHomeSectionOneCell *BKcell = [BKtableView dequeueReusableCellWithIdentifier:@"BKMIHomeSectionOneCell"];
         if (!BKcell) {
-            BKcell = [[BKMIHomeSectionOneCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"BKcell"];
+            BKcell = [[BKMIHomeSectionOneCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"BKMIHomeSectionOneCell"];
         }
         BKcell.block = ^(NSInteger BKtag) {
             switch (BKtag) {
@@ -203,8 +198,6 @@
                 }
                     break;
                 case 5:{
-//                    BKMITagsVC *BKtagsVC = [[BKMITagsVC alloc] init];
-//                    [self.navigationController pushViewController:BKtagsVC animated:YES];
                     BKMIStickerVC *BKstickerVC = [[BKMIStickerVC alloc] init];
                     BKstickerVC.BKisFromHomeVC = YES;
                     BKstickerVC.hidesBottomBarWhenPushed = YES;
@@ -217,9 +210,9 @@
         };
         return BKcell;
     }else{
-        BKMIHomeSectionTowCell *BKcell = [BKtableView dequeueReusableCellWithIdentifier:@"cell1"];
+        BKMIHomeSectionTowCell *BKcell = [BKtableView dequeueReusableCellWithIdentifier:@"BKMIHomeSectionTowCell"];
         if (!BKcell) {
-            BKcell = [[BKMIHomeSectionTowCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell1"];
+            BKcell = [[BKMIHomeSectionTowCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"BKMIHomeSectionTowCell"];
         }
         BKMIHomeModel *BKmodel = self.BKdataArray[BKindexPath.row];
         BKcell.BKmodel = BKmodel;
@@ -288,9 +281,9 @@
     return ScreenHeight/2-110;
 }
 - (UIView *)tableView:(UITableView *)BKtableView viewForHeaderInSection:(NSInteger)BKsection{
-    NSArray *BKtitleArray = @[@"Tools",@"STICKER"];
+    NSArray *BKtitleArray = @[@"TOOLS",@"STICKER"];
     UIView *BKview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 30)];
-    BKview.backgroundColor = [UIColor whiteColor];
+    BKview.backgroundColor = [UIColor cyanColor];
     UILabel *BKtitileLabel = [[UILabel alloc] init];
     BKtitileLabel.font = [UIFont boldSystemFontOfSize:16];
     BKtitileLabel.textColor = UIColor.blackColor;
@@ -346,18 +339,19 @@
     BKMIHomeHeaderView *BKhomeCell = (BKMIHomeHeaderView*)BKcell;
     [BKhomeCell.BKpicImageView sd_setImageWithURL:[NSURL URLWithString:self.BKbannerImageArr[BKindex]]];
 }
+#pragma mark - SDCycleScrollViewDelegate
 - (void)cycleScrollView:(SDCycleScrollView *)BKcycleScrollView didSelectItemAtIndex:(NSInteger)BKindex{
     if (BKindex == 0) {
         BKMIStickerDetailVC *BKstickerVC = [[BKMIStickerDetailVC alloc] init];
-        BKstickerVC.BKpId = @"165";
+        BKstickerVC.BKpId = @"120";
         [self.navigationController pushViewController:BKstickerVC animated:YES];
     }else if (BKindex == 1){
         BKMIStickerDetailVC *BKstickerVC = [[BKMIStickerDetailVC alloc] init];
-        BKstickerVC.BKpId = @"166";
+        BKstickerVC.BKpId = @"136";
         [self.navigationController pushViewController:BKstickerVC animated:YES];
     }else{
         BKMIStickerDetailVC *BKstickerVC = [[BKMIStickerDetailVC alloc] init];
-        BKstickerVC.BKpId = @"167";
+        BKstickerVC.BKpId = @"152";
         [self.navigationController pushViewController:BKstickerVC animated:YES];
     }
 }

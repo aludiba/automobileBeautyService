@@ -74,9 +74,9 @@
     return [self.BKimageArray[section] count];
 }
 - (UITableViewCell *)tableView:(UITableView *)BKtableView cellForRowAtIndexPath:(NSIndexPath *)BKindexPath{
-    BKMIMoreCell *BKcell = [BKtableView dequeueReusableCellWithIdentifier:@"BKcell"];
+    BKMIMoreCell *BKcell = [BKtableView dequeueReusableCellWithIdentifier:@"BKMIMoreCell"];
     if (!BKcell) {
-        BKcell = [[BKMIMoreCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"BKcell"];
+        BKcell = [[BKMIMoreCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"BKMIMoreCell"];
     }
     BKcell.BKtitleLabel.text = self.BKtitleArray[BKindexPath.section][BKindexPath.row];
     BKcell.BKarrowView.image = LCDImage(self.BKimageArray[BKindexPath.section][BKindexPath.row]);
@@ -88,7 +88,7 @@
             BKMIFeedbackVC *BKfeedback = [[BKMIFeedbackVC alloc] init];
             [self.navigationController pushViewController:BKfeedback animated:YES];
         }else if (BKindexPath.row == 1){
-            NSString *BKmailStr = [NSString stringWithFormat:@"mailto://%@",@"photoedit7a@163.com"];
+            NSString *BKmailStr = [NSString stringWithFormat:@"mailto://%@",@"windy_aludiba@163.com"];
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:BKmailStr]];
         }else{
             [self BKshare];

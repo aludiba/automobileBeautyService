@@ -9,9 +9,10 @@
 @implementation BKMIHomeSectionTowCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)BKstyle reuseIdentifier:(NSString *)BKreuseIdentifier{
     if (self = [super initWithStyle:BKstyle reuseIdentifier:BKreuseIdentifier]) {
+        self.contentView.backgroundColor = [UIColor cyanColor];
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         self.BKiconImageView = [[UIImageView alloc] init];
-        self.BKiconImageView.layer.cornerRadius = 10;
+        self.BKiconImageView.layer.cornerRadius = 16;
         self.BKiconImageView.layer.masksToBounds = YES;
         [self.contentView addSubview:self.BKiconImageView];
         self.BKiconImageView.sd_layout

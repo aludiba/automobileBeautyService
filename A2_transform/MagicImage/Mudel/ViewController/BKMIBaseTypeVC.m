@@ -12,14 +12,14 @@
 @implementation BKMIBaseTypeVC
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"SHOP";
+    self.title = @"Shop";
     BKMISlideVC *BKslideMenu = [[BKMISlideVC alloc] init];
     BKMIStickerVC *BKstickerVC = [[BKMIStickerVC alloc] init];
     BKMIFilterVC *BKfilterVC = [[BKMIFilterVC alloc] init];
     BKslideMenu.BKshowBottomLine = NO;
     BKslideMenu.BKtitleSelectColor = RGB(62, 85, 250);
     BKslideMenu.BKbottomLineColor = RGB(62, 85, 250);
-    BKslideMenu.BKtitles = @[@"Sticker",@"Filter"];
+    BKslideMenu.BKtitles = @[@"STICKER",@"FILTER"];
     BKslideMenu.BKcontrollers = @[BKstickerVC,BKfilterVC];
     [self.view addSubview:BKslideMenu.view];
     [self addChildViewController:BKslideMenu];
@@ -52,8 +52,6 @@
         [self presentViewController:BKnavi animated:YES completion:nil];
         return;
     }
-//    BKMIStoreVC *BKstoreVC = [[BKMIStoreVC alloc] init];
-//    [self.navigationController pushViewController:BKstoreVC animated:YES];
 }
 - (void)dealloc{
     [NotifiCenter removeObserver:self];

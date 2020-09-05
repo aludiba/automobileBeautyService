@@ -12,6 +12,7 @@
 - (UITableView *)BKtableView{
     if (!_BKtableView) {
         _BKtableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+        _BKtableView.backgroundColor = [UIColor cyanColor];
         _BKtableView.delegate = self;
         _BKtableView.dataSource = self;
         _BKtableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -26,7 +27,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = UIColor.whiteColor;
+    self.view.backgroundColor = [UIColor cyanColor];
     self.title = self.BKmodel.title;
     [self.view addSubview:self.BKtableView];
     self.BKtableView.sd_layout
@@ -35,6 +36,7 @@
     .topEqualToView(self.view)
     .bottomSpaceToView(self.view, 0);
     UIView *BKbottomView = [[UIView alloc] init];
+    BKbottomView.backgroundColor = [UIColor cyanColor];
     [self.view addSubview:BKbottomView];
     BKbottomView.sd_layout
     .leftEqualToView(self.view)
@@ -44,14 +46,18 @@
     UIButton *BKbuyBtn = [[UIButton alloc] init];
     [BKbuyBtn setTitle:@"Apply" forState:UIControlStateNormal];
     [BKbuyBtn setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
-    BKbuyBtn.layer.cornerRadius = 6;
+    BKbuyBtn.layer.cornerRadius = 16;
     BKbuyBtn.layer.masksToBounds = YES;
-    BKbuyBtn.backgroundColor = RGB(62, 85, 250);
+    if (@available(iOS 9.0, *)) {
+        BKbuyBtn.backgroundColor = [UIColor systemPurpleColor];
+    } else {
+        BKbuyBtn.backgroundColor = [UIColor purpleColor];
+    }
     [BKbuyBtn addTarget:self action:@selector(BKbtnClicked:) forControlEvents:UIControlEventTouchUpInside];
     [BKbottomView addSubview:BKbuyBtn];
     BKbuyBtn.sd_layout
-    .leftSpaceToView(BKbottomView, 25)
-    .rightSpaceToView(BKbottomView, 25)
+    .leftSpaceToView(BKbottomView, 50)
+    .rightSpaceToView(BKbottomView, 50)
     .centerYEqualToView(BKbottomView)
     .heightIs(45);
      [self BKloadData];
@@ -127,9 +133,9 @@
     return self.BKdataArray.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    BKMIFilterDetialCell *BKcell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    BKMIFilterDetialCell *BKcell = [tableView dequeueReusableCellWithIdentifier:@"BKMIFilterDetialCell"];
     if (!BKcell) {
-        BKcell = [[BKMIFilterDetialCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        BKcell = [[BKMIFilterDetialCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"BKMIFilterDetialCell"];
     }
     BKcell.BKimageUrl = self.BKdataArray[indexPath.row];
     return BKcell;
