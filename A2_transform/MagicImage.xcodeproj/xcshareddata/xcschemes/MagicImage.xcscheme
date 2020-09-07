@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ED566F902271EA260048B47C"
-               BuildableName = "Magic Pic on Super collage.app"
+               BuildableName = "magicImageManage.app"
                BlueprintName = "MagicImage"
                ReferencedContainer = "container:MagicImage.xcodeproj">
             </BuildableReference>
@@ -55,7 +55,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ED566F902271EA260048B47C"
-            BuildableName = "Magic Pic on Super collage.app"
+            BuildableName = "magicImageManage.app"
             BlueprintName = "MagicImage"
             ReferencedContainer = "container:MagicImage.xcodeproj">
          </BuildableReference>
@@ -72,7 +72,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ED566F902271EA260048B47C"
-            BuildableName = "Magic Pic on Super collage.app"
+            BuildableName = "magicImageManage.app"
             BlueprintName = "MagicImage"
             ReferencedContainer = "container:MagicImage.xcodeproj">
          </BuildableReference>
