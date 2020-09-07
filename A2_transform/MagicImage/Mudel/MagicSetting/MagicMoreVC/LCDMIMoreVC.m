@@ -3,6 +3,8 @@
 #import "LCDMIMoreCell.h"
 #import "LCDMIFeedbackVC.h"
 #import "LCDMILoginVC.h"
+#import <AVOSCloud/AVOSCloud.h>
+
 @interface LCDMIMoreVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *LCDtableView;
 @property (nonatomic, strong) NSArray *LCDtitleArray;
@@ -95,9 +97,27 @@
         }
     }else{
         if (LCDindexPath.row == 0) {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/index/newp.picphotopicda2a/termsDetail",LSBaseUrl]] ];
+            AVQuery *LCDdataList = [AVQuery queryWithClassName:@"LCDA2"];
+            [LCDdataList findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+                if (objects.count) {
+                    AVObject *LCDobj = [objects lastObject];
+                    NSString *LCDA22 = [LCDobj objectForKey:@"LCDA22"];
+                    if (LCDA22.length) {
+                        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:LCDA22]];
+                    }
+                }
+            }];
         }else if (LCDindexPath.row == 1){
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/index/newp.picphotopicda2a/privacyDetail",LSBaseUrl]] ];
+            AVQuery *LCDdataList = [AVQuery queryWithClassName:@"LCDA2"];
+            [LCDdataList findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+                if (objects.count) {
+                    AVObject *LCDobj = [objects lastObject];
+                    NSString *LCDA23 = [LCDobj objectForKey:@"LCDA23"];
+                    if (LCDA23.length) {
+                        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:LCDA23]];
+                     }
+                }
+              }];
         }else{
             [UserDefaults removeObjectForKey:@"user_id"];
             [UserDefaults synchronize];

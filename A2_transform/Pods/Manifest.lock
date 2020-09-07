@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - AVOSCloud (12.3.0)
   - DGActivityIndicatorView (2.1.1)
   - FSTextView (1.8)
   - GPUImage (0.1.7)
@@ -37,6 +38,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - AVOSCloud
   - DGActivityIndicatorView
   - FSTextView
   - GPUImage
@@ -56,6 +58,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - AVOSCloud
     - DGActivityIndicatorView
     - FSTextView
     - GPUImage
@@ -74,6 +77,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  AVOSCloud: bed104accc6fc53c3d16c3f52c8dfdff02251898
   DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
   FSTextView: 9e2ca07bb6bb0fb7e77b49b2717adf81f3c620b5
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
@@ -90,6 +94,6 @@ SPEC CHECKSUMS:
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: e5353d91b39113593dbc30c6482f571ba9a4648f
+PODFILE CHECKSUM: 9b73d7e537c7829f09e59786d501cb6380e0be11
 
-COCOAPODS: 1.9.2
+COCOAPODS: 1.10.0.beta.2

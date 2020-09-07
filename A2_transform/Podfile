@@ -18,4 +18,5 @@ pod 'MBProgressHUD'
 pod 'SDAutoLayout'
 pod 'SDWebImage'
 pod 'SDCycleScrollView'
+pod 'AVOSCloud'
 end
