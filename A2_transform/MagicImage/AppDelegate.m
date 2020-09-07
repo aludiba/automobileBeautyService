@@ -1,13 +1,13 @@
 #import "AppDelegate.h"
-#import "BKMIBaseNavigationC.h"
-#import "BKMIHomeVC.h"
-#import "BKMIBaseTabBarVC.h"
+#import "LCDMIBaseNavigationC.h"
+#import "LCDMIHomeVC.h"
+#import "LCDMIBaseTabBarVC.h"
 @interface AppDelegate ()
 @end
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window.backgroundColor = UIColor.whiteColor;
-    BKMIBaseTabBarVC * baserVC = [[BKMIBaseTabBarVC alloc] init];
+    LCDMIBaseTabBarVC * baserVC = [[LCDMIBaseTabBarVC alloc] init];
     self.window.rootViewController = baserVC;
     [self.window makeKeyAndVisible];
     return YES;
