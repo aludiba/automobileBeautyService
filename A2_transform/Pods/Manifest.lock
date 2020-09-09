@@ -18,6 +18,9 @@ PODS:
   - DGActivityIndicatorView (2.1.1)
   - FSTextView (1.8)
   - GPUImage (0.1.7)
+  - JCore (2.3.4)
+  - JPush (3.3.6):
+    - JCore (< 3.0.0, >= 2.0.0)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MJExtension (3.2.1)
@@ -42,6 +45,8 @@ DEPENDENCIES:
   - DGActivityIndicatorView
   - FSTextView
   - GPUImage
+  - JCore
+  - JPush
   - Masonry
   - MBProgressHUD
   - MJExtension
@@ -62,6 +67,8 @@ SPEC REPOS:
     - DGActivityIndicatorView
     - FSTextView
     - GPUImage
+    - JCore
+    - JPush
     - Masonry
     - MBProgressHUD
     - MJExtension
@@ -81,6 +88,8 @@ SPEC CHECKSUMS:
   DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
   FSTextView: 9e2ca07bb6bb0fb7e77b49b2717adf81f3c620b5
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  JCore: 8aa29dc57ba3730dd9fe7544ce1a4e1cbe221135
+  JPush: a401b946dcc76b37335422487201bc1ecc8dd296
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
@@ -94,6 +103,6 @@ SPEC CHECKSUMS:
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 9b73d7e537c7829f09e59786d501cb6380e0be11
+PODFILE CHECKSUM: 22047cb05c86d4649fff0b63102de8cb52db1b08
 
 COCOAPODS: 1.10.0.beta.2
