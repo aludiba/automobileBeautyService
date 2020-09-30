@@ -18,4 +18,5 @@ target 'Simple Diary' do
     pod 'IQKeyboardManager'
     pod 'JCore', '2.1.4-noidfa'
     pod 'JPush', '3.2.4-noidfa'
+    pod 'AVOSCloud'
 end

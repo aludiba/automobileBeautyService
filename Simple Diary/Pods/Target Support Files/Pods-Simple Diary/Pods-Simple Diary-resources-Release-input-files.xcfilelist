@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-Simple Diary/Pods-Simple Diary-resources.sh
+${PODS_ROOT}/AVOSCloud/AVOS/AVOSCloud/AVOSCloud_Art.inc
 ${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle
 ${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle
