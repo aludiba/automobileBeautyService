@@ -14,7 +14,6 @@
 		722073A922F6A88B004DD0A4 /* SDWriteDiaryDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 722073A822F6A88B004DD0A4 /* SDWriteDiaryDetailTableViewCell.m */; };
 		722222BC22ED3CD2004B8352 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 722222B922ED3CD2004B8352 /* NSDictionary+log.m */; };
 		722222BD22ED3CD2004B8352 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 722222BB22ED3CD2004B8352 /* NSArray+log.m */; };
-		722222BF22ED6DAD004B8352 /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222BE22ED6DAD004B8352 /* BmobSDK.framework */; };
 		722222C122ED6E12004B8352 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222C022ED6E12004B8352 /* Security.framework */; };
 		722222C322ED6E1F004B8352 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222C222ED6E1F004B8352 /* CoreGraphics.framework */; };
 		722222C522ED6E2A004B8352 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722222C422ED6E2A004B8352 /* MobileCoreServices.framework */; };
@@ -35,8 +34,6 @@
 		72402AAF22FFB56E009C7712 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AAE22FFB56E009C7712 /* CoreFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		72402AB122FFB591009C7712 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AB022FFB591009C7712 /* ImageIO.framework */; };
 		72402AB322FFB5AA009C7712 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AB222FFB5AA009C7712 /* QuartzCore.framework */; };
-		72402AF322FFD395009C7712 /* jcore-ios-2.0.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AF122FFD394009C7712 /* jcore-ios-2.0.1.a */; };
-		72402AF422FFD395009C7712 /* jpush-ios-3.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AF222FFD394009C7712 /* jpush-ios-3.2.0.a */; };
 		72402AF622FFD405009C7712 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AF522FFD405009C7712 /* AdSupport.framework */; };
 		72402AF822FFD434009C7712 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AF722FFD433009C7712 /* UIKit.framework */; };
 		72402AFA22FFD450009C7712 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72402AF922FFD450009C7712 /* Foundation.framework */; };
@@ -125,7 +122,6 @@
 		722222B922ED3CD2004B8352 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
 		722222BA22ED3CD2004B8352 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
 		722222BB22ED3CD2004B8352 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
-		722222BE22ED6DAD004B8352 /* BmobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BmobSDK.framework; sourceTree = "<group>"; };
 		722222C022ED6E12004B8352 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		722222C222ED6E1F004B8352 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		722222C422ED6E2A004B8352 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -149,9 +145,6 @@
 		72402AB022FFB591009C7712 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		72402AB222FFB5AA009C7712 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		72402AB422FFB653009C7712 /* Simple Diary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Simple Diary.entitlements"; sourceTree = "<group>"; };
-		72402AF022FFD394009C7712 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
-		72402AF122FFD394009C7712 /* jcore-ios-2.0.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.0.1.a"; sourceTree = "<group>"; };
-		72402AF222FFD394009C7712 /* jpush-ios-3.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.0.a"; sourceTree = "<group>"; };
 		72402AF522FFD405009C7712 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		72402AF722FFD433009C7712 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		72402AF922FFD450009C7712 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -294,7 +287,6 @@
 				72402AFA22FFD450009C7712 /* Foundation.framework in Frameworks */,
 				72402AF822FFD434009C7712 /* UIKit.framework in Frameworks */,
 				72402AF622FFD405009C7712 /* AdSupport.framework in Frameworks */,
-				72402AF422FFD395009C7712 /* jpush-ios-3.2.0.a in Frameworks */,
 				72402AB322FFB5AA009C7712 /* QuartzCore.framework in Frameworks */,
 				72402AB122FFB591009C7712 /* ImageIO.framework in Frameworks */,
 				72402AAF22FFB56E009C7712 /* CoreFoundation.framework in Frameworks */,
@@ -314,8 +306,6 @@
 				722222C322ED6E1F004B8352 /* CoreGraphics.framework in Frameworks */,
 				722222C122ED6E12004B8352 /* Security.framework in Frameworks */,
 				7207BBAE22EC1DFA009838F1 /* CoreLocation.framework in Frameworks */,
-				72402AF322FFD395009C7712 /* jcore-ios-2.0.1.a in Frameworks */,
-				722222BF22ED6DAD004B8352 /* BmobSDK.framework in Frameworks */,
 				A5B3B3F1E1F1721A84B7C230 /* libPods-Simple Diary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,16 +350,6 @@
 				4F50E075A98AAD62455C4831 /* libPods-Simple Diary.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		72402AEF22FFD394009C7712 /* JPush */ = {
-			isa = PBXGroup;
-			children = (
-				72402AF022FFD394009C7712 /* JPUSHService.h */,
-				72402AF122FFD394009C7712 /* jcore-ios-2.0.1.a */,
-				72402AF222FFD394009C7712 /* jpush-ios-3.2.0.a */,
-			);
-			path = JPush;
 			sourceTree = "<group>";
 		};
 		72FE8D0622FED01C00FB7078 /* JTCalendar */ = {
@@ -662,9 +642,7 @@
 		AE92DEC922E2AD0A0013618C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				72402AEF22FFD394009C7712 /* JPush */,
 				72FE8D0622FED01C00FB7078 /* JTCalendar */,
-				722222BE22ED6DAD004B8352 /* BmobSDK.framework */,
 				AE92DEF422E2E56D0013618C /* Localizable.strings */,
 			);
 			path = Resources;
@@ -848,7 +826,7 @@
 		AE92DEA522E2AB550013618C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = hgg;
 				TargetAttributes = {
 					AE92DEAC22E2AB550013618C = {
@@ -1061,6 +1039,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1086,7 +1065,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1121,6 +1100,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1140,7 +1120,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1165,7 +1145,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Simple Diary/Common/SD_PrefixHeader.pch";
 				INFOPLIST_FILE = "Simple Diary/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1241,7 +1221,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Simple Diary/Common/SD_PrefixHeader.pch";
 				INFOPLIST_FILE = "Simple Diary/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
