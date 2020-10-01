@@ -24,8 +24,9 @@
 #import "SDTabBarController.h"
 #import "NSArray+log.h"
 #import "NSDictionary+log.h"
-#import <BmobSDK/Bmob.h>
 #import "JPUSHService.h"
+#import <AVOSCloud/AVOSCloud.h>
+#import <SafariServices/SafariServices.h>
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
 #endif
