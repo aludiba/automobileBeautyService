@@ -24,13 +24,8 @@
 #import "SDTabBarController.h"
 #import "NSArray+log.h"
 #import "NSDictionary+log.h"
-#import "JPUSHService.h"
 #import <AVOSCloud/AVOSCloud.h>
 #import <SafariServices/SafariServices.h>
-#ifdef NSFoundationVersionNumber_iOS_9_x_Max
-#import <UserNotifications/UserNotifications.h>
-#endif
-#import <AdSupport/AdSupport.h>
 //多语言调用
 #define NSLocalizedString(key, comment) [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
 /**颜色*/
