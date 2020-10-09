@@ -77,12 +77,12 @@
         return;
     }
     if (self.type == SDPasswordChangeViewControllerTypeDefault) {
-    BmobUser *user = [BmobUser currentUser];
+    AVUser *user = [AVUser currentUser];
     NSString *name = user.username;
-    [user updateCurrentUserPasswordWithOldPassword:self.oldPassword newPassword:self.confirmPassword block:^(BOOL isSuccessful, NSError *error) {
-        if (isSuccessful) {
+    [user updatePassword:self.oldPassword newPassword:self.confirmPassword block:^(id  _Nullable object, NSError * _Nullable error) {
+        if (!error) {
             //用新密码登录
-            [BmobUser loginInbackgroundWithAccount:name andPassword:self.confirmPassword block:^(BmobUser *user, NSError *error) {
+            [AVUser logInWithUsernameInBackground:name password:self.confirmPassword block:^(AVUser * _Nullable user, NSError * _Nullable error) {
                 if (error) {
                     [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
                 } else {
@@ -95,16 +95,16 @@
         }
     }];
     }else{
-        BmobQuery *query = [BmobUser query];
+        AVQuery *query = [AVUser query];
         [query whereKey:@"username" equalTo:self.userName];
         [query findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
             if (error) {
                 [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",[error description]]];
             }else{
                 if (array.count) {
-                    BmobUser *user = array[0];
-                    [user updateCurrentUserPasswordWithOldPassword:self.oldPassword newPassword:self.confirmPassword block:^(BOOL isSuccessful, NSError *error) {
-                        if (isSuccessful) {
+                    AVUser *user = array[0];
+                    [user updatePassword:self.oldPassword newPassword:self.confirmPassword block:^(id  _Nullable object, NSError * _Nullable error) {
+                        if (!error) {
                             //用新密码登录
                             [MBProgressHUD SDshowReminderText:NSLocalizedString(@"密码修改成功", nil)];
                             [self.navigationController popViewControllerAnimated:YES];

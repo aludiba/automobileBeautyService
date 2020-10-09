@@ -28,8 +28,8 @@
     [self loadData];
 }
 - (void)loadData{
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"Diary"];
-    BmobUser *author = [BmobUser currentUser];
+    AVQuery *bquery = [AVQuery queryWithClassName:@"Diary"];
+    AVUser *author = [AVUser currentUser];
     [bquery whereKey:@"author" equalTo:author];
     //查找GameScore表的数据
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
@@ -38,7 +38,7 @@
         }else{
             NSMutableArray *tempArray = [[NSMutableArray alloc] init];
             for (int i = (int)(array.count - 1); i > -1; i--) {
-                BmobObject *obj = array[i];
+                AVObject *obj = array[i];
                 SDWriteDiaryModel *model = [[SDWriteDiaryModel alloc] init];
                 model.objectId = [obj objectId];
                 model.fontSize = [obj objectForKey:@"fontSize"];

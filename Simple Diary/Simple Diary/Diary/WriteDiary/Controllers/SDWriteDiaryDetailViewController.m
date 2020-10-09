@@ -47,7 +47,7 @@
     if (sender.tag == 101){
         UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:nil message:NSLocalizedString(@"确定删除?", nil) preferredStyle:UIAlertControllerStyleActionSheet];
         UIAlertAction *action = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            BmobObject *Diary = [BmobObject objectWithoutDataWithClassName:@"Diary" objectId:self.model.objectId];
+            AVObject *Diary = [AVObject objectWithoutDataWithClassName:@"Diary" objectId:self.model.objectId];
             [Diary deleteInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
                 if (isSuccessful) {
                     [MBProgressHUD SDshowReminderText:NSLocalizedString(@"删除成功", nil)];

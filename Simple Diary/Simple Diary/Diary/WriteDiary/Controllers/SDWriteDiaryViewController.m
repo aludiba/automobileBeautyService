@@ -234,44 +234,17 @@
             break;
     }
     if (self.selectImagesArray.count) {
-        [BmobFile filesUploadBatchWithPaths:self.selectImagesArray progressBlock:^(int index, float progress) {
-        NSLog(@"index %d progress %f",index,progress);
-    } resultBlock:^(NSArray *array, BOOL isSuccessful, NSError *error) {
-        if (isSuccessful) {
-            //存放文件URL的数组
-            NSMutableArray *fileArray = [NSMutableArray array];
-            for (int i = 0; i < array.count;i++) {
-                BmobFile *file = array [i];
-                [fileArray addObject:file.url];
-            }
-            self.releaseModel.imageUrls = [fileArray copy];
-            NSDictionary *jsonDictionary = (NSDictionary *)[self.releaseModel yy_modelToJSONObject];
-            BmobObject *diary = [BmobObject objectWithClassName:@"Diary"];
-            [diary saveAllWithDictionary:jsonDictionary];
-            [diary saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
-                if (isSuccessful) {
-                    //创建成功后的动作
-                    NSLog(@"保存成功~~~");
-                    [self.navigationController popViewControllerAnimated:YES];
-                } else if (error){
-                    //发生错误后的动作
-                    [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请稍后再试", nil)];
-                } else {
-                    [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请稍后再试", nil)];
-                }
-            }];
-        }else{
-            [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请稍后再试", nil)];
-        }
-    }];
+        
     }else{
         NSDictionary *jsonDictionary = (NSDictionary *)[self.releaseModel yy_modelToJSONObject];
         if (self.type == SDWriteDiaryViewControllerTypeDefault) {
-        BmobObject *diary = [BmobObject objectWithClassName:@"Diary"];
-        [diary saveAllWithDictionary:jsonDictionary];
-        BmobUser *author = [BmobUser currentUser];
-        [diary setObject:author forKey:@"author"];
-        [diary saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+        AVUser *author = [AVUser currentUser];
+        AVObject *LBdataList = [AVObject objectWithClassName:@"Diary"];
+        for (NSString *key in jsonDictionary.allKeys) {
+            [LBdataList setObject:[jsonDictionary objectForKey:key]  forKey:key];
+        }
+        [LBdataList setObject:author forKey:@"author"];
+        [LBdataList saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
             if (isSuccessful) {
                 //创建成功后的动作
                 [MBProgressHUD SDshowReminderText:NSLocalizedString(@"添加成功", nil)];
@@ -284,9 +257,11 @@
             }
         }];
         }else if (self.type == SDWriteDiaryViewControllerTypeEdit){
-            BmobObject *diary = [BmobObject objectWithoutDataWithClassName:@"Diary" objectId:self.releaseModel.objectId];
-            [diary saveAllWithDictionary:jsonDictionary];
-            [diary updateInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+            AVObject *diary = [AVObject objectWithClassName:@"Diary" objectId:self.releaseModel.objectId];
+            for (NSString *key in jsonDictionary.allKeys) {
+                [diary setObject:[jsonDictionary objectForKey:key]  forKey:key];
+            }
+            [diary saveInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
                 if (isSuccessful) {
                     [MBProgressHUD SDshowReminderText:NSLocalizedString(@"更新成功", nil)];
                     [self.navigationController popToRootViewControllerAnimated:YES];

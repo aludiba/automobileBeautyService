@@ -97,15 +97,8 @@
     }
 }
 - (void)setLocalPush{
-    BmobUser *user = [BmobUser currentUser];
+    AVUser *user = [AVUser currentUser];
     [user setObject:self.remindDate forKey:@"reminddate"];
-    [user updateInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
-        if(isSuccessful){
-            
-        }else{
-            [MBProgressHUD SDshowReminderText:[NSString stringWithFormat:@"%@",error]];
-        }
-    }];
     //        REMINDWRITE
     [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:REMINDWRITE];
     UILocalNotification *localNotification = [[UILocalNotification alloc] init];
@@ -190,7 +183,7 @@
         _dateContentTextField.layer.borderColor = [UIColor grayColor].CGColor;
         _dateContentTextField.layer.borderWidth = 0.5f;
         [_dateContentTextField sizeToFit];
-        BmobUser *user = [BmobUser currentUser];
+        AVUser *user = [AVUser currentUser];
         if ([user objectForKey:@"reminddate"]) {
             NSString *remindDateString = [SDUIUtilities SDformattedTimeStringWithDate:[user objectForKey:@"reminddate"] format:@"HH:mm"];
             _dateContentTextField.text = remindDateString;

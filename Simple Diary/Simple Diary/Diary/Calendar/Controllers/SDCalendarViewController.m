@@ -67,8 +67,8 @@
     return NO;
 }
 - (void)loadData:(NSDate *)date{
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"Diary"];
-    BmobUser *author = [BmobUser currentUser];
+    AVQuery *bquery = [AVQuery queryWithClassName:@"Diary"];
+    AVUser *author = [AVUser currentUser];
     [bquery whereKey:@"author" equalTo:author];
     //查找GameScore表的数据
     __weak typeof(self) weakSelf = self;
@@ -78,7 +78,7 @@
         }else{
             NSMutableArray *dateArray = [[NSMutableArray alloc] init];
             for (int i = (int)(array.count - 1); i > -1; i--) {
-                BmobObject *obj = array[i];
+                AVObject *obj = array[i];
                 SDWriteDiaryModel *model = [[SDWriteDiaryModel alloc] init];
                 model.objectId = [obj objectId];
                 model.fontSize = [obj objectForKey:@"fontSize"];
@@ -210,32 +210,6 @@
     //    NSLog(@"Previous page loaded");
 }
 #pragma mark - 属性懒加载
-//- (JTCalendarMenuView *)calendarMenuView{
-//    if (!_calendarMenuView) {
-//        _calendarMenuView = [[JTCalendarMenuView alloc] init];
-//        [self.view addSubview:_calendarMenuView];
-//        [_calendarMenuView mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.top.equalTo(self.mas_topLayoutGuideBottom).offset(20);
-//            make.leading.equalTo(self.view);
-//            make.trailing.equalTo(self.view);
-//            make.height.mas_equalTo(20);
-//        }];
-//    }
-//    return _calendarMenuView;
-//}
-//- (JTHorizontalCalendarView *)calendarContentView{
-//    if (!_calendarContentView) {
-//        _calendarContentView = [[JTHorizontalCalendarView alloc] init];
-//        [self.view addSubview:_calendarContentView];
-//        [_calendarContentView mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.top.equalTo(self.calendarMenuView.mas_bottom);
-//            make.leading.equalTo(self.view);
-//            make.trailing.equalTo(self.view);
-//            make.height.mas_equalTo(300);
-//        }];
-//    }
-//    return _calendarContentView;
-//}
 - (JTCalendarManager *)calendarManager{
     if (!_calendarManager) {
         _calendarManager = [[JTCalendarManager alloc] init];

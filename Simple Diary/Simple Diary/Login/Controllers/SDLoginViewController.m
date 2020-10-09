@@ -141,7 +141,7 @@
         return;
     }
     if (sender.tag == 100) {
-        [BmobUser loginWithUsernameInBackground:self.account password:self.password block:^(BmobUser *user, NSError *error) {
+        [AVUser logInWithUsernameInBackground:self.account password:self.password block:^(AVUser * _Nullable user, NSError * _Nullable error) {
             if (user) {
                 [MBProgressHUD SDshowReminderText:NSLocalizedString(@"登录成功", nil)];
                 SDTabBarController *tabVC = [SDTabBarController shareInstance];
@@ -152,13 +152,13 @@
             }
         }];
     }else if(sender.tag == 101){
-        BmobUser *bUser = [[BmobUser alloc] init];
+        AVUser *bUser = [[AVUser alloc] init];
         [bUser setUsername:self.account];
         [bUser setPassword:self.password];
         [bUser signUpInBackgroundWithBlock:^ (BOOL isSuccessful, NSError *error){
             if (isSuccessful){
                 [MBProgressHUD SDshowReminderText:NSLocalizedString(@"注册成功", nil)];
-                [BmobUser loginWithUsernameInBackground:self.account password:self.password block:^(BmobUser *user, NSError *error) {
+                [AVUser logInWithUsernameInBackground:self.account password:self.password block:^(AVUser * _Nullable user, NSError * _Nullable error) {
                     if (user) {
                         SDTabBarController *tabVC = [SDTabBarController shareInstance];
                         tabVC.selectedIndex = 0;

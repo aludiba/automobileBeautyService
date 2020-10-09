@@ -40,16 +40,8 @@
 #pragma mark - actions
 - (void)btnClick:(UIButton *)sender{
     [self.view endEditing:YES];
-    BmobUser *bUser = [BmobUser currentUser];
-    [bUser setObject:self.nickname forKey:@"username"];
-    [bUser updateInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
-        if (isSuccessful) {
-            [MBProgressHUD SDshowReminderText:NSLocalizedString(@"更新成功", nil)];
-            [self.navigationController popViewControllerAnimated:YES];
-        }else{
-            [MBProgressHUD SDshowReminderText:NSLocalizedString(@"请稍后再试", nil)];
-        }
-    }];
+    AVUser *bUser = [AVUser currentUser];
+    [bUser setUsername:self.nickname];
 }
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
     self.nickname = textField.text;
@@ -78,8 +70,8 @@
         _confirmNickNameTextField.placeholder = [NSString stringWithFormat:@"  %@",NSLocalizedString(@"请输入昵称", nil)];
         _confirmNickNameTextField.textColor = [UIColor blackColor];
         _confirmNickNameTextField.font = [UIFont systemFontOfSize:15];
-        BmobUser *user = [BmobUser currentUser];
-        if ([[user objectForKey:@"username"] length]) {
+        AVUser *user = [AVUser currentUser];
+        if ([user.username length]) {
             _confirmNickNameTextField.text = [user objectForKey:@"username"];
             self.nickname = [user objectForKey:@"username"];
         }

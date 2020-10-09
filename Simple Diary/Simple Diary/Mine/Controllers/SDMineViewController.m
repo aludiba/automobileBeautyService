@@ -32,7 +32,7 @@
     SDMineModel *nicknameModel = [[SDMineModel alloc] init];
     nicknameModel.title = NSLocalizedString(@"昵称", nil);
     nicknameModel.type = SDMineCellTypeContent;
-    BmobUser *user = [BmobUser currentUser];
+    AVUser *user = [AVUser currentUser];
     if ([[user objectForKey:@"username"] length]) {
         nicknameModel.content = [user objectForKey:@"username"];
     }
@@ -95,7 +95,7 @@
     if (model.type == SDMineCellTypeLine) {
        
     }else if(model.type == SDMineCellTypeLoginOut){
-        [BmobUser logout];
+        [AVUser logOut];
         SDLoginViewController *loginVC = [SDLoginViewController shareInstance];
         UINavigationController *loginVCNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
         [[UIApplication sharedApplication].delegate window].rootViewController = loginVCNav;
