@@ -50,6 +50,7 @@
 		9D66F0CF25304CA600002217 /* MLShowBigImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D66F0BB25304CA500002217 /* MLShowBigImage.m */; };
 		9D66F0D025304CA600002217 /* MLPhotoImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D66F0BC25304CA500002217 /* MLPhotoImageHelper.m */; };
 		9D66F0EB25304D9100002217 /* libcrypto.a in Resources */ = {isa = PBXBuildFile; fileRef = 9D66F0EA25304D9100002217 /* libcrypto.a */; };
+		9E2ECE794CDDD35A0782CA52 /* libPods-Simple Diary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F50E075A98AAD62455C4831 /* libPods-Simple Diary.a */; };
 		AE12200C22EA86F400FB8E9B /* SDTextThemeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AE12200B22EA86F400FB8E9B /* SDTextThemeButton.m */; };
 		AE12200F22EAA1FB00FB8E9B /* SDTextPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE12200E22EAA1FB00FB8E9B /* SDTextPictureView.m */; };
 		AE138CD022E9A3AB005367DB /* SDTextThemeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE138CCF22E9A3AB005367DB /* SDTextThemeView.m */; };
@@ -262,6 +263,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E2ECE794CDDD35A0782CA52 /* libPods-Simple Diary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
