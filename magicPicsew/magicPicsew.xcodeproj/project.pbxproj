@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45ED2FAD70E58187AF31B5F1 /* Pods_magicPicsew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FA54DEC02F5AE762CE3685 /* Pods_magicPicsew.framework */; };
 		9D5AFEA7254A51F0000EC16D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AFEA6254A51F0000EC16D /* AppDelegate.m */; };
 		9D5AFEB2254A51F0000EC16D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5AFEB1254A51F0000EC16D /* Assets.xcassets */; };
 		9D5AFEB5254A51F0000EC16D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5AFEB3254A51F0000EC16D /* LaunchScreen.storyboard */; };
@@ -14,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7DC3132A8524173470A4AB36 /* Pods-magicPicsew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magicPicsew.release.xcconfig"; path = "Target Support Files/Pods-magicPicsew/Pods-magicPicsew.release.xcconfig"; sourceTree = "<group>"; };
+		96FD22351DFBB41585E1DFF3 /* Pods-magicPicsew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magicPicsew.debug.xcconfig"; path = "Target Support Files/Pods-magicPicsew/Pods-magicPicsew.debug.xcconfig"; sourceTree = "<group>"; };
 		9D5AFEA2254A51F0000EC16D /* magicPicsew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = magicPicsew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5AFEA5254A51F0000EC16D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9D5AFEA6254A51F0000EC16D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -21,6 +24,7 @@
 		9D5AFEB4254A51F0000EC16D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D5AFEB6254A51F0000EC16D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D5AFEB7254A51F0000EC16D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5FA54DEC02F5AE762CE3685 /* Pods_magicPicsew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magicPicsew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +32,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45ED2FAD70E58187AF31B5F1 /* Pods_magicPicsew.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2119BBC8103D1CF697721EB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5FA54DEC02F5AE762CE3685 /* Pods_magicPicsew.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9D5AFE99254A51F0000EC16D = {
 			isa = PBXGroup;
 			children = (
 				9D5AFEA4254A51F0000EC16D /* magicPicsew */,
 				9D5AFEA3254A51F0000EC16D /* Products */,
+				B7333658EABA1B59445C3D35 /* Pods */,
+				2119BBC8103D1CF697721EB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +78,16 @@
 			path = magicPicsew;
 			sourceTree = "<group>";
 		};
+		B7333658EABA1B59445C3D35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96FD22351DFBB41585E1DFF3 /* Pods-magicPicsew.debug.xcconfig */,
+				7DC3132A8524173470A4AB36 /* Pods-magicPicsew.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D5AFEBB254A51F0000EC16D /* Build configuration list for PBXNativeTarget "magicPicsew" */;
 			buildPhases = (
+				58E1E6BD25C0A535D58A9475 /* [CP] Check Pods Manifest.lock */,
 				9D5AFE9E254A51F0000EC16D /* Sources */,
 				9D5AFE9F254A51F0000EC16D /* Frameworks */,
 				9D5AFEA0254A51F0000EC16D /* Resources */,
+				3FF1F6C2BF08211F4215F6CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +152,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FF1F6C2BF08211F4215F6CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-magicPicsew/Pods-magicPicsew-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-magicPicsew/Pods-magicPicsew-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-magicPicsew/Pods-magicPicsew-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58E1E6BD25C0A535D58A9475 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-magicPicsew-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D5AFE9E254A51F0000EC16D /* Sources */ = {
@@ -264,6 +333,7 @@
 		};
 		9D5AFEBC254A51F0000EC16D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96FD22351DFBB41585E1DFF3 /* Pods-magicPicsew.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -282,6 +352,7 @@
 		};
 		9D5AFEBD254A51F0000EC16D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DC3132A8524173470A4AB36 /* Pods-magicPicsew.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
