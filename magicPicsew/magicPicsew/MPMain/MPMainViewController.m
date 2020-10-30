@@ -8,13 +8,17 @@
 #import "MPMainViewController.h"
 #import "MPSetViewController.h"
 
-@interface MPMainViewController ()
+@interface MPMainViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UITableViewDataSource,UITableViewDelegate>
+
 @property (nonatomic, strong) UIButton *MPnavRightBtn;//右侧设置按钮
 @property (nonatomic, strong) UIView *MPnavTitleView;//自定义标题栏
 @property (nonatomic, strong) UIButton *MPnavTitleBtn;//自定义标题按钮
 @property (nonatomic, strong) UILabel *MPnavTitleLbl;//自定义标题
 @property (nonatomic, strong) UIImageView *MPnavExpandCloseImgView;//展开和关闭图标
 @property (nonatomic, assign) Boolean isExpand;//是否展开最近项目
+
+@property (nonatomic, strong) UICollectionView *MPmainPicCollectionView;//主要相册展示控件
+@property (nonatomic, strong) UITableView *MPpicSelectTableView;//相册类型选择控件
 @end
 
 @implementation MPMainViewController
