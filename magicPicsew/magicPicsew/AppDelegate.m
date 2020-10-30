@@ -14,8 +14,15 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.MPwindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.MPwindow.backgroundColor = [UIColor whiteColor];
+    self.MPwindow.rootViewController = [self MProotController];
+    [self.MPwindow makeKeyAndVisible];
     return YES;
 }
-
+- (UIViewController *)MProotController{
+    MPBaseViewController *MPHomeVC = [[MPBaseViewController alloc] init];
+    UINavigationController *MPMainVC = [[UINavigationController alloc] initWithRootViewController:MPHomeVC];
+    return MPMainVC;
+}
 @end

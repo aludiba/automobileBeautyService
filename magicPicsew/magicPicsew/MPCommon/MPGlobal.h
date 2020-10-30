@@ -10,6 +10,7 @@
 
 #import <Masonry/Masonry.h>
 #import <YYModel/YYModel.h>
+#import "MPBaseViewController.h"
 
 //多语言调用
 #define NSLocalizedString(key, comment) [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
