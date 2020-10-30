@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,9 @@
 		9D5AFEB2254A51F0000EC16D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5AFEB1254A51F0000EC16D /* Assets.xcassets */; };
 		9D5AFEB5254A51F0000EC16D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5AFEB3254A51F0000EC16D /* LaunchScreen.storyboard */; };
 		9D5AFEB8254A51F0000EC16D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AFEB7254A51F0000EC16D /* main.m */; };
+		9D5D37A9254BAC65008F0839 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5D37A6254BAC65008F0839 /* NSArray+log.m */; };
+		9D5D37AA254BAC65008F0839 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5D37A8254BAC65008F0839 /* NSDictionary+log.m */; };
+		9D5D37B3254BAD5C008F0839 /* MBProgressHUD+MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5D37B2254BAD5C008F0839 /* MBProgressHUD+MP.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,14 @@
 		9D5AFEB4254A51F0000EC16D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D5AFEB6254A51F0000EC16D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D5AFEB7254A51F0000EC16D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D5AFECE254A5FD0000EC16D /* MPGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPGlobal.h; sourceTree = "<group>"; };
+		9D5D378D254BA9AD008F0839 /* MP_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MP_PrefixHeader.pch; sourceTree = "<group>"; };
+		9D5D37A5254BAC65008F0839 /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
+		9D5D37A6254BAC65008F0839 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		9D5D37A7254BAC65008F0839 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		9D5D37A8254BAC65008F0839 /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
+		9D5D37B1254BAD5C008F0839 /* MBProgressHUD+MP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MP.h"; sourceTree = "<group>"; };
+		9D5D37B2254BAD5C008F0839 /* MBProgressHUD+MP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MP.m"; sourceTree = "<group>"; };
 		B5FA54DEC02F5AE762CE3685 /* Pods_magicPicsew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magicPicsew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -68,6 +79,7 @@
 		9D5AFEA4254A51F0000EC16D /* magicPicsew */ = {
 			isa = PBXGroup;
 			children = (
+				9D5AFECC254A5F51000EC16D /* MPCommon */,
 				9D5AFEA5254A51F0000EC16D /* AppDelegate.h */,
 				9D5AFEA6254A51F0000EC16D /* AppDelegate.m */,
 				9D5AFEB1254A51F0000EC16D /* Assets.xcassets */,
@@ -78,13 +90,27 @@
 			path = magicPicsew;
 			sourceTree = "<group>";
 		};
+		9D5AFECC254A5F51000EC16D /* MPCommon */ = {
+			isa = PBXGroup;
+			children = (
+				9D5D378D254BA9AD008F0839 /* MP_PrefixHeader.pch */,
+				9D5AFECE254A5FD0000EC16D /* MPGlobal.h */,
+				9D5D37A7254BAC65008F0839 /* NSArray+log.h */,
+				9D5D37A6254BAC65008F0839 /* NSArray+log.m */,
+				9D5D37A5254BAC65008F0839 /* NSDictionary+log.h */,
+				9D5D37A8254BAC65008F0839 /* NSDictionary+log.m */,
+				9D5D37B1254BAD5C008F0839 /* MBProgressHUD+MP.h */,
+				9D5D37B2254BAD5C008F0839 /* MBProgressHUD+MP.m */,
+			);
+			path = MPCommon;
+			sourceTree = "<group>";
+		};
 		B7333658EABA1B59445C3D35 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				96FD22351DFBB41585E1DFF3 /* Pods-magicPicsew.debug.xcconfig */,
 				7DC3132A8524173470A4AB36 /* Pods-magicPicsew.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -200,6 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D5D37A9254BAC65008F0839 /* NSArray+log.m in Sources */,
+				9D5D37B3254BAD5C008F0839 /* MBProgressHUD+MP.m in Sources */,
+				9D5D37AA254BAC65008F0839 /* NSDictionary+log.m in Sources */,
 				9D5AFEA7254A51F0000EC16D /* AppDelegate.m in Sources */,
 				9D5AFEB8254A51F0000EC16D /* main.m in Sources */,
 			);
@@ -338,6 +367,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/magicPicsew/MPCommon/MP_PrefixHeader.pch";
 				INFOPLIST_FILE = magicPicsew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -357,6 +387,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/magicPicsew/MPCommon/MP_PrefixHeader.pch";
 				INFOPLIST_FILE = magicPicsew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

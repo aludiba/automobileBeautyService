@@ -8,4 +8,5 @@ target 'magicPicsew' do
   # Pods for magicPicsew
     pod 'Masonry'
     pod 'YYModel'
+    pod 'MBProgressHUD'
 end

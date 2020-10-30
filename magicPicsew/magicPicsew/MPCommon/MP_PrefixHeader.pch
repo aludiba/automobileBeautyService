@@ -1,0 +1,13 @@
+//
+//  MP_PrefixHeader.pch
+//  magicPicsew
+//
+//  Created by 123 on 2020/10/29.
+//
+
+#ifndef MP_PrefixHeader_pch
+#define MP_PrefixHeader_pch
+
+#import "MPGlobal.h"
+
+#endif /* MP_PrefixHeader_pch */
