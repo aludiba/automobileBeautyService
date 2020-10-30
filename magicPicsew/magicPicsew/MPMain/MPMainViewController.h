@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MPMainViewController : UIViewController
+@interface MPMainViewController : MPBaseViewController
 
 @end
 

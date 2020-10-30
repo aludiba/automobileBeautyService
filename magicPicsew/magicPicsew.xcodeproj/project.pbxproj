@@ -16,6 +16,8 @@
 		9D5D37AA254BAC65008F0839 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5D37A8254BAC65008F0839 /* NSDictionary+log.m */; };
 		9D5D37B3254BAD5C008F0839 /* MBProgressHUD+MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5D37B2254BAD5C008F0839 /* MBProgressHUD+MP.m */; };
 		9D5D37C1254BB36B008F0839 /* MPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5D37C0254BB36B008F0839 /* MPBaseViewController.m */; };
+		9D5D37CD254BB808008F0839 /* MPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5D37CC254BB808008F0839 /* MPMainViewController.m */; };
+		9D5D37D2254BB880008F0839 /* MPSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5D37D1254BB880008F0839 /* MPSetViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,10 @@
 		9D5D37B2254BAD5C008F0839 /* MBProgressHUD+MP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MP.m"; sourceTree = "<group>"; };
 		9D5D37BF254BB36B008F0839 /* MPBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPBaseViewController.h; sourceTree = "<group>"; };
 		9D5D37C0254BB36B008F0839 /* MPBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPBaseViewController.m; sourceTree = "<group>"; };
+		9D5D37CB254BB808008F0839 /* MPMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPMainViewController.h; sourceTree = "<group>"; };
+		9D5D37CC254BB808008F0839 /* MPMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPMainViewController.m; sourceTree = "<group>"; };
+		9D5D37D0254BB880008F0839 /* MPSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPSetViewController.h; sourceTree = "<group>"; };
+		9D5D37D1254BB880008F0839 /* MPSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPSetViewController.m; sourceTree = "<group>"; };
 		B5FA54DEC02F5AE762CE3685 /* Pods_magicPicsew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magicPicsew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -83,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				9D5AFECC254A5F51000EC16D /* MPCommon */,
+				9D5D37CA254BB7BD008F0839 /* MPSet */,
+				9D5D37C9254BB7B2008F0839 /* MPMain */,
 				9D5AFEA5254A51F0000EC16D /* AppDelegate.h */,
 				9D5AFEA6254A51F0000EC16D /* AppDelegate.m */,
 				9D5AFEB1254A51F0000EC16D /* Assets.xcassets */,
@@ -108,6 +116,24 @@
 				9D5D37C0254BB36B008F0839 /* MPBaseViewController.m */,
 			);
 			path = MPCommon;
+			sourceTree = "<group>";
+		};
+		9D5D37C9254BB7B2008F0839 /* MPMain */ = {
+			isa = PBXGroup;
+			children = (
+				9D5D37CB254BB808008F0839 /* MPMainViewController.h */,
+				9D5D37CC254BB808008F0839 /* MPMainViewController.m */,
+			);
+			path = MPMain;
+			sourceTree = "<group>";
+		};
+		9D5D37CA254BB7BD008F0839 /* MPSet */ = {
+			isa = PBXGroup;
+			children = (
+				9D5D37D0254BB880008F0839 /* MPSetViewController.h */,
+				9D5D37D1254BB880008F0839 /* MPSetViewController.m */,
+			);
+			path = MPSet;
 			sourceTree = "<group>";
 		};
 		B7333658EABA1B59445C3D35 /* Pods */ = {
@@ -231,11 +257,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D5D37D2254BB880008F0839 /* MPSetViewController.m in Sources */,
 				9D5D37C1254BB36B008F0839 /* MPBaseViewController.m in Sources */,
 				9D5D37A9254BAC65008F0839 /* NSArray+log.m in Sources */,
 				9D5D37B3254BAD5C008F0839 /* MBProgressHUD+MP.m in Sources */,
 				9D5D37AA254BAC65008F0839 /* NSDictionary+log.m in Sources */,
 				9D5AFEA7254A51F0000EC16D /* AppDelegate.m in Sources */,
+				9D5D37CD254BB808008F0839 /* MPMainViewController.m in Sources */,
 				9D5AFEB8254A51F0000EC16D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
