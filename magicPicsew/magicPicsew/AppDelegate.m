@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MPMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +22,7 @@
     return YES;
 }
 - (UIViewController *)MProotController{
-    MPBaseViewController *MPHomeVC = [[MPBaseViewController alloc] init];
+    MPBaseViewController *MPHomeVC = [[MPMainViewController alloc] init];
     UINavigationController *MPMainVC = [[UINavigationController alloc] initWithRootViewController:MPHomeVC];
     return MPMainVC;
 }
