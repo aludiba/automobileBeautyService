@@ -99,6 +99,10 @@
     MPSetViewController *MPSetVC = [[MPSetViewController alloc] init];
     [self.navigationController pushViewController:MPSetVC animated:YES];
 }
+#pragma mark - UICollectionView代理方法
+
+#pragma mark - UITableViewView代理方法
+
 #pragma mark - 属性懒加载
 
 @end
