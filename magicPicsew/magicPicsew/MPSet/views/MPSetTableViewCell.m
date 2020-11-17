@@ -47,10 +47,11 @@
     [self.MParrowImgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.contentView);
         make.right.equalTo(self.contentView).offset(-16);
-        make.width.mas_equalTo(16);
-        make.height.mas_equalTo(16);
+        make.width.mas_equalTo(20);
+        make.height.mas_equalTo(20);
     }];
     [self.MPline mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.MPtitleLbl.mas_bottom).offset(9);
         make.left.equalTo(self.contentView).offset(16);
         make.bottom.equalTo(self.contentView);
         make.right.equalTo(self.contentView).offset(-16);
@@ -86,7 +87,7 @@
     return _MParrowImgView;
 }
 - (UIView *)MPline{
-    if (_MPline) {
+    if (!_MPline) {
         _MPline = [[UIView alloc] init];
         _MPline.backgroundColor = MPH_Color(242, 242, 242, 1);
     }
