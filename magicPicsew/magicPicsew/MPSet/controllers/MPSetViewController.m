@@ -87,7 +87,11 @@
     MPSetModel *MPmodel = MParray[indexPath.row];
     MPSetTableViewCell *MPcell = [tableView dequeueReusableCellWithIdentifier:@"MPSetTableViewCell" forIndexPath:indexPath];
     MPcell.MPmodel = MPmodel;
+    MPcell.selectionStyle = UITableViewCellSelectionStyleNone;
     return  MPcell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
 }
 #pragma mark - 属性懒加载
 - (UITableView *)MPtableView{
