@@ -16,6 +16,8 @@
 		9D5D37AA254BAC65008F0839 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5D37A8254BAC65008F0839 /* NSDictionary+log.m */; };
 		9D5D37B3254BAD5C008F0839 /* MBProgressHUD+MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5D37B2254BAD5C008F0839 /* MBProgressHUD+MP.m */; };
 		9D5D37C1254BB36B008F0839 /* MPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5D37C0254BB36B008F0839 /* MPBaseViewController.m */; };
+		9D62D9B72575D160008BD38D /* MPRecentProjectsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D62D9B62575D160008BD38D /* MPRecentProjectsView.m */; };
+		9D62D9BB2575DA2A008BD38D /* MPRecentProjectsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D62D9BA2575DA2A008BD38D /* MPRecentProjectsTableViewCell.m */; };
 		9D64355725622AE7004CBBB3 /* MPSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D64355425622AE7004CBBB3 /* MPSetViewController.m */; };
 		9D64355E25622AF5004CBBB3 /* MPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D64355A25622AF5004CBBB3 /* MPMainViewController.m */; };
 		9D64356225622B25004CBBB3 /* MPSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D64356125622B25004CBBB3 /* MPSetTableViewCell.m */; };
@@ -43,6 +45,10 @@
 		9D5D37B2254BAD5C008F0839 /* MBProgressHUD+MP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MP.m"; sourceTree = "<group>"; };
 		9D5D37BF254BB36B008F0839 /* MPBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPBaseViewController.h; sourceTree = "<group>"; };
 		9D5D37C0254BB36B008F0839 /* MPBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPBaseViewController.m; sourceTree = "<group>"; };
+		9D62D9B52575D160008BD38D /* MPRecentProjectsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPRecentProjectsView.h; sourceTree = "<group>"; };
+		9D62D9B62575D160008BD38D /* MPRecentProjectsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPRecentProjectsView.m; sourceTree = "<group>"; };
+		9D62D9B92575DA2A008BD38D /* MPRecentProjectsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPRecentProjectsTableViewCell.h; sourceTree = "<group>"; };
+		9D62D9BA2575DA2A008BD38D /* MPRecentProjectsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPRecentProjectsTableViewCell.m; sourceTree = "<group>"; };
 		9D64355425622AE7004CBBB3 /* MPSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSetViewController.m; sourceTree = "<group>"; };
 		9D64355525622AE7004CBBB3 /* MPSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSetViewController.h; sourceTree = "<group>"; };
 		9D64355A25622AF5004CBBB3 /* MPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMainViewController.m; sourceTree = "<group>"; };
@@ -195,6 +201,10 @@
 		9D64355D25622AF5004CBBB3 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				9D62D9B52575D160008BD38D /* MPRecentProjectsView.h */,
+				9D62D9B62575D160008BD38D /* MPRecentProjectsView.m */,
+				9D62D9B92575DA2A008BD38D /* MPRecentProjectsTableViewCell.h */,
+				9D62D9BA2575DA2A008BD38D /* MPRecentProjectsTableViewCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -320,7 +330,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D62D9B72575D160008BD38D /* MPRecentProjectsView.m in Sources */,
 				9D5D37C1254BB36B008F0839 /* MPBaseViewController.m in Sources */,
+				9D62D9BB2575DA2A008BD38D /* MPRecentProjectsTableViewCell.m in Sources */,
 				9D64356225622B25004CBBB3 /* MPSetTableViewCell.m in Sources */,
 				9D5D37A9254BAC65008F0839 /* NSArray+log.m in Sources */,
 				9D64355E25622AF5004CBBB3 /* MPMainViewController.m in Sources */,
