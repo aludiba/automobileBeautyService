@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *MPheadImgName;//头部图像
 
 @property (nonatomic, copy) NSString *MPphotoNumber;//图片数量
+
+@property (nonatomic, assign) Boolean MPisSelected;//是否选中
 @end
 
 NS_ASSUME_NONNULL_END

@@ -45,13 +45,13 @@
         make.height.mas_equalTo(20);
     }];
     [self.MPNumberLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(self.contentView).offset(-16);
+        make.right.equalTo(self.contentView).offset(-10);
         make.centerY.equalTo(self.MPHeaderImgView);
-        make.width.mas_equalTo(60);
-        make.height.mas_equalTo(20);
+        make.width.mas_equalTo(50);
+        make.height.mas_equalTo(17);
     }];
     [self.MPLine mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.MPTitleLbl.mas_bottom).offset(9);
+        make.top.equalTo(self.MPHeaderImgView.mas_bottom).offset(9);
         make.left.equalTo(self.contentView).offset(16);
         make.right.equalTo(self.contentView).offset(-16);
         make.height.mas_equalTo(1);
@@ -60,7 +60,14 @@
 }
 - (void)setMPmodel:(MPRecentProjectsModel *)MPmodel{
     _MPmodel = MPmodel;
-    
+    self.MPHeaderImgView.image = [UIImage imageNamed:_MPmodel.MPheadImgName];
+    self.MPTitleLbl.text = _MPmodel.MPtitle;
+    self.MPNumberLbl.text = _MPmodel.MPphotoNumber;
+    if (_MPmodel.MPisSelected) {
+        self.contentView.backgroundColor = MPH_Color(253, 252, 240, 1);
+    }else{
+        self.contentView.backgroundColor = [UIColor whiteColor];
+    }
 }
 #pragma mark - 属性懒加载
 - (UIImageView *)MPHeaderImgView{
@@ -82,13 +89,13 @@
 - (UILabel *)MPNumberLbl{
     if (!_MPNumberLbl) {
         _MPNumberLbl = [[UILabel alloc] init];
-        _MPNumberLbl.font = [UIFont systemFontOfSize:14];
-        _MPNumberLbl.textColor = MPH_Color(245, 245, 245, 1);
+        _MPNumberLbl.font = [UIFont systemFontOfSize:15];
+        _MPNumberLbl.textColor = MPH_Color(200, 200, 200, 1);
     }
     return _MPNumberLbl;
 }
 - (UIView *)MPLine{
-    if (_MPLine) {
+    if (!_MPLine) {
         _MPLine = [[UIView alloc] init];
         _MPLine.backgroundColor = MPH_Color(242, 242, 242, 1);
     }

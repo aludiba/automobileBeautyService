@@ -7,6 +7,7 @@
 
 #import "MPMainViewController.h"
 #import "MPSetViewController.h"
+#import "MPRecentProjectsView.h"
 
 @interface MPMainViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UITableViewDataSource,UITableViewDelegate>
 
@@ -18,7 +19,7 @@
 @property (nonatomic, assign) Boolean isExpand;//是否展开最近项目
 
 @property (nonatomic, strong) UICollectionView *MPmainPicCollectionView;//主要相册展示控件
-@property (nonatomic, strong) UITableView *MPpicSelectTableView;//相册类型选择控件
+@property (nonatomic, strong) MPRecentProjectsView *MPrecentprojectsView;//相册类型选择控件
 @end
 
 @implementation MPMainViewController
@@ -90,8 +91,10 @@
     self.isExpand = !self.isExpand;
     if (self.isExpand) {
         self.MPnavExpandCloseImgView.image = [UIImage imageNamed:@"MP_xiangshang"];
+        [self MPShowInRecentprojectsView];
     }else{
         self.MPnavExpandCloseImgView.image = [UIImage imageNamed:@"MP_xiangxia"];
+        [self MPdisMissRecentprojectsView];
     }
 }
 //设置导航栏
@@ -99,10 +102,38 @@
     MPSetViewController *MPSetVC = [[MPSetViewController alloc] init];
     [self.navigationController pushViewController:MPSetVC animated:YES];
 }
+- (void)MPShowInRecentprojectsView{
+       [self.MPrecentprojectsView setFrame:CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, self.view.frame.size.height)];
+       [UIView animateWithDuration:0.3 animations:^{
+           self.MPrecentprojectsView.alpha = 1.0;
+           [self.MPrecentprojectsView setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+           
+       } completion:nil];
+
+}
+- (void)MPdisMissRecentprojectsView{
+    [self.MPrecentprojectsView setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+       [UIView animateWithDuration:0.3f
+                        animations:^{
+        self.MPrecentprojectsView.alpha = 0.0;
+        [self.MPrecentprojectsView setFrame:CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, self.view.frame.size.height)];
+       }
+    completion:^(BOOL finished){
+                            
+    }];
+
+}
 #pragma mark - UICollectionView代理方法
 
 #pragma mark - UITableViewView代理方法
 
 #pragma mark - 属性懒加载
-
+- (MPRecentProjectsView *)MPrecentprojectsView{
+    if (!_MPrecentprojectsView) {
+        _MPrecentprojectsView = [[MPRecentProjectsView alloc] init];
+        _MPrecentprojectsView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+        [self.view addSubview:_MPrecentprojectsView];
+    }
+    return _MPrecentprojectsView;
+}
 @end
