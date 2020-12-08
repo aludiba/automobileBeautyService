@@ -6,6 +6,8 @@
 //
 
 #import "MPRecentProjectsTableViewCell.h"
+#import "MPRecentProjectsModel.h"
+
 @interface MPRecentProjectsTableViewCell()
 
 @property (nonatomic, strong) UIImageView *MPHeaderImgView;//头部图片
@@ -55,6 +57,10 @@
         make.height.mas_equalTo(1);
         make.bottom.equalTo(self.contentView);
     }];
+}
+- (void)setMPmodel:(MPRecentProjectsModel *)MPmodel{
+    _MPmodel = MPmodel;
+    
 }
 #pragma mark - 属性懒加载
 - (UIImageView *)MPHeaderImgView{
