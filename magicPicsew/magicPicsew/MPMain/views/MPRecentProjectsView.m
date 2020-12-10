@@ -8,7 +8,8 @@
 #import "MPRecentProjectsView.h"
 #import "MPRecentProjectsModel.h"
 #import "MPRecentProjectsTableViewCell.h"
-
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <Photos/Photos.h>
 @interface MPRecentProjectsView()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *MPtableView;
@@ -32,7 +33,26 @@
     [self MPsetLayoutContentViews];
 }
 #pragma mark - actions
+
+#pragma mark - 获取手机相册群组
+- (NSMutableArray *)MPGetPhoneAlbumGroups{
+    NSMutableArray *groups = [[NSMutableArray alloc] init];
+    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+    ALAssetsLibraryGroupsEnumerationResultsBlock listGroupBlock = ^(ALAssetsGroup *group, BOOL *stop) {
+        if (group) {
+            [groups addObject:group];
+        }
+        NSLog(@"groups:%@",groups);
+    };
+    NSUInteger groupTypes = ALAssetsGroupAlbum;
+    [library enumerateGroupsWithTypes:groupTypes usingBlock:listGroupBlock failureBlock:nil];
+    NSLog(@"groups1:%@",groups);
+    return groups;
+
+}
 - (void)MPsetContentViews{
+    NSMutableArray *MPphotoAlbum = [self MPGetPhoneAlbumGroups];
+    NSLog(@"MPphotoAlbum:%@",MPphotoAlbum);
     MPRecentProjectsModel *MPReProjectsModel = [[MPRecentProjectsModel alloc] init];
     MPReProjectsModel.MPheadImgName = @"MP_zhanweifu";
     MPReProjectsModel.MPtitle = @"最近项目";
