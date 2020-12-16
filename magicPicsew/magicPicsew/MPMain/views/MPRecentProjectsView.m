@@ -92,6 +92,9 @@
         }
     }
     [self.MPtableView reloadData];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(MPCurrentAlbumTitle:)]) {
+        [self.delegate MPCurrentAlbumTitle:MPmodel.MPtitle];
+    }
 }
 #pragma mark - 属性懒加载
 - (UITableView *)MPtableView{

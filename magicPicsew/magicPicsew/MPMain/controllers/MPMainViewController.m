@@ -8,8 +8,9 @@
 #import "MPMainViewController.h"
 #import "MPSetViewController.h"
 #import "MPRecentProjectsView.h"
+#import <Photos/Photos.h>
 
-@interface MPMainViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UITableViewDataSource,UITableViewDelegate>
+@interface MPMainViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UITableViewDataSource,UITableViewDelegate,MPRecentProjectsViewDelegate>
 
 @property (nonatomic, strong) UIButton *MPnavRightBtn;//右侧设置按钮
 @property (nonatomic, strong) UIView *MPnavTitleView;//自定义标题栏
@@ -65,9 +66,12 @@
         make.width.mas_equalTo(94);
     }];
     self.MPnavTitleLbl = [[UILabel alloc] init];
+    PHFetchResult<PHAssetCollection *> *MPassetCollections = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:nil];
+    PHAssetCollection *MPassetCollection = MPassetCollections.firstObject;
+    self.MPnavTitleLbl.text = MPassetCollection.localizedTitle;
+    self.MPnavTitleLbl.textAlignment = NSTextAlignmentCenter;
     [self.MPnavTitleLbl setFont:[UIFont boldSystemFontOfSize:18.0f]];
     [self.MPnavTitleLbl setTextColor:[UIColor blackColor]];
-    [self.MPnavTitleLbl setText:@"最近项目"];
     [self.MPnavTitleLbl sizeToFit];
     [self.MPnavTitleBtn addSubview:self.MPnavTitleLbl];
     [self.MPnavTitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -127,11 +131,16 @@
 
 #pragma mark - UITableViewView代理方法
 
+#pragma mark - MPRecentProjectsView代理方法
+- (void)MPCurrentAlbumTitle:(NSString *)MPAlbumTitle{
+    [self.MPnavTitleLbl setText:MPAlbumTitle];
+}
 #pragma mark - 属性懒加载
 - (MPRecentProjectsView *)MPrecentprojectsView{
     if (!_MPrecentprojectsView) {
         _MPrecentprojectsView = [[MPRecentProjectsView alloc] init];
         _MPrecentprojectsView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+        _MPrecentprojectsView.delegate = self;
         [self.view addSubview:_MPrecentprojectsView];
     }
     return _MPrecentprojectsView;
