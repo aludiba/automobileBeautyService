@@ -52,7 +52,7 @@
         MPRecentProjectsModel *MPReProjectsModel = [[MPRecentProjectsModel alloc] init];
         MPReProjectsModel.MPheadImgName = @"MP_zhanweifu";
         MPReProjectsModel.MPtitle = MPasset.localizedTitle;
-        MPReProjectsModel.MPphotoNumber = @"0";
+        MPReProjectsModel.MPphotoNumber = [NSString stringWithFormat:@"%ld",MPasset.estimatedAssetCount];
         if (i == 0) {
             MPReProjectsModel.MPisSelected = YES;
         }else{
