@@ -49,16 +49,29 @@
     NSMutableArray *MPphotoAlbum = [self MPGetPhoneAlbumGroups];
     for (int i = 0; i < MPphotoAlbum.count; i++) {
         PHAssetCollection *MPasset = MPphotoAlbum[i];
-        MPRecentProjectsModel *MPReProjectsModel = [[MPRecentProjectsModel alloc] init];
-        MPReProjectsModel.MPheadImgName = @"MP_zhanweifu";
-        MPReProjectsModel.MPtitle = MPasset.localizedTitle;
-        MPReProjectsModel.MPphotoNumber = [NSString stringWithFormat:@"%ld",MPasset.estimatedAssetCount];
-        if (i == 0) {
-            MPReProjectsModel.MPisSelected = YES;
-        }else{
-            MPReProjectsModel.MPisSelected = NO;
-        }
-        [self.MPDataArray addObject:MPReProjectsModel];
+        PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+        // 同步获得图片, 只会返回1张图片
+        options.synchronous = YES;
+        // 获得相簿中的所有PHAsset对象
+        PHFetchResult<PHAsset *> *assets = [PHAsset fetchAssetsInAssetCollection:MPasset options:nil];
+        //取第一张图片
+        PHAsset *asset = assets.lastObject;
+        CGSize size = CGSizeMake(asset.pixelWidth, asset.pixelHeight);
+//        CGSize size = CGSizeZero;
+        // 从asset中获得图片
+        [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+            MPRecentProjectsModel *MPReProjectsModel = [[MPRecentProjectsModel alloc] init];
+            MPReProjectsModel.MPplaceholderImgName = @"MP_zhanweifu";
+            MPReProjectsModel.MPheadImg = result;
+            MPReProjectsModel.MPtitle = MPasset.localizedTitle;
+            MPReProjectsModel.MPphotoNumber = [NSString stringWithFormat:@"%ld",MPasset.estimatedAssetCount];
+            if (i == 0) {
+                MPReProjectsModel.MPisSelected = YES;
+            }else{
+                MPReProjectsModel.MPisSelected = NO;
+            }
+            [self.MPDataArray addObject:MPReProjectsModel];
+        }];
     }
     [self.MPtableView reloadData];
 }

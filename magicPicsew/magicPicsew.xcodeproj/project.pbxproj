@@ -24,6 +24,7 @@
 		9D64356725624CD1004CBBB3 /* MPSetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D64356625624CD1004CBBB3 /* MPSetModel.m */; };
 		9D64356B25627836004CBBB3 /* MPSetHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D64356A25627836004CBBB3 /* MPSetHeaderView.m */; };
 		9D8EFD2E257F19D600A8074C /* MPRecentProjectsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8EFD2D257F19D600A8074C /* MPRecentProjectsModel.m */; };
+		9DA31845258AF27E002B4079 /* UIImage+UIImageExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA31844258AF27E002B4079 /* UIImage+UIImageExt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,8 @@
 		9D64356A25627836004CBBB3 /* MPSetHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPSetHeaderView.m; sourceTree = "<group>"; };
 		9D8EFD2C257F19D600A8074C /* MPRecentProjectsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPRecentProjectsModel.h; sourceTree = "<group>"; };
 		9D8EFD2D257F19D600A8074C /* MPRecentProjectsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPRecentProjectsModel.m; sourceTree = "<group>"; };
+		9DA31843258AF27E002B4079 /* UIImage+UIImageExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+UIImageExt.h"; sourceTree = "<group>"; };
+		9DA31844258AF27E002B4079 /* UIImage+UIImageExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UIImageExt.m"; sourceTree = "<group>"; };
 		B5FA54DEC02F5AE762CE3685 /* Pods_magicPicsew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magicPicsew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -132,6 +135,8 @@
 				9D5D37B2254BAD5C008F0839 /* MBProgressHUD+MP.m */,
 				9D5D37BF254BB36B008F0839 /* MPBaseViewController.h */,
 				9D5D37C0254BB36B008F0839 /* MPBaseViewController.m */,
+				9DA31843258AF27E002B4079 /* UIImage+UIImageExt.h */,
+				9DA31844258AF27E002B4079 /* UIImage+UIImageExt.m */,
 			);
 			path = MPCommon;
 			sourceTree = "<group>";
@@ -346,6 +351,7 @@
 				9D64355725622AE7004CBBB3 /* MPSetViewController.m in Sources */,
 				9D5D37B3254BAD5C008F0839 /* MBProgressHUD+MP.m in Sources */,
 				9D5D37AA254BAC65008F0839 /* NSDictionary+log.m in Sources */,
+				9DA31845258AF27E002B4079 /* UIImage+UIImageExt.m in Sources */,
 				9D5AFEA7254A51F0000EC16D /* AppDelegate.m in Sources */,
 				9D5AFEB8254A51F0000EC16D /* main.m in Sources */,
 				9D64356725624CD1004CBBB3 /* MPSetModel.m in Sources */,

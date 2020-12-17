@@ -66,9 +66,28 @@
         make.width.mas_equalTo(94);
     }];
     self.MPnavTitleLbl = [[UILabel alloc] init];
-    PHFetchResult<PHAssetCollection *> *MPassetCollections = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:nil];
-    PHAssetCollection *MPassetCollection = MPassetCollections.firstObject;
-    self.MPnavTitleLbl.text = MPassetCollection.localizedTitle;
+    if ([self MPisCanUsePhotos]) {
+        PHFetchResult<PHAssetCollection *> *MPassetCollections = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:nil];
+        PHAssetCollection *MPassetCollection = MPassetCollections.firstObject;
+        self.MPnavTitleLbl.text = MPassetCollection.localizedTitle;
+    }else{
+        UIAlertController *MPAlertVC = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"是否允许此应用程序访问您的图片库?" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *MPcancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            
+        }];
+        UIAlertAction *MPsureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            NSURL *url= [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+            if( [[UIApplication sharedApplication] canOpenURL:url] ) {
+                  [[UIApplication sharedApplication] openURL:url  options:@{} completionHandler:^(BOOL        success) {
+                  }];
+            }
+        }];
+        [MPAlertVC addAction:MPcancelAction];
+        [MPAlertVC addAction:MPsureAction];
+        [self presentViewController:MPAlertVC animated:YES completion:^{
+            
+        }];
+    }
     self.MPnavTitleLbl.textAlignment = NSTextAlignmentCenter;
     [self.MPnavTitleLbl setFont:[UIFont boldSystemFontOfSize:18.0f]];
     [self.MPnavTitleLbl setTextColor:[UIColor blackColor]];
@@ -100,6 +119,15 @@
         self.MPnavExpandCloseImgView.image = [UIImage imageNamed:@"MP_xiangxia"];
         [self MPdisMissRecentprojectsView];
     }
+}
+//判断手机是否允许访问照片库
+- (BOOL)MPisCanUsePhotos{
+    PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
+    if (status == PHAuthorizationStatusRestricted || status == PHAuthorizationStatusDenied) {
+        //无权限
+        return NO;
+    }
+    return YES;
 }
 //设置导航栏
 - (void)_MP_setAction{

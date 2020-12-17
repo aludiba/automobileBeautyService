@@ -7,6 +7,7 @@
 
 #import "MPRecentProjectsTableViewCell.h"
 #import "MPRecentProjectsModel.h"
+#import "UIImage+UIImageExt.h"
 
 @interface MPRecentProjectsTableViewCell()
 
@@ -60,7 +61,12 @@
 }
 - (void)setMPmodel:(MPRecentProjectsModel *)MPmodel{
     _MPmodel = MPmodel;
-    self.MPHeaderImgView.image = [UIImage imageNamed:_MPmodel.MPheadImgName];
+    if (_MPmodel.MPheadImg.size.height) {
+        self.MPHeaderImgView.image = [_MPmodel.MPheadImg MPimageByScalingAndCroppingForSize:CGSizeMake(60, 60)];
+//        self.MPHeaderImgView.image = _MPmodel.MPheadImg;
+    }else{
+        self.MPHeaderImgView.image = [UIImage imageNamed:_MPmodel.MPplaceholderImgName];
+    }
     self.MPTitleLbl.text = _MPmodel.MPtitle;
     self.MPNumberLbl.text = _MPmodel.MPphotoNumber;
     if (_MPmodel.MPisSelected) {
