@@ -21,6 +21,7 @@
 
 @property (nonatomic, strong) UICollectionView *MPmainPicCollectionView;//主要相册展示控件
 @property (nonatomic, strong) MPRecentProjectsView *MPrecentprojectsView;//相册类型选择控件
+@property (nonatomic, strong) PHFetchResult<PHAsset *>  *MPcurrentPhotos;
 @end
 
 @implementation MPMainViewController
@@ -70,6 +71,9 @@
 //        PHFetchResult<PHAssetCollection *> *MPassetCollections = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:nil];
 //        PHAssetCollection *MPassetCollection = MPassetCollections.firstObject;
 //        self.MPnavTitleLbl.text = MPassetCollection.localizedTitle;
+          PHFetchOptions *allPhotosOptions = [[PHFetchOptions alloc] init];
+          PHFetchResult<PHAsset *> *allPhotos = [PHAsset fetchAssetsWithOptions:allPhotosOptions];
+          self.MPcurrentPhotos = allPhotos;
           self.MPnavTitleLbl.text = @"最近项目";
     }else{
         UIAlertController *MPAlertVC = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"是否允许此应用程序访问您的图片库?" preferredStyle:UIAlertControllerStyleAlert];
@@ -161,8 +165,9 @@
 #pragma mark - UITableViewView代理方法
 
 #pragma mark - MPRecentProjectsView代理方法
-- (void)MPCurrentAlbumTitle:(NSString *)MPAlbumTitle{
+- (void)MPCurrentAlbumTitle:(NSString *)MPAlbumTitle  withPhotos:(PHFetchResult<PHAsset *> *)MPphotos{
     [self.MPnavTitleLbl setText:MPAlbumTitle];
+    self.MPcurrentPhotos = MPphotos;
 }
 #pragma mark - 属性懒加载
 - (MPRecentProjectsView *)MPrecentprojectsView{
@@ -173,5 +178,18 @@
         [self.view addSubview:_MPrecentprojectsView];
     }
     return _MPrecentprojectsView;
+}
+- (UICollectionView *)MPmainPicCollectionView{
+    if (!_MPmainPicCollectionView) {
+        UICollectionViewFlowLayout *MPlayout = [[UICollectionViewFlowLayout alloc] init];
+        CGFloat itemWidth = MPWIDTH * 0.25;
+        CGFloat itemHeight = itemWidth;
+        MPlayout.itemSize = CGSizeMake(itemWidth, itemHeight);
+        _MPmainPicCollectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:MPlayout];
+        [self.view addSubview:_MPmainPicCollectionView];
+        _MPmainPicCollectionView.dataSource = self;
+        _MPmainPicCollectionView.delegate = self;
+    }
+    return _MPmainPicCollectionView;
 }
 @end

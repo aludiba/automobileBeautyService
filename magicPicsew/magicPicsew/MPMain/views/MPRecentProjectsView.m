@@ -16,7 +16,6 @@
 
 @property (nonatomic, strong) NSMutableArray *MPDataArray;
 
-
 @end
 
 @implementation MPRecentProjectsView
@@ -62,6 +61,7 @@
             MPReProjectsModel.MPtitle = @"最近项目";
             MPReProjectsModel.MPphotoNumber = [NSString stringWithFormat:@"%ld",allPhotos.count];
             MPReProjectsModel.MPisSelected = YES;
+            MPReProjectsModel.MPphotosArray = allPhotos;
             [self.MPDataArray addObject:MPReProjectsModel];
             
             NSMutableArray *MPphotoAlbum = [self MPGetPhoneAlbumGroups];
@@ -83,6 +83,7 @@
                      MPReProjectsModel.MPtitle = MPasset.localizedTitle;
                      MPReProjectsModel.MPphotoNumber = [NSString stringWithFormat:@"%ld",MPasset.estimatedAssetCount];
                      MPReProjectsModel.MPisSelected = NO;
+                     MPReProjectsModel.MPphotosArray = assets;
                  [self.MPDataArray addObject:MPReProjectsModel];
               }];
             }
@@ -119,8 +120,8 @@
         }
     }
     [self.MPtableView reloadData];
-    if (self.delegate && [self.delegate respondsToSelector:@selector(MPCurrentAlbumTitle:)]) {
-        [self.delegate MPCurrentAlbumTitle:MPmodel.MPtitle];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(MPCurrentAlbumTitle:withPhotos:)]) {
+        [self.delegate MPCurrentAlbumTitle:MPmodel.MPtitle  withPhotos:MPmodel.MPphotosArray];
     }
 }
 #pragma mark - 属性懒加载

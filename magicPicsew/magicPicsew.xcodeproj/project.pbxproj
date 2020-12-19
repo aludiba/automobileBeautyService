@@ -16,6 +16,7 @@
 		9D5D37AA254BAC65008F0839 /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5D37A8254BAC65008F0839 /* NSDictionary+log.m */; };
 		9D5D37B3254BAD5C008F0839 /* MBProgressHUD+MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5D37B2254BAD5C008F0839 /* MBProgressHUD+MP.m */; };
 		9D5D37C1254BB36B008F0839 /* MPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5D37C0254BB36B008F0839 /* MPBaseViewController.m */; };
+		9D61B6C2258DEFCA00736DF1 /* MPMainPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D61B6C1258DEFCA00736DF1 /* MPMainPhotoCollectionViewCell.m */; };
 		9D62D9B72575D160008BD38D /* MPRecentProjectsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D62D9B62575D160008BD38D /* MPRecentProjectsView.m */; };
 		9D62D9BB2575DA2A008BD38D /* MPRecentProjectsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D62D9BA2575DA2A008BD38D /* MPRecentProjectsTableViewCell.m */; };
 		9D64355725622AE7004CBBB3 /* MPSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D64355425622AE7004CBBB3 /* MPSetViewController.m */; };
@@ -47,6 +48,8 @@
 		9D5D37B2254BAD5C008F0839 /* MBProgressHUD+MP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MP.m"; sourceTree = "<group>"; };
 		9D5D37BF254BB36B008F0839 /* MPBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPBaseViewController.h; sourceTree = "<group>"; };
 		9D5D37C0254BB36B008F0839 /* MPBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPBaseViewController.m; sourceTree = "<group>"; };
+		9D61B6C0258DEFCA00736DF1 /* MPMainPhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPMainPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		9D61B6C1258DEFCA00736DF1 /* MPMainPhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPMainPhotoCollectionViewCell.m; sourceTree = "<group>"; };
 		9D62D9B52575D160008BD38D /* MPRecentProjectsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPRecentProjectsView.h; sourceTree = "<group>"; };
 		9D62D9B62575D160008BD38D /* MPRecentProjectsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPRecentProjectsView.m; sourceTree = "<group>"; };
 		9D62D9B92575DA2A008BD38D /* MPRecentProjectsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPRecentProjectsTableViewCell.h; sourceTree = "<group>"; };
@@ -215,6 +218,8 @@
 				9D62D9B62575D160008BD38D /* MPRecentProjectsView.m */,
 				9D62D9B92575DA2A008BD38D /* MPRecentProjectsTableViewCell.h */,
 				9D62D9BA2575DA2A008BD38D /* MPRecentProjectsTableViewCell.m */,
+				9D61B6C0258DEFCA00736DF1 /* MPMainPhotoCollectionViewCell.h */,
+				9D61B6C1258DEFCA00736DF1 /* MPMainPhotoCollectionViewCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -353,6 +358,7 @@
 				9D5D37AA254BAC65008F0839 /* NSDictionary+log.m in Sources */,
 				9DA31845258AF27E002B4079 /* UIImage+UIImageExt.m in Sources */,
 				9D5AFEA7254A51F0000EC16D /* AppDelegate.m in Sources */,
+				9D61B6C2258DEFCA00736DF1 /* MPMainPhotoCollectionViewCell.m in Sources */,
 				9D5AFEB8254A51F0000EC16D /* main.m in Sources */,
 				9D64356725624CD1004CBBB3 /* MPSetModel.m in Sources */,
 			);

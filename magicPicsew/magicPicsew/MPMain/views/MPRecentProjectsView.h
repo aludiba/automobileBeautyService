@@ -6,11 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Photos/Photos.h>
 
 NS_ASSUME_NONNULL_BEGIN
 @protocol MPRecentProjectsViewDelegate <NSObject>
 
-- (void)MPCurrentAlbumTitle:(NSString *)MPAlbumTitle;
+- (void)MPCurrentAlbumTitle:(NSString *)MPAlbumTitle withPhotos:(PHFetchResult<PHAsset *> *)MPphotos;
 
 @end
 @interface MPRecentProjectsView : UIView

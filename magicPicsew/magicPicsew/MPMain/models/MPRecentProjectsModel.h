@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Photos/Photos.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *MPphotoNumber;//图片数量
 
 @property (nonatomic, assign) Boolean MPisSelected;//是否选中
+
+@property (nonatomic, strong) PHFetchResult<PHAsset *> *MPphotosArray;//相册
 @end
 
 NS_ASSUME_NONNULL_END
