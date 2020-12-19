@@ -89,7 +89,7 @@
 - (UIView *)MPline{
     if (!_MPline) {
         _MPline = [[UIView alloc] init];
-        _MPline.backgroundColor = MPH_Color(242, 242, 242, 1);
+        _MPline.backgroundColor = MPColor(242, 242, 242, 1);
     }
     return _MPline;
 }

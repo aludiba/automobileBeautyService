@@ -18,7 +18,7 @@
 }
 #pragma mark - actions
 - (void)MPsetContentView{
-    self.contentView.backgroundColor = MPH_Color(235, 235, 235, 1);
+    self.contentView.backgroundColor = MPColor(235, 235, 235, 1);
     [self.contentView addSubview:self.MPtitleLbl];
     
     [self.MPtitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {

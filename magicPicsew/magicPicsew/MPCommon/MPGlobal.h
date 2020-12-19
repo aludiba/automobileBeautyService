@@ -19,7 +19,7 @@
 #define MPStrongSelf(type)  __strong typeof(type) type = weak##type;
 
 /**颜色*/
-#define MPH_Color(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define MPColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
 
 #define MPKeyWindow [UIApplication sharedApplication].keyWindow
 #define MPWIDTH [UIScreen mainScreen].bounds.size.width

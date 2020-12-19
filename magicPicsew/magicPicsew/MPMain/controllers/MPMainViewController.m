@@ -10,7 +10,7 @@
 #import "MPRecentProjectsView.h"
 #import "MPMainPhotoCollectionViewCell.h"
 #import <Photos/Photos.h>
-#import "UIImage+UIImageExt.h"
+#import "MPMainPhotoModel.h"
 
 @interface MPMainViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,MPRecentProjectsViewDelegate>
 
@@ -24,6 +24,8 @@
 @property (nonatomic, strong) UICollectionView *MPmainPicCollectionView;//主要相册展示控件
 @property (nonatomic, strong) MPRecentProjectsView *MPrecentprojectsView;//相册类型选择控件
 @property (nonatomic, strong) PHFetchResult<PHAsset *>  *MPcurrentPhotos;
+@property (nonatomic, strong) NSMutableArray *MPDataArray;
+@property (nonatomic, strong) UILabel *MPCurrentImgsCountLbl;//当前照片数量
 @end
 
 @implementation MPMainViewController
@@ -76,6 +78,15 @@
           PHFetchOptions *allPhotosOptions = [[PHFetchOptions alloc] init];
           PHFetchResult<PHAsset *> *allPhotos = [PHAsset fetchAssetsWithOptions:allPhotosOptions];
           self.MPcurrentPhotos = allPhotos;
+        for (int i = (int)(self.MPcurrentPhotos.count - 1); i > -1; i--) {
+            PHAsset *asset = self.MPcurrentPhotos[i];
+            if (asset.mediaType == PHAssetMediaTypeImage) {
+                MPMainPhotoModel *model = [[MPMainPhotoModel alloc] init];
+                model.asset = asset;
+                [self.MPDataArray addObject:model];
+            }
+        }
+        self.MPCurrentImgsCountLbl.text = [NSString stringWithFormat:@"%ld张照片",self.MPDataArray.count];
           self.MPnavTitleLbl.text = @"最近项目";
           [self.MPmainPicCollectionView reloadData];
     }else{
@@ -168,27 +179,43 @@
     return 1;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return self.MPcurrentPhotos.count;
+    return self.MPDataArray.count;
 }
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     MPMainPhotoCollectionViewCell *MPcell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MPMainPhotoCollectionViewCell" forIndexPath:indexPath];
-    PHAsset *asset = self.MPcurrentPhotos[indexPath.row];
-    CGSize size = CGSizeZero;
-    PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
-    // 同步获得图片, 只会返回1张图片
-    options.synchronous = YES;
-    // 从asset中获得图片
-    [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-        MPcell.MPContentImgView.image = [result MPimageByScalingAndCroppingForSize:CGSizeMake((MPWIDTH - 5) / 4, (MPWIDTH - 5) / 4)];
-     }];
+    MPMainPhotoModel *model = self.MPDataArray[indexPath.row];
+    MPcell.photoModel = model;
     return MPcell;
+}
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    MPMainPhotoModel *model = self.MPDataArray[indexPath.row];
+    model.isSelect = YES;
 }
 #pragma mark - MPRecentProjectsView代理方法
 - (void)MPCurrentAlbumTitle:(NSString *)MPAlbumTitle  withPhotos:(PHFetchResult<PHAsset *> *)MPphotos{
     [self.MPnavTitleLbl setText:MPAlbumTitle];
     self.MPcurrentPhotos = MPphotos;
+    [self.MPDataArray removeAllObjects];
+    for (int i = (int)(self.MPcurrentPhotos.count - 1); i > -1; i--) {
+      PHAsset *asset = self.MPcurrentPhotos[i];
+      if (asset.mediaType == PHAssetMediaTypeImage) {
+      MPMainPhotoModel *model = [[MPMainPhotoModel alloc] init];
+      model.asset = asset;
+      [self.MPDataArray addObject:model];
+      }
+    }
+    self.MPCurrentImgsCountLbl.text = [NSString stringWithFormat:@"%ld张照片",self.MPDataArray.count];
     [self.MPmainPicCollectionView reloadData];
     [self _MP_recentProjectsAction];
+}
+- (CGFloat)currentIpBottombarheight{
+    CGFloat bottombarheight;
+    if (@available(iOS 11.0, *)){
+        bottombarheight = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom;
+    }else{
+        bottombarheight = 0;
+    }
+    return bottombarheight;
 }
 #pragma mark - 属性懒加载
 - (MPRecentProjectsView *)MPrecentprojectsView{
@@ -208,13 +235,31 @@
         MPlayout.itemSize = CGSizeMake(itemWidth, itemHeight);
         MPlayout.minimumLineSpacing = 1;
         MPlayout.minimumInteritemSpacing = 1;
-        _MPmainPicCollectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:MPlayout];
-        _MPmainPicCollectionView.backgroundColor = [UIColor whiteColor];
+        _MPmainPicCollectionView = [[UICollectionView alloc] initWithFrame: CGRectMake(0, 0, MPWIDTH, MPHEIGHT - [self currentIpBottombarheight] - 45) collectionViewLayout:MPlayout];
+        _MPmainPicCollectionView.backgroundColor = MPColor(242, 242, 242, 1);
         [self.view addSubview:_MPmainPicCollectionView];
         _MPmainPicCollectionView.dataSource = self;
         _MPmainPicCollectionView.delegate = self;
         [_MPmainPicCollectionView registerClass:[MPMainPhotoCollectionViewCell class] forCellWithReuseIdentifier:@"MPMainPhotoCollectionViewCell"];
     }
     return _MPmainPicCollectionView;
+}
+- (NSMutableArray *)MPDataArray{
+    if (!_MPDataArray) {
+        _MPDataArray = [[NSMutableArray alloc] init];
+    }
+    return _MPDataArray;
+}
+- (UILabel *)MPCurrentImgsCountLbl{
+    if (!_MPCurrentImgsCountLbl) {
+        _MPCurrentImgsCountLbl = [[UILabel alloc] init];
+        _MPCurrentImgsCountLbl.backgroundColor = MPColor(242, 242, 242, 1);
+        _MPCurrentImgsCountLbl.textColor = [UIColor grayColor];
+        _MPCurrentImgsCountLbl.font = [UIFont systemFontOfSize:20];
+        _MPCurrentImgsCountLbl.textAlignment = NSTextAlignmentCenter;
+        _MPCurrentImgsCountLbl.frame = CGRectMake(0, MPHEIGHT - [self currentIpBottombarheight] - 45, MPWIDTH, 45);
+        [self.view addSubview:_MPCurrentImgsCountLbl];
+    }
+    return _MPCurrentImgsCountLbl;
 }
 @end

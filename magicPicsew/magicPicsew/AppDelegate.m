@@ -15,10 +15,10 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.MPwindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.MPwindow.backgroundColor = [UIColor whiteColor];
-    self.MPwindow.rootViewController = [self MProotController];
-    [self.MPwindow makeKeyAndVisible];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [self MProotController];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 - (UIViewController *)MProotController{

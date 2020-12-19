@@ -59,7 +59,13 @@
             MPReProjectsModel.MPplaceholderImgName = @"MP_zhanweifu";
             MPReProjectsModel.MPheadImg = result;
             MPReProjectsModel.MPtitle = @"最近项目";
-            MPReProjectsModel.MPphotoNumber = [NSString stringWithFormat:@"%ld",allPhotos.count];
+            NSInteger count = 0;
+            for (PHAsset *asset in allPhotos) {
+                if (asset.mediaType == PHAssetMediaTypeImage) {
+                    count++;
+                }
+            }
+            MPReProjectsModel.MPphotoNumber = [NSString stringWithFormat:@"%ld",count];
             MPReProjectsModel.MPisSelected = YES;
             MPReProjectsModel.MPphotosArray = allPhotos;
             [self.MPDataArray addObject:MPReProjectsModel];
@@ -81,7 +87,13 @@
                      MPReProjectsModel.MPplaceholderImgName = @"MP_zhanweifu";
                      MPReProjectsModel.MPheadImg = result;
                      MPReProjectsModel.MPtitle = MPasset.localizedTitle;
-                     MPReProjectsModel.MPphotoNumber = [NSString stringWithFormat:@"%ld",MPasset.estimatedAssetCount];
+                     NSInteger count = 0;
+                     for (PHAsset *asset in assets) {
+                         if (asset.mediaType == PHAssetMediaTypeImage) {
+                             count++;
+                         }
+                     }
+                     MPReProjectsModel.MPphotoNumber = [NSString stringWithFormat:@"%ld",count];
                      MPReProjectsModel.MPisSelected = NO;
                      MPReProjectsModel.MPphotosArray = assets;
                  [self.MPDataArray addObject:MPReProjectsModel];

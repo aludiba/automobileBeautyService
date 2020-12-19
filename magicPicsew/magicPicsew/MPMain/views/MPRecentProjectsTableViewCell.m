@@ -69,7 +69,7 @@
     self.MPTitleLbl.text = _MPmodel.MPtitle;
     self.MPNumberLbl.text = _MPmodel.MPphotoNumber;
     if (_MPmodel.MPisSelected) {
-        self.contentView.backgroundColor = MPH_Color(253, 252, 240, 1);
+        self.contentView.backgroundColor = MPColor(253, 252, 240, 1);
     }else{
         self.contentView.backgroundColor = [UIColor whiteColor];
     }
@@ -95,14 +95,14 @@
     if (!_MPNumberLbl) {
         _MPNumberLbl = [[UILabel alloc] init];
         _MPNumberLbl.font = [UIFont systemFontOfSize:15];
-        _MPNumberLbl.textColor = MPH_Color(200, 200, 200, 1);
+        _MPNumberLbl.textColor = MPColor(200, 200, 200, 1);
     }
     return _MPNumberLbl;
 }
 - (UIView *)MPLine{
     if (!_MPLine) {
         _MPLine = [[UIView alloc] init];
-        _MPLine.backgroundColor = MPH_Color(242, 242, 242, 1);
+        _MPLine.backgroundColor = MPColor(242, 242, 242, 1);
     }
     return _MPLine;
 }

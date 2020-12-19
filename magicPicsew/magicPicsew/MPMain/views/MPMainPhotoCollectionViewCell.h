@@ -6,11 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
 NS_ASSUME_NONNULL_BEGIN
+@class MPMainPhotoModel;
+
 @interface MPMainPhotoCollectionViewCell : UICollectionViewCell
 
-@property (nonatomic, strong) UIImageView *MPContentImgView;
+@property (nonatomic, strong) MPMainPhotoModel *photoModel;
 
 @end
 
