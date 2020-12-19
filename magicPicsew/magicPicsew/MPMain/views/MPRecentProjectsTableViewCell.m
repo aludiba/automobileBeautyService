@@ -63,7 +63,6 @@
     _MPmodel = MPmodel;
     if (_MPmodel.MPheadImg.size.height) {
         self.MPHeaderImgView.image = [_MPmodel.MPheadImg MPimageByScalingAndCroppingForSize:CGSizeMake(60, 60)];
-//        self.MPHeaderImgView.image = _MPmodel.MPheadImg;
     }else{
         self.MPHeaderImgView.image = [UIImage imageNamed:_MPmodel.MPplaceholderImgName];
     }

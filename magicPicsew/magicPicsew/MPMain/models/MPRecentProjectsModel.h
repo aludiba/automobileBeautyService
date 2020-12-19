@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *MPtitle;//标题
 
 @property (nonatomic, copy) NSString *MPplaceholderImgName;//头部图像
+
 @property (nonatomic, strong) UIImage *MPheadImg;//头部图像
 
 @property (nonatomic, copy) NSString *MPphotoNumber;//图片数量

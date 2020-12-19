@@ -8,9 +8,11 @@
 #import "MPMainViewController.h"
 #import "MPSetViewController.h"
 #import "MPRecentProjectsView.h"
+#import "MPMainPhotoCollectionViewCell.h"
 #import <Photos/Photos.h>
+#import "UIImage+UIImageExt.h"
 
-@interface MPMainViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UITableViewDataSource,UITableViewDelegate,MPRecentProjectsViewDelegate>
+@interface MPMainViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,MPRecentProjectsViewDelegate>
 
 @property (nonatomic, strong) UIButton *MPnavRightBtn;//右侧设置按钮
 @property (nonatomic, strong) UIView *MPnavTitleView;//自定义标题栏
@@ -75,6 +77,7 @@
           PHFetchResult<PHAsset *> *allPhotos = [PHAsset fetchAssetsWithOptions:allPhotosOptions];
           self.MPcurrentPhotos = allPhotos;
           self.MPnavTitleLbl.text = @"最近项目";
+          [self.MPmainPicCollectionView reloadData];
     }else{
         UIAlertController *MPAlertVC = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"是否允许此应用程序访问您的图片库?" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *MPcancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
@@ -161,13 +164,31 @@
 
 }
 #pragma mark - UICollectionView代理方法
-
-#pragma mark - UITableViewView代理方法
-
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return 1;
+}
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return self.MPcurrentPhotos.count;
+}
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    MPMainPhotoCollectionViewCell *MPcell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MPMainPhotoCollectionViewCell" forIndexPath:indexPath];
+    PHAsset *asset = self.MPcurrentPhotos[indexPath.row];
+    CGSize size = CGSizeZero;
+    PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+    // 同步获得图片, 只会返回1张图片
+    options.synchronous = YES;
+    // 从asset中获得图片
+    [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+        MPcell.MPContentImgView.image = [result MPimageByScalingAndCroppingForSize:CGSizeMake((MPWIDTH - 5) / 4, (MPWIDTH - 5) / 4)];
+     }];
+    return MPcell;
+}
 #pragma mark - MPRecentProjectsView代理方法
 - (void)MPCurrentAlbumTitle:(NSString *)MPAlbumTitle  withPhotos:(PHFetchResult<PHAsset *> *)MPphotos{
     [self.MPnavTitleLbl setText:MPAlbumTitle];
     self.MPcurrentPhotos = MPphotos;
+    [self.MPmainPicCollectionView reloadData];
+    [self _MP_recentProjectsAction];
 }
 #pragma mark - 属性懒加载
 - (MPRecentProjectsView *)MPrecentprojectsView{
@@ -182,13 +203,17 @@
 - (UICollectionView *)MPmainPicCollectionView{
     if (!_MPmainPicCollectionView) {
         UICollectionViewFlowLayout *MPlayout = [[UICollectionViewFlowLayout alloc] init];
-        CGFloat itemWidth = MPWIDTH * 0.25;
+        CGFloat itemWidth = (MPWIDTH - 5) / 4;
         CGFloat itemHeight = itemWidth;
         MPlayout.itemSize = CGSizeMake(itemWidth, itemHeight);
+        MPlayout.minimumLineSpacing = 1;
+        MPlayout.minimumInteritemSpacing = 1;
         _MPmainPicCollectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:MPlayout];
+        _MPmainPicCollectionView.backgroundColor = [UIColor whiteColor];
         [self.view addSubview:_MPmainPicCollectionView];
         _MPmainPicCollectionView.dataSource = self;
         _MPmainPicCollectionView.delegate = self;
+        [_MPmainPicCollectionView registerClass:[MPMainPhotoCollectionViewCell class] forCellWithReuseIdentifier:@"MPMainPhotoCollectionViewCell"];
     }
     return _MPmainPicCollectionView;
 }

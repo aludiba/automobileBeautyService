@@ -74,7 +74,7 @@
                  PHFetchResult<PHAsset *> *assets = [PHAsset fetchAssetsInAssetCollection:MPasset options:nil];
                  //取第一张图片
                  PHAsset *asset = assets.lastObject;
-                 CGSize size = CGSizeMake(asset.pixelWidth, asset.pixelHeight);
+                 CGSize size = CGSizeZero;
                  // 从asset中获得图片
                  [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
                      MPRecentProjectsModel *MPReProjectsModel = [[MPRecentProjectsModel alloc] init];
