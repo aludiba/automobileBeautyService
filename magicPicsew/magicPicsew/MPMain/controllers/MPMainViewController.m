@@ -67,9 +67,10 @@
     }];
     self.MPnavTitleLbl = [[UILabel alloc] init];
     if ([self MPisCanUsePhotos]) {
-        PHFetchResult<PHAssetCollection *> *MPassetCollections = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:nil];
-        PHAssetCollection *MPassetCollection = MPassetCollections.firstObject;
-        self.MPnavTitleLbl.text = MPassetCollection.localizedTitle;
+//        PHFetchResult<PHAssetCollection *> *MPassetCollections = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:nil];
+//        PHAssetCollection *MPassetCollection = MPassetCollections.firstObject;
+//        self.MPnavTitleLbl.text = MPassetCollection.localizedTitle;
+          self.MPnavTitleLbl.text = @"最近项目";
     }else{
         UIAlertController *MPAlertVC = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"是否允许此应用程序访问您的图片库?" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *MPcancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {

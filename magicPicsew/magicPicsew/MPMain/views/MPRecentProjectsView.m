@@ -46,34 +46,48 @@
     return MPgroups;
 }
 - (void)MPsetContentViews{
-    NSMutableArray *MPphotoAlbum = [self MPGetPhoneAlbumGroups];
-    for (int i = 0; i < MPphotoAlbum.count; i++) {
-        PHAssetCollection *MPasset = MPphotoAlbum[i];
+        PHFetchOptions *allPhotosOptions = [[PHFetchOptions alloc] init];
+        // 获取所有照片（按创建时间升序）
+        PHFetchResult<PHAsset *> *allPhotos = [PHAsset fetchAssetsWithOptions:allPhotosOptions];
+        PHAsset *asset = allPhotos.lastObject;
+        CGSize size = CGSizeZero;
         PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
         // 同步获得图片, 只会返回1张图片
         options.synchronous = YES;
-        // 获得相簿中的所有PHAsset对象
-        PHFetchResult<PHAsset *> *assets = [PHAsset fetchAssetsInAssetCollection:MPasset options:nil];
-        //取第一张图片
-        PHAsset *asset = assets.lastObject;
-        CGSize size = CGSizeMake(asset.pixelWidth, asset.pixelHeight);
-//        CGSize size = CGSizeZero;
         // 从asset中获得图片
         [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
             MPRecentProjectsModel *MPReProjectsModel = [[MPRecentProjectsModel alloc] init];
             MPReProjectsModel.MPplaceholderImgName = @"MP_zhanweifu";
             MPReProjectsModel.MPheadImg = result;
-            MPReProjectsModel.MPtitle = MPasset.localizedTitle;
-            MPReProjectsModel.MPphotoNumber = [NSString stringWithFormat:@"%ld",MPasset.estimatedAssetCount];
-            if (i == 0) {
-                MPReProjectsModel.MPisSelected = YES;
-            }else{
-                MPReProjectsModel.MPisSelected = NO;
-            }
+            MPReProjectsModel.MPtitle = @"最近项目";
+            MPReProjectsModel.MPphotoNumber = [NSString stringWithFormat:@"%ld",allPhotos.count];
+            MPReProjectsModel.MPisSelected = YES;
             [self.MPDataArray addObject:MPReProjectsModel];
-        }];
-    }
-    [self.MPtableView reloadData];
+            
+            NSMutableArray *MPphotoAlbum = [self MPGetPhoneAlbumGroups];
+            for (int i = 0; i < MPphotoAlbum.count; i++) {
+                 PHAssetCollection *MPasset = MPphotoAlbum[i];
+                 PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+                 // 同步获得图片, 只会返回1张图片
+                 options.synchronous = YES;
+                 // 获得相簿中的所有PHAsset对象
+                 PHFetchResult<PHAsset *> *assets = [PHAsset fetchAssetsInAssetCollection:MPasset options:nil];
+                 //取第一张图片
+                 PHAsset *asset = assets.lastObject;
+                 CGSize size = CGSizeMake(asset.pixelWidth, asset.pixelHeight);
+                 // 从asset中获得图片
+                 [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+                     MPRecentProjectsModel *MPReProjectsModel = [[MPRecentProjectsModel alloc] init];
+                     MPReProjectsModel.MPplaceholderImgName = @"MP_zhanweifu";
+                     MPReProjectsModel.MPheadImg = result;
+                     MPReProjectsModel.MPtitle = MPasset.localizedTitle;
+                     MPReProjectsModel.MPphotoNumber = [NSString stringWithFormat:@"%ld",MPasset.estimatedAssetCount];
+                     MPReProjectsModel.MPisSelected = NO;
+                 [self.MPDataArray addObject:MPReProjectsModel];
+              }];
+            }
+                 [self.MPtableView reloadData];
+         }];
 }
 - (void)MPsetLayoutContentViews{
     [self addSubview:self.MPtableView];
