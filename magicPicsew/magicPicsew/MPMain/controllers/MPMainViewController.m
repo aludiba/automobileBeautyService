@@ -190,6 +190,9 @@
 }
 #pragma mark - 关闭操作提醒框
 - (void)closeRemindMessageAction:(UIButton *)sender{
+    [self closeRemindMessage];
+}
+- (void)closeRemindMessage{
     self.MPremindView.hidden = YES;
     for (int i = 0; i < self.MPDataArray.count; i++) {
         MPMainPhotoModel *model = self.MPDataArray[i];
@@ -265,6 +268,7 @@
 }
 #pragma mark - MPRecentProjectsView代理方法
 - (void)MPCurrentAlbumTitle:(NSString *)MPAlbumTitle  withPhotos:(PHFetchResult<PHAsset *> *)MPphotos{
+    [self closeRemindMessage];
     [self.MPnavTitleLbl setText:MPAlbumTitle];
     self.MPcurrentPhotos = MPphotos;
     [self.MPDataArray removeAllObjects];
