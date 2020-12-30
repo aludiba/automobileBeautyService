@@ -25,6 +25,10 @@
 		9D64356225622B25004CBBB3 /* MPSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D64356125622B25004CBBB3 /* MPSetTableViewCell.m */; };
 		9D64356725624CD1004CBBB3 /* MPSetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D64356625624CD1004CBBB3 /* MPSetModel.m */; };
 		9D64356B25627836004CBBB3 /* MPSetHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D64356A25627836004CBBB3 /* MPSetHeaderView.m */; };
+		9D6956CC259C0DCF00E23364 /* MPPhotoOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6956CB259C0DCF00E23364 /* MPPhotoOperationViewController.m */; };
+		9D6956D5259C56DD00E23364 /* MPTailoringToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6956D4259C56DD00E23364 /* MPTailoringToolBarView.m */; };
+		9D6956D9259C570400E23364 /* MPOtherToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6956D8259C570400E23364 /* MPOtherToolBarView.m */; };
+		9D6956DD259C697700E23364 /* MPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6956DC259C697700E23364 /* MPTool.m */; };
 		9D8EFD2E257F19D600A8074C /* MPRecentProjectsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8EFD2D257F19D600A8074C /* MPRecentProjectsModel.m */; };
 		9DA31845258AF27E002B4079 /* UIImage+UIImageExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA31844258AF27E002B4079 /* UIImage+UIImageExt.m */; };
 /* End PBXBuildFile section */
@@ -67,6 +71,14 @@
 		9D64356625624CD1004CBBB3 /* MPSetModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPSetModel.m; sourceTree = "<group>"; };
 		9D64356925627836004CBBB3 /* MPSetHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPSetHeaderView.h; sourceTree = "<group>"; };
 		9D64356A25627836004CBBB3 /* MPSetHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPSetHeaderView.m; sourceTree = "<group>"; };
+		9D6956CA259C0DCF00E23364 /* MPPhotoOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPPhotoOperationViewController.h; sourceTree = "<group>"; };
+		9D6956CB259C0DCF00E23364 /* MPPhotoOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPPhotoOperationViewController.m; sourceTree = "<group>"; };
+		9D6956D3259C56DD00E23364 /* MPTailoringToolBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPTailoringToolBarView.h; sourceTree = "<group>"; };
+		9D6956D4259C56DD00E23364 /* MPTailoringToolBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPTailoringToolBarView.m; sourceTree = "<group>"; };
+		9D6956D7259C570400E23364 /* MPOtherToolBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPOtherToolBarView.h; sourceTree = "<group>"; };
+		9D6956D8259C570400E23364 /* MPOtherToolBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPOtherToolBarView.m; sourceTree = "<group>"; };
+		9D6956DB259C697700E23364 /* MPTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPTool.h; sourceTree = "<group>"; };
+		9D6956DC259C697700E23364 /* MPTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPTool.m; sourceTree = "<group>"; };
 		9D8EFD2C257F19D600A8074C /* MPRecentProjectsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPRecentProjectsModel.h; sourceTree = "<group>"; };
 		9D8EFD2D257F19D600A8074C /* MPRecentProjectsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPRecentProjectsModel.m; sourceTree = "<group>"; };
 		9DA31843258AF27E002B4079 /* UIImage+UIImageExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+UIImageExt.h"; sourceTree = "<group>"; };
@@ -118,6 +130,7 @@
 				9D5AFECC254A5F51000EC16D /* MPCommon */,
 				9D5D37CA254BB7BD008F0839 /* MPSet */,
 				9D5D37C9254BB7B2008F0839 /* MPMain */,
+				9D6956C6259C0D2100E23364 /* MPPhotoOperation */,
 				9D5AFEA5254A51F0000EC16D /* AppDelegate.h */,
 				9D5AFEA6254A51F0000EC16D /* AppDelegate.m */,
 				9D5AFEB1254A51F0000EC16D /* Assets.xcassets */,
@@ -143,6 +156,8 @@
 				9D5D37C0254BB36B008F0839 /* MPBaseViewController.m */,
 				9DA31843258AF27E002B4079 /* UIImage+UIImageExt.h */,
 				9DA31844258AF27E002B4079 /* UIImage+UIImageExt.m */,
+				9D6956DB259C697700E23364 /* MPTool.h */,
+				9D6956DC259C697700E23364 /* MPTool.m */,
 			);
 			path = MPCommon;
 			sourceTree = "<group>";
@@ -225,6 +240,43 @@
 				9D62D9BA2575DA2A008BD38D /* MPRecentProjectsTableViewCell.m */,
 				9D61B6C0258DEFCA00736DF1 /* MPMainPhotoCollectionViewCell.h */,
 				9D61B6C1258DEFCA00736DF1 /* MPMainPhotoCollectionViewCell.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		9D6956C6259C0D2100E23364 /* MPPhotoOperation */ = {
+			isa = PBXGroup;
+			children = (
+				9D6956C7259C0D4F00E23364 /* controllers */,
+				9D6956C8259C0D6600E23364 /* models */,
+				9D6956C9259C0D7800E23364 /* views */,
+			);
+			path = MPPhotoOperation;
+			sourceTree = "<group>";
+		};
+		9D6956C7259C0D4F00E23364 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D6956CA259C0DCF00E23364 /* MPPhotoOperationViewController.h */,
+				9D6956CB259C0DCF00E23364 /* MPPhotoOperationViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		9D6956C8259C0D6600E23364 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		9D6956C9259C0D7800E23364 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				9D6956D3259C56DD00E23364 /* MPTailoringToolBarView.h */,
+				9D6956D4259C56DD00E23364 /* MPTailoringToolBarView.m */,
+				9D6956D7259C570400E23364 /* MPOtherToolBarView.h */,
+				9D6956D8259C570400E23364 /* MPOtherToolBarView.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -352,12 +404,16 @@
 			files = (
 				9D62D9B72575D160008BD38D /* MPRecentProjectsView.m in Sources */,
 				9D5D37C1254BB36B008F0839 /* MPBaseViewController.m in Sources */,
+				9D6956DD259C697700E23364 /* MPTool.m in Sources */,
 				9D62D9BB2575DA2A008BD38D /* MPRecentProjectsTableViewCell.m in Sources */,
 				9D8EFD2E257F19D600A8074C /* MPRecentProjectsModel.m in Sources */,
+				9D6956D9259C570400E23364 /* MPOtherToolBarView.m in Sources */,
 				9D64356225622B25004CBBB3 /* MPSetTableViewCell.m in Sources */,
 				9D5D37A9254BAC65008F0839 /* NSArray+log.m in Sources */,
+				9D6956CC259C0DCF00E23364 /* MPPhotoOperationViewController.m in Sources */,
 				9D64355E25622AF5004CBBB3 /* MPMainViewController.m in Sources */,
 				9D64356B25627836004CBBB3 /* MPSetHeaderView.m in Sources */,
+				9D6956D5259C56DD00E23364 /* MPTailoringToolBarView.m in Sources */,
 				9D64355725622AE7004CBBB3 /* MPSetViewController.m in Sources */,
 				9D5D37B3254BAD5C008F0839 /* MBProgressHUD+MP.m in Sources */,
 				9D61B6CB258E118700736DF1 /* MPMainPhotoModel.m in Sources */,

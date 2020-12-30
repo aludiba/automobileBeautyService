@@ -48,7 +48,18 @@
         PHFetchOptions *allPhotosOptions = [[PHFetchOptions alloc] init];
         // 获取所有照片（按创建时间升序）
         PHFetchResult<PHAsset *> *allPhotos = [PHAsset fetchAssetsWithOptions:allPhotosOptions];
-        PHAsset *asset = allPhotos.lastObject;
+        //取最近一张图片
+        PHAsset *asset;
+        for (int i = (int)(allPhotos.count - 1); i > -1; i--) {
+            PHAsset *MPasset = allPhotos[i];
+            if (MPasset.mediaType == PHAssetMediaTypeImage) {
+                asset = MPasset;
+                break;
+            }
+        }
+        if (!asset) {
+             return;
+        }
         CGSize size = CGSizeZero;
         PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
         // 同步获得图片, 只会返回1张图片
@@ -78,8 +89,18 @@
                  options.synchronous = YES;
                  // 获得相簿中的所有PHAsset对象
                  PHFetchResult<PHAsset *> *assets = [PHAsset fetchAssetsInAssetCollection:MPasset options:nil];
-                 //取第一张图片
-                 PHAsset *asset = assets.lastObject;
+                 //取最近一张图片
+                 PHAsset *asset;
+                 for (int i = (int)(assets.count - 1); i > -1; i--) {
+                     PHAsset *MPasset = assets[i];
+                     if (MPasset.mediaType == PHAssetMediaTypeImage) {
+                         asset = MPasset;
+                         break;
+                     }
+                 }
+                 if (!asset) {
+                     return;
+                 }
                  CGSize size = CGSizeZero;
                  // 从asset中获得图片
                  [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {

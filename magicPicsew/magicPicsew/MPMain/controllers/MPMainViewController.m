@@ -11,6 +11,7 @@
 #import "MPMainPhotoCollectionViewCell.h"
 #import <Photos/Photos.h>
 #import "MPMainPhotoModel.h"
+#import "MPPhotoOperationViewController.h"
 
 @interface MPMainViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,MPRecentProjectsViewDelegate>
 
@@ -77,9 +78,6 @@
     }];
     self.MPnavTitleLbl = [[UILabel alloc] init];
     if ([self MPisCanUsePhotos]) {
-//        PHFetchResult<PHAssetCollection *> *MPassetCollections = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:nil];
-//        PHAssetCollection *MPassetCollection = MPassetCollections.firstObject;
-//        self.MPnavTitleLbl.text = MPassetCollection.localizedTitle;
           PHFetchOptions *allPhotosOptions = [[PHFetchOptions alloc] init];
           PHFetchResult<PHAsset *> *allPhotos = [PHAsset fetchAssetsWithOptions:allPhotosOptions];
           self.MPcurrentPhotos = allPhotos;
@@ -179,20 +177,11 @@
     }];
 
 }
-- (CGFloat)currentIpBottombarheight{
-    CGFloat bottombarheight;
-    if (@available(iOS 11.0, *)){
-        bottombarheight = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom;
-    }else{
-        bottombarheight = 0;
-    }
-    return bottombarheight;
-}
 #pragma mark - 关闭操作提醒框
-- (void)closeRemindMessageAction:(UIButton *)sender{
-    [self closeRemindMessage];
+- (void)MPMPcloseRemindMessageAction:(UIButton *)sender{
+    [self MPcloseRemindMessage];
 }
-- (void)closeRemindMessage{
+- (void)MPcloseRemindMessage{
     self.MPremindView.hidden = YES;
     for (int i = 0; i < self.MPDataArray.count; i++) {
         MPMainPhotoModel *model = self.MPDataArray[i];
@@ -208,15 +197,21 @@
     [self.MPmainPicCollectionView reloadData];
 }
 #pragma mark - 照片相关操作
-- (void)photoOperationAction:(UIButton *)sender{
+- (void)MPphotoOperationAction:(UIButton *)sender{
     if (sender.tag == 99) {
         if (self.MPCurrentIndex > 1) {
-            NSLog(@"竖向拼接~~~");
+            MPPhotoOperationViewController *MPPhotoOperationVC = [[MPPhotoOperationViewController alloc] init];
+            MPPhotoOperationVC.MPCurrentType = MPPhotoOperationTypeVerticalStitching;
+            [self.navigationController pushViewController:MPPhotoOperationVC animated:NO];
         }else{
-            NSLog(@"调整~~~");
+            MPPhotoOperationViewController *MPPhotoOperationVC = [[MPPhotoOperationViewController alloc] init];
+            MPPhotoOperationVC.MPCurrentType = MPPhotoOperationTypeAdjust;
+            [self.navigationController pushViewController:MPPhotoOperationVC animated:NO];
         }
     }else{
-        NSLog(@"横向拼接~~~");
+        MPPhotoOperationViewController *MPPhotoOperationVC = [[MPPhotoOperationViewController alloc] init];
+        MPPhotoOperationVC.MPCurrentType = MPPhotoOperationTypeTransverseSplicing;
+        [self.navigationController pushViewController:MPPhotoOperationVC animated:NO];
     }
 }
 #pragma mark - UICollectionView代理方法
@@ -268,7 +263,7 @@
 }
 #pragma mark - MPRecentProjectsView代理方法
 - (void)MPCurrentAlbumTitle:(NSString *)MPAlbumTitle  withPhotos:(PHFetchResult<PHAsset *> *)MPphotos{
-    [self closeRemindMessage];
+    [self MPcloseRemindMessage];
     [self.MPnavTitleLbl setText:MPAlbumTitle];
     self.MPcurrentPhotos = MPphotos;
     [self.MPDataArray removeAllObjects];
@@ -302,7 +297,7 @@
         MPlayout.itemSize = CGSizeMake(itemWidth, itemHeight);
         MPlayout.minimumLineSpacing = 1;
         MPlayout.minimumInteritemSpacing = 1;
-        _MPmainPicCollectionView = [[UICollectionView alloc] initWithFrame: CGRectMake(0, 0, MPWIDTH, MPHEIGHT - [self currentIpBottombarheight] - 45) collectionViewLayout:MPlayout];
+        _MPmainPicCollectionView = [[UICollectionView alloc] initWithFrame: CGRectMake(0, 0, MPWIDTH, MPHEIGHT - [MPTool MPcurrentIpBottombarheight] - 45) collectionViewLayout:MPlayout];
         _MPmainPicCollectionView.backgroundColor = MPColor(242, 242, 242, 1);
         [self.view addSubview:_MPmainPicCollectionView];
         _MPmainPicCollectionView.dataSource = self;
@@ -324,14 +319,14 @@
         _MPCurrentImgsCountLbl.textColor = [UIColor grayColor];
         _MPCurrentImgsCountLbl.font = [UIFont systemFontOfSize:20];
         _MPCurrentImgsCountLbl.textAlignment = NSTextAlignmentCenter;
-        _MPCurrentImgsCountLbl.frame = CGRectMake(0, MPHEIGHT - [self currentIpBottombarheight] - 45, MPWIDTH, 45 + [self currentIpBottombarheight]);
+        _MPCurrentImgsCountLbl.frame = CGRectMake(0, MPHEIGHT - [MPTool MPcurrentIpBottombarheight] - 45, MPWIDTH, 45 + [MPTool MPcurrentIpBottombarheight]);
         [self.view addSubview:_MPCurrentImgsCountLbl];
     }
     return _MPCurrentImgsCountLbl;
 }
 - (UIView *)MPremindView{
     if (!_MPremindView) {
-        _MPremindView = [[UIView alloc] initWithFrame:CGRectMake(0, MPHEIGHT - [self currentIpBottombarheight] - 45, MPWIDTH, 45 + [self currentIpBottombarheight])];
+        _MPremindView = [[UIView alloc] initWithFrame:CGRectMake(0, MPHEIGHT - [MPTool MPcurrentIpBottombarheight] - 45, MPWIDTH, 45 + [MPTool MPcurrentIpBottombarheight])];
         _MPremindView.backgroundColor = [UIColor blueColor];
         [self.view addSubview:_MPremindView];
         [_MPremindView addSubview:self.MPcloseBtn];
@@ -345,7 +340,7 @@
         [_MPremindBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_MPremindBtn.titleLabel setFont:[UIFont systemFontOfSize:20]];
         [_MPremindBtn.titleLabel setTextAlignment:NSTextAlignmentCenter];
-        [_MPremindBtn addTarget:self action:@selector(photoOperationAction:) forControlEvents:UIControlEventTouchUpInside];
+        [_MPremindBtn addTarget:self action:@selector(MPphotoOperationAction:) forControlEvents:UIControlEventTouchUpInside];
         [_MPremindView addSubview:_MPremindBtn];
     }
     return _MPremindBtn;
@@ -357,7 +352,7 @@
         [_MPremindBtn1 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_MPremindBtn1.titleLabel setFont:[UIFont systemFontOfSize:20]];
         [_MPremindBtn1.titleLabel setTextAlignment:NSTextAlignmentCenter];
-        [_MPremindBtn1 addTarget:self action:@selector(photoOperationAction:) forControlEvents:UIControlEventTouchUpInside];
+        [_MPremindBtn1 addTarget:self action:@selector(MPphotoOperationAction:) forControlEvents:UIControlEventTouchUpInside];
         [_MPremindView addSubview:_MPremindBtn1];
     }
     return _MPremindBtn1;
@@ -367,7 +362,7 @@
         _MPcloseBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 45, 45)];
         [_MPcloseBtn setImage:[UIImage imageNamed:@"MP_guanbi"] forState:UIControlStateNormal];
         [_MPcloseBtn setImage:[UIImage imageNamed:@"MP_guanbi"] forState:UIControlStateHighlighted];
-        [_MPcloseBtn addTarget:self action:@selector(closeRemindMessageAction:) forControlEvents:UIControlEventTouchUpInside];
+        [_MPcloseBtn addTarget:self action:@selector(MPMPcloseRemindMessageAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _MPcloseBtn;
 }
