@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM (NSUInteger, MPTailoringType){
-    MPTailoringTypeAdjust ,//调整
+    MPTailoringTypeAdjust,//调整
     MPTailoringTypeVerticalStitching,//竖向拼接
     MPTailoringTypeTransverseSplicing,//横向拼接
 };
