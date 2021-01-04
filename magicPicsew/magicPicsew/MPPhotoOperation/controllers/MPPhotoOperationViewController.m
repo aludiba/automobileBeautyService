@@ -23,6 +23,8 @@
 
 @property (nonatomic, assign) Boolean MP_isTool;//是否工具栏
 
+@property (nonatomic, strong) UIView *MPline;//底部操作栏分割线
+
 @property (nonatomic, strong) UIScrollView *MPOperationScrollView;//底部操作栏
 
 @property (nonatomic, strong) MPTailoringToolBarView *MPTailoringView;//裁剪操作栏
@@ -121,6 +123,7 @@
     }
 }
 - (void)MPsetContentView{
+    [self.view addSubview:self.MPline];
     [self.view addSubview:self.MPOperationScrollView];
     [self.MPOperationScrollView addSubview:self.MPTailoringView];
     [self.MPOperationScrollView addSubview:self.MPOtherToolView];
@@ -132,6 +135,7 @@
         make.top.equalTo(self.MPOperationScrollView);
         make.height.equalTo(self.MPOperationScrollView);
     }];
+    self.MPTailoringView.MPcurrentType = self.MPCurrentType;
     [self.MPOtherToolView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.MPTailoringView.mas_right);
         make.top.and.bottom.equalTo(self.MPTailoringView);
@@ -143,10 +147,22 @@
         make.height.mas_equalTo(60 + [MPTool MPcurrentIpBottombarheight]);
         make.right.equalTo(self.MPOtherToolView.mas_right);
     }];
+    [self.MPline mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.and.right.equalTo(self.view);
+        make.bottom.equalTo(self.MPOperationScrollView.mas_top).offset(-6);
+        make.height.mas_equalTo(1);
+    }];
 }
 #pragma mark - UIScrollView代理方法
 
 #pragma mark - 属性懒加载
+- (UIView *)MPline{
+    if (!_MPline) {
+        _MPline = [[UIView alloc] init];
+        _MPline.backgroundColor = MPColor(242, 242, 242, 1);
+    }
+    return _MPline;
+}
 - (UIScrollView *)MPOperationScrollView{
     if (!_MPOperationScrollView) {
         _MPOperationScrollView = [[UIScrollView alloc] init];
@@ -160,14 +176,12 @@
 - (MPTailoringToolBarView *)MPTailoringView{
     if (!_MPTailoringView) {
         _MPTailoringView = [[MPTailoringToolBarView alloc] init];
-        _MPTailoringView.backgroundColor = [UIColor redColor];
     }
     return _MPTailoringView;
 }
 - (MPOtherToolBarView *)MPOtherToolView{
     if (!_MPOtherToolView) {
         _MPOtherToolView = [[MPOtherToolBarView alloc] init];
-        _MPOtherToolView.backgroundColor = [UIColor yellowColor];
     }
     return _MPOtherToolView;
 }

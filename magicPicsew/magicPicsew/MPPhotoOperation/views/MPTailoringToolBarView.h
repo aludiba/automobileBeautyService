@@ -6,14 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MPPhotoOperationViewController.h"
 NS_ASSUME_NONNULL_BEGIN
-
-typedef NS_ENUM (NSUInteger, MPTailoringType){
-    MPTailoringTypeAdjust,//调整
-    MPTailoringTypeVerticalStitching,//竖向拼接
-    MPTailoringTypeTransverseSplicing,//横向拼接
-};
 
 @protocol MPTailoringToolBarDelegate<NSObject>
 
@@ -25,7 +19,7 @@ typedef NS_ENUM (NSUInteger, MPTailoringType){
 
 @interface MPTailoringToolBarView : UIView
 
-@property (nonatomic, assign) MPTailoringType MPcurrentType;//当前是何种裁剪类型
+@property (nonatomic, assign) MPPhotoOperationType MPcurrentType;//当前是何种裁剪类型
 
 @end
 
