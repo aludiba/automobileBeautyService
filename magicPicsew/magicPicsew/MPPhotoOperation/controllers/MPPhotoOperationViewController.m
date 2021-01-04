@@ -30,6 +30,7 @@
 @property (nonatomic, strong) MPTailoringToolBarView *MPTailoringView;//裁剪操作栏
 
 @property (nonatomic, strong) MPOtherToolBarView *MPOtherToolView;//工具操作栏
+
 @end
 
 @implementation MPPhotoOperationViewController

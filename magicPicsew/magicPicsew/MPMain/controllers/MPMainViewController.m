@@ -16,22 +16,39 @@
 @interface MPMainViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,MPRecentProjectsViewDelegate>
 
 @property (nonatomic, strong) UIButton *MPnavRightBtn;//右侧设置按钮
+
 @property (nonatomic, strong) UIView *MPnavTitleView;//自定义标题栏
+
 @property (nonatomic, strong) UIButton *MPnavTitleBtn;//自定义标题按钮
+
 @property (nonatomic, strong) UILabel *MPnavTitleLbl;//自定义标题
+
 @property (nonatomic, strong) UIImageView *MPnavExpandCloseImgView;//展开和关闭图标
+
 @property (nonatomic, assign) Boolean isExpand;//是否展开最近项目
 
 @property (nonatomic, strong) UICollectionView *MPmainPicCollectionView;//主要相册展示控件
+
+@property (nonatomic, strong) UIButton *MPslideTopBtn;//相册滑动到底部按钮
+
 @property (nonatomic, strong) MPRecentProjectsView *MPrecentprojectsView;//相册类型选择控件
+
 @property (nonatomic, strong) PHFetchResult<PHAsset *>  *MPcurrentPhotos;
+
 @property (nonatomic, strong) NSMutableArray *MPDataArray;
+
 @property (nonatomic, strong) UILabel *MPCurrentImgsCountLbl;//当前照片数量
+
 @property (nonatomic, assign) NSInteger MPCurrentIndex;//当前是选中的第几张图片
+
 @property (nonatomic, strong) UIView *MPremindView;//提醒视图
+
 @property (nonatomic, strong) UIButton *MPcloseBtn;//关闭提醒视图按钮
+
 @property (nonatomic, strong) UIButton *MPremindBtn;//提醒标签1
+
 @property (nonatomic, strong) UIButton *MPremindBtn1;//提醒标签2
+
 @end
 
 @implementation MPMainViewController
@@ -92,6 +109,14 @@
         self.MPCurrentImgsCountLbl.text = [NSString stringWithFormat:@"%ld张照片",self.MPDataArray.count];
           self.MPnavTitleLbl.text = @"最近项目";
           [self.MPmainPicCollectionView reloadData];
+        [self.view addSubview:self.MPslideTopBtn];
+        [self.MPslideTopBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.equalTo(self.view);
+            make.top.equalTo(self.view).offset(MPHEIGHT - [MPTool MPcurrentIpBottombarheight] - 45 - 10 - 44);
+            make.width.mas_equalTo(44);
+            make.height.mas_equalTo(44);
+        }];
+        self.MPslideTopBtn.hidden = YES;
     }else{
         UIAlertController *MPAlertVC = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"是否允许此应用程序访问您的图片库?" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *MPcancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
@@ -175,7 +200,9 @@
     completion:^(BOOL finished){
                             
     }];
-
+}
+- (void)MPslideTopAction:(UIButton *)sender{
+        [self.MPmainPicCollectionView setContentOffset:CGPointMake(0, -[[UIApplication sharedApplication] delegate].window.safeAreaInsets.top -self.navigationController.navigationBar.bounds.size.height) animated:NO];
 }
 #pragma mark - 关闭操作提醒框
 - (void)MPMPcloseRemindMessageAction:(UIButton *)sender{
@@ -261,6 +288,15 @@
     }
     [self.MPmainPicCollectionView reloadData];
 }
+#pragma mark - UIScrollView协议方法
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if (scrollView.contentOffset.y <= -[[UIApplication sharedApplication] delegate].window.safeAreaInsets.top -self.navigationController.navigationBar.bounds.size.height) {
+        self.MPslideTopBtn.hidden = YES;
+    }else{
+        self.MPslideTopBtn.hidden = NO;
+    }
+}
 #pragma mark - MPRecentProjectsView代理方法
 - (void)MPCurrentAlbumTitle:(NSString *)MPAlbumTitle  withPhotos:(PHFetchResult<PHAsset *> *)MPphotos{
     [self MPcloseRemindMessage];
@@ -305,6 +341,15 @@
         [_MPmainPicCollectionView registerClass:[MPMainPhotoCollectionViewCell class] forCellWithReuseIdentifier:@"MPMainPhotoCollectionViewCell"];
     }
     return _MPmainPicCollectionView;
+}
+- (UIButton *)MPslideTopBtn{
+    if (!_MPslideTopBtn) {
+        _MPslideTopBtn = [[UIButton alloc] init];
+        [_MPslideTopBtn setImage:[UIImage imageNamed:@"MP_huadaodingbu"] forState:UIControlStateNormal];
+        [_MPslideTopBtn setImage:[UIImage imageNamed:@"MP_huadaodingbu"] forState:UIControlStateHighlighted];
+        [_MPslideTopBtn addTarget:self action:@selector(MPslideTopAction:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _MPslideTopBtn;
 }
 - (NSMutableArray *)MPDataArray{
     if (!_MPDataArray) {
