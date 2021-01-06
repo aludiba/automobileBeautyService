@@ -26,6 +26,14 @@
     self.title = @"设置";
     [self MPsetContentView];
 }
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+
+}
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+
+}
 #pragma mark - actions
 - (void)MPsetContentView{
     NSMutableArray *MParray = [[NSMutableArray alloc] init];
