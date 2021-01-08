@@ -225,21 +225,23 @@
 }
 #pragma mark - 照片相关操作
 - (void)MPphotoOperationAction:(UIButton *)sender{
+    MPPhotoOperationViewController *MPPhotoOperationVC = [[MPPhotoOperationViewController alloc] init];
+    for (int i = 0; i < self.MPDataArray.count; i++) {
+        MPMainPhotoModel *MPmodel = self.MPDataArray[i];
+        if (MPmodel.isSelect) {
+            [MPPhotoOperationVC.MPphotosArray addObject:MPmodel];
+        }
+    }
     if (sender.tag == 99) {
         if (self.MPCurrentIndex > 1) {
-            MPPhotoOperationViewController *MPPhotoOperationVC = [[MPPhotoOperationViewController alloc] init];
             MPPhotoOperationVC.MPCurrentType = MPPhotoOperationTypeVerticalStitching;
-            [self.navigationController pushViewController:MPPhotoOperationVC animated:NO];
         }else{
-            MPPhotoOperationViewController *MPPhotoOperationVC = [[MPPhotoOperationViewController alloc] init];
             MPPhotoOperationVC.MPCurrentType = MPPhotoOperationTypeAdjust;
-            [self.navigationController pushViewController:MPPhotoOperationVC animated:NO];
         }
     }else{
-        MPPhotoOperationViewController *MPPhotoOperationVC = [[MPPhotoOperationViewController alloc] init];
         MPPhotoOperationVC.MPCurrentType = MPPhotoOperationTypeTransverseSplicing;
-        [self.navigationController pushViewController:MPPhotoOperationVC animated:NO];
     }
+    [self.navigationController pushViewController:MPPhotoOperationVC animated:NO];
 }
 #pragma mark - UICollectionView代理方法
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{

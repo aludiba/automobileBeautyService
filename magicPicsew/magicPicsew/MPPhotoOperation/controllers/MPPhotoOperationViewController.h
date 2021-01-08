@@ -15,6 +15,8 @@ typedef NS_ENUM (NSUInteger, MPPhotoOperationType){
 };
 @interface MPPhotoOperationViewController : MPBaseViewController
 
+@property (nonatomic, strong) NSMutableArray *MPphotosArray;//存储照片的数组
+
 @property (nonatomic, assign) MPPhotoOperationType MPCurrentType;//当前照片操作类型
 
 @end

@@ -8,6 +8,7 @@
 #import "MPPhotoOperationViewController.h"
 #import "MPTailoringToolBarView.h"
 #import "MPOtherToolBarView.h"
+#import "MPMainPhotoModel.h"
 
 @interface MPPhotoOperationViewController ()<UIScrollViewDelegate,MPTailoringToolBarDelegate,MPOtherToolBarDelegate>
 
@@ -31,6 +32,7 @@
 
 @property (nonatomic, strong) MPOtherToolBarView *MPOtherToolView;//工具操作栏
 
+@property (nonatomic, strong) UIImageView *MPphotoImageView;//照片框
 @end
 
 @implementation MPPhotoOperationViewController
@@ -128,6 +130,7 @@
     [self.view addSubview:self.MPOperationScrollView];
     [self.MPOperationScrollView addSubview:self.MPTailoringView];
     [self.MPOperationScrollView addSubview:self.MPOtherToolView];
+    [self.view addSubview:self.MPphotoImageView];
 }
 - (void)MPsetContentLayOutView{
     [self.MPTailoringView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -153,6 +156,25 @@
         make.bottom.equalTo(self.MPOperationScrollView.mas_top).offset(-6);
         make.height.mas_equalTo(1);
     }];
+    if (self.MPphotosArray.count > 1) {
+        
+    }else if (self.MPphotosArray.count == 1){
+        MPMainPhotoModel *photoModel = self.MPphotosArray.firstObject;
+        PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+        CGSize size = CGSizeZero;
+        // 同步获得图片, 只会返回1张图片
+        options.synchronous = YES;
+            // 从asset中获得图片
+        [[PHImageManager defaultManager] requestImageForAsset:photoModel.asset targetSize:size contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+            self.MPphotoImageView.image = result;
+            [self.MPphotoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.equalTo(self.view);
+                make.left.equalTo(self.view);
+                make.width.mas_equalTo(result.size.width);
+                make.height.mas_equalTo(result.size.height);
+            }];
+        }];
+    }
 }
 #pragma mark - UIScrollView代理方法
 
@@ -185,5 +207,18 @@
         _MPOtherToolView = [[MPOtherToolBarView alloc] init];
     }
     return _MPOtherToolView;
+}
+- (UIImageView *)MPphotoImageView{
+    if (!_MPphotoImageView) {
+        _MPphotoImageView = [[UIImageView alloc] init];
+        _MPphotoImageView.backgroundColor = [UIColor whiteColor];
+    }
+    return _MPphotoImageView;
+}
+- (NSMutableArray *)MPphotosArray{
+    if (!_MPphotosArray) {
+        _MPphotosArray = [[NSMutableArray alloc] init];
+    }
+    return _MPphotosArray;
 }
 @end
