@@ -9,6 +9,7 @@
 #import "MPTailoringToolBarView.h"
 #import "MPOtherToolBarView.h"
 #import "MPMainPhotoModel.h"
+#import "UIImage+UIImageExtras.h"
 
 @interface MPPhotoOperationViewController ()<UIScrollViewDelegate,MPTailoringToolBarDelegate,MPOtherToolBarDelegate>
 
@@ -166,9 +167,11 @@
         options.synchronous = YES;
             // 从asset中获得图片
         [[PHImageManager defaultManager] requestImageForAsset:photoModel.asset targetSize:size contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+            CGSize size = result.size;
+            result = [result imageByScalingToSize:CGSizeMake([UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.width * (size.height / size.width))];
             self.MPphotoImageView.image = result;
-            [self.MPphotoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.top.equalTo(self.view);
+            [self.MPphotoImageView mas_updateConstraints:^(MASConstraintMaker *make) {
+                make.top.equalTo(self.mas_topLayoutGuideBottom);
                 make.left.equalTo(self.view);
                 make.width.mas_equalTo(result.size.width);
                 make.height.mas_equalTo(result.size.height);
@@ -212,6 +215,9 @@
     if (!_MPphotoImageView) {
         _MPphotoImageView = [[UIImageView alloc] init];
         _MPphotoImageView.backgroundColor = [UIColor whiteColor];
+        _MPphotoImageView.contentMode = UIViewContentModeScaleAspectFit;
+        _MPphotoImageView.autoresizesSubviews = YES;
+//        _MPphotoImageView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     }
     return _MPphotoImageView;
 }
