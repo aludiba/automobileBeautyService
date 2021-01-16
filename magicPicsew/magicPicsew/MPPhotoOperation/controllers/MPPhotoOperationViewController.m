@@ -33,7 +33,11 @@
 
 @property (nonatomic, strong) MPOtherToolBarView *MPOtherToolView;//工具操作栏
 
+@property (nonatomic, strong) UIScrollView *MPphotoScrollView;//滚动框
+
 @property (nonatomic, strong) UIImageView *MPphotoImageView;//照片框
+
+@property (nonatomic, strong) NSMutableArray *MPphotoImagesArray;
 @end
 
 @implementation MPPhotoOperationViewController
@@ -131,7 +135,8 @@
     [self.view addSubview:self.MPOperationScrollView];
     [self.MPOperationScrollView addSubview:self.MPTailoringView];
     [self.MPOperationScrollView addSubview:self.MPOtherToolView];
-    [self.view addSubview:self.MPphotoImageView];
+    [self.view addSubview:self.MPphotoScrollView];
+    [self.MPphotoScrollView addSubview:self.MPphotoImageView];
 }
 - (void)MPsetContentLayOutView{
     [self.MPTailoringView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -158,7 +163,120 @@
         make.height.mas_equalTo(1);
     }];
     if (self.MPphotosArray.count > 1) {
-        
+        for (int i = 0; i < self.MPphotosArray.count; i
+             ++) {
+            MPMainPhotoModel *photoModel = self.MPphotosArray[i];
+            PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+            CGSize size = CGSizeZero;
+            [[PHImageManager defaultManager] requestImageForAsset:photoModel.asset targetSize:size contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+                CGSize size = result.size;
+                result = [result imageByScalingToSize:CGSizeMake([UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.width * (size.height / size.width))];
+                [self.MPphotoImagesArray addObject:result];
+            }];
+        }
+        if (self.MPCurrentType == MPPhotoOperationTypeVerticalStitching) {
+            NSMutableArray *imageViews = [[NSMutableArray alloc] init];
+            UIImageView *frontImgView;
+            UIImageView *lastImgView;
+            CGFloat totalHeight = 0;
+            CGFloat maxWidth = 0;
+            if (self.MPphotoImagesArray.count > 0) {
+                for (int i = 0; i < self.MPphotoImagesArray.count; i++) {
+                    UIImage *image = self.MPphotoImagesArray[i];
+                    totalHeight += image.size.height;
+                    UIImageView *imageView = [[UIImageView alloc] init];
+                    [imageViews addObject:imageView];
+                    imageView.image = image;
+                    [self.MPphotoScrollView addSubview:imageView];
+                    if (i == 0) {
+                        maxWidth = image.size.width;
+                        [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.left.equalTo(self.MPphotoScrollView);
+                            make.top.equalTo(self.MPphotoScrollView);
+                            make.width.mas_equalTo(image.size.width);
+                            make.height.mas_equalTo(image.size.height);
+                        }];
+                    }else{
+                        if (image.size.width >= maxWidth) {
+                            maxWidth = image.size.width;
+                        }
+                        [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.top.equalTo(frontImgView.mas_bottom);
+                            make.left.equalTo(frontImgView);
+                            make.width.mas_equalTo(image.size.width);
+                            make.height.mas_equalTo(image.size.height);
+                        }];
+                    }
+                    frontImgView = imageView;
+                    if (i == self.MPphotoImagesArray.count - 1) {
+                        lastImgView = imageView;
+                    }
+                }
+            }
+            CGFloat navHeight = 0;
+            if (is_iPhoneXSeries) {
+                navHeight = 88.0f;
+            }else{
+                navHeight = 64.0f;
+            }
+            [self.MPphotoScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.equalTo(self.mas_topLayoutGuideBottom);
+                make.bottom.equalTo(lastImgView.mas_bottom);
+                make.width.mas_equalTo(maxWidth);
+                make.height.mas_equalTo(MPHEIGHT - 67 - [MPTool MPcurrentIpBottombarheight] - navHeight);
+            }];
+        }else{
+            NSMutableArray *imageViews = [[NSMutableArray alloc] init];
+            UIImageView *frontImgView;
+            UIImageView *lastImgView;
+            CGFloat totalWidth = 0;
+            CGFloat maxHeight = 0;
+            if (self.MPphotoImagesArray.count > 0) {
+                for (int i = 0; i < self.MPphotoImagesArray.count; i++) {
+                    UIImage *image = self.MPphotoImagesArray[i];
+                    totalWidth += image.size.width;
+                    UIImageView *imageView = [[UIImageView alloc] init];
+                    [imageViews addObject:imageView];
+                    imageView.image = image;
+                    [self.MPphotoScrollView addSubview:imageView];
+                    if (i == 0) {
+                        maxHeight = image.size.height;
+                        [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.left.equalTo(self.MPphotoScrollView);
+                            make.top.equalTo(self.MPphotoScrollView);
+                            make.width.mas_equalTo(image.size.width);
+                            make.height.mas_equalTo(image.size.height);
+                        }];
+                    }else{
+                        if (image.size.height >= maxHeight) {
+                            maxHeight = image.size.height;
+                        }
+                        [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.left.equalTo(frontImgView.mas_right);
+                            make.top.equalTo(frontImgView);
+                            make.width.mas_equalTo(image.size.width);
+                            make.height.mas_equalTo(image.size.height);
+                        }];
+                    }
+                    frontImgView = imageView;
+                    if (i == self.MPphotoImagesArray.count - 1) {
+                        lastImgView = imageView;
+                    }
+                }
+            }
+            CGFloat navHeight = 0;
+            if (is_iPhoneXSeries) {
+                navHeight = 88.0f;
+            }else{
+                navHeight = 64.0f;
+            }
+            [self.MPphotoScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.equalTo(self.mas_topLayoutGuideBottom);
+                make.left.and.right.equalTo(self.view);
+                make.height.mas_equalTo(MPHEIGHT - 67 - [MPTool MPcurrentIpBottombarheight] - navHeight);
+                make.right.equalTo(lastImgView.mas_right);
+            }];
+        }
     }else if (self.MPphotosArray.count == 1){
         MPMainPhotoModel *photoModel = self.MPphotosArray.firstObject;
         PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
@@ -170,9 +288,15 @@
             CGSize size = result.size;
             result = [result imageByScalingToSize:CGSizeMake([UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.width * (size.height / size.width))];
             self.MPphotoImageView.image = result;
-            [self.MPphotoImageView mas_updateConstraints:^(MASConstraintMaker *make) {
+            [self.MPphotoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.left.equalTo(self.MPphotoScrollView);
+                make.width.equalTo(self.MPphotoScrollView);
+                make.top.equalTo(self.MPphotoScrollView);
+                make.height.equalTo(self.MPphotoScrollView);
+            }];
+            [self.MPphotoScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.top.equalTo(self.mas_topLayoutGuideBottom);
-                make.left.equalTo(self.view);
+                make.bottom.equalTo(self.MPphotoImageView.mas_bottom);
                 make.width.mas_equalTo(result.size.width);
                 make.height.mas_equalTo(result.size.height);
             }];
@@ -211,13 +335,22 @@
     }
     return _MPOtherToolView;
 }
+- (UIScrollView *)MPphotoScrollView{
+    if (!_MPphotoScrollView) {
+        _MPphotoScrollView = [[UIScrollView alloc] init];
+        _MPphotoScrollView.delegate = self;
+        _MPphotoScrollView.backgroundColor = [UIColor whiteColor];
+        _MPphotoScrollView.showsVerticalScrollIndicator = NO;
+        _MPphotoScrollView.showsHorizontalScrollIndicator = NO;
+    }
+    return _MPphotoScrollView;
+}
 - (UIImageView *)MPphotoImageView{
     if (!_MPphotoImageView) {
         _MPphotoImageView = [[UIImageView alloc] init];
         _MPphotoImageView.backgroundColor = [UIColor whiteColor];
         _MPphotoImageView.contentMode = UIViewContentModeScaleAspectFit;
         _MPphotoImageView.autoresizesSubviews = YES;
-//        _MPphotoImageView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     }
     return _MPphotoImageView;
 }
@@ -226,5 +359,11 @@
         _MPphotosArray = [[NSMutableArray alloc] init];
     }
     return _MPphotosArray;
+}
+- (NSMutableArray *)MPphotoImagesArray{
+    if (!_MPphotoImagesArray) {
+        _MPphotoImagesArray = [[NSMutableArray alloc] init];
+    }
+    return _MPphotoImagesArray;
 }
 @end
