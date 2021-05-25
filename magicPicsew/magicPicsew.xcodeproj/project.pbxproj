@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		45ED2FAD70E58187AF31B5F1 /* Pods_magicPicsew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FA54DEC02F5AE762CE3685 /* Pods_magicPicsew.framework */; };
+		9D0BCF00265CE43D00A664B4 /* MPPermissionsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BCEFF265CE43D00A664B4 /* MPPermissionsManager.m */; };
+		9D0BCF02265CE48B00A664B4 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0BCF01265CE48B00A664B4 /* AppTrackingTransparency.framework */; };
 		9D5AFEA7254A51F0000EC16D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AFEA6254A51F0000EC16D /* AppDelegate.m */; };
 		9D5AFEB2254A51F0000EC16D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5AFEB1254A51F0000EC16D /* Assets.xcassets */; };
 		9D5AFEB5254A51F0000EC16D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5AFEB3254A51F0000EC16D /* LaunchScreen.storyboard */; };
@@ -37,6 +39,9 @@
 /* Begin PBXFileReference section */
 		7DC3132A8524173470A4AB36 /* Pods-magicPicsew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magicPicsew.release.xcconfig"; path = "Target Support Files/Pods-magicPicsew/Pods-magicPicsew.release.xcconfig"; sourceTree = "<group>"; };
 		96FD22351DFBB41585E1DFF3 /* Pods-magicPicsew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magicPicsew.debug.xcconfig"; path = "Target Support Files/Pods-magicPicsew/Pods-magicPicsew.debug.xcconfig"; sourceTree = "<group>"; };
+		9D0BCEFE265CE43D00A664B4 /* MPPermissionsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPPermissionsManager.h; sourceTree = "<group>"; };
+		9D0BCEFF265CE43D00A664B4 /* MPPermissionsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPPermissionsManager.m; sourceTree = "<group>"; };
+		9D0BCF01265CE48B00A664B4 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		9D5AFEA2254A51F0000EC16D /* magicPicsew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = magicPicsew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5AFEA5254A51F0000EC16D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9D5AFEA6254A51F0000EC16D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,6 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45ED2FAD70E58187AF31B5F1 /* Pods_magicPicsew.framework in Frameworks */,
+				9D0BCF02265CE48B00A664B4 /* AppTrackingTransparency.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +110,7 @@
 		2119BBC8103D1CF697721EB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D0BCF01265CE48B00A664B4 /* AppTrackingTransparency.framework */,
 				B5FA54DEC02F5AE762CE3685 /* Pods_magicPicsew.framework */,
 			);
 			name = Frameworks;
@@ -163,6 +170,8 @@
 				9D6956DC259C697700E23364 /* MPTool.m */,
 				9D65AF5325B29BEF008E5654 /* UIImage+UIImageExtras.h */,
 				9D65AF5425B29BEF008E5654 /* UIImage+UIImageExtras.m */,
+				9D0BCEFE265CE43D00A664B4 /* MPPermissionsManager.h */,
+				9D0BCEFF265CE43D00A664B4 /* MPPermissionsManager.m */,
 			);
 			path = MPCommon;
 			sourceTree = "<group>";
@@ -425,6 +434,7 @@
 				9D61B6CB258E118700736DF1 /* MPMainPhotoModel.m in Sources */,
 				9D5D37AA254BAC65008F0839 /* NSDictionary+log.m in Sources */,
 				9DA31845258AF27E002B4079 /* UIImage+UIImageExt.m in Sources */,
+				9D0BCF00265CE43D00A664B4 /* MPPermissionsManager.m in Sources */,
 				9D5AFEA7254A51F0000EC16D /* AppDelegate.m in Sources */,
 				9D61B6C2258DEFCA00736DF1 /* MPMainPhotoCollectionViewCell.m in Sources */,
 				9D5AFEB8254A51F0000EC16D /* main.m in Sources */,

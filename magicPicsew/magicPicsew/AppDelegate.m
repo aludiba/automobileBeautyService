@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MPPermissionsManager.h"
 #import "MPMainViewController.h"
 
 @interface AppDelegate ()
@@ -19,11 +20,29 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [self MProotController];
     [self.window makeKeyAndVisible];
+    
+    NSString *MPidfa = [self MPrequestTrackingIDFA];
+    NSLog(@"idfa:%@",MPidfa);
     return YES;
 }
 - (UIViewController *)MProotController{
     MPBaseViewController *MPHomeVC = [[MPMainViewController alloc] init];
     UINavigationController *MPMainVC = [[UINavigationController alloc] initWithRootViewController:MPHomeVC];
     return MPMainVC;
+}
+- (NSString *)MPrequestTrackingIDFA{
+    __block NSString *MPidfa = @"";
+    [MPPermissionsManager MPtraceTransparencyPermissionManagement:^(BOOL MPisTraceTransparency, ATTrackingManagerAuthorizationStatus MPstatus, ASIdentifierManager * _Nonnull MPmanager) {
+        if (MPisTraceTransparency) {
+            if (MPstatus == ATTrackingManagerAuthorizationStatusAuthorized) {
+                MPidfa = [[MPmanager advertisingIdentifier] UUIDString];
+            }
+        }else{
+            if ([MPmanager isAdvertisingTrackingEnabled]) {
+                MPidfa = [[MPmanager advertisingIdentifier] UUIDString];
+            }
+        }
+    }];
+    return MPidfa;
 }
 @end

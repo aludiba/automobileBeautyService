@@ -10,7 +10,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MPTool : NSObject
+
 + (CGFloat)MPcurrentIpBottombarheight;
+
+//跳转应用设置提示
++ (void)MPApplicationSettingsAlertTitle:(NSString *)MPtitle message:(NSString *)MPmessage;
+
 @end
 
 NS_ASSUME_NONNULL_END
