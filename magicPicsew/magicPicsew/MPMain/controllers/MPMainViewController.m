@@ -219,7 +219,7 @@
     }
     self.MPCurrentIndex = 0;
     [self.MPremindBtn setFrame:CGRectMake(45, 0, MPWIDTH - 90, 45)];
-    [self.MPremindBtn setTitle:@"调整" forState:UIControlStateNormal];
+//    [self.MPremindBtn setTitle:@"调整" forState:UIControlStateNormal];
     self.MPremindBtn1.hidden = YES;
     [self.MPmainPicCollectionView reloadData];
 }
@@ -241,6 +241,7 @@
     }else{
         MPPhotoOperationVC.MPCurrentType = MPPhotoOperationTypeTransverseSplicing;
     }
+    MPPhotoOperationVC.title = @"预览";
     [self.navigationController pushViewController:MPPhotoOperationVC animated:NO];
 }
 #pragma mark - UICollectionView代理方法
@@ -272,7 +273,7 @@
         self.MPCurrentIndex--;
         model.index = 0;
     }
-    if (self.MPCurrentIndex > 0) {
+    if (self.MPCurrentIndex > 1) {
         self.MPremindView.hidden = NO;
         if (self.MPCurrentIndex > 1) {
             [self.MPremindBtn setFrame:CGRectMake(90, 0, 90, 45)];
@@ -281,9 +282,9 @@
             [self.MPremindBtn1 setFrame:CGRectMake(225, 0, 90, 45)];
             [self.MPremindBtn1 setTitle:@"横向拼接" forState:UIControlStateNormal];
         }else{
-            [self.MPremindBtn setFrame:CGRectMake(45, 0, MPWIDTH - 90, 45)];
-            [self.MPremindBtn setTitle:@"调整" forState:UIControlStateNormal];
-            self.MPremindBtn1.hidden = YES;
+//            [self.MPremindBtn setFrame:CGRectMake(45, 0, MPWIDTH - 90, 45)];
+//            [self.MPremindBtn setTitle:@"调整" forState:UIControlStateNormal];
+//            self.MPremindBtn1.hidden = YES;
         }
     }else{
         self.MPremindView.hidden = YES;

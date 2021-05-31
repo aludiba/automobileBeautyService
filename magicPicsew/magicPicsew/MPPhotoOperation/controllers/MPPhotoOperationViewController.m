@@ -27,11 +27,11 @@
 
 @property (nonatomic, strong) UIView *MPline;//底部操作栏分割线
 
-@property (nonatomic, strong) UIScrollView *MPOperationScrollView;//底部操作栏
-
-@property (nonatomic, strong) MPTailoringToolBarView *MPTailoringView;//裁剪操作栏
-
-@property (nonatomic, strong) MPOtherToolBarView *MPOtherToolView;//工具操作栏
+//@property (nonatomic, strong) UIScrollView *MPOperationScrollView;//底部操作栏
+//
+//@property (nonatomic, strong) MPTailoringToolBarView *MPTailoringView;//裁剪操作栏
+//
+//@property (nonatomic, strong) MPOtherToolBarView *MPOtherToolView;//工具操作栏
 
 @property (nonatomic, strong) UIScrollView *MPphotoScrollView;//滚动框
 
@@ -67,101 +67,101 @@
     UIBarButtonItem *MPrightItem = [[UIBarButtonItem alloc]initWithCustomView:self.MPnavRightBtn];
     self.navigationItem.rightBarButtonItem = MPrightItem;
     
-    self.MPnavTitleView = [[UIView alloc] init];
-    self.MPnavTitleView.backgroundColor = [UIColor clearColor];
-    [self.navigationController.navigationBar addSubview:self.MPnavTitleView];
-    [self.MPnavTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.navigationController.navigationBar);
-        make.top.equalTo(self.navigationController.navigationBar);
-        make.bottom.equalTo(self.navigationController.navigationBar);
-        make.width.mas_equalTo(94);
-    }];
+//    self.MPnavTitleView = [[UIView alloc] init];
+//    self.MPnavTitleView.backgroundColor = [UIColor clearColor];
+//    [self.navigationController.navigationBar addSubview:self.MPnavTitleView];
+//    [self.MPnavTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.centerX.equalTo(self.navigationController.navigationBar);
+//        make.top.equalTo(self.navigationController.navigationBar);
+//        make.bottom.equalTo(self.navigationController.navigationBar);
+//        make.width.mas_equalTo(94);
+//    }];
     
-    self.MPtailoringBtn = [[UIButton alloc] init];
-    self.MPtailoringBtn.tag = 99;
-    [self.MPtailoringBtn addTarget:self action:@selector(MPtitleOperationAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.MPtailoringBtn setTitle:@"裁剪" forState:UIControlStateNormal];
-    self.MPtailoringBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
-    [self.MPtailoringBtn.titleLabel setFont:[UIFont boldSystemFontOfSize:18.0f]];
-    [self.MPtailoringBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.MPtailoringBtn sizeToFit];
-    [self.MPnavTitleView addSubview:self.MPtailoringBtn];
-    [self.MPtailoringBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.MPnavTitleView);
-        make.top.equalTo(self.MPnavTitleView);
-        make.bottom.equalTo(self.MPnavTitleView);
-        make.width.mas_equalTo(40);
-    }];
-    
-    self.MPtoolBtn = [[UIButton alloc] init];
-    self.MPtoolBtn.tag = 100;
-    [self.MPtoolBtn addTarget:self action:@selector(MPtitleOperationAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.MPtoolBtn setTitle:@"工具" forState:UIControlStateNormal];
-    self.MPtoolBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
-    [self.MPtoolBtn.titleLabel setFont:[UIFont boldSystemFontOfSize:18.0f]];
-    [self.MPtoolBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-    [self.MPtoolBtn sizeToFit];
-    [self.MPnavTitleView addSubview:self.MPtoolBtn];
-    [self.MPtoolBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(self.MPnavTitleView);
-        make.top.equalTo(self.MPnavTitleView);
-        make.bottom.equalTo(self.MPnavTitleView);
-        make.width.mas_equalTo(40);
-    }];
-    
-    self.MP_isTailoring = YES;
-    self.MP_isTool = NO;
+//    self.MPtailoringBtn = [[UIButton alloc] init];
+//    self.MPtailoringBtn.tag = 99;
+//    [self.MPtailoringBtn addTarget:self action:@selector(MPtitleOperationAction:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.MPtailoringBtn setTitle:@"裁剪" forState:UIControlStateNormal];
+//    self.MPtailoringBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
+//    [self.MPtailoringBtn.titleLabel setFont:[UIFont boldSystemFontOfSize:18.0f]];
+//    [self.MPtailoringBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    [self.MPtailoringBtn sizeToFit];
+//    [self.MPnavTitleView addSubview:self.MPtailoringBtn];
+//    [self.MPtailoringBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(self.MPnavTitleView);
+//        make.top.equalTo(self.MPnavTitleView);
+//        make.bottom.equalTo(self.MPnavTitleView);
+//        make.width.mas_equalTo(40);
+//    }];
+//
+//    self.MPtoolBtn = [[UIButton alloc] init];
+//    self.MPtoolBtn.tag = 100;
+//    [self.MPtoolBtn addTarget:self action:@selector(MPtitleOperationAction:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.MPtoolBtn setTitle:@"工具" forState:UIControlStateNormal];
+//    self.MPtoolBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
+//    [self.MPtoolBtn.titleLabel setFont:[UIFont boldSystemFontOfSize:18.0f]];
+//    [self.MPtoolBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+//    [self.MPtoolBtn sizeToFit];
+//    [self.MPnavTitleView addSubview:self.MPtoolBtn];
+//    [self.MPtoolBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.right.equalTo(self.MPnavTitleView);
+//        make.top.equalTo(self.MPnavTitleView);
+//        make.bottom.equalTo(self.MPnavTitleView);
+//        make.width.mas_equalTo(40);
+//    }];
+//
+//    self.MP_isTailoring = YES;
+//    self.MP_isTool = NO;
 }
 - (void)MPshareAction{
     
 }
-- (void)MPtitleOperationAction:(UIButton *)sender{
-    if (sender.tag == 99) {
-        self.MP_isTailoring = YES;
-        self.MP_isTool = NO;
-        [self.MPtailoringBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [self.MPtoolBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-        [self.MPOperationScrollView setContentOffset:CGPointMake(0, 0)];
-    }else{
-        self.MP_isTailoring = NO;
-        self.MP_isTool = YES;
-        [self.MPtailoringBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-        [self.MPtoolBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [self.MPOperationScrollView setContentOffset:CGPointMake(MPWIDTH, 0)];
-    }
-}
+//- (void)MPtitleOperationAction:(UIButton *)sender{
+//    if (sender.tag == 99) {
+//        self.MP_isTailoring = YES;
+//        self.MP_isTool = NO;
+//        [self.MPtailoringBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//        [self.MPtoolBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+//        [self.MPOperationScrollView setContentOffset:CGPointMake(0, 0)];
+//    }else{
+//        self.MP_isTailoring = NO;
+//        self.MP_isTool = YES;
+//        [self.MPtailoringBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+//        [self.MPtoolBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//        [self.MPOperationScrollView setContentOffset:CGPointMake(MPWIDTH, 0)];
+//    }
+//}
 - (void)MPsetContentView{
     [self.view addSubview:self.MPline];
-    [self.view addSubview:self.MPOperationScrollView];
-    [self.MPOperationScrollView addSubview:self.MPTailoringView];
-    [self.MPOperationScrollView addSubview:self.MPOtherToolView];
+//    [self.view addSubview:self.MPOperationScrollView];
+//    [self.MPOperationScrollView addSubview:self.MPTailoringView];
+//    [self.MPOperationScrollView addSubview:self.MPOtherToolView];
     [self.view addSubview:self.MPphotoScrollView];
     [self.MPphotoScrollView addSubview:self.MPphotoImageView];
 }
 - (void)MPsetContentLayOutView{
-    [self.MPTailoringView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.MPOperationScrollView);
-        make.width.equalTo(self.MPOperationScrollView);
-        make.top.equalTo(self.MPOperationScrollView);
-        make.height.equalTo(self.MPOperationScrollView);
-    }];
-    self.MPTailoringView.MPcurrentType = self.MPCurrentType;
-    [self.MPOtherToolView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.MPTailoringView.mas_right);
-        make.top.and.bottom.equalTo(self.MPTailoringView);
-        make.width.equalTo(self.MPTailoringView);
-    }];
-    [self.MPOperationScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.and.right.equalTo(self.view);
-        make.bottom.equalTo(self.view);
-        make.height.mas_equalTo(60 + [MPTool MPcurrentIpBottombarheight]);
-        make.right.equalTo(self.MPOtherToolView.mas_right);
-    }];
-    [self.MPline mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.and.right.equalTo(self.view);
-        make.bottom.equalTo(self.MPOperationScrollView.mas_top).offset(-6);
-        make.height.mas_equalTo(1);
-    }];
+//    [self.MPTailoringView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(self.MPOperationScrollView);
+//        make.width.equalTo(self.MPOperationScrollView);
+//        make.top.equalTo(self.MPOperationScrollView);
+//        make.height.equalTo(self.MPOperationScrollView);
+//    }];
+//    self.MPTailoringView.MPcurrentType = self.MPCurrentType;
+//    [self.MPOtherToolView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(self.MPTailoringView.mas_right);
+//        make.top.and.bottom.equalTo(self.MPTailoringView);
+//        make.width.equalTo(self.MPTailoringView);
+//    }];
+//    [self.MPOperationScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.and.right.equalTo(self.view);
+//        make.bottom.equalTo(self.view);
+//        make.height.mas_equalTo(60 + [MPTool MPcurrentIpBottombarheight]);
+//        make.right.equalTo(self.MPOtherToolView.mas_right);
+//    }];
+//    [self.MPline mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.and.right.equalTo(self.view);
+//        make.bottom.equalTo(self.MPOperationScrollView.mas_top).offset(-6);
+//        make.height.mas_equalTo(1);
+//    }];
     if (self.MPphotosArray.count > 1) {
         for (int i = 0; i < self.MPphotosArray.count; i
              ++) {
@@ -313,28 +313,28 @@
     }
     return _MPline;
 }
-- (UIScrollView *)MPOperationScrollView{
-    if (!_MPOperationScrollView) {
-        _MPOperationScrollView = [[UIScrollView alloc] init];
-        _MPOperationScrollView.delegate = self;
-        _MPOperationScrollView.backgroundColor = [UIColor whiteColor];
-        _MPOperationScrollView.showsHorizontalScrollIndicator = NO;
-        _MPOperationScrollView.scrollEnabled = NO;
-    }
-    return _MPOperationScrollView;
-}
-- (MPTailoringToolBarView *)MPTailoringView{
-    if (!_MPTailoringView) {
-        _MPTailoringView = [[MPTailoringToolBarView alloc] init];
-    }
-    return _MPTailoringView;
-}
-- (MPOtherToolBarView *)MPOtherToolView{
-    if (!_MPOtherToolView) {
-        _MPOtherToolView = [[MPOtherToolBarView alloc] init];
-    }
-    return _MPOtherToolView;
-}
+//- (UIScrollView *)MPOperationScrollView{
+//    if (!_MPOperationScrollView) {
+//        _MPOperationScrollView = [[UIScrollView alloc] init];
+//        _MPOperationScrollView.delegate = self;
+//        _MPOperationScrollView.backgroundColor = [UIColor whiteColor];
+//        _MPOperationScrollView.showsHorizontalScrollIndicator = NO;
+//        _MPOperationScrollView.scrollEnabled = NO;
+//    }
+//    return _MPOperationScrollView;
+//}
+//- (MPTailoringToolBarView *)MPTailoringView{
+//    if (!_MPTailoringView) {
+//        _MPTailoringView = [[MPTailoringToolBarView alloc] init];
+//    }
+//    return _MPTailoringView;
+//}
+//- (MPOtherToolBarView *)MPOtherToolView{
+//    if (!_MPOtherToolView) {
+//        _MPOtherToolView = [[MPOtherToolBarView alloc] init];
+//    }
+//    return _MPOtherToolView;
+//}
 - (UIScrollView *)MPphotoScrollView{
     if (!_MPphotoScrollView) {
         _MPphotoScrollView = [[UIScrollView alloc] init];
