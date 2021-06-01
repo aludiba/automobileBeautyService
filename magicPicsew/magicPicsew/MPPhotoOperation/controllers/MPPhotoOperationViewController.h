@@ -8,11 +8,6 @@
 #import "MPBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
-typedef NS_ENUM (NSUInteger, MPPhotoOperationType){
-    MPPhotoOperationTypeAdjust,//调整
-    MPPhotoOperationTypeVerticalStitching,//竖向拼接
-    MPPhotoOperationTypeTransverseSplicing//横向拼接
-};
 @interface MPPhotoOperationViewController : MPBaseViewController
 
 @property (nonatomic, strong) NSMutableArray *MPphotosArray;//存储照片的数组

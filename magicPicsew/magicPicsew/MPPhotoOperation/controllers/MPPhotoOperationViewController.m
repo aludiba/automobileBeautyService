@@ -6,6 +6,7 @@
 //
 
 #import "MPPhotoOperationViewController.h"
+#import "MPPreviewViewController.h"
 #import "MPTailoringToolBarView.h"
 #import "MPOtherToolBarView.h"
 #import "MPMainPhotoModel.h"
@@ -38,6 +39,8 @@
 @property (nonatomic, strong) UIImageView *MPphotoImageView;//照片框
 
 @property (nonatomic, strong) NSMutableArray *MPphotoImagesArray;
+
+@property (nonatomic, strong) NSMutableArray *MPcompositeImagesArray;
 
 @property (nonatomic, strong) UIImage *MPstitchingImage;
 
@@ -118,17 +121,40 @@
 - (void)MPshareAction{
     UIAlertController *MPalertVC = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertAction *MPpreviewAction = [UIAlertAction actionWithTitle:@"预览" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        
+        MPPreviewViewController *MPPreviewVC = [[MPPreviewViewController alloc] init];
+        NSMutableArray *MPtempArray = [[NSMutableArray alloc] init];
+        for (int i = (int)self.MPcompositeImagesArray.count - 1; i > -1; i--) {
+            UIImage *MPresult = self.MPcompositeImagesArray[i];
+            [MPtempArray addObject:MPresult];
+        }
+        UIImage *MPcompositeImage = [self MPdrawImages:MPtempArray PhotoOperationType:self.MPCurrentType];
+        MPPreviewVC.MPcompositeImage = MPcompositeImage;
+        MPPreviewVC.MPCurrentType = self.MPCurrentType;
+        [self.navigationController pushViewController:MPPreviewVC animated:NO];
     }];
     UIAlertAction *MPshareAction = [UIAlertAction actionWithTitle:@"分享给..." style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        
+        NSMutableArray *MPtempArray = [[NSMutableArray alloc] init];
+        for (int i = (int)self.MPcompositeImagesArray.count - 1; i > -1; i--) {
+            UIImage *MPresult = self.MPcompositeImagesArray[i];
+            [MPtempArray addObject:MPresult];
+        }
+        UIImage *MPcompositeImage = [self MPdrawImages:MPtempArray PhotoOperationType:self.MPCurrentType];
     }];
     UIAlertAction *MPexportToPhotoAlbumAction = [UIAlertAction actionWithTitle:@"导出到相册" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSMutableArray *MPtempArray = [[NSMutableArray alloc] init];
+        for (int i = (int)self.MPcompositeImagesArray.count - 1; i > -1; i--) {
+            UIImage *MPresult = self.MPcompositeImagesArray[i];
+            [MPtempArray addObject:MPresult];
+        }
+        UIImage *MPcompositeImage = [self MPdrawImages:MPtempArray PhotoOperationType:self.MPCurrentType];
+    }];
+    UIAlertAction *MPcancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
     }];
     [MPalertVC addAction:MPpreviewAction];
     [MPalertVC addAction:MPshareAction];
     [MPalertVC addAction:MPexportToPhotoAlbumAction];
+    [MPalertVC addAction:MPcancelAction];
     [self presentViewController:MPalertVC animated:YES completion:^{
             
     }];
@@ -180,6 +206,8 @@
 //        make.bottom.equalTo(self.MPOperationScrollView.mas_top).offset(-6);
 //        make.height.mas_equalTo(1);
 //    }];
+    [self.MPphotoImagesArray removeAllObjects];
+    [self.MPcompositeImagesArray removeAllObjects];
     if (self.MPphotosArray.count > 1) {
         for (int i = 0; i < self.MPphotosArray.count; i
              ++) {
@@ -187,9 +215,15 @@
             PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
             CGSize size = CGSizeZero;
             [[PHImageManager defaultManager] requestImageForAsset:photoModel.asset targetSize:size contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+                NSString *MPisDegradedString = [info objectForKey:@"PHImageResultIsDegradedKey"];
+                Boolean MPisDegraded = [MPisDegradedString boolValue];
                 CGSize size = result.size;
                 result = [result imageByScalingToSize:CGSizeMake([UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.width * (size.height / size.width))];
-                [self.MPphotoImagesArray addObject:result];
+                if (MPisDegraded) {
+                    [self.MPphotoImagesArray addObject:result];
+                }else{
+                    [self.MPcompositeImagesArray addObject:result];
+                }
             }];
         }
         if (self.MPCurrentType == MPPhotoOperationTypeVerticalStitching) {
@@ -321,13 +355,47 @@
         }];
     }
 }
-- (UIImage *)MPnomalSnapshotImage:(UIView *)MPview{
-    [[UIApplication sharedApplication].keyWindow addSubview:MPview];
-    UIGraphicsBeginImageContextWithOptions(MPview.frame.size, NO, [UIScreen mainScreen].scale);
-    [MPview.layer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage *snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return snapshotImage;
+//绘制多张图片为一张
+- (UIImage *)MPdrawImages:(NSArray *)MPimageArray PhotoOperationType:(MPPhotoOperationType)MPtype{
+    CGFloat MPwidth = 0;
+    CGFloat MPheight = 0;
+    if (MPtype == MPPhotoOperationTypeVerticalStitching) {
+        for (UIImage *MPimage in MPimageArray) {
+            MPwidth = (MPimage.size.width > MPwidth)?MPimage.size.width:MPwidth;
+            MPheight += MPimage.size.height;
+        }
+        UIGraphicsBeginImageContext(CGSizeMake(MPwidth, MPheight));
+        CGFloat MPimageY = 0;
+        for (UIImage *MPimage in MPimageArray) {
+            //开始绘画图片
+            [MPimage drawAtPoint:CGPointMake(0, MPimageY)];
+            MPimageY += MPimage.size.height;
+        }
+        //获取已经绘制好的图片
+        UIImage *MPdrawImage = UIGraphicsGetImageFromCurrentImageContext();
+        //结束绘制图片
+        UIGraphicsEndImageContext();
+        //返回已经绘制的图片
+        return MPdrawImage;
+    }else{
+        for (UIImage *MPimage in MPimageArray) {
+            MPheight = (MPimage.size.height > MPheight)?MPimage.size.height:MPheight;
+            MPwidth += MPimage.size.width;
+        }
+        UIGraphicsBeginImageContext(CGSizeMake(MPwidth, MPheight));
+        CGFloat MPimageX = 0;
+        for (UIImage *MPimage in MPimageArray) {
+            //开始绘画图片
+            [MPimage drawAtPoint:CGPointMake(MPimageX, 0)];
+            MPimageX += MPimage.size.width;
+        }
+        //获取已经绘制好的图片
+        UIImage *MPdrawImage = UIGraphicsGetImageFromCurrentImageContext();
+        //结束绘制图片
+        UIGraphicsEndImageContext();
+        //返回已经绘制的图片
+        return MPdrawImage;
+    }
 }
 #pragma mark - UIScrollView代理方法
 
@@ -392,5 +460,11 @@
         _MPphotoImagesArray = [[NSMutableArray alloc] init];
     }
     return _MPphotoImagesArray;
+}
+- (NSMutableArray *)MPcompositeImagesArray{
+    if (!_MPcompositeImagesArray) {
+        _MPcompositeImagesArray = [[NSMutableArray alloc] init];
+    }
+    return _MPcompositeImagesArray;
 }
 @end

@@ -12,6 +12,13 @@
 #import <YYModel/YYModel.h>
 #import "MPBaseViewController.h"
 #import "MPTool.h"
+
+typedef NS_ENUM (NSUInteger, MPPhotoOperationType){
+    MPPhotoOperationTypeAdjust,//调整
+    MPPhotoOperationTypeVerticalStitching,//竖向拼接
+    MPPhotoOperationTypeTransverseSplicing//横向拼接
+};
+
 //多语言调用
 #define NSLocalizedString(key, comment) [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
 
@@ -24,6 +31,7 @@
 #define MPKeyWindow [UIApplication sharedApplication].keyWindow
 #define MPWIDTH [UIScreen mainScreen].bounds.size.width
 #define MPHEIGHT [UIScreen mainScreen].bounds.size.height
+#define MP_NAVIGATION_BAR_H  (is_iPhoneXSeries ? 88 : 64)
 
 //判断是否是iPhoneX所有带刘海屏系列的手机
 #define is_iPhoneXSeries  ({\

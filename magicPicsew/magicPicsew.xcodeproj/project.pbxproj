@@ -32,6 +32,7 @@
 		9D6956D5259C56DD00E23364 /* MPTailoringToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6956D4259C56DD00E23364 /* MPTailoringToolBarView.m */; };
 		9D6956D9259C570400E23364 /* MPOtherToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6956D8259C570400E23364 /* MPOtherToolBarView.m */; };
 		9D6956DD259C697700E23364 /* MPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6956DC259C697700E23364 /* MPTool.m */; };
+		9D8E7480266619660056E305 /* MPPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8E747F266619660056E305 /* MPPreviewViewController.m */; };
 		9D8EFD2E257F19D600A8074C /* MPRecentProjectsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8EFD2D257F19D600A8074C /* MPRecentProjectsModel.m */; };
 		9DA31845258AF27E002B4079 /* UIImage+UIImageExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA31844258AF27E002B4079 /* UIImage+UIImageExt.m */; };
 /* End PBXBuildFile section */
@@ -87,6 +88,8 @@
 		9D6956D8259C570400E23364 /* MPOtherToolBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPOtherToolBarView.m; sourceTree = "<group>"; };
 		9D6956DB259C697700E23364 /* MPTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPTool.h; sourceTree = "<group>"; };
 		9D6956DC259C697700E23364 /* MPTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPTool.m; sourceTree = "<group>"; };
+		9D8E747E266619660056E305 /* MPPreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPPreviewViewController.h; sourceTree = "<group>"; };
+		9D8E747F266619660056E305 /* MPPreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPPreviewViewController.m; sourceTree = "<group>"; };
 		9D8EFD2C257F19D600A8074C /* MPRecentProjectsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPRecentProjectsModel.h; sourceTree = "<group>"; };
 		9D8EFD2D257F19D600A8074C /* MPRecentProjectsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPRecentProjectsModel.m; sourceTree = "<group>"; };
 		9DA31843258AF27E002B4079 /* UIImage+UIImageExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+UIImageExt.h"; sourceTree = "<group>"; };
@@ -273,6 +276,8 @@
 			children = (
 				9D6956CA259C0DCF00E23364 /* MPPhotoOperationViewController.h */,
 				9D6956CB259C0DCF00E23364 /* MPPhotoOperationViewController.m */,
+				9D8E747E266619660056E305 /* MPPreviewViewController.h */,
+				9D8E747F266619660056E305 /* MPPreviewViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -418,6 +423,7 @@
 			files = (
 				9D62D9B72575D160008BD38D /* MPRecentProjectsView.m in Sources */,
 				9D5D37C1254BB36B008F0839 /* MPBaseViewController.m in Sources */,
+				9D8E7480266619660056E305 /* MPPreviewViewController.m in Sources */,
 				9D6956DD259C697700E23364 /* MPTool.m in Sources */,
 				9D62D9BB2575DA2A008BD38D /* MPRecentProjectsTableViewCell.m in Sources */,
 				9D8EFD2E257F19D600A8074C /* MPRecentProjectsModel.m in Sources */,
