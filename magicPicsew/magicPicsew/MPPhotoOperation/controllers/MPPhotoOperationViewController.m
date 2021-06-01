@@ -38,6 +38,9 @@
 @property (nonatomic, strong) UIImageView *MPphotoImageView;//照片框
 
 @property (nonatomic, strong) NSMutableArray *MPphotoImagesArray;
+
+@property (nonatomic, strong) UIImage *MPstitchingImage;
+
 @end
 
 @implementation MPPhotoOperationViewController
@@ -113,7 +116,22 @@
 //    self.MP_isTool = NO;
 }
 - (void)MPshareAction{
-    
+    UIAlertController *MPalertVC = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction *MPpreviewAction = [UIAlertAction actionWithTitle:@"预览" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    UIAlertAction *MPshareAction = [UIAlertAction actionWithTitle:@"分享给..." style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    UIAlertAction *MPexportToPhotoAlbumAction = [UIAlertAction actionWithTitle:@"导出到相册" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    [MPalertVC addAction:MPpreviewAction];
+    [MPalertVC addAction:MPshareAction];
+    [MPalertVC addAction:MPexportToPhotoAlbumAction];
+    [self presentViewController:MPalertVC animated:YES completion:^{
+            
+    }];
 }
 //- (void)MPtitleOperationAction:(UIButton *)sender{
 //    if (sender.tag == 99) {
@@ -220,10 +238,10 @@
                 navHeight = 64.0f;
             }
             [self.MPphotoScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.top.equalTo(self.mas_topLayoutGuideBottom);
-                make.bottom.equalTo(lastImgView.mas_bottom);
+                make.left.equalTo(self.view);
+                make.top.and.bottom.equalTo(self.view);
                 make.width.mas_equalTo(maxWidth);
-                make.height.mas_equalTo(MPHEIGHT - 67 - [MPTool MPcurrentIpBottombarheight] - navHeight);
+                make.bottom.equalTo(lastImgView.mas_bottom);
             }];
         }else{
             NSMutableArray *imageViews = [[NSMutableArray alloc] init];
@@ -273,7 +291,7 @@
             [self.MPphotoScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.top.equalTo(self.mas_topLayoutGuideBottom);
                 make.left.and.right.equalTo(self.view);
-                make.height.mas_equalTo(MPHEIGHT - 67 - [MPTool MPcurrentIpBottombarheight] - navHeight);
+                make.height.mas_equalTo(maxHeight);
                 make.right.equalTo(lastImgView.mas_right);
             }];
         }
@@ -302,6 +320,14 @@
             }];
         }];
     }
+}
+- (UIImage *)MPnomalSnapshotImage:(UIView *)MPview{
+    [[UIApplication sharedApplication].keyWindow addSubview:MPview];
+    UIGraphicsBeginImageContextWithOptions(MPview.frame.size, NO, [UIScreen mainScreen].scale);
+    [MPview.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return snapshotImage;
 }
 #pragma mark - UIScrollView代理方法
 
@@ -342,6 +368,7 @@
         _MPphotoScrollView.backgroundColor = [UIColor whiteColor];
         _MPphotoScrollView.showsVerticalScrollIndicator = NO;
         _MPphotoScrollView.showsHorizontalScrollIndicator = NO;
+        _MPphotoScrollView.backgroundColor = [UIColor purpleColor];
     }
     return _MPphotoScrollView;
 }

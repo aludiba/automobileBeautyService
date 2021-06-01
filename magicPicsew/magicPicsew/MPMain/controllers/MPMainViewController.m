@@ -235,13 +235,15 @@
     if (sender.tag == 99) {
         if (self.MPCurrentIndex > 1) {
             MPPhotoOperationVC.MPCurrentType = MPPhotoOperationTypeVerticalStitching;
+            MPPhotoOperationVC.title = @"竖向拼接";
         }else{
             MPPhotoOperationVC.MPCurrentType = MPPhotoOperationTypeAdjust;
+            MPPhotoOperationVC.title = @"调整";
         }
     }else{
         MPPhotoOperationVC.MPCurrentType = MPPhotoOperationTypeTransverseSplicing;
+        MPPhotoOperationVC.title = @"横向拼接";
     }
-    MPPhotoOperationVC.title = @"预览";
     [self.navigationController pushViewController:MPPhotoOperationVC animated:NO];
 }
 #pragma mark - UICollectionView代理方法
