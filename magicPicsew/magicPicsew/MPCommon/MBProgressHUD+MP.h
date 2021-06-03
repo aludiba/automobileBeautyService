@@ -2,26 +2,26 @@
 //  MBProgressHUD+NJ.h
 //
 //  Created by 李南江 on 14-5-5.
-//  Copyright (c) 2014年 itcast. LBl rights reserved.
+//  Copyright (c) 2014年 itcast. MPl rights reserved.
 //
 
 #import "MBProgressHUD.h"
 
 @interface MBProgressHUD (MP)
-+ (void)LBshowSuccess:(NSString *)success toView:(UIView *)view;
-+ (void)LBshowError:(NSString *)error toView:(UIView *)view;
-+ (void)LBshowReminderText:(NSString *)reminderText toView:(UIView *)view;
++ (void)MPshowSuccess:(NSString *)success toView:(UIView *)view;
++ (void)MPshowError:(NSString *)error toView:(UIView *)view;
++ (void)MPshowReminderText:(NSString *)reminderText toView:(UIView *)view;
 
-+ (MBProgressHUD *)LBshowMessage:(NSString *)message toView:(UIView *)view;
++ (MBProgressHUD *)MPshowMessage:(NSString *)message toView:(UIView *)view;
 
 
-+ (void)LBshowSuccess:(NSString *)success;
-+ (void)LBshowError:(NSString *)error;
-+ (void)LBshowReminderText:(NSString *)reminderText;
++ (void)MPshowSuccess:(NSString *)success;
++ (void)MPshowError:(NSString *)error;
++ (void)MPshowReminderText:(NSString *)reminderText;
 
-+ (MBProgressHUD *)LBshowMessage:(NSString *)message;
++ (MBProgressHUD *)MPshowMessage:(NSString *)message;
 
-+ (void)LBhideHUDForView:(UIView *)view;
-+ (void)LBhideHUD;
++ (void)MPhideHUDForView:(UIView *)view;
++ (void)MPhideHUD;
 
 @end

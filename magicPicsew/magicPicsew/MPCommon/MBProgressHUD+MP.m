@@ -9,7 +9,7 @@
 
 @implementation MBProgressHUD (MP)
 #pragma mark 显示信息
-+ (void)LBshow:(NSString *)text icon:(NSString *)icon view:(UIView *)view
++ (void)MPshow:(NSString *)text icon:(NSString *)icon view:(UIView *)view
 {
     
     //[[UIApplication sharedApplication].windows lastObject]
@@ -35,16 +35,16 @@
 }
 
 #pragma mark 显示错误信息
-+ (void)LBshowError:(NSString *)error toView:(UIView *)view{
-    [self LBshow:error icon:@"error.png" view:view];
++ (void)MPshowError:(NSString *)error toView:(UIView *)view{
+    [self MPshow:error icon:@"error.png" view:view];
 }
 
-+ (void)LBshowSuccess:(NSString *)success toView:(UIView *)view
++ (void)MPshowSuccess:(NSString *)success toView:(UIView *)view
 {
-    [self LBshow:success icon:@"success.png" view:view];
+    [self MPshow:success icon:@"success.png" view:view];
 }
 
-+ (void)LBshowReminderText:(NSString *)reminderText toView:(UIView *)view {
++ (void)MPshowReminderText:(NSString *)reminderText toView:(UIView *)view {
     if (view == nil) view =[[UIApplication sharedApplication].windows lastObject];
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
@@ -64,7 +64,7 @@
 }
 
 #pragma mark 显示一些信息
-+ (MBProgressHUD *)LBshowMessage:(NSString *)message toView:(UIView *)view {
++ (MBProgressHUD *)MPshowMessage:(NSString *)message toView:(UIView *)view {
     if (view == nil) view = [[UIApplication sharedApplication].windows lastObject];
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
@@ -78,32 +78,32 @@
     return hud;
 }
 
-+ (void)LBshowSuccess:(NSString *)success
++ (void)MPshowSuccess:(NSString *)success
 {
-    [self LBshowSuccess:success toView:nil];
+    [self MPshowSuccess:success toView:nil];
 }
 
-+ (void)LBshowError:(NSString *)error
++ (void)MPshowError:(NSString *)error
 {
-    [self LBshowError:error toView:nil];
+    [self MPshowError:error toView:nil];
 }
 
-+ (void)LBshowReminderText:(NSString *)reminderText {
-    [self LBshowReminderText:reminderText toView:nil];
++ (void)MPshowReminderText:(NSString *)reminderText {
+    [self MPshowReminderText:reminderText toView:nil];
 }
 
 + (MBProgressHUD *)auto4BeushowMessage:(NSString *)message
 {
-    return [self LBshowMessage:message toView:nil];
+    return [self MPshowMessage:message toView:nil];
 }
 
-+ (void)LBhideHUDForView:(UIView *)view
++ (void)MPhideHUDForView:(UIView *)view
 {
     [self hideHUDForView:view animated:YES];
 }
 
-+ (void)LBhideHUD
++ (void)MPhideHUD
 {
-    [self LBhideHUDForView:nil];
+    [self MPhideHUDForView:nil];
 }
 @end

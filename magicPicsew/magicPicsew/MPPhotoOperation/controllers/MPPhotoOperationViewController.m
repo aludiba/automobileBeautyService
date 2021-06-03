@@ -11,6 +11,9 @@
 #import "MPOtherToolBarView.h"
 #import "MPMainPhotoModel.h"
 #import "UIImage+UIImageExtras.h"
+#import "MBProgressHUD+MP.h"
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <Photos/Photos.h>
 
 @interface MPPhotoOperationViewController ()<UIScrollViewDelegate,MPTailoringToolBarDelegate,MPOtherToolBarDelegate>
 
@@ -122,23 +125,13 @@
     UIAlertController *MPalertVC = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertAction *MPpreviewAction = [UIAlertAction actionWithTitle:@"预览" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         MPPreviewViewController *MPPreviewVC = [[MPPreviewViewController alloc] init];
-        NSMutableArray *MPtempArray = [[NSMutableArray alloc] init];
-        for (int i = (int)self.MPcompositeImagesArray.count - 1; i > -1; i--) {
-            UIImage *MPresult = self.MPcompositeImagesArray[i];
-            [MPtempArray addObject:MPresult];
-        }
-        UIImage *MPcompositeImage = [self MPdrawImages:MPtempArray PhotoOperationType:self.MPCurrentType];
+        UIImage *MPcompositeImage = [self MPdrawImages:self.MPcompositeImagesArray PhotoOperationType:self.MPCurrentType];
         MPPreviewVC.MPcompositeImage = MPcompositeImage;
         MPPreviewVC.MPCurrentType = self.MPCurrentType;
         [self.navigationController pushViewController:MPPreviewVC animated:NO];
     }];
     UIAlertAction *MPshareAction = [UIAlertAction actionWithTitle:@"分享给..." style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        NSMutableArray *MPtempArray = [[NSMutableArray alloc] init];
-        for (int i = (int)self.MPcompositeImagesArray.count - 1; i > -1; i--) {
-            UIImage *MPresult = self.MPcompositeImagesArray[i];
-            [MPtempArray addObject:MPresult];
-        }
-        UIImage *MPcompositeImage = [self MPdrawImages:MPtempArray PhotoOperationType:self.MPCurrentType];
+        UIImage *MPcompositeImage = [self MPdrawImages:self.MPcompositeImagesArray PhotoOperationType:self.MPCurrentType];
         NSString *MPshareText  = @"分享图片";
         UIImage *MPshareImage = MPcompositeImage;
         NSArray *MPactivityItemsArray = @[MPshareText,MPshareImage];
@@ -158,13 +151,20 @@
         }];
     }];
     UIAlertAction *MPexportToPhotoAlbumAction = [UIAlertAction actionWithTitle:@"导出到相册" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        NSMutableArray *MPtempArray = [[NSMutableArray alloc] init];
-        for (int i = (int)self.MPcompositeImagesArray.count - 1; i > -1; i--) {
-            UIImage *MPresult = self.MPcompositeImagesArray[i];
-            [MPtempArray addObject:MPresult];
-        }
-        UIImage *MPcompositeImage = [self MPdrawImages:MPtempArray PhotoOperationType:self.MPCurrentType];
-        NSLog(@"MPcompositeImage:%@",MPcompositeImage);
+        UIImage *MPcompositeImage = [self MPdrawImages:self.MPcompositeImagesArray PhotoOperationType:self.MPCurrentType];
+        NSData *MPimageData = UIImagePNGRepresentation(MPcompositeImage);
+        [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+            [[PHAssetCreationRequest creationRequestForAsset]
+             addResourceWithType:PHAssetResourceTypePhoto
+             data:MPimageData
+             options:nil];
+        } completionHandler:^(BOOL success, NSError * _Nullable error) {
+            if (success) {
+                NSLog(@"拼接图片保存成功");
+            }else{
+                NSLog(@"拼接图片保存失败");
+            }
+        }];
     }];
     UIAlertAction *MPcancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
