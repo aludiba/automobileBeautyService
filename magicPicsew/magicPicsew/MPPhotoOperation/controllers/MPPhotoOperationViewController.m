@@ -139,6 +139,23 @@
             [MPtempArray addObject:MPresult];
         }
         UIImage *MPcompositeImage = [self MPdrawImages:MPtempArray PhotoOperationType:self.MPCurrentType];
+        NSString *MPshareText  = @"分享图片";
+        UIImage *MPshareImage = MPcompositeImage;
+        NSArray *MPactivityItemsArray = @[MPshareText,MPshareImage];
+        UIActivityViewController *MPactivityVC = [[UIActivityViewController alloc] initWithActivityItems:MPactivityItemsArray applicationActivities:nil];
+        //去除一些不需要的图标选项
+        MPactivityVC.excludedActivityTypes = @[UIActivityTypePostToFacebook, UIActivityTypeAirDrop, UIActivityTypePostToWeibo, UIActivityTypePostToTencentWeibo];
+        UIActivityViewControllerCompletionWithItemsHandler MPitemsBlock = ^(UIActivityType __nullable activityType, BOOL completed, NSArray * __nullable returnedItems, NSError * __nullable activityError) {
+            if (completed){
+                NSLog(@"completed");
+            }else{
+                NSLog(@"canceled");
+            }
+       };
+        MPactivityVC.completionWithItemsHandler = MPitemsBlock;
+        [self presentViewController:MPactivityVC animated:YES completion:^{
+                    
+        }];
     }];
     UIAlertAction *MPexportToPhotoAlbumAction = [UIAlertAction actionWithTitle:@"导出到相册" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         NSMutableArray *MPtempArray = [[NSMutableArray alloc] init];
@@ -147,6 +164,7 @@
             [MPtempArray addObject:MPresult];
         }
         UIImage *MPcompositeImage = [self MPdrawImages:MPtempArray PhotoOperationType:self.MPCurrentType];
+        NSLog(@"MPcompositeImage:%@",MPcompositeImage);
     }];
     UIAlertAction *MPcancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
